@@ -1,0 +1,113 @@
+********************************************************
+**              Banitapl V1.1                         **
+**              banitapl.o2.pl                        **
+** forum- http://users.nethit.pl/forum/forum/banitaa  **
+**     Tekst z serii co robiæ aby zeszmaciæ           **
+**       naszego kochanego giganta TpSa               **
+********************************************************
+
+Witam wszystkich zainteresowanych robieniem w jajo TpSa......
+
+Jak wiadomo system centertela zostaje powoli wycofywany, wszak zostaj¹ po nim maszty nadajniki i wiele innych gratów.
+Nasz kochany gigant wpad³ na pomys³ aby szk³em dupe podetrzeæ.
+A podtarcie szk³em dupy polega na zaadoptowaniu tego co pozosta³o po Centertelu.
+Ca³a architektura bazowa zostaje bez zmian, na stacjach bazowych dodano jedynie konwertery aby mo¿na by³o ten ca³y
+bajzel scaliæ w jedno.
+
+Teraz pokolei.
+Centertele do kosza, a tpsa rozdaje na lewo i na prawo polski produkt, centralki na 465MHz.
+Wiadomo jest ¿e stary lecz poczciwy centertel by³ doœæ dobrze zabezpieczony :)) (korzystam z lewego do dziœ dzieñ 
+a centertel nadal twierdzi ze nikt tego jeszcze nie zrobi³)
+ przed logowaniem obcych s³uchawek (kodem sis) jak równie¿ aparaty by³y mobilne (wiec i wygodne dla u¿ytkownika)
+Aparaty centertela s¹ kosztowne, a to w tpsa nie wchodzi w rachube (jak zawsze), wiec pewna krajowa firma zaproponowa³a
+swoje toporne, archaiczne centralki (oczywiœcie tanie) i zacofane technologicznie.
+W centertelu logowanie oraz wybieranie numeru przebiega³o cyfrowo a sama rozmowa analogowo.
+W nowych centralkach logowanie przebiega cyfrowo a wybieranie numeru tonowo !!!! rozmowa oczywiœcie analogowo.
+Dalej w przeka¿niku jest to konwerterowane na system wybierania centertela i w œwiat.
+Ka¿dy przeka¿nik wyposazony jest w 7 lub 14 kana³ów tak aby dla ka¿dego starczy³o.
+
+Co z tego wynika.
+Mianowicie wystarczy poczekac jak sama centralka sie zaloguje cyfrowo a potem sobie samemu wybraæ
+numer tonowo no i oczywiœcie gadaæ do woli za freeeeee...........
+
+Co trzeba mieæ?
+
+Radiotelefon pracuj¹cy na czêstotliwoœci 462.500 do 467.000 MHz -odbiornik
+                              a nadajnik 452,500 do 457.000 MHz -nadajnik 
+Radiotelefon musi posiadaæ shift -10MHz, oraz wybieranie tonowe no chyba ¿e niema to i dialerek wystarczy.
+
+A wiec zaczynamy.
+U mnie w Miñsku Maz np. ustawiamy radio na czêstotliwoœci 463,200 MHz
+I s³uchamy
+Ciog³a nie przerywana cyfrówka znaczy ze to jest kana³ wychodz¹cy - czyli to czego nam trzeba
+Ci¹g³a chrypi¹ca cyfrówka jest kana³em przychodz¹cym - to nie dla nas przecie¿ nikt do nas nie zadzwoni.
+
+Jesteœmy na kanale wychodz¹cym - nagle przerwa 3s (ktoœ podnosi s³uchawke) 2sekundy cyfrówki (abonent sie loguje)
+2 sekundy przerwy (trwa trawienie danych przez system) no i s³yszymy ci¹g³y sygna³ (system czeka na wprowadzenie numeru)
+Teraz wciskamy nadawanie i tonowo wybieramy numer np. 650-xx-xx - lokalnie      0-505-xxx-xxx komurki 
+Oczywiœcie mo¿na dzwoniæ wszêdzie...................
+Gdy wybierzemy numer puszczamy nadawanie i s³uchamy , gdy mamy coœ do powiedzenia wciskamy nadawanie i mówimy.
+Rozmowa toczy sie tak jak na CB radiu.
+
+Problemy.
+Podstawowym problemem jest to aby nasz sygna³ docieraj¹cy do przeka¿nika by³ mocniejszy o d sygna³u abonenta.
+System ten zak³ada ¿e abonent nie powinien byæ zainstalowany dalej ni¿ 10 km od stacji bazowej (stacje abonenckie s¹
+montowane wewn¹trz budynków i wyposarzone s¹ w maleñkie antenki)
+Aby zdeptaæ klienta wystarczy nadajnik o mocy 5W araz z stacjonarna antena.
+Mi uda³o sie wejœæ na przaka¿niki innych województw. Prowadzi³em rozmowy z oddalonych o 100Km.
+Ostatecznie jak nieuda sie wejœæ na jakiœ mo¿na sobie znaleœæ inny.
+
+Teren naszego kraju jest gesto pokryty tymi przeka¿nikami wiec kazdy powinien miec do nich ³atwy dostêp.
+Przecie¿ Centertel przechwala³ sie ze ma pokrycie 98% kraju, a nowych nadajników przybywa.
+Tpsa wycofuje sie z zak³adania abonentom kabli ( s¹ ponoæ za drogie) i wciska kazdemu nowemu abonentowi te centralki radiowe.
+
+Gratulacje dla debili z tpsa którzy w XXI wieku stosuj¹ rozwi¹zania z po³owy XXwieku.
+Dzieki naszemu zacofanemu gigantowi zyje sie nam coraz lepiej.....
+Oczywiœcie tylko tym co wiedz¹ jak to wykorzystaæ.
+
+Przyklady---------------
+
+
+Siedlce 1:
+463.200
+463.950
+464.200
+464.950
+
+Siedlce 2
+462,200
+462,450
+463,700
+464,450
+464,950
+465,200
+
+Miñsk Mazowiecki
+463,375
+464,375
+465,625
+466,375
+
+Sulejowek:
+
+464.425
+464.100
+463.675
+462.600
+466.925
+464.100
+463.600
+465.350
+466.200
+463.175
+465.850
+466.600
+465.675
+465.925
+464.425
+464.925
+
+
+******************************************************************************************************************
+
+Pozdrawiam. **BANITAPL**

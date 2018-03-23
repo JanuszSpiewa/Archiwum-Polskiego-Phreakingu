@@ -1,0 +1,80 @@
+                       ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+                      ÚÁÄ    Mini ABCD Zin.       ÄÁ¿
+      ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+      ÀÄÄ 11.99 ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ  by SpajK  Ä´
+                               ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+   ---> wstep <---
+
+  Napewno  wiecie  ze  standard  DTMF, dzieki ktoremu dzwonimy to nie tylko
+  cyfry,  ale  rowniez  litery.  Standardowo  wszedzie  podczas  dzwonienia
+  jestesmy ograniczeni jedynie do cyfr od 0 do 9 ewentualnie uzywamy * i #.
+  Wiadomo ze w standardzie DTMF istnieja jeszcze tony ABCD. Dlaczego jednak
+  nie  sa  wykorzystywane  ?  Ano,  nie zupelnie nie sa wykorzystywane. Ten
+  tekst  dotyczy  wylacznie  central  ktore  obsluguja  wybieranie w pelnym
+  standardzie DTMF.
+
+   /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+
+
+
+  Wiekszosc  telefonow  nie  ma  wbudowanych  klawiszy ktore obsluguja tony
+  ABCD. Za to wszystkie modemy maja mozliwosc dzwonienia w tym standardzie.
+  Dial  string  wpisywany w terminalu modemu dla numeru A01 bedzie wygladal
+  wtedy tak:
+
+  atdt a01
+
+  Oczywiscie  nie  gwarantuje ze u was centrala odpowie na takie wywolanie,
+  ale  u  mnie  na  ESWD  wygladalo  to tak jak ponizej. W wiekszosci sa to
+  zapowiedzi slowne wywolywane przez abonentow aktywacja uslug, albo innymi
+  wydazeniami.  Niejako  tony  ABCD daja nam dostep do tych rejonow pamieci
+  centrali  na  ktorych  osadzone sa te komunikaty. Wypisuje tylko te ktore
+  nie  daja  komunikatu  typu "nie ma takiego numeru". Oczywiscie do takich
+  numerow dochodzimy przez kombinatoryke:
+
+  Kombinacje A i cyfra dawaly zawsze "nie ma takiego numeru"
+  Ton B od razu dawal to samo.
+
+  Numer:
+
+  c00-c07 - (takie dziwne trzy tony).
+  c0# Busy
+  c0* Busy
+  d01 - (cisza i brak reakcji na cokolwiek)
+  d02 Prosze nie przeszkadzac
+  d03 Zmiana numeracji w Lodzi
+  d05 Zlecenie zostalo przyjete
+  d06 Zbonent nieobecny. Prosze zadzwonic rano
+  d07 Abonent nieobecny. Prosze zadzwonic wieczorem
+  d08 Abonent nieobecny, prosze zadzwonic pozniej
+  d09 Abonent nieobecny, prosze zadzwonic innego dnia
+  d10 Zmiana numeru 924 na 9224
+  d11 Zmiana numeru 926 na 9226
+  d12 Zmiana numeru 927 na 9227
+  d13 Zmiana numeru 928 na 9228
+  d14 Zmiana numeru 930 na 9310
+
+  Dalej probowalem kombinacyji literowo-literowych:
+
+
+  ad102 Abonent czasowo niedostepny
+  ad103 Polaczenie nie moze byc zrealizowane
+  ad104 Centrala miedzymiastowa
+  ad105 Centrala miedzynarodowa, prosze czekac na zgloszenie sie operatorki
+  ad106 Kierunek chwilowo przeciazony
+  ad107-109 Busy
+  ad120 hmm, dziwne cisza i potem busy, ale jesli bedziemy cos naciskac, to
+        busy  pojawi  sie dopiero kila sekund po tym jak skonczymy naciskac
+        cyferki
+  ad121-129 Busy
+
+
+
+  Na  razie  to tyle co udalo mi sie znalezc. Nie wiem jaka reakcja bedzie
+  na waszych centralach, ale z checia o tym poczytam. Piszcie do mnie na:
+
+                                                      spajk@shell.mt.pl
+
+  Pozdrawiam.

@@ -1,0 +1,130 @@
+---------------------------------------------------------------------
+----------------------- c64 FAQ * CZESC 1 ---------------------------
+---------------------------------------------------------------------
+--------------------- michalc64@hotmail.com -------------------------
+---------------------------------------------------------------------
+
+ SPIS TRESCI
+-------------
+1. WSTEP
+2. JAK ROZPOZNAC TYP SWOJEJ CENTRALI
+3. PODLACZANIE SIE DO SASIADA
+
+
+1. WSTEP
+   Ten FAQ przeznaczony jest dla zupelnie poczatkujacych phreakerow,
+   komputerowcow-modemiarzy i innych lamerow ... :)
+   Poniewaz jestem czlowiekiem bardzo zajetym, nie mam najmniejszego
+   zamiaru dokladnie przedstawiac kwestii phreakowania w Polsce.
+   Zrobie to tylko pobieznie, poniekad tez dlatego ze sam wiem
+   niezbyt duzo (wszystko co wiem oparte jest na moich
+   kilkumiesiecznych doswiadczeniach).
+   Jezeli komus lektura moich wybroczyn wyda sie niewystarczajaca,
+   odsylam do innych polskich FAQ'ow.
+   Jeszcze raz powtarzam, ze wiadomosci lub rady tutaj zawarte sa
+   tylko i wylacznie szczytem gory lodowej, ktora jest PHREAKING !
+   
+2. JAK ROZPOZNAC TYP SWOJEJ CENTRALI 
+   W miare czasu rozdzial ten bedzie sie powikszal. Narazie jednak
+   przedstawiam tu podstawowe i latwe do okreslenia parametry kilku
+   starszych central telefonicznych...
+   a. PENTACONTA
+      - tylko i wylacznie impulsowa
+      - polaczenie nastepuje natychmiast po wybraniu numeru
+      - napiecia: 
+         +sluchawka odlozona:     ???? 
+         +sluchawka podniesiona:  ????
+   b. E-10
+      - pierwsza wersja byla tylko impulsowa, ale udoskonalona
+        posiada rowiez mozliwosc wybierania tonowego
+      - po wybraniu numeru (i jeszcze zanim nastapi polaczenie)
+        slychac serie jednolitych tonow (prawdopodobnie 400Hz)
+      - napiecia:
+         +sluchawka odlozona: 25-35 V
+         +sluchawka podniesiona: 8-10 V
+   c. 5 ESS
+      - tonowa i impulsowa (jednoczesnie)
+      - polaczenie nastepuje natychmiast po wybraniu numeru
+        (no chyba ze laczysz sie z numerem ktory obsluguje E-10)
+      - napiecia:
+         +sluchawka odlozona: 50 V
+         +sluchawka podniesiona: 8-10 V
+
+    * Wszystkie typy central podczas dzwonienia wprowadzaja na linie
+      sygnal sinusoidalny 20Hz o napieciu 90-100 V
+
+3. PODLACZANIE SIE DO SASIADA.
+   Po pierwsze: przewod laczacy Cie z sasiadem powinien byc dobrze
+   zamaskowany i najlepiej jeszcze zeby ciezko bylo po nim do Ciebie
+   trafic.
+   Po drugie: dla bezpieczenstwa, po kazdym uzyciu linii sasiada
+   nalezy przewod odlaczyc od skrzynki.
+
+
+   Bardzo pomocnym przyrzadem pomocnym przy korzystaniu z linii
+   sasiada moze okazac sie uklad przedstawiony ponizej:
+
+
+-----------------------*----------------------------------------------
+linia sasiada          |                                 linia sasiada
+-----------------------|----------*-----------------------------------
+                       |          |
+                       |          |
+                       |          |
+                       |          |
+                       *--BUZZER--*
+                       |          | 
+                       |          |
+                       |          |
+                       ---MODEM----
+
+BUZZER - Przetwornik piezoelektryczny. Poniewaz ma on duza rezystancje
+         (lub jak kto woli: impedancje), nie wplywa na stan linii.
+         Tak wiec, jezeli aktualnie nie dzwonisz z linii sasiada,
+         mozesz podsluchiwac jego rozmowy.
+         Moze to byc bardzo przydatne! Np. mozesz sie dowiedziec,
+         o ktorej godzinie sasiad wychodzi i o ktorej wraca
+         (czyli wiesz w jakim czasie mozesz uzywac jego linii).
+         
+Polaczenia w skrzynce telefonicznej najlepiej jest wykonac 
+(jezeli jest to mozliwe) uzywajac przewodow z zakonczeniami w 
+postaci tzw. krokodylkow. Umozliwi to szybki ich montaz i demontaz.
+
+Trzeba pamietac jeszcze o kilku bardzo waznych sprawach!
+
+0.Podczas podlaczania sie do skrzynki musisz byc spokojny!
+  To nie zart! Szubciej sie podlaczysz jezeli podejdziesz do
+  tej sprawy "na luzaka". Jezeli ktos Cie przylapie, zawsze mozesz
+  powiedziec ze szukasz bezpiecznikow bo w piwnicy swiatla nie ma :))
+1.Jezeli centrala sasiada jest impulsowa to nalezy sie upewnic,
+  ze posiada on elektroniczny telefon (np. Panasonic)!
+  W przeciwnym wypadku, podczas wybierania przez Ciebie numeru,
+  sasiad bedzie slyszal dzwonek w swoim telefonie!
+  Problem nie wystepuje oczywiscie jezeli wybierasz tonowo:)
+2.Jezeli w czasie trwania polaczenia, modem nagle sie rozalczy, nie
+  wolno od razu znowu sie laczyc! Trzeba poczekac.... i posluchac
+  co dzieje sie na linii. Pomimo ze linia bedzie wolna, najlepiej
+  jest odczekac jakies 30-60 min przed ponownym polaczeniem.
+3.Jezeli zauwazysz brak Twoich przewodow w skrzynce telefonicznej,
+  postaraj sie jak najszybciej zlikwidowac przewod laczacy Twoje
+  mieszkanie z ta skrzynka!!!
+  Zaniedbanie tego moze doprowadzic do wszczecia postepowania
+  dochodzeniowego (niezle brzmi co?)! Trzeba po prostu uwazac !!!
+
+
+Moze sie tez zdarzyc, ze sasiad podniesie sluchawke w czasie kiedy
+bedziesz akurat modemowac. Jezeli masz dobry modem, nawet tego
+nie zauwazysz :( (Cienki modem od razu sie rozlaczy!).
+Mozna sie przed tym zabezpieczyc, stosujac urzadzenie ktore po
+stwierdzeniu zbyt duzego spadku napiecia (czyli: sasiad podniosl
+sluchawke) automatycznie rozlaczaloby Twoj modem.
+Sasiad niebylby wowczas w stanie stwierdzic czy ktos mu sie podlaczyl
+do jego linii.
+Projekt takiego urzadzenia postaram sie przedstawic w jednej z 
+nastepnych czesci mojego FAQ'a (o ile bedzie nastepna czesc)...
+
+			Do zobaczenia w SIECI :) - michalc64@hotmail.com
+
+Pozdrowienia dla (kolejnosc prawie przypadkowa):
+   |g0d|, PhReAk, P0WER, SpAc3mAn, Killjoy, Frikozoid, Ultor, Harry, [nic0],
+   mole9 ...

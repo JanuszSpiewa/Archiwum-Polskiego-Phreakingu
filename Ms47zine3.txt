@@ -1,0 +1,302 @@
+
+                      m                4
+                     mM               44
+              mMm   mMM   sSSSSs     444    77777777777
+              MMMm mMMM  sSSSSSSs   444       7777777777
+              MMMMMMMMM sSS     Ss 444   444         777
+              MMM M MMM  sSSSSSs   44444444444    7777777
+              MMM m MMM   sSSSSSs   444444444    7777777
+              MMm   MMM sS     SSs       444      777
+              MM    MMM  sSSSSSSs        444     777
+              MM    MMM   sSSSSs         444     777
+              M                           44      77
+                 UnDERGrOUND ZiNE v3.0     4       7
+
+ +--
+ | No to na wjazd wiadomo, za nie ponosze zadnej odpowiedzialnosci
+   za skutki wynikle z lekturki tego zine'a, ktore przeznaczone jest
+   jak zwykle do celow edukacyjnych :)) I tak dalej z tymi bzdurami ....
+   Jednym slowem rob sobie pan z tym co chcesz :)
+   Aha, i nie jest to zaden poradnik dla jakis lame-psycholi.           |
+                                                                      --+
+
+ +--
+ | Spis tresci:
+
+   1).  Wstepniaczek
+   2).  Przykladziki z zycia wziete.
+    a). Problemiki z automacikami do Coli.
+    b). Moneta na tasmie klejacej.
+   3). Rejestry w Windoze 95
+   4). Kolejny stuff na wojsko
+   5). Phreaking z Red Boxikiem
+   6). Jak odpalic malucha bez kluczykow                                                         |
+   7). Jak zakodowany jest CANAL + ?
+    a). Zasada dzialania systemiku Syster
+        (na podstawie jakiejs konferencji)
+    b). Dane techniczne systemu SYSTER
+   8). Rozwiazanie lame-zagadki
+   9). Informacje dodatkowe.               |
+                                         --+
+
+
+ +--
+ | 1. |
+    --+
+        Wstepniaczek
+
+        Hejoooo. No i tym sposobem doszlismy juz do czesci trzeciej.
+        Przyszlo duzo @mail'i od wielu ludzikow, ktorym sie ZiNE podoba
+        i pisza zeby byl wydawany nadal. Bardzo mnie to cieszy i bede
+        sie staral pisac dalej o nowych ciekawych sposobikach na rozne
+        problemiki. Pamietajcie tez o MS47 UnDERGrOUND SiTE i dajcie
+        znac co byscie jeszcze chcieli poczytac czy jaki programik sciagnac.
+
+        Moze zrobimy jeszcze cos jak dzial lacznosci z czytelnikami, ktory
+        bedzie zbiorem najciekawszych @mail'i jakie dostalem wraz
+        drobnym komentarzem i ten temacik.
+
+        Sooo, badzcie w kontakcie a MS47 UnDERGrOUND PoWER bedzie z wami !
+
+ +--
+ | 2. |
+    --+
+    Przykladziki z zycia wziete.
+
+    Dzis przyladzikow wiele nie bedzie, bo czasu tez nie bylo wiele
+    a jak wiecie sesja jest bliziutko i trzeba sie uczyc troszku coby
+    sie dostac na next semester.
+
+    a). Problemiki z automacikami do Coli.
+
+    Pisalem zdaje sie kiedys tekst, ze zamiast 5zl do automaciku
+    wrzuca sie stare (takie duze) 20zl. Niestety w wojewodztwie
+    katowickim nie ma chyba ani jednego automatu, ktory przyjmowalby
+    5zl. Podejrzewam, ze zorientowano sie co jest grane (co zreszta
+    nie jest takie trudne bo przeciez te 20zl zostaje w automacie).
+
+    b). Moneta na tasmie klejacej.
+
+    Tez kiedys pisalem o monecie trzymajacej sie na szkotce.
+    Motyw jest OK. W kasynach z automatami (jeszcze kilka takich jest)
+    mozna nawet nie przyklejac szkotem, tylko wywiercic dziurke
+    w monecie, przywiazac do niej kawaleczek zylki wedkarskiej
+    i delikatnie opuszczac wglab otworu wrzutowego. Sprawdzalem -
+    dziala.
+
+
+ +--
+ | 3. |
+    --+
+
+    Rejestry w Windoze 95, czyli:
+    Jak zdobyc czyjes username & password ?
+
+    Wspanialy systemik operacyjny taki jak Windoza 95 bardzo dba
+    o uzytkownika. Wszystkie haselka uzywane w systemiku sa zabezbieczone
+    jak jasna cholera :) Istniej bardzo prosty sposob na odczytanie
+    tych informacji. Wystarczy odpalic regedit'a i poczytac co siedzi
+    w pewnych rejestrach, ktorych liste podaje ponizej. Niestety takie
+    proby pod Windoza NT nie przynosza rezultacikow, ale pod 95 jest
+    great. Enjoy it.
+
+    Rejestry, w ktorych mozecie znalezc sobie pass:
+
+    hkey_local_machine\system\controlset001\services\gophersvc\parameters
+                          ...\controlset002\"
+                          ...\curentcontrolset\"
+                                                 ...\msftpsvc\parameters
+                                                 ...\w3svc\parameters\
+
+
+    A tutaj te, ktore przechowuja username:
+
+    \hkey+local_machine\software\microsoft\windowsnt\currentversion\winlogon\
+                    ...\system\controlset001\services\bh\parameters
+                          ...\controlset002\"
+                          ...\curentcontrolset\"
+                    ...\services\gophersvc\parameters\anonymouseusername
+                                                  ...\logsqlusername
+                             ...\msftpsvc\parameters\anonymoususername
+                                                 ...\logsqlusername
+                             ...\w3svc\parameters\anonymoususername
+                                                 ...\logsqlusername
+
+
+ +--
+ | 4. |
+    --+
+
+    Kolejny stuff na wojsko.
+
+    To zasmarkane wojsko nie daje mi spac. Chodze czasem na wykladziki
+    z prawa. To bardzo interesujace dziedzina. Przy odpowiedniej wyobrazni
+    mozna tez wymyslic fajny sposobik na wojo. Sprawa ma sie tak, ze
+    osoba prowadzaca kampanie wyborcza do Sejmu, Senatu, czy chocby Rady
+    Miejskiej zwolniona jest z obowiazku czynnej sluzby w wojsku. Konstytucja
+    nie precyzuje jednak jak dlugo ma owa kampania (byle nie wrzesniowa)
+    trwac. Wniosek z tego taki, ze kazdy z nas moze zglosic swoja kandytaure
+    na np. Radnego w roku 2020 i powiedziec, ze kampania bedzie trwac 22 lata.
+    Dobre co nie ??? W sumie nikt tego jeszcze nie sprawdzil i pomysl jest
+    moj (registred), dlatego jest duza szansa, ze to moze dzialac. Wedle przepisow
+    a konkretnie konstytucyjki RP taka sytuacja jest mozliwa. Sprobujcie
+    i dajcie znac co z tego wyszlo.
+
+
+ +--
+ | 5. |
+    --+
+
+    Phreaking z Red Boxikiem.
+
+    Duzo ludzikow napisalo do mnie @mailiki, ze moze jednak jakis boxik
+    pracuje w polskich warunkach. Tak sie w sumie zastanawiam i Red Boxik
+    powinien byc w sam raz. Co to robi ? To robi tyle, ze podobno kiedy
+    sie wrzuci monete to automacik wysyla do centralaleczki sygnal o pewnej
+    czestotliwosci i trwajacy odpowidni czas, a nasz Red Boxik zrobi to
+    zamiast automaciku. Problem w tym, ze rozni ludzie roznie mowia na temat
+    czasu trwania tych sygnalikow i ich czestotliwosci. To ja wam podam tak
+    jak ja uwazam, a pozniej tak jak jeszcze slyszalem.
+    No wiec leci to tak: 2280 Hz lub 3825 Hz lub 500 razem z 20 Hz ( hmm....)
+    lub 2100 Hz w czasie 35ms (milisekundy) - takie beep.
+    Wersja druga to czestotliwosc 1700 Hz razem z 2200 Hz w czasie 33ms
+    (tak pisza phreakerzy z USA). Z gory uprzedzam, ze mozecie nie odniesc
+    zamierzonego efektu z tymi czestotliwosciami, bo wyniknely one z czysto
+    luznej dyskusji przy brokwarkach :)
+
+
+ +--
+ | 6. |
+    --+
+
+    Jak odpalic malucha bez kluczykow.
+
+    Jeden klient podeslal mi @mailem tekst jak zrobic powyzsze. Nie bede
+    podawal tutaj jego danych bo sposob byl, jakby to powiedziec,
+    niekompletny. Sposob jak dostac sie do srodka malucha podany byl
+    w poprzednim numerze ZiNE'a, a teraz jak go odpalic ( Shit wyszedl z tego
+    poradnik dla zlodziei samochodow :) ). Zaznaczam, ze sposob ten dziala
+    na autka z taka fajna dzwigienka umieszczona kolo recznego hamulca,
+    sluzaca do uruchomienia rozrusznika. Otoz w sumie problem sprowadza
+    sie do tego, ze po dostaniu sie do srodka autka otwieramy bagaznik,
+    odnajdujemy skrzyneczke z bezpiecznikami i zwieramy ze soba trzy pierwsze
+    bezpieczniki (a nie 2 i 3 bezpiecznik jak podeslal ow koles).
+    Dzialanko to powoduje taki efekt, ze cala tabliczka rozdzielcza w maluchu
+    rozblyska jasnym swiatlem :) Dalej to juz chyba wiadomo co nalezy zrobic,
+    no nie ???
+
+
+ +--
+ | 7. |
+    --+
+
+    Jak zakodowany jest CANAL + ?
+
+    Zaczne od tego, ze systemi kodowania CANAL+ nazywa sie Syster i opracowala
+    go firma NagraVision, stad Nagravision syster.
+    Syster jest systemem platnej telewizji abonenckiej przeznaczonym do pracy
+    w standardach PAL,SECAM i NTSC. Jest uzywany w Europie przez kilka stacyjek
+    telewizyjnych takich jak: CANAL+ w Francji, CANAL+ w Hiszpani, CANAL+
+    w Polsce, PREMIERE w Niemczech, TELECLUB w Szwajcarii.
+
+    a).Zasada dzialania systemiku Syster (na podstawie jakiejstam konferencji)
+
+    Sygnal telewizyjny (wizja i ewentualnie fonia) przed ostatecznym przeslaniem
+    do nadajnika jest kodowany.W odbiorniku telewizyjnym abonenta po stwierdzeniu
+    przez SYSTER,ze oplata zostala wniesiona,nastepuje dekodowanie sygnalow i
+    odtworzenie czystego sygnalu wizyjnego i fonicznego.Sytem gwarantuje duzy
+    stopien zabezpieczenia przed dostepem niepowolanych osob. Kodowaniu  podlega
+    caly obraz,a nie, jak bylo w poprzednich sytemach, tylko poszczegolne jego
+    linie. Do budowy dekodera wykorzystano uklady scalone wykonywane na specjalne
+    zamowienie. Szyfrowaniu podlegaja wszystkie przesylane komunikaty. Klucze
+    konrolne, stosowane do szyfrowania komunikatow sa objete scisla tajemnica.
+    Podstawowa metoda kodowania sygnalu wizyjnego polega na przestawiwaniu
+    linii orazu i przesylanu ich w kolejnosci ustalonej losowo. Steruje tym
+    generator liczb pseudo losowych, generujacy nowe liczby co dwie sekundy.
+    Liczby te sa przesylane do dekodera rowniez w sposob zaszyfrowany, poniewaz
+    przetworzeniu ulega calosc obrazu, a nie tylko jego wybrane linie, dlatego
+    wszystkie proby nielegalnego dekodowania sa bardzo utrudnione, w sumie prawie
+    niemozliwe. Alternatywnie moze byc stosowana metoda przetwarzania linii oraz
+    ich ciecia.Polega ona na dzieleniu linii na dwie czesci i wzajemnej zamianie
+    ich miejsca. Punkty przeciecia linii sa rowniez wybierane w sposob pseudolosowy,
+    zmieniany co dwie sekundy. W systemie SYSTER wszyskie dane dotyczace kontroli
+    dostepu sa zawarte w "kluczu", uzywanym we wszystkich operacjach zwiazanych
+    z zarzadzaniem dostepem. Warunki dostepu do systemu wymagaja, aby klucz zawieral
+    numer identyfikacyjny odbiorcy oraz numer kanalu (wtym miesci sie identyfikacja
+    rodzaju programow, na jakie opiewa abonament). Komunikaty stacji nadawczej sa
+    przesylane wraz z sygnalem telewizyjnym, uzywane sa do tego celu dwie linie
+    wygaszania pionowego.
+
+    b). Dane techniczne systemu SYSTER
+
+    SYSTER mozna latwo przystosowac do konkretnych wymagan stacji telewizyjnej.
+    Charakteryzuje sie wysokim stopniem ochrony.
+    A oto podstawowe dane sytemu:
+    - maksymalna liczba abonentow - 16 milionow grup po 256 abonentow
+    - maksymalna szybkosc adresowania - 2560 abonentow na sekunde
+    - mozliwosc uzywania jednego klucza przez 5 stacji
+    - zmiana klucza kodowania co 2 sekundy
+    - mozliwosc temeatycznego podzialu programu, kazda stacja ma mozliwosc
+      oferowania do 50 niezaleznych programow.
+
+    Dzialanie systemu SYSTER jest niezalezne od standardu telewizyjnego, np. sygnal
+    PAL po zakodowaniu pozostaje sygnalem PAL. Do przesylania komunikatow kontroli
+    dostepu do programu wykorzystuje jedynie dwie linie wygaszania pionowego.
+    Jest to mozliwe dzieki duzej szybkosci transmisji danych cyfrowych, ktora
+    wynosi 4,4 miliony bitow na sekunde. Uklad odbiorczy jest wyposazony w filtry
+    dopasowujace oraz uklady wykrywania i korekcji bledow trnsmisji. Powoduje to,
+    ze odbior komunikatow jest mozliwy nawet w warunkach silnych zaklocen. Dzialnie
+    systemu jest niezalezne od rodzaju transmisji.
+
+
+ +--
+ | 8. |
+    --+
+
+    Rozwiazanie lame-zagadki
+
+    Tylko jeden gosc dotychczas rozwiazal lame-zagadke. Troche mnie to
+    dziwi bo nie wydawala mi sie tak bardzo skomplikowana. Oto @mail
+    od tego gostka z rozwiazaniem:
+
+
+    Zagadka nie byla zbyt trudna, ale podchwytliwa :)
+
+    Liczba w systemie binarnym  001010100010001 zamieniona na system osemkowy
+    (OCT) to 12421 a wlasnie tyle "zajmuje" zin MS47 (dokladnie 12.421)
+
+
+                                                        Melun
+                                                        melun@friko2.onet.pl
+
+    Gratuluje Melunowi pomyslunku !!!
+
+
+ +--
+ | 9. |
+    --+
+
+    Informacje dodatkowe.
+
+    OK. No to kto chce nalezec do MS47 UnDERGrOUND prosze napisac do mnie
+    krotkiego @mail'ika, a ja bede reply jak to wszystko bedzie dzialac.
+
+    No i jeszcze na koniec musi byc nowa zagadka, bo nawet duzo ludzikow
+    przyslalo (teraz w lutym) odpowiedz na ta poprzednia.
+
+    No to jeszcze raz: co to ma wspolnego z tym ZiNE'm : 00111000
+    Podpowiem, ze tez ma to cos wspolnego z dlugoscia ZiNE'a.
+
+
+
+
+
+
+
+
+
+    Ukonczoned 18.02.1998 by (v)S47
+
+
+
+

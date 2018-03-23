@@ -1,0 +1,383 @@
+
+
+           
+ 
+
+
+
+                kk   kk   rrrrrrr   iiiiiii   sssssss   zzzzzzz   nn   nn   aaaaa
+               kk  kk    rr   rr      i      ss            zz    nnn  nn   aa   aa
+              kkkk      rrrrrrr      i      sssssss     zzz     nn n nn   aa   aa
+             kk  kk    rrrr         i           ss    zz       nn  nnn   aaaaaaa
+            kk   kk   rr  rrr   iiiiiii   sssssss   zzzzzzz   nn   nn   aa   aa
+
+
+                                         nr.1.0 
+                                       marzec 1999
+
+
+
+       Zaczac nalezy chyba tokim malo wyrafinowanym textem ze to co tu zamiescilem jest
+przeznaczone tylko do celow edukacyjnych i nie odpowiadam za to co kto z tym bedzie robil.
+
+Gowno mnie to interesuje ze was nie obchodza wiadomosci o mnie ale krodki opis zamieszcze.
+Jestem z poludnia cierpie na dyslekcje wiec bedzi tu ort na orcie. Zajmuje sie phreakerstwem 
+troszku i hackerstwem troszku jestem wmiare dobrym elektronikiem i myslicielem.
+kontakt:
+                                  maddog@polbox.com
+                                maddog99@friko4.onet.pl
+                    IRC: #phreakpl #plhack #wiaraa #sexpl nick Kriszna
+
+A nie jestem stowarzyszony nigdzie i nikogo nie bede pozdrawial z tamtych kanalow bo........
+No ewentualnie Keendaway i Supradyna ktory kiedys zachowali sie jak ludzie
+
+
+
+SPIS:
+ELEKTRONIKA DLA BARDZO POCZTKUJACYCH
+MODEM DEAD
+TROCHE O RADZENIU SOBIE W ZYCIU
+KOPIARKA DO KART TP SA I NA WYCIAGI NARCIARSKIE
+
+
+
+
+No dobra przejdzmy do rzeczy. W co drugim faq lub zin czytam texty w stylu zostan phreakerem 
+lub hackerem (podstawy) ale jak tu zostac phreakerem nie majac podstaw z elektroniki. 
+Dlatego wlasnie postanowilem napisac ten faq (jest to moj pierwszy tak wiec nie mniejcie do mnie 
+pretesji ze co wam sie nie podoba). Jak znam zycie to wiekszosc tych nowych dziwnych ludzi nie ma 
+nawet pojecia o tym jak np dziala tranzystor. Imoze od tego zaczne nie bede wam tu sciemnial 
+o jakis dziurach i elektronach bo to popiepszenie powiem jak jest masz trzy nogi wychodzace z obudowy 
+jedna z nich to baza druga emiter a trzecia kolektor jak je rozroznic to za chwile teraz tak dzialanie
+tego spryciarza polega na tym ze jezeli ach wyrozniam dwia podstawowe rodzaje tranzystorow 
+NPN i PNP roznica w oznaczeniach: npn maja strzalke na emiterze na zewnatrz a w pnp do wewnatrz
+jezeli miedzy baza a emiterem (tr. NPN) wystapi roznica napiecia conajmniej 0.7v to to male bydle 
+zacznie przewodzic miedzy emiterem a kolektorem tzn emiter podlaczony jest na stale do masy do
+kolektora pdlanczamy jakies urzadzenie na przekaznik tzn jedna strona przekaznika do plusa a druga 
+do kolektora owego tranzystora do bazy natomiast podajemy przez jakis rezystor 10k napiecie tak zwane 
+napiecie sterujace i jezeli wartosc tego na przeproczy zazwyczaj 0.7v to przekaznik sie przelaczy
+dlatego ze masa z emitera przeszla do kolektora co spowodowalo wlaczenie przekaznika. Prosciej juz chyba 
+nie mozna jak tego nie zrozumiales to nie czytaj dalszej czesci textu bo tlumok wyjatkowy jestes.
+zapomnial bym dalem tu za przyklad przekaznik takie urzadzenia w ktorych zasilamy cewke czyli zwoj 
+drutu nalezy zabespieczyc aby nie zdupily na tranzystora nalezy podpiac tam dioode paskiem do strony 
+gdzie przylozony jest pluz zasilania a druga strona do strony z kolektorem. Teraz o PNP
+jest on podoby tylko podlancza sie go inaczej tzn kolektor podlanczamy do plusa zasilania na stale
+emiter do jakiegos urzadzenia a baze sterujemy przez jakis rezystor na 10k (omow) masa to ta roznica
+Istnieje tysiace tranzystorow takze wymieniac ich nie bede. Jak kogos to interesuje to mam swietna 
+pisana przez siebie baze gdzie jest pare tysiecy tranzystorow opisanych dokladnie.
+Nalezalo by tu jeszcze wspomniec o innych tranzystorach jak  Polowe Unipolarne ale o nich kiedy indziej
+bo na waszym poziomie i tak ta na nic sie nie przyda. Tranzystory ktofre ogolnie opisalem to
+tr. krzemowe. Napisac by wypadalo jeszcze o sprawdzaniu tranzysorow pod kontem dzialania dostajesz 
+do reki takie male gowienko i jak go sprawdzic najlepiej wykorzystas do tego miernik elektroniczny
+i wtykac go do tych malych dziurek do skudku. Mozna troche inaczej przelanczamy takie urzadzonko 
+na testr diod tam jest narysowana dioda lub nawet na zwykly omomierz isprawdzamy jezeli midzy 
+jakimis nozkami jest bezposrednie czyli calkowite zwarcie to traznzystor juz sprawdzony mozem 
+go oknem wyjebac jezeli co takiego sie nie stalo to dokonujemy pomiaru dalej tam gdzie nie ma 
+przejscia miedzy dwoma nozkam wcale nawet po obruceniu kabli z mirnika to emiter i kolektor 
+no a trzecia wiadomo baza teraz w zaleznosci od tego czy jest on NPN czy PNP miedzy baza a 
+kolektorem i baza i emiterem sa male przejca w zaleznosci od przylozonych kabli z miernika
+zeby juz wiecej wam w lepetuynachnie mieszac powiem takidzce do elektronicznego sklepu kupcie 
+sobie tranzysto PNP i NPN najlepiej pare koplemetarna taka jak BC211 i BC313 i metoda prob i bledow 
+najlepiej nauczucie sie sprawdzac tranzystory. Jezeli chodzi o dobor tr. do uklady to najwarzniejsze
+parametry to prad jaki tranzystor moze wytrzymac ten miedzy emiterem a kolektorem mozna to okreslic 
+po wygladzie tranzystora wielkosc jest wprost proporcjonalna do prady w pewnych granicach. 
+Potem stosuje sie rozne radiatory sa to takie aluminiowe blachy o dosc duzej powierzchni 
+odpowiednio sprytnie powydinanie ktorych zadanie polega na oddawaniu wydalonego ciepla przez 
+tranzystor do otoczenia. Tak na marginesie jak chcesz sie bawic w co kolwiek zwiazanego 
+z elektronika to powinienes zaopatrzec sie w nastepujace rzeczy:
+-lutownica  transformatorowa conajmniej 75W dostaniesz w kazdym elektrycznym lub elektronicznym sklepie
+-cyna cieka 0.5mm ze 2m
+-kalafonia to taka substancja ktora znajduje sie w cynie ale warto mis ja jeszcze w osobnym pudelku
+pomaga gdy lut ni lapie tez kupisz w elektronicznym sklepie
+-miernik na poczatek moze to byc maly od ruskich na bazarze kosztuje 15zl
+-jak chcesz cos swojego matowac to warto sie zaopatrzec w laminat to taka deseczka z napylona miedzia 
+ktora sie potem trawi aby uzyskac zaprojektowane przez siebie scierzki nastepnie wytrawiacz czyli
+chlorek zelaza dolaczona jest do niego instrukcja tak ze nie bede sie rozpisywal ale uwarzaj na ubrania
+a jak juz slabo trawi dolej wody utlenionej lub podgrzej nie wlewaj do metalowych naczyn:) bo
+ci je wytrawi najlepsze to plastikowe lub szklane caly proces opisze pozniej nastepnie mazak najlepiej 
+cieki specjalny w elektroniku ci facet da odpowiedni przyda sie jeszcze kalafonia w proszku i
+wiertko 0.9 i 1mm do wiercenia dziurek do elemetow. Opisze potem jak zrobic taka wiertareczke.
+-jak chcesz cos robic to potrzebujesz jeszcze zasilacza podstawowa wersja to 30V to napiecie 
+wyjsciowe ktore mozesz dowolnie rogulowac natezenie conajmniej 2A ktore terz powiniene 
+potrafic regulowac a poco poto zeby nie spalic jakiegos zle zlozonego urzadzeniadajac mu mozliwosc 
+pobrania dwoch amperow. Zasilacz taki powinie miec dobrze wystabilizowane napiecie to znaczy nie 
+powinno tam byc rzadnych tetnien z sieci 220V do filtrowania i pozbawiania sie takich tetnien 
+sluza kondensatory elektrolityczne o dosc duzej pojemnosci rzedu 4700 uF (u=mikro) te urzadzenia 
+to podstawa bez ktorej nie zrobisz i nie naprwisz nic!
+Opisz jeszcze pare podstawowych elemetow elektronicznych takich ja diody. Sa to elemety podobne 
+do opornikow maja dwa wyprowadzenia katode (strona z paskiem lub krobka) i anode (bez paska).
+Sposob podlaczenia jezeli mam y dwa kable pod napieciem stalym na 5V to jezeli pasek podlaczymy 
+do minusa a druga strone do plusa uzyskamy zwarcie i w zaleznosci od pradu zasilacza mozemy ja 
+nawet spalic patrz wyrzej regulacja pradu w zasilaczu. Jezeli podlaczymy diode na odwrot to sie nie 
+stanie  nic poniewarz dioda nie bedzie przewodzila jak tu opisalem mamy przyklad najprostrzego 
+zabezpieczenia przed odwrotnym podlaczeniem kabli + do - itd.
+To zabezpieczenie nalezy do tych z serii brutalne dlatego rze przy odpowiednio duzym pradzie 
+mamy troche dymu i smrodu jest inny dobry sposob zabezpiczenia podlancza cie diode nie rownolegle 
+tak jak to opisalem a szeregowo tzn. pasek podlaczamy do minusa a drugi koniec diody do danego 
+urzadzenia i plus rowniez do urzadzenia teraz gdy podlaczymy kable na odwrot urzadzenie poprostu 
+nie zadziala bo dioda nie przepusci napiecaia. Tylko nalezy tutaj zauwazyc ze zabezpieczenie tego 
+typu nie jest zbyt popularne z powodu spadku napiecia jaki powstaje na diodzie wynosi ona przy 
+krzemowych diodach 0.7V a na starszych germanowych 0.5V. Tak wyglada uklad:
+
+    +----------------|             | 
+                     |             |
+zasilacz             |Urzadzenie   |      Uklad z szeregowa dioda 
+         K Dioda A   |             |
+    - ------|<|------|             |
+
+Jak juz wspomniale o zabezpieczeniach z dioda jest to najczeszcza przyczyna niedomagan 
+radioodtwarzaczy samochodowych sprawdzacie czy miedzy obudowa a kablem z plusa nie ma 
+przypadkiem czystego zwarcia jezeli takie ma miejsce tootwieracie obudowe szukacie okopconego 
+elementu wymieniacie go na nowa dode i w dziesiec minut macie 20 zl :)
+oznaczenai diod to najczesciej dla diod prostowniczych tych ktore opisalem to BYP
+parametry to napiecie i prad to jak w tranzystorach im wieksza dioda to wiekszy prad wytrzyma sa 
+tez diody z mozliwoscia zamatowania radiatora.
+Wyrozniamy jaesze wiele innych rodzajow diod jak tunelowe szotkiegoczy zenera te ostatnie 
+nazywane sa diodami stabilizacyjnymi pisze zawsze na nich wartosc napiecia podlacza sie je 
+odwrotnie niz diody prostownicze.
+Zpodstawowych elemetow to jeszcze rezystory ale nie bede juz ich opisywal bo nie chce mi sie
+zasada dzialania jest tak prosta ze szkoda gadki kondensatory natomiast sa to elemety ktore 
+gromadza napiecie to jak male bateryjki ich pojemnosc mowi o tym ile one tego pradu moga zgromadzic
+wyrozniamy bardzo wiele kondensatorow poczawszy o ceramicznych foliowych mkt ktore mozna matowac 
+dowolnie to znaczy ze ich nozki mozna wlutowac w dowolny sposob az do eleptrolitow i tantalowych 
+gdie nozki sa oznaczone + i - i nalezy je matowac zgodnie z oznaczeniami tzn + do +itd nazywa sie
+je kondensatorami zpolaryzowanymi maja one znacznie wieksze pojemnosci noz ich popszednicy
+na ich obudowach napisane jest napiecie przy ktorym moga pracoawac wartosc tego napiecia moze byc
+wieksz niz jest w ukladzie nie moze byc natomiast mniejsza grozi to rozdupieniem kolesia. 
+A kondensator przy napieciu stalym to przerwa a przy zmiennym to prawie zwora. Jezeli laczymy
+kondensatory szergowo to ich pojemnosci sie odejmuja a gdy laczymy je rownolegle to wartosci 
+sie dodaja czyli na odwrot niz przy rezystorach.
+Inne elemety to cewki charakteryzuje je indukcyjnosc jest to zwoj drutu z rdzeniem lub bez.
+Pewna odmiana takiej cewki to transformator ktoremu warto sie przyjzec dokladniej jest to 
+urzadzenie ktore przerabia nam napiecie zmienne moze je zmniejszac lub zwiekszac lub poprostu
+odseparowac od sieci w tak zwany sposob galwaniczny tak zwana przekladnia. Przecietny
+transfirmator ma jedno wejscie tzn uzwojenie pierwotne i wyjscie nie koniecznie jedno tak 
+zwane uzwojenie wtorne np na wejscie podajemy 220V z gniazdka a na wyjsciu uzyskujemy 12V
+potrzebne do jakiegos uklady wazne jest to jestesmy odseparoanii od sieci tzn ze wyjscie 
+nie ma zwiazku z wejsciem inaczej mowiac nas nie popierdoli jak sie bedziemy czymali 
+jednego kabla z wyjscia i kaloryfera. Jak odroznic uzwojenie pierwotne od wtornego mierzymu 
+omomierzem tam gdzie wiekszy opor to do 220V jak nie ma miernika mozna wizualnie ale nie 
+polecam tam gdzie najcieszy drut to do 220V. Jest jeszcze odcholery elemetow elektronicznych 
+ale moze niektore z nich opisze w nastepnym numeze takie jak ukladt typu CEMOS i TTL wzmacniacze 
+operacyjne tyrystory warystory triaki itd itd.
+Opisze jeszcze proces trawienia i przydotowywania plytki drukowanej majac juz przyciety 
+odpowiedni kawalek laminatu przykladamy doniego od strony miedzi kartke z sciezkami najlepiej 
+przyklieic tasma klejaca zeby sie nie przesuwala i jakims punktakiemnapunktowac wszystkie miejsca 
+gdzie bedzie wiercone dziurki na elememty. Nastepnie zciagamy kartke i odtluszczamy plytke 
+spirytusem nanosimy mazakiem scierzki zaczynajac od pokropkowania miejsc lutowniczych potmem 
+zostawiamy plytke na chwile do calkowitego wyschniecia i wkladamy do uprzednio przygotowanego 
+wytrawiacza co jakis czas sprawdzajac czy przypadkiem nie trawi sie nasz rysunek kiedy cala miedz 
+zejdzie wyciagamy plytke spirytusem zmywamy mazak i jest ok nastepnie wiercimy dziurki wiertarka 
+ja taka zrobilem z malego silnika z suszarki do wlosow nalozylem naniego wklad z dlugopisaid niego
+wlozylem jeszcze ciensza rulke z wiertlem zalalem wszystko super glue (klej) po paru minutach jest
+gotowa. Po wywierceniu dziurek najlepiej pokryc cala plytke rozpuszczona w spirytusie zproszkowana
+kalafonia to ulatwia niewprawnej rece lutowanie po pokryciu kalafonia nadmiar zciagnac na gwozdziem 
+i wysuszyc plytke na palnikiem w kuchni po tych wszystkich zbiegach mozna przystapic do lutowania.
+To by bylo na tyle na temat elektroniki reszta moze kiedys zalezy czy bedziecie chcieli!
+
+INNE
+
+Jest komenda do rozlaczania modemu "+++ath0" ktora wystarczy wyslac w mailu
+Zgadnijcie co sie bedzie dzialo gdy gosc bedzie sie staral odebrac  maila
+i pewnie znowu wszystko zwali na gatesa i jego windows ;)))))
+Wiem ze u niektorych jest problem z wyslaniem tego bo tez zrywa :(
+Wtedy trzeba sprobowoac np przez www.hotmail.com (tam sie to wysyla ze 
+strony www).Dziala to na 95% modemow (na stale lacze nie dziala :(   )
+Mozna probowac wysylac to komus na IRC-u na msg. Ale rozlacza w 50% 
+przypadkow :( (Troche glupio jak piszesz komus +++ath0 a on pyta co to ;)
+Teraz jak to usunac ;) No wiec mozesz zalogowac sie na swoje konto przez ftp
+i sciagnac plik mailbox. Potem go usuwasz na serwerze i wszystko gotowe.
+Sciagniety plik mozesz se normalnie poczytac ;) Wiadomosci da sie tez usunac 
+przez telnet przez port 110.
+
+To doslowny cytat z faqHenka
+
+ 
+1. Mysl i rozgladaj sie!       [ by epoison ]
+
+
+ Te stwierdzenia padaja ciagle ale i tak wiekszosc pojebow mysli ze mocna lapa i ruscy koledzy albo buraczane przyzwyczajenia to klucz to sukcesu. Chooj im w dupe, niech tak mysla. Tylko my przez to zyskujemy. Spostrzegawczosc i umiejetnosc kojarzenia faktow to podstawa do kariery. 
+
+2. Siusiaki i peniawy niech podaja kawe (aby szybko!)
+
+ Jezeli masz w gaciach gdy podchodzi do ciebie k.nar w busie mimo ze masz bilet , to jestes jebana ciota i mozesz tego nie czytac. Na nic ci sie to nie przyda. Najwazniejsza w zyciu jest pewnosc siebie i umiejetnosc sprzedania sie za dobre pieniadze. Nie mowie tu o chamstwie, bo lebkow ktorzy tylko bez sensu pierdola ze sa qrfa the best, uzywajac przy tym flegmy, nazelowanych grzywek i dresow, jest w chooj. Ich mozna tylko wystrzelac! Bo ich czar jest najlepszy gdy stoja kolo bezbronnej babci albo kobiety (a propos czy nie nasowa sie tu pewna analogia do polskiej hacksceny?). Nieprawda?
+Chcesz przyklad? OK: 
+Sytuacja:
+W prasie ukazuje sie ogloszenie o mozliwosci zatrudnienia w jakiejsc firmie specjalizujacej sie w dziedzinie X. Liznales to. Kumasz bajere, ale nie na tyle zeby sie zaglebiac. Jak jestes zdolny, to szybko lykniesz wiedze w praktyce. 
+Po selekcji podan i c.v. (oczywiscie twoje jest xtra skomponowane), pozostajesz na arenie you & your kontrkandydat. Wiesz ze clio jest niezly i porusza sie w temacie na biezaca. Ale jest dupkiem w gadce, czerwonym siusiakiem i w dodatku "dojezdza" (bez obrazy, to gra skojarzen!). Najwazniejsze jest wejscie. Wchodzisz, odpierdolony na cacy (zadnych qrfa zielonych garniakow, bo w takich sie juz nawet cow nie doi), czern, odpowiednio dobrany crawat, dobry zapach.  Jak masz polski, lepiej nie uzywaj. CZYSTE BUTY! Gadka, najwazniejsza jest elokwentna gadka. Jesli nie jestes pewien siebie, lopata czeka. Zalotny usmiech do sekretarki (moze w przyszlosci da! -- oczywiscie zart), no i czekasz. Obok siedzi siusiak, czerwony, speszony mietosi poly wytartej katany. Kto to qrfa, sprzataczka - myslisz. Nie, to kolo ktory chce zwyciezyc. Powodzenia. Zapraszaja cie na rozmowe. Wchodzisz, dzien dobry. Jesli sa kobiety warto sie usmiechac do nich. Zreszta i tak usmiech jest wazny. Bez niego mozesz pilnowac parkingu w nocy - nikt nie patrzy! No i goscie mowia: "Prosze nam opowiedziec o sobie". W tym momencie let's dance!
+Napierdalasz! Ile wlezie, same plusy. Najdrobniejsze zwyciestwa, mozesz wciskac delikatne kity. Nie sprawdza, gwarantuje! Konczysz jakims zartem, np: 
+"No moze jedyna moja wada jest to, ze za duzo pracuje" albo cos w tym stylu. Usmiech nie schodzi z twarzy. No i goscie przechodza do nastepnego punktu programu, ktory jest bardziej klopotliwy: "A Pana umiejetnosci?" Tu rowniez mowisz wszycho! Blefuj! Jak ladnie zagadasz gosciom nie bedzie sie chcialo zadawac dodatkowych pytan. Jesli takie nastapia, graj. Nie mozesz milczec!
+Milczenie i zaczerwieniona geba cie wyklucza! To na tyle. Dziekujesz, nie zadawaj dodatkowych pytan "A kiedy moge sie dowiedziec..." i tego typu. To powie ci sekretarka, myslisz ze usmiech na wejsciu to za darmo? I teraz patrzysz: Wchodzi kolo numer dwa, zaczerwieniony burak, siusiak mu przysechl z nerwow! Mozesz sobie wyobrazic te same pytania: "Prosze nam opowiedziec o sobie." Clio ledwo mowi: a tu wydoilem crowe, a tam se palca zlamalem, co chwila przerywa, sapie. Rano sie nie umyl, wyglada jak zul. Po pieciu minutach goscie sa niezle rozbawieni. "A moze pana umiejetnosci". Jesli gosc jest naprawde niezly, twoje szanse maleja, ale nie panikuj!. Na pewno po pierwszym pytaniu jest tak zdenerwowany ze sie zamota, albo nic nie powie tylko sie spusci sproszkowanym nasieniem z nerwow! 
+Podziekuja mu. Ty w tym czasie jestes po milej rozmowie z sekretarka. Dogadaj sie z nia tak, abys mogl do niej zatelefonowac, dowiedziec sie co i jak, jakie sa sluchy o tym, kto zostanie zatrudniony (one wiedza wszystko)! Gosc jest zdeformowany, nie wie nawet,jak dadza mu info o decyzji.Nie wie nic, tylko sie spocil i wali jeszcze bardziej!
+ Teraz mi qrfa kolego odpowiedz: who win?
+Istnieje tylko jedno zastrzezenie: ta metoda na 80% nie przejdzie na egzaminach na uczelni, chyba ze psor albo dr jest jebanym pedalem, sam nic nie wie lub ty wiesz odpowiednio duzo albo jestes naprawde niezly!
+Over.
+To sie troche rozpisalem, ale widzisz jak wazna jest dbalosc o szczegoly i umiejetnosc prezencji, gadki itp. Goscie tak miliardy wyludzaja. Jesli jestes odpowiednio przygotowany do tego wszystkiego, szanse na przegrana sa naprawde znikome.
+Jesli jestes dobry, przyjeli cie i naprawde malo wiesz, to bardzo prawdopodobne, ze szybko cie wyjebia. Ale nie martw sie. Lap kontakty, przed ludzmi z zewnatrz udawaj naprawde dobrego, a jak dostaniesz decyzje o zwolnieniu to ladnie sie pozegnaj i podziekuj za mila wspolprace a nikt ci nie zrobi kolo dupy i sytuacje mozesz powtorzyc. Az sie w koncu czegos nauczysz.
+Dobra skonczmy juz z ta praca, bo mozna swira dostac!
+
+3. Jak zaczynac?
+Jesli juz zamierzasz sie bawic w inzynierie s i poprzednie punkty cie nie oburzyly to bravo. Pierwszy test zdales na dwa plus (a pa juz chcialby piec zalapac). No dobra. Na poczatek dobra metoda do nauki jest proba wydobycia z informacji telefonicznej zastrzezonego numeru tylko tak, zeby gosciowka nie zadzwonila z twoim nazwiskiem pod ten numer i nie spytala sie czy moze udzielic ci info(normalne ze nazwisko jest lewe). To niczym nie grozi. Jak jestes superbeginner to dobrze byloby dzwonic po info o znanym numerze, upewniajac sie wczesniej, ze nikogo nie ma w domu (po co niepokoic niewinnych ludzi ;) ). Jesli jestes facetem mozesz probowac na nastepujace metody:
+a) kulturka - walisz ulozonego goscia, zapytujesz, zagadujesz (malo    skuteczna)
+b) podryw - jebiesz complementami (malo skuteczna, choc w info siedza same    babki)
+c) pewniak cywil 1 - dzwonisz i udajesz ze wszystkich spod tego numeru znasz,    ze pana Henia to znasz od dawien dawna i takie sraci-maci, i ze teraz    jedziesz wlasnie do nich i bardzo chcialbys ich uprzedzic, i ze jestes    przed granica niemiecka itd. Jak nikogo nie ma w domu na 60% masz number
+d) pewniak cywil 2 - lejesz wode ze znasz pania Mirke z informacji    telefonicznej i ona by ci powiedziala, udajesz zdenerwowanego itd. Na 30%    skutkuje
+e) pewniak komendant - grubym glosem przedstawiasz sie arogancko jako    komendant Gerard Szmajdzinski(oczywiscie to nazwisko jest lipne, zapoznaj    sie ze struktura socjalna KRP w twoim miescie) i glosem nieznoszacym    sprzeciwu zadasz numeru. Jak sie babka cos spluje, to zjeb ja na maxa.
+   80%.
+
+Mozesz kombinowac z innymi metodami. Jesli mowisz nie wiem jak, to do pierwszego punktu prosze!
+Jak juz zaczniesz byc niezly, kombinuj z numerami cc, kontami (w firmach lameria jest ponizej
+krytyki, a ochrona danych to pojecie wsrod pan operatorek pojecie abstrakcyjne), i czym tylko
+chcesz 
+
+4. Zasady
+Jesli chcesz wyciac jakis numer, podstawa jest wiedziec o danym obiekcie wszystko, czego mozna
+sie dowiedziec. Przygotuj sie! Jak cos nie wyjdzie albo ktos jest oporny, nie odpierdalaj maniany
+i nie koncz milczeniem albo odlozeniem sluchawki! Potem mozesz zapomniec o podejsciu tego obiektu.
+Pewny siebie powiedz:"No chyba bede musial porozmawiac z pani szefem" To daje ci jeszcze jedna szanse
+a nie gubi kontaktu. Ogolnie najlepiej podchodzic babki. Sa latwe. Kilka dobrych zdan przekona ja ze 
+rozmawia z odpowiednia osoba.
+Co jeszcze? Jesli sie podszkolisz, nie popadaj w rutyne, to gubi! A poza tym s.i. daje naprawde 
+nieograniczone mozliwosci. I ogolnie najlepiej grac na pewniaka.
+
+5. Przyklad
+
+Na mojej uczelni aby uzyskac konto, musisz wypelnic podanie. Wzialem jedno i odbilem na xero.
+Na podaniu musisz wypelnic nastepujace pola:
+Nazwisko i imier, rok, nr indexu, wydzial, nr grupy, adres zamieszkania, login i password
+uzasadnienie.
+Ostatnie trzy pola, wiadomo lipa. Najlepiej jest wybrac gosci z wydzialow typowo 
+lamerskich, jakas inz. srodowiska albo chodowla trzody chlewnej...
+W uzasadnieniu jebnij jakis error w nazewnictwie zeby gosc byl pewny, np:
+"Mozliwosc korzystania z sesji telenetu do kolegi firmy". Nazwisko, imie, numer indeksu, rok,
+wydzial, grupa, adres. Wszystkie oprocz ostatniego sa latwo dostepne. Najlepszy okres 
+jest po sesji. Wtedy wszystkie indeksiki leza w dziekanacie w szufladkach albo na poleczkach. 
+Mozesz zapamietywac te dane po jednym indeksie, ale po co sie opierdalac. Wez wybierz ze 20 i 
+jakby sie suka z dziekanatu pytala po co ci tyle, to powiedz ze cie grupa wyslala. 
+Dzialania jak zawsze. Wyczuj ja co lyknie. Jak juz je masz, to idziesz spokojnie do knajpki 
+naprzeciwko uczelni i spisujesz dane. Najlepiej przegladajac wybierz indeksy z wpisanym miastem,
+w jakim jest twoja uczelnia. Jak zdobyc adres. Na pewno z ksiazki telefonicznej. 
+Dlatego mowilem o tym z jakiego miasta brac, po chooj chodzic na poczte i sprawdzac w ksiazkach
+z innych miast i wydawac na telefony( chyba ze jestes phreaker). Jak znajdziesz, a nazwisk 
+jest 20, to zadzwon i zapytaj czy jest w domu Jozio (lipne imie normalka, mowisz goscia ktorego
+namierzasz), jak ci powiedza ze jest, to spytaj sie czy pani/a syn studiuje na wydziale
+inz. orania pola, jesli ci powie ze tak, to nie rzucaj sluchawka palancie, tylko powiedz
+grzecznie, ze dzwonisz z samorzadu studenckiego, zeby goscia zaprosic w przyszly piatek na
+zebranie w sprawie przydzialu dwoch nowych siusiakow do dyspozycji (wymysl cos, normalka),
+mama sie ucieszy, powie synusiowi, synus w szoku, ale pomysli ze ktos sie pomylil. 
+No i masz adres. Jesli masz pecha, i nic nie znalazles, nie przejmuj sie. Zaluzmy ze twoj admin
+to Xawery Pedalek. No i wtedy dzwonisz do dziekanatu i mowisz, dzien dobry tu xawery pedalek, czy
+ja moglbym sprawdzic, bo tutaj studenci z waszego wydzialu zlozyli podania o konta, i chcialbym 
+sprawdzic ich dane. Podajesz nazwisko i imie i mowisz no i numer indeksu jest... (czekasz), a ona
+na to tyle i tyle, ty mowisz tak,tak zgadza sie i dalej( czekasz), az w koncu, no i adres 
+(czekasz) a gosciowka mowi ci caly adres, potem juz wpada w rutyne i ty tylko podajesz nazwisko 
+i imie, rok i nr grupy, a ona sama klepie reszte. Pytanie ktore powinienes sobie zadac: a moze one
+doskonale znaja xawerego pedalka?
+Sprawdz to! Dzwonisz do dziekanatu i pytasz, czy jest XAWERY PEDALEK. A jak sie spytaja: a kto
+to? To juz wiesz ze go nie znaja. No i sprawa rozwiazana. Podania rzuc u admina na kupke, ale nie
+wszystkie na raz, bo gosc pomysli ze sie qrfa lamerom z inz. okopkowej we lbie pomieszalo. I tym 
+sposobem masz miesiecznie po 20-30 kont na wymiane na petelki... hiehie proste nie! i bez problemow.
+Jeszcze pewno dodatkowe pytania, a jak gosc ma konto, odpowiedz: chyba znasz qrfa finger, nie!
+No i widzicie ile mozna o tym pisac, przykladzik z drobnym opisem zajmuje tyle miejsca, a jest juz
+2:45 w nocy. Musze sie kimnac. Ale s.i. polecam.
+Sami widzicie jakie to proste. Spoleczenstwo to zrodlo wszystkich info. 
+A jakie ci info potrzebne, jak je zdobedziesz i jak je wykorzystasz... to chyba psycho bylbym 
+jakbym ci udzielal porad!
+Warto poczytac troche ksiazek z zakresu psychologii i potestowac na znajomych.
+
+Nie bede tu nic pisal poprostu swietne warto sie stosowac do powyzszych rad IPAMIETAJ NIE BADZ CIOTA
+
+
+KOPIOWANIE KART TP
+                                                               
+
+Mozna zbudowac prosta kopiarke , ktora by kopiowala z karty pelnej 
+(ja uzywam 100 impulsowej ) na karte czysta ;-) Mam na mysli zuzyta karte z
+naklejona tasma Hi8 (ja takiej uzywam ) na calej dlugosci paska 
+magnetycznego (mozna tez probowac robic karty z tektury,ale ja sie w to nie
+bawilem).Najprosciej uzyc tego co najbardziej wkurwia - kasownika impulsow
+z budki telefonicznej ;-) Trzeba go bedzie pozyskac z jakiejs budki ;-) 
+Do tego celu musisz jednak znalezc sobie jakas budke na odludziu i ktoregos 
+dnia sie przyczaic albo postawic piwo komus kto to zrobi ;-)
+Budke otwierasz kluczykiem (jak chcesz kluczyk to mail me ;-) ) Po prawej
+stronie zobaczysz mechanizm ktory bedzie ci potrzebny. Nie musisz brac
+sroobokreta czy loma .Tele-pies sam zadbal o to aby nie bylo trudno tego 
+zdobyc ;-) Lapiesz to urzadzenie za gorna czesc i pociagasz . Powinno sie
+wychylic . Wtedy przyciskasz je do dolu i samo wyskakuje ;-) To tak jak bys
+chcial wylamac drzwiczki od barku na alkohol , Mysle ze wiesz jak taki 
+wyglada ;-) Potem sie szybko wynos z miejsca wypadku i wracaj do domu ;-)
+Potem musisz poodkrecac to co nie bedzie potrzebne, cala plytka i inne gowna
+ poprzyczepiane w kolo ;-). Zostawiasz tylko bemben z obudowa i silnikiem 
+(ten od przesuwu karty) i dwie glowice (odchadza od nich po 3 kable - rozowy,
+czerwony i czarny) czarne kable obu glowic mozesz przyczepic do obudowy 
+(odprowadzaja ladunki z glowicy). Teraz musisz zbudowac odpowiedni wzmacniacz
+Ja zrobilem cos takiego :
+Ze starego walkmana wyjalem plytke i tam gdzie byla glowica przylutowalem
+jedna z glowic z budki (ta dalej od wlotu karty).Bedzie to glowica czytajaca.
+Musi byc ta dalej wlotu bo inaczej karta czytana by potem szla pod zapis ;-)
+Poza tym podlaczylem jeszcze zasilanie (bateria plaska 4,5 V) i oczywiscie 
+w miejscu sluchawek dwa kable wyjsciowe.(uzywaj baterii a nie zasilaczy ze 
+wzgledu na bardziej wystabilizowane napiecie ) Dalej kable wyjsciowe 
+podlaczylem na wejscie juz silniejszego wzmacniacza (20W zasilany 18 V)
+Wzmacniacz ten zasilam 4 bateriami plaskimi polaczonymi szeregowo
+Do wyjscia przyczepiona  jest glowica zapisujaca.(do testow ,do wyjscia
+ mozesz przyczepic wejscie "in" magnetofonu i sluchac jak sie nagrala karta 
+oraz porownac ja z karta orginalna ;-) 
+Teraz jak masz gotowe urzadzenie , na stara karte naklejasz tasme Hi8 
+(najpierw usun stary nosnik poniewaz potem sie wszystko miesza )
+Ustawiasz obie karty (orginalna i czysta ) pod odpowiednimi glowicami (tuz
+przed nimi ) i podlaczasz zasilanie do obu wzmacniaczy. Na koniec puszczasz
+zasilanie na silnik i karty sie kopiuja ;-) Potem mozesz zamiast glowicy 
+zapisujacej podlaczyc magnetofon i porownac kopie. Kluczem do sukcesu 
+jest zastosowanie odpowiednich wzmacniaczy (dokladnych). 
+Teraz wszystko postaram sie zobrazowac.Umowmy sie ze beben przesuwajacy
+ karte przedstawie na plaskiej powierzchni ;-)
+              				+----------------+
+      +-----------+		        |przedwzmacniacz |
+      |wzmacniacz |---------------------| glowicowy      |
+      +-----------+     		+----------------+
+	 ||					 ||
+         [] glowica zapis.                       [] g.odczyt.
+ _________ 		  		_________	   ->przesow
+--------------------------------------------------------------------
+karta zapisywana                      karta czytana
+
+Karta czytana musi byc z przodu zeby nie wpasc pod glowice zapisujaca
+Karty przesuwane sa jednoczesnie wiec nie ma znaczenia czy karta zapisywana
+jest z przodu czy z tylu. ;-)
+Urzadzenie to jest  o tyle dobre ze robi idealne kopie kart (pomijajac 
+niewielkie znieksztalcenia ktore przy dobrym wzmacniaczu nie sa tragiczne)
+Nie ma tu problemu z przesuwem kart czy dobrym wklejeniem impulsow ;-)
+Jedyne co musisz zrobic to dobrze ustawic karty przy starcie ;-)
+Mam jeszcze troche problemow z wzmacniaczem :-( Stosowalem rozne jakie
+tylko mialem. Na innych lepiej , na innych gorzej. Najlepszy efekt
+to na jednym mialem 3 karty na 15 :-). Ale tez znalazlem tylko 2 automaty 
+na ktorych te karty chodzily :-( 
+Caly pomysl nie jest jeszcze w 100 procentach dopracowany ale chcialem 
+zasugerowac sama metode i naklonic was do zrobienia czegos z tym 
+urzadzeniem. Jak tylko uda mi sie cos wiecej z tym zrobic to na pewno tu 
+napisze :-)
+JEZLI KTOS BEDZIE SIE Z TYM BAWIL TO NIECH KONIECZNIE NAPISZE O TYM JAKIE
+UZYSKAL EFEKTY ,NA JAKICH WZMACNIACZACH itp.
+Piszcie tez jak wymyslicie inne ciekawe rozwiazanie przy uzyciu tego 
+automatu z budki :-( 
+
+
+To z faqHENKA
+
+Chcialem tu zauwazyc ze owa kopiarke wykozystywalem do kopiowania kart na wyciag narciarski
+dziala wiecej niz do TP. Jest to dobra metoda na urzadzonko kwestia dobrego wzmacniacza.
+
+To by bylo na tyle dziekuje tym z korych zciagnolem tzn:
+Henek i Epoison
+
+
+
+ 
+         
+ 
+
+
+
+
+      

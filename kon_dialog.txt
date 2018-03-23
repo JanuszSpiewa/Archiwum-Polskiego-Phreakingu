@@ -1,0 +1,148 @@
+	faq v1.0			      DIALOGfaq by Kon    20.07.2003
+
++++++++++++++++++++++++++++ kon20@poczta.fm +++++++++++++++++++++++++++++++++
+                             www.phreak.it 
+
+
+
+
+SPIS TREŒCI:
+
+
+1. Wstêp
+2. Opis ogólny budki
+3a.Pozyskiwanie aparatu wrzutowego "Dialog" (zdobycie zamka)
+3b.Pozyskiwanie ''szkatu³y''z kas¹
+4. Opis mechanizmu taryfikuj¹cego
+5. Opis reszty podzespo³ów zawartych w aparacie (w fazie testów)
+
+1.Wstêp
+Na pocz¹tek chce powiedzieæ ¿e ten faq nie jest ripem z ¿adnego innego faqa.
+Na wszystkie pomys³y wpad³em sam i wykona³em z pomoc¹ kumpli. Informacje tu 
+zawarte maj¹ charakter czysto edukacyjny i nie ponoszê odpowiedzialnoœci za 
+szkody zwi¹zane z wykorzystaniem informacji tu zawartych. Oczywiœcie mo¿na 
+rozpowszechniaæ, ale nic nie zmieniaæ!!!
+
+
+2.Opis ogólny budki
+S¹ dwa rodzaje budek Dialoga: a)w kabinie  b)na nodze. Aby zdobyæ sobie zamek 
+najlepsze s¹ budki na nodze, a ¿eby odkrêciæ ca³¹ to lepiej jest w kabinie.
+Aparat ma wymiary : 48 cm wys.(razem z podstawk¹ ³¹cz¹c¹ aparat ze szkatu³¹),
+31 cm szer. i 22 cm. gruboœci. Aparat wykonany jest z odlewu aluminiowego 
+gruboœci 6mm. Szkatu³a ma wymiary: 29 cm wys. 27 cm szer. 22 cm gr, wykonana 
+jest z kurewsko zahartowanej blachy o gruboœci 7 mm. Wszystko to przykrêcone 
+jest oœmioma œrubami (na klucz 13mm, po 4 œruby na budke i 4 na szkatu³e) do 
+stalowej blachy o wym.74 cm wys, 32 cm szer. i 6 mm gruboœci. Blacha z kolei 
+przykrêcona jest szeœcioma œrubami do nogi wkopanej g³eboko w ziemie. Na górze
+znajduje siê œwietlówka schowana pod klap¹ zamykan¹ na 2 zamki; znajduj¹ siê 
+te¿ tam 2 kontakty 220V i szyna wyrównuj¹ca potencja³. Klapê wystarczy 
+podwa¿yc wiêkszym œrubokrêtem i od razu sie otwiera (skobelki od zamków s¹ 
+bardzo krótkie).
+
+
+3a.Pozyskiwanie aparatu wrzutowego ''Dialog''
+Najlepiej zrobiæ tak (mój sposób): znajdujemy budke na nodze w lekko 
+odludnym miejscu, podchodzimy i œrubokrêtem podwa¿amy klapê od œwietlówki od
+strony zamków kiedy siê otworzy wyjmujemy œwietlówke ¿eby ¿aden lamus z daleka 
+nie widzia³ co robimy.Zamykamy klape i przyklejamy j¹ mocn¹ taœm¹,normalnie 
+siê nie zamknie a otwarta bardzo przeszkadza i robi du¿o ha³asu.Do wyjebania 
+budki najlepiej zabraæ siê od strony zawiasów.Bierzemy œrubokrêt i podwa¿amy 
+przedni¹ czêœæ(pomarañczow¹) w lewym górnym rogu.Trzeba tam zrobiæ tak¹ szparê 
+¿eby zmieœci³ siê tam ³om, stopniowo odginamy przedni¹ czêœæ kieruj¹c siê w 
+strone lewego dolnego rogu. Kiedy ju¿ ca³a lewa strona odstaje to trzeba tak 
+wjebaæ ³om i poci¹gn¹æ ¿eby siê wyjeba³a z zawiasu.Ca³y mechanizm zamkniêcia 
+jest podobny jak w "jajku", jak ktoœ otwiera³ to wie jak to tam wygl¹da.
+Potem pozostaje ju¿ tylko ci¹gn¹æ z ca³ej si³y w prawo. Zawiasy s¹ stosunkowo
+s³abe, mechanizm zamka trzyma siê bardzo mocno. Kiedy ju¿ drzwiczki odpadn¹,
+pakujemy je do torby i spierdalamy. Nie przejmuj sie pourywanymi kablami, z 
+tej budki potrzebny bêdzie tylko zamek. Przynosimy drzwiczki do piwnicy, 
+wykrêcamy zamek, wyœwietlacz, klawiaturkê i mechanizm taryfikuj¹cy, a resztê 
+najlepiej wyjebaæ w miejscu, gdzie chodzi ma³o ludzi.
+Wed³ug zdobytego zamka trzeba sobie dorobiæ klucz :-)))). Jak ktoœ nie umie, 
+to ma pecha bo mi siê nie chce tego opisywaæ, odsy³am do innych faqów o 
+Urmetach np: Peyo.faq albo Hrabia.faqa (a najlepiej Zajadacz.faq ze strony 
+www.phreak.it). Dobra, za³ó¿my ¿e macie ju¿ klucz. Znajdujemy drug¹ budkê, 
+podchodzimy i wyjmujemy œwietlówkê, nastêpnie otwieramy budê i od³¹czamy
+od niej linie. Kabel ma z³¹cze modularne, takie jak w modemie. Nastêpnie 
+bierzemy klucz nr 13 nasadowy, najlepiej rurkowy i odkrêcamy 4 œruby. Trzeba 
+uwa¿aæ przy odkrêcaniu ostatniej œruby, ¿eby budka nie zjeba³a siê na ziemiê.
+Wa¿n¹ rzecz¹ jest, ¿eby na samym pocz¹tku od³¹czyæ linie, bo budka ma styk, 
+który po otwarciu i ponownym zamkniêciu wysy³a sygna³ na centralê, ¿e ktoœ 
+grzebie w budce. W szkatule jest te¿ styk, do którego prowadzi kabel z aparatu;
+podczas zdejmowania aparatu najprawdopodobniej urwie siê wtyczka od tego 
+styku, mi siê na szczêœcie tylko wygiê³a. Zdjêt¹ budkê pakujemy do torby i 
+spierdalamy. Ja by³em w zajebistej sytuacji, bo ca³¹ akcjê zrobi³em z 
+udzia³em samochodu - poczciwego rzeŸnika 125p z 86 roku:-)))))))
+
+
+3b.Pozyskiwanie szkatu³y z kas¹
+Po odkrêceniu aparatu mamy dostêp do czterech du¿ych œrub, odkrêcamy je 
+naprawdê du¿ym œrubokrêtem (szer.koñcówki ok.12mm i d³uga masywna r¹czka).
+Po wykrêceniu tych czterech zostaj¹ jeszcze dwie, które s¹ za szkatu³¹ i nie 
+da siê ich odkrêciæ, wiêc trzeba wyrwaæ ca³¹ blachê razem ze œrubami. W tym 
+celu nale¿y siê zaopatrzyæ w du¿y ³om zagiêty na koñcu (polecam ³om z 
+Castoramy taki gruby, czarny). Po odgiêciu blachy na górze i zajrzeniu pod ni¹ 
+zobaczycie 6 œrób, dwie grube i cztery cieñsze. Nie przera¿ajcie siê, bo blacha
+trzyma siê tylko na tych dwóch grubych. Tu bez samochodu siê nie obejdzie, bo 
+po ujebaniu szkatu³y spada ona na ziemiê z zajebistym ha³asem, a tak w ogóle, 
+to ca³a blacha razem ze szkatu³¹ i kas¹ wa¿y chyba z 70kg(!!!), wiêc nie da siê 
+z ni¹ spierdalaæ na nogach!!!(¿a³ujcie ¿e nie widzieliœcie Szyjucha jak 
+biegnie ze szkatu³¹ do samochodu!!!)Ca³y bajer urywania szkatu³y polega na 
+tym, ¿eby trafiæ na egzemplarz dawno nie opró¿niany (w mojej pierwszej szkatule
+by³o ok.500z³ do podzia³u na dwóch). Teraz jestem w trakcie dorabiania klucza 
+do szkatu³y, jest to bardzo skomplikowany zamek. Nie próbujcie otwieraæ 
+szkatu³y na miejscu, bo i tak wam siê to nie uda!!!! Ja rozpierdala³em 
+skarbonkê w piwnicy przez ok.2 godziny przy pomocy kolegi (dziêki Gruby),
+trzech ³omów, du¿ego m³otka, przecinaka, du¿ego œrubokrêta i szlifierki 
+k¹towej (ogólnie przejebane ale warto)!!!!!!!!!!!!!!!!! Kasê ze szkatu³y da 
+siê wysypaæ bez otwierania jej, wystarczy znacznie poszerzyæ dziure w plastiku 
+(w szkatule jest jeszcze jeden plastikowy pojemnik (twardy!!))
+
+
+4.Opis mechanizmu taryfikuj¹cego
+Mechanizm taryfikuj¹cy jest przymocowany do przednich dzrzwiczek na dwa ma³e 
+zawiasy i œrubê. Po odkrêceniu œruby odchylamy ca³e urz¹dzenie i wyci¹gamy z 
+zawiasów, nastêpnie od³¹czamy 10-cio ¿y³owy przewód i ju¿ mamy zdjête ca³e 
+urz¹dzenie. Po zdjêciu pokrywy widzimy ma³e czarne urz¹dzenie z napisem 
+''CashFlow'', jest te¿ na nim adres internetowy firmy która je wyprodukowa³a 
+(www.meiglobal.com). Urz¹dzenie to ma za zadanie sprawdziæ, czy wrzuciliœmy 
+10gr, 5z³, czy te¿ inne gówno które wypadnie nam na dole, np. stare 20z³.
+Obecnie staram siê tak przerobiæ urz¹dzenie, ¿eby po wrzuceniu jakiejœ starej
+monety, np. 20z³ aparat myœla³ ¿e wpad³o 5z³. Nie próbujcie przerabiaæ tak,
+¿e po wrzuceniu 10 czy 20 groszy aparat pomyœli ¿e to 5z³, bo jak lamusy to 
+wyczaj¹ to bêd¹ ci¹gle wisieæ na budce. Po przerobieniu mechanizmu 
+taryfikuj¹cego montujemy go w jakimœ aparacie. Ca³a wymiana trwa kilka minut. 
+Resztê mechanizmu opiszê w nastêpnym faq, bo i tak nie ma on wiêkszego 
+znaczenia. Najwa¿niejsz¹ czêœci¹ jest mechanizm rozpoznaj¹cy monety. Ca³e 
+urz¹dzenie jest doœæ skomplikowane bo wykorzystuje czujniki optoelektroniczne 
+oraz dwa elektromagnesy pomiêdzy którymi w polu elektromagnetycznym
+porusza siê moneta i jest rozpoznawana (jak siê mylê to mail me - badania 
+w trakcie).
+
+
+5.Opis reszty podzespo³ów zawartych w aparacie
+P£YTA G£ÓWNA - jest na niej kilka fajnych bajerów np: port com (p³yte g³ówn¹ 
+mo¿na pod³¹czyæ do PC!!!) jeszcze nie próbowa³em, bo nie mam na razie takiego 
+kabla, zreszt¹ na pewno trzeba mieæ odpowiedni soft, byæ mo¿e jest gdzieœ na 
+necie, ja jeszcze nie znalaz³em. Na p³ycie s¹ te¿ dwa miejsca na ma³e karty 
+chipowe (podobne do karty SIM od komórki); nie wiem po co. Jest te¿ przycisk, 
+który w³¹cza menu ale nic konkretnego nie da siê tam zmieniæ. Dok³adniejszy 
+opis p³yty i podzespo³ów w nastêpnym faq (badania trwaj¹).
+
+
+
+
+Wiêcej szczegó³ów w nastêpnym faq, ju¿ nied³ugo. Zobacze jakie zainteresowanie 
+wzbudzi phreak na Dialogu, bo jak narazie to nie widzia³em jeszcze ¿adnego 
+faqa na ten temat. Wszystkich zainteresowanych prosze o przesy³anie e-maili 
+na adres kon20@poczta.fm. 
+Fotki aparatu i podzespo³ów pojawiac sie beda na stroie naszej grupy - 
+http://phreak.it i http://phreak.pl. Na razie nie mam szkatu³y, bo siê ich 
+pozbywam od razu po opró¿nieniu, ale nastêpn¹ ju¿ sfotografuje. Generalnie 
+mechanizm zamkniêcia jest prosty, na ¿yczenie mogê dok³adnie go opisaæ. 
+Poszukuje info na temat pod³¹czenia budki do kompa i programowania aparatu.
+
+Pozdro dla Szyjucha za pomoc w ujebaniu szkatu³y i trzech aparatów (to nie 
+by³o proste) i dla Grubego za pomoc w otwarciu szkatu³y w piwnicy (to by³o 
+jeszcze trudniejsze).
+Antypozdro dla TPSA, monterów Dialogu, dresiarzy i Policji  H W D P !!!!!!!!!

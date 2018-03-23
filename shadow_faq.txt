@@ -1,0 +1,170 @@
+
+JEST TO FAQ POSWIECONY WYLACZNIE KARTOM MAGNETYCZNYM !!!
+
+Ponizej zamieszczony material ma oczywiscie sluzyc jedynie celom edukacyjnym ;)
+Nie ponosze odpowiedzialnosci  za zadne skutki  uzywania podanych tutaj
+informacji. Wszystko robisz na wlasna odpowiedzialnosc !!!
+
+===============================================================================
+
+To co powinniscie wiedziec zanim to przeczytacie znajduje sie juz gdzies w innych
+faquach i nie mam zamiaru tu tego kopiowac, a wiec najpierw poczytajcie cos 
+latwiejszego a potem tu zajrzyjcie.
+
+Przydalby sie tez program ze srebrnego URMETA, widzialem ze chlopaki "rozpiepszyli"
+juz kilka takich, to moze by ktorys zczytal go i udostepnil w necie, albo mi 
+przeslal.
+===============================================================================
+				SHADOW
+
+Moj adres:      shadows@dione.ids.pl
+===============================================================================
+
+A teraz to czego w Twoim opisie nie znalazlem, a moze zechcesz to tam umiescic.
+
+Sam zapis na karcie zrealizowany jest przy uzyciu co najmniej dwoch sciezek,
+ktore pozniej czytane sa jednoczesnie za pomoca jednej glowicy. Wszystkie karty,
+ktore widzialem mialy po dwie lub piec sciezek. Dokladniejsze badania sciezek
+wykazaly, ze na polowie wszystkich sciezek w miejscu kazdego bitu zapisane jest
+zero logiczne. Dopiero w drugiej polowie sciezek zapisane sa pawdziwe dane.
+Najciekawsze jest to, ze gdy glowica czyta kilka takich sciezek na raz, to
+wogole "nie zauwaza" tej sciezki z zerami - to tylko taka ciekawa wlasciwosc
+zapisu na karcie ktora wykorzystano, by utrudnic nam zycie. Kilka sciezek na
+karcie mialo bowiem utrudnic klonowanie. Ilosc sciezek widac po posypaniu karty
+tonerem. Praktycznie zawartosc kazdej sciezki (na karcie z dwoma sciezkami)
+mozna spawdzic pzesuwajac glowice tak, by jej szczelina obejmowala tylko jedna
+z nich. Oczywiscie tam gdzie jest piec sciezek (karty z najnowszym logo) nie
+mozna zastosowac tej metody, ale czy to wazne...?
+Nagranie dwoch sciezek ulatwia za to odpowiednie uksztaltowanie sygnalu - moze
+dlatego nagrywarki zrobione z czytnika nie dzialaja doskonale.
+
+Teraz troche cyfrowki.
+Zapis sklada sie z trzech blok¢w (jak napisales A, B i C).
+Czesc C jest juz doskonale opisana, wiec ja zajme sie tylko opisem A i B
+Logicznie zapis wyglada np tak:
+		A					B
+11100000100010010001000100111001000  0  111000101111110100110001011010010  
+
+Drugi blok zawsze konczy sie zerem. Pierwszy rowniez konczy sie zerem a zaczyna
+dwoma jedynkami (poniewaz te bity sa zawsze takie same, to i procesory URMET'a
+pomijaja je w dalszej pracy i my tak zobimy).
+Teraz nalezy w obu tych czesciach jakos oznaczyc kazdy bit oraz bajt zeby bylo
+jasne co dalej napisac. Zrobie to tak:
+				A
+   A7A6A5A4A3A2A1A0B7B6B5B4B3B2B1B0C7C6C5C4C3C2C1C0D7D6D5D4D3D2D1D0
+11 1 0 0 0 0 0 1 0 0 0 1 0 0 1 0 0 0 1 0 0 0 1 0 0 1 1 1 0 0 1 0 0  0
+
+				0
+				B
+   E7E6E5E4E3E2E1E0F7F6F5F4F3F2F1F0G7G6G5G4G3G2G1G0H7H6H5H4H3H2H1H0
+   1 1 1 0 0 0 1 0 1 1 1 1 1 1 0 1 0 0 1 1 0 0 0 1 0 1 1 0 1 0 0 1  0  
+
+	  C
+   ÚÄÄÄÄÄIMPULSYÄÄÄÄÄÄ¿
+00 111111111.....111110
+
+Czesc A sklada sie wiec z czterech bajtow (ABCD), czesc B rowniez (EFGH).
+Kazdy bajt sklada sie z osmiu bitow (np bajt A sklada sie z bitow A7, A6... A0)
+Bity o ktorych juz byla mowa, a ktore sa zawsze takie same (dwie jedynki na
+poczatku bloku A oraz zero na koncu kazdego bloku) zostaja pominiete.
+Procesor w czytniku URMET'a odczytuje osiem bajtow (ABDCEFGH) i sprawdza ich
+poprawnosc wg nastepujacego algorytmu (odpowiednia procedurka znajduje sie
+pod adresem $4E00 w EPROM'ie czytnika v2.8):
+
+x:=((A and $C3) or $28) xor B xor C xor D xor E xor F xor G xor H
+JESLI 
+  (A and $3C) shr 2=(255-(x xor (x shr 4))) and $0F
+TO 
+  Dane_sa_ok
+W_PRZECIWNYM_RAZIE
+  Karta_nieczytelna ---> karta jest wyrzucana z czytnika
+
+W powyzszym zapisie X shr Y oznacza przesuniecie logiczne w prawo X o Y pozycji
+(inaczej mowiac jest to dzielenie calkowite X/(2 do potegi Y))
+
+Jesli Dane_sa_ok to procesor czytnika odczytuje wartosc IMPULSY, zatrzymuje
+silnik karty i przesyla wszystkie dane do procesora glownego (68HC11).Ten
+zamienia odpowiednio kolejnosc bitow i jeszcze raz sprawdza poprawnosc danych
+(o wiele bardziej skomplikowanym algorytmem - tego na razie tu nie
+zamieszcze). Wybiera z tych bit¢w co dla niego istotne i zapamietuje numer
+identyfikacyjny karty. Jesli wiec zrobimy karte z kodem, kt¢ry spelnia podany
+tu warunek, to po wlozeniu do URMETA karta na chwile zatrzyma sie w czytniku,
+po czym zostanie wyrzucona - tak jak karta monterska (chyba ze kod spelnia
+jeszcze drugi warunek), tyle ze nic nam z tego, bo traktuje ja jako KARTA
+NIEWAZNA.
+Numer identyfikacyjny karty sklada sie z czterech bajtow (prawie czterech):
+
+	000000F7F4 F1G6G3G2G1H6H5H2 C6G5D4B7F0H1D6D7 B6F3G0D1D2B5F6C3
+
+Bity D0E5E2 w pewien sposob okreslaja, przez ile nalezy dzielic wartosc
+IMPULSY, tzn czy karta ma (lub miala) 25, 50, 100 czy 200 impulsow.
+Wartosc okreslona przez te bity jest (po zmniejszeniu o 1) indeksem do tablicy
+dzielnikow znajdujacej sie pod adresem $8235 (v2.9) lub $8234 (v2.8). Jak widac
+mozliwe sa dzielniki: 1, 2, 5, 4, 8, 10, 20.
+Tak wiec dzielnik jest okteslony w pelni przez trzy bity z ktorych jeden
+znajduje sie w bloku A a dwa pozostale w bloku B.
+(Z tego wniosek, ze zmieniajac tylko 2 bajty w EPROM'ie URMETA mozna zrobic,
+ze wszystkie karty beda traktowane jako setki ;-) ---> po zdekodowaniu
+pod adresem (v2.9) $8238 i $8239 nalezy wpisac wartosc "2". Btw. nie radze
+wpisywac jedynki ani zera.
+Dwa najstarsze bajty numeru identyfikacyjnego okreslaja numer serii karty.
+Mozliwe sa wiec 1024 serie, kazda po 65536 kart. Procesor 68HC11 sprawdza, czy
+karta z danej serii dopuszczona jest do uzytku (w pamieci EEPROM ma mape bitowa
+seri dopuszczonych). Jesli karta nie jest dopuszczona to z niebieskiego URMETA
+jest wyrzucana bez ostrzezenia, a srebrny pisze (i mowi) KARTA NIEWAZNA.
+Poza tym 68HC11 sprawdza czy karta o danym numeze nie figuruje u niego w pamieci
+i czy przypadkiem nie ma wiecej impulsow niz miala ostatnio. Jesli tak, to jest
+kasowana. Niebieski URMET moze zapamietac ok 1500 numerow kart. Mozna z tego
+wyciagnac wniosek, ze klonowanie kart ma wiec badzo ograniczone zastosowanie. 
+
+Z analizy programu URMETA wynika ze istnieje kilka specjalnych kart (pewnie
+serwisowe).
+Oto warunki jakie musza spelniac bity w roznych kartach:
+
+MAINTENANCE:
+A7A6=00 oraz F7F4F1G6G3G2G1H6H5=0 ORAZ H2=1
+Jak widac, numer identyfikacyjny takiej karty to: 00 00000001 xxxxxxxx xxxxxxxx
+
+PROGRAMMING: 
+A7A6=01 oraz F7F4F1G6G3G2G1=0 H6H5H2=001
+Numer identyfikacyjny takiej karty to: 00 00000001 xxxxxxxx xxxxxxxx
+
+SAMPLE:
+A7A6=01 oraz F7F4F1G6G3G2G1=0 H6H5H2=010:
+Numer identyfikacyjny takiej karty to: 00 00000010 xxxxxxxx xxxxxxxx
+
+PROGRAMMING (jakas inna):
+A7A6=01 oraz F7F4F1G6G3G2G1=0 H6H5H2=011
+Numer identyfikacyjny takiej karty to: 00 00000011 xxxxxxxx xxxxxxxx
+
+SAMPLE (jakas inna):
+A7A6=01 oraz F7F4F1G6G3G2G1=0 H6H5H2=100
+Numer identyfikacyjny takiej karty to: 00 00000100 xxxxxxxx xxxxxxxx
+
+Karta X (niby zachowuje sie jak normalna z kredytami ale w programie
+jest traktowana jakos inaczej - jeszcze nie wiem do konca o co chodzi):
+A7A6=10 D5=0 oraz musi byc spelniony warunek logiczny C0+C1+C4+C7+B4=1 
+W tej karcie bity D0E5E2 moga miec jakies znaczenie - trzeba przetestowac.
+Nie wiem do czego sluzy ta karta. Byc moze ze ma cos wspolnego z tzw. wieczna
+karta.
+
+	Karty z kredytami:
+Karta 25 impulsow:
+A7A6=10 oraz D0E5E2=101 oraz D5=1
+
+Karta 50 impulsow:
+A7A6=10 oraz D0E5E2=011 oraz D5=1
+
+Karta 100 impulsow:
+A7A6=10 oraz D0E5E2=010 oraz D5=1
+
+W normalnych kartach bity
+A5A4A3A2A1 B4B3B2B1B0 C7C5C4C2C1C0 D3 E7E6E4E3E1E0 F5F2 G7G4 H7H4H3H0
+sluza do kontroli poprawnosci kodu.
+
+Wszystkie powyzsze informacje sa PRAKTYCZNIE SPRAWDZONE. Jesli jest tu jakis
+blad to albo zakradl sie przy wpisywaniu albo siedzi w EPROM'ie URMET'a ;-)
+
+Wszelkie propozucje wymiany prosze przesylac na adres:
+Moj adres:      shadows@dione.ids.pl
+NA JAKIES KRZYWE LAMERSKIE LISCIKI NIE BEDE ODPOWIADAL !!!!!!!!!!!!

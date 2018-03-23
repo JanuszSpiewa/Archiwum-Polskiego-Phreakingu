@@ -1,0 +1,110 @@
+			MAPA PAMIECI SILVERA BY SHADOWS
+22.11.2000
+
+
+Oto, co ustalilem w czasie analizy plyty glownej silvera:
+
+ADRES             ZAWARTOSC
+000000...1FFFFF - pierwsza kosc FLASH, jej zawartosc powtorzono
+                  czterokrotnie (program, stringi)
+
+200000...3FFFFF - druga kosc FLASH, jej zawartosc powtorzono
+                  czterokrotnie (m.in. reklamy)
+
+400000...5FFFFF - trzecia kosc FLASH, jej zawartosc poworzono
+                  dwukrotnie (wav'y)
+
+
+400000...7FFFFF - gniazdo rozszerzen (normalnie nie uzywane)
+
+800000...9FFFFF - pamiec 128kB RAM (628128) powtorzona 16 razy,
+                  dostep osmiobitowy
+
+A00000...BFFFFF - przestrzen I/O - za wybor odpowiedniego ukladu
+                  odpowiadaja tylko trzy najmlodsze bity adresu
+
+C00000...DFFFFF - sygnaly do wyswietlacza ???
+
+E00000...FFFFFF - gniazdo rozszerzen
+
+
+
+Wyglada to tak:
+
+ADRES     ADRESOWANY UKLAD I/O
+hex bin
+00  000   ???
+01  001   U43 (74LVX273, wyjscie) - przewornik D/A
+02  010   U39 (74LVX273, wyjscie) - klawiatua (wyjscie)
+03  011   U46 (74LVX244, wejscie) - klawiatura ??? (wejscie)
+04  100   U37 (74LVX244, wejscie) - rozne wejscia
+05  101   U19 (74LVX273, wyjscie) - sterowanie modemem 73k224l
+06  110   U16 (74LVX273, wyjscie) - sterowanie modulem SAM czytnika
+07  111   gniazdo rozszerzen
+
+
+
+Mapa bitow poszczegolnych ukladow:
+
+U19 - sterowanie modemem 73k224l (interfejs szeregowy)
+
+MSB
+B7 - zasilanie modemu
+B6 - sygnal EXCKL do modemu
+B5 - sygnal RD do modemu
+B4 - sygnal WR do modemu
+B3 - dane szeregowe do modemu (AD7)
+B2 - wybor rejestru modemu (AD2)
+B1 - wybor rejestru modemu (AD1)
+B0 - wybor rejestru modemu (AD0)
+LSB
+
+
+U36 - sterowanie modulem SAM czytnika
+
+MSB
+B7 - zasilanie czegos
+B6 - zasilanie czytnika (byc moze z negacja)
+B5 - znowu zasilanie czegos
+B4 - /SM3 (zl 17 czytnika z negacja)
+B3 - /SiPWR (zasilanie SAM'u, zl 16 czytnika, z negacja)
+B2 - /SM2 (zl 20 czytnika z negacja)
+B1 - /SM1 (zl 19 czytnika z negacja)
+B0 - /SM0 (zl 18 czytnika z negacja)
+LSB
+
+
+U37 - rozne wejscia
+
+MSB
+B7 - zawsze "1"
+B6 - zawsze "1"
+B5 - identyfikacja przerwania IRQ2
+B4 - dane szeregowe z modemu (AD7)
+B3 - "0" gdy wcisniety klawisz TEST
+B2 - identyfikacja przerwania IRQ0 (z ukladu zegara czasu
+     rzeczywistego PCF8583)
+B1 - "1" gdy czytnik fizycznie podlaczony
+B0 - sygnal z czytnika (zl 5 z negacja)
+LSB
+
+
+U39 - klawiatura (wyjscie)
+
+MSB
+B7 - +6dB? (poziom sygnalu w sluchawce?)
+B6 - klawisze matrycy (F3,F4,ZK)
+B5 - klawisze matrycy (+6dB,F1,F2)
+B4 - klawisze matrycy (FC,RD,LIN)
+B3 - klawisze matrycy (*,0,#)
+B2 - klawisze matrycy (7,8,9)
+B1 - klawisze matrycy (4,5,6)
+B0 - klawisze matrycy (1,2,3)
+LSB
+
+
+U43 - osmiobitowy przetwornik D/A
+
+
+SHADOW
+shadows@dione.ids.pl

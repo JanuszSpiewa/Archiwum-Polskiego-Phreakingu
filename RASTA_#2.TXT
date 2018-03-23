@@ -1,0 +1,200 @@
+;WERSJA TXT, PL-CHAR: WINDOWS
+;dopisane 06/04/99: obecnie tekst ten ma prawie rok, wiele siê ju¿ zmieni³o
+;(np. sposób z dialerem dtmf). Mimo wszystko tekst ten - jak mi siê wydaje -
+;powinni przeczytaæ szczególnie pocz¹tkuj¹cy.
+
+
+
+                    R A S T A   P H R E A K   F A Q   # 2                       
+                                                                                
+                      Czas wreszcie skoñczyæ z mitami!                          
+
+                                  17.04.98
+
+
+W s t e p n i a k
+   Zdecydowa³em siê na napisanie tego tekstu po przeczytaniu 34571342 faq-ów na
+   bardzo popularny temat: phreaking, czyli - w skrócie - darmowe korzystanie z
+   telefonu. W zakresie telekomunikacji mam pewn¹ wiedzê, oczywiœcie nie wiem
+   wszystkiego ale w odró¿nieniu od innych nie bêdê pisa³ o rzeczach, o których
+   nie mam pojêcia. Tak siê sk³ada, ¿e 90% informacji z ogólnodostêpnych faq'ów
+   jest nieprawdziwa (antypozdrowienia dla autorów na koñcu).
+       Ale na pocz¹tek przytoczê pewn¹ opowieœæ przedstawiaj¹c¹ to zjawisko
+   bardzo obrazowo.Dawno temu pewne dziecko zachorowa³o na nieuleczaln¹ chorobê.
+   Postanowi³o przed œmierci¹ zapisaæ siê do ksiêgi rekordów. Goœæ chcia³ dostaæ
+   jak najwiêksz¹ iloœæ kartek pocztowych.Wys³a³ do jakiejœ firmy list opisuj¹cy
+   ca³¹ sytuacjê oraz proœbê przys³ania karki i wys³ania kopii listu dalej.
+   Ch³opak pobi³ rekord, a ktoœ bogaty ufundowa³ mu najdro¿sz¹ operacjê, dziêki
+   której prze¿y³. Jednak list ten kr¹¿y do dziœ i nadal goœæ dostaje tysi¹ce
+   kartek!!! Minê³o ju¿ kilkanaœcie lat, jego rodzina musia³a zmieniaæ adres ale
+   i tak poczta ma du¿y problem.
+       Jak ta opowieœæ ma siê do sytuacji na tzw. phreak-scenie w Polsce? Jakieœ
+   30 lat temu wprowadzono w USA miêdzystanowe centrale systemu
+   elektromechanicznego rejestrowego u¿ywaj¹cego m.in. do sygnalizacji roz³¹-
+   czenia rozmowy tonu 2600Hz. Pozwala³o to (przy u¿yciu prostego urz¹dzenia) na
+   prowadzenie darmowych rozmów telefonicznych. By³o te¿ kilka innych rozwi¹zañ,
+   które pozwala³y oszukiwaæ kompanie telefoniczne. Od dawna systemy te nie s¹
+   stosowane w USA, i NIGDY (w takiej formie) nie istnia³y w Europie. Kiedyœ
+   ktoœ opisa³ ówczesne metody phreakingu (zapewne jeszcze na jakimœ Z81 lub
+   czymœ podobnym) a kolejni phreak-lamerzy przepisuj¹ to jeden od drugiego
+   i tak trwa to do dziœ... Wystêpujê wiêc z apelem: jak macie niespo¿yte si³y
+   pisarskie to piszcie sobie referaty o lamerze-Mickiewiczu (przyk³ad goœcia
+   który co innego pisa³ a co innego robi³ -->np. powstanie listopadowe), ale
+   nie zaœmiecajcie cyberprzestrzeni gównami.
+       Nale¿y pamiêtaæ, ¿e USA i Kanada maj¹ odmienne standardy technologiczne
+   niemal w ka¿dej dziedzinie ¿ycia (np. 110V, w samochodach czerwone migacze
+   etc.), a pozatym mamy ju¿ koniec lat 90-tych i tamte rozwi¹zania zosta³y
+   dawno wyparte przez elektronikê cyfrow¹. Wystarczy tu nadmieniæ, ¿e ju¿ w
+   1974r (a wiêæ æwieræ wieku temu!) Teletra w Poznaniu zaczê³a produkcjê w
+   pe³ni cyfrowych central systemu E10A, w którym zastosowano ówczesne kompu-
+   tery, dyski twarde (na pocz¹tku dziurkarki papieru). System ten jest u¿ywany
+   do dziœ i jest przystosowany m.in. do œwiadczenia wiêkszoœci us³ug elektroni-
+   cznych (o tym dalej), wybierania tonowego etc.
+
+C e n t r a l e
+   Pierwsze kompletne centrale zaczê³y powstawaæ po II Wojnie. Praktycznie ³¹cz-
+   noœæ automatyczn¹ wprowadzano w latach 50-tych. W Polsce stosowano centrale
+   o tzw. sterowaniu bezpoœrednim systemu Strowger 32AA oraz 32AB.
+   By³y to urz¹dzenia mechaniczne stosuj¹ce m.in. przekaŸniki doœæ du¿ych roz-
+   miarów i wybieraki. Znacznym krokiem w przód by³ system rejestrowy Pentaconta
+   (równie¿ elektromechaniczny, ale ju¿ z zastosowaniem elementów elektronicz-
+   nych; sterowanie jest poœrednie dziêki rejestrom). Polsk¹ implementacj¹ tego
+   standardu by³o 1000 C produkowane przez ZWUT oraz nieco uproszczone K66.
+   System ten mo¿na opcjonalnie wyposa¿yæ w dekodery DTMF (wybieranie tonowe).
+       Równoczeœnie rozwija³a siê elektronika cyfrowa. Pozwoli³o to na skonstru-
+   owanie pierwszej  centrali cyfrowej w Europie (wspomniane E10A) w Alcatel'u.
+   Ma ona praktycznie wszystkie mo¿liwoœci wspó³czesnych central, jednak zasto-
+   sowane w niej stare uk³ady cyfrowe bior¹ du¿o pr¹du i s¹ wolne. Z pewnego
+   Ÿród³a wiem, ¿e E10A z Teletry przegrzewa siê (!) gdy na danym koncentrato-
+   rze (500NN) rozmawia wiêcej ni¿ 10% abonentów.
+       PóŸniej powsta³a nowa wersja - E10B (produkowana do dziœ) a tak¿e
+   system S12 (dzisiejsza wersja to tzw. Alcatel 1000 S12 J) oraz Siemens
+   EWSD i AT&T (teraz Lucent)-5ESS (obie równie¿ w sta³ej produkcji).
+
+S p o s o b y
+   Blue box.  Podczas ³¹czenia siê abonentów do³¹czonych do osobnych central
+   konieczne staje siê opracowanie protoko³u komunikacji miêdzy nimi. Mo¿na
+   zastosowaæ ró¿ne rodzaje sygnalizacji, np. dekadow¹ (bardzo wolna) lub czê-
+   stotliwoœciow¹ (sterowanie przez sygna³y tonowe). Nie wiem jak to dok³adnie
+   by³o w USA, jednak do roz³¹czania rozmowy stosowano sygna³ 2600Hz. Okaza³o
+   siê, ¿e taki sygna³ mo¿na wygenerowaæ przez prosty uk³ad i podczas prowadze-
+   nia rozmowy wy³¹czyæ nim licznik. Z czasem zaczêto montowaæ odpowiednie fil-
+   try t³umi¹ce 2600Hz, a po zastosowaniu systemów cyfrowych taka sygnalizacja
+   sta³a siê niepotrzebna. Jako ciekawostkê podam fakt, ¿e w tej chwili w USA
+   po³¹czenia lokalne s¹ darmowe.
+   Trochê inaczej wygl¹da³a sprawa w Polsce i w ogóle w Europie. Centrale Strow-
+   gera komunikowa³y siê dekadowo (ró¿ne prymitywne rozwi¹zania jak np. sygna³
+   50Hz) jednak najpowszechniej stosowane Pentaconta K66 u¿ywa³y kodów wielo-
+   czêstotliwoœciowych CCITT R2. Poszczególne kraje mia³y ró¿ne zestawy czê-
+   stotliwoœci. Dane dla Polski - patrz tabelki na koñcu. Oprócz tego istnieje
+   jedna czêstotliwoœæ s³u¿¹ca dodatkowo do prostej sygnalizacji dekadowej
+   (zajêcie/zwolnienie ³¹cza) - odpowiednik 2600Hz. W Polsce przyjêto 3825Hz
+   i to jest w³aœnie problem - ten sygna³ nie jest przenoszony przez normalne
+   ³¹cze (zakres wynosi 300-3300Hz) i nie mo¿na go wygenerowaæ w domu (tzn.
+   mo¿na ale nie s³ychaæ tego po drugiej stronie). Ten sposób wiêc odpada. Co
+   prawda wyczyta³em te¿, ¿e stosowano u nas kody CCITT nr 3 gdzie sygna³
+   dekadowy mieœci siê w zakresie 300-3300 ale to nie jest prawd¹, gdy¿ sygna-
+   lizacja dekadowa wewn¹trzpasmowa nie by³a nigdy u¿ywana w naszym kraju.
+       Proponujê jednak pewien eksperyment z kodami tonowymi CCITT R2. Same
+   kody s¹ ju¿ przenoszone. Wiele central (nawet tych cyfrowych) rozpoczyna
+   ³¹czenie z inn¹ central¹ nawet gdy nie wybierzemy ostatniej cyfry, trzeba
+   tylko zaczekaæ ok.10 sekund. Centrale cyfrowe podaj¹ w odpowiedzi na to
+   "niema takiego numeru" - np. S12 lub "reorder" - przerywany sygna³ 2 razy
+   szybszy od zwyk³ego "zajête" - E10A i B. Jeœli jednak pocz¹tkowe cyfry wska-
+   zuj¹ na centralê pentaconta, to uzyskujemy po³¹czenie, jednak bez sygna³u
+   dzwonienia (centrala czeka na ostatni¹ cyfrê w kodzie CCITT). W Poznaniu nu-
+   mery tych central to ju¿ tylko 841-5x-xx (policyjna) i 869-2x-xx (PKP).
+   Je¿eli przez ok. 1min. nie podamy tam jakiegoœ sygna³u, to reakcja mo¿e
+   byæ ró¿na (np. PKP daje reorder ale policyjna dzwoni do obs³ugi).
+   Proponujê poeksperymentowaæ. Kody najlepiej wygenerowaæ na komputerze.
+   Najlepsze sprzêgniêcie linii z komputerem uzyskamy przez transformator
+   sieciowy np. 220/9V ma³ej mocy. Uzwojenie 220V pod³¹czamy do linii a wtórne
+   9V do wyjœcia g³oœnikowego na karcie muz. (to nie ¿art - 100% bezpieczne).
+
+   Red Box.  Jest to u¿¹dzenie s³u¿¹ce do bezp³atnego dzwonienia z automatów
+   na ¿etony. Dawno temu w USA stosowano taki system rozliczania, ¿e po wrzuce-
+   niu monety 5, 10 lub 15c telefon informowa³ centralê o wniesionej op³acie.
+   W Polsce by³o inaczej. Stare automaty (te ma³e, wlot ¿etonu z przodu) reago-
+   wa³y tylko na po³¹czenie przez jednokrotne po³kniêcie ¿etonu (niezale¿nie od
+   d³ugoœci rozmowy). Dlatego blokowa³y po³¹czenia przez zero. W nastêpnych, na
+   ¿etony oraz karty) wykorzystano fakt, ¿e centrala wysy³a tzw. impulsy taryfi-
+   kacyjne - krótki sygna³ 16KHz na ka¿dy impuls. Sygna³ zwrotny podaj¹ chyba
+   tylko URMET-y, i to zupe³nie inny - 12KHz. Zatem doszukiwanie siê tu analogii
+   miêdzy monetami 5,10,15c w usa i ¿etonami A,B,C jest kompletn¹ bzdur¹.
+       Jeœli ju¿ jesteœmy przy automatach: mo¿emy pod³¹czyæ siê do kabla zwyk³ym
+   telefonem, jednak jest ogromne ryzyko. Budki maj¹ œciœle okreœlon¹, nietypow¹
+   opornoœæ i jakakolwiek zmiana jest sygnalizowana w bloku nadzorczym.
+   Kolejny sposób, tzw. "na zapalniczke" - piezoelektryczn¹ - te¿ jest mitem,
+   od dawna to ju¿ nie skutkuje.
+
+   To dziala!
+   Phreakowanie kart magnetycznych jest raczej trudne i wymaga czasu i/lub
+   dobrego sprzêtu. Jest jednak jeden skuteczny sposób na automaty na karty.
+   Potrzebny jest tu tzw. DTMF-dialer. Ca³y problem polega na tym, ¿e do czasu
+   uzyskania po³¹czenia mikrofon jest zablokowany. Mo¿na to obejœæ. 1) Trzeba
+   poznaæ numer budki: albo jest on napisany, albo dzwonimy na komórkê i tam
+   siê on poka¿e  2) Dzwonimy do budki z komorki lub... z innej budki, po jednym
+   sygnale roz³¹czamy siê  3) po 1-3 sekundach od dzwonka podnosimy s³uchawkê
+   w upatrzonym automacie  4) na wyœwietlaczu mamy napis ROZMOWA PRZYCH. i mi-
+   krofon jest w³¹czony  5) wybieramy dialerem dowolny numer
+   Jedyn¹ wad¹ s¹ piski w s³uchawce co kilka sekund, ale gadaæ siê da.
+
+   Pentaconta box  Nastêpne urz¹dzenie, które dzia³a, a nieczêsto jest
+   opisywane. Mo¿e ze wzglêdu na wycofywanie central Pentaconta do konca 2000r.
+   Sam uk³ad jest banalnie prosty - potrzebujemy potencjometr 10K i dowolny
+   wy³¹cznik. Natomiast opis jest ju¿ trudniejszy (strojenie tego boxa).
+   Nie wdaj¹c siê w szczegó³y - podnosz¹c s³uchawkê w³¹czamy szereg przekaŸników
+   na centrali, odpowiedzialnych za ró¿ne czynnoœci - pod³¹czenie sygna³u,
+   kolejnych stopni wybierania grupowego, rejestrów no i timera z licznikiem.
+   S¹ to ró¿ne modele przekaŸników i ka¿dy w³¹cza siê przy nieco innych granicz-
+   nych pr¹dach. Normalnie nie ma to znaczenia, ale gdy pr¹d bêdziemy regulowaæ
+   p³ynnie... jedne siê w³¹cz¹, a drugie nie :)
+   Potencjometr pod³¹czamy szeregowo z telefonem, natomiast prze³¹cznik równo-
+   legle do potencjometru, aby mo¿na by³o go zewrzeæ i uzyskaæ normalny obwód.
+
+                    ==== WY£.
+             ÚÄÄÄÄÄÄ*  *ÄÄÄÄÄÄ¿
+             ³                ³
+       ¯ÄÄÄÄÄÁÄÄÄ\/\/\ÄÂÄÄÄÄÄÄÁÄÄÄÄÄÄ¯ Telefon
+      Centrala  10K³   ³
+                   ÀÄÄÄÙ
+   A oto procedura strojenia: (UWAGA: dzia³a tylko dla central Pentaconta K66)   * Wy³ otwarty
+   * ustawiæ potencjometr w skrajnej pozycji
+   * podniesc sluchawke - jeœli brak sygnalu, ustawic pot. w przeciwnej pozycji
+   * teraz s³ychaæ sygna³ zg³oszenia 400Hz
+   * powoli zwiêkszaæ wartoœæ rezystancji
+   * podczas regulacji powinno byæ s³yszalne nag³e obni¿enie si³y sygna³u
+   * odlozyc sluchawkê i na nowo podnieœæ po 3 sekundach
+   * je¿eli slychac sygna³, nale¿y jeszcze troche zwiêkszyæ wartoœæ rezystancji
+     i dalej próbowaæ kroku poprzedniego a¿ do chwili, kiedy po podniesieniu
+     s³uchawki nie bêdzie sygna³u
+   * od³o¿yæ s³uchawkê, zamkn¹æ wy³¹cznik, podnieœæ sluchawkê
+   * otworzyæ wy³¹cznik
+   * je¿eli sygna³ siê roz³¹czy³, zmniejszyæ trochê rezystancjê i od nowa
+   * je¿eli s³ychac os³abiony (cichy) ton 400Hz, to regulacja zostala
+     zakoñczona pomyœlnie
+
+   Uzytkowanie:
+   1) zamkn¹æ wy³¹cznik   2) podnieœæ sluchawkê  3) otworzyæ wy³¹cznik
+   4) wykrêciæ numer      5) po uzyskaniu po³¹czenia (po 1-3s): wy³. zamkniêty
+   6) od tej pory rozmowa jest darmowa
+
+D o d a t e k   1 :   t a b e l e
+
+   Sygnalizacja CCITT R2
+   Czas trwania sygna³u 3825Hz,  A: w przód,  B: wstecz
+   A: przy³¹czenie: 150msñ30     ROZ£¥CZENIE:  600msñ120 powtarzane
+   B: zg³oszenie Ab.B: 150msñ30  wy³¹czenie Ab.B: 600msñ120
+   Numer telefonu jest wybierany tonami "2 z 5". Istniej¹ dwa zestawy
+   po 5 czêstotliwoœci (transmisja A->B i B->A). Nadajemy naraz dwie:
+   * w przód         1: 1380, 1500   2: 1380, 1620   3: 1500, 1620
+     4: 1380, 1740   5: 1500, 1740   6: 1620, 1740   7: 1380, 1860
+     8: 1500, 1860   9: 1620, 1860   0: 1740, 1860
+   * wstecz          1: 1140, 1020   2: 1140,  900   3: 1020,  900
+     4: 1140,  780   5: 1020,  780   6:  900,  780   7: 1140,  660
+     8: 1020,  660   9:  900,  660   0:  780,  660
+
+   Wszelkie inne dane mogê w razie potrzeby wys³aæ e-mailem.
+
+                                                                                
+                         _rasta_@mailexcite.com                                 

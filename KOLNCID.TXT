@@ -1,0 +1,206 @@
+
+
+           ===================>    Kolnierzyk    <===================
+
+                               VII 2000 - XI 2002b
+
+                               koln@poczta.onet.pl
+
+                  ===================>    <===================
+
+
+    Witam :)
+    Ten tekst bedzie bardzo, bardzo krotki i przedstawi mozliwosci manipulacji
+    usluga zwana CallerID, czyli wyswietlaniem wlasnego numeru na komorkach,
+    u operatorow numerow 0800 itd. Gdyby nastapilo uaktualnienie tego tekstu,
+    nalezy go szukac na stronie Hrabiego: http://phreak.hack.pl.
+
+1.  CALLERID NA LINII STACJONARNEJ
+    Metoda ta zostala wymyslona przez moja prawa reke - Przemka. Przydaje sie,
+    gdy np. ktos zadrecza nas gluchymi telefonami. Dzis sposob ten wydawac sie
+    moze oczywisty, ale kiedys nie byl... jak wiadomo, czasem najprostsze rze-
+    czy sa najtrudniejsze do wymyslenia. Metoda nie wymaga budowania zadnych
+    urzadzen ani wysylania do naszego telefonu domowego przez nasza centrale
+    numeru osoby do nas dzwoniacej.
+
+    Aby przekonac sie, kto do nas dzwoni, wystarczy bezwarunkowo przekierowac
+    wywolania naszego numeru domowego na telefon komorkowy (oczywiscie z wla-
+    czona usluga prezentacji numeru osoby dzwoniacej)... Trzeba byc w tym celu
+    podlaczonym do centrali cyfrowej i uzywac wybierania tonowego (DTMF),
+    a w praktyce wykonanie przekierowania wyglada tak:
+
+    *21* nr komorki #   - wlaczenie przekierowania
+    #21#                - wylaczenie przekierowania
+
+    Gdy ktos zadzwoni na nasz numer domowy, telefon domowy sie nie odezwie,
+    natomiast zadzwoni komorka i wyswietli sie na niej nie nasz numer domowy,
+    a numer osoby do nas dzwoniacej... Wada tego rozwiazania jest to, ze jesli
+    odbierzemy polaczenie na komorce, poniesiemy koszt polaczenia naszego te-
+    lefonu domowego z komorka. Lepiej wiec nie odbierac polaczenia i za chwile
+    zadzwonic do osoby nas przesladujacej, aby uslyszec jej zdumienie... Gdy
+    przenoszenie wywolan jest aktywne, po podniesieniu sluchawki telefonu
+    stacjonarnego zamiast zwyklego dialtone uslyszymy dialtone przerywany co
+    jakis czas na krotka chwile.
+
+2.  WYLACZANIE WYSYLANIA WLASNEGO CALLERID
+    Ten sposob podaje tu dla porzadku i znalazlem go w bardzo dobrym FAQ pt.
+    Phreaking Overview In Warsaw v.3.20 nieistniejacej juz grupy Ranger/974
+    Group, FAQ ten wciaz mozna znalezc pod adresem http://www.phreak.warsaw.
+    com.pl (kopia FAQ dostepna jest takze na stronie Hrabiego).
+
+    Metoda ta wymaga posiadania centrali cyfrowej Alcatel S-12. Nalezy tonowo
+    wybrac kod:
+
+    *31#
+
+    nastepnie poczekac chwile na dialtone, a po jego pojawieniu sie normalnie
+    wybrac numer telefonu, na ktory chcemy zadzwonic. Nalezy jednak dodac, ze
+    TPSA coraz czesciej blokuje dzialanie tego kodu na swoich centralach.
+
+    Jesli ktos chce zablokowac wysylanie wlasnego CallerID na stale, powinien
+    udac sie do BOK i zastrzec swoj numer. Jest to usluga bezplatna, mozliwe
+    jest tez zastrzezenie swojego numeru wraz z jego jednoczesna zmiana na in-
+    ny - wtedy wiaze sie to z jednorazowa oplata rzedu kilkunastu zlotych.
+
+3.  ZMIANA WLASNEGO CALLERID
+    Ta metoda nie pozwala, niestety, na dowolna zmiane CallerID, ale zawsze
+    lepsze to niz nic. Mozna jej uzywac takze, gdy metoda opisana w punktcie
+    wyzej nie dziala, wystarczy, ze nasza centrala rozpoznaje wybieranie to-
+    nowe.
+
+    Otoz calosc opiera sie na usludze TPSA pozwalajacej wykorzystywac do dzwo-
+    nienia tak zwana karte prepaid. Karta nazywa sie Telekarta TP, w najtan-
+    szej odmianie kosztuje 25 zlotych. Zasada dzialania uslugi jest prosta:
+    dzwonimy pod bezplatny numer 0808 11 22 33 (w Polsce) lub inny podany na
+    odwrocie Telekarty (w zaleznosci od kraju, w ktorym przebywamy). Po uzys-
+    kaniu polaczenia wybieramy tonowo 12-cyfrowy numer naszej Telekarty i e-
+    wentualnie przy pierwszym uzyciu 4-cyfrowy kod aktywacyjny (Telekarta waz-
+    na jest przez 6 miesiecy od chwili aktywacji). Nastepnie wybieramy numer,
+    na ktory chcemy zadzwonic, a koszt polaczenia odliczany jest z naszego
+    konta przypisanego do Telekarty, na ktorym poczatkowo znajduje sie suma
+    rowna cenie Telekarty. Nastepuje laczenie z wywolywanym przez nas rozmow-
+    ca, ktory (jesli ma wlaczona prezentacje numeru osoby dzwoniacej) widzi,
+    ze dzwoni do niego numer... +48 22 08081. Jak widac numer jest dosc dziw-
+    ny, bo po odrzuceniu kierunkowego ma tylko 5 cyfr (ktore stanowia poczatek
+    numeru 0808 11 22 33). Jak latwo sprawdzic, po zadzwonieniu na ten numer
+    uslyszymy: "Nie ma takiego numeru"... Co ciekawsze, numer +48 22 08081
+    jest wyswietlany niezaleznie od tego, czy dzwonimy na numer dostepowy us-
+    lugi z Polski (0808 11 22 33), czy tez z zagranicy (numer zalezny od kra-
+    ju).
+
+    Wada uzywania Telekarty jest dosc wysoka cena za polaczenia (nawet lokal-
+    ne), no ale jesli komus bardzo zalezy... Warto jeszcze dodac, ze nie tylko
+    TPSA oferuje karty prepaid, ostatnio pojawilo sie wiele firm oferujacych
+    uslugi na zasadzie Voice over IP, np. Interfon, Tele2, Telegrosik, Tele-
+    pin, Teleplanet. Karty prepaid wprowadzila ponoc nawet Netia, ale na jej
+    stronie WWW ciezko znalezc jakas przydatna informacje na ten temat. W za-
+    leznosci od operatora mozliwe lub tez niemozliwe jest wykonywanie polaczen
+    miedzynarodowych, miedzymiastowych, do sieci komorkowych i lokalnych. Nie
+    wiem, jak przedstawia sie sprawa prezentacji naszego numeru przy korzysta-
+    niu z uslug w/w operatorow.
+
+4.  PRZEKAZYWANIE INFORMACJI O NUMERZE
+    Normalnie informacja o numerze osoby dzwoniacej jest przekazywana od ope-
+    ratora, u ktorego inicjalizowane jest polaczenie, az do operatora docelo-
+    wego, ktory moze przekazywac informacje o numerze abonentowi wywolywanemu
+    (telefony komorkowe z wlaczona usluga CallerID, linie analogowe - rzadko,
+    linie ISDN (ISDN powszechnie jest stosowany na liniach sluzb ratunkowych,
+    liniach 0800, liniach obslugi klientow TPSA - np. biura numerow, biura
+    uszkodzen)) lub moze informacji o numerze nie przekazywac (telefony komor-
+    kowe z wylaczona usluga CallerID, wiekszosc linii analogowych). W przypad-
+    ku zastrzezenia numeru przez osobe inicjalizujaca polaczenie jej numer
+    rowniez jest przekazywany az do operatora koncowego wraz z informacja
+    o jego zastrzezeniu. Numer taki filtrowany jest dopiero podczas wysylania
+    go do abonenta koncowego, gdyz abonenci o odpowiednich uprawnieniach (np.
+    sluzby ratunkowe) pomimo zastrzezenia numeru powinni miec mozliwosc jego
+    prezentacji. Spotkalem sie jednak z dwoma przypadkami bardzo dziwnego
+    skonfigurowania uslugi CallerID, uniemozliwiajacymi rozpoznanie numeru:
+
+    a) Centrala, w ktorej numery mialy postac, powiedzmy, 655 xx xx, prezento-
+       wala sie w postaci +48 22 655. Przypuszczam, ze byla to centrala analo-
+       gowa, tyle ze zazwyczaj centrale analogowe nie wysylaja zadnej informa-
+       cji o numerze.
+
+    b) Centrala, z ktorej zainicjalizowano polaczenie, byla analogowa lub abo-
+       nent inicjalizujacy polaczenie mial zastrzezony numer. Prezentacja nu-
+       meru miala postac +48 22 xx, gdzie xx sie zmienialo - byl to numer
+       wiazki laczy, po ktorej operator koncowy (czyli moj) otrzymal polacze-
+       nie.
+
+    Nawet jednak w takich przypadkach na podstawie billingu mozna dowiedziec
+    sie, z jakiego numeru zainicjalizowano polaczenie. W chwili inicjalizacji
+    polaczenia nasza lokalna centrala rejestruje bardzo szczegolowe informacje
+    o nim, dodatkowo informacje te gromadzic moze centrala docelowa (choc wca-
+    le nie musi). Billing otrzymywany w BOK-u przez zwyklego abonenta zawiera
+    tylko czesc informacji gromadzonych przez centrale, przy czym abonent moze
+    otrzymac wylacznie billing polaczen wychodzacych. Natomiast operator ma
+    rowniez mozliwosc tworzenia billingu polaczen przychodzacych, choc w tym
+    akurat przypadku informacje o polaczeniach zainicjalizowanych poza centra-
+    la abonenta trzeba zebrac z odleglych central, tych ktore zainicjalizowaly
+    polaczenia - czasami od innego operatora (chyba ze zalozono lokalne logo-
+    wanie). W billingu operatora dostepne sa takie informacje, jak: dokladna
+    data i czas rozpoczecia lub zakonczenia polaczenia, numer abonenta wywolu-
+    jacego, numer abonenta wywolywanego, czas trwania wywolywania przed ode-
+    braniem polaczenia, czas trwania polaczenia w sekundach, liczba jednostek
+    taryfikacyjnych, numer wychodzacej i przychodzacej wiazki laczy, numer wy-
+    chodzacego i przychodzacego lacza, stan linii abonenta wywolywanego (wol-
+    na, zajeta), dokladnie kazda cyfra (lub *, #) wybieranego numeru (rowniez
+    numerow blednie wybranych) - np. *31#7654321, koszt polaczenia w zlotych
+    i pare jeszcze innych informacji technicznych. Oczywiscie nie musze chyba
+    dodawac, ze wydruk polaczen mozna dowolnie filtrowac wedlug podanych wyzej
+    parametrow... Tak wiec podsumowac to mozna wyrazeniem: "permanentna inwi-
+    gilacja" :) Dlatego opisane w tym tekscie metody zmiany lub ukrywania
+    wlasnego numeru nie nadaja sie do informowania o podlozeniu bomby czy ro-
+    bienia innych rownie idiotycznych rzeczy.
+
+5.  ZAKONCZENIE
+    Na zakonczenie prosze o cierpliwosc w oczekiwaniu odpowiedzi na listy,
+    zwlaszcza w wakacje...
+
+    A teraz to co zwykle:
+
+    Podziekowania:
+     - Aga - dzieki za wszystko 
+     - Przemek - dzieki za mila wspolprace i tworcze pomysly :)
+
+    Pozdrowienia:
+     - Urmet Developers
+
+    I to juz koniec, nie ma juz nic ;)
+
+             ===================>    Koniec    <===================
+
+
+============ Obetnij ===========================================
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+Version: PGPfreeware 5.0i for non-commercial use
+
+mQGiBDgBAVYRBAD4gtSMwwA3ePUhkwUAZitgL3gFc5Z+sTgz+7CACF5WiGmfoVt6
+vI3a9AtCPKaWiUXFltt/DVkVvSvmdLMvOJI+06/cSUjFN3tUGBxHOsH6OMqJOzEd
+Wn2XJf5QLUyBupfqtJoPe4tqyqC9F65Xqzk6EsPWf8EREmMcWft4nHeDDQCg/33m
+yng1QTKq/66EmEpSlcblXbMEALweldeHgtsPF+MBS8JX2bFJp8zjJyPSPWPTeWSu
+f0f3E6J/yaCUqfyCfX7KgklU+blBlUYlyjyorsK1VQa1lUIdWcaMbgSLIEyyzu49
+Z/euRE0sI4E46bHDQVVCZX2OA7w1HgYnOtx6DUnPc7NJLqcvyd7EfStYigJIYNJl
+Bpj1A/9JnXqC18WJSmqDYNbJrAMdVarGm93rRfd1Yccenm9wGWZtJORMGHaTp4qy
+HTWckL3aN0ZEoVtBz+LUcsczBFMk8AhjXP/eDF9O0+7ZwOT3rMHLonlWK2YRGd9P
+0vhvVhH/QllAZnijHwYZLJenSuOC4YCcuJ/osuypJj1VCeeuELQgS29sbmllcnp5
+ayA8a29sbkBmcmlrbzYub25ldC5wbD6JAEsEEBECAAsFAjgBAVYECwMBAgAKCRBV
+jKGUK7+FsnShAKDrjLzbzAgPSeVwazBpu0h0S+F3wwCbBMb95KoGAKWFHATebDgm
+8YiYJdG0IEtvbG5pZXJ6eWsgPGtvbG5AcG9jenRhLm9uZXQucGw+iQBLBBARAgAL
+BQI4NKNzBAsDAQIACgkQVYyhlCu/hbKvXgCg8HzqGh4cqitX1teJDHQJpA+JIcMA
+njnAd+lP3VKxVJAJhTlT+zACQT6auQINBDgBAVcQCAD2Qle3CH8IF3KiutapQvMF
+6PlTETlPtvFuuUs4INoBp1ajFOmPQFXz0AfGy0OplK33TGSGSfgMg71l6RfUodNQ
++PVZX9x2Uk89PY3bzpnhV5JZzf24rnRPxfx2vIPFRzBhznzJZv8V+bv9kV7HAarT
+W56NoKVyOtQa8L9GAFgr5fSI/VhOSdvNILSd5JEHNmszbDgNRR0PfIizHHxbLY72
+88kjwEPwpVsYjY67VYy4XTjTNP18F1dDox0YbN4zISy1Kv884bEpQBgRjXyEpwpy
+1obEAxnIByl6ypUM2Zafq9AKUJsCRtMIPWakXUGfnHy9iUsiGSa6q6Jew1XpMgs7
+AAICB/9kshefIzvExw89rTprhSINGlASU99itEYQlhBKu2FhHtVBw0RaW1h2OO7D
+9hi21EOx2xe2OZMq9SHNnPW43tM3nKCd4wnZXNgPYZfyRH/+HJdJ2ms+bHXwhNcm
+lANPeSejZkU/sUc9VMnZILyB91f9WtOfCIUUn8J+aR9GG16yShCeyVavoypuSLAz
+gTTVdDADVRMxRrX7Xr+vKQn9V1I/6VRJOiBSY5xwMnxL2tDy9w2d64EBOHo7Js9f
+Q4BaUs6yo/nwU8mnUVmNvF3m7JK6OWrTMlEBsAtSTJNUXnXGbwV4QE8esBk79/7M
+jLwsiakyLrgfn2oH0CTpRx6kKGYqiQA/AwUYOAEBV1WMoZQrv4WyEQKB4ACfaGvY
+gDEFYqOiVIYPLrjIyOu09xQAoNDeNmaveOGj0Wu04Dv+i4JxjUmj
+=wWaL
+-----END PGP PUBLIC KEY BLOCK-----
+============ Obetnij ===========================================

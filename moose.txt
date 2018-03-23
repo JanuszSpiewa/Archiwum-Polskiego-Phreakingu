@@ -1,0 +1,84 @@
+      moosehead
+mosehead@friko2.onet.pl
+http://no.home.page.yet
+
+
+  Wiem ze podpinanie sie raczej niewiele ma wspolnego z 
+  phreakiem, ale co tam ...
+
+
+  Wiec... Metod na podpiecie sie opisanych jest sporo, ale wszystkie maja
+jedna wade: polaczenie mozna latwo znalezc. Wszyscy pisza oczywiscie, aby
+robic to w ten sposob, by moc to szybko zdemontowac w momencie, gdy wqrwiony
+wlasciciel telefonu pojdzie to tepsy a potem na policje, lub tez montowac
+calosc tylko na czas polaczenia. I tu wlasnie wszyscy oni popelniaja blad...
+  Otoz, wszyscy oni ZAKLADAJA, ze osoba, ktorej nabijamy rachunek, pojdzie
+od razu do tepsy czy tez na policje... A co, jesli np. gostek zrobi male
+dochodzenie we wlasnym zakresie, nie informujac nikogo, nawet Ciebie, a gdy
+juz dowie sie, ze to Ty, zacznie dzialac na Twoja szkode? Pare lat temu
+jakis dupek podpinal sie do mnie, pokapowalem sie po tygoniu, gowniarz w nocy
+wydzwanial z mojego phona po bbs-ach, ale nie wiedzial, ze sam mam modem i 
+tez uzywam telefonu w nocy... Szybko znalazlem miejsce gdzie sie podpinal, 
+zaczailem sie na niego pare razy i ... Co prawda nie zlapalem go, bo dran
+chyba sie zorientowal, ze na niego poluje i w pewnym momencie przestal sie
+podpinac, ale jest to przyklad, ze mozesz nie wiedziec, ze 'druga strona'
+wie o tobie, mimo iz nie daje tego po sobie poznac.
+  'Potrzebny ci bedzie kabel i krokodylki'... No tak, cala sprawa w tym
+przypadku polega na podloczeniu swojego kabla do cudzego lub tez pociagniecia
+cudzej lini wprost do siebie do domu. Banalne, nie? Kazdy moze sobie w ten
+sposob zrobic dobrze. Jednak nie kazdy zrobi to w sposob zapewniajacy
+niewykrywalnosc.Np. u mnie w bloku skrzynka w piwnicy jest otwarta, kazdy
+moze sobie ja poogladac, wiec polaczenie mojej lini z inna natychmiast
+zostaloby wykryte.To samo na korytarzach: w sieni jest mala skrzynka, z ktorej
+kable prowadzone sa do poszczegolnych mieszkan, wiec to odpada... Tymczasem
+sposob znalazlem zupelnie gdzie indziej...
+  Niedawno moj kumpel zrobil sobie z innym kumplem mieszkajacym pare pieter
+wyzej polaczenie null-modem. Nic interesujacego poza sposobem w jaki to 
+zrobili. W pokoju w ktorym stoja ich kompy (mieszkaja w tym samym pionie)
+biegna trzy rury: dwie z kaloryfera i jedna, w ktorej biegnie Azart. 
+Niektorzy na pewno juz wiedza do czego zmierzam :) Tak wiec rura z kaloryfera
+zostala potraktowana jako jeden kabel, a kaloryfer jako drugi. Wszystkie
+rury byly dosc cienkie, wiec przez trzy pietra nie stawialy zbyt duzego
+oporu, a pozniejsze testy wykazaly, ze przez 10 pieter tez by sie dalo.
+Podsunolem koomplowi pomysl, ktory on potem wcielil w zycie. Heh, juz na pewno
+sie domyslacie, ze poradzilem mu podloczyc owe rurki do lini telefonicznej.
+Po co? Ano, rury biegna od piwnicy az po sam szczyt bloku, tak wiec przechodza
+przez wszystkie mieszkania w danym pionie. I co z tego? To z tego, ze nie 
+sposob w danym momencie sprawdzic, kto z tego korzysta: podejrzanych jest
+kilka - kilkanascie mieszkan :) Oczywiscie jak ktos sie uprze to mozna
+z gory wykluczyc wszytkie babcie na przyklad i skoncentrwac sie na ten 
+przyklad tylko na osobach z komputerkami. Koompel dziala w ten sposob na
+interku od jakiegos czasu, nie uzywa oczywiscie wtedy swojej poczty i swojego
+nicka na ircu, bo tpsa loguje IP pod 0202122. Nikt sie do niego nie moze 
+przyczepic - bo co, ma modem podlaczony do kaloryfera??? No dajcie spokoj...
+  Nie jest oczywiscie tak rozowo. Po pierwsze - na czym dzialamy. Jak napisalem
+kumpel ma cienkie rury, maly opor. A ja juz nie moge - moje rury sa sporej 
+grubosci, i maja chyba gigaomowy opoor :( Tak wiec nie na wszytkich 
+kaloryferach sie da. Nawet jesli ktos ma odpowiednio malo-oporowe kaloryfery,
+musi miec jeszcze drugi 'kabel' - obie rury sa przecierz zwarte. Jest jeszcze 
+instalacja Azart, albo zwykly kabel antenowy lecacy z dachu, ale nie kabel z 
+kablowki, niestety. Mozna to spoko wykorzystac, ale to tez tylko jeden 'kabel'.
+Trzeba wiec poszukac gdzie indziej. Ja znalazlem w szybie wentylacyjnym :)
+Jest to komin biegnacy przez wszystkie kuchnie w moim bloku, a wylozony jest od
+wewnatrz cienka blacha. Ale mozliwosci mozna znalezc na pewno wiecej : w 
+starych blokach, w ktorych jest kablowka, mozna czasem znalesc stare, 
+nieuzywane kable radiowe i tv z antety na dachu, mozna sprobowac z rurami
+wodociagowymi, a moze macie cztery zyly w kablu w domofonie, a wykorzystywane
+sa tylko trzy... Tak wiec trzeba poszukac, a nuz cos znajdziemy odpowiedniego,
+tak by napiecie offhook nie spadlo zbyt nisko (ja mam pentaconte, do jakis
+2.5v - 3.5v moze spasc)
+  Jak juz znajdziemy to powstaje drugi problem - taka 'linie' i tak trzeba
+podpiac. No ale tu juz mamy wolna reka, jak sie ktos kapnie to i tak nie
+bedzie wiedzial gdzie dokladnie szukac sprawcy, bo kabel biegnacy do jakiejs
+rury w piwnicy nie wskazuje na nikogo konkretnego... Jesli ktos 'zdejmie'
+wasza instalacje, to smialo mozecie ja zalozyc na nowo. Reszta to szczegoly, 
+chociaz jestem pewien za np. podczas burzy moze sie wszystko zwalic (teraz
+jest prawie zima i nie ma burz :)
+
+  Na koniec cos odemnie: Ludzie!!! Nie podpinajcie sie do byle kogo!!! Wiem
+ze to przeczy temu co tu napisalem, ale pomyslcie sami: podpinanie sie do
+kogos, kto sam nie wiaze konca z koncem to po prostu swinstwo!!! Podpinajcie
+sie do kogos, kogo nie lubicie, jakiegos nadzianego bubka, albo do
+pracownika tpsa, ktory ma phona za free!!! Badzcie grzesznikami, ale 
+nie swiniami...
+

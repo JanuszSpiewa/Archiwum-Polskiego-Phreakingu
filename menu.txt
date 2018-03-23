@@ -1,0 +1,717 @@
+
+                       >>hrabia diagnostic_menu faq<<
+                               >>v.02.10.99<<
+
+
+                             ..--= HRABIA =--..
+                             hrabia2@kki.net.pl
+                         http://hack.zone.to/hrabia/
+                           http://www.tpsasux.com/
+
+
+
+LEGENDA:
+N - nowe
+U - uaktualnione
+Z - zmienione bo stare bylo 'niepewne'
+? - niepewne;)), badz nie sprawdzone jeszcze
+
+
+U  1. INFO
+U  2. NAWIGACJA
+   3. MENU NIEBIESKIEGO URMETA
+      3.0. PROG. DEFAULT
+U     3.1. DIAGNOSTIC MENU
+      3.2. COUNTER MENU
+      3.3. DIAL MENU
+      3.4. C90 MENU
+      3.5. TAXATION MENU
+U     3.6. SW VERSION MENU
+      3.7. FREE NUM. MENU
+      3.8. LOCK NUM. MENU
+      3.9. WATCH MENU
+   4. DZWONIENIE Z KARTY
+      4.1. TAXATION MENU
+      4.2. 900
+      4.3. NUMER BUDKI
+      4.4. BIPER
+           4.4.1. ROZMOWY LOKALNE
+U  5. NASZE SLADY
+   6. UWAGA!!!
+U  7. FULL MENU
+N  8. TYPY KART SERWISOWYCH
+   9. GREETZ
+  10. PHREAK ZONE
+
+
+
+
+1. INFO
+
+Faq to  opisuje  rzeczy dostepne dla posiadaczy tzw. karty  serwisowej do
+niebieskich  urmetow - programing card.   Zawarte  w  tekscie  informacje
+sluza wylacznie celom  edukacyjnym  i   nie ponosze  odpowiedzialnosci za
+wszelkie przykrosci  wynikle po przeczytaniu  tego tekstu.  
+
+
+2. NAWIGACJA
+
+Po  poszczegolnych   pozycjach  poruszamy  sie  w  nastepujacy    sposob:
+# - zmiana  pozycji;   wyjscie  bez zatwierdzenia zmian  (dalej; anuluj),
+* - wejcie  do  pozycji;   zatwierdzenie  wyboru  (enter; wprowadz dane),
+1,2 - przyciski  on,  off;     wybor   miedzy  opcja  pierwsza  a  druga,
+wszystkie cyfry - do   wprowadzania  danych  wymagajacych  uzycia    cyfr
+0 - poruszanie sie po tablicach w VISUAL BLACK L.
+
+
+3. MENU NIEBIESKIEGO URMETA
+
+Teraz pelne menu  (z opisem)  niebieskiego  karciaka.  W  sposobie  opisu
+galezi drzewka menu polapac sie powinien  kazdy  sredniointeligentny user
+wiec rozpisywac sie nie bede. Zapisane jest  w  pozycji w jakiej widnieje
+na displayu. aha jezeli numerki roznych opcji  w  obrebie jednego  punktu
+sa takie same np. 1.2.1 w DIAL MENU to znaczy  ze  sa to dwie mozliwe  do
+wyboru opcje. A.. spisane z eproma w wersji 2.7 (bardzo stare epromy moga
+sie roznic... nowsze tez...
+
+3.0. PROG. DEFAULT
+Menu to jest dostepne tylko po uzyciu specjalnej wersji karty PROGRAMMING
+(zwykle  karty  programming  nie uruchamiaja tego menu!)  lub karty TEST.
+To menu "czysci" wszystkie wprowadzone informacje i ustawia budke tak jak
+ja fabryka stworzyla:) Pewnie dla tego  trzeba  kilkakrotnie  potwierdzic
+chec ustawienia defaultowych ustawien budki.
+
+   1.         PROG. DEFAULT
+   1.1         DEFAULT   Y
+               DEFAULT   YE
+               DEFAULT   YES   - wybierajac opcje 'DEFAULT   Y' kilka razy
+musimy nacisnac '*' az budka upewni sie ze naprawde chcemy to zrobic:)  Po
+tej operacji budka wyswietli  PROG. DEFAULT OK  [ustawienienia  defaultowe
+zaprogramowane] lub PROG. DEFAULT KO [gdy wystapil jakis blad...]
+
+
+3.1. DIAGNOSTIC MENU
+Wiekszosc  opisu  tego menu  na  podstawie faq   kolnsoft.txt  Kolnierzyka
+(polecam, do sciagniecia z  phrEAk zOnE ). Menu dostepne takze po otwarciu
+budki. 
+
+   1.       DIAGNOSTIC MENU
+   1.1          CODE # 1: XX   - kod  najnowszego  zdarzenia, w przypadku,
+gdy wystapi nowsze _inne_ zdarzenie to "spychane" jest na pozycje nr2 itd.
+kody zdarzen ciut ponizej:)
+
+   1.2          CODE # 2: XX   - poprzednie _inne_ zdarzenie
+   1.3          CODE # 3: XX
+   1.4          CODE # 4: XX
+   1.5          CODE # 5: XX
+   1.6          CODE # 6: XX
+   1.7          CODE # 7: XX
+   1.8          CODE # 8: XX
+   1.9            CLEAR CODE   - czyszczenie
+   1.9.1       CLEAR   _____
+   1.9.1.1     CLEAR   UUUUU
+   1.9.1.1.1   CLEAR   00000
+   1.10                 EXIT   - wyjscie z podmenumenu
+
+
+Kody zdarzen:
+
+Legenda (cytat z kolnsoft.txt):
+
+-    - nie dzwoni na centrale po ustawieniu kodu
+!    - dzwoni na centrale natychmiast
+PZ   - dzwoni po zamknieciu automatu
+L1   - dzwoni,  jesli  przekroczono  limit  5  zdarzen  (licznik  ten jest
+       wspolny dla wszystkich zdarzen oznaczonych jako  L1,  czyli automat
+       prowadzi licznik wspolny dla zdarzen L1.
+L2   - dzwoni, jesli przekroczono limit 11 zdarzen (takze wspolny licznik)
+
+
+Kody (czesc cytowana z kolnsoft.faq):
+W postaci: "kiedy dzwoni" | kod szstnastkowo | kod dziesietnie | opis 
+
+-  01 (01) - przeslano dane do centrali ("ZAJETY/BUSSY")
+!  0B (11) - sprawdzono, czy pamiec RAM sprawna w  zakresie #$6000-#$7787
+             sprawdzanie  pamieci  odbywa sie,  gdy suma kontrlna pamieci
+             sie nie  zgadza,  np.  gdy wyjeto i z powrotem wlzono kostke
+             zawierajaca RAM; Czyli: utrata danych pamieci RAM.
+!  0C (12) - zaprogramowano w EEPROM wartosci domyslne (z EPROM) Nstepuje
+             to w wyniku uzycia "DEFAULT MENU"; Utrata danych programu.
+PZ 0D (13) - otwarcie drzwi aparatu
+L1 0E (14) - proba oszukania aparatu.
+!  0F (15) - n kolejnych pdniesien sluchawki bez zrealizowania polaczenia
+             (np.: jest zablokowany wlot czytnika).
+L1 10 (16) - aparat odlaczony od centrali.
+L1 11 (17) - zbyt niska wartosc pradu pobieranego z centrali.
+L1 15 (21) - zablokowany przycisk klawiatury wybierczej.
+L1 16 (22) - inne uszkodzenie klawiatury niz przy kodzie 21 (dziesietnie)
+L1 17 (23) - uszkodzony odbiornik impulsow 16 kHz.
+?? 18 (24) - za niskie wewntrzne npiecie zasilania (nie dtyczy TSP-91/P0)
+L1 19 (25) - obnizone napiecie akumulatora.
+?? 20 (26) - uszkodzony obwod sluchawki.
+L1 1B (27) - uszkodzony obwod mikrofonu.
+-  1C (28) - uszkodzony blok modemu do wyminy informcji z centrum nadzoru
+!  1D (29) - ?
+L1 1F (31) - ?
+L1-20 (32) - m.in. probowano  uzyc karty falszywej - ponownie napelnionej
+!  21 (33) - ?
+!  22 (34) - rejestr Config <> #09
+-  23 (35) - nastapilo   przepelnienie  jednej   ze  statystyk.  Chodzi o
+             statystyki  ilosci  polaczen   lokalnych,  miedzymiastowych,
+             bezplatnych itd. itp.
+-  24 (36) - ?
+!  25 (37) - ?
+L1 51 (81) - blad wymiany informacji z centrum ndzoru (aparat nie uzyskal
+             polaczenia z centrum nadzoru lub w czasie wymiany informacji
+             wystapily zaklucenia).
+L1 52 (82) - kod sygnalizujcy nieprawidlowa prace czytnika.
+L1 53 (83) - proba uzycia niewlasciwej karty??
+L1 54 (84) - kod sygnalizujcy nieprawidlowa prace czytnika.
+L1 55 (85) - kod sygnalizujcy nieprawidlowa prace czytnika.
+L1 56 (86) - kod sygnalizujcy nieprawidlowa prace czytnika.
+L2 57 (87) - zablokowana karta w czytniku.
+!  58 (88) - krotkotrwale uszkodzenie - aparat naprawil sie sam.
+!  59 (89) - uzyto karty falszywej - z niewlasciwa suma  kontrolna; Proba
+             uzycia karty z niewlasciwej serii.
+!  5B (91) - ?
+!  5C (92) - ?
+!  5D (93) - ?
+L1 5F (95) - Uszkodzony
+
+Wiekszosc z tych kodow jest prawdziwych co do kilku (dziesietnie: 14, 16,
+81, 83) sa watpliwosci... a ta z tad iz w faq kolnsoft.txt te pozycje  sa
+przewaznie opisane jako uszkodzony  a  wg.  innych zrodel jest tam to  co
+opisalem powyzej. Jakby ktos mial pewne dane i inne informacje to czekam. 
+
+
+3.2. COUNTER MENU
+Dostepne takze po otwarciu budki, ale tylko czesciowo.  Znajduja  sie  tu
+informacje dotyczace wykozystania budki, ilosci przeprowadzonych  z  niej
+rozmow itp. 
+
+   1.       COUNTER    MENU
+   1.1           LOCAL PULSE   - ilosc impulsow zaliczone przez  budke  w
+polaczeniach lokalnych
+
+   1.1.1     T XXXX  P XXXXX   - T-licznik calkowity  impulsow  lokalnych
+P-licznik okresowy zerowany  co jakis  czas,  po  komunikacji  aparatu  z
+centrum nadzoru
+
+   1.2        NATIONAL PULSE   - impulsy zamiejscowe (ich prefiksy ustwia
+sie w NATIONAL NUM.  X .
+   1.3        INTERNAT PULSE   - impulsy miedzynarodowe ( 00 )
+   1.4              TAXATION   - calkowita ilosc impulsow - wszystkie
+   1.5            LOCAL CALL   - ilosc rozmow lokalnych z budki
+   1.6         NATIONAL CALL   - ilosc rozmow zamiejscowych
+   1.7         INTERNAT CALL   - ilosc rozmow miedzynarodowych
+   1.8            ENTRY CALL   - ilosc rozmow przychodzacych, czyli  ktos
+nam dzwoni na budke; jak jest ich duzo to warto poprobowac budke  na bugi
+z entry call, ewentualnie sprawdzic czy po zadzwonieniu na budke  ta  nie
+przedsawia sie czasem jako publiczna.
+
+   1.9             FREE CALL   - ilosc rozmow darmowych  przeprowadzonych
+z budki; wszystkie 0800, 997 itp;  tez warto sprawdzic  budke  na  bugi z
+z numerami darmowymi
+
+   1.10        CLEAR PARTIAL   - pozycja  dostepna tylko za pomoca  karty
+serwisowej  a  sluzy   do   czyszczenia   czesciowego   stanu   licznikow
+poszczegolnych pozycji w menu.
+   
+   1.10.1 -->patrz DIAGNOSTIC MENU 1.9.1 do 1.10
+   
+   1.11            CLEAR ALL   - dostepne za pomoca  karty serwisowej; do
+czyszczenia wszystkich pozycji
+
+   1.12                 EXIT   - wyjscie z podmenu
+
+
+3.3. DIAL MENU
+Dostepne tylko po uzyciu karty programming  a znajduja  sie tu  wszystkie
+sprawy zwiazane z wybieraniem numeru przez budke
+
+   1.       DIAL       MENU
+   1.1             DIAL TYPE   - rodzaj wybierania
+   1.2.1    DECAD.(TYPE 1-2)   - wybieranie impulsowe
+   1.2.1    DTMF  (TYPE 1-2)   - wybieranie tonowe
+   1.3            DIAL FREQ.   - ?
+   1.3.1    10 Hz (TYPE 1-2)
+   1.3.1    20 Hz (TYPE 1-2)
+   1.4      NATIONAL NUM.  1   - sa  to  kierunki  jakie budka  uwaza  za
+zamiejscowe. 
+ 
+   1.4.1                   8   - to bylo u mnie:)
+   1.5      NATIONAL NUM.  2
+   1.5.1                   0
+   1.6      NATIONAL NUM.  3
+   1.6.1                   0
+   1.7      NATIONAL NUM.  4
+   1.7.1                   0
+   1.8      NATIONAL NUM.  5
+   1.8.1                   0
+   1.9      NATIONAL NUM.  6
+   1.9.1                   0
+   1.10     NATIONAL NUM.  7
+   1.10.1                  0
+   1.11     NATIONAL NUM.  8     
+   1.11.1                  0
+   1.12     NATIONAL NUM.  9 
+   1.12.1                  0
+   1.13     NATIONAL NUM. 10  
+   1.13.1                  0
+   1.14                 EXIT   - wyjscie z podmenu
+
+
+3.4. C90 MENU
+Dostepne  tylko  po  uzyciu  karty  programming.  Sa  tu wszelkie dane  o
+komunikacji budki z centrala. 
+
+   1.       C90        MENU
+   1.1            ENABLE C90   - wlaczanie i wylaczanie systemu   nadzoru
+budki z poziomu centrali;  czy budka ma dzwonic na centrale  czy tez  nie
+
+   1.2      ENAB. (TYPE 1-2)   -  praca pod nadzorem
+   1.2      DISAB.(TYPE 1-2)   -  praca bez nadzoru
+   1.3            CALLS NUM.   -  ilosc   zrealizowanych   polaczen,   po
+ktorych  budka zadzwoni na  centralke i  poinformuje ja o swoim  zdrowiu,
+rozmowach, ktore przeprowadzila itp. m.in. z tad wiedza na  centrali  ile
+wydzwonila budka i jak im sie z bilingiem na cetrali nie  zgadza to wesza
+podstep i moga sie wkurzac:) hehe;] 
+
+   1.3.1                XXXX   - 4 cyferki w/w liczby 
+   1.4         NUM. TELEPHON   - nr budki:) (numer pod jakim  sie zglasza
+na centrali),  nie  trzeba kombinowac  juz z cudzymi CIDami,  paniami  na
+centrali i innymi przekretami, mamy numer jak na dloni:) chyba ze taj jak
+w Warszawie tPSA nie wpisala tam  numerow  telefonicznych budek a  jakies
+inne swoje numerki identyfikacyjne...
+
+   1.4.1    > XXXXXXX      <   - ow numerek, u mnie byl akurat 7 cyfrowy,
+ale moze byc i wiekszy/mniejszy
+
+   1.5              NUM. C90   -  nr telefonu do centralki:), czyli numer
+pod ktory budka ma dzwonic co te ilestam polaczen i w przypadkach naglych
+mozna sobie z tym jaja robic i wpisywac jakies inne rzeczy  (sasiad itp.)
+
+   1.5.1    > XXXXXXX      <
+   1.6                  EXIT   - wyjscie
+
+
+3.5. TAXATION MENU
+Dostepne tylko przy pomocy karty serisowej. Sa tu informacje jak budka ma
+zaliczac impulsy.
+
+   1.       TAXATION   MENU
+   1.1             TAX VALUE   - wartosc taksacyjna (ale se smiesznie  to
+nazwalem ale nic innego mi do glowy nie przychodzi) czyli prosciej mowiac
+ile impulsow ma skasowac budka z kartu po otrzymaniu sygnalu z centralki.
+W bardzo starych epromach dalo sie podobno ustawic to na 0,  ale  na oczy
+tego nie widzialem niestety. Mozna tez smieszne rzeczy robic, patrzysz  a
+w kolejce za toba stoi jakis dupek- dres z komora za pasem to buch mu  15
+zamiast 1 i facet zjechany hihi, trzeba bylo dzwonic z komoreczki  a  nie
+isc na latwizne, albo patrzysz extra panienka, kobieta w ciazy, babcia  z
+laska to zamiast 1 buch 0 i tez ok:).  Jak widac nizej mozliwe sa az trzy
+cyfry... 1 nowa setka na jedna trzy-minutowa rozmowe miejscowa:))) hehehe
+tylko jest jedno male "ale" jak wpiszemy tam np. 15 a ktos wsadzi karte z
+12 jednostkami (mniej niz 15) to w momencie wybierania numeru  pokaze  mu
+sie na displayu CREDIT 0 i tyle... ale jak wsadzi karte z wieksza iloscia
+impulsow to juz wszystko bedzie ok:)
+
+   1.1.1                 001   - liczba, o ktorej wyzej sie rozpisalem :)
+   1.2                16 KHz   - pierwszy  sposob  powiadamiania  budki o
+potrzebie zezarcia impulsu, w polskich budkach wlasnie taki sie  stosuje,
+a polega on na wyslaniu przez centrale sygnalu o czestotliwosci  16kHz  a
+budka jak go uslyszy to zjada impuls. 
+
+   1.2.1    ENAB. (TYPE 1-2)   - wlaczona  taryfikacja  za  pomoca  16kHz
+   1.2.1    DISAB.(TYPE 1-2)   - wylaczona taryfikacja za pomoca 16kHz:))
+   1.3                50 Hz    - inny od 16kHz sposob powiadamiania budki
+ze jest glodna i musi sobie pojesc, po prostu metoda zmiennej polaryzacji
+dziala na starych centralach...
+
+   1.3.1    DISAB.(TYPE 1-2)   - wylaczone
+   1.3.1    ENAB. (TYPE 1-2)   - wlaczone
+   1.4             CHECK TAX   - jest  to systemik odpowiadania centrali,
+ze impuls  zostal otrzymany:).   Centrala  wysyla do budki 16kHz,  budka
+otrzymuje  i w odpowiedzi wysyla do  centrali  12kHz  i centrala wie, ze
+wszystko jest ok, nikt sie nie wpina itp.
+
+   1.4.1    DISAB.(TYPE 1-2)   - wylaczone cus
+   1.4.1    ENAB. (TYPE 1-2)   - wlaczone
+   1.5                  EXIT   - wyjscie z podmenu
+
+
+3.6. SW VERSION MENU
+Dostepne tylko z karta serwisowa.  Wersja softu pod ktorym pracuje budka.
+Oczywiscie jest to EPROM z plyty glownej aparatu:)
+
+
+   1.       SW VERSION MENU
+   1.1      TELEPHONE  SOFT.  - software jaki znajduje sie w telefonie  i
+jaki zglaszany jest na centrale; mozna spradzic budke na bugi bez  testow
+ani otwierania i gapienia sie w eproma:) no chyba, ze ktos  wlasnorecznie
+przerobil wersje z 2.7 zeby mowiala, ze jest 2.9:))
+ 
+   1.1.1           PO   2.7   - to bylo u mnie:)
+   1.2      VISUAL BLACK L.   - prawie w calosci cytowane z kolnsoft.txt;
+dzieki dla Shadowa za podarowanie karty, ktora moglem obadac  to  menu:);
+Menu  to dostepne tylko po uzyciu specjalnej wersji kart progrmming! Jest
+to skrot od Visual Black List. Po menu podrozuje sie klawiszem 0! Numerki
+kart podzielone sa na 3 grupy (3 tablice w pamieci eeprom): 
+
+   1.2.1    11111 11111       \
+   ......   ..... .....       - tablica 1, ma 21 pozycji, karty z ktorych
+nie udalo sie skasowac pelnej wartosci  TAX VALUE  (menu 3.5  -  TAXATION
+MENU)
+
+   1.2.21   11111 11111       /
+   1.2.22   00000 00000       - pierwsze  5  cyferek  to  adres  pierwszej
+wolnej pozycji w 3 tablicy a nastepne 5 to liczba zapamietanych  pozycji w
+3 tablicy
+
+   1.2.23   33333 33333       \
+   .......  ..... .....       - tablica 3, ma 221 pozycji, wpisywane sa tu
+te karty, ktore zostaly ponownie napelnione lub ewentualnie z ktorych  nie
+udalo sie skasowac jednostek.
+
+   1.2.243  33333 33333       /
+   1.2.244  00000 00000       - suma kontrolna 3 tablicy i  suma kontrolna
+2 tablicy
+
+   1.2.245  00000 00000       - adres pierwszej wolnej pozycji w 2 tablicy
+a nastepne 5 cyferek to ilosc zapamietanych pozycji w 2 tablicy.
+
+   1.2.246  22222 22222 222   \
+   .......  ..... ..... ...   - tablica 2. Tablica ma  562  pozycje, kazda
+pozycja zajmuje 5 bajtow i zawiera, oprocz numeru seryjnego, rowniez  info
+o pozostalej na karcie liczbie  jednostek  (trzecia  (trzycyfrowa)  liczba
+wyswietlana jest wartosc  200  minus liczba kresek pozostalych na  karcie)
+
+   1.2.807  22222 22222 222   /
+   1.3                 EXIT   - wyjscie z podmenu
+
+
+3.7. FREE NUM. MENU
+Dostepne tylko z karta serwisowa. Numerki darmowe, czyli  takie na  ktore
+budka  zadzwoni  bez  wlozenia  do  niej  karty i nie bedzie chciala zrec
+impulsow. Da sie wpisac tylko 4 cyferki, ale dobre i to. W dalszej czesci
+faq jak z tego korzystac
+
+   1.      FREE NUM.  MENU
+   1.1       FREE NUMBER  1   - pierwszy numer darmowy
+   1.1.1   >              <   - tylko 4 cyferki... :(
+   1.2       FREE NUMBER  2   - drugi muner darmowy
+   
+   [...]
+   
+   1.30      FREE NUMBER 30   - trzydziesty numer darmowy
+   1.31                EXIT   - wyjscie
+
+
+3.8. LOCK NUM. MENU
+Dostepne  tylko z karta serwisowa.  Numerki zablokowane, czyli takie,  na
+ktore  budka za cholere nie zadzwonia a na wyswietlaczu pojawi sie "NUMER
+ZABLOKOWANY". Mozna pokasowac sobie 900, 974 itp. Mozna tez wpisac np. 01
+i zablokujemy polaczenia miedzymiastowe  zaczynajace sie na 01,  a  skoro
+miedzymiastowe to czemu by nie wpisac np. prefixu lokalnego i  calkowicie
+wylaczyc budke:))) hehe
+
+   1.      LOCK NUM.  MENU
+   1.1       LOCK NUMBER  1   - pierwszy zablokowany numer
+   1.1.1   >              <   - cztery cyferki
+   1.2       LOCK NUMBER  2   - drugi zablokowany numer
+   
+   [...]
+   
+   1.10      LOCK NUMBER 10   - dziesiaty zablokowany numer
+   1.11                EXIT   - wyjscie z podmenu
+
+
+3.9. WATCH MENU
+Dostepne z karta serwisowa. Po prostu zegarek i datownik. Szkoda, ze jest
+on tylko dla monterow, bo kto go kiedys widzial? Wywolac sie go da  tylko
+karta  programming  a  taka karte maja tylko monterzy  (albo raczej mieli
+mniec tylko monterzy:)))
+
+   1.      WATCH      MENU
+   1.1        DISPLAY WATCH   - wyswietlenie zegarka:) jakby jakis monter
+byl umowiony na spotkanie to urmet dba zeby sie nie spoznil jeszcze tylko
+budzika tam brakuje;) hihi
+
+   1.1.1       XX:XX:XX       - zegarek z ruchomym sekundnikiem!!! cool:)
+   1.2          WATCH PROG.   - zmiana   godziny;    ustawianie   zegarka
+   1.2.1              XX:XX   - wpisujemy  najpierw godziny  potem minuty
+   1.3           DATE PROG.   - zmiana daty, przy okazji jej wyswietlenie
+   1.3.1     XXXXXXXX         - data w formacie ddmmrrrr + mozliwosc  jej
+zmiany klawiszami numerycznymi w kolejnosci dzien, miesiac, rok  (4cyfry)
+
+   1.4                EXIT    - wyjscie z podmenu
+
+
+4. DZWONIENIE Z KARTY
+
+Hmm... Wkladamy karte, ta zatrzymuje sie na chwilke i wypada, ukazuje sie
+nam menu gdzie zmieniamy pare rzeczy i wsio.  Ale  trzeba pamietac aby po
+zakonczeniu rozmowy przywrocic budke do stanu dziewiczego:] 
+
+4.1. TAXATION MENU
+Ustawiamy w  TAXATION MENU  pozycje  TAX VALUE  na 000 zatwierdzamy *   i
+patrzymy co sie dzieje jak nic to * i ok, trafilismy na budke - archaika,
+a jak sie nam automatycznie zmienia na 1 to nici z tej metody
+
+4.2. 900
+W  LOCK NUM. MENU  odblokowywujemy numer 900 i zamawiamy rozmowe na koszt
+budki  (jej numer w  C90 MENU :).  Trzeba  wczesnij sprawdzic czy sie nie
+przedstawia. Jak mowi,  ze jest  publiczna  to kanal  a jak pika to mozna
+wymyslac. Z tego co czytalem jest kilka metod m.in.  metoda  na  konczace
+sie baterie w bezprzewodowcu, na glupa i pare innych:)
+
+4.3. NUMER BUDKI
+W  C90 MENU jest numer naszej budki a jak mamy numer to mozemy poprobowac
+budke na bugi z entry call, zwlaszcza ze w   SW VERSION MENU  jest podana 
+wersja softu i jak jest on 2.7 lub starszy to bug na entry call zadziala,
+oczywiscie jak mamy centrale co przyjmuje tony:)
+
+4.4. BIPER
+Centrala musi rozpoznawac tony, ale to juz wiekszosc potrafi, wiec w FREE
+NUM MENU  ustawiamy  sobie zaraz  na poczatku  (poczynajac od  pierwszego
+darmowego numeryu (997 chyba) poczatek naszego numeru (do 4 cyferek)  pod
+ktory  chcemy  zadzwonic.  Teraz bez wkladania karty do  budki  wybieramy
+poczatek (to co wpisalismy w menu) niestety po wybraniu  klawiaturka  sie
+blokuje  ale za to wlacza sie  nam  mikrofon  i  reszte  numeru w alimy z
+dialera:)) Jak nas rozlaczy po impulsie  znaczy sie mamy w budce  EEPROMa
+nowszego niz 2.8.. (ostatnio modne sa 2.9) i  musimy jeszcze  w  TAXATION
+MENU wylaczyc taryfikacje za pomoca 16kHz:))  i juz  nie  rozlacza:))  Po
+rozmowie wlaczamy 16kHz i usowamy nasz numerek z free num lsty (wpisujemy
+tam to co bylo wczesniej:)  bo  inaczej ludzie,  nie beda  mogli  dzwonic
+na  numery  zaczynajace  sie  na  nasze  cyferki...  Radze wpisywac  cale
+kierunkowe a  nie tylko  0X  bo  mozemy nie miec okazji  skasowac  a  jak
+wpiszemy 0X to nikt nie dodzwonie sie na zmiejscowe zaczynajace sie od 0X
+Aha... jak wylaczylimy czujke 16kHz to koniecznie musimy ja po skonczeniu
+rozmowy wlaczyc gdyz w przeciwnym razie budka przy "normalnym" dzwonieniu
+nie bedzie odblokowywala mikrofonu i ludzie sie beda denerwowac... dzieje
+sie tak dla tego,  ze do  odblokowania  mikrofonu potrzebny jest  16kHz z
+centrali... a mysmy przeciez wylaczyli czujnik... dobra dobra... to czemu
+jak my dzwonimy "nie normalnie" ta metoda sie nam odblokowywuje?? Ano dla
+tego, iz  najpierw  wybieramy  numerek z  free num listy  a wybranie tego
+numerka automatycznie odblokowywuje mikrofon:) Sprawdzcie sobie to z 0800
+Podchodzicie dmuchacie w sluchawke i nic, dmuchajac dalej wybieracie 0800
+i zaraz po wcisnieciu ostaniego 0 slychac male pik i mikrofon odblokowany
+
+4.4.1. ROZMOWY LOKALNE
+Zadko kto wie,  ze jak powiedzmy nasze miasto ma kod  032 to dzwoniac pod
+numer 032numer miejscowy dodzwonimy sie pod "numer miejscowy":)) A raczej
+nikt dzwoniac lokalnie nie daje przed numerem kierunkowego wiec  mozna  w
+FREE NUM. MENU wpisac kod swojej miejscowosci, dzwonienie bedzie wygladac
+tak: podchodzisz z biperem wybierasz bez karty powiedzmy 032  przykladasz
+bipera i walisz numer miejscowy,  pod  ktory  chcesz  zadzwonic.  Jak nie
+zerwie po impulsie to cool masz starego EPROMAa w budce a jak  zerwie  to
+musisz niestety zaczac uzywac programing karty do wylaczania 16kHz... hmm
+zawsze to juz o jedna czynnosc mniej:)) Mozesz tez tak za free kozystac z
+miejscowych extenderow i dzwonic juz po calym swiecie za free a nie tylko
+lokalnie:) Niestety nie dziala na kazdej centrali...  ale  u mnie na ewsd
+spisuje sie rewelacyjnie:)) a za to w Kraq i Wawie cos nie chce...:(
+
+
+5. NASZE SLADY
+
+No wiec bawiac sie karta programming chcac czy nie chcac pewnie zostawimy
+slady naszej bytnosci w budce. Najwieksza niedogodnoscia jest czyszczenie
+naszych numerow z FREE NUM. LISTy... powiedzmy,  ze wpisallismy tam sobie
+0604  (zeby zadzwonic do kolezanki;),  skonczylismy  mila  i  produktywna
+rozmowe i teraz chcemy skasowac... hmmm.. jak? no wiec kazdy  wpisuje  na
+miejsce tego 0604 cztery zera (0000) i juz mozna dzwonic na 0604 normlnie
+ale za to mozna bez wkladnia karty pisac '0000' nie mowiac juz, ze w menu
+na FREE NUM. LISTcie  tez  mamy  wpisane  0000.  To  moze  na  nasz  slad
+naprowadzic jakiegos wscibskiego montera ewentualnie inne paskudztwo. Jak
+sie  przed  tym  bronic?  Najlepszym  sposobem  jest  wpisywanie  naszych
+numerkow  na  miejsce   juz istniejcych:) Wtedy po rozmowie kasujemy nasz
+numer wpisujac to  co  bylo wczesniej i juz w ogole nie musimy kombinowac
+z czyszczeniem menu itp.:)) Mozna takze skozystac z DEAFAUL menu  ale  to
+nie jest dobre... po pierwsze musimy po tym ustawiac cala budke  tak  jak
+byla ustawiona i na liste zdarzen wpisuje sie kod nr 12...
+
+
+6. UWAGA!!!
+
+Hmm... ostatnimi czasu tPSA znowu zaczyna wymieniac sot w swoich budkach.
+Nie wiem czy mieli to w  planie wczesniej  czy stalo sie  tak  po  pewnym
+programie terrorystycznym w telewizji... Ano najnowszy soft (v3.0) kasuje
+karty programming! Pojawila sie nowa edycja kart specjalnie na ta  wersje 
+oprogramowania.  Wiec teraz wsadzajac karte trzeba uwazac czy czasem  nie
+ma w budce v3.0 bo sie z nasza karta pozegnamy...  Jak narazie  v3.0 jest
+tylko w  Warszawie  kolo poczty glownej. Jak sie pojawi gdzies indziej to
+dajcie znac:) 
+
+
+7. FULL MENU
+
+Oto  spisane wszystkie pozycje menu tak jak  sa  w budce  bez dopiskow:).
+Stringi spisane z eproma w wersji 2.7.
+
+
+0.         PROG. DEFAULT
+0.1         DEFAULT   Y
+            DEFAULT   YE
+            DEFAULT   YES
+0.1.1    PROG. DEFAULT OK
+         PROG. DEFAULT KO
+
+
+1.       DIAGNOSTIC MENU
+1.1          CODE # 1: XX
+1.2          CODE # 2: XX
+1.3          CODE # 3: XX
+1.4          CODE # 4: XX
+1.5          CODE # 5: XX
+1.6          CODE # 6: XX
+1.7          CODE # 7: XX
+1.8          CODE # 8: XX
+1.9            CLEAR CODE
+1.9.1       CLEAR   _____
+1.9.1.1     CLEAR   UUUUU
+1.9.1.1.1   CLEAR   00000
+1.10                 EXIT
+
+
+2.       COUNTER    MENU
+2.1           LOCAL PULSE
+2.1.1     T XXXX  P XXXXX
+2.2        NATIONAL PULSE
+2.3        INTERNAT PULSE
+2.4              TAXATION
+2.5            LOCAL CALL
+2.6         NATIONAL CALL
+2.7         INTERNAT CALL
+2.8            ENTRY CALL
+2.9             FREE CALL
+2.10        CLEAR PARTIAL
+
+2.10.1 -->patrz 1.9.1 do 1.10
+
+2.11            CLEAR ALL
+2.12                 EXIT
+
+
+3.       DIAL       MENU
+3.1             DIAL TYPE
+3.2.1    DECAD.(TYPE 1-2)
+3.2.1    DTMF  (TYPE 1-2)
+3.3            DIAL FREQ.
+3.3.1    10 Hz (TYPE 1-2)
+3.3.1    20 Hz (TYPE 1-2)
+3.4      NATIONAL NUM.  1
+3.4.1                   8
+3.5      NATIONAL NUM.  2
+3.5.1                   0
+3.6      NATIONAL NUM.  3
+3.6.1                   0
+3.7      NATIONAL NUM.  4
+3.7.1                   0
+3.8      NATIONAL NUM.  5
+3.8.1                   0
+3.9      NATIONAL NUM.  6
+3.9.1                   0
+3.10     NATIONAL NUM.  7
+3.10.1                  0
+3.11     NATIONAL NUM.  8
+3.11.1                  0
+3.12     NATIONAL NUM.  9
+3.12.1                  0
+3.13     NATIONAL NUM. 10
+3.13.1                  0
+3.14                 EXIT
+
+
+4.       C90        MENU
+4.1            ENABLE C90
+4.2      ENAB. (TYPE 1-2)
+4.2      DISAB.(TYPE 1-2)
+4.3            CALLS NUM.
+4.3.1                XXXX
+4.4         NUM. TELEPHON
+4.4.1    > XXXXXXX      <
+4.5              NUM. C90
+4.5.1    > XXXXXXX      <
+4.6                  EXIT
+
+
+5.       TAXATION   MENU
+5.1             TAX VALUE
+5.1.1                 001
+5.2                16 KHz
+5.2.1    ENAB. (TYPE 1-2)
+5.2.1    DISAB.(TYPE 1-2)
+5.3                 50 Hz
+5.3.1    DISAB.(TYPE 1-2)
+5.3.1    ENAB. (TYPE 1-2)
+5.4             CHECK TAX
+5.4.1    DISAB.(TYPE 1-2)
+5.4.1    ENAB. (TYPE 1-2)
+5.5                  EXIT
+
+
+6.       SW VERSION MENU
+6.1      TELEPHONE  SOFT.
+6.1.1           PO   2.7
+6.2       VISUAL BLACK L.
+6.2.1    XXXXX XXXXX
+[...]
+6.2.245  XXXXX XXXXX
+6.2.246  XXXXX XXXXX XXX
+[...]
+6.2.807  XXXXX XXXXX XXX
+6.3                 EXIT
+
+
+7.      FREE NUM.  MENU
+7.1       FREE NUMBER  1
+7.1.1   >              <
+7.2       FREE NUMBER  2
+[...]
+7.30      FREE NUMBER 30
+7.31                EXIT
+
+
+8.      LOCK NUM.  MENU
+8.1       LOCK NUMBER  1
+8.1.1   >              <
+8.2       LOCK NUMBER  2
+[...]
+8.10      LOCK NUMBER 10
+8.11                EXIT
+
+
+9.      WATCH      MENU
+9.1        DISPLAY WATCH
+9.1.1       XX:XX:XX
+9.2          WATCH PROG.
+9.2.1              XX:XX
+9.3           DATE PROG.
+9.3.1     XXXXXXXX
+9.4                EXIT
+
+
+8. TYPY KART SERWISOWYCH
+
+No wiec mamy 5 kart serwisowych:
+MAINTENANCE - tylko menu: 1 i 2 (bez pozycji czyszczacych: 2.10 i 2.11)
+te same menu uzyskamu otwierjac aparat.
+PROGRAMMING - wszystko za wyjatkiem menu 0 i 6.2
+PROGRAMMING 2;)) - to co programming + menu 6.2 (VISUAL BLACK L.)
+PROGRAMMING 3;) (TEST)- to co programming + menu 0 (PROG. DEFAULT) 
+SAMPLE - tylko menu 0 (PROG. DEFAULT)
+
+Osobiscie  mialem/mam do czynienia z wszystkimi za wyjatkiem ostatniej, 
+ale polecam zwlaszcza karty 3 i 4 ;)))
+
+
+9. GREETZ
+
+Wszystkich znajomych i nieznajomych. 
+
+
+10. PHREAK ZONE
+
+Powstal jakis czas temu i ma sie calkiem niezle. Jak macie cos co mozna
+tam  zamiescic  to smialo  przysylajcie:)))  Zwlaszcza  przydalyby  sie
+materialy do dzialu GSM (jak macie jakies CD-ROMy ze stufem to email me
+jakos sie dogadamy:) Adresiki stronki sa na  poczatku tego faq:) 

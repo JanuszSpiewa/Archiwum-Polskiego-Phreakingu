@@ -1,0 +1,1092 @@
+- - ------------------------------------------------------------------- ---
+
+                        Phreaking in Poland... 
+
+                         edition I version 1.2
+
+                       done by trinitrotoluene
+
+                             29 Oct 1997
+--- ---- -------------------------------------------------------------- ---
+DISCLAIMER: Autor nie ponosi zadnej odpowiedzialnosci za straty poniesione
+            przez Telekomunikacje Polska S.A. w wyniku lektury tego tekstu
+            powstal on w celach informacyjno edukacyjnych. Prawo do pisania
+            tego typu tekstow zapewnia wolnosc slowa i publikacji.
+-- - -- ------------------------ ------------------------------------ -- --
+Nowosci w wersji 1.2 - internet dialout, troche zmian i poprawek, nowosci
+w slowniczku
+-- -- ----- --------------------------------------------------------- -- --
+Spis tresci
+
+0. Intro
+
+I. Automaty.
+
+   Bugi...
+
+   Bug  1: Metoda udarowa na male zetonowce.                [twitter&nth]
+   Bug  2: Zetonowce a dewaluacja.                          [all]
+   Bug  3: Korzysci z kradziezy lyzki dla phreakingu.       [???]
+   Bug  4: Zetonowiec na centrali tonowej.                  [all]
+   Bug  5: Back to kitchen - tym razem zapalarka.           [???]
+   Bug  6: Kiedy na starych centralach pojawilo sie 0800... [twitter]
+   Bug  7: Dlaczego ja tak lubie centrale miedzymiastowa?   [twitter&miernik]
+   Bug  8: Miedzymiastowa jeszcze raz ale inaczej...        [twitter&miernik]
+   Bug  9: Skomplikujmy Buga 6.                             [miernik&???]
+   Bug 10: Jeszcze raz dwukierunkowce.                      [omikron]
+
+   Metody "inwazyjne"...
+
+   Inw  1: Pajaki i automaty.                               [nth&twitter]
+   Inw  2: Filtr taryfikacji.                               [alex]
+   
+   Metody "Zrob to sam"...
+   
+   Diy  1: Falszywe karty.                                  [twitter&miernik]
+
+II. W domu, mieszkaniu i ogrodzie.
+
+   1. Sasiedzi a pajeczarstwo.                              [twitter&alex]
+   2. Nowa linia telefoniczna.                              [twitter&alex]
+   3. Kasowanie licznikow.                                  [twitter&alex]
+   4. Reklamacje.                                           [miernik]
+   5. Mieszkanie.                                           [alex]
+   6. Uslugi central cyfrowych.                             [twitter]
+      Na podstawie biuletynu TPSA.
+          a) Przenoszenie w przypadku nieobecnosci
+          b) Prosze nie przeszkadzac
+          c) Przenoszenie w przypadku zajetosci
+          d) Natychmiastowe przenoszenie
+          e) Ograniczenie polaczen wychodzacych
+          f) Automatyczne budzenie jednorazowe
+          g) Automatyczne budzenie wielokrotne
+          h) Goraca linia - hot line
+          i) Polaczenie oczekujace - call waiting
+          j) Polaczenie trojstronne
+          k) Licznik kontrolny
+          l) Lokalne porozumiewanie sie 
+          m) Przekazywanie polaczen do zapowiedzi slownych
+          n) Blokada przekazywania wywolan
+          o) Numery skrocone
+   7. Jak dzwonic za darmo modemem?                         [twitter]       
+
+III. Extendery i PBXy.
+
+   1. Co to jest extender i co mi z tego?                   [twitter]
+   2. Jak ma sie PBX do extendera?                          [twitter]
+   3. Calling Cards                                         [all]
+   4. Visaphone                                             [spaceman]
+
+IV. Ciekawostki.
+
+   1. 974 - numer serwisowy czy lipa?                       [twitter]
+   2. 996 - prawdziwa ciekawostka.                          [twitter]
+   3. 915 - alternatywna 900-tka.                           [miernik]
+   4. 914,9696 - biura napraw.                              [miernik]
+   5. Mity PAP-u i 0800...                                  [alex&twitter]
+
+V. Operacje pomocnicze
+   
+   1. Jak uzyskac numer do automatu?                        [miernik&twitter]
+   2. Jak wybrac 900 na automacie na karte?                 [twitter&miernik]
+   3. Jak pozbyc sie piskow przy dzwonieniu na automat?     [twitter&miernik]
+   4. Jak dowiedziec sie o typ centrali?                    [twitter]
+   5. Jak zrobic najwygodniejszy telefon do podpinania sie? [twitter&alex]
+   6. Jak sie zabezpieczyc zeby mi sie sasiedzi nie podpieli?[alex]
+   7. Jak phreakowac bezpiecznie?                           [twitter]
+   8. Co warto kupic na "czarnym rynku"?                    [twitter]
+
+VI. Elektronika.
+
+   1. Istota impulsow taryfikacyjnych.                      [mEGA]
+   2. Red Box.                                              [mEGA]
+   3. Blue Box.                                             [twitter]
+   4. Silver Box.                                           [mEGA]
+   5. Odwracanie petli przez centrale.                      [mEGA]
+
+VII. Informacje, itp.
+
+   1. Faq i cala reszta...                                  [all]
+   2. Linki czyli ciekawe strony www...                     [all]
+   3. Lektura pomocnicza                                    [all]
+
+VIII. Bonus section czyli hackowanie automatycznych sekretarek
+      Oryginal powstaly w polowie 1996 roku, przy wspolpracy:
+      twitter, nth, peterson, miernik...
+
+   1. Wstep czyli z czym do ludzi                           [twitter]
+   2. Zdobywanie kodu                                       [twitter]
+        a) Stare Panasonici                                 [twitter&nth]
+        b) Bezprzewodowe Panasonici                         [twitter]
+        c) Stand-alone Panasonic                            [miernik]
+        d) Cyfral                                           [twitter]
+        e) Faxy i supervoice                                [twitter]
+        f) Inne                                             [twitter]
+   3. Korzysci czyli esencja                           [twitter&peterson&nth]
+   4. Uwagi i bezpieczenstwo                                [twitter]
+
+IX. Slowniczek.                                           [alex]
+
+- - - -- ----------------------- --- ---------------------------------- ---
+0. Intro
+
+   O czym jest ten tekst? Oczywiscie o darmowym dzwonieniu... na samym 
+poczatku chcialbym napisac kto moze sie w to bawic - kto sobie z tym poradzi
+   Po pierwsze trzeba miec duzo cierpliwosci, samozaparcia, nie cieszyc sie
+pierwszymi sukcesami, miec troche talentu do telefonow i komputerow... a ze 
+sprzetu to glownie tonedialera i telefon do podpinania sie. 
+   Od razu mowie ze nie zamiescilem schematow wszystkich boxow dlatego ze jest
+to troche bez sensu gdyz wiekszosc z nich po prostu nie dziala - sa tylko te
+ktore w jakikolwiek sposob moga dzialac.
+   Dodam jeszcze tylko tyle ze ten tekst nie powstal po to zeby wykorzystywac
+te metody po kolei az TPSA sie zabezpieczy tylko aby zmusic do myslenia i 
+wymyslenia czegos samemu...
+
+                                                  alex & twitter ^ tnt...
+
+-- - - -  ---------------------------------------------------------- -- ---
+I. Automaty
+
+  Sekcja o automatach publicznych poczynajac od szukania bledow w automatach
+az po metody "inwazyjne" - wlaczajac drobne "zmiany" w automacie :)
+Oczywiscie najlepsze sa bugi poniewaz mozna to stosowac nawet na ruchliwej
+ulicy...
+
+       Bug  1: Ta metoda jest dosc wiekowa ale zawsze moze sie znalezc
+               jakis sprzet ktory jej ulegnie. Otoz dawniej wszystkie 
+               automaty byly zetonowe i to takie male (teraz ich juz
+               prawie nie ma, jeden jest np. w przychodni przy ul. Saskiej)
+               A wiec dzwonimy z takiego automatu gdzie chcemy (a wlasciwie
+               gdzie mozemy bo one nie dawaly 0 wykrecic) i w momencie 
+               kiedy automat chce zetonu to otwiera klapke w "otworze 
+               wrzutowym", my w tym momencie udzerzamy pod otw. wrzutowym
+               (na prawo od tarczy), klapka sie zamyka a automat o zetonie
+               zapomina. 
+               UWAGI: 
+               a) Metoda wzbudza troche zainteresowanie przechodniow no bo
+                  jednak przywalic trzeba. 
+               b) Nie kazdy maly zetonowiec na to dziala (niektore maja 
+                  mechanizm na tylnej sciance - te nowsze) i juz nie tak 
+                  latwo przygrzmocic... 
+ 
+       Bug  2: Dawno, dawno temu male automaty zetonowe dzialaly jeszcze nie
+               na zetony tylko na monety 5zl (miedziane, lekkie, male)
+               Pozniej wprowadzono zetony A, ktore byly identyczne jak 5-cio
+               zlotowki, a jeszcze pozniej weszla dewaluacja i 5 groszowki
+               byly takie same jak pieciozlotowki.. Wniosek?
+               jezeli zet A = dawne 5 zl a dawne 5 zl = 5 gr to zet A = 5gr
+               Wiec jezeli zeton kosztowal 15gr a byl identyczny jak 5gr
+               no to mozna bylo obnizyc sobie koszty dzwonienia trzykrotnie
+               Problem w tym ze sprawa zostala mocno naglosniona i TPSA 
+               zaczela w poplochu przerabiac automaty zeby jednak czuly ta
+               roznice miedzy A a 5gr... Wprawdzie prawdopodobnie nie ma juz
+               takich automatow zeby to dzialalo ale zawsze mozna poprobowac
+               zwlaszcza na wsi gdzie telekomunikacja zapomniala dotrzec :) 
+
+       Bug  3: Rowniez i sztucce moga sie przydac w tym interesie. Znow 
+               zetonowce. Dzwonimy gdzie chcemy i w momencie kiedy automat
+               chce zetonu pakujemy mu lyzke w otwor ktorym zwraca monety.
+               Lyzka trzeba troche pogrzebac do momentu kiedy mu sie odechce
+               zetonow. Czynnosc powtarzamy przy kazdym kolejnym impulsie.
+               Cala sprawa polega na tym iz lyzka zwiera conieco w automacie
+               ktory uzmyslawia sobie iz dostal juz impuls...
+
+       Bug  4: Po pierwsze musisz zaopatrzec sie w tonedialer. Jest to wydatek
+               rzedu 20 zl ale oplaca sie gdyz przydaje sie on do conajmniej
+               pieciu innych rzeczy.
+               Po prostu podnosimy sluchawke i wybieramy tonedialerem numer
+               ktory chcemy wybrac i jezeli automat nie jest odporny na ta
+               metode i znajduje sie na centrali ktora rozpoznaje tony to
+               wogole sie nie zorientuje ze gdziekolwiek dzwonisz.
+               BTW: W warszawie znam jeden automat ktory dziala w ten sposob,
+               ale poza nia moze byc wiecej. Na automatach na karte to nie 
+               dziala gdyz przed nawiazaniem polaczenia mikrofon w sluchawce
+               jest odciety a tony to przeciez dzwiek.
+
+       Bug  5: Podobno kiedy zewrze sie obudowe zetonowca z kolkiem na tarczy
+               zapalarka do gazu (piezo) i momencie kiedy automat chce zetonu
+               wcisnie sie przycisk od zapalarki kilkakrotnie to owe checi mu
+               przejda. Nie wiem, nie testowalem.
+
+       Bug  6: Zaczynamy powoli wchodzic w coraz swiezsze bugi. Otoz stare 
+               centrale (strowger) nie sa za bardzo kompatybilne z numerami
+               typu 0800. Tym razem po raz pierwszy zajmujemy sie automatem
+               na karte. Podnosimy sluchawke, karty oczywiscie nie wkladamy.
+               Klepiemy: 0800 i nic wiecej i czekamy.. cisza.. busy.. szybszy
+               busy (jezeli nie wystapil szybszy busy po okolo 30 sekundach 
+               to juz mowie ze na tym automacie nie dziala) .. chwila ciszy
+               i dialtone... Teraz mozemy dzwonic gdzie chcemy absolutnie za
+               darmo bo przeciez nie wlozylismy karty.. Jednak pojawia sie 
+               tutaj problem.. mozemy wybrac tylko 6 cyfr bo automat caly
+               czas mysli ze dzwonimy pod 0800+numer ktory wybralismy a nie 
+               pod sam ten numer -> a automat pozwala tylko na 6 cyfr po 0800
+               (i tak jedna wiecej niz normalnie)... Ktos by powiedzial ze 
+               mozemy wybrac wiecej cyfr przez tonedialera? No niestety - 
+               jak juz powiedzialem jestesmy na strowgerze ktory przeciez
+               tonow WOGOLE nie rozpoznaje :).. Pod warunkiem ze dzwonimy
+               pod numer ktory ma mniej niz 6 cyfr mozemy dzwonic do woli :)
+               BTW: W warszawie jest to troche malo pozyteczne bo 90% numerow
+               jest 7-cyfrowych za to takie Zakopane ma np. 5 cyfrowe :))
+              
+       Bug  7: Dawniej kiedy nie bylo jeszcze polaczen automatycznych czyli
+               np. do Warszawy dzwonimy 022 + numer warszawski trzeba bylo
+               zamawiac rozmowe miedzymiastowa. Odbywalo sie to mniej wiecej
+               tak ze podawalismy swoj numer i centrala oddzwaniala, laczyla
+               cie gdzies a suma za rozmowe byla dopisywana do rachunku. I co
+               z tego moglby ktos powiedziec? Otoz to ze jezeli udaloby sie
+               nam zamowic rozmowe na numer automatu to suma za nia poszlaby
+               w powietrze (my placimy to co bije na karte a nie za rachunek
+               automatu). Czego nam potrzeba zeby to wykonac? Po pierwsze 
+               musimy jakos wybrac numer 900 (centrala) a po drugie znac numer
+               automatu. Aby nie powiekszac tego punktu (i nastepnych) opisy
+               tych dwoch czynnosci zawarlem w sekcji operacje pomocnicze.
+               Ktos by powiedzial ze na tym caly problem sie konczy...
+               Alez skad! Otoz kiedy zadzwonisz do automatu to niektore z nich
+               przedstawiaja sie: "AUTOMAT PUBLICZNY!!" - na sam ten dzwiek
+               telefonistka oczywiscie nigdzie nas nie polaczy. Na szczescie
+               czesc automatow ma zamiast tego tekstu jakies piski (poczytaj
+               o tym w operacjach pomocniczych) a niektore wogole sie nie 
+               chwala tym ze sa automatami - i te oczywiscie sa najlepsze.
+
+       Bug  8: Ta metoda jest jakby rozwinieciem poprzedniej. Tym razem 
+               bedziemy dzwonic nie z automatu tylko do automatu. A wiec
+               dzwonimy do kogos z automatu i mowimy zeby zamowil rozmowe
+               na koszt abonenta na numer automatu. Reszta to to samo co 
+               w poprzedniej metodzie. Przy rozmowie miedzynaradowej jest
+               o tyle lepiej ze telefonistka z innego kraju nie zrozumie
+               co to "AUTOMAT PUBLICZNY...". Osoba ktora do ciebie dzwoni
+               jest absolutnie bezpieczna bo niby skad mialaby wiedziec ze
+               dzwoni na numer automatu? Ty podales jej numer...
+
+       Bug  9: Ta metoda jest chyba najswiezsza, choc troche zagrozona,
+               gdyz TPSA usiluje ja zlikwidowac. Tym razem wykorzystamy
+               numer 974 (Troche wiecej o nim w ciekawostkach). A wiec 
+               (z automatu na karte) dzwonimy 974 i czekamy na dialtone.
+               Problem w tym ze ten dialtone nie reaguje na zadne tony :(
+               A wiec jedziemy dalej - podczas tego dziwnego dialtone 
+               wciskamy widelki, * lub # i co? Od razu po rozlaczeniu jest
+               zajete! (BUSY), zaraz po tym musimy wcisnac 0800 i poczekac 
+               na dialtone. Jezeli 0800 wpiszesz za pozno po wcisnieciu widelek
+               to ci sie nie uda. Dzieki tym kombinacja mamy dialtone, na 
+               wyswietlaczu 0800 i swiat stoi przed nami... I znow ten sam
+               problem - tylko 6 cyfr ale tym razem jestesmy na Alcatelu lub
+               czyms podobnym (z tego co wiem to 974 dziala chyba tylko na 
+               alcatelu) i tonedialerem mozemy sobie wybrac co chcemy.
+               Pojawia sie tylko jeszcze jeden problem...
+               Automat zrywa polaczenie po kolejnym impulsie (To niestety 
+               nie strowger) - czyli przy rozmowach lokalnych po 3 minutach,
+               miedzymiastowych po 10 sekundach a przy polaczeniu do USA
+               po 3 sekundach :((( . Tego nie da sie ominac - na szczescie
+               jest jeszcze troche automatow ktore nie zrywaja wogole...
+
+       Bug 10: Metoda ta nie podoba mi sie zbytnio bo trzeba dwoch automatow
+               i troche fatygi. Otoz jednym automatem dzwonimy na drugi 
+               (Sekcja V.1 mowi jak zdobyc numer automatu) i tak gdzies po
+               jednym dwoch sygnalach odkladamy sluchawke a drugim odbieramy
+               telefon w momencie kiedy ten pierwszy jest rozlaczony. Efekt?
+               W sluchawce mamy dialtone, mikrofon jest wlaczony a wyswietlacz
+               upiera sie przy tym ze jest to rozmowa przychodzaca wiec 
+               zapomina wogole o impulsach. Przez to nie dziala tez klawiatura
+               ale coz za problem. Mamy przeciez tonedialera. Teraz juz chyba
+               wiesz co robic a jak nie to przeczytaj jeszcze raz Buga 4...
+               Jezeli nie mamy tonedialera moze zlaczyc ze soba sluchawki
+               automatow i tym z ktorego dzwonilismy na poczatku wybrac 
+               (z karta) numer ktory chcemy a nastepnie zaraz go rozlaczyc.
+               Drugi (ten ktory mysli ze jest rozmowa przychodzaca) uslyszy
+               tony pierwszego i zadzwoni pod zyczony numer...
+
+       Inw  1: Jezeli umiemy sie podpinac sasiadom to dlaczegoby nie podpiac 
+               sie pod automat publiczny? Jedyny warunek to to zeby kabel 
+               byl na wierzchu. Jezeli wepniemy sie przed automat w linie to
+               mozemy dzwonic do woli. Niektore centrale chca jednak impulsow
+               taryfikacyjnych i zaraz gdy ktos odbierze telefon linia zerwie.
+               Mozemy albo znalezc inny automat albo zrobic redboxa. O 
+               redboxie mozesz poczytac w sekcji Elektronika - VI. 
+
+       Inw  2: W linie przed automat nalezy wpiac filtr czest. 16kHz
+               Jezeli centrala nie zyczy sobie odbijania imp. taryfikacyjnych
+               automat nie bedzie wogole liczyl impulsow - wszystkie numery
+               beda dla niego tak jak 0800xxxxx...
+
+       Diy  1: Najprosciej jakby ktos powiedzial jest zrobic falszywa karte?
+               Zaraz ktos powie ze to niemozliwe... A jednak zastanowmy sie.
+               Najpierw sprobujmy zanalizowac sposob zapisu na karcie - 
+               najpierw pelna a potem pusta karte posypmy opilkami. Uloza sie
+               one wg. zapisu magnetycznego (opilki musza byc BARDZO drobne)
+               Okaze sie sie ze kazdy impuls to pionowa kreska, mierzymy jej
+               szerokosc (l1) i odleglosc miedzy nimi (l2). Jeszcze tylko jak
+               cos zapisac na karcie? Przyda sie magnetofon szpulowy
+               (4 sciezki) i generator prostokatny..
+
+                                <l1><l2>
+                                 __      __      __
+                       U  ^     |  |    |  |    |  |
+                [...]     v  ___|  |____|  |____|  |____ [...]
+ 
+               Wlaczamy generator prostokatny w gniazdo mikrofonowe od magn.
+               odpinamy glosnik (zeby ani jego ani swoich uszu nie zniszczyc)
+               i nagrywamy cala szpulke, potem tasme z magnetofonu przylepiamy
+               na zuzyta karte...
+               Jest jeszcze jedna mozliwosc azeby zamiast generatora uzyc
+               dwoch magnetofonow jako kopiarki do kart. - No tak ale juz 
+               dalsze kombinacje moga byc ograniczone jedynie czysto ulanska
+               fantazja :))
+
+
+-- ---  -- - ---------------------------------------------------------- -----
+II. Phreaking z domu.
+
+        1.     Pierwsza metoda to oczywiscie podpinanie sie sasiadom pod
+               linie. Ostatnio jest to niebezpieczne gdyz jest publiczna
+               nagonka na "pajeczarzy". O tym jak sie zabezpieczyc i miec
+               telefon ktory nie pozostawia sladow mozna przeczytac w sekcji
+               V.5. Kolejna sprawa jest taktyka. Ja mam trzy zelazne, ktore 
+               sprawdzaja sie w kazdej sytuacji:
+                     a) Jedziemy na zniszczenie sasiada. Przy takim zalozeniu
+                        ktos powie ze trzeba dzwonic ile wlezie. Nie! Trzeba 
+                        w kolejnych miesiacach dzwonic o 100zl wiecej niz w 
+                        poprzednim. Efekt? Rachunki rosna o milion miesiecznie
+                        a sasiad nie ma podstawy do reklamacji.
+                     b) Staramy sie byc niezauwazonymi. Wydzwaniamy conajwyzej
+                        10% tego co sasiad placi standardowo. Jest to technika
+                        najbardziej dlugoterminowa - nikt nie powinien sie 
+                        zorientowac.
+                     c) Idziemy na calosc - wydzwaniamy pareset baniek!
+                        Afera robi sie duza, sasiad nie zaplaci nic bo zlozy 
+                        reklamacje. Mozemy jednak wpasc w bardzo glebokie 
+                        gowno jak sprawa wyjdzie na jaw...
+
+        2.     Druga linia telefoniczna? Alez tak ale nieoficjalnie 
+               zalatwiamy z monterami za jakies 200zl linie bez umowy, bez
+               rachunkow, nikt o niej wie. IMHO jest to najlepsza metoda na
+               dzwonienie za darmo z domu.
+
+        3.     Trzeba miec znajomosci na centrali i za okolo 100zl/mies mozna
+               zalatwic sobie kasowanie licznika przez monterkow. Jednak 
+               metoda troche ryzykowna - nie jeden juz wpadl na tym ze kiedys
+               monterowi nie udalo sie skasowac licznika.
+
+        4.     Najbardziej ryzykowna metoda.
+                   a) najpierw przez trzy miesiace dzwonimy po 200/300zl/mies
+                   b) czwartego mies. wydzwaniamy 100 razy tyle i skladamy
+                      reklamacje - jezeli zostanie uznana zaplacimy srednia z
+                      ostatnich trzech miesiecy. 
+               Jesli jednak reklamacji nie uznaja lub numer nie uda sie za
+               ktoryms razem z kolei to zostaniemy z rachunkiem za 20000zl 
+               do zaplacenia :(
+         
+        5.     Jak ktos jest pomyslowy to mozna wynajac mieszkanie ale tak
+               zmacic wlasciciela zeby nie wiedzial o nas absolutnie nic. 
+               Czasami zdarzy sie idiota ktory sie tak ucieszy tym ze placisz
+               za mieszkanie ze zapomni sie spytac nawet o personalia.  Wiem 
+               ze teraz wlasciciele wymagaja umowy najmu ale czasem trafi sie 
+               jakis balwan. Po prostu wydzwaniamy ile wlezie a potem w nocy 
+               wynosimy sie z mieszkania przed tym jak przyjdzie rachunek. 
+               Problem w tym ze w tym miescie a conajmniej dzielnicy jestes 
+               spalony.
+
+        6.     Jezeli masz linie na centrali Siemens EWSD, Alcatel S-12 lub
+               AT&T 5ESS to jest cala seria uslug dostepnych za pomoca 
+               kombinacji tonowych. A wiec jedziemy...
+               F - flash, 0..9, #, * - cyfry tonowe.
+               (+) wlaczenie, (?) sprawdzenie, (-) wylaczenie
+               (a) EWSD, (b) S-12, (c) 5ESS
+
+                   a) Przekazywanie polaczen w przypadku nieobecnosci
+                      wszystkie telefony sa przenoszone na inny numer
+                      po pewnej liczbie sygnalow. NNNN to numer do 
+                      przeniesienia
+     
+                             (a)         (bc) 
+                      (+) *19*NNNN#     *61*NNNN#
+                      (?) *#19#         *#61#                          
+                      (-) #19#          #61#
+
+                      (a) i (c) pozwalaja przenosic na numery poza miejscowe
+
+                   b) Prosze nie przeszkadzac - zadzwonienie pod dany numer
+                      powoduje odtworzenie komunikatu "Prosze nie przeszkadzac"
+                     
+                            (abc)
+                      (+) *26#
+                      (?) *#26#
+                      (-) #26#
+  
+                   c) Przenoszenie polaczen w przypadku zajetosci - ringdown.
+                      NNNN to numer do przeniesienia.
+                  
+                              (a)         (c)  
+                      (+)  *18*NNNN#    *67*NNNN#
+                      (?)  *#18#        *#67#
+                      (-)  #18#         #67#
+
+                      Na S-12 ringdown ustawia operator
+
+                   d) Natychmiastowe przenoszenie polaczen.
+                      NNNN - numer do przeniesienia
+
+                             (abc)
+                      (+)  *21*NNNN#
+                      (?)  *#21#
+                      (-)  #21#
+
+                   e) Ograniczenie polaczen wychodzacych.
+                      KKKK - kod zabezpieczajacy
+                      FF/F - zakres ograniczenia                     
+ 
+                      (a) (+) *33*KKKK*FF#
+                      (b) (+) *33*KKKK#
+                      (c) (+) *34*KKKK*F#
+                      Zakres jest ustalany w boku.
+                      Sprawdzenie uslugi - zamiast *33 lub *34 trzeba uzyc
+                      *#33 lub *#34
+                      (ab) (-) #33*KKKK#
+                      (c)  (-) #34*KKKK#
+
+                   f) Automatyczne budzenie jednorazowe
+                      HHMM - czas budzenia, np. 0600, 1800, 0900
+                      
+                           (abc)
+                      (+) *55*HHMM#
+                      (?) *#55#
+                      (-) #55#
+                    
+                   g) Automatyczne budzenie wielokrotne
+                      HHMM - czas budzenia
+                      DD   - liczba dni - np. budzenie ma dzialac przez 5
+                             kolejnych dni
+                      T    - dni tygodnia - 17 to pn i niedz., 
+                             1234567 - wszystkie        
+
+                      (a) (+) *56*HHMM*DD#  (?) *#56*HHMM#
+                      (c) (+) *57*HHMM*T#   (?) *#56*HHMM*T#
+                      (a) (-) #56*HHMM#
+                      (c) (-) #57#
+                   
+                   h) Goraca linia - hot line
+                      5 sekund po podniesieniu sluchawki automatycznei dzwoni
+                      pod dany numer
+                      NNNN - numer do goracej linii
+          
+                            (abc)
+                      (+)  *53*NNNN#
+                      (?)  *#53#
+                      (-)  #53#
+
+                   i) Polaczenie oczekujace - call waiting
+                      Jezeli w trakcie polaczenia zadzwoni trzecia osoba
+                      w trakcie rozmowy slyszalny jest sygnal
+      
+                            (abc)
+                      (+)  *43#
+                      (?)  *#43#
+                      (-)  #43#
+ 
+                      W trakcie pisku wciskamy flash i ...
+                      0 - Nie przyjecie abonenta trzeciego
+                      1 - Przyjecie abonenta trzeciego rozlaczenie pierwszego
+                      2 - Przyjecie trzeciego, potrzymanie polaczenia  
+                          pierwotnego.
+                   
+                   j) Polaczenie trojstronne
+                      Czy mozna rozmawiac w trzy osoby naraz?
+                      
+                      Najpierw nalezy zadzwonic do osoby A, potem
+                      flash, dzwonimy do osoby B, flash, i...
+                     
+                      0 - Rozlaczenie osoby B
+                      1 - Rozlaczenie osoby A
+                      2 - Na przemian z A i B - przelaczanie flashem
+                      3 - Polaczenie trojstronne (trzech na raz)
+
+                   k) Licznik kontrolny
+
+                      Na centrali jest wlaczone wysylanie impulsow
+                      taryfikacyjnych a w domu montuje sie sprzet ktory to
+                      odbiera - np. aparat albo centrale wewn.
+
+                   l) Lokalne porozumiewanie sie
+ 
+                      Kombinacja *42# powoduje zadzwonienie wszystkich 
+                      pozostalych aparatow na tej linii - i wylaczone dialtone
+          
+                   m) Przekazywanie polaczen do zapowiedzi slownych
+ 
+                      (abc) (+) *25*A#  (?) *#25#  (-) #25#
+ 
+                      Wartosci A...
+                      "abonent nieobecny, prosze zadzwonic..."
+                      1. "rano"
+                      2. "wieczorem"
+                      3. "pozniej"
+                      4. "innego dnia"
+
+                   n) Blokada przekazywania polaczen
+                      nie dzialaja funkcje: a) c) d) m)
+                      
+                      (abc) (+) *02# (?) *#02# (-) #02# 
+
+                   o) Numery skrocone
+ 
+                       DLA EWSD LUB S12:
+                          N - jedno lub dwucyfrowy numer skrocony
+                          NNNN - numer pelny
+                          (+) *51*N*NNNN#
+                          (?) *#51*N#NNNN#
+                          (-) #51*N# 
+                       DLA 5ESS 52 zamiast 51 dla numerow dwucyfrowych
+                       i 50 lub 51 dla jednocyfrowych...
+
+                       Uzycie: **N      
+
+        7.     Internet dialout czyli jak dzwonic modemem do stanow za prawie
+               darmo. Otoz niektore firmy wpadly na pomysl ze mozna dla swoich
+               pracownikow zrobic tzw. internet dialout czyli wejscie przez 
+               internet na modem (uzywamy normalnych komend AT).
+               A wiec dla przykladu...
+               ===============8<=Cuthere=================
+               leviathan:~# telnet ublan.virginia.edu
+               Trying xxx.xxx.xxx.xxx...
+               Connected to xxx.xxx.xxx.xxx.
+               Escape character is '^]'
+               
+               >> connect telnet 
+               Trying... connected.
+               >> connect hayes
+               Trying... connected.
+              
+               AT
+               OK
+               ATDT9,, [...]
+               ===============8<=Cuthere=================
+               Oczywiscie w adresik trzeba sie zaopatrzec od suppliera albo 
+               na ircu ale radzilbym szukac u ludzi ze stanow gdyz watpie czy
+               ktos w Polsce ma o tym pojecie. 
+
+-- - --- -- --------------------------------------------------------- -- ----
+III. Extendery i PBXY...
+
+UWAGA: Wykorzystywanie extenderow i PBXow nie obciaza TPSA tylko prywatne
+       firmy, co ktos moze uwazac na "nieodpowiednie".
+
+        1.     Extender jak juz wyjasnil to slowniczek jest to numer pod 
+               ktorym dostajemy dialtone - a mowiac scislej centrala dolacza
+               nas do drugiej linii miejskiej. Co to daje? Otoz to ze za 
+               polaczenie z extenderem nie placimy wogole (np. 0800) lub
+               placimy conajwyzej 0.19zl za 3 minuty a to jest niczym przy
+               tym jak z extendera mozemy dzwonic nawet pod 0700 (3.7zl za
+               minute). W warszawie do niedawna istnial extender 6230000
+               lecz z powodu wycofania sie jednej firmy z interesu zostal
+               usuniety. Przy extenderach pojawia sie jeszcze jeden problem
+               - niektore z nich zabezpieczone sa haslem i to czterocyfrowym
+               wiec lepiej jest kupic od kogos numerek do extendera niz
+               samemu probowac. 
+
+        2.     PBX to centralka wewnetrzna a gdy ma karte DISA mozemy sami 
+               sobie wybrac numer wewn. I co z tego? a to ze na kazdej 
+               centralce wewn. jezeli wcisniemy 9 lub 0 PBX wlaczy nas na
+               druga linie (o ile ta firma ma conajmniej dwie linie) - wtedy
+               powstaje nam swoisty extender... Oczywiscie istnieja PBXy
+               ktore moga miec wyjscie na miasto zablokowane lub zabezpieczone
+               haslem... Mozna tu sie bawic w rozbrojenie hasla ale zawsze
+               lepiej jest znalezc sobie nowego PBXa zwlaszcza ze te mnoza sie
+               ostatnio w dosc duzym tempie. Im mniejsza firma tym lepiej...
+
+        3.     Pewne firmy wpadly na taki pomysl iz mozemy dzwonic z automatow
+               lub skadkolwiek za darmo, a suma za rozmowe jest na rachunek
+               naszej Calling Card (karty). Nazywa sie to Calling Cards. W USA 
+               jest to dosc mocno rozpowszechnione (AT&T, MCI i Sprint)
+               zas u nas zaczyna sie dopiero pojawiac (AT&T wchodzi do nas).
+               Sprawa wyglada tak, dzwonimy pod 0800xxxxx (jakis tam ich numer
+               dostepowy) i podajemy numer karty i haslo - dalej numerek 
+               zachowuje sie jak extender... a wszystko idzie na nasz rachunek
+               pod warunkiem ze posiadamy wlasna karte... a nie kupiona -
+               kradziona lub fake. Calling cardy mozna kupic u roznych 
+               "smutnych" ludzi zwanych supplierami. :)
+
+        4.     Visaphone to sposob jak polaczyc Calling Cards i zwykly carding
+               - za telefon mozemy placic Visa - fake lub kradziona Vise mozna
+               kupic u jakiegos suppliera lub sobie wygenerowac numerek. Jednak
+               coraz wiecej firm ma zalozona weryfikacje i generowane numerki
+               nie beda prawdopodobnie dzialac - dlatego tez radze taka karte
+               kupic. Tutaj uwaga - tak samo jak przy zwyklym cardingu nie 
+               radze dzwonic z domu tylko raczej z automatu.
+               BTW: Z tego co slyszalem to mozna dzwonic tylko z VISY gold
+               i classic.
+
+               Telefon do Visaphone  -     0 0800 1111 111 
+
+               Dla AmExa nie znam niestety numerku o ile taki istnieje :)
+----- - ------------------- -- ----------------------------------------- ----
+IV. Ciekawostki.
+
+        1.     974 - po zadzwonieniu pod ten numer i odlozeniu sluchawki
+               centrala do nas oddzwania wciskamy dowolna cyfre i mozemy
+               dzwonic gdzie chcemy, problem w tym ze za to placimy :)
+               Numerek ten jednak sie przydaje - co widac w bugu 9...
+               974 na pewno dziala na wszelkich Alcatelach
+               na pewno zas nie dziala na Strowgerach i EWSD
+               Tak BTW jest to jedyna rzecz ktora laczy zabytek klasy
+               Strowger z cyfrowa centrala EWSD...
+        
+        2.     996 - dziwny numer ktory potrafi tylko piszczec i nawet
+               sie za niego placi standardowo 19gr za 3 minuty :)
+         
+        3.     915 - alternatywna centrala miedzymiastowa ktora o dziwo 
+               da sie wybrac z automatow na karte.
+
+        4.     914, 9696 - biura napraw pod ktore mozna zglaszac zepsute
+               automaty.
+
+        5.     Wiele osob jest swiecie przekonanych ze najlepsza droga do 
+               darmowego np. internetu sa numery telefonow na 0800 takie
+               jak 080020034 czyli slawny numer PAPu. Od razu mowie ze gra
+               jest nie warta swieczki gdyz dzieki Caller ID juz kilka razy
+               wpadlem na hackowaniu 0800-tek takich jak PAP. Czesto zmieniaja
+               hasla, duze problemy...
+
+-- ---- ------------------ ------------------------------------------------- 
+V. Operacje pomocnicze.
+
+        1.     Jak uzyskac numer automatu? Na niektorych automatach jest
+               on po prostu wyryty w miejscu loga TPSA. Niestety nie ze
+               wszystkimi tak jest. Tutaj pomocny nam bedzie callerid.
+               Otoz dzwonimy z tego automatu albo na pager MetroBIPa,
+               albo na komorke (Era lub Plus GSM) a callerid pokazuje nam
+               jego numer :)
+               UWAGI: Do celow phreakingu lepiej jest pozyskac numer przez
+               callerid niz po prostu uzywajac oznakowanego automatu gdyz
+               tych nieoznakowanych nie ma w zadnych spisach TPSA i latwiej
+               jest zamowic rozmowe na taki automat...
+
+         2.    Jak wybrac 900? Zwykly automat na karte ma ten numer zablokowany
+               trzeba to zrobic:
+                  a) z zetonowca 
+                  b) poprosic kogos zeby zadzwonil dla nas
+                  c) wykorzystac buga 6 lub 9.
+
+         3.    Co zrobic z piskami po zadzwonieniu pod automat? Zrobic sie nie
+               da nic ale zawsze mozemy powiedziec telefonistce ze mamy tel.
+               bezprzewodowy i po prostu koncza sie baterie, co jest kolejnym
+               pretekstem dla niej aby sie pospieszyla bo masz niewiele czasu
+               na rozmowe.
+        
+         4.    Jak sie dowiedziec jaka centrala jest na danym numerze?
+               a) Najprosciej jest poznac Strowgera - nie dziala na nim nic -
+                  ani wybieranie tonowe, ani callerid, ani zadna usluga central
+                  tonowych.
+               b) Trzeba zadzwonic do biura napraw lub do BOKU i sie spytac :)
+               c) Mozna poszukac na naszej liscie central w Warszawie - mamy
+                  prawie wszystkie.
+
+         5.    Jak zrobic telefon do podpinania sie?
+               Ostatnio wybuchla afera co do tzw. pajeczarzy czyli ludzi
+               ktorzy podpinali sie sasiadom pod linie. Idioci popelniali
+               jeden blad - zdejmowali izolacje z kabla i dopinali do tego
+               swoj telefon. Glupota! Jak zrobic zeby nie uszkodzic izolacji?
+               Trzeba uciac wtyczke od telefonu i do obu zyl przylutowac lub
+               doczepic igly! Wbijamy igly w kabel, dzwonimy, potem je 
+               wyciagamy a elastyczna izolacja zakrywa dziury. Nie ma sladu!
+               Wystarczy troche pomyslec a juz nie przyjdzie nikomu do glowy 
+               ze ktos sie podpial. Taki telefon przydaje sie w dwoch typach
+               taktyki (Poczytaj w rozdziale o podpinaniu sie sasiadom) - 
+               w taktyce kiedy chcemy pozostac niezauwazeni i w tej kiedy 
+               chcemy udupic sasiada - po prostu zeby nie mial ZADNYCH podstaw
+               do reklamacji. Przy taktyce kiedy idziemy na calosc dobrze jest
+               jednak zdjac izolacje tylko im dalej od nas tym lepiej - 
+               najlepiej w piwnicy...
+
+         6.    Jak sie zabezpieczyc przed sasiadami? (pajeczarzami)
+               Najprosciej jest kupic "antypirata" za okolo 50 zl lub 
+               zrobic go samemu (EP 9/97). 
+
+         7.    Napisze tutaj troche jak nie trafic do wiezienia za byle
+               0800-tke. Po pierwsze ile tylko mozesz testuj z automatow.
+               Za wykorzystywanie bugow nikt ci nic nie zrobi - bo masz 
+               prawo wybrac numer jaki chcesz. Ale pamietaj ze za podpinanie
+               sie pod linie czyjas lub automatu moze cie zgarnac policja.
+               Wracajac do domu... 
+                      a) CallerID nie jest zadnym dowodem.
+                      b) dowodem jest sprzet zalozony przez prokurature.
+                      c) jezeli nie mieli sprzetu do namierzania a wpisales
+                         swoj numer do callbacku to tez NIE jest dowodem ze
+                         to ty go tam wpisales - mogl to zrobic kazdy.
+                      d) osobie do ktorej dzwoniles nie moga zrobic absolutnie
+                         nic.
+                      e) nikomu nie dawaj wykazow rozmow ze swojej linii
+                      f) nie chwal sie tym co robisz...
+                      g) nawet jesli nie maja dowodow a wiedza ze to ty to
+                         juz masz klopoty - moga sie do ciebie przyczepic pod
+                         byle pretekstem.
+                      h) wbrew pozorom i grozbom phreaking w Polsce jest ciagle
+                         bardzo bezpieczny.
+         
+         8.    To zalezy od tego o czym masz jakiekolwiek pojecie. Jezeli
+               robisz cos w elektronice to warto jest zaopatrzyc sie od 
+               jakiegos monterka w klucz do automatow (zeby go otworzyc) -
+               jest jeden do wszystkich. Po drugie oplacaja sie wszelkie 
+               DZIALAJACE karty - falszywe, niesmiertelne, itp.
+               Idac dalej - jak juz mowilem wszelkie extendery, calling cardy,
+               credit cardy, pbxy, 0800tki. Staraj sie oczywiscie kombinowac
+               z czyms na "wymiane" bo rzadko kto da cos za darmo a niektorzy
+               maja dosc wygorowany cennik zeby kupowac to za kase. 
+
+- -- - -- ----------- - - --------------- - -------------------------- - ----
+VI. Elektronika.
+
+         1.    Teraz bedzie mala opowiastka o automatach. Zacznijmy od 
+               wyjasnienia skad automat wie ze za numer 974 nie liczyc
+               impulsow a za 913 trzeba. Ktos zaraz powie ze kazdy automat
+               ma wpisane wszystkie darmowe numery i tabele taryfikacji.
+               I co, kiedy wprowadza kolejne numery monterzy robia rundke
+               po calej Polsce i przerabiaja automaty? nie... Automat w
+               momencie polaczenia lub co okres taryfikacyjny dostaje od
+               centrali impuls, nastepnie zzera jednostke z karty i odbija
+               impuls taryfikacyjny do centrali. A co sie dzieje w momencie
+               kiedy wepniemy sie w linie automatu. Przeciez nasz telefon 
+               nie odbije impulsu i centrala zrywa polaczenie. Nie dobrze..
+               Gdyby jednak byl sposob zeby odbic ten impuls... Tutaj pomocny
+               bedzie Red Box.
+
+         2.    Red Box to urzadzenie ktore generuje impulsy taryfikacyjne
+               ktore sa wymagane przez centrale do podtrzymania polaczenia
+               z linii automatu publicznego. Istnieja trzy typy tych impulsow
+               a dokladniej mowiac trzy dlugosci ich trwania. Wszystkie 
+               FAQ na ten temat pochodza z USA a tam te impulsy podawane sa
+               jako 5, 10 i 25centow. U nas mozna by odniesc to do zetonow
+               A, B i C... A jako ze A to jeden impuls wiec wystarczy nam 
+               ten impuls 5 centow... Mimo wszystko urzadzenie trzeba zrobic.
+               Wszystkie faq podaja ze najprosciej jest rozebrac tonedialera
+               i wymienic "Crystal" na odpowiedni dla redboxu. Problem w tym
+               ze mamy lata 90-te a nie 80-te i wszystkie tonedialery maja 
+               w sobie juz chipy. Tutaj moznaby sie sporo bawic w elektronike
+               ja tylko podam odpowiednie czestotliwosci:
+
+                    5c           1700+2200Hz   0.06s on
+                   10c            -- " --      0.06s potem 0.06s ciszy i znow
+                   25c            -- " --      (0.33s potem 0.33s ciszy) x5
+
+               Ja jestem jednak zwolennikiem nagrania tych czestotliwosci na 
+               dobry magnetofon i po prostu puszczenia ich z kasety.
+               Wygenerowac je mozna na Sound Blasterze programem typu BlueBeep
+               Podobnie jak ktos sie uprze mozna w ten sposob tonedialera 
+               zrobic.
+         
+         3.    Teraz troche o najslynniejszym boxie czyli BlueBoxie. Powstal on
+               przy wspolpracy znanego dzisiaj hackera Johna Drapera i dwoch 
+               aktualnie producentow komputerow Apple Macintosh - Steve'a    
+               Jobsa i Steve Wozniaka (Widzicie jak daleko mozna wyjsc na 
+               phreaku? :). Blue Box generowal sygnal 2600Hz dzieki ktoremu
+               centrala "myslala" ze polaczenie zostalo zerwane a tak naprawde 
+               trwalo nadal. Nie sprawdzalem czy Blue Box dziala jeszcze na 
+               starych Strowgerach ale zawsze mozna poprobowac. Pisze o nim 
+               nie z powodu jako ze niby mialby dzialac dzis w latach 90-tych, 
+               pisze o nim czysto ze wzgledow takich ze jest to po prostu 
+               historia tak wazna jak pamietanie daty bitwy pod Grunwaldem :)
+
+         4.    Silver Box - nazwa szumna a jest to po prostu tone dialer.
+               Jak ktos ma aspiracje zeby takowego skonstruowac lub przerobic
+               podaje czestotliwosci. Warto zauwazyc ze podaje tutaj tez 
+               czestotliwosci kodow ABCD ktore jednak sa malo w Polsce 
+               przydatne.
+
+                        0        1477+941Hz
+                        1        1209+697Hz
+                        2        1336+697Hz
+                        3        1477+697Hz
+                        4        1209+770Hz
+                        5        1336+770Hz
+                        6        1477+770Hz
+                        7        1209+852Hz
+                        8        1336+852Hz
+                        9        1477+852Hz
+                        *        1209+941Hz
+                        #        1477+941Hz
+                        A        1633+697Hz
+                        B        1633+770Hz
+                        C        1633+852Hz
+                        D        1633+941Hz
+               
+         5.    Stare centrale typu strowgera w dosc ciekawy sposob dawaly znac
+               o zaliczeniu impulsu - odwracaly petle czyli inaczej mowiac 
+               polaryzacje linii. Mozna to prosto sprawdzic - wlaczamy takie 
+               cos w linie - koniecznie szeregowo:
+                                         //
+                               ,--------|<-------.
+                          -----|                 |-----
+                               `-------->|-------'
+                                        //
+               --- drut
+               |<  dioda
+
+               Najlepiej zeby diody mialy rozne kolory np. czerwona i zielona
+               Podnosimy sluchawke, zapala sie jedna, dzwonimy pod jakis numer
+               i w momencie kiedy ktos odbierze dioda gasnie i zapala sie druga
+               w ciskamy widelki i znowu pali sie ta pierwsza. Dzwonimy pod 
+               byle jakie 0800 i diody sie nie zmieniaja - znaczit zmiana 
+               polaryzacji znaczy 
+               Dokonujemy drobnej modyfikacji - zamiast jednej diody wstawiamy
+               opornik - jakies 20kOhma starczy. Oczywiscie chodzi o diode 
+               oznaczajaca taryfikacje.
+                                      //
+                               ,-----|<-----.
+                          -----|     ____   |----
+                               `----|____|--'
+
+               Taki sprzet nie pozwoli centrali zezrec impulsu - porba
+               zaliczenia impulsu spowoduje zerwanie polaczenia. Caly sprzet
+               przydaje sie do testow - jezeli tylko uda nam sie polaczyc
+               znaczy ze dzwonimy za darmo - oczywiscie wszystko dziala tylko
+               na strowgerze.
+               Problem jest jeden - urzadzonko filtruje kazdy dzwonek - nie
+               uslyszysz kiedy bedzie dzwonil telefon bo strowger odwracaca
+               petle takze przy RINGu.
+              
+-- -- -- - --------------------------------------------------------- -- - ---
+VII. Informacje, itp.
+
+         1.   Kontakt i namiary...
+
+                          irc:              #tnt97
+                          www:              http://trinitro.home.ml.org
+             
+              Faq powstalo dzieki materialom, tekstom, pomyslom i wyczynom
+              nastepujach ludzi...
+
+              twitter alex mEGA kate miernik omikron spaceman kaszpir
+              peterson nighthawk shmasta marcus ezrider skorek mil
+
+              nie zapominajmy o roznych ludziach ktorym sie chcialo skanowac
+              po 1000 numerow na glowe... Ale oni to juz oddzielny temat, jako
+              ze extenderow nie daje tak latwo. 
+
+         2.   Troche stronek www...
+
+
+               http://trinitro.home.ml.org/          
+                      Nasza strona - programiki, faq, listy central,
+                      listy wszystkich numerow 9xx, opisy central, etc.
+                      Listy automatow dwukierunkowych... 
+
+               http://wrss.amp.pw.edu.pl/miernik
+               http://wrss.amp.pw.edu.pl/miernik/telecomm
+                      Strona miernika - "wspolpracownika", jest nieco
+                      tez o TPSA, tyle z ta stronka jest mniej "offending"
+
+               http://www.atm.com.pl/~jpzr/kacyko.html
+                      Nie pamietam dokladnie adresu - do ~jpzr/ jest na pewno
+                      dobrze. Kacik Cyfrowej Komorki - bardzo duzo informacji
+                      o "komorkach". Troche o TPSA. Tez malo "offending"
+ 
+               http://free.polbox.pl/0/0800
+                      Ludzie oczarowani numerkami 0800xxxxx
+                      Jak juz powiedzialem nie jestem z tego podejscia
+                      zadowolony.
+
+         3.   Lektura uzupelniajaca :)
+
+              Spaceman HACK/CC/PHREAK FAQ PART 1         spacefaq1.txt
+              Alt.2600 Frequently Asked Questions         ALT_2600.ZIP
+              Lista Central w Warszawie (tnt!)
+                                 http://trinitro.home.ml.org/cent.html
+             
+
+- ---  - - - - --------------------------------------------------- - --------
+VIII. Automatyczne sekretarki.
+
+         1.   Wstep czyli z czym do ludzi - o co chodzi? Otoz o to ze kazda
+              szanujaca sie automatyczna sekretarka ma mozliwosci pelnej 
+              kontroli nad nia z zewnatrz za pomoca tonow (z automatow bedzie
+              potrzebny tonedialer). Co nam to daje? Mozemy odsluchac 
+              wszystkie wiadomosci ktore do kogos przyszly, zmienic mu OGM, 
+              podsluchiwac go, wylaczyc sekretarke... 
+         2.   Zaraz ktos powie ze nici z zabawy poniewaz kazda sekretarka ma
+              kody zabezpieczajace. Ale tak sensownie to oceniajac te kody nie
+              sa praktycznie zadnym zabezpieczeniem...
+                   a) Jezeli wiesz ze ktos ma sekretarke z telefonem Panasonica
+                      ktory nie jest bezprzewodowcem to sprawa jest banalna, 
+                      kod jest jednocyfrowy wiec zostalo juz tylko 10 mozliwych
+                      kodow... biorac pod uwage czestotliwosc wystepowania 
+                      testuj w kolejnosci 5,1,0,4,7,9,8,6,2,3
+                      Wlasciciel nie ma mozliwosci zmiany kodu, moze conajwyzej
+                      wylaczyc "Remote Operations"... 
+                   b) Bezprzewodowce Panasonica z sekretarka - dwucyfrowy kod,
+                      druga cyfra zmienialna... Fabrycznie ustawiona na taka
+                      sama jak pierwsza cyfra. testujemy w kolejnosci:
+                      najpierw: 11,55,00,44,77,99,88,66,22,33
+                      potem:    1X,5X,0X,... gdzie x=<0,9>
+                      Majac taka sekretarke najlepiej jest ustawic druga cyfre
+                      na nie kojarzaca sie z pierwsza - np. 58, 04, etc.
+                   c) Standalone Panasonic np. KX-T1000
+                      Banalna do rozwalenia - na spodzie ma napisane trzy
+                      cyfry np. 1,4,7 - niezmienialne. Kodem jest dowolna
+                      kombinacja tych cyfr np. 111,147,741,774,etc.
+                      Czyli zeby sprawdzic wszystko jedziemy:
+                      111,222,333,...,999,000 - ta metoda w najlepszym
+                      przypadku za pierwszym a w najgorszym za siodmym
+                      razem trafiamy kod :)
+                      Sekretarka gowniana dla wlasciciela bo nie ma mozliwosci
+                      zadnego zabezpieczenia.
+                   d) Cyfral - standalone
+                      Dziala chyba podobnie jak Standalone Panasonic
+                      Wiem ze maja nawet dwa kody chyba zmienialne. Deafaultowo
+                      ustawione na 689 i 169.
+                   e) Faxy Panasonic i SuperVoice
+                      Praktycznie nie mozliwe do rozwalenia - cztery cyfry
+                      zmienialnego kodu. Niektore faxy maja deafultowo kod
+                      1234, 1111 lub 4444 (kod do biuletynow).
+                   f) Reszte okreslamy idac do sklepu i czytajac instrukcje
+                      od danej sekretarki do jakiej chcemy sie dobrac,
+                      mozna tez probowac pojsc  do naszej ofiary i probowac 
+                      wydobyc "Remote Code" z sekretarki - w ten sposob 
+                      rozwalilem jeden fax :) 
+
+         3.   Korzystanie z kodu :)
+              W trakcie OGMu lub po dlugim pisku (sygnale) wklepujemy kod
+              i od tej pory sekretarka robi co chcemy.
+              Na wiekszosci Panasonicow sprawa wyglada tak:
+                       1. Przewijanie tasmy do tylu (PREVIOUS)
+                       2. -- " --           do przodu (NEXT)
+                       3. Kasowanie wszystkich wiad. (RESET)
+                       4. Odsluch nowych wiad. (NEW MSG)
+                       5. Odsluch wszystkich wiad. (ALL MSG)
+                       6. Podsluch (ROOM)
+                          dziala tylko na tych ktore maja mikrofon
+                          na czesci bazowej a nie tylko w sluchawce
+                       7. Nagranie OGM (OGM REC)
+                       8. Na niektorych nagranie OGM...
+                       9. Stop tasmy (STOP) 
+                       0. Wylaczenie sekretarki
+                       #. Wlaczenie sekretarki
+                       *. Przerwanie odtwarzania OGM-u
+              Na standalone Panasonicu - po podaniu kodu sekretarka odtwarza
+              wszystkie wiadomosci kiedy w czasie odtwarzania znow wpiszemy
+              kod zostana one odtworzone ponownie. Po trzech sygnalach po 
+              odtworzeniu wiadomosci wpisanie kodu spowoduje nagranie OGM.
+           
+         4.   Uwagi koncowe
+                   a) dzwon kiedy nikogo nie ma w domu - to slychac glosno
+                   b) im mniej osob o tym wie tym lepiej, po co kto ma
+                      wiedziec ze wogole moze zmienic kod? :)
+                   c) jezeli ktos wylaczy sekretarke a bedzie ona podlaczona 
+                      do linii to tez nie jest bezpieczna bo i tak odbiera po 
+                      ponad 20 sygnalach... (w zaleznosci od sekretarki). 
+ 
+-- -- --  ------------------------------------------------------------- - ---
+IX. Slowniczek...
+
+AmEx       - American Express - nazwa najpopularniejszej w USA karty kredytowej
+
+biper      - patrz. tonedialer.
+
+BOK        - Biuro Obslugi Klienta  (TM) by TPSA.
+
+box        - urzadzenie wpinane w linie lub telefon pozwalajace na darmowe
+             dzwonienie lub rozne inne machinacje - boxy nazywa sie kolorami..
+             red box.. blue box, etc.
+
+BTW        - "by the way" - cos jak PS., "tak poza tym" 
+
+bug        - "robak" - blad w oprogramowaniu lub sprzecie automatu lub
+             centrali...
+
+busy       - sygnal zajetosci (przerywany).
+
+callerid   - identyfikacja rozmowcy - cyfrowe centrale potrafia 
+             zidentyfikowac z jakiego numeru ktos dzwoni.
+
+carding    - defraudacje kart kredytowych np. Visa, AmEx
+
+cc         - "Calling cards"
+
+cid        - patrz. callerid.
+
+default    - ustawienie fabryczne, standardowe.
+
+dialtone   - sygnal ciagly - ten sygnal ktory slyszysz po podniesieniu 
+             sluchawki.
+
+DISA       - karta rozszerzenia do centrali wewnetrznej (PBXa) pozwalajaca
+             dzwoniacemu samemu - tonowo wybrac sobie numer wewnetrzny
+             bez pomocy telefonistki. DISA zglasza sie mniej wiecej tak:
+             "Tu firma X, prosze wybrac tonowo numer wewnetrzny lub
+             poczekac na zgloszenie sie telefonistki". DISA odpowiedzialna
+             jest za: a) puszczenie komunikatu, b) rozpoznawanie tonow
+             c) automatyczne przeniesienie na fax.
+
+DTMF       - po prostu tony uzywane do wybrania numeru.
+
+EP         - Elektronika Praktyczna
+
+extender   - po zadzwonieniu na numer extendera dostajesz dialtone z ktorego
+             mozesz dzwonic gdzie chcesz.
+
+fake       - falszywy, podrobiony, atrapa...
+
+flash      - "hook flash" -  odpowiednik wcisniecia widelek na 0.7s
+             wbrew pozorom nie takie trudne - po prostu flash...
+
+IMHO       - "In my humble opinion" - w mojej dumnej opinii :)
+
+OGM        - "Outgoing Message" - wiadomosc poczatkowa odtwarzana przez 
+             sekretarke zaraz po odebraniu telefonu, np:
+             "Tu numer xxxxx, niestety nie ma nikogo w domu, prosze ... "
+
+okres taryfikacyjny
+
+           - okres co jaki zaliczany jest jeden impuls telefoniczny.
+
+PBX        - "Private Branch Exchange"
+             abonencka centrala wewnetrzna - centrale wewnetrzne spotyka
+             sie w wiekszych firmach, zapewniaja one pewna ilosc numerow
+             wewnetrznych i wyjsc na "miasto".
+
+pulsy      - takze: wybieranie impulsowe
+             Wybieranie alternatywne do tonowego dziala na zasadzie
+             kilkakrotnego przerywania obwodu na bardzo krotki czas, od liczby
+             przerwan zalezy ktora cyfra. 
+             Znacznie wolniejsze i bardziej omylne od tonow. 
+
+RING       - dzwonek - stan linii w momencie kiedy dzwoni telefon
+
+skanowanie - poszukiwanie extenderow i modemow poprzez sprawdzanie wszystkich
+             numerow po kolei - najprosciej robi sie to odpowiednim programem
+             no chyba ze ktos lubi recznie :)
+
+standalone - "wolnostojacy" - np. sekretarka ktora nie jest wbudowana w telefon
+             ani w fax, tylko stoi oddzielnie..
+
+supplier   - czlowiek od ktorego mozna (oczywiscie nielegalnie) kupic falszywa 
+             lub kradziona karte kredytowa, Calling Cards, lub inne podobne
+             "artykuly".
+
+tonedialer - drobne urzadzonko generujace tony - takie jakie sluza do 
+             wybierania numeru. Tone dialery tak naprawde przeznaczone
+             sa do sterowania automatyczna sekretarka z zewnatrz.
+
+toneloc    - najlepszy program do skanowania. Najnowsza wersja to z tego co
+             pamietam 1.1 - nastepnych nie bedzie gdyz autor (Minor Threat)
+             siedzi w wiezieniu wprawdzie nie za phreak tylko za hack :)
+
+tony       - inaczej: wybieranie tonowe
+             Wybieranie tonowe nie przerywa obwodu tylko tony sa pewna
+             czestotliwoscia dzwieku. W opisie Silver Boxa sa dokladne 
+             czestotliwosci.
+
+VISA       - nazwa popularnej karty kredytowej.
+
+war dialing- patrz. skanowanie.
+
+zetonowiec - po prostu automat publiczny na zetony...
+
+@BEGIN_FILE_ID.DIZ 
+   -- -- - --------------------- -
+     phreaking in poland 
+--- - - -------------------- -----
+ trinitrotoluene! H/P/A release...
+@END_FILE_ID.DIZ
+
+
+
+
+

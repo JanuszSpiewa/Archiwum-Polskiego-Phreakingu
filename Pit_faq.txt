@@ -1,0 +1,1600 @@
+
+
+        ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+        ³  ÜÜÜÜÜÜÜ  ÜÜÜÜÜ ÜÜÜÜÜÜÜ        ÜÜÜÜÜÜÜ   ÜÜÜÜ     ÜÜÜÜ    ³
+        ³  ÛÛÛßßÛÛÛ ßÛÛÛß ßßÛÛÛßß        ÛÛÛßßßß ÜÛÛßßÛÛÜ ÜÛÛßßÛÛÜ  ³
+        ³  ÛÛÛÜÜÛÛÛ  ÛÛÛ    ÛÛÛ          ÛÛÛÜÜ   ÛÛÛ  ÛÛÛ ÛÛÛ  ÛÛÛ  ³
+        ³  ÛÛÛßßßß   ÛÛÛ    ÛÛÛ          ÛÛÛßß   ÛÛÛÛÛÛÛÛ ÛÛÛ  ÛÛÛ  ³
+        ³  ÛÛÛ      ÜÛÛÛÜ   ÛÛÛ   ÜÜÜÜÜ  ÛÛÛ     ÛÛÛ  ÛÛÛ ßÛÛÜÛÛÛß  ³
+        ³  ßßß      ßßßßß   ßßß   ßßßßß  ßßß     ßßß  ßßß   ßßßßßß  ³
+        ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
+        ³         ÜÜÜÜÜÜ      ÜÜÜÜÜÜ      ÜÜÜÜÜÜ      ÜÜÜÜÜÜ        ³
+        ³       ÜÛÛÛßßÛÛÛÜ  ÜÛÛÛÛÛÛÛÛÜ  ÜÛÛÛÛÛÛÛÛÜ  ÜÛÛÛÛÛÛÛÛÜ      ³
+        ³       ßßß    ÛÛÛ  ÛÛÛÛ  ÛÛÛÛ  ÛÛÛÛ  ÛÛÛÛ  ÛÛÛÛ  ÛÛÛÛ      ³
+        ³            ÜÛÛÛß  ÛÛÛÛ  ÛÛÛÛ  ÛÛÛÛ  ÛÛÛÛ  ÛÛÛÛ  ÛÛÛÛ      ³
+        ³          ÜÛÛÛß    ÛÛÛÛ  ÛÛÛÛ  ÛÛÛÛ  ÛÛÛÛ  ÛÛÛÛ  ÛÛÛÛ      ³
+        ³        ÜÛÛÛß      ÛÛÛÛÜÜÛÛÛÛ  ÛÛÛÛÜÜÛÛÛÛ  ÛÛÛÛÜÜÛÛÛÛ      ³
+        ³       ÛÛÛÛÛÛÛÛÛÛ   ßÛÛÛÛÛÛß    ßÛÛÛÛÛÛß    ßÛÛÛÛÛÛß       ³
+        ³                                                           ³
+        ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+         ver 2.0
+                               > pIt_FaQ <
+                              Odslona dr•ga
+                                8.11.2000
+
+
+
+           !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+           !!                                                   !!
+           !! UWAGA! Ten texcik sluzy tylko celom informacyjnym !!
+           !! Autor (czyli Ja) nie odpowiada za szkody ktore    !!
+           !! moga wyrzadzic sobie (Ty) i innym (np. TePeSA)    !!
+           !! osoby czytajace ten text. Informacje tu zawarte   !!
+           !! sa zawarte w tylko celach informacyjnych.         !!
+           !!                                                   !!
+           !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+        Zawartosc:
+
+      U ²  1. Wstep
+        ²  2. Niebieski
+      U ²±  2.1 Gdy juz masz go w domu
+        ²±°  2.1.1 Uruchamianie w/g instrukcji
+      U ²±°  2.1.2 Podlaczanie do lini
+      N ²±  2.2 Kody Diagnostyczne
+      N ²±°  2.2.1 Opis wybranych
+      U ²±  2.3 Powody zgloszen niebieskiego do centrali
+      N ²±°  2.3.1 Opis wybranych
+      U ²±  2.4 Parametry techniczne
+        ²±  2.5 Kluczyk
+      U ²±°  2.5.1 Nowe zamki
+      N ²±  2.6 Czytnik
+      N ²±°  2.6.1 Konstrukcja
+      N ²±°  2.6.2 Karta magnetyczna
+      N ²±°  2.6.3 Kasowanie
+      N ²±  2.7 Co sie moze przydac w domu
+      N ²±  2.8 Free-Calling
+      N ²±°  2.8.1 EPROM Change
+      U ²  3. Srebrny
+      N ²±  3.1 Charakterystyka
+      N ²±  3.2 Co sie moze przydac w domu
+      N ²±  3.3 Free-Calling
+      N ²±  3.4 Specyfikacja i dane techniczne
+      N ²±  3.5 Opcje
+      N ²±  3.6 Dro
+      N ²±  3.7 Jajko
+        ²  4. !!! 100 - PROCENTOWA METODA NA FREECALLING Z DOMU
+      U ²±  4.1 Rodzaje radiolini             (RADIO-PHREAKING)
+      N ²±°  4.1.1 RSLA
+      N ²±°  4.1.1 RSP
+      U ²±  4.3 Potrzebny sprzet
+        ²±  4.5 Zagrozenia
+        ²±  4.5 Jak to zrobic
+      U ²  5. Telefony bezprzewodowe, Centertel NMT450, policja ...
+      N ²±  5.1 Kodowanie zalaczania
+      N ²±  5.2 Czestotliwosci
+      N ²  6. Telkom-Telos Diament
+      U ²  7. Publiczne automaty komorkowe Centertel
+      N ²  8. Jak zrobic surowke Abloy'a
+      N ²±  8.1 AY1
+      N ²±  8.2 AY3
+      N ²  9. Co rasowy Phreaker potrzebuje
+      N ²±  9.1 Sprzet
+      N ²±  9.2 Narzedzia
+      N ²±  9.3 Inne
+      N ²  10. Moja krotka filozofia na temat Phreakingu
+      U ²  11. Ciekawostki
+      N ²  12. Nagrywarka
+      U ²  13. Inne
+
+        N - nowe, dodane,
+        U - uaktualnione, poprawione,
+
+
+   Prosil bym bardzo o nie zmienianie zawartosci tego tekstu bez mojej zgody
+                i kopiowanie tego faq tylko i wylacznie w calosci
+
+
+²±±°°°  1. Wstep
+
+ (U)    Na poczatku dzieki za wszystkie maile. Postanowilem poprawic i
+        nieznacznie poszerzyc swoj faq. Pozniej jednak, gdy porownalem
+        spis tresci  z wersji 1.01 i nie doszlej 1.2 postanowilem, ze to
+        jednak bedzie wersja 2.0 i wprowadze kilka zmian.
+        Co do RADIO-PHREAKINGU to przedstawione informacje sa sprawdzone
+        i wyprobowane na 100% !!
+        Wkrotce wszystko co tu opisalem zamieszcze na swojej stronie
+        w postaci HTML i tylko ta strone bede uaktualnial. Takze to
+        chyba ostatni faq z serii Pit_Faq. Co do Phone.Zip to wkrotce
+        nowe wersje, nowe schematy i rysunek plytki do starego.
+        I wielka prosba: NIE PISZCIE DO MNIE O PLYTKE I SCHEMAT DTMF.
+        Jak narysuje (a na razie mi sie bardzo nie chce) to sie pojawi
+        na stronach (szukajcie u Hrabiego)
+        Wiekszosc informacji o Urmetach pochodzi z instrukcji do nich.
+        [ w takich nawiasach beda sie znajdowac moje komentarze do tego
+        co pisze w instrukcji ]
+
+²±±°°°   2. Niebieski
+
+        ... jak wyglada kazdy wie. Zostal wyprodukowany przez firme Urmet
+        z Wloch. Naprawde sie nazywa TSP 91 i jest w pelni wykorzystany
+        przy wspolpracy z systemem centrum nadzoru C90
+
+²±±°°°   2.1 Gdy juz ktos ma go w domu, to na pewno chcial by go ozywic.
+        Niestety, do lini lepiej go na razie nie podpinac (patrz 2.1.2).
+ (U)    Kilka osob juz pisalo jak go podlaczyc, np. DiesIrae podlaczal go
+        na wyjscie wzmacniacza, a na wejscie dawal rozne czestotliwosci.
+        Wystarczy, ze uzyjemy zasilacza o napieciu ok 12 V, najlepiej
+        stabilizowanego. Mojemu niebieskiemu sie czesto zdarzalo, ze
+        wyswietlal ENTRY CALL, nie wiem czy to byla tego wina, ale jak macie
+        stabilizowany, to uzyjcie takiego. I jeszcze jedno - wyciagajcie
+        bezpiecznik z czytnika jak dluzej nie uzywacie.
+        Jezeli chcesz wiedziec co teraz zrobic to czytaj dalej
+
+²±±°°°°  2.1.1 Uruchamianie w/g instrukcji dla montera:
+
+        Pozwole sobie ominac opis montazu na scianie i od razu przejde
+        do punktu 9.
+
+
+               9) Przed podlaczeniem kabla liniowegodo zaciskow oznaczonych
+               'a' i 'b' na zlaczu sprawdizc woltomierzem obecnosc napiecia
+               lini (48-60V) [ nas to nie interesuje ] a nastepnie dokonac
+               podlaczenia niezaleznie od biegunowosci.
+
+               10) Zamontowac ponownie czytnik, podlaczyc kabel; zlacze J7
+
+               11) Zamontowac ponownie drzwi, wprowadzic kable; zlacze J3,
+               J5 i J6. Mikrotelefon podlaczyc do zlacza J4.
+
+               12) Przy odwieszonym mikrotelefonie
+               [jesli nie ukradlismy sluchawki to zwieramy oba styki.
+               Proponuje sobie wygiac z drutu nakladke w ksztalcie litery U]
+               odczekac ok. 2 minuty (czas potrzebny na naladowanie sie
+               kondensatorow), podniesc mikrotelefon - na wyswietlaczu powi-
+               nien sie pojawic tekst OUT OF ORDER, USZKODZONY. Wlozyc
+               bezpiecznik do gniazda na plytce elektronicznej czytnika;
+               bezpiecznik ten byl wyjety wczesniej w momencie pakowania
+               urzadzenia, by uniemozliwic rozladowanie sie baterii
+               czytnika w czasie przechowywania telefonu w magazynie.
+
+               13) Wykonac "reset" wciskajac przycisk SW1 znajdujacy sie na
+               plycie elektronicznej aparatu, zgodnie z objasnieniami
+               podanymi w rozdziale "PROGRAMOWANIE"
+
+               14) W razie stanu stalej niesprawnosci technicznej na wyswie-
+               tlaczu utrzymuje sie napis OUT OF ORDER, sprawdzic poprawnosc
+               elementow
+
+               15) Podniesc mikrotelefon, co uruchamia tor odbiorczy - tor
+               nadawczy jest jeszcze zablokowany.
+
+               16) Wsunac karte, na wyswietlaczu winna sie ukazac suma, na
+               jaka karta opiewa. [lub DIAGNOSTIC MENU]
+
+               (...)
+
+
+²±±°°°°  2.1.2 Podlaczanie do lini
+
+ (U)    Jak to zrobimy, to cham zadzwoni na centrale. Ale majac karte
+        PROGRAMING mozna by mu wylaczyc komunikacje z centrala albo zmienic
+        jej numer. Wtedy nie powinien zadzwonic. Jezeli wtedy bysmy chcieli
+        dzwonic z niego z domu mozemy zastosowac (przy pomocy karty PROGRAM-
+        MING) metode opisana przez Hrabiego (menu.txt)
+        Niebieski nigdy nie zapomina (chyba ze skasujemy EEPROM) numeru
+        wlasnego i centrali. Takze Programming jest niezbedny.
+
+
+
+²±±°°° 2.2 Kody Diagnostyczne
+
+ !NEW!  Wiele osob pisalo ze to co ja opisalem w poprzedniej wersji jako
+        powody zgloszenia sie nie zgadza z tym co opisal Kolnierz w
+        Kolnsoft.txt i Hrabia w Menu.txt. Np. po podniesieniu sluchawki
+        trzymajac wcisniete dwa przyciski klawiatury i wyswietleniu OUT
+        OF ORDER w Diagnostic Menu jest zapisany kod #21 czyli wg mnie
+        "Usterka urzadzenia zabezpieczajacego przed oszustwem" a wg w/w
+        osob to poprostu zablokowanie klawiatury.
+        Otoz drodzy Koledzy Phreakerzy, spiesze z wyjasnieniami. To co ja
+        opisalem to "Powody zgloszen niebieskiego do centrali" a im chodzilo
+        o "Kody diagnostyczne". Wg instrukcji kod #21 to "Zablokowanie
+        klawiatury" i to sie zgadza.
+
+        "...Niebieski posiada skomplikowany system autodiagnostyczny, ktory
+        samodzielnie moze wykryc nieprawidlowosci w dzialaniu podzespolow
+        mechanicznych, elektronicznych jak i linii telefonicznej.
+        Procedura autodiagnozy ma miejsce przy kazdym zdjeciu mikrotelefonu
+        z widelek. Jezeli wszystko jest OK to urmet wyswietla INSERT CARD,
+        a jezeli cus jest nie tak jak pan bog przykazal to wyswietla OUT OF
+        ORDER - jest to STAN NIESPRAWNOSCI TECHNICZNEJ
+
+
+        Sporadycznie wystepuja chwilowe niesprawnosci telefonu, ktore po
+        odlozeniu mikrotelefonu na widelki i po ponownym ich podniesieniu
+        czesto znikaja.
+        Odpowiednia procedura diagnostyki powoduje, iz aparat bedzie w stanie
+        odroznic ciezar gatunkowy poszczegolnych niesprawnosci ktore jesli
+        sie powtarzaja lub sa szczegolnie wazne moga spowodowac wygenerowanie
+        i zapamietanie nowego wiazacego sie z tym kodu diagnostycznego
+        oraz/lub dac powod do zgloszenia sie do jednostki zdalnego sterowania
+        C90 celem natychmiastowego przekazania komunikatu o stwierdzonej
+        nieprawidlowosci.
+
+        Kody diagnostyczne, zapamietane w RAM mozna sprawdzic przez zastoso-
+        wanie karty PROGRAMMING, MAINTENANSE lub przy otwartych drzwiach
+        aparatu.
+        Na wyswietlaczu uwidaczniane sa nastepujace kody:
+
+        ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
+        º  KODY ZWIAZANE Z PLYTA ELEKTRONICZNA                      º
+        ÌÍÍÍÍÍÍÑÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹
+        º KOD: ³  Przyczyna:                                        º
+        ÇÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
+        º  11  ³  Utrata danych w RAM lub zaicjonowanie             º
+        º  12  ³  Utrata danych programowania w EEPROM              º
+        º  13  ³  Otwarcie drzwi                                    º
+        º  14  ³  Usilowanie oszustwa                               º
+        º  15  ³  50 kolejnych zdjec sluchawki z widelek bez        º
+        º      ³                     uiszczenia oplaty              º
+        º  16  ³  Linia telefoniczna odlaczona                      º
+        º  17  ³  Niewystarczajacy prad lini                        º
+        ÌÍÍÍÍÍÍÏÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹
+        º  KODY OBWODOW PERYFERYJNYCH                               º
+        ÌÍÍÍÍÍÍÑÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹
+        º KOD: ³  Przyczyna:                                        º
+        ÇÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
+        º  21  ³  Zablokowanie klawiatury                           º
+        º  22  ³  Zablokowanie przycisku ponownego wybierania       º
+        º  23  ³  Nieprawidlowa praca odb. impulsow taryfikacyjnych º
+        º  25  ³  Rozladowany akumulator                            º
+        º  27  ³  Uszkodzenie obwodu mikrofonu                      º
+        º  28  ³  Nieprawidlowa praca modemu                        º
+        º  29  ³  Nieprawidlowa praca zegara                        º
+        º  31  ³  Blad odczytu w EEPROM                             º
+        º  32  ³  Nieprawidlowa praca przewodnikow A/D              º
+        º  33  ³  Bledne polecenie (sterowanie) z C90               º
+        º  34  ³  Utrata danych konfiguracji CPU                    º
+        º  35  ³  Utrata danych licznikow                           º
+        º  36  ³  Blad konca rozmowy telefonicznej                  º
+        ÌÍÍÍÍÍÍÏÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹
+        º  KODY KONTROLI CZYTNIKA                                   º
+        ÌÍÍÍÍÍÍÑÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹
+        º KOD: ³  Przyczyna:                                        º
+        ÇÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
+        º  81  ³  Bledna wymiana danych                             º
+        º  82  ³  Brak odpowiedzi czytnika kart (ktos go zajebal??) º
+        º  83  ³  Usilowanie dokonania oszustwa                     º
+        º  84  ³  Oszustwo magnetyczne                              º
+        º  85  ³  Oszustwo mechaniczne                              º
+        º  86  ³  Nieprawidlowa praca czytnika kart                 º
+        º  87  ³  Zablokowanie karty                                º
+        º  88  ³  Czasowa niesprawnosc                              º
+        º  89  ³  Odczyt karty niewaznej                            º
+        º  91  ³  Nieprawidlowa praca glowic                        º
+        º  92  ³  "N" kolejnych kart nieodczytanych                 º
+        º  93  ³  Blad szczeliny wejsciowej (otworu wlotowego)      º
+        ÈÍÍÍÍÍÍÏÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+
+                   "N" jest liczba zaprogramowana w EEPROM
+
+
+²±±°°°° 2.2.1 Opis wybranych
+
+ !NEW!  KD #xx - kod diagnostyczny numer xx
+        PZ #xx - powod zgloszenia numer xx
+        Czasami KD jest generowany od razu z PZ - wtedy urmet dzwoni do C90.
+
+     KODY DIAGNOSTYCZNE:
+
+     #13 Otwarcie drzwi
+
+        Po zamknieciu drzwi generuje KD #13 i PZ #04
+
+     #14 Usilowanie oszustwa - blad impulsu taryfikacyjnego.
+
+        Jezeli na linie podamy 16kHz to uniemozliwimy prawidlowe dzialnie
+        ukladu taryfikacyjnego. Jezeli telefon otrzyma impuls taryfikacyjny
+        16kHz (Chyba takze 50Hz jezeli ustawimy) dluzszy niz 4 sek. aparat
+        przejdzie w stan niesprawnosci technicznej i wygeneruje KD #14
+        (Podobnie jest w AWS-7 Telkom-Telos)
+
+     #15 50 kolejnych zdjec mikrotelefonu z widelek bez uiszczenia oplaty
+
+        Jezeli telefon odliczy 50 kolejnych odlozen mikrotelefonu na widelki
+        bez otrzymania zadnego impulsu taryfikacyjnego zostanie wygenerowany
+        KD #15 i PZ #05. Po zgloszeniu do C90 dalsze odlozenia nie beda zli-
+        czane dopoki co najmniej jedno poloczenie nie zostanie zrealizowane
+        do konca.
+
+     #16 Linia telefoniczna odlaczona
+
+        Urmet podobno caly czas od momentu podniesienia mikrotelefonu az
+        do jego odlozenia kontroluje obecnosc lini. W razie jej braku
+        przez dluzej niz 2 sek. wywolany jest stan niesprawnosci technicznej.
+        Jezeli sytuacja powtorzy sie 5 razy pod rzad to zostanie wygenero-
+        wany KD #16
+
+        Wniosek: - jezeli podlaczasz sie pod blurmeta i odlaczasz linie
+        to nie podnos sluchawki.
+
+     #17 Niewystarczajacy prad lini
+
+        Po zdjeciu mikrotelefonu z widelek wykonywany jest szybki test
+        sprawdzajacy prad lini. Test ten polega na porownaniu wartosci
+        pradu lini z ustalona wartoscia progu minimalnego.
+        Jesli prad lini jest mniejszy od wartosci progu minimalnego to
+        jest wykonywany drugi test mierzacy dokladnie wartosc przdu i
+        w razie istotnej roznicy wywolywany jest stan niesprawnosci
+        technicznej.
+        Niewystarczajacy prad lini pozwala na przeprowadzenie rozmow n
+        numerami bezplatnymi o ile nie wymaga to zatrudnienia czytnika
+        kart.
+
+     #21 Zablokowanie klawiatury
+
+        Po zdjeciu mikrotelefonu z widelek uruchamiana jest procedura
+        sprawdzajaca czy zaden z przyciskow klawiatury nie jest wcisniety.
+        Jezeli jest to telefon wkracza w stan niesprawnosci technicznej.
+        Jezeli powyzsza sytuacja powtorzy sie 5 kolejnych razy to zostanie
+        wygenerowany KD #21
+
+     #23 Nieprawidlowe dzialanie odbiornika impulsow taryfikacyjnych
+
+        Podobnie jak w KD #14, tylko procedura sprawdzania jest wykonana
+        po podniesieniu sluchawki. Jezeli cos jest nie tak to najpierw
+        powoduje wygenerowanie stanu alarmowego, a po 5 razach KD #23
+
+     #25 Rozladowany akumulator czytnika
+
+        ... ktory dostarcza energi wiekszej niz ta ktora mozna pobrac z lini
+        do dzialania mechanizmow czytnika. W tym przypadku wszystko jest
+        podobnie jak w KD #17, 2 testy napiecia baterii, 5x stan alarmowy,
+        polaczenia tylko znum. bezplatnymi i KD #25
+
+     #27 Nieprawidlowe dzialanie obwodu mikrofonu
+
+        Jezeli przez 5 kolejnych razy aparat stwierdzi, ze obwod mikrofonu
+        jest przerwany to zostanie wygenerowany KD #27
+
+     #28 Nieprawidlowe dzialanie modemu
+
+        Przed kazdym zgloszeniem do C90 jest przeprowadzany test nadajnika
+        o odbiornika DTMF. Jezeli test sie nie powiedzie to zostanie wyge-
+        nerowany KD #28
+
+     #29 Nieprawidlowe dzialanie zegara
+
+        Uszkodzenie zegara wewnetrznego podajacego date i godzine poeoduje
+        wygenerowanie KD #29 i PZ #19
+
+     #31 Blad zapisu w EEPROM
+
+        Jezeli nastapi blad zapisu lub zapis bedzie niekompletny, to przy
+        nastepnym zdjeciu mikrotelefonu do EEPROM zostana przeslane dane
+        domyslne wartosci z EPROM. Jezeli to sie nie uda 5 razy to KD #31
+
+     #32 Nieprawidlowe dzialanie przetwornikow A/D
+
+        Chodzi o przetworniki A/D sluzace do pomiaru pradu lini, napiecia
+        baterii. Po 5 nieudanych probach jest generowany KD #32
+
+     #33 Bledny rozkaz (polecenie) z jednostki C90
+
+        Blad moze byc wywolany zakloceniami na lini lub niezgodnosc
+        wersjii oprogramowania jednostki C90 oraz EPROM na plycie glownej
+        telefonu. Powoduje to wygenerowanie KD #33 i PZ #13
+
+     #34 Utrata konfiguracji CPU
+
+        Tego na razie nie opisze.
+
+     #35 Utrata danych licznikow.
+
+        Jezeli ktorys z licznikow statystycznych osiagnie wartosc 65535
+        to nastepny impuls przestawi go na 00000. Spowoduje to wygenerowa-
+        nie KD #35 i PZ #02
+
+     #81 Bledna wymiana danych czytnik - plyta
+
+        Jezeli z czytnika dadejda niezrozumiale dane zostana one zignorowane.
+        Jednak za piatym razem zostnaie wygenerowany KD #81
+
+     #82 Brak odpowiedzi czytnika
+
+        Ewentualny brak reakcji ze strony czytnika kart powoduje wygenero-
+        wanie KD #82, informujacego o mozliwym odlaczeniu sie kabla
+        podlaczeniowego do zaciskow (lub jeden z nas "odwiedzil" budke)
+
+     #83 Wykryto oszustwo optyczne
+
+        Czujniki optyczne wykryly probe wyciagniecia karty ze srodka podczas
+        rozmowy. Blizej w 2.6
+
+     #84 Wykryto oszustwo magnetyczne
+
+        Ktoras z glowic wykryla probe wyciagniecia karty ze srodka podczas
+        rozmowy. Blizej w 2.6
+
+     #85 Wykryto oszustwo mechaniczne
+
+        Czujniki ruchu bebne wykryly probe wyciagniecia karty ze srodka
+        podczas rozmowy. Blizej w 2.6
+
+     !!! KD #83, 84 i 85 po 5 powtorzeniach powoduja wygenerowanie odpowied-
+         niego KD.
+
+
+     #86 Ogolna niesprawnisc czytnika
+
+        Po zdjeciu mikrotelefonu z widelek zostaje przeprowadzany szereg
+        testow czojnikow optycznych, glowic itp.
+        Ewentualne stwierdzenie niesprawnosci ktoregos z tych elementow
+        powoduje przejscie w stan niesprawnosci technicznej a po pieciu
+        razach wygenerowanie KD #86
+
+     #87 Zablokowanie sie karty
+
+        Jezeli podczas zdjecia mikrotelefonu ktoryz z czujnikow stwierdzi
+        obecnosc karty w srodku to aparat wejdzie stan niesprawnosci tech-
+        nicznej i zostanie wygenerowany KD #87
+
+     #88 Chwilowy stan niesprawnosci technicznej
+
+        Jezeli aparat stwierdzi ze wsadzonokarte, ale czujniki optyczne
+        nie stwierdza jej obecnosci w srodku to telefon przejdzie w stan
+        niesprawnosci technicznej. Po 10 razach zostanie wygenerowany KD #88
+        i PZ #16 informujacy o ewentualnym utknieciu karty wewnatrz czytnika.
+
+     #89 Wykrycie karty niewaznej
+
+        TePeSA aktualizuje okresowo wykazy serii emisyjnych kart magnetycz-
+        nych. Wykaz ten jest wysylany nastepnie z C90 do aparatow i zapamie-
+        tywany przez nie. Proba odczytania karty niewaznej spowoduje jej
+        natychmiastowe wyrzucenie i wygenerowanie KD #89 i PZ #09.
+
+     #91 Nieprawidlowe dzialanie glowic
+
+        Kazde wprowadzenie i odczytanie karty powoduje zwiekszenie stanu
+        licznika ilosci kart wprowadzonych, ewentualnie drugiego, ilosci
+        kart nieodczytanych. Gdy ilosc kart odczytanych dojdzie do 500
+        to telefon oblicza procent kart nieodczytanych i jezeli jego
+        wartosc przekracza pewien poziom x% to generowany jesdt KD #91 i
+        PZ #11 informujacy o ewentualnym zuzyciu glowic magnetycznych.
+        Jezeli wartosc sie okaze mniejsza od progu x to oba liczniki zostana
+        wyzerowane.
+
+     #92 "N" kolejnych kart nieodczytanych
+
+        Nieudana proba odczytu karty powoduje jej wyrzucenie. Jezeli to
+        sie powtorzy przy "N" kolejnych zdjec sluchawki to spowoduje to
+        wygenerowanie KD #92 i PZ #12 informujacego o ewentualnym niepra-
+        widlowym dzialaniu ukladu odczytu lub glowic.
+
+     #93 Blad szczeliny wlotowej
+
+        Poodlozeniu sluchawki zamyka sie okienko we wlocie karty. Jezeli
+        okienko sie nie zamknie (np. jakis przedmiot w szczelinie wlotowej)
+        lub po podniesieniu sluchawki nie otworzy sie (np. zablokuje) to
+        zostanie wygenerowany KD #93 oraz PZ #15 wskazujacy na nieprawidlowe
+        dzialanie ukladu automatyki.
+
+     To juz tyle. Ewentualne sugestie, spostrzezenia, uwagi, skargi, wnioski
+     pomysly, patenty prosze przesylac na adres umieszczony na samym dole.
+
+
+²±±°°°  2.3 Powody zgloszen niebieskiego do centrali
+
+ (U)    Jak powszechnie wiadomo - po zamkienciu niebieskich drzwiczek
+        aparat dzwoni sie poskarzyc. Dlaczego - bo otwarcie drzwiczek
+        to tzw. "powod zgloszenia" nr 04 - otwarcie drzwi. Innym znanym
+        powodem zgloszenia jest po prostu meldunek okresowy (nr 20).
+        Oto wszystkie powody zgloszen (KD oznacza kod diagnostyczny
+        ktory powoduje wymieniony powod zgloszenia)
+
+      ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
+      º POWODY ZGLOSZENIA TSP91 DO JEDNOSTKI C90                       º
+      ÌÍÍÍÍÑÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÑÍÍÍÍ¹
+      º Nr ³ Powod:                                               ³ KD º
+      ÇÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄ¶
+      º 01 ³ Wykonanie 'N' rozmow doprowadzonych do konca         ³ -- º
+      º 02 ³ Przepelnienie licznikow                              ³ 35 º
+      º 03 ³ Powrot do normalnej pracy                            ³ -- º
+      º 04 ³ Otwarcie drzwi                                       ³ 13 º
+      º 05 ³ 50 kolejnych zdjec mikrotelefonu z widelek bez       ³    º
+      º    ³                                  wniesienia oplaty   ³ 15 º
+      º 06 ³ Utrata danych EEPROM                                 ³ -- º
+      º 07 ³ Utrata danych RAM                                    ³ -- º
+      º 09 ³ Wykrycie karty niewaznej                             ³ 89 º
+      º 10 ³ Zgloszenie zainstalowania                            ³ -- º
+      º 11 ³ Nieprawidlowe dzialnie glowic                        ³ 91 º
+      º 12 ³ 'N' kolejnych kart nieodczytanych                    ³ 92 º
+      º 13 ³ Blad rozkazu z jednostki C90                         ³ 33 º
+      º 14 ³ Utrata konfiguracji CPU                              ³ 14 º
+      º 15 ³ Usterka szczeliny wlotowej                           ³ 93 º
+      º 16 ³ Niesprawnosc techniczna                              ³ 88 º
+      º 17 ³ 'N' brakujacych wprowadzen karty                     ³ -- º
+      º 19 ³ Usterka zegara                                       ³ 29 º
+      º 20 ³ Meldunek okresowy                                    ³ -- º
+      º 21 ³ Usterka urzadzenia zabezpieczajacego przed oszustwem ³ -- º
+      ÈÍÍÍÍÏÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÏÍÍÍÍ¼
+
+²±±°°°° 2.3.1 Opis wybranych
+
+ !NEW!  Oto wybrane powody zgloszenia.
+
+     #01 "N" rozmow telefonicznych przeprowadzonych do konca.
+
+        Ilosc N mozemy ustawic w C90 Menu -poz. CALLS NUM
+
+     #03 Powrot do normalnej pracy
+
+        Aparat informuje jednostke C90, ze zostala z niego przeprowadzona
+        rozmowa do konca i ze powrocil on do normalnej pracy po uprzednio
+        sygnalizowanym stanie niesprawnosci technicznej.
+
+     #10 Zgloszenie zainstalowania
+
+        Po zainstalowaniu telefonu oraz zaprogramowaniu do wspolpracy z
+        jednostka C90 zglasza sie do niej po raz pierwszy komunikujac o
+        rozpoczeciu pracy i przekazuje dane typu, identyfikatora i wersji
+        programu zarzadzajacego znajdujacego sie w EPROM
+
+     #16 "N" kolejnych przypadkow niesprawnosci technicznej
+
+        Wkroczenie w stan niesprawnosci technicznej przez "N" razy, bez
+        doprowadzenia w tym czasie zadnej rozmowy do konca, wywoluje PZ #16
+
+     #20 Meldunek okresowy
+
+        Zgloszenie sie aparatu do C90 o ile istnieje powid dla takiego zglo-
+        szenia, dokonywane jest bezposrednio po odlozeniu mikrotelefonu. Ale
+        jezeli linia laczaca telefon z C90 bylaby zajeta to aparat musialby
+        czekac do nastepnej okazji, gdy mikrotelefon zostanie ponownie
+        odlozony.
+        Jezeli od ostatniej rozmowy telefon nie bylby wykorzystywany przez
+        dluzszy czas, nie bylo by mozliwe pilne przekazanie informacji o
+        ewentualnych anomaliach. Dla unikniecia takiej sytuacji istnieje
+        PZ #20. Telefon "budzi sie" co kilka godzin przy mikrotelefonie
+        odlozonym na widelki i komunikuje sie z jednostka C90.
+
+
+
+²±±°°° 2.4 Parametry techniczne
+
+ (U)    Oto one:
+
+       - Napiecie zasilania - napiecie lini telefonicznej min. 48V
+       - Podlaczenie do lini - przewody a/b bez kontroli biegunowosci. Zacisk
+         uziemiajacy dla impulsow 50 Hz
+       - Prad lini - min. 20 mA, max. 100 mA
+       - Izolacja wzglendem ziemi - wieksza od 100 MOhm
+       - Zabezpieczenie przepieciowe - bezpieczniki gazowe 350V
+       - Temperatura pracy - -22C +55C
+       - Wilgotnosc - 93%
+       - Przekazywanie /transmisja/ - zgodnie z normami CCITT
+       - Wybieranie - DTMF/Dekadowe
+       - Taryfikacja - 16kHz lub 50Hz
+       - Rozmowy - miejskie, miedzymiastowe, miedzynarodowe, awaryjne bez
+         wprowadzania karty, rozmowy przychodzace do aparatu z sygnalem
+         dla operatora;
+       - Wskazania konca kredytu - 20 sek przed koncem kredytu, sygnalizacja
+         dzwiekowa 852 Hz / 1 sek. , migajacy obraz na wyswietlaczu
+       - Awizowanie operatorowi - akustyczne odpowiedzi aparatu publicznego
+         o czestotliwosci 1209 Hz, czas trwania 100ms przerwa 1.5 sek, w ciagu
+         20 sekund.
+       - Wyswietlacz - LCD alfanumeryczny, 16 znakowy.
+       - Sygnalizacja dzwiekowa - przetwornik piezoelektryczny
+       - Niesprawnosc techniczna - wyswietlana na wyswietlaczu
+       - Diagnostyka - kody wyswietlane przy uzyciu odpowiedniej karty
+         lub przy otwarciu drzwi
+       - Wkladki w mikrotelefonie - wymienne dynamiczne o Z=150 Ohm - zewn.
+                pola magnetyczne do aparatow sluchowych
+       - Wymiary - 390x215x190
+       - Waga - 11.5 kg
+
+²±±°°° 2.5 Kluczyk
+
+        Jak wiadomo jest bardzo potrzebny. Najpopularniejszy 00131000 juz
+        nie dziala w Krakowie (poza niektorymi akademikami i knajpkami),
+        Dobrze sie sprawoje w podkrakowskich wsiach (w strone Kryspinowa)
+        Polecam poszukac pliku peyokey.zip w ktorym jest
+        rysunek i opis jak zrobic ABLOYa, zapraszam takze do lektury
+        hrabia.txt. Co do rysunku Peyo - w moim kluczu srodkowe wyciecie
+        ma ok 3mm.
+
+        Obecnie w Krakowie uzywa sie 00131000 (AY-1), drogiego wzoru
+        na AY-3 (w sumie mozliwe sa 32 kombinacje do tego zamka),
+        trzeci jest oprty na AY-1, i z tego co kiedys podgladnolem u
+        montera ma 3 sasiednie zabki tak samo spilowane (chyba 222)
+        Nie wiem czy do jajek jest jakis inny klucz, czy tez ten trzeci.
+
+
+²±±°°°° 2.5.1 Nowe zamki
+
+ (U)    W Krakowie wiekszosc Blurmetow i Silverow otwiera ten sam kluczyk.
+        Po rozebraniu zamka, i analizie koleczek stwierdzilem, ze mozliwych
+        kombinacji klucza jest 32. Ja zrobilem najprostsza, jednak nie
+        zawsze i nie wszystko otwiera. Moj znajomy tez robil na podstawie
+        zamka (sciemnil ze w punkcie, ale wygladal gorzej niz moj pilowany
+        recznie). Oryginalny klucz wyglada jeszcze innaczej. Mam kopie
+        takiego i sprawuje sie wzorowo.
+
+²±±°°° 2.6 Czytnik
+
+ !NEW! Czytnik o niskim zuzyciu energii zostal zaprojektowany specjalnie
+       do wspolpracy z aparatem telefonicznym TSP 91, ktory jest zasilany
+       jedynie z lini telefonicznej.
+       Czytnik posiada akumulator Ni-Cd 3.6V, 110mAh o malych rozmiarach
+       wmontowany bezposrednio na obwodzie drukowanym czytnika. Akumulator
+       jest doladowywany napieciem 4.7V i pradem maksymalnym 20mA.
+
+²±±°°°° 2.6.1 Konstrukcja
+
+ !NEW! Bazuje na ukadzie mechanicznym bebna obrotowego poruszanego przez
+       silnik za pomoca pary paskow (z MYLARDu) ktore zapewniaja pobranie
+       i ruch karty wewnatrz czytnika. Predkosc przesuwu karty wynosi ok
+       25 cm/sek (wielkosc optymalna dla odczytu tasm magnetycznych)
+       [w magnetofonie predkosc wynosi 4.12 sekundy na metr czyli rzeczy-
+       wiscie jak podaja ok. 25cm/sek ] Czytnik o niskim zuzyciu energii
+       zostal zaprojektowany specjalnie dowspolpracy z TSP91, ktory jest
+       zasilany jedynie z linii telefonicznej. Zespol czytnika wyposazony
+       jest w akumulator Ni-Cd 3.6V 110 mAh o malych rozmiarach zamontowany
+       bezposrednio na obwodzie drukowanym [ takiej wielkosci to ja
+       widzialem 3.6V 300 mAh, ale to jest w sumie konstrukcja z poczatku
+       lat 90-ych ] Akumulator jest doladowywany napieciem 4.7 V i pradem
+       maxymalnym 20 mA.
+       Wszystkie uklady jak i silnik zasilane sa impulsowo.
+
+²±±°°°° 2.6.2 Karta magnetyczna
+
+ !NEW! Jest to karta magnetyczna o wysokiej koercji i sklada sie z dwoch
+       czesci:
+       - podloza z tworzywa poliestrowego
+       - tasmy magnetycznej z tlenku o wysokiej koercji odpornej na pola
+       magnetyczne z jakimi karta moze wejsc w kontakt.
+
+       System kodowania i jego technika sa [byly] procesami bardzo zlozonymi
+       i stanowia [stanowily] jeden z elementow systemu zabezpieczenia przed
+       probami oszustwa.
+
+²±±°°°° 2.6.3 Kasowanie mechaniczne
+
+ !NEW! Zadaniem urzadzenia do kasowania mechanicznego jest "naznaczenie"
+       paska magnetycznego w celu uniemozliwienia na nim dalszych zapisow
+       (zabezpieczenie przed probami oszustwa) oraz widoczne wykazanie
+       pozostalej sumy kredytu.
+       Kasowanie mechaniczne dokonywane jest za kazdym razem, gdy zuzyta
+       wartosc rowna jest 20 % wartosci nominalnej karty, a takze po
+       pierwszej przeprowadzonej rozmowie.
+
+²±±°°° 2.7 Co sie moze przydac w domu
+
+ !NEW! Choc nie jestem zwolennikiem kradziezy czesci to prawie wszystko.
+       No, moze za wyjatkiem obudowy. Z wszystkich plytek mozna wylutowac
+       sporo czesci, ale tak duzo ich tam wcale nie ma. Wszystkie maja
+       krotkie nozki. Mozna sobie wziasc EPROMY do skasowania i... czytaj
+       punkt 2.8.
+
+       - Czytnik:
+
+       mozna podlaczyc do komputera i korzystajac z opisu Shadowa uzywac
+       np. do sprawdzania nagranych kart w domu.
+
+       - Dzwonek:
+
+       w domu podlaczamy bezposredni do linii. Zajebiscie glosny. (Mozna
+       takze do transformatorka, zeby kogos podenerwowac. 30 voltow spokojnie
+       wystarczy)
+
+       - Wyswietlacz:
+
+       Chociaz maly, to zawsze cos. Poza tym najczesciej wykorzystywany w
+       projektach gazet t.j. Elektronika Praktyczna, Praktyczny Elektronik
+       i Nowy Elektronik. Warty ok. 25 PLN (szkoda, ze nie ma podswietlania)
+
+       - Plyteczka z bezpiecznikami gazowymi:
+
+       Mozna sobie podlaczyc w domu, przed wszystkimi telefonami. Najlepiej
+       zaraz do kabli wchodzacych do naszego mieszkania. Powinna uchronic
+       nas przed burza.
+
+
+²±±°°° 2.8 Free-Calling
+
+ !NEW! Ostatnio pojawil sie nowy (stary) bug, ktory pozwala na bardzo latwe
+       dzwonienie. Niestety, musicie sami do tego dojsc.
+
+       Moim zdaniem najlepszym sposobem jest:
+
+²±±°°°° 2.8.1 EPROM Change  (100% Working)
+
+ !NEW! Kiedys wsadzilem 2.7 (oczywiscie zmienilem date i numery wersji
+       na 2.9). Bylo to dawno, gdy jeszcze nie mialem programinga, wiec
+       korzystalem z Entry Call.
+       Teraz sie pojawilo w sieci wiele roznych nowych wersji, stworzonych
+       na nasze potrzeby. Proponuje, zeby zmieniajac Eprom, dodac sobie
+       w ktoryms ze stringow np. kropke, aby latwo poznac czy w srodku
+       jest jeszcze wasz Eprom, czy TelePsy sie juz zorientowaly.
+       np: KARTA ZUZYTA. lub OUT OF ORDER.
+       Jak zmieniac kosc nie bede opisywal, poniewaz zostalo to juz opisane
+       przez Kolnierzyka. Ja swoj drugi Eprom, ktory juz zakladalem w budce
+       do ktorej mialem blisko, i mozna sobie bylo w niej usiasc zmienialem
+       o 4 rano wracajac z imprezy. Tak wczesnie poniewaz bylo to bardzo
+       ruchliwe miejsce, a nie chcialem zeby zobaczyl mnie ktos znajomy jak
+       manipuluje przy otwartym telefonie, a potem korzystam z niego godzina-
+       mi. Gdy jeszcze nie mialem komorki, to bralem ze soba bezprzewodowca
+       z domu. Baze kladlem na balkonie, wysuwalem antenke na maxa, i umie-
+       szczalem go jak najwyzej. W bazie mojego Panasonica jest poza tym
+       podkowka z napisem TxPWR. Standartowo byla ustawiona w polowie, ale
+       ja sobie podkrecilem ja do oporu. Zasieg sie jeszcze troche powiekszyl
+       i suchawka jak stalem w budce juz mi nie szumiala. Wczesniej musialem
+       wychodzic z budki, poniewaz w srodku juz nie odbieralem bazy.
+
+
+
+²±±°°° 3. Srebrny Urmet
+
+ (U)    ... jak wyglada takze kazdy wie. Zostal skonstruowany przez firme
+        Urmet. Produkuje go Telefonica. Naprawde sie nazywa TPE 97/U.
+
+²±±°°° 3.1 Charakterystyka
+
+ !NEW!  Jest wykonany z 2mm stalowej nierdzewnej blachy. Cale drzwi sa
+        tloczone na prasie o sile 320 ton. Plytki drukowane zawieraja ponad
+        1400 elementow elektronicznych. Jednym z najwazniejszych jest
+        16-bitowy mikroprocesor firmy Hitachi. Tym sposobem najnowszy
+        produkt firmy Telefonica (???) mozna smialo porownac z komputerem.
+        Posiada on 2 megabajty pamieci z mozliwoscia rozszerzenia do 16MB,
+        poprezdni model mial 64 kilobajtow (chodzilo im chyba o kilobity -
+        8kB [wg Shroom.faq] x 8 bit - 64 kb a nie kB jak pisali :)
+        Wedlug oceny specjalistow, automat telefoniczny o symbolu TPE 97/U
+        jest jednym z najnowoczesniejszych rozwiazan na swiecie. Zaprojek-
+        towany zostal pod wymagania TP S.A. (a ja widzialem srebrne w Wenecji)
+        jest przygotowany do odczytu kart magnetycznych i chipowych, jak
+        rowniez bankowych kart kredytowych. (...)
+        Stalowa blacha obudowy nie wymaga konserwacji i jest szalenie
+        odporna na wandalizm (i jak na dzien dzsiejszy - na Phreaking :).
+        To samo dotyczy sluchawki wykonanej z ABS. (Ale nia zamka :))
+
+                                     . Lacznosc 47/98 (2396) - 22 XI 98
+
+        Nie bede tu nic przepisywal z instrukcji, bo jest dostepna w sieci.
+        Poza tym strasznie mi sie nie chce.
+
+²±±°°° 3.2 Co sie moze przydac w domu
+
+ !NEW!  - Czytnik:
+
+        W czytniku jest bardzo fajna karta chipowa SiCrypt, qmpel uzywa
+        jako piorko do grania na gitarze. Czytnik jest fajniejszy i
+        mniejszy niz w niebieskim. Istnieja dwa typy: na procku Hitachi
+        i starszy na Motoroli.
+
+        - Wyswietlacz:
+
+        Zajebistyyy !!!! 2x16 znakow, podswietlanie LED (nie trzeba przet-
+        wornicy) Duzy kontrast i kat widzenia, powiekszone znaki. W sklepie
+        normalny (mniejszy, ze znakami takimi jak w blurmecie) z panelem
+        do podswietlania i z mniejszym katem widzenia kosztuje ok 40 zl.
+        + 10 - przetwornica do podswietlania. Ten spokojnie bedzie wart
+        70 zl. Niestety steruje sie go troche innaczej niz standartowe.
+
+        - Pieza:
+
+        Bardzo fajne, glosno piszcza.
+
+²±±°°° 3.3 Free-Calling
+
+ !NEW! Chyba nie ma i nie bylo sposobu ktory by dzialal na wszystkich
+       silverach. Jedyny to chyba otworzyc i podpiac sie pod linie.
+       (chociaz te nieszczesne 12 kHz :))
+
+²±±°°° 3.4 Specyfikacja i dane techniczne
+
+ !NEW! Czytnik:
+       - wersja tylko na karty elektroniczne
+       lub:
+       - wersja czytnika uniwersalnego ze wspolnym wlotem dla wszystkich
+       rodzajow kart. Karty:
+                - abonamentowe, magnetyczne, funkcjonujace w TSP91
+                - abonamentowe magnetyczne nowej generacji
+                - abonamentowe elektroniczne
+                - karty kredytowe operatora
+                - karty kredytowe bankowe
+
+        - czarna lista - poj. 100 000 numerow
+        - biala lista  - 1 073 725 440 kart w ukladzie 64 emisji po 256 serii
+          z 65535 kartami w serii
+        - pamietanie ostatnich 200 operacji
+        - po 100 numerow bezplatnych i zablokowanych
+        - taryfikacja 16 kHz lub wewnetrzna
+        - potwierdzenie taryfikacji 12 kHz
+        - wybieranie DTMF lub impulsowe
+        - dlugosc numeru do 18 cyfr
+        - modem V.22bis 2400 bps, dane chronione procedura kryptograf. DES
+        - 131 sek informacji w formacie WAV
+        - minimalne wymiary torby do ktorej go mozemy zabrac - 240x400x240mm
+        - waga 12 kg
+
+        Aparat posiada Swiadectwo Homologacji Nr 664697, data wyd. 1997-09-09
+
+
+²±±°°° 3.5 Opcje
+
+ !NEW!  DRO - urzadzenie kontroli potwierdzenia przyjecia impulsu taryfika-
+        cyjnego. [patrz punkt 3.6]
+
+        Booster - Uklad stabilizacji pradu linii
+
+        Modul SAM  - mozliwosc zastosowania 5 mikroprocesorowych kart elektro
+        nicznych jako samodzielne moduly SAM.
+
+        Podlaczenie tekstofonu - zlacze typu RJ-45
+
+        Zestaw pamieci znamionowych (Bollino) - pamieci zawierajace dane
+        o glownych podzespolach aparatu: plyty glownej, czytnika, klawiatury,
+        wyswietlacza, mikrotelefonu.
+
+²±±°°° 3.6 DRO
+
+ !NEW! Urzadzenie DRO jest dolaczane w centrali do linii telefonicznej. Ma
+       ono za zadanie kontrolowanie, czy na kazdy 16 kHz impuls z centrali
+       telefon odpowiada w odpowiednim czasie impulsem 12 kHz. W przypadku
+       braku takiej odpowiedzi, DRO przerywa polaczenie realizowane przez
+       dany aparat. Urzadzenie jest zasilane z linii. Ma duza opornosc,
+       dzieki czemu nie zakloca normalnej pracy linii.
+
+      Mechaniczna budowa DRO pozwala na natychmiastowy montaz i demontaz
+      w centrali
+
+
+²±±°°° 3.7 Kody alarmow
+
+ !NEW! Chyba juz ktos to opublikowal, ale postanowilem ze tez to zrobie, aby
+       w jednym faq byly tabele dla obu Urmetow.
+
+       Alarmy dziela sie na 3 kategorie:
+              TYP 1 - calkowita niesprawnosc
+              TYP 2 - czesciowa niesprawnosc
+              TYP 3 - ostrzezenie - pogorszenie sie sprawnosci z zachowaniem
+                      zdolnosci funkcjonowania.
+
+      ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
+      º TABELA KODOW ALARMOW DLA APARATU TPE 97                        º
+      ÌÍÍÍÍÑÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÑÍÍÍÑÍÍÍÑÍÍÍ¹
+      º    ³                                               ³TYP³TYP³TYPº
+      ºKOD:³ OPIS ALARMU                                   ³ 1 ³ 2 ³ 3 º
+      ÇÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÅÄÄÄÅÄÄÄ¶
+      º 01 ³ Utrata danych pamieci, biala, czarna lista    ³ * ³   ³   º
+      º 02 ³ Utrata danych EEPROM                          ³ * ³   ³   º
+      º 03 ³ Utrata danych RAM                             ³   ³   ³ * º
+      º 04 ³ Otwarcie drzwi                                ³   ³   ³ * º
+      º 05 ³ 100 kolejnych zdjec mikrotelefonu bez oplaty  ³   ³   ³ * º
+      º 06 ³ Linia odlaczona                               ³ * ³   ³   º
+      º 07 ³ Niewystarczajacy prad zasilania               ³ * ³   ³   º
+      º 08 ³ 225 kolejnych zdjec mikrotelefonu...[chyba 25]³   ³   ³ * º
+      º 09 ³ 2 godziny trwalego zajmowania aparatu         ³   ³   ³ * º
+      º 10 ³ Zaciecie klawiatury                           ³ * ³   ³   º
+      º 11 ³ Zaciecie klawiszy funkcyjnych                 ³   ³ * ³   º
+      º 12 ³ Uszkodzenie odbiornika impulsow 16kHz         ³ * ³   ³   º
+      º 13 ³ Rozladowany akumulator                        ³   ³ * ³   º
+      º 14 ³ Uszkodzenie toru odbiorczego mikrotelefonu    ³ * ³   ³   º
+      º 15 ³ Uszkodzenie toru nadawczego mikrotelefonu     ³   ³ * ³   º
+      º 16 ³ Defekt modemu aparatu V22bis                  ³ * ³   ³   º
+      º 17 ³ Nieprawidlowa praca zegara                    ³ * ³   ³   º
+      º 18 ³ Utrata danych konfiguracyjnych                ³ * ³   ³   º
+      º 19 ³ Wadliwe dzialanie szyny danych pamieci znamio.³ * ³   ³   º
+      º 20 ³ Przepelnienie pamieci zapamietywania operacji ³ * ³   ³   º
+      º 21 ³ Wadliwe dzialanie ukladu DRO                  ³ * ³   ³   º
+      º 22 ³ Uszkodzenie wyswietlacza                      ³   ³ * ³   º
+      º 23 ³ Statystyka klawiatury                         ³   ³   ³ * º
+      º 24 ³ Blad zdalnego ladowania danych do aparatu z   ³ * ³   ³   º
+      º    ³ lokalnego centrum nadzoru STG97               ³   ³   ³   º
+      º 25 ³ Nieupowaznione otwarcie aparatu               ³ * ³   ³   º
+      º 26 ³ Niewykorzystany                               ³   ³   ³   º
+      º 27 ³ Niewykorzystany                               ³   ³   ³   º
+      º 28 ³ Niewykorzystany                               ³   ³   ³   º
+      º 29 ³ Niewykorzystany                               ³   ³   ³   º
+      º 30 ³ Niewykorzystany                               ³   ³   ³   º
+      º 31 ³ Niewykorzystany                               ³   ³   ³   º
+      º 32 ³ Niewykorzystany                               ³   ³   ³   º
+      º 33 ³ Zablokowanie czytnika kart abonamentowych     ³   ³ * ³   º
+      º 34 ³ Zablokowanie czytnika kart kredytowych        ³   ³ * ³   º
+      º 35 ³ Zablokowanie czytnika kart elektronicznych    ³   ³ * ³   º
+      º 36 ³ Czesciowe zaciecie                            ³   ³ * ³   º
+      º 37 ³ Calkowite zaciecie                            ³   ³ * ³   º
+      º 38 ³ Zaciecie klawisza funkcyjnego wymiany karty   ³   ³ * ³   º
+      º 39 ³ Brak czytnika                                 ³ * ³   ³   º
+      º 40 ³ Bledna wymiana danych lub jej brak miedzy     ³ * ³   ³   º
+      º    ³ plyta glowna a czytnikiem                     ³   ³   ³   º
+      º 41 ³ Blad w zdalnym ladowaniu programu czytnika    ³ * ³   ³   º
+      º 42 ³ Proba oszustwa                                ³   ³   ³ * º
+      º 43 ³ Uszkodzenie modulu SAM 1                      ³   ³ * ³   º
+      º 44 ³ Uszkodzenie modulu SAM 2                      ³   ³ * ³   º
+      º 45 ³ Uszkodzenie modulu SAM 3                      ³   ³ * ³   º
+      º 46 ³ Uszkodzenie modulu SAM 4                      ³   ³ * ³   º
+      º 47 ³ Uszkodzenie modulu SAM 5                      ³   ³ * ³   º
+      º 48 ³ Niewykorzystany                               ³   ³   ³   º
+      º 49 ³ Wadliwe dzialanie glowic                      ³   ³   ³ * º
+      º 50 ³ 30 kolejno nieodczytanych kart abonamentowych ³   ³   ³ * º
+      º 51 ³ 30 kolejno nieodczytanych kart kredytowych    ³   ³   ³ * º
+      º 52 ³ 30 kolejno nieodczytanych kart elektronicznych³   ³   ³ * º
+      ÈÍÍÍÍÏÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÏÍÍÍÏÍÍÍÏÍÍÍ¼
+
+²±±°°° 3.8 Jajko
+
+ !NEW! O jajku napisze w podpunkcie o srebrnym, bo mi sie nie chce zmieniac
+       wszystkich numerow rozdzialow, a napisze nie wiele. W Krakowie sa
+       podpiete pod ISDN (swiadczy o tym poczatek 220 - trzecia cyfra 0
+       w tym miescie to chyba zawsze ISDN, wyjatek stanowi 610 - policja
+       i 280 - Balice) a oznacza to, ze moze sie komunikowac z centrala
+       caly czas, nawet podczas rozmowy. Juz widzialem kilka zepsutych
+       (a wisza moze 3 tygodnie). Na poczatku kontrast w wyswietlaczu byl
+       tak ustawiony, ze wyswietlacz byl caly czarny. Po za tym jak dzwonie
+       z komorki to mi mowi: Nie ma takiego numeru.
+
+
+²±±°°° 4. 100% Metoda na FreeCalling z domu (RADIO-PHREAKING)
+
+        Na odleglych wsiach, w domkach na zadupiu, w gorach (m.in schroniska)
+        TePeSA zamiast prowadzic kilometry kabla (odleglosc, lub nie mozna
+        postawic slupow) stosuje cos co sie nazywa RSLA (Radiowe Stacjonarne
+        Lacze Abonenckie). Polega to na tym, ze zamiast lini telefonicznej
+        Abonent otrzymuje urzadzonko w ktorym miesci sie nadajnik i odbior-
+        nik radiowy. Do niego podlacza sie antene kierunkowa i aparaty tele-
+        foniczne. Dzwiek z telefonu do centrali jest przekazywany przez
+        nadajnik z tego urzadzonka na czestotliwosci ok. 164 MHz,
+        a z centrali do telefonu na ok. 169 MHz. Podsumowywujac jest to
+        tak jakby telefon bezprzewodowy wiekszej mocy, ktorego baza lezy
+        na centrali TP a sluchawka u abonenta.
+
+²±±°°° 4.1 Rodzaje radiolini
+
+ (U)    Z tego co wiem to istnieja dwa rodzaje RSLA oraz Radiowa Siec
+        Abonencka.
+
+²±±°°°° 4.1.1 RSLA - Radiowe Stacjonarne Lacze Abonenckie
+
+ !NEW!  To poprostu "telefon bezprzewodowy". Po podniesieniu sluchawki
+        w urzadzonku jest generowany ton "zewu" ktory jest nadawany
+        razem z sygnalem z mikrofonu telefonu abonenta do centrali. Dialtone
+        pojawia sie zaraz gdy odbiornik na centrali wykryje ton "zewu"        czestotliwosci
+        i polaczenie jest utrzymywane do poki ton nie zniknie. "Zew" nie
+        przeszkadza podczas rozmowy poniewaz jak wiadomo pasmo telefoniczne
+        to 300 Hz - 3.4 kHz, a on jest troche wiekszy.
+        W tym przypadku kazdy abonent ma swoja czestotliwosc nadajnika
+        i swoj nomer telefonu (chyba ze to centrala na zadupiu)
+
+        RSLA pracuje na dwoch pasmach, zaleznie od modelu.
+
+        -- RADMOR 3603-160 (RSLA 160MHz)
+
+             169.850 - 171.100MHz - Nadajnik centrali i odbiornik abonenta
+             164.100 - 164.350MHz - Odbiornik centrali i nadajnik abonenta
+
+             Odstep miedzy nadajnikiem i odbiornikim (SHIFT) wynosi 5.75 MHz
+
+        -- RADMOR 3603-330 (RSLA 300MHz)
+
+             336.000 - 344.000MHz - Nadajnik centrali i odbiornik abonenta
+             300.000 - 308.000MHz - Odbiornik centrali i nadajnik abonenta
+
+             Shift wynosi 36MHz, odstep miedzykanalowy wynosi 25kHz
+
+        Istnieja jeszcze nowsze typy, ktore nie nadaja "zewu", a jedynie
+        jakies piski na poczatku i na koncu.
+
+        Jako ciekawostke powiem wam, ze awaryjne zasilanie tworza 3 baternie
+        3F22 (plaskie 4.5V), jest na nie nawet miejsce w obudowie.
+
+
+²±±°°°° 4.1.2 RSP - Radiotelefoniczna Siec Publiczna
+
+ !NEW!  Najczesciej jest to przerobiony radiotelefon RADMOR 3001. W kazdym
+        z nich jest 10 kanalow do wyboru. Gdy goster chce zadzwonic wybiera
+        wolny kanal (jak jest zajety to swieci mu dioda LED), wlacza telefon
+        i slyszy zajety sygnal. Po chwili zglasza sie babka, lub automatyczna
+        centrala i kaze mu sie "wyswietlic". Klient naciska guziczek i wysyla
+        kilka tonow wedlug jednego ze standardow (W kazdym miescie jest
+        innaczej). Na podstawie tych tonow centrala rozpoznaje abonenta
+        (wie komu naliczac impulsy) i gdy wszystko jest ok to dostaje
+        dialtone'a lub babka z TePeSy kaze mu podac numer gdzie chce
+        zadzwonic. W tym przypadku rozmowa jest podtrzymywana do odlozenia
+        sluchawki, nie ma zadnego tonu obecnego podczas rozmowy.
+        W kazdym wiekszym miescie znajduje sie centrala, majaca po
+        kilkanascie kanalow w pasmie 160 MHz. Czestotliwosc odbiornika jest
+        takze zawsze wyzsza o 5.75 MHz.
+        Zeby zadzwonic do kogos kto ma taki sprzet krecimy 975 i zamawimy
+        rozmowe z nim (podajemy numerek)
+
+²±±°°° 4.3 Potrzebny sprzet
+
+ (U)    Z potrzebnego sprzetu najbardziej potrzebny nam bedzie oczywiscie
+        nadajnik i odbiornik. Mozna je zrobic, ale nawet bardzo dobry
+        elektronik, nie majacy nic wspolnego z urzadzeniami w.cz. (wielkiej
+        czestotliwosci) moze sobie dac spokoj, bo sie napoci na darmo.
+        Sprzet mozna oczywiscie kupic, albo pozyczyc od znajomego krotko-
+        falowca, a potrzeba nam:
+
+        - dwa transcievery (nadajnikoodbiorniki) albo jeden transciever lub
+          nadajnik (na pasmo 2m) i odbiornik (np. skaner szerokopasmowy)
+
+        - zaleznie czy chcemy sie bawic RSLA czy RSP:
+
+          - generator tonu zewu - mozna zrobic na kwarcu, wtedy jest
+            bardzo stabilny (schemat+PCB - mail me) lub napisac w Pascalu:
+
+                >><<
+
+                Uses Crt;
+
+                Begin
+                     Sound(czestotliwosc_zewu_w_Hz);
+                     Repeat Until Keypressed;
+                     NoSound;
+                End.
+
+                >><<
+
+          - generator tonow selektywnych i innych - nie wiem czy mozna takie
+            cos gdzies kupic, czy nawet zrobic. Ja proponuje napisac
+            sobie program, albo uzyc gotowych wav'ow.
+
+        - Przynajmniej jedna dobra antene, kilka kabelkow.
+
+²±±°°° 4.4 Jak to zrobic
+
+        ... nie bede sie tu produkowal, bo pewnie i tak nikt nie sproboje,
+        a jezeli ktos ma potrzebny sprzet to mail2me. Dam dokladne
+        instrukcje, przesle programik.
+        Acha, sprzet kosztuje od 600 PLN (uzywany) do 1500 PLN (nowy),
+        ok 200 PLN robiony, ale metoda ta jest 100 % PEWNA I 99 % BEZPIECZNA,
+        poza tym mozesz radio-phreakowac (tak nazwalem ta dziedzine) z domciu,
+        samochodu, namiotu, budynku TePeSA, komisariatu, szkoly, meliny itp.
+        Jak ktos jest zainteresowany to niech melnie - adres na koncu,
+        moze poswiece caly faq radio-phreakingowi.
+
+ !!! NEW !!! Jezeli ktos chce robic sprzet to dysponuje schematem syntezy
+             do TX i RX programowanej z komputera. W jej sklad wchodza
+             Procesor AT89C2051 (10zl), pamiec 24C02 (3zl lub Silver),
+             syntezer TSA6057 (7zl), oraz MAX232 (ok 8zl, ale wystarczy
+             jeden do kilku syntez). Z innych czesci to 2 kwarce (3zl)
+             i kilka drobiazgow. Program do proca kumpel tanio sprzeda.
+
+
+²±±°°° 4.5 Zagrozenia
+
+        Istnieja chyba dwa.
+
+        Pierwsze - gdy jednej osobie nabijesz rachunek na xxx00 PLN korzys-
+        tajac nie tylko z 0-700 i 0-20... ale z miedzy-miastowych, -krajowych
+        -kontynentalnych, -planetarnych (***) to mogo cie wyczaic prowadzac
+        maly wywiadzik z osobami do ktorych dzwoniles, ale wydaje mi sie to
+        bardzo, bardzo malo prawdopodobne.
+
+        Drugie - jezeli takze nabijesz na kilka-set -tysiecy -milionow (***)
+        to gdy gosc zglosi reklamacje (oczywiscie po otrzymaniu rachunku)
+        to moga wyczaic skad nadajesz. Zajmuje sie tym specjalna instytucja
+        zwana PAR (Panstwowa Agencja Radiokomunikacyjna) ktora ma siedziby
+        w niektorych wiekszych miastach (popatrz do ksiazki telefonicznej).
+        Z doswiadczenia wiem, ze przez ostatnie 3 lata zlapali moze 2 osoby
+        (w moim miescie) ale dlatego ze nadawali pirackie radyjka na UKFie
+        albo zaklucali policje, radio-taxi itp. Nie zdarzylo sie aby zlapali
+        radio-phreakera.
+
+        Moja rada - uczepiaj sie innnej osoby co miesiac. Nabijaj bardzo
+        duzy rachunek - reklamacje mu na pewno uznaja. A jezeli bedziesz
+        robil to dluzej to moga zaczac cie szukac, a gosciowi moga nie
+        uznac kolejnej reklamacji - a przeciez my nie krzywdzimy zwyklych
+        biednych ludzi - tylko bogate firmy (majace do niedawna monopol
+        na naszym rynku)
+
+                        (***) - niepotrzebne skreslic
+
+²±±°°° 5. Telefony bezprzewodowe, Centertel NMT450, policja i inne...
+
+        Majac skaner radiowy (odbiornik szerokopasmowy) odbierajacy pasmo
+        44-49 MHz mozemy podsluchac telefony bezprzewodowe naszych sasiadow
+        i najblizszej okolicy (majac dobra antene).
+        Gdy odbiera pasmo 450-470 MHz to mozemy posluchac analogowych
+        Centerteli NMT450i (0-90...), 172-174 MHz - policji itd. itp. etc.
+        A mogac tam nadawac... to dopiero moze byc wesolo - dogadywac
+        sasiadom. O dokladniejsze czestotliwosci piszcie do mnie.
+        Poza tym telefony bezprzewodowe sasiadow mozna wykozystac do
+        dzwonienia za darmo podobnie jak radiolinie. Jedyny problem w tym,
+        ze kazdy model jest innaczej zalaczany, ale badania trwaja....
+
+ (U)    Ostatnio kupilismy z qumplem na gieldzie starego bezprzewodowca,
+        a wlasciwie sama baze. Mozna z niego zrobic kupe rzeczy:
+
+        - jezeli zamiast kwarca podlaczymy synteze z generatorem, to
+        otrzymamy odbiornik bezprzewodowcow. Nie trzeba sie z nim wogule
+        meczyc - odbiornik jest juz zestrojony.
+
+        - mozemy sobie zrobic interface:
+                 modem <---> bezprzewodowiec (np z piwnicy, budki)
+                 modem <---> RSLA, RSP.
+
+        niestety nie uzyskamy zbyt duzej predkosci.
+
+        - mozemy sie pobawic w Radio-Phreak. Ten nie mial kodowanego
+        zalaczania. Jedynie w srodku byl generator okreslonej czestotliwosci,
+        a gdy baza ja odebrala to zalaczala linie.
+
+²±±°°° 5.1 Kodowanie zalaczania.
+
+ !NEW!  Moze byc takie jak opisalem wyzej. Aby zalaczyc inne telefony
+        wystarczy zmienic ton. Potencjometr do tego powinien sie znajdowac
+        na plytce.
+
+        Drugie - specjalny scalaczek, o ustawianych kombinacjach. 9 nozek
+        ktore zaleznie od wersji zwieramy do plusa lub masy (daje to 2^9
+        kombinacji - 2 stany, 9 pinow - czyli 512 mozliwosci). Druga wersja
+        to tez 9 pinow, z tym ze kazdy moze byc zwarty do plusa, masy lub
+        wolny, nie podlaczony do niczego - daje to 3^9 czyli 19683 kombinacji.
+
+        Nad innymi badania trwaja. Jako ciekawostke powiem wam ze w ten
+        drogi sposob sa kodowane piloty do alarmow domowych, samochodowych,
+        centralne zamki, bramy automatyczne, dzwonki bezprzewodowe i cala
+        kupa bajerow, zarowno radiowych jak i na podczerwien (ale nie piloty
+        TV). Prawie wszystkie piloty radiowe, te z homologacja w Polsce
+        nadaja na ok 433.92 MHz. Aby otworzyc komus autko z centralnym na
+        pilota potrzeba nam takiego scalaczka (np. MC 14026) i nadajnik.
+        Moze to byc radyjko na pasmo 70cm, mozna kupic gotowy modul nadajnika
+        kwarcowego na to czestotliwosc. Produkuje go wloska firma
+        TELECONTROLLI. Na gieldzie kosztuje 20 PLN. Potrzeba jeszcze zrobic
+        interfejs do komputera i programik ktory bedzie nam zmienial stany
+        na wejsciach scalaczka. Od razu mowie, ze tych co maja 512 kombinacji
+        czesto sie nie spotyka. Najwyzej w telefonach.
+        Zycze powodzenia. Dokladniejsze rady - mail me.
+
+²±±°°° 5.2 Czestotliwosci
+
+ !NEW! Oto podstawowe 10 kanalow sluchawek bezprzewodowcow. Jesli mieszkasz
+       w kamienicy lub bloku to mozesz miec niezly ubaw. Zobacz na bezprze-
+       wodowca swojego sasiada. Jezeli nie ma przycisku zmiany kanalu, to
+       gdzies powinna byc okragla naklejeczka n napisem np. CH 6. Nastepnie
+       popatrz do mojej tabelki. Jezeli ma zmiane kanalow tp bedzie na
+       ktoryms z nich.
+
+                   ÉÍÍÍÍÍÑÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
+                   º Ch. ³ Czestotliwosc [MHz] º
+                   ÇÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
+                   º  1  ³   46.610            º
+                   º  2  ³   46.630            º
+                   º  3  ³   46.670            º
+                   º  4  ³   46.710            º
+                   º  5  ³   46.730            º
+                   º  6  ³   46.770            º
+                   º  7  ³   46.810            º
+                   º  8  ³   46.830            º
+                   º  9  ³   46.870            º
+                   º  10 ³   46.910            º
+                   ÈÍÍÍÍÍÏÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+
+        Czestotliwosci dla telefonow roznych firm sa zawszetakie same.
+        Wszystkoco tu opisalem dotyczy bezprzewodowcow na 49 MHz - tych
+        z dluga wysuwana antenka w bazie.
+
+²±±°°° 6. Telkom-Telos Diament i AWB
+
+ !NEW! Niedawno bawilem sie takimi sprzetami. Drogie zabawki jak na
+       kawalek plastiku, ale calkiem fajne. (AWB - 600 PLN, Diament - 2000).
+       AWB jest zamykany na jednego Abloya AY1, drugi to przelacznik
+       local/public.
+
+²±±°°° 7. Publiczne automaty komorkowe Centertel
+
+ (U)    Gdy w czasie wakacji bylem w schronisku moja uwaga zwrocila sie na
+        pewnym urzadzonku firmy Nokia wiszacym na scianie. Byl to publiczny
+        automat komorkowy Centertel (NMT450 - 99% zasiegu w kraju, takze
+        gory). Minuta rozmowy kosztuje 1.06 PLN (Ale sobie cene ustalili)
+        , kasuje co 50gr. Wklada sie do niego pre-paida chipowego za 10 PLN.
+        Zamykany byl na Abloya (00131000 nie pasowal), ale podobno po otwar-
+        ciu bez podania kodu sie zablokowywal i trzeba czekac na serwis az go
+        odblokuje. Poza schroniskami mozna takie znalezc w WARSach w kazdym
+        z naszych az 20 pociagow InterCity. Po otwarciu i podaniu kodu
+        istnieje mozliwosc dzwonienia za darmo. Niestety nie widzialem tego
+        na wlasne oczy, ale informacja jest dosyc pewna.
+        Info: 090 200 345 lub *100
+
+²±±°°° 8 Jak zrobic surowke Abloy'a
+
+ !NEW!  Czesto sa z tym problemy. Mamy zamek, ale nie ma w czym wypilowac
+        kluczyka. Najlatwiej jest kupic. Jak ci sie uda to gosc ci sprzeda
+        surowke taniej, jak nie to w cenie dorobionego klucza,ale zawsze cos.
+
+²±±°°°° 8.1 AY1
+
+ !NEW!    Jest chyba dostepny wszedzie, po ok 2-4zl. Ale jezeli nie masz go
+        skad zdobyc, to trzeba sie zaopatrzyc w precik alumniowy, stalowy
+        lub mosiezny o fi 5 do 6 mm. Nastepnie bieremy szlifierke, (najle-
+        piej reczna) i do roboty. Trzeba zeszlifowac polowe. Musi nam
+        zostac polkole o r=2.5 - 3 mm, i dlugosci co najmniej 30mm + uchwyt.
+        Uchwyt proponuje zrobic przez przewiercenie rurki na wylot, wiertlem
+        ok 1 - 2 mm i wsadzeniu gwozdzia, lub jak ktos ma to wkreceniu
+        dlugiej, cienkiej sruby.
+
+        Rysunek:
+                             ____________________      _
+                            |                    |
+                Przed:      |____________________|     _ 6mm
+
+
+                                 _____                 _
+                Po (bok)           _  \__________      _ 3mm
+                                 ________________|     _ 3mm
+
+                Po (gora)
+                                   __
+                                   ||
+                                   ||
+                                 __||____________      _
+                                      |          |       6mm
+                                 __  _|__________|     _
+                                   ||
+                                   ||
+                                   ||
+                                      |<  30mm  >|
+
+²±±°°°° 8.2 AY3
+
+ !NEW!  Taka przyjemnosc kosztuje od 6zl do nawet 15 zl za dorobiona sztuke.
+        Nie udalo mi sie kupic suruwki ponizej kosztow dorobienia. Istnieja
+        dwa rodzaje (tyle na razie spotkalem - prod. Silca) AY3 - zloty
+        i AY3P zloty z plastikowa raczka. Radze poszukac w HITach, GEANTach,
+        CARREFOURach i wiekszych domach handlowych. Nie spotkalem jeszcze
+        AY3 w budach. Poza tym oba w/w trzeba troche podpilowac z jednej
+        strony, wewnetrzna prawa scianka, gdy uchwyt mamy u gory.
+        A jak go zrobic? Pierwszy zrobilem z olowka. Niestety byl troche
+        badziewny. Drugi zrobilem z aluminium. I to wystarczy, tylko ze
+        trzeba nosic ze soba wtedy zamek, aby sprawdzac czy sie nam nie
+        pokrzywil. Proponuje poszukac rurek mosieznych lub stalowych.
+        Aluminium kosztuje ponizej 20zl/kg. Metr rurki nam potrzebnej
+        fi 8, scianka 1mm(fi 7 nie ma) kosztuje ok 3zl, a zrobimy z tego
+        ok 10 pozadnych surowek. Na poczatek musimy spilowac to 30mm w
+        ksztakt litery C. Mozemy to zrobic tak jak w AY1, albo w przypadku
+        miekkiego materialu - szerokimi kleszczami do ciecia grubych kabli
+        i drutow, a nastepnie wyrownac pilniczkiem. Gdy juz mamy odpowiedni
+        ksztalt to calosc wkladamy w imadlo, i nasze 30 milimetrowe C
+        szlifujemy pilniczkiem tak, aby weszlo do zamka. Pozniej tylko
+        dziorka i drocik lub gwozdzik i gotowe. Ja swojego pokrylem
+        koszulka termokurczliwa. To taki fajny bajer ktory sie zaklada
+        lozny na czesc rurki przeznaczona na uchwyt i nastepnie sie podgrzewa
+        ogniem, a ona nam ladnie sie dopasuje do ksztaltu i tak zostanie.
+        Kosztuje ok 1zl za metr.
+        Rysunku do tego kluczyka nie bedzie, bo nie mam zdolnosci do
+        textowego, co udowodnilem wyzej, ale powiem wam, ze moj pierwszy
+        kluczyk do silvera zrobilem w ten sposob z aluminium i dziala do
+        tej pory. Wtedy jeszcze nie wiedzialem, gdzie mozna kupic AY3
+
+²±±°°° 9 Co rasowy Phreaker potrzebuje
+
+ !NEW!  Na dzienne i nocne wypady beda nam potrzebne rozne rzeczy. Postaram
+        sie je przedstawic w tabeli, a ponizej opis, cene, sytuacje w ktorych
+        sa potrzebne:
+
+        D - Przydatne w dzien
+        N - Przydatne w nocy
+        O - Obowiazkowe
+        A - Nadobowiazkowe
+        M - Moze sie przydac w wyjatkowej sytuacji (opis nizej)
+
+
+
+        ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÑÍÍÍÑÍÍÍÑÍÍÍÑÍÍÍÑÍÍÍ»
+        º Przedmiot:                         ³ D ³ N ³ O ³ A ³ M º
+        ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍØÍÍÍØÍÍÍØÍÍÍØÍÍÍØÍÍÍ¹
+        º Abloy 00131000                     ³ X ³ X ³   ³ X ³ X º
+        º Abloy nowy (AY3)                   ³ X ³ X ³ X ³   ³   º
+        º Srobokret krzyzak                  ³ X ³ X ³ X ³   ³   º
+        º Srobokret plaski                   ³ X ³ X ³ X ³   ³   º
+        º Klucz 13 mm                        ³ X ³ X ³   ³ X ³ X º
+        º Ucinaczki                          ³ X ³ X ³ X ³   ³   º
+        º Kombinerki                         ³ X ³ X ³ X ³   ³   º
+        º Latarka (mala)                     ³ X ³ X ³ X ³   ³   º
+        º Latarka                            ³   ³ X ³ X ³   ³   º
+        º Dialer                             ³ X ³ X ³ X ³   ³   º
+        º Klucz Francuski lub Zaba           ³ X ³ X ³   ³   ³ X º
+        º Rower                              ³ X ³   ³   ³ X ³ X º
+        º Samochod                           ³ X ³ X ³   ³ X ³ X º
+        º Plecak                             ³ X ³ X ³ X ³   ³   º
+        º Torba "rumunska"                   ³ X ³ X ³   ³ X ³ X º
+        º Lom                                ³   ³ X ³   ³ X ³ X º
+        º Phreakomat                         ³ X ³ X ³ X ³   ³   º
+        º Programming Card                   ³ X ³ X ³ X ³   ³   º
+        º Karta z kilkoma impulsami          ³ X ³ X ³ X ³   ³   º
+        º Pusta karta                        ³ X ³ X ³   ³   ³ X º
+        º Radiotelefon                       ³ X ³ X ³   ³ X ³   º
+        º Komorka                            ³ X ³ X ³   ³ X ³   º
+        º Pala                               ³ X ³ X ³   ³   ³ X º
+        ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÏÍÍÍÏÍÍÍÏÍÍÍÏÍÍÍÏÍÍÍ¼
+
+
+
+
+²±±°°°° 9.1 Sprzet
+
+ !NEW!  Na dzienne i nocne wypady bedzie nam potrzebny rozny sprzet.
+
+        * Abloy 00131000 * cena do 40 zl. Na wsiach jest obowiazkowy.
+        Czasem otwieraja nawet srebrne. W duzych miastach niepzydatny.
+
+        * Abloy nowy * przydatny w miastach. Potrzebny nam bedzie jeden
+        do Urmetow, moze sie takze przydac drugi do piwnic i szaf (jak ktos
+        oczywiscie ma) * Cena... Nie sa chetnie sprzedawane. Najlepiej
+        wymienic, ukrasc, lub zrobic.
+
+        * Latarka mala * ja uzywam malutkiej na dwie R3 (maly paluszek). Jest
+        do naszych celow idealna (mozna obejzec wszystko w srodku, a co
+        wazne - nie wyglada podejzanie z zewnatrz - jezeli oczywiscie
+        nie swieci za jasno i zbyt krzywo na boki). Przydatna takze w dzien
+        gdy swoim cialem zaslaniamy wnetrze wnetrza. Ja kupilem swoja
+        w sklepie z Chinszczyzna. Polecam takze wszelakie place. Cena od 2zl.
+        (Batteries not included)
+
+        * Latarka duza * do wyzszych celow. Miejsce zakupu j/w, Cena od 5 zl.
+
+        * Dialer * niezbedny jak sie bawimy epromami czy programingiem czy
+        RSLA. Cena od 20 zl. Proponuje szukac w dobrych sklepach ze sprzetem
+        telekomunikacyjnym.
+
+        * Plecak * trzeba to wszystko przeciez gdzies upchac. Rozmiar winien
+        byc dopasowany do naszych potrzeb. W srodku polecalbym takze miec
+        ze 2-3 reklamoweczki nieprzezroczyste.
+
+        * Torba "rumunska" * taka zeby sie zmiescil do niej conajmniej
+        jeden Urmet. Ja osobiscie proponuje dopchac do srodka troche ubran
+        i ze 2 reczniki (od gory). Jakby coto ide/wracam z treningu.
+
+        * Phreakomat * najlepiej zrobic wg mojego schematu (Phone.zip).
+        Moja wersja ma sluchawke wkladana do ucha i mikrofon na jednym
+        badylu razem z nia i sam sie trzyma tam gdzie trzeba. W ten sposob
+        raczki mamy wolne. W zestawie do telefoniku mam oczywiscie roznej
+        dlugosci kable z krokodylkami na koncu. Ostatnimiczasy widzialem
+        na gieldzie telefonik firmy Panaphone w obudowie ala Nokia, z
+        kabelkiem u dolu. Kosztowal ok. 45 zl. Wbrew pozorom firma
+        Panaphone mimo, ze tanio brzmi, to produkuje calkiem porzadne rzeczy.
+        Kiedys sie podpiolemdo kabelkow w miejscu po ukradnietym Urmecie.
+        Siedzialem na rowerku opartym o kabine, sluchawka w uchu, a ja
+        nawijam sam do siebie w pustej kabinie. Troche lyso wygladalo,
+        wiec ten telefonik z gieldy to naprawde fajna sprawa. Co prawda i
+        tak ludzie sie beda dziwnie patrzyli, ale nie bedziesz wygladal
+        podejzanie, tylko nienormalnie.
+
+        * Karty *: Programming - do dzwonienia za darmo, do robienia sobie
+        jaj z ludzi, do zabaw z Epromami.
+        * Pusta karta - lepiej ja wrzucic przed programujaca. Tej mniej szkoda
+        jak wciagnie. Poza tym jak cos grzebiemy przy telefonie to mniej
+        podejrzanie wygladasz jak wlozysz karte jak normalni ludzie, niz
+        jak podejdziesz i nie podnoszac sluchawki zaczniesz cos kombinowac.
+        * Pelna Karta j/w, ale zawsze mozesz zadzwonic.
+
+        * Radiotelefon * po pierwsze RSLA, po drogie lacznos z innymi
+        podczas kradziezy. Latwiej powiedziec, ze jada paly, niz sie drzec
+        lub gwizdac na odleglosc.
+
+        * Komorka * jak droga czesc powyzszego i do Entry Call po zmianie
+        Softu. Poza tym do normalnych mniej lub bardziej uczciwych celow.
+
+
+²±±°°°° 9.2 Narzedzia
+
+ !NEW!  * Srobokret plaski i krzyzak * jezeli ci po trzeba np. wyswietlacz
+        lub dzwonek to to jest to. Krzyzaka kup jakiegos pozadnego, z
+        chromowana koncowka, kilka rozmiarow. Plaskich co najmniej 2.
+        Najlepiej komplet. Cena (za kpl) od 5 zl do 100zl
+
+        * Klucz 13mm * jak ci trzeba calego Urmeta to potrzebujesz wlasnie
+        czegos takiego. Musi miec "przedluzenie" W Castoramie widzialem
+        takie w ksztalcie korby, dlugosci 40 cm za ok 5 zl.
+
+        * Ucinaczki * sa potrzebne zawsze i wszedzie. Lepiej sie wyplacic
+        na pozadne, ktore sie nie stepia szybko. Cena od 2 zl, ja proponuje
+        co najmniej od 15zl.
+
+        * Kombinerki * j/w, ale mogo byc nawet te za 2 zl, byle mialy jakas
+        izolacje.
+
+        * Klucz francuski lub zaba * potrzebne do wykrecania zamkow z Urmetow
+        - Powaga - kiedys w nocy meczylem sie 30 minut z moim pierwszym
+        zamkiem. W koncu wrocilem do domu i na nastepny dzien z francuzem
+        przy ludziach wykrecilem zamek z pustego tylu aparatu na kurzej
+        stopce. (Swoja droga w domu by sie zdziwili jak bym po polnocy
+        wpadl po zabe i wypadl jeszcze na mala chwile na zewnatrz)
+
+        * Lom * podstawa przy otwierani Urmeta bez klucza. Ja sam dzieki
+        temu sprytnemu przyzadowi odzyskalem zamek z pustej obudowy po
+        telefoniku (Srodkiem sie widocznie ktos zajal wczesniej :).
+        Lom najlepiej kupic w duzym domu handlowym typu Castorama, Obi,
+        DHO itp. Cena ok 6 PLN za maly do 15 za duzy. W odtatecznosci mozna
+        zastapic lyzka do opon. W Makro widzialem zestaw: maly+duzy za
+        niecale 20zl lub 3 duze (mozna sie zrzycic z kumplami, niekoniecznie
+        po fachu). Moj lom kosztowal 6 zl. Jest dlugi na 30cm, z gumowa
+        raczka na koncu, odpowiednio spilowany.
+
+        * Pala * czesto si moze przydac. Czasem mozna zastapic jednym lub
+        kilkoma wiekszymi kolegami (koleznakami jak ktos jakies wieksze zna)
+
+²±±°°°° 9.3 Inne
+
+ !NEW!  * Rower * jezeli upatrzyles budke na zadupiu to rowerek ci ulatwi
+        zadanie. Cena 50zl wzwyz.
+
+        * Samochod * j/w z tym ze drozszy, i jakktos zapamieta numery jak
+        cie zobaczy przy majstrowaniu z wiadomymi rzeczami to moze byc
+        niewesolo. Cena 200zl wzwyz. (Fuel not included)
+
+        Kolnierzyk proponowal jeszcze tragaza, ktory by to wszystko za nami
+        nosil. (Gdy mamy samochod to nie jest nam potrzebny)
+
+
+²±±°°° 10. Moja krotka filozofia na temat przyszlosci Phreakingu
+
+ !NEW! Od dluzszego czasu mozna zaobserwowac wymiane niebieskich na srebrne.
+       W cenrtum miast niebieskie ostatnimi czasy nalezaly do rzadkosci.
+       Mozna je znalezc jedynie w lokalach. W centrum Krakowa wraz z pojawie-
+       niem sie jajek w miejscu niektorych srebrnych, wyginely ostatnie
+       niebieskie. Zastapily je zdemontowane "spod" jajek srebrne. Wydaje
+       mi sie, ze wraz ze zdjeciem ostatnich niebieskich w kraju, znikna
+       ze sprzedazy karty magnetyczne. Chociaz z drugiej strony patrzac na
+       to, ile jeszcze wisi AWS-6 i 7 to mozna sadzic, ze to jeszcze troche
+       potrwa. Zetony sa w sprzedazy od 10 lat, pewnie z tego wzglendu, ze
+       ich sie nie falszuje. Karty magnetyczne nie pochodzace z Telefoniki
+       tylko z prywatnych manufaktur mozna znalezc w kazdym miescie. Nie
+       wiadomo, czy nasz monopolista zafunduje nam automaty na monety. Jajka
+       podobno maja taka mozliwosc. Jak na chwile obecna rozwija sie u nas
+       technologia chipowa (swoja droga dobrze, ze dopiero teraz a nie kilka
+       lat temu jak w innych krajach. Co do tej pory wydzwonilismy za darmo
+       to nasze:) Z wykonaniem takiej karty w domu na razie wszyscy maja
+       ogormne trudnosci. Chociaz z magnetycznymi byly podobne problemy na
+       poczatku.
+       BTW. Piszcie do mnie kiedy wam sie udalo nagrac pierwsza karte
+       (z impulsami lub serwisowa). W ten sposob mniej wiecej ustalimy date
+       wyprodukowania pierwszej w Polsce karty przez inna "firme" niz Tele-
+       fonica. Wracajac do poprzedniej mysli sadze, ze za rok, dwa ktos na
+       pewno upora sie z tym problemem.
+
+
+²±±°°° 11. Ciekawostki
+
+        !!!!!
+
+        Pod Tesco (hipermarket) Netia powiesila 4 budki monetowo-kartowe.
+        Na 50 gr dostalem 2 impulsy. Swoja droga fajnie wygladaja ludzie
+        ktorzy za wszelka cene chca wlazyc karte magnetyczna TPSA do takiej
+        budki. Za cholere im nie chce wejsc :)
+        Co do kart chipowych Netii, to w wakacje pisalo na automatach, ze
+        karty beda dostepne od 1.09.2000. Teraz pojawily sie nowe naklejki,
+        ze od 1.12.2000. Ciekawe jaki bedzie nastepny termin?
+
+        !!!!!
+
+        Jezeli chcemy manipulowac w urmetach na ulicy w dzien, to proponuje
+        zrobic sobie koszulke z logo TPSA. Wystarczy kupic: bialom lu zoltom
+        koszulke, papier na prasowanki (ok. 10 PLN za A4 w sklepach typu
+        Swiat Druku itp.). Natepnie drukujemy duze logo na plecy, mniejsze
+        na przod i jak ktos chce to na rekawki. Nastepnie wszystko ladnie
+        przeprasowywujemy zgodnie z instrukcja. Mozna takze do tego
+        dolaczyc czapeczke. Polecam wziasc ze soba skrzyneczke narzedziowa,
+        zwijke jakiegos kabla itp.
+
+        !!!!!
+
+        Ostatnio widzialem dwoch monterow jak montowali 3 srebrne. Przywiezli
+        je w jednym kartonie, wsadzone zamkiem do gory. Jeden byl tak uswi-
+        niony jekby go przedchwila zdjeli z innej kabiny. Monterzy wygladali
+        tak licho, ze gdybym nie widzial firmowego samochodu ktory ich
+        wysadzil to bym pomyslal, ze to jakies gowniarze cos kombinuja.
+        Jeden z nich wygladal na ok 16 lat, wysoki, chudy z plecaczkiem, w
+        kurteczce jeansowej. Zaden z nich niemial ani kawalka firmowego
+        ubranka.
+
+        !!!!!
+
+        Nie wiem jak w innych miastach, ale w Krakowie sprawnosc srebrnych
+        wynosi ok 40 % w centrum do 75% na roznych osiedlach. Jezeli stoja
+        (lub wisza) kolo siebie 2 srebrne to masz minimalne szanse, ze oba
+        beda sprawne. W przejsciu pod skrzyzowaniem kolo Dworca Glownego
+        zanim powiesili 2 jajka, to wisialo 7 srebrnych. Czesto sie zdarzalo
+        ze nawet 5-6 bylo niesprawnych. Przez dluzszy czas jeden wisial bez
+        wnetrznosci.
+        W zwiazku z tym z kumplem jak jestesmy na rynku, to podchodzac do
+        srebrnego idac zadzwonic, lub jesli widzimy, ze kolejka jest do
+        dwoch z trzech, a ten trzeci stoi nieuzywany to wtedy obstawiamy
+        (przewaznie po 5 zl, aby bylo na jednego browara) jaka bedzie mial
+        usterke. Mozliwe sa warianty:
+                 - NIECZYNNY
+                 - NIEDOSTEPNY
+                 - ZAJETY
+                 - zupelnie wylaczony
+                 - PROSZE CZEKAC caly czas, nawet gdy sluchawka jest odlozona
+                   a po dlozszym czasie po podniesieniu TYLKO NUM. ALARMOWE
+                 - WLOZ KARTE a po chwili piszczy i ODBIERZ KARTE chociaz w
+                   srodku nic nie ma i nie jest zablokowany.
+                 - WLOZ KARTE, ale sam nie wciaga, a wepchac samemu do konca
+                   sie nie da, bo potem nie odda.
+
+        Sprobojcie u siebie.
+
+        !!!!!
+
+        Jezeli bedziecie na Chorwacji to sprobojcie Entry Call (Tam sie to
+        nazywa Incomming Call). Zaobserwowalem tam dwa typy aparatow, z tego
+        ten drogi byl straszna rzadkoscia (jak u nas zetonowiec). Na tym
+        najpopularniejszym modelu (na karte chipowa) Entry Call dziala bez
+        problemu. Tylko wezcie ze soba komorke, bo na malo ktorym sie zacho-
+        waly tabliczki z numerem. Swoja droga zwroccie takze uwage na montaz
+        kabli na scianach. Nie zapomnijcie zabrac ze soba phreakomatu i
+        nozyka. Rozmowa do Polski jest zajebiscieeee droooga. 25 impulsow
+        starcza na ok 70 sekund i kosztuje prawie tyle samo co u nas (tam
+        25 za 8 zl, u nas 25 za 9.50). Z karty 200 impulsow mozna bylo
+        porozmawiac z ojczyzna 10 minut, niestety taka przyjemnosc kosztowala
+        ponad 60 zl, a u mnie jednego browara w tamtejszej knajpie (u nich
+        tez tak jak u nas 5 zl) za dowolna dlugosc rozmowy (za jedno dialer-
+        kowanie)
+
+        !!!!!
+
+²±±°°° 12. Nagrywarka
+
+ !NEW! Nagrywarka juz jest i dziala. Dam wam kilka wskazowek jak ja zrobic,
+       ale nie powiem jednej bardzo waznej rzeczy, poniewaz dlugo do tego
+       z qumplem dochodzilismy. Zapomnijcie o metodzie Henka i tym podobnych.
+       Nie mowie, ze metoda Henka jest zla, ale wzmacniacz trzeba by zrobic
+       samemu, a sygnal i tak nie moglby pochodzic z odczytywanej karty.
+
+       Po pierwsze wazna rzecz. Przebiegi z kart jakie znacie ze stron wcale
+       naprawde tak nie wygladaja. Na oscyloskopie maja inny ksztalt, a to
+       dlatego, ze karta nam nie pokaze napiecia stalego (lub b. malej
+       czestotliwosci - polecam poczytac o ukladach calkujacych i
+       rozniczkujacych). Moznaby zewrzec kondensatory na jej wejsciu, ale
+       mi mojej zal. Pamietajci o tym. Postaram sie zamiescic kiedys gdzies
+       przegiegi z oscyloskopu. Ale jak ktos to zobaczy na oscyloskopie, to
+       bedzie juz wiedzial co ma robic.
+
+       Co do konstrukcji, to powiem wam, ze pierwszy prototypowy egzemplarz
+       ktory powstal ze srebrnego czytnika skladal sie ze przelacznika i
+       dwoch switchow. Tak  -  to jest mozliwe !!! aby nagrac impulsy
+       o odpowiednich ksztaltach. Potrzeba oczywiscie jeszcze zasilacz
+       i wszystko odpowiednio polaczyc. Oczywiscie to bylo sterowane recznie,
+       tak jak i przesow karty. Potem doszedl do tego silnik krokowy. Jest on
+       precyzyjniejszy niz fotokomorka z plytki czytnika. Oba silniki
+       oryginalnie zamontowane zdemontowalem. Zostawilem jedynie przekladnie
+       z tego od karty, aby nie wykorzystac mechanizm przesowu karty.
+
+       Zachecam do experymentow. To naprawde jest banalne. Az sam sie
+       zdziwilem gdy mi wyszlo. Informujcie mnie o swoich sukcesach. Moze
+       pomoge...
+
+       Z tego co czytam, to wszyscy robia z niebieskich czytnikow. Ja
+       zrobilem ze srebrnego, dodalem silnik krokowy (wywalilem dwa poprze-
+       nie) i jestem bardzo zadowolony. Mozna bardzo precyzyjnie sterowac
+       przesowem karty. I jedna bardzo wazna rzecz: silnik nie moze byc
+       zbyt "wyzuty". Moj robil niektore kroki o minimalnie innej dlugosci,
+       co powodowalo, ze ok 40% kart bylo sprawnych. Gdy wymienilem silnik
+       na nowszy, to sprawnosc wzrosla do 90% (pod waronkiem, ze na karcie
+       nie ma zabkow).
+
+
+²±±°°° 13. Inne
+
+        Wszystkie uwagi (rowniez krytyczne) prosze przesylac pod adres:
+
+                   >>>>>>>>>> pit413@poczta.onet.pl <<<<<<<<<<
+
+
+  (U)   Teraz juz wiem ze strona sie ukaze napewno, co do Pit_Faq_3 to
+        jeszcze nie wiem. Jesli sie ukaze to w formie HTML.
+
+
+        Na koniec oczywiscie pozdrowienia (w kojejnosci alfabetycznej):
+
+        > ASTURN <   > HAVOC <  > HRABIA <  > KOLNIERZYK <   > LUKASZ <
+        > MICHAL (QQ) <  > MONTER <   > R3DI <   > SKYVOM <   > SHADOW<
+        > TOMEK <   > URMET DEVELOPERS <
+
+
+                            i wszyscy o ktorych zapomnialem :-)

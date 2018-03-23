@@ -1,0 +1,112 @@
+
+
+				>>>Ozyrys Phreak FAQ version 1.0<<<
+
+					ozyrys@priv.onet.pl
+
+
+
+---------------------------------------------------------------------------------------------------
+
+Tak wiec faq to zostalo napisane jedynie w celach edukacyjnych
+i nie nalezy uzywac ponizszych sposobow w praktyce :).
+
+---------------------------------------------------------------------------------------------------
+
+Robilem to na ekranie 1024x768 wiec jak Ci wcina kawalek tekstu
+to bardzo mi przykro, no dobrze, ale przejdzmy do rzeczy.
+
+---------------------------------------------------------------------------------------------------
+
+Wersja 1.0 jest pierwsza wersja tego faq i narazie nie jest zbyt
+obszerna a to dlatego ze nie chcialem powtarzac sposobow 
+opisywanych przez innych (sciagniejcie se cos innego jak wam
+sie to nie podoba :) ).
+
+Spis tresci
+
+1.0 Sposob na pozyskanie kart bez posiadanie kluczyka (!)
+
+2.0 Sposob na wyciagniecie 25zl od tpsa :)
+
+3.0 Thanxy, credity, itp., itc.,
+
+
+---------------------------------------------------------------------------------------------------
+
+1.0 Sposob na pozyskanie kart bez posiadanie kluczyka (!)
+
+Wiem ze w phreaking nie chodzi o pozyskiwanie kart zakupionych przez innych
+uczciwych (!) klientow TPSA ale czasami kazdy potrzebuje troche podzwonic.
+Sposob ten dziala jedynie z niebieskimi automatami :( ale na szczescie
+mamy ich jeszcze troche. Tak wiec jedynym potrzebnym w tym celu sprzetem
+jest zuzyta karta telefoniczna, nowa tez moze byc jak nie masz co robic
+z z impulsami :) (ale wtedy zwykle nie potrzebujesz nowych kart wiec
+dalej nie czytaj). Biezemy taka karte i odcinamy mniej wiecej 1/3 jej czesc,
+moze ciut wiecej, jej koniec tniemy w taki sposob (ten szerszy czyli od gory)
+aby powstaly zabkim wyginamy je na zmiane w gore i dol, automat powinien miec
+wylot na karty z pokretlem, na tych drugich bywa ciezej, tak wiec tak 
+"przygotowana" karte wkadamy od dolu ( nie pocieta strona ) i wkrecamy,
+zwykle automat nie informuje o uszkodzeniu i wtedy jest OK, jezeli jest 
+inaczej to masz problem. Kazdemu kto bedzie chcial zadzwonic z tej budki
+automat polknie karte po wykonamym polaczniu, ale ty mozesz ja wyjac, 
+jak? To proste, potzrebna ci jeszcze jedna karta (rowniez zuzyta, ale podobnie
+jak wczesniej nie koniecznie), karte ta pakujesz (gdy automat zje juz kilka
+kart z impulsami) od dolu w tej samej pozycji w jakiej wkladasz ja z gory
+(moze nie wchodzic, pomanipuluj nia tak az sie wcisnie ) gdy wejdzie kawalek 
+reszte wkrec tak abys widzial tylko jej koncowke, gdy zacznisz ja wykrecac 
+powinna wyjsc, a zaraz za nia inne karty. Jak inne nie wyjda to sprobuj 
+wlozyc dwie karty (nie jedna za druga ale tak by bylo grubiej, ew trzy)
+Jezeli dobrze zrobiles blokade to nie powinna wyjsc lecz wstrzymywac nastepne 
+karty, jesli wyjdzie zwykle nie nadaje sie do ponownego uzycia.
+
+---------------------------------------------------------------------------------------------------
+
+2.0 Sposob na wyciagniecie 25zl od tpsa :)
+
+Jest to najprostszy sposob na naciagniecie TeleKompromitacji polskiej, ale
+niestey nie nadaje sie do stosowania czesciej niz raz na miesiac, inaczej
+moga skapowac sie ze cos jest nie tak. Wiec robimy tak:
+Znajdujemy sobie jaki kolwiek niebieski automat, i dzwonimy z niego pod
+dowolny numer (musisz zuzyc przynajmniej 1 impuls) nastepnie wyjmujemy
+swoja karte (jak nie chce wyjsc patrz punkt pierwszy :) ) i idziemy na
+poczte glowna w swoim miescie, (niewiem czy moze byc nie glowna, u mnie na
+zwyklej nie da rady :( ) i prosimy bardzo mila panie w okienku o blankiecik
+ktory wypelnia sie gdy automat zje nam karte. Udajemy oburzonych... :)))
+Blankiecik taki wypelniamy w nastepujacy sposob, wpisujemy swoje
+prawdziwe (!) imie i nazwisko, jako automat ktory reklamujemy podajemy ten
+z ktorego wczesniej dzwonilismy, date incydentu oraz godzine wedlug daty 
+i godziny w ktorej korzystalismy z owego automatu. Piszemy ze uzyskalismy
+polaczenie z numerem ktory owczesnie wybralismy. Po okolo miesiacu dostajemy
+druk od TEPSY ze uwzglednili nasza reklamacje i zostala ona rozpatrzona dla
+nas pomysnie, nalezy znim sie zglosic na wczesniej wspomniana poczte 
+I zainkasujemy tyle kasy ile jednostek (wedlug danych przez nas wypelnionych
+na blankieiku) zostalo. Odradzam wpisywanie warosi <=100 bowiem kart wiekszych
+obecnie nie ma a polaczenie nawiazalismy, tak wiec powinno byc maxymalnie 99
+impulsow, ja zawsze wpisuje 87 :). Mnoza oni impulsy wedlug taryfy i masz kase.
+Przed marcem 1999 Tepsa odsylala cale karty, jeszcze wczesniej karty z tyloma
+impulsami ile podalismy na blankieciku, ale teraz jest , najlepiej :).
+
+---------------------------------------------------------------------------------------------------
+
+3.0 Thanxy, credity, itp., itc.,
+
+To faqu powstalo pewnego marcowego wieczoru, a jego sklad zostal zamkniety
+(w wersji 1.0) dnia 4 marca 1999 r. o godz 22:29.47s.
+
+Ostatnia aktualizacja 4 marca 1999 r. o godz 22:30.20s.
+
+W razie watow mozesz mailowac, faqu napisalem po przeczytaniu faq Hrabiego
+(hrabia2@kki.net.pl) i zauwazeniu ze brak tam owych ciekawych pozycji. 
+Aczkolwiek nie jest to czysty phreaking to ulatwia zycie nam a utrudnie
+Tepsie (Phreak pelna geba :) )
+Nie mam strony bo brak mi czasu pieniedzy i ochoty, wiec jesli chcesz nowsza
+wersje to mailuj, jesli bede ja mial to ci wysle.
+
+Nie zmieniaj zawartosci tego faq bez uwczesnego kantaktu ze mna.
+
+---------------------------------------------------------------------------------------------------
+  Ozyrys 								ozyrys@priv.onet.pl
+
+
+

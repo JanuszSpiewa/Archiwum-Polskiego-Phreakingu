@@ -1,0 +1,222 @@
+                                                                                    
+########  ##       ##       #####  ###   ###
+ ###   ## ##      ###      ####      ##  ##
+  ##   #  #      ## ###    ###       ##  #
+  ######  #     #########  ###       ####       
+  #    ## ##     #    ###   ###      ##  #
+  ##   ## ####   ##     ##   ####    ##  ##
+########  ####### #      ###  ##### ####  ###   
+
+  blacktech@poczta.onet.pl
+
+Temat: 
+	Uwagi dotycz¹ce nagrywania kart...
+
+Data powstania:
+	29.VIII.2000r
+
+Spis treœci:
+	I.   Wstêp. 
+        II.  Ogólne wiadomoœci.
+        III. Jak nagrywaæ.
+        IV.  Fotokomórka z niebieskiego.
+        V.   Koniec.
+
+
+AD I) Wstêp
+
+	To coœ mo¿na nazwaæ FAQ tekst ten dotyczy w znacznej mierze problemów 
+zwi¹zanych z u¿ywaniem kart (nagranych oczywiœcie) na ró¿nego typu 
+automatach (jak wiadomo s¹ srebrne i niebieskie). W tym FAQ jest du¿o 
+gadania (pisania) od rzeczy no ale tak mi siê napisa³o to tak bêdzie. Karty 
+magnetyczne hmm wielu na pewno wola³o by temat kart chip`owych (mo¿e kiedyœ 
+coœ o nich napisze) no ale co jak co TPSA jakoœ nie wprowadza kart 
+chip`owych i z tego co widzê to raczej szybko nie wprowadzi (nie wiem jak u 
+was no ale u mnie doœæ czêsto zdarza siê takowa sytuacja ¿e goœcie z TPSA 
+zak³adaj¹ niebieskie automaty a nie tak jakby nakazywa³ rozs¹dek srebrne 
+?!?!) tak¿e myœlê (a przynajmniej staram siê) ¿e temat kart magnetycznych 
+bêdzie jeszcze d³ugo istnia³. A tak w ogóle to jak znam ¿ycie pewnie 
+jeszcze ktoœ zd¹¿y rozgryœæ karty chip`owe przed tym jak na dobre wprowadzi 
+je TPSA (jak tak dalej pójdzie). Dobra to wracam do kart magnetycznych a 
+wiec w wielu FAQ tak jak i w tym jest wiele podpowiedzi na temat nagrywania 
+no ale od razu mówiê ¿e takie coœ jak nagrywarka trzeba skonstruowaæ 
+samodzielnie mo¿na to zrobiæ na wiele sposobów niektóre s¹ leprze a 
+niektóre gorsze no ale wszystko trzeba zrobiæ samemu mo¿na siê najwy¿ej 
+popytaæ co i jak itp. Schematu wam nikt nie da a pozatym schemat to nie 
+wszystko bo trzeba te¿ napisaæ program który to wszystko obs³u¿y 
+(wyczajenie algorytmu s³u¿¹cego do generacji kodu zabezpieczaj¹cego itp) 
+tak¿e nawet jak ktoœ bawi³ siê lutownic¹ to nie zawsze sobie z tym szajsem 
+tak ³atwo poradzi. No ale mi siê wydaje ¿e phreaker czy hacker czy to i to 
+to ktoœ kto sobie radzi z problemami. Jak siê czyta niektóre FAQ to mo¿na 
+dojœæ do wniosku ¿e sprawa jest banalnie prosta no ale nie jest to takie 
+proste i raczej nie polega na je¿d¿eniu g³owic¹ z jamnika po karcie 
+telefonicznej, oczywiœcie jeœli ktoœ chce to na pewno sobie poradzi no ale 
+niektórzy bêd¹ musieli poœwiêciæ temu wiêcej czasu (nie wiem czy nie lepiej 
+jest zaj¹æ siê czymœ innym) a niektórzy mniej. Ka¿dy mo¿e sobie poradziæ 
+niestety nie ka¿dy bêdzie mia³ tyle cierpliwoœci. Wypada te¿ napisaæ ten 
+idiotyczny tekœcik ¿e nie odpowiadam za te rzeczy ,nie moja wina ,w ogóle 
+co z³ego to nie ja. Nie wiem co z tym tekstem zrobisz odpowiadasz sam za 
+siebie ja go napisa³em w celach edukacyjnych itp g³upoty. 
+
+
+AD II) Ogólne wiadomoœci
+
+	Nie napisze tu o tym jak zrealizowany jest zapis na kartach i o jego 
+wygl¹dzie w postaci analogowej. Skupie siê raczej na szczegó³ach choæ aby 
+siê na nich skupiæ bêdê musia³ siê trochê po powtarzaæ i napisaæ o 
+podstawach bo inaczej siê nie da. Jak wiadomo na karcie zapisany jest 
+sygna³ analogowy który po przetworzeniu w czytniku (oczywiœcie wi¹¿e siê to 
+ze zmiana przebiegu analogowego na sygna³ cyfrowy) daje  informacje w 
+postaci bitów no i w³aœnie za pomoc¹ bitów na karcie zapisane s¹ informacje 
+o numerze serii karty jej wielkoœci pozosta³ej liczbie jednostek itp .Jak 
+wiadomo bit jako podstawowa jednostka informacji mo¿e przyj¹æ dwa stany "0" 
+lub "1" dlatego w zapisie na karcie musz¹ byæ rozro¿nialne równie¿ dwa 
+stany. No i w³aœnie kartê nale¿y nagraæ tak aby czytnik z automatu móg³ je 
+prawid³owo odczytaæ. (Jeœli ktoœ nie widzia³ jeszcze zapisu na karcie w 
+jakimœ formacie dŸwiêkowym to niech sobie zobaczy zanim zacznie czytaæ 
+dalej).        
+
+
+AD III) Jak nagrywaæ 
+
+	Przyjmuje ze uda³o ci siê nagraæ przynajmniej jedna kartê która 
+dzia³a choæ na jednym automacie . A tak na marginesie w kwestii nagrywarek 
+to najlepiej zrobiæ wszystko od podstaw no ale to ju¿ nie jest takie ³atwe 
+bo trzeba zaj¹æ siê ca³¹ mechanik¹ i takimi duperelami w stylu pilnik 
+m³otek œrubokrêt wiertarka i przewa¿nie nic z tego nie wychodzi ale jak 
+ktoœ ma czas i nerwy do tego to zrobi (a pozatym jeden automat zostanie 
+ocalony) innym rozwi¹zaniem jest zdobycie czytnika z niebieskiego no albo 
+jak ktoœ ma wiêksze ambicje to ze srebrnego, ale ja nie jestem za 
+bezsensownym (powtarzam bezsensownym) niszczeniem automatów pewnie dlatego 
+¿e denerwuje mnie jak sam nie mogê nigdzie zadzwoniæ bo wszystko zr¹bane 
+ostatnio to co drugi urmet to albo nie ma s³uchawki no albo po prostu nie 
+dzia³a jednego to nawet ktoœ zjara³(swoja drog¹ oryginalny pomys³). A do 
+tego nikt nie raczy tego szajsu ponaprawiaæ no ale czego mo¿na siê 
+spodziewaæ po takim TPSA (szkoda s³ów). Znowu odszed³em od tematu w ka¿dym 
+razie jak ju¿ wczeœniej napisa³em twoja karta dzia³a na srebrnym no albo na 
+niebieskim no to Ok jesteœ hapy nagrywasz sobie dziesiêæ nastêpnych 
+podchodzisz do automatu zaczynasz sprawdzaæ czy wszystko pasi a tu okazuje 
+siê ¿e dzia³a tylko co druga karta a w pozosta³ych przypadkach widzisz 
+napisik "Karta nieczytelna" no albo w przypadku niebieskiego karta po 
+prostu przelatuje przez automat bez ¿adnego komentarza na wyœwietlaczu no a 
+ju¿ najœmieszniejsze s¹ karty które czasami dzia³aj¹ a czasami nie dzia³aj¹ 
+(zale¿y czy im siê chce czy nie). £atwo siê domyœliæ ¿e coœ jest nie tak. 
+Otó¿ jest parê powodów tego ¿e karta jest nieczytelna: 
+
+To na co trzeba zwracaæ uwagê (przy srebrnym automacie): 
+
+- Najwa¿niejsze jest to aby nagranie nie zawiera³o ¿adnych zak³óceñ (jakieœ 
+cuda nierówny przebieg itp). Niestety w³aœnie z tego powodu bardzo trudno 
+nagrywa siê na kartach które maj¹ zniszczony pasek magnetyczny bo wtedy 
+raczej ciê¿ko jest unikn¹æ przek³amañ itd.. choæ mo¿na próbowaæ czasami siê 
+uda du¿o zale¿y tu te¿ od nagrywarki,      
+- Nagranie na karcie nie powinno byæ zniekszta³cone wygl¹d "0" nie jest a¿ 
+tak istoty mo¿e ono nawet wygl¹daæ jak trójk¹t wa¿ne tylko ¿eby sygna³ 
+narasta³ a póŸniej opada³. Du¿e znaczenie ma kszta³t "1" doœæ wa¿ne aby 
+mia³a ona pionow¹ oœ symetrii choæ oczywiœcie automat odczyta j¹ prawid³owo 
+gdy bêd¹ lekkie odchy³ki od normy. No ale trzeba pamiêtaæ ze na karcie 
+nagrane jest wiele "0" i "1" a wystarczy choæ jeden bit Ÿle zapisany i ca³a 
+karta jest ju¿ nieczytelna (¿ycie jest ciê¿kie). Tak¿e lepiej ustawiæ 
+wszystkie potencjometry i to co siê da tak aby wysz³o to w miarê dobrze. 
+Przy "1" nale¿y zwróciæ te¿ uwagê na to aby jej œrodek nie by³ zbyt nisko 
+(nie powinno byæ zmiany polaryzacji w tym miejscu) jest to bardzo wa¿ne i 
+jest czêstym problemem je¿eli ten warunek nie jest spe³niony to karta 
+przewa¿nie dzia³a jedynie na czêœci srebrnych automatów (a przewa¿nie to w 
+ogóle nie dzia³a, no albo raz dzia³a a raz nie).  
+
+To czym nie nale¿y siê zbytnio przejmowaæ :
+
+-Srebrny automat prawie w ogóle nie bierze pod uwagê odleg³oœci miêdzy 
+kolejnymi blokami jeœli chodzi o ocenê poprawnoœci nagranego sygna³u 
+(oczywiœcie w granicach rozs¹dku). Tak¿e dziêki zwê¿eniu tych odleg³oœci 
+mo¿na nagraæ na kartê wiêcej impulsów zmieœci siê nawet 255 (wiêcej siê nie 
+da poniewa¿ nie zezwala na to oprogramowanie które odczytuje wartoœæ 
+impulsów jako jeden bajt),   
+-Nie jest równie¿ wa¿ne to gdzie zaczynamy nagrywaæ tzn mo¿emy np zacz¹æ 
+nagranie w œrodku karty i bêdzie spox mo¿na to wykorzystaæ np. jeœli chcemy 
+aby karta dzia³a³a jedynie na srebrnym automacie (jest to doœæ przydatne 
+przy kartach 200 impulsowych bo wtedy unika siê sytuacji w której ktoœ chce 
+zadzwoniæ z niebieszczaka kart¹ która ma 200 impulsów jak wiadomo przy 
+takiej próbie karta zostanie skasowana). 
+-Amplituda nagranego sygna³u równie¿ nie ma znaczenia oczywiœcie nie mo¿e 
+byæ za niska no ale mo¿e byæ wy¿sza od tej na karcie oryginalnie nagrywanej 
+tak¿e pr¹d p³yn¹cy przez g³owice powinien byæ jak najwiêkszy oczywiœcie 
+trzeba uwa¿aæ aby nie by³ zbyt du¿y poniewa¿ wtedy bêdzie po g³owicy. 
+
+To na co trzeba zwracaæ uwagê ( przy niebieskim ):
+
+-Prawdopodobnie je¿eli karta dzia³a na srebrnym a nie dzia³a na 
+niebieszczaku to jest coœ Ÿle z odleg³oœciami miêdzy kolejnymi blokami lub 
+po prostu w z³ym miejscu zaczyna siê nagranie na karcie powinno ono byæ w 
+miarê w tym samym miejscu co nagranie na oryginalnej karcie. Trzeba te¿ 
+pamiêtaæ o "1" choæ w porównaniu z srebrnym automatem niebieski jest o 
+wiele bardziej mniej czu³y na wszelkie przek³amania (jeœli chodzi o kszta³t 
+nagrania). No i to w³aœciwie wszystko na co czu³y jest niebieski nic innego 
+nie przychodzi mi do g³owy. 
+
+To czym nie nale¿y siê zbytnio przejmowaæ :
+
+- tak jak przy srebrnym amplituda sygna³u nie ma znaczenia.
+- jak ju¿ wspomnia³em niebieski jest mniej czu³y na przek³amania jeœli 
+chodzi o kszta³t z tego powodu mo¿na próbowaæ nagrywaæ nawet na zniszczonym 
+pociachanym i w ogóle kompletnie zjaranym pasku magnetycznym, oczywiœcie 
+przed nagraniem czegoœ na tak umêczonej karcie trzeba j¹ jakoœ do tego celu 
+przystosowaæ najlepiej jest jej pasek magnetyczny przeprasowaæ ¿elazkiem 
+niestety prasowanie czêsto doprowadza do wyginania siê karty tak¿e raczej 
+odpada (no chyba ¿e prasowanie w ni¿szej temperaturze ) najlepiej 
+plastikowe czêœci karty przykryæ jak¹œ kartka papieru i prasowaæ sam pasek 
+magnetyczny a zreszt¹ co ja bêdê siê rozpisywa³ popróbujcie sami 
+(prawdopodobnie zr¹biecie parê kart zanim wam wyjdzie jako tako no ale daæ 
+siê da). W ka¿dym razie jest z tym trochê roboty i nie wiem czy warto bawiæ 
+siê w jakieœ uzdatnienie ca³kowicie zaoranych kart. 
+
+
+AD IV)Fotokomórka z niebieskiego
+	
+	A wiec w czytniku niebieskiego s¹ trzy fotokomórki pierwsza (licz¹c 
+od wlotu) s³u¿y do sprawdzania czy karta zosta³a w³o¿ona do czytnika itp. A 
+nastêpne dwie kontroluj¹ pozycje przemieszczaj¹cej siê karty. Dlaczego 
+wspominam o fotokomórkach odpowiedz na to pytanie jest prosta otó¿ w bardzo 
+³atwy sposób mo¿na je wykorzystaæ do w³asnych celów. Wiadomo ¿e aby zacz¹æ 
+nagrywanie we w³aœciwym miejscu trzeba jakoœ odczytaæ pozycje karty. I tu 
+pytanie któr¹ fotokomórkê wybraæ jeœli potraktowaæ ca³a rzecz teoretycznie 
+to nale¿a³o by wybraæ t¹ która jest najbli¿ej g³owicy nagrywaj¹cej a jednak 
+w praktyce okazuje siê ¿e lepszym rozwi¹zaniem jest u¿ycie fotokomórki 
+znajduj¹cej siê zaraz przed g³owica odczytuj¹c¹ . Dlaczego ??? Nie opisze 
+tego szczegó³owo bo nie ma to znaczenia no ale myœlê ¿e jeœli ktoœ spróbuje 
+tych dwóch rozwi¹zañ to dojdzie do wniosku ¿e po prostu gdy u¿ywa siê 
+drugiej fotokomórki a nie trzeciej to wykrywanie momentu rozpoczêcia 
+nagrywania jest o wiele bardziej precyzyjne (oczywiœcie przy u¿ywaniu 
+drugiej fotokomórki nale¿y wykrywaæ stan w którym metalowa blaszka spada z 
+koñca karty). Ni¿ej jest jeszcze ma³y opis wtyczki fotokomórki nie jest on 
+skomplikowany no ale zawsze pomocny bo ³atwo jest pomyliæ wejœcie 
+fotokomórki z jej wyjœciem.
+
+_=__=__=_    
+|1|2|3|4|  - wtyczka fotokomórki powtarzam wtyczka a nie gniazdo J4
+---------
+
+1-wyjœcie (tu pod³¹czyæ jakieœ wyprowadzenie z portu komputera)
+2-wyjscie (masa pod³¹czyæ do masy z portu komputera) 
+3-zasilanie (tu nale¿y pod³¹czyæ "+" zasilania) 
+4-zasilanie (masa zasilania) 
+
+Koñcówki 1 i 3 mo¿na ze sob¹ zewrzeæ (pod³¹czyæ do jednej i tej samej masy) 
+fotokomórkê nale¿y zasilaæ przez rezystor inaczej mo¿e ulec uszkodzeniu. 
+Tak apropo fotokomórek z czytnika niebieskiego to mo¿na z nimi pokombinowaæ 
+np pod³¹czyæ jedn¹ tak¹ do komputera i zrobiæ sobie jakiœ alarm albo cuœ w 
+tym stylu (chodzi mi o wykorzystanie zbêdnych fotokomórek w koñcu w takim 
+czytniku s¹ trzy a przewa¿nie potrzebna jest tylko jedna, no a po co 
+marnowaæ tyle sprzêtu).         
+        
+AD V) Koniec
+
+	Na koniec pozdrowienia dla wszystkich z grupy Phreak It przy okazji 
+zapraszam na stronke http://www.phreak.it/ no i greetings  wszystkich z 
+Urmet Developers. A szczególne pozdrowienia dla goœci kryj¹cych siê pod 
+ksywami Asturn, Shadows, Tom, Hrabia ,Ko³nierzyk (to za ich teksty i inne 
+takie tam) no i dla jednej takiej alinki co ma fajny tatua¿ na... Jak ktoœ 
+ma jakieœ sugestie lub coœ w tym stylu to niech pisze maila adres jest na 
+górze. Powinienem odpowiedzieæ ale nie obiecuje... 
+
+

@@ -1,0 +1,181 @@
+
+ dddd   aaa     nn    n ii  eeeeeee ll   666 77777777    ___
+ dd  d  aa a    nnn   n ii  ee      ll  6         77    |   \    
+ dd   d aa aa   nn n  n ii  ee      ll 6         7      |_  |  
+ dd   d aa  aa  nn  n n ii  eeeee   ll 66666  77777       | | 
+ ddd  d aaaaaaa nnn n n iii eee     lll 66 66  77         | | 
+ ddd  d aaa aaa nnn  nn iii eee     lll 6666  77          | |
+ ddddd  aaa aaa nnn   n iii eeeeeee lllllll  7           /  |
+                                                        |___/
+          phreak FAQ 1.0 beta                             |
+               X.1999                                    ( 
+                                                        (
+==========================================================================
+Zawarty w tym pliku tekst jest napisany tylko i wylacznie w celach 
+EDUKACYJNYCH i udoskonalania zabezpieczen przez operatorow sieci tel. 
+Za uzycie tego tekstu niezgodne z jakimkolwiek prawem i straty poniesione
+przez jakiegokolwiek operatora sieci telefonicznej autor nie ponosi 
+zadnej odpowiedzialnosci . Powstawanie takich tekstow zapewnia wolnosc 
+slowa i publikacji . Kazdy czyta ten tekst na wlasne ryzyko . 
+==========================================================================
+
+0. WSTEMP 
+1. PAJAK BEZ PRZESZKOD !!!!
+2. PILICKA TELEFONIA
+3. TELKOM-TELOS (chamstwo)
+4. SKY BOX NIE DZIALA !!!!
+5. OPOWIESC (krotka)
+6. PHREAK A OSOBY TRZECIE (to juz bylo)
+
+____________________________________________ __ _  _    _ 
+
+0. WSTEMP 
+____________________________________________ __ _  _    _ 
+
+Na samym poczatku chce zaznaczyc , ze jest to moj pierwszy faq ... nie jestem
+po elektroniku wiec jesli bedzie cos lamersko napisane na te tematy to sorry. 
+Jesli to co tu jest napisane ktos wczesniej wymyslil to sorry a z drogiej 
+strony wszystko jest mojego pomyslu (dlatego pisze faq) i nigdzie nie widzialem 
+textow na te tematy .. gdybym widzial to bym tego nie pisal drugi raz 
+... bo po co ?? Ogolnie texty nie sa na wysokim poziomie ... ale moze sie cos 
+komus przydac ... 
+
+____________________________________________ __ _  _    _
+ 
+1. PAJAK BEZ PRZESZKOD !!!!
+____________________________________________ __ _  _    _ 
+
+W tej czesci faqa opisze pewien sposob, dzieki ktoremu podczas modemowania lub
+0700-owania z piwnicy bedziemy miec spokoj (to znaczy ze nie bedzie obawy ze 
+nagle ktos podniesie slochawke i nas rozlaczy gdy zciagamy plik 20 MB i jest
+juz 99%) . Metoda jest banalna ... najlepiej znac numer ofiary . Jesli go nie 
+znamy to patrzymy na klatce schodowej i dzwonimy na informacjie ;-))))))))))))
+Jest tez druga mozliwosc : ofiara ma telefon z dzwonkiem analogowym (takim co 
+jak dzowni to robi drrrrrrryn , a nie pipipipipi ;-)))) ) wtedy podpinamy sie 
+pod linie i wciskamy 7w7w7 , wtedy bedzie dzwonil telefon u ofiary . Dlaczego 
+7 ?? Dlatego ze centrale podczas ringu 7-miokrotnie przerywaja obwod ,czy jakos
+tak , no i zmienialy polaryzacjie i *** wie co jeszcze ;-))))
+Ta metoda jednak odpada , bo nie jestesmy swinie i sie podpinamy pod ludzi 
+bogatych , ktorzy maja telefony Siemens , Canon (fax) , Panasonic z dzwonkami 
+cyfrowymi  (chyba ze bogacz lubi antyki , lub dziela socjalizmu ;->>> ) . 
+btw. metoda na dzwonki cyfrowe jest w fazie testow ... 
+Ale do rzeczy !!! Mamy numer czy nie mamy , sprawiamy zeby dzwonil telefon u 
+ofiary ... ofiara odbierze i ......
+
+<ofiara> slucham ??
+<phreaker> dobry ...
+<o> dobry 
+<p> moje nazwisko Pajeczarski , dzwonie z telekomunikacji polskiej s.a. , 
+    zaklad telekomunikacji w ........ 
+<o> sloocham pana ?
+<p> a wiec musze poinformowac pana(pania) , ze nasza centrala przechodzi 
+    modernizacjie i przez najblizsze 4 godziny nie bedzie u panstwa telefonu ..
+<o> ty **** ****** ******* !!!! TPSA SUXXXXXXXX !!!!!!
+<p> bardzo mi przykro , dowidzenia 
+<o> fuck you !!!! 
+
+no i teraz w spokoju mozemy sie cieszyc zasobami internetu , lub rozmawiac z 
+kolezankami z USA , czy tam Tadzykistanu :-)))))) lub z Polski ... pod 0700 :)
+fajnie nie ?? :-)))))))))))))))
+
+____________________________________________ __ _  _    _ 
+
+2. PILICKA TELEFONIA 
+____________________________________________ __ _  _    _ 
+
+Pilicka Telefonia , cos jak tepsa czy netia. Jak dotad spotkalem sie z tym 
+jedynie w okolicach Radomia i w Radomiu .... Nie bede sie wglebial w szczegoly 
+... grunt ze maja automaty !!! 
+Pilickie automaty , sa to produkty firmy Telkom-Telos (skas znane ;-)))))))))
+modele AWS-7 (duzy zetonowiec , ale z DTMF, dzwonieniem na centrale etc.) i
+Diament (maly plastkiowy) ... co do tych automatow to szczegoly sa na stronie
+producenta (http://www.telos.com.pl) . Nie mam czasu na blizsze zapoznanie sie 
+z Pilicka ... :-((( ... Mozna by sprobowac w tych Diamentach przekrecic gorny
+zamek (nie jest to Abloy) i przestawic telefon na tryb "zwykly aparat abonencki"
+Mozna by tez sprobowac z Abloyami .... tam gdzie tepsa ma zetony A i C ...
+... PT ma zlotowki , 50 groszy i 20 groszy .... Wiecej napisze jak sie wybiore
+na pilickie automaciki ;-)))))) 
+
+____________________________________________ __ _  _    _ 
+
+3. TELKOM-TELOS (CHAMSTWO)
+____________________________________________ __ _  _    _ 
+
+Ten dzial jest chamski ... bo przedstawia on ..mozna powiedziec wandalizm .. 
+Jesli mamy u siebie ;-)))) malego albo duzego zetonowca (Telkom-Telos) to
+pewnie chcemy go rozebrac na czesci ... tarcza w malym , slochawka ... sa tam 
+srobki..dosc specyficzne, bo trzeba miec specjalny srobokret zeby je odkrecic..  
+jesli takie cos mamy to mozna ten dzial pominac ... a jesli nie to mozna sie 
+dlugo glowic jak to odkrecic ... ja sie glowilem ... wymyslilem takie cos :
+mamy 2 duze gwozdzie , wkladamy je w te dziurki na srobie ... wszystko to 
+lapiemy francuzem .. powinno pojsc ... mi poszlo .. Teraz wyjasnienie 
+dlaczego mowie o tym dziale ze jest chamski .. bo gdy jakis dres uzyje tego 
+w innym celu (np. dewastacja automatow) ... a przecierz ten automat moze 
+uratowac komus zycie ... wiec chodzi mi tu o to , ze mozemy dewastowac 
+automaty jak jest ich jakies skupisko ... dewastujemy jednego ... 
+chyba wystarczy ... tepsa ma straty ... chyba ze ktos jest naprawde 
+niewyzyty ..... Ogolnie unikajcie wandalizmu ... przecierz phreak sloozy 
+nauce (mowie tu o prawdziwym phreaku a nie dresiarskiemu ... ) ... 
+
+____________________________________________ __ _  _    _ 
+
+4. SKY BOX NIE DZIALA !!!!
+____________________________________________ __ _  _    _ 
+
+Nie wiem co zrobila tepsa , ale u mnie nie dziala skybox .... chce zadzwonic 
+na zamiejscowy ... przykladam mase do jednej zyly ... cichy trzask .... 
+do drugiej ... to samo ... mysle ... moze cos zle z kaloryferem ... nic ... 
+kabel caly ... caly .... no to juz nie wiem .... gdzie to "buuu" ???? :-(((
+Jaki wniosek ??? Tepsa zaklada filtry na skyboxy :-((( na P3W33 boxy nie wiem
+ale pewnie tez .... Z drugiej strony mogli by mnie przelaczyc na jakas cyfrowa
+centrale !!! a nie trzymac na strowngerze z filtrem na skyboxa .... tam bym
+mial przynajmniej callerid .... ale coz .... to przecierz tepsa :-((
+
+____________________________________________ __ _  _    _ 
+
+5. OPOWIESC (krotka)
+____________________________________________ __ _  _    _ 
+
+Jesli Cie nie interesuje czytanie opowiesci o phreakerskich wyprawach to tego 
+nie czytaj ;-))) 
+A wiec wlasciwie nie bedzie to bezposrednio o phreaku .... ale zawsze cos na 
+temat ... a wiec do rzeczy !
+Pewnego razu o godzinie 3.40 rano , wychodze z domu ... Zimno jak ****
+ale coz ... ide do automatu na zetony .... jest on w blokach w ktorych mieszkam
+... kolo drogi wewnetrznej ... no ale nie o tym mialo byc . Wyciagam lom ...
+Poniewaz byl to duzy zetonowiec , najpierw biore sie za komore automatowa ... 
+ladnie sie odgial kawalek , ale nie idzie ... zadnych odgloow .. wszedzie cisza 
+i ani jednej zywej duszy ... a tu z tylu slysze : "ty **** zostaw ten telefon !" 
+odwracam sie , patrze ... co widze ??? jakas oblesna baba nie ma co robic o 
+4 rano tylko pilnuje automatu ... No nic ... nastepnego dnia tez tam ide ....
+teraz wzialem sie za komoze zetonowa ... odgialem sredni kawalek blachy .... 
+tak , ze bylo widac zamek i mechanizm . W tym momencie normalny czlowiek by 
+zaczal nawalac w taki podlozny prent ... no dobra .. ale na totalnym zadupiu ... 
+a nie w srodku osiedla o 4 rano ... wiec zaczynam pilniczkiem ... idzie nawet 
+niezle ... a tu ta sama baba "zjezdzaj ztad bo wezwe milicje !!!" teraz juz 
+zwatpilem we wszystko .... Ludzie ... nie macie co robic w nocy tylko pilnowac
+automatu ??? choc z drugiej strony phreak tez nie jest zbyt normalny ..... 
+;-))))))))))  jaki z tego moral ??? zaden ;-))) to historia bez moralu ;-)))) 
+
+
+____________________________________________ __ _  _    _ 
+
+6. PHREAK A OSOBY TRZECIE
+____________________________________________ __ _  _    _ 
+
+Wielu z Was ( zwlaszcza tych poczatkujacych ) po jakiejs wyprawie na urmeta 
+czy pajaka ... mowi kazdemu , kogo napotka "sloochaj stary , wiesz co ja 
+umiem ?? " NIE CHWALCIE SIE TYM CO ROBICIE !!! Pisze to we wszystkich faqach 
+ale wiekszosc sie chwali ... szpanuja przed jakimis tirowkami jacy to oni 
+sa prejkerzy , pozniej dresy sie dowiaduja o pajeczarstwie ... i jest zle .. 
+Nawet jak mowicie o tym najlepszemu przyjacielowi, to mowcie to cicho ... 
+Ja kilka razy mialem gloopie sytuacje .. powiedzialem kilka rzeczy za glosno
+... i mialem pytania w calej szkole "jak ty dzwonisz z budek za darmo , 
+uzywajac lomu ???? " , albo przylapany przez dresa na pajeczarstwie .... 
+"kiedy przychodzisz na moje osiedle z tym telefonem ??? " , "czy to prawda 
+ze masz klucz od budek telefonicznych ??? " w ten sposob rodza sie ploty .. 
+kazdy na osiedlu wie co robisz !! Wyobraz sobie teraz taka sytuacje :
+tepsa do rachunku za telefon daje ulotke "za dostarczenie informacji o 
+pajeczarzach mozesz wygrac telefon warty 1500 zl i zwolnienie z rachunku "
+No i teraz jestes spalony .... Niedawno odbilo mi sie o uszy , ze jakis 
+dwoch dostalo 3 lata za podpiecie pod budke .... BADZCIE OSTROZNI !!!!!!!!!

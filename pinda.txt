@@ -1,0 +1,288 @@
+CONNECT 2400
+
+witam jestem pinda i to moje faq'u.
+pisze je poniewaz chcialbym zwrocic na siebie
+uwage paru ludzi :))
+drugim powodem, dla ktorego powstalo to faq'u
+jest akcja przeciw TPSA.
+
+------------------------------------------------------------------------------
+                                 UWAGA!!!
+    WSZYSTKO CO JEST W TYM DOKUMENCIE NAPISANE JEST DO UZYTKU ZEWNETRZNEGO
+    LYKANIE,SRANIE W BANIE,KICHANIE,CIUMCIANIE,BEKANIE,RUCHANIE, ITD.
+        JEST SUROWO ZABRONIONE I GROZI KALECTWEM FALDOW NA MOZGU.
+  UPASZA SIE O NIESKRACANIE TEGO TEKSTU BEZ ZGODY AUTORA : pindos@polbox.com
+------------------------------------------------------------------------------
+
+
+
+
+Zacznijmy od poczatku.
+
+Spis tresci
+1. Okolicznosci powstania p33w33's box'a.
+2. Opis techniczny najprostszych box'ow.
+3. Bieganie z tonedialerami w wydaniu koszalinskim.
+4. Ostatnie wiadomosci o spidermanni.
+5. Skanowanie numerkow.
+6. Th3 3nd.
+7. Update
+
+
+
+
+1. Okolicznosci powstania peewee's box'a.
+
+        Peewee alias przylepa alias winni the poof jest moim kumplem.
+Kiedy ja poznawalem ludzi przez bbs'y w 1995r. [w tedy jeszcze za 0202122
+placilo sie ogromne sumki w koszalinskim, a polaczenia byly do kitu].
+Przeczytalem pare zagranicznych faq'u o H/P i bylem bardzo podjarany
+cala ta sprawa, kazalem siebie nazywac hacker'em i wogole. Peewee wszedl do
+zabawy troche pozniej, na poczatku razem bawilisby sie w zalozenie BBS'u,
+ktory nie wypalil ze wzgledu na TPSA i jej ceny :(( ach jacy oni sa chciwi :).
+Pozniej zaczelismy na mase odwiedzac internet, odwiedzilismy wszystkie
+hackerskie zagraniczne strony, przeczytalismy wszystkie faq'u. (przewaznie
+byly na poziomie zwyklych user'ow). Troszke wczesniej jaa poznalem czlowieka,
+dzisiejszego zalozyciela KLUG ( K= koszalinski ), ktory przestawil mnie na
+LINUXA. Ja zarazilem tym bakcylem wszystkich intelientow, ktorych znalem.
+Kiedy juz uzywalismy polaczenia przez pppd z linux'a naumielismy sie irc'a
+i podstawy userostwa w linie przyszly rachunki telefoniczne. Pinda max. 250
+Peewee max. 450 zl, wtedy moje wapno zaplacilo, a peewee'mu odlaczyli telefon
+byl to pewien okres ciszy z naszej strony w sieci, za to poznawalismy linux'a
+i pisalismy skromne programy w asmie, ce , paskalu. Wtedy zrozumielismy jacy
+ciency jestesmy, jezeli nie potrafimy laczyc sie za free. Oprocz tego
+zajebisty nauczyciel od informy przedstawil nam pare narzedzi w programowaniu
+i weszlismy w programowanie w delphi, dobra i oto nagle peewee wpadl na
+genialny pomysl, ze wykorzysta stara znajomosc w TePSiA. Peewee siedzac
+nocke przy lutownicy (prawde mowiac co mial robic jak szkole pierdolnal o
+beton), wykombinowal skomplikowane urzadzenie, nazwane przezemnie peewee's
+box. Strasznie podjarany pinda byl ciagle przygaszany przez profesjonalnego
+peewee'go :))) To w pindy glowie ukazala sie wizja bycia bogiem i zeslania
+swiatu blue box'a:))) Wykorzystujac znajomosc nie bylismy do konca pewni,
+ze boxik dziala, teraz jestesmy. Na poczatku wiedzialo  o tym 2, nastepnego
+dnia 4 , pozniej 8,16,32, wtedy pinda dostal opierdol ze rozpowiada wszystkim
+o tym jak korzystac z box'a. Pinda umilkl i wszedl w irca gdzie poznal paru
+ludzi. Peewee wizjoner przyszlosci wolal cos innego musial miec irca przez
+jave i dlatego korzystal z WP. to mu do dzis zostalo. Pozniej mamy wakacje
+1998 i zaczal sie rok szkolny dopiero wtedy wszyscy laczyli sie po 8 godzin
+dziennie :) Pinda troche na #phreakpl #hackpl #true_luzik , tam poznal
+czlowieka, ktoemu troche dzis zawdziecza ale o tym greetingsach. Od tamtego
+czasu postepuje wedlug maxymy:"trzeba naprawde duzo wiedziec, aby wiedziec
+jak malo sie wie". I tak jestesmy prawie dzisiaj. Pozatym peewee administruje
+siec, i starzy zapisali go do szkolki wieczorowej. Wczoraj 1 XII 98 akcja
+przeciw TPSA, komentarz paru ludzi wreszcie zobaczylo problem, ktory meczyl
+nas 3 lata. 2 XII dzis o 12 wlamano sie na server TPSA i zmieniono strone
+wpisujac telekomuna :)) moj tekst :))) 3 XII 98 moglby byc dniem kiedy wszyscy
+dostaja narzedzie jak za darmo dzwonic. Dobra.
+
+
+
+2. Opis techniczny i zasada dzialania.
+
+        Box peewee'go dziala na zasadzie bardzo prostej wiele ludzi w
+dzialanie boxa nie wierzy i dlatego z niego nie korzysta. :))
+Jak wiemy do domu dochodza dwa kabelki telefoniczne one sa podlaczone
+do kostki, a w koste jest wtyczka od telefonu.
+Pierwszy box wygladal tak :
+
+
+
+              kabelek
+  kostka   -------------------------R   modem
+   | |     -------|-----------------G
+   | |            |
+   | |            |
+   | |            |-----------przerywacz--------- wtyczka do
+  telefon                                         gniazdka do zera
+
+
+
+R-czerwony
+G-zielony
+
+
+jest to wspaniale uzadzenie, ktore ma dalej wiele uzywanych kopi.
+
+Instrukcja obslugi :
+A.Instalacja:
+o sprawdzamy probowka gdzie w gniazdku mamy zero
+o wkladamy wtyczke z jednym bolcem do zera w gniazdku.
+                   (poniewaz drugi bolec jest obciety :)
+o podlaczamy wszystko jak na rysunku, czyli :
+                      - kabelek do modemu i do faxowego gniazdka ;
+                      - podlaczamy telefon do gniazdka.
+o podnosimy sluchawke i wciskamy przerywacz
+o jesli nie slyszymy charakterystycznego bzyczenia to zamieniamy
+  kabelek, czyli ta wtyczka gdzie byl modem wtykamy do gniazdka i vice versa
+o teraz juz napewno bzyczy, jesli nie i nie jest to wina zlego polaczenia
+  to sorry, ze zmarnowalismy ci kawalek zycia.
+B. Uzywanie:
+o podnosimy sluchawke i sprawdzamy przerywaczem czy bzyczy.
+o wykrecamy numer najlepiej zagraniczny, 0700, lub 0202122, moze tez byc
+  zamiejscowa.
+o po ostatnim wybranym numerze wciskamy przerywacz, znowu bzyczy
+o puszczamy przerywacz w momencie kiedy modem z drugiej strony podnosi
+  sluchawke.
+o u mnie dziala wiec moze u ciebie tez.
+
+Zasada dzialania :
+Przypuszczam, ze zerowanie jednego przewodu lini powoduje skasowanie
+polaczenia z maszyny bilingowej, tak samo moze reaguje centrala jesli wie, ze
+polaczenie jest niezrealizowane, busy albo polozyles sluchawke po wybraniu
+numeru. Na maszynie bilingowej wyskakuje ze w tym miejscu nie bylo polaczenia
+Nie mowie tu o wydrukach bilingowych, ktore mozecie miec w domu :))
+Ponoc tepsiarze moga skonczyc nasza zabawke bardzo szybko
+wprowadzajac 4 kableki zamias 2 do domow, ale mowimy tu o ogromnych kosztach
+tym bardziej, ze nie obejmuja one planu tpsy, najlepsza strategia bylo
+milczenie z naszej strony, ale teraz kiedy mamy tydzien #anty.tpsa dostalem
+zgode od peeweego na napisanie tego faqu :))
+
+Na czym to dziala:
+Napewno na Strowgerze E34, prawdobodobnie na Pentacontach :)
+To jest 1/2 polskich central jak nie wiecej :))
+Jesli u ciebie to nie dziala sprawdz u babci na wsi i  zacznij u niej
+czesciej przebywac.
+
+Co jeszcze powinienes wiedziec:
+Ponoc trzy lata temu ludzi, ktorzy uzywali 'bzyczka' zlapali przez uzadzonka
+ale byli wkopywani przez jakis lamerow. Wazne jest abys nie zostawial
+podlacznonych kabelkow do zera. Jesli jestes podejzany, lepiej daj sobie
+spokoj. Pamietaj abys nie podlaczyl w faze bo moze ci pojsc telefon, modem
+Mi poszla sluchawka i cos sie na centrali zjebalo, zawolalem Tepsiarzy a oni
+mi mowia, ze jakies przebicia zera sa. Wiec pauzowalem pare dni i nie
+bzyczalem. Musisz udawac, ze nic nie wiesz jak wpadna do ciebie do domu. Nie
+zgrywaj sie, jesli nie poszli na prokurature to nie maja dowodow, ale ty im
+ich nie dostarczysz.
+
+A teraz opis mojego 'bzyczka':
+Ja zamiast meczyc sie z urzadzonkiem lacze sie w ten sposob.
+Mam kabelek , moze byc izolowany , modem wybiera 0202122 a po ostatniej 2
+ja dodykam jednyk koncem do bolca zera w moim Acar'ze a drugim do upatrzonej
+blaszki w kostce ( ta ktora powoduje bzyczenie ).
+trzymam 10-15 sek i puszczam , tatz oll.
+
+Najlepszego box'a zrobil noise :
+jak ludzie do domu mu przychodzili to nie wiedzieli od czego zaczac.
+Wjebal tam diody i przelaczniki i wogole zajebioza.
+
+Jak zmontowac milego box'a:
+potrzebne:
+-kabelek do modemu
+-wtyczka do gniazdka
+-lutownica itd.
+-kabelki
+-obcegi
+-probowka
+
+o Odcinamy jakos (obcegi)jeden bolec w naszej wtyczce
+o sprawdzamy gdzie mamy faze
+o wtykamy bolec w faze i sprawdzamy ktory przewod zwiazany jest z bolcem
+o upatrzony kabelek z wtyczki przylutowywujemy do kabelka
+o przecinamy kabelek na pol
+o podlaczamy do tych powstalych kabelkow przerywacz
+o sciagamy izolacje z kabelka od modemu
+o tam sa dwa kabelki , z zielonego sciagamy izolacje
+o przylutowywujemy do niego kabelek z wtyczka do gniazdka i z przerywaczem
+o kabelek jest gotowy , uzywamy wedlug instrukcji obslugi.
+
+
+3. Tonedialery, a koszalin.
+
+W koszalinie nie ma central, ktore przyjmuja tony wiec zrezygnowalismy z tego
+za szybko, pare razy po nocy dzwonilismy zamawiajac rozmowe zamiejscowa przez
+telefonistke: 10 na 10 razy udalo sie z budki, ktora byla przymocowana do
+budynku Poczty.
+
+4. Spiderman is back.
+Ostatnio wascynuja nas mozliwosci jakie daje pajeczarstwo, najlepsze przekrety
+sa w nocy z pt./sob. na pajaka jedziemy podlaczajac sie do starych budek,
+ktore powinny byc zamienione na kanaly ale sie nie dalo. Odlaczamy goscia wiec
+nie wie, nawet, ze sie bawimy na jego koszt. Mu sie wydaje, ze cholrna tpsa
+znowu nawala a tym czasem na bilngu okazuje sie ze uprawial samogwalt przez
+telefon :))) (cats-sex-line) W takich budkach, do ktorych podlaczonych jest
+duzo wsi mozna niezle namieszac. zmienic komus numerek na numerek wsi obok.
+Ale o tym bede moze pisal jak bede cos wiecej wiedzial:))
+
+5. skanowanie numerkow.
+Zeskanowalem cale 0800 ale chuj tam byl.
+Zeskanowalem miasto tez chuja znalazlem
+ale jak mowi 'elita'
+patience is a virtue :)
+
+6. Fin
+
+Jesli malo wiedziales o phreak'u mam nadzieje ze duzo sie nie nauczyles
+
+
+Podziekowania (kolejnosc ma znaczenie:))
+p33w33 - wiadomo dlaczego
+10tnik - tez wie dlaczego
+n0xi0us,n0is3,kazik
+
+Pozdrowienia:
+K4n3d4 - moglby mi wreszcie kluczyk przyslac
+         bo chcialbym automat w domu powiesic
+hrapia - ostatnio umilkl ale wpozoe gosciu jestes
+oraz kanaly #phreakpl, #hackpl.
+
+to wszystko narazie
+
+Kontakt:
+pindos#polbox.com
+pinda@add.com.pl
+
+
+
+
+
+7. Update
+
+Pare gosci z dzielnicy sie burzylo wiec musial powstac update.
+Powody:
+o nie powinno byc polskich czcionek w fakjuchach
+o stwierdzenie "charakterystyczne buczenie" moze poczatkujacy franz jegier
+  nie zczaic i wtykac nie w ta dziore co trzeba.
+
+
+ad o1
+to juz jest zrobione.
+
+ad o2
+zwrocil mi na to uwage |\|0123
+chodzi o to ze zerujac jedna i druga linie mamy buczenie
+ja wyczuwam o ktore buczenie chodzi, ale oto sposob dla poczatkujacych
+
+lutujemy sobie taki uklad :
+
+                         |\    |                               G  R
+                         |  \  |                               |  |
+                  |------|LED >|---------                      |  |
+                  |      |  /  |        |                      |  |
+                  |      |/    |        |                      |  |
+          |-----| |                     |                      |  |
+do zera---| RES |-|                     |----------krokodylek  |  |
+          |-----| |                     |                      |  |
+           33kOM  |      |    /|        |                      |  |
+                  |      |  /  |        |                      |  |
+                  |------|< LED|--------|                      |  |
+                         |  \  |                               |  |
+                         |    \|                               |  |
+
+LED to diody swiecace
+RES to opornik 33KOMA
+R,G - czerwony i zielony kabelek jak w bombach :>>
+do zera to np zero w gniazdku kaloryfer itp.
+
+
+sposob uzycia :
+
+gotowy uklad podlaczamy odpowiednim koncem do zera
+a krokodylek podlaczamy do G
+jesli jakas dioda pali sie to zle to jest  zly przewod
+podlaczamy do R tu juz nie powinna sie palic
+uwaga sluchawka musi byc odlozona
+teraz porownujemy 'bzyki' z G i R
+R dobry a G zly :-))
+
++++ATH0
+NO CARRIER

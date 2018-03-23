@@ -1,0 +1,333 @@
+        -------------------------------------------------------------------
+         -  -                                                              -
+          -  -               >>> Abloy'e w telekomunikacji >>>              -
+           -  -                                                              -
+            -  -                         $VER: 1.3                            -
+             -  -                                                              -
+            -  -               >>>  peyo@friko2.onet.pl  >>>                  -
+           -  -                                                              -
+          -  -                      Polska, dn. 05.04.99                    -
+         -  -                                                              -
+        -------------------------------------------------------------------
+
+
+Uwaga!! Wszystko to, co jest napisane ponizej sluzy tylko celom informacyjnym (ze cos
+        takiego istnieje), takze to co przeczytacie wykorzystujecie na wlasne ryzyko,
+        a jako autor niniejszego tekstu nie ponosze za to zadnej odpowiedzialnosci!!!
+
+
+SPIS TRESCI:
+
+1. POZYSKIWANIE ZAMKOW
+  1.1 Ogolne informacje
+  1.2 Skrzyneczki przydrozne
+  1.3 Skrzyneczki w blokach
+  1.4 Slupki telekomunikacyjne
+  1.5 Szafy telekomunikacyjne - z klamka
+  1.6 Szafy telekomunikacyjne - z pokretlem
+  1.7 Inne skrzynki
+2. DORABIANIE KLUCZA - AY1, AY3
+3. KLUCZ DO NIEBIESKIEGO - AY1 - 00131000
+4. NOWE POMYSLY
+  4.1 Plastelina
+  4.2 Zdobywanie zamka z URMETA'1
+  4.3 Zdobywanie zamka z URMETA'2
+5. CZEGO JA TU SZUKAM...
+6. THE END
+7. GREETINGS
+
+
+1. POZYSKIWANIE ZAMKOW
+
+1.1 Ogolne informacje
+
+Dobra, trzeba nam jakos ten klucz dorobic. Do tego najlepiej miec zamek. Pytanie jak zdobyc
+zamek? Otoz jest kilka metod. Przedstawie wam kilka, ktorych osobiscie uzywam. U mnie tepsy
+maja jakies 4 rodzaje zamkow. Podobnie jest w innych miastach. Teraz, kiedy pozmieniali mi
+zamki w calym miescie (w niebieskich), stary klucz o ktorym pisze nizej nie nadaje sie juz
+do niczego. W innych miastach i roznych okolicznych wioskach, ciagle sa stare zamki, chociaz
+tez nie wiadomo jak dlugo. Teraz powstawiali w automatach zamki typu Abloy AY3 - taki sam
+rodzaj jak we wszystkich skrzynkach telekomunikacyjnych, tzn. patrzac na zamek widzimy polkole
+z takim wystajacym jopkiem. Z koleji klucz (jest wiekszy niz ten poprzedni od niebieskiego)
+wyglada w przekroju jak litera U (taka troche splaszczona), tzn. polwalec z wycieta wzdloz
+rynienka. Zdarza sie, ze nowe zamki montowane w automatach (niebieskich i srebrnych) maja
+taki sam klucz jak przerozne skrzyneczki telekomunikacyjne. Plynie z tego wniosek, ze trzeba
+skolowac kilka zamkow od roznych skrzynek, ktore spotykamy w piwnicach blokow, przy ulicach
+(takie niezbyt wysokie slupki) i inne wieksze jak np. szafy telekonikacyjne (na wysokosc z 1.5m).
+Teraz zabieramy sie za zdobycie takiego zamka:
+
+1.2 Skrzyneczki przydrozne
+
+Jak wyglada:
+
+- stoja na cementowej podmurowce
+- najczesciej w okolicach roznych domow prywatnych
+- wysokosc ok. 60 cm
+- szerokosc ok. 30 cm
+- oczywiscie logo tepsa i zamek u gory drzwiczek
+- wokolo drzwiczek gumowa, czarna uszczelka
+- nazywa sie: TSLK 20 - Telefoniczny Slupek Kablowy
+
+Jak sie do tego dobrac?
+
+Otoz jest to najprostsza sprawa z tymi skrzynkami, ale sa dwa sposoby na jej otwarcie.
+Pierwszy sposob polega, na podwazeniu gornej czesci dzrzwiczek (tuz nad zamkiem) duzym srubokretem
+Podchodzimy wkladamy srubokret (albo dwa - bedzie lepiej) i energicznie wywazamy drzwiczki.
+Zaleta tego jest szybkosc demontazu, ale mozna sobie troche wygiac skobel od zamka (w sumie i tak
+nie jest nam potrzebny), poza tym jest to troche halasliwy sposob. Druga metoda, to przy uzyciu
+jednego, ale lepiej dwoch duzych srubokretow. Podwazamy drzwiczki, ale uwaga, po prawej i po lewej
+stronie w polowie ich wysokosci. Podwazamy dotad, az drzwiczki sie odegna do tego stopnia, az
+wyleca nam do przodu. Cale drzwiczki, razem z zamkiem swobodnie nam sie wysuwaja i mozemy znikac.
+Zaleta jest cichy demontaz i trudno raczej uszkodzic nam zamek, ale troche dluzej to trwa.
+
+1.3 Skrzyneczki w blokach
+
+Tu mozemy spotkac kilka rodzaji tych skrzyneczek, ale ogolnie sa do siebie podobne:
+
+- cala metalowa
+- zamocowana na scianie (zazwyczaj wysoko)
+- (!!) tylna scianka tej skrzyneczki jest plastikowa
+- zamek montowany u gory
+- wymiary sa rozne, wiec ich nie podaje
+- podobnie jak wyzej - gumowa uszczelka
+
+Te skrzynki tez latwo rozwalic. Podchodzimy i podwazamy skrzyneczke od sciany srubokretem.
+Plastik peka, a skrzyneczka wisi na kablach, teraz odlamujemy plastik i widzimy cala jej
+zawartosc, tyle ze od tylu. Widzimy takze zamek. Bierzemy szczypce (raczej dlugie) i odkrecamy
+nakretke na zamku. W ten sposob odkrecilismy skobel od zamka i drzwiczki normalnie sie otwieraja.
+Bierzemy cale drzwiczki (wyjmuja sie) albo odkrecamy sam zamek. W kazdym razie jest nasz.
+Mozna oczywiscie podwazyc drzwiczki przy zamku (moze byc troszke trudniej, bo sa male). Wyginanie
+drzwiczek nie wchodzi w gre, bo sa zbyt male, zeby je tak bardzo wygiac. Mozna tez po oderwaniu
+calej skrzyneczki odciac ja od kabli, ale to jest raczej chamskie zagranie, bo odcinamy telefony
+wielu osobom.
+
+1.4 Slupki telekomunikacyjne
+
+Jak wygladaja:
+
+- jak slupki - okragle
+- srednica ok. 20 cm
+- na wysokosc ok. 50-60 cm
+- kolor czarny
+- zamek znajduje sie u dolu
+- wykonana z plastiku - dosc twardego
+
+I tu jest maly problem. Jest to jeden z nowszych wytworow tepsy. Niby slaby, a jednak dobrze
+zabezpieczony. Ale i to da sie rozwalic. Tak jak pisalem wyzej jest wykonana z plastiku, czyli
+przyda nam sie brzeszczot. Nacinamy nim slupek z 4-5 cm nad zamkiem, az przetniemy cala grubosc
+obudowy, kiedy jest juz naciety, wciskamy tam cienki srubokret i wylamujemy ten fragment obudowy
+z zamkiem. Mozemy tez odlamac obudowe od dolu. Zaznaczam, ze rozwalenie tego slupka jest dosyc
+trudne i w miare mozliwosci trzeba go podpilowywac brzeszczotem, gdzie sie da. Takze probojcie
+jak sie da, a otworzycie
+
+1.5 Szafy telekomunikacyjne - z klamka
+
+Jak wygladaja:
+
+- duze
+- na wysokosc z 1.5m
+- na szerokosc z 80 cm
+- zamek umieszczony z lewej strony, w klamce (!)
+- kolor berzowy
+
+Jak rozwalic?
+
+Szaf takich tepsa uzywa do laczenia linii na osiedlach. W takiej szafie znajduje sie chyba z 1000
+linii. Jak by sie dobrze rozejrzec, to pewnie i jakies linie automatow mozna by znalezc. Szafa
+taka ma wewnatrz dwa skoble, ktore wchodza w dol i gore obudowy i zabezpieczaja drzwi przed
+wylamaniem lub podwazeniem. Ale jak wszystko, to i to mozna otworzyc. Najprosciej jest wcisnac
+srubokret pod klamke i ja na chama podwazyc, az pusci. Troche trzeba sie bedzie posilowac i w
+dodatku musimy miec cienki srubokret, bo inaczej go tam nie wcisniemy. Musicie oderwac klamke, bo
+wlasnie na niej zamontowany jest zamek. Nie probujcie podwazac calych drzwi, bo to nie ma sensu.
+W ten sposob nie zdobedziecie zamka.
+
+1.6 Szafy telekomunikacyjne - z pokretlem
+
+- wygladaja podobnie do poprzednich
+- zamiast klamki jest takie czarne pokretlo, z zamkiem w srodku
+- po przekreceniu klucza przekrecamy to pokretlo i jest otwarta
+
+Niestety temu rodzajowi szafy sie nie przyjrzalem. Ma zabezpieczenia podobne do poprzedniej,
+z tym, ze zamiast klamki jest to czarne pokretlo.
+
+1.7 Inne skrzynki
+
+Tu akurat trudno jest cos napisac, bo kazda skrzynka moze byc inaczej zamknieta i zabezpieczona.
+Ogolnie rzecz biorac, to wiekszosc skrzynek mozna otworzyc na chama podwarzajac drzwiczki, a
+wtedy gdy juz mamy zamek, mozemy robic cos wiecej. Telepsy zamykaja na abloye wszystko to, gdzie
+maja swoje kable, linie i inne rzeczy. Co do malych skrzyneczek (zwlaszcza takich kwadratowych,
+to mozemy ja podwazac od dolu, gdyz "zawiasem" jest slabo przyspawany drut, ktory bardzo szybko
+peka i drzwiczki sa nasze, zreszta po paru probach sami zobaczycie.
+
+
+
+2. DORABIANIE KLUCZA AY1, AY3
+
+Na poczatek musze cos wyjasnic, otoz niech was nie zmyli to, ze pisze o kluczu typu AY3, gdyz
+w rzeczywistosci ma on jakis inny symbol, ale wykorzystujac klucz AY3 mozna wykonac taki jak
+nam trzeba, tzn. trzeba go troszke podpilowac, tak zeby wchodzil w zamek i juz mamy ten o innym
+symbolu, jakim to nie wiem, bo nie mialem takiego klucza w lapie...
+
+Oki, to co tu pisze jest tresciowo troche zblizone do faq, Hrabiego, ale w zadnym wypadku nie
+jest to jego kopia. Pisze tu o tym po to, zeby zebrac wszystko w calosc w jednym faq, ale pisze
+po swojemu i przedstawiam troszke inna metode dorabiania klucza, ktora sam sobie wypracowalem.
+
+Rozbieramy zamek... wszelkie zamki typu Abloy maja identyczna budowe. Wiec nie jest istotne, czy
+zabieramy sie za zamek AY1, czy "AY3". Wszystko wyglada tak samo. Odwracamy sobie zamek do gory
+dupa, tzn. stawiamy go na tej stronie, gdzie jest dziurka na klucz. Odkrecamy wszystko, co da sie
+odkrecic, tzn. "skobelek" i wszystkie nakretki. To co nam zostalo mimo wszystko trzyma sie razem.
+Trzyma to sprezynujaca blaszka w ksztalcie nadcietego kola. szukamy miejsca, gdzie sie konczy i
+lapiemy ja jakims malym srubokretem i krecimy w prawo podnosimy ja na gorce i wykrecamy. Dobra
+teraz musicie uwazac. Trzymajac wszystko razem odwracamy zamek i stawiamy go do gory dziurka, tylko
+uwazajcie, zeby wam sie nie rozsypal. Teraz trzymajac go za dol zdejmujasz z niego cala srebrna
+obudowe (niklowana) i juz teraz widzimy zawartosc zamka. zdejmujemy z gory srebrna wkladke -
+pierwsza od gory, odkladamy, zdejmujemy takie koleczko, ktore sie nie rusza przy kreceniu kluczem
+i tez odkladamy i teraz zaczynaja nam sie wlasciwe wsuwki, ktore nas interesuja. bierzemy pierwsza
+z nich wyciagamy, tak zeby nie rozsypac reszty i kladziemy na stole bierzemy olowek i piszemy na
+niej 1, tylko nie przekreccie jej przy wyciaganiu. Teraz wyciagmy cieniutka podkladke i mamy 
+nastepna wsuwke-tak samo wyciagamy i piszemy na niej olowkiem - 2 itd. az do ostatniej wsuwki. Po
+co to robimy, a po to zeby w razie czego mozna bylo zamek zlozyc tak jak byl. Teraz robimy tak
+wkladamy do srodka ostatnia wsuwke, tzn. 8. Bierzemy klucz - bez wyciec - surowke i wkladamy go do
+konca w ta jedna wsuwke zaznaczamy olowkiem - dokad wlozylismy klucz, tzn. przykladamy olowek do
+wsowki i zaznaczamy na grzbiecie klucza dokad nam siega. Po wyjeciu i zmierzeniu odleglosci od konca
+klucza powinno nam wyjsc jakies 3 mm:
+_______________/----|                         |========|
+|3mm|               |                         |    5   |
+||_ |__________     |                         |========|
+               \----|                         |    6   |  ===== - podkladka
+ |  |                                         |========|
+ |   \                                        |    7   |   8,7 - wskuwki
+ |  zaznaczona kreska                         |========|
+ \                                            |__  8 __|
+  stad mozemy pilowac                            |___|
+
+Zostawiamy jakis 1mm (tyle wchodzi klucz we wglebienie pod 8 wsuwka i mozemy pilowac pierwsze wyciecie
+pilujemy dotad, az po obrocie klucz o 90 stopni w rowku z drugiej strony zamka pojawi sie wyciecie, tak
+zeby bolec, ktrory wypadl nam na poczatku mogl w nie wpasc. Jak patrzymy na wsuwke z gory, to dokladnie
+widzimy, gdzie jest to wyciecie. Uwaga - klucz kreci sie w prawo - do otwarcia. Jezeli przekrecimy go
+maksymalnie w lewo, to jest to pozycja wyjsciowa, tzn. taka jaka mamy po wlozeniu klucza, a wiec wkladamy
+klucz i przekrecamy maksymalnie w prawo i patrzymy - jak widac jakies wyciecie, to przy tej wsuwce nic nie
+trzeba pilowac! Jezeli nie widac, to pilujemy dotad, az sie nam ono ukaze. Uwazajcie, zeby nie wypilowac
+zbyt szerokiego wyciecia, bo bedzie nam wtedy przekrecalo dwie wsowki na raz... Tak samo robimy z kolejnymi
+wsuwkami, tzn. dokladamy podkladke, wsuwke, zaznaczamy dokad siega i pilujemy - jesli trzeba itd.
+
+Kiedy wypilujemy juz wszystkie wyciecia i po obrocie klucza w prawo - o 90 stopniu, do oporu - wszystkie
+wyciecia ukladaja sie w linii prostej (w takim rowku, gdzie byl bolec), a bolec elegancko w nich lezy, to
+wkladamy to do srebrnej obudowy, wkladamy klucz i krecimy, jezeli obraca sie tylko o 90 stopni, to cos jest
+nie tak, jezeli o 180 stopni, to jest coooooool. Pamietajcie, zeby wlozyc bolec. Aha jeszcze jedno, srodek
+kreci sie o 180 stopni po zalozeniu podkladki blokujacej, ktora zdjelismy na poczatku (byla gdzies pod
+skobelkiem). To by bylo wszystko...
+
+Moze Hrabia opisal to troche jasniej, wiec i tam rzuccie okiem, zeby uzupelnic to co jest tu napisane.
+
+
+
+3. KLUCZ DO NIEBIESKIEGO - AY1 - 00131000
+
+Ponizej przedstawiam opis wraz ze schematem na dorobienie starego klucza do niebieskiego, pisze
+starego, gdyz telekomuna powoli wymienia wszystkie zamki w niebieskich i srebrnych automatach.
+Ale sa jeszcze zamki tego typu, jaki opisuje ponizej. Chodzi o zamek typu abloy o symbolu AY1.
+Czyli jak bedziecie kupowali klucz, to wlasnie o taki pytajcie. Jest to znany wam pewnie klucz
+o schemacie 00131000. Wszystko jak go dorobic macie ponizej, a schemat macie na zalaczonym gifie.
+I tu kilka uwag, zebym nie dostawal znowu maili z pytaniem o to samo. Otoz na rys.1 macie
+widok od gory, a takie czarne trojkaciki, to nie jakies skosne wyciecia, a po prostu wyciecia
+wpoprzek klucza. Co do katow pod jakimi ma byc wypilowany klucz, to wyciecia 1 i 3 maja taka sama
+glebokosc, a to srodkowe jest troche glebsze. Macie to zoobrazowane na widoku od przodu.
+To chyba wszystko, do reszty musicie dojsc sami...
+
+Potrzebne nam beda:
+
+- kluczyk surowka (koszt: 5zl)
+- maly pilniczek
+- suwmiarka, lub dokladna linijka
+- checi
+
+
+Do niniejszego faq dolaczony jest gif, ktory dosc dokladnie opisuje glebokosci, odleglosci
+i szerokosci wszelkich wyciec w kluczyku. Byc moze kluczyk ten po dorobieniu nie wyglada
+zupelnie tak, jak inne kluczyki (oryginalne, badz kopie z oryginalow). Ale daje wam 100%
+gwarancje, ze dany kluczyk bedzie bez problemow otwieral kazdego jednego niebieskiego w calej
+Polsce (poprawka, poza jednym w moim miescie, bo po ostatnim wypadzie zmienili mi zamek).
+
+Postarajcie sie wszelkie wyciecia wykonac dokladnie wedlug rysunku, a klucz bedzie na pewno
+dobry. Swoj klucz dorobilem, w troche inny sposob (nie mialem dostepu do oryginalnego kluczyka)
+otoz kiedys raz, u znajomego montera taki klucz widzialem (ale bylo to dosc dawno), ale do dzis
+pamietam jakie mial wyciecia. I wlasnie na podstawie portretu pamieciowego i pozyczonego innego
+zamka typu abloy (pozyczonego z piwnicy ;) ) i paru informacji z sieci m.in. faq Hrabiego udalo
+mi sie dorobic kluczyk.
+
+Jak bedziecie sprawdzali dorobiony kluczyk, to dobrze z kazdej strony podociskajcie drzwiczki,
+bo w przeciwnym wypadku moze wam sie nie udac otworzyc automatu. Aha jeszcze jedno, jak juz
+otworzycie automat, to pamietajcie, ze po jego zamknieciu zadzwoni se na centralke. Ale na ten
+temat, to poczytajcie w innych faq, bo nie chce tutaj niczego ripowac, bo po co?
+
+
+4. NOWE POMYSLY
+
+4.1 Plastelina
+
+Podsune wam jeszcze jedna metode (mojego autorstwa),ktora moze sie przydac przy okazji dorabiania
+innych kluczy typu abloy. Otoz, zeby sprawdzic, czy wszystkie zabki w zamku trafiaja, w swoje
+wyciecia, nalezy te wyciecia zakleic... plastelina. Oczywiscie dobrze rozmienszona, no taka zeby
+byla miekka. Wtedy podchodzimy do automatu i delikatnie wsuwamy kluczyk w zamek i energicznie
+krecimy kilka razy w lewo i prawo (na maksa, do oporu), po czym wysuwamy kluczyk (uwazac, zeby
+w tym momencie nie zniszczyc plasteliny) i widzimy jak  na dloni, czy wsuwka nr 1 w zamku
+rzeczywiscie trafia w odpowiednie wyciecie w kluczu. Wtedy robimy ewentualne korekty.
+
+4.2 Zdobywanie zamka z URMETA'1
+
+Pomysl rowniez mojego autorstwa, ale nigdy nie zrealizowany. Chodzi o to, zeby zdobyc
+zamek do urmeta, czy to niebieskiego, czy srebrnego. Jak sie przyjrzec, to w kazdym
+automacie zamek troche wystaje. Jak juz wiecie do dorobienia klucza potrzebny nam
+jest srodek z zamka. Robimy tak, zapychamy zamek taka iloscia plasteliny, czy jakiegos
+innego gowna, tak zeby wszystkie wsowki w zamku trzymaly sie kupy. Podchodzimy do
+automatu z brzeszczotem, badz pilnikiem i spilowujemy wystajaca czesc zamka. Pilujemy
+dotad, az wysunie sie nam caly srodek. A teraz mozemy isc do domciu i wypilowac
+odpowiedni klucz. Acha taki zamek bez srodka, juz nie zamyka automatu, tzn. mozemy
+tam wsunac jakis srubokret i poprostu go przekrecic i mamy otwarty automat.
+
+Moze pomysl nie jest zly, ale jak probowalem spilowac brzeszczotem ten zamek, to chyba
+musialbym go pol dnia pilowac. Ale pewnie by sie dalo to zrobic. Mnie poprostu to
+zanudzilo i nie chcialo mi sie juz pilowac. Fakt faktem, ze brzeszczot byl juz troszke
+leciwy i troche tepy... ;-)
+
+
+4.3 Zdobywanie zamka z URMETA'2
+
+Mozna sprobowac jeszcze inaczej. Metoda podobna do poprzedniej. Tym razem zamek rozwiercamy.
+Ale wedlug moich obserwacji potrzebowalibysmy do tego wiertla o srednicy minimum 14 mm.
+Po pierwsze jest to cholernie duze wiertlo, a po drugie potrzebna jest nam wiertarka i tu
+jest problem, trudno to wszystko jakos pogodzic. No ale to tez jest tylko pomysl.
+
+
+5. CZEGO JA TU SZUKAM...
+
+No wiec tak, poszukuje wszelkich informacji na temat wykorzystania czytnika od urmeta
+w celu wykonania kopiarki do kart. Z tym, ze nie interesuja mnie metody w stylu 1 karta/50
+kopii, bo to nie o to chodzi. Moze ktos z was, kto to czyta wie jak wykorzystac wzmacniacz
+zawarty na plycie czytnika (to ta plytka pod miedzianym radiatorem). Jak cos wiesz, to pisz
+od razu, moj mail jest gdzies na gorze.
+Poza tym wszystkiego co dotyczy pbx'ow, zwlaszcza na 0800, wszystkiego na temat numerow
+kuponow Tak Tak i ich generowania...
+
+I jeszcze, no sam nie wiem, zalezy co masz, jak masz cos wartego uwagi, to pisz.
+
+
+6. THE END
+
+Dobra bede konczyl i zycze milej pracy. Aha, jak ktos dorobi kluczyk wedlug mojego tekstu
+to niech natychmiast da mi znac. Oczywiscie czekam na wszelkie uwagi na temat mojego faq.
+A gdzie mnie szukac? Na irc'u, jak jestem, to na #0700 lub #phreakpl. Mozna mnie lapac na
+komore, ale numeru oczywiscie nie podam, a tak poza tym, to na mail'a.
+
+I jeszcze jedno nie chce wiecej maili w stylu "jaka glebokosc lub jaki kat maja wyciecia w
+kluczu" takie od dzis laduja w koszu. Ludzie wszystko to macie na rysunku, a niestety jasniej
+przedstawic tego nie potrafie. Poza tym nie sprzedaje surowek, bo ostatnio sam mam problem z
+ich zdobyciem. Wiec.... don't ask me about it...
+
+That's all.
+
+7. GREETINGS
+
+Bolek/Cobra/Dexter/Rob/H4sh/Hrabia/M.G./Ziomek i takich dwoch jeszcze
+i jeszcze pare innych osob, ktorych tu nie chce, badz nie moge wymienic.

@@ -1,0 +1,262 @@
+-------------------------------------------------------------------------------
+-------------------------- c64 FAQ * CZESC 3 ----------------------------------
+-------------------------------------------------------------------------------
+------------------------ michalc64@hotmail.com --------------------------------
+---------------------------------------------------------------------- 97.10.3
+
+ SPIS TRESCI
+-------------
+1. WSTEP
+2. INFO
+3. TESTOWANIE POLACZEN (PLATNE/BEZPLATNE)
+4. PENTACONTA BOX 
+5. TELEFONICZNE KARTY MAGNETYCZNE
+6. BUDKI TELEFONICZNE (temat rzeka)
+7. AWARD BIOS (to akurat nie jest o phreakowaniu)
+8. -POPRAWKI-
+9. SOFTWARE
+
+
+1. WSTEP
+   Czesc, to znowu ja!
+   Mam nadzieje, ze jeszcze nie narobiles sobie problemow, a Twoj sasiad
+   nie krzyczal zbyt glosno kiedy przyszedl listonosz (z rachunkiem). :)
+   OK!
+   W zasadzie chcialem uczynic ta czesc FAQ ostatnia, ale w ostatniej
+   chwili sie rozmyslilem:) 
+   Teraz juz wiem ze ukaze sie czwarta czesc!!! Nie wiem tylko kiedy:(
+   Moze to troche potrwac. Rozpoczal mi sie rok akademicki i trzeba bedzie
+   sie troche pouczyc (matma SUX!) :)
+
+   Jezeli wiesz co nieco o pherakowaniu i chcialbys sie podzielic ze mna
+   (i z innymi) uwagami na ten temat, zapraszam do korespondencji.
+   Zapraszam wszystkich do wspoltworzenia c64faq !!!
+   Wydaje mi sie ze nazwa FAQ tu nie pasuje:) Powinno byc raczej MAGAZINE:)
+   Moze tez c64faq lekko sie ukloni w kierunku hackingu:)
+   Ale poki co FAQ zostaje FAQ'iem :)
+   NO TO ODPALAMY!
+
+2. INFO
+   Pamietaj!!! Wszystko co podlaczasz do linii telefonicznej (oprocz telefonu,
+   ale zalezy jeszcze jakiego), podlaczasz niezgodnie z jakims tam wewnetrznym
+   prawem TPSA. Mowiac krotko... nie wolno podlaczac "pajeczakow" ! 
+
+3. TESTOWANIE POLACZEN (PLATNE/BEZPLATNE)
+   Pewnie zastanawiales sie czasem jak by sprawdzic czy polaczenie, ktore
+   wlasnie uzyskales jest platne czy darmowe. Sprawdzenie rodzaju polaczenia
+   jest szczegolnie przydatne w przypadku gdy podlaczasz do linii jakiegos
+   boxa i nie wiesz czy box ten dziala czy nie.
+   Metoda jest bardzo prosta. Zaczne jednak od teorii...
+   W przypadku gdy podnosisz sluchawke napiecie na linii spada do ok. 9-10V
+   (przed podniesieniem napiecie to wynosilo ok. 25-60V).
+   W momencie uzyskania polaczenia (tzn. w momencie podniesienia sluchawki
+   przez osobe do ktorej dzwonisz), zmienia sie polaryzacja napiecia na linii.
+   Jest to znak, ze centrala zaczyna zliczac impulsy.
+   Jezeli polaczenie jest bezplatne, nie nastepuje odwrocenie fazy.
+   Moznaby zatem zbudowac urzadzenie, ktore sygnalizowaloby czy polaczenie
+   jest platne.
+   Oto schemat:
+
+   -------------------------------------------------------------------
+ 
+   LINIA                                                TELEFON/MODEM
+                             
+   --------------------+            +---------------------------------
+                       |            | 
+                       |   a    k   |
+                       *-----D2-----+
+                       |            |
+                       |   k    a   |
+                       +-----D1-----+
+
+
+   D1, D2 - LED (potocznie: diody swiecace)
+   a      - anoda diody
+   k      - katoda diody
+
+   Instrukcja obslugi:
+  ---------------------
+   1. Podlaczamy urzadzenie wg schematu.
+   2. Podnosimy sluchawke.
+   3. Powinna sie swiecic jedna z diod (nie ma znaczenia ktora).
+   4. Dzwonimy
+   5. Uzyskujemy "sygnal wolny".
+   6. Czekamy.
+   7. Dostajemy polaczenie:
+      a) Swieci sie teraz druga dioda (zgasla ta co sie swiecila do tej pory).
+         Jezeli tak sie stalo znaczy placimy za polaczenie (licznik "bije")
+      b) Caly czas swieci sie ta sama dioda.
+         Znaczy to ze nie placimy za polaczenie.
+
+
+* Sproboj zadzwonic na jakas 0800, a potem np. na 0202122 :)
+  Od razu widac jak (i czy) urzadzenie dziala.
+
+4. PENTACONTA BOX
+   Powiem krotko... Jezeli Twoja centrala telefoniczna to PENTACONTA
+   i interesuje Cie dzwonienie za darmo.....
+   To napisz do mnie maila. Jak sie dogadamy to przesle Ci schemat
+   BOX'a z dokladnym (no... w miare dokladnym) opisem jego dzialania...
+   Ale powtarzam! Pisz tylko wtedy, gdy jestes na 100% pewny, ze
+   centrala ktorej urzywasz to PENTACONTA!!! 
+   
+5. TELEFONICZNE KARTY MAGNETYCZNE
+   Duzo ludzi pyta mnie czy wiem jak ponownie "ozywic" 
+   magnetyczne karty telefoniczne...
+   Tak wiec idac na wprost oczekiwaniom odbiorcow, pragne podzielic
+   sie spostrzezeniami w tej materii... :) heh
+   Kiedys bawilem sie w ponowne zapisywanie kart i mam w tym
+   pewne doswiadczenie. 
+
+   Sposob zapisu informacji na karcie (rozmieszczenie danych)
+   ----------------------------------------------------------
+
+    Pasek magnetyczny na karcie (nie ogladac pod Windows z polskimi
+    literkami! Najlepiej ogladac pod "czystym" dosem)
+   +---------------------------------------------------------------+
+   |    || |||| | ||          ³³³³³³³³³³³³³³³³³³³³³³³³³³³³³³³³³³   |
+   |   || || | | | |          ³³³³³³³³³³³³³³³³³³³³³³³³³³³³³³³³³³   | 
+   +---------------------------------------------------------------+
+          ^                                     ^
+    numer i typ karty (ID1)               kredyty (ID2)
+
+ 
+   Otorz zeby zapisac cokolwiek na karcie musimy zaopatrzyc sie w
+   uklad zapisujacy. Musi on wykorzystywac glowice MONO od magnet.
+   "szpulowego". Szpulowego poniewaz mozna podac na nia dosyc duza
+   moc, bez ryzyka jej spalenia.A MONO dlatego, ze zostawia ona
+   szeroki slad...akurat do zapisu ID2.
+   Nie ma sensu tez kasowac ID1 !!! Jak widac na rysunku, maja one
+   duzo bardziej skomplikowana tresc i jest je trudniej zapisac.
+   A wiec jezeli chcesz "odnowic" karte, musisz tylko zapisac
+   ID2.
+   Sa rozne sposoby ponownego zapisu karty.
+   Niektorzy delikatnie szlifuja zniszczony przez automat nosnik
+   (ale ostroznie, tak aby nie wytrzec go do konca) i dopiero
+   wtedy nagrywaja. Inni po prostu naklejaja nowy nosnik w postaci
+   metalowej tasmy Hi8.
+   Ale uwaga! Jezeli naklejasz lub szlifujesz tasme musisz to zrobic
+   tylko w mniejscu zapisu ID2. Nie wolno ruszac ID1 !!!
+   Przydaje sie tez uprzednie "skasowanie" ID2. Tak profilaktycznie.
+   Zauwazylem ze po zuzyciu na samym koncu karty zostaja zapisane
+   jakies smieci, tak wiec lepiej byloby je usunac.
+   Najlepiej jest to zrobic przy pomocy silnego magnesu.
+   Najsilniejszy magnes jaki udalo mi sie zdobyc (i jedyny ktory
+   dalo sie wykorzystac do skasowania karty) pochodzil z dysku
+   twardego :) Smieszne co nie?:) Ale to prawda...magnes sluzy tam
+   jako "tworca" pola magnetycznego potrzebnego do poruszania 
+   glowica(ami).
+   Z moich badan wynika, ze prazki ID2 nie sa zapisane prostopadle
+   do karty:( Trzeba wiec poeksperymentowac zmieniajac skos glowicy.
+   Cisnie sie na usta pytanie: skad wiadomo co trzeba zapisac?!
+   Otoz wystarczy wykorzystac prosty generator sinusoidalny i dobrac
+   predkosc przesuwu tasmy tak aby automat to lyknal:)
+   Jest jedna bardzo wazna rzecz o ktorej nie wolno zapominac!!!
+   Poniewaz nosnik na karcie jest bardzo "twardy" (sorry za okreslenie,
+   ale zapomnialem jak nazywal sie wspolczynnik charakteryzujacy
+   zdolnosci magnetyczne nosnikow), nalezy wykorzystac duzy prad
+   podkladu. W przeciwnym wypadku nie uda sie nam zapisac na karcie
+   niczego!!!
+   Dawno temu skonstruowalem urzadzenie, ktore jednoczesnie odczytywalo
+   dane z jednej karty i zapisywalo je na druga.
+   Byl to calkiem niezly pomysl! Jednak jak to zazwyczaj bywa, z
+   nieznanych mi przyczyn (to znaczy znanych ale slabo)
+   na 20 zapisanych kart chodzily gora 3 :((
+   Mysle ze wina lezala w nosniku (tasma Hi8), oraz w niewlasciwym
+   ustawieniu glowicy zapisujacej...
+   Hmm...to powinno wystarczyc jako wstep do hackowania kart magnet.
+
+6. BUDKI TELEFONICZNE (temat rzeka)
+   Niektore budki (mysle o tych na karty oczywiscie) pozwalaja sie
+   w prosty sposob oszukac:)
+   Jezeli zauwazysz ze na twojej karcie koncza sie impulsy, a ty
+   chcialbys jeszcze pogadac to nie panikuj:) 
+   W momencie kiedy na wyswietlaczu zacznie migac 0 (czyli jedziesz
+   na ostatnim kredycie), wloz druga, pusta karte:)
+   Dostaniesz w nagrode obie karty z powrotem, oraz bedziesz mogl 
+   gadac do woli... 
+   Niestety wiekszosc automatow juz jest przed tym bajerem
+   zabezpieczona:(( Ale sprobowac zawsze warto!!!:)
+   
+ * Ostatnio rozmawialem z gosciem z TPSA, ktory uparcie uwazal
+   ze nie da sie phreakowac z automatow na karte!!!
+   Smieszne to bylo, tym bardziej ze gosc jest dosc kumaty!!!
+   No po prostu zgarbil sie mocno gdy pokazalem mu jak sie
+   dzwoni z byle budki, zupelnie za darmo, do Kanady!!!
+   Nie uzylem jednak wyzej opisanej metody, ale sposobu ktory
+   byl juz nawet opisywany w mojej regionalnej gazecie.
+   Nie chce jednak narazie go zdradzac.:) Dziala on na wszystkich
+   budkach (na karty) bez wyjatku i na 100% :))) 
+   Moze w nastepnym FAQ'u ;)
+   Opowiadajac tu o moim znajomym z TPSA, chcialem dac wszystkim
+   rade! Nigdy, nigdy, nigdy nie wierzcie ludziom z TPSA!!!
+   Nie dawajcie tez wiary ciekawym opowiesciom w stylu:
+   "wiesz..jak podgrzejesz karte magnetyczna przy pomocy swieczki
+    tortowej to bedzie ona przez chwile miala 1000 jednostek!!!"
+   Takie bzdury kraza wszedzie i wychodza od totalnych bezmuzgow
+   i chcacych zwrocic na siebie uwage nieudacznikow!!
+   Zawsze myslcie logicznie!!! Nigdy tez nie poddawajcie sie 
+   bez walki!!! Jezeli przyjdzie wam do glowy jakis pomysl na
+   dzwonienie za darmo, to nie sluchajcie glosow lamerow, ktorzy
+   mowia wam ze "to nigdy nie zadziala". Po prostu sprawdzcie
+   czy to dziala!!!
+   NO OK! JUZ SIE NIE BEDE WYMADRZAL ;)
+
+7. AWARD BIOS (to akurat nie jest o phreakowaniu) - |g0d|
+   W BIOS'ie AWARD'a jest dziura pozwalajaca ominac zalozone haslo!!!
+   Po prostu wpisz zamiast hasla: AWARD_SW i masz wjazd!!!
+   W najnowszych wersjach AWARD BIOS sytuacja sie nieco skomplikowala
+   i zastosowane jest inne uniwersalne haslo:( 
+
+8. -POPRAWKI-
+   Sorry!!! Doszly do mnie sluchy, ze ponoc PENTACONTA miala dorabiane
+   wybieranie tonowe...HEHE! Niestety centrale ta mialem za czasow
+   c64 a wiec daaaaaaaaaaaaaaawno temu (ja tonowego nie mialem)...
+
+9. SOFTWARE
+   Jako bonus do c64faq cz.3 dolaczam kilka przydatnych programow.
+  
+   [1]. Scavenger Dialer   - Chyba znaja go wszyscy...po prostu:
+                             najlepszy komputerowy dialer.
+
+   [2]. BIOS               - Kilka crackerow passwordow do biosow.
+
+   [3]. CRYPT              - Prosciutki program kodujacy.
+    
+   [4]. HELL               - Kasuje z HDD wszystkie *.ini :)
+
+
+
+*** JAK MAWIA MOJ DZIADEK: "ucz sie ucz, bo nauka to potegi klucz!"
+
+
+
+Na wypadek gdyby nie ukazala sie czwarta czesc c64faq, chcialbym
+pozdrowic troche wieksze grono znajomych....
+Nie wszyscy sa calkowicie w porzadku, ale tak czy inaczej zasluguja
+na greetings (albo shitings) :)
+
+
+Pozdrowienia dla (kolejnosc prawie przypadkowa):
+   |g0d| (kiedy zmieniasz nicka?:))), PhReAk, Killjoy (cc rulez!),
+   Frikozoid, `Harry (pamietaj o gumie! bo ja zawsze zapominam :(),
+   BaRtHek, Ult0r, Aski, Pan (bedziesz wielki), Niebieski (???), 
+   Witkacy (DMT ?! musze to kiedys sprawdzic), nic0,
+   mole9 ("pisarze" zawsze razem!), Camilla (!), EjKi(:(),
+   lcamtuf (chyle czolo), fredzik (pro?),
+   pl0ns (czas przestac byc lama!),p0wer
+   SpAc3mAn (w sumie chamstwa nie popieram, ale....)...
+   
+   
+
+   And remember: 4HzG rulez !!!      O-)
+
+ 
+                                - michalc64@hotmail.com
+                     
+   .     .     .
+   ...  ...  ...
+   .............   ANTY-POZDROWIENIA DLA WSZYSTKICH DRESIARZY
+    ...........      
+      ......                   
+

@@ -1,0 +1,454 @@
+
+                          --------------  
+                         [    3k43dom   ]
+
+                         [   0800  faq  ]
+
+                         [   ver 0.21   ]
+                          --------------
+             
+-----------------------------------------------------------------------
+<<<  UWAGA !!! UZYWANIE TYCH NUMEROW JEST NA WLASNE RYZYKO.         >>> 
+<<<  NIE PONOSZE ODPOWIEDZIALNOSCI ZA ROZNE USZKODZENIA I           >>>
+<<<  ZJSCIA WYNIKLE Z UZYWANIA TYCH NUMEROW.                        >>>
+<<<  (ZAROWNO FINANSOWE I MATERIALNE , PONIESIONE PRZEZ             >>>
+<<<       OSOBY DZWONIACE I TELEKOMUNIKACJE POLSKA S.A. )           >>> 
+<<<  NUMERY ZOSTALY PODANE WYLACZNIE DLA CELOW INFORMACYJNYCH!!!    >>>
+-----------------------------------------------------------------------
+
+1.  Wstep
+2.  080060885
+3.  0800202122
+4.  080020153
+5.  080020023
+6.  080020815
+7.  080020215
+8.  080020211
+9.  080020116
+10. 080020062
+11. 080020107
+12. 080020067
+13. 0800201270
+14. 080020866
+15. 080050028
+16. Us³uga =INFOLINIA=
+17. Uwagi i inne ciekawostki
+18. Phreak mentor by 3k43dom
+19. Pozdrowienia
+
+
+1. Wstêp
+
+Jestem 3k43dom i nie lubie TP S.A. ( nawet nie zadam pytania kto lubi :))
+Moim zdaniem jest to w porzadku, bo placic tyle za taka jakosc
+to juz jest przesada. 
+ Idea tego faq powstala gdy pozyczylem od znajomego modem ( dzieki SaPeR !! )
+i poznalem numer BBS-u, o ktorym ponizej. Pomyslalem, ze skoro istnieje 
+"jeden", to czy przypadkiem nie ma ich wiecej. Zaczelo sie skanowanie, 
+najpierw powstal zbior WAV-ow z "odezwaniami glosowymi" a mianowicie 
+"Co sie stanie jak wykrece numer ...".
+Potem przyszedl czas na numery "modemowe" ( skanowanie trwa nieprzerwanie !! ).
+Nie którzy mog¹ powiedziec, ze jestem LAMEREM. A czy mo¿na wystartowac
+nie zaczynajac od zera ? Tak - siedziec cicho i siê szkolic.
+Ale gdy cos siê znajdzie to czy nie powiedziec tego innym "zaufanym" ludziom ?
+Przeciez jeœli bêdziemy dzialac razem wszystko bêdzie szlo szybciej !
+
+
+To tyle filozoficznego pisania , podsumowywujac :
+- nie jestem lamerem ;))))))
+- to moje pierwsze faq ,i mam nadzieje nie ostatnie :)) 
+- wiekszosc numerow by³a sprawdzana programem
+  " NetTerm v4.0.2 Internet Telnet OVID Zmodem SLIP "
+  ( oprocz pozycji 3 )
+
+ 
+2. 080060885
+
+CONNECT 14400 REL/V42BIS
+
+
+
+                  ÚÄÄÄÄÄ¿ ÚÄÄÄÄÄ¿    ÚÄÄÄÄÄ¿     ÚÄÄÄÄÄÄ¿
+                  ÀÄ¿ ÚÄÙ ³ ÚÄ¿ ³    ³ ÚÄÄÄÙ     ³ ÚÄÄ¿ ³
+                    ³ ³   ³ ÀÄÙ ³    ³ ÀÄÄÄ¿     ³ ÀÄÄÙ ³
+                    ³ ³   ³ ÚÄÄÄÙ    ÀÄÄÄ¿ ³     ³ ÚÄÄ¿ ³
+                    ³ ³   ³ ³        ÚÄÄÄÙ ³ ÚÄ¿ ³ ³  ³ ³ ÚÄ¿
+                    ÀÄÙ   ÀÄÙ        ÀÄÄÄÄÄÙ ÀÄÙ ÀÄÙ  ÀÄÙ ÀÄÙ
+  ÚÄÄÄÄÄ¿ ÚÄÄÄÄÄ¿    ÚÄÄÄÄÄ¿ ÚÄÄÄÄÄÄ¿ ÚÄÄÄÄÄ¿ ÚÄÄÄ¿  ÚÄ¿ ÚÄÄÄÄÄÄ¿ ÚÄÄÄ¿  ÚÄ¿
+  ÀÄÄ¿  ³ ÀÄ¿ ÚÄÙ    ³ ÚÄ¿ ³ ³ ÚÄÄ¿ ³ ÀÄÄ¿  ³ ³   À¿ ³ ³ ³ ÚÄÄ¿ ³ ³   À¿ ³ ³
+   ÚÄÙ ÚÙ   ³ ³      ³ ÀÄÙ ³ ³ ³  ³ ³  ÚÄÙ ÚÙ ³ Ã¿ À¿³ ³ ³ ÀÄÄÙ ³ ³ Ã¿ À¿³ ³
+  ÚÙ ÚÄÙ    ³ ³      ³ ÚÄÄÄÙ ³ ³  ³ ³ ÚÙ ÚÄÙ  ³ ³À¿ À´ ³ ³ ÚÄÄ¿ ³ ³ ³À¿ À´ ³
+  ³  ÀÄÄ¿   ³ ³      ³ ³     ³ ÀÄÄÙ ³ ³  ÀÄÄ¿ ³ ³ À¿   ³ ³ ³  ³ ³ ³ ³ À¿   ³
+  ÀÄÄÄÄÄÙ   ÀÄÙ      ÀÄÙ     ÀÄÄÄÄÄÄÙ ÀÄÄÄÄÄÙ ÀÄÙ  ÀÄÄÄÙ ÀÄÙ  ÀÄÙ ÀÄÙ  ÀÄÄÄÙ
+         ÚÄÄÄÄÄ¿ ÚÄÄÄÄÄ¿ ÚÄÄÄ¿  ÚÄ¿ ÚÄÄÄÄÄ¿ ÚÄÄÄÄÄÄ¿ ÚÄ¿ ÚÄ¿ ÚÄÄÄÄÄÄÄ¿
+         ³ ÚÄ¿ ³ ³ ÚÄÄÄÙ ³   À¿ ³ ³ ÀÄ¿ ÚÄÙ ³ ÚÄÄ¿ ³ ³ ³ ³ ³ ³ Ú¿ Ú¿ ³
+         ³ ³ ÀÄÙ ³ ÀÄ¿   ³ Ã¿ À¿³ ³   ³ ³   ³ ÀÄÄÙ ³ ³ ³ ³ ³ ³ ³³ ³³ ³
+         ³ ³ ÚÄ¿ ³ ÚÄÙ   ³ ³À¿ À´ ³   ³ ³   ³ ÚÄ¿ ÚÙ ³ ³ ³ ³ ³ ³ÀÄÙ³ ³
+         ³ ÀÄÙ ³ ³ ÀÄÄÄ¿ ³ ³ À¿   ³   ³ ³   ³ ³ ³ À¿ ³ ÀÄÙ ³ ³ ³   ³ ³
+         ÀÄÄÄÄÄÙ ÀÄÄÄÄÄÙ ÀÄÙ  ÀÄÄÄÙ   ÀÄÙ   ÀÄÙ ÀÄÄÙ ÀÄÄÄÄÄÙ ÀÄÙ   ÀÄÙ
+                               Poznan / Poland
+                     2400/28800 V34        64000/128000 X75
+                 Analog  +48 61 550151   ISDN  +48 61 560000
+RemoteAccess 2.02/Professional (250 node)
+Imie i Nazwisko (Your Name):
+
+Tak ten numer to ju¿ chyba wszyscy znaja ! ;)
+Wiec nie ma co siê rozpisywac . ( tylko troche podstawowych danych )
+
+Je¿eli nie jest siê zarejestrowanym to od razu dostajemy do wypelnienia ankiete.
+Prawda, ze proste ?!
+Ankiete wypelniasz wedlug wlasnego pomyslu ( oczywiœcie podajesz prawdziwe 
+dane ;)) ) I jak zwykle bywa pracownicy "tepsy" mog¹ bardziej rozwinac skrzydla.
+             
+A to jakby ktos nie zauwazyl jest menu glowne.
+
+             ù   ù  ú ù      ù    þù      ú  ù    ù ù  ù     ù                 ù
+   þù  ùú    ù         þ         ú                 ù              ù  ù     þ ù
+        ù          ú        ù        ú   ù                ù       ú
+ú     ù   ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿   ù  úú ù
+    ù     ³                       MENU GLOWNE                        ³
+      ú   ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
+³  ÚÄÄÄ¿                        ÚÄÄÄ¿                      ³
+  ùù  þ   ³  ³ P ³ Pliki                  ³ M ³ Poczta               ³   ù     ù
+ù      ù  ³  ³   ³                        ³   ³                      ³    ù
+ ù        ³  ³ U ³ Uzytkownicy            ³ B ³ Biuletyn TP S.A.     ³     ùú
+  ùú      ³  ³   ³                        ³   ³                      ³
+  ù    ù  ³  ³ ! ³ Rozlaczenie            ³ W ³ Wolaj SysOp'a        ³    ùù
+          ³  ³   ³                        ³ Û ³                      ³
+          ³  ³ I ³ Informacje o TP S.A.   ³ Û ³ ÛÛÛÛÛÛÛÛÛÛÛÛÛÛ       ³     ù   ú
+ú         ³  ÀÄÄÄÙ                        ÀÄÄÄÙ                      ³  þ
+ù   ú     ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ        ùú
+Czas: 08 min.    ù     ù.  ú ù    ù    ù     ùú úþ úù   ù    úú
+     úù     ú     þ     ú  ú      .                     ùù       úú  úù     ú  þ
+ú  ú      ú       ú             ù. ú ù  ù       ù     ù      ú            úù
+  ú ú   ú    ù   ù  ú ù      ù  ù. ù      ú  ù    ù    ù     ù                 ù
+ ú     ú    ù ú    ù            . ù  ú      ù           ú    úù   ù    úú
+
+
+
+Istnialy tam  kiedys dwie linie, i mo¿na by³o z kims pogadac.
+Istnialy , bo aktualnie tylko jedna osoba siedzi na lini 
+i nie mo¿e prowadzic konwersacji.
+
+ UWAGA!!!  OSTATNIO POJAWILY SIE ZNOWU 2 LINIE
+
+To jest przyk³ad rozmowy :
+Osoby : Ja ( 3k43dom ) i jakis koles z Bytomia.
+
+: Hi . Co robisz.Czego szukasz??
+: Ja wisla .Ja wisla.Bytom slyszysz mnie ? (Bytom dlugo nie odpowiadal )
+***LIST*** od xxxxxxxx xxxxxxxx do wezla 1:
+Tak sobie szperam, co nowego przylazlo
+: A co cie interesuje?
+***LIST*** od xxxxxxxx xxxxxxxx do wezla 1:   ( Ach ta szybkosc ... )
+Slysze dobrze. Odbior
+***LIST*** od xxxxxxxx xxxxxxxx do wezla 1:
+Wszystko i nic... :)
+Jak jest za darmo, to zawsze cos sie ciekawego znajdzie 
+: No fakt glupie pytanie.:)))))
+
+
+Nawet z SySOpem ciezko siê porozumiec . Zawsze ta sama odpowiedz bez wzglêdu na 
+powod rozmowy .    ( no mi siê jeszcze nie udalo  :( )
+
+
+                   Dlaczego chcialbyž porozmawia z sysopem?
+  (---------------------------------------------------------------------------)
+   Bo nigdy tego nie robilem.
+
+Przykro mi, ale porozmawia mo§esz tylko mi'dzy
+07:00 - 15:00
+
+Zostaw list do sysopa  (T/n)? Nie
+
+Dziwne , bo ja wywolywalem SySOpa i o godzinie 10 i o 11 i o 12 itd. 
+
+Polaczyc siê nie jest latwo , ale probowac mo¿na .
+Oto wykres zajetosci systemu :
+
+ Procentowe wykorzystanie systemu w godzinach  10-Pa'-96 - 20-Maj-98 (Linia  2)
+
+17  ³
+16  ³                                  ÛÛ
+15  ³                                  ÛÛ
+14  ³                                  ÛÛ ÛÛ
+13  ³                                  ÛÛ ÛÛ
+11  ³                                  ÛÛ ÛÛ ÛÛ ÛÛ
+10  ³                                  ÛÛ ÛÛ ÛÛ ÛÛ
+09  ³                               ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ
+08  ³                         ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ                   ÛÛ
+07  ³ ÛÛ                      ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ
+06  ³ ÛÛ                   ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ
+05  ³ ÛÛ                   ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ
+03  ³ ÛÛ ÛÛ                ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ
+02  ³ ÛÛ ÛÛ                ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ
+01  ³ ÛÛ ÛÛ ÛÛ ÛÛ       ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ ÛÛ
+    ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+      12 01 02 03 04 05 06 07 08 09 10 11 12 01 02 03 04 05 06 07 08 09 10 11
+      Polnoc                              Poludnie
+
+		    UWAGA !!!  BBS ZOSTA£ " WY£¥CZONY " 
+
+		TERAZ JEST TAM " DZIWNA " SKRZYNKA G£OSOWA 
+
+3. 0800202122
+   
+ W ustawieniach podac trzeba SLIP:polaczenie Unixowe . IP 10.0.0.1
+   
+4. 080020153 
+
+Hmmmm , duzo nie mogê napisac bo nieznam hasla :(
+
+CONNECT 14400 REL/V42BIS
+
+
+      rrrrrrr      aaa       ccccc      ooooo     mm     mm
+     rr    rr    aa aa     cc    cc   oo    oo   mmm   mmm
+    rr    rr   aa   aa   cc         oo      oo  mm m m mm
+   rrrrrrr   aaaaaaaaa  cc         oo      oo  mm  m  mm
+  rrrrr     aa     aa  cc         oo      oo  mm     mm
+ rr  rr    aa     aa   cc    cc   oo    oo   mm     mm
+rr   rr   aa     aa    cccccc      ooooo    mm     mm
+
+                   ***  WARSZAWA  ***
+
+
+      >>>>>>>> Unauthorized access prohibited <<<<<<<<
+
+
+HELPDESK Phone: +46 8 726 2600
+=======================================================================
+
+
+
+User Access Verification
+
+5. 080020023
+
+A tu nie mo¿na nawet wpisac hasla . pojawia nie napis :
+
+CONNECT 14400 REL/V42BIS
++++
+
+A po chwili :
+
+CONNECT 14400 REL/V42BIS
++++
+NO CARRIER
+
+I nastepuje auto-rozlaczenie :(
+
+6. 080020815
+
+Tutaj bardzo "male" polaczenie .  
+
+CONNECT 1200
+
+7. 080020215
+
+ A tu juz cos wiecej , ale znowu login . Ale swoja droga milo , ze jest
+ podany adres www .
+
+CONNECT 14400 REL/V42BIS
+
+Trying ... Open
+
+SCO OpenServer(TM) Release 5 (brebis3.bre.com.pl) (ttyp3)
+
+login:
+
+8. 080020211
+
+ Znowu nasze kochane haslo .
+
+CONNECT 2400 REL/V42BIS
+
+Please press <Enter>...
+
+Enter password:
+
+9. 080020116
+
+ Tutaj po polaczeniu nic sie nie dzieje .
+
+CONNECT 14400 REL/V42BIS
+
+10. 080020062
+
+ Jak w punkcie 9.
+
+CONNECT 14400 REL/V42BIS
+
+11. 080020107
+
+ Jak w punkcie 9.
+
+CONNECT 14400 REL/V42BIS
+
+12. 080020067
+
+ Tu historia sie powtarza , trzeba znac login .
+
+** Ascend MAX200 Terminal Server **
+
+
+Login:
+
+13. 0800201270
+
+ Ach te hasla .
+
+CONNECT 14400 REL/V42BIS
+}
+Please press <Enter>...
+Enter login name:
+
+14. 080020866        ( CALLBACK! )
+
+CONNECT 2400 REL/V42BIS
+
+Annex Command Line Interpreter   *   Copyright (C) 1988, 1995 Xylogics, Inc.
+
+Checking authorization, Please wait...
+Annex username:
+
+15. 080050028
+
+ Jak w punkcie 9.
+
+CONNECT 14400 REL/V42BIS
+
+16. Us³uga =INFOLINIA=
+
+Usluga =INFOLINIA= jest swiadczona wylacznie przez jednostki TP S.A..
+Oznacza to , ze moga z niej korzystac abonenci telefoniczni roznych sieci 
+oraz klienci =PUT= . W chwili obecnej TP S.A. nie przewiduje realizacji tej uslugi 
+za posrednictwem rozmownic zlokalizowanych w urzedach pocztowych.
+ Warunki korzystania z tej uslugi zostaly okreslone w Regulaminie swiadczenia uslugi 
+=INFOLINIA 800= . W mysl tego Regulaminu osoby , ktore chca korzystac z tej uslugi
+( odbierac polaczenia ) musza zawrzec z TP S.A. umowe o korzystanie z abonamentu uslugi
+=INFOLINIA 800= . Umowa moze byc zawarta juz z istniejacym abonentem telefonicznym
+lub osoba posiadajaca uprawnienia regulaminowe do korzystania z abonamentu telefonicznego .
+ Wniosek o zawarcie umowy o korzystanie z abonamentu uslugi =INFOLINIA 800=
+powinien byc zlozony w dwoch egzemplarzach w lokalnej jednostce TP S.A. - =BOK=
+na terenie dzialania ktorej bedzie zainstalowane urzadzenie odbiorcze =INFOLINIA 800=.
+We wniosku nalezy podac dane dotyczace wnioskodawcy - nazwisko lub nazwe ,adres 
+oraz czas w jakim usluga ma byc swiadczona . Abonament moze byc zawierany na czas 
+nieokreslony lub okreslony . Ten ostatni moze byc zawarty na okres 7 i 14 dni lub inny ,
+nie dluzej jednak niz na 3 miesiace .
+ Numer abonenta =INFOLINIA 800= nadaje Centrum Obslugi TP S.A. . sa to numery
+pieciocyfrowe z prefiksem 800 . Pelna postac numeru abonenta =INFOLINIA 800= 
+jest nastepujaca :
+                                0-800 QM CDU 
+ W miejscu Q moga znalezc sie cyfry 2,3,5,6 a w miejscu M cyfry od 1 do 0.
+Plan Numeracji Krajowej dokonal przydzialu poszczegolnych cyfr dla Q i M
+w okreslonych okregach TP S.A. . I tak na przyklad abonenci =INFOLINIA 800=
+z okregu warszawskiego i olsztynskiego maja numery zaczynajace sie cyfra =2= 
+po prefiksie 800 . Na przyklad "Niebieska linia" ma numer 0-800 20002.
+ Wnioskodawca moze tez podac wlasne preferencje dotyczace rodzaju numeru z
+prefiksem 800 . Regulamin proponuje 4 grupy numerow :
+
+  Grupa pierwsza zawiera numery - zwykle .
+  Grupa druga zawiera numery - "zlote" .
+  Grupa trzecia zawiera numery - "srebrne" .
+  Grupa czwarta zawiera numery - "na specjalne zyczenie" .
+
+ Numer zwykly jest pierwszym wolnym numerem zgodnie z =PNK= dla uslugi
+=INFOLINIA 800= . Numery "zlote" i "srebrne" i "na specjalne zyczenie"
+charakteryzuja sie szczegolnymi cechami ulatwiajacymi zapamietanie .
+Na przyklad 0-800-66666 . Korzystanie z takich numerow jest jednak zwiazane
+z uiszczeniem dodatkowej oplaty abonamentowej . Lista tych numerow jest zamieszczona 
+w zalaczniku nr 4 do Regulaminu .
+ Dla uslugi =INFOLINIA 800= zostaly utworzone Centra Obslugi .
+Sa to komorki organizacyjne TP S.A. posiadajace srodki techniczne oraz organizacyjne
+sluzace realizacji uslugi =INFOLINIA 800= . Centra zajmuja sie przyznawaniem abonamentu ,
+przydzielaniem numeru , zestawianiem polaczen , rejestracji danych o polaczeniu
+oraz sporzadzaniem rachunkow.
+ Polaczenie =INFOLINIA 800= jest realizowane automatycznie oraz polautomatycznie 
+przez =PUT= TP S.A. .
+ Polaczenia realizuja centrale automatyczne oraz Centra Obslugi . 
+W momencie , gdy abonent wzywajacy wybiera numer rozpoczynajacy sie prefiksem =800=
+w centrali miejscowej wystawiana jest "taryfa Zerowa" , 
+dzieki czemu abonent wzywajacy nie bedzie obciazony rachunkiem za polaczenie 
+lub bedzie obciazony oplata za 1 impuls . centrala miejscowa kieruje polaczenie do 
+najblizszego Centrum Obslugi . Centrum dokonuje analizy pierwszej i drugiej cyfry numeru
+( Q i M ) , zestawia polaczenie z wlasnym abonentem =INFOLINII 800=  lub
+kieruje polaczenie do odpowiedniego Centrum , na terenie dzialania ktorego znajduje sie abonent wzywany .
+ Abonent =INFOLINII 800= ma obowiazek uiszczania nastepujacych oplat :
+ 
+- jednorazowej za przyznanie abonamentu ,
+- abonamentowej - miesiecznej za kazdy numer z prefiksem 800 ,
+- abonamentowej miesiecznej ( dodatkowo ) za korzystanie z numerow "zlotych" , "srebrnych" ,
+  lub "na specjalne zyczenie" ,
+- za kazde polaczenie przychodzace do numeru z prefiksem 800 .
+
+ Oplata za 1 minute polaczenia jest zryczaltowana , co oznacza , za nie zalezy od strefy
+taryfikacyjnej w ruchu krajowym , z ktorej polaczenie zostalo zrealizowane.
+
+
+      Tekst ten pochodzi z ksiazki Heleny Bêben Jaworskiej pt. :
+          " Eksploatacja telekomunikacyjna klasa III " 
+
+17. Uwagi i inne ciekawostki
+
+Kilka 800-ek do tepsy :
+              
+- 080027111 - bezplatna informacja o uslugach swiadczonych przez TP S.A
+
+- 080060805 - ???
+
+- 080020888 - ???
+ 
+    UWAGA 800-ki Z CALLBACKIEM !!!! Nie dzwoncie z domu !!!                 
+
+A wiec - callback to numery 0800....  ktore po odpowiednim 
+zalogowaniu odzwaniaja do ciebie ( czyli musza znac twoj numer - zostaje na ich
+serwerze , dzieki Caller ID juz kilka osob wpadlo na hackowaniu 0800-tek .
+
+UWAGA! DZWONIAC NA CALLBACK ZOSTAWIASZ  NA SERWERZE SWOJ NUMER TELEFONU 
+WIEC  MOZESZ ZOSTAC   N A M I E R Z O N Y!!!
+                      ^^^^^^^^^^^^^^^^^^^
+   
+   !! Strona o numerach 0800:   http://free.polbox.com/0/0800 !!
+
+
+18. Phreak mentor by 3k43dom
+
+ ...listonosz wlasnie wlozyl cos do mojej skrzynki.Dluga biala koperta ,
+z niebieskimi nadrukami.Znow ten rachunek za telefon.
+
+ - To jego wina caly czas siedzi ze sluchawka lub przed komputerem i 
+blokuje linie . Kto wymyslil te modemy ? Te jego impulsy to tylko 
+strata pieniedzy . Wzialby sie za nauke , choc raz zajrzal do tych ksiazek .
+
+ Pewnie wszystko to moja wina - to ja ustalilem takie stawki.
+To ja wyciagam od ludzi co miesiac kupe forsy . Ci ignoranci sami nie placa 
+- tworza sobie 800-ki .
+
+ - Teraz mlodziez to wszystko chcialaby miec za darmo i do wszystkiego dostep .
+
+ Korzystam z "udoskonalonych" automatow i co popelniam przestepstwo , 
+czy moze nie daje sie okradac ?
+ Adrenalina . Przewod zielony . Przewod czerwony . Tiiiiiiiiii !
+ Tonedialer . Bramy otwarte !
+
+ Czy to ja pierwszy oszukuje automaty ?
+ A czy inni nie pamietaja jak obijali piesciami stare zetonowce ?
+ A jak automat byl pzepelniony i laczyl za darmo , to co odkladali 
+ sluchawke ?
+ 
+ - Ale to nie to samo !
+
+ Pewnie za pare lat taz tak bede mogl mowic , gdy bedzie inna generacja
+telefonow - nowe metody . 
+
+19. Pozdrowienia 
+
+Greets to : Lunar , Spajk , Silver , Lcamtuf
+            Spac3man , Ult0r , P0wer ,
+            Wszystcy z phreak-klub ,
+            Znajomi z BBS-u Poznanskiego { tp } ,
+            SaPeR , Princess LeA ,
+            Wiedzmin Alias Darkman
+            
+            i cala reszta tych ktorych nie wymienilem .

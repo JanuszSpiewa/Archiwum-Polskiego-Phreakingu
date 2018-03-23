@@ -1,0 +1,902 @@
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++ZMAKSYMILIZUJ OKNO NOTATNIKA+++++ROZ. 800/600+++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+-------------------------------------------------------------------------------------------------
+-------------------------------------ULYSES.faq ver. 1.7b----------------------------------------
+-------------------------------------------------------------------------------------------------
+
+                                    ulyses@sonet.lublin.pl
+                                          <+ULYSES+>
+                                      LUBLIN 01.10.2000
+
+*************************************************************************************************
+* Na poczatku zastrzegam sobie ze to co pisze jest tylko po to,aby edukowac ludzi i nie ponosze *
+* zadnej odpowiedzialnosci za jakiekolwiek szkody wyrzadzone po przeczytaniu tego textu........ *
+*************************************************************************************************
+
+
+UWAGA!!! W wersji 1.7 popelnilem karygodny blad ktory ukazali mi kumple... niestety juz wyslalem
+Do netu tamten txt i nie mogê go wycofac wiec przyznajac sie do winy (MEA CULPA) poprawiam to i
+W tym txt oznaczonym jako 1_7b nie ma juz tego bledu... jeszcze raz sorki dla wszystkich
+I pamietajcie ze ERRARE HUMANUM ES....
+
+Witajcie...
+
+kolejna wersja tego chlamu wnosi kilka ciekawych wiadomosci... poza tym mam maly prezencik w 
+postaci POPRAWIONEGO schematu oraz programu do podlaczenia wyswietlaczy z urmetow do komputra.
+                                   {wielkie :) dla MISZY}
+
+daje wam jeszcze schemat urzadzenia do odbijania teletaxy... (prawdziwy hit tego wydania :) )
+
+przed przeczytaniem tego radze przygotowac jakies prochy przeciw nerwicy i wymiotom  :)
+polecam cukierki z prozakiem :)
+
+<<<<<<<<<<<<<<<<WSZYSTKIE METODY TU OPISANE SAM WYPRUBOWALEM I NICZEGO NIE RIPUJE>>>>>>>>>>>>>>>>
+
+Od razu musimy sobie cos wyjasnic NIE jestem zadnym hakerem ani phreakerem po prostu lubie ten 
+zawod:)).No dobra dosyc bredzenia zaczynamy.
+
+=1=stuff=
+
+KLUCZYK-wlasciwie to jest potrzebne ich kilka, a mianowicie klucz do urmeta niebieskiego (jesli
+go nie masz to napisz moze ci sprzedam za ok.45 zl:)),klucz do urmeta srebnego ,klucze do
+zetonowcow i klucz do skrzynek aboneckich (takich malych z logo telekomuny),itp. wiec jak widzisz
+jest ich pelno, ale bez nich tez mozna sie obyc.
+
+popatrz do dzialu handel tam jest lista niektorych kluczy, ktore moge sprzedac...
+
+TELEFON DO PHREAKU-Hrabia radzi aby kupic jak najtanszy telefon i potem go przerobic, ja
+osobiscie uwarzam ze trzeba kupic telefon i nie przerabiac go zbytnio, bo jak cie maja zlapac to
+i tak zlapia, a lepiej jak beda mysleli ze jestes zwyklym dzieciakiem niz starym phakerem.
+Wazne aby telefon mial wybieranie tonowe i impulsowe, byl stosunkowo maly, w bardzo mocnej
+obudowie, przydatne tez jest zapamietywanie ostatniego numeru, wyswietlacz i inne bajery.
+Dobrze jest miec dwa telefony (drugi mniejszy:)), albo nawet i wiecej:)))))))))))))))))))
+Ostatnio zrobilem sobie telefon w obudowie od walkemana i jak sie podlaczalem do budki, a po 
+drugiej stronie stal monter to sie nie domyslil :) (klawiaturke mialem tam gdzie sie wklada 
+kasete, sluchawke zwykla z walkemana,a mikrofon przeciagniety pod bluza... kladlem moj sprzet
+na telezlomie tak ze nie bylo widac ze jest on podlaczony do lini i normalnie dzwonilem ;) )
+polecam tez zakup telefonu PANAPHONE model T1500, kupic go mozna na targu u ruskich za
+kilkanascie zlotych... latwo sie go przerabia poniewaz w srodku ma mala plytke telefonu, a pamiec
+redial i dtmf ma zainstalowane powierzchniowo na plytce klawiatorki...
+
+NOZYKI-Dobrze jest miec kilka bardzo ostrych nozy m.in. skalpel, nozyki do papieru i jakis jeden
+twardy i ostry scyzoryk:))). (u mnie za 12zl mozna kupic super zestaw z 15 nozykami do papieru)
+
+KABLE-kabli jest potrzebne duzo roznych, kazdy po kilku probach bedzie wiedzial jakie sa 
+najlepsze, napewno bedziesz potrzebowal kabla zakonczonego krokodylkami-pamietaj wybieraj
+takie, ktore maja najciasniejszy zgryz:). Przydatny tez bedzie kabel zakonczony cienkimi
+i mocnymi iglami, w takim wypadku zaizoluj tasma igly w 3/4 dlugosci. A propo dlugosci
+to potrzebne sa kable o najrozniejszych dlugosciach (od 25cm do 100m), a kazdy oczywiscie
+czarny i jak najcienszy;).
+
+TONE DIALER-jest to potocznie zwany biper generujacy tony o okreslonych parametrach. tony te 
+odpowiadaja cyfrom i znakom z klawiatury wybierczej telefonu. takie urzadzonko kosztuje 
+od 20 do 50 zloty (u mnie w miescie kosztuje 56 zyli) jesli nie uda ci sie go kupic to 
+napisz a kupie go dla ciebie.Pierwotnie uzywany byl do sterowania sekretarkami telefonow.
+mozna tez kupic zestaw do samodzielnego montarzu firmy AVT pod nazwa uklad wybierczy DTMF,
+ale nie polecam takiego wyjscia gdyz zadko sie zdarza aby dzialal:((
+
+TASMA-potrzebna bedzie bardzo mocna i lepka tasma, ja osobiscie polecam dwustronna tasme firmy
+AnkoTape (to nie reklama, po prostu to najlepsze co znalazlem) jest ona bardzo mocna bo nie jest
+papierowa i nie przepuszcza prundu (a i jest bardzo tania, za 10 metrowa rolke dalem zaledwie
+3.5zl;))))))
+
+LATARKA-przyda ci sie dobre swiecidelko, musi byc male lekkie i wydajne (ja mam kryptonuwe 
+energizera na taki maly paluszek, R-03 bodajze ;) ).
+
+SRUBOKRETY-dobrze jest miec wiele roznych srubokretow, przydaje sie tez srubokret elektromagiczny
+ktory najtaniej mozna kupic w MACRO (taki duzy supermarket w lublinie) za ok.43.52zl(tak okolo :)
+pamietaj ze srubokrety musza byc niezwykle wytrzymale na wygiecia.
+
+PIWO 0.33l + KANAPKI-czasami mozna stac sie glodnym podczas zabawy wiec doradzam zabranie czegos
+dobrego i sycacego :)
+
+PILNIKI-bardzo potrzebny bedzie zastaw duzej ilosci dobrych pilnikow do zelaza. (wiec jesli nie
+kupiles sobie do tej pory to teraz jest najwyzszy czas!)
+
+BRZESZCZOTY-duzo dobrych brzeszczotow do ciecia metalu...
+
+LOMY- minimalnie 2 (jeden duzy drogi maly) dobrze jest tez spilowac ich plaskie konce tak aby 
+byly jak najciensze
+
+TO JEST PODSTAWOWY SPRZET I BEZ NIEGO NIC NIE DA SIE ZROBIC!!!
+=================================================================================================
+=2=zasady=
+
+1).badz opanowany i spokojny!
+2).nie niszcz prywatnych ludzi--NISZCZ TELEKOMUNIKACJE ;))))))))))))))))))))))
+3).nie uczepiaj sie jednego miejsca! (chyba ze masz pewnosc ze to miejsce bezpieczne!)
+4).nie pozostawiaj zadnych swoich rzeczy!
+5).jak cie zlapia udawaj glupa i wszystkiego sie wypieraj (co to jest telefon??).
+6).dobrze zebys mial cos do obrony, jakis drag, lub proce (i co sie smiejesz, ja z procy zlamie
+   ci papierosa na pol z odleglosci 5m :). Ja nosze przy sobie gaz paralizujacy, kupilem go na
+   targu za jakies 35 zyli.(tyko pamietaj to nielegalne hle hle hle ;))))
+7).przed przystapieniem do roboty znajdz ewentualna droge ucieczki, najlepiej aby miala duzo 
+   zakretow i nigdy nie chowaj sie w jakiejs bramie liczac na to ze cie nie znajda-odetniesz
+   sobie tylko droge ucieczki. :((
+8).nikomu nie mow czym sie zajmujesz! (no kilku osobom mozesz cos powiedziec,ale to twoja sprawa)
+9).zanim zaczniesz dzialac obejrzyj z daleka dokladnie to miejsce.
+10).WYLUZUJ SIE!!! traktuj to jak zabawe...  ;))))))))))
+=================================================================================================
+=3=czas=
+
+Najlepszy czas na phreak to oczywiscie zima bo wczesnie robi sie cimno, a poza tym jest czasami
+zimno i pada snieg. Dla nas lepiej jak jest sniezyca, mroz bo wtedy malo ludzi sie kreci po
+ulicach, a jak juz ktos idzie to patrzy pod nogi aby sie nie poslizgnac i spieszy sie do domciu,
+(a i monterom nie chce sie pracowac :). Dobrze jest tez chodzic o poznych godzinach wieczornych
+tak mniej wiecej od 23.00 do 4.00, a wiec masz 5 godzin na dzialanie. A i jeszcze dzialaj we dni
+od poniedzialku do czwartku, w piatek i w sobote daj sobie spokoj, w niedziele mozesz sie dalej
+bawic :) w ten sposob unikniesz tloku na ulicach bo do piatku ludzie wczesnie spia aby odpoczac
+przed nastepnym dniem pracy, w piatek i sobote organizuja sobie prywatki i jest ich pelno na
+ulicach, w niedziele odsypiaja zabawe i sa mniej czujni, no i telekomuna nie chodzi.
+
+nie polecam napalac sie na dzialanie okolo godziny 22 w malych osiedlach lub blokach... pojawia
+sie wtedy sporo luda na ulicy bo wychodza na tzw. nocny spacer z psem, i nie dosc ze narazamy
+sie na wykrycie to jeszcze mozemy byc poszczuci azorkiem :)... (mnie sie to zdarzylo wiec 
+uwarzajcie :) )
+=================================================================================================
+=4=miejsce=
+
+Dobre miejsca sa rozne do roznych dzialan, i np. do budek (podpinania sie lub rozwalania) 
+najlepiej jest znalezc jakies odludzie (jakas wiocha lub zapyziala nora :))) )  gdzie jest kilka
+budek , ciemno i nikt sie nie kreci (ciekawe czy znajdziesz takie zadupie? :))))), jezeli 
+nastawiasz sie na pozyskiwanie kart (TYLKO DO DOSWIADCZEN) to atakuj budy w centrum miasta.
+Na podpinanie sie pod sasiada lub pod firme, znajdz jakas piwnice albo strych (ciekawe dlaczego
+w zadnym faq nie pisza ze dobra kryjowka jest strych, a w kazdym pisza o piwnicy...).
+
+ostatnio zrobilem sie az tak podly ze potrafie zabawic sie urmetem w bialy dzien w centrum
+miasta (oczywiscie pelna mascarada) zachowujac pozory spokojnego czlowieka ( prawda waniuszy? :))
+=================================================================================================
+=5=pod sasiada, lub firme=
+
+po pierwsze jest to wyjatkowo chamskie podlaczac sie pod prywatnych ludzi wiec jezeli musisz
+wybieraj duze firmy lub wrednych sasiadow. (ja mam takich od groma :)
+
+pamietaj jak sie podlaczasz pod osobe prywatna to zostawiaj zbrechtana izolacje aby dana osoba 
+miala szanse ze jej uznaja reklamacje.
+
+Ja tu opisuje metode dosc prosta (lopatologiczna) i na pewno znana. Metoda ta jest bardzo 
+kosztowna i ryzykowna ale masz 99.99% pewnosci ze cie nie zlapia :) (zlapac cie moga tylko przy
+podlaczaniu i rozlaczaniu zestawu). A wiec caly bajer polega na tym aby kupic telefon 
+bezprzewodowy i podlaczyc go pod linie, a sluchawke miec w reku i dzwonic, albo polonczyc ja 
+tasma ze sluchawka telefonu podpietego pod linie modemu, ktore masz u siebie w domciu na zasadzie
+mikrofon+glosnik 
+
+             mic.|---|   |---| glosnik
+                 |___|   |___|
+                 |           |
+                 |           |
+                 |___     ___|
+          glosnik|   |   |   |mic
+    sluchawka====|___|   |___|==============modem
+
+       (niezbyt mi wyszedl ten rysunek, ale co innego mozna narysowac po kilku piwach?:) )
+
+Teraz nasuwa sie pytanie skad wziac telefon bezprzewodowy? przecierz nie kazdego stac aby wybulic
+ 250 zl. Wiec wez mlotek do reki rozwal swoja swinke skarbonke a moze uzbiera ci sie 100zl.
+wtedy wez je i idz do LOMBARDU (nie komisu) tam za grosze mozna trafic calkiem przyzwoity telefon
+ja tak zrobilem i za 65zl. mam dobry kawal sprzetu firmy panasonic.
+
+ta metoda ma taka zalete ze jak sie podlonczysz to nie moga cie namiezyc w przeciwienstwie do
+kabla  :) 
+
+a i taka mala porada dla lamerow telefony powinny byc ustawione na tone.
+
+swego czasu prubowalem zamiast telefonu uzyc 2 par walkie talkie (czyt. loki-toki) ale skutek 
+byl marny chociarz dzialalo :|
+=================================================================================================
+=6=pozyskiwanie kart=
+
+na poczatku mowie ze zabieranie ludziom kart to ZWYKLE SKURWIELSTWO jednakze czasami trzeba miec
+karte do wielu innych rzeczy (kopiowanie,itd.) tylko pamietaj to cie nie usprawiedliwia !!!!!!!!
+
+ja podam tylko jedna metode gdyz sprawa jest tak prosta ze kazdy glup bedzie potrafil, a wiec do 
+rzeczy biezesz dobra mocna tasme, otwierasz niebieskiego przecinasz kabel od czujnika otwarcia
+(taki maly dwuzylowy w dolnym lewym rogu) i zalepiasz kubeczek (to cos w co wpadaja karty) i
+zamykasz bude i na nastepny dzien otwierasz i masz ich kilka (moga sie wysypac :) ).
+
+druga ciekawa metoda, ktorej zaleta jest to ze nie trzeba otwierac budki.
+a wiec najpierw trzeba przeciac karte na pol potem polowe ponadcinac w zdluz:
+                        _______________
+                        |    :    :    |
+                        | A  :  B :  C |
+                        |    :    :    | <- <- pol karty
+                        |              |
+                        |______________|
+:-naciecie                                             
+czesci A,B,C powinny byc rowne.
+czesci A i C wywin w jedna strone, a czesc B w droga. wkrec teraz ta rozczapierzona karte plaskim
+koncem w wylot kart niebieskiego urmeta.karty nasze urzadzenie bedzie skutecznie zatrzymywac a 
+jak my bedziemy chcieli je odzyskac to wystarczy wcisnac w wylot plaska karte (najlepiej pusta :)
+i wyjac ja razem z innymi.(metoda znana od wiekow...)
+
+=================================================================================================
+=7=handel=
+
+DO SPRZEDAZY: (lub wymiany)
+*klucz do niebieskiego urmeta (za ok. 45zl ale nie sprzedaje kazdemu :) )    00131000
+*klucz do szafek rozdzielczych tpsa. (za ok. 45zl ) 5 rodzajow!
+*4 klucze do kablowek (nie abloye) do takich skrzynek co sa w blokach... 
+ sa to 4 rozne klucze do 4 roznych kablowek (do PRAWIE wszystkich z lublina)
+ cena jednej sztuki ok. 45zl lub cos na wymiane (cos ciekawego :) )
+ za wszystkie 4 tylko 120zl
+*magnez (wiory typ A, 100g)      --- 47.50zl +wysylka
+*siarka (kwiat siarczany 500g)   --- 50.00zl +wysylka
+*kwas azotowy (max stez. 1l)     --- 30.00zl +wysylka
+*kwas solny   (max stez. 1l)     --- 30.00zl +wysylka
+*kwas siarkowy (max stez. 1l)    --- 30.00zl +wysylka
+*czytnik/programator kart chipowych razem z 2 kartami zabezpieczonymi kodem pin o wielkosci 1kb,
+plus adres gdzie mozna karty kupic (o roznych pojemnosciach), plus oprogramowanie (m.in. do 
+edycji kart sim z komurek - simsurf)  --- cena 468zl (juz z wysylka)
+*surowki AY1                     --- 05.00zl +wysylka
+*surowki AY2 (pelne, bez rowa)   --- 08.00zl +wysylka
+*surowki AY3 (z wzdluznym rowem) --- 09.00zl +wysylka
+
+pamietaj ze zawsze mozesz sie potargowac...
+
+CHETNIE KUPIE: (lub wymienie)
+*sample, taxvalue itp.
+*inne ciekawe rzeczy
+-------------------------------------------------------------------------------------------------
+posiadam rowniez: (NIE DO SPRZEDAZY! ew. do zamiany za cos niezwykle ciekawego)
+
+*klucz do automatow lewy brzeg warszawy
+*klucz do automatow prawy brzeg warszawy
+*klucz do swiatla w srebrnych kabinach w warszawie
+*klucz do srebrnych w lublinie
+itp...
+
+JESLI CHCESZ COS KUPIC LUB SPRZEDAC NAPISZ!!!!!
+=================================================================================================
+=8=ABLOY=
+
+kilka dni temu wqurwil mnie niezwykle jeden abloy. w zaden ze znanych mi sposobow nie skutkowal
+wiec postanowilem ze go otworze dosc brutalnie :) ---- wysadze go! :)))
+no wiec rozdrobnilem ok.2 lyzeczek (takich do cherbaty) magnezu (Mg) i napakowalem zamek do pelna
+tak ze pojedyncze wiury wystawaly na zewnatrz zamka, podpalilem to zapalniczka (zapalki maja za 
+niska temperature) i otoczylo mnie swiatlo jak z ufa :) ludzie sie zaczeli odladac ale pewnie 
+pomysleli ze to petarda. po kilku sekundach plomyczek zaczol przygasac gdyz "wchodzil" do wnetrza
+zamka, po chwili uslyszalem gluche bum i w zamku panowala ogolna rozpierducha... blaszki wypadly
+razem z cylindrem wiec wsadzilem srubokret, przekrecilem i szafa stala przede mna otworem :)
+
+Jesli masz klopoty z zakupem magnezu to napisz u mnie w miescie 100g podelko kosztuje 47.50zl 
++ koszt wysylki 13zl (nie daje gwarancji ze akurat otworzysz zamek -w koncu nie kazdy da sobie
+rade- ale napewno bedziesz miec super zabawe (w sam raz na sylwestra)
+
+zamek ABLOY jest przykrecony do obudowy nakretka nr 22 (ot taka ciekawostka :) )
+
+jesli masz zamiar dorabiac klucz na podstawie zamka to zanuz go klikukrotnie w oleju roslinnym
+(kuchennym), zapobiegnie to rozpadnieciu sie zamka po zdjeciu niklowanej oslony...
+
+wzor ABLOYA telekomunikacyjnego jest calkowicie zastrzezony przez dyrektora
+telekompromitacji. (sratata... mam miejsce gdzie dowolnie kupuje surowki a klucze sam sobie
+robie bez laski zadnego dorabiacza)...     ...dzieki waniuszy
+
+propo napilowywania niklowanej glowki zamka aby wypadl cylinder z blokadkami i potem tylko 
+wlozyc srubokret i otworzyc TO JEST TO ZUPELNA BZDURA bo na koncu zamka jest groby sztyft ktory
+jest przekrecany przez zamek, czesto sie zdarza ze nie uda nam sie wyciagnac podkladki 
+zabezpieczajacej i nie uwolnimy sztyftu (bolca) wiec nie uda nam sie go przekrecic i otworzyc 
+urmeta :( (mi sie tak zdarzylo w nowym niebiskim ). mam nadzieje ze rozumiesz ten belkot ale 
+jesli nie to napisz lub dokladnie obejrzyj zamek.
+=================================================================================================
+=9=SLUPKI=
+
+slupki to takie kwadratowe skrzyneczki ktore stoja na betonowym podescie gdzies w szczerym polu
+wielu idiotow prubuje sie do nich dostac wylamujac zamek - glupota, jest kilka sposobow aby sie 
+do nich dostac:
+
+1).beton z ktorego wykonanyjest podest slupka ma bardzo zla wlasciwosc po prostu latwo sie kruszy
+   mozna to latwo wykorzystac lamiac beton na pol i masz dojscie do grubej plastikowej rury z 
+   kablami a w tedy chyba wiesz co dalej robic....  :)
+2).mozna tez porzadnie kopnac w metalowa skrzynke,a oddzieli sie metal skrzyneczki od betonu.
+3).jezeli juz sie uparles aby wylamywac dzwiczki to na litosc zeusa wylamuj je od dolu bo wtedy 
+   wystarczy aby skrzywil sie drut, ktory tu robi za zawias i nie musisz wyginac zamka ;)
+
+nalezy sie wam wyjasnienie--od jakiegos czasu tp postanowilo utrudnic mi zycie i te slupki
+przerobili tak ze beton juz jest pozadny a dzwiczki sa na stalowym zawiasie a nie na drucie :(
+tak wiec pozostaje stare dobre wyginanie zamka lub odrywanie czesci metalowej od betonu...
+=================================================================================================
+=10=sposoby...=
+
+aby ten glupowaty txt nie spadl calkowicie na psy postanowilem opublikowac moje niezawodne 3 
+sposoby na otwarcie urmeta bez klucza.
+
+#1. sluchawka
+sluchawka od srebrnego zamocowana jest na takim fajnym srebrnym dziubku ktory strasznie slabo
+siedzi, wiec mozna by odrabac ten dziubek, a po odrabaniu pojawia sie nam pret od zamka.
+wystarczy go po prostu przekrecic szczypcami i urmet stoi otworem :) ...
+niestety ta metoda nie dziala na nowszych srebrnych bo jest taki smiec przy zamku ktory to
+blokuje...
+
+#2. drzwi
+czasami zdarza sie ze monter zle domkna drzwi srebrnego urmeta i pojawia sie na dole mala szpara
+wystarczy wtedy wlozyc w ta szpare loma i wyczuc mocowanie zamka. potem trzeba je wygiac (napewno
+wygnie sie wam tez blacha z obudowy :) ) i jak niczego nie spieprzyliscie to mozecie drzwiczki
+wygiac do gory (jak picap :) ). dodam jeszcze ze jest to najszybsza metoda, ostatnim razem cala
+zabawa zajela mi okolo 10-15 minut...
+
+#3. czytnik
+
+sprawa tez prosta z tym ze czasochlonna... nalezy wyrwac lomem oslone czytnika i mamy spora
+dziure przez ktora wystarczy przelozyc loma i odgiac zaczep zamka... jest to metoda najczesciej
+przeze mnie stosowana i niezawodna :) ...
+
+----
+aby miec jakies szanse trzeba miec dwa lomy (patrz dzial stuff) i umiec sie nimi poslugiwac...
+
+prosze tez aby mi nie zazucac ze "znowu lomem" ale ja nie lubie sie z penseta babrac, a poza tym
+to jest skuteczne!
+----
+
+=================================================================================================
+=11=konfiskata=
+
+opowiem tu o ciekawym sposobie zdobycia nawet bardzo drogich aparatow telefonicznych od glupich
+i bogatych ludzi (biedni nie beda mieli ciekawych aparatow). metoda ta tak jak zalejanie budek i
+podlaczanie sie pod biednych ludzi, jest wyjatkowo chamska i prosze stosowac ja na bogatych oraz
+wrednych ludziach...a wiec do dziela:
+
+krok1
+
+na komputerze przygotowujemy sobie lipna legitke tp-su-ka i lipne pokwitowanie (pamietaj aby 
+wszedzie wciskac logo tpsa-ludzie bardzo na to patrza...skad wiac logo proste zeskanuj, albo
+narysuj, albo scignij ze stony tpsa :).na lipnej legitce koniecznie umiesc swoje zdjecie lipne
+imie, nazwisko, adres, numer telefonu (np.budki,ale o tym pozniej), podpis i numer sluzbowy.
+na pokwitowaniu na dole lub po drugiej stronie napisz cos w stylu "podstawa prawna i ble ble ble"
+to co tam napiszesz zalezy tylko od twojej wyobrazni... :) . drukujemy legitke na sztywnym 
+papierze, a pokwitowanie na wiotkim (takim jak gazetowy) doda to realizmu...
+
+krok2
+
+umawiasz sie z kumplem pod budka ktora sie nie przedstawia ze bedzie gral role biura...
+
+krok3
+
+dzwonisz z budki do upatrzonej ofiary i podajesz sie za montera z tpsa podajesz lipny numer 
+sluzbowy i nazwisko...wciskasz jej kit ze sa jakies zmiany rezystancji/przepiecia/ufo na lini
+i ze jutro przysla montera ktory to sprawdzi...
+
+krok4
+
+na drugi dzien przed czternasta ubierasz sie schludnie (nie zaden jebany dres) i wybierasz sie
+do ofiary biezesz ze soba dialera, miernik, kupe srubokretow, skrzynke na narzedzia, i wszelkie
+inne dziwne urzadzenia takie jak sluchawki telefoniczne, phreakomat,itp. idziesz do ofiary 
+przedstawiasz sie za montera pokazujesz legitymacje lepiej miec ja przypieta do marynarki prosisz
+o dojscie do lini, jezeli beda mieli jakiekolwiek watpliwosci podaj im numer budki z kumplem
+(na budce warto wywiesic kartke z napisem "nieczynne") oni zadzwonia a kumpel potwierdzi twoje
+lipne personalia...
+
+krok5
+
+wykonuj jak najdziwniejsze ewolucje (podlaczaj telefon to ofiary to twoj,podlaczaj miernik itp.)
+a pozniej zadzwon do kumpla wykrecajac numer biperkiem i pusc text w stylu:
+-bogus,to ty, muwilem ci ze to nie wina lini to pewnie wina aparatu, pusc mi 300khz, a potem
+ moze teletakse (i tak losie nie beda wiedzieli o co chodzi) kumpel w tym czsie moze wygenerowac
+ kilka tonow dialerkiem. potem puszczasz im kit ze aparat powoduje zaklucenia na lini zagrazajace
+ centrali i ze musza go zaniesc do biura napraw i ze naprawa bedzie kosztowala ok.350zl. jak juz
+ zaczna panikowac postrasz ich jeszcze ze podlaczajac ten aparat do lini moga uszkodzic centrale
+ ktorej naprawa bedzie kosztowala 10 000 zl i ze oni beda obciazeni jej kosztami...
+
+krok6
+
+pakujac swoje zabawki pusc tekst ze zauwazyles ze 350zl to nie jest taka drobna suma dla nich i 
+ze bogus (kumpel do ktorego dzwoniles) zajmuje sie ich naprawa i ze za 0.5l wodki moze to 
+naprawic tylko zeby nie muwili o tym nikomu bo im nie wolno takich przekretow robic. zostawiasz 
+im pokwitowanie i wychodzisz....no i jestes chappy bo masz telefon a jak ci sie nie spodoba to 
+zawsze mozesz im go odniesc konfiskujac 0.5l wodki:))))))))))))))))))))))))))))))))))))))))))))
+
+kilka porad:
+-uspokuj sie zawsze mozesz powiedziec ze to zart
+-rob to w innym miescie
+-wybieraj bardziej kobiety (najlepiej jak sa niezamezne lub maz jest w pracy)
+-jezeli bedziesz chcial szybko wyjsc to umow sie z kumplem zeby na okreslony znak(np.dzwonek na 
+komurke)wpadl po ciebie z krzykiem ze pol centrali splonelo i ze musisz szybko wracac
+-nie nazucaj sie z propozycja reperacji bo moga cos podejrzewac...
+-nazekaj na szefa ze ci marnie placi i w ogole rob zla reklama telesuce :)))))))))))))
+=================================================================================================
+=12=ciekawostki=
+
+ostatnio jak otwieralem niebieskiego urmeta z kuleczkiem natknolem sie na ciekawy akumulator
+umieszczony pod krzywa scianka wylotu kart. akumulator ten jest firmy KOBE, parametry jego to
+12v 1.2Ah jest to proste ogniwo olowiwe (Pb) wyprodukowane w japoni ktore w sklepach kosztuje 
+ok.48zl wiec nie jest to taka tania rzecz. co ciekawe te akumulatory nie sa w kazdym urmecie
+jak patrzylem za nim w innych to w jednych byly a w innych nie (?) (sprawdzalem te z kuleczkiem i
+te bez) wydaje mi sie ze to zalezy od centrali pod jaka podlonczony jest aparat, ciekawe tez ze 
+po kilku tygodniach zdjeli tego niebieskiego a zalozyli srebrnego wiec domniemam ze musial byc 
+podlaczony pod cyfrowa centrale a to pewnie oznacza ze centrale cyfrowe przystosowane pod srebrne
+urmety daja za slaby prad aby niebieskie mogly dzialac wiec konieczne jest stosowanie dodatkowych
+zrodel energii... dla mnie to lepiej bo z kilkunastu takich akumulatorkow pozyczonych z aparatow
+zrobilem sobie doskonalego UPS-a ktory czesto zabieram na strychy lub do piwnic kiedy potrzebuje
+pradu do mojego kompa w czasie podlanczania sie pod linie... :))
+
+wiekszosc ukladow scalonych na plytach niebieskiego jest bardzo drogie poniewaz te uklady sa 
+bardzo energooszczedne. ich zwykle odpowiedniki kosztuja kilkakrotnie mniej...
+
+na plycie glownej znajduje sie uklad scalony ktory mozna wykorzystac do budowy tone dialera...
+znajduje siê mniej wiecej w lewym dolnym rogu...
+
+kiedy wpiolem sie w linie srebrnego z atypiratem firmy telerack to urmecik zaczol cicho piskac a
+na wyswietlaczu pojawil sie ruchomy napis NEW SOFT INSTAL...              (?)
+
+umieszcze tutaj rysunek opisujacy podlaczanie lini do glowicy w szafach rozdzielczych...
+_______________________
+|1|1|2|2|3|3|4|4| 5| 5|
+|=|=|=|=|=|=|=|=|==|==|
+|6|6|7|7|8|8|9|9|10|10|
+-----------------------
+rysunek nie jest zbyt ambitny ale zawsze jest, chodzi o to ze mieszkania nie sa podlaczane
+pionowo tylko poziomo (przynajmniej w lublinie...)
+
+ciekawostki o T.P sa
+------------------------
+ok. 73000 pracownikow
+calkowita dl. lini transmisyjnych 389 594km
+9mln lini abonenckich
+458 BOK-ow
+616 placowek uslug telekomunikacyjnych
+zasieg ok. 95% kraju
+147 radiowych stacji bazowych
+przyrost 3mln lini w 4 lata
+monter na najnizszym szczeblu zarabia ok.900 zyli
+
+ale sie cholerny monopolista rozrasta!!!
+------------------------
+
+powiem jeszcze ze monterow tp nie ma sie co bac bo czesto oni bardziej nie nawidza tp niz ja ;)
+(dotyczy to glownie osob na najnizszym stanowisku- ci co kopia rowy pod kable lub zakladaja 
+linie)
+================================================================================================
+=13=antypiraty=
+
+Antypiraty coraz bardziej pojawiaja sie na naszym rynku. Firmy instaluja je na swoich liniach
+i odbieraja nam radosc z podlanczania sie... ale czy zastanawiales sie jak to dziala i czy moze
+nam sie to przydac?
+
+a wiec... taki zwykly antipirat dziala w nastepujacy sposob:
+podlancza sie go pod linie a do niego telefon
+w razie wykrycia aparatu telefonicznego (lub innego odbiornika) urzadzenie informuje sygnalem 
+swietlnym i/lub dzwiekowym i blokuje linie wysylajac jakies tony lub zaklucenia...(mozna dzwonic 
+tylko z aparatu polaczonego z antypiratem)
+
+do czego nam moze sie to przydac? otoz niektore modele maja taka mozliwosc ze moga pracowac 
+ze soba podlaczone do lini rownolegle... w takim przypadku dowiadujemy sie jaki "anty" jest 
+na lini (mozna zadzwonic do firmy i podac sie za czleka z telekomuny) i kupic taki. kiedy juz 
+bedziemy mieli takie cudo to podlaczamy go do swojego phreakomatu zgodnie z jega instrukcja 
+potem juz wpinamy sie w linie i albo oba sie dogadaja albo nie. jest jeszcze jedna korzysc
+mozna podlaczac sie pod linie razem z atypiratem co daje nam zagluszanie innych ludzi...
+(my sobie gadamy a ten czlowiek wqrwia sie na telekomunikacje :))))))))) )
+=================================================================================================
+=14=WPI-co o nich sadze=
+
+zwykle skurwysyny - to o nich sadze...
+szmaciarze ojebali mnie na jakies 100-150 polaczen i z 10zl na znaczki a zamowionych przeze mnie
+artykulow nie otrzymalem NIC!
+skargi do nich pisalem srednio co 2-3 tygodnie a huje nawet mi nie odpisali...
+[sorki ostatnio ok. 5 listopada przyslali mi plyte i kasete... oczywiscie nie te co chcialem 
+i po jakim czasie- prawie rok]
+
+jesli juz mam byc szczery to powiem wam ze o wiele lepsza firma jest Telekom Media S.A.
+(btw wcale ich nie reklamuje) co prawda na artykuly trza dluuuuuuugo czekac ale przynajmniej je
+przysylaja... maja fajne promocje tzw "sztuka zycia express" gdzie zamowine produkty dochodza w 
+trzy tygodnie (w rzeczywistosci 4-5) a poza tym otrzymujesz dodatkowo troche gotowki (od50-400)
+podoba mi sie ich dbalosc o klienta: kiedys dlugo mi nie przysylali jednej rzeczy (nie 
+wiedzialem ze trza czekac 8 tygodni) i napisalem zazalenie po pewnym czasie przyszla mi odpowiedz
+(poleconym!) ze przepraszaja ze okres czekania jest taki dlugi, wytlumaczyli mi naczym sprawa
+polega kiedy moge sie spodziewac artykulu (za 3-4 dni! :) ) i za 3 dni serjo ta rzecz byla juz u
+mnie, ale najciekawsze jest to ze odpowiedz wyslali poleconym na ktory wydali 3.5 zl. a wiec
+zalezy im na kliencie ... :)
+
+ponizej podaje adres do telekom media:
+
+      Telekom Media S.A.
+      00-967 warszawa 86
+        Skr. Poczt. 28
+
+niedawno otrzymalem od nich takie pismo:
+
+Szanowni Panstwo
+
+	W zwiazku z wdrozeniem nowego przetargu na telefoniczne uslugi
+audioteleksowe i zmiana dotychczasowej umowy z TPSA, firma Telekom Media
+zmuszona jest zawiesic wysylke nagrod i bonifikat co najmniej do konca lutego
+przyszlego roku, czyli do momentu, kiedy otrzymamy WSZYSTKIE nalezne nam
+platnosci od TPSA. Podstawa do wysylania nagrod i bonifikat bedzie billing
+przedstawiony nam przez Telekomunikacje.
+	Istnieje oczywiscie mozliwosc wczesniejszego otrzymania nagrod i/lub
+bonifikat. W tym celu prosimy o nadeslanie szczegolowego rachunku
+telefonicznego wystawionego na Panstwa nazwisko za stosowny okres, a
+uwzgledniajacego numery telefonow,na ktore Panstwo dzwoniliscie.
+	Za niniejsze niedogodnosci najmocniej Panstwa przepraszamy.
+
+						Serdeczne pozdrowienia
+							 Telekom Media
+
+wynika z tego ze TP nie zaplacilo im za polaczenia i zada od nich potwierdzenia w postaci
+bilingow... wiec moja ulubiona firma ma klopoty przez TP i do konca lutego nie bedzie zabawy :(
+
+z czasem zobaczymy jak sie sprawa potoczy...
+
++++++++++++++++++++++++++++++++++++
+UWAGA         pilne!!!        UWAGA
+
+poszukuje firmy zajmujacej sie 
+tym samym co telekom media...
+za najlepsze info przewidziana nagroda
+
+UWAGA                         UWAGA
++++++++++++++++++++++++++++++++++++
+
+=================================================================================================
+=15=simplus=
+
+teraz troszke bredzenia o kartach simplus:
+
+*karta jest wazna przez 3 miesiace {90 dni} od dnia wykonania lub przyjecia pierwszej rozmowy lub
+ przyjecia krotkiej wiadomosci textowej [sms]
+
+*zasilenie konta rozpoczyna kolejny trzymiesieczny okres waznosci kredytu {90 dni}
+
+*zablokowane sa numerki 0800 (lub 0801 itp) oraz 0700 :(
+
+ponizej mam zamiar umieszczac telekody i numery seryjne niektorych telekart simplus
+
+serial number         sekret code               cena
+  01607249         10 1600 6870 5799            50zl
+  01230802         10 1237 7472 8479            50zl
+  01603975         10 1604 6470 2698            50zl
+  02795223         10 2794 3347 8267            50zl
+
+
+analiza telekart simplus w toku (jezeli masz jakies info na ten temat to napisz)
+
+a tu dam ciekawostke :) ja mam simplusa i jakies 6 miesiecy temu zostalo mi na koncie 70 groszy
+niestety zablokowali mi polaczenia wychodzace (oprocz alarmowych) ale do mnie nadal mozna dzwonic
+i nie wylaczaja mi konta...
+
+wiecej info w krotce...
+=================================================================================================
+=16=modemy=
+
+w wakacje mialem przyjemnosc korzystania z modema bezprzewodowego i szczerze powiem - myslalem
+ze sie bardziej zawiode...
+
+korzystalem z modemu malo znanej firmy advantech 
+urzadzenie to sklada sie z jednostki centralnej, karty rozszerzen na slot ISA, oraz nadajnika 
+ktory podlaczamy bezposrednio pod linie (nie koniecznie swoja :) )
+
+modem ten nie jest zbyt szybki (standardowa 36...) ale ma taki plus ze mozna wykorzystac do 3 
+nadajnikow co daje dodatkowe funkcje:
+-mozliwosc samoistnego przelaczania miedzy liniami (bardzo przydatne przy sciaganiu plikow kiedy
+jestes narazony na zerwanie polaczenia. modem w takim przypadku sciaga lub wysyla plik 3 liniami
+i w przypadku zerwania polaczenia na dwoch to trzecie zawsze bedzie dzialac :)  ).
+
+zasieg miedzy baza a nadajnikiem moze byc az 1.2 km (1200m) w terenie ZABUDOWANYM!
+
+niestety ma tez swoje minusy:
+-krotki czs dzialania akumulatora nadajnika (do 5 godzin)
+-no i baaardzo wysoka cena ok.8000 zl. (nie na moja kieszen ;) )
+=================================================================================================
+=17=TPsa i swiatlowod=
+
+	Parametry techniczne pod³¹czenia œwiat³owodu (np. liczba nitek) s¹ okreœlane przez TPSA
+po podaniu potrzeb (liczba potrzebnych linii) i parametrów posiadanego sprzêtu (typ centrali - 
+œwiat³owodowa, PBX ). Do ³¹cznoœci synchronicznej 2 Mb/s wystarcza jedna para.
+
+	Pod³¹czenie do Internetu z szybkoœci¹ 1 Mb/s (czterodrut) mo¿na uzyskaæ bez op³at za
+po³o¿enie kabla. Je¿eli chodzi o pod³¹czenie modemów, to sugerowano mi u¿ycie kabli miedzianych.
+
+...niestety podlaczenie kosztuje ok.80 do 100 tys PLN :( 
+poza tym dochodzi jeszcze sprzet ktory kosztuje ok. drugie tyle :(
+
+informacje te nie sa dokladnie sprawdzone!
+=================================================================================================
+=18=moje_mysli=
+
+tutaj bede mowic co mi lezy na watrobie...
+
+fajnie by bylo gdyby wszyscy phreakerzy stanowili jedna spolecznosc...czemu? jest na to prosta
+odpowiedz:
+po prostu jak ktory by wpadl to moglby zawiadomic reszte i moglibysmy zrobic manifestacje pod 
+budynkiem sadu :)
+ale jak w jednej chwili zawiadomic wszystkich naszych? - mozna by stworzyc liste ludzi obcykanych
+w temacie i rozpowszechnic ja tak jak faqi... na tej liscie wystarczyly by tylko ksywa i email
+
+...jak to powiedzial jakis krytyk MOGE SOBIE TYLKO POMAZYC ... 
+=================================================================================================
+=19=budki=
+
+ostatnio tp. przeszla sama siebie i w lublinie znowu wymienila zamki w budkach :( wiec by dorobic
+kluczyk trzeba by miec zamek... tylko skad? jest na to stary sposob i dosyc tani :)
+
+caly pic polega na tym zeby kupic ze 3 brzeszczoty do metalu i maly lom :)  kiedy juz mamy stuff
+to jedziemy na jakas wioche i upatrujemy ofiare (nie wazne czy to blu,silver,zretonowiec) w nocy
+podchodzimy z dwoma qumplami do ofiary wpychamy loma tam gdzie sie laczy ze sciana lub daszkem
+i odginamy kawalek. przy odgietej szparze mozna wyczuc sroby ktore traktujemy brzeszczotami no i
+ofiara jest nasza :) .......
+=================================================================================================
+=20=srebrne=
+
+majac juz otwartego silvera wyjmujemy wtyczke z gniazda (JP3) odetniemy linie telefoniczna... :)
+potem odpinamy zlacza sluchawki (JP4), czytnika i inne pierdzielstwa...
+majac juz odpieta plyte glowna odkrecamy ja plaskim srubokretem (dwie sruby na gorze i jedna z
+boku po prawej stronie), pozniej wyjmujemy akumulator z plastikowego uchwytu odginajac blokadke
+do gory. majac juz akumulator mozemy wyjac plyte glowna... potem odpierdzielamy sluchawke (jezeli
+tego nie zrobilismy wczesniej) i inne swinstwa w skrzyni na koniec zdejmujemy dzwiczki i
+spierdalamy z miejsca zbrodni
+
+plyta glowna od tego pierdzielstwa jest baaaardzo dziwna ? 
+-po pirwsze jest na niej co najmniej 3 styczniki (jeden to reset a reszta??)
+-po drogie sa dwa przelaczniki (raczej wlacznik i przelacznik) wlacznik jest do baterii a drugi
+nie wiem :(
+-po trzecie jest bateria jak w moim kompie ktora pewnie zabezpiecza jakis program tylko jaki ?
+-po czwarte od huja ciekawych a niewykorzystanych zlacz np.
+     (JP20) - takie jakie mam przy twardzielu (chyba sluzy do podpiecia dodatkowego modulu
+              lub do programowania)
+     (JP17) - szerokie gniazdo modularne sluzy najpredzej do programowania
+     (JP6)  - napewno sluzy do podlaczenia dodatkowego akumulatora
+     (JP21) - jakas mala czesc moze dodatkowy modul pamieci
+-po piate jest sporo miejsc na zworki... od jp8 do jp16 sa ulozone w jednej lini i sluza do 
+przelaczenia jakiejs funkcji (moze predkosci modemu), zworki jp22 i jp23 sa ulozone w kwadrat i
+nie wiem do czego to sluzy...
+
+do plyty glownej, czytnika i klawiaturki podlaczone jest na ciekawej wtyczce z 4 pinami male 
+zielone urzadzonko ktore jest 8 kilobajtami pamieci wielokrotnego programowania (max 1000)
+pamietaj to nie sa nadajniki...
+... tu mam zagwostke bo od innej osoby slyszalem to male zielone (lub innych kolorow) to nie jest
+dodatkowa pamiec tylko czujnik temperatury... wiec sam nie wiem co myslec, jak ktos ma jakies
+info. to niech do mnie napisze
+
+do spodu plyty czytnika dolaczona jest mala plytka z 5 bankami na karty chipowe male (takie jak 
+w komurce). na jakies 89% jestem pewien ze na tych chipach zapisany jest algorytm kodowania kart
+chipowych. czytnik pewnie przetwarza wzor jaki jest na chipie wzorcowym i poruwnuje go z karta 
+sprawdzajac w ten sposob poprawnosc karty. MAM taki chip jest na nim napis "SICRYPT" i kilka
+numerkow... potrzebuje osoby ktora by sie znala na kartach chipowych i posiadala programator...
+mozna by przetworzyc ten szyfr i produkowac karty chipowe...
+=================================================================================================
+=21=zetonowce=
+
+najpierw powiem jak otworzyc sobie klapke ta gdzie sa zetony...
+
+a wiec potrzebne bedzie dwa srubokrety plaskie na koncu, dosyc dlugie i koniecznie bardzo 
+wytrzymale. Oprucz srubokretow konieczne tez sa dwa ladniutkie lomy: jeden maly ok. 50cm taki 
+zagiety na koncu, sluzacy do wyrywania gwozdzi; drugi lom musi byc dlugi tak ok. 1m (no chyba
+ze brak ci sily wiec wez wiekszy) lom ten ma byc prosty i najlepiej jak najwezszy na koncu...
+
+klapka  od tylu wyglada mniej wiecej tak:
+
+
+            |----------------------------------------------------------|
+            |  II                 II  /-------\  II                II  |
+          <€€€€€€€€€€€€€€€€€€€€€€€€€€€|   @   |€€€€€€€€€€€€€€€€€€€€€€€€€€>
+            |  II       (2)       II  \-------/  II       (2)      II  |
+            |  (1)                (1)    (3)     (1)               (1) |
+            |                                                          |
+            |                                                          |
+            |                                                          |
+            |                                                          |
+            |                                                          |
+            |                                                          |
+            |                                                          |
+            |                                                          |
+            |                                                          |
+            |                                                          |
+            |__________________________________________________________|
+
+(1) przyspawane kawalki blachy w ktorych jest otwor prze ktory przechodza prety mocujace
+(2) prety mocujace o srednicy 5.9mm od strony zamka nalozone sa na nie plastikowe koncuwki
+    zwiekszajace ich srednice aby mimosrod zamka mogl je objac...
+(3) mimosrud zamka (podklatka o grubosci 3mm, i ksztalcie eliptycznym, rozwierajaca (zamykajaca)
+    prety zabezpieczajace (2))
+
+aby otworzyc dziada wciskamy srubokrety nad zamkiem i odchylamy tak aby udalo nam sie wcisnac
+nasz maly lom w szczeline nad zamkiem. majac juz lom na miejscu odchylamy go jak najbardziej i
+najblizej jak sie da brzegow zetona wciskamy nasze srubokrety, nastepnie delikatnie wyciagamy 
+maly lom i zastepujemy go duzym, jednoczesnie przesuwajac go tak aby znalazl sie jak najblizej
+brzegu, dalej to chyba wiesz co robic
+
+dobra zaluzmy ze masz juz otwarta klapke i widzisz skrzyneczke z zetonami, prubujesz ja wyjac i
+nie mozesz... he he he skrzyneczka moze byc zabezpieczona w najrozniejsze sposoby a nawet
+kombinacje ich, niekture postaram sie tu przytoczyc:
+
+<1> kludka - czesto sie zdarza ze od prawej strony przez obudowe automatu jest przelozona stalowa
+             przetyczka ktora jest zamknieta na samozatrzaskowa kludke ktorej skobel ma srednice
+             ok.5mm. Aby to guwno usunac i otworzyc sobie droge do zetonow trza wlozyc tego
+             duzego loma w skobel (ucho) kludki i metoda dzwigni otworzyc kludke, w przypadku
+             problemow (ktorych nie powinno byc :) ) mozna kludke przepilowac dobrym brzeszczotem
+
+<2> jeti   - czasami na dole w takich charakterystycznych otworkach sa dwa zamki (lub jeden) typu
+             jeti. klucze do nich posiadaja 4 wyciecia. bez kluczy latwo jest usunac te zamki 
+             wystarczy tylko na chama wciskac je do srodka od zewnacz, i w tym samym czasie 
+             wyginac skrzyneczke (lomem) do gory. na taki sam zamek (pod wzgledem wygladu) jest
+             zamykana gora zetona...
+
+<3> sroba  - bardzo czesto sie na nia trafia i jest to najlepsze zabezpieczenie... polega ono na
+             tym ze przy otwartej gorze zetonowca w sciance dzialowej (miedzy komora skrzyneczki
+             a wnetrznosciami) jest wywiercona dziura (az do srodka skrzyneczki) i przetkana 
+             sruba lub pretem... aby sie tego guwna pozbyc trzeba by otworzyc gure i po prostu 
+             wyjac lub wygiac skarbonke (skrzyneczke) tak aby mozna bylo zgiac srube i wyjac co
+             "nasze"... (a i nie napalajcie sie ze przepilujecie srube, skurwielstwo podczas
+             pilowania potrafi sie obracac...)
+
+nie zdziwcie sie jak beda wszystkie te zabezpieczenia na raz, ale takie jest zycie :(
+live is brutal or full zasadzkas (czy jakos tak :) )
+
+ale nie martwicie sie wujek ulyses ma dla was rozwiazanie... kazdy kto do mnie napisze i poda mi
+jakas ciekawa wiadomosc otrzyma je... a i pamietajcie sposob jest banalnie prosty i gwarantuje
+obejscie wszelkich zabezpieczen... <<< A ZRESZTA skoro dzisiaj i tak wam juz duzo ujawnilem to
+czemu by i tego nie podac, po prostu zwyklym wybijakiem tapicerskim wycinamy w skrzyneczce dziure
+proste prawda :) ??? >>>
+
+dobra teraz dopiero zaczynaja sie ciekawe rzeczy...
+
+jak otworzyc gore zetonowca - sposob jest prosty.
+
+najpierw birzemy do reki naszego malego (loma :) ) i podchodzimy do zetonowca. lom wpierdalamy w
+wylot zetonow tak ze prubujemy odgiac sam rog blachy z ktorej wykonane sa dzwiczki... majac juz
+odgiety rog wpierdalamy srubokret jak najblizej lewego dolnego rogu. pracujac lomem i srubok.
+staramy sie odgiac dul dzwiczek. majac juz dul z glowy dzialamy dalej tak aby wygiac zawiasy 
+(ktore sa z tego samego co drzwi) znajdujace sie na lewej krawedzi zretonowca :)
+
+                           --------------------------------------
+                                        !!!BONUS!!!
+                                   1 zeton = 255 zetonow
+                                           MAGIA
+
+dzieki temu ze otrzymalem pierwszy 1000 listow dotyczacych moich wypocin postanowilem zdradzic 
+wam jak zrobic aby jeden zeton (A lub C) byl widziany przez zetonowca jako 255 zetonow (lub 
+mniej). po otwarciu gory zetona zauwarzycie 3 plytki drukowane... na tej najglebiej znajduje sie
+4 zestawy microprzelacznikow po 8 kazdy. nas interesuja M1 i M3, pod M1 jest zeton A (u mnie) a 
+pod M3 jest zeton C. by zmienic wartosci ktoregos z zetonow trza przestawic odpowiednio te
+przelaczniki... (np. aby miec zeton A warty 255 jednostek przelaczamy wszytkie z M1 na full, a 
+zeby ustawic na 130 jednostek wlaczamy przelacznik 2 i 8 tagrze z M1)
+
+                           --------------------------------------
+
+przy sprawdzaniu poprawnosci zetona wcale nie jest brany pod uwage rozmiar lub ciezar... 
+sprawdzane sa wlasciwosci magnetyczne kazedego zetona (lub innej monety) z wlasciwosciami monet
+wzorcowych ukrytych na drugiej plytce zetonowca... teoretycznie mozna by tam podlozyc wlasna 
+monete (np 5 groszy) i ustawic jej 255 jednostek. niestety trzeba dostosowywac czulosc magnet. 
+za pomoca potencjometrow od P1 do P7, jesli masz na ten temat jekies info to MAIL-ME!!!
+wiem tylko ze te wlasciwosci mag. nie ustawia monter (bo tez nie potrafi) tylko ustawiaja to w
+swoim centrum a potem przywoza sama druga plytke i ja wmontowuja (w ten sposub wymieniaja i inne
+czesci)
+
+na razie to tyle o zetonowcu...
+=================================================================================================
+=22=ona zyje...=
+
+kazdy wie ze aby ozywic budke trzeba podlaczyc ja pod napiecie 48V i kilkudziesieciu miliamper
+ale nie kazdy ma na stanie taki zasilacz, ja proponuje podlaczyc go pod linie telefononiczna...
+...kazdy teraz powie ze jestem debil bo budka zaraz zadzwoni na centrale (no chyba ze
+wyperswadujemy jej to karta programing) ale jest sposob na podlaczenie jej do lini i ona nie 
+zadzwoni...
+
+no to tak montujemy male urzadzonko:
+
+----------|d1|>----/d3>---|---------|
+linia tel.                |  urmet  |
+----------|d2|>----/d4>---|_________|
+
+diody d1 i d2 sa "duzymi" diodami (o duzych wartosciach) i pelnia role glownego zabezpieczenia
+diody d3 i d4 sa "malymi" diodami (o niskich wartosciach) i pelnia role filtrow sygnalowych
+
+nie podaje tutaj wartosci diod gdyz kazda linia ma troche inne wartosci wiec te dane kazdy musi
+sam sobie dopasowac...
+
+niestety to urzadzonko blokuje tylko tony wydawane przez budke wiec trza sprawdzic czy budka 
+wybiera numer na centrale tonowo czy pulsowo...
+
+najlepiej doradzam wypersfadowac budce dzwonienie na centrale karta programming
+=================================================================================================
+=23=teletaksa=
+
+uwaga do tego txt jest dolaczony schemacik urzadzonka ktore niedawno reklamowalem, urzadzenie
+dziala i w slepo odbija teletakse jak tylko ja centrala pusci :) ...
+
+urzadzenie to mozna wykozystac do podpinania sie pod linie wszelkich aparatow publicznych na
+ktore jest zalozona teletaxa. 
+mozna tez podpiac je do lini zetonowca na ktorym jest zalozona teletaxa, wtedy zetonowiec
+powinien zezrec tylko pierwszy impuls, a centrala nie zezre, jednak nie jestem tego pewien
+bo nie sprawdzilem, jak ktos sprawdzi to niech napisze...
+
+urzadzenie to po zlozeniu trzeba podpiac rownolegle do lini i podlaczyc zasilanie. pierwotnie
+zasilanie bylo pobierane z kondensatora (4700 micro farada, 16V), ktory byl zamontowany na plycie
+glownej, na dobra sprawe nalezalo by zastapic ten kondensator jakims zasilaniem...
+
+=================================================================================================
+=24=programming kart=
+
+napisze tutaj troche porad dla uzytkownikow kart programming i test
+
+1) jesli nie masz karty check_5.8 to uwazaj na ktorych niebieskich uzywasz swojego programminga
+zdarza sie ze oprogramowanie 5.8 jest w miescie gdzie inne maja duzo starsze oprogramowanie 
+np 2.7 . 
+
+2) jesli chcerz calkowicie wykasowac numer z free menu to przycisnij na kilka sekund klawisz 
+REDIAL
+                                                    ...(za info dzieki dla waniuszy i lihtium68)
+
+3) zanim przystapisz do dzilania spisz sobie liste darmowych i zablokowanych numerow, moze sie
+przydac kiedy cos sie spiepszy albo kiedy uzyjesz przypadkiem DEFAULT MENU
+
+4) przed sprawdzeniem aparatu karta check_5.8 lub od razu uzyciu programminga przepusc przez
+aparat zwykla zuzyta karte... nawet nie wiesz jak irytujace moze byc jak starasz sie wyjac
+swojego nowiutkiego programminga z zablokowanego urmeta przez jakiegos lamera.
+
+...na razie to tyle... jak na cos jeszcze wpadne to napisze...
+=================================================================================================
+=25=gretzy=
+
+Przede wszystkim chcial bym podziekowac tatusiowi, mamusi, cioci irence,babci i dziadkowi :) :)
+no a teraz powaznie podziekowania naleza sie (kolejnosc przypadkowa):
+
+MYSZA(wnek) za nagrywanie plyt i podtrzymanie mnie na duchu :)
+MISZY za wszystko :)
+WANIUSZY za bardzo ciekawa wspolprace i za przywrocenie mi nadziei :)
+SZAWSZAK za niezapomniana noc z wozem, oraz za opanowanie kiedy my bliscy bylismy zawalu... :)
+OKLAKOMA za karty i wogole za ciekawa znajomosc
+LIHTIUM68 za bardzo ciekawa wspolprace, i za ostrzezenie mnie o coraz nizszym poziomie textu
+ARIL za prowadzenie fajnej stronki (jeszcze mlodej) i za "zlecenia"
+=================================================================================================
+=26=zakonczenie=
+
+to juz koniec tego faq-u, jak ci sie podobal to poczekaj na aktualizacje, jak uwazasz ze byl 
+beznadziejny to go po prostu skasuj.
+
+nie dokonuj tu zadnych zmian.jesli zechcez umiescic ten smiec na stronie to napisz (nie bede mugl
+uwierzyc ze ktos go przeczytal...)
+
+-------------------------------------------
+uwaga
+przez to iz skonczyl mi sie darmowy dostep do sieci nie moge zbyt czesto odbierac maila wiec nie
+denerwujcie sie jak przez miesiac nie bede odpisywac na list. najczesciej bede odbierac poczte 
+okolo 20 kazdego miesiaca
+
+jezeli ktos chcialby w lublinie udostepnic mi internet za friko to w zamian moge odstapic mu
+troche mojego sprzetu ew. wprowadzic go w temat... (najlepiej jakies lacze stale, moze byc u
+ciebie...)
+-------------------------------------------
+
+w zwiazku iz moja komorka przezywa trodne chwile a moja sakiewka ma nie jest wystarczajaco
+wypelniona (i nie stac mnie na nowa komorke) moze sie zdarzac ze jak do mnie na dzwonisz
+to moze przerywac i rozlaczac :( wiec nie denerwujcie sie zbytnio bo to nie moja wina...
+
+moj apel:
+szukam osob ktore mogly by umieszczac moj text na swoich stronach
+
+nie wkurzaj sie na bledy ale u mnie to normalne (mam dysleksje, dysgrafie i dysortografie)
+
+<<< ostatnio podeslal mi ktos artykul z "nowego elektronika" gdzie pan witold wrotek napisal
+jakis tam artykul o phreaku, artykul jest denny ale dumny jestem ze kawalek mojego textu zostal
+przytoczony w gazecie... szkoda tylko ze wybrali akurat najmniej ciekawy kawalek...
+e-mail autora: wrotex@polbox.pl
+adres redakcji:
+ ul.Junakow 2
+ 82300 Elblag
+ tel/fax (055) - 2362263
+autor ten nie jest stalym pracownikiem redakcji i mieszka w wawie...
+za info dzieki dla: xlcm [pawel@xcom.pl] http://www.linux.xcom.pl/
+<<<
+
+c.d.n (w krotce)
+
+napisz co o tym faq-u sadzisz (moj e-mail u gory)
+
+pamietaj ze odpowiem na kazdy PODPISANY list!
+
+zapraszam tez na strone www.phreak2000.hg.pl gdzie ARIL odwala kawal niezlej roboty...
+
+jesli chcerz moj numer na komurke to napisz...
+
+sorki za wulgaryzmy (staram sie odchamiac skuteczniej :) )
+
+3MAJcie sie :)
+
+I NIECH IMPULS BEDZIE Z TOBA!!! ;)))
+
+
+
+=========================================END OF TRANSMISION======================================
+*************************************************************************************************
+*************************************************************************************************

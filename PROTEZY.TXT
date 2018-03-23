@@ -1,0 +1,102 @@
+                       ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+                      ÚÁÄ PRoteZy do znanych Bug0w ÄÁ¿
+      ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+      ÀÄÄ  7.98  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ  by SpajK  Ä´
+                               ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+   ---> wstep <---
+
+     Celem  tego  textu  jest  ukazanie  dodatkowych sposobow dzieki ktorym
+   mozna  korzystac  z ogolnie znanych metod dzwonienia za darmo. Metod nie
+   bede  tu  opisywal zeby nie robic ripow z innych faqow wymyslonych przez
+   ludzi madrzejszych ode mnie.
+
+   /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+
+        SpIs:
+
+        1. Z beeperem ale bez komorki i drugiej budki.
+        2. Beeper dziala w domu, ale z budki zle wybiera.
+        3. Jak przywrocic buga do zycia na niebieskim (nie sprawdzone).
+
+   /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+
+        1. Z beeperem ale bez komorki i drugiej budki.
+
+     Samego buga nie bede tu opisywal bo go i tak wszyscy juz znaja. Sposob
+   moze  denny,  ale  moze  sie  przydac  komus kto ma ambicje dzwonic przy
+   pomocy  beepera,  a  nie  ma  komorki  czy dwoch aparatow blisko siebie.
+   Robimy tak: bierzemy ToneLoc-a i podajemy mu przykladowa linie komend:
+
+   toneloc.exe /m:123456x /#:10 /s:3:12p
+
+     Teraz  lecimy  do  wskazanej  budki  :))  i  czekamy na dzwonek. Dalej
+   wiadomo   co.   Caly   numer  sie  uda  tylko  wtedy  kiedy  odpowiednio
+   sponfigurujemy   ToneLoc-a.   Trzeba   wpierw   w   tlcfg.exe  ustawic w
+   ScanOptions/WaitDelay  na  jakies  4000  (4 sekundy). W ten sposob kiedy
+   modem  zadzwoni  do  niej  to po chwili nastapi timeout i rozlaczy. O to
+   przeciez  chodzi.  W  budce uslyszymy tylko jeden dzwonek. Z parametrami
+   mozna  kombinowac  do woli i wybrac optymalne. 123456 to numer budki pod
+   ktory  ma  zadzwonic. X jest potrzebny bo inaczej program zadzwoni tylko
+   raz  i  jesli  sie  nie  dodzwonimy,  to  bylaby lipa (katowac do domu i
+   odpalac  jeszcze raz :(), a tak to zadzwoni jeszcze 10 razy pod 12345-0,
+   12345-1,  12345-2  itd., (a centrala na ostatnia cyfre i tak nie reaguje
+   bo po 12345 jest juz ring i potem moze se do woli piskac w kosmos.) Czas
+   po  jakim  ma zadwonic nastepny raz ustawiamy w ScanOptions/Beetwen-call
+   delay.  Ja  ustawiam sobie 20000 (20 sekund). Ostatni parametr to czas o
+   ktorym  ma  zaczac  dzwonic. To konieczne, bo inaczej zanim dojdziemy do
+   budki  to  on  juz skonczy, albo ktos inny sie do niej przyklei i bedzie
+   gadal do modemu :). Mozemy podac jeszcze kiedy ma przestac dzwonic:
+
+          /e:godzina:minuta
+
+     Jesli  skonczyles  mowic,  a  modem  w  domciu  jeszcze  nie  skonczyl
+   wybierac,  to wystarczy nie odkladac sluchawki, aby budka nie dzwonila i
+   nie wzbudzala podejrzen.
+
+
+        2. Beeper dziala w domu, ale z budki zle wybiera.
+
+     Spotkalem  sie  juz  z przypadkiem, ze beeper w 100% sprawny, zle, lub
+   wcale  nie  wybiera  numerow  w budce. Okazuje sie, ze to wcale nie musi
+   oznaczac  ze  bipeer nie dziala. Okazuje sie, ze niektore budki maja tak
+   zdezelowany  mikrofon  (czesto  temp  -20'C,  wilgoc),  ze po prostu tak
+   znieksztalca  tony, iz centrala ich nie rozpoznaje. Rada jest taka: albo
+   poszukac innej, albo zapodac tony z dyktafonu (mozna lepiej rozglosnic).
+   Czasami  to  jest  wina  beepera,  moze  byc za slaby, albo rozstrojony.
+   Mialem kiedys taki ze skrzywionym piezo i zle wybieral.
+   Jedna  rada  dla  lamerow:  jesli dzwonicie na r.przychodzaca, to numer
+   wybieramy tylko pomiedzy pik-pokami.
+
+
+        3. Jak przywrocic buga do zycia na niebieskim (nie sprawdzone).
+
+     Firma   produkujaca  URMET-y  tak  je  zaprojektowala,  aby  wszystkie
+   aktualizacje i poprawki w dzialaniu sprzetu nie wymagaly ingerencji przy
+   pomocy  mlotka  i przecinaka. Tak wiec odbywa sie to na zasadzie wymiany
+   oprogramowania.   Programy   te  sa  zapisane  w  wyjmowalnych  epromach
+   kasowalnych  przy pomocy UV. Jest to dobra wiadomosc, bo dzieki temu nie
+   jest  mozliwe szybkie przeprogramowanie automatu z poziomu centrali. Tak
+   wiec  jesli  na  naszej budce dziala jakis bug i po jakims czasie w tpsa
+   ktos  sie skapuje o co chodzi, to wkrotce przychodzi serwisant, wymienia
+   soft  na  zafixowany  i  end  of  happy. Nie sprawdzilem, ale wydaje sie
+   logiczne,  ze jesli po wymianie softu bug przestal dzialac, to wystarczy
+   wstawic  z  powrotem  stary  soft  i  wszystko bedzie po staremu, a tpsa
+   bedzie  sie  glowila  co za nowy bug znalezli na ta ich budke. Wystarczy
+   sie wiec zaopatrzyc w mozliwie najstarsza wersje softu i w razie wypadku
+   sobie wymienic.
+
+   /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+
+   Sugestie i uwagi mile widziane.
+
+   Spajk
+         spajk@alpha.net.pl
+
+   /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+
+
+                              Pozdrowienia dla:
+           Spajk :), 3mil, Komandos, TwT, Chesti, bTh, nTh, Hrabia
+                                 wszystkich z
+                  phreak-klub #phreakpl i pl.misc.telefonia

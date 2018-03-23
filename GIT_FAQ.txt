@@ -1,0 +1,207 @@
+##############################################################################################
+#                                                                POLSKIE ZNAKI W ISO-8859-2  #
+#                                   GITMAN FAQ V1.0          ANSI (ZESTAW ZNAKOW DLA WINDOWS #
+#                                                                                            #
+#                 www.friko5.onet.pl/kn/gsmhack lub gsmhack.freeservers.com                  #
+#                                                                                            #
+#                                 email: gsmhack@friko5.onet.pl                              #
+#                                                                                            #
+##############################################################################################
+
+Jest to pierwsza wersja FAQ wiêc z góry przepraszam za literówki i inne b³êdy które postaram
+siê poprawiæ jeœli tylko mnie opiepszycie.
+ 
+
+TEMAT:        T E L E F O N Y      G S M    I    I C H    R O Z K O D O W Y W A N I E
+
+1) WIADOMOŒCI OGÓLNE
+2) WIADOMOŒCI TECHNICZNE
+3) METODA EEPROM DUMP
+4) METODA NA KABEL SZEREGOWY RS232
+5) METODA NA KODY
+6) METODA NA KARTÊ SERVISOW¥
+7) OPROGRAMOWANIE DOSTÊPNE NA MOJEJ STRONIE STAN Z 30.04.1999
+8) CIEKAWOSTKI
+
+
+
+
+
+         1)                 WIADOMOŒCI OGÓLNE
+ 
+Telefony GSM nie s¹ a¿ tak wielk¹ tajemnic¹ jak mog³o by siê wydawaæ.
+Jest to kawa³ek elektroniki, kawa³ek plastiku i wyœwietlacz.
+Wszystkie te telefony maj¹ jakiœ tam procesor i pamiêæ eeprom lub flash.
+Wszystkie funkcje tych aparatów s¹ zapisane w³aœnie w tej pamiêci i jest to tak zwane
+oprogramowanie telefonu.
+A wiêc aby zmieniæ w³aœciwoœci telefonu trzeba wychaczyæ jakoœ ten soft.
+I tu wkraczamy na otwarte wody morza bezkresnych informacji.
+ a) SIM LOCK zwany tak¿e SP LOCK (SERVICE PROVIDER) jest to blokada polegaj¹ca na zmuszeniu
+    aparatu aby pracowa³ tylko w sieci dla której zosta³ zakupiony od producenta
+    inaczej mówi¹c chodzi o aparaty z wszelkiego rodzaju promocji gdzie dystrybutor
+    zak³ada blokadê aby telefon nie móg³ pracowaæ u konkurencji.
+ b) IMEI jest to numer seryjny aparatu 
+ c) SECURITY CODE blokada aparatu za³o¿ona przez u¿ytkownika (czêsto by³ego i nieco obitego)
+    tzw. poœmiertna zemsta w³aœciciela. Ale i na ni¹ s¹ sposoby.
+
+I TU UWAGA JE¯ELI MASZ TELEFON OD BOHATERA PUNKU C) Z DOMIESZK¥ PUNKTU B) BEZ ZMIAN
+NIGDY NIE WK£ADAJ SWOJEJ KARTY I NIE LOGUJ SIÊ DO SIECI BO KA¯DY LOG DO SIECI
+MO¯E OZNACZAÆ TWÓJ KONIEC, BO W TRAKCIE IDENTYFIKACJI APARAT PODAJE DANE KARTY
+ORAZ APARATU I JE¯ELI TELEFON ZNAJDUJE SIÊ NA CZARNEJ LIŒCIE (chodzi o IMEI telefonu)
+TO OPERATOR MO¯E ZABLOKOWAÆ CI APARAT I POWIADOMIÆ O TWOICH PRZYGODACH Z CUDZYMI TELEFONAMI
+CH£OPCÓW W KOLORZE BLUE. (Z czego ERA i PLUS to pipy i nie blokuj¹ telefonów choæ mog¹, a IDEA
+blokuje ale niebieskich jeszcze nie widzia³em)
+
+
+         2)               WIADOMOŒCI TECHNICZNE
+
+Najczêœciej w telefonach stosuje siê EEPROM transmisji szeregowej 24c04 lub 24c16
+to w nim s¹ zawarte informacje o wszystkich zabezpieczeniach i w³aœciwoœciach.
+EPROM ten mo¿na modyfikowaæ na 4 sposoby
+ a) na chama rozkrêciæ telefon i go reprogramowaæ
+ b) delikatnie jak z panienk¹ po kablu (czytaj przez RS232 i kabel z zawartoœci¹ elektroniki)
+ c) wystukuj¹c kody z klawiatury wtedy eprom reprogramuje procesor telefonu.
+ d) poprzez karty serwisowe i clipy (clip to takie z³¹cze zawieraj¹ce procesor z pamiêci¹
+    i próbuj¹ce naœladowaæ kartê servisow¹)
+
+UWAGA !!! NIEKTÓRE TELEFONY PRACUJ¥ NA LOGICE 3V (to oznacza, ¿e stan wysoki tzw. HI nie ma
+jak w przypadku TTL 5V tylko 3V chocia¿ s¹ ze sob¹ zgodne to radzê uwa¿aæ bo mo¿na 
+eksperymentuj¹c uszkodziæ telefon)
+
+Do transmisji telefony maj¹ wyprowadzone na z³¹czu RxD i TxD (a w NOKII wyprowadzenie 
+transmisji szeregowej MBUS 9600bps)
+
+        3)                  METODA EEPROM DUMP
+
+Metoda ta polega na zczytaniu z rozkrêconego telefonu eepromu i odpowiedniej modyfikacji pliku
+tak aby pozbyæ siê niepo¿¹danych w³aœciwoœci i na koniec powtórnego zapisu eepromu.
+Metoda ta jest skuteczna  i w 100% sprawdzona ale wymaga programatora pamiêci szeregowej EEPROM
+(koszt programatora od 1000 z³ do 2000$) oraz wymaga rozkrêcania telefonu.
+
+        4)              METODA NA KABEL SZEREGOWY RS232
+
+Polega ona na po³¹czeniu blaszaka poprzez kabel zawieraj¹cy elektronikê dostosowywuj¹c¹
+stany logiczne do telefonu.
+Mo¿liwoœci tej metody s¹ nieograniczone i wszystko zale¿y od u¿ytego oprogramowania.
+Metoda ta jest sprawdzona w 100% a koszt zamówienia, wykonania kabla to od 50 do 250z³
+     
+        5)                      METODA NA KODY
+
+Najciekawsza i najbardziej lubiana metoda.
+Poniewa¿ czasami istniej¹ uniwersalne kody do telefonów np BOSH lub SAGEM nie trzeba siê mêczyæ
+z odpowiednim oprogramowaniem wystarczy wstukaæ kod i po k³opocie (np simlocku)
+I stniej¹ tak¿e programy generuj¹ce kody do poszczególnych telefonów np NOKIA ALCATEL
+a wygenerowane kody usuwaj¹ security code simlock i inne zabezpieczenia.
+Metoda sprawdzona w 100% dzia³a w 99% telefonów jest najlepsza i najprostsza ale jak to w ¿yciu
+bywa nie wszystko jest takie proste bo oprogramowanie nie dzia³a na wszystkich modelach telefonów
+a pozatym trzeba je sk¹œ wzi¹æ a tego za darmo nikt nie da (chocia¿ ze mn¹ mo¿na siê dogadaæ).
+
+       6)                 METODA NA KARTÊ SERVISOW¥
+
+Jest to totalny bajer tylko ,¿e koszt takiej karty do pojedynczego modelu telefonu to 
+minimum 150 funtów. Tañszy jest CLIP bo oko³o 150$.
+Karty i CLIPY nie s¹ produkowane jeszcze w polsce i trzeba je sobie zamówiæ za granic¹.
+
+UWAGA !!! Istniej¹ programowe symulatory kart servisowych ale to ju¿ podchodzi pod
+          METODÊ NA KABEL SZEREGOWY RS232.
+
+
+       7)      OPROGRAMOWANIE DOSTÊPNE NA MOJEJ STRONIE STAN Z 30.04.1999
+                        gsmhack.freeservers.com
+
+ALCATEL    Alcatel One Touch Easy/Club SP lock remover (WIN95)
+BOSH 
+B607_8     Program do zdejmowania simlocków z telefonów BOSH 607, 608
+BOSHCODE   Uniwersalne kody do zdjêcia wszystkich zabezpieczeñ z telefonów BOSHA
+ERICSSON 
+ERIC388    Procedura testowa ERICSSON 388 + plik testuj¹cy
+ERIC32SV   Ericsson home service wersja 32bit  v1.2
+ERIC32SVR  Ericsson home service wersja 32bit  v1.3
+ERIC32SVR7 Ericsson home service wersja 32bit  v1.7
+ERIC16SVR  Ericsson home service wersja 16bit
+EMMA       EMMA Ericsson Flash program
+EMMA628F   Podprogram do Emmy obs³uguj¹cy Ericssona 628
+ERIC628 Flash  Ericsson 628 Flash
+ERCLEAR    Do 628 688
+MUSICBOX   GH688/788 Musicbox
+GH688      GH688 melody program
+ER8X8      Ericsson 888 lock code remover
+CAB2X3X    Ericsson cable schemat 218/318/337/388
+CAB6X7X    Ericsson cable schemat 6xx/7xx
+MAXON 
+UNMAXON    Maxon SIM unlock
+MOTOROLA 
+MEDIT303   IMEI EDIT  7x00, 8x00, StarTac, SlimLite v303
+MEDIT304   IMEI EDIT  7x00, 8x00, StarTac, SlimLite v304
+D160       Programy do Motoroli D160 SP Lock Remover itp
+SIMEMU     Motorola SIM card emulator
+MEDITX     Motorola EDIT eXtended Motorola  7x00, 8x00, StarTac, SlimLite dzia³a z sim card emulator
+MOTSEC     Klonowanie kart SIM i inne tejemnice przy wykorzystaniu telefonów Motoroli
+NOKIA  
+SID        Program pokazuj¹cy Security Code na podstwie numeru IMEI. Sprawdzone dla  
+                        N3110, N2110, N2110i, N8110, N1610, N1611 i Philipsa PR747
+IMEINOKIA  To samo co SID
+SIMLOCK    Program generuj¹cy Master Code (Nokia 3110)
+McOK       Nokia Master Code Generator
+NSL        Nokia Master Code Generator 1610/2110/3110/8110 (DOS)
+OLU        Pozwala zmieniæ logo operatora
+2110IMEI   Pozwala zmieniæ nimer IMEI w Nokii 2110
+NKINFO     Nokia info software (DOS)
+5161un     Program do zdejmowania simlocka z Nokii 51xx oraz z Nokii 61xx
+WINTESLA 3.51 Wintesla 3.51 program servisowy do Nokii jeden z najlepszych
+NHE134     Biblioteki DLL do Wintesli
+NHE134c    Biblioteki DLL do Wintesli
+NHE56      Biblioteki DLL do Wintesli
+NHE56C     Biblioteki DLL do Wintesli
+NHE89      Biblioteki DLL do Wintesli
+NSE13      Biblioteki DLL do Wintesli
+NSE13C     Biblioteki DLL do Wintesli
+ICO6110    Nokia icon editor dla 6110
+MEL6110    Nokia melody editor dla 6110
+M2BUS      Schemat Nokia M2BUS Cable
+DAU4S      Schemat  DAU4S Nokia 5110/6110
+NCDS20     Nokia Celluar Data Suicite 2.0
+NSEMASTE   Nokia imei calculate
+8810DRIVER Sterowniki do NOKII 8810 dla Win 95/98 CE
+PANASONIC 
+G500       Panasonic G450/500 IMEI edit, SIM/SP lock remove
+PHILIPS 
+DIGA       PHILIPS DIGA software
+SAGEM 
+SAGEM      Sagem unlock software
+SAMSUNG 
+ SG600 #1  SAMSUNG EASY GSM V2.0 Dysk 1
+ SG600 #2  SAMSUNG EASY GSM V2.0 Dysk 2
+ SG600 #3  SAMSUNG EASY GSM V2.0 Dysk 3
+ SG600 #4  SAMSUNG EASY GSM V2.0 Dysk 4
+ SG600 #5  SAMSUNG EASY GSM V2.0 Dysk 5
+ SG600SM #1 SAMSUNG SOFT MOBILE V2.0 Dysk1
+ SG600SM #2 SAMSUNG SOFT MOBILE V2.0 Dysk2
+ SG600 UN  SG600 simlock remover
+SIEMENS 
+S6         S6 SP Lock  remover
+S10        S10 Phone monitor
+S10 RS CABLE  Shemat kabla do telefonów z serii S10
+INSTRUKCJA Instrukcja obs³ugi do telefonów s10
+PROGRAMY UNIVERSALNE 
+SZAMOLX    Motorola starsze typy,GH172-GH337,GA318-GH788,NOKIA1011-1610,AEG,  
+                    PANASONIC,MAXON MX3000
+SZAMOL10   Motorola starsze typy,GH172-GH337,GA318-GH788,NOKIA1011-1610,AEG,  
+                    PANASONIC,MAXON MX3000,ALCATEL
+SZAMOL12   Motorola starsze typy,GH172-GH337,GA318-GH788,NOKIA1011-1610_11-8110,AEG,  
+                    PANASONIC,ALCATEL,S1-S3-S3+-S4
+
+
+             8)              CIEKAWOSTKI
+
+a) Pamiêtaj ¿e, usuwaj¹c SIMLOCKA ze swojego telefonu tracisz gwarancjê na ten¿e telefon.
+b) Czy wiesz ¿e, twój telefon operator mo¿e zdalnie w³¹czyæ (je¿eli masz w nim bateriê a telefon
+   jest wy³¹czony) pods³uchaæ twoj¹ rozmowê nie w³¹czaj¹c wyœwietlacza, i namierzyæ ciê z 
+   dok³adnoœci¹ do 15 metrów.
+c) ERA nagrywa wszystke rozmowy ile je przechowuje nie wiem. Cikawe czy  PLUS i IDEA te¿
+   (je¿eli wiesz to napisz) gsmhack@friko5.onet.pl
+
+
+          I TO NA RAZIE KONIEC FAQ V1.0  PISANEGO PRZEZ 2 GODZINY I 57 MINUT
+      JE¯ELI MASZ COŒ CIEKAWEGO DO POWIEDZENIA LUB JAKIŒ CIEKAWY PROGRAMIK NAPISZ
+                             gsmhack@friko5.onet.pl

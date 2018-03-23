@@ -1,0 +1,274 @@
+
+	mijoma.txt
+	mijoma@priv5.onet.pl
+
+	20.10.2000
+
+***********************************************************************
+    Jako autor ponosze wszelka odpowiedzialnosc za ten tekst, ale
+  zupelnie nie obchodzi mnie co zrobisz po przeczytaniu tego chlamu.
+   Z tekstem rob co chcesz - powielaj, cytuj, skracaj, wydluzaj lub 
+wyrzuc, ale niech chociaz zostanie zachowany jego sens (lub jego brak).
+***********************************************************************
+
+"I have a lot of to say
+ I have a lot of nothing to say"
+Kolejny raz napisze cos glupiego. Nie chodzi mi o to, zeby sie ze mna
+zgadzac, ale przynajmniej zrozumiec, ze phreak w dobrym wykonaniu rozni
+sie od tego, czego efekty widzimy na ulicach (rozbebeszone automaty,
+ludzie wqrwieni, ze znowu im zajebano nowiutka karte 100 a na rachunku
+za domowy telefon pojawilo sie nagle, nie wiadomo jakim cudem, 500 zl 
+za rozmowy z numerami typu 0700, mimo ze nikogo z domownikow nie bylo
+przez miesiac w mieszkaniu). Jak to jest? Istnieje etyka hackera a co
+z etyka phreakerska? Czyzby kazdy phreaker byl tylko zwyklym zlodziejem
+i wandalem? Moze pomyslelibysmy nad stworzeniem czegos takiego? Czekam
+na jakies pomysly.
+
+Dlaczego ja wlasciwie to pisze?
+Hmm, pewnie dlatego, ze nie specjalnie podoba mi sie obecna scena
+phreakerska. Mowiac szczerze, ludzi, ktorzy naprawde sie na tym znaja
+jest cholernie malo (chociaz co drugi jakiego spotkasz uwaza sie za
+niewiadamojaksuperevilphreakura, bo udalo mu sie przyjebac mlotem 
+w bude az zostala z niej miazga, tylko po to, by sprawdzic jak wyglada 
+w srodku albo zabrac czytnik - chociaz ni chuja nie wie co z nim dalej
+poczac jak napisal kolega leer). Prawda, ze trudno jest zaczynac teraz,
+kiedy bugow jest malo (ale mimo wszystko nadal sa!) a po przeczytaniu
+byle faqa sprzed 2 lat i wyprobowaniu trickow na pobliskim automacie 
+czlowiek moze byc wqrwiony, ze to wcale nie dziala, ale jednak phreak 
+w Polszcze istnieje jeszcze i ma sie dobrze. 
+Jesli ktos jest kims lepszym od innych, ma konkretna wiedze lub 
+zainteresowania zwiazane z telefonia i chce sie nadal jeszcze uczyc 
+(bo ciagla nauka jest niezbedna), moze sprobowac swoich sil w tym fachu.
+Phreak jest specyficzna forma hacku i nalezy go traktowac podobnie. 
+Podobnie jak hack nie polega jedynie na uzyciu jakichs pieprzonych 
+exploitow, ktore napisal ktos, kto sie na tym znal, tak i w phreaku nie
+chodzi o wykorzystywanie tylko znanych bugow, ale takze szukaniu samemu
+takowych. Wazne, zeby wymieniac sie wiedza i wzajemnie sie uczyc, ale 
+przeciez nie garstka osob powinna jakos w tym kierunku dzialac a reszta
+tylko z tego korzystac, lecz wszyscy powinni wnosic cos do wspolnej
+phreak-spolecznosci, nie? Zatem jesli masz cos ciekawego, to powiedz 
+o tym swiatu a moze ktos rozwinie Twoj pomysl, doda cos od siebie i sam
+tez cos ciekawego znajdzie i opublikuje. Ale zeby nie bylo zadnych
+watpliwosci, nie jestem za tym by dawac wszystko wszystkim. Zgadzam sie
+tutaj z tym, co napisal Hrabia, ze nie kazdy menel o mentalnosci dresa
+powinien miec dostep do wszystkiego (wystarczy spojrzec jak stalo sie
+to z kartami programming i kluczami do blue, ktore maja juz nawet ci,
+ktorzy nie maja pojecia co z nimi zrobic a TPSA raczy nas dzieki temu
+kompletnie roznymi zamkami w roznych regionach i softem 5.8). Osoba
+pretendujaca do miana phreakera powinna najpierw czegos nauczyc sie
+o naszym systemie telekomunikacyjnym, jego funkcjonowaniu, itd. nim
+bedzie miala faktyczny dostep do czegos, czym moze sporo namieszac.
+Popieram tym samym pomysl umieszczenia na phreak.zone jedynie screenow
+i opisu programu do zarzadzania siecia c90 a nie samego juz programu 
+centrum nadzoru - wlanie tak to sie powinno robic. Ale z drugiej strony
+nie powinno byc tez podzialu na 31337 i holote (wsrod ludzi, ktorzy
+uwazaja sie za elite - popularne okreslenie to lamy), bo to taki stan 
+takze nie wrozy nic dobrego. Umiesz cos - zaprezentuj sie - sa grupy,
+ktore przyjma Cie z otwartymi ramionami - sam na tym skorzystasz oraz
+skorzystamy z tego wszyscy.
+
+Dlaczego jeszcze to pisze? Bo wlasnie choruje w domu i sie troszke juz
+nudze. Dzis znowu udalo mi sie jakos doczolgac do komputera i ...
+
+
+Jak to jest z tym phreakiem?
+Ano tak w sumie nieciekawie. Dlaczego tyle osob sie tym zajmuje?
+Sporo z nich twierdzi, ze chca w ten sposob zniesc monopol jaki ma TPSA.
+Czy aby na pewno przyczyniaja sie do znoszenia tego monopolu? Ja sadze,
+ze pewnie nie. Bo kto tak wlasciwie placi za te wszystkie rozmowy
+wykonane na koszt TPSA? No kto? Czy TPSA dostaje tu po dupie? NIE!
+A kto? Tez pytanie... klient, bo przeciez TPSA jest firma nastawiona 
+na zysk a nie instytucja charytatywna. Wiec skutkiem (no, moze nie 
+tylko, ale napewno tez) phreaku jest kolejna podwyzka a nie zmniejsza
+sie natomiast wyplata ludzi na wysokich stolkach w TPSA. Owszem, czasem
+zdarza sie, ze skutkiem "madrego" phreaku moze byc to, ze ktos z tego
+stolka spadnie, ale tak bywa bardzo zadko. Zwykle konczy sie to tylko
+kolejna podwyzka cen i plac dyrektorow TP. Jako "madry" phreak rozumiem
+nie rozdupcenie w drobny mak 200 automatow, bo to jest czysty wandalizm
+Musze sie niestety zgodzic (chociaz raz) z TPSA i ich naklejka na 
+automatach "Nie niszcz mnie! Moge uratowac komus zycie!". Osobiscie
+nigdy nie zdarzylo mi sie bezmyslnie zniszczyc automatu, natomiast
+zdarzylo mi sie automat naprawic do stanu umozliwiajacego chociaz 
+wybranie numerow alarmowych. Stad moj apel: "Jesli potrzebujesz czegos
+z automatu, to zostaw go z laski swojej w stanie wystarczajacym chociaz
+do wezwania pomocy. Jesli juz chcesz caly automat, to wybierz miejsce, 
+gdzie obok stoi przynajmniej jeden dzialajacy!". Naprawde nieciekawie
+wyglada gdy ktos chcacy wezwac np. karetke podchodzi do automatu a on
+nie dziala, obok stoi drugi, ale oczywiscie tez "NIECZYNNY" (eprom 2.9
+- obecnie najpopularniejszy w blue) lub "USZKODZONY" (wszystkie inne 
+rodzaje softu - jak wykorzystac te informacje? sam pomysl - to nie 
+boli). Za sporo takich przypadkow odpowiedzialni sa pracownicy TPSA,
+ktorzy nie raczyli zadbac o swoj sprzet, ale przynajmniej Ty nie 
+przyczyniaj sie do jeszcze wiekszego pogorszenia i tak zlej juz
+sytuacji. Jesli naprawde chcesz, zeby telepies nie zarobi³ na swoim
+parszywym automacie, to w blue zmien eprom na jakis ciekawszy np. cos
+kolegi Nola lub jeszcze lepiej sam sobie zrob tak, zeby wszystkie
+rozmowy byly darmowe albo cos w tym stylu (ludzie sie uciesza) i mozesz
+sie jeszcze postarac zeby eprom sie chwilke dluzej utrzymal (patrz faq
+asturna). Jesli chodzi o srebrne, to tez pokombinuj troche. O "jajkach"
+czyli CTP czy TPU jak kto woli wiem jeszcze zbyt malo, bym mogl cos 
+o nich powiedziec, ale pozyjemy, zobaczymy... 
+Hmm, teraz pewnie myslisz "Co za idiota! Najpierw pisze, ze phreak jest
+'be' a kilkanascie linijek nizej sobie przeczy piszac, zeby udostepnic
+mozliwosc dzwonienia za free absolutnie wszystkim". No tak, chodzi o to
+ze to jest podobnie jak w hacku. Phreak czemus sluzy. Spojrz jak dzieki
+hackerom rozwinely sie zabezpieczenia i analogicznie jest z phreakiem.
+Postep trzeba w pewien sposob wymusic. Ale licza sie przede wszystkim
+sposoby jakie zostaly uzyte w celu tego wymuszenia. NIC sie nie zmieni
+jesli po prostu zdewastujesz jakas bude - idioci trafiali sie na 
+przestrzeni wiekow zawsze i wszedzie ale z tego powodu nie musisz sie do
+nich od razu upodabniac. Natiomiast "madry" phreak wymusza pewne zmiany
+w systemie telekomunikacyjnym (bo jednym - ale podkreslam, ze nie 
+jedynym - powodem chociazby wymiany starych central na nowe jest to, ze
+te nowe oferuja oprocz nowych uslug takze spory zakres zabezpieczen)
+i na stanowiskach za to odpowiedzialnych (chodzi mi o to, ze jesli ktos
+jest nikompetentny, to lepiej takiego "speca" zastapic kims innym). Ale
+pamietaj, ze chodzi tu o rozwoj a niszczenie czegokolwiek powoduje 
+raczej regres niz jakikolwiek postep.
+Drazac temat monopolu, to watpie, by sam phreak mial przyczynic sie do 
+jego zniesienia, ale przydaloby sie troszke uswiadomic sobie i moze tez
+spoleczenstwu, ze TPSA hamuje niemilosiernie Polska gospodarke i nie
+pomoze tu zadna sprzedaz TP francuskiemu zdziercy (ktory co prawda sam
+uswiadomil sobie, ze wysokie ceny na ichniejszym rynku nie powoduja 
+wysokich zyskow  - porownaj: podniesienie akcyzy w naszym kraju
+spowodowalo, ze przychody z tytulu tejze akcycy sa mniejsze niz w roku
+poprzednim - i tamtejszy rzad [FT jest panstwowy] na wniosek samego 
+operatora obnizyl ceny dostepu do netu - moze w Polsce tez KIEDYS do 
+tego dojdzie a u nas w dodatku TPSA nie potrzebuje zgody rzadu), bo 
+czerpie sie z czegos zyski dopoki sie jeszcze ma taka mozliwosc,
+a w 2003 roku zapowiedziano calkowita demonopolizacje polskiego rynku
+telekomunikacyjnego. I do tejze daty raczej nie przypuszczam, by mialo 
+sie cos znaczaco zmienic w telefonii. Niby mamy niezaleznych operatorow,
+ale przeciez i oni zarabiaja i dlatego nie maja wcale zamiaru wypowiadac
+cenowej wojny TPSA. Sa wprawdzie wyjatki (jak dzialajacy niedaleko mnie 
+operator, ktory WCALE nie taryfikuje polaczen lokalnych a za net placi
+sie jakas smieszna zryczaltowana oplate - czyli jesli sie chce, to mozna
+"droga" tepso - "droga" ma dwa znaczenia: "kochana" i "kosztowna" - mam
+nadzieje, ze odgadniesz, o ktore znaczenie mi chodzilo), ale tymi malymi
+wyjatkami sa bardzo mali operatorzy dzialajacy lokalnie na malych 
+obszarach i posiadajacy niewielu abonentow. Miejmy przynajmniej nadzieje
+ze ten rok 2003 zmieni COS. Oby bylo chociaz tak jak w Niemczech, gdzie
+Deutsche Telekom utracil swoj monopol i od tego czasu polaczenia w tym 
+kraju tylko tanieja a nie jak u nas - wciaz rosna. Zdarzaja sie straszne
+sytuacje, kiedy polaczenie Niemcy-Polska kosztuje tam 3 razy mniej niz
+u nas Polska-Niemcy juz nie mowiac juz zupelnie o cenie polaczenia
+Niemcy-USA w porownaniu do Polska-USA, bo wychodza na jaw przerazajace 
+fakty, ze nas polaczenie ze Stanami Zjednoczonym kosztuje ponad 20 razy
+wiecej niz Niemca. A tak naprawde, to same polaczenia nie sa zbyt 
+kosztowne, a cena wynika z amortyzowania kosztow poniesionych podczas
+instalacji, czyli chodzi o to by operatorowi zwrocil sie koszt budowy
+calej infrastruktury, czyli: linii, wyniesien, dodatkowego sprzetu, itd.
+Dlatego poczatki telefonizacji wiazaly sie z wysokimi kosztami, ale gdy
+cala machina zostala juz wprawiona w ruch powinno isc znacznie latwiej.
+I idzie... w Polsce jak krew z nosa (dlatego w naszym kraju chetnych do 
+zajecia sie phreakiem jest od groma). No coz, argumenty osob bedacych za
+utrzymaniem monopolu jakos mnie nie przekonuja, bo teoretycznie TPSA
+uzyskala miano monopolisty po to, by zainwestowac tam gdzie zaden 
+operator wolnorynkowy nie wazylby sie inswetowac z powodu zbyt wysokich
+kosztow, czyli w miejscach trudnych do stelefonizowania, na wsiach, itp.
+Chyba jednak zapomniano o tym, ze operatorzy pojda tam, gdzie zwesza
+jakies pieniadze a w miejscach slabo stelefonizowanych ludzie wciaz 
+czekaja na jakiegos operatora z otwartymi ramionami. TPSA nie spelnila
+zbyt dobrze swej roli, wiec nie widze specjalnego sensu w dalszym
+utrzymywaniu jej monopolu. Ale jakos chyba jeszcze dotrwamy do 2003.
+Wazne, by tego czasu nie zmarnowac. A niestety patrzac na phreak-scene
+widac coraz bardziej szerzaca sie stagnacje. Ludzi, ktorzy cos publikuja
+jest coraz mniej a to, co juz mamy, to w duzej mierze chlam. Smieszy
+mnie niemilosiernie tekst typu "nie odpowiadam za to co sam napisalem".
+Jak za to nie masz zamiaru wziac zadnej odpowiedzialnosci, to znaczy, ze
+sam tak naprawde w to nie wierzysz, wiec po kiego grzyba to piszesz?
+Przede wszystkim teksty sa malo konkretne (tak jak i ten nie jest wcale
+konkretny, ale wcale tez nie mial byc - mial jedynie zwrocic Twoja uwage
+na to, ze phreak to duze slowo nie kazdy ma prawo uzywac miana phreakera
+ - sam zreszta sie nim nie tytuluje, po prostu lubie zagadnienia
+zwiazane z telefonia) i ogromnej wiekszosci malo naukowe. Pochwalic moge
+kolege Kolnierzyka, ktorego tekst o epromie TPE91 jest napewno jednym
+z najlepszych jakie czytalem. Przydaloby sie wiecej takich wlasnie
+opracowan. Podziwialem tez z przyjemnoscia prace Nola, ktory rowniez
+odwalil kawal dobrej roboty i czekam na kolejne owoce pracy ludzi, 
+ktorzy potrafia cos wiecej niz tylko napisac jakis nic nie znaczacy 
+bezsens z pogranicza phreaku i science-fiction (chociaz czesciej jest to
+tylko fiction). Swiadomosc ludzi o tym jakie tak naprawde metody moga
+byc wykorzystane do dzwonienia za darmo a jakie sa totalna bzdura jest
+niestety tak zenujaco niska, ze juz chyba najwyzszy czas to zmienic. Nie
+chodzi mi o to by podawac wszystko na talerzu, ale zmusic tych myslacych
+do ruszenia mozgiem (a nie tylko morda) przez podanie konkretnych faktow
+jak chociazby to, co mozna znalezc w tekscie Kolnierzyka. Przydaloby sie
+wysilic to, co jest pod czaszka. Moze cos by sie wtedy ruszylo w polskim
+phreaku. 
+Jesli jeszcze o faqi chodzi, to sprawa pajeczarstwa mysle, ze jest godna
+uwagi. W tej sprawie zgadzam sie z artykulem Pana Witolda Wrotka, ktory
+to artykul znalazl sie w numerze 4/2000 Nowego Elektronika. Sprawa
+phreaku ogolnie zostala potraktowana dosc tendencyjnie, ale trzeba
+niestety przyznac autorowi sporo racji. Bo rzeczywiscie niemal kazdy faq
+zaczyna sie od slow, ze jego autor robi to, co robi, by walczyc 
+z monopolem TPSA a tymczasem podaje niezawodne sposoby na udupienie 
+mieszkajacej obok staruszki z niska emerytura. Zarabia oczywiscie nasza
+ukochana TPSA a staruszka ma marne szanse na reklamacje. Co to za 
+pieprzona podwojna moralnosc? Taki ma byc phreaker? Nie rozumiem
+specjalnie po co musisz podpinac sie pod innych ludzi jak jesli tak juz
+naprawde MUSISZ, to mozesz sie wpiac w linie automatu. Bo pamietaj, ze
+to hipokryzja na maxa twierdzic, ze zwalczasz monopol NARAZAJAC TPSA na
+dodatkowe ZYSKI. Ogolnie jestem za tym, by wykorzystac phreak do 
+ukazania niekompetencji pracownikow TPSA i zmusic naszego narodowego
+operatora (na ktorego na razie jestesmy raczej skazani, bo nic sie bez
+niego w Polsce nie odbywa) do zmian a nie do bezposredniego okradania 
+ludzi - oni juz i tak nienawidza telepsa, bo wszyscy mamy raczej
+podobne doswiadczenia - ja pamietam, ze jeszcze dwa lata temu u mnie
+w miescie stala centralka reczna, obslugiwana przez TAK BARDZO MILE
+panie z TPSA, ze dech w piersi zapieralo - ale przynajmniej jak sie cos
+zjebalo (a dzialo sie to czesto), to mozna bylo nabluzgac pani, ktora
+i tak sie przysluchiwala rozmowie. No, ale to juz przeszlosc. Teraz jest
+koncentrator podlaczony pod S12J i pelno blue z softem 2.9 i tez jest 
+ciekawie.
+
+I to by bylo juz pewnie wszystko, co chcialem napisac. Sa to odpowiedzi
+na pytania, ktore ja sobie najczesciej zadawalem odnosnie phreaku. Mysle
+ze raczej nie tylko ja tak sadze. Phreak w Polsce jest potrzebny, ale
+niech ten phreak bedzie troszke bardziej swiadomy a i osoba uwazajaca 
+sie za phreakera ma jakies pojecie o tym co robi, dlaczego i jakie to
+powoduje skutki. Przede wszystkim wazne jest w tym wszystkim, by robic
+to by sie rozwijac, uczyc czegos nowego (ja wlasnie dlatego zabralem sie
+za to). Juz wystarczy pseudophreakerow opowiadajacych o slawnym juz
+naklejaniu na karte paska magnetycznego z kasety magnetofonowej lub 
+podgrzewaniu tegoz paska swieczka czy czegos rownie glupiego wymyslanego
+przez bezmozgi chcace zaistniec w necie wypisujac bzdury albo tlumaczac
+zagraniczne txty na nasz ojczysty jezyk nie majac najmniejszego pojecia
+o czym pisza i ze wiekszosc z tych bzdur ma ponad 20 lat i nie ma 
+najmniejszego prawa dzialac w Polsce, gdzie mamy kompletnie inny system
+telekomunikacyjny niz np. w USA.
+Jesli chodzi o slownictwo, to czasem uzywalem slow bardziej dosadnych,
+gdyz niestety tylko takie zdaja sie trafiac do niektorych osob, ktore sa
+(sadzac po ich slownictwie i poziomie faqow) albo niedorosle, albo slabo
+wyksztalcone (lub i to, i to) i zabieraja sie do tak powaznych tematow
+jak telefonia. Przez takich wlasnie ludzi phreak w Polsce uwazany jest 
+(oczywiscie przez tych, co chociaz maja jakies metne pojecie co znaczy
+slowo phreak) za dzialanie majace na celu bardziej zaszkodzenie 
+sasiadowi niz TPSA. No coz, nie bede dluzej przynudzal. Mozesz sie ze 
+mna nie zgadzac - czekam na jakis odzew.  Jesli sadzisz, ze caly ten 
+tekst to bzdury i lanie wody, to jest to prawda, ale jesli myslisz, ze 
+nie mam racji - udowodnij mi to. 
+Pozdrawiam tych, ktorzy zrobili i robia cos dla polskigo phreaku. Nie
+bede ich wymienial, ale kazdy wie o kogo mi chodzi.
+
+***********************************************************************
+Koncowka ma tez swoje haslo: "Trzeba tepic wnadalizm wsrod phreakerow." 
+Potrzebujesz zamka do dorobienia klucza? Znajdz przyjaznego montera, 
+ktory Ci pozyczy ten klucz na chwile. Jak nie ma takich w okolicy, to 
+poszukaj innego sposobu. Jak juz w zupelnej ostatecznosci (jestes tak 
+zdesperowany jak nigdy przedtem) dobierasz sie do automatu, to zabierz
+go sobie do domu i tam w ciszy i spokoju baw sie (moze przy okazji 
+nauczysz sie czegos), ale nie zostawiaj rozjebanego na ulicy, zeby 
+straszyl przechodniow i dawal przyklad dresom i innym ciulom jak to sie
+robi (bo chyba nie starasz sie do nich upodabniac?). Phreak moze byc 
+w miare kulturalny takim wlasnie powinnismy go propagowac, bo co zwykly
+postronny czlowiek pomysli o phreakerze rozjebujacym bude? "Pieprzony 
+wandal i przestepca!" a juz na 100% nie pomysli, ze robisz to, zeby 
+przeciwstawic sie monopolowi czy z jakiegokolwiek innego powodu. Bo tak 
+naprawde nic tym nie osiagasz. Jak TPSA zobaczy rozdupcony automat bez 
+zamka, to go naprawi i zmieni zamki w calym miescie. I co wtedy? 
+Rozjebiesz nastepny i tak az do skutku (az im sie skoncza zamki czy 
+automaty?)?? A wiec jednym zdaniem - jestem przeciwny wandalizmowi. NIE
+TYLKO JA! W tej sprawie poparcia udzielil mi takze Kolnierzyk i dzieki
+mu za to, ale jest naprawde sporo ludzi myslacych podobnie i mam 
+nadzieje, ze Ty tez do nich nalezysz.

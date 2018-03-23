@@ -1,0 +1,79 @@
+
+
+          SSSS            CCCC          AAA      TTTTTTTTTTTT    TTTTTTTTTTTT  EEEEEEEEE     RRRRR
+        SS    SS        CC    CC       AA AA          TT              TT       EE            RR   RR
+       SS      SS      CC      CC    AA     AA        TT              TT       EE            RR    RR
+        SS             CC           AA       AA       TT              TT       EE            RR   RR
+          SS           CC           AA       AA       TT              TT       EEEEE         RR RR
+            SS         CC           AAAAAAAAAAA       TT              TT       EEEEE         RR  RR
+              SS       CC           AAAAAAAAAAA       TT              TT       EE            RR   RR
+       SS      SS      CC      CC   AA       AA       TT              TT       EE            RR    RR
+        SS    SS        CC    CC    AA       AA       TT              TT       EE            RR     RR
+          SSSS            CCCC      AA       AA       TT              TT       EEEEEEEEE     RR      RR
+
+
+
+
+
+
+:::::::::::::::::::::::::::::::::::::::::::::::::INTRO::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+Tekst ten s³u¿y tylko celom edukacyjnym i informacyjnym. Wykorzystywanie opisanego u¿¹dzenia jest karalne i nie ponosze
+odpowiedzialnoœci za szkody powsta³e w wyniku przeczytania tego tekstu ;-)
+
+
+:::::::::::::::::::::::::::::::::::::::::::::::OPIS W£AŒCIWY::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+To jest moje pierwsze FAQ wiêc proszê o troche tolerancji dla pocz¹tkuj¹cych ;-). PrzejdŸmy do rzeczy, opiszê tu jak w sposób
+"bezinwazyjny" i bezbolesny dla kabla za³o¿yæ komuœ pods³uch. Urz¹dzenie jest proste w budowie, ale uruchomienie mo¿e sprawiæ
+doœæ sporo problemów. Jest to nic innego jak dwa wzmacniacze o wzmocnieniu: pierwszy 100 razy a drugi 200 razy, co daje razem
+wzmocnienie 20000 razy!!!!(nie, to nie pomy³ka w iloœci zer). Ka¿dy wzmacniacz jest odwracaj¹cy czyli ca³y uk³ad jest
+nieodwracaj¹cy, zrobi³em je takie poniewa¿ s¹ zasilane z pojedynczego napiêcia. Je¿eli masz troche pojêcia o elektronice to
+pewnie wiesz ¿e wzmacniacz (zw³aszcza o takim wzmocnieniu) lubi sie wzbudzaæ, czyli robi sie z niego generator. Aby tego
+unikn¹æ sugeruje zrobiæ ekran z jakiejœ miêkiej blachy (mo¿esz poszukaæ ma³ej puszki np. po przecierze pomidorowym, ale 
+mo¿esz mieæ problemy z przylutowaniem). Ekran oczywiœcie musisz pod³¹czyæ do masy, przy okazji chroni od buczenia i fal radiowych.
+Na schemacie znajdziesz potencjometr, s³u¿y on do regulowania wzmocnienia. U¿ywaj go do dobrania wzmocnienia do posiadanego
+trafa (o którym za chwile) oraz telefonu pods³uchiwanego nieszczêsnika :-) Najwiêcej problemów bêdziesz mia³ trafem
+(skrót od transformator). Ja u¿y³em takiego z telefonu, ma on miêki rdzeñ z blachy krzemowej (na twardym z ferytu te¿ powinno
+zadzia³aæ, ale nie dam sobie g³owy uci¹æ). Mo¿na te¿ za³o¿yæ taki sieciowy (WA¯NE: MUSI mieæ kszta³tki EI!!!) ale bêdziesz
+mia³ z nim du¿o roboty bo jest sk³adany na przemian. Telefoniczny ma osbno z³o¿one E a osobno I i s¹ tak fajnie zlepine
+parafin¹ ¿e nie ma potem roboty z szukaniem pojedynczych blach jak zgin¹ :-) W zip'ie masz plik "trafo.gif" gdzie jest opisane
+jak uci¹æ kszta³tki E na nasze potrzeby. Trafo ma najprawdopodobniej (s¹ ró¿ne) dwa uzwojenia (rzadko wiêcej). Musisz znaleŸæ
+takie co ma najwiêcej zwojów. Jak wszystkie uzwojenia maj¹ tak¹ sam¹ gruboœæ przewodu (patrz przy punktach lutowniczych)
+mo¿esz u¿yæ omomierza (im wiêksza opornoœæ tym wiêcej zwojów). Uk³ad mo¿esz zasilaæ z bateryjki 6F22 (9V). Wyjœcie uk³adu
+mo¿esz podpi¹æ do g³oœniczka z telefonu o du¿ej opornoœci (mój mia³ 150 ohm), ewentualnie do s³uchawek po³¹czonych szeregowo
+(w obydwuch bêdzie gra³o). Je¿eli masz zaburzenia s³uchu od s³uchania g³oœnej muzyki ;-) to mo¿esz za³o¿yæ sobie jakiœ
+wzmaczniacz mocy (jak chcesz zrobiæ pods³uchiwanemu obciach to wystaw kolumny za okno i daj na fula g³oœnoœæ :-)). Je¿eli
+rozmowa pods³uchiwana ma s³u¿yæ za dowód w s¹dzie :-( to mo¿esz za³o¿yæ nasz uk³ad do dyktafonu albo magnetofonu i nagraæ 
+wszystko na kasete (tym sposobem mo¿na komuœ narobiæ gówna w otoczeniu, poprostu puszczasz kopie ciekawej rozmowy po ludziach.
+
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::CZÊŒCI::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+Z czêsciami nie powinieneœ mieæ problemów (no chyba ¿e mieszkasz na totalnym zadupiu, wtedy musisz jechaæ gdzieœ do miasta).
+W pierwszym lepszym sklepie powinieneœ znaleŸæ wszystkie czêœci poza trafem (telefonicznym), ale pytaj o nie (s¹dzê ¿e na
+Mitery 8 {Kraków} powinni mieæ ale nie jestem pewien). Trafo mo¿esz wytargaæ z telefonu bezprzewodowego, albo daæ lumpowi
+na browca i powiedzieæ ¿eby ci znalaz³ na œmietniku ;-). Jak spreparowaæ trafo ju¿ pisa³em a nawet rysowa³em.
+
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::OUTRO:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+Powtarzam, ¿e uk³ad jest prosty w konstrukcji, ale potrafi daæ w dupe przy uruchamianiu. Jakoœæ dŸwiêku nie jest jak z CD,
+czasem nawet trudno zrozumieæ mowe. Jeszcze jedna wa¿na rzecz: UK£AD "WY£APUJE" I WZMACNIA POLE MAGNETYCZNE, KTÓRE POWSTAJE
+W WYNIKU PRZEP£YWU PR¥DU (PR¥D TO NIE TO SAMO CO NAPIÊCIE!!!). Oznacza to ¿e jak s¹siad bêdzie mia³ telefon o ma³ym poborze
+pr¹du wzmocnienie mo¿e okazaæ sie za ma³e na pods³uchanie go (to tylko teoria, bo jeszcze takiego telefonu nie widzia³em).
+W "laboratorium" ;-) trwaj¹ prace nad "duchami w  lini telefonicznej". Narazie nic wiêcej nie zdradze.
+
+Pozdrawiam wszystkich którzy uprzykrzaj¹ ¿ycie TP.
+
+
+                                                                                                   23.XII.2003 KRAKÓW
+                            
+                                                                                                   SCATTER
+
+												   ROLKWO@WP.PL
+

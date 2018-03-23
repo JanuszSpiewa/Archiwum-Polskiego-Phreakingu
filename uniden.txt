@@ -1,0 +1,24 @@
+PODS£UCHIWANIE ROZMÓW W£ASNYCH Z TELEFONU BEZPRZEWODOWEGO UNIDEN XC 600/700 SERIES
+(i z innych serii pewnie te¿)
+
+*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*
+					v 1.0 (build 5)
+
+
+	Cze, od razu zaznaczam, i¿ nie napiszê, ¿e nie ponoszê odpowiedzialnoœci za to co piszê, bo to tak, jak bym sam w to niewierzy³ i jakbym nie przyznawa³ siê do textu. A zreszt¹ to nie jest zwi¹zane z TPSA, wiêc za co tu nie ponosiæ odpowiedzialnoœci.
+	Tekst napisa³em w windowsowym notatniku, wiêc proponujê czytaæ z niego, bo jak bêdziecie czytaæ z DOS'a to zamiast polskich literek bêdziecie mieli nasze popularne "krzaczki". Jak ktoœ narzeka, ¿e w tym durnym notatniku wiersze tekstu s¹ niewiadomo jak d³ugie, to niech sobie w³¹czy z menu Edycja zawijanie wierszy i ma kurwa spokój.
+
+	No wiêc tak! Tekst ten jest przeznaczony g³ównie dla posiadaczy w.w. modelu telefonu bezprzewodowego lub podobnych modeli. Podane tutaj sposoby mog¹ tak¿e dzia³aæ na innych bezprzewodowcach, ale pewnie nie na tych samych czêstotliwoœciach, których tu i tak nie poda³em ;-)
+	OK! Zaczynamy. Nasze zadanie jest banlne. Jedyn¹ trudnoœæ mo¿emy mieæ w znalezieniu cienkiego, miedzianego drucika, ale zamiast niego mo¿emy u¿yæ te¿ grubszego kabla (jakiegoœ zwyk³ego w gumie). Trzeba pamiêtaæ jednak, ¿e bêdzie on widoczny, a wiêc mo¿emy go u¿yæ tylko wtedy, gdy mamy np. telefon stoj¹cy na niskim stoliku. Wtedy kabla puszczamy za stolikiem i go nie widaæ. Ale i tak odradzam, bo jest on jednak bardzo zauwa¿alny, a cienka miedziana nitka jest prawie nie widoczna. Dobrze jeszcze jak ktoœ ma boazeriê na œcianach (kolor zwyk³y drewniany) to wtedy ju¿ nic nie widaæ. "Miedziaka" mo¿na waln¹æ se z radia, magnetofonu itp. Jak se rozkrêcicie to znajdziecie du¿o tego zawiniêtego na takim  czymœ plastikowym, czarnym. ;) Mamy druta, mamy telefon i radio no to jedziemy. Obwijamy drucik na antenkê od "phona", jedziemy po œcianie do swojego pokoju oraz przyczepiamy do antenki o d radia. Aha! Wa¿ne! U mnie kabel mia³ ze 10 m a jak jest d³u¿szy to mo¿e byæ s³aba jakoœæ, wiêc wtedy lepiej u¿yæ czegoœ grubszego (np. w gumie). No to gdy po³¹czyliœmy, w³¹czamy s³uchwkê od telefonu i k³adziemy gdzieœ, niech sobie le¿y. Nie bierzcie jej do pokoju i nie k³adŸcie obok radia, bo wtedy radio mo¿e z³apaæ sygna³ nadaj¹cy przez antenkê s³uchawki i jak ktoœ bêdzie rozmawia³ w drugim pokoju to ju¿ go nie pods³uchamy. Wiêc zostawcie s³uchawkê gdzieœ w kuchni i niech sobie leci dialtone. Wracajcie do siebie i w³¹czcie radio i ³apcie czêstotliwoœci. Ja mam takie fajne radio, co samo  mi ³apie :-) Jak z³apiecie ciszê to te¿ sprawdŸcie czy to nie od "phona" bo dialtone nie jest wieczne i po czasie siê wy³¹cza.
+	No i to by by³o na tyle. Powiem jeszcze, ¿e przy innych telefonach bezprzewodowych to mo¿liwe, ¿e w ogóle nie bêdziecie potrzebowaæ kabelka bo mo¿e tak silnie bêdzie nadawaæ. No nie wiem, sami spróbujcie. Aha! Ten sposób jest te¿ dobry do nagrywania rozmów, je¿eli macie radio-magnetofon. Chyba tak jest proœciej coœ nagraæ ni¿ tak jak czyta³em w jednym FAQ przez komputer z modemem, gdzie ci¹gle musicie mieæ w³¹czony komputer. Potem z kasety do kompa , oczyszczacie i macie fajne MP3. Zawsze tak robie nagrywaj¹c swoje ¿arty telefoniczne, a potem publikujê je w i-necie jako MP3 lub w przysz³oœcie mo¿e OGG.
+	Czêstotliwoœci na jakich nadaje mój phone nie chce mi siê podawaæ, gdy¿ u mnie jest FM od 87,5 do 108 MHz, wiêc ³atwo samemu wyszukaæ. Ale u ciebie mo¿e to byæ AM lub w ogóle coœ innego wiêc bêdziesz musia³ przestroiæ se radio lub ³apaæ przez np. SB.
+No ale to ju¿ twój problem. Próbuj.
+
+Z innej beczki:
+		Jak ktoœ siê nudzi i chce zrobiæ dla siebie coœ po¿ytecznego i ma trochê dyskietek DD (to takie o 2x mniejszej pojemnoœci od 1.44 czyli 720 KB) to niech do mnie napisze. :-)
+
+Greets'ów nie bêdzie! ;-()
+
+Mój e-mail: billcow@poczta.fm
+
+										Bye!

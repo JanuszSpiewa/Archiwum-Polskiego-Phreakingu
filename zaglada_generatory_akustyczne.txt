@@ -1,0 +1,89 @@
+-----------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------
+---*****************--*************--**************--***----------**************--********------**************---------------
+----****************---*************--**************--***----------**************--**********----**************--------------       
+-------------*******----***-------***--***-------------***----------***--------***--***------***--***--------***-------------
+-------------*******-----***-------***  ***-------------***----------***--------***  ***-------***-***--------***------------
+-------------*******------***-------***  ***-------------***----------***--------***  ***-------***-***--------***-----------
+-------------*******-------*************  ***-------------***----------**************  ***-------***-**************----------
+-------------*******--------*************  ***-----******  ***----------**************  ***-------***-**************---------
+-------------*******---------***-------***  ***-----******  ***----------***--------***  ***-------***-***--------***--------
+-------------*******----------***-------***  ***--------***  ***----------***--------***  ***-------***-***--------***-------
+-------------*******-----------***-------***  ***--------***  ***----------***--------***  ***------***--***--------***------
+-------------*****************--***-------***  **************  ***********--***--------***  *********-----***--------***-----
+--------------*****************--***-------***  **************  ***********--***--------***  ********------***--------***----
+-----------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------
+                                 *---------------Moj e-mail-------------*
+                                 *--------------zaglada@op.pl-----------*
+                                 *--------------------------------------*
+
+
+
+
+W tym faq chcialem poruszyc kwestje wzmacniania sygnalu w telefonie. 
+W ostatnim czasie zrobile sobie phreakomet super!!!! mial wybieranie 
+impulsowe i tonowe wspaniala rzecz lecz niestety sygnal byl dos cichy
+wiec postanowilem zrobic sobie maly wzmacnieacz oczywiscie niewielkich wymiarow.
+Wiec wziolem sie do roboty. Przestudiowale pare ciekawe zagadnien w 
+mioch ksiazkach. Wreszcie doczytalem sie paru ciekawych rzeczy
+o ukladach DARLIGNTONA. I wtedy dostalem nadchnienia i postanowilem sobie
+to rozrysowac. Schematy wszystkie rownierz zamiescilem tylko w innm pliku.
+Teraz chcialbym to wszystko opisac.
+
+Pierwsza rzecza ktora trzeba wiedziec jest to ze rezystor emitorowy zmiejsza
+lub usuwa nieporzadany efekt podczas pracy tranzystora.
+Rezystory: kolektorowy i emiterowy warunkuja odpowiedni prad kolektora /Ic/ i 
+wlasciwy spadek napiecia /Uce/.
+Ic I Ib ustalaja wlasciwy punkt pracy tranzystora.
+Nastepna warzna rzecza ktora trzeba wiedziec jest to jak oznaczamy wzmocnienie 
+napieciowe a dokladnie oznaczamy je przez "Ku" a wzmocnienie pradowe porzez 
+z greckiego jezyka BETA tylko to nie ma takiej litery.
+Oto dwa bardzo potrzebne WZORY:
+
+Ku = Wwy/Uwe     BETA = Iwy/Iwe
+
+wy - wyjsciowe
+we - wejsciowe
+
+Gdy mamy do czynienia z kilkoma stpnmiami polaczonymi ze szeregowo, calkowite wzmocnienie 
+wszystkich stopni jest rowne iloczynowi wzmocnien poszczegolnych stopni.
+Wzmocnieniacze napieciowe pracauja tylko w ukladach o wspolnym emitarze, natomiast 
+wzmacniacze pradowe w ukladach o wspolnym kolektorze.
+Przez podnie sygnalu wyjsciowego na wejscie wzmacniacz /jest to takzwanny obwod dodatniego
+sprerzenia zwrotowego/ mozna uzyskac generator.
+W reneratorae akustycznym dwa obwody tranzystorowe pracuja na przemian /gdy T1 jest 
+zatkany, to T2 przewodzi/. Czestotliwosci przelaczen tych obwodow zalezy od doboru
+wielkosci rezystancji /R/ i pojemnosci /C/.
+
+No to by bylo na tyle teorii teraz zabieramy sie do pratyki.
+Aby bylo to morzliwe musicie sobie wydrukowac albo otworzyc pierwszy
+schemat jest to plik (1.bmp) 
+
+Przystepujac do tego scheamaty  pracy ukldu wzmacniajacego nalezy sobie uswaidomic
+znaczenie (roli) kazdego elementu, ktory wspolpacuje w tym ulkadzie.
+Jedna z najwazniejszych jest rola rezystora emiteriwego. Wiec dlatego przypominam , ze
+gdy prad kolektora wzrasta to i napiecie na rezystorze emiterowym tez wzrasta.
+Dzieki temu roznica napiec miedzy B i E maleje, a przez tp zmiejsza sie Ic. W sumie rezystor 
+emiterowy zapewnia stabiblizacje punktu przacy tranzystora przy zmianach temperatury.
+Analizujac podstawowy uklad wzmacniajacy w zespole klasowym slabym, mozna tylko zwrocic 
+uwage na wyznaczenie wzmocnienia z dostatateczna doskonaloscia jako stosunek napiecia 
+wyjsciowego do wejscowego. 
+
+Teraz morzemy wglebic sie w uklady darlingtona latwiej bedzie wam to zrozumiec gdy
+otworzycie drugi plik (2.bmp).
+W tym ukladzie zwracamy uwage na fakt wyrowanania napiecia emiterowego w takt napiecia
+ bazy na to, ze napiecie to zawsze jest mniejsze od pradu bazy 0,6 V (morzecie sie 
+zastanawiac dlaczego?) oto wyjasnienie:
+Praktycznym sprawdzeniem i takiego ukladu marze byc prosty wzmacniacz pradowy (plik nr. 4)  
+Mozremy pzry tym urzyc okreslenia - "wtornik emiterowy" - bowiem w literaturz dosc 
+czesto nim sie operuje. Teraz morzecie sobie obliczyc wzmocnie pradowe, a pozniej
+porownac je z wzmocniemiem napieciowym tego ulkadu.
+
+Teraz chcialby sie wglebic w zagadbnienia zwiazane z generatorami. I dlatego posluze sie
+plikiem nr. 4. 
+Jesli kogos to interesuje to wyjsnie krotko sprawy z dodatnim sprezeniem zwrotnym, 
+zakreas skrajnych punktow charakterystyki, miedzy ktorymi morzna wzmocic sygnal sprezenia.
+
+Wrazie pytan prosze o kontakt zaglada@op.pl
+

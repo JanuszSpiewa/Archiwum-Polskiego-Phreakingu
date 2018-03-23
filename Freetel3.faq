@@ -1,0 +1,895 @@
+
+                                FREETEL FAQ
+                               v 3.0 beta 99
+
+                 faq sponsorowany i promowany przez strone
+
+                              VIOLATORS OF LAW
+                       ->>  http://volaw.cjb.net  <<-
+                       najlepsza strona poswiecona
+          mp3 / hack / phreak / warezy / faq / kasa / menel-zone
+           pamietniki / cracki / seriale / xxx passwordz / inne
+
+         znajdziesz na niej zawsze najnowsze werjse roznych faq'ow
+                              w tym i naszego :)
+
+                                   KONTAKT:
+                   ->>  e-mail: skyvom@friko3.onet.pl  <<-
+                           ->>  UIN: 28500719  <<-
+
+  --------------------------------------------------------------------------
+
+  Spis tresci.
+
+  1. Wstepior *N*E*W*
+
+  2. Budki telefoniczne
+
+     2.1 Tylko bzdety
+
+  3. Robienie w konia centrali K-62 czyli SKYBOX *N*E*W*
+
+     3.1 Co nam bedzie potrzebne i jak to zdobyc? *N*E*W*
+
+         3.1.1 Biling najlepszym sprawdzianem *N*E*W*
+
+         3.1.2 Nowy sposobik na sprawdzenie centrali *N*E*W*
+
+     3.2 O co w tym chodzi? *N*E*W*
+
+         3.2.1 Niektorzy to maja szczescie *N*E*W*
+
+     3.3 Montujemy SKYBOXa!
+
+         3.3.1 Kaloryfer
+
+         3.3.2 Teraz telefon
+
+         3.3.3 Sciagamy izolacje
+
+         3.3.4 Podlaczamy
+
+         3.3.5 Pierwsze testy
+
+         3.3.6 Bajer z przelacznikiem i schemat
+
+         3.3.7 Kilka uwag
+
+         3.3.8 Sprawa wykrywacza impulsow
+
+     3.4 TePSiArze moga cie namierzyc!!!! *N*E*W*
+
+  4. Linie na swierzym powietrzu i nie tylko
+
+     4.1 Znajdowanie linii tel.
+
+     4.2 Podpiecie w piwnicy
+
+     4.3 Kanaly wentylacyjne itp.
+
+     4.4 Podpiecie
+
+         4.4.1 Przez rozwalenie izolacji
+
+         4.4.2 Sposob na igly
+
+         4.4.3 Podpiecie z laptopem
+
+         4.4.4 SYGNAL
+
+     4.5 Jaki kupic kabel
+
+     4.6 Zdalny telefon
+
+     4.7 Uwagi
+
+     4.8 Zostales zlapany :(
+
+  5. Zakonczenie *N*E*W*
+
+  *N*E*W* - zawieraja uaktualnienia
+
+  --------------------------------------------------------------------------
+  Dobra zaszczynamy!
+
+  1. Wstepior *N*E*W*
+
+  Witam wszystkich w 3 czesci naszego faq poswieconego dzwonieniu za darmo
+  ze starych centrali telefonicznych. Po kolejnym miliardzie maili
+  postanowilem wklepac kolejna czesc. Niektorych pewnie zdziwi iz zostawiam
+  w spokoju niejakiego HAVOCA. Po ostatnim faq postanowi biedak powiesic sie
+  na swoich genitaliach, lecz z powodu ich zaniku strzelil sobie w lep
+  (kula podobno 3 dni mozgu szukala :).
+  Oki, w tej czesci postaram sie wyjasnic sporo niejasnosci o ktorych
+  piszecie w listach.
+
+  Postaram sie przedstawic problemik w sposob jak najprostszy - minimalne
+  wyksztalcenie zeby zrozumiec ten faq to przynajmniej 2 klasy OHP
+  (czyt. Ochotniczy Hufiec Pracy) lub zlozone podanie do WSPBR (czyt. Wrzsza
+  Szkola Pasania Bydla Rogatego :).
+
+  Pamietajcie ze wg. nowego prawa za podpiecia grozi do 3 lat wiezienia
+  (lub przymusowe przyjecie do Telekomunikacji ;) wiec nikogo nie namawiam,
+  txty sa tylko edukacyjne, a tak w ogole to ja tu tylko sprzatam i nic
+  nie wiem...
+
+  I CZYTAJCIE TEN FAQ DO KONCA!! DOSTAJE MAILE NA TEMATY KTORE SA JUZ
+  OPISANE!! (troche inicjatywy ze swojej strony tez musicie wykazac :))
+
+  A i jeszcze jedno, nie zwracajcie uwagi na bledy (robilem podstawowke
+  w ESKK ;) - wiec jezeli jestes polonista albo cenisz sobie poprawna
+  polszczyzne to daj sobie lepiej spokoj :)
+
+  --------------------------------------------------------------------------
+
+  2. Budki telefoniczne :(
+
+  2.1 Tylko bzdety ---------------------------------------------------------
+
+  Nie przeczytacie tu zbyt duzo (tak prawde mowiac nic :) poniewaz w moim
+  miescie zaden z opisywanych w innych faq sposobow NIE DZIALA.
+  Mam cudowna centrale K-66 i dialer moge sobie wsadzic w otwor ponizej
+  kosci krzyzowej :(
+  A co probowalismy?
+  - metode dzwonienia z budki na budke (na wyswietlaczu "ROZMOWA PRZYCHODZACA"
+  w sluchawce PIK-POK - a dialer nic)
+  - wykrecanie 0800, potem 30 sek. po ktorych powinien zmienic sie sygnal i
+  mozemy podac numer pod ktory mamy dryndac za darmoche
+  Fajnie, sygnal milknie po 50 sek. i od razu resetuje automat :(
+  - numery z 956
+  i wiele, wiele (praktycznie wszystko co jest w krajowym necie) innych
+  sposobow.
+  Ja za najlepszy uwazam przeprogramowanie budki tak zeby po podaniu odpowied-
+  niej kombinacji klawiszy nie zliczala impulsow (ale o tym kiedy indziej).
+
+  Majac taka centrale mozesz sie ciachac (spoko - podzwonisz za free z chaty,
+  jak to zrobic - przeczytasz pozniej).
+
+  Jezeli koniecznie interesi cie dzwonienie z budek to poczytaj inne pliki
+  typu FAQ znajdujace sie na stronie:
+  http://volaw.cjb.net lub http://hack.zone.to/hrabia
+
+  Jesli szukasz innych to wpisz na stronie http://www.altavista.pl
+  slowko "phreak".
+
+  --------------------------------------------------------------------------
+
+  3. SKYBOX czyli dryndolenie za free z domciu :)  *N*E*W*  ----------------
+
+  Na poczatku zaznacze ze na pomysl ten zrealizowalem z pomoca kilku
+  osob o ktorych nie wspomne (GLINY SUCKS!). Mozecie spotkac sie tez z
+  podobnym sposobem opisanym w PINDA FAQ - moj rozni sie znacznie i jest
+  bezpieczniejszy (sprawdzcie sami).
+  Bajer ten istnieje od dawna ale to JA (jak skromnie ;) postanowilem
+  go upowszechnic tym ktorzy o nim nie wiedza wiec nazwalem go po swojemu.
+  Wiem ze chamowa ale co zrobic :)
+
+  NIE BIORE ZADNEJ ODPOWIEDZIALNOSCI ZA SZKODY WYNIKLE Z MONTAZU I UZYWANIA
+  PONIZSZEGO SPOSOBU (URZADZENIA). JAKIEKOLWIEK SPALONE CENTRALE
+  TELEFONICZNE, NADPALONE CZESCI CIALA, ZWEGLONE KOMPUTERY, POBICI MONTERZY
+  TP S.A. , SKONFISKOWANE TELEFONY, SZKODY FINANSOWE I MORALNE
+  GOWNO MNIE OBCHODZA (fajne nie? :).
+
+
+  3.1 Co nam bedzie potrzebne i jak to zdobyc?  *N*E*W*  -------------------
+
+  Krotki spis potrzebnych rzeczy:
+
+  - stara centrala K-66, choc dziala tez na Pentacontach i innych
+    Strowengerach
+
+    Jezeli nie znasz typu swojej centrali to sprawdz czy masz wybieranie
+    tonowe czy impulsowe. Nie wiesz jak? Podnies sluchawke i wykrec 0.
+    Jezeli uslyszysz tzw. stukot (dodzwoniles sie stajni! :) to znaczy
+    za masz stara centrale, choc czasami nie do konca.
+    A jezeli uzlyszysz dzwiek, ton (takie piiiiiii) to znaczy ze masz
+    pecha i nie czytaj dalej tego rozdzialu :(
+    Niektore centrale analogowe tez posiadaja wybieranie tonowe (wiec
+    najlepiej dowiedziec sie od jakiegos tepsiarza). Lepsza metode
+    sprawdzania centrali znajdziesz w punkcie 3.2.1.
+
+    Dobra - jezeli okazalo sie ze nasz stara centrale to wypadalo by sie
+    dowiedzies jak sie ona zowie (choc potrzebne zbytnio to nie jest, raczej z
+    ciekawosci). Gdy dowiesz sie ze masz jakies tajwanskie NINJAPHONE 2023 to
+    dalsze operacje na niej robisz na wlasne ryzyko :))
+    Najprosciej zadzwonic do TP S.A. (czyt. Telekomunikacyjne Psy Srajace
+    [na] Abonentow) i zapytac sie o jej typ.
+    Mozesz skrecic ze chodzisz do technikum telekomunikacyjnego i potrzebujesz
+    to na prace dyplomowa lub cos w tym stylu. Jak baba bedzie tempa (u mnie
+    taka byla) to sie nie dowiesz i bedzie tak (u mnie tak bylo):
+
+    YO: "Dobry, ja dzwonie ...(tu wstaw sobie pierdoly..... wiec chodzi o to
+         jaka mamy w miescie centrale?"
+    GLUPIA BABA: "Jest nowa i stara" - z duma w glosie
+    YO: "A moze jakis typ?"
+    GLUPIA BABA: "Czego?"
+    YO: "Tej starej centrali ...(wstaw pierdoly i powstrzymaj sie od
+          bluzgania bo nic ci nie powie)"
+    GLUPIA BABA: "Nie wiem, ale ta nowa jest automatyczna"
+    YO STRACILEM PRZYTOMNOSC
+
+    Jak to nie wyjdzie to mozesz zapytac montera (ja tak zrobilem :),
+    biuro obslugi klienta itp.
+    A tak w ogole jak masz inna od wymienionych to tez mozesz sprobowac, moze
+    wyjdzie (tylko pamietaj musi byc dosc stara!)!
+
+  - kaloryfer (piorunochron) - spoko, musisz miec mase (uziemnienie).
+    Pinda polecal mase z gniazdka telefonicznego - ale to niebezpieczne w
+    razie pomylki (spalisz modem lub siebie :) a efekt jest ten sam :)
+
+  - potrzebujesz tez kilka metrow kabla telefonicznego (najlepiej tyle
+    zeby sieglo od kaloryfera do komputera lub telefonu) - do kupienia w
+    sklepie: telekomunikacyjnym, w samej Tepsie lub czasami w
+    elektronicznym/elektrycznym
+
+  - przelaczniczek (chamsko to napisalem nie?) - moze byc wylacznik od starej
+    lampy na biurku, magnetofonu, wibratora siostry :) albo kup w sklepie
+    elektronicznym
+
+  - nie obejdzie sie tez bez cierpliwosci. Spoko, jezeli chcesz mozesz
+    zlozyc urzadzonko w 5 minut i siedziec po 10 godzin dziennie na necie.
+    A jak zlozysz to zle lub centrala sie na to nie zlapie? ZABULISZ ZA
+    TE WSZYSTKIE ROZMOWY!!!!
+
+
+  3.1.1 Biling najlepszym sprawdzianem  *N*E*W* ----------------------------
+
+    Najlepszym sposobem na sprawdzenie poprawnosci SKYBOXA jest podzwonic
+    sobie pare razy w miesiacu, pospisywac dokladnie godziny i czas trwania
+    polaczen (jak najdokladniej). I kiedy rozpocznie sie kolejny miesiac
+    sprawdzic biling.
+    Biling to wykaz zawierajacy: date, godzine zestawienia polaczenia, czas
+    trwania oraz wywolany numer. Mozesz go obejrzec bezplatnie na monitorku
+    w TPSA lub dostac wydruk - za to drugie placisz :(. Polecam te 2 metode
+    poniewaz troche dziwne bedzie jak wpadniesz ze swoimi notatkami i
+    zaczniesz je porownywac z tymi na monitorze :), a tak siadziesz sobie
+    spokojnie w domciu i przeanalizujesz. Jak nie zobaczysz swoich rozmow na
+    bilingu to znaczy ze ich nie zaliczyl czyli - SKYBOX DZIALA :)
+    W niektorych TEPSAch nagrywaja biling na dyskietke (ale nie we wszystkich)
+    dostalem list od kolesia ktoremu nie nagrali bo bali sie wirusow :)))
+
+  - troche szczescia, ale o tym pozniej
+
+
+  3.1.2 Nowy sposobik na sprawdzenie centrali *N*E*W*  ---------------------
+
+  Nowym sposobem na sprawdzenie centrali jest podlaczenie do linii
+  telefonicznej miernika elektrycznego (multimeter) przy odlozonej sluchawce.
+  Jezeli zobaczycie 60V to na 99% macie stara centrale. Przy wartosci 48V
+  mozecie zapomniec ze podzwonicie za free (ale sprobowac zawsze warto :).
+  Sposob ten nie jest jeszcze przetestowany na 100% (ale na 99 :))
+
+
+  3.2 O co w tym chodzi?  *N*E*W*  -----------------------------------------
+
+  Zasada tego BOXa jest proszczacka. Nalezy oszukac taryfikator na centrali
+  w taki sposob by nie zliczal impulsow.
+
+  Opisze to na przykladzie:
+  W momencie gdy jeszcze nie podnieslismy sluchawki od telefonu linia tel.
+  jest rozwarta, napiecie wynosi 60V (w nowych centralach ok. 48V ale o tym
+  pozniej). Po podniesieniu sluchawki linia "sie zwiera" napiecie spada do
+  okolo 11-16V (w zaleznosci od obciazenia telefonu lub modemu - bez
+  znaczenia). Kazdy impuls (korzystamy przeciez z centrali impulsowej :) to
+  bardzo krotkie rozwarcie linii (czyli krotkotrwale 60V :).
+  Przykladowo 8 takich krotkich impulsow nastepujacych po sobie (tzw. stukot
+  podczas wykrecania) jest znakiem dla centrali ze wykrecamy cyfre 8 na
+  naszym aparacie telefonicznym (lub modemie :).
+  Po wykreceniu numeru nastepuje tzw. trasowanie czyli "poskladanie"
+  polaczenia miedzy numerami (naszym i tym gdzie dzwonimy) - slyszymy to
+  jako szybkie impulsy ktore (po poprawnym polaczeniu przechodza w rzadsze).
+  Te wolniejsze sygnaly wystepuja tuz przed podniesieniem sluchawki
+  po przeciwnej stronie. Kazdy taki sygnal to dzwonek u osoby do ktorej
+  dzwonimy. Modem dostepowy do Internetu odbiera po 1 takim sygnale (po co
+  czekac :)).
+  Odebranie rozmowy (podniesienie sluchawki, modemu po przeciwnej stronie)
+  slychac jako tzw. trzask (roznie to ludzie opisuja). Wlasnie podczas takiego
+  "trzasku" zostaje uruchomiony biling (no nie do konca ale tak przyjmijmy :).
+  Wlasnie w tym momencie powinnismy go "wylaczyc" :)))
+  Przykladajac mase do jednej z zyl od telefonu podczas wlaczania taryfika-
+  tora (bilingu) powodujemy ze dana rozmowa jest traktowana jako
+  "niezrealizowana". Zobacz tez punkt 3.4 (przedstawiony schemat logu z
+  centrali).
+
+  Wiem od jednego montera ze czasami jest trudno wyczaic zyle na ktorej
+  znajduje sie taryfikator. Czemu? Poniewaz instalatorzy to menele i za
+  komuny instalowali je jak leci, nie patrzac na zyle. Wiec jezeli bedziesz
+  mial pecha to nic z tym nie wyjdzie (bedziesz musial ja poszukac metoda
+  prob i bledow :\). Koniecznie przeczytaj rozdzial 3.2.1
+
+  Mozesz miec tez pecha jezeli centrala posiada liczniki i sumiennego
+  operatora. Zliczaniem impulsow nie zajmuje sie tylko biling (raz biling
+  raz taryfikator - ladnie wam kefie) ale tez (czasami) licznik.
+  Licznik to takie urzadzonko na centrali ktore zlicza twoje impulsy, w
+  odroznieniu od bilingu nie robi jednak zapisu reszty pierdol (gdzie
+  dzwonisz, jak dlugo itd.).
+  SKYBOX oszuka biling ale nie licznik (u mnie nie ma problemu bo potrzebowali
+  pomieszczen i usuneli liczniki :) - osly :]
+  Wiec moze sie zdarzyc ze jakis kret porowna biling i licznik (ale szanse
+  sa jak w TOTKA :) - zawsze mozesz krecic ze o niczym nie wiesz.
+
+
+  3.2.1 Niektorzy to maja szczescie  *N*E*W*  ------------------------------
+
+  Wiem na 100% iz istnieja centrale gdzie jest obojetne do ktorej zyly
+  przykladamy mase!! Co dziwniejsze jest to mozliwe na centrali gdzie inni
+  musza "wylaczac" biling tylko na okreslonej zyle. Nie wiem do konca o co w
+  tym chodzi ale jest super :)) nam phreakerom to nie przeszkadza :))
+  Jezeli wiec masz taka linie to przylozenie masy do obojetnie ktorej zyly
+  spowoduje niezaliczenie rozmowy :)))
+
+
+  3.3 Montujemy SKYBOXa!
+
+  Montarz jest prosty ze az boli!!!!!
+
+
+  3.3.1 Kaloryfer ----------------------------------------------------------
+
+  Podchodzisz do kaloryfera i skrobiesz troche farby. Farby zbrechtaj najle-
+  piej z rurki ktora wplywa (lub wyplywa) woda od kaloryfera, bedzie ci
+  latwiej zawinac na tym kabel.
+
+  Schemat rurki ze zbrechtana farba :))))))
+
+  rurka                         zbrechtana farba
+   |                             |
+  OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO|OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+  OOOOOOOOOOOOOOOOOOOOOOOO       |      OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+  OOOOOOOOOOOOOOOOOOOOOOOO              OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+  OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+
+  Ladna wiocha nie? Ale sie nudzilem i postanowilem pokazac moje zdolnosci
+  malarsko-graficzne :)
+
+  Teraz wez ten kabel od telefonu (ten ktory kupiles) i sciagnij izolacje
+  tak z 20 cm przy koncu.
+
+  Masz 20 cm golego kabla wiec owin nim rurke od kaloryfera (kilka razy) w
+  miejscu gdzie zbrechtales farbe (i maly obrazek :)
+
+    rurka                       kabel owiniety na rurce
+   |                             |
+  OOOOOOOOOOOOOOOOOOOOOOOOOOIIIIIIIIIOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+  OOOOOOOOOOOOOOOOOOOOOOOO  IIIIIIIII   OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+  OOOOOOOOOOOOOOOOOOOOOOOO  IIIIIIIII   OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+  OOOOOOOOOOOOOOOOOOOOOOOOOOIIIIIIIIIOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+                              I
+                              I-kabel idacy do komputera lub telefonu
+                              I
+
+  Owin to najlepiej jakims plastrem zeby sie nie zeslizgnelo. Pamietaj kabel
+  ma caly czas dotykac metalu. Juz nie bede rysowac owinietego plastrem kabla
+  nawinietego na rurke bo juz pewnie zbiera wam sie na wymioty :)
+
+
+  3.3.2 Teraz telefon ------------------------------------------------------
+
+  Oki - teraz wez w lapy kabel ktory idzie od gniazdka do telefonu
+  (lub modemu w komp.) i sciagnij ostroznie w jakims miejscu izolacje.
+  Jezeli beda isc 4 kable to sciagnij z 2. Jak nie wiesz z ktorych to zobacz
+  sobie wtyczke do telefonu lub modemu (taka mala, plastikowa i przezroczysta)
+  Nie ma problemu gdy kabel jest 2 zylowy (sciagaj z tych 2), ale jak jest 4?
+  Przypatrz sie jej z bliska tej koncowce ktora wchodzi w modem a zobaczysz
+  przez przezroczysty plastik 4 kolory kabli idacych do blaszek na przodzie.
+  Zapamietaj kolory 2 srodkowych, to z nich bedziesz sciagal izolacje :)
+
+  Schemat:
+
+  Wtyczka widok z gory
+
+  O - blaszka
+  I - kabel
+  # - plastik
+             wazne sa te 2 srodkowe
+              | |
+          ##O#O#O#O##
+          ##I#I#I#I##
+          ##I#I#I#I##
+          ##I#I#I#I## - wtyczka
+          ##I#I#I#I##
+          ##I#I#I#I## - gdzies w tym miejscu powinienies zobaczyc kolory
+            I I I I     kabelkow
+            I I I I
+            I I I I
+            I I I I
+            I I I I
+            4 kable
+
+
+  3.3.3 Sciagamy izolacje --------------------------------------------------
+
+  OK - Wiemy ktore to sa kable wiec sciagamy glowna izolacje z kabla i
+  widzimy w nim 2 lub 4 kabelki (sa kable z 2 widocznymi zylami, jak go
+  masz to nie ma klopotu). Teraz trzeba sciagnac izolacje (jak masz 4
+  to mam nadzieje ze sciagniesz z wlasciwych - skleroza RULES!!).
+  Sciagnij w jednym miejscu z jednej zyly, a w drugim z drugiej. Uchroni
+  cie to przed zwarciem. Uwazaj zeby nie przeciac kabla!!! Rob to ostroznie!!
+  A oto rys. jak to ma wygladac.
+
+                     brak izolacji
+                      |
+  kabel 1 - OOOOOOO------OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+  kabel 2 - OOOOOOOOOOOOOOOOOOOOOOOOOOO-------OOOOOOOOOOOOOOOOO
+                                          |
+                                        brak izolacji
+
+  Nie sciagaj izolacji co 10 metrow!!! Wystarczy co 2 cm :)
+  Troche trywialny ten opis, ale chce aby wszyscy zrozumieli.
+
+  Jak masz juz 2 kabelki bez izol. to wez w lapy ten kabel ktory
+  zawinales wokol kaloryfera (tylko go nie demontuj - wystarczy jak wezmiesz
+  drugi koniec :) i sciagnij kawalek izolacji przy koncu
+  (walne rys. zeby nie bylo smutno ;)
+
+                                 a tu nie ma izolacji :) goly metalowy kabel
+                                                        I
+  OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO   I
+  OOOOOOOOOtu sobie leci kabelek w izolacjiOOOOOOOOOO----------
+  OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+
+
+  3.3.4 Podlaczamy ---------------------------------------------------------
+
+  Teraz zrobimy cos takiego:
+  - podnies sluchawke od telefonu
+  - chwyc ten 2 zylowy kabel do telefonu (lub mod.) z ktorego sciagales izol.
+    w 2 miejscach
+  - chwyc tez ten od kaloryfera (sluchawka, jeden kabel, a ten chyba w zeby :)
+  - teraz dotknij kablem z kaloryfera jednej zyly tego do telefonu
+  - w sluchawce powinno pojawic sie buczenie
+  - przykladajac do 2 zyly tez powinno buczec
+
+  Jak buczalo (bbbbuuuuuuu) po przylozeniu do obydwu to znaczy ze dobrze
+  sciagnales izolacje z tego kabla od telefonu.
+
+  Jak nie buczy to znaczy ze:
+  - miales pecha i sciagnales kabel z 2 innych zyl (jak miales 4 :)
+  - oderwal sie kabel od rury przy kaloryferze (brak masy)
+  - jak buczy tylko przy jednej zyle to znaczy ze nie trafiles drugiej :O
+  albo
+  - w Telekomunikacji wysadzilo centrale :)
+  - masz telefon polowy :))
+  - twoj kaloryfer montowala ekipa ruskich hydraulikow :)))
+
+
+  3.3.5 Pierwsze testy *N*E*W* ---------------------------------------------
+
+  Teraz musimy wyczaic ktora z tych 2 zyl jest +.
+  PINDA w swoim FAQ pisze ze jak masz 2 zylowy kabel do telefonu o kolorach
+  CZERWONY i ZIELONY to jest to ZIELONY.
+  Ale jak znam naszych monterow z Tepsy to moze byc to rownie dobrze kabel
+  od lodowki lub czajnika (elektrycznego of coz :)
+
+  Zrobimy test. Zadzwon pod jakis numer miejscowy i po wystukaniu (wykleko-
+  taniu) przez aparat ostatniej cyfry jest chwilka czasu do podniesienia przez
+  lepka do jakiego dzwonimy. W tym momencie przyluz kabel od kaloryfera
+  do jednej z zyl (powinno buczec) i czekaj az koles odbierze.
+  Jak ktos odbiera to slychac trzask. Jezeli w tym momencie rozerwie rozmowe
+  to znaczy ze jest to kabel -. Nie rob tej proby przy modemie, dzwon
+  normalnie. Jak zadzwonisz jeszcze raz i po przylozeniu do drugiej zyly
+  nie rozerwie to trafiles na 90% we WLASCIWY KABEL. Oznacz go sobie jakos:
+  - owin tasma
+  - osmarkaj
+  - opluj
+
+  Ta metoda nie jest pewna na 100%. Jest na sieci kilka krajowych faq
+  opisujacych wyszukiwanie linii taryfikatora (odsylam do PINDA FAQ) ale
+  ja wole metode dzwon-zapisz-porownaj_z_bilingiem :)
+
+  Pamietaj, jak nie jestes tego pewny to zrob proby tzn. dzwon na jakies
+  numery, przykladaj kabel od kaloryfera jak opisalem wyzej, spisuj godziny
+  polaczen (jak polaczy), napisz sobie do ktorej to bylo zyly i sprawdz potem
+  na bilingu na ktorej nie zliczalo (nie bedzie tego polaczenia w bilingu :)
+
+
+  3.3.6 Bajer z przelacznikiem i schemat -----------------------------------
+
+  Mozesz wmontowac sobie przelacznik zeby nie brachac sie z kablami.
+  Wystarczy jakis od lampy (montowane sa na kablu) lub cos w tym stylu.
+  Wtedy wpinasz go w TO MIEJSCE:
+
+
+  komputer (lub telefon)
+     I                          linia tel. (2 zyly)
+     I                                I
+   ---------   ___                    I                        gniazdko tel.
+  ||~~~~~~~|| |   |-modem lub tel.    I                               I
+  ||       || |   |                   I                              ___
+  ||_______|| |   |-------------------------------------------------|   |
+   ---------  |___|----------\--------------------------------------|___|
+   _________        I         \
+  |#########|       I          \                      kabel od kaloryf.
+  |#########|       I           \                 __       I
+   ~~~~~~~~~        I            \---------------|__|----------------\
+                    I                              I                  \
+                    I                         przelacznik              \
+                    I                        "TO MIEJSCE"   _  _  _  _  \
+               nasza zyla pod                              | || || || |====
+             ktora sie podpinamy                           | || || || |
+                                                           | || || || |
+                                                           | || || || |
+                                                           |_||_||_||_|====
+                                                               I
+                                                             kaloryfer
+
+  I wyszedl schemacik opisujacy cale podlaczenie :)
+  Przelacznik zamontuj w jakims dobrym miejscu (nie chcesz chyba latac do
+  kaloryfera przy kazdym dzwonieniu, jeszcze cie starsi wysla do czubasow).
+  Najlepiej przy telefonie lub modemie.
+  !! PAMIETAJ ZEBY NIE ZOSTAWIC GO WLACZONEGO BO MOGA CIE WYCZAIC TELEPSY !!
+  Ukryj go jakos (moze przylep pod blat biurka czy jakos w tym stylu).
+
+  Mozna tez podpiac sie bezposrednio w gniazdku ale nie zawsze to ma sens:
+  - gniazdko za daleko
+  - gniazdko na widoku (a lepiej sie z tym kryc)
+  Ja mam do gniazdka z 6 metrow a kaloryfer mam 50 cm od kompa (no chyba ze
+  ktos sie nudzi i ma za duzo kabla :))))
+
+
+  3.3.7 Kilka uwag ---------------------------------------------------------
+
+  No to znasz juz sposob w jaki oszukac centrale.
+  Pamietaj, musisz przylozyc kabel (lub wlaczyc przelacznik) po wykreceniu
+  ostatniego numeru i trzymac do chwili az ktos podniesie po przeciwnej
+  stronie sluchawke. Jak uslyszysz ze podniusl to mozesz puscic ten kabel
+  od kaloryfera.
+  Dzwoniac do Internetu musisz to zrobic we wlasciwym momencie poniewaz jak
+  przytrzymasz za dlugo po podniesieniu sluchawki przez Tepse (to znaczy
+  jej modem) to zaklucenia wynikajace z przylozenia tego kabla od kaloryfera
+  rozlacza cie z nim. Modem potraktuje to buczenie jako zaklucenia.
+  Z rozmowami przez tel. jest prosciej. Kabel mozesz trzymac na MAX (jezeli
+  drugiej osobie nie przeszkadza buczenie).
+  Pamietaj w pierwszym miesiacu nie dzwon jak opentany. Zrob kilka testowych
+  rozmow (na obydwu zylach - jezeli nie rozlacza na zadnej) potem wez
+  biling.
+
+  Pamietajcie testowalem to w moim miescie, na waszych centralach moze nie
+  rozrywac na minusie, moze macie lepsze modemy (odporne na zaklucenia) lub
+  cos innego. Jak macie jakies uwagi, prosby (podziekowania :) to piszcie
+  na maila (adres u gory pliku).
+
+  3.3.8 Sprawa wykrywacza impulsow -----------------------------------------
+
+  Zapomnijce ze na tej starej centrali zadziala jakies urzadzonko do wykrywa-
+  nia zmian polaryzacji linii (zmiana natepuje przy zaliczeniu impulsu).
+  Na mojej centrali zaliczane jest wszystko (nawet 0-800....)
+  Ale spoko, nie place za te infolinie :)
+  Pod koniec miesiaca caly biling zostaje przepuszczony przez komputerek i
+  "darmowe" rozmowy (997, 0-800 itd.) zostaja wyzerowane.
+  Wiec najlepiej zapisac sobie wszystko na kartce i porownac z bilingiem.
+
+
+  3.4 TEPSA moze cie namierzyc!!!! *N*E*W* ---------------------------------
+
+  No tak, spelnily sie najgorsze koszmary - w TePSA maja mozliwosci aby
+  namierzyc SKYBOX'ownikow :((
+  Heh, piszac "maja mozliwosci" nie znaczy wcale ze namierza czy umieja :))
+  O co w tym biega??
+  Chodzi o to ze biling zapisywany jest w pamieci jakiegos kompa. Dzieki
+  boxowi nic nie zostaje tam wpisane :)) ale centrala ma bardziej szczegolowe
+  logi :(( Zapisane jest w nich kiedy podnosisz sluchawke, kiedy wykrecasz
+  jaki numer, kiedy odkladasz itd. (czyli wszystko :( )
+  Tak, tak. Nawet tak stare centrale jak K-66 czy Pentaconta maja takie
+  bajerki :\
+
+  Wyobraz sobie ze dzwoniac normalnie log wyglada tak (przykladowo):
+  gg-godzina
+  mm-minuta
+  ss-sekunda
+
+  gg|mm|ss
+  12:30:25  Podniesienie sluchawki (przez modem)
+  12:30:27  Wybranie numeru "0w202122"
+  12:30:36  Trasowanie (mniejsza z tym.. :)
+  12:30:40  Oczekiwanie na polaczenie
+  12:30:41  Polaczenie z numerem "0w202122"
+  > w tym momencie zalancza sie biling :(
+  > teraz siedzimy sobie np: 20 minut)
+  12:50:00  Rozlaczenie (odlozenie sluchawki)
+
+  A teraz ze SKYBOX'EM (przykladowo):
+  gg|mm|ss
+  12:30:25  Podniesienie sluchawki (przez modem)
+  12:30:27  Wybranie numeru "0w202122"
+  12:30:36  Trasowanie (mniejsza z tym.. :)
+  12:30:40  Oczekiwanie na polaczenie
+  > w tym momencie przykladamy SKYBOX'a i biling nic nie wie o polaczeniu :)
+  > wlaczenie boxa jest zapisane w logu jako rozlaczenie i polaczenie
+  > jest traktowane jako "Niedoszle do skutku" :)
+  12:50:41  Rozlaczenie (odlozenie sluchawki)
+  > teraz siedzimy sobie np: 20 minut :)
+  12:50:00  Rozlaczenie (odlozenie sluchawki)
+
+  [logi wygladaja podobnie-wszystkich tepsiarzy prosze o wyrozumialosc
+  za jego totalne zlamerzenie :)) ]
+
+  Jak widzimy brakuje nam linii:
+  12:30:41  Polaczenie z numerem "0w202122"
+  poniewaz wlaczylismy boxa i w tym momencie biling dostal sygnal
+  "Rozlaczenie" - ale centrala nie zerwala i rozmowa doszla do skutku :)).
+  Najdziwniejsze jest to ze po jakis 20 minutach znowu zostaje wpisane
+  w log "Rozlaczenie" :\
+  Miejsce w ktorym znajduja sie te logi jest olbrzymie. Nikomu raczej nie
+  bedzie sie chcialo bawic w takie szukanie. Istnieje taka mozliwosc
+  (jezeli sie wygadacie i ktos was podkabluje) - ale tepsy za dobrze i tak
+  nie wiedza jak tego uzyc. Dzieki takim logom mozna dojsc ze byliscie w
+  Internecie. Wystarczy porownac (mniej wiecej) "Oczekiwanie na polaczenie"
+  z drugim "Rozlaczeniem" i dopasowac to do logow z Internetowego serwera
+  TePSy (tam gdzie jest zapisywany przydzial IP) :(
+  Pisze to jedynie dla tego aby pokazac iz istnieje mozliwosc namierzenia
+  ale istnieje ona tylko wtedy gdy powaznie namieszacie (moze sie zdarzyc ;)
+  i traficie na obczajonego w tych sprawach Telepsa (a o takiego to juz
+  bardzo trudno :).
+
+  --------------------------------------------------------------------------
+
+  4. Linie na swiezym powietrzu i nie tylko
+
+
+  4.1 Znajdowanie linii tel. -----------------------------------------------
+
+  Po pierwsze musisz znalesc jakas linie telefoniczna (najlepiej nie
+  swoja - pod siebie podpinaja sie tylko ludzie z OPTIMUSA ;)
+  Wbrew pozora linie znalesc jest bardzo latwo. Jezeli mieszkasz w bloku
+  to jest super, ale i ludzie z domkow jednorodzinnych maja szanse.
+  Najlepszym jednak miejscem jest miejsce jak najdalej od naszej chaty.
+  Moze niedaleko ciebie jest jakas duza firma (pod takich najlepiej bo
+  rachunki i tak maja byczaste i jakies tam 1000 zl wiecej nic im nie robi ;)
+  jakis urzad, moze opuszczony budynek (na 90% linia bedzie odlaczona
+  ale mozna sprawdzic), dom w ktorym nie ma sasiadow (wyjechali na 2 miechy na
+  Majorke). Kiedy bedziesz uzywal lini to nie powinno byc wlasciciela
+  w domu (lub pracownikow w firmie) - stare telefony (te z tarcza) beda
+  wariowac jak bedziesz wykrecal jakis numer - np. 0-700-7... :)
+  Ogolnie mowiac podpinanie sie pod jakies firmy czy w innych budynkach
+  jest bezpieczniejsze. Podpinajac sie pod sasiada z bloku lub zza plotu
+  mozesz byc obserwowany (przez sasiada lub gliniarzy) od momentu kiedy
+  osiol dostanie ciut wysoki rachunek. Sasiad moze podnies sluchawke w chwili
+  gdy bedziesz bluzgal swojego wychowawce, no a w firmie wieczorami nikt
+  nie siedzi i bedziesz mial spokoj.
+
+  Przypatrz sie dobrze budynkowi, powinienies zauwazyc jakies
+  dyndajace kable. Musisz uwazac aby nie podpiac sie pod kabel z wysokim
+  napieciem (dobrze miec ze soba miernik lub probnik - to drugie jest
+  tansze i dostaniesz w kazdym sklepie elektronicznym).
+  Pamietaj ze kabel powinien byc cienki. Przewaznie cienki wychodzi ze sciany
+  budynku a potem idzie po murze do jakiejs skrzynki (lub wchodzi znow w
+  sciane). Ze skrzynki wychodzi najczesciej taki grubszy, czarny kabel -
+  jest on ciagniety miedzy budynkami na slupach lub podobnych badziewiach.
+  Takie kable mozesz czesto spotkac na starych budynkach. No a jezeli
+  zobaczysz ze kabel wchodzi do skrzynki z napisem Telekomunikacja lub TPSA
+  to mozesz byc pewien ze dobrze trafiles.
+  Takie dyndajace kable mozesz znalesc wychodzace z budek z hot-dogami itp.
+  Popatrz sobie czy przy kablu rosna jakies krzaki, czy miejsce jest malo
+  widoczne dla przechodniow, sprawdz czy nie ma stroza z kejtrem :)
+  Jezeli dane miejsce do podpiecia (np. kabel sasiada) znajduje sie
+  niedaleko od twojego domciu (do 200 meterkow) to mozesz poprowadzic
+  kabel do swojego pokoju i w spokoju siedziec przy komputerku (w ciepelku :)
+  ale o tym pozniej.
+
+
+  4.2 Podpiecie w piwnicy --------------------------------------------------
+
+  Najlatwiej jest podpiac sie w piwnicy. Skrzynki dyndaja na scianach,
+  wieczorkami jest tam cicho, a jak ktos cie dupnie to wkleisz kit ze
+  wlaznie szles po sloiki z kiszonym rabarberem do swojej piwnicy :)))
+
+ ** tu male wyjasnienie dla Havoca (osiolkowi trzeba wytlumaczyc)
+ ** "dyndaja" to znaczy "WISZA" trepie (sam sie nie potrafisz domyslic
+ ** to inni, madrzejsi musza ci tlumaczyc) - nastepnym razem zapytaj
+ ** jakiegos dzieciaka z przedszkola a nie slij mailow bo od tych
+ ** twoich pytan tylko mnie bandzior (brzuch :) ze smiechu boli (APAP RULEZ!!)
+
+  Niedaleko mnie jest blok gdzie ze skrzynki TPSA wychodza sobie kabelki
+  i gnaja po suficie piwnicy do kanalow na kabelki (podpiecie proste ze az
+  boli). Nowe skrzynki w nowych budynkach ida pod tynkiem. Mozesz kupic
+  wykrywacz kabli w scianach (w Selgrosie za ok 30 zl) i wybrechtac kawal
+  sciany ale to sposobik dla osiolkow.
+
+
+  4.3 Kanaly wentylacyjne itp. ---------------------------------------------
+
+  Czesto kable od telefonow (w starszych budynkach) ida kanalami
+  wentylacyjnymi, kanalami na kable energetyczne itp.
+  Wystarczy otworzyc skrzynke z bezpiecznikami w domu lub kratke wentylacyjna
+  i jezelibedziesz mial szczescie podepniesz sie pod sasiada.
+  Ida tam tez czesto kabelki telewizji kablowej, domofonu itp. wiec sie
+  nie pomyl.
+
+
+  4.4 Podpiecie ------------------------------------------------------------
+
+
+  4.4.1 Przez rozwalenie izolacji ------------------------------------------
+
+  Jezeli nie jestes pewny lini (lub juz sie podpinasz) to ostroznie sciagnij
+  izolacje - nie sciagaj na jednym poziomie bo bedzie zwarcie.
+
+  SPOSOB SCIAGANIA IZOLACJI ZOBACZ W DZIALE 3.3.3
+
+  Izolacje mozesz zeskrobac nozem, sciagnac "sciagaczem" do izolacji
+  lub opalic zapalniczka (nozem uwazaj bys nie przecol kabla)
+
+     Czemu opisalem sposob sciagania izolacji? Jezeli bedziesz chcial
+  sprawdzic probnikiem czy nie podpinasz sie pod linie z wys. napieciem
+  i chamsko sciagniesz izolacje to moze bedzie zwarcie, pojda korki no
+  i prawdopodobnie prad pieprznie ciebie :(
+  Jak juz sciagniesz izolacje to przyloz probnik do kazdego odizolowanego
+  (tego bez otoczki ktora sciagneles) przewodu. Jezeli probnik zaswieci
+  to daj sobie spokoj, zaizoluj kabel i wiej. Najlepiej do izolacji kupic
+  tasme izolacyjna, nie tam zadne tasmy do papieru - to badziew.
+  Tasme kupisz w sklepie elektronicznym.
+
+
+  4.4.2 Sposob na igly -----------------------------------------------------
+
+     Jezeli jestes pewien ze kabel jest od telefonu to mozesz podpiac sie
+  wbijajac dwie igly w kabel (po wyciagnieciu igiel nie bedzie sladu, jak
+  zbrechtasz izolacje nozem to moga sie pokapowac).
+  Teraz powinienes przytachac komputer do podpiecia (najlepiej z modemem :)
+  lub telefon (podryndac do kumpli tez milo).
+  Trudno jest trafic igla w kabel wiec metoda jest badziewna - ale trening
+  czyni mistrza :)
+  Z komputerkow to najlepszy bedzie laptop ale z tym moga byc klopoty.
+  Jezeli podpinasz sie w jakiejs piwnicy to mozesz pociagnac sobie kabel
+  z zasilaniem z domu lub od jakiejs lampy (piwnicznej a nie z ulicy :)
+  Gorzej sprawa z zasilaniem ma sie gdy podpinasz sie do kabla na swierzym
+  (HUTA KATOWICE RULES) powietrzu. Mozesz poszukac sobie jakiejs lampy lub
+  transformatora i pociagnac zasilanie ale to jest troche zabawy.
+
+
+  4.4.3 Podpiecie z laptopem -----------------------------------------------
+
+     Tak sobie mysle (hehe - mysle :) ze mozna kupic sobie jakiegos laptopa
+  (stare 486/66 kupisz za ok. 1000 zl w komisie), do internetu nie potrzeba
+  Pentiuma II 450 - no chyba ze chcesz zalozyc lewy serwer na linii sasiada :)
+  Laptopik 486/66 8RAM no i modem starczy (do przegladarki, telnetu i ftp
+  wystarczy) - i tak sie szybko zwroci, nie bedziesz przecierz placil za
+  telefon :)) Baterie w laptopie starcza tylko na pare godzinek wiec mozesz
+  przytaszczyc ze soba akumulator. To nie sa jaja - nie jest taki ciezki a
+  bedziesz znacznie dluzej uzywal komputera.
+  Laptop powinien miec przejsciowke na zasilanie z akumulatora (najczesciej
+  z koncowka do zapalniczki samochodowej) pomoze to przy sciaganiu
+  5MB mpega (ach te zapchane FTPy)
+
+
+  4.4.4 SYGNAL -------------------------------------------------------------
+
+     OK. Masz juz linie na oku i jestes pewien ze jest to linia telefoniczna.
+  Teraz musisz wyczaic odpowiedni moment kiedy wlasciciela telefonu nie
+  bedzie w jego poblizu, najczesciej wieczorem. Miejsce w ktorym bedziesz sie
+  podpinac powinno byc (przynajmniej na czas podpiecia) niewidoczne
+  dla innych ludzi. Jakies krzaki, ciemna piwnica czyli ogolny syf powinno
+  byc wystarczajacym kamuflarzem. Teraz sciagnij ostroznie izolacje z
+  kabla. Po sciagnieciu glownej otoczki w srodku znajdziesz 2 lub 4
+  zaizolowane kable. Teraz musisz wyczaic ktore sa od telefonu (w przypadku
+  tych 4 of coz). Dobrze miec przy sobie telefon, gdy podepniesz 2 kable
+  od telefonu do 2 odizolowanych powinienies uslyszec sygnal w sluchawce.
+                         !! JEST SYGNAL - JEST OK !!
+  Teraz masz kilka wyjsc:
+  - dzwonic z tego telefonu do kumpli, audiotele itp.
+  - przylaczyc swoj kabelek i usadowic sie z telefonem lub komputerem
+    w bezpieczniejszym miejscu - a po skonczeniu rozlaczyc kabel
+  - wziasc dlugasny kabel, zamaskowac go jakos (za rynna lub w murze) i wkopac
+    w ziemie. Rowek musisz wykopac oczywiscie do miejsca skad bedziesz chcial
+    sobie dzwonic (np. do domciu :). Teraz wladuj kabel do rowku i zasyp go.
+    Pamietaj, ten numer rob na poczatku miesiaca i pod koniec lepiej go wykop.
+    Wlasciciel telefonu przecierz dostanie w koncu rachunek, zglosi do TePSy
+    i na gliny (miesiac to i tak duzo, znajdz sobie lepiej inne miejsce lub
+    zrob sobie miesieczna przerwe)
+
+
+  4.5 Jaki kupic kabel -----------------------------------------------------
+
+     Kup sobie kabel do podpiec w terenie - ok 30 meterkow (lub dluzszy).
+  Najdluzszy kupilem 100 m. do wkopania (ale takie to dostaniesz
+  raczej w hurtowniach).
+  Myslicie sobie po co taki dlugi? Czasami wystarczy 1 metr ale
+  czesto bedziesz sie podpinal do kabla w miejscu widocznym dla przechodniow
+  czy stroza, kabelek przyczepisz tam a siedziec mozesz 30 metrow dalej np.
+  za plotem firmy. Jest to bezpieczniejsze bo gdy cie nakryja to ktos wyleci
+  z budynku a ty widzac goscia odczepisz spokojnie kabel od modemu, chwycisz
+  sprzet i spokojnie czmychasz.
+  Lepiej poswiecic kabel niz 3 lata zycia w pace.
+  Na jednym koncu wmorduj koncowke do modemu w komputerze a do drugiego
+  przyczep tzw. krokodylki do podpiec lub szpilki (zalezy od sposobu
+  podpiecia, ja wole krokodylki). Kabel kup w Telekomunikacji :) najlepiej
+  2 zylowy. Koszt kabla to ok. 50gr za metr.
+
+
+  4.6 Zdalny telefon -------------------------------------------------------
+
+  Jest tez sposob na telefon bezprzewodowy schowany w krzakach - a ty gdzies
+  dalej z sama sluchawka. Ale to cienizna. Musisz kupic telefon bezprzewodowy
+  i liczyc sie z tym ze ktos to wyczai, zacznie padac deszcz lub zapierdziela
+  go borsuki ;)
+  I co jeszcze powiedza ludzie widzac goscia z takim telefonem w lapie :)))
+  "Ej!!! Chlopie, kup sobie chociarz zabawkowa komurke jak chcesz szpanowac
+  !!!!!!" - no i wielki brecht
+  Metoda wychodzi za drogo (a my kombinujemy najtaniej jak sie da :)))
+
+
+  4.7 Uwagi ----------------------------------------------------------------
+
+  Po kazdym podpieciu lepiej dobrze zatrzyj slady (dobrze jak wepniesz sie
+  na igly). Po rozlaczeniu krokodylkow zaizoluj kable by nie zwieraly sie
+  przypadkowo.
+
+  Do zwyklego dzwonienia dobrze bedzie sobie zrobic telefon do podpiec.
+  Najlepiej kupic u ruskich telefon:
+  - sluchawka z klawiatura numeryczna (czyt. guziczki a nie tarcza :)
+  - musi miec kabel do centralki a nie zadne antenki
+  Teraz wystarczy obciac kabel przy centralce i mamy aparat do podpiec.
+  Sciagnij troche izolacji w miejscu gdzie obcinales przewod i zobaczysz 2
+  lub 3 kabelki. Przylutuj do nich krokodylki (do kupienia w sklepie
+  elektronicznym) i juz mozesz sie podpinac. Pamietaj ze wykozystasz tylko
+  2 kable, jesli sa 3 to poprobuj na chybil-trafil z podpieciem (nie masz
+  zbyt duzo kombinacji :)
+  Podchodzisz teraz z takim telefonem do kabla np. w piwnicy. Namierzasz
+  kabelek sasiada, sciagasz izolacje, podlaczasz krokodylki i nabijasz
+  mu rachunek :)))
+
+  Jezeli podpinasz sie komputerem musisz do konca jednego kabelka przyczepic
+  koncowke do modemu. To taka przezroczysta, plastikowa, mala zlaczka.
+  Mozna ja kupic w kazdym sklepie telekomunikacyjnym.
+  Kupiles i co? Jak to sie montuje? Kurde chyba wcisneli mi cos nie tak?!
+  Wszycho jest OKI! Tylko ze wtyczka ma miejsce na 4 druciki a my potrzebujemy
+  tylko 2. Jesli masz kabel 4 zylowy to nie problem, mozesz wladowac 4 i
+  potem probowac na fuksiora ale nie musisz. Telefony korzystaja tylko z
+  2 srodkowych rowkow na kable. Na koncu tych rowkow znajduja sie blaszki.
+
+  WTYCZKA DO MODEMU ZOBACZ DZIAL 3.3.2
+
+  Jezeli bedziesz dzwonil sobie spokojnie a tu nagle jakis
+  menel podniesie sluchawke (uslyszysz to) to zbieraj aparat i zwiewaj jak
+  najszybciej. Podobna sprawa ma sie z komputerem. Jezeli podczas ircowania
+  polaczenie zostanie przerwane to pakuj manele i tez zwiewaj. Ten drugi
+  przypadek moze byc spowodowany fatalna jakoscia lacz TPSA lub jakims
+  kretem na IRCu, ale lepiej nie ryzykoj - zawsze mozesz przeczekac i jesli
+  bedzie spokoj i nikt nie bedzie sie krecil wrocic. Badz ostrozny i jesli
+  cos bedzie budzic twoje podejzenia (np. facet za plotem krzyczacy "ty
+  menelski pajeczazu zapier..." :) to wiej :))))).
+  (tego zartu Havoc nie zrozumial :((((
+
+
+  4.8 Zostales zlapany :( --------------------------------------------------
+
+  Jak cie zlapia to graj glupa:
+  "Ja tu tylko przechodzilem, lezal aparat to go podnioslem, myslalem ze to
+  komurka czy co?..."
+  Wal kity ile wlezie gdy zlapia cie za reke na dzwonieniu.
+  Wypieraj sie gdy beda mieli tylko podejzenia (no chyba ze beda mieli
+  nagrana rozmowe jak rozmawiasz z Kasia Figura :)
+
+  --------------------------------------------------------------------------
+
+  5. Zakonczenie  *N*E*W*
+
+  Mam nadzieje ze nie mdlales zbyt czesto z nudow albo lykales czegos
+  na uspokojenie czytajac ten FAQ.
+  Wiem ze wydaje sie tobie ze to wiocha ale pisalem to z mysla o totalnych
+  ciemniakach (nie zebym uwazal ciebie za takiego ;) Chcialem zeby NIKT nie
+  mial problemu ze zrozumieniem tresci (no chyba ze oblal podstawowke
+  wieczorowo). I nie piszcie mi jakis komentarzy jak Havoc (dopierdolic
+  to tez moge sie do wszystkiego) - jak sie nie podoba to wywal plik z dysku.
+  Przestaje tez odpisywac na maile typu: "Na 1 zyle mi buczy a na 2 syczy.
+  Ktora to moze byc??" - LUDZIE WEZCIE BILING TO SIE DOWIECIE!!!!!!!!
+  Jak masz jakies uwagi lub informacje to pisz na maila (jest
+  u gory ale podam go jeszcze raz):
+
+    skyvom@friko3.onet.pl
+  odwiedz strone:
+    http://volaw.cjb.net
+  poszukaj na ICQ
+    UIN:28500719 (najczesciej zastaniesz nas kolo godz 24)
+
+
+                                                                   SKY'99
+
+  P.S. A tak poza nawiasem to pozdrowienia dla ludzi z TP S.A.!!!
+       To dzieki wam powstal ten FAQ. Jak Internet bedzie za free to co
+       bede pisal??!! WIERSZE????!!!! (tu nastapil CHAFT calej kolacji!!)
+       No i czekam na jakis faq HAVOCA (hehe - tam sie dopiero ponalewam :)
+       no ale chlopak nie umie pisac wiec raczej nic z tego :(((
+
+  END OF FILE

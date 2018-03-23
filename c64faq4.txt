@@ -1,0 +1,209 @@
+-------------------------------------------------------------------------------
+-------------------------- c64 FAQ * CZESC 4 ----------------------------------
+-------------------------------------------------------------------------------
+------------------------ michalc64@hotmail.com --------------------------------
+---------------------------------------------------------------------- 97.10.29
+
+ SPIS TRESCI
+-------------
+1. WSTEP
+2. PENTACONTA BOX (cd.) 
+3. TELEFONICZNE KARTY MAGNETYCZNE (cd.)
+4. BUDKI TELEFONICZNE (cd.)
+5. AWARD BIOS (cd.)
+6. -POPRAWKI-
+
+
+
+1. WSTEP
+   To juz naprawde ostatnia czesc!!!
+   Z magazin'u tez chyba nici:(
+   Po prostu brak mi materialow, czasu i checi na "tworzenie" czegos
+   co czyta tylko kilka osob.
+   Pomyslalem jednak, ze skoro ma to byc ostatni odcinek, pojde na reke
+   wszystkim zainteresowanym i opisze "dokladnie" PENTACONTA BOX i
+   "100%" metode na budki telefoniczne.
+   Zycze milej lektury i przyjemnej zabawy...
+
+2. PENTACONTA BOX
+   Schemat:
+   --------------------------------------------
+   				
+                      /  Wyl          telefon/
+   linia     +-------+  +------+        modem
+             |                 |
+   ----------+---- Pot -+------+----------------
+                    |   |
+                    +---+
+
+   Pot - potencjometr 10kOhm
+   Wyl - wylacznik
+   
+
+   Regulacja:
+   - ustawic Pot w jednej z 2-ch skrajnych pozycji
+   - Wyl otwarty (jak na rysunku)
+   - podniesc sluchawke
+   - jezeli brak sygnalu, nalezy ustawic Pot w przeciwnej skrajnej poz.
+   - odlozyc i ponownie podniesc sluchawke
+   - slychac ton 400Hz
+   - powoli zwiekaszac wartosc rezystancji Pot
+   - podczas regulacji powinno byc slyszalne nagle obnizenie sily sygnalu
+     w sluchawce
+   - Wyl zamkniety
+   - odlozyc sluchawke
+   - Wyl otwarty   
+   - podniesc slychawke
+ A - jezeli nadal slychac ton, nalezy zwiekszyc wartosc rezyst. Pot
+   - Wyl zamkniety
+   - odlozyc sluchawke
+   - Wyl otwarty
+   - podniesc sluchawke
+   - jezeli slychac ton to isc do punktu A i powtorzyc cala procedure
+   - jezeli nie slychac tonu to isc do punktu B
+ B - Wyl zamkniety
+   - odlozyc sluchawke
+   - podniesc sluchawke
+   - Wyl otwarty
+   - jezeli nie slychac tonu to z powrotem zmniejszczy wart. rezyst, Pot
+     i isc do punktu A
+   - jezeli slychac oslabiony (cichy) ton 400Hz, to regulacja zostala
+     zakonczona pomyslnie
+
+   Uzytkowanie:
+   - Wyl zamkniety
+   - podniesc sluchawke
+   - Wyl otwarty
+   - wykrecic numer
+   - po uzyskaniu polaczenia (po 1-3 sek): Wyl zamkniety
+   - od tej pory rozmowa jest darmowa
+
+
+   Jak widac, najtrudniejsza jest regulacja:(
+   Jednak jezeli wszystko wykonasz wedlug opisu, BOX powinien
+   funkcjonowac poprawnie.
+  
+ * Nie ponosze odpowiedzialniosci za ewentualne uszkodzenia telefonu,
+   linii lub centrali telefonicznej, bedace skutkiem uzytkowania
+   w.w. urzadzenia!
+ * Nie bede odpowiadal na zadne listy dotyczace wyzej przedstawionego
+   tekstu. 
+
+   
+3. TELEFONICZNE KARTY MAGNETYCZNE
+   Po ostatnim "artykule" na ten temat, dostalem kilka listow z prosbami
+   o troche bardziej szczegolowy zapisu informacji na karcie.
+   Tak wiec to co tu opisze bedzie uzupelnieniem poprzedniego tekstu i jest
+   po czesci efektem moich ostatnich doswiadczen.
+
+     Poniewaz zuzyty nosnik (uszkodzony przez "automat") nie nadaje sie
+   za bardzo do dalszego zapisu (nadaje sie, ale... slabo), nalezy go
+   usunac. Najlepiej jest to zrobic przy pomocy paznokcia.
+   Nie wolno jednak uszkodzic tej czesci nosnika, na ktorej jest zpisane
+   ID1 !!! Zdrapac trzeba tylko czesc ID2.
+   Zapytacie pewnie: "jak wykumac gdzie dokladnie nalezy zdrapytac, zeby 
+   nie uszkodzic ID1 ?". Otorz sprawa jest bardzo prosta!
+   Nalezy nosnik karty magnetycznej posypac tonerem (od xero, albo on
+   drukarki laserowej). Jezeli jest to toner dwuskladnikowy, nalezy 
+   wykorzystac skladnik o wlasciwosciach magnetycznych.
+   Patrzac "pod swiatlo" latwo mozna zauwazyc miejsca w ktorych jest
+   zapisana informacja. Toner przylgnie do namagnesowanej czesci karty.
+   Zrobcie sobie eksperyment. Posypcie tonerem karte nowa i zuzyta.
+   Zobaczycie wtedy wyrazna roznice :)
+     W poprzedniej czesci FAQ napisalem ze do zapisu karty nalezy
+   uzyc syngaly sinusoidalnego. Jest to prawdziwe tylko wtedy gdy
+   chcemy zapisac informacje na starym nosniku karty. 
+   W przypadku zapisu tasmy Hi8 (metalowa tasma do kamer video),
+   nalezy uzyc sygnalu prostokatnego o bardzo malym wspolczynniku
+   wypelnienia (takie "szpilki")
+
+
+ A |
+   |
+   |   |   |   |   |   |   |   |
+   |   |   |   |   |   |   |   | 
+   |   |   |   |   |   |   |   |
+   +-------------------------------- t
+  
+   Impulsy te zapisujemy na tasmie Hi8, ktora nastepnie przyklejamy
+   (najlepiej jest przyprasowac ja zelazkiem) w miejsce usunietego
+   wczesniej z karty nosnika.
+   Aha! Hi8 zapisujemy przy uzyciu magnetofonu szpulowego mono
+   (po prostu nawijamy Hi8 zamiast zwyklej tasmy).
+   Proste i logiczne? :) ("oczywiscie!!!" - uslyszalem wspolny okrzyk)
+   Pozostaje jednak pewna kwestia...
+   Mam na mysli czestotliwosc impulsow:(
+   Do tego nalezy dojsc (niestety) metoda "prob i bledow" :(
+   Po kazdym zapisaniu tasmy, nalezy posypac ja tonerem i przylozyc do
+   nie zuzytej karty magnetycznej (rowiez posypanej tonerem).
+   Odleglosci miedzy poszczegolnymi prazkami na tasmie, powinny 
+   byc identyczne jak na karcie.
+   
+   Myslalem ostatnio nad zapisem ID1 :)
+   Ktos juz to zrobil, a wiec jest to mozliwe:)
+   Mysle ze do zapisu ID1, bedzie trzeba wykorzystac glowice stereo
+   (rowniez od "szpulowca"). 
+   Jezeli ktos z was ma pewne doswiadczenie w zapisywaniu kart, to
+   serdecznie zapraszam do korespondencji.
+   Jednak chcialbym uprzejmie zauwazyc, ze listy od "heretykow" beda
+   ignorowane.
+
+
+4. BUDKI TELEFONICZNE
+   Praktycznie kazdy e-mail, ktory dostaje zawiera w sobie nastepujacy
+   tekst: "plz opisz mi 100% metode na budki" :)
+   No wiec co innego pozostalo mi zrobic? ;)
+   (mam tylko nadzieje ze po opisaniu tej metody, dalej bede dostawal
+    e-maile) :))))
+
+   - Potrzebujesz generator DTMF (dialer), lub dwie sasiadujace budki
+     telefoniczne.
+   - Dzwonisz np. z komorki, albo z drugiej budki, do budki z ktorej
+     masz zamiar dllluuuuggggoooo gadac :)
+   - Budka zaczyna dzwonic...   
+   - Nie podnosisz sluchawki, tylko wylaczasz komorke (albo odlkadasz
+     sluchawke w drugiej budce).
+   - Czekasz 2-4 sek i dopiero wtedy podnosisz sluchawke.
+   - W sluchawce slychac 400Hz i jakies dziwne pikanie (pik pok)
+   - Na wyswietlaczu pojawi sie ROZMOWA PRZYCH. (telefony "mysli", ze
+     ktos do Ciebie dzwoni).
+   - Przykladasz do mikrofonu generator DTMF i wybierasz numer.
+   - Po chwili uzyskujesz polaczenie, za ktore placi TPSA !!!!!!!
+  
+   Zamiast dialera mozna uzyc sygnalow DTMF ze sluchawki drugiej budki
+   (trzeba przylozyc sluchawke drugiej budki do mikrofony pierszej i
+    nastepnie wybrac z drugiej budki numer).
+   Niektore telefony komorkowe maja rowniez wbudowany DTMF, tak wiec
+   jest wiele drog do celu :))
+   Jezeli dana budka nie daje sie skiwac, musisz wybrac sie do innej:(
+   TPSA znalazla juz metode na zabezpieczanie sie przed takimi
+   oszustwami (ale wiele budek jeszcze dziala):(
+
+5. AWARD BIOS (Metallo)
+   Na AWARD BIOS'ach dziala tez inne "uniwersalne" haslo: Zbgn
+
+
+6. -POPRAWKI-
+   Urzadzenie sprawdzajace czy polaczenie jest platne czy bezplatne, nie
+   funkcjonuje poprawnie na niektorych (chyba starszych) typach central.
+   Po uzyskaniu polaczenia, powinna sie zmienic polaryzacja linii i tym
+   samym zaswiecic sie druga dioda. Jednak tak sie nie dzieje i swieci
+   sie caly czas ta sama dioda. Wystepuje tez czasem inny proble.
+   Niezaleznie od typu polaczenia, zawsze zmienia sie polaryzacja linii.
+   Przykro mi, ale nie jestem w stanie powiedziec dlaczego tak sie dzieje.
+
+
+Pozdrowienia dla (kolejnosc prawie przypadkowa):
+   |g0d| , PhReAk, a800xl, Killjoy, Frikozoid, 'Harry, BaRtHek, Ult0r,
+   Aski, Pan, Niebieski, Witkacy, nic0, mole9, Camilla, EjKi, lcamtuf,
+   fredzik, ult0r, hellfire, R4P70R, Raagoon, SpaN, megan, [nth], [bth],
+   metallo, pl0ns, p0wer, SpAc3mAn.
+    
+                                Ce64 - michalc64@hotmail.com
+                     
+   .     .     .
+   ...  ...  ...
+   .............   ANTY-POZDROWIENIA DLA WSZYSTKICH DRESIARZY
+    ...........      
+      ......                   
+

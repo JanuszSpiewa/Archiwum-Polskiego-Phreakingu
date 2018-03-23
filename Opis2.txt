@@ -1,0 +1,232 @@
+	TRANSMISJA MIEDZY PLYTA GLOWNA I CZYTNIKIEM SILVERA BY SHADOWS
+
+15.08.2002
+
+
+Wszystkie dane wysylane sa portem szeregowym (pierwszy LSB) z predkoscia
+transmisji rowna 9600bps, z bitem parzystosci i dwoma bitami stopu.
+
+
+PLYTA GLOWNA (PG)
+-----------------
+Dane wsylane z PG moga miec nastepujace formaty:
+-------------------------------------------------------------------------------
+1 - Potwierdzenie odbioru danych z czytnika:
+
+		10  4X  00  00  FF  CTR
+
+   X -	Liczba z zakresu 0..Fh, zwiekszana przy kazdym potwierdzeniu,
+	taka sama jak w danych z czytnika, ktore sa potwierdzane
+ CTR -	Suma kontrolna;
+	CTR=NOT(((x1+x2+...+xn) mod 256)+((x1+x2+...+xn) div 256))
+			tutaj: CTR=NOT(5X)
+-------------------------------------------------------------------------------
+2 - Wyslanie rozkazu do czytnika:
+
+				 ilosc bajtow pozostalych do odebrania - 2
+				 |
+		00  10  8Y  00  02  00  ROZKAZ  FF  CTR
+
+   Y -	Liczba z zakresu 0..Fh, zwiekszana przy kazdym wysylanym rozkazie,
+	czytnik uzywa jej pozniej przy potwierdzeniu odebrania rozkazu
+UWAGA:	Pomiedzy dwoma pierwszymi bajtami (00 i 10h) konieczna jest przerwa
+	trwajaca ok 10ms
+-------------------------------------------------------------------------------
+ROZKAZY:
+  32h	-	przygotowanie do odczytu karty
+  33h	-	wyrzuc karte, anulowanie odczytu karty
+  3Ah	-	przeslij ciag danych dla STG97
+  3Eh	-	kasuj karte
+  40h	-	?
+  41h	-	odczyt numeru i wersji czytnika
+  43h	-	wyrzuc karte (lekko)
+  46h	-	odczyt stanu cztnika
+  4Ah	-	kasuj na karcie, odczytaj jednostki
+  34h	-	kasuj w pamieci, odczytaj jednostki
+  59h	-	wylaczenie cztnika (zamknij drzwi)
+
+-------------------------------------------------------------------------------
+
+
+CZYTNIK (CZ)
+------------
+Dane wysylane z CZ moga miec nastepujace formaty:
+-------------------------------------------------------------------------------
+
+1 - Potwierdzenie odbioru rozkazu z PG:
+
+		01  4Y  00  00  FF  CTR
+-------------------------------------------------------------------------------
+
+2 - Informacja o zdarzeniu
+
+                               (y0)
+		01  ZX	00  nn	00  y1  y2  ....  ynn  CTR
+                        -----   ------
+                        Word    Word
+                        Hi Lo   Hi Lo
+
+	Z=0 - bez potwierdzenia z PG
+	Z=8 - konieczne potwierdzenie przez PG odbioru danych z CZ
+
+
+*******************************************************************************
+				ZDARZENIA
+*******************************************************************************
+ODCZYT JEDNOSTEK KARTY
+ nn = 05h
+ y1 = 89h	y4 = IMP - ilosc jednostek na karcie
+ y2 = 15h	y5 = 0FEh
+ y3 = 00h
+
+TRANSMISJA DANYCH Z KARTY MAGNETYCZNEJ
+ nn = 0Eh
+ y1 = 84h	y4..y11 = A..H (dane z karty)
+ y2 = 02h	y12 = 00h
+ y3 = 0Ah	y13 = IMP - liczba jedynek w 3 czesci karty, a nie impulsow
+		y14 = jakas suma kontrolna danych z karty (nie wiem jak
+			jest wyliczana)
+
+TRANSMISJA DANYCH Z KARTY KONSERWATORA
+ nn = 0Bh
+ y1 = 84h	y4..y8 = B3..B7 (dane z karty - dane na karcie: B0..B15)
+ y2 = 80h	y9  = 4Dh
+ y3 = 07h	y10 = C4h
+		y11 = FBh (chyba tez suma kontrolna)
+
+TRANSMISJA DANYCH Z KARTY CHIP (OTO)
+ nn = 14h
+ y1 = 84h	y4..y17 = B1..B14 (dane z karty - dane na karcie: B0..B15)
+ y2 = 91h	y18 = 00h
+ y3 = 10h	y19 = IMP (obliczona ilosc impulsow na karcie)
+		y20 = F5h (znowu SK)
+
+
+ nn  - liczba bajtow calego bloku danych - nie liczac bajtu nn
+ y1  - rodzaj zdarzenia
+ y2  - rodzaj karty:
+   01h  = magnetyczna czerwona
+   02h  = magnetyczna zielona
+   03h  = magnetyczna niebieska
+   40h  = kredytowa operatora
+   42h  = kredytowa
+   80h  = chip konserwatora
+   8Ah  = chip RUCH 1
+   8Fh  = chip RUCH 2
+   90h  = chip niebieska
+   91h  = chip OTO Lublin
+   inne = niewazna
+ y3  - liczba bajtow opisujacych karte
+ ynn - suma kontrolna
+
+
+WYRZUCONO KARTE
+ nn = 03h
+ y1 = 8Dh
+ y2 = 00h
+ y3 = FEh
+
+SKASOWANO KARTE
+ nn = 03h
+ y1 = 8Dh
+ y2 = IMP - ilosc jednostek skasowanych
+ y3 = FEh
+
+KARTA NIECZYTELNA
+ nn = 04h
+ y1 = 86h
+ y2 = 00h - dla kart MAGN
+      02h - dla kart Kredytowych Operatora
+      04h - dla kart CHIP
+      05h - dla kart CHIP ktore mogly by byc czytelne (brak odpowiedniego SAM'a)
+ y3 = 01h
+ y4 = FEh
+
+KARTA ZUZYTA
+ nn = 03h
+ y1 = 85h
+ y2 = 00h - dla kart MAGN
+      01h - dla kart CHIP
+ y3 = FEh
+
+PODJETO PROBE ODCZYTU KARTY
+  Z =  0h
+ nn = 02h
+ y1 = 81h
+ y2 = FFh
+
+WYCIAGNIETO KARTE (CZUJNIKI OPTYCZNE)
+ nn = 02h
+ y1 = 8Fh
+ y2 = FEh
+
+ZABLOKOWANIE KARTY W SRODKU LUB WEJSCIU CZYTNIKA
+(nie wystepuje przy uszkodzonym napedzie karty!)
+ nn = 7		y4 = 75h
+ y1 = 80h	y5 = 81h
+ y2 = 0Bh	y6 = 00h
+ y3 = 01h	y7 = FDh
+
+USUNIETO ZABLOKOWANA KARTE
+ nn = 7		y4 = 75h
+ y1 = 80h	y5 = 81h
+ y2 = 03h	y6 = 00h
+ y3 = 01h	y7 = FDh
+
+KLOPOTY Z WYRZUCENIEM KARTY CHIP (ZABLOKOWANA)
+ nn = 8		y4 = 00h	y8 = FFh
+ y1 = 8Ch	y5 = 00h
+ y2 = 35h	y6 = 00h
+ y3 = 00h	y7 = 00h
+
+dla uszkodzonego napedu karty (testowane przy restarcie czytnika)
+	y3 = 02h
+
+WYRZUCONO KARTE CHIP Z KLOPOTAMI
+(WYSTEPUJE JESLI USUNIETO KARTE PRZED KOMUNIKATEM O JEJ ZABLOKOWANIU)
+ nn = 8		y4 = 00h	y8 = FFh
+ y1 = 8Ch	y5 = 00h
+ y2 = 00h	y6 = 00h
+ y3 = 00h	y7 = 00h
+
+USZKODZONY NAPED KARTY
+ nn = 8		y4 = 00h	y8 = FFh
+ y1 = 8Ch	y5 = 00h
+ y2 = 01h	y6 = 00h
+ y3 = 02h	y7 = 00h
+
+WYLACZONO CZYTNIK (PO ROZKAZIE 59h)
+ nn = 7		y4 = 75h
+ y1 = 80h	y5 = 81h
+ y2 = 03h	y6 = 00h
+ y3 = 01h	y7 = FDh
+
+STAN CZYTNIKA (przyklad dla czytnika niesprawnego - brak glowicy KK)
+  Z =  0h
+ nn = 08h
+ y1 = 8Ch	y3 = 00h	y5 = 02h	y7 = 00h
+ y2 = 04h	y4 = 00h	y6 = 00h	y8 = FFh
+		(uszkodzony naped mechanizmu)
+ y1 = 8Ch	y3 = 01h	y5 = 00h	y7 = 00h
+ y2 = 15h	y4 = 00h	y6 = 00h	y8 = FFh
+		(brak glowicy KM)
+ y1 = 8Ch	y3 = 00h	y5 = 00h	y7 = 00h
+ y2 = 01h	y4 = 00h	y6 = 23h	y8 = FFh
+
+ODCZYT NUMERU WERSJI CZYTNIKA
+ nn = 6
+ y1 = 90h
+ y2 = ?
+ y3 = Nr Wersji Main
+ y4 = Nr Wersji Revision
+ y5 = ?
+ y6 = ?
+
+PRZESLANIE Z CZYTNIKA CIAGU DANYCH DLA STG97
+ nn = w zaleznosci od dlugosci rozkazu
+ y1 = 88h
+ y2..ynn (max. 255) - dane dla STG97
+
+
+SHADOW
+shadows@dione.ids.pl

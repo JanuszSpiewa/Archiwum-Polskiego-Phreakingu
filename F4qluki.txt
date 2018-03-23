@@ -1,0 +1,232 @@
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+			 KILKA POROAD KTÓRE MOG¥ POMÓC
+			  (wersja dla pocz¹tkuj¹cych)
+			   v.1.0 date:18.12.1998 A.D.
+         		   mail: lukiw8@hotmail.com
+
+NAJLEPIEJ PRZEGL¥DAÆ POD ... NOTATNIKIEM.
+
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Po co pisaæ, ¿e ten tekst s³u¿y celom wy³¹cznie edukacyjnym skoro i tak wszyscy 
+wiedz¹, ¿e nie. A wiêc ten tekst s³u¿y po to abyœ mia³ szansê przezwyciê¿yæ 
+Ÿdzierstwo TP S.A. i miejmy nadzieje, ¿e na Polski rynek wejdzie firma, która 
+w zamian za wybranie ich us³ug da nam dostêp do NETu free. Na razie musimy 
+walczyæ o swoje prawa SAMI. Wiêc....
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+To nie jest typowy FAQ. Chcia³bym po prostu opisaæ kilka spraw, do których 
+doszed³em w ci¹gu ostatnich kilkunastu miesiêcy. Nie opisa³em oczywiœcie 
+wszystkich, ale tylko te, których nie ma lub s¹ s³abo wyjaœnione w innych FAQach
+Wszystkie opisane wskazówki s¹ w szczególnoœci dla pocz¹tkuj¹cych phreakerów, 
+którzy s¹ nara¿eni na nowe paragrafy i nie maj¹ tak dobrze jak my za czasów 
+nauki i wpadek. Teraz
+
+			WPADKA = OSTRY PRZEPIERDOL
+
+W najlepszym wypadku zajebiste (109419081804 z³) kolegium.
+W najgorszym wypadku dostaniesz 4 lata pierdla (i masz przekurwione, ¿e fiu, fiu)
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Wiêc koniec œciemniania jedziemy:
+
+1. JESZCZE RAZ UZIEMIAMY PENTACONTÊ.
+2. FILTRY.
+3. PRZEKIERUNKOWYWANIE NUMERÓW (!!!!COOL)
+4. JAK NIE DAÆ SIÊ Z£APAÆ.
+5. PAJÊCZARSTWO I CO TEGO WYNIKA.
+6. PRZECHWYTYWANIE KART.
+7. ZAKOÑCZENIE.
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+S³owo MONTER dotyczy zburacza³ych i zajebanych nazistów, którzy ³oj¹ wina
+od œwity do nocy i psuj¹ nam zabawê z budkami. Nie myliæ z monterami, którzy
+pomagaj¹ nam w opracowywaniu patentów (przyk³ad - monter ANDI)!!!
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+1. JESZCZE RAZ UZIEMIAMY PENTACONTÊ.
+
+Muszê powiedzieæ, ¿e ten temat jest naprawdê stary. Pomimo tego, ¿e w FAQ by³o 
+o tym niewiele to du¿o ludzi zna³o ten motyw (wiem bo sam go zna³em i 
+rozpowszechnia³em). A wiêc napiszê w jakiej wersji ja go zna³em. Trzeba pod³¹czyæ 
+masê z kaloryfera lub gniazdka (tylko najpierw sprawdŸ neonem, bo mo¿e ciê 
+nieŸle pierdoln¹æ, a w najlepszym wypadku tylko (!!!) spalisz telefon lub modem). 
+Bierzesz ten kabel z mas¹ i w momencie, gdy wykrêcisz ostatni¹ cyfrê pod³¹czasz 
+masê do (UWAGA!!!) minusa w kablu telefonicznym. W tym momencie nic nie powinniœcie 
+s³yszeæ (chyba, ¿e buczenie). Czekamy, a¿ nast¹pi po³¹czenie, bo w³aœnie wtedy 
+nastêpuje zwrot pêtli (dla pocz¹tkujacych: plus zamienia siê z minusem ) i 
+s³yszycie z s³uchawce normalne po³¹czenie. Jest tylko jeden problem. W takiej 
+wersji podczas po³¹czenia sygna³ jest zmodulowany bzyczeniem i modem ni chuja ci 
+nie za³apie. Zrobi³em filtr z cewek, dziêki któremu mo¿na prawie normalnie gadaæ, 
+ale do modemu to nadal za ma³o. :-(((. Ale to na pewno dzia³a na PENTACONTACH. 
+Zreszt¹ ten motyw powiedzieli mi monterzy i sam siê przekona³em, ¿e dzia³a. 
+Nie mówiê, ¿e motyw PINDY nie dzia³a. Dzia³a, ale nie wszêdzie!!! U mnie gdy
+wed³ug PINDY odcinam masê, to faktycznie ³¹czy siê, zaczyna biæ licznik :-((((
+Musicie wiec pokombinowaæ sami. Wszystkie uwagi przyjmujê: lukiw8@hotmail.com. 
+Tylko pamiêtajcie TO DZIA£A TYLKO NA PENTACONTÊ (50 V w gniazdku i w ogóle chujostwo).
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+2. FILTRY.
+
+O tym chcia³em z kimœ podyskutowaæ na #PHREAKPL, ale znalaz³em tylko jedn¹ osobê 
+która siê tym interesowa³a, a to naprawdê prosty i w miarê bezpieczny patent. 
+Trzeba tylko znaleŸæ budkê, w której kable s¹ jakoœ dostêpne oraz co najwa¿niejsze 
+nie ma DRO (czyli urz¹dzenia które sprawdza czy budka odbija impulsy). Jeœli masz 
+spe³nione te dwa warunki to po³owa sukcesu, a takich budek jest od zajebania. 
+Dalej musimy wykonaæ odpowiednie urz¹dzenie (jakie tam kurwa urz¹dzenie - 3 
+elementy, no 4!!). wygl¹da ono mniej wiêcej tak:
+
+
+
+	R/2		  R/2	
+
+0-----[___]-------0-------[_____]---------0
+		  |
+		  |
+		 --- C
+		 ---
+		  |
+		  |
+		  |
+0-----------------0-----------------------0
+
+Opis:
+R/2 - rezystor o rezystancji równej po³owie tej która podstawi³eœ do 
+wzoru.
+C - kondensator (zwyk³y)
+
+wzory:  f graniczna = 4 / (2*3,14*R*C) (FILTR DOLNOPRZEPUSTOWY)
+tj. przepuszcza wszystkie sygna³y poni¿ej f graniczne (czêstotliwoœæ graniczna)
+
+Nie jest wa¿ne jak to w³¹czysz (oczywiœcie z jednej strony linia a z drugiej budka). 
+Mo¿esz jeszcze mostkowaæ to w³¹cznikiem, aby nie wszyscy mogli na tym jechaæ, 
+bo TP czuwa. Pamiêtaj o dwóch rzeczach:
+
+a) rezystory powinny byæ w miarê ma³e ( w sumie nie wiecej ni¿ 100 Ohm)
+b) czêstotliwoœæ graniczna to 5 kHz.
+
+Podstawiasz pod wzór i Ci wychodzi pojemnoœæ!! Potem tylko montujesz to, a 
+ca³oœæ mo¿na uformowaæ tak, aby wsadziæ to potem do rurki przy budce i tylko 
+¿eby w³¹cznik mo¿na by³o wyj¹æ. Jeœli wiesz o co chodzi to mo¿esz rozbudowywaæ to 
+o np. w³¹cznik przerobiony na zdalny tzn. podchodzisz do budki, wciskasz przycisk 
+w pilocie i masz za darmo. Wciskasz znowu i odchodzisz!!! Kombinujcie ile wlezie 
+to proste. Wa¿ne aby TPSA tego nie wyczu³o!!
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+3. PRZEKIERUNKOWYWANIE NUMERÓW (!!!!COOL)
+
+Nie ka¿dy wie, ¿e istnieje mo¿liwoœæ przekierunkowywania numerów. Ale, kurwa, 
+na CENTRALI wiêc potencjalny phreaker mo¿e gówno zrobiæ.Ale.... No w³aœnie. 
+Jeœli znacie jakiegoœ montera, to zapytajcie co o tym wie(a coœ wie na pewno). 
+Niestety on nie wystarczy! Musicie znaæ kogoœ wy¿ej. Tak ju¿ siê pojeba³o, 
+¿e Ci wy¿ej s¹ mniej przekupni, bo maj¹ wiêcej kasy, ale "wiêcej" nie oznacza 
+za du¿o, wiêc próbujcie, a zabawa gwarantowana!100% :-))))))))))))))))))))))))))
+Jeszcze kilka uwag:
+a) najlepiej zagadaæ z goœciem, aby przekierunkowa³ jakiœ wolny numer na numer 
+testowy TP. Wtedy chulaj dusza!! Tylko pamiêtacie, ¿e to urz¹dzenie do po³¹czeñ
+testowych jest tego typu, ¿e roz³¹cza abonent B czyli ten do którego dzwonicie. 
+Jeœli przedzwonicie na 0-700 ze stêkaniem i panienka nie od³o¿y s³uchawki, to 
+trochê przejebane.(na szczêœcie NET roz³¹cza od rêki [;)))))
+b) czyta³em w jakimœ FAQ, ¿e monterzy zak³adaj¹ lewe linie za 200 z³. I tu siê 
+pojawia pewne niedoci¹gniêcie. CENTRALA musi byæ naprawdê ostro dojebana i bez
+nadzoru komputerowego (ciekawe czy gdzies takie s¹??). Monterzy mówili mi, ¿e teraz
+przynajmniej na PENTACONTACH ka¿da linia jest pod nadzorem, nawet ta z budki, która
+nie ma numeru. Nie wiem jak na innych, ale na PENTACONTACH (z tego co mówili BARDZO
+zaufani monterzy, podobno takich nie billingowanych linii nie ma, a z kasowaniem 
+jest podobnie. Monterzy nie mog¹ wykasowywaæ billingów, nie znaj¹ hase³ i w ogóle 
+chujowo, bo w kompach pozostaj¹ logi, kto co i jak. ]-<<<<<.
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+4. TYLKO NIE DAJ SIÊ Z£APAÆ.
+
+
+Pamiêtaj, nie zostawiaj ¿adnych œladów dzia³alnoœci. Tak robi¹ tylko lamerzy, 
+albo pojebañcy. Musisz wiedzieæ, ¿e monterzy wbrew opinii czasem wywlok¹ swoje 
+t³uste dupy na miasto i ni st¹d ni z ow¹d siê zjawiaj¹ i ju¿ maj¹ Twój ewentualny 
+stuff, który zostawi³eœ w budce lub nad ni¹. Je¿eli nie bêdzie œladów, nie bêdzie 
+wpadki, ale... Jest jedno ale. Poza drobnymi wyj¹tkami wiêkszoœæ numerów jest 
+billinowana w centrali i monterzy przez wyjœciem patrz¹ co maj¹ na billingu danej 
+budki, a potem co w budce (ile ¿etonów lub impulsów w niebieskim. Srebrnego 
+sprawdzaj¹ z centrali przez modem!). Gdy zobacz¹, ¿e w centrali jest 2000 impulsów, 
+a w budce 20 to zaczynaj¹ wêszyæ i chuj. Czasami nic z tego nie wyniknie, ale 
+czasami mog¹ siê zdrowo upierdoliæ, a wtedy ró¿nie bywa. No tak, a co jak ciê 
+drapn¹ i to jeszcze POLICA. Nie panikuj, powiedz, ¿e nic o tym nie wiesz i, ¿e 
+jak podszed³eœ do budki przedzwoniæ to ktoœ zacz¹³ uciekaæ a ty zosta³eœ z tym 
+wszystkim i w³aœnie wtedy oni przyjechali, lub wykombinuj coœ innego. Po prostu 
+kiedy nie myœlisz jak coœ zrobiæ, to myœl co mówiæ gdy Ciê jebn¹. 
+NAJLEPIEJ NIE DAJ SIÊ Z£APAÆ. MNIE NIE Z£APALI ANI RAZU, ALE TYLKO DLATEGO BO 
+MIA£EM ZASRANE SZCZÊŒCIE. BYLI NA MIEJSCU GDY SZED£EM DZWONIÆ I ZOBACZY£EM ICH Z 
+DALEKA( 22.00)!!!! TY NIE LICZ NA SZCZÊŒCIE - ZAWSZE B¥D CZUJNY i MYŒL CO ROBISZ!
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+5. PAJÊCZARSTWO I CO TEGO WYNIKA.
+
+Sam kiedyœ siê wpierdala³em s¹siadom, ale pamiêtajcie, ¿e phreaker nie ma walczyæ 
+z ludŸmi tylko z TPSA jako firm¹. Nie róbcie ludziom niepotrzebnych problemów tylko 
+dlatego, ¿e nie znacie innych sposobów na dzwonienie free. NIE B¥DCIE LAMAMI. Chyba, 
+¿e chcecie specjalnie kogoœ wkurwiæ, to wtedy i owszem, ale wpierdalaæ siê do jakiejœ 
+babci, aby pos³uchaæ jak stêka jakaœ dziwka, to ju¿ kurwa przegiêcie. Wiêc pamiêtajcie: 
+dopóki nie robicie chamoowy, to jakoœ bêdzie wam sz³o, gdy zaczniecie byæ za pewni 
+siebie, to GINIECIE.
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+
+6. PRZECHWYTYWANIE KART.
+
+Chcia³bym nawi¹zaæ do tego co pisa³em o pajêczarstwie. Jeœli ktoœ uwa¿a, ¿e jak 
+pierdolnie komuœ kartê z 3 impulsami to jest phreakerem, to niech siê lepiej tym 
+nie chwali, bo wyjdzie na niez³ego cepa, przynajmniej na #PHREAKPL. Jebniêcie 
+nawet 10000000000 kart to nie ¿adna sztuka. Kupujesz kluczyk za 50 z³ i napierdalasz. 
+Nic skomplikowanego. Wiadomo, ¿e wszystkiego trzeba spróbowaæ (przyznaje, ¿e te¿ siê 
+przez parê dni w to bawi³em), ale kurwa bez przesady, bo :
+1. stajesz siê schamia³ym i prymitywnym z³odziejem towaru, który ma czasami wartoœæ 
+pude³ka zapa³ek.
+2. Mog¹ ciê ³atwo jebn¹æ (wbrew pozorom) U mnie w mieœcie jest ju¿ takich paru i 
+wiêkszoœæ to DRESIARZE!(pierdolone pó³g³ówki!!!!!!) na szczêœcie mam kumpli, którzy 
+ich ganiaj¹, bo zajebali im karty. 
+I pamiêtaj PHREAKER NIE OKRADA LUDZI ALE TP S.A. (na razie TPSA, ale zobaczymy jakie 
+firmy wejd¹ na nasz rynek po nowym roku!):-))))
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+7. ZAKOÑCZENIE.
+
+Jak ju¿ pisa³em nie jest to FAQ tylko kilka porad. Mam nadziejê, ¿e pocz¹tkuj¹cy dziêki 
+tym radom, dojd¹ do pewnego poziomu phreaku bez wpadki, a wierzcie mi, ¿e to nie jest 
+mi³e. I jeszcze jedno. Nic, ale to KURWA NIC nie mówcie starym. Je¿eli siê upierdol¹ 
+to koniec, le¿ycie i nic z tego nie wyjdzie. A poza tym to w ogóle ma³o mówcie kumplom 
+i gadajcie tylko z tymi którzy coœ kumaj¹. Reszta za szybko rozgaduje, traktuj¹c darmowe 
+dzwonienie z budki jako coœ nadzwyczjnego!! 
+
+			    		LAM ARE SUX!!
+
+GREETINGS:
+CRIS, BIA£Y, RAFA£, CYRKU, B¥KU, ¯AREK, PRZEMA, OCZEK, HRABIA (ZA SITE), 
+GREYMAN, PINDA, VISLEGIS, CIOCHAN, KENEDEE I WSZYSTKICH, KTÓRZY CHC¥ COŒ ZROBIÆ 
+W TYM KIERUNKU!!! I WSZYSTKICH Z KANA£U #PHREAKPL.
+
+NIECH IMPULS BÊDZIE Z WAMI.
+
+P.S. Nied³ugo uka¿e siê wersja trochê bardziej skomplikowana, która jednak wymaga
+zebrania materia³ów itp. STAY COOL!
+
+SEAA
+
+P.S. OG£ASZAM NIEUSTAJ¥CY KONKURS NA NAJZAJEBISTSZE OKREŒLENIE TP S.A. EWENTUALNE
+POMYS£Y PRZYSY£ACIE DO MNIE, A W NASTÊPNYM FAQ UKA¯¥ SIÊ WSZYSTKIE Z ZAZNACZENIEM
+SZCZEGÓLNIE DOBRYCH. WARTO SIÊ STARAÆ BO NAGRODA BÊDZIE ATRAKCYJNA (MO¯E JAKIŒ 
+0800 DZIA£AJ¥CY LUB PROGRAMMING? ZOBACZYMY!) CZEKAM:lukiw8@hotmail.com
+TYLKO NIE ZAPOMNIJECIE PODAÆ MAILA I XYWY.
+
+NARA!

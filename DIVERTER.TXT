@@ -1,0 +1,162 @@
+
+Diverter na SS7
+
+Intro:
+------------
+
+Cze all, int19h/the riders here. Pisze ta kompilacje (i nie tylko) bo chyba
+kazdy chce miec internet za darmo. Ten tekst ma pomoc w zrealizowaniu tego
+marzenia osobom, ktore sa jako-tako obeznane z elektronika (jak ktos nie zna
+prawa ohma, to ma pecha) . Co to jest diverter? Hm... Myslalem jakis czas jak
+to przetlumaczyc na polski, ale nic nie wymyslilem. Podzielnik na pewno nie.
+Moze lepiej przekierunkowywacz :) Co to cudo robi? Anp duzo ciekawego.
+Ale o tym nieco pozniej...
+Diverter (Gold Box) pozwala na dzwonienie na ustalony numer i otrzymanie
+sygnalu z innej (nie twojej) linii. O ile sie orintuje, to troche jak
+dzwonienie direct in-dial (DID) na PBX (thx Splitter).
+
+Uzywanie:
+---------
+
+Przede wszystkim diverter pozwala na utajnienie (w pewnym stopniu) info o
+tobie. Nie dziala juz np CallID (tzn dziala, ale poda numer wlasciciela linii
+do ktorej sie podlaczyles) Wszystkie slady (namierzenia) beda prowadzily
+do linii ofiary a nie twojej. To niezly bajer i po darmowym dzwonieniu druga
+z zalet.
+Pierwsza zaleta to oczywiscie nie placenie za rozmowy. Kazda rozmowa bedzie
+zaliczana na konto wlasciciela drugiej linii a nie twoje.
+
+Opis techniczy:
+---------------
+
+Na wstepie kilka podstaw na temat Signaling System 7 (SS7). Wiekszosc opisow
+diverterow krazacych po sieci to wiekowe konstrukcje, ktore teraz sa do dupy.
+Po prostu nie dzialaja na nowych (generalnie) centalach.
+
+Jesli twoje telefon jest w noramlnym stanie (na widelkach) jest okolo 48V DC.
+Jesli podniesiesz sluchawke, spada do 6-10V DC. Tak jest bo jesli podniesiesz
+sluchawke zamykasz obwod na dzwonku i tip'ie. Robiac to, powodujesz, ze
+urzadzenia wykrywajace podniesienie sluchawki i wysylaja sygnal by dac znac
+ze sa gotowe do przyjecia numeru. Ok, przypuscmy, ze twoj telefon jest na
+widelkach. Ktos dzwoni do ciebie.  Co cie o tym powiadamia?
+Wysyla sygnal dzonienia na twoja linie. Ma on okolo 90-130V AC, okolo 20Hz.
+Pulsuje 2 sekundy, wylacza sie na 4 sekundy i znow, dopoki nie podniesiesz
+sluchawki lub do uplywu okreslonego czasu. Czas, ile bedzie trwalo dzwonienie
+zalezy od ustawien ma centrali CO. Sa dwa powody dla ktorym zaklada sie limit
+na dzwonek: po pierwsze to zzera duzo pradu :) i po drugie by zapobiec przed
+uzywaniem BlackBoxow (dziaja na nieskonczonym dzwonku), ale to chyba tylko
+problem w stanach.
+
+Ok, podnosisz sluchawke. To powoduje przeplyw pradu do dzwonka.
+Powoduje to sprzet przelaczajacy w cenrali zatrzymujacy sygnal dzwonienia i
+zmniejszajacy napiecie do okolo 6-10V DC. Linia jest otwarta pomiedzy toba i
+dzwoniacym. Teraz, po okolo 10 min gosc przestaje konwersowac. Cisza.
+Ty zostajesz na linii i co? Nic. Slyszysz jedynie szum/cisze linii. Potem, po
+okolo 10 sek centrala wysyla sygnal rozlaczenia (po prostu zmiana polaryzacji
+przez okolo 1 sek) Mozesz "uslyszec" zmiane polaryzacji (pierwszy klik w
+sluchawce i drugi, gdy zmienia sie z powrotem polaryzacja) Napiecie jest znow
+6-10V DC, a polaryzacja jest po prostu taka jakbys wlasnie podniosl sluchawke.
+Jesli zostaniesz na linii przez kolejne 30 sek centrala wysle sygnal zdjecia z
+linii (off-hook). Jest to sygnal MF ktory sklada sie z tonow 1400Hz, 2060Hz,
+2450Hz i 2600Hz pulsujacych przez 0,1 sek przez 0,1 sek.
+Jest to bardzo glosny i wnerwiajacy sygnal.
+
+Ok, to byly podstawy na temat telefonicznego systemu ss7 ktore warto znac, by
+zrozumiec jak dziala diverter.
+Nie powinno to dzialac na nowych centralach, bo tam nie ma zmiany polaryzacji.
+Np u mnie nie dziala, ale na troszke starszych raczej bedzie chodzic.
+
+
+Lista elementow:
+----------------
+
+1x przekaznik (5V DC)
+1x 600 Ohm:600 Ohm transformator (np. ze starych telefonow)
+1x tranzystor 2N3904 (NPN, niskosygnalowy)
+1x Transoptor (optoizolator - tanie jak barszcz to jest)
+1x rezystor 22K (0.125W, 5%)
+1x rezystor 470 (0.125W, 5%)
+4x diody 1N4003 (albo mostek prostowniczy - jeden pies)
+1x 7805 IC (5V DC, Positive Voltage Regulator)
+1x kondensator 0.33uF (ceramik)
+
+Kondensator powinien miec 0.33uf (jak bedzie za malo to diverter bedzie za
+dlugo mozdzyl, za duzo: wystarczy podniesc sluchawke na linii #1 a on juz
+dzwoni na linii #2)
+
+Zasada dzialania
+----------------
+
+Patrzac na schemat widac RED #1, GREEN #1, RED #2 i GREEN #2. Oczywiscie sa
+to te dwie linie. Linia #1 to ta do ktorej bedziemy dzwonic na poczatku, a
+linia #2 to linia (dial tone) ktory wlasnie dostaniemy.
+
+Widac, ze w normalnym stanie, Przekaznik nie jest aktywowany. To daje uklad
+otwarty na lini #2. Prad nie moze plynac z GREEN #2 do RED #2, bo przekaznik
+jest otwarty. Linia jest w stanie "na widelkach".  To samo dotyczy linii #1.
+Prad nie moze plynac z GREEN #1 do RED #1 z powodu otwartych zaciskow
+przekaznika. Takze, z powodu, ze napiecie na dwoch kablach wynosi 48V DC,
+przeplyw pradu jest blokowany przez kondensator C1. Prad z linii #1 nie
+dostaje sie do mostka diod. Normalny stan to obie linie w stanie na widelkach
+
+Teraz, wykrecasz numer do linii #1. 48V DC staje sie sygnalem dzwonienia o
+90-130V AC @ 20HZ. To powoduje ze prad przeplywa przez kondensator C1 i mostek
+diod. To powoduje ze na wyjsciu mostka pojawia sie prad DC, ktory plynie dalej
+przez diode podczerwienie w transoptorze. Podczerwien idzie do fototranzystora
+(w transoptorze) i na kolektorze prad zaczyna plynac. To powoduje przeplyw
+pradu przez baze drugiego tranzystora, a to z kolei, ze kolektor zalacza
+przekaznik. Teraz, kiedy przekaznik jest zalaczony, prad moze plynac z GREEN
+#1 przez D1 w mostku, przez diode podczerwieni (w transoptorze) i rezystor,
+przez polowe (pare) z kontaktow przekaznika, przez jedno uzwojenie
+transormatora az do RED #1. W tym samym czasie, mamy plynacy prad z GREEN #2
+przez druga polowe kontaktow przekaznika DPDT, przez drugie uzwojenie
+transforamtora az do RED #2.
+
+W efekcie, diverter podnosi obie linie. Mozna by pomyslec, ze gdyby diverter
+podniosl obie linie, sygnal dzwonienia zatrzymalby sie na linii #1, a dioda
+podczerwieni wylaczylaby sie, wylaczajac caly uklad. Zauwaz jednak, ze linia
+#1 plynie przez diode podczerwieni ktora ja podtrzymuje. Tak wiec, dzwonek
+poczatkowo wlacza diode podczerwieni, a potem prad synalu off-hook o wartosci
+okolo 6-10V DC podtrzymuje ja.
+
+Teraz jestes podlaczony do linii #1. Linia #2 tez jest "z widelek". Obie
+linie sa zmostkowane przez transformator (nie galwanicznie) - dzwiek idzie
+przez obie linie. To znaczy ze otrzymasz dial tone z linii #2 i mozesz wyslac
+kody DTMF z linii #1. Teraz wykonujesz polaczenie. Siedzisz na linii #1 przez
+10s, diverter zostaje aktywny, ale centrala wysyla sygnal rozlaczenia do linii
+#1. Jesli sobie przypomnisz co wczesniej pisalem, jest to tylko zmiana
+polaryzacji (pomiedzy GREEN #1 i RED #1). Teraz diodka podczerwieni (jak kazda
+diodka) wylaczy sie. To spowoduje prad zerowy na bazie tranzystora, a w
+rezultacie na kolektorze tez do zera. Odlozy (wylaczy) sie przy tym przekaznik
+przelaczajac linie #1 i linie #2 w tryb "na widelkach". Diverter jest teraz
+gotow do dzwonienia.
+
+Nie mniej wazne.
+----------------
+Diverter moze by zainstalowany gdzie masz dostep do dwoch linii. budki,
+studzienki... cokolwiek. Trzeba tylko znac numer linii ktorej uzywasz. I tu
+pojawia sie problem... Sposobow jest kilka (np podanie sie za instlatora i
+zadzwonienie do kompetentnej :) osoby z tepsy) ale najlepszym chyba jest wtyk
+w telekomunie. dobrze mowie, nie cruEl? :)
+Dowiadujesz sie co to za numer i do roboty. Ale jest jeszcze jedno ale:
+kiedy juz zainstalujesz diversera, kazdy kto zadzwoni na linie #1 otrzyma
+ton wybierania. To po prostu znaczy, ze nie mozesz pozostawic zainstalowanego
+diversera przez caly miesiac. Co robic? Najlepiej znalezc (znow przez wtyki w
+telekomunie) jakis numer "martwy" albo tylko wychodzacy. Np jakis robot
+tepsowy albo instytucja/firma.
+
+---------- pierdoly ----------
+
+to tyle... napisze tylko, ze guffna nie sprawdzalem (zbudowalem, ale jeszcze
+nie zainstalowalem w budce, bo i tak na mojej cenrali nie dziala).
+Ale powinno spoko dzialac. Pomysl jest MasterMiind'a. Swoja droga, proste to
+urzadzenie a tyle radosci. Chce podziekowac ludziom z alt.hackers/alt.hacking/
+alt.org.royal-phreakers/alt.phreaking za reply na moje pytania i nie
+podziekowac ludziom z irca (#hackpl na ktory czasem wlaze) za totalne
+eliciarstwo i pierdoly wyglaszane na kanale, no i za bany na tepse. macie
+nasrane. jak sie pytalem, czy ktos ma jakies materialy nt div to nikt nie
+wiedzial o co biega, a taka z was elita.
+Greets to: all from #hackingpl, #hackpl (dalnet of coz)
+                                                                see ya!
+                                int19h of the riders (int19h/cruEl/err)
+

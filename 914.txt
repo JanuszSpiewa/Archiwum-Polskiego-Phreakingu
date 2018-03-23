@@ -1,0 +1,71 @@
+-=====================================================================-
+										   98.07.22
+           Metoda na niebieskiego URMET-a inna niz wszystkie...
+                              version 1.01
+                                  by
+                               MartineS
+                               Harry_A
+                               Mohamed
+
+-=====================================================================-
+
+Ponizej zamieszczony material ma sluzyc jedynie celom edukacyjnym ;)
+Nie ponosze odpowiedzialnosci  za zadne skutki  uzywania podanych tutaj
+informacji. Wszystko robisz na wlasna odpowiedzialnosc !!!
+
+-=====================================================================-
+
+To jest moj pierwszy tekst wiec moze byc troche zamotane :(
+Nastepne beda lepsze (o ile beda nastepne hehe :)
+
+-=====================================================================-
+
+Nie  bede  sie rozwodzil nad znanymi metodami typu entry-call bo to juz
+ktos wymyslil. Ta metode wymyslilismy z qmplami jakies 10 miesiecy temu.
+Od tamtej pory dziala i mysle, ze bedzie dzialac wiecznie :))))  Metoda
+jest  troszki  zawila  i  moze  nie wszyscy  zaskocza.  Na  pewno  jest
+sprawdzona i dziala :)))
+Jeden lamer patrzyl mi na rece jak  dzwonilem w ten sposob i  dalej nie
+wie w jaki sposob to robilem :))
+
+-=====================================================================-
+
+Caly myk polega na tym, ze  jak budka wybiera  tonowo i impulsowo ( a ma
+ustawione wybieranie impulsowe na automacie ), to gdy dostanie ton 
+i jednoczesnie  wybiera  numer  impulsowo  to  na chwile odblokowuje sie
+mikrofon i pierwsze przyjmuje ton a potem wybieranie impulsowe tak jakby
+ignorowala :)))
+
+Idziemy  sobie  do  jakiejs  budki  i  robimy  maly  test  :  wybieramy
+z klawiaturki 600.  Jak uslyszymy,  ze nie ma takiego numeru to szukamy
+innej budki.  Powtarzamy test i jak jest busy albo cos innego to mozemy
+sie bawic dalej.  Podchodzimy do budki i  z dialerka wybieramy pierwsza
+cyfre numeru pod ktory chcemy dzwonic za free  i caly czas trzymajac te
+cyfre wybieramy z klawiaturki URMET-a jakis darmowy numer np. 997  albo
+914. Najlepiej  jako  pierwsza cyfre uzywac zero bo od razu slychac czy
+budka lapie czy nie ( jak lapie to przy wybieraniu ostatnich dwuch cyfr
+tego darmowego  numeru  to slychac  taki dziwny ton ). Po wybraniu zera
+powinnismy slyszec 400 Hz. Jesli  zaczyna  laczyc z darmowym numerem to
+sie  rozlaczamy  i  probojemy jeszcze raz tak samo. Nie wszystkie budki
+lapia za pierwszym razem  i trzeba  probowac dluzej albo krocej trzymac
+pierwsza cyfre.  Jak sie uda  i  nie  bedzie  laczyc z darmowym numerem
+to jest OK. Pierwsza cyfra jest juz wybrana i reszte numeru wybieramy z
+dialera. Podczas polaczenia  na  wyswietlaczu jest darmowy numer (914).
+
+
+UWAGI:
+
+Ta metoda  NIE  DZIALA  na budkach  w  ustawionym wybieraniem tonowym :(
+Na pewno dziala na ALCATELACH S-12 ( zalezy jeszcze od budki ). Nie wiem
+dlaczego na niektorych dziala od razu a na niektorych trzeba probowac po
+kilka razy (moze to wina software'u).
+
+
+-=====================================================================-
+
+Pozdrowienia dla:
+
+Harrego, Mohameda, Ciapka;
+ludzi z #phreakpl za to co robia;
+tych, co sami tez cos kombinuja.
+-=====================================================================-

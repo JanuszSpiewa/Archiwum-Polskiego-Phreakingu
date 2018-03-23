@@ -1,0 +1,272 @@
+
+		FAQ na temat kart elektronicznych SLE4436
+
+			  KAOS Labs 2003
+                            by Vinc3nt
+		
+			      v 1.1						
+
+                            DISCLAIMER
+---------------------------------------------------------------------
+--        Tekst ten powstal wylacznie w celach informacyjno        --
+--edukacyjnych,dlatego tez autor nie ponosi zadej odpowiedzialnosci--
+-- ze wykorzystanie zawartych tu informacji niezgodnie z prawem.   --
+---------------------------------------------------------------------
+(...zreszta co tu wykorzystywaæ...:-) )
+
+
+Spis tresci:
+
+	1. Wstep
+	2. Ogolne informacje o SLE4436
+	3. Rozmieszczenie stykow na karcie
+	4. Mapa pamieci karty
+	5. Opis algorytmu autentyfikacji karty
+	6. Reverse engineering in home :-)
+	7. Programatory
+
+
+1. WSTEP
+
+	Na poczatku chcialbym zapowiedziec ze ten faq jest tylko i wylacznie 
+zbiorem wiekszosci informacji o chipowych kartach telefonicznych. W sumie nie 
+znajdziecie tu prawie nic nowego poza tym co jest dostepne w internecie i 
+literaturze. Chodzilo mi tylko o zebranie najistotniejszych informacji na ten 
+temat. 
+
+2. OGOLNE INFORMACJE O SLE4436
+
+	Polskie karty telefoniczne jak juz pewnie wiekszosc wie to SLE4436 czyli 
+tzw. Eurochip 1. Jest to typowa karta pamieciowa III generacji z algorytmem 
+uwierzytelniania. Same chip'y sa produkowane przez firme Infineon(Siemiens). W 
+polsce dystrybucja tych kart dla telekomunikacji zajmuje sie OTO Lublin. Karta 
+ta jest rozszerzona wersja SLE4406 (taki typ chipu jest wykorzsytywany w 
+kartach serwisowych). Nastepca Eurochipa 1 jest SLE5536, gdzie umozliwono 
+korzystanie z jednej karty przez kilku operatorow. Oczywiscie cala seria tych 
+kart byla (i jest nadal) kontynuowana i ulepszana co zaowocowalo powstaniem 
+tzw. Eurochipa 66.
+SLE4436 jest karta powszechnie uzywana w calej europie. Jest stosowana nie 
+tylko w telekomunikacji ale takze w innych branzach jak np. polski WAPARK. Sam 
+model karty jest bardzo udany stad ta jego popularnosc. Ponadto jest bardzo 
+dobrze zabezpieczony co moze swiadczyc o tym ze w europie nikomu nie udalo sie 
+jej zemulowac, przynajmniej oficjalnie. Narazie powstaly emulatory kart bez 
+autentyfikacji, co oczywisice nie jest rzecza trudna do wykonania. 
+Inzynierowie Siemensa chwala sie ze w karcie sa wbudowane odpowiednio  wysokie 
+zabezpiecznenia chroniace karte przed zmianami napiecia zasilania oraz 
+czestotliwosci. Licznik karty mozna tylko dekrementowac, ma on takze swoja 
+kopie zapasowa. Oczywiscie podstawa jest implementacja algorytmu 
+autentyfikacji. Ponadto karty sa chronione tzw. kodem transportowym co 
+uniemozliwia np. przechwycenie dostawy takich chipow i nielegalne 
+wykorzystanie. 
+
+3. ROZMIESZCZENIE STYKOW NA KARCIE
+
+	SLE4436 jest oprate o standart ISO7816. Po sieci krazy plik opisujacy ta 
+norme wiec nie ma sensu jej tu szerzej opisywac. Nizej pozwolilem sobie 
+zamiescic rip z tego wlasnie tekstu przedstawiajacy rozmieszczenie stykow na 
+karcie:
+
+{
+
+	,------------+------------,
+	|  1         |         5  |
+	+------\     |     /------+
+	|  2    +----+    +    6  |
+	+-------|         |-------+
+	|  3    +----+----+    7  |
+	+------/     |     \------+
+	|  4         |         8  |
+	'------------+------------'
+
+
+gdzie:
+
+1 - VCC;	5 - GND;
+2 - RST;	6 - nc;
+3 - CLK;	7 - I/O;
+4 - nc;	8 - nc;
+
+nc - not connected;
+}
+	Czasem moze sie zdarzy ze chip zamist 8 stykow ma 6 nie zmienia to 
+jednak wlasciwie niczego gdyz styki 4 i 8 nie sa po prostu uzywane.
+
+4. MAPA PAMIECI
+
+	Pamiec karty sklada jest z ROM'u, PROM,u oraz EEPROM'u. Dane na karcie 
+sa zapisywane zarowno przez producenta chip'u jak i dostawce. Pamiec 
+podzielona jest na czesc jawna i niejawna. W niejawniej znajduje sie oczywisie 
+niepowtarzalny klucz karty. Pewne obszary mozna kasowac, ustawiac bit na "0" 
+(Counter Area i Data Area 1). 
+
+Bajt	 Bity		Info
+|----|--------|------------------------------------------------------
+| 0  | 0..7   | Manufacturer Code - obszar ROM, zapisywany przez 
++----+--------+	dostawce zwykle 0x97 0x74 lub 0x05 0xF4
+| 1  | 8..15  |
++----+--------+------------------------------------------------------
+| 2  | 16..23 |	Manufacturer Data, kod OTO Lublin zwykle 0x26
++----+--------+------------------------------------------------------
+| 3  | 24..31 |	User Data - dane o numerze karty, pierwszy bajt to
++----+--------+	nr emisji (zakodowany), drugi nr serii, trzeci 
+| 4  | 32..39 |	i czwarty nr karty w serii, piaty bajt wyznacza  
++----+--------+	ilosc impulsow na karcie
+| 5  | 40..47 |
++----+--------+
+| 6  | 48..55 |
++----+--------+
+| 7  | 56..63 |
++----+--------+------------------------------------------------------
+| 8  + 63..71 |	Counter Area - pieciopozycyjny licznik o 
++----+--------+	organizacji osemkowej:
+| 9  | 72..79 |	x*4096
++----+--------+	x*512	 
+| 10 | 80..87 |	x*64
++----+--------+	x*8
+| 11 | 88..95 |	x*1
++----+--------+
+| 12 | 96..103|
++----+--------+------------------------------------------------------
+| 13 |104..111| Backup Counter and Anti-tearing flags		 	
++----+--------+------------------------------------------------------
+| 14 |112..119|	
++----+--------+	Data Area 1
+| 15 |120..127|
++----+--------+------------------------------------------------------ 
+| 16 |128..135|	Authentication Key 1
++----+--------+
+...
++----+--------+
+| 21 |168..175|
++----+--------+------------------------------------------------------
+| 22 |176..183|	Authentication Key 1 or Data Area 2
++----+--------+
+...
++----+--------+
+| 27 |216..223|
++----+--------+------------------------------------------------------
+| 28 |224..231|	Data Area 3
++----+--------+
+| 29 |232..239|
++----+--------+------------------------------------------------------
+
+5. OPIS ALGORYTMU AUTENTYFIKACJI KARTY
+
+	Najwiekszym atutem karty jest algorytm autentyfikacji czyli tzw. 
+challange-response (pytanie-odpowiedz). SLE4436 moze posiadac dwa rozne 
+klucze, jeden z nich jest wlaczany opcjonalnie zamiast Data Area 2. Klucz 
+karty jest dlugosci 48 bitow. Sam algorytm jest oparty na tej samej wielkosci 
+rejestrze przesuwnym. Moze sie wiele osob zdziwi ale nie jest to zaden z 
+znanych algorytmow synchronicznych takich jak np. DES i temu podobne. 
+Kodowanie opiera sie wylacznie na wyzej wspomnianym rejestrze przesuwnym. 
+Sytuacja jest troche podobna do algorytmu A5 stosowanego w sieciach GSM, 
+jednak tam szyfrowanie odbywa sie za pomoca trzech rejestrow roznej dlugosic. 
+Na karcie nie ma zadnego procesora ktory wspomagal by takie szyfrowanie jak 
+np. DES. Mimo ze sam rejestr nie zapewnia dobrej kryptograficznej ochrony 
+(wystarczy znac ciag 2n bitow aby go rozszyfrowac) to jest on powszechnie 
+stosowany ze wzgledu na tania i latwa implementacje. Rejestr skalda sie z 
+przerzutnikow i bramek logicznych: XOR, OR, ?NXOR?. Wszystko to polaczone jest 
+odpowiednio z komorkami pamieci ktora jest niemozliwa do odczytania z 
+zewnatrz. 
+Autentyfikacja karty przebiega nastepujaco. Z karty, po wlozeniu do czytnika 
+pobierane sa pewne dane, zarowno jawne jak i niejawne. Z tych informacji SAM 
+wylicza sobie prywatny klucz dla karty. Zaraz po tym generowana jest 48 bitowa 
+pseudolosowa liczba ktora jest przesylana do karty oraz zapamietywana przez 
+SAM. Nastepnie rejest na karcie jest przesuwany 160 razy i do czytnika 
+przesylany jest pierwszy bit odpowiedzi. Nastepnie znow rejest przesuwa sie o 
+160 razy i przesylany jest kolejny bit odpowiedzi. Tak sie dzieje az uzyskamy 
+16 bitow odpowiedzi. Bity nie sa pobierane z ciagle tej samej pozycji w rejestrze. 
+Przykladowo odczytanie 6 bitow w rejestrze wyglada nastpeujaco:
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxOxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxOxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Oxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxOxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxOxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Oxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+Gdzie: 	X - wczytanie wartosci liczbowej do rejestru;
+	x - wartosci rejestru;
+	O - pozycja odczytu kolejnego bitu rejestru
+
+Warto zauwazyc ze pytanie ma 48 bitow odpowiedz zaledwie 
+16. Podobnie odpowiedz wyliczana jest w SAM'ie. Obie odpowiedzi sa przesylane 
+do komparatora i tam sa porownywane. Jezeli sa takie same karta jest 
+akceptowana, jezeli nie sa to karta jest odrzucana. Podczas generowania 
+odpowiedzi na karte podawane jest  po 160 CLK, w tym czasie linia I/O jest 
+zablokowana (stan wysoki). Caly algorytm jest przeprowadzany przez 2-3 
+sekundy, czas wyliczenia odpoweidzi to ok.30ms.
+
+6. REVERSE ENGINEERING IN HOME
+
+	Same chipy dosc latwo sie odklejaja od plastiku. Najlatwiej te na 
+kartach "z rybka" (najwyrazniej OTO Lublin sepi na kleju :-P) . Otoz po 
+odklejeniu takiego chipa mozna go sobie obejrzec pod mikroskopem i nie musi to 
+byc mikrospok elektronowy. Wystarczy najbardziej prymitywny np. kupiony od 
+ruskich, ewentualnie mozna sobie go jakos pozyczyc z uczelni albo szkoly. 
+Jezeli mamy karte z rybka z srebrnym chipem to wystarczy tylko go odwrocic i 
+obejrzec polaczenia. W przypadku chipow zlotych nalezy je najpierw opalic 
+zapalniczka a pozniej odgiac troche tak zeby plastik odpadl. Ktos powie po co 
+to wszystko? Bo fajnie wyglada ;--). Mozna zobaczyc jak rozlokowana jest pamiec 
+i popatrzec sobie na rejestr przesuwny. Przegrzanie chipa moze spowodowac jego 
+zniszczenie lub tez uszkodzenie a co za tym idzie moze on wygenerowac ciekawe 
+bledy. Wtedy patrzymy jak przebiega c-r i analizujemu sygnaly pomiedzy bitami 
+odpowiedzi.
+
+7. PROGRAMATORY
+
+	Aby moc odczytac karte trzeba oczywiscie miec specjalny 
+czytnik/programator. Oczywiscie mozna takie ustrojstwo kupic sobie z 
+internetu, ale jezeli zamierzamy sie bawic tylko kartami pamieciowymi to 
+lepiej zrobic go samemu. Najlepszy obecnie jest chyba SmartLab. Proste 
+polaczenia z karta i czytelny program. Jako tranzystorka mo¿na uzyc np. BC546. 
+Oczywiscie zawsze mozna napisac wlasny ale po co robic cos co ktos juz zrobil i 
+to udanie. Kabelki do karty najlepiej jest po prostu przylutowac. Jezeli lekko 
+kapniemy cyna uzyskamy sztywne polaczenie galwaniczne, karcie nic nie stanie a i 
+nic nie bedzie odpadalo.
+
+
++-----
+|Vinc3nt
+|
+|Uwagi, porady, zazalenia vinc3nt@wp.pl
+|
+|pozdrowienia&thx: gosia, chomber, azrael, dml, tomash(a co.. :-P)
+|
+|' make terror not war ' 
+|
++-----
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

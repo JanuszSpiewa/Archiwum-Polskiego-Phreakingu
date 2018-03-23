@@ -1,0 +1,273 @@
+ >  2050 rok - dozyjecie, zobaczycie - najprawdopodobniej bedzie niewesolo !
+ >             To bedzie jubileusz Szczurka ! Chyba ze sie rozmysli ...
+
+
+
+                  >>>>>>>>>>>>>>>>   <<<<<<<<<<<<<<<<<<<
+                  >>  OFFICIAL SK3H PHRACK/HACK INFO  <<
+                  >>>>>>>>>>>>>>>>   <<<<<<<<<<<<<<<<<<<
+
+                  .......................................
+                  |. issue 1       released on 10.X.97 .|
+                  .......................................
+
+
+=-===-=-=-=-=-=---=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--
+ Sklad chemiczny zine'a :
+
+  . PART I
+
+      >>>> Phracking w Polsce <<<<
+
+1    Jak sie podpiac do payphona
+2    Przepraszam jestem z TPSA
+3    Fun with 974 number
+4    Callbacki + IdS cheating
+5    Internet Dialouts
+
+  . PART II
+
+      >>>> WINDOWS & misc shit <<<<
+
+6    MS WORD fucking
+7    Jak za pomoca MSCDEXa unieruchomic komus kompa
+8    Pliki INI - fajna sprawa
+9    Pare ciekawych bugow w Windozie
+10   Fax fun czyli "mailbombing" faxow
+11   Jak wyjsc z przydzielonego shell'a
+
+
+=-===-=-=-=-=-=---=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--
+
+PART 1
+
+ Payphones - jak sie dostac !?! :)
+
+Czesto spotykane sa tzw. inwalidzkie - niskie, zolte, oszklone.
+wszystkie kable siedza w dolnym zoltym kawalku metalu.
+wystarczy go odkrecic - raptem 6-8 srub i gotowe.
+mamy 2 glowne kabelki ... tylko tutaj duzy CAUTION PLEASE !!!
+bardzo czesto naklejki sa mylace, i zamiast 5V masz na kablu 220V
+taki niewinny podstep ze strony telekomuny o malo co nie kosztowal
+zycia dwoch glowych skeh-membher'ow. Polegl tylko nasz aparat .. szkoda
+bo byl to calkiem dobry filips. Wiec - najwieksza uwaga !
+W sumie zazwyczaj ludzie igoruja twoje dzialania . Jednak polecam
+grupy 3-osobowe: 1 podczepia kabelki, 2 w budce trzyma aparat i stuff,
+3 na czatach , wypatruje policji i alarmuje ... brzmi smiesznie, ale
+podczas 2 oosobowego dzialania czesto policje zauwaza sie w momencie
+gdy podejdzie do budki :) a wtedy to juz ciezko jest sie im wytlumaczyc, bo
+to chyba podchodzi pod wandalizm or sth . heh nie wiedza lamy co to phreak
+!!! Ogolnie - jesli kabel jest gdzies na wierzchu (co zdarza sie wbrew pozorom
+dosc czesto) to zero klopotu. Nacinacie kabel, zdejmujecie izolacje i na
+chama podpinacie swoje okablowanie :)
+A tak w ogole to lepiej po robocie wszystko przykrecic z powrotem,
+pozalepiac itp. bo nastepnego dnia moze gdzies w krzakach czekac lotny patrol
+TPSA i was zgarnac .. albo zorientowac sie, ze ktos im sie podpina :) Huh.
+
+ Przepraszam, jestem z TPSA ...
+
+  BARDZO FAJNYM sposobem na szybkie uzyskanie wolnej budki telefonicznej
+jest podanie sie za pracownika tepsy. Czyli: gada jakis kretyn, podchodzisz
+: przepraszamy pana, ale jestesmy z tpsa z dzialu testow technicznych
+(tutaj mozna improwizowac) i prosze o szybkie rozlaczenie sie. Dziala w 80
+przypadkach na 100 (szczeolnie jak gadaja panienki). Jezeli do tego
+wydrukujesz sobie lewa legitke tpsa - tomek kwiatkowski MONTER SIECI
+KABLOWEJ to juz totalnie wszyscy powinni skapitulowac. UWAGA: dla wlasnego
+bezpieczenstwa nie nalezy stosowac tego sposobu na: dresach z komorkami,
+kretynach,policji, etc. Najbardziej wskazane sa akcje na zwyklych szarych
+ludziach. Aaa - bron boze nie dajcie sie zbic z tropu jesli koles was
+zapyta np. a co panowie tu chca - walnijcie txta, ze na przyklad
+pprzyszliscie dokonac identyfikacji rozmowy przychodzacej, ze wzgledu na
+skargi abonentow ... etc . - jestescie ograniczeni tylko swoja wyobraznia .
+Aby lepiej poszlo, nalezy uzywasz slow w stylu PROSZE i DZIEKUJE. Hehehe
+ludzie bardzo czesto nawet sla komplementy w stylu : bardzo dobrze dziala
+wasza firma, oby tak dalej; jestescie swietni ... itd :) Ci ludzie chyba
+nigdy nie probowali sie dodzwonic pod 0202122 :))))
+
+Fun with 974 number
+
+A wiec, na nowszych centralach tpsa posiada numereek (na sterych pewnie
+tez, tylko inny ), sluzacy do testow numeru. Wystzrczy do niego zadzwonic,
+a potem od razu odlozyc sluchawke. Za jakies 10 sekund telefon powinien
+zrobic callback'a z dialtone ... ale nie da sie z tego dzwonic ... pech .
+Prace trwaja. Numerek jest bardzo dobry do wkurwiania policjantow w metrze
+:) i robienia sobie z ludzi jaj (.. kto pierwszy odbierze .. :)
+Jak rozwale ten nr do konca to wam dam znac.
+
+Callbacki
+
+Zapomnijcie. Chyba ze uda wam sie sciagna plik z haslami z takiego np.
+PAP-u, albo czegos podobnego. Jest duza szansa ze te hasla/userki beda
+pasowac rowniez do dial-up'a. Wystarcy wtedy zapuscic john'a the rippera na
+pare dni/tygodni/miesiecy/lat ... i juz ! Ale ine polecam ... oczywiscie,
+jest par ogolnie znanych numerow typu 080020866 ale to gowno niestety nie
+dziala ( u mnie na przyklad nawet oddzwania, co jest w ogole dziwne :))))
+A tak btw. to ten ostatni numer jest bardzo fajny do wyzwalania zlosci w
+twoich wrogach . Dzwonisz od siebie pod 080020866 , podajesz PPP jako name
+i pwd, i numer telefonu twojej ofiary. :) Efekt bedzie taki, ze gdy
+callback natknie sie na voice to stwierdzi, ze mu nie napisales ATA i
+bedzie dzwonil ponownie ... znudzi mu sie po kilkunastu porbach .. ale
+ciekawe, po ilu znudzi sie komus, kto bedzie to msial odbierac ?! :)
+Oczywiscie wtedy mozna zadzwonic ponownie ...
+UWAGA Z CALLBACKIEM !!!! Nie dzwoncie z domu !!! Ostatnio jeden z naszych
+kumpli zostal zmuszony do zaplacenia rachunku za swoje inetowanie przez
+0800 !!! Po prostu zajrzeli w logi i juz !!! A wiec - w tym wypadku to nie
+jest takie czcze straszenie potencjalnymi konsekwencjami - to jest naprawde
+niebezpieczne, bo moze nie skonczyc sie tylko na uregulowaniu rachunku za
+swoe polaczenie !!! Aaaaaa-jezeli uczycie sie w LO i wasza szkola laczy sie
+z internetem przez numer IdS'u , to wystraczy adminowi zwinac skrypty
+logujace od dip'a (jesli ma linuxa) i zazwyczaj mozna dzwoic z domu.
+Niestety nie na callbacka, bo w IdS'ie jest defaultowo ustawiony telefon do
+szkoly (chociaz przy oddrobinie checi mozna to zmienic :)))), ale za to
+jest normalny dial-up. Wszystko lepsze niz pieprzony 0202122 TPSA, nie
+wspominajac, ze bardzo ciezko was zlapac w razie jakiegos problemu.
+
+
+Internet DialOuts
+
+Co to jest ? To po prostu komputer, podpiety jednoczesnie do internetu i do
+modemu, pozwalajacy na zdalne zalogowanie sie na niego i poprzez odpowiednie
+komendy, polaczenie z numerek telefonicznym. Czest z tych dialoutow moze
+nie dzilaac, czesc moze byc wolna, ale musiscie to juz sami sprawdzic, bo
+ja normalnie nie mialem na to czesu. Wiekszosc jest w stanach, wiec
+musiscie sie "ograniczyc" do numerow amerykanskich, albo pokombinowac, jak
+jest z wyjsciem na miedzynarodowe polaczenia. Nic trudnego. A wiec - telnet
+do reki, i dzwonic !!! W odpowiednich kolumnach sa podane w kolejnosc :
+kierunkowy miasta, w ktorym stoi komputer, jego adres, komenda oraz
+format numeru, pod ktory dzwonimy. Powodzenia :) jakbyscie znalezli jakies
+ciekawe zastosowania tego cuda, to email me.
+
+
+Kod     Adres IP                        Komendy - format numeru
+------  ------------------------------- ---------------------
+602     129.219.17.3                    login: MODEM
+                                        atdt 8xxx-xxxx
+617     dialout.lcs.mit.edu
+206     dialout24.cac.washington.edu
+804     ublan.acc.virginia.edu          c hayes
+303     129.82.100.64                   login: modem
+307     modem.uwyo.edu
+609     129.119.131.11x  (x = 1 to 4)
+404     emory.edu                       .modem8 or
+                                        .dialout
+416     pacx.utcs.utoronto.ca           modem
+                                        atdt 9xxx-xxxx
+713     128.249.27.154                  c modem96
+                                        atdt 9xxx-xxxx
+713     128.249.27.153                  " -+ as above +- "
+714     130.191.4.70                    atdt 8xxx-xxxx
+514     132.204.2.11                    externe#9 9xxx-xxxx
+515     isn.rdns.iastate.edu            modem
+                                        atdt 8xxx-xxxx(2329011)
+502     uknet.uky.edu                   outdial2400
+                                        atdt 9xxx-xxxx
+412     gate.cis.pitt.edu               LAT
+                                        connect dilout
+                                        ^E
+                                        atdt 91k xxx-xxxx
+416     annex132.berkely.edu            atdt 9,,,,, xxx-xxxx
+614     ns2400.ircc.ohio-state.edu      DIAL
+804     128.143.70.101                  connect hayes
+                                        atdt xxx-xxxx
+>404    128.140.1.239                   .modem8|CR
+>                                       or .modem96|CR
+>GLOBAL dialout2400.smith.edu 5165      atdt 9-xxx-xxx-xxxx
+
+
+PART 2
+
+Heh. Ten kawalek faq raczej nie bedzie mial duzo wspolnego z hackiem/phrackiem.
+To raczej zbior przepisow, jak wyzyc sie na swoim znienawidzonym wrogu ...
+jesli jest on totalnym lamerem i nie umie robic nic innego, jak klikac na
+ikonke Worda albo Excela ... Heh . Wiekszosc sposobow opiera sie na
+bezposrednim dzialaniu, tzn. musisz miec dostep do kompa ofiary - ale w
+szkole albo pracy to rzaczej nie jest duza przeszkoda.
+
+
+ MS Word
+
+   Heh. Dopisz delikwentowi do sciezki do programu winwor malutki parametr
+   /mFileExit. Word jest glupi i (heh) automatycznie wczytuje kazde
+   makro, ktore mu sie podrzuci w linii komend. Oczywiscie nie trzeba
+   wyjasniac, ze program bedzie zaczynal prace od jej skonczenia :)
+
+ Pliki INI
+
+   W pliku bodajze win.ini znajduje sie linijka Shell=progman.exe .
+   Wystarczy, ze zamiast tej linii walniesz znaczek ALT255 no i koles
+   ma z glowy windowsy ... heh ocyzywiscie dopoki tego nie wykryje, ale to
+   bardzo czesto wymaga interwencja np. serwisanta :) Do tego pliki ini sa
+   tez bardzo dobrym zrodlem informacji (czyt. haselek), bo wiekszosc
+   windozowych programow trzya tam swoje user-profile, czesto nawet
+   rozkodowane .. a jak nie, to czeka cie po prostu troche wiecej pracy ;)
+
+ Piekielna maszynka do faxu
+
+   Huhuh. Jakis debil zaszedl ci za skore wysylajac tone smiecia na twoj
+   faxik ? no problem ... zakladajac ze masz numer kolesia (ofiary) to nie
+   ma sie co dlugo zastanawiac ... heh . A wiec ... znalez sobie 3
+   zadrukowane kartki formatu A4, wloz je do faksu, a zeby nie skonczylo
+   sie za szybko, zklej ostatnia kartke z pierwsza :) I mozesz sobie spokojnie
+   wyjsc na impreze. Ten sposob jest powszechnie znany, ale nie przesadzaj
+   z jego uzywaniem, bo gosc moze sie zrewanzowac tym samym !!! Heh, ale od
+   czego sa faxmodemy ? Wysylasz, koles probuje sie do ciebie dofaxowac ... a
+   tu voice zamiast faxu ...
+
+ MSCDEX a WINDOZY.
+
+   Hhuhu. Microsoft zrobil w swoim sterowniku do cd bardzo ciekawa sprawe.
+   Otoz parametr podany jako nazwa urzadzenia - czyli zazwyczaj cos w stylu
+   MSCD001 albo podobnie, staje sie w momencie wladowania drivera nazwa
+   zarejestrowana dla urzadzenia (jak np COM1,LPT itd.) Heh. I co z tego ?
+   Otoz to, ze tej nazwy nie mozna uzywac w zadnych operacjach na plikach.
+   Nie wierzysz ? To sprobuj zrobic katalog np. COM1 ... DObra, do rzeczy:
+   wystarczy jako ten parametr wpisac cos w styu WINDOWS, DOS, NC, WORD ...
+   kazda nazwa jest dobra ... heh ... agent nie bedzie mial wtedy dostepu
+   do zadnego katalogu o tej nazwie, nie mowiac juz o plikach !
+
+ WINDOWS AGAIN
+
+   Huh. Kolejnym prezentem microszkopa dla nas jest wspanialy pliczek
+   WINSTART.BAT. Heh - naprawde jest od cholery sposobow, zeby to bydle
+   wykorzystac dla naszych celow :) Wstarcy ze dopiszemy w srodku :
+      ctty nul
+      ... ciekwae instrukcje
+      ..... ciekawe instrukcje
+      del %0.bat
+   Heheheh ... efekt bedzie ciekawy. Ten plik jest bardzo fajny takze z
+   drugiego powodu - mozesz tam dolepiac nawet wieksze programy, a gosc i tak
+   raczej sie nie skapuje, bo 1) nie wie ze cos takiego w ogole istnieje , a
+   2) nie jest w stanie zauwazyc, czy windozy laduje sie przypadkiem pare
+   sekund dluzej... Powodzenia.
+
+ JAK WYJSC Z JAKIEGOS PRZYDZIELONEGO SHELLA SPOD WINDOZY
+
+   A wiec. Powiedzmy, ze dostajesz kompa (czesto sie zdarza na jakichs
+   targach  czy wystawach), na ktorym lezy sobie tylko kawalek windozow i do
+   tego MS Works (ale moga byc inne programy). A wiec wystarczy :
+   Wstaw/Obiekt/Pakiet ... potem powinna sie odpalic Pakowarka, heh a tam w
+   menu Edycja jest takie cudo jak Wiersz Polecenia ... co dalej chyba nie
+   trzeba mowic :) mamy dostep do wszystkich programikuff i mozemy je bez
+   problemow odpalic. To jest po prostu WINDOWS SECURITY lol :)
+
+-=-
+Totz. ale sie rozpisalem .. w moim zamysle to mial byc tylko kawalek txtu, a
+zrobil sie w sume calkiem pokazny zbiorek rad dla poczatkujacych /nie
+i nie tylko/ phrackerow ...
+
+---
+NEWS FLASH: trwaja rozmowy z jedna z innych grup nad polaczeniem sie
+Sk3h.org i wlasnie tej grupy... jesli to wypali, to damy wam znac w
+nastepnym numerze.
+
+---
+ THE END
+
+special thx to : *myself* *Martha1/Martha2* *pan* *viedzmin* *#hackpl*
+special fucks to: *rafael* *jezus* *jjj/follow* *jerry* *genesis*
+                  *lamer who was trying to use my nick *
+
+created by  .nTh bTh. alliance
+
+---
+contact us: [skeh@kki.net.pl] [bth@kki.net.pl] [nth@kki.net.pl]

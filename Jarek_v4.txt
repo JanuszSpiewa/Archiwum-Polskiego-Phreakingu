@@ -1,0 +1,43 @@
+Jarek faq v_4
+
+Oto kolejna wersja mojego faq o przerabianiu budek telefonicznych. Tym razem bêdzie o:
+			NIEBIESKICH !!!
+Poprzednie dwa by³y o srebrnych. 
+
+	No wiêc... przeróbka bêdzie jak zwykle na kontaktronie, uruchamiana silnym magnesem, polecam te z CTP-1 (jajo). Do wykonania bêd¹ potrzebne:
+-p³yta g³ówna niebieskiego urmeta
+-lutownica, cyna (do elektroniki, nie do rur miedzianych ;-)
+-dwa druciki telefoniczne
+-kontaktron zwierny (lub prze³¹czny ze stykami zwiernymi) {zwierny to taki, do którego jak przy³o¿ymy magnes, to przewodzi}
+-klej (cjanopan w dowolnie zboczonej interpretacji np.: superglu, kropelka i takie tam LUB klej na gor¹co, z pistoletu.
+
+Ca³a filozofia polega na do³¹czeniu kontaktronu równolegle do kondensatora C6 (47nF) Znajduje siê on niedaleko wejœcia linii. BTW. Aby go zobaczyæ wypada³oby od³¹czyæ - (tzn. wyci¹gn¹æ) p³ytkê interfejsu linii (t¹ z iskrownikami), bo bêdzie zas³aniaæ. Kontaktron montujemy (kleimy) pomiêdzy ty³em p³yty g³ównej, a plastikow¹ tack¹ (któr¹ wypada³oby w tym celu odkrêciæ), przy PRAWYM brzegu p³yty patrz¹c na jej SPÓD/TY£ (strona, po której nie ma elementów, s¹ tylko luty) p³yta powinna byæ zwrócona z³¹cz¹ linii do góry lub NIE do siebie jeœli le¿y na stole. [Pod³¹czenie równoleg³e to takie, ¿e pierwsz¹ nogê kontaktronu ³¹czymy do pierwszej nogi kondensatora, a drug¹ do drugiej, ale jak ktoœ mi wyœle maila, z pytaniem: która to jest pierwsza noga kondensatora, to mu osobiœcie krzywdê zrobiê! ]  Teraz UWAGA, jeœli twój magnes jest za s³aby i nie w³¹cza kontaktrona przez stalow¹ obudowê (ty³) urmeta to bêdziesz musia³ wyprowadziæ kontaktron na kablach. Bierzesz wiêc wtedy dwa kabelki (dobrze ¿eby by³y miêkkie, czyli nie drut a jakaœ cienka linka) 1szy lutujesz do jednej nogi kondensatora (C6), a drugi do drugiej, kabli musisz mieæ tyle, ¿eby starczy³o do wyœwietlacza i mia³o trochê zapasu. Z drugiej strony kabli lutujesz kontaktron, i najlepiej go zaizoluj np.:owin¹æ kontaktron i lutowania taœm¹ izolacyjn¹ ¿eby siê o obudowê nie zwiera³o. Kontaktron upychasz (dopiero podczas monta¿u p³yty w automacie) za wyœwietlacz LCD. Chodzi o to, ¿e przód blurmeta jest z aluminium. Wad¹ jest to, ¿e monter zauwa¿y dodatkowe kable.
+	Mamy ju¿ pod³¹czony kontaktron w jeden lub drugi sposób. Montujemy p³ytê z powrotem (i ewentualnie kontaktron za wyœwietlacz) pod³¹czamy wszystkie taœmy i linie i GOTOWE!
+Metody dzwonienia podzielimy w zale¿noœci od rodzaju wybierania, jakie akceptuje wasza linia:
+
+1) TONE
+2) PULSE
+
+dla pocz¹tkuj¹cych, jeœli linia akceptuje obie to zaliczamy j¹ do TONE
+
+1) Puszczamy sygna³ na budkê, uzyskujemy ROZMOWA PRZYCH. Przeklejamy magnes, tam gdzie jest kontaktron, numer wybieramy dialerem.
+
+2) Tu niestety trzeba bêdzie poœwiêciæ jeden impuls z karty telefonicznej na CA£E po³¹czenie. Wiêc wk³adamy kartê wybieramy numer normalnie, z klawiatury. Po tym jak ze¿re nam pierwszego kredyta przyklejamy magnes (tam gdzie jest kontaktron) i gadamy do woli.
+
+	Jeœli wasz magnes nie bêdzie siê sam trzymaæ sam to musicie go trzymaæ :-0 przy kontaktronie podczas rozmowy.
+
+	UWAGI OGÓLNE
+Jak otworzysz urmet a nie od³¹czysz sobie czujnika otwarcia, co w niebieskim nie jest ³atwe, to sobie to blurmet zapamiêta i zg³osi przy najbli¿szej okazji do C-90. U mnie na to lej¹, wiêc siê nie przejmuje, ale nie wiem jak jest u was. Bior¹c p³ytê wyjmij p³ytkê interfejsu linii, i zostaw j¹ w automacie wisz¹c¹ na kablach. Nie bie¿ jej ze sob¹, bo na huj ci potrzebna! Jak bêdziesz pod³¹cza³ p³ytê z powrotem to nie koniecznie pod³¹czaj czujnik otwarcia. 
+
+		CIEKAWOSTKI
+Niedaleko wejœcia linii jest sobie potencjometr, zasrany czerwon¹ farb¹ gwarancyjn¹. Nazywa siê P1. Jest odpowiedzialny ta taryfikacje. Jak go skrêcisz w jedn¹ z skrajnych pozycji, (któr¹? ZnajdŸ sobie!) to urmet przestanie odbieraæ taryfikacje. Tylko zapamiêtaj po³o¿enie pierwotne, ¿ebyœ móg³ go z powrotem ustawiæ. Inaczej dla zwyk³ych ludzi urmet bêdzie bezu¿yteczny, a takich rzeczy nie robimy! Jak ktoœ jest g³upi i dzwoni z kart to chwa³a mu za to, bo dziêki takim ludziom TPSA budki utrzymuje ;-)
+
+THAT'S ALL FOR NOW!
+
+Podziêkowania dla: Micha³, Ciz, Jacek P, jednej i drugiej Oli, browary Warka, Ko³nierzyk & Urmet Developers, goœcie ze Szklarskiej Porêby, Antix - których ostatnio nie widaæ, dla Hrabiego osobno za zapocz¹tkowanie phreak zone'u, dla goœci którzy opublikowali schematy blu - chyba grupa UPC - Chemique&Glinek i dla ludzi, którym na podstawie tych txtów uda³o siê pogadaæ za darmo.
+
+Anty greetz dla TpSA za likwidowanie nie rentownych automatów, karty Chip, DRO, ró¿ne typy zamków, sejmu, senatu, administracji, ministerstw za darmozjadztwo i reformy!
+
+ZNA SIÊ KTOŒ NA   ISDN   ? Jeœli tak to proszê o kontakt i wsparcie, to mo¿e coœ na jajo wymyœlê?
+
+jarek-gol@wp.pl		0-604-684-964		LISTOPAD'02

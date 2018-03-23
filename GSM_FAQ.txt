@@ -1,0 +1,3466 @@
+=======================================================================================================
+ 			    Tom/Alcoholic Team   tom@jegorek.pwr.jgora.pl
+				GSM & COS JESZCZE FAQ v 1.1 wieczna Beta 
+				       
+
+	No pisze to bo ... wlasciwie dlaczego ??? sam chcial bym wiedziec ....
+	Mam kupe innej pracy i chce sie chyba oderwac od calej reszty
+	Troche inny wstep niz wszedzie jak ktos chce mnie za to zamknac to prosze bardzo ...
+
+	UWAGA!!! Robie okrobne bledy !!!!!
+========================================================================================================
+
+
+	SPIS TRESCI 
+
+N - Nowe
+U - Uaktualnione
+	
+	
+U	1. WSTEP
+
+	2. GSM
+
+		2.1  CO TO JEST SIMLOCK
+U		2.2  IMEI
+U		2.3  DZIWNE KODY
+		2.4  KABELKI itp.
+		2.5  EEPROM CO TO ?
+		2.6  JAKIE PROGRAMY
+		2.7  NO TO ZACZYNAMY
+U		2.8  NOKIA
+		2.9  ALCATEL
+		2.10 BOSCH
+		2.11 PANASONIC
+U		2.12 ERICSSON
+		2.13 PHILIPS
+U 		2.14 MOTOROLA
+U		2.15 SIEMENS
+N		2.16 SAMSUNG SGH600
+		2.17 INNE
+N		2.18 TROCHE O ZMIANACH W EEPROM
+N		2.19 BAJERY
+N		2.20 ANTENY
+N		2.21 REANIMACJA
+N		2.22 PODSUMOWANIE
+
+
+
+N	3. PHREAK
+		3.1 MINI TELEFON
+U		3.2 INNE PODPINANIE		
+N		3.3 COS O KARTACH,URMNECIE ITP.
+N		3.4 FILTRY A IMPULSY ZALICZAJACE
+N		3.5 RADIO PHREAK
+N		3.6 CHIPCARD
+
+
+N	4. TROCHE O RADYJKACH
+
+
+N	5. TEMATY DO PRZEMYSLENIA
+
+	6. COS TAM
+		6.1 INFO
+		6.2 GREETZ
+
+	
+		
+
+========================================================================================================
+
+	1. WSTEP
+	
+	FAQ ten przynajmniej czesc o GSM a moze innej nie bedzie .... Jest przeznaczony dla ludzi
+majacych przynajmiej minimalne pojecie o Elektronice. Jednak niektore przypadki wymagaja troche wiekrzej
+wiedzy. Jest to zbior moich pomyslow jakiejs tam praktyki i zadawanych mi pytan. Niebede tu opisywal
+jakis wiekrzych szczegolow jedynie niezbedne minimum ktore jest potrzebne. Gdybym chcial opisac 
+dokladnie wszystko trudno powiedziec jak dlugi byl by ten FAQ. Tak samo jest z iloscia opisanych 
+telefonow.Kolejna sprawa to programy i schematy interfejsow sa dostepne na inecie.
+Ja ewentualnie informuje jak je uzywac i jakie zmiany polecam by wszystko ruszylo w 100%
+
+	No i jest jakas kolejna wersja moze nie zrealizowalem w niej wszystkiego co chcialem
+ale cos tam dodalem jak bede mial czas to postaram sie o rozbudowywanie co niektorych tematow.
+Staram sie jak moge nie uzywac terminow technicznych i tluaczyc niektore sprawy (gdzie sie da)
+w jakis normalnym jezyku. Tak co by nawet ci mniej zaawansowani w elektronice mogli cos zrozumiec.
+Jesli to komus nieodpowiada to niech poczyta sobie jakas powazniejsza lekture na ten temat :)
+
+	Moze FAQ jest troche zamotany ale nie chce mis sie go calego redagowac jak cos dodaje...
+i chyba utrzymam go w tej konwencji (sorrki ale brak czasu i lenistwo)...
+Troche sie zmienilo od poprzedniego i chyba wprowadze cos w stylu legendy jak u Hrabiego...
+... bo sam w trakcie pisania zaczynam sie gubic co gdzie zmienialem i co doalem :)
+Ten wstep to cos okropnego co mam jakis pomysl lub cos zmienie to wpisuje w to miejsce ...
+Kolejna sprawa to niebedzie tutaj napewno rad typu jak zajebac radio z samochodu, okrasc
+staruszke, przebic numery w aucie lub wpierdolic monterowi z TPSA.
+
+
+
+
+	2. GSM
+
+
+UWAGA !!! 
+WSZYSTKO CO TU JEST OPISANE BYLO TESTOWANE I W 100% DZIALA. NIE PONOSZE ODPOWIEDZIALNOSCI
+ZA USZKODZENIE TELEFONU itp. WYNIKLE Z WASZEJ GLUPOTY, MALYCH UMIEJETNOSCI LUB UZYWANIA INNEGO
+OPROGRAMOWANIA NIZ TUTAJ WYMIENIONE.
+
+
+
+	2.1 CO TO JEST SIMLOCK
+
+	Kazdy operator chce jakos przyciagnac swoich klijentow wiec robi jakies tam promocje
+jednak sprzedajac telefonik po nizszej cenie chce byc pewien, ze pracowac on bedzie w wlasnej sieci.
+A co za tym idzie przynosic kase danemu operatorowi. Zabezpieczen jest kilka ... Mamy wiec LOCK
+dla Operatora,Kraju itp. Ostatnio ... niestety trudno mi cos powiedziec bo wyjechalem z Polski ...
+IDEA prawdopodobnie chciala uruchamiac siec w GSM 900 obecnie pracuje w DCS 1800. Mamy wiec dualne 
+aparaty ktore moga pracowac zarowno w sieci GSM jak i DCS. PLUS i ERA moze tyz o czyms podobnym mysla
+jednak niewiem jak zostaly rozdzielone Koncesje. Od strony technicznej niebede tego opisywal bo i po co
+jak kogos interesuje to to moze w innym FAQ dla bardziej siedzacych w temacie bo to jest dla ludzi
+ktozy chca sie tym zaczac Bawic.
+
+
+	2.2 IMEI
+	
+	Pewnie powiecie co to za magiczne slowo ... to poprostu numer seryjny telefonu.
+Zawarte jest w nim kilka informacji KRAJ itp. Jak go znalezc a no powinien byc na nalepce
+pod akumulatorem lub jesli takiej naklejki nie ma (zdaza sie z roznych powodow ;)  )
+to po wpisaniu sekwencji *#06# na klawiaturce telefonu. Pojawi sie on na wyswietlaczu.
+Polecam to drugie  rozwiazanie jako pewniejsze. Numer IMEI potrzebny bedzie do wygenerowanie kodow
+odbezpieczajacych telefon. 
+	Struktura IMEI jest nastepujaca:
+
+Sklada sie on z 15 cyfr
+
+IMEI=TAC+FAC+SNR+SP
+
+TAC - Type Approval Code (6 cyfr)
+
+Jest to oznaczenie kraju dla jakiego dany telefon zostal wyprodukowany
+np.
+	495000 = GERMANY (NOKIA)
+
+FAC - Final Assembly Code (2 CYFRY)
+
+Kod przeznaczony do oznaczenia producenta
+
+np.
+01,02    - AEG
+10,20    - NOKIA
+40,41,44 - SIEMENS
+50       - BOSCH
+51       - SONY,SIEMENS,ERICSSON
+60       - ALCATEL
+65       - AEG
+70       - SAGEM
+75       - DANCALL
+80       - PHILIPS
+85       - PANASONIC
+
+
+
+SNR - Serial Number (6 CYFR)
+
+Teko chyba tlumaczyc nie trzeba ... jest to wlasciwy numer seryjny danego aparatu.
+
+
+SP - SPARE zawsze 0
+
+
+
+
+Tak mniejwiees sie to przedstawia.
+Jezeli ktos chce zmieniac IMEI bo ma jakis dziwny powod (np. niepodobaja mu sie cyferki
+na jego telefonie) to musi go znalezc w pamieci. Jest to zadanie powiedzmy srednio trudne...
+np. w NOKI jest on zapisany 2 razy raz jako BCD a drugi raz... no jak bedziecie chcieli sie pobawic
+to dojdziecie. Jednak przy opisie noki wyjasnilem dlaczego tego niewolno robic w NOKI 5110/6110
+w 3110 spokojnie mozna zmienic ... sam mam zreszta zmieniony w swojej ... ale to z jeszcze innych
+powodow.... (telefon jest legalny i oryginalny IMEI nie jest na zadnej czarnej liscie).
+W innych telefonach z tego co wiem zmiana IMEI nie powoduje zadnych ubocznych skutkow ...
+Jednak tego nie testowalem .....
+
+
+
+
+	2.3 DZIWNE KODY
+
+	Telefony maja taki bajer jak rozne kody ktore wpisujemy z klawiaturki i powoduja nieraz jakies
+ciekawe zeczy np. Zdjecie SIMLOCK-a (np. NOKIA3110) lub wyswietlenie IMEI lub jeszcze cos tam.
+	Dokladnie nie wiem jak podejsc do tego tematu... Kodow jest bardzo wiele jak i aparatow
+GSM opisanie wszystkich mijalo by sie z celem a wszystkich nawet nieznam ...
+Wiec postaram sie opisac w ogolnym zarysie... Jak ktos bedzie chcial znalezc kody do swojego
+aparatu to musi pogrzebac troche na inecia, a moze znajdzie. Nie sluza one powiedzmy do robienia
+jakis cudow ... a te co potrzebne sa do zciagania simlockow macie opisane.
+
+Na wstepie powiem na przykladzie telefonu NOKIA (kurde NOKIA i NOKIA ale wedlug mnie ta firma robi
+najleprze telefony, maja one swoje wady jak kazde, ale wedlug mnie maja bardzo dobrze rozwiazana
+elektronike czulosc toru w.cz itp. oraz bardzo latwa i wygodna obsluge... Jednak kazdy moze miec
+swoje zdanie i przyzwyczajenia ... Ja lubie Nokie inni Eryka a inni jeszcze cos innego ...)
+jak wprowadzac niektore znaki inni beda musieli zajzec do instrukcji swoich telefonow.
+
+
+Wiec mamy takie symbole jak:
+
+# (HASZ)  - uzywany w sekwencjach sterujacych GSM oraz w kodach specjalnych
++ (Plus)  - uniwersalny prefiks po ktorym podaje sie numer kierunkowy kraju
+p (pauza) - Pauza i w przypadku N3110 znak uzywany w kodzie zciagajacym SIMLOCK
+w (wait)  - Wait i w przypadku N3110 znak uzywany w kodzie zciagajacym SIMLOCK
+
+Zreszta te kody znane sa nam z normalnych telefonow...
+
+Teraz jak je wprowadzac:
+
+Wcisniecie klawisza '*' dwa razy powoduje pojawienie sie symbolu '+'
+Wcisniecie klawisza '*' trzy razy powoduje pojawienie sie symbolu 'p'
+Wcisniecie klawisza '*' cztery razy powoduje pojawienie sie symbolu 'w'
+
+Symbolu p i w nie nalezy mylic z dostepnymi na klawiaturce literami !!!
+
+Czesc kodow to kody operatora jednak nie bede ich tutaj opisywal jest ich wiele a nie wszystkie
+dzialaja u danego operatora.. Niewiem jak w innych sieciach ale z ERY dostajecie ksiazeczke z 
+dostepnymi kodami. Uzywanie ich jednak jest malo wygodne zwlacza ze w wiekrzosci aparatow
+so one wysylane automatycznie po wybraniu odpowiedniej funkcji w menu APARATU (np. Przekierowanie
+rozmow itp.)
+
+Teraz kody powiedzmy w uniwersalne ktore powinny dzialac na wszystkich aparatach.
+
+Zmiana kodu PIN:
+
+**04*[stary PIN]*[nowy PIN]*[nowy PIN]#
+
+Z tym kodem jest tez mala historia ... byl kiedys w N5110 i 3110 z bardzo starym softem taki BUG
+a w 3110 jest moze nadal ... Mozna bylo nim ominac SIMLOCK ...
+Po wlaczeniu telefonu gdy pojawil sie napis Podaj Pin naciskalo sie przycisk C a w niektorych
+5110 strzalka w gore i potem dluzej przytrzymac C. Jesli po tej informacji zniklo wszystko z
+wyswietlacza i dalo sie wprowadzic ten kod ... (Stray PIN i Nowy wpisywalo sie taki sam)
+np. dla pinu 1234   **04*1234*1234*1234#
+Telefon normalnie sie po nim uruchamial i przyjmowal karte innego operatora...
+Bylo do dobre rozwiazanie dla kogos kto niechcial zciagac SIMLOCK-a (utrata Gwarancji) a sporadycznie
+uzywal innych kart... Wada byla koniecznosc wpisywania tego kodu po kazdorazowym wlaczeniu telefonu.
+W n5110 nie dziala od wersji softu 5.04 (14.09.98).
+
+Odblokowanie po blednym wprowadzeniu kodu PIN:
+
+**05*[kod PUK]*[nowy PIN]*[nowy PIN]#
+
+
+Sprawdzanie IMEI ... no ten kod juz powinniscie znac ale podaje jeszcze raz ...
+*#06#
+
+Teraz kod sprawdzajacy czy wasz telefon,a raczej karta SIM potrafi zatrzymac swoj zegar dla oszczednosi
+akumulatorka:
+
+*#746025625# jezeli wyskoczy ALLOWED znaczy to ze wasz aparat moze w trybie standby zaoszczedzic
+wiecej energi niz inne telefony nie posiadajacej tej funkcji.
+
+Kod latwiej jest zapamietac w takiej postaci (*#SIM0CLOCK#) a dlaczego sprawdzcie jakie cyferki 
+znajduja sie pod literkami w tym napisie na klawiaturce telefonu ;)
+
+Traz powiedzmy czesc kodow dla danch aparatow:
+
+A) NOKIA 3110
+
+Kod SIM0CLOCK dziala :)
+
+*#7780# - powoduje przywrucenie ustawien fabrycznych (jezyk itp.)
+
+*#92702689# - kody gwarancyjne latwiej zapamietac jako (*#war0anty#)
+po wpisaniu tegokodu wchodzimy niejako w trym serwisowy ??? i wyjscie z niego jest mozliwe 
+przez wylaczenie telefonu.
+W tym trybie mozna uzywac nastepujacych kodow:
+
+6232  (OK) - Wyswietla miesiac i rok wyprodukowania telefonu
+7332  (OK) - Data ostatniej naprawy (gdy nie wpisane wyswietla DATE NOT SAVED)
+7832  (OK) - Data zakupu telefonu (gdy nie wpisane wyswietla DATE NOT SAVED)
+9268  (OK) - Wyswietla Serial Number czyli IMEI
+37832 (OK) - Wprowadzenie daty zakupu MMYY (UWAGA!!! Mozliwe tylko raz !!!)
+87267 (OK) - Przeslanie wszystkich danych do innego telefonu (numery,obrazki,dzwieki) w przypadku
+		 N6110 mozliwosc wykorzystania portu IR.
+
+
+*#3110# - Informacja o wersji oprogramowania i jej dacie.
+
+
+B) NOKIA 5110
+
+Kod SIM0CLOCK dziala :)
+Kod WAR0ANTY  dziala :)
+
+*#0000# - Informacja o wersji oprogramowania i jej dacie.
+
+C) NOKIA 6110
+
+Kody jak N5110 i podobno kod *#6110# niestety nie wiem co on robi ...
+
+D) NOKIA 1610/1611
+
+*#170602112392# - info o wersji oprogramowania
+
+E) NOKIA 6190
+
+*#6190# - informacja o wersji oprogramowania
+*#92772689# - wejscie w tryb serwisowy
+		  *3001#12345 (ok) - uruchamia test mode
+F) NOKIA 6150
+
+*#0000# - info o wersji oprogramowania
+*#92702689' - tryb serwisowy
+
+G) NOKIA 8810
+
+*#0000# - info o wersji oprogramowania
+
+H) NOKIA 6080/6081
+
+*#0000# - info o wersji oprogramowania
+
+
+I) ALCATEL ONE TOUCH EASY
+
+*#000000# - wejscie w menu serwisowe
+
+J)SAMSUNG SGH 600
+
+*#9999# - informacja o wersji oprogramowania
+*#0837# - ---------------||-----------------
+
+
+*#9998*228# - Stan Akumulatorka (temperatura,napiecie..)
+*#9998*289# - Zmiana czestotliwosci dzwieku alarmu
+*#9998*842# - Test wibratora (nie mylic z ... no wibratorem :-) )  to taki dyskretny dzwonek 
+
+*2767*3855# - Pelny Reset Pamieci EEPROM  
+*2767*2878# - Custom Reset Pamieci EEPROM
+
+K) SIEMENS C25
+
+*#0000# i zielony przycisk  - Zmiana Jezyka na wybor AUTO.
+
+L) BOSH
+
+*#0000# - ustawienie jezyka angielskiego.
+
+
+No i na tym koniec nie wymienilem oczywiscie wszystkich kodow do podanych aparatow
+a jedynie te ktore uwazalem za najciekawsze i do czegos przydatne.
+
+
+
+
+	2.4 KABELKI itp.
+
+	Czesc Simlockow mozna usunac za pomoca jakiegos programu (zalezy od TELEFONU) bez rozbierania
+telefoniku... Jest to bardzo wygodne rozwiazanie i chyba jedyne dla ludzi niezbyt mocno siedzacych w
+elektronice. 
+	Co robi taki kabelek a no najczesciej pracuje on jako dopasowanie stanow logicznych wyjscia
+RS232 to stanow wystepujacych na zlaczu telefonu. Kabelki mozna robic na wiele sposobow...
+Jedni mowia ze najleprze sa na ukladzie MAX232 (polecam ten uklad najlepiej oryginalny firmy MAXIM z 
+innymi nieraz sa klopoty). Jednak prawda jest taka ze mozna zrobic taki kabel przy uzyciu kilku
+tranzystorow (w zaleznosci ile sygnalow do dopasowania).  I dzialac on bedzie rownie dobrze.
+Ja osobiscie robilem z tego co mialem pod reka a sie nadawalo. Jedyny problem to konektory od 
+strony telefonu ... Albo trudno dostac albo sa Drogie. Nieraz kupuje sie tani zestaw sluchawkowy
+lub konektor antenowy(NOKIA 8110/3110) i go wykozystuje. Nalezy zwracac uwage czy taki konektor
+ma wszystkie styki (np. W zestawie sluchawkowym do ERICSSON-a jest mala zlaczka ktora nie 
+wykozystuje potrzebnych stykow.Ci co niezbyt radza sobie z lutownica moga taki kabelek Kupic 
+jest wiele ogloszen na INECIE ludzi z Polski ktozy takie kable robia.
+Wystarczy wpasc na jakas liste dyskusyjna dotyczaca GSM przejzec jej archiwum lub zapytac sie kogos
+o Kabel do danego telefonu. Wiecej szczegulow bedzie przy omawianiu poszczegulnych telefonow.
+
+
+	2.5 EEPROM CO TO ?
+
+	W wiekrzosci telefonow ma w srodku taka kostke (uklad scalony) ktory nazywa sie EEPROM.
+Jest to pamiec reprogramowalna wylacznie impulsami elektrycznymi. Np. aby skasowac EPROM potrzebna 
+jest lampa UV. Tutaj jest to robione na poziomie odpowiednich sygnalow. W telefonach najczesciej
+spotkamy pamieci EEPROM z interfejsem I2C jednak zdazaja sie tez z interfejsem SPI np. niektore 
+ALCATELE z SERI ONE TOUCH. A po co nam to wiedziec ... a no nie wszystkie telefony mozna zrobic
+po kabelku ... i trzeba jakos zmienic zawartosc pamieci co by nasz zacny cel sie spelnil :)
+I tu jest wlasnie problem kupno oryginalnego programatora to spory wydatek ... jednak dla zasobniejszych
+w gotowke polecany. Teraz to co napisze nie jest jakas reklama, a moze jest ???? 
+Na Polskim rynku dostepnych jest wiele programatorow wiec jaki wybrac... Zwlaszcza ze jest to spory 
+wydatek. Ja osobiscie polecam programator MAX firma ACS (www.acs.ats.pl). Dlaczego ? Za sume 1000zl.
+Otzymujemy bardzo dobry programator obslugujacy naprawde duzo kosci. Druga sprawa do darmowy upgrade
+softu ze strony www. Nastepna sprawa to niewymaga on praktycznie adapterow do roznch ukladow.
+A kupno taniego programatora i potem dokupywanie ADAPTEROW, placenie za Upgrade softu itp. moze
+znacznie przekroczyc wymieniana cene. Upgrade Softu robi sie naprawde doyc czesto nieraz raz na miesiac
+a nieraz i 2 razy (poprostu pojawiaja sie nowe uklady ktorych programator akurat nieobsluguje ...
+wiec robimy zmine Oprogramowanka na nowsza i po problemie. Taki programator nie tylko sluzy do 
+rozkodowywania telefonow. Mozna nim tez robic RADYJKA (rozkodowywanie). Zczytac i zaprogramowac
+EPROM od URMNETA. Lub bawic sie w wlasne konstrukcje mikroprocesorowe np.(Karty CHIPOWE do telefonow,
+Kardy do dekoderow SAT) lub cos legalnego np.(zrobic sobie budzik na 8051 lub innym podobnym procku).
+Dla mniej zasobnch polecam bardzo dobry i darmowy programator o nazwie PONYPROG. Jest to programator
+SOFTWER-owy wymaga wykonania naprawde pardzo prostych interfejsow. Programuje wiekrzosc pamieci I2C
+procesory PIC, ATMEL AVR itp. Gdzie go znalezc a no tu: www.cs.unibo.it/~lanconel
+Znajdziecie tam zawsze najnowsza wersje programatora oraz dokumentacje potrzebna do wakonania 
+poszczegulnych interface.
+Teraz kolejny problemik ... gdy juz rozkrecimy telefon a bedzie nap potrzebny do tego specjalny 
+srubokrecik o nazwie TORKS ... mozna innym ale szkoda niszczyc wkrety w telefonie. Cena jego jest
+niewielka a rozmiaru sorry ale nie pamietam. Znalezc trzeba nasza pamiec bedzie to uklad SMD 
+8 wyprowadzen. Jak sie do niego podpiac. Ja polecam klips do ukladow SMD cena na gieldzie ok 50zl
+Jest to wygodne rozwiazanie i bezpieczne dla pamieci. Mozna wykombinowac cos wlasnego ale to jak 
+chcecie. Niestety prawda jest brutalna i w niektorych telefonikach nie przeprogramujecie pamieci
+w ukladzie tzn. bez wylutowania. Jest to zabiek trudny i odradzam komus kto lutowal jedynie kabelki.
+Jaka lutownic jedynie grzalkowa transformatorowa mozecie sobie wybic z glowy (kolejny wydatek).
+A i grzalkowa to nielada problem... mozna to robic na strune, zyletke itp. Zreszta to nie FAQ 
+o lutowaniu. Jak nieczujesz sie pwenie to kup kilka stach plyt z czesciami SMD i troche potrenuj.
+Albo baw sie i uwal komus aparat jesli cie na to stac. Jesli mamy wylutowany uklad trzeba go jakos
+zaprogramowac ... I tu znowu przychodzi z pomoca KLIPS. Poprostu zapinamy go na wylutowany uklad
+kabelkami klips polaczony jest np z podstawka pod uklad scalony ktora umieszczona jest w podsawce
+Programatora. No i wszystko cacy mozna sie bawic w programowanko a potem tylko wlutowac uklad.
+
+
+ 
+	2.6 JAKIE PROGRAMY
+
+	Tutaj chce wymienic jakie programy beda ci potrzebne do calej tej zabawy. Istnieje wiele innych 
+jednak te testowalem i dzialaja w 100%. Jezeli chcesz testowac na telefonach jakies inne programiki
+lub inne metody to tylko na wlasna odpowiedzialnosc i zalecam to osoba majacym o calej sprawie Wiekrze
+pojecie.No wiec zaczynamy nasza liste ...
+
+	UNIVERSAL SP UNLOCKER v 3.2 by BP Bonus [WIN]
+	ALCATEL SIMLOCK v1.0 (WIN wymaga hasla MISIEK)
+	ERICSSON HOME SERVICE SOFTWARE v 1.7 by Daniel Henzuela [WIN]
+	ERICSSON 6xx and 7xx FLASHER v 3.0 by Daniel Henzuela (768FLASH)  [DOS]
+	MOTOROLA HOME SERVICE v 1.3 (Mot_SP)  [DOS] 
+	WINTESLA v 5.31 wraz z bibliotekami  [WIN]
+	WINLOCK 1.00 + biblioteka Dk2Win32   [WIN]
+	SP LOCK CODE GENERATOR v 6.6 [DOS]
+	PCLOCALS v 1.3 [DOS]
+	PANAIMEI (PANASONIC)  [WIN]
+	PHILIPS SP-UNLOCK v 1.0 by Tomasz Plwa [DOS]
+	SIEMENC C25 UNLOCK (taki co pojawia sie nacisnij Enter to START) [DOS]
+	BINEDIT v 1.3 by Tomasz Plewa [DOS] - program Pomocniczy dla chcacych sie bawic samemu
+	NOKIA NSE-1,3,8 SP Unlock program v 6.0 by Daniel Henzuela [DOS]
+	ERICSSON SERVICE BY SSP ELECTRONICS V1.2  [WIN]
+
+	2.7 NO TO ZACZYNAMY
+
+	Do dalszej pracy potrzebne beda nam w/w programy oraz Kabelki:
+
+	NOKIA	
+	ERICSSON 
+	MOTOROLA 
+	PANASONIC
+	SIEMENC C25
+		
+
+	2.8 NOKIA 
+
+UWAGA!!!
+Wystapuje kilka rodzajow kabelkow do telefonow NOKIA jezeli bedziecie wykonywac jakis wlasnorecznie
+lub kupowac warto sie dowiedziec czy na wyjsciu sa diody zenera obnizajace napiecie do 3V interfejs
+komunikacyjny w Nokiach pracuje z innymi poziomami stanow logicznych. Coprawda niektorzy mowia
+ze sa one kompatybilne ze stanami TTL i podlaczaja telefony pod ok. 5V i nic sie nie dzieje.
+Ja mam jednak informacje ze takie proby doprowadzily do uszkodzenia kilku telefonow.
+Moim zdaniem 1 lub 2 (zalezy od typu kabelka) diody zenera to mniejszy wydatek niz nowy telefon.
+
+
+
+Modele: 161x, 3110, 8110
+
+	A wiec uruchamiamy programik SP LOCK CODE GENERATOR v 6.6.
+Na pytanie  Service Provider Code  <XXX-XX> wpisujemy  numer operatora a jaki
+Musimy wiedziec na jaka siec jest nasz SIMLOCK wiec dla:
+							ERA GSM  : 260-02
+							PLUS GSM : 260-01
+Dla innych operatorow musicie poszukac.
+Potwierdzamy kod enterkiem i mamy kolejne pytanko ...
+Enter IMEI <XXXXXX-XX-XXXXXX-X> no jesli uwaznie czytaliscie to wiecie co tutaj wpisac..
+Teraz mamy do wyboru cos takiego:
+					1 - Operator SP Lock Code
+					2 - GID1 Lock
+					3 - GID2 Lock
+					4 - IMSI Specific Lock
+
+Nas interesuje funkcja nr 1. (wiec ja wybieramy)
+
+I powinno nam sie pojawic cos w stylu Pass.......................:#pw+MASTER CODE+1#
+
+MASTER CODE w twoim przybadku bedzie 10 cyfrowa liczba.
+Wpisujemy wiec ten kodzik czyli #pw+.... z klawiaturki naszego telefonu ...(p i w uzyskujemy przez 
+kilkakrotne nacisniecie *).
+No i SimLock zciagniety.
+
+UWAGA!!!
+Gdy wyskoczy nam Komunikat CODE ERROR prawdopodobnie pomylilismy sie z wpisywaniem IMEI kodu operatora
+lub przy wpisywaniu kodu do telefonu. Pomylic mozna sie 2 Razy i potem pa pa z odblokowaniem ale
+to nie do konca.
+Jezeli wyswietli sie info NOT ALOWED to juz ktos zablokowal telefon wpisujac zly MASTERCODE.
+I co teraz zrobic. Ano trzeba telefon rozkrecic i zmienic zawartosc pamieci na INNA (z innego 
+telefonu niestety wada jest zmiana IMEI). Jesli nie mamy jakiegos pliku z zawartoscia pamieci.
+Zczytaj zawartosc ze swojego telefonu i przepusc przez Universal SP Unlockera jezeli
+nie posiadasz programatora wykozystaj wbudowany w Universala PonyProga...
+Universal SP Unlocker Niestety nie usowa SimLocka tylko podklada swoj plik (inny IMEI) bez simlocka.
+Pamieci nie trzeba wylutowywac jedynie nogi Adresowe pamieci A0 A1 A2 nalezy podpiac pod MASE 
+i powinno sie spokojnie zczytac i zaprogramowac Pamiec.
+
+
+Modele: NOKIA 5110/6110
+
+Do odblokowania tych modeli potrzebny nam bedzie kabelek typu MBUS oraz program WINLOCK
+Niestety ta metoda nie usuniemy Simlocka LEVEL 2 i 3 oraz z NOKI 5110 (nowa wersja)
+
+Metoda ta ma tez inna wade... Nie jest to do konca zciagniecie SimLocka dokladamy poprostu inny Lock
+Level 4 i przy okazji zmieniamy pare innych parametrow. Coprawda po tej operacji telefon przyjmuje
+wszystkie karty lecz definitywnie tracimy Gwarancje.
+
+Jak to zrobic .. Ano zainstalowac program WinLock i biblioteke Dk2Win32 (niezbedna do jego pracy).
+Uruchamiamy program podlaczamy kaelek do COM i do kabelka Telefon. Wybieramy w programie numer COM-u
+i dajemy co by odczytal telefon ... Jesli po odczytaniu  telefonu zamkniete (CLOSE) sa inne locki niz
+LEVEL1 odpuszczamy sobie robienie tego telefonu. Jezeli zamkniety jest tylko LOCK LEVEL1 to w pola:
+	
+	MNC+MCC wpisujemy ?????
+	MSIN wpisujemy ??????????	
+
+Nastepnie w okienku  LEVEL 4 dajemy CLOSE i wciskamy CLOSE SIMLOCK pojawi nam sie cos o HASLE
+klepiemy ENTER i po wszystkim telefon juz bedzie przyjmowal wszystkie karty.
+Jezeli sie pomylimy (czego nieradze) mozna jeszcze probowac odkrecic calosc wpisujac wszystko
+poprawnie i zmieniajac w LEVEL1 pole USER na FACTORY lub ODWROTNIE i naciskajac CLOSE SIMLOCK.
+Jesli pomylka byla tylko w Polach to powinno sie udac. Jezeli zamknoles LEVEL2 lub 3 to kaplica ...
+
+Teraz o 5110/6110 i IMEI pomyslisz moze by przeprogramowac pamiec... odpada ... Zmienisz wtedy IMEI
+a te telefoniki maja sprzetowa kontrole numeru IMEI i zaczna sie dziac cuda z aparatem.
+
+Co to jest MBUS ... do Telefonow Nokia dostepne sa dwa kabelki MBUS i NCDS oraz sa jeszcze uniwersalne
+czyli MBUS i NCDS w jednym. Nokia ma poprostu dwa sposoby komunikacji ze swiatem zewnetrznym
+1 przez szyne m2bus transmisja po jednym przewodzie w dwie strony max. 9600b/s (kabel MBUS)
+2 przez szyne fbus transmisja po 2 kabelkach (Tx/rx) szybsza od m2bus (kabelek NCDS)
+
+Jezeli masz natomiast problem z Security CODE  to potrzebujesz Wintesli 
+konfiguracja i instalacja wintesli nie nalezy do zeczy latwych .. wiec zasiegnij rady kogos kto to juz
+robil a on wytlumaczy ci jak Wintesla odczytac SECURITY CODE. Z Wintesla trzeba bardzo uwazac jest
+to program serwisowy i mozna namieszac troche w telefonie Proponuje nie uzywac funkcji z menu TUNING.
+Aby uruchomic NetMonitor w 5110/6110 bedziecie potrzebowac programu PCLOCALS i kabelka MBUS lub NCDS.
+Jak to zrobic przeczytajcie FAQ Aktywacja NetMonitora. (poprostu niechce mi sie pisac tego co juz ktos
+napisal). Program PCLOCALS nalezy uruchamiac z pod DOS-a 6.22 nalezy przygotowac sobie dyskietke 
+systemowa z Dosemi tym programikiem. Pod Windows program moze sie uruchomic (ale nie zawsze)
+jednak uzywanie jego nawet gdy sie uruchomi moze doprowadzic do niechcianych zmian w telefoniku.
+Kolejna ciekawostka jest mozliwosc umieszczenia w N3110 powitanka ... robi sie to WINTESLA a jak to 
+pomyslcie ... a jak nie wymyslicie to moze opisze to w nastepnej wersji FAQ. Jak taka bedzie...
+
+Model: Nokia 3210
+
+	Do usuniecia simlock-a z tego telefonu bedziemy potrzebowac kabelek m2bus oraz programu 
+NOKIA NSE-1,3,8 SP Unlock program v 6.0. Po podlaczeniu telefonu do komputera uruchamiamy program
+z parametrem (nr. portu COM do ktorego podlaczony jest telefon) np. Nse-sp.exe 1 dla COM1.
+Program robi wszystko automatycznie i po wszystkim resetuje telefon. Simlok zciagniety.
+Tym programem mozna tez zciagac simlocki z N 5110 i 6110 niestety tego nie testowalem.
+
+
+
+
+	2.9 ALCATEL
+
+Model: ONE TOUCH View i moze inne ...
+
+Uruchommy programik ALCATEL SIMLOCK v 1.0 wpisujemy IMEI i dostajemy kod ON...
+Wkaldamy do telefonu karte innego operatora telefon prosi o podanie kodu NCK wiec wpisujemy ten
+kod co dostalismy i po klopocie... SimLock zciagniety.
+
+Inne telefony robimy programem Universal SP Unlock....
+Wyjatkiem sa ALCATELE z PAMIECIA SPI ... ktore trzeba recznie (zmiana w pamieci)
+moze juz jest jakis software ktory to robi automatycznie ..??? 
+Niestety pamiec trzeba wylotowywac. Akurat te pamieci maja bardzo delikatne nogi i nawet ktos
+z duzym doswiadczeniem w lutowaniu moze je wyrwac.
+Ciekawostka jest to ze telefon bez pamieci dziala. Po wlaczeniu mamy usuniety SimLock jedyne wady
+to brak podswietlenia i po wyjeciu aku trzeba ustawiac wszystko od nowa (jezyk itp.)
+Nie probowalem natomiast wlutowywac czystej pamieci ... moze ktos sie pobawi...
+Prawdopodobnie telefon ruszyl by z wszystkimi funkcjami bez SimLock-a  to taka ciekawostka...
+
+
+	2.10 BOSCH
+Model: 608
+
+Ten telefonik traktujemy ponownie Universal Sp unlockerem ...
+
+Pamiec z telefonu trzeba wylutowac...
+Wada znowu Universal podstawia swoj plik zmienia sie logo po wlaczeniu aparatu i IMEI.
+
+	2.11 PANASONIC
+
+Modele: G400, G450, G500, G520, G600
+
+Podlaczamy telefon kabelkiem do komputera i uruchamiamy program PANAIMEI lub UNIVERSAL SP UNLOCKER
+zawiera on w sobie wlasnie programik PANAIMEI.
+Wybieramy sobie model naszego telefonu i pojawia nam sie napis .. DoubleClick and Power Button
+Wiec robimy dwuklik :) mysza i naciskamy Power w telefonie.
+W programie pojawi sie kilka przyciskow .. My dajemy Usuniecie Simlocka ...
+Na wyswietlaczu powinna otwozyc sie klodka .... Jezeli tego niebedzie masz telefon z nowym softem 
+i musisz sobie znalezc inny program.
+
+	2.12 ERICSSON
+
+Modele: GA318 GF388 GH388 GA628 GH688 GF768 GF788 SH 888 
+Potrzebujemy kabelek do ERICSSONA i programik ERICSSON HOME SERVICE SOFTWARE v 1.7 
+Jego starsza wersja jest oczywiscie zawarta w Uniwersal ..... tez mozna ja wykozystac.
+Wyciagamy karte SIM z telefonu, podlaczamy telefon do komputera kabelkiem i uruchamiamy program.
+Wybieramy oczywiscie COM i zaznaczamy Read Network Code (NCK). Nastepnie naciskamy klawisz 
+Make selected jobs.
+W czarnym kwadracie poawi sie napis co by nacisnoc power w naszym telefonie.
+Po wlaczeniu telefonu ... na wyswietlaczu niepowinno sie nic pojawic. Jedynie program powinied 
+dac kilka komunikatow i podac nam Kod NCK.
+Ten kod musimy teraz wpisac do telefonu...
+Wiec Wlaczmy telefon i naciskamy Strzalka w lewo,gwiazdka,gwiazdka,strzalka w lewo.
+Powinno pojawic sie menu systemowe. Wybieramy MELOCK YES, NETWORK YES, UNLOCK YES ...
+teraz klepiemy nasz kodzik NCK i klodka powinna sie otworzyc... Telefon odbezpieczony.
+
+Dla nowej wersji 768 robimy to troche inaczej... (wada zmiana IMEI)
+Uzywamy programu ERICSSON 6xx and 7xx FLASHER v 3.0 by Daniel Henzuela dostepnego na INECIE
+pod nazwa 768 TAMPERED...
+Uruchamiamy zalaczony tam plik BAT ... skonfigurowany jest on na COM1 i program zmienia nam zawartosc 
+pamieci w Telefonie. Simlock usuniety :)
+
+Teraz cos o kabelku ... Jest kilka schematow jednak co trzeba zmienic ... 
+1.Zasilanie ukladu zrobic z oddzielnego zasilacza (dobrze stabilizowany 5V)
+ w oryginale brane jest z RS232 lub w innym schemacie z nogi 14 dla modeli 3xx lub 12 dla modeli 6xx 7xx
+2.Przelacznik TEST poprostu usunac ... podlaczyc bezposrednio pod 5V (noga 9 dla modeli 3xx i 7 dla 6xx 
+ 7xx) to wyprowadzenie wprowadza telefon w ryb serwisowy.
+3. Z telefonu powinna byc wyciagnieta karta SIM w niektorych przypadkach jej obecnosc powoduje bledy
+w komunikacji z telefonem.
+
+Model T18 VIBRA:
+
+	Podlaczamy telefon kabelkiem do komputera i odpalamy programik Ericsson Service by SSP 
+Electronics V1.2 ... Wybieramy w nim numer portu Com do ktorego podlaczony jest telefon i postepujemy
+wedlug informacji dawanych przez program. Zostanie odczytanych kilka kodow z telefonu.
+Nam jest potrzebny kod NCK ... jak go mamy to postepujemy dalej jak dla w/w ERICSSON-ow.
+
+
+
+
+
+Dlaczego tak mialem problemy z poziomami napiec poprostu byly na granicy danego stanu logicznego
+powoduje to problemy z komunikacja telefon<->komputer. A to drugie to dla wygody zawsze po
+podlaczeniu Interface bedziesz mial telefon w trybie Serwisowym (telefon po wlaczeniu 
+niepowinien wyswietlac). Natomiast niewiem dlaczego karta SIM w niektorych przypadkach
+powoduje bledy w transmisji. A i jeszcze jedno info nijako ze ja i Daniel Henzuela piszemy
+niektore zeczy w Turbo Pascalu 6.0 to niebeda one dzialac na szybszych komputerach.
+Co zrobic aby odpalic najlepiej w BIOSIE komputera powylaczaj wszystkie CACHE
+powinno pomoc ... tylko nie przeraz sie jaki masz szybki komputer :).
+To sa moje rady inni moga mowic inaczej,a ty i tak zrobisz po swojemu ...
+
+
+	2.13 PHILIPS
+
+model: TWIST,DIGA
+
+Polecam moj programik (PHILIPS SP-UNLOCK v 1.0) nalezy odczytac pamiec z telefonu... Przepuscic przez 
+program i zaprogramowac ja z powrotem ... Mamy telefon bez simlocka...
+Pamieci niepotrzeba wylutowywac.
+
+	2.14 MOTOROLA
+
+DOLACZONY SCHEMAT i PROGRAM NIE JEST MOJEGO AUTORSTWA !!!
+
+Praktycznie tym sposobem odblokujemy wiekrza czesc telefonow tej firmy.
+Uzywamy programu MOTOROLA HOME SERVICE v 1.3 (Mot_SP).
+Interfejs to taka przerobiona karta sim. Polecam wykonanie wersji na 3 tranzystorach. Dla d160 trzeba 
+zrobic przelacznik odlaczajacy jeden rezystor. 
+
+Poczatek Schematu
+---------------------------------------------------------------------------------------------------
+
+  VCC musi byc podlaczone do ISO C1 (VCC PIN).
+  GND musi byc podlaczone do ISO C5 (GND PIN) i do DB9 PIN 5 (PC GROUND).
+
+  RS232 DB9                   VCC
+  ---------                    |
+                             -----
+  PCGND (5) ------ GND       |4K | dla D-160 usunac (Tutaj mozemy wstawic wylacznik)
+                             | 7 |
+                             -----
+                               *--------*------------ ISO C7 I/O PIN (7)
+                            | /C        |
+                  -------   |/          |
+   TXD (3) -------| 10k |---|\  BC547   | 
+                  -------  B| \E        |
+                               |        |
+                               GND      |
+                                        |
+                VCC                     | 
+                 |                      | 
+               -----                    | 
+               |4K |                    |
+               | 7 |                    |
+               -----                    | 
+    RXD (2) -----*C                     |
+                  \                     |
+                   \|B -------          |
+             BC547 /|--| 10k |-----------
+                  / |  -------
+                 |E
+               GND
+
+
+                VCC
+                 |
+               -----
+               |4K |                     ----------- ISO C2 RESET PIN (2)
+               | 7 |                     |
+               -----                     |
+    DTR (6) -----*C                      |
+                  \ |                    |
+                   \|B  -------          |
+            BC547  /|---| 10k |-----------
+                  / |   -------
+                  |E
+                GND
+
+
+                         -----------------------------
+                         |   C1        |        C5   |
+                         |             |             |
+                         |-------\     |     /-------|
+                         |   C2   ------        C6   |
+                         |        |         |        |
+                         |--------|         |--------|
+                         |   C3   |         |   C7   |
+                         |        -----------        |
+                         |-------/     |     \-------|
+                         |   C4        |        C8   |
+                         |             |             |
+                         -----------------------------
+
+---------------------------------------------------------------------------------------------------
+Koniec Schematu
+
+
+Jak to podlaczyc do telefonu.
+Najlepiej wykozystac jakas stara karte SIM. Delikatnie rozpilowujemy ja od tylu (po przeciwnej stronie
+wyprowadzen) usuwamy kostke krzemu i podlutujemy kabelki do naszego interfejsu ... Nastepnie zalefamy 
+to jakims klejem typu DISTAL, POXIPOL itp. Nalezy to zrobic bardzo ostroznie latwo jest uszkodzic
+folie na ktorej sa styki kart SIM.
+Uruchamiamy programik (najpierw podlaczamy telefonik do compa) wyskoczy cos w stylu:
+Port.... tu nr COM-u
+Baud.....8736
+Delay....1500
+ISO Convection... Direct
+
+Wlaczamy telefon....
+Na wyswietlaczu w telefonie pojawi sie napis CLONE wciskamy w telefonie 03# i po przekopiowaniu 
+kilku pierdolek do telefonu jest on bez SimLocka.
+
+Istnieje jeszcze program ASIM jednak sa problemy z jego uruchomieniem ... trudno mi powiedziec dlaczego
+Radze wiec uzywac wymienionego przezemnie programu.
+
+A dla ciekawskich dolaczam Source Code ASIMA. Jest to program emulujacy karte SIM wiec kogos moze 
+zainteresowac. Najnowsza jego wersja powinna byc zawsze na stronie Janus Motorola GSM pages
+www.image.dk/~jckrarup/
+
+
+Poczatek kodu  ASIM V 3.1
+-------------------------------------------------------------------------------------------
+
+{ **************************************************************************
+  ***********          ANDROID'S SIM CARD EMULATOR V3.1        *************
+  ***********   TO BE COMPILED WITH TURBO PASCAL 6.0 FOR DOS   *************
+  ********  THANK'S TO MOTOROLA FOR MADE SOOO! EASY ENTER TEST MODE ********
+  ********  NOW EMULATES A CLONE CARD CAPTURING FRAMES FROM IT  ************
+  ********  NOW CAN RUN TEST MODE IN A DCS 1800 MOTOROLA PHONE  ************
+  *******************  NOW WITH A3A8 GSM AUTHENTIFICATION   ****************
+  **** THE A3A8 PROCEDURE IS BASED IN THE A3A8.TXT FILE WRITED IN C ********
+  ********** BY Marc Briceno, Ian Goldberg, and David Wagner. **************
+  ************************************************************************** }
+
+program ASIMV;   { 14-05-98 V3.1 }
+uses crt,dos;
+type cad2=string[2];
+     cad4=string[4];
+     gtab=array [0..511] of byte;
+CONST
+
+   NAM: array [1..41] of word=($2FE2,$6F05,$6F07,$6F10,$6F11,$6F13,$6F14,$6F15,
+                               $6F16,$6F20,$6F25,$6F30,$6F31,$6F37,$6F38,$6F39,
+                               $6F3A,$6F3B,$6F3C,$6F3D,$6F3E,$6F3F,$6F40,$6F41,
+                               $6F42,$6F43,$6F44,$6F45,$6F4A,$6F4B,$6F74,$6F78,
+                               $6F7B,$6F7E,$6FAD,$6FAE,$7F10,$7F20,$7F21,$7F40,
+                               $3F00);
+   INEXT='.DAT';
+   NOPARIT  = 0;
+   PAREVEN  = $18;
+   PARODD   = $08;
+   BITS8    = $03;
+   TDL      = $01;
+   LPE      = $02;
+   OUT2     = $08;
+   COP1     = $21;
+   COP2     = $20;
+   COM1     = $3F8;
+   COM2     = $2F8;
+   COM3     = $3E8;
+   COM4     = $2E8;
+   IRQ3     = $08;
+   VECTOR3  = 11;
+   IRQ4     = $10;
+   VECTOR4  = 12;
+
+table_0: array [0..511] of byte= (
+        102,177,186,162,  2,156,112, 75, 55, 25,  8, 12,251,193,246,188,
+        109,213,151, 53, 42, 79,191,115,233,242,164,223,209,148,108,161,
+        252, 37,244, 47, 64,211,  6,237,185,160,139,113, 76,138, 59, 70,
+         67, 26, 13,157, 63,179,221, 30,214, 36,166, 69,152,124,207,116,
+        247,194, 41, 84, 71,  1, 49, 14, 95, 35,169, 21, 96, 78,215,225,
+        182,243, 28, 92,201,118,  4, 74,248,128, 17, 11,146,132,245, 48,
+        149, 90,120, 39, 87,230,106,232,175, 19,126,190,202,141,137,176,
+        250, 27,101, 40,219,227, 58, 20, 51,178, 98,216,140, 22, 32,121,
+         61,103,203, 72, 29,110, 85,212,180,204,150,183, 15, 66,172,196,
+         56,197,158,  0,100, 45,153,  7,144,222,163,167, 60,135,210,231,
+        174,165, 38,249,224, 34,220,229,217,208,241, 68,206,189,125,255,
+        239, 54,168, 89,123,122, 73,145,117,234,143, 99,129,200,192, 82,
+        104,170,136,235, 93, 81,205,173,236, 94,105, 52, 46,228,198,  5,
+         57,254, 97,155,142,133,199,171,187, 50, 65,181,127,107,147,226,
+        184,218,131, 33, 77, 86, 31, 44, 88, 62,238, 18, 24, 43,154, 23,
+         80,159,134,111,  9,114,  3, 91, 16,130, 83, 10,195,240,253,119,
+        177,102,162,186,156,  2, 75,112, 25, 55, 12,  8,193,251,188,246,
+        213,109, 53,151, 79, 42,115,191,242,233,223,164,148,209,161,108,
+         37,252, 47,244,211, 64,237,  6,160,185,113,139,138, 76, 70, 59,
+         26, 67,157, 13,179, 63, 30,221, 36,214, 69,166,124,152,116,207,
+        194,247, 84, 41,  1, 71, 14, 49, 35, 95, 21,169, 78, 96,225,215,
+        243,182, 92, 28,118,201, 74,  4,128,248, 11, 17,132,146, 48,245,
+         90,149, 39,120,230, 87,232,106, 19,175,190,126,141,202,176,137,
+         27,250, 40,101,227,219, 20, 58,178, 51,216, 98, 22,140,121, 32,
+        103, 61, 72,203,110, 29,212, 85,204,180,183,150, 66, 15,196,172,
+        197, 56,  0,158, 45,100,  7,153,222,144,167,163,135, 60,231,210,
+        165,174,249, 38, 34,224,229,220,208,217, 68,241,189,206,255,125,
+         54,239, 89,168,122,123,145, 73,234,117, 99,143,200,129, 82,192,
+        170,104,235,136, 81, 93,173,205, 94,236, 52,105,228, 46,  5,198,
+        254, 57,155, 97,133,142,171,199, 50,187,181, 65,107,127,226,147,
+        218,184, 33,131, 86, 77, 44, 31, 62, 88, 18,238, 43, 24, 23,154,
+        159, 80,111,134,114,  9, 91,  3,130, 16, 10, 83,240,195,119,253);
+
+table_1: array [0..255] of byte= (
+         19, 11, 80,114, 43,  1, 69, 94, 39, 18,127,117, 97,  3, 85, 43,
+         27,124, 70, 83, 47, 71, 63, 10, 47, 89, 79,  4, 14, 59, 11,  5,
+         35,107,103, 68, 21, 86, 36, 91, 85,126, 32, 50,109, 94,120,  6,
+         53, 79, 28, 45, 99, 95, 41, 34, 88, 68, 93, 55,110,125,105, 20,
+         90, 80, 76, 96, 23, 60, 89, 64,121, 56, 14, 74,101,  8, 19, 78,
+         76, 66,104, 46,111, 50, 32,  3, 39,  0, 58, 25, 92, 22, 18, 51,
+         57, 65,119,116, 22,109,  7, 86, 59, 93, 62,110, 78, 99, 77, 67,
+         12,113, 87, 98,102,  5, 88, 33, 38, 56, 23,  8, 75, 45, 13, 75,
+         95, 63, 28, 49,123,120, 20,112, 44, 30, 15, 98,106,  2,103, 29,
+         82,107, 42,124, 24, 30, 41, 16,108,100,117, 40, 73, 40,  7,114,
+         82,115, 36,112, 12,102,100, 84, 92, 48, 72, 97,  9, 54, 55, 74,
+        113,123, 17, 26, 53, 58,  4,  9, 69,122, 21,118, 42, 60, 27, 73,
+        118,125, 34, 15, 65,115, 84, 64, 62, 81, 70,  1, 24,111,121, 83,
+        104, 81, 49,127, 48,105, 31, 10,  6, 91, 87, 37, 16, 54,116,126,
+         31, 38, 13,  0, 72,106, 77, 61, 26, 67, 46, 29, 96, 37, 61, 52,
+        101, 17, 44,108, 71, 52, 66, 57, 33, 51, 25, 90,  2,119,122, 35);
+
+table_2: array [0..127] of byte= (
+         52, 50, 44,  6, 21, 49, 41, 59, 39, 51, 25, 32, 51, 47, 52, 43,
+         37,  4, 40, 34, 61, 12, 28,  4, 58, 23,  8, 15, 12, 22,  9, 18,
+         55, 10, 33, 35, 50,  1, 43,  3, 57, 13, 62, 14,  7, 42, 44, 59,
+         62, 57, 27,  6,  8, 31, 26, 54, 41, 22, 45, 20, 39,  3, 16, 56,
+         48,  2, 21, 28, 36, 42, 60, 33, 34, 18,  0, 11, 24, 10, 17, 61,
+         29, 14, 45, 26, 55, 46, 11, 17, 54, 46,  9, 24, 30, 60, 32,  0,
+         20, 38,  2, 30, 58, 35,  1, 16, 56, 40, 23, 48, 13, 19, 19, 27,
+         31, 53, 47, 38, 63, 15, 49,  5, 37, 53, 25, 36, 63, 29,  5,  7);
+
+table_3: array [0..63] of byte= (
+          1,  5, 29,  6, 25,  1, 18, 23, 17, 19,  0,  9, 24, 25,  6, 31,
+         28, 20, 24, 30,  4, 27,  3, 13, 15, 16, 14, 18,  4,  3,  8,  9,
+         20,  0, 12, 26, 21,  8, 28,  2, 29,  2, 15,  7, 11, 22, 14, 10,
+         17, 21, 12, 30, 26, 27, 16, 31, 11,  7, 13, 23, 10,  5, 22, 19);
+
+table_4: array [0..31] of byte= (
+         15, 12, 10,  4,  1, 14, 11,  7,  5,  0, 14,  7,  1,  2, 13,  8,
+         10,  3,  4,  9,  6,  0,  3,  2,  5,  6,  8,  9, 11, 13, 15, 12);
+
+table: array [0..4] of ^gtab= (@table_0,@table_1,@table_2,@table_3,@table_4);
+
+VAR
+    simoutput: array [0..11] of byte;
+    rand:  array [0..15] of byte;
+    skey:  array [0..15] of byte;
+    ATR:array  [1..40] of byte;        { ATR MAXIM 40 BYTES }
+    ADN:array  [1..2800] of byte;      { 6F3A ABREV. DIALING NUMBER 100 * $1C }
+    CLO:array  [0..4095] of byte;      { USADO POR EMULACION CLONE CARD }
+    SMS:array  [1..2640] of byte;      { 6F3C SHORT MESSAGES 15 * $B0 }
+    FIL:array  [1..41,1..255] of byte; { MAX 41 FILES OF 255 BYTES }
+    MEN:array  [1..42,1..36]  of byte; { FILE MENSAGES MEN 42 IS AUTHENTICATION}
+    ATRLEN   : BYTE;                   { LENGHT FOR ATR  }
+    CONVEN   : BOOLEAN;                { ISO CONVENTION, TRUE= NORMAL}
+    RES      : BOOLEAN;                { RESET }
+    PIN      : WORD;                   { PIN 1 }
+    FILENUM  : BYTE;                   { CURRENT FILE NUM  }
+    FILENAME : WORD;                   { CURRENT FILE NAME }
+    FOUND    : BOOLEAN;                { FOUND SELECTED FILE }
+    COUNT    : BYTE;                   { CURRENT FILE BYTE }
+    CLA,INS,P1,P2,P3 : BYTE;           { ISO 7816 INSTRUCTIONS  }
+    BYTEDLY  : WORD;                   { INTERBYTE DELAY        }
+    INP:text;                          { FILE *.DAT }
+    T: file of byte ;                  { FOR OPEN FILES AS BIN }
+    infile:string[25];                 { NAME OF SIM.DAT FILE}
+    line:string[255];                  { INPUT LINE FOR READ SIM.DAT }
+    frase:string[25];                  { KEYBOARD BUFFER }
+    numline:word;                      { NUM OF LINES    }
+    INICIO:WORD;
+    LOADERR:boolean;                   { ERROR LOAD SCRIPT FILE }
+    pepe:string;
+
+    RRB,RDM,RCL,RCI,RCM,REL,MSR: word;
+    serie,irq,velocidad        : word;
+    comnum                     : char;
+    dumy                       : byte;
+    vector                     : byte;
+    lastread,last              : integer;
+    Divisor,i,j                : word;
+    oldirq                     : pointer;
+    BUFSER                     : array [0..2047] of byte;
+
+    salir,ret,abort,error:boolean;
+    xpos,ypos:byte;
+    key: char;
+    screen:array [0..4000] of byte absolute $B800:0000;
+    buffer:array [160..4000] of byte;
+
+function hex(b:byte):cad2;
+const  digithex: array[0..15] of char ='0123456789ABCDEF';
+var BLOW,BHIGH:BYTE;
+begin
+       BHIGH:=B SHR 4;  BLOW:=B AND $0F;
+       hex:=digithex[bhigh]+digithex[blow];
+end;
+
+function ihex(b:byte):cad2;
+const  digithex: array[0..15] of char ='0123456789ABCDEF';
+var BLOW,BHIGH:BYTE;
+begin
+       BHIGH:=B SHR 4;  BLOW:=B AND $0F;
+       ihex:=digithex[blow]+digithex[bhigh];
+end;
+
+function hexadr(w:word):cad4;
+begin
+    hexadr:=hex(trunc(w/256))+hex(w and 255);
+end;
+
+procedure clearpan;
+var i:integer;
+begin
+     textbackground(white);
+     for i:=80 to 2000 do screen[2*i]:=0;
+     gotoxy (1,2);
+end;
+
+function mirror (ch:byte):byte;
+var k,temp:byte;
+begin
+      temp:=0;
+      ch:=ch xor $ff;
+      for k:=0 to 7 do begin
+                            temp:=temp shl 1;
+                            temp:=temp+((ch shr k) and 1);
+                       end;
+      mirror:=temp;
+end;
+
+procedure entrada(Indicador,CS,IP,AX,BX,CX,DX,SI,DI,DS,ES,BP : Word);
+interrupt;
+begin
+     inline($FB);
+     if last >= 1023 then last := 0 else last:=last+1;
+     BUFSER[last] := port[RRB];
+     port[COP2] := $20;
+end;
+
+{$F+}
+procedure out;
+begin
+     Port[RCI]  := 0;
+     Port[COP1] := Port[COP1] OR IRQ;
+     Port[RCM]  := 0;
+     SetIntVec(vector,oldirq);
+end;
+{$F-}
+
+procedure init;
+begin
+     irq:=IRQ4;
+     vector:=VECTOR4;
+     if (serie=com2) or (serie=com4) then
+        begin
+             irq:=IRQ3;
+             vector:=VECTOR3;
+        end;
+     RRB:= serie;
+     RDM:= serie+1;
+     RCL:= serie+3;
+     RCI:= serie+1;
+     RCM:= serie+4;  {modem control register}
+     REL:= serie+5;
+     MSR:= serie+6;  {modem status register}
+     divisor:=115200 div velocidad;
+     lastread:= 0;
+     last :=0;
+     Port[RCI] := 0;
+     GetIntVec(vector,oldirq);
+     ExitProc := @out;
+     SetIntVec(vector,@Entrada);
+     Port[RCL]  := Port[RCL] or $80;
+     Port[RRB]  := lo(Divisor);
+     Port[RDM]  := hi(Divisor);
+     if conven then Port[RCL]  := BITS8 OR PAREVEN  { DIRECT CONVENTION }
+     else Port[RCL]  := BITS8 OR PARODD;            { INVERS CONVENTION }
+     Port[RCM]  := TDL OR LPE OR OUT2;
+     Port[COP1] := Port[COP1] AND (NOT IRQ);
+     dumy       := Port[RRB];
+     dumy       := Port[REL];
+     Port[RCI]  := $01;
+end;
+
+procedure wait (micros:word); ASSEMBLER;
+asm
+   mov ah,86h
+   mov al,15h
+   mov cx,0
+   mov dx,micros
+   int 15h
+end;
+
+function status:boolean;
+begin
+  if last <> lastread then status:=true
+  else status:=false;
+end;
+
+function getbyte:byte;
+var timeout:longint;
+var tmp:byte;
+begin
+    res:=false;
+    repeat tmp:=(port [msr] and $20) until status or keypressed or (tmp=$20);
+    if (tmp<>$20) and not keypressed then
+          begin
+               if lastread >= 1023 then lastread := 0
+               else lastread := lastread+1;
+               if conven then getbyte:= BUFSER[lastread]
+               else getbyte:=mirror (BUFSER[lastread]);
+          end
+    else  begin
+              res:=true;
+              getbyte:=0;
+          end;
+end;
+
+procedure sendbyte(Ch:byte);
+begin
+     if not conven then ch:=mirror (ch);
+     port[RRB]:=ch;
+     dumy:=getbyte;
+     wait (bytedly);
+end;
+
+function sendatr:boolean;
+var i:byte;
+begin
+     i:=1;
+     res:=FALSE;
+     while not res and (i<=atrlen) and not keypressed do
+           begin
+                sendbyte (atr[i]);
+                write (hex(atr[i]));
+                i:=i+1;
+           end;
+     writeln;
+     if not res and not keypressed then sendatr:=TRUE
+     else sendatr:=FALSE;
+end;
+
+procedure doscroll;
+var i:word;
+begin
+     for i:=160 to 4000-160 do mem[$b800:i]:=mem[$b800:i+160];
+     gotoxy (1,24);
+end;
+
+procedure screentobuffer;
+var i:integer;
+begin
+     for i:=160 to 4000 do buffer[i]:=mem[$b800:i];
+end;
+
+procedure buffertoscreen;
+var i:integer;
+begin
+     for i:=160 to 4000 do mem[$b800:i]:=buffer[i];
+end;
+
+PROCEDURE caja( x1, y1, x2, y2 : INTEGER; titulo:STRING;color:byte );
+VAR
+   Cont : INTEGER;
+
+BEGIN
+     textbackground(color);
+     textcolor(red);
+     FOR Cont:=x1+1 TO x2-1 DO
+         BEGIN
+              GOTOXY (Cont,y1);WRITE ('Ä');
+              GOTOXY (Cont,y2);WRITE ('Ä');
+         END;
+     Gotoxy(x1, y1); WRITE ('Ú');GOTOXY (x2,y1);WRITE ('¿');
+     Gotoxy(x1, y2); WRITE ('À');GOTOXY (x2,y2);WRITE ('Ù');
+
+     FOR Cont := y1+1 TO y2-1 DO
+         BEGIN
+              Gotoxy( x1, Cont ); WRITE('³');
+              Gotoxy( x2, Cont ); WRITE('³');
+         END;
+     textcolor (white);
+     IF titulo <> '' THEN
+        BEGIN
+              Gotoxy( x1+1, y1+1 ); WRITE (titulo);
+              Gotoxy(x1+1,y1+2);
+              for cont:=1 to x2-x1-1 do write ('Ä');
+        END;
+     textbackground(white);
+END;
+
+procedure dec(var outdec:byte;inhex:cad2;var error:boolean);
+var nl,nh:byte;
+begin
+     error:=false;
+     nh:=ord(inhex[1]);nl:=ord(inhex[2]);
+     if nl>ord('Z') then nl:=nl-32;
+     nl:=nl-48;if nl>16 then nl:=nl-7;
+     if nh>ord('Z') then nh:=nh-32;
+     nh:=nh-48;if nh>16 then nh:=nh-7;
+     if (nh>15) or (nl>15) then error:=true;
+     outdec:=nh*16+nl;
+end;
+
+procedure decadr(var outdec:word;inhex:cad4;var error:boolean);
+var nl,nh:cad2;
+    l,h:byte;
+    error2:boolean;
+begin
+     nh:=inhex[1]+inhex[2];dec(h,nh,error);
+     nl:=inhex[3]+inhex[4];dec(l,nl,error2);
+     outdec:=h*256+l;
+     error:=error or error2;
+end;
+
+procedure lee(n:byte);   { lee un string de n chars y devuelve string frase}
+var  i,a:byte;
+     cad: string;
+     error:integer;
+begin     i:=1;
+          cad[i]:=readkey;
+          while ((i<n) and (cad[i]<>#13)) do
+                begin
+                     if (cad[i]<>#13) and (cad[i]<>#8) and (cad[i]<>#0) then write (cad[i]);
+                     if (cad[i]=#8) and (i=1) then i:=0;
+                     if (cad[i]=#8) and (i>1) then
+                         begin
+                              i:=i-2;
+                              write(#8,#32,#8);
+                         end;
+                     if (cad[i]<>#0) then i:=i+1;
+                     cad[i]:=readkey;
+                end;
+          if cad[i]<>#13 then write(cad[i]);
+          if cad[i]=#13 then i:=i-1;
+          cad[0]:=chr(i);
+          frase:=cad;
+          for i:=1 to ord(frase[0]) do if (frase[i]>='a') and (frase[i]<='z') then frase[i]:=chr(ord(frase[i])-32);
+end;
+
+procedure quitacar;
+begin
+     line:=Copy (line,2,ord(line[0])-1);
+end;
+
+procedure quitaespacios;
+begin
+     while (line[1]=' ') and (ord(line[0])>0) do quitacar;
+end;
+
+procedure request(texto:string;timdel:boolean);
+begin
+      screentobuffer;
+      caja (24,5,48,9,'  ASIM EMULATOR V3.1   ',black);
+      gotoxy (25,8);
+      textcolor (blue);
+      write('                       ');
+      gotoxy (26,8);
+      write(texto);
+      gotoxy (80,1);
+      if timdel then key:=readkey
+      else delay (250);
+      buffertoscreen;
+end;
+
+procedure exit;
+begin
+     salir:=true;
+end;
+
+procedure dosshell;
+begin
+     textcolor (white);
+     textbackground(black);
+     clrscr;
+     writeln ('TYPE EXIT TO RETURN TO ASIM ');
+     exec(getenv('Comspec'),'');
+     textcolor (white);
+     textbackground(7);
+     clrscr;
+end;
+
+procedure findfile;
+var tmp:cad4;
+begin
+     i:=0;
+     found:=FALSE;
+     COUNT:=0;      { current byte of selected file }
+     quitacar;
+     quitaespacios;
+     tmp:=copy(line,1,4);
+     decadr(filename,tmp,error);
+     line:=copy(line,5,ord(line[0])-4);
+     quitaespacios;
+     if not error then while ((i<41) and (not found)) do
+        begin
+             i:=i+1;
+             if (nam[i]=filename) then found:=TRUE;
+        end;
+     if found then filenum:=i
+     else begin
+               writeln (' FILE NOT FOUND IN LINE ',numline);
+               LOADERR:=TRUE;
+          end;
+end;
+
+procedure storebyte(mem:boolean);
+var tmp:cad2;
+begin
+    while ((ord(line[0])>1) and not error and (line[1]<>';')) do
+          begin
+               tmp:=copy(line,1,2);
+               dec(dumy,tmp,error);
+               COUNT:=COUNT+1;
+               if mem then men[filenum,COUNT]:=dumy
+               else fil[filenum,COUNT]:=dumy;
+               quitacar;
+               quitacar;
+               quitaespacios;
+               if ((line[1]=#$0a) or (line[1]=#$0d)) then line[0]:=#0;
+          end;
+    if error then
+       begin
+             LOADERR:=TRUE;
+             writeln;
+             writeln ('  Error in line: ',numline);
+       end;
+end;
+
+procedure storekey;
+var tmp:cad2;
+begin
+     quitacar;
+     quitacar;
+     quitacar;
+     quitaespacios;
+     COUNT:=0;
+     while ((ord(line[0])>1) and not error and (line[1]<>';')) do
+        begin
+             tmp:=copy(line,1,2);
+             dec(dumy,tmp,error);
+             skey[count]:=dumy;
+             count:=count+1;
+             quitacar;
+             quitacar;
+             quitaespacios;
+             if ((line[1]=#$0a) or (line[1]=#$0d)) then line[0]:=#0;
+        end;
+    if error then begin
+                       LOADERR:=TRUE;
+                       writeln;
+                       writeln ('  Error in KEY ');
+                  end
+end;
+
+procedure storeatr;
+var tmp:cad2;
+begin
+     quitacar;
+     quitacar;
+     quitacar;
+     quitaespacios;
+     COUNT:=0;
+     tmp:=copy(line,1,2);
+     dec(dumy,tmp,error);
+     quitacar;
+     quitacar;
+     quitaespacios;
+     if (error or (dumy>32)) then
+        begin
+             writeln('Error in ATR LENGHT');
+             LOADERR:=TRUE;
+        end
+     else begin
+               atrlen:=dumy;
+               conven:=TRUE;  { assumes direct convention }
+               while ((ord(line[0])>1) and not error and (line[1]<>';')) do
+                     begin
+                          tmp:=copy(line,1,2);
+                          dec(dumy,tmp,error);
+                          count:=count+1;
+                          atr[count]:=dumy;
+                          quitacar;
+                          quitacar;
+                          quitaespacios;
+                          if ((line[1]=#$0a) or (line[1]=#$0d)) then line[0]:=#0;
+                     end;
+               if error then
+                  begin
+                       LOADERR:=TRUE;
+                       writeln;
+                       writeln ('  Error in ATR FILE');
+                  end
+               else if (atr[1]=$3F) then conven:=FALSE;
+           end;
+end;
+
+procedure storecom;
+begin
+     quitacar;
+     quitacar;
+     quitacar;
+     quitaespacios;
+     comnum:=line[1];
+     case comnum of
+                       '1': serie:=COM1;
+                       '2': serie:=COM2;
+                       '3': serie:=COM3;
+                       '4': serie:=COM4;
+                        else writeln;
+                             writeln (' ERROR SERIAL PORT NOT VALID ');
+                             LOADERR:=TRUE;
+                        end;
+end;
+
+procedure storebaud;
+var tmp:word;
+begin
+     quitacar;
+     quitacar;
+     quitacar;
+     quitacar;
+     quitaespacios;
+     line:=copy (line,1,pos(' ',line)-1);
+     val (line,tmp,i);
+     if ((i<>0) or (tmp=0)) then
+        begin
+             writeln;
+             writeln (' ERROR BAUD RATE NOT VALID ');
+             LOADERR:=TRUE;
+        end
+     else velocidad:=tmp;
+end;
+
+procedure storepin;
+var tmp:word;
+begin
+     quitacar;
+     quitacar;
+     quitacar;
+     quitaespacios;
+     line:=copy (line,1,pos(' ',line)-1);
+     val (line,tmp,i);
+     if ((i<>0) or (tmp=0)) then
+        begin
+             writeln;
+             writeln (' ERROR PIN NOT VALID ');
+             LOADERR:=TRUE;
+        end
+     else pin:=tmp;
+end;
+
+procedure storedly;
+var tmp:word;
+begin
+     quitacar;
+     quitacar;
+     quitacar;
+     quitacar;
+     quitaespacios;
+     line:=copy (line,1,pos(' ',line)-1);
+     val (line,tmp,i);
+     if ((i<>0) or (tmp=0)) then
+        begin
+             writeln;
+             writeln (' ERROR INTER BYTE DELAY NOT VALID ');
+             LOADERR:=TRUE;
+        end
+     else bytedly:=tmp;
+end;
+
+procedure dump (adr:word);
+var
+    k,n:byte;
+begin
+     textbackground(7);
+     write(hexadr(adr),'       ');
+     for k:=0 to 15 do write(hex(CLO[adr+k]),' ');
+     write(' ');
+     for k:=0 to 15 do
+         begin
+              n:=CLO[adr+k];
+              if n<31 then n:=128+n;
+              write(chr(n));
+         end;
+     if wherey<25 then writeln;
+end;
+
+procedure pagedown;
+var i:word;
+begin
+     gotoxy(1,2);
+     inicio:=inicio+16*24;
+     if inicio>3712 then inicio:=3712;
+     for i:=0 to 23 do dump(inicio+i*16);
+     screen[2*(ypos*80+xpos)-1]:=71;
+end;
+
+procedure pageup;
+var i:word;
+begin
+     gotoxy(1,2);
+     if inicio<16*24 then inicio:=16*24;
+     inicio:=inicio-16*24;
+     for i:=0 to 23 do dump(inicio+i*16);
+     screen[2*(ypos*80+xpos)-1]:=71;
+end;
+
+procedure scrollup;
+var i:word;
+begin
+     i:=2000;
+     while i>80 do
+           begin
+                screen[2*i]:=screen[2*i-160];
+                i:=i-1;
+           end;
+     inicio:=inicio-16;
+     gotoxy (1,2);
+     dump (inicio);
+     screen[2*(ypos*80+xpos)-1]:=71;
+end;
+
+procedure scrolldown;
+var i:word;
+begin
+     for i:=80 to 2000 do screen[2*i]:=screen[2*i+160];
+     inicio:=inicio+16;
+     gotoxy(1,25);
+     dump (inicio+23*16);
+     screen[2*(ypos*80+xpos)-1]:=71;
+end;
+
+procedure seeframe;
+begin
+     inicio:=0;
+     gotoxy (1,2);
+     xpos:=1;
+     ypos:=1;
+     for i:=0 to 23 do dump ((inicio+i*16));
+     key:=#0;
+     screen[2*(ypos*80+xpos)-1]:=71;
+     while key<>#27 do
+           begin
+                key:=readkey;
+                if key=#0 then key:=readkey;
+                if key=#80 then
+                   begin
+                        if ypos<24 then
+                           begin
+                                screen[2*(ypos*80+xpos)-1]:=127;
+                                ypos:=ypos+1;
+                                screen[2*(ypos*80+xpos)-1]:=71;
+                           end
+                        else if inicio <($1000-24*16) then scrolldown;
+                   end;
+                if key=#72 then
+                   begin
+                        if ypos>1 then
+                           begin
+                                screen[2*(ypos*80+xpos)-1]:=127;
+                                ypos:=ypos-1;
+                                screen[2*(ypos*80+xpos)-1]:=71;
+                           end
+                        else if inicio >0 then scrollup;
+                   end;
+                if key=#77 then
+                   begin
+                        if xpos<80 then
+                           begin
+                                screen[(ypos*80+xpos)*2-1]:=127;
+                                xpos:=xpos+1;
+                                screen[2*(ypos*80+xpos)-1]:=71;
+                           end
+                   end;
+                if key=#75 then
+                   begin
+                        if xpos>1 then
+                           begin
+                                screen[(ypos*80+xpos)*2-1]:=127;
+                                xpos:=xpos-1;
+                                screen[2*(ypos*80+xpos)-1]:=71;
+                           end
+                   end;
+                if key=#81 then pagedown;
+                if key=#73 then pageup;
+
+           end;
+     screen[2*(ypos*80+xpos)-1]:=127;
+end;
+
+
+procedure edithex;
+VAR especial:boolean;
+    nh,nl,old:byte;
+
+function valid:boolean;
+begin
+     valid:=true;
+     if ((xpos-14) mod 3)=0 then valid:=false;
+end;
+
+begin
+     gotoxy (50,1);
+     write ('        HEX EDIT           ');
+     textbackground (white);
+     gotoxy (1,2);
+     xpos:=1;
+     ypos:=1;
+     for i:=0 to 23 do dump ((inicio+i*16));
+     xpos:=12; {primer caracter hex}
+     key:=#0;
+     while key <>#27 do
+           begin
+                screen[2*(ypos*80+xpos)-1]:=71;
+                especial:=false;
+                key:=readkey;
+                if key=#0 then
+                   begin
+                        key:=readkey;
+                        especial:=true;
+                   end;
+                if especial then
+                   begin
+                        if  key=#77  then
+                            begin
+                                  screen[(ypos*80+xpos)*2-1]:=127;
+                                  xpos:=xpos+1;
+                                  if xpos >58 then
+                                     begin
+                                          xpos:=12;
+                                          ypos:=ypos+1;
+                                     end;
+                                  if ypos>24 then ypos:=24;
+                                  screen[2*(ypos*80+xpos)-1]:=71;
+                            end;
+                        if  key=#75  then
+                            begin
+                                  screen[(ypos*80+xpos)*2-1]:=127;
+                                  xpos:=xpos-1;
+                                  if xpos<12 then
+                                     begin
+                                          xpos:=58;
+                                          ypos:=ypos-1;
+                                     end;
+                                  if ypos<1 then ypos:=1;
+                                  screen[2*(ypos*80+xpos)-1]:=71;
+                            end;
+                        if ((key=#80) and (ypos<24)) then
+                            begin
+                                  screen[(ypos*80+xpos)*2-1]:=127;
+                                  ypos:=ypos+1;
+                                  screen[2*(ypos*80+xpos)-1]:=71;
+                            end;
+                        if ((key=#72) and (ypos>1)) then
+                            begin
+                                  screen[(ypos*80+xpos)*2-1]:=127;
+                                  ypos:=ypos-1;
+                                  screen[2*(ypos*80+xpos)-1]:=71;
+                            end;
+                   end
+                else if (key >#31) and (valid) then
+                     begin
+                           if (xpos mod 3)=0 then
+                              begin
+                                   old:=clo[inicio+(xpos-12) div 3+16*(ypos-1)];
+                                   old:=(old and $0f);
+                                   nh:=ord(key);
+                                   if nh>ord('Z') then nh:=nh-32;
+                                   nh:=nh-48;if nh>16 then nh:=nh-7;
+                                   if nh<16 then
+                                      begin
+                                           gotoxy (xpos,ypos+1);
+                                           write (key);
+                                           old:=nh*16+old;
+                                           clo[inicio+(xpos-12) div 3+16*(ypos-1)]:=old;
+                                           gotoxy ((xpos-12) div 3+61,ypos+1);
+                                           write (chr(old));
+                                           xpos:=xpos+1;
+                                           gotoxy (xpos,ypos+1);
+                                      end;
+                              end
+                           else begin
+                                     old:=clo[inicio+(xpos-12) div 3+16*(ypos-1)];
+                                     old:=(old and $f0);
+                                     nl:=ord(key);
+                                     if nl>ord('Z') then nl:=nl-32;
+                                     nl:=nl-48;if nl>16 then nl:=nl-7;
+                                     if nl<16 then
+                                        begin
+                                             gotoxy(xpos,ypos+1);
+                                             write (key);
+                                             old:=old+nl;
+                                             clo[inicio+(xpos-12) div 3+16*(ypos-1)]:=old;
+                                             gotoxy ((xpos-13) div 3+61,ypos+1);
+                                             write (chr(old));
+                                             xpos:=xpos+2;
+                                             gotoxy (xpos,ypos+1);
+                                        end;
+                                end;
+                           if xpos >58 then
+                              begin
+                                   xpos:=12;
+                                   ypos:=ypos+1;
+                              end;
+                           if ypos>24 then ypos:=24;
+                     end;
+           end;
+    screen[2*(ypos*80+xpos)-1]:=127;
+end;
+
+procedure clearbuf;
+begin
+     for i:=0 to 4095 do clo[i]:=0;
+end;
+
+
+procedure analice;
+begin
+     for i:=1 to ord(line[0]) do if (line[i]>='a') and (line[i]<='z') then line[i]:=chr(ord(line[i])-32);
+     if (line[1]='*') then
+        begin
+             if line[2]='*' then
+                begin
+                     quitacar;
+                     quitacar;
+                     quitaespacios;
+                end
+             else findfile;
+             storebyte(TRUE);
+        end
+     else if (line[1]='#') then
+          begin
+               if line[2]='#' then
+                  begin
+                       quitacar;
+                       quitacar;
+                       quitaespacios;
+                  end
+               else findfile;
+               storebyte(FALSE);
+          end
+    else if (line[1]='!') then
+         begin
+              quitacar;
+              quitaespacios;
+              if copy(line,1,3)='ATR' then storeatr
+              else if copy(line,1,3)='COM' then storecom
+                   else if copy(line,1,4)='BAUD' then storebaud
+                        else if copy(line,1,3)='PIN' then storepin
+                             else if copy(line,1,3)='KEY' then storekey
+                                  else if copy(line,1,4)='BDLY' then storedly;
+         end
+    else begin
+              writeln ('  Error at line: ',numline);
+              LOADERR:=TRUE;
+         end;
+end;
+
+procedure loads19;
+var k:byte;
+    a:char;
+    p,n:cad2;
+    adr:cad4;
+    cont,suma:byte;
+    error,chk:boolean;
+begin
+     assign (inp,infile);
+     reset (inp);
+     error:=false;
+     read(inp,p);while (p<>'S1') and (p<>'S9') do read(inp,p);
+     while not eof(inp) and (p<>'S9') and (not error) and not keypressed do
+           begin
+                read(inp,n);
+                dec(cont,n,error);
+                suma:=cont;
+                cont:=cont-3;
+                read(inp,adr);
+                decadr(inicio,adr,error);
+                suma:=suma+lo(inicio)+hi(inicio);
+                for k:=0 to cont-1 do
+                    begin
+                         read(inp,n);
+                         dec(dumy,n,error);
+                         suma:=suma+dumy;
+                         clo[inicio+k]:=dumy;
+                    end;
+                suma:= not suma;
+                read(inp,p);  {checksum}
+                dec(dumy,p,error);
+                if (dumy<>suma) and chk then loaderr:=true;
+                read(inp,a);
+                read(inp,a);
+                while (p<>'S1') and (p<>'S9') and not eof(inp) and not keypressed do read(inp,p);
+           end;
+     close (inp);
+     clearpan;
+     gotoxy (2,3);
+     textcolor (red);
+     if LOADERR then write (' CHECKSUM ERROR LOADING FRAME FILE ')
+     else if keypressed then write (' LOAD FRAME ABORTED BY USER ')
+          else begin
+                    inicio:=0;
+                    gotoxy (1,2);
+                    textcolor (white);
+                    for i:=0 to 23 do dump ((inicio+i*16));
+               end;
+end;
+
+procedure SAVES19;
+var cont,k:word;
+    suma:byte;
+    Nbytes,j:byte;
+
+begin
+     inicio:=0;
+     Nbytes:=16+3;
+     cont:=($1000-inicio) div (Nbytes-3);
+     for k:=1 to cont do
+         begin
+              write(inp,'S1',hex(Nbytes),hex(hi(inicio)),hex(lo(inicio)));
+              suma:=Nbytes+lo(inicio)+hi(inicio);
+              for j:=0 to Nbytes-4 do
+                  begin
+                       suma:=suma+clo[inicio+j];
+                       write(inp,hex(clo[inicio+j]));
+                  end;
+              writeln (inp,hex(not suma));
+              inicio:=inicio+16;
+         end;
+     writeln(inp,'S9',hex(3),hex(0),hex(0),hex($FC));
+     {$i+} close(inp);
+     inicio:=0;
+end;
+
+procedure carga;
+begin
+      LOADERR:=FALSE;
+      assign(t,infile);
+      {$I-} reset(t); {$I+}
+      if ioresult<>0 then request('ERROR FILE NOT FOUND.',TRUE)
+      else begin
+             numline:=0;
+             assign (inp,infile);
+             reset (inp);
+             request(' Loading SIM  File. ',FALSE);
+             clearpan;
+             gotoxy (2,2);
+             while not eof(inp) do
+                   begin
+                        readln(inp,line);
+                        line:=line+'   ';
+                        quitaespacios;
+                        if ((ord(line[0])>0) and (line[1]<>';')) then analice;
+                        numline:=numline+1;
+                   end;
+             close(inp);
+             writeln;
+             textcolor (red);
+             if LOADERR then write ('  SOME ERRORS FOUND LOADING SIM FILE')
+             else begin
+                       clearpan;
+                       gotoxy (2,3);
+                       textcolor (red);
+                       write ('SIM FILE LOADED SUCCESFULLY');
+                       out;
+                       init; { RE INITS UART }
+                  end;
+      end;
+end;
+
+procedure loadfras19;
+begin
+      screentobuffer;
+      caja (25,5,58,9,'   LOAD  *.S19   FRAME FILE     ',black);
+      gotoxy (26,8);
+      write('                                ');
+      gotoxy (26,8);
+      textcolor (blue);
+      write('NAME: ');
+      lee (25);
+      if pos('.',frase)<>0 then frase:=copy(frase,1,pos('.',frase)-1);
+      infile:=frase+'.S19';
+      buffertoscreen;
+      LOADERR:=FALSE;
+      assign(t,infile);
+      {$I-} reset(t); {$I+}
+      if ioresult<>0 then request('ERROR FILE NOT FOUND.',TRUE)
+      else loads19;
+end;
+
+procedure savefras19;
+begin
+      screentobuffer;
+      caja (25,5,58,9,'   SAVE  *.S19   FRAME FILE     ',black);
+      gotoxy (26,8);
+      write('                                ');
+      gotoxy (26,8);
+      textcolor (blue);
+      write('NAME: ');
+      lee (25);
+      if pos('.',frase)<>0 then frase:=copy(frase,1,pos('.',frase)-1);
+      infile:=frase+'.S19';
+      buffertoscreen;
+      LOADERR:=FALSE;
+      assign(inp,infile);
+      {$i-} rewrite(inp);
+      if ioresult=0 then SAVES19
+      else request('ERROR WRITING FILE.',TRUE)
+end;
+
+procedure loadfrabin;
+begin
+      screentobuffer;
+      caja (25,5,58,9,'   LOAD  *.BIN   FRAME FILE     ',black);
+      gotoxy (26,8);
+      write('                                ');
+      gotoxy (26,8);
+      textcolor (blue);
+      write('NAME: ');
+      lee (25);
+      if pos('.',frase)<>0 then frase:=copy(frase,1,pos('.',frase)-1);
+      infile:=frase+'.BIN';
+      buffertoscreen;
+      LOADERR:=FALSE;
+      assign(t,infile);
+      {$I-} reset(t); {$I+}
+      if ioresult=0 then
+         begin
+              i:=0;
+              while not eof(t) and (i<4096) do
+                    begin
+                          read(t,dumy);
+                          clo[i]:=dumy;
+                          i:=i+1;
+                    end;
+              close(t);
+              clearpan;
+              gotoxy (2,3);
+              textcolor (red);
+              inicio:=0;
+              gotoxy (1,2);
+              textcolor (white);
+              for i:=0 to 23 do dump ((inicio+i*16));
+         end
+      else request('ERROR FILE NOT FOUND.',TRUE);
+end;
+
+procedure comparebin;
+var verify:boolean;
+begin
+      verify:=TRUE;
+      screentobuffer;
+      caja (25,5,58,9,'  COMPARE  *.BIN   FRAME FILE   ',black);
+      gotoxy (26,8);
+      write('                                ');
+      gotoxy (26,8);
+      textcolor (blue);
+      write('NAME: ');
+      lee (25);
+      if pos('.',frase)<>0 then frase:=copy(frase,1,pos('.',frase)-1);
+      infile:=frase+'.BIN';
+      buffertoscreen;
+      LOADERR:=FALSE;
+      assign(t,infile);
+      {$I-} reset(t); {$I+}
+      if ioresult=0 then
+         begin
+              clearpan;
+              gotoxy (1,3);
+              textcolor (red);
+              i:=0;
+              while not eof(t) and (i<4096) do
+                    begin
+                         read(t,dumy);
+                         if clo[i]<>dumy then
+                            begin
+                                 verify:=FALSE;
+                                 writeln ('Adress $',hexadr(i),' buffer=$',hex(clo[i]),' file=$',hex(dumy));
+                                 if (wherey>=25) then doscroll;
+                            end;
+                         i:=i+1;
+                    end;
+                    close(t);
+                    if verify then writeln ('BUFFER AND FILE CONTENTS ARE EQUAL');
+         end
+      else request('ERROR FILE NOT FOUND.',TRUE);
+end;
+
+procedure savefrabin;
+begin
+      screentobuffer;
+      caja (25,5,58,9,'   SAVE  *.BIN   FRAME FILE     ',black);
+      gotoxy (26,8);
+      write('                                ');
+      gotoxy (26,8);
+      textcolor (blue);
+      write('NAME: ');
+      lee (25);
+      if pos('.',frase)<>0 then frase:=copy(frase,1,pos('.',frase)-1);
+      infile:=frase+'.BIN';
+      buffertoscreen;
+      LOADERR:=FALSE;
+      assign(t,infile);
+      {$i-} rewrite(t);
+      if ioresult=0 then
+         begin
+              i:=0;
+              while (i<4096) do
+                    begin
+                         dumy:=clo[i];
+                         write(t,dumy);
+                         i:=i+1;
+                     end;
+              {$i+} close(t);
+              inicio:=0;
+         end
+      else request('ERROR WRITING FILE.',TRUE)
+end;
+
+procedure loadsim;
+begin
+      screentobuffer;
+      caja (25,5,58,9,'   LOAD  *.DAT   GSM SIM FILE   ',black);
+      gotoxy (26,8);
+      write('                                ');
+      gotoxy (26,8);
+      textcolor (blue);
+      write('NAME: ');
+      lee (25);
+      if pos('.',frase)<>0 then frase:=copy(frase,1,pos('.',frase)-1);
+      infile:=frase+inext;
+      buffertoscreen;
+      carga;
+end;
+
+procedure notload;
+begin
+     clearpan;
+     textcolor (red);
+     gotoxy (3,3);
+     write (' No SIM file Loaded.  ');
+end;
+
+procedure dispfile;
+var tmp:byte;
+begin
+     i:=0;
+     found:=false;
+     gotoxy (1,3);
+     if not error then while ((i<41) and (not found)) do
+        begin
+             i:=i+1;
+             if (nam[i]=filename) then found:=TRUE;
+        end;
+     if not found then writeln (' ERROR BAD FILE ')
+     else begin
+               filenum:=i;
+               i:=1;
+               write ('    ',hexadr(filename),'  ');
+               while (i<men[filenum,4]) do
+                     begin
+                          if ((men[filenum,4]-i)<15) then tmp:=men[filenum,4]-i+1
+                          else tmp:=16;
+                          for dumy:=1 to tmp do write (hex(fil[filenum,i+dumy-1]),' ');
+                          writeln;
+                          write ('          ');
+                          i:=i+dumy;
+                     end;
+          end;
+end;
+
+procedure seead;
+begin
+     clearpan;
+     gotoxy (2,3);
+     filename:=$6fad;
+     error:=false;
+     dispfile;
+     gotoxy (40,3);
+     textcolor (red);
+     if (fil[filenum,1]and$80)=$80 then write ('VALID MOTOROLA TEST CARD')
+     else write ('NOT VALID MOTOROLA TEST CARD');
+end;
+
+procedure seeimsi;
+begin
+     clearpan;
+     gotoxy (2,3);
+     filename:=$6F07;
+     error:=false;
+     dispfile;
+     gotoxy (50,3);
+     textcolor (red);
+     for i:=2 to fil[filenum,1]+1 do write (ihex(fil[filenum,i]));
+end;
+
+procedure seeiccard;
+begin
+     clearpan;
+     gotoxy (2,3);
+     filename:=$2FE2;
+     error:=false;
+     dispfile;
+     gotoxy (50,3);
+     textcolor (red);
+     for i:=2 to (fil[filenum,1] shr 4)+1 do write (ihex(fil[filenum,i]));
+end;
+
+procedure seefile;
+begin
+     clearpan;
+     textcolor (blue);
+     gotoxy (2,3);
+     clearpan;
+     screentobuffer;
+     gotoxy (2,3);
+     caja (25,5,42,9,' See 6FXX FILE. ',black);
+     textcolor (blue);
+     gotoxy (26,8);
+     write('                ');
+     gotoxy (26,8);
+     write('FILE ? : ');
+     lee (5);
+     buffertoscreen;
+     textcolor (white);
+     decadr(filename,frase,error);
+     dispfile;
+end;
+
+procedure seeatr;
+begin
+     clearpan;
+     textcolor (red);
+     gotoxy (3,3);
+     write ('ATR: ');
+     textcolor (black);
+     for i:=1 to atrlen do write (hex(atr[i]),' ');
+end;
+
+procedure seepin;
+begin
+     clearpan;
+     textcolor (red);
+     gotoxy (3,3);
+     write ('PIN: ');
+     textcolor (black);
+     write (pin);
+end;
+
+ { ---------------------- SIM EMULATION ROUTINES -------------------- }
+
+procedure getiso;
+begin
+     cla:=0;
+     ins:=0;
+     CLA:=getbyte;
+     if not res then INS:=getbyte;
+     if not res then P1:=getbyte;
+     if not res then P2:=getbyte;
+     if not res then P3:=getbyte;
+end;
+
+procedure checkreset;
+var atrok:boolean;
+begin
+     atrok:=false;
+     while not atrok and not abort do
+           begin
+                while (((port[MSR] and $20)=$20) and not keypressed) do;
+                clearpan;
+                lastread:= 0;
+                last :=0;
+                if keypressed then abort:=true
+                else begin
+                           gotoxy(1,3);
+                           textcolor(red);
+                           write ('RESET FROM PHONE ... SENDING ATR.   ');
+                           textcolor(blue);
+                           if sendatr then atrok:=true;
+                      end;
+           end;
+end;
+
+procedure verify_pin;
+var tmp:word;
+begin
+     wait(2000);
+     sendbyte (ins);
+     write ('PIN VERIFY: ');
+     for i:=1 to P3 do frase[i]:=(chr(getbyte));
+     frase[0]:=#4;
+     val (frase,tmp,i);
+     wait(2000);
+     if (tmp=pin) then begin
+                            write (tmp,' OK');
+                            sendbyte ($90);
+                            sendbyte ($00);
+                        end
+     else begin
+                write (tmp, ' ERROR');
+                sendbyte ($98);
+                sendbyte ($04);
+          end;
+     writeln;
+end;
+
+procedure change_pin;
+begin
+     wait(2000);
+     sendbyte (ins);
+     write ('CHANGE PIN: ');
+     for i:=1 to P3 do write (chr(getbyte));
+     writeln;
+     wait(2000);
+     sendbyte ($90);
+     sendbyte ($00);
+end;
+
+procedure pinoff;
+begin
+     wait(2000);
+     sendbyte (ins);
+     write ('PIN OFF: ');
+     for i:=1 to P3 do write (chr(getbyte));
+     writeln;
+     wait(2000);
+     sendbyte ($90);
+     sendbyte ($00);
+end;
+
+procedure pinon;
+begin
+     wait(2000);
+     sendbyte (ins);
+     write ('PIN ON: ');
+     for i:=1 to P3 do write (chr(getbyte));
+     writeln;
+     wait(2000);
+     sendbyte ($90);
+     sendbyte ($00);
+end;
+
+procedure A3A8;
+var x: array [0..31] of byte;
+    bit: array [0..127] of byte;
+    i,j,k,l,m,n,y,z,next_bit:word;
+begin
+	for i:=16 to 31 do x[i]:=rand[i-16];
+	for i:=1 to 8 do begin
+		for j:=0 to 15 do x[j]:=skey[j];
+		for j:=0 to 4 do
+			for k:=0 to ((1 shl j)-1) do
+				for l:=0 to ((1 shl (4-j))-1) do begin
+					m:= l + k*(1 shl (5-j));
+					n:= m + (1 shl (4-j));
+					y:= (x[m]+2*x[n]) mod (1 shl (9-j));
+					z:= (2*x[m]+x[n]) mod (1 shl (9-j));
+					x[m]:= table[j]^[y];
+					x[n]:= table[j]^[z];
+				end;
+		for j:=0 to 31 do for k:=0 to 3 do bit[4*j+k]:= (x[j] shr (3-k)) and 1;
+		if (i < 8) then
+			for j:=0 to 15 do begin
+				x[j+16]:=0;
+				for k:=0 to 7 do begin
+					next_bit:= ((8*j + k)*17) mod 128;
+					x[j+16]:= x[j+16] or (bit[next_bit] shl (7-k));
+				end;
+			end;
+	end;
+	for i:=0 to 3 do simoutput[i]:= (x[2*i] shl 4) or x[2*i+1];
+	for i:=0 to 5 do simoutput[4+i]:= (x[2*i+18] shl 6) or (x[2*i+18+1] shl 2)
+				or (x[2*i+18+2] shr 2);
+	simoutput[4+6]:=(x[2*6+18] shl 6) or (x[2*6+18+1] shl 2);
+	simoutput[4+7]:=0;
+end;
+
+procedure algorithm;
+begin
+     wait(2000);
+     sendbyte (ins);
+     write ('AUTHENTICATION REQUEST: ');
+     for i:=1 to P3 do begin
+                            rand[i-1]:=getbyte;
+                            write (HEX(rand[i-1]));
+                       end;
+     writeln ('SIM OUTPUT: ');
+     a3a8;
+     filenum:=42;
+     for i:=0 to 11 do begin
+                            men[42,i+1]:=simoutput[i];
+                            write (HEX(simoutput[i]));
+                       end;
+     writeln;
+     sendbyte ($9F);
+     sendbyte ($0C);
+end;
+
+procedure select;
+begin
+      i:=0;
+      wait (2000);
+      found:=false;
+      sendbyte (ins); {manda procedure byte}
+      filename:=getbyte*256;
+      filename:=filename+getbyte;
+      write ('SELECT FILE: $',hexadr(filename));
+      while ((i<41) and (not found)) do
+              begin
+                   i:=i+1;
+                   if (nam[i]=filename) then found:=TRUE;
+              end;
+      if found then
+              begin
+                    filenum:=i;
+                    wait (2000);
+                    sendbyte ($9F);
+                    if ((filename=$7f20) OR (filename=$7f10) OR (filename=$7f21)) then sendbyte ($16)
+                    else sendbyte ($0F);
+              end
+       else   begin
+                    wait (2000);
+                    write (' NOT FOUND');
+                    sendbyte ($94);
+                    sendbyte ($04);
+              end;
+       writeln;
+end;
+
+procedure readbin;
+begin
+     wait (2000);
+     sendbyte (ins);
+     writeln ('READFILE:    $',hexadr(nam[filenum]));
+     for i:=1 to P3 do sendbyte (fil[filenum,i]);
+     wait (2000);
+     sendbyte ($90);
+     sendbyte ($00);
+end;
+
+procedure cloneread;
+begin
+     wait (2000);
+     sendbyte (ins);
+     writeln ('SENDING FRAME AT ADRESS  $',hexadr(p1*256+p2));
+     for i:=1 to P3 do sendbyte(clo[p1*256+p2+i-1]);
+     wait (2000);
+     sendbyte ($90);
+     sendbyte ($00);
+end;
+
+procedure clonestore;
+begin
+     wait (2000);
+     sendbyte (ins);
+     writeln ('GETING FRAME FROM ADRESS $',hexadr(p1*256+p2));
+     for i:=1 to P3 do clo[p1*256+p2+i-1]:=getbyte;
+     wait (2000);
+     sendbyte ($90);
+     sendbyte ($00);
+end;
+
+procedure clonepin;
+var tmp:word;
+begin
+     wait(2000);
+     sendbyte (ins);
+     write ('CLONE PIN: ');
+     for i:=1 to P3 do write (chr(getbyte));
+     wait(2000);
+     sendbyte ($90);
+     sendbyte ($00);
+     writeln;
+end;
+
+procedure readrec;
+begin
+     wait (2000);
+     sendbyte (ins);
+     writeln ('READREC:     $',hexadr(nam[filenum]),' ',P1);
+     for i:=1 to P3 do sendbyte (fil[filenum,(P1-1)*P3+I]);
+     wait (2000);
+     sendbyte ($90);
+     sendbyte ($00);
+end;
+
+procedure message;
+begin
+     wait (2000);
+     sendbyte (ins);
+     for i:=1 to P3 do sendbyte (men[filenum,i]);
+     wait (2000);
+     sendbyte ($90);
+     sendbyte ($00);
+end;
+
+procedure writebin;
+begin
+     wait (2000);
+     sendbyte (ins);
+     for i:=1 to P3 do fil[filenum,i]:=getbyte;
+     wait (2000);
+     sendbyte ($90);
+     sendbyte ($00);
+end;
+
+procedure reinit;
+begin
+     wait (2000);
+     sendbyte (ins);
+     write ('RESET CHARGE COUNTER: ');
+     for i:=1 to P3 do write (HEX(getbyte),' ');
+     writeln;
+     wait (2000);
+     sendbyte ($90);
+     sendbyte ($00);
+end;
+
+procedure sleep;
+begin
+     wait (2000);
+     sendbyte (ins);
+     writeln ('SLEEP SIM');
+     wait (2000);
+     sendbyte ($90);
+     sendbyte ($00);
+end;
+
+procedure emulate;
+begin
+     abort:=false;
+     clearpan;
+     gotoxy (5,3);
+     textcolor (red);
+     write ('Ki=');
+     for i:=0 to 15 do write (hex(skey[i]));
+     write('   COM',comnum);
+     write('   ',velocidad,' BAUDS');
+     write('   DELAY ',bytedly);
+
+     textcolor (yellow);
+     gotoxy (8,5);
+     write('### WAITING RESET ###');
+     textcolor (blue);
+     gotoxy (79,1);
+     lastread:= 0;
+     last :=0;
+     while not abort do
+           begin
+                if (((port[MSR] and $20)=$20)) then checkreset;
+                getiso;
+                case INS of
+                            $20: verify_pin;
+                            $24: change_pin;
+                            $26: pinoff;
+                            $28: pinon;
+                            $88: algorithm;
+                            $a4: select;
+                            $b0: readbin;
+                            $b2: readrec;
+                            $c0: message;
+                            $d6: writebin;
+                            $dc: reinit;
+                            $fa: sleep;
+                 end;
+                 if keypressed then abort:=true
+                 else if (wherey>=25) then doscroll;
+           end;
+end;
+
+procedure clonemul;
+begin
+     abort:=false;
+     clearpan;
+     gotoxy (5,3);
+     textcolor (red);
+     write(' Port= COM',comnum);
+     write('   Baud= ',velocidad);
+     write('   Delay= ',bytedly);
+     write('   ISO Convention ');
+     if conven then write ('Direct')
+     else write ('Invers');
+     textcolor (yellow);
+     gotoxy (8,5);
+     write('### CLONE CARD EMULATING ... WAITING RESET ###');
+     textcolor (blue);
+     gotoxy (79,1);
+     lastread:= 0;
+     last :=0;
+     while not abort do
+           begin
+                if (((port[MSR] and $20)=$20)) then checkreset;
+                getiso;
+                case INS of
+                           $20: clonepin;
+                           $b0: cloneread;
+                           $d0: clonestore;
+                end;
+                if keypressed then abort:=true
+                else if (wherey>=25) then doscroll;
+           end;
+end;
+
+{ --------------------------- START of MENU -------------------------}
+
+procedure menu;
+const n=4; {max 6 items for menu}
+      k=6;
+      field:  array[0..k,1..n] of string[20]=
+      (('File','View File','Emulator','Clone'),
+       ('Load SIM','RESET ATR','RUN AUTO','RUN CLONE'),
+       ('Load FRAME S19','PIN','Send ATR','VIEW FRAME '),
+       ('Save FRAME S19','FILE  6Fxx','Get Iso','EDIT FRAME'),
+       ('CLEAR FRAME','ICCARD','Send Proc. Byte','LOAD FRAME BIN'),
+       ('DOS  SHELL','IMSI','Send SW1 SW2','SAVE FRAME BIN'),
+       ('Exit','ADMI. DATA','Send Data ','COMPARE FRAME BIN'));
+
+     actfield:array[1..n] of boolean=(false,false,false,false);
+var  x,y,oldx,oldy,i,max:byte;
+     opc,oldfield:byte;
+     tecla:byte;
+     ok,ok2:boolean;
+
+function tvalida:boolean;
+begin
+     tvalida:=false;
+     if ((tecla=75) or (tecla=77) or (tecla=27) or (tecla=80) or (tecla=72) or (tecla=13)) then tvalida:=true;
+end;
+
+procedure writeItem(num:byte);
+var i,j:byte;
+begin
+     textbackground(black);
+     max:=length(field[1,num]);
+     for i:=2 to k do if length(field[i,num])>max then max:=length(field[i,num]);
+     max:=max+6;
+     gotoxy (4+12*(num-1),2);
+     write('Ú');for i:=1 to max-1 do write('Ä');write('¿');
+     for i:=3 to k+3 do begin
+                              gotoxy(4+12*(num-1),i);
+                              write('³');
+                              textbackground(blue);
+                              for j:=1 to max-1 do write(' ');
+                              textbackground(black);
+                              gotoxy(4+12*(num-1)+max,i);
+                              write('³');
+                         end;
+     gotoxy (4+12*(num-1),3+k);
+     write('À');for i:=1 to max-1 do write('Ä');write('Ù');
+     textbackground(blue);
+     for i:=1 to k do begin
+                            gotoxy(6+12*(num-1),2+i);
+                            write(field[i,num]);
+                      end;
+end;
+
+procedure fila(columna:byte);
+var i:byte;
+begin
+     gotoxy(5+12*(x-1),oldy+1);
+     textbackground(blue);write(' '+field[oldy-1,x]);
+     for i:=3 to max-length(field[oldy-1,x]) do write(' ');
+     gotoxy(5+12*(x-1),columna+1);
+     textbackground(magenta);write(' '+field[columna-1,x]);
+     for i:=3 to max-length(field[columna-1,x]) do write(' ');
+     gotoxy(70,24);
+end;
+
+procedure barra(campo:byte);
+var i:byte;
+begin
+     if oldfield<>campo then
+         begin
+              actfield[oldfield]:=false;
+              oldfield:=campo;
+              actfield[campo]:=true;
+         end;
+     textbackground(blue);
+     textcolor(white);
+     gotoxy(1,1);clreol;
+     gotoxy(1,1);for i:=1 to n do
+        begin
+             if actfield[i] then textbackground(magenta);
+             gotoxy(4+12*(i-1),1);write(field[0,i]);
+             textbackground(blue);
+        end;
+    TEXTCOLOR (GREEN);
+    gotoxy(52,1); write ('ASIM EMULATOR V3.1 ');
+    textcolor(white);gotoxy(10,10);
+end;
+
+begin
+     ok:=false;
+     ok2:=false;
+     oldy:=2;
+     x:=1;
+     y:=1;
+     oldfield:=2;
+     barra (x);
+     screentobuffer;
+     while not ok do
+           begin
+                gotoxy (80,1);
+                tecla:=0;
+                while not tvalida do
+                      begin
+                           tecla:=ord(readkey);
+                           if tecla=0 then tecla:=ord(readkey);
+                      end;
+                if tecla=27 then
+                      begin
+                            ok:=true;
+                            y:=99;
+                      end;
+                if tecla=77 then
+                      begin
+                            x:=x+1;
+                            if x>4 then x:=1;
+                            barra (x);
+                            if y>1 then
+                               begin
+                                    buffertoscreen;
+                                    writeitem(x);
+                                    fila(y);
+                               end;
+                      end;
+                 if tecla=75 then
+                      begin
+                            x:=x-1;
+                            if x<1 then x:=4;
+                            barra (x);
+                            if y>1 then
+                               begin
+                                    buffertoscreen;
+                                    writeitem(x);
+                                    fila(y);
+                               end;
+                      end;
+                 if tecla=13 then
+                      begin
+                            if y>1 then ok:=true
+                            else begin
+                                       Y:=Y+1;
+                                       writeitem (x);
+                                       fila (y);
+                                       oldy:=y+1;
+                                       ok2:=true;
+                                   end;
+                      end;
+                 if ((tecla=80) and (ok2)) then
+                      begin
+                            if y=1 then y:=2;
+                            oldy:=y;
+                            y:=y+1;
+                            if y>7 then y:=2;
+                            fila (y);
+                      end;
+                 if ((tecla=72) and (ok2)) then
+                      begin
+                            if y=1 then y:=2;
+                            oldy:=y;
+                            y:=y-1;
+                            if y<2 then y:=7;
+                            fila (y);
+                      end;
+           end;
+     barra(5);
+     buffertoscreen;
+     if y<>99 then begin
+                        y:=y-1;
+                        opc:=x*10+y;
+                        case opc of
+                                     11: loadsim;
+                                     12: loadfras19;
+                                     13: savefras19;
+                                     14: begin
+                                              clearbuf;
+                                              inicio:=0;
+                                              gotoxy (1,2);
+                                              for i:=0 to 23 do dump ((inicio+i*16));
+                                         end;
+                                     15: dosshell;
+                                     16: exit;
+
+                                     21: if atrlen=0 then notload
+                                         else seeatr;
+                                     22: if atrlen=0 then notload
+                                         else seepin;
+                                     23: if atrlen=0 then notload
+                                         else seefile;
+                                     24: if atrlen=0 then notload
+                                         else seeiccard;
+                                     25: if atrlen=0 then notload
+                                         else seeimsi;
+                                     26: if atrlen=0 then notload
+                                         else seead;
+
+                                     31: if atrlen=0 then notload
+                                         else emulate;
+                                     32: ;
+                                     33: ;
+                                     34: ;
+                                     35: ;
+                                     36: ;
+
+                                     41: if atrlen=0 then notload
+                                         else clonemul;
+                                     42: seeframe;
+                                     43: edithex;
+                                     44: loadfrabin;
+                                     45: savefrabin;
+                                     46: comparebin;
+                        end;
+                   end;
+end;
+
+begin
+     {$M 16384,0,0}
+     clrscr;
+     checkbreak:=false;
+     serie:=COM2;
+     velocidad:=8736;
+     bytedly:=4000;
+     conven:=TRUE;
+     pin:=3333;
+     init;
+     textcolor(white);
+     textbackground(7);
+     clrscr;
+     salir:=false;
+     filenum:=21;
+     atrlen:=0;
+     count:=0;
+     for i:=1 to 41 do for j:=1 to 255 do fil[i,j]:=$00;
+     for i:=1 to 41 do for j:=1 to 36 do fil[i,j]:=$00;
+     clearbuf;
+     inicio:=0;
+     gotoxy (1,2);
+     for i:=0 to 23 do dump ((inicio+i*16));
+     while not salir do menu;
+     textbackground (black);
+     clrscr;
+end.
+
+
+-------------------------------------------------------------------------------------------
+Koniec kodu ASIM V 3.1
+
+
+
+	2.15 SIEMENS
+
+Model: C25
+
+Uzywamy interfejsu i kabelka zgodnie z opisem dolaczonym do programu...
+Jest kilka programow do C25 jednak ten w 100% jest skuteczny. Po uruchomieniu
+wyskakuje tekst wstylu Nacisnij Enter to Start ... jak Nacisniemy Wyskakuje na dole napids
+Nacisnij Enter to Koniec ... w miedzyczasie wedlug opisu wpisujemy kod miga wyswietlacz itp.
+Pisze o tym dlatego co byscie mogli zidentyfikowac ten program, a druga sprawa to program
+ten wprowadza telefon w jakis dziwny tryb ... Przyjmuje on wszystkie karty .. jednak
+traci mozliwosc ustawiania kodu zabezpieczajacego USERA funkcje typu APARAT POZYCZONY ...
+Jest to wada ... zreszta prawie kazda z wymienionych tu metod ma jakas ....
+
+Ok! Mala zmiana. Kilka osob pytalo sie o ten programik. Bedzie on na pewno na stronie HRABIEGO
+Zalaczam tutaj obis programu ...
+
+Nie jest on mojego AUTORSTWA (wielkie dzieki za jego napisanie)
+
+-----------------------------------------------------------------------------------------------
+
+INSTRUKCJA  OBSLUGI SOFTU unlock SIEMENS C25
+
+Sprawdzenie kabelka:
+Podlacz woltomierz do wyprowadzenia 1 i 5 na wtyczce kabelka liczac z lewej strony
+bez uruchomionego softu powinno byc okolo 0,07V po uruchomieniu programu
+napiecie powinno podskoczyc do okolo 3,4V.
+
+Przekopiuj plik C25.com na dysk twardy.
+Podlacz kabelek do komputera pod COM1. Tylko COM1 !!!! bo na COM2 nie dziala.
+Podlacz do kabelka wlaczony telefon bez karty SIM.
+Uruchom program tylko i wylacznie z poziomu DOS.!!!!
+Pojawi sie :press enter to run... nacisnij enter
+pojawi sie u góry press enter to run... a na dole press enter to end...
+Wystukaj na telefonie   *#0003*00000000#
+po wystukaniu kodu wyswietlacz zacznie migac i poda komunikat o bledzie gdy przestanie nacisnij enter i odlacz aparat od kabelka .
+To wszystko.
+Nie uruchamiaj softu z poziomu Windows!!!!!!!!!!!
+UWAGA !!!!  Po udanym odblokowaniu telefonu nie radze powtarzac tej operacji jeszcze raz
+gdyz grozi to ponownemu zablokowaniu telefonu.
+
+
+Program sprawdzalem na pecetach z procesorami:
+Pentium 100,133,166,200
+Pentium 166MMX, 200MMX, 233MMX
+Nie wiem jak to sie sprawdza na Celeronie i PII, PIII, AMD itp.
+---------------------------------------------------------------------------------------------------
+No tak ten opisik wyglada i jest jeszcze jeden w ktorym ktos prosi o nie sprzedawanie tego programu
+oraz nie chwalenie sie na listach dyskusyjnych itp. (to akurat popieram... na listach jest tyle 
+wazonow i ludzi z ERY,PLUSA i innego dziadostwa ze mozna sobie to odpuscic)
+
+	2.16 SAMSUNG SGH 600
+
+Kod:  *2767*3855# - KASUJE SIMLOCK-a Z TELEFONU 
+
+	Kod ten jest wymieniony w rozdziale o kodach napisane jest tam co on dokladnie robi.
+Jednak nie testowalemtego i niewiem czy to zadziala, a jak zadziala to z jakim skutkiem.
+Jezeli ktos to przetestuje prosze o info na tom@jegorek.pwr.jgora.pl a uwzglednie to info
+w FAQ. No chyba ze sam wczesniej dorwe SAMSUNGA i go potraktuje tym dziadostwem ;)
+
+
+	2.17 INNE
+	No i jestesmy prawie przy koncu naszego FAQ o rozkodowywaniu telefonow komurkowych...
+Istnieje duzo wiecej Programow ktore tutaj nie opisalem, a dzialaja. Istnieja tez inne leprze
+lub gorsze sposoby na ominiecie SIMLOCK-a. Jest to ogromny temat. Mam nadzieje ze to komus pomoze.
+A jak nie to plakac niebede z tego powodu :).
+Najlepiej pobawic sie najpierw w zdejmowanie SimLockow po kabelku potem mozna sie bawic w operacje 
+na Pamieci.
+Jezeli macie troche wolnego czasu mozna samemu bawic sie w znajdywanie miejsc w pamieci w ktorych jest
+SimLock ... Pomocny moze byc moj Programik ktorego zreszta sam uzywalem BINEDIT. Niestety ostatnio
+praktycznie nie mam czasu na zajmowanie sie telefonami GSM. 
+SimLock-i zapisane sa roznie w jednych telefonach wystarczy wpisac troche 00 lub ff w jakies komurki
+i jest ok (np.SIMENS S6 S6POwer S8) w innych zapisywane sa w rozny dziwny
+sposob i chronione suma kontrolna (np. PHILIPS DIGA TWIST) lub kilkoma sumami (NOKIA).
+Zajecie to wymaga wiec wiele praktyki i zaden FAQ tego nie zastapi. Na poczatek proponuje
+samemu znaezc i usunac recznie Simlocka z Wymienionych SIMENS-ow. Napewno bedzie to jakis trening.
+Kolejna rada to Przed kazda zmiana itp. Zgrywac zawartosc pamieci i ja przechowywac w bezpiecznym 
+miejscu ... w razie klopotow mozna nia zaprogramowac telefon i wrocic do punktu wyjscia. W niektorych
+telefonach tej pamieci nie znajdziecie :) i macie problem jak cos sie powali.
+Program Universal Sp ... qwa niechce mi sie tego powtazac tyle razy .. ma jeszcze mozliwosc
+rozkodowywania innych telefonow ... Odradzam jednak uzywanie go do NOKI 3110/5110/6100.
+3110 to w ostatecznosci jak macie zalokowany na Amen a 5110/6100 to odrazu zapomnijcie.
+Kolejna sprawa to rozniste programy krazace po necie ... duzo z nich to zwykly szmelc lub atrapy...
+wiec nieprzejmujcie sie jak ktos wam pokaze liste czego on nie ma i ze ma najnowsze wersje.
+Przykladem jest opur softu do C25 i ERICSSON HOME SERVICE SOFTWARE v 1.8 by Daniel Henzuela 
+poprostu w binarnym pliku widac text 1.3 i ktos sobie zmienil na 1.8
+Niewiezcie tez w programy uniwersalne... jeszcze takiego nie spotkalem co by generowal kody 
+do wszystkiego itp. Polecany przezemnie Universal to jedynie Nakladka ktora zkleja kilka programow
+roznych ludzi w jedna calosc. Praktycznie te programy ktore podalem i opisalem wystarcza do rozkodowania
+chyba wszystkich telefonow sprzedawanych w promocjach Plusa i Ery. Oczywiscie brakuje
+tutaj kilku (NOKIA 5110 z nowym softem itp.) Po prostu musicie sami zabrac sie za kompletowanie
+softu itp. Jak ktos wam objecuje jakis cudowny program za jakies pieniadzo odrazu mu kopa w dupe
+Ostatnio proponowano mi kupno 2 programikow do c25 ktore zreszta mialem i nie dzialaly....
+I zle zkompilowanego i niecalego mojego programu do Eryka 768 (poprostu przez przypadek poslalem
+komus glowny plik zrodla... naszczescie cala czesc zajmujaca sie rozkodowaniem itp ... byla w osobnych
+bibliotekach). Wiec dostal generator napisow :)   ). Ja tez niektorego softu ktury posiadam nie bede
+udostepnial bo albo nie chce (jakos tak) albo dostalem go z takimi warunkami. 
+Jak ktos ma ochote i zrobi lub kupi programator to moze pobawic sie w radyjka.... 
+Przewaznie kosci I2C lub inne cuda .. spotkac tyz mozna rozne dziwne odmiany Motoroli.. (HC05 HC11)
+i inne . Oznaczane przewaznie jako Z .... cos tam :) A od motorolki to tylko maly kroczek do Urmneta.
+Praktycznie temat radyjek jest bardzo podobny do telefonow ... roznica w tam ze niema do tego softu ..
+w wiekrzosci przypadkow to ingerencja w zawartosc pamieci.
+Postaram sie co by wiekrzosc programow tutaj opisanych znalazla sie na stronie HRABIEGO ...
+Ale co z tego wyjdzie to zobaczymy.
+
+
+
+	2.18  TROCHE O ZMIANACH W EEPROM
+
+	Jak juz pisalem czesc telefonow robi sie niestety zmieniajac zawartosc pamieci.
+Postaram sie mniejwiecej zaprezentowac jak to wyglada. A wiec najpierw rozbieramy sobie telefonik
+i odnajdujemy pamiec. Kolejna sprawa to jej zidentyfikowanie. Gdy to mamy wykonane bierzemy sie za
+odczyt. Podpinamy sie programatorkiem i odczytujemy. Nastepnie powtarzamy ta czynnosc ze 3..4 razy
+i sprawdzamy czy odczyt za kazdym razem jest identyczny. Gdy nie .. sprawdzamy czy np. nogi adresowe
+sa podpiete do masy. I w niektorych kosciach w wersji ze sprzetowa kontrola zapisu jak wyglada
+podlaczenie tej nogi w ukladzie. Jezeli to wszystko jest OK i dalej mamy problemy z odczytem nalezy
+pamiec niestety wylutowac. No nieraz pomaga podlaczenie osobnego zasilania na pamiec tzn. nie z
+programatora nalezy poexperymentowac z napieciem od 1.5 do MAx napiecia zasilania danej pamieci.
+Odpada oczywicsie zasilanie z zasilacza (tetnienia itp.) ja podlaczam zawsze baterie 1.5V 
+(popularny paluszek) lub kilka takich baterii. Efekty sa rozne raz sie uda a raz nie.
+ To samo dotyczy zapisu (nieraz pamiec da sie odczytac a sa problemy z 
+jej zapisem). Gdy mamy odczytana pamiec i powiedzmy opis gdzie co zmienic to maly problem.
+W innym wypadku pozostaje samodzielne szukanie. Pozostawiam to dalej do przetrenowania na
+SIEMENSACH. Dodam ze jak traficie na to miejsce telefon bedzie pytal o kod zabezpieczajacy ....
+sa to same zera ... Potem po wejsciu nalezy go w menu telefonu wylaczyc.
+A teraz zajmiemy sie dla przykladu ALCATELAMI  z serii MAX I PLUS. Sa one jak juz wspominalem
+wyposazone w pamiec z interfejsem SPI nalezy ja wylutowac choc mozecie poprobowac bez wylutu
+moze wasz programator sobie jakos poradzi. Wiec zmieniamy zawartosc komurki o adresie 0ch
+na 00 i simlock usuniety. Tak zpreparowana pamiec zapisujemy z powrotem do telefonu. I mamy 
+telefonik bez SIMLOCKA.
+Podobnie sprawa wyglada w przypadku telefonu SONY C1
+odczytujemy pamiec i w adresach od 016A-016F wpisujemy 0 zapis pamieci do telefonu i po klopocie.
+Pamietajmy zawsze o przechowywaniu oryginalnej zawartosci. Moze sie zdazyc ze telefon po takiej
+zmianie wywali cos wstylu Aparat Uszkodzony lub CONTACT SERVICE. Cos takiego moze sie zdazyc
+gdy producent zmieni Soft i miejsca zapisu w pamieci. Niestety starsze opisy nie uwzgledniaja
+nowszych wersji softu .. to zreszta oczywiste.
+Teraz przyklad gdy simloc jest zakodowany w troche inny sposobik i chroniony suma kontrolna.
+Zamieszcze tu fragment source code z mojego programiku do PHILIPSA dotyczy on PHILIPSA TWIST.
+
+W buforku mamy zawartosc pamieci ...
+
+
+	a:=ord(bufor[31+$0cf]);        {0ee}
+	b:=ord(bufor[32+$0cf]);        {0ef}
+	c:=ord(bufor[33+$0cf]);        {0f0}
+
+	bufor[31+$0cf]:=char(b);      {0ee}
+	bufor[32+$0cf]:=char(a);      {0ef}
+	bufor[29+$0cf]:=char(c+1);    {0ec}
+	bufor[30+$0cf]:=char(c-15);   {0ed}
+	sumak:=0;
+	a:=0;
+	for x:=2+$0cf to 3*16+$0cf do begin            {0d1-0FF}
+			    sumak:=sumak+ord(bufor[x])		
+                	    end;
+	asm
+		mov	ax,sumak
+		mov	a,al
+	end;
+	bufor[1+$0cf]:=char(a);           {d0}
+
+
+Tak wiec robimy nastepujace zmiany :
+
+A. Zamieniamy miejscami komurki 0ee i 0ef 
+B. wartosc komurki 0ec=wartosc komurki 0f0 +1
+C. wartosc komurki 0ed=wartosc komurki 0f0 -14
+
+Teraz liczymy sume kontrolna:
+A. dodajemy wszystkie wartosci od adresu 0d1-0ff i w adresie d0 zapisujemy 
+mlodszy bajt wyniku (tzn. gdy wynikiem sumy jes 8056 to wpisujemy 56).
+
+To byl wlasnie przyklad z zabezbieczeniem simlocka suma kontrolna.
+Sa zabezpieczonka prostrze i trudniejsze jednak jak wiadomo jeszcze nie wymyslono takiego
+co by ktos nie zlamal. Moze komus z was uda sie zlamac jakies zabezpieczonko w jakims nowym
+telefonie. Wszystko to zalezy od waszych checi i umiejetnosci. Nalezy po pierwsze uwazac.
+Myslec rozsadnie, a nie ze jak sie wsadzi do lodowki to pomoze :) No i nabrac
+troche praktyki, a do tego potrzeba czasu. Mozecie spotkac tez na Listach dyskusyjnych
+roznego rodzaju wazonow (dresy itp.) co sie wymondrzaja a tak naprawde to gowno wiedza.
+Ja przez takiego jednego dresa z drogim telefonem ktorym musi sie wszystkim chwalic
+(N9110) poszedlem sobie z pewnej listy.... A Huj ci w DUPE panie M. Jerz ...
+Ja na tym najmniej stracilem a watpie by takie dresy dorwaly kiedys ten FAQ :) ...
+Nimi nalezy sie nie przejmowac. Sa tez ludzie ktorzy moga wam duzo pomuc doradzic itp.
+Przy takim zajeciu trzeba miec duzo znajomych co by sie utrzymac. Jednak wiekrzosc
+nowego softu dostepna jest tylko za MANY MANY ... ja to elewalem i pisalem wlasny soft
+nieraz leprzy od dostepnego. Tak samo radze wam postepowac... 
+Jak wiadomo nigdy nie wyczerpie w zadnym FAQ calego tematu. Caly czas pojawiaja sie nowe
+typy aparatow, zmieniany jest soft, a zabezpieczenia sa raz latwiejsze do zlamania 
+powiedzmy kilkanascie minut na zlamanie do bardziej skomplikowanych. Np. zdradze rabek
+tajemnicy jak omijam LOCK 2 w telefonach NOKIA... wymagalo to kilu miesiecy pracy
+i jest to rozwiazanie powiedzmy malo efektowene. Calosc to dopiecie dodatkowego procka
+PIC firmy Micro Chip ktory oklamuje troche telefon z jaka siecia pracuje.
+Tak to narazie robie. Jednak caly czas pracuje nad rozwiazaniem Softwerowym.
+Podobno ludzie robia to Softwerowa Jakimis dwoma Programami jednym z nich jest WINLOCK.
+Najpierw jednak traktuja telefon czyms innym a potem WINLOCK-iem. Niewiem ile w tym 
+prawdy i na ile jest to skuteczne. Kolejna sprawa to warto poznac transmisje pomiedzy
+aparatem i telefonem. Poprostu pobawcie sie jak macie analizatory stanow logicznych.
+Lub napiszcie wlasny program ktory bedzie tak dzialal i posledzcie co wysylaja do 
+telefonu programy napisane przez innych. Pozwoli to wam w przypadku np. zmiany
+softu napisac w miare szybko swoj soft (po kabelku) uwzgledniajacy zmiany...
+Zawsze mozna sie niezle pobawic .. I nieraz to tez troche kosztuje jak sie uwali
+jakis telefonik ale to trzeba miec wkalkulowane przy takiej zabawie.
+
+
+	2.19 BAJERY
+
+	Tutaj chcial bym poruszyc temat roznych bajerow do telefonow itp. 
+Co niektore telefony maja jakies tam ciekawe funkcje. Mozna np. wprowadzic do telefonu
+wlasny dzwonek, wlasne ikonki itp. Ostatnio w przypadku telefonow NOKIA bardzo popularny
+jest temat LOGA. A wiec zamiast nazwy operatora ktory caly czas widnieje na wyswietlaczu
+mozna wstawic sobie jakis obrazek itp. Do tego mamy dwa programy Kessler-a o nazwach
+GROUP-GRAPHIC EDITOR oraz OPERATOR-LOGO UPLOADER (oczywiscie dostepne z CRACK-ami).
+W pierwszym z nich mozemy narysowac wlasne logo,a drugim wyslac... zreszta ten pierwszy
+tez pozwala wysylac logo do telefonu. Mozna taki bajerek przeslac tez komus specjalna
+wersja SMS-a jednak ERA i pare innych tego typu firm potrafia skutecznie utrudnic zycie
+i przesylanie to jest nielada problemem. Niewiem jaka jest sytuacja na dzien dzisiejszy
+ale w sieci ERA GSM bylo to praktycznie nierealne. Oprocz takich zmian mozna kupic 
+na gieldach roznego rodzaju obudowy Kolorowe itp. Jak ktos chce z TUNINGOWAC swoj telefon
+to ma pole do popisu.
+
+
+	2.20 ANTENY
+
+	No i pare slow o antenach. Jak wiadomo antenka w aparacie ma stosunkowo mala skutecznosc.
+Jadac np. Autem proponuje zaopatrzyc sie w Antene mobilowa. I tutaj troche teorji.
+Antena ma jakis tam zysk podawany jest on w dB. Normalnie liczy sie go przyjmujac ze antena
+typu dipol otwarty ma 0dB. Amerykancy licza troche inaczej i nieraz sa dziwne rozbieznosci.
+Powiedzmy sobie cos takiego antenka bardzo krotka i mala musi pracowac jakos na danym pasmie
+wiec wydluza sie ja cewka ktora oczywiscie zajmuje mniej miejsca i pisze sie na opakowaniu
+SUPER ANTENA ZYSK 5dB,a gowno prawda jak taka antena moze miec jakis zysk ma raczej strate tak samo
+jak antenka Helikalna w telefonie. I tutaj dochodze do sedna sprawy w niektorych miejscach
+niestety brak jest zasiegu. Ratuja nas wtedy Anteny kierunkowe. Jezeli ktos cos takiego chce kupic
+to najlepiej jak to bedzie antenka typu YAGA (taka jak telewizyjna) i skrecana z elementow.
+Widzialem jakies takie gowna chyba 5 elementow Kilka rurek (jedna calosc) kabel wlazi do jednej znich
+Jednak skutecznosc taka jak wyglad. Anteny tego typu montujemy w polaryzacji pionowej i im wiecej
+elementow tym wiekrzy zysk (wzmocnienie) ale i zarazem wezsza wiazka wypromieniowana przez antene.
+Trzeba taka antene precyzyjniej ustawiac. Nie nalezy machac nia we wszystkie strony. Najlepiej
+zamocowac ja na jakiejs rurce i robic nastepujace czynnosci az do zlapania najmocniejszego sygnalu.
+Przekrecic kawalek antene i odczekac dluzsza chwile ogladajac wskazania sygnalu na wyswietlaczu
+(telefon potrzebuje troche czasu na zkomunikowanie sie ze swoim przemiennikiem oraz troche czasu
+trwa logowanie do sieci). Nie nalezy anteny trzymac rekoma za jej elementy w ostatecznosci za uchwyt
+przeznaczony do montowania. To samo sie tyczy do opierania na roznego rodzaju metalowych przedmiotach.
+Kolejna sprawa to dlugosc kabla. Te anteny z ktorymi sie zpotkalem (moim zdaniem bardzo dobre)
+jednak producenta niepamietam mialy standardowo 10m kabla i nienalezy takiego kabla przedluzac.
+Poprostu kabel ma swoje tlumienie i zwiekrzajac dlugosc szybko stracimy to co daje nam wieloelementowa
+antenka.
+
+
+	2.21 REANIMACJA
+
+	Tutaj opisze rozne zeczy ktore powiedzmy zdazaja sie z aparatami...
+Najczestrzym zdazeniem jest utopienie telefonu. Czy to w glebszej kaluzy czy w wannie itp.
+Co wtedy robic? Odradzam gladzenie do mikrofalowki (Takie cos sie zdazylo),suszenie na kaloryferku 
+ub suszarka do wlosow. Jak bylem na jednej z list dotyczacych GSM to padaly jeszcze bardziej debilowate
+pomysy jak gosciu utopil N9110. Wiec co nalezy zrobic... Natychmiast biegiem do domu choc by ci
+jakies piwo moglo uciec czy inna rozrywka. Rozbieramy natychmiast aparat i czyscimy SPIRYTUSEM
+lub innym srodkiem (ACETON,OCTAN,ROZCIENCZALNIK). Jednak z tymi ostatnimi radze uwazac sa dosyc 
+agresywne dla plastikowych elementow.Czyscimy oczywiscie elektronike a nie obudowe.. Tamto to mozna 
+recznikiem. Caly bajer polega na tym aby ktorys z wymienionych srodkow wyparl wode zwlaszcza 
+z przelotek na plytce i z pod ukladow scalonych. Nastepnie delikatnie osuszamy. Jezeli czegos takiego
+nie zrobimy to po jakims 1 dniu wszystko nam zasniedzieje w aparacie. Po jakis 2,3 przestanie cos 
+dzialac (to nie do konca). Najczesciej uszkodzeniu ulega metalizacja w przelotkach i bardzo cinkie
+sciezki. Praktycznie gdy elektronika nam zasniedzieje. A telefon jeszcze dziala to radze szybko szukac
+na niego frajera.
+
+Kolejna sprawa to wyswietlacz w telefonach N5110 czesto zdaza sie ze czegos nie wyswietla lub dzieja
+sie inne cudenka. Broblem jest w konstrukcji a raczej w sposobie podlaczenia wyswietlacza.
+Wyswietlacz posiada takie zlacze z blaszek ktore dotykaja pol na laminacie. Mocuje go taka metalowa
+ramka ktora mozna spokojnie zdemontowac odginajac kilka blaszek. Problem polega na zlym styku 
+wyprowadzen wyswietlacza z plytka. Najlepiej jest przeczyscic plytke CONTOX-em itp.
+inni podkladaja papierki lub inne cuda. Ale jak to zrobicie to pozostawiam juz waszej pomyslowosci.
+
+Telefon NOKIA 3110,8110 pokazuje od czasu do czasu BRAK KARTY SIM. I prawie to samo co w N5110
+nalezy na karte SIM POLOZYC kawalek papierka lub dogiac bardzo delikatnie blaszke dociskajaca karte.
+
+Kolejna sprawa to zasilacze itp. Nie nalezy podlaczac zasilaczy nie od danego telefonu itp.
+nawet jezeli wtyczka jest identyczna jezeli niejestesmy pewni czy NAPIECIE,WYDAJNOSC PRADOWA,
+ORAZ POLARYZACJA NA KONCOWCE  jest odpowiednia do danego aparatu.
+Ten dzial tez juz zakanczam bo mozna go ciagnac w niezkonczonosc wymienilem to co w miare latwo
+mozna zrobic samemu i z tym zamoknieciem co musimy zrobic. No chyba ze mamy na miejscu serwis
+ktory tego samego dnia rozbierze i osuszy aparat. Jednak jak znam zycie serwisant to oleje i za kilka
+dni dostaniecie odowiedz w stylu ze aparatu sie nieda naprawic itp. Oczywiscie musicie zaplacic
+za expertyze techniczna.
+ 
+
+
+	2.22 PODSUMOWANIE
+
+	Tak sie zastanawiam i chyba wiecej juz na ten temat nie napisze ... 
+...niema sensu bym opisywal kazdy pojawiajacy sie program i telefon bo to nigdy by sie
+nie zkonczylo (chyba dlatego w tytule 'Wieczna Beta'). Moze jak ktos podsunie mi jakis 
+ciekawy pomysl .... Ale wszystkie listy typu jak rozkodowac taki,a taki telefon lub przeslij
+mi program do tego czy tamtego. Beda ladowaly od razu w koszu... Wszystko co bede chcial 
+udostepnic bede sie staral przesylac do HRABIEGO co by znalazlo sie na jego stronce. 
+A jak czegos tam nie bedzie to poszukajcie... moze znajdziecie na INECIE...
+
+
+
+
+
+
+
+	3 PHREAK
+
+	Zbyt wiele to tu raczej niebedzie. A to z takiego powodu ze w miescie w kturym sobie mieszkam
+(mieszkalem) TelePies pokazuje swoje najcudowniejsze oblicze tzn. Ludzie czekaja po 15 lat na telefon
+itp. (aktualnie miasto Powiatowe). Na poczcie kwitnie cudowny Strowger... no i jeszcze na jednym
+z osiedli jest PENTACONTA.... No i co by zle nie mowic to czesc ludzi podlaczyli pod DGT ktore
+musieli postawic ze wzgledu na doprowadzony swiatlowodzik ... Obecnie to wygladac moze troche inaczej
+przed wyjazdem okropnie kopali stawiali nowe skrzyneczki, Pojawilo sie kilka srebrnych i kolo chaty 
+postawili mi bialy kontynerek .... niestety stara centrala zostaje podlaczaja tylko multiplexer.
+
+No a teraz jakas moja przygoda z Zamkiem ...
+Tak wiec kiedys skolowalem sobie zamek ABLOY :) i na jego podstawie zrobilem kluczyk ...
+Jednak okazolo sie ze mam kluczyk tylko do szarych skrzyneczek wiszacych na scianie 
+(kluczyk o wiekrzej srednicy??? (qwa to polkole..) z zabkiem . A w niebieskich siedza mniejsze
+tak wiec dorobienie kluczyka zpelzlo na niczym pozatym po dorobieniu pierwszego powiedzialem sobie 
+ze pilnika nie wezme juz wiecej do reki aby takie gowno szlifowac.... Material na kluczyk tez sobie
+znalazlem po huju ledwo co pilnik go chcial zbierac... a koles sugerowal mi ze z takiego materialu
+to napewno robie sztos do otwierania samochodow. Jednak surowki mi sie nieudalo kupic,
+dotrwalem do konca kluczyk byl piekny ... ale do niebieskich za nic niechcial wejsc...
+Zreszta zgublem go ;) jak zwijali moich kolesi co tyz Hackowali ale Samochody (wcalosci lub na czesci).
+Mnie zgarneli przy okazji tak profilaktycznie bo z nimi stalem. I wtym momencie gdzies mi zginol
+kluczyk i pare innych cudow :( Wyszedlem na drugi dzien ale skarbow juz nie znalazlem :(
+No ale narazie mam inny temat zabawa z kartami chipowymi... Robie troche inne rozwiazanko niz 
+w tlumaczeniu zrobionym przez  AS7URN. Praktycznie to inny procek idea jest ta sama co na PIC-u
+jak bedzie dzialac to napisze jak zrobis sobie karte dzialajaca w Helmutowie...
+A jak wroce do Polski (kij wie kiedy... ale wroce) to pobawie sie nowo zastanymi wynalazkami... 
+w moim miasteczku ... No i chetnie bym dorwal gdzies najlepiej gotowy kluczyk do
+Niebieskiego i ewentualnie... jak bedzie mnie to jeszcze interesic... Wszedl w jakas kooperacje
+z ludzmi (okolice Jeleniej Gory lub Walbrzycha) a najlepiej gdzies pomiedzy tymi miastami.
+Jednak do czasu kiedy wroce moge calkowicie stracic ochote na ta zabawe :)
+Taki dziwny wstep do dzialu o PHREAK-u duzo tak samo to tutaj nie bedzie czsc powiedzmy bede rozwazal
+teoretycznie, czesc to jakas tam skromna praktyka, i moze troche nowych pomyslow lub uleprzenia, 
+a moze pogorszenie starych ?  to juz zalezy od punktu widzenia... a jak wiadomo ten zalezy od punktu
+siedzenia :)
+
+
+
+
+
+	3.1 MINI TELEFON
+
+	No jakos tak wyszlo panie Hrabio ze mialem cos napisac na ten temat i cos pisze qwa bedzie malo
+konkretow a wiecej marudzenia. Powod jest prosty swoje cacko wykonalem z tego co bylo pod reka ...
+Wiec tutaj jest tylko zarys...
+Mozna zrobic sobie male cudenko ja to upchalem w obudowe wielkosci pudelka zapalek
+Jest tam mikrofon, wskaznik polaryzacji lini, wybieranie tonowe i impulsowe 5 pamieci, regulacja
+glosnosci i jeszcze pare innych bajerow. Paten skerowany jest raczej do ludzi zajmujacych sie 
+elektronika troche powazniej. Prawie calosc jest wykonana z elementow SMD a sercem jest 
+uklad firmy UMC (juz nie produkowany i praktacznie niedostepny dlatego
+rezygnuje z szerszego opisu). Moze ktos zrobi cos takiego na innej kosci lub znajdzie jakos 
+na ktorje mozna taki telefonik zrealizowac. Polecam przegladniecie starszych numerow ELektroniki
+Praktycznej tam ta kostka byla opisana ... Ma wlanie te 5 Pamieci i wybieranko tonowe jak i impulsowe.
+Mikrofonik 3mm srednicy pojemnosciowy, wskaznika polaryzacji lini nie musze chyba opisywac bo to dwa
+LED-y i rezystorek. Uklad antylokalny jest zrobiony na jednym wzmacniaczu operacyjnym i 2 tranzystorach.
+No i to praktycznie caly telefon. 
+
+	3.2 INNE PODPINANIE .....
+
+	A cos mnie tak kiedys wzielo i sobie zmajstrowalem cos takiego...
+Wykozystalem stary aparat byzkablowy...
+taki no z antenka ... zalatwilem maly akumulatorek i podpielem elektronike po malych przerubach w 
+budynku obok ....  pod jakiegos Niebieskiego :). No i super sprawa ... 
+Wlaczam sobie sluchawke i krece gdzie chce a jak nawet sie pokapuja i pujda po kablach to dojda
+do plastikowego pudelka z akumulatorkiem i elektronika ... hi hi. No ale to nie wszystko gadanie
+gadaniem ... ale by sie jakos na inecie posiedzialo wiec dlugo sie niezastanawiajac od strony
+sluchawki zrobilem maly symulatorek lini telefonicznej i ciach do modemu .... I co ... qwa dziala
+wolno bo wolno ale za free. Przy takim rozwiazanku max. 9600. Stare telefony mozna kupic na gieldzie
+za jakies 50zl. Najlepiej dorwac jakis na 900Mhz z oddzielnymi modulami w.cz i cos takiego
+wymajstrowac ...
+
+	No i dostalem kilka pytan dotyczacych tego symulatora :) omowie to czysto teoretycznie
+bo zalezy do w duzym stopniu od posiadanego przez was telefonu. Jednak ci ktorzy zanja sie
+w jakims tam stopniu na elektronice a do nich te rozwiazanie jest adresowane ...
+Powinni sobie poradzic.
+	Calosc polega na tym by jakos modem otrzymal to co jest na lini i wyslal na nia.
+Wiec musi on dostac odpowiednie napiecie jak by byl podlaczony do centrali.
+Jest to taka petla zasilajaca podlaczona do transformatorka seperujacego.
+Do transformatorka z drugiej strony podpiete sa dwa wzmacniacze... ja je wykonalem
+na popularnych wzmacniaczach operacyjnych uA741. Calosc trzeba jeszcze odpowiednio
+dobrac tak by poziomy sugnalow po obu stronach (dla modemu i na wyjsciu wzmacniaczy) byly
+na odpowiednich poziomach. Ja ze wzmacniaczy puscilem sygnal bezposrednio na tor w.cz.
+Dlatego wspominalem o kupnie telefonow z osobnymi torami (przewaznie sa w ekranowanych puszkach).
+Jest to troche roboty i czy warto to juz zalezy od was. Oczywiscie trafo seperujace nie jest konieczne
+mozna np. po odpowiednich przerubkach spiac to pojemnosciami lub rozwiazac na 1000 innych sposobow.
+Zalezy do w duzym stopniu z jaka szybkoscia transmisji chcemy pracowac, a to znowu powiazane 
+jest z rodzajem modulacji itp.
+
+
+Ambitniejsi moga wykonac cos leprzego.Ale to juz duzo pracy. Telefony na 900MHz pracuja 
+dwuch standardach. Roznia sie one czestotliwoscia pracy i paroma innymi sprawami.
+Pracuja oczywiscie w FULLDUPLEX.Powiedzmy sobie tak pasmo przenoszenia ktore zapewniaja powinno
+teoretycznie wystarczyc na transfer z predkoscia do 19200bps. Jednak do tego najlepiej by bylo
+uzyc samch torow radiowych,a cala elektronike dorobic samemu. Lub wypruc z telefonu wszelkie
+badziewia ktore moga ograniczac pasmo przenoszenia.
+
+
+	3.3 COS O KARTACH,URMNECIE itp.
+	
+	Ta czesc to raczej moje domysly itp. Jak juz pisalem nie mialem dostepu do kluczyka tak
+wiec nie moglem pozyczyc sobie telefonu do domciu. Opieram sie wiec o to co przeczytalem w innych
+FAQ.
+Ostatnio jednak pojawilo sie kilka dobrch FAQ dotyczacych oprogramowania. Caly problem w tym 
+co sie chce osiagnac... powiedzmy majac Source Code softu glownego procka... mamy problem
+dzwonienia za free  rozwiazany w elegancki sposob. Poprostu robimy sobie w
+sofcie jakiegos Back Doora np. pewna kombinacja klawiszy zastepuje nam karte itp. Telepsy nigdy by sie
+niepolapaly o co chodzi. Jedyne co by robili to Upgrade softu ale ile mozna ... No chyba zeby
+przeanalizowali soft znajdujacy sie w EPROMIE przerobionego Telefonu. Jendnak o taki, rozwiazanku mozna
+raczej zapomniec.. pisanie wlasnego softu od podstaw to kupa roboty a gdyby nawet komus sie chcialo
+to musial by miec dokladny schemat aparatu i specyfikacje wszystkich ukladow. Aby zrobic jakies
+zmiany na poziomie binarnym to duzo roboty i w niektorych przypadkach prawie niemozliwe w realizacji.
+Co do nagrywania kart na bebnie z wyrwanym wzamcniaczem (ukladem dopasowujacym itp.), naklejanie tasmy,
+lakierowanie, zapisywanie roznymi sygnalami prostokat, pila i co tam jeszcze ktos wymisli ...
+To popieram THE EYE ze to nierealne. Moze jest jakas szansa jak wygranie w Totka ze to zadziala.
+Nastepny sposob to powiedzmy zrobienie emulatora ktory by sie podpinalo po otwarciu aparatu i on
+przesylal by prockowi jaka karta jest wlozona. Jednak mija sie to raczej z celem jak sie otwiera
+telefon to mozna podpiac sie wlasnym aparaem i nie bawic sie w dosyc skomplikowane uklady.
+Powiedzmy jest jeszcze szansa zrobienia kopi karty ... Jednak do tego potrzebny by byl zapis 
+bitowy karty ... mozna go wyciagnac najprawdopodobniej z softu procka czytnika (sadze tak dlatego
+ze kolega dysponujacy Source procka glownego tych zapisow nie posiada). 
+Tak wiec majac zapis binarny danej karty to powiedzmy 1/4 sukcesu. Teraz mamy problem jak to zapisac na
+nosniku karty. Prawdopodobnie mozna wykozystac do tego beben z koro on moze robic zmiany na karcie
+to mozna by i zapisac swoje informacje. Trzeba by zgrac odpowiednio w czysie przesow karty i zapis
+co by wszystkie dane znalazly sie w odpowiednich miejscach. Trudno mi jednak powiedziec w jakim stopniu
+to jest mozliwe (nie widzialem bebna). Najpierw moim zdaniem nalezalo by sie postarac zapisac sekwencje
+wchodzaca na procka z glowicy .. I znowu mam dwa wariant bo nie wiem jak wyglada elektornika. Jezeli
+wchodzi na procka sygnal juz o poziomach cyfrowych to maly problem. Wystarczy prosty analizator
+stanow logicznych lub prosty programik ktory np. bedzie rejestrowal stan jakiegos pinu na LPT
+ktory jest wpiety na dana noge ... z zapisem jest to samo ...
+Jezeli natomiast wchodzi nam sygnal analogowy .. to trzeba go tyz jakos zapisac .. Uzywanie karty
+muzycznej to raczej kiepski pomysl. Najleprzy by byl dobry oscyloskop cyfrowy jednak watpie by 
+kogos bylo stac na cos takiego. Rozwiazaniem jest zrobienie w miare dokladnego przetwornika A/C
+i za jego pomoca rejestracja sygnalu. Nalezy przesledzic sygnaly odczytywane z karty jaki i sluzace do 
+zapisu na karcie moga one sie roznic. Wyprowadzenie sygnalu robimy w analogiczny sposob.
+To praktycznie gotowa przegrywarka do kart. Nalezy jeszcze zwrocic uwage na to co opisalem wczesniej
+czyli bardzo dokladna synchronizacje przesuwu karty .. odpowiedni punk startu zapisu i jego konca.
+Trudno mi powiedzec jak dokladnie mozna kontrolowac przesow karty w bebnie. Bo zapis jest bardziej
+zkomplikowany niz odczyt. Przy odczycie synchronizujemy transmisje do bitow startu i stopu...
+... a przy zapisie takowych raczej nie posiadamy.
+Jednak to tylko czysta teorja powstala w wyniku przeczytania kilku faq. Druga sprawa to karty
+Serwisowe itp. Po przeanalizowaniu kodu procka czytnika powinno sie wydobyc ich zapis
+binarny oraz algorytm kodowania (oznaczania karty) majac ten algorytm jestesmy w stanie twozyc
+wlasne karty z wlasnymi numerami serii itp. Niemal genialne ;). Robienie wlasnej nagrywarki to bardzo
+ambitny pomysl jednak raczej trudny w wykonaniu. Moim zdaniem pierwszy sposob czyli jakis backdoor
+(BUG) stwozony przez siebie w sofcie programu jest bardziej realny i wygodny w wykonaniu.
+Dotyczy to oczywiscie tylko niebieskich. Srebrny ma inne oprogramowanko itp. Wiec nagrywara 
+byla by bardziej uniwersalna. Tak powiedzmy ja to widze (po przeczytaniu kilku FAQ) 
+moze jak dorwe do domciu aparat gruntownie zmienie zdanie i postaram sie to opisac. Inni moga
+oczywiscie sadzic co innego i miec racje lub nie. Kolejna sprawa do dostepnosc aplikacji 
+ukladow, procesorow itp. Wiekrzosc mozna zdobyc z inetu wirmy produkujace uklady udostepniaja
+wiekrzosc za FREE (literatura,CD itp.) oraz w postaci plikow PDF na wlasnch stronach.
+Mozna tym sposobem zdobyc darmowe kompilatory,debugery oraz inny pomocniczy soft.
+Niektore firmy np. (National,Texas Ins..) zmienily troche polityke i chca niewielka oplate
+za dokumentacje sa to jednak naprawde male kwoty i zamowienie takich katalogow. Jest naprawde
+oplacalne. Motorola a to chyba wszystkich interesuje najbardiej :) udostepnia wszystko za free
+wystarczy wejsc na ich strone (dzial LITETRATURE ORDERING) i mozemy sobie za free zamowic
+troche nas interesujacych pozycji. Jak nie chcemy zamawiac to mozemy zciagnac w postaci PDF
+jednak ostatnio jeden ze sciagnietych PDF-ow nie byl kompletny brakowalo akurat najistotniejszych
+dla mnie danych (opis procka w radyjku FORD TRAFIC 3000). Jednak przyslana mi ksiazeczka zawierala
+juz wszystko :)
+No tak to jest mniejwiecej w teorji ... Moze ktos napisze jak jest w praktyce ... Moze ktos podszedl
+do tego tematu z innej strony ... Bardzo ciekawy jestem wynikow... Lub chociaz krotkiego infa...
+ 
+
+	3.4 FILTRY A IMPULSY ZALICZAJACE
+
+	Jest do dosyc ciekawy temat jak wiadomo przypomne moze troche ten temat choc w troche innym celu
+wiadomo ze fajnie jest podlaczyc sobie prosty filtr RC na kabelek. Filr wyglada mniejwiecewj tak
+
+                 R1                      R2
+               _____                   _____
+	o--------|   |---------*---------|   |---------o
+               -----         |         -----
+                             |
+                             |
+                           _____
+                           _____  C1
+                             |
+                             |
+                             |
+      o----------------------*-----------------------o
+
+Jest to jak wiadomo najzwyklejszy filtr RC dolno przepustowy ... jak policzyc elementy zostalo
+opisane. Problem w tym ze ten cudowny uglad przestaje byc funkcjonalny gdy telefon musi odbic sygnal.
+Wiec dlaczego by nie skonstruowac sobie czegos takiego:
+
+
+
+                         _________________
+                         |               |         R1        R2
+        o----------------| Uklad         |--------[ ]---*---[ ]-------o
+                         | odbierajacy   |              |
+       linia             | i odbijajacy  |              = C1         telefon
+                         | impuls.       |              |
+        o----------------|               |--------------*-------------o
+                         |               |
+                         -----------------
+
+
+Oczywiscie filtr mozna a raczej powinno sie zaimplementowac w uklad odbierajaco odbijajacym.
+Ktos powie dobra ale jak ... A wiec zainteresowanch tematem odsylam na strone firmy CML
+(Consumer Microcircuits Limited) www.cmlmicro.co.uk i przyjzec sie dokladniej ukadowi FX631
+nas konkretnie bedzie interesowac wersja FX631B. A teraz cos blizej.
+Jest to uklad detektora sygnalow SPM oraz Security. A wiec to co nam jest mniejwiecej potrzebne.
+Jest to uklad zaprojektowany i polecany mniejwiecej do zabezpieczania takich badziewek jak 
+automaty publiczne. Jest tez kilka podobnych ukladow. Pamientajmy ze interesuje nas wersja
+12/16KHz. Ewentualnie mozna sopie z tego zrobic czujnik czy centrala wysyla 16KHz a Automacik je
+odbija... zreszta temat do rozpatrzenia
+
+Mozna tam znalezc jeszcze kilka przydatnych ukladowi wymyslic znalesc dla nich jakies ciekawe
+zastosowanko. Jak znajde troche czasu to postaram sie opracowac cos wiecej.
+To narazie takie male info, a moze ktos ma chec sie tym zajac?
+
+
+
+	3.5 RADIO PHREAK
+
+	RADIO PHREAK ... pisze to po przeczytaniu PIT FAQ ... z tego co przeczytalem jest to
+calkiem fajna sprawa wiec chce dozucic cos z mojej strony. Co do sprzetu jaki mozna uzywac
+trzeba zwrucic uwage na radyjka krutkofalarskie .. poprostu niektore pracuja tylko w pasmie
+od 144MHz do 146MHz, a inne szezej sa to radyjka z pasma 2m natomiast na radyjkach z pasma 
+70cm mozna spokojnie podsluchiwac CENTERTEL one przewaznie maja szerszy zakres. Co do
+przerabiania 3001 to niejest to az tak trudne. Trzeba poszukac odpowiedniego modelu
+byly produkowane np. na 40MHz nam bedzie potrzebne chadzace w poblizu 150MHz.
+Przerubka takiego radja ogranicza nam sie do zmiany kwarcow lub ich przeciagniecia 
+i lekkiego przestrojenia glowicy wejsciowej. Cala reszta czyli p.cz. itp. zostaje.
+Problem jest z tym sygnalem ktory podobno jest emitowany. Poprostu na ucho to mozna
+sobie oceniac. A w centrali zpewno jest dosyc selektywny filtr ... ale to powiedzmy maly
+problemik. Wystarczy podlaczyc przestrajany generatorek m.cz. i powoli sobie zmieniac czestotliwosc.
+Az zalapie i dostaniemy sygnal zgloszenia. Jednak do takiego radyjka najlepiej jest wsadzic sobie
+petle PLL i niebawic sie z kwarcami. Do podsluchiwania najlepiej zmontowac jakis prosty odbiornik..
+Wiele schematow jest dostepnych w starszych numerach RADIOELEKTRONIKA i ELEKTRONIKI PRAKTYCZNEJ.
+Z tej ostatniej mozna nawet zamowic KIT jak pamietam. Sa to odbiorniki nasluchowe na pasmo 2m
+przestrojenie takiego odbiorniczka w gore nie powinno stanowic wiekrzych problemow dla ludzi
+zajmujacych sie elektronika. Do tego celu mozna tez wykozystac NADAJNIKI ZEW pracujace na 300MHz
+koncwka w takim TRANSCIVERKU jest na 150MHz i za nia jest powielacz ... wystarczy go wywalic..
+zrobic glowice itp. Jednak 3001 jak i ZEW sa dosyc klopotliwe w zasilaniu.
+Tzn. 3001 zasilane jest napieciem -24V (na masie jest tak jakby + ale to nie dokonca prawda)
+a ZEW -24 i -12 ... Co prawda do 3001 mozna dostac oryginalna przetwornice z 12V czyli do podlaczenia
+w samochodzie do ZEWA tez ale troche trudniej.
+
+	 Niejest to do konca prawda co kolega napisal ... jezeli ktos dobze
+siedzi w elektronice to sobie spokojnie poradzi z torami w.cz powiedzmy ze te czestotliwosci
+jeszcze nie sa tragiczne... mlynek zaczyna sie powiedzmy od ok 500-900MHz a troche trudniej jest
+z czestotliwosciami zedu GHz a z dziesiatkami GHz to juz jest kosmos :).
+Problem polega na tym ze na wyzszych pasmach trzeba okrobnie dbac o takie szczeguly jak dlugosc
+koncowek elementow rodzaj laminatu itp. Poprostu takie pierdoly wprowadzaja nam rozne dodatkowe
+pojemnosci w uklad. Najlepiej na to pasmo jednak bylo by zbudowac TRANSCIVER pracujacy w FULDUPLEX.
+Jest to jednak zadanie dosyc trudne do wykonania i tutaj przyznam racje koledze... do takiego
+czegos potrzeba kogos kto sie juz bawil w budowe konstrukcji w.cz. Kolejna sprawa jest tez
+mozliwosc np. Pirackie kozystanie z SATELIT ... jak ktos potrafi sobie zbudowac nadajnik to prosze
+bardzo. Transponder to generalnie Lusterko. Np. do wejscia na EUTELESATA wystarczy spokojnie ANTENKA
+2m i moc ok 2W (w suwalkach jakies 2.5W)  ... to jest potrzebne do spokojnej transmisji.
+Jednak powinno sie wejsci i 100mW jednak taka moc niewystarczy nam do transmisji danych. Nieradze
+tez (choc watpie zeby ktos to zrobil, potrzeba duzo praktyki w budowie uzadzen w.cz)
+zaklucac sygnalu ... namieza was z dokladnosciado 5m ... z tego satelity. 
+Wmiare bezpiecznie mozna pakowac sie w dziury pomiedzy kanalami ...
+jednak trzeba wiedziec w ktore. Poprostu np. na EUTELESACIE analizatory widma sa podpiete do 
+komputerkow, same sie stroja i sledza tylko to co idzie na sprzedaz. Co jakis czas komputrki
+robia z tego logi (to co teraz napisalem jest tajemnica i niewiele ludzi o tym wiedzalo). 
+No ale tutaj to juz zaczynam przesadzac... chyba niestety nie to grono. Jednak gyby to kogos
+interesowalo to moge wymienic czestotliwosci niesledzonego pasma,formaty ramek kodowania itp.
+Oczywiscie za cos super rewelacyjnego :)
+Na tym chyba zakoncze ta czesc... No chyba ze znajda sie ludzie zainteresowani RADIO PHREAK-iem
+oczywiscie z odpowiednimi umiejetnosciami. To postaram sie wspomniec cos wiecej na temad budowy
+nadajnikow i odbiornikow. Ewentualnie budowy anten. Najpierw jednak musze ta informacje sprawdzic
+na ile jest to pewne ;). Pozdrawiam kolege ktory napisal PIT FAQ w tym miejscu i zapraszam
+do wspulpracy ... 
+
+
+	3.6 CHIPCARD
+
+	Wspominalem juz ze mam zamiar zajac sie kartami CHIPOWYMI. Narazie nie mialem
+na to zbyt wiele czasu i mam dostep tylko do kart Niemieckich. Moze ktos mial by ochote
+podeslac mi jakies Polskie karty (puste lub z paroma impulsami aby nie narazac na koszty).
+Niemialem niestety ostatnio zbyt wieleczasu aby sie tym konkretnie zajac. Z tego co stwierdzilem
+sa male roznice jezeli chodzi o FAQ ktory przetlumaczyl A7URN... jednak iema sie co dziwic
+FAQ ten powstal bardzo dawno i mozna sie bylo tego spodziewac.
+Oto przyklad zawartosci karty Niemieckiej :
+
+			0000:1B F4 3F 55 54 75 75 03 00 00 00 FE F0 FF FF FF 
+			0010:FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+			0020:FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+			0030:FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+
+Jest to karta o wartosci 6DM na ktorej zostalo 0.6DM ... niestety nie mialem czasu na analize
+zawartosi pamieci. Moze to komus sie do czegos  sie przyda. Jak bede mial cos wiecej to postaram sie
+opisac... Moze przyda sie to do analizy Polskich kart. Tak samo postaram sie opracowac wmiare
+prosty w budowie emulator kart chipowych. Wszystko to jednak zalezy od wolnego czasu ktorego
+ostatnio mi bardzo brakuje.
+
+	4 TROCHE O RADYJKACH
+
+	Ten dzial to nie nie dzial zapowiadany w poprzednim FAQ a jedynie krotkie info.
+Napewno na tym to sie zkonczy i nie bede go ciagnol dalej. Poprostu ten temat
+to czysty zarobek oraz utrzymywanie zlodzieji radi itp.  Jak ktos chce sie tym zajmowac
+to niech tez placi. Poprostu wspomnialem wczesniej na temat RADYJEK i chce wyjasnic 
+jak to wyglada... oraz zakomunikowac ze z mojej strony nic wiecej na ten temat nie wyjdzie.
+Jak i na inne tematy zwiazane z czystym zarobkiem pieniedzy ... Jestem za utrudnianiem
+zycia tepsie i innym tego typu firmom i nie gniewam sie jak mozna sobie na tym jeszcze
+troche zarobic gdy oni traca :). Jednak to pod te rozumowanie nie podchodzi.
+
+Wiec sprawa przedstawia sie tak ... W radiach najczesciej jest pamiec uWire  choc I2C tyz 
+mozna czasami spotkac. Pamieci najlepiej szukac pod mechanizmem i przewazniw jest do
+niej przerabany dastep... wiec wykrecamy mechanike ... tego nielubie okropnie...
+Kod jest zapisywany najczesciej w sposub jawny. Oprucz kodu mamy licznik bledow
+jakie mozemy popelnic podczas wprowadzania. Sa tez radyjka z kartami 
+CHIPOWYMI i REZYSTOROWYMI. W przypadku rezystorowych trzeba radyjko nauczyc
+takiej karty jeszcze raz. Lub gd nie chce zwieramy wszystkie nogi karty ze soba ...
+(lutujemy) i w tety pomaga na 100%. W niektorych radyjkach pamieci sa w zalanych blokach
+i trzeba sie niezle na gimnastykowac z dostaniem sie do nich. W innch sa dziwne Hybrydy.
+A w jeszcze innych procki roznych firm np. Motoroli najczesciej sa to HC05 i HC11
+z wewnetrzna pamiecia ROM i EEPROM. Wlasnie w pamieci EEPROM jest zapisany kod
+oraz liczba pomylek. Tak samo jak w Telefonach moze byc chroniona suma kontrolna
+kod moze byc zapisany w sposub jawny lub w jakis sposob zakodowany.
+Procesorki te jednak zawsze maja oznaczenia Zxxxxx najlatwiej mozna rozpoznac
+po dolaczonym kwarcu (jego czestotliwosc) i do ktorych nug jest podpiety.
+Zdazaja sie tez procki tzw. FIRMOWE z zabezpieczeniem przed odczytem. Gdy bedziemy
+chcieli odczytac zawartosc EEPROMU zostanie ona skasowana itp. 
+Kolejna sprawa to musicie zdobyc sobie gdzies soft do odczytania tej pamieci
+i zrobic interfejs (standardowo na MAX 232) i pare innych elementow
+sluzacych do wprowadzenia procka w tryb serwisowy (programowania).
+Wiecej danch znajdziecie na stronach MOTOROLI. I teraz maly przyklad
+Mam na dzieje ze cos z tego zrozumiecie bo opis robilem dla siebie...
+
+Radio: VW BETA 
+Procesor: MOTOROLA 68HC11 kwarc 8MHz
+
+Wprowadzanie kodu AS+TA
+Zatwierdzanie kodu AS+TA
+
+
+ZAPIS KODU:
+
+ADRES | $03 | $04 | $05 | $06 | $07 | $08 | $09 | $0A | $0b |
+------+-----+-----+-----+-----+-----+-----+-----+-----+-----|
+      |  AB |  CD |  EF |  GH |  IJ |  KL |  MN |  OP |  RS |
+-------------------------------------------------------------
+
+      A = 1 CYFRA KODU    G = 3 CYFRA KODU     M = LICZBA POMYLEK 0-OK
+      B = 2 CYFRA KODU    H = 4 CYFRA KODU     N = 0-KOD NIE AKTYWNY,9-KOD AKTYWNY
+      C = 0F-A            I = 0F-G             O = 0F-M
+      D = 0F-B            J = 0F-H             P = 0F-N
+      E = A EXOR 05       K = G EXOR 05        R = M EXOR 05  
+      F = B EXOR 0A       L = H EXOR 0A        S = N EXOR 0A
+
+PRZYKLAD1:
+
+ADRES | $03 | $04 | $05 | $06 | $07 | $08 | $09 | $0A | $0b |
+------+-----+-----+-----+-----+-----+-----+-----+-----+-----|
+      |  16 |  E9 |  4C |  26 |  D9 |  7C |  09 |  F6 |  53 |
+-------------------------------------------------------------
+
+KOD=1626
+LICZBA POMYLEK=0
+KOD AKTYWNY
+
+PRZYKLAD2:
+
+ADRES | $03 | $04 | $05 | $06 | $07 | $08 | $09 | $0A | $0b |
+------+-----+-----+-----+-----+-----+-----+-----+-----+-----|
+      |  16 |  E9 |  4C |  26 |  D9 |  7C |  00 |  FF |  5A |
+-------------------------------------------------------------
+
+KOD=1626
+LICZBA POMYLEK=0
+KOD NIE AKTYWNY
+
+
+Tlumaczyc tego nie bedo bo nie chce i tak zbyt wiele powiedzialem na ten temat
+wiec koncze ten chory rozdzial... Wkazdym razie jak troche sie dowiecie na jakiej
+zasadzie jest to robione i jak zachowuja sie niektore procki ze zla zawartoscia
+pamieci to moze przestano sie pojawiac teksty typu zamrazalnik... 
+piekarnik... albo moze gotowac przy pelni ksie... ze skrzekiem zaby itp....
+
+
+
+	5 TEMATY DO PRZEMYSLENIA
+
+	No z tego co widze to chyba koniec z pisaniem tego FAQ (przynajmiej narazie).
+W temacie GSM napisalem juz chyba wystarczajaco wiele... reszta to juz tylko wasze
+umiejetnosci i operatywnosc w zdobywaniu nowego softu lub pisaniu wlasnego.
+	Z dzialem PHREAK jest troche inna sytuacja. Poprstu zkonczyly mi sie jakies
+w miare normalne tematy. A niemam zamiaru pisac kolejnego FAQ jak rozpierdolic
+URMNETA itp. bo wandalizm mnie raczej nie pociaga. Dlatego powstal chyba ten dzial.
+Mam kilka pomyslow ktore moze zrealizuje poprostu to zalezy od zainteresowania 
+temeatem i mojego wolnego czasu. Jak macie jakies ciekawe pomysly to mail-me jak bede
+mial czas to przemysle kwestie. A wiec tak w kolejnosci:
+
+a) FAQ dotyczacy transmisji oraz kodowania sygnalu w telefonach GSM oraz
+  opis wykozystywanych w lacznosci modulacji do przesylania danych cyfrowyh
+oraz analogowych.
+
+Jednak tutaj bedzie duzo matematyki i innych wzorow (praktycznie sama teoria).
+
+
+b) Programik + prosty interfejs sluzacy do przerabiania i programowania EPROMOW
+wystepujacych w NIEBIESKICH URMNETACH (w sofcie zmiana napisow  ver itp. oraz
+normalny edytor binarny).
+
+Tego tlumaczyc chyba nie trzeba...
+
+c) ????
+
+A tutaj moze czyjs pomysl ....
+
+Jak kogos interesuje jakis temat to mail-me zobaczymy jakie bedzie zainteresowanko
+i moze (bo niczego nie objecuje) zajme sie jego opracowaniem.
+ 
+
+
+	6 COS TAM
+
+Jakos nie mam pomyslu na nazwe tej czesci ...
+
+	6.1 INFO
+
+	Jak kogos interesuje jakis temat poruszony tautaj lub ma inny ciekawy pomysl ....
+moze napisac na adres tom@jegorek.pwr.jgora.pl jak bede mial czas to moze cos wymace lub dopisze
+do tego FAQ...
+
+UWAGA !!!
+Programow zadnch nie wysylam znalezc je mozna w INECIE !!! 
+
+
+	6.2 GREETZ
+
+Na poczatku pozdrawiam jedna taka najkochansza Monike K. z mojego miasta co lubi Czarne Mercedesy...
+
+i w kolejnosci:
+Hrabiego- za kawal dobrej roboty w tej dziedzinie.
+as7urn - niezly faq na temat kart ... (szkoda tylko ze zapomniales przy tlumaczeniu o nazwisku autora)
+DaveCool - cos umilkles miales napisc jak tam sobie radzisz ... i jak sprzydaly sie haselka ???
+Andrzeja Dudka mojego nauczyciela Informatyki za calokrztaut...(Widzialem ze wydales nowa ksiege)
+Technomancera - cos nie chcesz odpisac ...
+Oriona/Exmortis - jak tam kodujesz dalej?
+Toudi - dalej pracujesz pod 3DSMAX na P90?
+Beerman - Kiedy wreszcie cos napiszesz w ASM-IE :-)
+THE EYE - Powodzenia w dalszych pracach ...
+
+Teraz grupowe:
+Raiden,Maf,Beerman,Kaza,Sliwka,Artura i Andrzeja...
+oraz wszystkich zainteresowanych tematem...
+
+
+
+Tom/Alcoholic Team
+
+Moj kluczyk PUBLICZNY:
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+Version: PGPfreeware 6.5.1 for non-commercial use <http://www.pgp.com>
+
+mQGiBDgIg8gRBADRsnL23jbCX/A3p0lXuLjWbx668W3UPDNnbbOd4yGWHz2qsqO2
+a607TIm1Lx2YrKQ/UdxP1x/1xVo6PaYoBLq/lSeEmafc15t1wPBbahm9qxex1I95
+xpV7wTor7UVTwJTL4UctQr8jdIY4x/DDqhBEsQ1F5Z4QsKdDh/cAB28ljQCg/656
+kCAgcYrUiOQcuJ1ATaAROPMD/3W0MUsyyUJeEAiCJeTkfAItSg9M2WpWLnntv5g7
+4PshSFjSWagPigyCwMS7RDkn2EUzRFWGx2dJmJn2cYbtP/UJoSo9qz1/pwKxwqa6
+K5NNhoNbdZYxd0Ic1frWv97PzoqzV6fBbvSF9JGA0DJa8S1PCkC49ZfgayjBtpex
+NnXbBACZLcE5kpjMoqqyrD7HWUClZV5CP0ZRND/8mG/WO1Uv0/4i9aBmqnjhqaed
++++RGx9DNVegP2bEGbuDPgzR0xvFKVilJ78YJ/iJoCWmmFJbsSdWQ0OFBJuStCxl
+J5wmx4q15NKjBTXAHvzIMgPeSx1HxDNQ3jiJAPKxrCJR8VrS0LQtVG9tL0FsY29o
+b2xpYyBUZWFtIDx0b21AamVnb3Jlay5wd3IuamdvcmEucGw+iQBOBBARAgAOBQI4
+CIPIBAsDAgECGQEACgkQhxxtU2qv9eSdSQCeM1XUpQ7lcdQ8YWBdMDzsT0nP3+UA
+niUX75EQCZjJ8pc82N8TJApU/cyyuQQNBDgIg8kQEAD5GKB+WgZhekOQldwFbIeG
+7GHszUUfDtjgo3nGydx6C6zkP+NGlLYwSlPXfAIWSIC1FeUpmamfB3TT/+OhxZYg
+TphluNgN7hBdq7YXHFHYUMoiV0MpvpXoVis4eFwL2/hMTdXjqkbM+84X6CqdFGHj
+hKlP0YOEqHm274+nQ0YIxswdd1ckOErixPDojhNnl06SE2H22+slDhf99pj3yHx5
+sHIdOHX79sFzxIMRJitDYMPj6NYK/aEoJguuqa6zZQ+iAFMBoHzWq6MSHvoPKs4f
+dIRPyvMX86RA6dfSd7ZCLQI2wSbLaF6dfJgJCo1+Le3kXXn11JJPmxiO/CqnS3wy
+9kJXtwh/CBdyorrWqULzBej5UxE5T7bxbrlLOCDaAadWoxTpj0BV89AHxstDqZSt
+90xkhkn4DIO9ZekX1KHTUPj1WV/cdlJPPT2N286Z4VeSWc39uK50T8X8dryDxUcw
+Yc58yWb/Ffm7/ZFexwGq01uejaClcjrUGvC/RgBYK+X0iP1YTknbzSC0neSRBzZr
+M2w4DUUdD3yIsxx8Wy2O9vPJI8BD8KVbGI2Ou1WMuF040zT9fBdXQ6MdGGzeMyEs
+tSr/POGxKUAYEY18hKcKctaGxAMZyAcpesqVDNmWn6vQClCbAkbTCD1mpF1Bn5x8
+vYlLIhkmuquiXsNV6z3WFwACAhAA5fKRzsGj6ULwIEzSRnCmfcnNdOyeYUu31hah
+/r8N/VMWCB/c8k7isz2qIjF7LecifoxDkA0e4c3Hg+SvLCZJhwDgEhfInFmqseFN
+ecOUajBmdCSKA7QkpJYnV2PDsEjtqFHujadwC44X5Sd5RJfPM+AKwX45FOQkP24T
+TcCIzRSXeR8dIn+9e5gCRRISSY0cpep918PJHiMmz2ckb2X8CTy6uMQ3CHvB1JpB
+Qkhu+XUhMggYhbt+hF81TAgbE78g8MjOf6JYK0StiZg92/QlYX13ubkjkf7/v8Uw
+QtYelMQnFLd6+WxUOgFsn9wERSvENYIOabJre2GuduzOvllIT2sra/STIksynOSW
+ZpoAmSyIDOzabLa7J9WJDoBxSJ37eXd9lpOtS3t85Lr05u9xhIeH1TMgHEq5+Um6
+X6et1NQis9lSriEtbb+x14FKuisgICLOU/vtin/SyqzwfYEssjTAgaa15KafWv0e
+2rKGhCEG6mQ8aMwZLE76uMSQn0l9/mviMZeL2Oow4Mgam0iU9FNmS8IpUjGeee6A
+s6AU9YHS0Cc7OJOiIKov8EtjKRa0v62GSHxtZqYhGU/X9oBidQMFpZRmCypjMC0x
+oJlB7iz6DYUW/s5BpHJrOLc+DEwHKp/j+kbNPenrS09BQX2dk58LVSL/YdjpwVKB
+1NsbL+aJAEYEGBECAAYFAjgIg8kACgkQhxxtU2qv9eR8qQCcDwd+Y+k4TsQJkbHO
+jHZaKoPFpWAAoLcsaGUE21MHSWnMZT2r0DCJVXC4
+=UCqj
+-----END PGP PUBLIC KEY BLOCK-----

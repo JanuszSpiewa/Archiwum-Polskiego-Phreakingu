@@ -1,0 +1,1047 @@
+
+                       >>hrabia faq v.29.01.99<<
+
+
+                          ..--= HRABIA =--..
+                          hrabia2@kki.net.pl
+                      http://hack.zone.to/hrabia/
+                        http://www.tpsasux.com/
+
+
+
+LEGENDA:
+N - nowe
+U - uaktualnione
+Z - zmienione bo stare bylo 'niepewne'
+? - niepewne;)), badz nie sprawdzone jeszcze
+
+
+U  1. INFO
+N     1.1. E-MAIL
+   2. POTRZEBNY STUFF
+      2.1. KLUCZYK
+      2.2. TELEFON DO PHREAKU - PHREAKOMAT:)
+           2.2.1. MINIPHONE
+      2.3. OSPRZET DO TELEFONU
+   3. POLOWANIE
+   4. WPINANIE SIE DO URMETA
+      4.1. PRZYGOTOWANIE BUDKI
+           4.1.1. NIEBIESKI
+           4.1.2. SREBRNY
+      4.2. WPIECIE W BUDKE
+      4.3. GRATIS BUDKA NA WEEKEND
+   5. WPINANIE SIE DO LINI
+      5.1. OGOLNIKI
+      5.2. KURZE STOPKI
+      5.3. DZIURKA:)
+      5.4. WPINANIE Z KOMPEM
+           5.4.1. W AUTKU
+           5.4.2. GDZIE INDZIEJ
+      5.5. PODTRZYMYWACZ - ROZMOWY MIEJSCOWE ZA FRIKO
+   6. CZYTNIK OD URMETA
+      6.1. CO Z TYM ZROBIC???
+      6.2. CO ZROBIC ZEBY NIE STRACIC IMPULSOW
+   7. DIAGNOSTIC MENU
+U  8. SREBRNY URMET
+   9. FREE INTERNET (CALLBACK:((  )
+  10. ZWIERANIE GLOWICY
+N 11. EPROMy
+N     11.1. KODOWANIE /by quax/
+N     11.2. DOWNGRADING
+N           11.2.1. JAKI NA CO PO CO I DLA CZEGO
+N     11.3. TEKSTY
+  12. JAK OZYWIC 'POZYCZONA' BUDKE
+  13. POZYSKIWANIE KART:((
+      13.1. KOLECZKO
+      13.2. DZIURA
+  14. CIEKAWOSTKI:)
+  15. JAK DOROBIC SOBIE KLUCZYK TYPU 'ABLOY'
+  16. GREETZ
+U 17. PHREAK ZONE
+N     17.1. MEMBERS ZONE
+
+1. INFO
+
+Na  poczatek  powiem,  ze  to co tu  jest  napisane  to  tylko do celow
+edukacujnych  i niech  nikt sie  nie wazy  stosowac tego  w praktyce;))
+....he he he;)  Wszysko co tu pisze  powinno  zadzialac  chyba, ze jest
+zaznaczone, ze  spekuluje sobie:)) Wszystko  napisane jest  raczej dosc
+lopatologicznie i chyba  kazdy zrozumie o chodzi:)  Oczywiscie wszystko
+sprawdzalem  na  wlasne oczy, no chyba  ze pisze inaczej, a jak jest tu
+cos co ktos kiedys napisal to sorry, ja niczego podobnego nie czytalem,
+zreszta  dlatego to  pisze:)) Najnowszej wersji szukaj na  pHreak zOne:
+http://hack.zone.to/hrabia/ . Jak ktos czegos nie rozumie, nie wie o co
+mi  chodzi  to zapraszam  na moja stronke, tam  sa fotki  calych flakow
+urmeta, zarowno  niebieskiego jak i srebrnego:) A jak ktos uwaza, ze to
+faq jest do dupy, lame albo  cholera wie  co jeszcze  to wcale nie musi
+go czytac :P. Aha... radze tez poczytac sobie moje drugie faq o  karcie
+programing  i  jej  mozliwosciach...:)  Mozna je (faq) znalezc na mojej
+stronce jako 'menu.zip' w dziale 'teksty':) 
+
+1.1. E-MAIL
+
+Hmm... pisze to bo juz mnie szlag trafia czasami... No wiec tak: Ludzie
+nie piszcie  do nie listow  w  stylu:  "czy moglbys mi podeslac..."  bo
+wszystko co ja mam do podsylania jest na mojej stronie!!! A jak  czegos
+tam nie ma to znaczy, ze albo nie mam albo nie chce dac!  No  a  listy:
+"Powiedz mi prosze jak dzwonic za darmo" od razu laduja w koszu...  bez
+dalszego doczytywania. Wszyko pisze w roznych faq! Sa i listy dotyczace
+MEMBERS ZONE na mojej stronce. Nie piszcie o passworda bo daje go tylko
+po spelnienu jednego wrunku... jakiego? pisze w punkcie MEMBERS ZONE:))
+No to to by bylo chyba na tyle...:))
+
+
+2. POTRZEBNY STUFF
+
+2.1. KLUCZYK
+Dobra zacznamy.  Najpierw trzebaby sie  zaopatrzyc w kluczyk do urmeta.
+Kluczyk  to  podstawa i bez  niego niewiele  da sie zrobic...  gdzie go
+zdobyc??? Ano trzeba popytac ludzi, ktorzy go maja, pomeczyc  znajomego
+montera, zrobic na podstawie zamka itp:)
+
+2.2. TELEFON DO PHREAKU - PHREAKOMAT:)
+Teraz  powiem  jak  sobie  zrobic  fajnego  phreakomata  do dzwonienia.
+Kupujemy  od  jakiegos  gostera taki stary  ruski telefon - sluchawka z
+guziczkami,  dziadostwo,  ale  jest  najmniejsze  co   znalazlem.   Jak
+znajdziesz cos mniejszego to lepiej.  Dobrze jak telefon ma przelacznik
+tone/pulse a jak nie ma to wybieranie tonowe mozemy miec z tonedialera.
+Jest to jeszcze jeden  plus bo mamy wtedy bezprzewodowa klawiaturke:)).
+No nic ja  opisze jak przerobic  telefon  podobny  do tego ruskiego. No
+wiec otwieramy sluchawke i wyjmujemy plytke. Calosc nie jest  zbyt mala
+wiec  przecinamy  plytke  na  pol  i laczymy  przeciete  czesci jakimis
+drucikami, tylko sobie  scierzek nie  pomylcie... 2 kabelki od glosnika
+(tego co nim sluchamy)  przylaczamy  do gniazda jack (dzek sie mowi:)),
+takie cos jak do sluchawek) cobysmy  mogli sluchac  przez sluchawki np.
+douszne, sa male, nie widac ich. Tam gdzie mikrofon tez wlutuj  kabelki
+z gniazdem i juz. Tam gdzie wchodzi linia tez wlutuj  kabelki i zakoncz
+je jakims  gniazdem, ja mam mikrojacka.  Jest jeszcze cos  takiego  jak
+psztyczek sluzacy do 'podnoszenia' i 'odkladania' suchawki.  Wydup go z
+plytki wlutuj kabelki  zakonczone jakims rozsadniejszym przelacznikiem.
+Najlepiej  bedzie  jak kabelki  beda  przymocowane  do  przelacznika za
+pomoca  takich  wsowek, coby je  mozna bylo  latwo odczepic.  Po  co za
+niedlugo.  Kupujemy  jeszcze gniazdo modularne (tak sie chyba nazywa...
+takie  jak masz  w modemie z  tylu,  musi miec 6 rowkow)  i do drucikow
+przlaczamy  kabelki  i  2  pierwsze  lutujemy  tam  gdzie  sluchawki, a
+pozostale  2 do mikrofonu.  Teraz  obudowa.  Kup sobie taka zeby ci sie
+wszystko  zmiescilo, ja  upchnalem  to  do  obudowy  wielkosci  pudelka
+papierosow:)) A mam jeszcze  w tym sporo bajerow: diodki,  potencjometr
+do  sluchawek, gniazdo do  licznika  przerwan  (jak  jestes  wpiety  do
+jakiejs lini  tak, ze ludzie  moga  z niej  kozystac i  powiedzmy budka
+wybiera  impulsowo  to ten licznik pokazuje jaki numer goster wybral:))
+Siedzimy  sobie,  podchodzi koles, dzwoni, wtedy  'podnosimy sluchawke'
+naszego phonea  i sluchamy  co  pieprzy, facet  umawia  sie z panienka,
+odchodzi, my dzwonimy do panienki i mieszamy:))).  Dobra ale do rzeczy.
+W  obudowie robimy  pierdzielna  dziure  na klawiaturke.  Z obudowy  od
+naszego  ruskiego  telefonu  wycinamy ten kawalek  gdzie  sa dziurki na
+guziczki od klawiaturki i wklejamy go do naszej nowej obudowy.  Na dole
+(zebysmy  mogli  trzymac  telefon  w  dloni a  kabelki  od  sluchawek i
+mikrofonu  wchodzily  nam do rekawa  od swetra)  robimy tez  dziurki na
+gniazda jack i na nasze gniazdo  modularne, a u gory po prawej  stronie
+dzure  na  wlacznik/wylacznik  (bedzie lezal pod naszym kciukiem)  a po
+lewej otworek na gniazdo dla lini (mikrojack u mnie).  Po bokach mozemy
+sobie wladowac potencjometry, przelaczniki  na przodzie diodki, zreszta
+tutaj mozna niezle wymyslac.  Ja juz  miejsca  nie mam na inne bajery:(
+
+2.2.1. MINIPHONE
+Zdupil  mi sie kiedys phreakomat a wakacje sie  zblizaly wiec  cus trza
+bylo miec, tylko co..? Zaczalem lazic po sklepach w poszukiwaniu czegos
+malego na tyle zeby sie zmiescil do obudowy po starym telefonie  (fotka
+na mojej stronie,  a opis w punkcie wyrzej:)).  No to laze,  ale  zaden
+frajer w sklepie mi nie rozdupi telefonu  zeby pokazac jaki duzy jest w
+srodku wiec kupowalem w ciemno. Dopiero za 3 razem trafilem (w sumie to
+150zl poszlo sie walic,  moglbym se bezprzewodowca sprawic ale  co tam)
+na  cos  niezbyt  duzego i  raczej nadajacego sie do przerobki a byl to
+telefonik:  STC model 103  w slicznym blekitnym kolorku;).  Zaczalem go
+przerabiac i przy cieciu plytki cos zdupilem i przestal mi chodzic...:(
+w  akcie  desperacji  zaczalem  wylutowywac  rozne czesci i wyszedl  mi
+telefonik:)  Koniec  smiecia  teraz  bedzie  opis  co zrobic  zeby miec
+telefonik  mieszczacy  sie  do  polowy podelka od zapalek:) Po pierwsze
+kupujemy  telefonik  STC  103   (maly,   sluchawka  +  podstawka,   nic
+specjalnego, cena okolo 50zl) i go rozkrecamy.  W podstawce jest plytka
+odpowiadajaca za dzwonienie i ine takie bajery, to ja wyjmujemy. Lecimy
+dalej w sluchawce mamy 2 plytki. Jedna to klawiaturka a druga to  flaki
+naszego  telefonu.  No  i  teraz  zaczyna sie najciekawsze:)  Odlaczamy
+klawiaturke i wszystko co przylaczone do  drugiej plytki.  Z  plytki  z
+flakami wywalamy _WSZYSTKO_ za wyjatkiem nastepujacych czesci: R5, R13,
+R14, R15, R26, R27, Q1, Q2, Q4, Q5, C14, C8,ZD2 Zostawiamy tez wszyskie
+"mostki" laczace to czego nie dalo sie polaczyc za pomoca sciezek, maja
+one oznaczenia Jxx (chyba;)  Teraz obracamy plytke sciezkami  do oczu i
+patrzymy. Trzebaby teraz przerysowac schemat tego co zostalo,  w trybie
+tekstowym ciezko a chwilowo niet skanera wiec ja nic nie dam ale powiem
+ze jest bardzo prosciutki.  Dla  wlasnej  wygody  mozna sobie "odkleic"
+nieuzywane sciezki. Teraz wytrawiamy sobie plytke  albo  nasze  ocalale
+czesci lutujemy na tzw. pajeczynke (ja tak mam i ma ona wymiary 2x2x1cm
+oczywiscie w pewne miejsca naszej pajeczynki  lutujemy  kabelki  (sa 4;
+sluchawka1, mikrofon1, mikrofon2, linia1) A co z linia2 i sluchawka2???
+Zaraz. Teraz trzaby zlozyc wszystko w calosc. Do kabelkow od  mikrofonu
+lutujemy mikrofon. Teraz przygotowywujemy  sobie dwa gniazda:  minijack
+mono i jack stereo + wlutowane do nich kabelki.  W  jacku stereo robimy
+zeby  byl  mono;))  No i jakis przerywacz  (np. cos takiego jak czujnik
+otwarcia w niebieskim urmecie; chodzi o to zeby pykajac przerywac obwod
+i tym samym wybierac impulsowo numer) Z pajeczynki wystaja dwa kabelki:
+linia1 i sluchawki1 to laczymy je do odpowiednich  jackow.  Patrzymy  i
+co? w obydwu jackach zostalo po jednym wolnym kabelku no to laczymy  te
+kabelki za pomoca przerywacza.  I jeszcze wsadzamy do jakiejs obudowy i
+wsio:) calosc jest dosc kiepskim telefonem i radze go robic  dopiero  w
+przypadku zjebania plytki, kiedy juz nic innego sie z niej  zrobic  nie
+da. Jak wybrac numer skoro nima klawiatury???  Albo  robimy  to biperem
+albo naszym przerywaczem (jak wie kazdy, metoda po 3 pukniecia) A teraz
+sie  pochwale  jak mi moj  wyszedl.  Calosc  jest  w  obudowie  wtyczki
+antenowej (od anten z zasilaczem).  Wtyczka ma wymiary ok  4x2x2cm.  Od
+strony wprowadzenia kabla antenowego sa 2 gniazda na linie i  sluchawki
+a tam gdzie byla metalowa czesc wtyczki znajduje sie mikrofon a pod nim
+guzik przerywacza.  Jak  dorwe  skaner to na stronie dam fotke cobyscie
+sie ponapalali;))) wady: oprocz konstrukcyjnych jest jeszcze jedna, ano
+linie nalezy podlaczyc w tylko 1 (z mozliwych 2 kombinacji) bo  inaczej
+mikrofon nie dziala... Co zrobic z reszty? Jak ktos jest zdolny to moze
+se bipera zrobic (nie wiem jak ale pewnie sie da:),  no  i z  plytki  w
+podstawce telefonu mozemy sobie zrobic  ladnego  ringera  (sygnalizator
+tego czy ktos do nas dzwoni  czy nie)  ale  kiepsko  wyjdzie  bo  jakos
+dziwnie slaby dzwonek to bedzie mialo...
+
+2.3. OSPRZET DO TELEFONU
+Kupujemy sobie  teraz kabel do podpinania sie.  Im cienszy tym lepszy i
+oczywiscie czarny.  Ja mam ok  15m  kabla: zyla + ekran i dziala ok. Na
+jednym  koncu  montujemy  wyczke  do naszego  gniazda w telefonie  a na
+drugim krokodylki:)) Robimy tez kabel ok 30cm zakonczony z obydwu stron
+wtykami do naszego gniaza, po co dowiecie sie niedlugo:))  Wlasciwie to
+kabli  trzeba  miec duzo i kazdy  po kilku probach sam  bedzie wiedzial
+jaki jest najlepszy.
+
+
+3. POLOWANIE
+
+Jak zaczynasz zabawe z dzwonieniem za darmo to pewnie wydaje ci sie, ze
+nie  ma  miejsc  do wpinania sie,  ale  wystarczy  poszukac.  Po prostu
+idziesz  sobie  gdzies,  np.  do  budy,  patrzysz   -  oooooo... budka,
+podchodzisz i patrzysz gdzie  ma kabelki, gdzie one ida itp. Czasami sa
+bez izolacji a wtedy robimy sobie kabelek z iglami na koncu, wbijamy do
+kabelka i...  Ja  troszke poszukalem  i mam juz 5 miejsc  gdzie luzacko
+moge sie wpiac:)) Ale jak mamy  kluczyk to wlasciwie  mozemy sie wpinac
+gdzie chcemy:))  Trzeba to tylko kupic. Jak juz mamy kluczyk to szukamy
+jakiegos  pieknego  dnia  na  jakims  zadupiu  urmeta.  Jak  juz  sobie
+upatrzylismy  jednego to robimy maly zwiad w okolicy czy czasami nie ma
+w poblizu  przystanku,  jakiejs knajpy albo innego  goowna zciagajacego
+ludzi,  no chyba  nie  chcecie  zeby  wam  ktos  przeszkadzal   podczas
+grzebania...  Ok mamy juz budke, wszystko jest ok,  zadupie maksymalne.
+
+
+4. WPINANIE SIE DO URMETA
+
+4.1. PRZYGOTOWANIE BUDKI
+Przychodzimy  wieczorkiem/noca  z  kumplem  (kumpel moze byc  potrzeny)
+wkladmy klucz do dziury, krecimy i pudlo stoi otworem:)) teraz trzebaby
+odlaczyc  linie coby  pudlo nie zadzwonilo na centrale  (na wyswitlaczu
+'busy' a w sluchawce pik pirok pok,  na centrali  wpis  do loga budki i
+pali sie kontrolka,  ze ktos sie bawi:((  )  wlasciwie  to linie lepiej
+odlaczyc  przed otwarciem, ale moze sie to okazac  trudne:(  wiec zaraz
+po otwarciu zobaczymy tak:
+
+4.1.1 NIEBIESKI
+po prawej stronie pierdzielny mechanizm z glowicami, bebnem,  silnikiem
+i innymi, po lewej,  z tylu dupna plytka.  Na tej plytce w lewym gornym
+rogu znajduje  sie  mniejsza  plytka,  do ktorej podlaczona  jest linia
+telefoniczna. tPSA pomyslala o nas phreakerach i nie musimy nic ucinac,
+wyszarpywac wystarczy odczepic mala  plytke (ta z kabelkiem) od duzej i
+pudlo  juz  nigdzie se nie zadzwoni:))  (siedzi ona na 8 bolcach po 4 u
+gory i na dole).  Teraz przydaloby sie  jakos wylaczyc mechanizm, ktory
+czuje, ze otwieramy budke. Lepiej to zrobic, no chyba,  ze wali nas to,
+ze za jakies 15 minut mozemy wpasc w niezle goowno.  Jak to wylaczyc???
+Prosciutko:)  w  lewej dolnej czesci budki znajduje sie mikrostyk.  Jak
+budka jest  zamknieta  to  jest on wylaczony, a jak ktos ja otworzy  to
+styki sie zwieraja i glupia dzwoni:(.  No wiec  lokalizujemy mikrostyk,
+odchodza  od  niego  do  plyty  glownej  2 kabelki  zakonczone wtyczka.
+Wyciagamy  wtyczke  z  plyty  glownej  i  ucinamy  jedna  nozke gniazda
+wystajacego  z  plyty,  teraz  wlaczamy spowrotem  wtyczke i mozemy juz
+spokojnie  otworzyc  sobie  budke  powiedzmy... jutro,  a jak przyjdzie
+monterek  to nic nie zauwazy:))) no chyba  tylko to,  ze mu sie menu na
+wyswietlaczu  nie pokazalo...  Ok, teraz podlaczamy  spowrotem plytke z
+linia. Urmcik raczej nie powinien juz dzwonic, a jak zadzoni to zamknij
+go i za jakies  kilkanascie  minut  znowu  otworz,  jak dzwoni po kilku
+minutach to cos zjebales a jak nie to wszystko jest ok.
+
+4.1.2. SREBRNY
+w srebrnym  sprawa z odlaczeniem lini jest  prosciutka gdyz kabelki nie
+sa  wpiete w  zadna  plytke  tylko  zakonczone sa  specjalna  wyczka:))
+Wyjac  latwo,  wiec wyjmujemy. Teraz lokalizujemy czujnik, znajduje sie
+on prawie w tym  samym miejscu co w  niebieskim czyli jest przypiety do
+scianki  bocznej po lewej stronie,   ale kabelki  od niego  ida nie  do
+plyty  lecz do  wtyczki  na tasmie  glownej,  tak apropos  tej tasmy to
+gdzie oni takie tasmy rabia....?   Zeby  zlikwidowac  czujnik  odpinamy
+wtyczke i robimy to co z niebieska:))                                  
+
+4.2. WPIECIE W BUDKE
+Przychodzimy do naszej juz przygotowanej (takiej co nie dzoni,  ze jest
+otwarta;  patrz  'PRZYGOTOWANIE BUDKI')  budki i otwieramy dziada.  Jak
+jest niebieski to wyjmujemy  nasz  30cm  kabelek z  krokodylkami albo i
+bez. Krokodylki wpinamy tam gdzie jest wpieta linia  do budki  (lapiemy
+nimi srobki, troce ciezko, ale da sie zrobic) jak nie mamy  krokodylkow
+to druciki wkrecamy tak jak jest wkrecona linia.  Kiedy jednak  wpinamy
+sie do srebrnego sprawa sie nieco komplikuje.  Jak juz mowilem jest tam
+gniazdko a  nie  adne  srobki:(  Mozimy  wiec sobie w domku przygotowac
+odpowiednie gniazdo. Kupic mi sie takiego nie udalo wiec zrobilem sobie
+z modeliny hehe, oczywiscie wczesniej zajebalem wtyczke (razem z budka)
+dla wzoru:)).  Mozna tez robic z drewna, plastiku lub  jakiegos  innego
+materialu:) Po prostu kawalek czegos z dwoma bolcami.  Mozemy tez nasze
+kabelki wkrecic do tej wtyczki,  ale jest naprawde mala, w budce ciasno
+i wogole...  Drugi  koniec naszego kabla  (z wtyczka do naszego phonea)
+wyprowadzamy na zewnatrz  przez dziurke,  ktora wchodzi do budki  kabel
+(na gorze po srodku). Mozemy tez w tej dziurce zamontowac gniazdo jack.
+Wtedy  bedzie  nam  potrzebne  jakies  2x 15cm  druciki  i to  gniazdo.
+Zamykamy budke. Trzymamy nasz phreakomat w dloni, kable od  sluchawek i
+mikrofonu wchodza do rekawa. Sluchawki na uszach a mikofon przyczepiony
+do  rekawa  lewej reki.  Podlaczamy telefon do budki, wlaczamy  go.  Na
+wyswietlaczu powinno  pojawic sie 'OUT OF ORDER'.  Podnosimy  sluchawke
+od urmeta i jakos  blokujemy widelki tak zeby byly caly czas wcisniete,
+no nie wiem...  wpychamy  zapalke albo jakies inne cos  (robimy to zeby
+nas nie  rozlaczalo po impulsie , 0700 to co jakies 3 sekundy chyba...)
+Ja sie zwykle opieram lokciem na tym:) Wybieramy jakies 0700xxxxx i sie
+napawamy sukcesem:)) Jak sobie wmontujemy w  ta dziurke z tylu  gniazdo
+to nawet w dzien mozemy  sobie  szalec:))  Prawa reke trzymamy na budce
+(tam gdzie mamy gniazdo,  czyli obok  dziurki z tylu)  w lewej trzymamy
+sluchawke,  mikrofon  mamy  przypiety  do  rekawia  lewej reki i go nie
+widac,  sluchawki  'douszne'  w uszach i wygladamy  jak normalna  osoba
+dzwoniaca z budki:)) Jak chcecie  sobie  wmontowac gniazda w budkach to
+musicie miec pewnosc, ze zaden monterek  nie  zwiedzi waszej budki,  ja
+radze  nie  zostawiac  nic swojego  w srodku bo po co.  Nastepnego dnia
+jakis dupek z tPSA moze juz na ciebie polowac:(  A jak  juz to w sobote
+wieczorkiem   kiedy  telepsy  juz   spia  i  wtedy  mamy  telefonik  do
+poniedzialku rano:)) No i jeszcze  jedno,  stare  budki  jakos  blokuja
+wybieranie  jak  sie w  nie wepniemy,  wtedy trzeba  taka odpiac,  albo
+zrobic  tak:  wpiac  sie,  odlozyc  sluchawke  w  naszym  phreakomacie,
+do  budki  wlozyc  karte,   wybrac  normalnie  numer  i  po  polaczeniu
+wlaczyc  (podniesc  sluchawke)  nasz  phreakomat  a odlozyc sluchawke w
+budce:))  Wtedy  ominiemy  to  cos  co  nie  pozwala  wybrac numeru ale
+stracimy 1 impuls... ha ha
+
+4.3. GRATIS BUDKA NA WEEKEND
+Jak wmontowales w swego  phreakomata  gniazdko  modularne  (takie jak w
+modemie, koniecznie z 6 rowkami) to  masz  luz,  jak  nie  to  kupujemy
+sobie takie gniazdo i  do  2  pierwszych  drucikow  podlaczamy  jednego
+jacka a do 2  pozostalych  drugiego  jacka. Pierwszego jacka wpinamy do
+gniazda na  sluchawk i w  naszym  phreakomaie,  drugiego do  gniazda na
+mikrofon.   Z  naszego  phreakomatu  wyprowadzamy  jeszcze  kabelki  od
+przelacznika podniesiony/odlozony (3)  (dlatego  mialy byc na wsowkach)
+i montujemy na nich  krokodylki.  Idziemy  do  naszej  budki  w  sobote
+kiedy  tPSA  spi  (chyba juz od 14...),  otwieramy  pudlo, wpinamy nasz
+krotki kabelek do lini  automatu  a  jego  samego  najlepiej  odlaczamy
+(odczepiamy  mala  plyke  (niebieski), lub  gniazdko  (srebrny),  patrz
+'PRZYGOTOWAIE BUDKI') i  podlaczamy  do  nszego phonea. Z plyty glownej
+odpinamy sluchawke i  wpinamy  do  naszego  gniazdka  telefonicznego  w
+phreakomacie albo jak nie zrobiles sobie to do przygotowanej  wczesniej
+przejsciowki. W niebieskich jest to gniazo  na 6  kabelkow a w srebrnym
+na 4 dlatego  nasze  ma  6 rowkow zeby oba pasowaly do niego:))  No ale
+pojawia sie jeszcze jeden problemik...  jak  wpinasz sie w niebieskiego
+to twoj telefon do phreaku nie moze miec mikrofonu  pojemnosciowego  bo
+nie ma go i niebieski:(  Wiec jesli  twoj phreakomat  ma  pojemnosciowy
+mikrofon to musisz sobie zrobic drugi  telefon  ze  zwyklym  mikrofonem
+(taki  jak  glosniczek)  specjalnie  do  niebieskiego.  Jezeli  wpinasz
+sie w  srebrniaka  to phreakomat  musi miec  mikrofon pojemnosciowy (bo
+srebrny  taki wlasnie ma) No dobra  teraz co zrobic  dalej.  Krokodylki
+od przelacznika podniesiony/odlozony wpinamy do budkowych  widelek.  Sa
+tam 2 mikrostyki (w srebrnym jest tylko jeden). Musimy sobie poprobowac
+do korych koncowek sie wpiac bo mi sie jakos zapomnialo a nie chce  sie
+narazie szukac:( Ale sa tylko 2 mozliwosci. Nie musimy zamykac pudla by
+sprawdzac czy dobrze podlaczylismy widelki. Jest taka mala pierdolka na
+plycie glownej, taki  kwdratowy  przycisk,  wciskamy i budka mysli,  ze
+jest zamknieta:)) Podnosimy sluchawke a tam  cisza...  wtedy zamieniamy
+krokodylki  miejscami  i powinno  byc  kochane, wesole  dial:))  Mozemy
+jeszcze  podlaczyc  klawiaturke  do  naszego phreakomatu, ale to wymaga
+troche roboty  wiec klawiaturki  przylaczac  nie bedziemy:))  Jak budka
+a wlasciwie centrala przyjmuje tony z lini  naszej  budki  to  bedziemy
+wybierac numer  z tonedialera,  jak  nie  przyjmuje  tonow  to bedziemy
+zmuszeni do stukania w widelki...:( Odpowiednio numer - ilosc stukniec:
+1 - 1 nacisniecie, 2 - 2 nacisniecia,..., 0 - 10  nacisniec.  Zeby  sie
+nie pogubic w liczeniu najlepiej stosowac metode po 3 np. 0  to 123 123
+123 1 :)) Troche to glupie ale coz... live is brutal trzeba sie cieszyc
+z tego co bozia daje bo przecierz  mogla nie dac...  Nie  wtajemniczamy
+nikogo i dzwonimy z  opamietaniem,  jak  nabijemy  kilkaset  baniek  to
+telepsy zaczna  weszyc  w logach i  moga wypatrzec ze dzwonilismy na 20
+baniek w  jeden  wieczor do kumpeli  ze  stanow  i  tez sobie  do  niej
+zadzwonia...:( Najlepiej zmieniac budki co jakies 2-3tygodnie no i  nie
+szalec zbytnio;)) Caly sprzet zejmujemy w poniedzialek bardzo rano albo
+wieczorem  w  niedziele   i  podlaczamy  wszystko  tak  jak  bylo,  nie
+zapomnijcie czegos w srodku po sobie zostawic czasem...
+
+
+5. WPINANIE SIE DO LINI
+
+Oczywiscie  potrzebny bedzie nam phreakomat i komplet kabli.  Ja uzywam
+kilkunastometrowych kabli z koncowkami:  krokodylki, igly i inne takie.
+
+5.1. OGOLNIKI
+Najpierw  szukamy jakiejs lini,  najlepiej od budki bo po  co  niszczyc
+prywatnych ludzi...  Jak  juz znajdziemy  to wpinamy  sie i  usadowiamy
+sie  wygodnym miejscu, najlepszy jest samochod:)),  cieplutko,  glosnik
+od telefonu mozna podlaczyc do samochodowego radia i  razem  z kumplami
+mozemy sobie partylineowac:)) Jest malutki problem. Jak wepniemy sie  w
+linie od zetonowca i bedziemy wybierac impulsowo to cham bedzie dzwonil
+:(( moze to wzbudzic male zdziwienie u ludzi...  wiec najlepiej  wpinac
+sie pod zetonowce kiedy sa  oprozniane z zetonow, wtedy przez kilka dni
+maja wyjeta 'skarbonke'  i sa wylaczone  wiec nie beda  dzwonic i nawet
+ludzie chcacy  sobie  zadzonic nie  beda nam przeszkadzac w rozmowie bo
+przeciez budka nie dziala...:)) Ale i  na to  dzwonienie zetonowca jest
+sposobik,za ktory przydaloby sie podziekowac Telkom-Telos'owi bo to oni
+konstruowali  zetonowca:))   A  mianowicie:   panowie,   ktorzy  robili
+zetonowca chcieli sie zabezpieczyc przed lewym dzwonieniem  z niego  za
+pomoca stukania w widelki i teraz jak nacisniemy raz widelki i  puscimy
+je to pudlo sie nam wylacza:) Wiec aby nam nie dzwonil  to wylaczamy go
+i nie odkladamy sluchawki a qmpel  wybiera numer, po wybraniu odkladamy
+sluchawke:)  Jak nie mamy  qmpla to sluchawki po prostu nie odkladamy:)
+Teraz karciaki.  Jak  wpniemy sie pod  karciaka to czasami puki go  nie
+odlaczysz nie zadzwonisz sobie nigdzie, u mnie sa dwa takie co jak chce
+sobie z ich lini  zadzwonic  to  go  musze  najpierw  wypiac:((  Ciagle
+wylaczanie  moze  byc  troche  ciezkie wiec kumpel zamontowal zworke:))
+(po co??  Ano ta budka jest  obok jego domu,  nastepna daleko a czasami
+trzeba  sobie  gdzies podzwonic:)  Jeden  kablek  przecial,  po  obydwu
+stronach wbil szpileczki i nalozyl na nie zworke:))  Do nie przecietego
+kabla tez wbil szpilke.  Teraz a  wlasciwie kiedys,  bo  teraz juz mamy
+bardziej   wyrafinowane  sposoby   dzwonienia,   jak  chcielismy  sobie
+zadzwonic  to wystarczylo  zdjac  zworke  i wpiac  sie w szpileczki. Po
+robocie  zalozyc zworke i  wszystko gralo.  Wszystko  nalezy zrobic tak
+zeby nie bylo widac. U nas szpilki sa miedzy sciana a kablem i trzebaby
+dokladnie sprawdzic caly kabel zeby znalezc:))
+
+5.2. KURZE STOPKI
+Kurze stopki to takie metalowe, niebieskie pale, na ktorych od jakiegos
+czasu  telepsy  matuja  budki.  Na  pierwszy  rzut oka nie  da sie tego
+rozwalic ale po dluzszych ogledzinach zauwarzamy z tylu dziurki:)))  To
+tam wlasnie  jest kabel.  Trzeba teraz   zrobic sobie  jakis  haczyk  z
+twardego,   iezbyt  grubego  druta  i  pogrzebac.  Najlepiej  sprawdzic
+najpierw  palcem,  w  ktorej  rurce  leci  kabel,  po  ktorej stronie a
+dopiero  potem  grzebac.  Jak  sobie  wyciagniemy  to  szpileczki  i...
+Wlasciwie to mozemy nawe zdjac izolacje bo jaki monter bedzie grzebal w
+rurce zeby sprawdzic czy mu sie ktos nie podpina...  Trzeba potem tylko
+jakas tasma zaizolowac spowrotem, zeby sie nic nie zwieralo. Mozemy tez
+wmontowac  na  takim  kablu  gniazdko  i schowac  je w rurce, potem jak
+bedziemy chcieli  zazwonic grzebiemy w dziurce w poszukiwaniu gniazdka,
+znajdujemy i juz:))
+
+5.3. DZIURKA:)
+No wiec robimy sobie haczyk z mocnego drutu, wedrujemy do jakiejs budki
+na karty i patrzmy sie co ma na dzaszku.  Ano  ma  ona  w tylnej czesci
+daszka mala dziurke:) bierzemy nasz haczyk i wsadzamy do  otworu  no  i
+probujemy zlapac kabelek, jak mamy szczescie i wyciagniemy stary  kabel
+2-u zylowy to cool, szpile, phreakomat i gotowe a jak nasza budka  jest
+nowsza to  prawdopodobnie  bedzie w niej  gruby kabel  a w tym  kablu w
+cholere cienkich malutkich kabelkow, jest tego tam ze 20 a tylko 2 maja
+w sobie radosne piiiiiii, wiec czeka nas szukanie, chyba, ze mamy klucz
+do budki to wtedy patrzymy w budce jakich kolorow kabelki sa  wpiete  w
+budke i juz, no ale skoro mamy klucza to po co sie grzebac w kablach...
+
+5.4. WPINANIE Z KOMPEM
+Wpinac  sie z kompem  jest cool bo zamiast pieprzyc sie przez telefon z
+jakas  starucha,  ktora  ma  tylko  cieniutki  glosik mozemy zrobic cos
+bardziej ciekawego (irc/downloading/wlam;)).
+
+5.4.1. W AUTKU
+Jak mamy kompa przenosnego to no problem kombinujemy autko, podjezdzamy
+pod budke/kabelek  i cala  noc nasza:)  Jak  niestety  takowego  znikad
+pozyskac sie nie da to  mamy problem...  Trzeba wtedy kolo naszej budki
+na zadupiu poszukac  jakiegos pradu  do naszego desktopa.  Radze szukac
+nie jakichs tam kabelkow (no w ostatecznosci sie nadadza, ale po co sie
+meczyc z nimi) tylko zarowek  (zakladam, ze  kontaktu nie znajdziemy;),
+zaroweczke wykrecamy a wkrecamy nasz uprzednio przygotowany przedluzacz
+'zarowka->gniazdko',  teraz  niedosc,  ze zrobilo  sie ciemniej to mamy
+prad do kompa:)) Gdzie to znalezc? Na scianach w piwnicach blokow (hehe
+ja tak znalazlem, potem w dzien wyprowadzic sobie za okienko kabelek  i
+zostawic  go tam do  nocy:)),  w  piwnicy  mozemy  tez  sobie  na stale
+zamontowac gniazdko:) ale po co jak  mamy zarowke:))).  Teraz  trzebaby
+zadbac o bezpieczenstwo  i wygode.  W maluszku z monitorem i klawiatura
+na kolanach bedzie troche niewygodnie,  nie  mowiac juz o tym co  sobie
+ludzie  pomysla jak beda przechodzic  obok autka,  z ktorego bije jasna
+luna swiatla... hehe.... jak ufo;))) Najlepszy jakis minibus, albo  cos
+co ma ciemne szyby, mozna sobie tez sprzet  skonfigurowac i zrobic  tak
+zeby tlo bylo czarne a literki jasniejsze, wtedy juz sie tak w oczy nie
+bedziemy zucac:)
+
+5.4.2. GDZIE INDZIEJ
+Jak mieszkamy (albo qmpel) w bloku z budka, albo jest ona niedaleko  to
+ciagniemy kabelek do piwnicy i tam sie instalujemy. Moze byc zimno wiec
+radze  zabrac  cieple  ciuszki,   jakis  elektryczne  cos  do  robienia
+cherbatki, kawki itp. Z pradem nie ma problemu,  nic  tylko surfowac:))
+Ktos moze to uznac za zbyt glupie,  zeby  ciagnac kabel do piwicy,  ale
+jak jest blisko to czemu nie... nic nie jest glupie jak czlowiek jest w
+potrzebie,  ostatnio  kolega  z  phreak-teamu  zachorowal,  trafil   do
+szpitala i co??? Zalozylem z nim tam  lewe  gniazdko   telefoniczne  bo
+goster sie nudzil:)) hehe facet milo spedzil czas na 0700, poznal jakas
+panienke z warszawy, wymieili sie telefonami, gadali na tym  0700 chyba
+z 4 godzinki:))  dziennie.  Qmpel codziennie  od  dziesiatej  wieczorem
+(wtedy mu kroplowe sciagali;) do okolo czwartej nad ranem phreakowal:))
+Ze  szpitala  w korytarzu, wiec  czemuby  nie  phreakowac z piwnicy:))?
+
+5.5. PODTRZYMYWACZ - ROZMOWY MIEJSCOWE ZA FRIKO
+Kiedys zastanawialem sie co zrobic, zeby dzwonic na lewo i zeby nikt  o
+tym nie wiedzial... a jako iz w moim miescie zadne bugi  na  budki  nie
+dzialaja  wiec  trzeba bylo cos  pokombinowac...   Najpierw  byl pomysl
+wpinania w linie telefonu, wybrania z niego numeru i  gadania z  budki.
+W ten sposob omijamy mechanizm budkowy i mozemy dzwonic,  ale nie  jest
+tak dobrze bo po pierwsze to cos dziala tylko na zetonowcach  (karciaki
+maja zablokowany mikrofon) a po drugie jak  zetonowiec dostanie  impuls
+z centrali to zaczyna pikac...  W sumie to nie  jest zle w rozmowach po
+wojewodztwie (1 impuls/3minuty) wiec co te  3 minuty  bedziemy  musieli
+jakos startowac od nowa. A poniewaz jestem zwolennikiem robienia czegos
+z niczego to zamiast telefonu uzylem zwyklego glosnika telefonicznego:)
+takiego jaki jest w sluchawce od urmeta:) przyczepilem tylko  do  niego
+dwa kabelki z krokodylkami  i wpakowalm do  malutkiego  pudeleczka no i
+dorobilem do tego wylacznik. Teraz dzwonienie wyglada tak: wpinamy boxa
+w linie, podchodzimy do zetonowca, wkladamy zeton i wybieramy  numerek,
+jak  zetonowiec  skonczy  wybierac wlaczamy wlacznik w naszym uzadzonku
+i naciskamy widelki od zetonowca w  celu  odzyskania zetonu ;-)))  hehe
+na  niektorych  automatach  jak  nie  nacisniemy  widelek  to  i tak po
+zakonczeniu rozmowy zeton wypadnie:)) po nacisnieciu widelek polaczenie
+nie  zostanie  zerwane  bo  podtrzymywac  je  bedzie  nasz  glosniczek-
+-podtrzymywacz.  To dziala  tak jak dwa  telefony na  jednej lini.  Jak
+odzyskamy  zeton  to podnosimy spowrotem  sluchawke i  mozemy  gadac:))
+Po  trzech  minutach (rozmowa  miejscowa) do  budki  przyjdzie impuls i
+w sluchawce zacznie nam pikac, wtedy my naciskamy na klawisz # i gadamy
+nastepne 3 minuty. Kiedy klawisz # nie dziala to walimy w widelki na ok
+2 sekundy. Teraz troche uwag. Najlepiej sie to robi  z kims - szybciej.
+A  glosniczek  trzebaby  sprawdzic wczesniej  w domu czy bedzie dzialal
+dobrze. Jak sprawdzic? Banal:  wlaczamy go  w domu  do lini,  podnosimy
+sluchawke i sprawdzamy, czy w sluchawce jest sygnal... Jezeli linia, do
+ktorej podpiety jest nasz zetonowiec moze wybierac tonowo to wtedy cala
+operacja jest duzo prostsza:)  Podchodzimy  do budki,  wpinamy  naszego
+podtrzymywacza,  szybko  podnosimy  sluchawke  (zeby sygnal sie nam nie
+zmienil na BUSY) i z biperka  wybieramy numerek. Nie musimy wtedy latac
+i  wlaczac/wylaczac  podtrzymywacz (co musielismy robic przy wybieraniu
+impulsowym...)  No  wiec jak  wybieramy tonowo to po  polaczeniu  budka
+zacznie pikac a wtedy naciskamy # lub widelki na 2 sekundy i juz mozemy
+gadac:)) Czasami osoby, do ktorych dzwonimy moga sie dziwic bo przeciez
+podnosza sluchawke  a tam cos  piklo, potem 2  sekundy ciszy i  dopiero
+potem my... no i co 3 minuty my bedziemy  sie wylaczac na  2 sekundy...
+ale sposob i tak jest dosc niezly:)
+
+
+6. CZYTNIK OD URMETA
+
+Najpierw przydaloby sie cos takiego zdobyc:) No wiec jedziemy na jakies
+zadupie, najlepiej w innym miescie, znajdujemy no i otwieramy  urmecika
+i  zdejmujemy  to cos  wielkie  z prawej strony:))  (beben z glowicmi i
+elektronika).  Schodzi  bardzo latwo:))  Najpierw odciagamy blokade  (z
+prawej strony),  beben powinien  nam ladnie  zjechac do  przodu,  teraz
+troche go  podnosimy i wyskakuje:))  Idziemy sobie do domciu.  W domciu
+bierzemy srubokret i zaczynamy sie bawic.
+
+6.1. CO Z TYM ZROBIC???
+Na bebnie znajduje  sie plytka z jakas elektronika  (m.in. EPROM  i jak
+mamy  programator to  moze cos znajdziemy  w srodku:))  Jest  tez  pare
+czujnikow (4),  2 silniczki,  bateryjki  i  inne  badziewie.  Na bebnie
+znajduja sie 2 glowice. Pierwsza, ta blizej  wejscia  jest  odczytujaca
+druga  jest  zapisujaco  -  odczytujaca.  Jest tez  od  groma   roznych
+fajnych  czesci,   np.  qmpel  kozysta  sobie  z  kondensatorka   22000
+mikrofaradow  bo w  sklepie  ciezko dostac:))) Z zajebanego bebna mozna
+sobie probowac zrobic nagrywarke:) Jak? Wszytko pisze w faq roznych, ja
+nie robilem wiec nie bede mowil jak sie to robi:))
+
+6.2. CO ZROBIC ZEBY NIE STRACIC IMPULSOW
+Jest  w  budkach  takie  male  cos  co  pozwala  dzwonic przy otwartych
+dzwiczkach:)   Albo   wylaczasz  czujnik,  albo  naciskasz  taki  maly,
+kwadratowy guziczek (reset:) i glupia mysli, ze jest zamknieta:)) Mozna
+wtedy  wlozyc karte, zadzwonic  gdzies, a  jako  iz  budka  nie  kasuje
+impulsow na bierzaco tylko po zakonczeniu polaczenia probujemy ja przed
+tym  wyciagnac  ze  srodka.  Wiec  gdy  juz  sobie  pogadamy  to  przed
+odlozeniem sluchawki mozemy odlaczyc druga  glowice  (ta co  kasuje)  i
+silownik, ktory odbija zabki:) ale wtedy przy nastepnej rozmowie na tej
+budce z tej karty karta zostanie skasowana:(( Patrz 'ZWIERANIE GLOWICY'
+
+
+7. DIAGNOSTIC MENU
+Jak  otworzysz  sobie  niebieska  budke  to na wyswietlaczu pojawi  sie
+'W NAPRAWIE'  a  potem  bedziesz  mogl wejsc  do menu budki (oczywiscie
+bedzie  tak  jak  nie  wylaczysz  sobie   czujnika   otwarcia,    patrz
+'PRZYGOTOWANIE BUDKI').  A jest tam kilka ciekawych pozycji.  Klawiszem
+* zatwierdza sie  pozycje (enter:)) a # przechodzi do nastepnej.  Cyfry
+1   i   2   sluza   do   przelaczania   ON/OFF.    No  wiec  mamy  tak:
+
+   DIAGNOSTIC MENU      - tutaj jakies pierdoly, nie wiem do czego...
+   COUNTER MENU         - menu z info o rozmowach z/do budki
+   LOCAL PULSE          - impulsy miejscowe (1/3minuty:)
+   NATIONAL PULSE       - impulsy krajowe
+   INTERNATIONAL PULSE  - impulsy zagraniczne
+   TAXATION             - wszystkie impulsy...(?)
+   LOCAL CALL           - rozmowy miejscowe
+   NATIONAL CALL        - rozmowy zamiejscowe
+   INTERNATIONAL CALL   - rozmowy miedzynarodowe
+   ENTRY CALL           - rozmowy przychodzace (ktos dzwoni na budke)
+   FREE CALL            - rozmowy darmowe
+   EXIT                 - wyjscie do poprzedniego menu
+
+Jest  jeszcze  cos  takiego  jak  karta   serwisowa  (monterska),  albo
+fachowo - "programing card" mozna dzieki niej wejsc do wielu  innych  o
+wiele  ciekawszych  menu. Dlugo  by pisac wiec odsylam do mojego malego
+"diagnostic_menu faq", oczywiscie na mojej stronce:)
+Zeby  chodzic po menu wcale nie musisz stac z otwrta budka,  wystarczy,
+ze  podniesiesz sluchawke, przekrecisz kluczyk i otworzysz tylko  dolna
+czesc (tam jest przeciez  czujnik),  potem  zamkniesz  i  nie  odlozysz
+sluchawki:))   Jest  tez  karta  magnetyczna,  ktora  wywoluje to menu,
+nazywa  sie  "maintenance card",  wlasciwie  jedyna  roznica   pomiedzy
+wywolywaniem menu prze otwarcie budki a przez karte maintenance jest to
+ze po uzyciu karty budka nie dzwoni na centrale,  bo  przeciez  czujnik
+nie zostal uruchomiony..:)
+
+
+
+8. SREBRNY URMET
+
+Teraz troche ciekawostek  zwiazanych ze srebrnym urmetem i  nie  tylko.
+No wiec srebrny jest smieszny:)) Pierwsza rzecz to to,  ze juz  sie  go
+tak  latwo bez  klucza nie otworzy,  wlasciwie  jak  jest  zamkniety to
+otworzenie sprawia ogromne trudnosci:( W srodku cholenie duzo tasm i to
+takich dziwnych, ze jeszcze tak rozgalezionych nie widzialem. Na plycie
+glownej znajduja sie 2 guziczki, jeden do resetu budki a ten  drugi  to
+nowosc:) narazienie nie wyczailem co to:( Co jeszcze.. linia podlaczona
+jest specjalna wtyczka. Wyswietlacz ma warstwe, ktora swieci jak sie na
+nia pusci prad (1.5V starczy spokojnie:) to cos takiego jak w zegarkach
+(timex indiglo, casio illuminator). Prad  wpuszczamy  do  dwu  pinowego
+gniazdka na  wyswietlaczu  po  prawej  stronie.  Mechanizm  odczytujacy
+posiada 1 glowice:(,  karta  wjezdza,  pozniej sie troche cofa i ustwia
+sie pod glowica, specjlne blokadki  uniemozliwiaja  wyjecie karty:((  I
+jeszcze cos po otwarciu nie  ma  menu!!:((( pudlo  od  razu  dzwoni  na
+centralke i mimo iz jest tonowe,  numer  centrali  wybiera  impulsowo!!
+(czemu??) W srodku jest jeszcze bateryjka do zegara i dupny  akamulator
+(w prawym, gornym  rogu).  No  i  od  cholery  roznych  zlacz,  gniazd,
+jumperow,  przelacznikow,  zlacze  lokalnego  zapisu  programu  no i  2
+glosniczki.  Ooo   jeszcze   jedna  ciekawostka,  przy  komunikacji   z
+centralka  juz  nie  pika  radosnie  jak niebieski  urmet, ale wydaje z
+siebie cos takiego jak modem   kiedy   gada z  innym  modemem!!!  No  w
+koncu  na  poczatku  czlowiek  tez gadal morsem (niebieski)  a  pozniej
+nadeszla era modemow itp;) Posluchaj sobie  kiedys  jak twoj sprzet sie
+laczy  z innym - piski, skrzeczenie  itp.  Poza  tym  silver (TPE 97/U)
+jestprzystosowany  do kozystania z kart chipowych i  kontroluje sie  go
+z centrali... System kontroluje jakosc uslug, stan techniczny  aparatu,
+karty  magnetyczne wprowadzane do obiegu. Caly aparat programuje sie  z
+centrali (dla tego nie ma menu, ale jest za to modem 2400). 
+
+
+9. FREE INTERNET (CALLBACK:((  ) - jeszcze nie sprawdzalem
+
+Potrzebne bedzie nam do tego tak:  2 phreakomaty,  2 budki telefoniczne
+(najlepiej wczesniej przygotowane, patrz PRZYGOTOWANIE BUDKI) i kawalek
+kabla z 4 zylami dlugosci takiej zeby polaczyc te dwie  budki  ze  soba
+tak zeby nic nie bylo  widac  z zewnatrz,  przynajmniej  w nocy:)) Wiec
+robimy sobie nasze phreakomaty  tak  jak  juz  napisalem wczesniej,  na
+kablu  zakladamy  po  dwa  jacki  z  obu  stron  (razem 4)  albo  wtyki
+modularne (jak zrobilismy sobie gniazdko na nie w naszym  telefonie)  i
+wybieramy  sie  do  budki.  Otwieramy  sobie pierwsza  i  odlaczamy  ja
+(odczepiamy plytke  lub  gniazdko)  i  podlaczamy  naszego  phreakomata
+wlaczmy do niego  kabel,  wyprowadzamy go  dziurka u  gory  po srodku i
+idziemy do drugiego telefonu. Tego tez otwieramy, wylaczamy i montujemy
+do srodka nasz telefonik. Teraz  podlaczamy  kabelki z tego pierwszego.
+Jack od mikrofonu do gniazda  na sluchawki a od sluchawek do mikrofonu.
+I tu pojawia sie pierwszy problem.. Musimy miec telefony z  mikrofonami
+nie pojemnosciowymi bo inaczej  moze sie walic wszystko:(  Na szczescie
+jest  jeszcze  sporo  starego  ruskiego  szmelcu  do  przerobki:))  Jak
+wszystko zamontujemy to teraz qmpla zostawiamy pod budka  a my  idziemy
+do domciu. Qmpel na jednej budce wykreca 0w202122 a na drugiej  numerek
+do nas:((  To jest drugi  problemik...  Jak  nasze budki sa na  jakiejs
+archaicznej centrali to wali nas to, ze krecimy do siebie a jak  nie to
+troche glupio tak do siebie  phreakowac...  jakby ktos cos  wyczail  to
+jestesmy ugotowani... No ale jest sobota w nocy i nikt nic nie  czai:))
+Tylko jak potem ktos sprawdzi  logi a tu ktos z budki  dzwonil na  inet
+(!!) pol nocy..?!!? a na dodatek z budki obok  ktos w tym samym  czasie
+gadal z kims te same pol nocy...??!!!!! To juz zaczyna byc dziwne... No
+ale powiedzmy kilka razy  mozemy  taki  numerek  odwalic,  telepsy  nie
+straca znowu az tak duzo bo powiedzmy 6h na inecie = ok 26 zlotych a to
+sa przeciez grosze... Problemu nie ma na archaicznych centralach bo tam
+wiekszosc rzeczy nie dziala:)) No ale przejdzmy do rzeczy w domciu soft
+ustawiamy sobie tak jak na callbacka i czekamy, az zadzwoni:))  Jak  to
+dziala?? Jeden telefon zadzwoni na inet, drugi do naszego  modemu.  Ich
+mikrofony i sluchawki sa odpowiednio polaczone wiec to  co jeden  modem
+wysyla drugi bedzie  odbieral i  na odwrot:)  Oczywiscie sygnal  bedzie
+duzo slabszy niz  normalnie  ale  wystarcza:)) Po nawiazaniu polaczenia
+qmpel wraca do nas do domciu i szaleje z nami.  Najgorzej  jak nam  sie
+zerwie polaczenie bo wtedy trzeba wychodzic do budki i dzwonic od nowa.
+Najlepiej  przez  dziurke  w  urmecie  wyprowadzic  sobie 2  kabelki do
+przerywania lini (nimi bedziemy wybierac numer przerywajac  odpowiednia
+ilosc razy linie, no chyba, ze mamy  phreakomat  z  pamiecia  to  wtedy
+wyprowadzamy sobie kabelki, ktorymi wlaczymy to wybieranie z pamieci) i
+dwa do jakiegos glosniczka/sluchawek zebysmy mogli slyszec co wybieramy
+i czy sie udalo. Wszystko zabezpieczamy coby sie nie  pozwieralo  no  i
+zeby bylo niewidzialne:) Schemat dzwonienia jest taki.  Podchodzisz  do
+budki 1, wlaczasz soper i uruchamiasz wybieranie  numeru  domowego,  no
+albo sam je wybierasz, podchodzisz do  budki  2 i  wybierasz  0w202122,
+wylaczasz stoper. W zaleznosci ile zajmuje cala  operacja tak ustawiasz
+sobie odbieranie telefonu przez twoj modem,  chodzi  o  to,  zeby  twoj
+modem nie odebral za szybko, kiedy  na  lini beda jeszcze  jakies  tony
+(np. budka 2 jeszcze  nie  wybrala  numeru).  Jak  wszystko  zrobilismy
+dobrze to mamy  free  callback do domciu:))  Teraz  troche  kiedy o sie
+nadaje  do  zrobienia.  Jestesmy  na wakacjach  u babci.  Ustawiamy  se
+sprzet, wychodzimy w nocy uruchamiamy w ruch  nasza  callback  machine,
+wracamy do babci do domku a tam nasz komputerek juz se siedzi w sieci:)
+Babcia oczywiscie nie wie o niczym albo mowimy, ze dzwoilismy na lewo i
+jak ktosby sie pytal to ona nic nie wie bo inaczej pojdziemy na  5  lat
+do wiezienia:)) (100%, ze babcia bedzie milczec jak grob) a kiedy nawet
+za jakis miesiac telepsy ja najda w domu to se pomysla, ze cos  sie  im
+pojebalo w logach itp, bo ktora babcia jest phreakerem...:))  Poza  tym
+nic nam nie moga zrobic bez  zlapania na  goracym  uczynku:)))  Zamiast
+babci moze byc oczywiscie ciocia, wujek, znajomi u ktorych nocujemy ale
+ich nie lubimy itp.... No  i  nie z apominamy  nad  ranem  zdjac  nasze
+kabelki i wlaczyc budki:)
+
+
+10. ZWIERANIE GLOWICY
+
+Jak kasuje budka to wszyscy wiemy (najpierw trzyma w buforze to ile  ma
+skasowac a potem jak zkonczymy rozmowe to kasuje). Idea pomyslu  polega
+na tym by zwierac glowice zapisujaca przed zakonczeniem rozmowy:) wtedy
+nic nie nagra:))) No to przygotowalem sobie 2kabelki  i  4  szpileczki,
+zlutowalem jak trzeba.  Teraz  2  szpileczki  do  gniazdka  od  glowicy
+zapisujacej (kabelki:  rozowy  i  czerwony)  a 2 pozostale do przycisku
+REDIAL (trzeba go wczesniej  odlaczyc  bo  okazuje  sie  ze  elekronika
+budki zmienia wartosci glowicy i budka sie dupi).  Teraz  mozemy  gadac
+ile chcemy ale przed zakonczeniem  rozmowy  musimy nacisnac  i  trzymac
+REDIAL, wtedy glowica sie zwiera i  nie potrafi  nagrywac.  No  jeszcze
+trzeba odlaczyc silownik do  wybijania  rowkow  na  karcie  bo  inaczej
+przerobi on nasza karte na 'nieczytelna'. Po dzwonieniu  sprawdzamy  na
+innej budce nasza karte i okazuje sie, ze wszystko jest ok,  karta  nie
+zostala skasowana:) Ale wkladamy karte do budki ktora ojebalismy i  co?
+Glupia kasuje cala karte!!! OOoooo No to pojawia sie pare  przypuszczen
+czemu i zeby czesc wykluczyc qmpel zrobil cos takiego:  przekaznik,  do
+niego bateryjka, 2 kabelki zakonczone szpileczkami,  no i po 3  kabelki
+na gniazdo do glowicy i wtyczke do glowicy i glowica (ktos to rozumie?)
+Dziala tak:  szpileczki  wbijamy  do wtyczki przycisku REDIAL  (juz nie
+musimy   go   odlaczac :)))  z   czytnika   odpinamy   glowice    druga
+(zapisujaco-odczytujaca)  i  wlaczamy  do  gniazda w naszym 'wnalazku',
+wtyczke od tego 'wynalazku' wpinamy do czytnika  tam  gdzie  wypielismy
+glowice. Teraz jak nacisniemy REDIAL to nasz przekaznik wylaczy glowice
+z budki i  wlaczy  nasza:)))  (Probowalem  zastapic  ta  nasza  glowice
+opornikiem  ale  sie  cos  dupilo) No ale zycie jest brutalne i tak jak
+poprzednio po oszukaniu budki  i  ponownym  wlozeniu  karty  glupia  ja
+skasowala!?!!!??!  :((((  Probowalem   jeszcze   paru  innych   rzeczy:
+1. po dzwonieniu czyscimy pamiec (bo skads glupia wie ze musi skasowac)
+   inna karta - nie wyszlo, inne karty zostawia w spokoju
+2. robimy budce reset - nic
+3. karte ktora oszukalismy budke  troche  zuzywamy,  zeby  miala  mniej
+   impulsow - tez taka kasuje
+
+Wynika  z tego,  ze  kazda karta ma swoj numerek, ktory ja identyfikuje
+wsrod innych a budka gdzies w pamieci trzyma numery kart do skasowania.
+Heh... ak takie cos zrobimy na kilku  budkach i  bedziemy  mieli  kilka
+kart to nawet dzwonienie nie bedzie takie uciazliwe... rzeba  tylko  by
+sobie zapisywac na kartach do jakich budek nie wolno jakiej  karty  juz
+wsadzac...:)
+
+
+11. EPROMy
+
+Heh... w EPROMie niebieskiego urmecika zapisane jest wlasciwie wszystko
+co nas phreakerow najbardziej interesuje:))  No  wiec  kazdy wie, ze od
+wersji tej kostki zalezy jakie bugi dzialaja na dana budke...  Nastepna
+rzecz jaka mamy w EPROMie to teksty:) Tak... wlasnie te teksty  co  sie
+pojawiaja na wyswietlaczu:)) hiehie... EPROM jest oczywiscie zakodowany
+ale czlowiek zakodowal to i czlowiek rozkoduje:)) No wiec:
+
+11.1. KODOWANIE /by quax/
+Kazdy bit bajtu zakodowanego odpowiada bitowi rozkodowanemu wg tabeli:
+
+   |---|---|---|---|---|---|---|---|
+   | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | numer bitu w bajcie zakodowanym
+   |---|---|---|---|---|---|---|---|
+   | 5 | 3 | 1 | 0 | 2 | 4 | 7 | 6 | numer bitu w bajcie rozkodowanym
+   |---|---|---|---|---|---|---|---|
+
+Analogicznie:
+
+   |---|---|---|---|---|---|---|---|
+   | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | numer bitu w bajcie rozkodowanym
+   |---|---|---|---|---|---|---|---|
+   | 3 | 2 | 4 | 1 | 5 | 0 | 7 | 6 | numer bitu w bajcie zakodowanym
+   |---|---|---|---|---|---|---|---|
+
+
+Zapis petli rozkodowujacej (a=bajt zakodowany, b=bajt rozkodowany):
+------------------------------------------------------------------------
+C:
+
+ unsigned char i,a,b;
+ unsigned char d[8]={3,2,4,1,5,0,7,6};
+
+ b=0;
+ for(i=0;i<8;i++) b+=((a & (int)pow(2,d[i])) >> d[i]) * (int)pow(2,i);
+
+------------------------------------------------------------------------
+PASCAL:
+
+ var i,a,b:Byte;
+ const d:array [0..7] of Byte = (3,2,4,1,5,0,7,6);
+
+ b:=0;
+ for i:=0 to 7 do b:=b + ((a and (1 shl d[i])) shr d[i]) * (1 shl i);
+
+------------------------------------------------------------------------
+ASSEMBLER:
+
+a         db ?
+b         db ?
+d         db ?,3,2,4,1,5,0,7,6
+
+   mov ax,seg d            ; ds:[bx] = adres d
+   mov ds,ax
+   lea bx,d
+
+   mov cl,a
+   xor ah,ah
+   mov dl,8
+Permut:
+   mov al,dl
+   xlatb
+   bt cx,ax
+   rcl dh,1
+   dec dl
+   jnz Permut
+   mov b,dh
+
+-----------------------------------------------------------------------
+Aby zakodowac dane, wystarczy zamienic tablice permutacji na przeciwne.
+
+
+11.2. DOWNGRADING
+No wiec caly bajer polega na tym, ze robimy  tak:  idziemy  do  budki  i
+sprawdzamy jaki w srodku siedzi EPROM...  jak mamy karte  programming to
+robimy to bez otwierania a jak jej nie mamy to otwieramy budke i  wersja
+softu powinna byc na naklejce od EPROMa:) Teraz w domu  nagrywamy  sobie
+EPROMa wersja 2.0 (hihi... takie sa najlepsze:))  i  przerabiamy  go tak
+zeby  wszystko  wygladalo,  ze  ma  wersje  taka  jak  ten  w  budce  co
+sprawdzalismy:)) Chodzi mi o program oraz wyglad zewnetrzny... najlepiej
+nagrywac na oryginalnych bo maja takie fajne "firmowe" naklejki z wersja
+:)) Jak juz mamy EPROMa 2.0 co sie przedstawia i wyglada jak  2.9  to go
+wsadzamy do budki wio:)) Teraz na naszym epromie 2.9 dzialaja  wszystkie
+wymyslone bugi a  tPSA  sie  glowi  jaka to nowa metode  zli  phreakerzy
+wynalezli;)) Aha... oprocz wersji nie zapomnijcie zmienic daty EPROMa.:)
+
+11.2.1. JAKI NA CO PO CO I DLA CZEGO
+Narazie mam malo czasu ale napisze to co akurat pamietam z doswiadczen:)
+Reszte bugow dopisze jak bede mial czas sprawdzic:) Zasada jest taka, ze
+jak cos dziala na wersji pozniejszej dziala i na wczesniejszej:))) Zapis
+jest taki: wersja eproma - data eproma - bugi
+
+2.9 - 17.07.1997   -  ?
+2.8 - 10.05.1996   -  programing card-nie zrywa po 16kHz z cenrali wiec
+                      nie musimy wylaczac czujki 16kHz  - 16KHz DISABLE
+                      poczytajcie sobie me faq menu.zip z mojej strony)
+                      entry call juz nie dziala..:(
+2.7 - 13.12.1995   -  entry call
+2.6 - 22.06.1995   -  entry call
+
+11.3. TEKSTY
+Po rozkodowaniu zgranego EPROMa naszym oczkom ukazalo sie wszystko   co
+niebieska budka potrafi powiedziec..ee.. napisac albo raczej wyswietlic
+Nas raczej nie interesuja teksty z menu...  no chyba,  ze sobie  chcemy
+przetlumaczyc... ale juz taki plik jest na mojej stronie:) No wiec  nas
+interesuja zwykle stringi pojawiajace sie podczas normalnego kozystania
+z budki:) Jakie to teksty kazdy wie:) Teraz rozkodowanego EPROMa trzeba
+tylko przeedytowac, zakodowac, zgrac na kostke, wsadzic do  budki  i...
+podziwiac...?... hihi:))) albo obserwowac reakcje  ludzi...  Chyba  nie
+musze mowic, ze tPSA sie raczej zdenerwuje jak jej takie cos zrobimy...
+Konsekwencje??? Wymiana zamkow, wymiana EPROMow na nowe (przy okazji;))
+Aha... jak ktos bardzo by chcial nauczyc swoja budke gadac  inaczej  to
+kolega  moj  bardzo  chetnie pomoze:) Tak sie sklada,  ze jego  portfel
+caly   czas  cierpi   na  chroniczna   "chudosc"   wiec   za   skromne:
+((kino+lody)x2) + koszty wysylki)  moze  nagrac  i  wyslac  kostke:))))
+Wystarczy wypelnic tylko  ponizszy "formularz" i mi podeslac:))  Aha...
+jest takie jedno puste pole. To co sie tam wpisze bedzie pojawialo  sie
+na wyswietlaczu wtedy kiedy zazwyczaj nic sie tam nie pokazuje... czyli
+np.  jak  sluchawka  jest odlozona:)))  Aha, kolega nagrywa _tylko_  na
+EPROMach  w  wersjach   2.8   albo   2.9!  O  inne  nawet  nie  pytac!!
+
+-----------------------------------------------------------------------
+------->   WLOZ KARTE   <---------------------->  INSERT CARD   <------
+------->  KARTA ZUZYTA  <---------------------->   EMPTY CARD   <------
+------->NUM. ZABLOKOWANY<---------------------->DISABLED NUMBER <------
+------->KREDYT       <------------------------->CREDIT      <----------
+-------> WYBIERZ  NUMER <---------------------->  PLEASE DIAL   <------
+-------> ODBIERZ KARTE  <---------------------->  REMOVE CARD   <------
+------->   USZKODZONY   <---------------------->  OUT OF ORDER  <------
+------->    DZIEKUJE    <---------------------->   THANK YOU    <------
+------->     ZAJETY     <---------------------->      BUSY      <------
+-------> ROZMOWA PRZYCH.<---------------------->   ENTRY CALL   <------
+------->   W NAPRAWIE   <---------------------->  MAINTENANCE   <------
+-----------------------------------------------------------------------
+------->                <----------------------------------------------
+-----------------------------------------------------------------------
+
+
+12. JAK OZYWIC 'POZYCZONA' BUDKE
+
+Czyli  jak  i  gdzie  ja  podlaczyc,  zeby  dzialala. Bron boze do lini
+telefonicznej, chyba, z mamy jakas centrale-archaika, nie zalezy nam na
+rachunku  a  policje mamy w dupie.  Czemu??  Budka  czasem  lubi  sobie
+zadzwonic  o  centralki  a  wtedy  !@#$% Wiec musimy jej wlaczyc jakies
+napiecie tam gdzie  miala  linie.  Najlepiej  wystartowac od kilkunastu
+volt np.12,  potem,  jak sie juz naladuje  to  co  trzeba  (raczej  nie
+powinno to trwac  wiecej  niz  minutke)  i  podniesiemy sluchawke budka
+powinna zmartwychwstac;) Jak dalej nic to naciskamy  reset  (kwadratowy
+przycisk na plycie glownej), podnosimy i  odkladamy  sluchawke,  kiedys
+musi ozyc;) Wprawdzie sobie nigdzie nie podzwonimy, w sluchawce zamiast
+piiiiiiiii bedzie cos pierdzialo ale nasz  zwierzaczek  bedzie  zyc:)))
+Najsmieszniejsze jest to, ze jak otworzymy budke i zamkniemy to  bedzie
+ona sie chciala komunikowac z centralka:)) Co jakis czas  biedna bedzie
+probowala  nawiazac  kontakt  ale   piknie  sobie  tylko  i  tyle.  Jak
+zwierzaczek w klatce, ktory chce sie wydostac;))  A  moze  to  sztuczna
+inteligencja;))))))))) Mozemy tez podlaczyc to wszystko  za  PBXa  coby
+budka nie potrafila  sie  skomunikowac  z  centrala  a  my  mamy  wtedy
+pelnosprawna budke:))
+
+
+13. POZYSKIWANIE KART:((
+
+Wlasciwie  to  raczej  niechetnie  opisuje  ten sposobik bo to przeciez
+oszukiwanie ludzi i wzbogacanie tPSA,  bo ci ludzie  musza  przeciez od
+kogos kupowac sobie karty jak straca... No ale czasami potrzeba kart na
+sprawdzanie nowych sposobow itp. w koncu czego sie nie robi dla nauki;)
+Wiec zgarniajcie tylko w celach naukowych!! No i jeszcze dobre rady  od
+wujka hrabiego: nie uczepiajcie sie jednej budki, zmieniajcie je czesto
+W dni powszednie zakladajcie pulapki pod wieczor i oprozniajcie rano  a
+w sobote wieczorkiem  jak  zalozycie  to  mozecie  oproznic  dopiero  w
+poniedzialek bardzo rano:) Tylko wtedy uwazajcie zeby sie wam karty nie
+wysypaly z budki;))) hehe. No i nie robcie tego za czesto  bo  wtedy po
+okolicy rozniesie sie wiesc, ze budka  wciaga  karty i  juz  sobie  nie
+pozgarniacie:(:)  no albo  telepsy  wydupia  wam  niebieskie  urmety  i
+wmontuja silvery... kazdy sposob jest dobry na zmodernizowanie  swojego
+lokalnego zaplecza telekomunikacyjnego...;)
+
+13.1. KOLECZKO
+Nie wiem, kto to wymyslil, ale wszyscy to znaja.. No wiec najlepiej jak
+mamy automat z tzw. koleczkiem, wtedy stosujemy metode na koszyczek  (w
+kazdym zinie, faq to pisze ale ja tez  pokrotce  przytocze)  -  zginamy
+karte na ksztalt literki U i wsadzamy od srodka do tego koleczka. Karty
+tam   beda   wpadac  a  ludzie   z  zewnatrz   ich   nie  wyciagna :)))
+
+13.2. DZIURA
+A  to  juz  sami  z qmplem wymyslilismy:)  Jak w naszej  okolicy nie ma
+niebieskich z koleczkiem to tez sie da cos zrobic, wtedy potrzebne  nam
+bedzie: karta telefoniczna (najlepiej zuzyta, no  chyba,  ze  ktos woli
+pelna;), mocna tasma samoprzylepna z  dwuch  stron  (taka  jak  czasami
+wieszaki sa nia do scian przyczepiane) ewentualnie zamiast takiej tasmy
+nadac sie moze zwykla szeroka tasma opatrunkowa  -  dobrze  klei:)  lub
+dobry  i  szybki  klej.  No  ale tasma  dwustronna jest najlepsza  wiec
+naklejamy tam gdzie jest logo tPSA nasza tasme klejaca.  Teraz bierzemy
+nasza  karte  i  chwytamy  tak  by patrzyc obrazek no i  zeby  wyciecie
+bylo po lewej stronie  na  gorze. Chwytamy za gore (tam gdzie wyciecie)
+i  zaczynamy  zwijac  do siebie  w  koleczko  o  srednicy  jakies   2cm
+konczymy  zwijac  jakis  1cm  od  konca  karty.   Puszcamy,  karta  sie
+prostuje  i  mamy juz lekko  zaokraglona "zjazdzalnie" dla kart.  Teraz
+(patrzac  caly  czas  na obrazek  (zabek jest po lewej gornej stronie))
+jakis  1cm  od spodu  zaginamy karte  rownolegle do  krawedzi  dolnej w
+kierunku  "do siebie"  czyli  tak, ze po zgieciu mozemy  zobaczyc druga
+strone  karty,  oczywiscie  ze  zginaniem  nie  przesadzamy,  wystarczy
+bardzo male zgiecie. Z tak przygotowana "zjezdzalnia" idziemy do budki.
+Otwieramy  i  przyklejamy  nasza karte do obudowy tego czegos gdzie nam
+karty wylatuja.  Najlepiej naklejac na  czystej powierzchni i dokladnie
+po srodku:) Teraz  zaginamy  jeszcze  karte  do  przodu  kozystajac  ze
+scianki, do ktorej przykleilismy karte i zamykamy budke. Calosc  dziala
+bardzo fajnie, lepiej niz na budce z koleczkiem:))  Czytnik kiedy  chce
+oddac karte to wyplunie ja na nasza rynienke i karta zeslizgnie  sie do
+srodka budki.. hehe.. posluchajcie sobie jakie odglosy przy tym  wydaje
+:))) - jak jakas maszyna  losujaca :)  Nikt z  zewnatrz  nam  tego  bez
+pomocy kluczyka nie zlikwiduje bo nawet  jak cos  wepchnie  w  otwor to
+karta ladnie sie odegnie ale nie odczepi sie:)  (no chyba,  ze  dupiaty
+klej/tasme mamy).  A  my  wystarczy,  ze  otworzymy  pudlo  i zgarniemy
+z  podlogi urmeta karty:) UWAGA!! Jak jest duzo kart to przy otwieraniu
+moga  sie wysypac;)))))))))))))))) hehe
+
+
+14. CIEKAWOSTKI:)
+
+Tutaj sa rzeczy, ktore sa albo smieszne, albo  dziwne:)  Wiedzieliscie,
+ze  jest  na  plycie  (pod resetem)  od  niebieskiego urmeta zworka,  a
+wlasciwie dwa bolce na zworke i jak sie je zewrze i zrobi reset  to  na
+wyswietlaczu pojawi sie 'CONFIGURATION OK'.  A blokadka  w  dziobku  od
+niebieskiego urmeta to nie zaden tam elektromagnesik tylko bardzo  maly
+silniczek:)
+
+
+15. JAK DOROBIC SOBIE KLUCZYK TYPU 'ABLOY'
+
+Najpierw co to za typ. Wiec takich zamkow uzywaja telepsy do  zamykania
+swoich rzeczy, budek, skrzyneczek  i  innych.  Jedyny  problem  tkwi  w
+zdobyciu zamka:( No ale to juz trzeba troszke pokombinowac i jest wasz.
+Jak juz mamy zamek (np. ze srebrnego urmeta) to znajduja sie na nim tak
+(od konca): srobka, podkladka z zabkami, zeby nie odkrecic srobki :))),
+druga podkladka, trzecia podkladka, a wlasciwie wsowka  zabezpieczajaca
+przed wypadnieciem srodka zamka, srodek zamka  z  9cioma  koleczkami  i
+8ioma podkladkami. Najlepiej jak masz  kluczyk  do  budki  to  wciagnij
+sobie taki zamek, nie sidzi wcale tak mocno:)) Otwierasz pudlo, lapiesz
+za matalowy pret odchodzacy od  zamka  i  ciagniesz:)))  Latwiotko  sie
+odlaczy, teraz bierzesz kombinerki albo jakis klucz (nie wiem  jaki  to
+rozmaiar, ale  duzy)  a  najlepszy  bedzie  francuz.  Lapiesz  narketke
+mocujaca zamek do obudowy i luzujesz, wystarczy lekko przekrecic, potem
+juz idzie palcami:). Jak odkrecisz to zamek powinien  wypasc dolem.  Ok
+mamy zamek:) W domciu bierzemy srubokret, akies szczypce i  kombinerki.
+Najpierw odginamy zabki podkladki i odkrecamy srobke. Teraz  zdejmujemy
+wszystko z zamka i zabieramy sie do rozwalania.  Trzeba usunac  wsowke,
+ktora nie pozwala nam  wyjac  srodka.  Bierzemy  srubokret  albo  jakis
+szpikulec  i  wsadzamy  w  takie  male  wyciecie  z  boku,  podwarzamy,
+podwarzamy, az bedziemy mogli zlapac nasza wsowke  w  jakies  szczypce.
+Jak juz zlapiemy to   na  chama  wyciagamy:))  Teraz  uwaga!!  Trzymamy
+wszystko tak, zeby nam nic nie wypadlo, ja tak sobie zmarnowalem  jeden
+zamek od srebrnej:(( Obracamy zamek do gory dziurka (ta gdzie  wkladamy
+kluczyk) i delikatie wysowamy  srodek.  Wypadnie  nam  z  boku  malutka
+rureczka. A w lapie mamy kubeczek z dwiema szparami - waska  i szeroka,
+a w kubeczku koleczka z nozka i otworkiem. Zamek jest rozlozony:) Teraz
+troche teorii. Koleczka sa zrobione tak ze ich nozki wchodza tam  gdzie
+jest szeroka szpara i nie pozwalaja im sie krecic dookola, tylko  o  90
+stopni.  Kiedy  mozemy  otworzyc  zamek?  Majac  odpowieni  kluczyk  (z
+odpowienimi wycieciami) i krecac w zamku wyciecia odpowiednio opozniaja
+krecenie niektorych koleczek. Ustawiaja sie one tak, ze  te  otworki  w
+kuleczkach ustawiaja sie w  jednej  linii  tam  gdzie  w  kubeczku jest
+szparka waska. Jak sie nasze kuleczka tak uloza to precik  (ten,  ktory
+nam wpadl przy otwieraniu zamka) wpadnie w utworzona szparke i bedziemy
+mogli przekrecic zamek wiecej niz  o  90  stopni  a  co  za  tym  idzie
+otworzymy np. budke:)) Qrwa jasniej nie  potrafie,  trzeba  miec  przed
+oczyma zamek to sie wszystko zrozumie. Teraz jak sobie dorobic  kluczyk
+do 'obcego' zamka. Potrzebny nam bedzie jakis inny  kluczyk typu  abloy
+(ja mialem od niebieskiego urmeta, malo tam wyciec bo tylko dwa rodzaje
+a moga byc az 4). Zdejmujemy  obudowe  zamka (po zdjeciu wsowki schodzi
+ekstra)  i  wsadzamy  kluczyk do srodka. Krecimy w jedna strone i nozki
+koleczek ustawiaja sie przy brzegu, teraz krecimy w druga i patrzymy...
+ooooo  czesc  noze  zostala  po  drodze:))  Patrzymy  jak sie ulozyly i
+porownujemy z kluczem. Najlepiej miec drugi, albo sobie przerysowac  bo
+po wyjeciu klucza z zamka bedziemy musieli przekrecic zabki spowrotem:(
+Zauazymy, ze  im  wieksze  wyciecie  tym  nozka  zostala  dalej.  Teraz
+ustawiamy koleczka tak by w waskiej szparce  ustawily  sie  otworki  od
+koleczek i patrzymy na nozki. To co widzimy przerysowujemy  na  kartke.
+Nozka moze sie ustawic w jednej z  4  pozycji.  Im  dalej  tym  wieksze
+wciecie  na  kluczyku.  Patrzymy teraz  na  kluczyk  od  spodu  (glowke
+trzymamy  u  gory)  W  niebieskim  koleczka  w zamku ustawiaja sie tak:
+0, 0, 1, 3, 1, 0, 0, 0.   Wciecia   zaczynaja sie jakis  1mm od spodu i
+ok  1.5cm  od  lewej  i maja jakies 2mm wysokosci i  jak  mamy  wciecie
+nr0 to nic, jak 1 to musimy zeszlifowac ok 1mm wglab kluczyka, jak mamy
+wciecie nr3 to 3x1mm = 3mm:)) Teraz rozszyfrujmy to co  przerysowalismy
+po ustawieniu koleczek  w  pozycji  'do otwarcia'  (otworki  w  szparce
+kubeczka).  Powiedzmy,  ze  mamy  cos takiego:  3, 1, 2, 0, 2, 3, 2, 3.
+Bierzemy cos na  prototyp  kluczyka  (jakis plastik, drewienko)  tylko,
+zeby  sie  nam  nie zlamalo  podczas krecenia:))  i wycinamy od spodu w
+oleglosci 1.5mm   3, 1, 2, 0, 2, 3, 2, 3 mm  wglab  kluczyka,  wyciecia
+oczywiscie  maja  wysokosc ok. 2mm.  Sprawdzamy  na  samym  srodku  bez
+obudowy  zamka czy  sie udalo, czyli czy otworki ustawiaja sie w jednej
+linii. Jak nie to szlifujemy tam gdzie trzeba, jak tak to zanosimy nasz
+klucz do dorabiacza i mowimy, ze chcemy dorobic. Moze sie troche pluc i
+pytac  czemy  jest  z  plastiku  ale  walic  go:)) Dorobiony trzeba tez
+sprwdzic  tak  jak  ten  plastikowy  i na 80% bedziecie musieli go ciut
+podszlifowac:( no ale macie juz kluczyk:))))
+
+
+16. GREETZ
+
+Tym razem greetzy sa jednoosobowe... a co;)  No wiec  chcialbym  bardzo
+goraco pozdrowic taka jedna panienke z Krakowa,  co na nicka ma ufoczka
+na imie Monika (tak jak corka ratownika) i lubi dostawac usmieszki:))))
+:o) :-) :^) #:-] :D ;-) :-P :O) :*) :') :-D :o) :-] :^) :-> ;-D :-) :*D 
+
+
+17. PHREAK ZONE
+
+Powstal jakis czas temu i ma sie calkiem niezle. Jak macie cos co mozna
+tam zamiescic to smialo przysylajcie:) Adresiki stronki sa na  poczatku
+tego faq:)
+
+17.1. MEMBERS ZONE
+
+Heh... podstronka zabezpieczona haslem... zeby tam miec wejscie,  czyli
+dostac logina i passworda trzeba dac cos co moznaby tam zamiescic.. Co?
+No nie wiem.. cos czego jeszcze nikt nie ma, albo ma bardzo bardzo malo
+ludziuff... po prostu cos maxymalnie fajnego:)  I  to  wlasciwie jedyny
+sposob na wejscie tam:) Wiec pliz nie piszcie zebym wam dal  passworda!
+Najpierw cos fajnego podeslijcie!

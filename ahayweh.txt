@@ -1,0 +1,73 @@
+--------------------------------------------------------------------------------------------
+                                    AhayWeh phreak FAQ
+--------------------------------------------------------------------------------------------
+ Tekst zostal napisany w celach edukacyjnych itp. itd...
+--------------------------------------------------------------------------------------------
+ Nie ma cos sie  rozwodzic nad wstepem i bzdurami. Przejde od razu do konkretow. Czesc  zawartych tu materialow to nie sprawdzone pomysly, czesc przetestowalem osobiscie (i  odczulem ich skutki na wlasnej skorze ;)
+
+
+1. Slupki telefoniczne.
+
+Pojawily sie gesto na wsiach (niekiedy miastach) wojewodztwa pomorskiego nie wiem jak w innych, jezeli kolo ciebie nie ma to poczekaj - postawia ;). Dobra, wygladaja z zewnatrz mniej wiecej tak :
+
+       _________
+       |       |    <--- "Wieczko" (plastik ;)
+       |       |
+       |       |
+       |       |
+       |       |
+       |  ---  |    <--- LOGO (Pisze albo "slupek telefoniczny" albo "TPSA" ;)
+       |  ---  |
+       |       |
+       |   O   |    <--- ZAMEK ABLOY :((
+       --     --
+        |     |
+        |     |
+        |     |
+        |     |
+        |     |
+        |     |     <--- "Denko" (Tez plastik ;)
+        |     |
+        |     |
+        -------
+
+Jest to jakby czarne, plastikowe "cos" wbite w beton (Jak jest ziemia to zalewaja oczywiscie betonem :(( ). Sklada sie to to z dwoch rurek o roznej grubosci nalozonych jedna na druga. Na te badziewia znam kilka sposobow. Jeden, przyznaje sie bez bicia, wziety z innego FAQ to napilowanie brzeszczotem plastiku nad zamkiem i podwarzenie zamka na chama srubokretem or sth. Puszcza dosyc latwo, ale mozna cos rozpieprzyc (Wiem cos o tym - zdobylem zamek, ale byla afera na cala wioche bo odcialem paru chlopom telefon ;). Mysle ze lepiej napilowac z KAZDEJ strony i wyjac. Pozniej mozesz zamaskowac dziure np. tasma izolacyjna (czarna). Telekomunisci nie zagladaja czesto na wies i nie bedzie klopotu (No, moze sie zorientuja za miesiac...;). Ja wam mowie, UWAZAJCIE !!! Chlopy bardzo pilnuja swoich slupkow ! Kiedys zaczalem chodzic caly dzien kolo slupka i jeden to przyuwazyl, pozniej zobaczyl ze probuje traktowac (po lamersku zreszta ;) slupek mlotkiem (o taaaaakkkk.... ;) i ten juz byl spalony... Nawet w nocy sie lumpil czy nie podchodze !!! (Bo to niedaleko mojej dzialki) Gdybym od razu podszedl powiedzmy o 1.00 to bylby spokoj a tak... dobra, nie wazne. DRUGI sposob polega na podwazeniu "wieczka" lomem. Wtedy mozesz rozwalic zamek, ale jak i tak sie chcesz tylko podpiac... Pozniej zakladasz wieko na gore i koniec kropka. Ale jak zaczniesz za duzo impulsow nabijac to przyjedie Telepies i cala robota (mi to zajelo godzine !!!) na marne. Po za tym mieszkancy zaczna sie interesowac (niepotrzebnie ;) slupkiem. Trzeci sposob nalezy wyporbowac gdy zalezy ci tylko na zamku ze slupka i powiedzmy nabijaniu impulsow przez 1 noc. Podchodzisz do cholerstwa z Siekiera, tasakiem or sth. i.... ;))) Zamek wychodzi bardzo latwo, ale czesto odlacza to ludkom telefon ;). Musisz walic ostroznie ;) zeby nie uszkodzic wnetrznosci. Ja tak zdobylem zamek taki sam jak w srebrnym !!!
+Wiem ze na slupki jest wiele innych sposobow, bo po prostu sa z plastiku i slabe. Mozesz np. wjechac w niego samochodem, walic kamieniami or sth. ;)
+
+2. Phreakomat
+
+O tym sie pisalo duzo (odsylam do innych FAQ), ale ja mam osobisty pomysl. Jezeli nie chcesz np. niszczyc konca sluchawek i microfonu to robisz w "phreak - pudelku" wejscia na jacki. I teraz mozesz odlaczyc sluchawki od phreakomatu i podlaczyc bezproblemowo do wiezy, walka i innych.
+
+Maly schemacik phreakomatu (Widok z boku):
+
+       KLAWIATURKA
+    _____ _____ _____ _____        Przylutowane (lub tez na Jacka) ---|
+    |   | |   | |   | |   |          igly or krokodylki               |
+ ----------------------------------------------------------           |--->    |---
+ |                                                        |====================|
+ |  /\  /\    <---- Jacki do microfonu i sluchawek        |                    |---
+ |  \/  \/                                                |
+ ----------------------------------------------------------
+
+To tyle o tym urzadzonku.
+
+3. Sasiad :)
+
+O tym tez ludzie pisali Baarrrrdddzzzzooo duzo. Mam jednak osobisty pomysl.
+
+W wiekszosci blokow skrzynka telepsa stoi na zewnatrz. Moj sposob jest za#$%isty bo nie musimy wychodzic z domu do piwnicy (Wiec mozemy walic nawet na 0202122 ;). No wiec prowadzimy takie izolowane przewody z silniczka elektrycznego po scianie bloku na dol. Pozniej do skrzynki tak samo tymi przewodzikami i... tu trzeba otworzyc skrzynie. Ale po to odsylam do innego FAQ gdzie opisano "jak rozwalac zamki TPSY w skrzynakch". PAMIETAJ JEDNAK ZE POZADNY PHREAKER NIE KRADNIE IMPULSOW LUDZIOM TYLKO TELEKOMUNIE !!! NIE CHCESZ CHYBA ZEBY JAKIS EMERYT PLACIL ZA TO ZE WYSLUCHUJESZ GLUPICH GADEK KASIUNI FIGURY !!! Jeszcze jedno.  Sposobu tego nie sprawdzalem, wiec nie wiem czy zadziala.
+
+4. Budki
+
+O tym to bylo kilka tysiecy (No moze przesadzam ;) elektronicznych stron, ja dam tylko jedna mala rade. Jak masz przed soba bude na scianie to przewod biegnie na zewnatrz. Tera telepies zabezpiecza ow przewod taka metalowa listwa zebys nie mogl sie dostac do niego i podzwonic za free. Ale, ale !!! Po pierwsze ta listwe latwo podwarzyc np. srubokretem, ale ja uwazam ze powinienes sie rozejrzec :)) Po prostu popatrz gdzie biegnie przewod dalej - Jezeli wrasta w sciane to masz pecha, ale ja tak u siebie sprawdzilem i odkrylem ze 10 m dalej przewod jest bez "otoczki" blaszanej i w... krzakach !!! Hehe, teraz tylko sie ladowalo w krzaki i gadalo (Tylko nie dzwoncie z krzakow do figury bo ludzie slyszac te odglosy sobie co pomysla ;)).
+
+5. End OF
+
+To tyle. Jak bede pisal nastepny FAQ to napisze moze o srebrnym, slupku w srodku i o szafach telefonicznych. Zadzwoncie pod 080012842 i sie posmiejcie... E-mailu nie podam bo lameria mnie zaleje smieciami, a zreszta po co... jak masz jakies questy odnosnie tekstu to zapytaj sie kogokolwiek na IRCU na #phreakpl. Ja zreszta tez tam czasem bywam.
+
+
+P.S. Widzieliscie kiedys taka akcje ??? Banda dresow ciagnie za soba samochodem urwanego niebieskiego urmeta razem z tym niebieskim daszkiem !!! Iskru szly jak diabli, a dresy po krotkiej jezdzie zostawili pudlo w trawie ;) Niestety nie nadawalo sie juz do uzycia (Brakowalo zamka, czytnik byl do dupy i wogole...;). 
+
+
+
+

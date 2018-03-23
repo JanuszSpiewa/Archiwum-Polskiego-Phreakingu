@@ -1,0 +1,2472 @@
+                      - Asturn faq -
+
+                    Kompendium phreaku
+
+ ____________________________________________________________
+|                                                            |
+| Mam nadzieje, ze informacje zawarte w tym tekscie zostana  |
+| wykorzystane niezgodnie z prawem i mocno przyczynia sie    |
+| do spowodowania licznych oraz dotkliwych strat dla tpsa :) |
+|____________________________________________________________|
+
+                                                    7.IX.2000
+
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+
+Menu glowne
+-----------
+
+1.  Na poczatek.......................................... #*1**#
+
+Czesc I. Budki (+ najnowszy bug na epromy, takze 5.8 !).. #*I**#
+
+2.  Blue Urmet Flood & Super Silver Flood................ #*2**#
+3.  Praktyczne wykorzystywanie epromow................... #*3**#
+4.  Pajeczarstwo zaawansowane............................ #*4**#
+5.  Pozyskiwanie kart magnetycznych...................... #*5**#
+6.  Zabezpieczanie budek przed nieautoryzowanym dostepem. #*6**#
+7.  Transplantacja urmetow (zabawa w chirurga)........... #*7**#
+8.  Wspomnienie PRLu czyli slow kilka o zetonowcach...... #*8**#
+9.  Telegram z urmeta i cos jeszcze...................... #*9**#
+10. Uslugi na kogos i do kogos (brutal phreak)........... #*10*#
+11. Generalplan Urmet, czyli chaos w tpsa................ #*11*#
+a)  Ostateczne  rozwiazanie kwestii srebrnych urmetow.... #*a**#
+b)  Buf i Ssf vs.  dyrekcja  okregu...................... #*b**#
+c)  Freecalling dla wszystkich........................... #*c**#
+d)  Idziemy do sadu...................................... #*d**#
+e)  AutoBUF/SSF & oddajcie mi moja  karte................ #*e**#
+f)  Internet  w  sluzbie  phreakerow..................... #*f**#
+
+Czesc II. Inne........................................... #*II*#
+
+12. Elektroniczny ekstender.............................. #*12*#
+13. Numery 0-700 i ich wykorzystanie dzisiaj............. #*13*#
+14. Wirtualne alarmy..................................... #*14*#
+15. O bezprzewodowcach jeszcze troche.................... #*15*#
+16. Komorki, komorki, komorki............................ #*16*#
+17. Zmierzch pbxow....................................... #*17*#
+18. Totalny przekret: dymiacy urmet - symulacja pozaru... #*18*#
+
+19. Jak na razie to tyle................................. #*19*#
+20. Nowy klucz pgp....................................... #*20*#
+
+
+1. Na poczatek [#*1**#]
+--------------
+
+Niniejszy  faq, kompendium, to moje doswiadczenie, pomysly i
+wiedza   na  temat  phreaku.  Nieprzypadkowo  wymienilem  na
+pierwszym  miejscu  'doswiadczenie',  bo  wiekszosc  tekstow
+jest,  co  mozna  latwo  zauwazyc,  pisana  na wyczucie, bez
+sprawdzenia  czy  dany  patent  dziala.  W  tym wypadku jest
+inaczej  99,9%  rozwiazan  tu opisanych zostalo sprawdzonych
+empirycznie (jakie ladne slowo). To wiele znaczy.
+
+Dlaczego  wogole  napisalem taki ogolny faq? Poprzednie moje
+teksty  byly  dosyc  szczegolowe i trudne do zrozumienia dla
+osob  nie  bedacych  'zawodowcami'.  Teraz  postanowilem  to
+zmienic  i  dac szanse pozostalym, ktorych jest zdecydowanie
+wiecej,  na skorzystanie z dorobku calej polskiej sceny. Nie
+znaczy  to  oczywiscie,  ze w tekscie nie ma zadnych bledow.
+Pewnie  sa,  i  jesli ktos takowe zauwazy niech raportuje do
+mnie.  Dla  uwaznych  beda  nagrody  (niebieskie, srebrne, i
+takie tam... :)).
+
+W  indeksie faqu znaczki typu #*xx*# oznaczaja cos w rodzaju
+kotwicy   w  tekscie.  Dzieki  temu  bardzo  latwo  wyszukac
+fragment,  ktory  sie chce przeczytac (chociaz lepiej calosc
+dokladnie    przestudiowac    :)).    Sa   tylko   2   takie
+niepowtarzalne  znaczniki  w  calym  tekscie: jeden w spisie
+tresci  i drugi na poczatku kazdej czesci. Bardzo bym chcial
+zeby  przy  dluzszych  faqach  (np. wiecej niz 30 kb tekstu)
+stosowac tego typu ulatwienia.
+
+Czesc  pomyslow  nie  jest  nowa, ale podejscie do nich jest
+innowacyjne   lub  wykorzystanie  nietypowe.  Stad  tez  gdy
+wiedzialem,  ze  w jakims tekscie opisywane byly juz podobne
+rzeczy,  odwoluje  sie do tego tekstu i przytaczam autora. W
+koncu  na tym to wszystko polega, zeby wykorzystywac rowniez
+czyjes doswiadczenie i wiedze, majac wlasne podejscie.
+
+Czesc I. Budki [#*I**#]
+--------------
+
+Od czasu gdy zaczalem sie bawic we phreaking budki staly sie
+najczesciej wykorzystywanymi urzadzeniami w zyciu codziennym
+(w  porownaniu  np.  do  kuchenki  mikrofalowej). Z tego tez
+powodu   poswiecam  im  specjalna,  glowna  czesc  oraz  75%
+powierzchni  tego  faqu.  Z  nimi  wiaze sie wiekszosc moich
+pomyslow.  Do tego co napisalem we wstepie dodam jeszcze, ze
+nic  nie  wskazuje  aby  scisly zwiazek phreaku i budek mial
+byc rozerwany w najblizszej przyszlosci. Ani ekstendery, ani
+telefony komorkowe czy tym bardziej boxy ich nie zastapia.
+
+Oto  najnowszy  bug na wszystkie epromy w tym 2.9 i 5.8 (!),
+ktory odkrylem i rozpracowalem na 2 tygodnie przed ukazaniem
+sie tego tekstu:
+
+Sposob  jest  banalny.  Budka  musi  miec wybieranie tonowe.
+Jesli  takowe  posiada,  podnosimy  sluchawke i przystawiamy
+tonedialer  z  wcisnietym  '0' tak, ze dzwiek jest caly czas
+generowany   do   mikrofonu   (mimo  ze  ten  jest  poki  co
+zablokowany).   Nastepnie   wciskamy   '#'   i   wybieramy z
+klawiatury  dowolny  numer  z serii bezplatnych (914, 0800),
+caly   czas  trzymajac  '0'  na  dialerze  przystawionym  do
+sluchawki.  Urmet  najpierw sie 'rozlacza' (wcisniety '#') a
+zaraz  pozniej  zaczyna  wybierac  darmowy  numer.  Po  jego
+wybraniu  pojawia sie sygnal ciagly, bo w miedzyczasie lapie
+nasze  '0'  wygenerowane  z  tonedialera (nie jest to sygnal
+ciagly  zwykly  tylko  taki jak po wybraniu '0'). Dzieje sie
+tak  bo  centrala  dostaje  tony  z 2 zrodel jednoczesnie (z
+klawiatury  i tonedialera). I to wszystko, mozna juz dzwonic
+wybierajac  kolejne  cyfry, np. 602xxxxx (nie trzeba wciskac
+'0'  bo  juz  zostalo  zalapane,  no  chyba  ze  dzwoniac za
+granice).  I  tu  kolejna niespodzianka: nie zrywa po jednym
+impulsie!!!!!  Czy  to eprom 5.8 czy 2.9 czy 2.0 - dziala na
+wszystkich.   Sposob   jest  super,  ale  wlasnie  musi  byc
+wybieranie  tonowe. Wniosek: nie potrzeba karty programming,
+nie  trzeba wylaczac teletaksy, ustawiac freenumber i wogole
+wszystkich  tych  cudow.  Mnie  to sie bardzo spodobalo i wg
+raportu   znajomych  dziala  w  wawie,  lublinie,  krakowie,
+wroclawiu  i  w  gdansku  a  wiec z pewnoscia w calym kraju.
+(Nie  dziala  w tarnowie na wiekszosci budek.  Podziekowania
+dla  kolnierzyka  za informacje na ten temat i rozne testy).
+Troche  przykry  jest jedynie wniosek dla dumnych posiadaczy
+programmingow   (ostatnio   widuje   coraz   wiecej  lamerii
+szpanujacej  programmingami),  ze  wcale  ta  karta nie jest
+potrzebna:  i tak bez wybierania tonowego z programminga sie
+nie  zadzwoni, a tam gdzie to wybieranie jest, lepiej uzywac
+opisanego tu bugu.
+
+Jak  doszedlem  do  tego  sposobu???  Nauczylem  sie  go  od
+koreanczykow,  wietnamczykow  i  innych  zoltkow,  ktorych w
+warszawie jak w pekinie. Przy czym oczywiscie ulepszylem ten
+sposob.  Zawsze widzialem przed stadionem X-lecia jak zoltki
+rozmawiaja z niebieskich urmetow a na wyswietlaczu sa '000'.
+Koncza  rozmowe  nic  nie  przestawiaja  a  budka dziala dla
+zwyklych   uzytkownikow.   Jak   oni  to  robili:  ustawiali
+programmingiem  we  free  numers  '000'  i stosowali opisany
+powyzej  trick  wybierajac  wlasnie '000' jako ten bezplatny
+numer.  Ale  nie  wiem  dlaczego  oni  sobie  jeszcze  zycie
+utrudniali dodatkowo. Wkladali zuzyta karte i przytrzymywali
+ja   od   srodka,   ze  automat  wyrzucal  "nieczynny",  ale
+klawiatura  byla  odblokowana. Nie wiem po co to robili bo i
+bez tego zabiegu wszystko dziala.
+
+Update  z ostatniej chwili. W wyniku czestego eksploatowania
+wyzej opisanego sposobu na kilku budkach w warszawie (wersja
+softu nie gra roli) zrywa po jednym impulsie. Tam gdzie jest
+eprom  2.9 lub nizszy, wystarczy wylaczyc teletakse (16 kHz)
+a  reszta  dziala.  Tam  gdzie  jest  5.8  mozna co najwyzej
+wymienic  eprom  lub  zadowolic  sie  rozmowa jednoimpulsowa
+(czesto ponawiana). Aha i uprzedzajac pytania odpowiadam, ze
+ten  sposob nie dziala na srebrnych. Testowalismy jego rozne
+mutacje oczywiscie. Jesli ktos wykryl nowa niech mailuje.
+
+
+2. Blue Urmet Flood & Super Silver Flood [#*2**#]
+----------------------------------------
+
+Ta  sprawa  to  kwintesencja  mozliwosci  phreaku. Umozliwia
+skuteczne   dzialania   odwetowe  i  zaczepne  wobec  innych
+(jednostek  i  instytucji).  Nad  ta problematyka pracowalem
+razem  ze  znajomym  myszem,  ktory  wiem  ze podpadl bardzo
+wielu osobom ze sceny. Dlatego prosze ich o wyrozumialosc, a
+szczegolnie wszystkich z krakowa :) Na koncu tekstu znajduje
+sie  z  zycia wziety przyklad, kiedy to dzieki opisywanym tu
+sposobom nauczylem jedna firme moresu i spowodowalem, ze jej
+pracownicy  bardzo  zmiekli  (ze  wzgledu  na  dosyc przykre
+konsekwencje  dla  tej  firmy  nie podaje szczegolow - i tak
+wiekszosc znajomych wie co jest na rzeczy bo w koncu sami mi
+pomagali  :)  Skad  wogole  sie  wziely  nazwy  BUF  i  SSF?
+Wymyslilismy je razem z myszem, zeby brzmialy miedzynarodowo
+:)  Zreszta  wygodnie sie mowi "zbufowac" kogos :) Temat ten
+rozpoczal  hrabia  w  slynnym faqu o menu karty programming.
+Wspomnial  tam  jedynie, ze w c90 menu przy pozycji num. c90
+mozna  wpisac  czyjs  numer  w  awaryjnej  sytuacji.  My  to
+zdecydowanie  rozwijamy.  Zaczynam  od  opisu  bufa wlasnie,
+czyli  rzecz dotyczy tylko niebieskiego urmeta. Ale najpierw
+dwa slowa na temat, po co wogole kogos denerwowac i ustawiac
+mu  bufa.  Odpowiedz  jest oczywista. Dla jaj. Czesto nie da
+sie  prowadzic  "rownej"  walki  z  pewnymi instytucjami czy
+firmami.  Wtedy dobrym sposobem jest wlasnie zablokowanie im
+telefonu(ow)  przez  zaprogramowanie  urmetow  aby  do  nich
+dzwonily.  Zreszta  motywy  moga  byc  rozne, ale pewne jest
+jedno,   traca  zawsze  dwa  podmioty:  uzytkownik  telefonu
+ktoremu  zrobilo  sie  taki  numer  oraz  tpsa  -  bo to jej
+automatow  uzywa  sie  do  tych celow. Tpsa musi sie pozniej
+tlumaczyc,  przestawiac  automaty,  placic (jesli np. ustawi
+sie  bufa  na  komorke)  i  generalnie sie wqrza :) No dobra
+teraz meritum.
+
+Zasada   jest   banalnie   prosta.  c90  menu  odpowiada  za
+komunikacje  budki  z  centrala.  Ze  wzgledow  praktycznych
+interesuja  nas  tylko dwa podmenusy: enable c90 i num. c90.
+Pierwszy  z nich wlacza/wylacza komunikacje budki z centrala
+(defaultowo  wlaczona)  a  w  drugim  wpisuje sie numer, pod
+ktory  budka  dzwoni  aby polaczyc sie z centrum nadzoru. Na
+podstawie  tego  widac juz, ze zasada bufowania jest banalna
+(zeby  nie  rzec  prostacka): ustawia sie czyjs numer w num.
+c90  i po jakims czasie budka zaczyna pod ten numer dzwonic.
+Ten  wydawaloby sie banalny sposob ma jednak szereg ukrytych
+i  subtelnych  mozliwosci  rozwijania  go  i  udoskonalania.
+Przede  wszystkim nalezy zdac sobie sprawe z tego, ze to jak
+czesto  budka  bedzie  dzwonila do centrum nadzoru zalezy od
+kilku czynnikow. Wszystkie te przypadki sa do sprawdzenia na
+podstawie  diagnostic  menu  i  counter  menu: w okreslonych
+sytuacjach,  gdy sa spelnione okreslone warunki, z okreslona
+czestotliwoscia  aparat  zglasza  sie na centrali. Wszystkie
+szczegoly   sa   opisane   w  instrukcji  do  niebieskiego a
+zdarzenia i ich opis takze w faqu kolnierzyka. Mimo to warto
+znac kilka "zelaznych" regul, ktorymi "kieruja" sie automaty
+przy dzwonieniu do centrum nadzoru. Po pierwsze, standardowo
+kazdy  "zdrowy"  niebieski urmet laczy sie 2 razy dziennie z
+centrum  nadzoru  i  informuje  w  jakim jest stanie (wysyla
+pozycje  z  diagnostic menu). Po drugie, czestosc dzwonienia
+na  centrale  uzalezniona jest od tego jak czesto budka jest
+wykorzystywana  (jesli  stoi  w bardzo popularnym miejscu to
+dzwonila  bedzie  o wiele czesciej niz tam gdzie raz na dobe
+ktos  ja  wykorzysta).  Dzieje sie tak dlatego, ze im wiecej
+jest   uzywana   tym  wiecej  zdarzen  wpisywanych  jest  do
+rejestru.  Po trzecie, gdy ustawi sie default menu (sluzy do
+tego  karta  test  -  rozszerzona  wersja karty programming)
+budka  zaczyna  dzwonic na centrale do skutku, poniewaz musi
+sciagnac swoje ustawienia (default menu resetuje wszystkie -
+lacznie  z  numerem  do  centrum nadzoru, dlatego koniecznie
+trzeba przynajmniej to pole uzupelnic). Wreszcie po czwarte,
+gdy  budka  zostala otwarta, zresetowana (przycisk na plycie
+glownej),  lub  uszkodzona.  Wiedzac o powyzszym mozna teraz
+sprytnie  zestawic  liste  zdarzen  i dopasowac ja aby budka
+dzwonila  na  centrale jak najczesciej (piszac "na centrale"
+mam na mysli oczywiscie numer ustawiony w num. c90).
+
+Pamietac   tez   warto  o  podmenusie  calls  num.,  ktorego
+standardowa  wartoscia jest 1000. Oznacza to ilosc polaczen,
+po  ktorych  budka  sie  zglosi  na centrale. Co przeszkadza
+temu,  zeby  ustawic  tu wartosc 1 ??? Nic, a wtedy co jedno
+wykonane   polaczenie   budka   bedzie   dzwonic  pod  numer
+zaprogramowany w num. c90.
+
+Wypraktykowana  zasada mowi, ze uniwersalny sposob to uzycie
+karty  test:  wlaczenie  ustawien fabrycznych (default menu)
+i wpisanie numeru w num. c90. Mozna takze wlaczyc wybieranie
+tonowe  (standardowo  ustawione  jest decadowe w dial menu).
+Przestawienie  wybierania  na tonowe (najpierw jednak trzeba
+sprawdzic   czy   centrala  pozwala  na  takie  wybieranie -
+wystarczy  przestawic  na chwile na wybieranie DTMF, odlozyc
+sluchawke  i  wybrac dowolny numer bezplatny, np. 914, czyli
+jesli  sie  polaczy  to  znaczy,  ze  dziala),  jest  o tyle
+skuteczne,  z  o  wiele  szybciej  wybierany  jest  numer do
+centrum  nadzoru  i "ofiara" ma czesciej telefony :) Jak juz
+wspomnialem  ten  sposob  gwarantuje, ze urmet bedzie czesto
+staral  sie  polaczyc  z  centrala.  Nie  jest to oczywiscie
+jedyna   mozliwa   metoda.  Inna,  podwojnie  skuteczna,  to
+przestawianie   budek   wlasnie   w   popularnych  miejscach
+(podwojnie  skuteczna bo defualt menu + standardowa czestosc
+uzywania).  Moze  sie  zdarzyc,  ze chcemy aby budka zaczela
+dzwonic  po  jakims czasie a nie od razu gdy ja przestawimy.
+Nic  prostszego.  Nie  ustawia  sie  wtedy default menu, ale
+kasuje  kody  diagnostic menu i counter menu. To gwarantuje,
+ze  dopiero gdy rejestry zostana zapelnione wlasciwa iloscia
+zdarzen,  budka  zacznie dzwonic na centrale (zwykle jest to
+po  okolo  10  godzinach gdy budka jest w srednio popularnym
+miejscu).  Aby  ten  czas skrocic, mniej wiecej, o 70% mozna
+ustawic  w taxation menu w tax value wartosc 300. Wtedy nikt
+nie   bedzie  mogl  zadzwonic  (nikt  nie  ma  karty  z  300
+impulsami)  a  jeden  z  kodow  w menu diagnostycznym mowi o
+dzwonieniu   na  centrale  po  n  podniesien  sluchawki  bez
+zrealizowania  polaczenia.  Mozna  oczywiscie  tez uszkodzic
+budke, np. wlozyc plasteline do czytnika czy w inny bardziej
+wyrafinowany  sposob,  wtedy  tez bedzie dzwonic na centrale
+czesciej, ale to juz skrajnosci. Aby buf lepiej sie trzymal,
+radze zalockowac zamek. Wtedy monter jak przyjdzie naprawiac
+bedzie mogl, co najwyzej, przeciac kable i odlaczyc budke od
+sieci.  Oczywiscie  moze tez przeprogramowac budke, ale zeby
+tego  uniknac  mozna  zablokowac czytnik (plastelina, lapacz
+kart,   czy   jakikolwiek   inny  sposob).  Ta  sytuacja  ma
+zastosowanie  przy epromie 2.9 lub nizszym. Mozna oczywiscie
+uzyc  najbardziej  wymyslnego  sposobu  (tak  jak w opisanej
+historii  ze znajoma glixa - przy okazji czesci o lockowaniu
+zamkow). Chodzi oczywiscie o malutka przerobke epromu 5.8, w
+ktorym   zmienia   sie   tylko  numer  centrum  nadzoru.  Po
+zainstalowaniu    czegos    takiego    zaden    monter   nie
+przeprogramuje    takiej   budki   -   straci   programminga
+najpredzej.  Jedynym  sposobem jest zmiana epromu a tego nie
+da   sie  zrobic  bez  otwarcia  budki  (a  wiec  naturalnie
+lockujemy zamek). Heh. Monterzy niezle sie wtedy wqrwiaja :)
+
+Jakie numery mozna bufowac (wpisywac do num. c90)? Wszystkie
+jakie  chcecie  -  miejsca  jest  duzo.  Wyjatkiem sa numery
+zablokowane  na  centrali  (obecnie  glownie  0700 - zreszta
+zbufowanie 0700 to jedyny przypadek gdy wlasciciel bardzo by
+sie    z    tego    cieszyl).   Czyli:   numery   komorkowe,
+miedzymiastowe,  miedzynarodowe,  lokalne,  infolinie (0800,
+0801,  0804),  linie uslug teleinformatycznych (020), numery
+komorkowe  miedzynarodowe  i  wszelkie,  wszelkie  inne (np.
+mozna  zbufowac  cia  lub  centrum  microsoftu  w  usa). Jak
+wpisywac  numer inny niz lokalny? Dokladnie tak samo jak sie
+na   niego   dzwoni   z  telefonu  stacjonarnego,  czyli  ze
+wszystkimi  prefiksami.  Zreszta  najpierw  mozna  normalnie
+wykrecic numer i jesli sie polaczy z wybranym celem tak samo
+wpisac  w  num.  c90. Aby zwiekszyc efekt bufa warto ustawic
+wiecej   niz   jedna   budke.   Z   doswiadczenia  wiem,  ze
+zaprogramowanie 20 budek (przy uzyciu default menu) powoduje
+absolutna  i  dlugotrwala  blokade wybranego numeru jaki sie
+ustawilo  w num. c90. Zasadnym pytaniem tutaj jest, po jakim
+czasie  tpsa usuwa bufa? Z doswiadczenia (znowu) wiem, ze od
+1 dnia do 3 miesiecy. Jesli przeprogramuje sie jedna budke i
+w  dodatku ustawi na numer telefonu z cidem (np. komorke) to
+tpsa  zalatwi  to  w ciagu jednego dnia. Jesli sie ustawi 20
+budek  na  numer lokalny, z tego budki beda staly w roznych,
+oddalonych  od  siebie  okolicach,  beda  podpiete pod stare
+centrale   (nie  wysylajace  cida)  lub  beda  mialy  numery
+zastrzezone  (znam  12 takich budek w wawie), to tpsa bedzie
+sie  miesiac  z  tym  bawic  i nie usunie awarii. Moj rekord
+(tzn.  moj  i  moich  qmpli)  to 110 budek jednego dnia na 3
+numery.  Po 2 miesiacach wszystkie 3 numery (2 stacjonarne i
+jedna   komorka)  byly  juz  zmienione  a  po  3  tygodniach
+wylaczone  :) Generalnie podkreslam raz jeszcze, ze warto do
+bufowania  uzywac  budek  z  numerami  zastrzezonymi lub bez
+cida. Sprawdzic to mozna dzwoniac z budki na komorke - widac
+czy   sie   numer  wyswietla  czy  nie.  Dobra  metoda  jest
+przestawianie  budek  na prowincji gdzie tpsa zjawia sie raz
+na miesiac :) Tyle na temat bufowania i niebieskich urmetow.
+
+Teraz najnowszy krzyk mody czyli Super Silver Flood. Chociaz
+nazwa  SSF  nie  jest tak chwytliwa jak buf to metoda jest o
+wiele  grozniejsza  dla  potencjalnych  ofiar.  Po  pierwsze
+dlatego,  ze  niebieskie  urmety mozna wymienic na srebrne a
+srebrnych  nie ma juz na co wymieniac. Po drugie dlatego, ze
+srebrny  laczy  sie  o  wiele czesciej z centrum nadzoru niz
+niebieski  (wprost  zyc  nie  moze bez centrali). Po trzecie
+wreszcie  dlatego,  ze  karty konserwatora nie skasuje zaden
+eprom  (bo  srebrny  nie  ma  epromu)  i  wogole nic jej nie
+zniszczy  (chyba  ze  pozar  :)  )  a  srebrnego  mozna  tak
+zabezpieczyc,  ze  nie  da  sie go przeprogramowac. Pikantne
+szczegoliki  ponizej.  W przeciwienstwie do bufa gdzie mozna
+kombinowac  na  rozne  sposoby  ssf  jest  o  wiele bardziej
+jednoznaczny. Cala strategia przedstawia sie tak. Wklada sie
+karte  konserwatora,  wpisuje  pin,  otwiera urmeta, wpisuje
+numer  kierunkowy  i  wreszcie  numer  centrum nadzoru. Przy
+ustawianiu  ssfa  na  numer  zamiejscowy wpisuje sie jedynie
+numer  bez  kierunkowego.  Kierunkowy  wlasciwy  dla  danego
+miejsca  wpisuje  sie  w  oddzielnym menusie. Jesli budka ma
+dzwonic  na  numer  lokalny  to  rowniez trzeba wpisac numer
+kierunkowy,  mimo  ze  raczej malo kto dzwoni lokalnie w ten
+sposob  ze  wybiera  najpierw kierunkowy. Przy programowaniu
+ssfa na numer zagraniczny wystarczy wpisac 00 (chociaz jesli
+numer  kraju  jest czterocyfrowy mozna wpisac caly, np. 0044
+dla  anglii).  Podobnie  jest  w przypadku numerow telefonow
+komorkowych.  Mozna wpisac 0048 i normalnie numer 060xxxxxxx
+lub  jako  kierunkowy,  np.  0604  i  jako  numer do centrum
+nadzoru  juz tylko pozostale 6 cyfr komorki. Wszystko zalezy
+od  checi  i  wygody.  Przy numerze kierunkowym mozna wpisac
+maksymalnie 4 cyfry. I to cala filozofia.
+
+Na  standardzie  srebrny  urmet  laczy sie 4 razy dziennie z
+centrum  nadzoru + ewentualne zdarzenia (patrz lista kodow w
+instrukcji   do   tpe97).   W   praktyce  gdy  urmet  wisi w
+uczeszczanym miejscu (metro, kino, ruchliwa ulica) laczy sie
+z  centrala  ponad  20  razy  dziennie.  Gdy  ustawi sie ssf
+sytuacja  sie  zmienia  radykalnie  gdyz  budka nie moze sie
+polaczyc  z  centrala i przetransmitowac potrzebnych danych.
+To   powoduje  oczywiscie,  ze  urmet  stara  sie  powtarzac
+sukcesywnie  proby  polaczenia co juz zupelnie blokuje linie
+"osobie  robiacej  za  centrum  nadzoru"  ;) Z praktyki moge
+powiedziec,  ze  wystarczy  ustawic ssf z 10 - 15 urmetow na
+jeden  numer  i blokada gwarantowana. Jak widac z powyzszego
+opisu trzeba dysponowac kluczami do srebrnych bo inaczej nic
+sie  nie  da  zrobic  (menu karty konserwatora wyswietla sie
+tylko  po  otwarciu  budki).  No  ale  jak ktos ma dostep do
+takiej  karty to zakladam ze i do kluczy. Po ustawieniu ssfa
+warto  zalockowac zamek zeby efekt byl bardziej dlugotrwaly.
+I  to  wlasciwie  wszystko. Mozna wrocic do domu z poczuciem
+dobrze spelnionego obowiazku :))
+
+Najprzyjemniejsza  jest  jednak  swiadomosc,  ze  tpsa  jest
+bezsilna: nie da sie w zaden sposob skasowac, zablokowac czy
+w  jakikolwiek  inny sposob naruszyc karte konserwatora. Tak
+samo  nie mozna srebrnych zaprogramowac aby nie reagowaly na
+ta  karte. Jakie stad plyna wnioski? 1) nawet srebrne urmety
+maja  swoje  slabe punkty, 2) karta konserwatora jest bardzo
+cenna mimo ze moze stosunkowo mniej niz karta programming na
+niebieskie,  3)  srebrnych jest bardzo duzo a bedzie jeszcze
+wiecej  - ssf ma przed soba przyszlosc i na pewno bardzo sie
+rozwinie.   Okeee  tyle  teorii  i  opisow.  Teraz  obiecana
+historia  z  zycia  wzieta. Tak jak napisalem wczesniej dane
+osob "bioracych udzial" w operacji sa utajnione (z wyjatkiem
+moim i kilku znajomych).
+
+Byla  sobie  firma  X  na  glebokim poludniu kraju. Firma ta
+zajmowala sie uslugami internetowymi. Pewnego razu Y kupil w
+promocji konto shellowe w firmie X. Podzielil sie tym kontem
+ze  swoja  grupa  i umiescil tam strone. Dobrze mu sie zylo,
+ale firma X (pod wplywem firmy A jak sie pozniej tlumaczyla)
+usunela   strone   i   sprawe   przekazala  na  policje  pod
+pretekstem,   ze   "na   stronie   sa   niedozwolone  teksty
+instruktazowe".  Stalo  sie  tak  mimo  ze  na  stronie bylo
+zastrzezenie  "wszystko  w celach edukacyjnych...", itp. Tak
+sie smiesznie zlorzylo, ze ja bylem w tej grupie. Bardzo sie
+wqrwilem  i  po zalatwieniu formalnosci (mialem wtedy jakies
+egzaminy)  zorganizowalem  akcje  przeciw firmie X. Polegala
+ona  na  zbufowaniu numeru firmy (zamiejscowy numer telefonu
+stacjonarnego)  oraz  numeru  komorkowego glownego prowodyra
+calych  zajsc  (pracownika  tej  firmy).  W  ciagu  tygodnia
+porozumialem  sie  z  myszem, ktory przeprogramowal 20 budek
+bez cidow w otwocku i glixem, ktory przeprogramowal 20 budek
+w    metrze    warszawskim.    Reszta    zajalem   sie   ja.
+Przeprogramowalem 30 budek w centrum i przy okazji bywajac w
+roznych  okolicach wawy. Oprocz tego ustawilem kolo 10 budek
+na   numer   hotline   firmy   X   (numer  komorkowy  innego
+pracownika).  Final  byl  taki,  ze  prowokator  i przyczyna
+calych  zajsc, pracownik firmy X zmienil numer telefonu (era
+zarobila),  firma X miala przez 2 tygodnie numer zablokowany
+a   gosc   od  hotline'a  sie  wqrzal.  W  koncu  jakos  sie
+skontaktowalem  z  firma X gdzie jeden z pracownikow wyrazil
+skruche    i    tlumaczac    sie   przeprosil   za   zajscie
+(poinformowalem  ich  wczesniej,  w czym tkwi caly problem).
+Wtedy ja wybaczylem im i wiecej budek nie programowalismy. W
+miedzyczasie  zdobylem  dane  osobiste  pracownikow  firmy X
+(dzieki  qmplom w sieciach komorkowych), na wszelki wypadek.
+W sumie wszystko zakonczylo sie dobrze i nie mam juz zalu do
+firmy  X.  Jednoczesnie firma ta postapila slusznie bo gdyby
+kontynuowala  swoja dzialanosc (np. robila cos przeciwko Y -
+wlascicielowi konta) to jak powiedzial myszu "szybko sankcje
+przeciw  firmie  przemienily  by  sie  na sankcje osobiste".
+Myszowi  trzeba wierzyc, kiedys bawil sie w carding :) Jesli
+przeprowadziliscie akcje tego typu - podeslijcie jakis opis,
+chetnie przeczytam i ewentualnie wrzuce na strone.
+
+Czy   bufowanie  jest  legalne?  Chociaz  trudno  byloby  to
+podciagnac  pod  jakikolwiek  paragraf to jednak nie. Ale to
+nic. Bardzo trudno zlapac kogos za reke na ustawianiu bufa a
+jesli  juz  to  sprawa  bedzie umozona na 100% ze wzgledu na
+"niska    szkodliwosc    spoleczna".    Poza    tym    jesli
+zbufowaliscie  100 numerow i przeprogramowaliscie 1000 budek
+w  ciagu  roku  a  zlapia  was  na  programowaniu  jednej to
+odpowiadac  bedziecie  tylko  za  ta  jedna  -  nic  wam nie
+udowodnia.  Wierzcie  mojemu doswiadczeniu. Nigdy mi nic nie
+udowodniono :)
+
+3. Praktyczne wykorzystywanie epromow [#*3**#]
+-------------------------------------
+
+Dla mnie epromy w niebieskich to o wiele wygodniejszy sposob
+dzwonienia  niz uzywanie jakichkolwiek kart (serwisowych czy
+powtornie  napelnianych).  Po  co  sie wogole bawic w jakies
+zabiegi  z  tonedialerem, programowaniem, itp. kiedy zamiast
+tego  mozna  elegancko  podejsc  do  budki wsadzic karte z 1
+impulsem  i  "normalnie"  dzwonic gdzie sie chce i przez ile
+sie chce. Wspomne tu o kilku najwygodniejszych rozwiazaniach
+w  tym  zakresie,  bedzie  tez troche szczegolow dotyczacych
+prawidlowej    instalacji    i    "konserwowania"    epromu.
+Poczatkowo  otwieranie  budek,  zabawy  z  kluczami, epromy,
+traktowalem   z   pogarda.  Jednak  z  czasem  moj  stosunek
+ewoluowal. Stalo sie to pod wplywem przerobionego epromu 2.9
+autorstwa  nola.  Soft  ten umozliwia dzwonienie za friko po
+wcisnieciu   gwiazdki,   normalne   zaliczanie  impulsu  bez
+wybrania  gwiazdki  na  poczatku, nie dzwoni na centrale, po
+otwarciu  budki  uzyskuje  sie  menu typowe dla uzycia karty
+programming.  Wszystko  co  trzeba  zrobic  to  zainstalowac
+kosc  nabita  tym  stuffem na plycie glownej niebieskiego. W
+tym  miejscu  trzeba  powiedziec o kilku rzeczach zwiazanych
+z  cala  ta  procedura.  Po  pierwsze  trzeba  eprom nagrac.
+Dokonuje  sie  tego  na  nagrywarce  do  epromow.  W  kazdym
+wiekszym zakladzie elektronicznym posiadaja takie urzadzenie
+i  w  zaleznosci od humoru nagrywaja za 1 - 10 zl. Jak macie
+znajomego  to  oczywiscie  za  darmo  ;) Wszystko odbywa sie
+banalnie  prosto:  grunt  to miec co nagrac, czyli wczesniej
+przygotowac  trzeba wlasciwy soft. Druga rzecz to prawidlowa
+kosc.  Najlepiej  i  najtaniej  jest  wyjac  takowa  z plyty
+glownej  niebieskiego - jest wtedy 100% pewnosci ze zadziala
+na  innym.  Podczas  wyjmowania polecam uzywanie ekstraktora
+(techniczne   szczypce  do  wyjmowania  scalakow  plaskich).
+Dzieki temu eprom wychodzi delikatnie bez ryzyka skrzywienia
+czy  zlamania  ktorejs z nozek. Jesli jednak ktoras zostanie
+uszkodzona  trzeba ja odpowiednio wyprostowac bo inaczej nie
+wejdzie  do  programatora, a pozniej tym bardziej z powrotem
+na plyte glowna urmeta. Jesli nozka sie zlamie to w praktyce
+koniec.  Eprom do wyzucenia (na szczescie trzeba kompletnego
+ciola   zeby   tak   zniszczyc   kosc).   Oczywiscie   mozna
+odpowiedniego    rodzaju    scalaki    kupic   na   gieldzie
+elektronicznej  (w  sklepie)  ale  ich  ceny  2  -  8  zl za
+sztuke,  nie sa tego warte. Przy kupowaniu trzeba koniecznie
+zwrocic  uwage  na  parametry (glownie czas dostepu podany w
+nanosekundach ns - powinien byc taki sam jak na oryginalnych
+kosciach).  Po  trzecie  wreszcie,  gdy sie ma juz nagranego
+eproma  trzeba go zalorzyc na plyte. Tutaj podstawowa zasada
+to  nic  na  sile.  Nozki  musza  dokladnie dopasowac sie do
+podstawki  (musza  byc  proste)  a  kosc  trzeba docisnac do
+konca.  Nie  ma  obawy przed porazeniem pradem w trakcie tej
+operacji (robi sie to recznie). Czasem tylko czytnik i plyta
+glowna  wydaja  dziwne  dzwieki  w  trakcie instalacji :) Po
+sprawnym  wlozeniu  trzeba zresetowac plyte glowna i zamknac
+urmeta.  To w sumie wszystko. Pamietac trzeba jednak jeszcze
+o  kilku zastrzezeniach. Eprom wyjety z budki nie nadaje sie
+od  razu  do  nagrania  bo  juz  jest  nagrany  :) Trzeba go
+najpierw  skasowac  co  robi  sie  przy  pomocy  promieni uv
+(ultrafioletu)   przy   pomocy   specjalnie  do  tych  celow
+zaprojektowanego   kasownika   -   tez  urzadzonko  dostepne
+powszechnie.  Nie  musze  chyba  dodawac ze przed kasowaniem
+trzeba zdjac nalepke z szybki epromu a po nagraniu trzeba ja
+zalorzyc  (najlepiej  wpisac  tam "plyta glowna ver. 10.4" -
+beda  jaja  jak  monter  to zobaczy). Inne zastrzezenie to w
+momencie gdy zalorzy sie eprom na plyte, zamknie urmeta a on
+nie  chce  dzialac  -  oznacza  to,  ze  albo eprom jest zle
+nagrany  (1  na  20  nagrywa sie zle) albo zle zainstalowany
+(wlozony), co jest bardziej prawdopodobne. W takiej sytuacji
+najlepiej wlozyc nowa kosc z wieksza starannoscia ;)
+
+Rownie  wazna grupa spraw to wspomniany juz wybor wlasciwego
+softu.  Wspomnialem  o  epromie  nola...  jest  rzeczywiscie
+dobry i uzyteczny, ale ma 3 zasadnicze wady. Po pierwsze nie
+dzwoni  na  centrale  i  po tygodniu (sytuacja dotyczy wawy,
+lublina,  krakowa,  gdanska  i wroclawia - stamtad mam dane)
+tpsa  zmienia  eprom  na  swoj  wlasny - najczesciej 5.8. Po
+drugie  gwiazdke  moze  nacisnac  kazdy  nawet przypadkowo i
+jak  wyjdzie  co i jak, ludzie masowo zaczna dzwonic to tpsa
+jeszcze  szybciej  zmieni  taki  eprom  a  w dodatku dorzuci
+gratis  nowy  typ  zamka.  Po trzecie wreszcie zlym pomyslem
+jest  dostepnosc  calego menu programming po otwarciu budki:
+na  pierwszy rzut oka widac wtedy, ze cos jest nie tak. Jaki
+jest  moj  ideal  epromu? Na pewno trudno by go bylo napisac
+(sam  sie  tym  nie zajmuje), ale gdyby: byla to przerobiona
+wersja  5.8, z regularnym dzwonieniem na centrale pod z gory
+zaprogramowany   numer,   z  6-cio  cyfrowym  kodem  ktorego
+wpisanie  umozliwia  dzwonienie  za darmo, wtedy cos takiego
+mogloby  dzialac nawet przez kilka miesiecy (lat?) bo kto by
+sie  domyslil  takiego  przekretu?  Niestety  do tego trzeba
+eksperta  jesli ktos wie jak cos takiego zrobic to niech sle
+do  mnie maila. No ale wracam do zasadniczego watku. Zamiast
+instalowac eprom Nola, mozna pokusic sie o zmiane epromu 5.8
+na  2.9.  Wtedy  wszystko  jest  ok i tpsa nie zmieni tego z
+powrotem   (praktyka  tego  dowodzi).  Podobne  efekty  daje
+zreszta uporczywe wyjmowanie epromow 5.8 i zostawianie budki
+bez  softu  (nie  dziala wtedy oczywiscie). W wawie zrobilem
+tak  z  kilkudziesiecioma  budkami  - w 95% pojawily sie tam
+epromy  2.9  made  by tpsa :) Dlaczego lepszy 2.9 niz 5.8???
+Oczywiscie dlatego, ze mozna chociaz z programminga dzwonic.
+Co  wiecej,  mozna  pokusic  sie  o  instalowanie  epromow w
+wersjach  2.7 lub 2.0 (powszechnie dostepnych w internecie).
+Wtedy dziala metoda na incomming call co w swoim faqu hrabia
+byl juz laskaw jakis czas temu zauwazyc. Jak chodzi o epromy
+to tyle. Wroce do nich na chwile przy omawianiu urmet locka.
+
+Na   koniec   jednak   jeszcze   historia,  ktora  dac  moze
+programistom  duzo  do  myslenia  w  kwestii robienia nowych
+epromow.  Na  poczatku  roku  2000  (tydzien po sylwku) glix
+bardzo  minimalnie  zmodyfikowal eprom 5.8. Zmienil numer do
+centrum  nadzoru na numer komorki do swojej bylej. Poszlismy
+razem   zainstalowac   to   cudo   w   urmecie  przy  bardzo
+popularnym  centrum handlowym. Budka ta charakteryzowala sie
+oblezeniem  (w  ciagu  dnia  4-5  osob  ciagle  w  kolejce).
+Podajac  sie  za  monterow  wyrzucilismy  jakiegos lamusa, i
+podlaczylismy nasze cudo. Oczywiscie zaraz po zainstalowaniu
+urmet  zaczal  dawac  o  sobie  znac  kolezance  S. (dane do
+wiadomosci  redakcji).  Tego  samego  dnia glix skontaktowal
+sie z nia i gdy powiedziala mu o problemie z komorka ("Jakis
+zboczeniec  caly czas dzwoni i blokuje telefon a gdy odbiore
+wciska  kilka przyciskow i odklada sluchawke"), jako fachowy
+phreaker  zaoferowal  swoja  pomoc. Zglosili awarie pod 914,
+9696,  lokalnego  oddzialu  bok  tpsa  i wreszcie do centrum
+automatow.  Glix  zrobil tam taka awanture, ze panienki baly
+sie  cokolwiek  powiedziec.  Obiecane zostalo, ze nastepnego
+dnia  "awaria" zostanie usunieta. Oczywiscie nie trudno bylo
+namierzyc  urmeta, jako ze dzwoniac na komorke elegancko sie
+przedstawial  swoim  numerem.  Wiedzac ze monterzy kursuja w
+godzinach  8  - 15, postanowilismy czatowac (nie chatowac) w
+tym  czasie  przy  niebieskim. Mimo ze trwalo to 5 godzin to
+sie  oplacilo.  Przyszedl  jakis  mlotek z tpsa, podszedl do
+urmeta  i  go  otworzyl.  Na epromie byla oryginalna nalepka
+tpsa  "plyta  glowna  wersja  2.9".  Gosc  zamknal  urmeta i
+wrzucil  programminga...  Urmet  mu  go oddal informujac, ze
+"karta  zuzyta".  Gosc  mial  taka mine jakby zobaczyl jolke
+kwasniewska  robiaca loda zubrowi :))) Ale monter chcial byc
+przebiegly  i  przechytrzyc materie, wiec pewnie pomyslal ze
+programming ktorego uzyl byl juz skasowany. Nie tracac czasu
+wlozyl  drugiego i znowu mina w stylu prezenterzy wiadomosci
+tvp  z  glowa w szambie... Tepsiarz nie mogl uwierzyc ze jak
+na  nalepce  jest  2.9  to eprom moze byc 5.8 i to w dodatku
+przeprogramowany,  ze  dzwoni  na  numer  komorki  prywatnej
+osoby!!!  Nie  majac kolejnego programminga, otworzyl budke,
+wyjal  nasz  eprom,  wsadzil  tradycyjne 2.9 i sobie poszedl
+(caly   czas   chyba  nie  mogl  jednak  dojsc  do  siebie).
+Myslelismy  ze  jebniemy  ze  smiechu na miejscu :) Majacych
+rownie  ciekawe przygody zachecam do ich opisania i wyslania
+mi (opublikujemy na stronie).
+
+4. Pajeczarstwo zaawansowane #*4**#
+----------------------------
+
+Chociaz  na  ten  temat duzo powiedziano, jednak mozna sobie
+jeszcze  zycie  ulatwic  dzieki  paru sposobom. Na ten temat
+zreszta  tez  juz  pare osob pisalo. Moim zdaniem podpinanie
+sie  do  budek  ma  sens  wtedy  gdy inne sposoby calkowicie
+zawodza.  Jest to dosyc ryzykowne (widoczne) i bezdyskusyjne
+w razie wpadki (bezposrednio podchodzi pod kradziez impulsow
+z  kodeksu  karnego).  Podpinajac sie bardzo wskazana rzecza
+jest  miec  klucze  do  budek.  Coraz mniej jest automatow z
+kablami  na  wierzchu,  ze  wystarczy  tylko  zdjac  z  nich
+izolacje  i  dzwonic  :)  Trzeba  miec  rowniez  "specjalny"
+telefon. Osobiscie polecam rodzimy cyfral (kosztuje okolo 50
+zl) chyba ze komus sie chce samemu robic. Do telefonu trzeba
+dosztukowac  2  krokodylki  - co znacznie ulatwia podpinanie
+sie.  Najoczywistszy  sposob  to  otwarcie budki i w miejscu
+gdzie  kable  dochodza do plyty glownej podpiac 2 krokodylki
+od  telefonu.  Jest to o tyle wygodne, ze nawet izolacji nie
+trzeba  zdejmowac  (jest  juz  zdjeta  przy plycie glownej).
+Kabel  od telefonu wypuscic gora (w kazdej budce niebieskiej
+i  srebrnej  jest  specjalne wyjscie wlasnie na kable, takie
+polkole  na  gorze  urmetu),  zamknac  budke i dzwonic. Zeby
+wygladalo  mniej  podejrzanie  mozna odlaczyc wogole budke i
+dzwoniac  podnosic  takze sluchawke urmeta. Wtedy wyglada to
+dla  przechodzacych  osob  jakby  ktos  zwyczajnie rozmawial
+przez  telefon.  Odchodzac  mozna tak dosztukowac kabelki od
+budki  zeby  byly  na  wierzchu  i nastepnym razem nawet nie
+trzeba  bylo  otwierac  automatu. Nth pisal kiedys, ze mozna
+dorobic   gniazdko   i   wpinac   sie   "kulturalnie"  przez
+standardowa  wtyczke  od  telefonu. Moim zdaniem cos takiego
+baaardzo  rzuca sie w oczy. To jest oczywiscie najprostsza i
+najbanalniejsza metoda.
+
+O  wiele  bardziej  zaawansowana i zarazem wygodniejsza, ale
+trudniejsza w wykonaniu jest metoda na bezprzewodowca (o ile
+ktos  tez  cos  o  tym  kiedys  wspominal). W moim wykonaniu
+wyglada  to  tak:  trzeba otworzyc budke i wybebeszyc z niej
+wszystkie  wnetrznosci  (kolejno  czytnik  i  plyte glowna z
+dodatkami  o  ile  takie  sa,  jak w niebieskim). Wtedy jest
+jedynie  kadlub  budki  a  w  srodku  duzo  wolnego miejsca.
+Wystarczy  wlozyc  do  srodka  telefon  bezprzewodowy  (tzn.
+stacje   bazowa,  nazywana  tez  przez  niektorych  matka) i
+podlaczyc   pod   kabelki  telefoniczne.  Pozostaje  problem
+zasilania.  W  srebrnych  mozna  sie  pokusic  o podlaczenie
+zasilania  z  budki  (wiekszosc  takowe  ma do oswietlenia).
+Trzeba  jednak  bardzo  uwazac bo prad moze kopnac, wogole w
+srebrnych  nalezy  postepowac  ostroznie z tymi rzeczami. No
+dobrze,  ale  co  w  przypadku  niebieskiego  i wogole? Otoz
+lepszym rozwiazaniem jest prosta przerobka (dla nieznajacych
+elektroniki:  zrobi wam to kazdy zaklad za najwyzej 100 zl),
+ktora  w  miejsce  zasilacza pozwoli na umieszczenie baterii
+lub  akumulatorow.  Dosc  powiedziec,  ze  moj  taki telefon
+przerobiony   stary  Alcatel  dzialajacy  na  baterie  3xR20
+potrafi  dzialac  prawie  przez tydzien pracy ciaglej (czyli
+jakbym   caly  czas  siedzial  na  linii).  I  to  wlasciwie
+wszystko.  Po  umieszczeniu  i  podlaczeniu stacji bazowej w
+urmecie  wystarczy  go zamknac, odejsc 20 - 300 metrow dalej
+(zalezy  od  jakosci  telefonu  i  zaklocen  po  drodze oraz
+jakosci  rozmowy,  najlepiej zeby odleglosc nie byla wieksza
+jak  30  m.  - wtedy wszystko powinno byc ok) i dzwonic. Dla
+wlasnej wygody mozna cos takiego zamontowac w budce stojacej
+przed kawiarnia, lawka, innym miejscem gdzie mozna spokojnie
+usiasc  i  porozmawiac  :)  Mozna  tez podjechac samochodem.
+Oczywiscie  z  budki  nikt  wtedy nie skorzysta a my mamy ja
+caly  czas  na  oku  czy cos sie nie dzieje. W razie jakiejs
+akcji (chociaz to BARDZO malo prawdopodobne) mozna po prostu
+odejsc,  chociaz  ze  spora  strata  stacji  bazowej. Ale to
+ostatecznosc  i  sytuacja  tylko teoretyczna. Milo, dobrze i
+bezpiecznie. Z niebieskiego urmeta nie trzeba nawet czytnika
+usuwac  tylko  wystarczy plyte glowna, stacja bazowa powinna
+wejsc  (tez  zalezy  od jej wielkosci). Specyficzna sytuacja
+jak chodzi o podpinanie sie do budek jest w zetonowcach. Tam
+sie  nie  zmiesci  do  srodka  z  elektronika  stacja bazowa
+bezprzewodowca.  Jedyna  rzecz, ktora mozna zrobic to sposob
+nr  1 lub nr 3, ktory opisuje ponizej. Chyba ze ktos jeszcze
+cos  innego  wymysli. Jesli tak to niech nie zapomni do mnie
+napisac.
+
+Metode  ta  nazwalem  "prywatny  kabel"  lub  "telefonizacja
+dzialki"   zaleznie  od  okolicznosci.  Chodzi  po  prostu o
+pociagniecie   od  budki  kilka(dziesiat)  metrow  kabla  do
+miejsca   gdzie   bedzie   mozna  wygodnie  podlaczyc  jakis
+telefon  i dzwonic. W wielu przypadkach moze to byc dzialka,
+zwlaszcza  ze  w  okolicach  niezurbanizowanych  (po  prostu
+wiejskich) jest niewielki ruch, najblizszy oddzial tpsa jest
+20  km  dalej  a  monterzy  zagladaja do budek raz na rok :)
+Naprawde  w takich okolicznosciach jest o wiele bezpieczniej
+niz  np.  w  wawie  na  marszalkowskiej. W kazdym razie caly
+trick  polega  na tym zeby wyprowadzic kabel z budki tak aby
+go  nie  bylo  widac  i  zeby  nawet  niechcacy  ktos go nie
+uszkodzil.  Trudno  tu  dawac  jednoznaczne  rady  jak to ma
+wygladac.  Wszystko jest zdeterminowane przez uksztaltowanie
+terenu i otaczajace budke srodowisko. Ja eksperymentowalem z
+czyms takim w roznego rodzaju warunkach i musze przyznac, ze
+byla  to  formalnosc  -  0  adrenaliny. Czyli sposob dobry i
+uzyteczny.
+
+Update  z  ostatniej chwili. Pojawily sie malutkie i wygodne
+telefony monterskie. Calosc wyglada jak bardzo maly walkman,
+ze  sluchawkami  i  mikrofonem  (nie  trzeba zajmowac rak na
+trzymanie  sluchawki).  Calosc  kosztuje  kolo  100  zl - na
+naszej  stronie  jest  ogloszenie. To bardzo dobry sposob na
+pajeczarstwo  bo  wyglada  sie  jak  monter lub osoba majaca
+klopoty  ze  sluchem i uzywajaca specjalnego aparatu. Dzieki
+temu  nikt sie nie przychrzania i mozna podpinac sie nawet w
+publicznych miejscach.
+
+5. Pozyskiwanie kart magnetycznych [#*5**#]
+----------------------------------
+
+Na temat pozyskiwania kart przez budki bylo juz kilka slow w
+roznych  faqach.  Z  tego  wzgledu  o  najpopularniejszych 2
+sposobach na zagieta karte i na zapalke tylko tutaj wspomne.
+Nowoscia   beda  2  "profesjonalne"  sposoby  dotyczace  tej
+dzialalnosci.  Co  do  strony  moralnej (szkoda dla zwyklych
+ludzi  a  nie  tpsa) to dosc powiedziec, ze kazda zatrzymana
+karta to kolejna osoba przestajaca lubic monopoliste. Koniec
+koncow  wychodzi  na  dobre.  Poza  tym zawsze moga zglaszac
+reklamacje  a  tpsa  powinna  oddawac karty zatrzymane przez
+automat.  Jesli  i  to  was  nie  satysfakcjonuje to trudno.
+Olewam to.
+
+Metoda na zgieta karte jest rozpowszechniona wsrod lamerii i
+narkolow.  Polega  na  umieszczeniu  zgietej karty w wylocie
+kart  niebieskiego  urmeta  (w srebrnym sie nie da). Warunek
+jest aby wylot byl tradycyjny, gdyz spotykamy ich 3 rodzaje.
+Tradycyjny,  czyli  duzy  otwor bez zadnej oslony. Pozostale
+dwa  to:  otwor zasloniety do polowy plastikowa scianka (tak
+ze  nie  da  pod  nia  wlozyc,  a jak sie juz cos wetknie to
+widac),  wylot zasloniety blacha z mechanizmem do wyjmowania
+karty   przez   jej   wykrecanie   (najrzadziej  spotykany w
+starszych  niebieskich  urmetach).  W kazdym razie jesli sie
+zgieta karte umiesci gleboko w wylocie to zatrzymywac bedzie
+ona  inne  i  jesli nikomu nie wpadnie do glowy "przepchnac"
+wylot  to  mozna  nawet  skroic pare osob z kart. Sposob ten
+spotykany  jest jeszcze w odmianie na plasteline lub gume do
+zucia.  Chyba  nawet skuteczniej zatrzymuje karty. Osobiscie
+nie  lubie  bardzo tej metody. Bronic sie mozna przed takimi
+trickami  skutecznie  wrzucajac  najpierw skasowana karte do
+automatu. Jesli wyleci to znaczy, ze wszystko jest ok.
+
+Druga  rownie  oklepana  metoda  to  na  zapalke,  dziala na
+srebrnych.  Polega na umieszczeniu przelamanej zapalki (choc
+niekoniecznie,  niektorzy uzywaja dwoch lub wiecej zapalek w
+razie potrzeby) w wylocie czytnika srebrnego. Jak wiadomo, w
+srebrnym  wylot  jest  zarazem  miejscem  w ktore wklada sie
+karty. Caly mechanizm zasadza sie na tym, ze wkladajac karte
+zapalka  jest  przesuwana  lekko  na  bok  tak ze karta moze
+spokojnie  wejsc do glowicy. Jednak gdy sie konczy rozmowe i
+karta ma sie wysunac to zapalka blokuje ja, jako ze sama nie
+moze sie wysunac z czytnika. Wtedy czytnik zasysa z powrotem
+karte  do  srodka. Bardzo latwo ten sposob obejsc podwazajac
+nozem  lub  czyms ostrym zapalke i ja wyjmujac lub po prostu
+wkladajac nastepne dwie lub trzy karty. Zreszta podobnie jak
+w  powyzszym  przypadku  z niebieskim przed wlozeniem dobrej
+karty   warto   najpierw   uzyc   zuzytej   i  zobaczyc  czy
+bezproblemowo wyjdzie.
+
+Tyle  jak  chodzi o prymitywne sposoby (warto je jednak znac
+ze  wzgledu  na  ogolne  wyksztalcenie  phreakerskie;  patrz
+reforma   edukacji   i  wprowadzenie  gimnazjow  ;).  Bardzo
+skuteczna,  prosta  i  efektywna metoda jest cos co nazwalem
+"zbieraczem   kart".   Cala   zabawa  polega  na  tym,  ze w
+niebieskim  urmecie mozna wstawic kawalek tektury lub innego
+sztywnego   materialu   pomiedzy  dolna  czescia  czytnika a
+wylotem  kart  w  obudowie. Trzeba najpierw otworzyc automat
+oczywiscie.  Aby  czytnik  sie  nie  zacial  i  automat  nie
+wywalil  "Nieczynny  /  Out  of  order"  trzeba  zrobic tak:
+przygotowany   wczesniej   maly   kawalek  tektury  5x10  cm
+przykleja  sie  tasma z dwu stron do obudowy czytnika; wtedy
+karta  zamiast  trafic  do  wylotu  automatu  wpada na "dno"
+automatu  a  czytnik  sie  nie zacina bo nic go nie blokuje.
+Jesli kawalek tektury bedzie za duzy to przy zamykaniu budki
+moze  sie  zgiac  i  zablokowac wylot i pierwsza karta ktora
+ktos  uzyje  zablokuje  czytnik. Zanim sie budke zostawi "na
+zywiol"  warto  zrobic  kilka  eksperymentow  czy to dziala.
+Dobrze   zainstalowany  zbieracz  kart,  w  dosc  popularnym
+miejscu  potrafi  dac  srednio  20-30  kart dziennie (dopoki
+automat  nie  uzyska slawy zjadajacego karty). Po takim dniu
+przychodzi  sie  otwiera  budke  a  na  dnie  leza  karty ;)
+Pomijajac  sytuacje szczegolne (tpsa zbierze lup, jakis dres
+rozjebie  budke)  wszystko  powinno byc ok. Jako ciekawostke
+moge powiedziec, ze zdarzylo mi sie kiedys zostawic budke ze
+'zbieraczem kart' na sobote i niedziele na dworcu centralnym
+w  wawie  a  w  poniedzialek  po zajeciach, okolo 13oo kiedy
+przyjechalem i otworzylem budke, znalazlem 63 karty (w sumie
+okolo 700 impulsow).
+
+Najbardziej    wyrafinowanym,   najtrudniejszym   i   rownie
+efektywnym  co  poprzedni  jest  urzadzenie,  ktore nazwalem
+"zaciagaczka".  Jest  to  przerobiony  czytnik  od srebrnego
+urmeta.  Przerabia  sie  go  tak:  od  silnika dolnego (tego
+blizej wlotu karty) odlaczamy czerwony kabelek. Koniec diody
+prostowniczej oznaczony kreska nalezy przylutowac do wolnego
+punktu na silniku (w miejsce skad zostal odlutowany czerwony
+kabelek).  Ja uzywalem diody o oznaczeniu 1N4007 (wytrzymuje
+kilkaset voltow - a wiec jest uniwersalna). Mamy jeden wolny
+koniec  kabelka  czerwonego  i  jeden  wolny  koniec  diody.
+Laczymy  te konce ze soba. Przed przerobka trzeba oczywiscie
+otworzyc  srebrnego  i  wyjac z niego czytnik a po przerobce
+wlozyc  go  z powrotem (oczywiscie moze byc do innej budki).
+Odlaczenie,  wyjecie,  podlaczenie  i wlozenie czytnika jest
+tak  banalne, ze kazdy kto zobaczy wnetrze srebrnego od razu
+sie  zorientuje,  dlatego  nie  bede  tego  tu  opisywal. Po
+przeprowadzeniu  calej  operacji,  jesli  ktos bedzie chcial
+zadzwonic  i  wlozy  karte do czytnika to wejdzie elegancko,
+gosc bedzie mogl zadzwonic, ale jak skonczy rozmowe to karta
+nie  zostanie  mu  oddana,  tylko  wpadnie do kadluba budki.
+Jedynym  efektem  ubocznym  tego  rozwiazania jest, ze karta
+zaciagana jest wolniej niz normalnie (mozna cos podejrzewac)
+oraz,  ze nie na wszystkich srebrnych dziala (jesli cos jest
+zle  podlaczone,  zwalone,  etc.). Jednak zasadniczo powinno
+dzialac.  Poki  co  to  szczyt techniki pozyskiwania cudzych
+kart.  Po  kilku  godzinach  mozna miec ponad 100 kart jesli
+budka stoi w dobrym miejscu. A pomyslal ktos jak dobrze miec
+klucz  do automatow sprzedajacych karty (firmy diora)? Wtedy
+jest  2  w 1. Kasa i karty w tym samym miejscu. Wtedy phreak
+jest  formalnoscia  :)  Jesli ktos takim kluczem dysponuje i
+szuka dobrej wspolpracy to niech do mnie napisze. Powitam go
+z otwartymi rekami i czerwonym dywanikiem.
+
+6. Zabezpieczanie budek przed nieautoryzowanym dostepem [#*6**#]
+-------------------------------------------------------
+
+Az  sie  dziwie, ze nikt do tej pory sie tym nie zajmowal. A
+przeciez  zagadnienie  to jest bardzo istotne jesli chodzi o
+uzytecznosc.  Bez  tego  wiekszosc  rozwiazan  ma  charakter
+jedynie  tymczasowy  bo  i  tpsa  stara sie bronic i zwalcza
+wiekszosc  cudownych pomyslow phreakerskich. O co generalnie
+chodzi  z  tym  zabezpieczaniem  automatow? Oczywiscie o to,
+zeby po: wlozeniu wlasnej wersji eproma, oryginalnego eproma
+2.9  lub  nizszego  (aby  dzialaly  na nim karty serwisowe),
+ustawieniu  bufa  lub  ssfa, zainstalowaniu "zbieracza kart"
+czy    dokonaniu    jakiejkolwiek   innej   modyfikacji   we
+wnetrzonsciach  budki,  tpsa  miala  utrudnione  zadanie  ze
+zlikwidowaniem  jego  skutkow.  Idzie  o  utrudnienie  zycia
+tepsiarzom  i  jednoczesnie uprzyjemnienie sobie. Aby skutki
+dzialan  na  budce  byly  dluzej  widoczne.  Jak sie do tego
+zabrac?  Najlepiej  zaczac od oficjalnego otworu budki czyli
+od  zamka ;) Jak wiadomo powszechnie stosowane sa abloye (ta
+firma  tez  mi  podpadla  i  dlatego  bedzie  tu duzo na jej
+niekorzysc).  Wyjatek  stanowia  zetonowce w gornej czesci z
+elektronika.  Automaty  na  zetony maja bowiem 2 zamki (i to
+kazdy  innego  rodzaju).  Jeden  jest  abloya  do  kasetki z
+zetonami   a  drugi  tradycyjny  klucz  plaski  do  czesci z
+elektronika,  otwierany  od  gory. Ale wszystko po kolei i w
+swoim czasie.
+
+Metode  opisywana  ponizej  nazwalem  prosto  lo(c)kowaniem.
+Najlatwiejszym,    najmniej    kosztownym    i   najbardziej
+skutecznym,    czyli    po    prostu   najlepszym   sposobem
+zabezpieczenia  zamka  w budce jest wlanie do niej pol tubki
+kropelki  lub  innego uniwersalnego kleju tego typu (chociaz
+wlasnie  kropelka jest najlepsza i niestety najdrozsza). Gdy
+klej  stwardnieje po okolo 10 minutach nie ma juz sposobu na
+normalne  otwarcie  budki.  Nie  pomoze ani wiertlo ani inne
+ostre  narzedzia.  Monter  sobie nie poradzi. Jedyne co moze
+tpsa  zrobic  to wezwac pomoc techniczna i oni zdejmuja cala
+budke  albo  rozbijajac  ja  albo  przepilowujac mocujace ja
+sruby.  Robota  lekko  na  godzine.  I jaka strata dla tpsa.
+Dlatego  tez  doswiadczenie uczy, ze w wiekszosci przypadkow
+panowie  z  serwisu rezygnuja z naprawy takiego automatu. Co
+wiecej,  gdy monter zobaczy ze zamek jest zaklejony to pomoc
+techniczna,  ktora  wezwie pojawi sie najszybciej za godzine
+lub  kilka,  a  najpewniej  nastepnego  dnia lub pozniej (no
+chyba, ze akurat bedzie tamtedy przejezdzala). Krotko mowiac
+efekty sie wydluzaja. Sposob ten ma bardzo duze zastosowanie
+w  nastepujacych  przypadkach:  gdy  ustawimy  bufa lub ssfa
+(dzwoni  dotad dopoki tpsa go wreszcie nie wylaczy, no chyba
+ze  zrobia  to  z  centrali  lub przetna kabel - w co jednak
+watpie),  gdy  wstawimy  wlasnego eproma (jesli budka dziala
+dobrze,  kasuje  impulsy normalnie a tylko raz na jakis czas
+ktos  sobie  dzwoni  za  darmo  to w sumie nic takiego) albo
+pozyskujemy  karty metoda na zapalke lub na zlamana karte (w
+praktyce  kazda,  w  ktorej nie potrzeba otwierac budki zeby
+wydobyc  z  niej  uzbierane  karty). Nie radze stosowac tego
+rozwiazania  gdy  czuje  sie,  ze  ta budka jeszcze sie moze
+przydac.  Praktyka  pokazuje,  ze  jak  juz tpsa raz zdejmie
+budke  to  pozniej  dlugo  jej nie zaklada a jak zalozy to z
+jakims  bardzo wybajerzonym zamkiem (i znowu trzeba poczekac
+tydzien  az  znajomy monter da dorobic klucz ;)). Ten sposob
+stosuje   sie   na  wszystkie  budki:  srebrne,  niebieskie,
+zetonowce  i jajowate. Stosowanie innych elementow niz kleju
+nie   daje  dobrych  efektow.  Wsadzanie  zgietych  szpilek,
+gwozdzi, opilkow zelaznych, itp. do zamka jest wbrew pozorom
+latwe  do  usuniecia, zwlaszcza ze zamek najczesciej jest na
+dole  (z  wyjatkiem  wspomnianej  elektroniki  zetonowcow) i
+trudno tam cos umiescic, wszystko ma tendencje do wypadania.
+Zainteresowanych  odsylam  do  podrecznika fizyki. Rozdzial:
+przyciaganie ziemskie.
+
+Aha   jeszcze  jedna  sprawa.  Pisalem  ze  metoda  ta  jest
+najtansza...  Gdy  trzeba  zalokowac  okolo  30 budek to juz
+zaczyna  byc  troche  drogo  (kasa  idzie  na klej). W takim
+wypadku lepiej kupic jakis klej techniczny w stalowej puszce
+lub  sloiku  i  dozowac  go  ze specjalnego urzadzenia (tzw.
+pistoletu):  wazne zeby mial koncowke cienko zakonczona zeby
+sie  zmiescil  w  otwor klucza. Wszystko do nabycia w kazdym
+sklepie  technicznym. Przy potrzebie zalokowania kilku budek
+(a  tak  jest najczesciej) lepiej jednak uzywac pojedynczych
+opakowan.  Oczywiscie powyzszy sposob jest bardzo prymitywny
+chociaz  zajebiscie  skuteczny  i  bolesny dla tpsa - bedzie
+jeszcze  o  tym  mowa  w  dziale  "Generalplan Urmet". Mozna
+pokusic   sie  o  cos  bardziej  wymyslnego  i  jednoczesnie
+praktycznego,  o zmiane zamka. Malo kto zdaje sobie sprawe z
+tego  jakie  to  proste.  Po  otwarciu budki wystarczy wyjac
+stary  zamek,  wyciaga  sie  go do gory jako calosc i wlozyc
+nowy.  Nowy zamek musi byc oczywiscie mniej wiecej tej samej
+wielkosci  co  stary,  zeby  a)  zmiescic  sie w dolny otwor
+urmeta  i b) dopasowac sie do mechanizmu otwierajacego czyli
+po  prostu  dzialac.  Jak to osiagnac? Banalna sprawa. Dajmy
+zarobic  troche  abloyowi.  Wystarczy wyluszczyc standardowy
+zamek  i  zaniesc  go do dobrego slusarza rzadajac zrobienie
+czegos  podobnego  (te  same  parametry),  ale  z kompletnie
+innym, zakreconym wzorem klucza. Wspomnialem o abloyu bo tam
+najlepiej  isc  z  taka sprawa. Gdy zrobia nowy zamek i nowy
+klucz  wystarczy go zainstalowac w budce (nie musi byc w tej
+samej  -  mozna  przeciez  zostawic  jedna  bez  zamka  ;)).
+Wyobrazcie  sobie  mine  montera, ktory przyjdzie do budki w
+ktorej  np.  zalorzyliscie swojego eproma... Gosc nie bedzie
+wiedzial  co  sie  dzieje:  zamek  sprawny a zaden klucz nie
+pasuje.  Wroci  zeby  sie  upewnic czy na pewno ma wszystkie
+klucze.  Dopoki  nie  zmienia  zamka  wy  jestescie jedynymi
+wlascicielami  wnetrza  budki  ;) Ten sposob ma zastosowanie
+zwlaszcza  przy  tricku  z lapaczem kart. W razie czego, jak
+sie  uzbiera  kilkadziesiat  kart w ciagu dnia to monter nie
+zgarnie ich zawartosci :) Jest jedno zastrzezenie. Ta metoda
+wymaga  otwarcia  budki  i  przynajmniej 2 minutowego w niej
+pogrzebania.  W  niektorych miejscach moga byc z tym klopoty
+wiec  ostroznie.  W  przeciwienstwie  do  sposobu  z  klejem
+(lokowania),   gdzie   nie  trzeba  nawet  otwierac  budki a
+wszystko  trwa  do 20s. Gdy jednak jest mozliwosc otworzenia
+budki  a  chcemy  oszczedzic na kleju to mozna rownie dobrze
+uszkodzic  zamek wewnatrz zeby po zamknieciu nie dal sie juz
+otworzyc.  Dobre  efekty  daje  zwykle  kilka mocnych ruchow
+srubokretem  wewnatrz  (byle  go  nie  zlamac  i moc jeszcze
+zamknac  budke)  a  po  zamknieciu jeszcze kilka razy - duze
+prawdopodobienstwo ze zamek zostanie zdezelowany. Metoda dla
+szalikowcow,  dresow i membersow ppsu. Wyjasnienie: piszac w
+tytule  tego dzialu "nieautoryzowany dostep" mialem na mysli
+tpsa.  W  koncu  budki  to  wlasnosc ludzi z naszej (phreak)
+branzy :)
+
+Update  z  ostatniej chwili. Tpsa dobiera sie do zaklejonych
+zamkow (w niebieskich) od strony miedzianej blaszki zewnatrz
+automatu  z  napisem  'tpsa'  lub  'urmet'  w  zaleznosci od
+automatu.  (Taka zolta lub srebrna blaszka na lewo od wylotu
+kart).  Wierca  tam  dziure i podwazaja zamek. Jak sie przed
+tym  zabezpieczyc?  Przed  zamknieciem  urmeta  trzeba zalac
+kropelka  zamek od wewnatrz (dosyc solidnie) i wrzucic kilka
+zmietych  papierow  do  srodka a nastepnie przekrecic klucz,
+zamknac   budke   i  wlac  klej  od  dolu.  Operacje  nalezy
+przeprowadzic  szybko  bo  klej szybko sie zasklepia i mozna
+juz  nie  dac  rady przekrecic klucza, ale zwykle sie udaje.
+Wtedy   gdy   tepsiarze  wierca  otwor  w  miejscu  blaszki,
+natrafiaja   na  sterte  papierow  i  zasklepiony  zamek  od
+wewnatrz, z tym juz sobie nie radza! Na zaklejanie srebrnych
+nic jeszcze nie wymyslili, chociaz slyszalem ze chca dotrzec
+od strony wyswietlacza :)
+
+7.  Transplantacja urmetow (zabawa w chirurga) [#*7**#]
+----------------------------------------------
+
+Obecnie  jedna  z  popisowych  metod  moich  qmpli  z  wawy.
+Opracowalem  ja i bardzo szybko mi przypadla do gustu po tym
+jak   w   mojej  okolicy  tpsa  zamienila  prawie  wszystkie
+niebieskie  urmety  na  srebrne.  Pozostale  6 niebieskich w
+promieniu  2  km  bylo  glownie  na  poczcie,  w banku, przy
+jakiejs budzie dresiarksiej i przy komendzie policji, wiec w
+malo ciekawych miejscach. Co prawda wszystkie poprzerabialem
+wstawiajac  epromy  nola,  ale  nie  zawsze  chcialo  mi sie
+chodzic   te   2-4  przystanki  od  siebie  zeby  zadzwonic.
+Natomiast tuz pod moim domem tpsa postawila 2 budki kabinowe
+(niemal  obok  siebie),  ale oczywiscie ze srebrnymi. Troche
+mnie  to  wqrwilo  az pewnego razu olsnienie: przeciez mozna
+zdjac budke srebrna a na jej miejsce "zasadzic" niebieskiego
+urmeta.  Pomysl  genialny w swej prostocie! Tego samego dnia
+wpadlem na dworzec centralny i zdjalem niebieskiego urmeta a
+po  przytarganiu  go  do  domu  wymienilem  eprom. Nastepnie
+zawinalem  go  w torbe i udajac tepsiarza poszedlem do budek
+pod  moim  domem.  Nikt  sie  nawet  nie  zainteresowal  gdy
+zdejmowalem  srebrnego  urmeta.  Wreszcie  jak juz sie z nim
+uporalem,  zamontowalem  elegancko  niebieskiego. Oczywiscie
+zalockowalem  zamek  zeby go tepsiarze tak latwo nie zdjeli.
+Wreszcie  moglem  dzwonic  spod  domu. No i jak myslicie jak
+dlugo powisial??? Dlugo, od 4 miesiecy siedzi nieruszony tam
+gdzie   go   przeszczepilem  :)  Srebrnego  ktorego  zdjalem
+utopilem   w  pobliskim  kanalku  (ci  ktorzy  wiedza  gdzie
+mieszkam orientuja sie o ktore miejsce chodzi).
+
+Sprawa  jest zajebista i warta gry, zastanawiam sie tylko co
+w  tepsie  pomysleli  gdy  monter  zobaczyl niebieskiego tam
+gdzie  wg dokumentacji powinien wisiec srebrny :))) No dobra
+to  byla moja historia a teraz troche konkretow, czyli o tym
+jak  najlatwiej, najbezpieczniej i najwygodniej dokonac tego
+typu transplantacji.
+
+Po pierwsze, najpierw trzeba zdjac niebieskiego urmeta i juz
+z  gotowym  przyjsc  na miejsce gdzie chce sie go zawiesic i
+dopiero  wtedy  zdejmowac  srebrnego.  Dlaczego  tak  a  nie
+odwrotnie?   Jesli   ktokolwiek   widzi   goscia   w   budce
+telefonicznej  obok  ktorego  lezy  jedna  budka zdjeta a on
+majstruje   przy   drugiej   wiszacej  budce,  to  naturalne
+skojarzenie  jest ze tepsiarz. Nikt sie nawet nie przyglada.
+W razie czego jednak mozna powiedziec, ze instaluje sie nowy
+aparat,  jakby  ktos  juz byl bardzo wscibski (np. policja).
+Zawsze  stosuje ta metode i jeszcze NIGDY nie mialem zadnych
+klopotow.
+
+Po  drugie zdejmujac niebieskiego trzeba wziac ze soba sruby
+i  nakretki mocujace. Zasadnicza roznica miedzy zdejmowaniem
+niebieskiego  i  srebrnego  tkwi  w  tym,  ze niebieski jest
+przykrecany  do  srob  z  gwintem  od  wewnatrz a srebrny od
+zewnatrz.  W  praktyce  polega  to  na  tym,  ze po otwarciu
+niebieskiego   wystarczy   odkrecic  3  nakretki  (wystarcza
+kombinerki,  nakretki  nie  sa  mocno  przykrecone  i  latwo
+schodza).  Jak  ktos ma wprawe to calosc nie trwa dluzej niz
+5  minut.  Ze  srebrnym  jest trudniej, trzeba wykrecic cale
+sroby  z  podloza gdzie urmet jest zamocowany. Moze to zajac
+nawet  10  minut  gdy sa mocno przykrecone. Czasem dostep do
+srob jest tak utrudniony, ze trzeba wyjac akumulator i zdjac
+drzwiczki   (odlaczyc   czytnik   i  mase).  To  tak  co  do
+parktycznych   uwag  (poza  tym  warto  miec  ze  soba  poza
+kombinerkami  2 srubokrety: zwykly i krzyzakowy). Po trzecie
+po  otwarciu  srebrnego  i  niebieskiego pierwsza rzecz jaka
+nalezy  zrobic  to odciac kabelki prowadzace do linii. Warto
+je sobie zaznaczyc flamasterm, zeby pozniej przy podlaczaniu
+sie nie pomieszaly.
+
+Wreszcie po czwarte, zalecam bardzo, bardzo mocno przykrecic
+niebieskiego juz po transplantacji, zeby tepsiarze nie mogli
+go  tak  latwo  zdjac. Oczywiscie dokladnie zakleic zamek, a
+jesli  w budce w ktorej do tej pory wisial srebrny sa jakies
+"slabe  punkty"  np. zbyt duze dziury po srubach, to rowniez
+radze    pozaklejac.    Oczywiscie    wszelkiego   klejenia,
+silikonowania,   szpachlowania,   itp.   dadokonuje  sie  po
+zainstalowaniu  niebieskiego.  Po  ostatnie, wyrzucic gdzies
+srebrnego  zeby  go  nikt nie znalazl. Najlepiej utopic go w
+rzece   lub  wyrzucic  na  jakims  duzym  wysypisku.  Co  do
+niebieskiego, ktory sie przeszczepia to lepiej sciagnac go z
+oddalonego  kranca  miasta (miejscowosci) zeby tepsiarze nie
+powiazali  ze  soba tych 2 faktow (sa malo inteligetni, wiec
+przy sprawnej akcji moga uznac to za blad w papierach).
+
+Jak wszystko pojdzie sprawnie to pozostaje juz tylko dzwonic
+i dzwonic :) To jest jedno z rozwiazan w czasach gdy zaklada
+sie  masowo  srebrne na miejsce niebieskich. Moim zdaniem ta
+zabawa ma przyszlosc bo dzwonienie z nagrywanych kart to juz
+nie taka frajda.
+
+8. Wspomnienie PRLu czyli slow kilka o zetonowcach [#*8**#]
+--------------------------------------------------
+
+Na  poczatek  taka  mala dygresja. Gdybym to co teraz wiem o
+phreaku   wiedzial   jakies  5  lat  temu,  to  dzisiaj  nie
+istnialaby  juz  firma  o  nazwie tpsa... zbankrutowalaby :)
+Gdybym dzisiaj wiedzial o phreaku tyle ile dzisiaj wiem, ale
+nikt  by  mnie  nie znal to z pewnoscia tpsa mialaby jeszcze
+wieksze  klopoty  niz  ma  teraz  :)  Wiem  ze  to przesadny
+optymizm,  ale  na  pewno cos w tym jest. Oke. Przechodze do
+rzeczy.
+
+Nie  bede  pisal  o sposobie na zapalarke, widelec, wstrzasy
+czy  jakiekolwiek  inne znecanie sie nad budka bo sa one: a)
+prymitywne,  b)  w  wiekszosci juz nie dzialaja, c) byly juz
+tysiac  razy  opisane  w  innych  tekstach (a wiekszosc tych
+tekstow  powielonych w innych tekstach przez lamerow). Zajme
+sie  tylko  tym  co  okreslilem  jako  "top phreak" (tp) lub
+"high  phreak"  (hp  -  ten  skrot  budzi  mniej negatywnych
+skojarzen  niz  tp). Moim ulubionym sposobem na dzwonienie z
+zetonowcow  jest  metoda  na  filtr  16  kHz. Jest ona tylez
+prosta  i  banalna  co  wygodna.  Pierwsza  rzecz  to trzeba
+sprawdzic  czy zetonowiec lapie tony. Wystarczy przylozyc do
+sluchawki  tonedialera  i  wybic,  powiedzmy  900. Jesli nas
+polaczy  to  spx  i mozna przejsc do nastepnego kroku. Teraz
+trzeba wykonac ow filtr 16 kHz. Sposobow jego zrobienia jest
+kilka i wiekszosc dosc prostych, ja opisuje tu swoj patent.
+
+Klasyczna   wersja   filtru  pasmowo-zaporowego  (tak  zwana
+polapka czestotliwosci) jest szeregowy obwod rezonansowy LC.
+
+
+                L       C
+        o----mmmmmm----||----o
+
+
+Uklad  ma  taka  wlasciwosc,  ze  dla  swojej czestotliwosci
+rezonansowej ma duzo mniejsza reaktancje niz dla pozostalych
+czestotliwosci i dzieki temu w ukladzie takim
+
+              o----+----o
+                   |
+                   3
+                   3  L
+    Input          3         Output
+                   3
+                   |
+                  -+- C
+                  -+-
+                   |
+              o----+----o
+
+po   prostu   (prawie)   zwiera   sygnal   o  czestotliwosci
+rezonansowej i zblizonych.
+
+(Wiecej   oraz   dokladniejszych   informacji   o   obwodach
+rezonansowych wraz ze sposobami ich obliczania mozna znalezc
+w dziale 'elektronika' pod adresem: www.phreak.it.)
+
+Jesli   zalezy  szczegolnie  na  skutecznosci,  n.p.  trzeba
+wyeliminowac   przebiegi   o   f=16kHz,   a  nie  zalezy  na
+przepuszczaniu      czestotliwosci     wyzszych,     lepszym
+rozwiazaniem   jest   wykonanie   filtru  o  rownie  prostej
+konstrukcji,  zwanego  filtrem  dolnoprzepustowym.  Ponizszy
+szkic ilustruje sposob wlaczenia takiego filtru w uklad:
+
+                   Dl
+           o----mmmmmmm---+------o
+                          |
+                          |
+      Input              -+- C      Output
+                         -+-
+                          |
+           o--------------+------o
+
+Gdyby taki obwod mial byc zastosowany w celu niedopuszczenia
+f=16  kHz  z  centrali  do telefonu, to dwa punkty oznaczone
+jako   Input   bylyby   podlaczone   do   dwoch   zyl  kabla
+przychodzacego  od  strony  centrali  telefonicznej,  a  dwa
+punkty  oznaczone jako Output do dwoch zyl kabla wiodacego w
+kierunku  telefonu.  Dzialanie  ukladu w duzym skrocie mozna
+opisac   tak:  dlawik  Dl  (bedacy  cewka  o  wlasciwosciach
+wspomnianych   wczesniej)  ma  reaktancje  rosnaca  wraz  ze
+wzrostem  czestotliwosci  i  oczywiscie  zalezna  od  swojej
+indukcyjnosci.  N.p. indukcyjnosc 10mH bedzie miala dla 5kHz
+reaktancje  okolo 300R, a dla 16kHz juz ponad 1k. Dalej jest
+kondensator,  ktorego wlasciwosci sa odwrotne do wlasciwosci
+obwodu  indukcyjnego (cewki). Reaktancja kondensatora maleje
+wraz   ze   wzrostem   czestotliwosci   i   dlatego  wieksze
+czestotliwosci  sa  przez  niego  latwiej przepuszczane, niz
+mniejsze.  Przykladowo  47nF  dla  5kHz ma okolo 680R, a dla
+16kHz juz tylko okolo 210R. W powyzszym schemacie powoduje to
+eliminowanie wyzszych czestotliwosci przez kondensator.
+[Czesc we wspolpracy z HACKER-STUDIO]
+
+Po  tej skromnej dawce teorii pora na praktyke. Dlawik mozna
+wykonac nawijajac cewke na rdzeniu. W przypadku zastosowania
+malego  rdzenia toroidalnego przy 35 zwojach uzyskalem 65 uH
+(mikroHenra).  Indukcyjnosc  zalezy  od  ilosci zwojow (czym
+wiecej  zwojow, tym wieksza indukcyjnosc) i od tego, na czym
+sa  one  nawiniete.  Dla  wiekszych  indukcyjnosci  dobre sa
+rdzenie   ferrytowe   o   ksztalcie  toroidalnym.  Majac  te
+informacje  czytelnik  juz  ma rozeznanie w temacie prostych
+filtrow  i  obwodow  rezonansowych oraz potrafi samodzielnie
+nawinac  potrzebny mu dlawik. Jednak zeby wiedziec jaka jest
+indukcyjnosc   wlasnie   wykonywanego   obwodu,   skutecznym
+sposobem  jest  pomiar  odpowiednim przyzadem po nawinieciu,
+gdyz przy roznorodnosci dostepnych rdzeni, drutow nawojowych
+i  samego  wykonania  uzwojenia  latwiej wykonac pomiar, niz
+przeprowadzac skomplikowane obliczenia.
+
+No  dobra  jest  juz  filtr.  Co  dalej?  Otwiera  sie czesc
+zetonowca   z   elektronika   i   w   miejscu   gdzie  kabel
+telefoniczny  wchodzi  do  budki (przy samej obudowie) wpina
+sie  filtr.  Oczywiscie mozna wpiac w dowolnym innym miejscu
+przed   dojsciem   kabla   do   elektroniki  zetonowca,  ale
+wmontowanie  go  w  obudowie  (tak  zeby pozostalym bebechom
+nie  przeszkadzal)  gwarantuje dluzszy jego zywot. Nastepnie
+zamyka  sie  budke,  mozna zalockowac kropelka (lub inaczej)
+zamek  i swiat stoi dla nas otworem. Minusem tej metody jest
+to,  ze  jak  sie  pospolstwo dowie ze jest taka budka gdzie
+mozna  z  tonedialera zasuwac za darmo to beda niewyslowione
+kolejki  do  tej  budki  a  w  konsekwencji tpsa zbanuje ten
+sposob.  Dlatego  tez  warto  stosowac ta metode w miejscach
+"strzezonych"  (np. w zetonowcu znajdujacym sie w kabinie na
+poczcie)  gdzie  nikt  by nie podejrzewal takich przekretow.
+Wtedy  jest jeszcze jedna korzysc - mozna rozmawiac w cichym
+i  wygodnym  miejscu (w niektorych kabinach w wawie sa nawet
+siedzenia).  Dodatkowego  smaczku  i  perfidii  tej metodzie
+dodaje  fakt,  ze niewtajemniczeni legalnie wrzucajacy zeton
+nic  nie  beda  podejrzewac,  bowiem  budka normalnie bedzie
+zetony  pobierac.  Na  centrale zetonowiec tez nie zadzwoni.
+Nie  ma  c90  menu  :) Wspomniany powyzej sposob na wybranie
+900,  901,  905 na zetonowcu umozliwia zamowienie rozmowy na
+koszt  budki  lub  wyslanie  telegramu (patrz czesc o innych
+uslugach na automatach).
+
+Druga  metoda  to  "skarbonka".  Wiem, ze poza mna koledzy z
+grupy telesfor stosowali ja z powodzeniem w poznaniu. Polega
+po  prostu  na tym, ze dysponujac kluczem do czesci gdzie sa
+przechowywane zetony mozna na biezaco je wyjmowac i dzwonic.
+Mozna  tez obskoczyc 20 zetonowcow i nazbierac 200 zetonow a
+pozniej dzwonic do upadlego a po wygadaniu sie ze wszystkimi
+znajomymi  zabrac  z  powrotem  "swoje"  zetony. Dla tych co
+marudza  i  mowia  "to  glupota  chodzic z 200 zetonami" mam
+lepsze  rozwiazanie. Wystarczy miec 10 zetonow C. Wrzucic od
+razu  kilka  i pozniej uzupelniac. Zeton C starcza na 5 razy
+dluzej  niz  A. A jak zdobyc klucz do skarbonki zetonowca? W
+sumie  to  tak  jak  zdobywa sie wszelkie inne klucze, czyli
+przez  znajomego  w  tpsa.  Jest  jednak  male zastrzezenie:
+zwykli  monterzy nie maja kluczy do skarbonek w zetonowcach.
+Kluczami  dysponuja specjalni pracownicy obslugi zetonowcow,
+wiec  zwykly  monter  sam  nie  da rady, chociaz zawsze moze
+miec  znajomych.  Inna  prosta  acz z lekka ocierajaca sie o
+wandalizm  metoda  jest  wyrwanie  zamka i dorobienie klucza
+(kazdy  slusarz  to zrobi za 30 zl). Klucze do zetonowcow to
+oczywiscie abloye (tyle, ze starsze niz do urmetow). W wawie
+jest   okolo   20   wzorow  roznych  kluczy  do  skarbonek w
+zetonowcach, ale 1 standardowy typ pasuje do 70% z nich (tak
+jak w przeszlosci jeden klucz pasowal do 70% urmetow - kazdy
+chyba wie o ktorym mowie). Niestety kazdy zetonowiec ma swoj
+klucz  do  czesci czesci z elektronika. Jak to mi powiedzial
+obrazowo   znajomy  monter:  "jesli  jest  w  warszawie  500
+zetonowcow   to   jest   500   wzorow   klucza  do  czesci z
+elektronika".
+
+Na  koniec  mala  refleksja  dotyczaca zetonowcow. Slysze ze
+wszystkich stron opinie typu "to przeszlosc", "szkoda na nie
+czasu,  dzisiaj technika chipowa to przyszlosc", "nic nowego
+sie nie pojawi". Moim zdaniem takie glosy naleza do lamerii.
+Zetonowce  nie  tylko  przetrwaja,  ale  bardzo sie rozwina.
+Dlaczego? Na przyklad w anglii gdzie mialem okazje byc kilka
+razy  i  poznac dokladnie tamtejsze aparaty publiczne, okolo
+50%  wszystkich  typow  budek to wlasnie automaty na monety.
+Oczywiscie  nie  na  zetony,  na zwykly bilon ale to ten sam
+typ.  U  nas  tpsa  tez  testuje rozne aparaty na bilon i na
+pewno  kiedys je masowo wprowadzi (moze beda to nawet wyroby
+krajowego  producenta,  firmy  telkom-telos).  Bedzie  to co
+innego  niz  zwykle  zetonowce,  ale  rownie mile i z pelnym
+polem popisu dla phreakerow. Zobaczycie jeszcze 3-5 lat...
+
+9. Telegram z urmeta i cos jeszcze [#*9**#]
+----------------------------------
+
+Poczta  polska  podobnie  jak  tpsa  jest monopolista. Listy
+wysyla  sie jednak zadziej niz sie dzwoni. Jedna z drozszych
+uslug poczty sa telegramy. Przykladowo, wyslanie telegramu z
+zawartoscia  tekstu rownowazna jednej stronie maszynopisu to
+wydatek  rzedu  25  zl.  Dzieki  niebieskiemu urmetowi mozna
+miec  ta  przyjemnosc  (wysylania  telegramow)  za  darmo. Z
+drugiej  strony  dla phreakerow telegramy sa malo atrakcyjne
+bo  lepiej  bezposrednio  do kogos zadzwonic, ale zawsze sie
+taka   metoda   moze   przydac,   np.  na  rozne  wydarzenia
+okolicznosciowe.
+
+Numer  905  sluzy  wlasnie  do  wysylania  telegramow  przez
+telefon.   Na   niebieskich  urmetach  wpisany  jest  on  na
+zaszczytna liste lock numbers a po jego wybraniu pojawia sie
+na  wyswietlaczu  "numer  zablokowany". Wniosek stad wysnowa
+sie prosty. Przy pomocy karty programming wymazuje sie 905 z
+lock  numbers  i  wpisuje go do free numbers. Oczywiscie 905
+mozna  wybrac  takze  przez  pbxa  lub po zmianie epromu, to
+wszystko  jedno.  (Z zetonowca mozna go wybrac tonedialerem,
+ale trzeba wrzucic zeton no chyba ze wczesniej zainstalowalo
+sie filtr 16 kHz).
+
+Na  905  operatorki  sa  bardzo malo inteligentne nie trzeba
+zatem miec nawet jakiegos super gadanego zeby taka skolowac.
+Po  polaczeniu  sie  trzeba  powiedziec ladnie dzien dobry i
+wyrazic   chec   wyslania   telegramu   :)  Dalej  nastepuje
+standardowa procedura dla tego typu uslug. Panienka pyta sie
+o  numer  telefonu - podaje sie numer budki. Jesli zechce to
+moze  oddzwonic ale zwykle jest zbyt leniwa. Nastepnie imie,
+nazwisko i na kogo jest zarejestrowany telefon, czyli: Jozef
+Pipsztakiewicz  ul. Picinka 31/337 00-997 wawa. Dane powinny
+brzmiec  dosyc  normalnie,  radze nie wymyslac zadnych Janow
+Kowalskich  czy  Arnoldow  Buzdyganow.  Dane  sa  sprawdzane
+dopiero  po wyslaniu telegramu kiedy to poczta przekazuje do
+tpsa namiary na osobe, ktora ma oplacic telegram. Czy czesto
+taki  przekret  sie  udaje?  Mniej  wiecej  95  na  100. Jak
+wspomnialem  operatorki  sa  malo  przemyslne i wiedza ze na
+budkach  905 jest zablokowany. Na ostatnie swieta, gwiazdke,
+itp...  wyslalem  11  telegramow  za  jednym  podejsciem  do
+rodziny i jak sie pozniej dowiedzialem wszystkie doszly :)
+
+Tyle  o  telegramach.  Wspomne  jeszcze  o  trzech  numerach
+uslugowych  tpsa:  900, 901 i 917. Wszyscy wiedza, ze 900 to
+zamawianie    rozmow    miedzynarodowych    a   901   rozmow
+zamiejscowych.  Oba te numery znajduja sie rowniez na liscie
+numerow zablokowanych. Bylo juz w kilku faqach, jak przy ich
+pomocy  zamawiac  rozmowy  na  koszt budki. Musze wszystkich
+zmartwic:  w  wawie  to  juz  zupelnie nie dziala. Wszystkie
+budki  sa skatalogowane i panienka na centrali widzi, ze sie
+dzwoni  z  automatu publicznego (przed polaczeniem wyswietla
+sie  jej caller-id przy ktorym figuruje informacja o tym, ze
+dzwoni  sie  z budki). Czy w zwiazku z tym 900 i 901 sa dzis
+nieprzydatne?  Nie! Spelniaja bardzo wazna role informacji o
+budkach  z numerami zastrzezonymi lub tymi bez caller-id. Po
+prostu  wystarczy  zadzwonic  na 900 z budki, ktorej numer z
+jakiegos powodu sie nie wyswietla gdy dzwoni sie na komorke.
+Po  polaczeniu warto wrzucic taka gadke "przepraszam bardzo,
+ze   zawracam   pani  glowe,  ale  mam  niewiele  kredytow a
+chcialbym  zeby  rodzina  z  XX (tu jakies zadupie daleko od
+miejsca  skad  sie  dzwoni)  oddzwonila do mnie na numer tej
+budki. Czy moglaby pani powiedziec jaki jest numer tej budki
+z  ktorej teraz dzwonie (tu sie podaje adres gdzie budka sie
+znajduje)?".  Jesli na centrali beda sie czepiac, ze od tego
+jest 913 to wystarczy im powiedziec "ale bardzo przepraszam,
+przed  chwila  dzwonilem  na  913  i  tam mi powiedzieli, ze
+panstwo  maja wszystkie numery budek i tu nalezy zadzwonic".
+Zwykle  to  przechodzi.  No dobrze ale dlaczego rzeczywiscie
+nie  zadzwonic na 913 i poprosic o numer budki legalnie? Pod
+913 NIE PODAJA numerow zastrzezonych nawet w przypadku budek
+po  pierwsze  a  po  drugie nie maja aktualnej bazy z danymi
+budek,  glownie  tych  bez  CIDa.  A  po co warto znac numer
+budki,   ktora   nie  ma  CIDa?  Patrz  rozdzial  o  bufie i
+wirtualnych  alarmach.  A po co warto znac numer zastrzezony
+budki? Patrz nastepny rozdzial o zamawianiu uslug na innych.
+
+No to jeszcze slow kilka o numerze 917 moze to tez komus sie
+przyda. Pod 917 zamawia sie: budzenie, sprawdzanie czujnosci
+(np. pracownikow), przypominanie o waznych terminach, itp...
+Mozliwosci jest bardzo duzo. Jak to dziala? Zamawiajac jakas
+usluge  operatorka  zawsze  chce  zeby  podac jej numer spod
+jakiego   sie   dzwoni.   Nastepnie  oddzwania  i  przyjmuje
+zamowienie  na  zraelizowanie  uslugi. Oddzwaniajac na budke
+wyswietla  jej  sie,  ze  jest  to automat publiczny i wtedy
+uslug nie realizuje. Mozna to jednak prosto obejsc w sposob,
+ktory  wypraktykowalismy.  Wystarczy  podpiac  sie pod budke
+phreakphonem   i   poczekac  az  telefonistka  oddzwoni.  Po
+odebraniu  nie slychac zadnego pikania ani trzaskow - jak na
+zwyklej  linii.  Wtedy  operatorka  zwykle mowi "ale to jest
+budka  i nie moge zrealizowac uslugi". A w odpowiedzi slyszy
+"to  byla  budka  ale  od  tygodnia to jest zwykly telefon w
+firmie ABC przy ulicy (tu nalezy podac prawdziwa nazwe ulicy
+i  ewentualnie  budynku w ktorym znajduje sie budka)". W 90%
+przypadkow  taki  bajer  przechodzi bo na centrali mysla, ze
+maja nieaktualne dane.
+
+10. Uslugi na kogos i do kogos (brutal phreaking) [#*10*#]
+-------------------------------------------------
+
+Wiadomo  o  co  chodzi. Zamawianie pizzy, taksowki, panienki
+sasiadowi  bez  jego wiedzy. Wszystko bezosobowo i anonimowo
+przez  telefon,  czyli phreaking + social engineering. Temat
+nie  jest  nowy,  ale  ja proponuje troche inne jego ujecie,
+tzn.  bardziej  skuteczne i sprawdzone (wypraktykowane). Nie
+bede  opisywal  stu  przykladow.  Skoncentruje  sie na dwoch
+wybranych, moim zdaniem najbardziej popularnych i zabawnych.
+
+Chyba   najbardziej   jajcarska   zabawa   phreakerska  jest
+zamawianie  dla kogos panienek z agencji towarzyskich. Jesli
+jest  jeszcze  okazja  zobaczyc  sytuacje,  jak gosc otwiera
+drzwi a tam panienka z ochroniarzem, to juz totalne combo ;)
+Jak sprawic zeby panienka dojechala pod wskazany adres? Malo
+kto  sie  domysla  jak  prosto.  Zaczne  od  opisania  jak w
+agencjach weryfikuja zamowienia (bo i tak maja pewnie zartow
+od  cholery). Po dodzwonieniu sie do agencji panienka pyta o
+numer  telefonu, nazwisko i adres. Nastepnie dzwoni pod 913,
+podaje  numer  telefonu  i  pyta  sie do kogo nalezy. Po tym
+oddzwania  do  klienta i jesli wszystko sie zgadza realizuje
+zamowienie  (czyli  wysyla  inna  panienke  :) Jak obejsc ta
+weryfikacje? My wypraktykowalismy 2 sposoby.
+
+Pierwszy  to,  na  budke  z  zastrzezonym numerem. Wystarczy
+zadzwonic  z  takiej  budki  do  agencji  i  podac jej numer
+telefonu  oraz  nazwisko  i  adres tego komu chce sie zrobic
+kawal.  Panienka  dzwoniac na informacje dowie sie, ze numer
+jest zastrzezony lub w najgorszym wypadku, ze jest to "numer
+publiczny"  (tak tez czasem mowia na centrali). Gdy panienka
+z  agencji oddzwania na ten zastrzezony numer budki, odbiera
+sie i na jej watpliwosci mowi sie, ze numer jest zastrzezony
+lub  ze  sie  wynajmuje  mieszkanie  i nie wiadomo jaki jest
+status  telefonu.  I  znowu  9  na  10 przypadkow to sukces.
+Panienka wysyla pracownice do klienta :) Pozostaje juz tylko
+obserwowac  (z  niewidocznego  miejsca)  jakie  beda  efekty
+niespodziewanego  najscia. Wyjatkowo zabawnie jest gdy ktos,
+komu  wykreca  sie  taki  numer, mieszka z rodzicami i drzwi
+otwiera  np. babcia :))) cool. Dla polepszenia pewnosci tego
+sposobu  warto  skorzystac  z  uslug  kilku(nastu) agencji i
+zrobic  ta  sama  akcje jednej osobie. Nie wiem jak w innych
+miastach, ale w wawie to agencji nie brakuje, wiec niech sie
+wreszcie na cos przydadza phreakerom :)
+
+Drugi  sposob  to  klasyczne pajeczarstwo. Wystarczy podpiac
+sie  pod  linie  osoby, ktorej chce sie zamowic panienke i z
+tej  linii  zadzwonic.  Najpierw  trzeba  jednak  tymczasowo
+odciac  lacznosc  zeby  nie dochodzila do domu osoby, ktorej
+robi  sie  ten numer (mozna uzyc rozdzielacza sygnalu lub po
+prostu rozciac kabel a pozniej, po zamowieniu, go polaczyc).
+Reszta  to  juz formalnosc. "Legalnie" dzwoni sie do agencji
+podaje  dane  i numer telefonu. Stamtad oddzwaniaja, odbiera
+sie  i  potwierdza.  Ten  sposob  jest  100%  pewny, tyle ze
+ryzykowny  i  wymagajacy zachodu oraz zelaznych nerwow :) Co
+wiecej,  metoda  ta jest idealna wogole zeby kogos pograzyc,
+bo  np.  mozna  zadzwonic  na policje z alarmem o bombie, na
+0700  i nabic rachunek,  etc.  Wiecej tego typu tekstow w II
+czesci.
+
+11. Generalplan Urmet, czyli chaos w tpsa [#*11*#]
+----------------------------------------
+
+Co  zrobic  aby  niewielkim  kosztem wlasnym spowodowac duze
+straty   tpsy   i   wprowadzic  powazne  zamieszanie  w  jej
+strukturach?  Postaram  sie  odpowiedziec  tu  na to pytanie
+dajac  kilka  konkretnych  przykladow. Zdecydowana wiekszosc
+opisywanych  w  tym  tekscie (w dziale dotyczacym automatow)
+metod  szkodzi  bezposrednio  lub posrednio tpsa. Jednak ich
+celem  jest  korzysc  stosujacego  dany  sposob a nie celowe
+szkodzenie  monopoliscie.  Tu sie zajmuje typowym dzialaniem
+zlosliwym, gdzie nagroda jest wlasna satysfakcja z dokopania
+tpsie.
+
+a. Ostateczne rozwiazanie kwestii srebrnych urmetow [#*a**#]
+---------------------------------------------------
+
+Nie    lubie    srebrnych.   Bugi   opisane   dawno   temu w
+lunar.shake'ach  juz nie dzialaja. Nowych sie nie odkrywa bo
+nie  trudno  szybko  upgrade'owac  soft  z  centrum nadzoru.
+Jedyny  sposob  to  karta  konserwatora  i  mistyczna  karta
+operatora,  ktorej  tak  naprawde  nikt jeszcze nie widzial.
+Mozna   ewentualnie   sie  podpinac  ale  to  marna  zabawa.
+Niebieskie   urmety   sa  przyjemne  -  istnieja  dziesiatki
+sposobow na dzwonienie bez uiszczania oplat z tych cudownych
+maszyn.   Zetonowce   tez   ujda   (patrz   filtr  16  kHz i
+("skarbonke").  Z  tego  wszystkiego  wynika,  ze zycie bylo
+piekne  dopoki  srebrne  nie pojawily sie na horyzoncie (nie
+liczac  krotkiego  epizodu  totalnego  lamerstwa tpsa, kiedy
+mozna  bylo  dzwonic  jak  sie  chcialo).  Obecnie  sytuacja
+komplikuje  sie  jeszcze  bardziej  gdyz  nawet tam gdzie sa
+jeszcze  niebieskie tpsa sukcesywnie zaczyna je wymieniac na
+srebrne.  Stad pytanie jakie mozna sobie postawic to, w jaki
+sposob   mozna   sie   przyczynic   do  zniechecenia  tpsa w
+montowaniu  coraz to nowych srebrnych? Zastanawiajac sie nad
+tym   znalazlem   2  odpowiedzi  na  te  pytania,  ktore  po
+wyprobowaniu  daly  naprawde  dobre  efekty  (2  sposob jest
+odmiana   1).  Pierwszy  z  nich  to  "kropelkowanie"  czyli
+zlosliwa   odmiana  lockowania.  Polega,  mniej  wiecej,  na
+zaklejaniu   czytnikow   (kilka  kropelek  zalatwia  sprawa)
+rownczesnie  z  zamkami.  Wtedy radosc jest podwojna bo nikt
+nie  moze  skorzystac  z  telefonu (nie moze wlozyc karty) a
+tpsa  musi  zdejmowac  caly  stojak  z budka :) Dla bardziej
+ekonomicznych  polecam  mutacje  tego  sposobu,  ktory mozna
+nazwac "lowca czytnikow". Zamiast zaklejac czytnik lepiej go
+usunac. Cala operacja trwa 20 sekund. Otwiera sie srebrnego,
+wyjmuje  czytnik  i zamyka. Nastepnie oczywiscie lockuje sie
+zamek  i  wszystko  jest  ok. Humanitarnym aspektem obu tych
+sposobow   jest   mozliwosc   wybrania   wszelkich   numerow
+alarmowych  (bezplatnych).  Pomyslalem  o wszystkim :) A jak
+wykorzystac   stos   czytnikow   od  srebrnych?  Rozkrecic i
+sprzedac  na czesci - na wolumenie w wawie placa jakies 20 -
+30  zl  za  czesci z jednego czytnika (szczegolnie simy sa w
+cenie,   glowice  a  nawet  silniczek).  Zapewniam  was,  ze
+kilkadziesiat  takich  numerow w waszym rejonie a tpsa traci
+duzy  procent  swojego  budzetu.  Kto  wie, jakby taka akcje
+przeprowadzic  masowo  w  calym  kraju  to moze wrociliby do
+niebieskich bo by im srebrnych nie starczylo.
+
+Co  prawda plusem srebrnych jest to, ze mozna dzwonic z nich
+uzywajac  wlasnej  produkcji  kart  255 impulsowych i wogole
+wyzszych  niz 100 kredytowych. Ale i to zaczyna byc minusem.
+W  warszawie  taka  karta  uzyta rano moze wieczorem juz nie
+dzialac  (szybkie  uaktualnienie  czarnej  listy). Pozostaje
+generowanie 100, wtedy wszystko jest ok.
+
+b. Buf i Ssf vs. dyrekcja  okregu [#*b**#]
+---------------------------------
+
+Opisane  w  innej  czesci  faqu  Buf i Ssf mozna wykorzystac
+bezposrednio  przeciw  telekomunie. Nie bufowac numerow typu
+914,  9696,  913  czy  905,  telefonistki  stamtad to zwykle
+robole  nie  majace  wiele wspolnego z procesem decyzyjnym w
+tpsa.   Lepiej  zabufac  dyrekcje  spolki,  okregu,  centrum
+systemow   teleinformatycznych,   itp.   Telefony  elegancko
+figuruja w kazdej szanujacej sie ksiazce telefonicznej lub o
+wszystkim  mozna  sie dowiedziec pod 913. Wesolo byloby, np.
+zbufowac  gabinet dyrektora spolki :) a jeszcze lepiej jakby
+ktos   namierzyl   domowy  lub  komorke  (patrz:  zdobywanie
+informacji).  Wtedy  to  juz  absolutny  tartak :) Nie musze
+chyba  pisac,  ze  bufowac takie jednostki najlepiej z budek
+bez  cida  lub  (w przypadku wykorzystywania elektronicznych
+ekstenderow)  z  numerow  zastrzezonych  a  jeszcze lepiej z
+zagranicy.   Efektem   takiej  zabawy  jest  zawsze  nerwowa
+atmosfera  w  tpsa,  wiec  czemu  tego nie zrobic chocby dla
+wlasnej satysfakcji?
+
+c. Freecalling dla wszystkich [#*c**#]
+-----------------------------
+
+To dosyc oczywista sprawa. Opisywany sposob z dzwonieniem za
+friko  na  podmienione  epromy  mozna  udostepnic wszystkim.
+Trzeba  jednak przeprowadzic cala akcje "z glowa" bo inaczej
+skonczy  sie  na  tym,  ze  paru  luserow zadzwoni za darmo,
+przyjdzie  tpsa  i  zlikwiduje  badz  bardzo utrudni kolejne
+mozliwosci.  Ja  to  zrobilem  w  ten  sposob:  wstawilem 11
+epromow  w  11  budkach  w  dosyc  popularnych  oraz waznych
+miejscach  w  wawie  (sejm,  gielda  papierow wartosciowych,
+zaklad   lacznosci   radiowej   tpsa,  hotel  mariot,  hotel
+europejski,  poczta  glowna,  dworzec centralny przy kasach,
+telewizja  polska,  urzad  gminy  warszawa-centrum, blekitny
+wierzowiec   i   palac   kultury).   Przy  kazdym  automacie
+powiesilem  wydrukowana  ulotke  ze  znakiem  tpsa  "Automat
+promocyjny:  polaczenia  za darmo" (oczywiscie uzylem epromu
+2.9  zmodyfikowanego  przez  nola - wszystkie numery od razu
+free).   Ulotki   zafoliowalem   i   przy   uzyciu  kropelki
+przytwierdzilem  do  budek.  I  zgadnijcie  co?  Po 3 dniach
+kolejki  sie  do budek ustawialy a od wspolpracownika z tpsa
+dowiedzialem  sie  ze  kilka  osob  o  malo  zawalu o to nie
+dostalo.  Jaki stad wniosek? Trzeba rozpropagowac pewna idee
+i dzialac. Pozniej jak tpsa zmieni epromy/zamki znowu zaczac
+wszystko  od nowa - w tym samym miejscu (ma juz bowiem swoja
+renome). No chyba ze sa to miejsca jak ja je opisalem, pelne
+mundurowych,  wtedy  lepiej  zmienic  lokal :) Slyszalem, ze
+koledzy  z  wroclawia  bawia sie ta metoda od dawna i dzieki
+temu w pewnym akademiku studenci dzwonia za free.
+
+d. Idziemy do sadu [#*d**#]
+------------------
+
+W naszym spoleczenstwie panuje jakies dziwne przekonanie, ze
+nalezy  sie panicznie bac wymiaru sprawiedliwosci. Pomijajac
+fakt,  ze pare razy phreakowalem w sadzie najwyzszym i kilku
+komisariatach  policji  (w  jednym  nawet niebieski nie mial
+zablokowanych   0700   :)),  to  moje  kontakty  z  organami
+bezpieczenstwa  wewnetrznego  byly  raczej  ograniczone. Ale
+nigdy nie traktowalem ich jako wroga. Policja jest potrzebna
+chocby  po to, zeby palowac dresow i lamerie. W kazdym razie
+zauwazylem pare razy, ze jesli pojdzie sie do tpsa i wypowie
+jedno    z   magicznych   sformulowan:   "proces   cywilny",
+"znieslawienie" czy "sad konsumencki", to bardzo tam miekna.
+Zwlaszcza  przy zkladaniu podan o zwrot karty, o czym nizej.
+Krotko  mowiac  chodzi  o  to,  ze  zawsze mozna wspomniec o
+ewentualnych  "krokach  prawnych  jakie  mozna przedsiewziac
+skoro   tak   panstwo   sprawe  stawiaja".  Skutkuje  w  90%
+szczegolnie  na  te  glupie baby pracujace w biurach obslugi
+klienta lub centrach promocyjnych. Jeden warunek: trzeba byc
+pewnym  swojego,  nie zaszkodzi kupic i przewertowac KC, KK,
+KPK,   i   KKW  oraz  ewentualnie  ustawe  o  ochronie  praw
+autorskich  i  pokrewnych  :)  Aha...  jeszcze  mi sie jedna
+ciekawostka  przypomniala.  Ostatnio  dowiedzialem  sie,  ze
+dzielnicowy  przeprowadzal  wywiad srodowiskowy na moj temat
+(czyli rozpytywal sie sasiadow co o mnie mysla). Cieszy mnie
+to  bo na pewno dostalem bardzo dobra opinie i w razie czego
+w  sadzie bedzie "nieposzlakowana opinia srodowiska". Troche
+sie  wqrwilem,  ze  nawet  jakis tepy policmajster slyszal o
+mnie,   ale   z   drugiej   strony  to  bylo  moim  grzechem
+pierworodnym  ze  nigdy sie nie krylem ze swoja tozsamoscia.
+Heh...  definitywnie  przechodze  na  emeryture zanim znajda
+jakiekolwiek  dowody (bo poki co to "absolutnie nic nie ma",
+jak opowiadal mi ostatnio kolega aspirant).
+
+e. AutoBUF/SSF & oddajcie mi moja  karte [#*e**#]
+----------------------------------------
+
+Ten  punkt  bardzo  wiaze  sie  z powyzszym. Jest jakby jego
+kontynuacja.    Podaje    tu    dwa    konkretne   przyklady
+praktrycznego   zastosowania   powyzszych  rozwiazan.  Jeden
+wyprobowalem na sobie ze skutkiem pozytywnym do drugiego sie
+wkrotce zabiore, ale 99% ze skuteczny. Cala sprawa rozchodzi
+sie o to, ze pare razy bylem przyczyna stanu przedzawalowego
+u pan tepsiarek kiedy zadalem zwrotu karty poniewaz "ten zle
+przez  telekomunikacje zabezpieczony automat skasowal mi 100
+impulsow  przy  pierwszej  minucie rozmowy". Odbylo sie to w
+ten  sposob,  ze  kupilem od kolekcjonera (pelno takich stoi
+tam  gdzie  jest  wiecej  budek  i  pyta "ma pan moze zuzyta
+karte?")   zuzyta   karte  100  impulsowa  z  jednymi  tylko
+odcisnietymi zabkami na koncu karty. Zaplacilem za to cale 2
+zl, podszedlem to niebieskiego urmeta i przprogramowalem go,
+ze w tax value wpisalem wartosc 100 i przy okazji wylaczylem
+komunikacje  z centrala i wykonalem jednominutowe polaczenie
+z friko z numerem 913). Po czym grzecznie poszedlem na ulice
+twarda,  gdzie  sie sklada reklamacje i wypelnilem podanie o
+zwrot  nowej  100.  Przy okazji zrobilem awanture (juz mniej
+grzecznie)  i  zostawilem  karte  razem  z  podaniem  grozac
+procesem  jesli to oleja. Obiecano rozpatrzyc na za tydzien.
+Po  tygodniu  przyszedlem  i  nowa,  legalna  setka  na mnie
+czekala. W sumie to i tak nie oplacilo mi sie placic 2 zl za
+100  impulsow,  skoro  moge zadzwonic za darmo (chyba ze bym
+komus  sprzedal  za  10  zl), ale tak na probe zobaczylem ze
+takie numery przechodza. Ktos myslacy, moze zmodyfikowac ten
+sposob  na tyle zeby lepiej skorzystac. Jesli taki sie trafi
+to  niech  mailnie do mnie i sie pochwali - w nagrode dam ta
+"zdobyczna"  100.  Aha oczywiscie jakby dokladnie sprawdzili
+ta  karte i ta budke to zobaczyliby, ze numer na blackliscie
+nie  zgadza sie z numerem karty, ale na tyle inteligentni to
+oni juz nie byli.
+
+Druga  rzecz,  ktorej jeszcze nie probowalem w praktyce, ale
+mam zamiar to cos co roboczo nazwalem autobuf (lub autossf -
+w  zaleznosci  od  koloru  automatu  ktory  sie ustawia:) ).
+Wszystko  polega  na  tym,  ze  programuje sie, powiedzmy 20
+urmetow  zeby  dzwonily na numer domowy. Nastepnie zglaszamy
+awarie  telefonu tpsa ("panie, co chwila mi cos dzwoni, nikt
+sie  nie moze do mnie dodzwonic! nie po to place abonament i
+rachunek  zeby  takie  numery  mi robiono"). Po 2 tygodniach
+jesli  tpsa  nie  usunie awarii (a znajac dobre bufy to moze
+potrwac  nawet  miesiac - a jesli nawet usuna to ustawiamy z
+powrotem),  zaczynamy  sie  wqrwiac  i  mozna  grozic sadem.
+Trzeba   przeczytac   dokladnie   umowe   swiadczenia  uslug
+telekomunikacyjnych  i  porozumiec  sie  z  prawnikami jakie
+bylyby   szanse  wygrania  procesu  i  zarzadania  wielkiego
+odszkodowania  -  przyznam  sie,  ze  jeszcze  sie  w to nie
+wglebialem,  ale sprawdze to wkrotce. Aha sposob ten polecam
+majacym  zarejestrowany  telefon  na  siebie  i mieszkajacym
+samemu,  bo  inaczej  wlasciciele  wypie****la was z chalupy
+zanim cokolwiek zrobicie z tpsa :)
+
+f. Internet w sluzbie phreakerow [#*f**#]
+--------------------------------
+
+To  w  sumie tylko kilka przemyslen na ten temat. Opisalem w
+tym  faqu  jak  bezpiecznie  i  anonimowo  zamiescic dowolne
+informacje  w  internecie  oraz  je  troche  spopularyzowac.
+Wykorzystanie   praktyczne   tej  wiedzy  moze  pozwolic  na
+dokopanie  tpsa.  Jesli uda wam sie zdobyc cokolwiek z czego
+nie  bedziecie  mieli  jakiegos  praktycznego  (finansowego)
+pozytku  a  co  mogloby  spowodowac  kompromitacje tpsa (lub
+innej  instytucji)  mozecie  zawsze wrzucic to do internetu.
+Moga  to  byc,  np.  spis abonentow z zastrzezonymi numerami
+(jak ja bym znalazl cos takiego gdzie bylby moj numer domowy
+to  bym sie zastanawial nad zadaniem odszkodowania od tpsa),
+poufne   dane   techniczne  (kody  do  zdalnego  dostepu  do
+centralek  abonenckich)  lub  jakiekolwiek inne czy wreszcie
+jakies  nagrania  (mozna zsamplowac do mp3). Mozliwosci jest
+duzo  wszystko  zalezy  od  konkretnej  sytuacji i specyfiki
+materialu  (np.  samemu  mozna  zadzwonic  gdzies  i  nagrac
+rozmowe  badz  ja  spreparowac).  Mozna rownie dobrze zrobic
+fotomontaz,  etc. Grunt, ze zawsze sie cos bedzie dzialo lub
+mozna to bedzie jakos wykorzystac.
+
+Czesc II. Inne [#*II*#]
+--------------
+
+"Innych"  pomyslow zwiazanych mniej z budkami tez jest duzo.
+Czesc  z  nich to prawdziwe cuda techniki (np. elektroniczny
+ekstender).  Dlatego warto im poswiecic osobna czesc i kilka
+slow.    Nie    obejdzie    sie   tez   bez   kilku   watkow
+'anarchistycznych', no ale jak kompendium to kompednium :)
+
+12. Elektroniczny ekstender [#*12*#]
+---------------------------
+
+To urzadzenie odkrylem mniej wiecej rok temu (od czasu kiedy
+sie ten tekst ukazal) i zycie stalo sie weselsze. Mam bowiem
+gwarancje, ze niezaleznie od czegokolwiek innego zawsze bede
+mial  pelen  akces na dzwonienie w dowolnie wybrane miejsca.
+Poza opisem tej cudownej maszyny przedstawiam rowniez krotka
+instrukcje obslugi wersji zrobionej przez nas.
+
+Urzadzenie  o  roboczej nazwie PTC1 (Phone Transfer and Call
+back  version  1)  bedace  obecnie  w  fazie  prototypu jest
+poddawane  testom  eksploatacyjnym  oraz  nanoszone sa pewne
+poprawki  do  oprogramowania  wewnetrznego  (tzw. firmware).
+Niniejszy   opis   ma  charakter  tylko  informacyjny,  gdyz
+niektore   szczegoly  konstrukcji  lub  oprogramowania  moga
+jeszcze zostac zmienione. Uzytkownik przy zakupie urzadzenia
+otrzyma zaktualizowana istrukcje i opis.
+
+a) Przeznaczenie
+----------------
+
+PTC1  posredniczy  w  polaczeniach  telefonicznych  na  trzy
+sposoby:
+
+*  transfer polaczen
+
+PTC1  dziala  jak specjalna stacja przekaznikowa dla naszego
+polaczenia  telefonicznego.  Przykladem niech bedzie rozmowa
+miedzymiastowa    liczona   dla   nas   jako   lokalna   lub
+przedstawianie  sie  (tzw.  identyfikacja)  numerem innym od
+naszego
+
+*  polaczenie konferencyjne
+
+PTCx   (wersja   rozszerzona)   daje  mozliwosc  zestawiania
+polaczen   konferencyjnych.  Ich  liczba  zalezy  od  liczby
+podlaczonych  linii  (maksymalnie  przewidziano 10) oraz ich
+mozliwosci.
+
+*  call back
+
+Na  specjalne  polecenie uprawnionego uzytkownika urzadzenie
+oddzwania  pod  wskazany  numer. Po odpowiedniej weryfikacji
+odbiorcy  wszystkie pozostale funkcje dzialaja standardowo i
+uzytkownik  nie  odczuwa  roznicy (poza rachunkiem) pomiedzy
+polaczeniem normalnym, a call back'iem.
+
+b) Instalacja
+-------------
+
+PTC1  (=wersja  standard)  wymaga  bardzo  prostych procedur
+instalacyjnych.  W  dowolnym  miejscu napotkania dwoch linii
+telefonicznych i gniazda sieciowego (siec elektryczna, a nie
+komputerowa)  podlacza  sie  urzadzenie  odpowiednimi  dwoma
+przewodami   dwuzylowymi   do  wspomnianych  dwoch  linii, a
+wtyczke  zasilacza  urzadzenia  do  gniazda  sieciowego.  To
+praktycznie wszystko, czyli instaluje sie troche latwiej niz
+typowy  modem  zewnetrzny.  Wskazane jest, aby uzywane linie
+telefoniczne  sluzyly  jedynie  do  wspolpracy  z PTCx, gdyz
+wtedy  nie  ma  ryzyka  podniesienia  sluchawki  przez kogos
+obcego  na koncu jednej z 'naszych' linii. Zasilacz sieciowy
+umozliwia  zasilanie  wewnetrznych  ukladow  elektronicznych
+urzadzenia i nie jest czescia PTCx. Mozna zastosowac jeden z
+powszechnie  dostepnych  zasilaczy.  W szczegolnej sytuacji,
+gdy  nie  ma mozliwosci skorzystania z zasilania sieciowego,
+mozna  zastepczo  zamiast  zasilacza  podlaczyc  baterie lub
+akumulator   o   odpowiednim   napieciu.  Wymagane  napiecie
+zasilania  powinno  byc zblizone do 5V DC. Od rodzaju bateri
+lub  akumulatora  zalezy  tak  zwana  pojemnosc elektryczna,
+ktora  swiadczy o tym, jak duzo pradu moze byc zmagazynowane
+w  danym  zrodle.  Wieksza  pojemnosc  to dluzszy czas pracy
+pomiedzy  kolejnymi  wymianami  lub  ladowaniami  ogniw, ale
+jednoczesnie  wieksze  rozmiary,  ciezar  i koszt. Pojemnosc
+jest  okreslana w tak zwanych amperogodzinach i nie ma wiele
+wspolnego  z  napieciem,  ale  od  pojemnosci zalezy to, jak
+dlugo okreslone napiecie bedzie stabilnie utrzymywane.
+
+c) Uzytkowanie
+--------------
+
+*  transfer polaczen
+
+  - dzwonimy do PTC1 lub odbieramy polaczenie call back'owe
+  - podajemy kod weryfikacyjny;
+  - podajemy  jednocyfrowy  numer  tej  wolnej  lnii sposrod
+    wszystkich linii podlaczonych do PTC1, z  ktorej  chcemy
+    nawiazac polaczenie;
+  - po uzyskaniu dialtona za posrednictwem PTC1 ze wskazanej
+    linii  telefonicznej  dzwonimy  do  miejsca   docelowego
+    stosujac wybieranie w trybie DTMF;
+  - chcac rozlaczyc istniejace polaczenie na trasie  PTCx  -
+    reszta_swiata   podajemy   urzadzeniu   numer  linii  do
+    rozlacznia;
+  - na  tym  etapie  mozna  polecic urzadzeniu miedzy innymi
+    zestawienie   nowego    polaczenia   transferowego   lub
+    rozlaczenie polaczenia z uzytkownikiem
+
+*  polaczenie konferencyjne  (jedna  z opcji wystepujacych w
+   PTCx, dla x > 1)
+
+  - dzwonimy do PTCx lub odbieramy polaczenie call back'owe
+  - podajemy kod weryfikacyjny
+  - podajemy  jednocyfrowy  numer  tej  wolnej  lnii sposrod
+    wszystkich linii podlaczonych do PTCx, z  ktorej  chcemy
+    nawiazac polaczenie
+  - po uzyskaniu dialtona za posrednictwem PTCx ze wskazanej
+    linii   telefonicznej  dzwonimy  do  miejsca  docelowego
+    stosujac wybieranie w trybie DTMF.
+  - w trakcie istniejacego  polaczenia  podajemy  urzadzeniu
+    jednocyfrowy  numer jednej z pozostalych wolnych linii i
+    po uzyskaniu dialtona wybieramy numer docelowy
+  - w trakcie istniejacego polaczenia konferencyjnego mozemy
+    selektywnie rozlaczac kolejne linie i ponownie podlaczac
+    jak  rowniez mozna pozostawic polaczenie konferencyjne i
+    rozlaczyc  linie  podstawowa  (ta,  z  ktorej zarzadzamy
+    urzadzeniem).
+
+*  call back
+
+  - dzwonimy do PTCx
+  - podajemy kod weryfikacyjny
+  - wydajemy polecenie call back'u
+  - konczymy polaczenie (odkladamy sluchawke)
+  - czekamy na polaczenie przychodzace od PTCx
+  - odbieamy polaczenie
+  - po podaniu wlasciwego kodu weryfikacyjnego mamy normalny
+    dostep do funkcji urzadzenia
+
+d) informacje ogolne
+--------------------
+
+Aby   PTCx   odroznil   polecenia   dla  siebie  od  numerow
+telefonicznych  i  innych mozliwych przekazow w trybie DTMF,
+wiekszosc  polecen  dla  PTCx  jest  rozpoczynana i konczona
+okreslonym,  jednoznakowym kodem sterujacym, podobnie jak to
+jest  stosowane  w  innych  urzadzeniach  sterowanych kodami
+DTMF (zwykle '#'  lub  '*', ewentualnie dodatkowe tony  'A',
+'B', 'C' lub 'D').
+
+Urzadzen  takich  jest kilka roznych rodzajow (sam spotkalem
+sie  z  3  typami  roznych  producentow), jednak to zrobione
+przez  nas  jest  calkowicie  nie do pobicia. Ma najwiecej i
+najlepsze  mozliwosci  a  ponadto  istnieje  mozliwosc  dosc
+szybkiego  upgrade'u jesli wynikna nowe potrzeby. Jesli ktos
+bylby zainteresowany kupnem to prosze o kontakt ze mna.
+
+Aha  jeszcze  banalny  wniosek  dla  tych,  ktorzy mimo tego
+prostego  i  przystepnego opisu nie zrozumieli do czego moze
+sie  przydac  elektroniczny ekstender. Otoz mozna go wpiac w
+linie dwoch stojacych obok siebie budek i uzywajac callbacka
+na  komorke  miec  przez weekend (bo pozniej za duze ryzyko)
+darmowe  dzwonienie.  Nie  mowie juz o miejscach typu biura,
+instytucje,  portiernie,  centrale  (!)  gdzie pracowac moga
+znajomi  a  takie podlaczenie tam elektronicznego ekstendera
+umozliwia  dlugie  i  szczesliwe  dzwonienie (w tym na linie
+0-700, jesli oczywiscie nie ma blokady).
+
+13. Numery 0-700 i ich wykorzystanie dzisiaj [#*13*#]
+--------------------------------------------
+
+Powszechnie  chyba  juz  wiadomo  o tym jak swego czasu tpsa
+przyznala   sie   do  swojego  gigalamerstwa  i  zablokowala
+mozliwosc  dzwonienia z budek na numery 0700. Oznaczalo to 2
+rzeczy:  tpsa  dala  do  zrozumienia ze nie umie upilnowac i
+dobrze  zabezpieczyc  swoich  budek bo wszyscy ja pier**li i
+dzwonili  na  0700  za  friko.  Druga  rzecz jeszcze gorsza:
+tpsa  blokujac  0700 w budkach obciazyla tym samym postronne
+firmy,  gdyz  wiadomo ze phreakerzy dzwonia teraz na 'drogie
+numery'  przez  pbxy  dzialajace  w  takich  wlasnie niczego
+niewinnych  firmach. Takie zycie. Ponizej kilka praktycznych
+metod wykorzystywania numerow 0-700.
+
+Dzieki  numerom  0-700  mozna zamawiac ogloszenia w gazetach
+(np.  w  wyborczej),  ogloszenia w telegazecie prawie kazdej
+stacji  telewizyjnej,  bilety  do kina, konkretne rzeczy (na
+zlotych  liniach,  ale  trzeba wiele razy dzwonic). Niektore
+firmy  wrecz  legalnie  placa konkretne pieniadze za ilestam
+minut  siedzenia  na  linii (zwykle 15 minut). Oczywiscie ze
+stawka  jest o wiele mniejsza niz sami zarabiaja. Ogolnie to
+sa  sposoby  dostepne  dla  wszystkich  korzystania  z 0700.
+"Dostepne  dla  wszystkich"  czyli ze sa bardziej atrakcyjne
+dostepne  dla  nielicznych  :)  Przede  wszystkim  mozna sie
+umowic  z  wlascicielem  konkretnej  0700  i np. 4h dziennie
+siedziec  u  niego  na  linii  a za miesiac wziac z tego 50%
+zysku  (tak  jak  by  sie  siedzialo  2h  dziennie  za pelna
+stawke).  Jest  tu wielka kasa, tak czy owak. Jesli ktos sie
+w  tym  miejscu  pyta:  a skad ja znajde takiego wlasciciela
+numeru  0700  zeby sie mozna z nim umowic? Odpowiadam: niech
+napisze  do  mnie,  znam  przynajmniej 5 takich osob ktore z
+przyslowiowym   pocalowaniem   reki  pojda  na  taki  uklad.
+Warunek to oczywiscie rzeczywista mozliwosc dlugoterminowego
+(tzn.  co najmniej 1 miesiac) dzwonienia na 0700. Inna rzecz
+to  samemu zalorzyc sobie 0700. Myslalem o tym nawet swojego
+czasu  - ale to wymaga duzej zabawy: zalatwianie tej sprawy,
+prowadzenie  ksiegowosci (podatki), tlumaczenie sie dlaczego
+99%  polaczen  z  numerem  wykonane  bylo bez wiedzy i zgody
+instytucji   do   ktorych   nalezal  aparat,  z  ktorego  te
+polaczenia   wykonano  :)  Ale  jak  ktos  ma  mozliwosc  to
+oczywiscie jest to najbardziej oplacalne.
+
+Jak  dzwonic  na  0700 i nie placic? Ameryki przed nikim nie
+odkryje,  ale  z  dzisiejszego  punktu  widzenia realne sa 3
+sposoby. Kazdy z nich zostal w jakis sposob opisany w innych
+dzialach  przy okazji omawiania innych zagadnien, dlatego tu
+szybko  je podsumuje. Po pierwsze ekstendery. Kazdy wie o co
+chodzi  -  niestety  ten  sposob  powoli zanika bo firmy sie
+zabezpieczaja  i wogole rezygnuja z centralek z kartami disa
+na  rzecz  zwyklych  numerow  "miejskich".  Po drugie, budki
+stojace  na  centralach  gdzie nie da sie zablokowac 0700 (a
+jedynie  "0"  lub  wogole nic sie nie da). Przykladem takiej
+centrali   jest  archaiczny  Strowger  juz  prawie  w  kraju
+niespotykany.   Na  starszych  Pentacontach  jest  podobnie.
+Generalnie jednak ten sposob tez odchodzi do lamusa historii
+phreakerskiej.  Zdarzaja  sie  co  prawda budki podpiete pod
+nowoczesne  centrale  cyfrowe,  na  ktorych celowo lub przez
+przypadek    na    centrali   nie   zablokowano   mozliwosci
+realizowania polaczen 0700 z danej budki (w wawie znam takie
+dwie).  To  jednak  jest  folklor  i  taka budka predzej czy
+pozniej  zostanie  przyuwazona  i ustandaryzowana, zwlaszcza
+jesli ktos bedzie duzo z niej wydzwanial. Jedyna nadzieja ze
+w  przyszlosci tpsa zniesie z budek to ograniczenie, np. pod
+wplywem  konkurencji  z  netii  -  czego  wam i sobie zycze.
+Trzeci   sposob   najlepszy  i  moim  zdaniem  z  najwieksza
+przyszloscia   to  uzywanie  opisanego  juz  elektronicznego
+ekstendera. Tym przyjemniejsze ze mozna z komorki nadawac na
+0700. I to jest sposob ktory ja z zasady wykorzystuje.
+
+Wiele  numerow  0700  zmienilo  sie  swojego czasu. 0700-71,
+0700-72,  0700-73  juz  nie  ma. Firmy typu WPI, zaprzestaly
+dzialalnosci.  Za  to  kazda  telewizja (publiczna 2 kanaly:
+TVP1  i  TVP2,  Polsat,  TVN,  RTL7,  TV4)  ma dzisiaj swoje
+'uslugi  audiotekstowe'  jak  to  sie  eufemistycznie nazywa
+zciaganie z naiwnych ludzi kasy przez numery 0-700. Teraz sa
+0700-87, 0-700-88, 0700-89, itp. Fragment numeru "87", "88",
+"89"  oznacza  jak sa te numery taryfikowane. Im wyzszy jest
+ten  numer tym wyzsza taryfikacja. Szerzej na ten temat (jak
+i  na  wiele  innych  ciekawych  napisane  jest w faqu grupy
+dyskusyjnej misc.telefonia, czy jakos tak).
+
+Nie  napisalem  nic  o  bzdurach  typu rozne konkursy, w tym
+audiotele.  To  kazdy chyba wie a poza tym temat jest nudny.
+(typowe pytanie z audiotele, "czy mysz komputerowa to:
+a) gryzon
+b) urzadzenie peryferyjne komputera
+c) traktor").  Co prawda zawsze sie moze zdarzyc ktos z duza
+wiedza  i  grac  w  milionerach  czy tym podobnych bzdurnych
+teleturniejach).
+
+14. Wirtualne alarmy [#*14*#]
+--------------------
+
+Ta  zabawa powoduje totalna dezorganizacje wszystkiego czego
+dotyczy: firm, instytucji, szkol, policji, itp. Troche pisal
+na  ten  temat  juz  kolega  hash  w swoim dosc starym faqu.
+Ewakuacja,   przeszukiwanie   terenu,  stracony  czas,  inne
+straty... wiadomo o co chodzi. Jesli sie zostanie zlapanym a
+pan  prokurator  udowodni  spowodowanie falszywego alarmu to
+mozna isc siedziec na ladnych kilka latek. Dlatego nie mozna
+dac sie zlapac. Ma to spory zwiazek z budkami telefonicznymi
+bo  przede  wszystkim je sie wykorzystuje. Z tego tez powodu
+pozwolilem  zawrzec sobie ten anarcho-phreakerski fragment w
+tym   faqu.   I  wlasnie  zaczne  od  tego  jak  taki  alarm
+bezpiecznie przeprowadzic
+
+Juz  dosc  dawno  temu nth zauwazyl, ze dobre rezultaty daje
+dzwonienie  z informacja o bombie przez pbxy. Z jednego pbxa
+laczy  sie  z  drugim,  pozniej  z  trzecim  (najlepiej  jak
+wszystkie  sa  w roznych miastach lub nawet krajach), itd...
+Pozwole  sobie  rozwinac  i uzupelnic ta metode. Po pierwsze
+nie  ma  sensu uzywania wiecej niz jednego pbxa. O pbx coraz
+trudniej,  po  co  wiec  je  marnowac. Poza tym nie kazdy ma
+dostep   do  wagonu  pbxow.  Wystarczy  skorzystac  z  dosyc
+popularnej  budki  telefonicznej,  pozwalajacej  jednak na w
+miare  dyskretna  rozmowe  aby  nie bylo slychac wszystkiego
+wokol (np. w kabinie na jakiejs ruchliwej ulicy). Dzwoni sie
+z  takiej  budki na pbxa nie wykonujac zadnych podejrzanych
+czynnosci   -   dzwonienie   za   darmo   odpada,   zabawy z
+tonedialerem,  itp.  zbyt  sie rzucaja w oczy. Mozna w koncu
+poswiecic   te   maksymalnie  5  impulsow  (jesli  pbx  jest
+zamiejscowy).  Po  polaczeniu i wklepaniu kodu wystarczy juz
+tylko  zadzwonic  na  997  i  nienaturalnie podwyzszonym lub
+obnizonym  glosem  powiedziec  o  co  idzie  ;)  Glos trzeba
+koniecznie  jakos  zmienic,  nawet  jesli brzmi to cholernie
+sztucznie.  Dodatkowo  trzeba  pamiatac zeby budka, z ktorej
+dzwoni  sie  na  pbxa,  byla  srebrna  bo niebieskie blokuja
+klawiature  bo  polaczeniu  sie  z  wybranym  numerem  a  ze
+srebrnych  mozna  walic  tony (musi byc wybieranie tonowe of
+coz)  niezbedne do wspolpracy z kazdym szanujacym sie pbxem.
+I  co dalej? Nic. Udzielam 100% gwarancji, ze po czyms takim
+nikogo  nie  namierza.  Zanim  sie sprawdzi z jakiego numeru
+dzwoniono  na  pbx  a pozniej zobaczy sie budke, z ktorej po
+calej  sprawie  zadzwonilo  juz  50  osob  to nic z tego nie
+wyjdzie.  Nie  ma  cudow.  Filmy  z  bondem gdzie namierzaja
+najwiekszych  haxorow w ciagu 2 minut to fikcja. Przy dobrze
+zorganizowanej akcji znajda budke w ciagu minimum godziny.
+
+Z drugiej strony jesli ktos ma te wagony pbxow to oczywiscie
+mozna  sposobem  ntha  zrobic petelke przez, np. 5 numerow i
+jesli  nie  zerwie (kazde kolejne przejscie pogarsza jakosc)
+to   namierza   miejsce  docelowe  za  tydzien  ;)  Jak  juz
+wspomnialem naturalne zachowanie przecietnego obywatela jest
+niezbedne  w trakcie akcji aby nie zostac zapamietanym przez
+kogokolwiek,  czyli  stac sie samotna postacia w tlumie. Nie
+musze  chyba  dodawac,  ze nie rozpowiada sie nikomu o swoim
+czynie.
+
+No  dobra ale co zrobic jesli sie nie jest mastahem i nie ma
+nawet jednego pbxa a koniecznie trzeba odwolac te dzisiejsze
+lekcje/egzamin/przedstawienie/spotkanie  z urzednikiem? Jest
+rownie  niezawodny  drugi  sposob.  Budka  bez  CIDa. Jak ja
+znalezc?   Jest  kilka  metod.  Najprostsza  to  znalezienie
+centrali, ktora nie ma obslugi CIDa. Wszystkie budki pod nia
+podpiete  rowniez  nie  beda  go  mialy. A skad wiadomo jaka
+centrala  gdzie  stoi  i  jakie centrale nie obsluguja CIDa?
+Internet,  znajomi,  badania  wlasne.  Co  do lokalizacji to
+mozna  zadzwonic  do  tpsa i sie zapytac (przedstawiajac sie
+np.  jako  student  politechniki piszacy prace magisterska).
+Najczesciej udziela dokladnych informacji, co i jak. W koncu
+to nie tajemnica. Zreszta o zdobywaniu takich infosow jest w
+innej  czesci. No okx. Majac juz taka budke wystarczy z niej
+zadzwonic  na  997  i  procedura z poprzedniego punktu. Jest
+tylko  male  "ale".  Budki  bez CIDow to glownie zetonowce i
+niebieskie, wiec  bez tonedialera sie nie obejdzie. Trudno.
+Ale  trzeba  to  robic  dyskretnie.  Sposob  ten  jest nawet
+bezpieczniejszy  niz powyzszy bo znalezienie budki bez CIDa,
+z  ktorej  ktos  dzwonil  informujac  o  bombce jest o wiele
+bardziej  czasochlonny  i  trudniejszy  w  realizacji. Znowu
+przypominam  bond to fikcja - zreszta w usa czy anglii chyba
+wszedzie sa CIDy :)
+
+To  nie  wszystko.  Jest jeszcze jeden pewny sposob w ktorym
+ryzyko  namierzenia  =  0.  (Tzn. tych sposobow jest o wiele
+wiecej  ale opisuje najbardziej typowe i dostepne). W naszym
+ciekawym kraju wystepuja gadzety zwane prepaidami. Naleza do
+nich:  Sim  Plus  (Plus GSM), Tak Tak (Era GSM) i Pop (Idea,
+teraz tez GSM). Te cudowne wynalazki charakteryzuja sie tym,
+ze  moga byc absolutnie anonimowe. Wystarczy isc na bardziej
+zaawansowana  gielde/bazar  i  tam  za kwote niewysoka nabyc
+caly   zestaw:   aktywacje   +   telefon.  Aparat  moze  byc
+najgorszym  chlamem. I tak wykorzystywany bedzie jedynie raz
+na... do wyjatkowych akcji. Sprzedajacy cieszy sie ze jakis
+ciolek  kupuje od niego to co nie bardzo schodzi z lady. Nie
+ma  mowy oczywiscie o zadnych dokumentach, etc. tak jak przy
+zakupie  normalnej,  abonamentowej  aktywacji.  Na  upartego
+mozna to kupic nawet w salonie, ale: a) jest drozej, b) moga
+cie   zapamietac,   c)   chociaz   sprzedadza  prepaida  bez
+dokumentow  to beda o nie prosic a przy odmowie tym bardziej
+moga  zapamietac. Na bazarze gosc juz po tygodniu nie bedzie
+pamietal komu sprzedal jaka aktywacje. W ten sposob uzyskuje
+sie  calkowicie  anonimowe wyjscie na swiat. Wystarczy tylko
+dokupic  karte  i uzupelnic stan konta, Teraz mozna dzwonic.
+Wszedzie  (a  na policje jest nawet bezplatnie 112 z kazdego
+komorkowca,  nawet  bez aktywacji w niektorych!!!). Prepaidy
+sa  drogie,  ale  coz... wygoda kosztuje. Bez problemu mozna
+zadzwonic  z  domu  z  wiadomoscia  o  alarmie  a  nastepnie
+wylaczyc komorke, schowac i nieruszac jej przez miesiac (tak
+pro  forma, na wszelki wypadek). Jesli ma sie juz komorke to
+beda  dwie  -  jedna  do  zadan specjalnych :) W wawie mozna
+kupic  aktywacje  i  jakis  kiepski  aparat  juz  za 100 zl.
+Cudowne,  prawda?  Do tego sposobu jeszcze raz sie odwolam w
+innej czesci tekstu.
+
+A teraz o czym trzeba bezwzglednie pamietac przed, w trakcie
+i  po zrealizowaniu wirtualnego alarmu. To jakby zestawienie
+podstawowych regul bhp oraz ich uzupelnienie. Kto sie bedzie
+trzymal tych zasad ten nie wpadnie [satysfakcja gwarantowana
+albo  zwrot  pieniedzy - nie dotyczy lamerow, zarzadu tpsa i
+papuasow].   Fundamentalna  sprawa  to:  nie  wraca  sie  na
+miejsce,  z ktorego sie wywolalo wirtualny alarm. Dopisek do
+tej  zasady:  nie  obserwuje  sie  z  boku (w tlumie gapiow)
+miejsca  ewakuacji,  akcji  policji,  itp.  Zawsze mozna byc
+zauwazonym.   Lepiej   obejrzec  to  w  lokalnej  telewizji,
+przeczytac  w  prasie  lub  uslyszec  w  radio:  wygodniej i
+bezpieczniej! Kwestia druga to tajemnica. Pisalem juz o tym,
+ale  przypominam:  nie rozpowiada sie takich rzeczy nikomu i
+nigdzie   (dotyczy   to   irc,   party-line,  dzielnicowego,
+kolezanki, babci). Prawdziwy profesjonalista dziala po cichu
+i  nie  potrzebuje  rozglosu.  Zreszta wystarczy zobaczyc na
+fakty,  rozglos  to  poczatek  konca kazdego amatora mocnych
+wrazen.  Kolejna  rzecz to minimalizowanie ryzyka. Mam nawet
+na  to  wlasna pseudomatematyczna teorie: prawdopodobienstwo
+wpadki   wzrasta   wprost  proporcjonalnie  do  podejmowania
+kolejnych  wyzwan  i  uczestnictwie w kolejnych akcjach. Nie
+znaczy  to,  ze  jak  sie  raz wywola zamieszanie to pozniej
+trzeba  siedziec  juz uziemionym. Nie. Trzeba odczekac jakis
+czas    (np.   miesiac)   i   zachowujac   podwojne   srodki
+bezpieczenstwa  zaatakowac  znowu  ;)  Co to znaczy podwojne
+srodki bezpieczenstwa? Inny pbx, inna budka, inny glos, inna
+pora dnia, inny rejon miasta, itp.
+
+Z  takim  przygotowaniem merytorycznym to nic tylko wybiec z
+domu  i  alarmowac  wirtualnie  ;)  Nie  biegnijcie jeszcze.
+Trzeba   teraz   omowic   co  powiedziec  aby  alarm  zostal
+potraktowany  powaznie  a  jego  skutki mozna bylo odczuc na
+cudzej   skorze  :)  Pierwsza  rzecz,  trzeba  zadzwonic  do
+odpowiedniego  miejsca. Zwykle z informacja o alarmie dzwoni
+sie  na  policje  (997).  Po podniesieniu sluchawki trzeba w
+miare powaznym glosem powiedziec cos w rodzaju "Za godzine w
+lokalu X na ulicy Y wybuchnie bomba. To zemsta za wspolprace
+z  Z.  To dopiero poczatek" i kulturalnie odlozyc sluchawke.
+Jesli  taki  numer  zrobi  ktos  z glosem 12stolatka to jego
+zgloszenie   zostanie   olane.   Jesli   zglaszajacy  bedzie
+zachowywal  sie niepowaznie (smial sie, tracil pewnosc) a to
+sie   latwo   daje   wyczuc,   zgloszenie   rowniez   bedzie
+zignorowane.   Musi   to   wygladac   na  prawdziwa  sprawe.
+Oczywiscie  nie  jest to jedyna metoda. Mozna jeszcze udawac
+psychola  lub  zdesperowanego.  Oto  przyklad. Dzwoni sie do
+lokalnego   oddzialu  tpsa  i  krzyczy  do  sluchawki  cos w
+rodzaju:  "Za  pol  godziny  wybuchnie  u was bomba. To moja
+zemsta  ch*je  jeb*ne za wszystkie dotychczasowe rachunki. I
+pamietajcie  to dopiero poczatek. Pozdrowienia od Piromana".
+Zeby  nie  byc  wzietym za kogos kto robi sobie jaja, nalezy
+mowic  powaznym  ale  podnieconym  tonem.  Dla  pewnosci, ze
+telefon   zostanie   potraktowany   serio,  mozna  zadzwonic
+nastepnie  do  lokalnej  gazety/rozglosni radiowej i wrzucic
+tekst  w  stylu:  "W  lokalnym  oddziale  TPSA  przy ulicy X
+wybuchnie  bomba  za  pol  godziny. To bedzie moja zemsta za
+rachunki  telefoniczne. Teraz wy jestescie odpowiedzialni za
+ta    informacje.    Pozdrowienia    od   piromana".   Wtedy
+najprawdopodobniej dziennikarz skontaktuje sie z policja i z
+tym  oddzialem  tpsa,  co  bedzie potwierdzeniem informacji.
+Alarm  na  calego.  Oczywiscie  najpewniej jest zadzwonic na
+policje z podobnym tekstem, ale wtedy trzeba dzialac szybko:
+3  telefony z informacja o bombie z jednego miejsca to pewne
+ryzyko.  Doswiadczenie  uczy, ze nie nalezy stac dluzej przy
+budce niz jakies 5 minut.
+
+WAZNE! Nigdy nie zostawiac zadnych danych (nawet falszywych)
+podczas  zgloszenia.  Polska  policja  i inne instytucje nie
+wymagaja   danych  od  zglaszajacego  aby  przyjac  wezwanie
+(inaczej  niz,  np. na Zachodzie). Falszywe dane moga zostac
+zinterpretowane  jako  zart  a  prawdziwe  to chyba by tylko
+zostawil dyrektor tpsa (oni sa bardzo en-teligetni)
+
+Istnieje  jeszcze  druga  bardzo skuteczna i 100% bezpieczna
+metoda  na  wirtualny  alarm  (a  nawet  na  cala ich serie)
+bombowy.  Trzeba  sie  skrzyknac w kilkanascie osob z calego
+kraju,  kazdy  z  innego  regionu)  i  codziennie  dzwonic z
+informacja o bombie (jedna osoba jeden alarm i tylko raz dla
+jej  bezpieczenstwa).  Raz  z  wawy,  raz z kraka, poznania,
+wrocka,  gdanska, itp. Jesli np. za ofiare upatrzy sie sobie
+jakis  oddzial  tpsa  (polecam) w lublinie, wtedy za nic nie
+dojda 'kto i co' a monopolista bedzie pognebiony skutecznie.
+Po jednym telefonie nie da sie nikogo namierzyc (zwlaszcza z
+wyzej  zastosowanymi  srodkami  bhp),  a szczegolnie gdy sie
+pozniej  siedzi  spokojnie  i  nie  kombinuje ;) Jak mowilem
+pomysl  skuteczny,  ale trudny do utrzymania w tajemnicy (im
+wiecej osob tym mniejsza poufnosc - opinia praktyka).
+
+Zyczac  milego  alarmowania  i  wybuchowych emocji koncze ta
+czesc :)
+
+
+15. O bezprzewodowcach jeszcze troche [#*15*#]
+-------------------------------------
+
+Pomijajac  podpinanie  sie  do budek z bezprzewodowcami, ten
+typ  telefonow  mozna  wykorzystac takze w innych warunkach.
+Nie  przypominam  sobie  zeby  ktos  pisal  cos na ten temat
+(zreszta  nie  czytam  wszystkich  faqow  z  ktorych  90% to
+lamerskie  kompilacje  cudzych  tekstow, bajeczki lub sprawy
+oczywiste).  Jesli  jednak  byl  juz  tekst  na ten temat to
+niech autor sie do mnie zglosi - chetnie przeczytam bo temat
+ten caly czas mnie bardzo interesuje.
+
+Telefony   bezprzewodowe   zrobily  bezdyskusyjna  kariere w
+ostatnich  czasach,  chociaz  mniejsza  niz  komorki.  Kazdy
+phreaker  zadaje  sobie  pytanie czy mozna to w jakis sposob
+wykorzystac.  Oczywiscie,  ze mozna. Sa 2 zasadnicze sposoby
+na  piratowanie  cudzych  linii.  Oba  sposoby  sa  w  miare
+bezpieczne i wygodne w uzywaniu, wiec warto je rozwazyc.
+
+Telefon  bezprzewodowy  sklada  sie  ze  sluchawki  i stacji
+bazowej  (zwanej rowniez "matka") - podstawy sa konieczne :)
+Starsze  typy  bezprzewodowcow  mialy  zasieg  do  150  m (w
+rzeczywistosci  dobrze  dzialaly  do  50  m)  i  dzialaly na
+czestotliwosciach 40 - 400 MHz. Praktyka jednak pokazuje, ze
+do  dzisiaj  zdecydowana wiekszosc osob uzywa takich wlasnie
+telefonow  (kupionych  dawno urzadzen nie warto wymieniac na
+nowe  drozsze,  zwlaszcza  ze  caly  czas  dobrze dzialaja).
+Nowsze telefony bezprzewodowe dzialaja na czestotliwosci 900
+MHz (tak naprawde jest to okolo 900 MHz, maja zasieg do 5 km
+(przynajmniej  tak  sie  chwala producenci - chociaz wg mnie
+nie  przekraczaja  2  km  w  srodowisku miejskim) i 1 milion
+zmiennych   kodow.   A   jak   mozna   wykorzystac   telefon
+bezprzewodowy? Samemu majac takie urzadzenie mozna "wejsc" w
+czestotliwosci  np.  sasiada i wykorzystywac jego linie. Jak
+to wyglada w praktyce o tym ponizej.
+
+Uniwersalny  sposob  na oba typy bezprzewodowcow (nowszych i
+starszych)  jest oczywisty. Dziala on bardzo czesto, ale nie
+zawsze.  Po  pierwsze  trzeba  dysponowac  tym samym typem i
+modelem   telefonu  bezprzewodowego  co  potencjalna  ofiara
+(zalorzmy   ze  sasiad).  Nastepnie  wystarczy  wziac  swoja
+sluchawke  i  polozyc  na  chwile na stacji bazowej telefonu
+bezprzewodowego  sasiada a czestotliwosci same sie dopasuja.
+Po  podniesieniu sluchawki ze stacji bazowej mamy juz sygnal
+sasiada  a  wiec  dostep  do  jego  linii.  Nie  musze chyba
+wspominac,  ze  trzeba  mieszkac  wystarczajaca  blisko zeby
+mozna  bylo  z  domu  dzwonic  tym  sposobem a cala operacje
+trzeba  przeprowadzic dyskretnie (np. przyjsc pod pretekstem
+pozyczenia soli :) ). Metoda lepsza niz podpinanie sie.
+
+Czasami  zdarzyc sie moze, ze identyczny jak u sasiada model
+telefonu   bezprzewodowego   moze  dzialac  na  tych  samych
+czestotliwosciach  "fabrycznie". Wtedy nic nie trzeba robic.
+Ale  to  rzadkosc a jesli taki przypadek zaistnieje to mozna
+mowic  o niezwyklym szczesciu. Trzeba wtedy tez pamietac, ze
+wtedy  teoretycznie sasiad tez moze korzystac z waszej linii
+:)  Aby sie przed tym zabezpieczyc wystarczy wylaczyc stacje
+bazowa z zasilania lub trzymac sluchawke caly czas na stacji
+bazowej.   Jest   to   zreszta  generalna  zasada  dotyczaca
+bezprzewodowcow:  nie  da  sie dzwonic z cudzej linii (majac
+dostrojona  sluchawke  do  czyjejs  stacji  bazowej) w dwoch
+przypadkach.  Gdy  stacja bazowa jest odlaczona od zasilania
+(badz  linii  telefonicznej)  i gdy sluchawka lezy na stacji
+bazowej  (obwod  jest  wtedy  zamkniety).  Trzeba tez uwazac
+rozmawiajac  na czyjs koszt aby nie zechcial wtedy zadzwonic
+bo uslyszy wtedy wasza rozmowe.
+
+Jak  widac  pierwsza metoda na bezprzewodowce jest banalna i
+niestety na nowszych typach telefonow coraz rzadziej dziala.
+Druga   jest   bardziej   wyrafinowana  i  zarazem  o  wiele
+trudniejsza  w  szczegolnosci  gdy  chodzi  o nowsze rodzaje
+telefonow bezprzewodowych.
+
+Trzeba dysponowac skanerem radiowym z dosc szerokim zakresem
+czestotliowsci  (gdzies  10  MHz  - 1 GHz zeby wszystko bylo
+OK).  Moze  byc  tez analizator widma sygnalu radiowego, ale
+jest   to  urzadzenie  o  wiele  drozsze  i  trudniejsze  do
+zdobycia. Wiadomo ze telefon bezprzewodowy uzywa jednej pary
+czestotliwosci:  (1)  sygnal  radiowy  idacy od sluchawki do
+stacji  bazowej,  (2) sygnal radiowy idacy od stacji bazowej
+do  sluchawki.  To  co  trzeba  zrobic  to namierzyc te dwie
+czestotliwosci.  Da  sie  je  ustalic jedynie w czasie gdy z
+tego  telefonu  prowadzona  jest  rozmowa!  (nie  "w  stanie
+spoczynku"). Wiadomo takze, ze telefony bezprzewodowe chodza
+w   zakresie  od  kilkudziesieciu  (czesto  spotykane  mocno
+starsze modele 40 MHz i 60 MHz) do okolo 1 GHz (chociaz moga
+byc  oczywiscie  wyjatki). Dzwoni sie ze swojego telefonu na
+numer   telefonu   do   wyskanowania   i  zaczyna  rozmowe z
+gosciem,  ktory  go  odebral (niezbedne jest uzycie inwencji
+tworczej  zeby  go  zatrzymac  przy  aparacie). Jednoczesnie
+(chociaz  lepiej  skorzystac  z  pomocy  kolegi)  uzywa  sie
+skanera  radiowego  do  szukania potrzebnych czestotliwosci.
+Jesli  uslyszy  sie  w pewnym momencie glos waszego rozmowcy
+lub   wasz   to   oznacza   ze  udalo  sie  namierzyc  jedna
+czestotliwosc.     Aby    uniknac    sprzezenia    zwrotnego
+(charakterystyczne  piski)  nalezy  ustawic odpowiednio mala
+sile  glosu  w skanerze (w przypadku wyjscia na glosnik) lub
+skorzystac      z      wyjscia     sluchawkowego     (metoda
+skuteczniejsza).  Odnotowuje sie ta namierzona czestotliwosc
+i  szuka kolejnej. Druga czestotliwosc jest namierzona wtedy
+gdy uslyszy sie ze skanera glos drugiej osoby. Sukces. Wtedy
+mozna   juz   zakonczyc  polaczenie  z  nasza  ofiara.  Obie
+zanotowane  czestotliwosci  ustawia  sie  na swoim telefonie
+bezprzewodowym.  Wymaga  to  pewnej,  a czasem tylko drobnej
+przerobki sluchawki (zmiana parametrow obwodow rezonansowych
+i  ewentualnie  wymiana  rezonatorow  kwarcowych).  Brzmi to
+powaznie  dla osob bez wiedzy elektronicznej (np. dla mnie),
+ale zapewniam ze kolega znajacy sie troche na sprawie ustawi
+to  w  ciagu  20  minut lub w sytuacji krytycznej pomoc moze
+wyspecjalizowany zaklad za kilkadziesiat zlotych.
+
+W  ten sposob mozna juz dzwonic na czyjs koszt ;) Jest tylko
+male "ale". Nowsze typy telefonow bezprzewodowych maja takie
+zabezpieczenie,  ze  po kazdym odlozenie sluchawki na stacje
+bazowa zmieniaja kody. Heh. Ciezka sprawa. Producenci chwala
+sie, ze liczba tych kodow to milion lub 65000 - co i tak nie
+brzmi  optymistycznie. Co wtedy? No coz, wtedy to sie nazywa
+pech.  Mam  nadzieje  ze jakis phreaker-elektronik wynajdzie
+sposob  na  obejscie  tego zabezpieczenia. Jakiekolwiek nowe
+pomysly w tym zakresie dotyczace tej konkretnej sprawy jak i
+wogole  telefonow  bezprzewodowych  slijcie na mojego maila.
+Moze  wspolnymi  silami  da  sie  cos wykombinowac i jeszcze
+bardziej ulatwic sobie egzystencje.
+
+Ze  wzgledow praktyczno-etycznych lepiej jest gdy ofiara, na
+ktorej koszt dzwonimy to jakas instytucja (np. bank, poczta,
+urzad  miejski  a  najlepiej  tpsa). Wtedy to nie naraza sie
+szarych  i  nudnych  ludzi  na dodatkowe koszty i sa wieksze
+szanse, ze wiecej i dluzej mozna bedzie dzwonic.
+
+16. Lewa aktywacja (komorki, komorki, komorki) [#*16*#]
+----------------------------------------------
+
+Telefonia   komorkowa   rozwija  sie  dynamicznie.  Bardziej
+dynamicznie  nawet  niz  tpsa.  Wypada  aby  phreaking  mial
+jakies korzysci z tego tytulu. No i ma oczywiscie. Stuffu do
+komorek  wszelkiego  rodzaju  jest w internecie pelno. Widac
+pelno  ogloszen  o  sprzedazy  kabelkow  laczacych komorke z
+komputerem,  zestawow  sluchawkowych,  sciagania  simlockow.
+Mnie   jednak  bardziej  interesuje  jak  mozna  praktycznie
+wykorzystac   telefony   komorkowe   dla  wlasnych  potrzeb.
+Przedstawie tu pare praktycznych zastosowan komorkofonii.
+
+Klonowanie  chipow  podobno juz sie u nas pojawilo i zaczyna
+sie rozwijac. To jednak temat na oddzielny, szczegolowy faq.
+Ale  z  kolei niesmiertelny problem lewej aktywacji jest jak
+najbardziej  na  miejscu do omowienia. Druga sprawa zwiazana
+zreszta   z   powyzszym  to  posiadanie  anonimowego  (czyt.
+bezpiecznego)   telefonu   komorkowego.   Omawiam   tu   oba
+zagadnienia
+
+Do zalatwienia lewej aktywacji najbardziej nadaja sie rasowi
+bezdomni. Rasowi tzn. tacy z dowodem osobistym i ewentualnie
+jeszcze  z  jakas  legitymacja.  Wszystkim  z  wawy  polecam
+dworzec  centralny,  tam  za  50  zl mozna wszystko z takimi
+goscmi  zalatwic.  No  ale  w  erze potrzeba 3 dokumentow ze
+zdjeciem   a   w  plusie  zaswiadczenia  o  zarobkach,  zeby
+sprzedali  telefon po promocyjnej cenie i jeszcze uruchomili
+aktywacje.  A  taki  gosc  ma  zwykle najwyzej dowod. Jedyne
+rozwiazanie to wyrobic mu pozostale 2 dokumenty i to calkiem
+legalnie.  Majac  dowod  mozna  sobie  za grosze wyrobic np.
+legitymacje  pttk  (zapisac  sie  i  zaplacic jakas smieszna
+oplate    czlonkowska)    i   tym   podobnych   organizacji.
+Zainteresowanym   polecam  ksiazki  telefoniczne.  Z  drugim
+dokumentem  moze  byc  problem, ale co dla kazdego co troche
+zna   warszawe   jest   oczywiste,  zarowno  zaswiadczenie o
+zarobkach  jak  i prawo jazdy (stary wzor, bo nowych jeszcze
+nie  podrabiaja  a przynajmniej ja nic o tym nie wiem) mozna
+nabyc za zlotych 500. Pytanie jest czy w plusie i erze przed
+aktywacja  sprawdzaja  autentycznosc  dokumentow? Nie, robia
+ksero  i  czekaja  3-5 dni z aktywacja. Ten czas oczekiwania
+umotywowany jest przeslankami technicznymi a nie weryfikacja
+danych.  Takze tu bez problemu. Ale trzeba pamietac jeszcze,
+zeby  przyjsc  z  takim  gosciem  do  salonu  to nie moze on
+wygladac jak typowy bezdomny bo cos zaczna podejrzewac.
+
+Zeby   dac  porzyklad  przedstawiam  swoja  historie  sprzed
+miesiaca  (od  daty  ukazania  sie faqu). Jak czesc osob wie
+mam  2  telefony,  2 aktywacje i obie w tak taku w erze. Era
+jest  tak porabana, ze nawet zeby kupic u nich w salonie tak
+taka,   musza  cie  spisac  z  dowodu.  Jak  kupowalem  obie
+aktywacje  (ponad  2  lata  temu,  tyle  co weszly na rynek)
+oczywiscie dalem sie spisac. Zeby to zmienic, bylem w biurze
+obslugi  klienta  wlasnie z takim gosciem (dostal cale 50 zl
+za  fatyge)  i  oznajmilem,  ze  telefon  wraz  z  aktywacja
+sprzedalem  jemu i nie chce dluzej by moje dane figurowaly w
+ich  spisie  (ustawa o ochronie danych osobowych i takie tam
+pierdoly).  Pracownik  biura  powiedzial,  ze nie ma sprawy,
+spisal  bezdomnego  z  dowodu  i  na  niego  'zarejestrowal'
+jednego  z  moich  tak takow. Teraz w razie czego niech jego
+szukaja. Poszlo bez zadnych tarc. Co prawda to nie kupowanie
+lewej  aktywacji  ale  wyobrazam  sobie, ze to musi wygladac
+podobnie. Zreszta z tego co wiem to pare osob pisalo nawet o
+swoich doswiadczeniach w tym wzgledzie.
+
+Powysza   historia   to   tez   odniesienie   do  posiadania
+'anonimowego  telefonu komorkowego'. Co innego jednak jak ma
+sie  prepaida  a  co  innego jak ma sie abonament i chce sie
+miec  telefon  nie  na siebie. Ale to tez jest do zrobienia.
+Oficjalnie   kto   inny   moze   byc   posiadaczem  telefonu
+komorkowego  a kto inny placic rachunki. Nic zatem zdroznego
+w  tym, ze 'posiadaczem' telefonu bedzie bezdomny a rachunki
+bedzie  oplacal  prawdziwy  wlasciciel. W razie czego nie od
+rzeczy  jest  tlumaczenie  "to nie moj telefon, ja mam tylko
+uklad  z  gosciem ze mu oplacam rachunki". Od strony prawnej
+ciezko  ugryzc  :)  Zeby cos takiego zrobic, trzeba podobnie
+jak  to opisane bylo powyzej, wziac bezdomnego (tyle ze musi
+miec wymagane dokumenty), isc z nim do biura obslugi klienta
+i  poinformowac  o  sprzedazy telefonu. Bezdomny musi jednak
+zaznaczyc,  ze  rachunki  bedzie  oplacac  ktos inny. To juz
+czysta formalnosc. Z tego co sie orientuje to polowa ludzi z
+warszawskiej gieldy na wolumenie ma wlasnie tak rejestrowane
+komorki :)
+
+Zreszta  co tu duzo mowic: czy z powodu samej aktywacji zeby
+mozna bylo tych kilkaset (500?) zlotych przerozmawiac, czy z
+aparatu  telefonicznego  w  promocji  czy wreszcie zeby miec
+telefon  abonamentowy (a nie prepaid) nie na siebie (w razie
+czego) warto sie tym pobawic. A tak wogole to pewnie wszyscy
+wiedza,  ze  alarmowy numer 112 mozna wybrac z komorki nawet
+jak   w   srodku   nie   ma  aktywacji...  zostawiam  to  do
+przemyslenia  przy  okazji  wirtualnych  alarmow  (najtansza
+komorka kosztuje 15 zl na stadionie).
+
+17. Zmierzch pbxow [#*17*#]
+------------------
+
+Pbxy  sie  koncza.  Nowe  centralki sa dobrze zabezpieczane,
+malo kto zostawia je na ustawieniach defaultowych, rezygnuje
+sie  z  kart  disa na rzecz bezposrednich numerow miejskich.
+Wiekszosc  ma  wylaczona  mozliwosc  zdalnego  dostepu.  Nic
+dziwnego  ostatnie 3-4 lata narazily na ogromne straty firmy
+i  instytucje  wlasnie  z tytulu "nieuprawnionego dostepu do
+sieci telekomunikacyjnej przez centralke abonencka". Dlatego
+tez,  chociaz  nie  jestem pesymista, to wydaje mi sie ze ta
+zabawa  nie  ma  przyszlosci  (tak  jak  raczej jej nie maja
+niebieskie  urmety). Dobrze ze zamiast tego sa elektroniczne
+ekstendery.  Nie  bede  wiec  opisywal  tu oczywistosci, czy
+rzeczy   ktore   sa  w  innych  faqach.  Przedstawie  jednak
+uzyteczny sposob szukania pbxow.
+
+Najprawdopodobniejszym miejscem gdzie moze byc pbx sa firmy,
+ktore  figuruja  w  spisie  wraz  z  numerami  wewnetrznymi.
+Oznacza to najczesciej, ze centralka ma karte disa i mozliwy
+jest  wybor  numeru  wewnetrznego  w  systemie  tonowym. Jak
+dotrzec  do  takiego  spisu  firm? Najprosciej przez ksiazki
+telefoniczne,  jest  tam  jeszcze  calkiem  sporo instytucji
+afiszujacych  sie  numerami  wewnetrznymi.  Wystarczy  sobie
+spisac  kilkadziesiat  takich,  isc  do  budki  i  rozpoczac
+standardowe    obdzwanianie.    Dzwoniac   warto   sprawdzac
+ustawienia  domyslne (9,1111 i 8x,1111 - 0011) i najczesciej
+spotykane  (0,1234;  1,0000;  8;2000).  Najprzyjemniejsze sa
+wszelkie  centralki  firmy panasonic. Jesli sie trafi na cos
+co  moze  wygladac  na pbxa, ale zaden z najbardziej znanych
+kodow  nie  dziala,  trzeba  zarzucic  toneloca  i  skanowac
+(blizej  opisane  w  lunarshake faq). Ja sie w to jednak nie
+bawie - zakladam ze jak cos nie chodzi na defaulcie to ma ta
+usluge  wylaczona  i  nie  chce mi sie dalej w to bawic. Nie
+wspominam nawet o pbxach bez kodu, to juz prehistoria. Jesli
+ktos  ma  jednak nieodparta potrzebe szukania pbxow to niech
+korzysta   raczej   ze   spisu   firm  slabiej  rozwinietych
+wojewodztw  (podkarpackie,  podlaskie,  opolskie),  tam jest
+wiecej  "starszych  rozwiazan"  niz,  np.  w mazowieckim czy
+wielkopolskim.
+
+Dobrym  sposobem  oszczedzenia sobie czasu na dociekania czy
+firma  ma  centralke  wewnetrzna  z  karta  disa i pod jakim
+numerem  ona  chodzi,  jest po prostu zapytac pracownikow. W
+moim   wykonaniu   wyglada  to  tak:  "Dzien  dobry,  Marcin
+Macinski, Centrum Telekomunikacji Warszawa-Poludnie. Dzwonie
+w   sprawie   okresowej   aktualizacji   danych  dotyczacych
+centralek abonenckich. Chcialbym pani/panu zadac kilka pytan
+z  tym  zwiazanych".  Nastepnie pytamy sie o wszystko co nas
+interesuje,  aby  jednak nie wzbudzac podejrzen: ilosc linii
+podlaczonych  pod centralke, typ centralki, przez jaka cyfre
+wychodzi  sie  na  miasto,  no  i  jaki  jest  dodatkowy kod
+("Potrzebne    nam    to   jest   do   zdalnej   konserwacji
+homologacyjnej   panstwa  centralki.  Rozporzadzenie  31/337
+Ministra  Lacznosci  z  1.1.2000").  Bardzo skuteczne, jesli
+osoba,  ktora  odbierze  nie  zabardzo jest w temacie zwykle
+przelaczaja  do  kogos  kto sie troche zna. Raz udalo mi sie
+nawet   wyciagnac   kod   od  jakiegos  pseudokonserwatora w
+jakiejs  lamerskiej firmie. Dzialal tylko 3 dni bo domyslili
+sie  chyba co sie dzieje, jak w ciagu dnia caly czas 2 linie
+byly okupowane ;) W kazdym razie inzynieria spoleczna bardzo
+tu pomaga.
+
+Takie operacje najlepiej wykonywac z budki (po wczesniejszym
+wstawieniu wlasciwego epromu). Jesli budka nie ma wybierania
+tonowego to naturalnie do uzycia wchodzi tonedialer (biper -
+jak mowi na to dzisiejsza mlodziez). Jesli trzeba wyskanowac
+kod  a  wiec  zapuscic  toneloca, proponuje bawic sie w to w
+pracy  u  znajomego/cioci  bo  jednak kilka tysiecy polaczen
+kosztuje a poza tym wieczna kwestia bezpieczenstwa wchodzi w
+gre. Nie radze jednak nikomu przeceniac wartosci pbxow i tym
+bardziej nastawiac sie na ich uzywanie. Jak juz napisalem na
+poczatku, moim zdaniem ta zabawa staje sie historia.
+
+18. Totalny przekret: dymiacy urmet - symulacja pozaru [#*18*#]
+------------------------------------------------------
+
+Glix  to nazwal z angielskiego Make Your Urmet Smoke (MYUS).
+Banalna  sprawa  i  sluzaca  wylacznie celom rozrywkowym ale
+mogaca  miec  bardzo  praktyczne  zastosowanie w wywolywaniu
+paniki  lub  zamieszania.  Najczesciej jednak robi sie to po
+prostu  dla  jaj.  Pierwszy sposob dla palacych. Otwiera sie
+srebrnego,  wyjmuje  czytnik  a  na plycie glownej przykleja
+(tasma  lub klejem) jednego lub kilka zapalonych papierosow.
+Po  czym  zamyka sie budke. Po kilku minutach z otworu gdzie
+dawniej  byl  czytnik zaczyna wydobywac sie gesty dym. Jesli
+budka  jest  w pomieszczeniu zamknietym to wyraznie widac (i
+czuc),  urzadzenia  pozarowe  moga  sie  wlaczyc (o ile sa).
+Generalnie  wszyscy  w  poplochu.  Nie  radze wykonywac tego
+zabiegu  bez  wyjecia  czytnika.  Srebrny  bowiem  ma  to do
+siebie,  ze  bardzo  mala  wymiana powietrza jest w srodku i
+jesli  sie czytnika nie wyjmie to papierosy moga zgasnac bez
+doplywu  tlenu.  Przy  niebieskim sprawa wyglada tak, ze bez
+czytnika  wyraznie  widac  ze  jest niekompletny (srebrny na
+pierwszy  rzut  oka wyglada na 100% sprawny bez czytnika). Z
+kolei z czytnikem rowniez jest maly dostep powietrza. Trzeba
+wybierac.  Aha, dym wydostaje sie nie tylko otworem czytnika
+ale  takze  gora  (tam  budki  sa  mniej  szczelne) i czasem
+spoiwami.   Modyfikacja   powyzszej   metody   to   wlozenie
+czegokolwiek  latwopalnego  do budki i podpalenie. Papierosy
+maja  jednak  ta  przewage,  ze  sie dlugo pala i potrzebuja
+stosunkowo  malo  powietrza  a  takze  daja  duzo  dymu.  Po
+zastosowaniu   tego   tricku  latwo  wywolac  zamieszanie, i
+korzystajac   z   nieuwagi   zrobic  cos  innego  w  miejscu
+publicznym :)
+
+19. Jak na razie to tyle [#*19*#]
+------------------------
+
+Wszyscy  wiedza  dobrze, ze informacja sie dezaktualizuje. W
+szczegolnosci   dotyczy  to tak   szybko   zmieniajacej  sie
+rzeczywistosci  jaka  jest  phreaking.  Dotyczy  to  rowniez
+rozwiazan  zaproponowanych  w  tym  faqu. Jakkolwiek jest to
+jednak  pozytywne  zjawisko,  gdyz  oznacza  ciagly  rozwoj.
+Bardzo   mnie   to   cieszy.  Czekam  na  wasze  propozycje,
+uzupelnienia, sprostowania i komentarze.
+
+Niedawno  powstala (prawie w tym czasie co ten faq) strona i
+grupa Phreak It. Szczegoly pod adresem http://www.phreak.it.
+Zapraszam wszystkich do wspolpracy.
+
+Namiary  na  mnie  to:  asturn@polbox.com,  listy  sprawdzam
+bardzo  czesto.  W  sprawach  nietypowych radze uzywac PGP -
+bezpieczenstwo przede wszystkim :) Niedlugo pewnie bede mial
+juz  nowy,  wlasny adres e-mail, ale po szczegoly odsylam na
+strone grupy.
+
+Pozdrawiam  wszystkich  swoich znajomych a szczegolnie grupe
+Phreak  It.
+
+
+20. Nowy klucz pgp [#*20*#]
+------------------
+
+Nowy dlatego, ze poprzedni gdzies zadzialem :)
+
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+Version: PGPfreeware 6.0.2i
+
+mQGiBDmSsp8RBADe3L0rzPsaYs3IGwXpyCjugEJ+13S7IkgwMkJb5ljWDvBQnTSm
++/7YC2QF4z6JgMpL+rEVoD52NJe12pW1C+3cE4CiKR5DSY572kTgfOucn/BdqcBZ
+sCw86r/gZmXK3eIDugrlHkCweyniWEuliGsCQ2IAaFR8NKSgNV7vi8FtZQCg/4HM
+NPfvOe1cAMLOZVsyPcpyTd8D/i2jvWvrvsFitzNJjELjpNf9K5xyTnq+AlDIQdWL
+gZsgspyoqGrw3blEfr5fRdSBKOfiB/zPV6X67tgd6QMEGdIRz7XIPiRXV8PlD/LT
+GwXFOyE5LPDQSQEZS3iNGODRU45qwzbA2w9dj4RtIMUY9ZbPxSup7qc8tlZdjUkj
+cQXNA/0bm/E/i09Gy/xZKauPS88foQM4utdHR5qWM2N1yMOw4pluQ71dmG60QQ6T
+TIOnADEkjuGKRtw0fwBCxSuMlC313Fd/N+FwTrqTNEtRcP6O1vpvkah2nHpaelXg
+NaTy3u8XQMfkh27p3d0CPsu+AWNR6pbYPX8QassHG87L+80c+LQaYXN0dXJuIDxh
+c3R1cm5AcG9sYm94LmNvbT6JAEsEEBECAAsFAjmSsp8ECwMCAQAKCRAwhT4XfKxI
+9USjAKCBrq1STWyWynwOE4ZCJBPGkjbkuACgi6WYhqRMoEEHLrXe/WECMJ1X6BO5
+Ag0EOZKynxAIAPZCV7cIfwgXcqK61qlC8wXo+VMROU+28W65Szgg2gGnVqMU6Y9A
+VfPQB8bLQ6mUrfdMZIZJ+AyDvWXpF9Sh01D49Vlf3HZSTz09jdvOmeFXklnN/biu
+dE/F/Ha8g8VHMGHOfMlm/xX5u/2RXscBqtNbno2gpXI61Brwv0YAWCvl9Ij9WE5J
+280gtJ3kkQc2azNsOA1FHQ98iLMcfFstjvbzySPAQ/ClWxiNjrtVjLhdONM0/XwX
+V0OjHRhs3jMhLLUq/zzhsSlAGBGNfISnCnLWhsQDGcgHKXrKlQzZlp+r0ApQmwJG
+0wg9ZqRdQZ+cfL2JSyIZJrqrol7DVekyCzsAAgIIAOdqtnnTY2y1g6bi7TJLvhKC
+avDY5UCKnmA8SqylCtP763QR1ZRfCgvIeocT3Fp0TTOP9bDgZgJF3lMrkR+nr3R0
+32KUq1K+Oj/MvNYyCHzRcAnyNL5a6ZQo0MVhW0JC+mt0S/deU3W9xhy6Jk6N49Ds
+qUdVShA3aIJ+/EFHTwJZvcMNAlw22hnkif4vTg6CE12Pz48/cc8jaeap41HYMiyh
+JSHZRpvuSsQzUb9SeUK0M+d4YI1YYdiz/9zWxH5D/IMhISTGNeoyjbOykHVjz28v
+epblAVCUQqlpfY1Y0fRti1m7u7y2D3/ej27RXDIUNKdedL3AUGOk3fveQukuSRSJ
+AEYEGBECAAYFAjmSsp8ACgkQMIU+F3ysSPWTCgCgxIappHqRshnYVZaYhX4Adl2L
+Fm8AoJC3nrQef5Z5lb9VmSpeQ4pgxugH
+=l4CJ
+-----END PGP PUBLIC KEY BLOCK-----

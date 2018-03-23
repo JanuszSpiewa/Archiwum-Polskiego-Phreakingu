@@ -1,0 +1,259 @@
+                       ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+                      ÚÁÄ nuMery sErwISowe TpSA . ÄÁ¿
+      ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+      ÀÄÄ  8.99  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ  by SpajK  Ä´
+                               ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+   ---> wstep <---
+
+     Jak  wiadomo tPsa ma na swoich centralach specjalne numery ktore sluza
+   jej  do  roznych  celow. Te numery to ciekawa rzecz, bo mozna dzieki nim
+   tez  sie  troche zabawic. W tym tekscie chcialbym przyblizyc nieco jakie
+   to numery i mniej wiecej do czego one sluza. Zawartosc tego faq jest jak
+   najbardziej  legalana, ale tego nie znajdziecie w ksiazce telefonicznej.
+   Mozna wiec to traktowac jako jej uzupelnienie ;)
+
+   /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+
+   legenda:
+            N - nowe.
+            U - uaktualnione.
+            P - poprawione.
+        SpIs:
+
+      Alcatel S12
+U       1. 974
+
+
+      Alcatel E10b
+N       1. 96101
+
+
+      ESWD
+        1. 806
+        2. 807
+UP      3. 808
+        4. 809
+        5. 944
+        6. 961
+N       7. 660, 667, 668, 669
+N       8. 9310
+
+
+      5ESS
+U       1. 111, 333, 555, 777
+N       2. 88
+
+
+      Wszystkie
+        1. 022 9690
+
+
+U     Szukanie takowych
+
+   /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+
+
+
+
+            Alcatel S12
+
+U  1. 974 - ten  numer  to  prawie  kultowy  i najstarszy wyczyn tpsa. Jego
+   dzialanie  polega  na  tym, ze dzwonimy pod niego, odkladamy sluchawke i
+   centrala oddzwania do nas. Numer ten jest wykorzystywany do pewnego buga
+   w  automatach  niebieskich  i srebrnych. Nie bede go szerzej opisywal bo
+   duzo  informacji o nim jest w innych faq i nie chce ich powtarzac. Numer
+   ten  na  pewno  nie  dziala  na ESWD Siemensa. Dziala na Alcatelach S12.
+   Ostatnio TPSA stara sie usunac ten numer, a tam gdzie jest jej potrzebny
+   wprowadza blokade na jego wybreanie z automatow (numer zablokowany). Nie
+   dziala juz na Alcatelach S12J
+
+
+
+            Alcatel E10b
+
+   1. 96101  -  po  wybraniu  slychac  sygnal ciagly. Odkladamy sluchawke i
+   centrala   natychmiast   oddzwania.  Ciekawe  jest  to,  ze ile bedziemy
+   sluchac  sygnalu  ciaglego  po  wybraniu numeru, tyle bedzie trwal kazdy
+   dzwonek.
+
+
+
+            ESWD
+
+   1. 806 - dziala  tez  tylko  na  ESWD  -  nie  wiadomo  co  robi. Podaje
+   sekwencje  trzech  tonow walonych w linie w kolko. Po kilku razach zrywa
+   polaczenie. Taryfikowany miejscowo.
+
+   2. 807 - ESWD. Wali trzy tony o roznym czasie trwania i  wysokosci.  Nie
+   reaguje  na  bodzce  zewntrzne  (jak  na  razie).  Nie taryfikuje, i nie
+   rozlaczya  jeszcze  po  11 petelkach (dluzej nie czekalem). Kiedy wydaje
+   tony, na automacie mozna wybierac numer, ale i tak jest nan gluchy.
+
+U  3.  808 - nowy numer dzialajacy  na  niektorych  ESWD.  Wybieramy  808 i
+   potem  numer  z ktorego dzwonimy (na inny nie zadziala). Czekamy chwilke
+   na  piiiik.  Odkladamy  sluchawke i po 10s slyszymy drrrrrrn... 22 razy,
+   czyli  przez  okolo  2 i pol min, chyba ze ktos odbierze :). A jesli juz
+   ktos  odbierze,  to  uslyszy  podobny  piiiik,  o ile odbiera na zwyklym
+   aparacie.  Po  odebraniu  na  urmetach, dzieja sie cuda. Po pierwsze nie
+   slychac  tego  piiiik,  po  drugie automat stwierdza ze jest uszkodzony.
+   Wystarczy  po  okolo  3  sekundach  klepnac  kilkakrotnie w widelki, a w
+   sluchawce  pojawi  sie  pik-pok, na wyswietlaczu rozmowa przych. i .....
+   zajete  :(. Numer jest bezplatny, ale na automatach aby go wybrac trzeba
+   wlozyc   karte.  Jeszcze  jedna  ciekawostka  ktora  niedawno  odkrylem:
+   zadzwonic  pod  808 i twoj numer. Nie odkladamy sluchawki. Teraz piiik i
+   klwisze od 0 do 9 wywoluja rozne ciekawostki np:
+
+   1 - wylacza linie, zalacza i podaje piiik taki jak po odebraniu.
+   2 - odlozyc, oddzwania natychmiast, wylacza linie jesli odbierzemy przed
+       dzwonkiem.
+   3 - wysyla piiiik, ale nie odkrylem co poza tym.
+   4 - ten numer sluzy do sprawdzania poprawnosci dzialania wybieracza
+       DTMF tj. wciskamy wszystko (1,2,3,4,5,6,7,8,9,0 i *,#) po kolei i jesli
+       w jakims momencie wyskoczy na chwile zajete, to znaczy ze albo sie
+       pomylilismy, albo mamy rozwalony wybieracz.
+       BTW jest to doskonaly sposob na sprawdzenie tonedlialera.
+   5 - wysyla serie tonow o wysokiej czestotliwosci (to teletaksa)
+   6 - odlozyc, oddzwania po chwili (3s)
+   7 - odlozyc, oddzwania po dluzszej chwili
+   8 - odlozyc, oddzwania po dluzszej chwili
+   9 - odlozyc, oddzwania po dluzszej chwili (po odebraniu mamy pik pok :)
+   01 - wysyla teletakse (jak przy 5)
+
+     Jesli  po wybraniu np. 2 odlozymy sluchawke i natychmiast podniesiemy,
+   to  centrala  wylacza zasilanie lini (jesli masz zaprograwowane numery w
+   pamieci  telefonu,  a  nie masz zewnetrznego zasilania, to je stracisz).
+   Taki   stan  utrzymuje  sie  przez  kilkanascie  sekund,  a  kilkakrotne
+   klapniecie   "widelek"   powoduje   pojawienie  sie  cichego  stukania w
+   sluchawce.  Na automatach wybranie 808 i jego numeru, piiik i # powoduje
+   wywalenie  karty,  uszkodzony  itp.  Ciekawostka  jest ze wybranie 808 i
+   numer,  nastepnie  7,  odkladamy,  czekamy  chwile,  podnosimy.  Automat
+   twierdzi,  ze jest uszkodzony, ale mimo wszystko mozna wybierac numer, z
+   tym  ze  tylko  darmowy.  Prace trwaja. Nie wybierajcie 5-ki i 01, bo to
+   teletaxa i w ciagu 3s weflunchnie wam z 15 impulsow z karty :(
+
+   4. 809 - ESWD. Jak wyzej. Za darmo.
+
+   5. 944 - odzdzwaniajacy na ??? - nie jestem pewien, ale chyba ESWD.
+
+   6. 961  -  alternatywny  808 dzialajacy  na  niektorych  ESWD, na innych
+   centralach  nie  mialem  mozliwosci sprawdzic. Dziala podobnie tzn 961 i
+   numer z ktorego dzwonimy. Potem centrala oddzwania.
+
+   7. 660  -  niedawno  pojawil  sie  na   mojej  ESWD.  Po wybraniu numeru
+   slychac 5 sekund ciszy, click, jeden ringback i potem 4 sekundowy piiik.
+   Nie reaguje na tony, handshake itp. Ma kilka przekierowan na siebie, tzn
+   jak zadzwonie pod 667, 668, 669 to tez uzyskam ten sam efekt.
+
+   8. 9310  -  informacje  (automat)  o  numerach kierunkowych do roznych
+   miast  na calym swiecie (dziwne bo hangupuje po 3 min, mimo ze darmowy).
+   Ten  numer  moze  dziala  tez  na  wszystkich  centralach,  ale  nie mam
+   mozliwosci teraz tego sprawdzic. Prosze o weryfikacje.
+
+
+
+            5ESS
+
+U  1. 111, 333, 555, 777 - 5ESS  -   odzdzwaniajace  podobnie  jak  808  na
+   ESWD.  Wybieramy numer i czekamy na sygnal ciagly. Odkladamy sluchawke i
+   po  2s centrala powinna oddzwonic. Po podniesieniu sluchawki otrzymujemy
+   zajete.
+
+
+N  2.  Na  5ESS  dziala  podobno  tez cos takiego: 88 - dostajesz dialtone.
+   Wybierasz  swoj  numer  i  znowu  uzyskujesz  dialtone  ktore na nic nie
+   reaguje. Po odlozeniu sluchawki centrala oddzwania.
+
+
+
+            Wszystkie
+
+   1. 022 9690 - a  to  juz  jest  numer  zagadka.  Kiedy sie tam zadzwoni,
+   baba  mowi  przez  sluchawke  zeby  sie  rozlaczyc,  bo  to  "urzadzenie
+   badaniowe". Kiedy poczekamy kilkanascie sekund pojawia sie szybki ton, a
+   potem  cisza.  Przeprowadzilem  eksperyment tzn kiedy jest szybki sygnal
+   wydalem do modemu komende ATA i po kilku tonach "cos" po drugiej stronie
+   odpowiedzialo.  Byl to silny sygnal, cos w rodzaju wybierania dekadowego
+   tylko  ze  szybsze  i  tak  silne,  ze myslalem ze mi modem rozpierdoli.
+   Najpewniej  chodzi  o  badanie parametrow lini tzn pojemnosci, tlumienia
+   itp. Na razie to dziala u mnie na zasadzie random (pojawiaja sie, albo i
+   nie). Numer jest taryfikowany miejscowo.
+
+
+
+            Szukanie takowych
+
+     Z  tego  co widac powyzej, prawie wszystkie numery maja tylko 3 cyfry.
+   Za  ich  szukanie  mozemy  sie zabrac na dwa sposoby. Pierwszy to porzez
+   znajomosci  na centrali, ale to w wiekszosci przypadkow odpada. Drugi to
+   oczywiscie  skanowanie, ale trzeba wiedziec jak to robic, bo inaczej nie
+   ma to sensu.
+     Na  poczatku musimy dowiedziec sie jaki jest plan numeracyjny w naszej
+   strefie  numeracyjnej.  Jesli  juz wiemy ze w naszej strefie numery maja
+   perfixy  np.  81XXXXX-86XXXXX  to  te  wlasnie odpadaja, chyba ze sa tam
+   gdzies  przerwy  miedzy  kolejnymi np. 814XXXX-836XXXX. Wtedy interesuje
+   nasz  wszystko  w  zakresie  814-836,  czyli  to  co  nie ujete w planie
+   numeracji.  To  zalezy  oczywiscie od tego jak wiele abonentow i central
+   jest  w  naszej  strefie  (nas interesuje nasza centrala. Pozostaja wiec
+   jeszcze  1XX-80X i 87X-99X. Z tych ostatnich trzeba odfiltrowac alarmowe
+   i  informacyjne typu horoskopy, bajki, zagarynka, biuro napraw itp. Spis
+   wszystkich  zarejestrowanych  numerow  z  9XX jest gdzies w sieci. Teraz
+   mozna  przystapic  do sprawdzania. Wybieramy 1, jesli po jedynce mamy od
+   razu  zajete,  to bierzemy sie za nastepna, czyli 2. Ale jesli po 1 jest
+   cisza,  to wybieramy dalej, czyli 0. Generalnie chodzi o to, aby znalezc
+   takie  kombinacje  po ktorych nie ma zajete. Jesli po 0 bedzie zajete to
+   hangup  i  od  nowa;  1 + kolejna + kolejna (jesli po drugiej jest nadal
+   cisza  to  dopiero  wybieramy trzecia). Jesli po trzech bedzie cisza, to
+   byc  moze  jest  to  callback  ktoremu  trzeba  podac  swoj  numer i tak
+   profilaktycznie mozna zrobic.
+   Ja  w  ten  sposob znalazlem kilka numerow na ESWD (nie gwarantuje ze na
+   innych  tez  dzialaja),  o  ktorych  pani  w  informacji  nie  chce  nic
+   powiedziec; zapowiedzi slowne typu:
+
+   505 - "centrala miedzymiastowa"
+   506 - "kierunek chwilowo przeciazony"
+
+   oraz cos dziwnego:
+
+   651 - dluuugi  piik,  ale  bez  skutkow  ubocznych i reakcji na bodzce
+         zewnetrzne (jak dotad).
+   653 - dwa dziwne tony 400 i 800 Hz o czasie trwania okolo 1s kazdy i
+         zapetlone. Pierwszy przebieg to pila, a drugi to sinusoida.
+   656 - to samo co wyzej.
+   655 - nikt nie odbiera, w informacji cisza na jego temat.
+   666 - nikt nie odbiera, w informacji cisza na jego temat.
+   777 - jak wyzej, w info twierdza ze taki numer nie moze istniec.
+   9434  - po dlugich pertraktacjach z baba na info dowiedzialem sie ze to
+         informacja handlowa tpsa, ale ciekawe dlaczego tylko 4 cyfry.
+
+
+
+   Wszystkie te numery sa darmowe.
+
+     Jesli ktos tego nie rozumie, to nic na to nie poradze, bo prosciej nie
+   potrafie  wytlumaczyc.  Jedna uwaga: najlepiej skanowanie przeprowadac z
+   budki, bo wtedy wiadomo ktore numery sa taryfikowane i ogolnie unikniemy
+   klopotow.
+
+   /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+
+     Wszystkie  te  numery  moga  byc wykorzystane do rozpracowania budek i
+   central.  Sorry,  ze tak sie rozpisuje o ESWD, ale akurat do niej jestem
+   podlaczony.  Staram  sie  nie  pisac  jak  te  numery  przydaja  sie  do
+   dzwonienia  za  friko  bo na ten temat sypano juz wiele FAQow. Gdybyscie
+   wiedzieli  cos  wiecej  na  ich temat, albo znali inne to dajcie znac na
+   email a zrobie update i zapewnie wam dozywotnia prenumerate tego FAQ.
+
+   Spajk
+         spajk@alpha.pl
+
+   /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+
+                              Pozdrowienia dla:
+             Komandos, Chesti, bTh, nTh, Hrabia, Jelen, Iqpsycho
+     niektorych bylych z phreak-klub i pl.misc.telefonia i innych ktorzy
+      nie czekaja na gotowe, ale sami staraja sie pchac polski phreak do
+                                   przodu.
+
+
+

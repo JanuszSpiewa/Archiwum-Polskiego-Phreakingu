@@ -1,0 +1,429 @@
+----------------------------------------------------------------------------
+
+				FAQ 1.2
+			      05.05.1999r
+		           SCANV@POLBOX.COM
+
+----------------------------------------------------------------------------
+ 	
+	TP S.A. w ostatnich czasach bardzo sie wzbogacila
+ a sczegolnie od czasu zalozenia tzw dostepu do sieci czyli
+ 0202122. Od roku ok.1996 (w polsce) zaczely powstawac roznego 
+ typu dokumenty, ziny bojkotujace TPsa. Od tamtego czasu phreaking
+ rozwinal sie bardzo szybko...........
+ 
+ 	Dlatego tez jestem bardzo radosny ze moge cos porozpierdalac 
+ w planach naszego nielubianego monopolisty :)))))))))
+ Ktory udostepnia mi szereg uslug z ktorych korzystam za darmo ;)
+
+----------------------------------------------------------------------------
+UWAGA!!!UWAGA!!!UWAGA!!!UWAGA!!!UWAGA!!!UWAGA!!!UWAGA!!!UWAGA!!!UWAGA!!!UWAG
+
+----->	Wszystkie informacje zawarte tu zostaly napisane w 
+	celach edukacyjnych i nie ponosze zadnej odpowiedzialnosci
+	za skutki korzystania z tych materialow.
+
+UWAGA!!!UWAGA!!!UWAGA!!!UWAGA!!!UWAGA!!!UWAGA!!!UWAGA!!!UWAGA!!!UWAGA!!!UWAG
+----------------------------------------------------------------------------
+------> Przepraszam za bledy jestem dyslektykiem.
+
+ 1.Urmet niebieski
+  1.1.Otworz sobie urmeta bez abloya
+ 2.Ciekawe zabawy z urmetem
+  2.1. MAINTENANCE - W NAPRAWIE
+  2.2. EPROM
+  2.3. RAM
+ 3.Pozyczanie urmeta
+  3.1.Jak przygotowac wygodne gniazdko do hodowania naszego urmecika
+  3.2.Odpalanie pozyczonego urmeta
+ 4.Urmet srebrny	(na temat silvera jest niewiele ale prace sa w toku)
+ 5.Wypady na otwieranie bud
+  5.1.Opowiastka z pewnej wycieczki :))))))
+ 6.Pewna infolinia (drenczenie)
+ 7.Ciekowostka z magnesem i karta
+ 8.Dobry zestaw do podpinania
+
+____________________________________________________________________________
+****************************************************************************
+1.Urmet niebieski 
+	Jest to nawet sprytne uzadzonko robione przes firme we wloszech
+URMET podobno jeden kosztuje ok 4 tys nowych zl.Po otwarci wyglada bardzo 
+schludnie po prawej mamy czytnik a po lewej zas plyte glowna. Na czesci 
+polnocnej plyty jet mala plytka z malymi gowienkami bez niej urmet nie 
+odpali.
+Z zewnatrz wyglada takze ladnie lecz ma kilka wad jedna z nich wymienie 
+w nastepnej czesci.  
+
+
+1.1.Otworz sobie urmeta bez abloya
+	Sposob jest z pozoru prosty lecz nie na wszystkich urmetach to zrobimy
+i zadko sie takie trafiaja. Z przodu jak widzimy jest dziobek czytnika o opodal
+pod nim zwrot.Jezeli uda nam sie wyrwac zwrot to juz jest on prawie otwarty.
+Wyrwac zwrot - to znaczy wjebac go do srodka dobrze to sie robi lomem lub mocnym 
+kopnieciem. Po wjebaniu zwrotu wkladamy reke a dok dlon. Kierujemy ja na lewa 
+strone i penetyrujemy , szukamy dokladnie pretu , idzie on wzdluz urmeta .
+U dolu przymocowany jest do ablojka, na ablojku jest gwint do ktorego 
+przymocowany jest pret. U gory zas trzyma sie on czegos w stylu malutkiego
+wieszaka zasade tego wieszaka zarysuje ponizej.A wiec ciagniemy w prawa 
+strone na poczatku moze nawet nie drgnac ale po rozruszaniu pusci a buda
+sie otwiera.
+
+
+2.MAINTENANCE - W NAPRAWIE 
+	 Te fajniejsze zabawy testowalem na ver 2.9 ale to chyba nie ma nic
+wspolnego.Jedna z tych zabaw jest MAINTENANCE czyli W NAPRAWIE odpalamy
+to przy otwar\ciu budy kiedy zaskakuje tam mikroswitch (styk).Mozemy sprawdzic 
+rozne informacje w COUNTER MENU czyli licznik sa rozne dzialy ktore wymienaiam:
+
+T - licznik impulsow calkowity
+P - jest to licznik impulsow zerowany co jakis czas (zdaje mi sie ze do 
+    sprawdzenia frekfencji)
+LOCAL PULSE    - sa to zaliczone impulsy lokalne
+NATIONAL PULSE - impulsy miedzymiastowe
+INTERNAT PULSE - imp miedzynarodowe
+TAXATION       - wszystkie imp
+LOCAL CALL     - rozmowy lokalne (ilosc)
+NATIONAL CALL  - rozmowy miedzymiastowe
+INTERNAT CALL  - rozmowy miedzynarodowe
+ENTRY CALL     - rozmowy przychodzace
+FREE CALL      - rozmowy darmowe
+
+Dalej jest DIAGNOSTIC MENU (zaraz ktos powie ze zjebalem, tak naprawde jest to
+w odwrotnej kolejnosci DIAG M o poznie j COU M) jest to jakies gowno ktorego
+chyba nikt nie rozpracowal jest tam cos w takim stylu CODE # 1: 13 (przyklad 
+z mojego domowego urmeta) jest tych punktow 8 + CLEAR CODE. Opcja ta (clr c)
+kasuje wszystkie te numerki (CODE # 1: 00) lecz pozniej one wracaja nie wiem 
+jak i czemu. 
+
+2.2.EPROM
+	Druga zabawa jest wyjecie kostki EPROMU znajduje sie ona pod RAM-em
+pisze na niej cos w tym stylu Plyta Glowna ver. 2,9. Po wyjeciu i wlaczeniu
+urmeta na wyswietlaczu leci serja przeroznych znakow jest to jezyk komputerowy.
+Widocznie biedny procesorek (Motorola :) lubie to firme) belkocze cos tam sobie.
+ 
+2.3.RAM
+	Next on the cartoon network :) jest jedno z ciekawszych zabaw jest ona
+chyba nawet pozyteczna.Nad epromikiem znajduje sie K.O. RAM bez ktorego
+urmetix nie odpali. A jedna z jego wielkich zalet jest to ze po wyjeci go
+na 10 sek nasz urmecik zapomina COUNTER MENU co jest dziwne bo w dwuch
+fakusach czytalem ze bez karty programacyjnej nie skasujemy tego za -uja.
+Prace trwaja przypuszcza sie tez ze urmet traci wiecej niz same COU M 
+ale pewnosci nie daje. 
+Narazie z badan wynika ze moze traci cos jescze na 46%                       
+
+3. Pozyczanie urmeta
+By skombinowac sobie nasz nowa zabawialnie jest kilka sposobow. Opisze jeden lub
+dwa. Jak wiemy urmet w muszlach (takie pul jaja na murach bialo niebieskie)
+przykreconty jest na sruby. Nakretki mamy w srodku (aha do tego sposobu 
+potrzebny jest abloy, nie chetnie to napisze ale trzeba pomoc jezeli ktos
+potrzebuje email me, a wiec zaczynamy. Sruby sa przykreco dosc mocno
+w niektorych przypadkach ale jest roznie. Pierwsze co trzeba zrobic to 
+(przynajmniej ja tak robie) ponapierdalac w urmata z obu stron dobra do
+tego jest noga :)). Po pierwszym zabiegu sprawdzmy czy wynik jest pozytywny
+ruszamy urmetem w lewo i prawo. Jezeli sie rusza to jest dobry znak na 80%
+bo czasami moze sie naruszyc wkret w scianie. Druga czesc to otwarcie abloyem
+urmeta. Po otwarciu szukamy trzech srob jedna jest u dolu po srodku a dwie 
+sa u gory leza na przeciw siebie. Lapiemy reka za nakretke i krecimy
+jezeli idzie robimy to ze wszys 3 (uwaga do takiej akcji potrzebujemy minimalnie
+jednego osobnika) po odkreceniu kumpel trzyma go od dolu a Ty ciagniesz go
+do siebie UWAGA !!! urmet wazy ok 30 kg jest naprawde ciezki. Kiedy go 
+trzymamy widzimy kabel zaden problem jest on tak slabo przyczepiony ze po
+prostu opuszczamy lekko w dol urmeta i kabelek wychodzi. Nastepnie przydalo
+by sie cos do transportu najlepszy jest samochod ja uzylem torby podroznej.
+I sie udalo :))))) (aha robilem to ok godz 22:30 na nie kompletnym zadupiu)
+przetransportowalem urmeta do piwnicy i pozostawilem go na noc. A na drugi 
+dzien zaczela sie zmudna praca. UWAGA !!! przy transporcie (dokladnie po 
+zerwaniu kabla) mozecie uslyszec bardzo dziwne pikanie TO ZADEN NADAJNIK !!!
+
+3.1.Gniazdko dla urmeta
+Nie wiem czemu firma URMET zrobila takie wielkie pudlo dla kilku czesci.
+Moj sposob na hodowle malenstwa jest taki, a zaczelo sie to od tego ze
+nie chcialo mi sie latac do piwnicy co 10 min bo mam nowy pomysl.
+Skorzystalem z calkiem niewielkiego pudelka po grze planszowej (33 cm x 22 cm
+wysokosc ok 4 cm). Gdy odkrcimy wszystkie czesci dokladnie wszystkie 
+nawet buzer montujemy to w pudeleczku. Skoro plyta gl jest w ksztalcie litery
+L to umieszczamy w wolnym miejscu od gory : wyswietlacz, "widelki" (jest to 
+dosc duzy switch sa na nim 2 czerwone cypelki), przycisk do pow numeru,
+klawiaturke a pewnie zapytacie co z czytnikiem tak wiem jest z nim problem
+ale ja zrobilem sobie dziurke w pudeleczku na kabelek od czytnika. I jak 
+chcialem prowadzic glebsze badania podlaczlem do (oczywiscie tak zamaskowanego 
+urmeta trzymam w swoim pokoju :))))))) )
+
+3.2.Odpalanie naszego urmeta
+UWAGA !!! wzadnym wypadku nie podlaczamy go do swojego kabla, chyba ze
+chcemy kolesi z TP w swoim domu. Dzieje sie to tak poniewaz urmecik chce
+sie skontaktowac z centrala. Naszego kotka podlaczamy do 12 V ale bez 
+podlaczonego czytnika. Z czytnikiem w pozo jest podlaczyc 30 V najlepsze
+do tego sa zasilacze od drukarek. Ja uzywam krokodylkow do przylaczenia
+sa najlepsze. Przypinamy je do srubek na malej plytce. Sa to stuby A i B
++ i - nie gra roli gdzie podlaczysz i tak dziala. UWAGA !!! jezeli podlaczymy
+30 V do urmeta bez czytnika to 2 min zacznie sie on palic a dokladnie cos
+na plycie glownej.
+
+4.SILVER
+Jest to taki ladny srebrzasty urmecik (nawet mi sie one podobaja).
+Przykro mi ze nie bedzie opisu ale prace trwaja. 
+Ale mam nowinke z ostatniej chwili. Slyszymy wszedzie narzekania na 
+brak kluczy do srebrnych jest to blad jezeli mamy abloya to otworzymy
+i srebrnego to nie zart. A odkryl to moj kumpel Pat. Trik ten dziala
+na nowszych srebrnych. Rozpoznajemy je po szwie u gory i po znaczku 
+Telefonica. Idzie on od dziurki. Jezeli znajduje tam sie szew to tego 
+nie otworzymy, natomiast jezeli go tam nie ma to urmet stoi otworem. 
+UWAGA !!!
+bardzo trudno sie go zamyka mialem przypadek ze stalem na przystanku i
+mi sie nudzilo :)) patrze do tylu silver to ide , full ludzi na przystanku
+ale nic otwieram brzdeeekk jeeeeeaa otwarty o   o ale cos nie tak nie
+moge go zamknac krople potu splywaja po czole co tu robic widze jak
+jakas kobieta pokazuje palcem na mnie drugiej kobiecie mysle dobra niech
+strace troche godnosci (i moze cos wiecej :)) ) zaczelem napierac na panel 
+frontowy brzuchem (pewnie zajebiscie wygladalo to z boku) walilem go
+chyba przez 30 sek i jest trzymajac barem przekrecilem klucz i OK.     
+
+5.Wypady na otwieranie bud 
+Kiedy sie nudze w domu biore moj klucz i ruszam w swiat :))))))
+Do otwierania bud potrzebujemy minimalnie jednego kumpla :))
+klucza :)) karty z jakimis impulsami i ewentualnie przecinak :))))))
+Karta po to jak by ktos do nas potrzedl i zapytal sie czemu tak dziwnie
+stoimy w budce i machamy dupa w to i wefto no to my nato DZWONIMY nie widac.
+Robimy tak ten kto ma otwierac stoi po lewej stronie wcisniety w krawedz budki
+a drugi kryje front i prawa strone (dobrze jest miec plecaki). W dodatku
+drugi trzyma sluchawke przy uchu i normalnie znami rozmawia robiac gesty
+przy normalnym dzwoniniu :))))) MASKARAAAAAADA
+
+5.1.Opowiastka z pewnej wycieczki
+Skok na nocke w wykonaniu :dexter-a , scanv-a ,qh3h8
+opisal qh3h8 
+W tym krotkim texcie opisze pare akcji z nocnych weekendowych 
+podrozy.Nie mam zamiaru opisywac tu zadnej nowosci wiec jezeli 
+nielubisz tego rodzaju opisow to nie musisz tego czytac , ale 
+jesli lubisz poczytac jak qumple po fachu zmagaja sie z z trudem 
+pracy jaka jest phreaking to czytaj dalej...
+Dla nas ten weekend mial teoretycznie tylo 1 dzien wiec zdaje sie
+ze emocji wiele byc niepowinno lecz bylo inaczej.
+Wszystko zaczelo sie okolo godz. 17 w nieduzym miasteczku o dosyc
+sympatycznej nazwie "xxx".  Z poczatkowym zamiarem czyli opierdolenie 
+silvera (a dokladniej tego starszego ze szwem na gornej klapie) udalismy 
+sie w podroz krajoznawcza... Zwiedzalismy miasteczko okolo 30min i 
+stwierdzilismy ze jest tu po prostu zajebiscie( dla phreakera oczywiscie)
+Juz po przejciu okolo 100m na nasze oczka nasunal sie piekny widok 
+pieciu dorodnych blurmetow ( niebieski urmet jaby kto niewiedzial hehe).
+Z tego 2 z koleczkami wiec jakby karty byly potrzebne (wylacznie w celach 
+naukowych oczywiscie)to nietrzeba bylo sie piepszyc w ble ble ble ble (kazdy 
+wie o co chodzi)tylo 1 czysta karte zginamy w ksztalt V i pulapka jest.No
+ to bylo oczywiscie piewsze skojarzenie ... ale po paru minutach doszlismy
+ do wniosku ze jest tu od huja wiary i oprocz wyzej wymienionej pulapki 
+w pare sekund to naprawde niewiele da sie zrobic. No ale wioska ta niewcale 
+taka mala wiec idziemy dalej wzdluz jeziorka (mala podpowiedz jakby ktos 
+chcial zgadnac co to za wiocha) i zdala widzimy taki nawet spory szyld TP SA
+a obok niego 3 budy ( myslimy zajebiscie bedzie co rwac..ale) ale po podejsciu 
+blizej w 3 budach jest tylko 1 silver.. qurwa co jest (pierwsza mysl 
+"qurde co sie dzieje na tym swiecie byly 3 urmy a jest jeden(no w koncu spox...
+zawsze dla nas jeden zostawili)) ale po blizszych ogledzinach latwo zauwazyc
+ze nie byla to robota jakiegos najebanego zula tylko monterka no chyba ze 
+mozna wyrwac urma bez jakiejkolwiek ryski...no dobra teza prosta :
+miasteczko turystyczne w lato ludu od zajebania a w zimce dechami zabijaja 
+wiec niedziwne ze zdjeli ... po co ma sie niszczyc...
+Nie chce mi sie juz pisac ile to jeszcze bud zalukalismy ale to jest okolo
+10 silverow 2 zetony i 3 blurmety (nieliczac tamtych pieciu) na 1 rzut oka
+to niby malo ale jesli wezmiemy pod uwage ze jest to 5000 wioska to "buda
+na budzie i buda pogania"
+No ale przejcmy do konkretow bo narazie nic nie wnioslem do sprawy ...
+A wiec na nocke umiescilismy sie w pensjonaciku o dosyc sumpatycnej nazwie xxx
+no jak ktos spostrzegawczy to zauwazy ze tak samo sie nazywa jak name tej calej
+miejscowosci. A wylot na budy zaplanowalismy jakos kolo 22 .
+Na pierwszy ogien poszed blurmet ( a wlasciwie to jego czesci...) a dokladniej 
+sama przednia klapa bo wiecej tam nic niebylo hehe( i znow dziwne bo watpie zeby
+tepsy zabraly sobie flaki a atrape zostawily...).Na poczatku nawet nie mielismy
+ zamiaru go otwierac no bo co ... ale scan stwierdzil ze przyda mu sie w olsztynie 
+kolko wiec otworzylismy klapa do gory i juz mozna isc do domciu no ale po co targac
+taki ciezar jak mozna "pozyczyc" co lepsze.Wiec scan wzial klapke poszedl 2 metry 
+dalej usiadl , srubokrecik w raczke i kreci no i tak kreci kreci najpierw kolko
+pozniej wyswietlacz  itd.
+(Aha zeby oddac powage sytuacji to ten manekin budki znajdowal sie obok parkingu 
+i obok ulicy srednio ruchliwej ale ogolem spokojnie.)
+No a my z dexem niemielismy co robic wiec podlaczylismy sie do juz calkowicie 
+odkrytych kabli blurmeta. Oczywiscie niewzielismy latarki wiec ja jak palant 
+podswietlalem mu zapalniczka a on tam robill co trzeba. Hujowo bo co chwile
+sie chowalismy ze strachem ze suki beda jechac no ale ja optymista stwierdzilem
+ze tu suki niejezdza wiec calkowity spokuj zachowany.Juz niebede  nic
+wspominal o scanie ktory tak sie rozlozyl ze jak jakis car jechal to totalnie 
+mu po oczach halogenami napierdalal ale to nawiasem. A wiec jak juz wczesniej
+wspominalem stalem sobie z dexem i dzwonilem... oczywista najpierw sprawdzilismy
+(z minimalna nadzieja) czy dziala 0700 ale niestety "Polaczenie nie moze byc 
+zrealizowane" wiec hujowka po party nie da rady. ale zawsze jeszcze qumple 
+lub wuje z USA zostaja.. no chyba ze w slad za nami nie wezmie sie zadnego 
+notesu z numerami hehe.To jest dopiero wqurwiajace uczucie jak slyszysz we 
+frikomacie ppppppiiiiiiii a qurwa nie masz gdzie dzwonic(wiec radze wam !!!
+nawet jak niebedziecie pewni ze sie cool podepniecie bierzcie notes!!! Duzo 
+niewazy a mozna sobie stare kontakty odnowic...
+o qurwa znow sie rozpisalem nie na temat.A wiec siedzimy i myslimy gdzie by 
+tu zadzwonic a tu patrzymy w oddali jakis busek sie zbliza... No oczywiscie 
+ja pierwszy rzucilem sugestie "qurwa suki jada!!!!!!" a scan dozucil swoje
+ "spierdalamy" no ale huj za pozno ... nie ma gdzie spierdalac wiec trzeba
+zachowac spokoj.My szybko wyrwalismy kable z budy ale myslimy co ze scanem
+on se tam siedzi w najlepsze a tu qurde suki nadjezdzaja.Akurat cale szczescie
+ze bylo stamtad niedaleko do lasku okolo 30 metrow.. nie nie o to chodzi 
+ze bylo gdzie spiepszac ale..... hehe glupio byloby tak sobie srac w centrum 
+miasta a tak to wygladalo ..hehe bo nie mial czasu spiepszac wiec usiadl na urmecie
+(czyt. klapie) i niewiem o co mu chodzilo ale inteligentna policja w transporterze
+ chyba pomyslala ze szeregowy ... zalatwia potrzebe fizjologiczna.  I huj w tak 
+beznadziejnie pojebany sposob suki sie niezatrzymaly przez co niebylo konsekwencji...
+Jednak i tak wystraszylismy sie niezle wiec to niejsce wolelismy oposcic i tak tez
+zrobilismy. Oczywiscie z klapa z blumeta pod bluza hehe. A wiec po takim milym 
+spotkaniu I no moze II stopnia wyruszylismy w strone (trudno okreslic..) jakiegos 
+rynku czy cos takiego ( tak mi sie zdaje ze to byl jakis wiejski bazar bo byly takie 
+qurwa jak to sie mowi ...no takie cos na czym ruskie zawsze handluja I-I no cos 
+takiego tylko z dachem na gorze).Wiec usiadlismy sobie we trojke na takim stoliku 
+i ... scan tam sobie dalej krecil ( klawiaturke tym razem ) amy patrzylismy czy 
+przypadkiem nikt nieidzie. W pewnej chwili zalukalismy jakiegos gostka ktory na 1 
+rzut oka szedl w nasza strone ( my tam juz sie wqurwiamy bo z daleka to huj go wie
+czy to glina czy tez jakis zbyczaly zul...)ale jakies 20 metrow od nas skrecil do 
+klatki jakiegos bloku. Wiec spox dalej krecimy...No i po ok. 5 minut z klapki
+urmecika zostalo tulko kawalek niebieskigo tworzywa . Ok teraz przydalo by sie 
+to gdzie wypierdolic. Idziemy pare metrow w strone wczesniej wymienianego bloku
+i ..... jest zajebiscie wielki kosz na smieci a wiec podchodzimy klapa do gory
+i blaszki nie ma( za to w kieszeniach od huja drobiazgow : kluczy,czesci z urma,
+oraz innych phreakomatow). A wiec chwila namyslu i dalej w droge. Idziemy idziemy 
+dochodzimy do "centrum" po czym kierujemy sie w strone poczty.Poczta nieczynna 
+(jak latwo sie domyslec a obok niej 2 urmety ( srebrny i nieb. )Wszystko to na 
+wysokosci jakis 2 metrow wiec jak ktos kolo poczty przechodzil to i tak jak 
+sie nieprzyjrzy to nic niezobaczy ( wszystko cool tylko poczta zajbiscie 
+oswietlona...poczta ale budki ciemne...) Obok poczty krzaczki ( zajebiste zeby 
+sobie wspomniane wyzej stare kontakty odnowic) dosyc obszerne a za nimi 
+wolne miejsce do siedzenia. A wiec planu nawey nietrzeba bylo ukladac :
+jeden na dole lapac kabel i dwoch na gorze ( tak wyszlo ze na dole byl scanv
+a na gorze ja z dexem , dex otworzyl urma i przyczepil kabelki a ja zaslanialem 
+go i przy okazji patrzylem czy jakis niepozadany klijent niechce skorzystac
+z "bezkonkurencyjnych" uslug Telekomunizacji). Samochodziki jezdzily ludzie lazili 
+ale niebylo to problemem bo dexter ma zajebiscie opracowana metoda podpinania sie
+wiec zanim sie obejrzalem juz podawal kabelek 4 scanv . Nastepnie ja pierwszy wszedlem 
+za poczte a akurat jak mial omijac krzaki dex to przechodzila jakas grupka drehow
+wiec zamiast skrecic od razu za poczta to musial podejsc jeszcze z kilkanascie metrow 
+po czym zawrocil i  do nas dolaczyl. Wszuscy sobie "ukleklismy i ... tu dylemat
+kto sprawdzi czy jest napiecie (hehe). Jak zapewne wie kazde nie jest to zabardzo mile 
+uczucie wiec nikt nie chcial sie zgodzic ale wreszcie wypadlo na dextera ( najstarszy...)
+A wiec sprawdzil... potem powiedzial "o qurwa ale pierdolnelo"( czy cos w tym stylu)
+I swat stoi otworem!!!! A co ciekawsze znalazlem gdzies w portfelu pare numerkow ...
+Miedzy innymi byl tam numerek mojego qumpla ze stanow wiec wykrecilem ale bylo zajete 
+wiec dalem phreakomat dla scana ktory przekrecil do swojego qumpla z olsztyna.
+Gadal z nim okolo 10 minut przez ktore zdarzylo sie nawet kilka nice rzeczy...
+A wlasciwie to po tej rozmowie.A wiec bylo to tak; Siedzimy , scan gada a samochody 
+jezdza jezdza jezdza i nagle slyszymy pisk opon , klakson a pozniej pizd (pierdolniecie o 
+mur jakiegos trabanta) no huj myslimy zaraz sie qurwa zejdzie pol wiochy bo jakas 
+syrenka (jak pozniej zauwazylismy) w mur pierdolnela. A wiec narazie spokoj ludzi
+malo ... ale to tylko przez chwilke. Jak mozna sie domyslic scan speedem skonczyl 
+rozmowe. Czekamy patrzymy a ty qurwa suki jada powoli centralnie pare metrow od nas
+(a tak nawiasem to ten caly "wypadek" zdarzyl sie jakies 15 metrow od naszej kryjowy 
+hehe)i zatrzymuja sie obok rozjebanej zoltej syreny .W mgnieniu oka ludu sie zbierac 
+zaczelo a my jak te debile siedzimy (spoceni) myslac nad planem ewakuacyjnym .
+Mozna wlasciwie bybylo pociagnac z calej sily ... ale po co krokodylki tracic
+jak narazie nikt o nas jeszcze niewie.A wiec wypatrzelismy moment jak nikt 
+nieprzechodzil i razem z dexem wyszlismy na ulice udajac szarych ludzi 
+a scan zostal w "norce".Zakrecilismy sie troszke i weszlismy na gore 
+(do budy) usiedlismy na laweczce czekamy patrzymy cool akurat ludzi 
+nie ma ... mozna kable pozdejmowac juz wstajemy a tu qurwa jakis debil 
+wchodzi po schodkach na gore ...(no to my znow siadamy i udajemy 
+ze na przychodzaca czekamy)podchodzi podchodzi ( my sie modlimy
+zeby silvera wybral a nie niebieskiego bo kable moglby zalukac)
+ a tu huj podchodzi do blurmeta . No to szybko wstaje wchodze do 
+niebieskiego i udaje ze gdzies dzwonie (to dopiero kretynsko wygladalo)
+Czekam chwilke patrze a gostek podchodzi do silvera (mysle ok zajebioza zadzwoni i pujdzie)
+podnosi sluchawke i "nieczynny"(qurwa i tu sie nastepny problem narodzil) wychodzi i czeka 
+az ja skoncze ( no to trzeba cos na poczekaniu wymyslic)czeka czeka wreszcie ja klade sluchawke
+prosze dexa o next karte ( to tak zeby odwrocic uwage) i w miedzyczasie naciskam 5 na klawiaturze 
+podnosze sluchawke dex mi podaje karte a ja mowie " qurde cos sie popsulo" no to ten gosc "popsulo?"
+a ja mowie "tak ... przed chwila gadalem a teraz pisze ze nieczynny" a on 
+"pokaze pan" no to ja ustalem tak z lewej strony zeby zaslonic kable on patrzy 
+daje mu sluchawke on zdziwiony resetuje ... wreszcie wychodzi z budy pierdolac
+cos pod nosem "kurwa ta jebana telekomunikacja 2 budki i obydwie nieczynne"
+No i w taki sposob zostalismy sam na sam z buda .Wtedy juz wszystko poszlo 
+szybko ja znowu zaslonilem dexa on wyjal kabelek podal na dol do scana 
+a on juz zaszal zwijac.Zanimzeszlismy na dol on juz wychodzil z kryjowki
+z ladnie zwinietym kablem w kieszeni.
+Nastepnie wrocilismy do domciu (czyt. pensjonatu) po drodze przygladajac sie razem      
+z innymi gapiami zmiazdzonej syrence hehe.
+I tak to wyszlo ze silvera nieojebalismy ale emocji i tak bylo od huja...
+Ps. Wydazenia zawarte w tym texcie sa "fikcyjne" :)...ble ble nie odpowiadam za was
+     jezeli cos z tego textu bedziecie probowali praktykowac!!!!
+
+6.Pewna infolinia
+Ktoregos dnia dostala mi sie w rece zakodowana komurka. Z wygladu byla ciekawa
+gostek dal mi ja do rozkodowania. Ale nic nie szlo w koncu ktoregos dnia
+dowiedzialem sie o roznych numerach pomocy w takich wypadkach (zapo hasla itp)
+W---wila mnie tak komura i mu ja oddalem ale zostaly te numery to se mysle 
+0800 to se podzwonie. OK dzwonie wlacza mi sie mila pani (automat) i 
+przedstawia mi MENU wiecie wciscnij 4 to ... . Tak slucham slucham i wkoncu
+slysze wcisnij 1 by otrzytmac fax albo podaj numer pod ktory mabyc wyslany
+to ja na to :)))))))))))))) ale dreczyciela odkrylem. Wiec robimy tak
+
+(podam praw kombinacje aby dojsc do tego jak cos nie tak to i tak dojdziecie)
+0800602900 7 1 1 1 2 num kier num docelowy # 1 DZIEKUJE
+
+krecimy numer 0800-602-900 czekamy 3 sek naciskamy 7 czekamy 3 sek nacis 1
+czek 3 sek nacis 1 czek 3 sek nacis 1 czek 3 sek nacis 2 czekamy 3 sek 
+wpisujemy numer kier + numer telefonu (fajna sprawa jest w miejscach 
+publicznych) pozniej naciskamy # + 1 i pani mowi DZIEKUJEMY ZA SKORZ Z 
+USLUGI DOWIDZENIA.
+Metoda ta nie dziala na zetonowacach na niebieskich dziala tylko ze z tone 
+dialerem, a na silverach dziala tak krecimy numer 0800602900 i wciskamy *
+przelaczamy na tony :))))  
+
+Nasz drenczyciel dzwoni i dzwoni tylko ze automat (ta sekreatarka) jest tak
+zapchany ze moze nawet zadzwonic za 15 min. Po dodzwonieniu sie automatu 
+slyszymy piiiiitiiii ii ii jest to dzwiek wydawany przez sekretarki gdy 
+wysylaja fax. Jezeli odlozymy sluchawke to telefon bedzie zablokowany 
+jeszcze prze ok. 2 min :)))))))
+ 
+UWAGA!!! Od ostatnich czasow na tym numerze infolinia rozdwoila.
+Ta wlasciwa zaczyna sie na "Witamy w sieci era gsm jezeli chcesz wysluchac..."  
+Aby uzyskac wlasciwa trzeba numer ponownie wykrecic az zalapie. Poniewaz 
+roznie sie one wlaczaja.
+
+7.Ciekawostka z magnesem i karta
+	Ktos opisal w jakims faq ze jezeli zamaskujemy mechaniczne znaki 
+kasowania na karcie i przytrzymamy ja przy silnym polu magnetycznym to 
+uzyskamy impulsy. Nieprawda. Z karta dzieje sie cos dziwnego prwdopodobnie
+kasuje sie ID1. Eksperyment -> Wlozmy pusta karte do uremata, pokaze nam sie
+napis KARTA ZUZYTA. Natomiast kiedy przed tym pojezdzimy sobie magnesem (silny)
+po karcie i ja wzucimy to na wyswietlaczu nie pokaze sie ze karta jest zuzyta
+tylko wloz karte.   
+
+8.Dobry zestaw do podpinania sie
+	Jak budowalem swoj pierwszy phrekomat to zeby cos uslyszec w 
+glosniczku musialem siedziec w kompletnej cziszy. I w dodatku
+podpinalem sie we wlasnym domu. Niemoglem dojsc czemu sie tak dzieje.
+Ktoregos dnia potkalem kumpla z elektronika i se troche pogawedzilem.
+Powiedzial mi i wytlumaczyl czemu sie tak dzieje. Ludzie ktorzy robia
+se phrekomaty z gotowych juz telefonow nie musza sie o nic martwic.
+A chodzi tu o mikrofon i glosnik weglowy, ktore znajduja sie w sluchawkach
+od telefonu. Moim zdaniem wystarczajacym zestawem jest mikrofon glosniczek
+(np. sama sluchawka) i tonedialer. Czysz nie proste :)). I ostatnia rzecz
+to dwa piny takie jak mamy na gornej czesci plyty gl (mala plytka na plycie 
+glownej). [-][][][-] <-- takie cos przypinamy od dolu malej plytki i gotowe.
+Wiem ze sa inne sposoby moze prostrze i sprytniejsze ale ten mi sie podoba.   
+
+----------------------------------------------------------------------------
+
+ //////////////// \\\\\\\\\\\\ ///////////////        \\\\\\       \\\\
+ ///////////////  \\\\\\\\\\\\  ///////////////       \\\\ \\      \\\\
+ ////////    ///  \\\\           /////     /////      \\\\  \\     \\\\
+ ////////         \\\\            /////     /////     \\\\   \\    \\\\
+       ////////   \\\\             ///////////////    \\\\    \\   \\\\
+ ///   ////////   \\\\              /////     /////   \\\\     \\  \\\\
+ ///////////////  \\\\\\\\\\\\       /////     /////  \\\\      \\ \\\\
+ ///////////////  \\\\\\\\\\\\        /////     ///// \\\\       \\\\\\ V
+
+
+
+Special thx 4  :  hrabia, Ce64, Dexter,
+                  viedzmin, qh3h8, PAT, PIT, 
+                  (kolejnosc przypadkowa)
+
+
+Pozdrowienia 4 : dla calego #hackpl, #pkreakpl, monterow z olsztyna :)))) 
+		 i wszystkich ktorzy mnie znaja i sa ze mna w zgodzie :))
+
+(faq na zyczenie bedzie uaktualniany o wybrany temat)
+(jezeli ktos ma wiecej informacji o pamieci urmeta jak chce niech da mi znac)
+
+-----> conntact : scanv@polbox.com

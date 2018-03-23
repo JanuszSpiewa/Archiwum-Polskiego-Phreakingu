@@ -1,0 +1,5606 @@
+;===============================================================;
+; Disassembled Using XDASM  --  (C)1990-92 DataSync Engineering ;
+;===============================================================;
+;	Unresolved Address Reference list
+L040B:		EQU	0040BH L240B:		EQU	0240BH
+L4408:		EQU	04408H L440B:		EQU	0440BH
+L440D:		EQU	0440DH L440F:		EQU	0440FH
+L4410:		EQU	04410H L4413:		EQU	04413H
+L441B:		EQU	0441BH L4467:		EQU	04467H
+L6402:		EQU	06402H L640A:		EQU	0640AH
+L640B:		EQU	0640BH L6467:		EQU	06467H
+L8057:		EQU	08057H 
+;
+	ORG	00000H
+;-----------------------------------------------------------------------
+L039D:	NOP				;039D	9D		
+	CMP	0,X			;0400	F1			
+	BRSET	1,090H,L041A	;0401	02 90 16		
+	BRCLR	0,019H,L039D	;0404	01 19 96		
+	BSET	2,PORT_B		;0407	14 01			
+	BRCLR	0,05AH,L040B	;0409	01 5A FF		
+	BHCC	L041A			;040C	28 0C			
+	NOP				;040E	9D			
+	BCLR	7,000H		;040F	1F 00			
+	SUB	0,X			;0411	F0			
+	BRSET	0,015H,L0415	;0412	00 15 00		
+;
+L0415:	BHCC	L0467			;0415	28 50			
+	LSL	0,X			;0417	78			
+	SUB	#0C8H			;0418	A0 C8			
+
+
+L041A:	BSET	2,03AH	;041A	14 3A  	
+	SEI				;441C	9B      RESET i SWI: Uniemozliwia IRQ 	
+	RSP				;441D	9C	Resetuje stos		
+	LDA	#000H			;441E	A6 00		
+	STA	PORT_A		;4420	B7 00	        Zeruje wszystkie bity portu A	
+	LDA	#0F0H			;4422	A6 F0		
+	STA	DIR_A			;4424	B7 04	Ustawia kierunkowosc portu A liczba $F0 (0=input 1=output)
+	LDA	#018H			;4426	A6 18
+	STA	PORT_B		;4428	B7 01	        Ustawia w porcie B wartosc $18
+	LDA	#0FFH			;442A	A6 FF			..
+	STA	DIR_B			;442C	B7 05	Ustawia kierunkowosc portu B liczba $FF (port wyjsciowy)
+	LDA	#0A0H			;442E	A6 A0			..
+	STA	04CH			;4430	B7 4C	Ustawia komorke RAMu $4C liczba $A0
+	STA	090H			;4432	B7 90	Ustawia rejestr U3 liczba $A0
+	LDA	#008H			;4434	A6 08	
+	STA	0F0H			;4436	B7 F0	Ustawia rejestr U6 wartoscia $08 (prawdopodobnie otwarcie drzwiczek wlotu)
+	BRA	L444A			;4438	20 10	Skok bezwarunkowy do $444A
+;----------------------------------------------------------------------------------;
+L443A:	LDA	04CH		        ;443A	B6 4C	INTR WAIT z TIMERA :
+
+	ORA	#0C0H			;443C	AA C0	Acc <- Acc OR $C0		
+	STA	04CH			;443E	B7 4C	RAM $4C <- Acc
+	STA	090H			;4440	B7 90	Reg U3 <- Acc = ustaw A13 EPROMu
+	NOP           			;4442	9D	Nie rob nic (w dalszej czesci bez komentarza)
+	RTI				;4443	80	Powrot z przerwania		
+;
+	BRCLR	4,040H,L443A		;4444	09 40 F3 INTR Z TIMERA :
+	JMP	>L5722			;4447	CC 57 22 Skocz bezwarunkowo do $5722
+
+
+L444A:	LDA	067H			;444A	B6 67	Dalsza czesc programu                   poczatkowego: Zaladuj Acc z adresu $67
+	CMP	#0ABH			;444C	A1 AB	Porownaj Acc z liczba $AB		
+	BEQ	L44A3			;444E	27 53	Jeœli rowne to skocz do adresu $44A3
+	JSR	>L5D5D		        ;4450	CD 5D 5D Skocz do procedury pod adresem $5D5D (odczytanie polozenia karty wynik w Acc)
+	AND	#004H			;4453	A4 04	Zostaw bit Acc(2) reszte akumulatora wyzeruj
+ 	BEQ	L449D			;4455	27 46	Jeœli piaty bit akumulatora= 0 (karta w automacie) skocz do adresu $449D
+	LDA	067H			;4457	B6 67	Zaladuj akumulator spod adresu $67
+	CMP	#075H			;4459	A1 75	porownaj z liczba $75
+	BEQ	L445F			;445B	27 02	Jeœli rowne skocz do adresu $445F
+	BRA	L44D7			;445D	20 78	Skocz bezwarunkowo do adresu $44D7
+;
+L445F:	JSR	>L5D54			;445F	CD 5D 54
+	CMP	068H			;4462	B1 68			.h
+	BNE	L44A3			;4464	26 3D			&=
+	BSET	3,042H			;4466	16 42			.B
+	BCLR	5,047H			;4468	1B 47			.G
+	CLR	025H			;446A	3F 25			?%
+	CLR	029H			;446C	3F 29			?)
+	CLR	02AH			;446E	3F 2A			?*
+	BCLR	2,047H			;4470	15 47			.G
+	BCLR	7,047H			;4472	1F 47			.G
+	BCLR	0,042H			;4474	11 42			.B
+	JSR	>L5D94			;4476	CD 5D 94		.].
+	JSR	>L59B9			;4479	CD 59 B9		.Y.
+	JSR	>L582D			;447C	CD 58 2D		.X-
+	JSR	>L5C57			;447F	CD 5C 57		.\W
+	BCLR	7,043H			;4482	1F 43			.C
+	BCLR	4,043H			;4484	19 43			.C
+	BSET	7,045H			;4486	1E 45			.E
+	LDA	046H			;4488	B6 46			.F
+	AND	#0F0H			;448A	A4 F0			..
+	ORA	#002H			;448C	AA 02			..
+	STA	046H			;448E	B7 46			.F
+	LDA	#000H			;4490	A6 00			..
+	STA	05DH			;4492	B7 5D			.]
+	LDA	#003H			;4494	A6 03			..
+	STA	05CH			;4496	B7 5C			.\
+	BSET	3,PORT_B			;4498	16 01			..
+	JMP	>L4889			;449A	CC 48 89		.H.
+;
+;
+L449D:	LDA	067H			;449D	B6 67 Zaladuj Acc spod adresu $67
+	CMP	#075H			;449F	A1 75 Porownaj z wartoscia $75
+	BNE	L44D7			;44A1	26 34 Jesli rozne skocz do $44D7
+;
+L44A3:	BSET	7,047H			;44A3	1E 47 Ustaw 8bit pod adresem $47
+	LDA	#002H			;44A5	A6 02 	STA	02AH			;44A7	B7 2A $2A<-#2 
+	BSET	0,041H			;44A9	10 41 Ustaw 1bit pod adresem $41
+	JSR	>L582D			;44AB	CD 58 2D 
+	JSR	>L5C57			;44AE	CD 5C 57		.\W
+	JSR	>L5A5E			;44B1	CD 5A 5E		.Z^
+;
+L44B4:	BRCLR	1,PORT_B,L44C6		;44B4	03 01 0F		...
+	BRCLR	1,03FH,L44B4		;44B7	03 3F FA		.?.
+	BCLR	0,041H			;44BA	11 41			.A
+	BCLR	5,000H			;44BC	1B 00			..
+	BSET	3,PORT_B		;44BE	16 01			..
+;
+L44C0:	BRCLR	1,PORT_B,L44C0		;44C0	03 01 FD		...
+	JMP	>L4524			;44C3	CC 45 24		.E$
+;
+L44C6:	BCLR	0,041H  		;44C6	11 41			.A
+	BCLR	5,000H			;44C8	1B 00			..
+	BSET	3,PORT_B		;44CA	16 01			..
+	LDA	03FH	                ;44CC	B6 3F			.?
+	AND	#004H		        ;44CE	A4 04			..
+	BEQ	L4524			;44D0	27 52			'R
+	BSET	0,044H			;44D2	10 44			.D
+	JMP	>L5520			;44D4	CC 55 20		.U 
+;
+
+L44D7:	LDA	#032H		;44D7	A6 32  Zaladuj akumulator wartoscia $32
+	JSR	>L590D		;44D9	CD 59 0D Skocz do procedury po adresem $590D (opoznienie o 32*1029+6=32934 cykle)
+	LDX	#070H		;44DC	AE 70	Zaladuj rejestr X wartoscia $70
+	CLRA			;44DE	4F      Wyzeruj akumulator
+;
+L44DF:	STA	00FH,X		;44DF	E7 0F	Zaladuj Akumulator z komorki IX+$F = 7F
+	CMP	00FH,X		;44E1	E1 0F Porownaj Acc z zawartoscia komorki IX+$F = $7F. Prawdopodobnie sluzy sprawdzeniu czy system dziala poprawnie.
+	BNE	L44F9		;44E3	26 14	Jeœli ró¿ny skocz do adresu $44F9
+	COMA			;44E5	43	Zaneguj Acc = ustaw wszystkie jedynki w Acc
+	STA	00FH,X		;44E6	E7 0F	Ustaw  komorke $7F jako $FF czyli akumulator
+	CMP	00FH,X		;44E8	E1 0F	Porownaj z Acc wartosc z adresu $7F
+	BNE	L44F9		;44EA	26 0D	Jeœli rozne skocz do $44F9
+	CLR	00FH,X		;44EC	6F 0F	Wyzeruj zawartosc $7F
+	TST	00FH,X		;44EE	6D 0F	Sprawdz komorka $7F czy jest zero lub ujemna
+	BNE	L44F9		;44F0	26 07	Jeœli nie skocz do adresu $44F9
+	COMA			;44F2	43	Zaneguj Acc ustaw wszystkie zera
+	INCA			;44F3	4C	Zwieksz Acc o 1
+	DECX			;44F4	5A	Zmniejsz Acc o 1
+	BNE	L44DF		;44F5	26 E8	Jesli Acc ró¿ny od zera skocz do adresu $44DF
+	BRA	L44FB		;44F7	20 02	Skocz bezwarunkowo do adresu $44FB
+;
+L44F9:	BRA	L44F9		;44F9	20 FE	
+;
+L44FB:	LDA	#000H		;44FB	A6 00	 Zaladuj Acc wartoscia 00
+	STA	05DH		;44FD	B7 5D	 Zaladuj tymi zerami adres $5D
+	LDA	#003H		;44FF	A6 03	 Zaladuj Acc wartoscia $03
+	STA	05CH		;4501	B7 5C	 Ustaw ta wartosc pod adresem $5C
+	CLR	054H		;4503	3F 54	 Wyzeruj komorke spod adresu $54
+	CLR	052H		;4505	3F 52	 Wyzeruj komorke spod adresu $52
+	JSR	>L582D		;4507	CD 58 2D Skocz do procedury $582D
+	LDA	03FH		;450A	B6 3F	 Zaladuj acc spod adresu $3F
+	AND	#004H		;450C	A4 04	 Pozostaw tylko dolna czesc bajtu w Acc gorna wyzeruj
+	BEQ	L4512		;450E	27 02	Jeœli Acc = 00 skocz pod adres $4512
+	BSET	6,043H		;4510	1C 43	Ustaw 7 bit pod adresem $43
+;
+L4512:	LDA	#003H		;4512	A6 03	 Zaladuj Acc wartoscia $03
+	JSR	>L47CC		;4514	CD 47 CC Skocz do procedury $47CC
+	CMP	#007H		;4517	A1 07	 Porownaj zawartosc Acc z wartoscia $07
+	BNE	L4512		;4519	26 F7	 Jeœli rozne to skocz pod adres $4512
+;
+L451B:	LDA	#006H		;451B	A6 06	Zaladuj Acc wartoscia $06
+	JSR	>L47CC		;451D	CD 47 CC Skocz do procedury $47CC
+	CMP	#009H		;4520	A1 09	Porownaj Acc z wartoscia $09
+	BNE	L451B		;4522	26 F7	Jeœli rozne skocz do $451B
+;
+L4524:	LDA	#002H		;4524	A6 02	Zaladuj Acc wartoscia $02
+	JSR	>L47CC		;4526	CD 47 CC Skocz do procedury $47CC
+	CMP	#007H		;4529	A1 07	Porownaj Acc z wartoscia $09
+	BNE	L4524		;452B	26 F7	Jeœli rozne skocz do $4524
+	JSR	>L58FD	        ;452D	CD 58 FD Skocz do procedury $58FD
+	JSR	>L5A65	        ;4530	CD 5A 65 Skocz do procedury $5A65
+	CLR	04DH		;4533	3F 4D	 Wyzeruj komorke pod adresem $4D
+	CLR	067H		;4535	3F 67	 Wyzeruj komorke pod adresem $67
+	LDX	#0C8H		;4537	AE C8	 Zaladuj IX wartoscia $C8
+	STX	028H		;4539	BF 28	 Skladuj IX pod adresem $28
+;
+L453B:	LDA	#005H		;453B	A6 05	Zaladuj Acc wartoscia $05
+	JSR	>L590D		;453D	CD 59 0D Skocz do procedury $590D
+	BRSET	0,044H,L4547	;4540	00 44 04		
+	DEC	028H		;4543	3A 28	 Zmniejsz o 1 wartosc komorki $28
+	BNE	L453B		;4545	26 F4	 Skocz jeœli ró¿ny do $453B
+;
+L4547:	LDA	03FH		;4547	B6 3F	  Zaladuj akumulator spod adresu $3F
+	AND	#006H		;4549	A4 06	  Wyzeruj Acc oprocz Acc(1) i Acc(2)
+	BNE	L4550		;454B	26 03	  Skocz jeœli ró¿ny od zera do $4550
+	JMP	>L4557		;454D	CC 45 57  Skok bezwarunkowy do adresu $4557
+;
+L4550:	CLR	051H		;4550	3F 51	  Wyzeruj komorke pod adresem $51
+	LDA	#002H		;4552	A6 02	  Zaladuj Acc wartoscia 2
+	JSR	>L4CAA		;4554	CD 4C AA  Skocz do procedury $4CAA
+;
+L4557:	JSR	>L5A4A		;4557	CD 5A 4A Skocz do procedury $5A4A 
+L455A:	WAIT				;455A	8F Wstrzymaj prace w oczekiwaniu na przerwania			.
+;
+
+	BRCLR	1,PORT_B,L4576		;455B	03 01 18		...
+	LDA	03FH			;455E	B6 3F			.?
+	AND	#006H			;4560	A4 06			..
+	BEQ	L456C			;4562	27 08			'.
+	TST	04DH			;4564	3D 4D			=M
+	BNE	L456C			;4566	26 04			&.
+	LDA	#001H			;4568	A6 01			..
+	STA	04DH			;456A	B7 4D			.M
+;
+L456C:	LDA	03FH			;456C	B6 3F			.?
+	AND	#008H			;456E	A4 08			..
+	BEQ	L455A			;4570	27 E8			'.
+	CLR	058H			;4572	3F 58			?X
+	BRA	L455A			;4574	20 E4			 .
+;
+;
+L4576:	LDA	03FH			;4576	B6 3F			.?
+	AND	#00FH			;4578	A4 0F			..
+	BEQ	L458D			;457A	27 11			'.
+	JSR	>L5A65			;457C	CD 5A 65		.Ze
+	LDA	03FH			;457F	B6 3F			.?
+	AND	#00FH			;4581	A4 0F			..
+	BEQ	L458D			;4583	27 08			'.
+	LDA	#004H			;4585	A6 04			..
+	JSR	>L4C85			;4587	CD 4C 85		.L.
+	JMP	>L459A			;458A	CC 45 9A		.E.
+;
+;
+L458D:	TST	04DH			;458D	3D 4D			=M
+	BNE	L459A			;458F	26 09			&.
+	TST	058H			;4591	3D 58			=X
+	BNE	L459A			;4593	26 05			&.
+	LDA	#004H			;4595	A6 04			..
+	JSR	>L4CAA			;4597	CD 4C AA		.L.
+;
+L459A:	BSET	1,047H			;459A	12 47			.G
+	CLR	066H			;459C	3F 66			?f
+	BSET	2,042H			;459E	14 42			.B
+	BCLR	1,041H			;45A0	13 41			.A
+	BCLR	0,043H			;45A2	11 43			.C
+	BCLR	0,044H			;45A4	11 44			.D
+	LDA	#049H			;45A6	A6 49			.I
+	JSR	>L4CAA			;45A8	CD 4C AA		.L.
+	LDA	049H			;45AB	B6 49			.I
+	AND	#004H			;45AD	A4 04			..
+	BNE	L45B9			;45AF	26 08			&.
+	JSR	>L58FD			;45B1	CD 58 FD		.X.
+	JSR	>L5C75			;45B4	CD 5C 75		.\u
+	BSET	3,PORT_B			;45B7	16 01			..
+;
+L45B9:	JSR	>L5C66			;45B9	CD 5C 66		.\f
+	LDA	#078H			;45BC	A6 78			.x
+	JSR	>L590D			;45BE	CD 59 0D		.Y.
+	BRCLR	3,049H,L45C7		;45C1	07 49 03		.I.
+	JMP	>L4685			;45C4	CC 46 85		.F.
+;
+;
+L45C7:	BCLR	4,042H			;45C7	19 42			.B
+	BCLR	6,042H			;45C9	1D 42			.B
+	BCLR	5,042H			;45CB	1B 42			.B
+	BCLR	7,042H			;45CD	1F 42			.B
+;
+L45CF:	WAIT				;45CF	8F			.
+;
+	JSR	>L5D0E			;45D0	CD 5D 0E		.].
+	BRSET	3,042H,L45DC		;45D3	06 42 06		.B.
+	BRCLR	7,043H,L45CF		;45D6	0F 43 F6		.C.
+	JMP	>L4B4B			;45D9	CC 4B 4B		.KK
+;
+;
+L45DC:	JSR	>L5C57			;45DC	CD 5C 57		.\W
+	JMP	>L4600			;45DF	CC 46 00		.F.
+;
+;
+L45E2:	LDA	#000H			;45E2	A6 00			..
+	STA	048H			;45E4	B7 48			.H
+	LDX	#0C8H			;45E6	AE C8			..
+	STX	028H			;45E8	BF 28			.(
+;
+L45EA:	LDA	#005H			;45EA	A6 05			..
+	JSR	>L590D			;45EC	CD 59 0D		.Y.
+	BRSET	0,044H,L45F6		;45EF	00 44 04		.D.
+	DEC	028H			;45F2	3A 28			:(
+	BNE	L45EA			;45F4	26 F4			&.
+;
+L45F6:	TST	04DH			;45F6	3D 4D			=M
+	BEQ	L45FD			;45F8	27 03			'.
+	JMP	>L4557			;45FA	CC 45 57		.EW
+;
+;
+L45FD:	JMP	>L4576			;45FD	CC 45 76		.Ev
+;
+;
+L4600:	LDA	#002H			;4600	A6 02			..
+	STA	048H			;4602	B7 48			.H
+	RSP				;4604	9C			.
+	BRCLR	0,044H,L460B		;4605	01 44 03		.D.
+	JMP	>L45E2			;4608	CC 45 E2		.E.
+;
+;
+L460B:	BRSET	7,043H,L4614		;460B	0E 43 06		.C.
+	BRCLR	4,044H,L4614		;460E	09 44 03		.D.
+	JSR	>L4C51			;4611	CD 4C 51		.LQ
+;
+L4614:	BSET	1,047H			;4614	12 47			.G
+;
+L4616:	WAIT				;4616	8F			.
+;
+	JSR	>L5D0E			;4617	CD 5D 0E		.].
+	BRCLR	0,044H,L4623		;461A	01 44 06		.D.
+	JSR	>L5C57			;461D	CD 5C 57		.\W
+	JMP	>L45E2			;4620	CC 45 E2		.E.
+;
+;
+L4623:	TST	049H			;4623	3D 49			=I
+	BEQ	L462C			;4625	27 05			'.
+	JSR	>L5C57			;4627	CD 5C 57		.\W
+	BRA	L4685			;462A	20 59			 Y
+;
+;
+L462C:	BRSET	4,043H,L4645		;462C	08 43 16		.C.
+	BRSET	7,043H,L4682		;462F	0E 43 50		.CP
+	BRCLR	1,03FH,L463A		;4632	03 3F 05		.?.
+	BRSET	0,03FH,L4645		;4635	00 3F 0D		.?.
+	BRA	L465B			;4638	20 21			 !
+;
+;
+L463A:	BRSET	2,03FH,L465B		;463A	04 3F 1E		.?.
+	BRSET	3,03FH,L465B		;463D	06 3F 1B		.?.
+	BRCLR	3,041H,L4616		;4640	07 41 D3		.A.
+	BRA	L466D			;4643	20 28			 (
+;
+;
+L4645:	JSR	>L5C57			;4645	CD 5C 57		.\W
+	JSR	>L5A40			;4648	CD 5A 40		.Z@
+	JSR	>L5A65			;464B	CD 5A 65		.Ze
+	TSTA				;464E	4D			M
+	BEQ	L4600			;464F	27 AF			'.
+	CMP	#002H			;4651	A1 02			..
+	BEQ	L4658			;4653	27 03			'.
+	JMP	>L46EC			;4655	CC 46 EC		.F.
+;
+;
+L4658:	JMP	>L4685			;4658	CC 46 85		.F.
+;
+;
+L465B:	BRCLR	2,03FH,L4662		;465B	05 3F 04		.?.
+	LDA	#001H			;465E	A6 01			..
+	STA	04DH			;4660	B7 4D			.M
+;
+L4662:	JSR	>L5C57			;4662	CD 5C 57		.\W
+	LDA	#004H			;4665	A6 04			..
+	JSR	>L4C85			;4667	CD 4C 85		.L.
+	JMP	>L4685			;466A	CC 46 85		.F.
+;
+;
+L466D:	TST	04EH			;466D	3D 4E			=N
+	BNE	L4616			;466F	26 A5			&.
+	BCLR	3,041H			;4671	17 41			.A
+	BRCLR	3,042H,L467C		;4673	07 42 06		.B.
+	JSR	>L5C57			;4676	CD 5C 57		.\W
+	JMP	>L49ED			;4679	CC 49 ED		.I.
+;
+;
+L467C:	LDA	#032H			;467C	A6 32			.2
+	STA	04EH			;467E	B7 4E			.N
+	BRA	L4645			;4680	20 C3			 .
+;
+L4682:	JMP	>L4B4B			;4682	CC 4B 4B	
+;
+L4685:	LDA	#003H			;4685	A6 03			
+	STA	048H			      ;4687	B7 48			
+	RSP				      ;4689	9C			
+	BRSET	1,04AH,L4692		;468A	02 4A 05		
+	JSR	>L4C64			;468D	CD 4C 64		
+	BRA	L4697	                  ;4690	20 05			 
+;
+L4692:	JSR	>L4C51			;4692	CD 4C 51		.LQ
+	BSET	4,043H			;4695	18 43			.C
+;
+L4697:	BSET	1,047H			;4697	12 47			.G
+;
+L4699:	WAIT				;4699	8F			.
+;
+	JSR	>L5D0E			;469A	CD 5D 0E		.].
+	BRCLR	3,049H,L46B5		;469D	07 49 15		.I.
+	BRSET	4,043H,L46BB		;46A0	08 43 18		.C.
+	BRSET	5,043H,L46DD		;46A3	0A 43 37		.C7
+	BRSET	7,043H,L46E9		;46A6	0E 43 40		.C@
+	BRSET	3,041H,L46D0		;46A9	06 41 24		.A$
+	BRCLR	0,044H,L4699		;46AC	01 44 EA		.D.
+	JSR	>L5C57			;46AF	CD 5C 57		.\W
+	JMP	>L45E2			;46B2	CC 45 E2		.E.
+;
+;
+L46B5:	JSR	>L5C57			;46B5	CD 5C 57		.\W
+	JMP	>L45CF			;46B8	CC 45 CF		.E.
+;
+;
+L46BB:	BCLR	3,041H			;46BB	17 41			.A
+	BCLR	4,043H			;46BD	19 43			.C
+	BRCLR	1,04AH,L46C8		;46BF	03 4A 06		.J.
+	BRCLR	0,03FH,L4699		;46C2	01 3F D4		.?.
+	JSR	>L4CB2			;46C5	CD 4C B2		.L.
+;
+L46C8:	JSR	>L5C57			;46C8	CD 5C 57		.\W
+	JSR	>L5A65			;46CB	CD 5A 65		.Ze
+	BRA	L4697			;46CE	20 C7			 .
+;
+;
+L46D0:	BRSET	1,04AH,L46BB		;46D0	02 4A E8		.J.
+	JSR	>L5C57			;46D3	CD 5C 57		.\W
+	BCLR	3,041H			;46D6	17 41			.A
+	JSR	>L5A65			;46D8	CD 5A 65		.Ze
+	BRA	L4697			;46DB	20 BA			 .
+;
+;
+L46DD:	JSR	>L5C57			;46DD	CD 5C 57		.\W
+	JSR	>L4C77			;46E0	CD 4C 77		.Lw
+	BRSET	3,049H,L4697		;46E3	06 49 B1		.I.
+	JMP	>L45CF			;46E6	CC 45 CF		.E.
+;
+;
+L46E9:	JMP	>L4B4B			;46E9	CC 4B 4B		.KK
+;
+;
+L46EC:	LDA	#045H			;46EC	A6 45			.E
+	STA	048H			;46EE	B7 48			.H
+	BRSET	7,043H,L46F9		;46F0	0E 43 06		.C.
+	BRCLR	4,044H,L46F9		;46F3	09 44 03		.D.
+	JSR	>L4C51			;46F6	CD 4C 51		.LQ
+;
+L46F9:	BSET	1,047H			;46F9	12 47			.G
+;
+L46FB:	WAIT				;46FB	8F			.
+;
+	JSR	>L5D0E			;46FC	CD 5D 0E		.].
+	BRCLR	5,043H,L4705		;46FF	0B 43 03		.C.
+	JMP	>L474D			;4702	CC 47 4D		.GM
+;
+;
+L4705:	BRCLR	0,03FH,L470B		;4705	01 3F 03		.?.
+	BRSET	1,03FH,L472C		;4708	02 3F 21		.?!
+;
+L470B:	BRSET	4,043H,L472C		;470B	08 43 1E		.C.
+	BRSET	7,043H,L474A		;470E	0E 43 39		.C9
+	BRSET	0,03FH,L4721		;4711	00 3F 0D		.?.
+	BRSET	1,03FH,L4721		;4714	02 3F 0A		.?.
+	BRSET	2,03FH,L4721		;4717	04 3F 07		.?.
+	BRSET	3,03FH,L4721		;471A	06 3F 04		.?.
+	TST	04DH			;471D	3D 4D			=M
+	BEQ	L4726			;471F	27 05			'.
+;
+L4721:	BRCLR	4,043H,L46FB		;4721	09 43 D7		.C.
+	BRA	L472C			;4724	20 06			 .
+;
+;
+L4726:	JSR	>L5C57			;4726	CD 5C 57		.\W
+	JMP	>L4600			;4729	CC 46 00		.F.
+;
+;
+L472C:	JSR	>L5C57			;472C	CD 5C 57		.\W
+	JSR	>L5A40			;472F	CD 5A 40		.Z@
+	JSR	>L5A65			;4732	CD 5A 65		.Ze
+	TSTA				;4735	4D			M
+	BEQ	L4726			;4736	27 EE			'.
+	CMP	#002H			;4738	A1 02			..
+	BEQ	L4747			;473A	27 0B			'.
+	CMP	#004H			;473C	A1 04			..
+	BEQ	L4747			;473E	27 07			'.
+	CMP	#005H			;4740	A1 05			..
+	BEQ	L4747			;4742	27 03			'.
+	JMP	>L46EC			;4744	CC 46 EC		.F.
+;
+;
+L4747:	JMP	>L4685			;4747	CC 46 85		.F.
+;
+;
+L474A:	JMP	>L4B4B			;474A	CC 4B 4B		.KK
+;
+;
+L474D:	JSR	>L5C57			;474D	CD 5C 57		.\W
+	JSR	>L4C77			;4750	CD 4C 77		.Lw
+	JMP	>L46F9			;4753	CC 46 F9		.F.
+;
+	BRCLR	0,000H,L4787		;4756	01 00 2E  IRQ:
+	BRSET	3,000H,L4769		;4759	06 00 0D		...
+	LDA	04CH			;475C	B6 4C			.L
+	AND	#0EFH			;475E	A4 EF			..
+	STA	090H			;4760	B7 90			..
+	NOP				;4762	9D			.
+	NOP				;4763	9D			.
+	LDA	04CH			;4764	B6 4C			.L
+	STA	090H			;4766	B7 90			..
+;
+L4768:	RTI				;4768	80			.
+;
+;
+L4769:	BRSET	2,043H,L477B		;4769	04 43 0F		.C.
+	LDA	#020H			;476C	A6 20			. 
+	JSR	>L5CAC			;476E	CD 5C AC		.\.
+	BCLR	5,045H			;4771	1B 45			.E
+	BSET	7,040H			;4773	1E 40			.@
+	LDA	#001H			;4775	A6 01			..
+	STA	03DH			;4777	B7 3D			.=
+	BRA	L4768			;4779	20 ED			 .
+;
+;
+L477B:	LDA	#020H			;477B	A6 20			. 
+	JSR	>L5CAC			;477D	CD 5C AC		.\.
+	BCLR	5,045H			;4780	1B 45			.E
+	JSR	>L5C57			;4782	CD 5C 57		.\W
+	BRA	L4768			;4785	20 E1			 .
+;
+;
+L4787:	CLRX				;4787	5F			_
+	LDA	#019H			;4788	A6 19			..
+;
+L478A:	BRCLR	7,080H,L4790		;478A	0F 80 03		...
+	BRSET	6,080H,L4791		;478D	0C 80 01		...
+;
+L4790:	INCX				;4790	5C			\
+;
+L4791:	SUB	#001H			;4791	A0 01			..
+	BHI	L478A			;4793	22 F5			".
+	TXA				;4795	9F			.
+	CMP	#00CH			;4796	A1 0C			..
+	BCS	L47BB			;4798	25 21			%!
+	LDA	#0EFH			;479A	A6 EF			..
+	JSR	>L5CA5			;479C	CD 5C A5		.\.
+	TST	026H			;479F	3D 26			=&
+	BEQ	L47B4			;47A1	27 11			'.
+	BSET	5,000H			;47A3	1A 00			..
+	BSET	2,047H			;47A5	14 47			.G
+	LDA	#02AH			;47A7	A6 2A			.*
+	STA	029H			;47A9	B7 29			.)
+	LDA	#001H			;47AB	A6 01			..
+	STA	056H			;47AD	B7 56			.V
+	JSR	>L5C57			;47AF	CD 5C 57		.\W
+	BRA	L47BA			;47B2	20 06			 .
+;
+;
+L47B4:	BSET	2,047H			;47B4	14 47			.G
+	LDA	#02AH			;47B6	A6 2A			.*
+	STA	029H			;47B8	B7 29			.)
+;
+L47BA:	RTI				;47BA	80			.
+;
+;
+L47BB:	LDA	#0EFH			;47BB	A6 EF			..
+	JSR	>L5CA5			;47BD	CD 5C A5		.\.
+	NOP				;47C0	9D			.
+	NOP				;47C1	9D			.
+	LDA	#010H			;47C2	A6 10			..
+	JSR	>L5CAC			;47C4	CD 5C AC		.\.
+	BCLR	2,047H			;47C7	15 47			.G
+	JMP	>L4768			;47C9	CC 47 68		.Gh
+;
+;
+L47CC:	CMP	#001H			;47CC	A1 01			..
+	BEQ	L47ED			;47CE	27 1D	Jesli Acc=1 to skocz do $47ED
+	CMP	#002H			;47D0	A1 02	
+	BEQ	L47ED			;47D2	27 19	Jesli Acc=2 to skocz do $47ED
+	CMP	#003H			;47D4	A1 03			..
+	BEQ	L482B			;47D6	27 53	Jesli Acc=3 to skocz do $482B
+	CMP	#004H			;47D8	A1 04			..
+	BEQ	L482B			;47DA	27 4F	Jesli Acc=4 to skocz do $482B
+	CMP	#005H			;47DC	A1 05	
+	BEQ	L47EA			;47DE	27 0A   Jesli Acc=5 to skocz do $47EA=$4863
+	CMP	#006H			;47E0	A1 06			..
+	BEQ	L47E7			;47E2	27 03	Jesli Acc=6 to skocz do $47E7=$4876
+	LDA	#008H			;47E4	A6 08	Acc<-8
+	RTS				;47E6	81	Powrot z procedury
+;
+L47E7:	JMP	>L4876			;47E7	CC 48 76 Skocz do $4876
+;
+L47EA:	JMP	>L4863			;47EA	CC 48 63 Skocz do $4863
+;
+L47ED:	LDX	#00CH			;47ED	AE 0C			..
+	CMP	#002H			;47EF	A1 02			..
+	BNE	L47F5			;47F1	26 02			&.
+	LDX	#00DH			;47F3	AE 0D			..
+;
+L47F5:	STX	05FH			;47F5	BF 5F			._
+	LDA	05CH			;47F7	B6 5C			.\
+	CMP	#000H			;47F9	A1 00			..
+	BEQ	L4804			;47FB	27 07			'.
+	CMP	#003H			;47FD	A1 03			..
+	BEQ	L4804			;47FF	27 03			'.
+	LDA	#008H			;4801	A6 08			..
+	RTS				;4803	81			.
+;
+L4804:	LDA	05EH			;4804	B6 5E			.^
+	AND	#0F0H			;4806	A4 F0			..
+	LSRA				;4808	44			D
+	LSRA				;4809	44			D
+	LSRA				;480A	44			D
+	LSRA				;480B	44			D
+	BEQ	L4818			;480C	27 0A			'.
+	CMP	05FH			;480E	B1 5F			._
+	BEQ	L4815			;4810	27 03			'.
+	LDA	#008H			;4812	A6 08			..
+	RTS				;4814	81			.
+;
+;
+L4815:	LDA	#007H			;4815	A6 07			..
+	RTS				;4817	81			.
+;
+;
+L4818:	LSL	05FH			;4818	38 5F			8_
+	LSL	05FH			;481A	38 5F			8_
+	LSL	05FH			;481C	38 5F			8_
+	LSL	05FH			;481E	38 5F			8_
+	LDA	05EH			;4820	B6 5E			.^
+	AND	#00FH			;4822	A4 0F			..
+	ORA	05FH			;4824	BA 5F			._
+	STA	05EH			;4826	B7 5E			.^
+	LDA	#007H			;4828	A6 07			..
+	RTS				;482A	81			.
+;
+;
+L482B:	LDX	#00CH		;482B	AE 0C Zaladuj IX<-$C
+	CMP	#004H		;482D	A1 04 
+	BNE	L4833		;482F	26 02 Jesli Acc=4 to skocz do $482F
+	LDX	#00DH		;4831	AE 0D Zaladuj IX<-$D
+;
+L4833:	STX	05FH			;4833	BF 5F	Skladuj IX pod adres $5F		
+	BRSET	1,044H,L4845		;4835	02 44 0D Skocz do $4845 jesli drugi bit komorki $44 ustawiony
+	BRSET	2,044H,L4845		;4838	04 44 0A Skocz do $4845 jesli trzeci bit komorki $44 ustawiony
+	LDA	05DH			;483B	B6 5D 
+	CMP	#000H			;483D	A1 00 
+	BEQ	L4848			;483F	27 07			
+	CMP	#003H			;4841	A1 03			
+	BEQ	L4848			;4843	27 03			
+;
+L4845:	LDA	#008H			;4845	A6 08			
+	RTS				;4847	81			.
+;
+;
+L4848:	LDA	05EH			;4848	B6 5E			.^
+	AND	#00FH			;484A	A4 0F			..
+	BEQ	L4858			;484C	27 0A			'.
+	CMP	05FH			;484E	B1 5F			._
+	BEQ	L4855			;4850	27 03			'.
+	LDA	#008H			;4852	A6 08			..
+	RTS				;4854	81			.
+;
+;
+L4855:	LDA	#007H			;4855	A6 07			..
+	RTS				;4857	81			.
+;
+;
+L4858:	LDA	05EH			;4858	B6 5E			.^
+	AND	#0F0H			;485A	A4 F0			..
+	ORA	05FH			;485C	BA 5F			._
+	STA	05EH			;485E	B7 5E			.^
+	LDA	#007H			;4860	A6 07			..
+	RTS				;4862	81			.
+;
+;
+L4863:	LDA	05DH			;4863	B6 5D			.]
+	CMP	#000H			;4865	A1 00			..
+	BEQ	L4870			;4867	27 07			'.
+	CMP	#003H			;4869	A1 03			..
+	BEQ	L4873			;486B	27 06			'.
+	LDA	#00BH			;486D	A6 0B			..
+	RTS				;486F	81			.
+;
+;
+L4870:	LDA	#009H			;4870	A6 09			..
+	RTS				;4872	81			.
+;
+;
+L4873:	LDA	#00AH			;4873	A6 0A			..
+	RTS				;4875	81			.
+;
+;
+L4876:	LDA	05CH			;4876	B6 5C Zaladuj Acc z adresu $5C
+	CMP	#000H			;4878	A1 00 
+	BEQ	L4883			;487A	27 07 Jesli rowne zero skocz do $4883
+	CMP	#003H			;487C	A1 03 			..
+	BEQ	L4886			;487E	27 06 Jesli rowne 3 skocz do $4886
+	LDA	#00BH			;4880	A6 0B			..
+	RTS				;4882	81			.
+;
+;
+L4883:	LDA	#009H			;4883	A6 09	Zaladuj Acc<-$9
+	RTS				;4885	81	Wroc z procedury
+;
+;
+L4886:	LDA	#00AH			;4886	A6 0A	Zaladuj Acc<-$A 
+	RTS				;4888	81 Powroc z procedury
+;
+;
+L4889:	LDA	#048H			;4889	A6 48 Acc<-#$48
+	STA	048H			;488B	B7 48 $48<-Acc
+	BCLR	3,043H			;488D	17 43 
+	LDA	>L440E			;488F	C6 44 0E		.D.
+	BEQ	L489D			;4892	27 09			'.
+;
+L4894:	LDA	#004H			;4894	A6 04			..
+	JSR	>L47CC			;4896	CD 47 CC		.G.
+	CMP	#007H			;4899	A1 07			..
+	BNE	L4894			;489B	26 F7			&.
+;
+L489D:	BRCLR	3,042H,L48A4		;489D	07 42 04		.B.
+	LDA	#019H			;48A0	A6 19			..
+	STA	02CH			;48A2	B7 2C			.,
+;
+L48A4:	BCLR	2,047H			;48A4	15 47			.G
+	BRSET	7,045H,L48B2		;48A6	0E 45 09		.E.
+	BRSET	0,043H,L48B2		;48A9	00 43 06		.C.
+	BSET	2,040H			;48AC	14 40			.@
+	LDA	#011H			;48AE	A6 11			..
+	STA	066H			;48B0	B7 66			.f
+;
+L48B2:	LDA	#010H			;48B2	A6 10			..
+	JSR	>L5CAC			;48B4	CD 5C AC		.\.
+	BSET	1,047H			;48B7	12 47			.G
+;
+L48B9:	WAIT				;48B9	8F			.
+;
+	JSR	>L5D0E			;48BA	CD 5D 0E		.].
+	BRSET	2,047H,L48DF		;48BD	04 47 1F		.G.
+	BRSET	1,03FH,L48E5		;48C0	02 3F 22		.?"
+	BRSET	3,03FH,L48E5		;48C3	06 3F 1F		.?.
+	BRCLR	2,03FH,L48E2		;48C6	05 3F 19		.?.
+	BRSET	3,049H,L48F4		;48C9	06 49 28		.I(
+;
+L48CC:	BRSET	4,043H,L48DC		;48CC	08 43 0D		.C.
+	BRSET	7,043H,L48DC		;48CF	0E 43 0A		.C.
+	JSR	>L49DF			;48D2	CD 49 DF		.I.
+	BRCLR	0,03FH,L4906		;48D5	01 3F 2E		.?.
+	BSET	6,047H			;48D8	1C 47			.G
+	BRA	L4908			;48DA	20 2C			 ,
+;
+;
+L48DC:	JMP	>L499C			;48DC	CC 49 9C		.I.
+;
+;
+L48DF:	JMP	>L494B			;48DF	CC 49 4B		.IK
+;
+;
+L48E2:	JMP	>L494F			;48E2	CC 49 4F		.IO
+;
+;
+L48E5:	JSR	>L5D25			;48E5	CD 5D 25		.]%
+	TSTA				;48E8	4D			M
+	BEQ	L4901			;48E9	27 16			'.
+	BRCLR	1,03FH,L48F4		;48EB	03 3F 06		.?.
+	TST	04DH			;48EE	3D 4D			=M
+	BEQ	L48F4			;48F0	27 02			'.
+	DEC	04DH			;48F2	3A 4D			:M
+;
+L48F4:	LDA	04AH			;48F4	B6 4A			.J
+	CMP	#010H			;48F6	A1 10			..
+	BEQ	L48CC			;48F8	27 D2			'.
+	TST	054H			;48FA	3D 54			=T
+	BNE	L48CC			;48FC	26 CE			&.
+	JMP	>L494F			;48FE	CC 49 4F		.IO
+;
+;
+L4901:	BRSET	2,047H,L494B		;4901	04 47 47		.GG
+	BRA	L48B9			;4904	20 B3			 .
+;
+;
+L4906:	BCLR	6,047H			;4906	1D 47			.G
+;
+L4908:	LDA	019H			;4908	B6 19			..
+	CMP	026H			;490A	B1 26			.&
+	BHI	L48B9			;490C	22 AB			".
+	BRCLR	3,041H,L48B9		;490E	07 41 A8		.A.
+;
+L4911:	BCLR	6,047H			;4911	1D 47			.G
+;
+L4913:	LDA	>L440E			;4913	C6 44 0E		.D.
+	BEQ	L493C			;4916	27 24			'$
+	LDA	#003H			;4918	A6 03			..
+	JSR	>L47CC			;491A	CD 47 CC		.G.
+	CMP	#007H			;491D	A1 07			..
+	BEQ	L492A			;491F	27 09			'.
+	BRSET	2,047H,L494B		;4921	04 47 27		.G'
+	BRCLR	2,03FH,L494B		;4924	05 3F 24		.?$
+	WAIT				;4927	8F			.
+;
+	BRA	L4913			;4928	20 E9			 .
+;
+;
+L492A:	LDA	#006H			;492A	A6 06			..
+	JSR	>L47CC			;492C	CD 47 CC		.G.
+	CMP	#009H			;492F	A1 09			..
+	BEQ	L493C			;4931	27 09			'.
+	BRSET	2,047H,L494B		;4933	04 47 15		.G.
+	BRCLR	2,03FH,L494B		;4936	05 3F 12		.?.
+	WAIT				;4939	8F			.
+;
+	BRA	L492A			;493A	20 EE			 .
+;
+;
+L493C:	LDA	#0EFH			;493C	A6 EF			..
+	JSR	>L5CA5			;493E	CD 5C A5		.\.
+	JSR	>L5C57			;4941	CD 5C 57		.\W
+	BCLR	2,040H			;4944	15 40			.@
+	BSET	2,042H			;4946	14 42			.B
+	JMP	>L529D			;4948	CC 52 9D		.R.
+;
+;
+L494B:	TST	026H			;494B	3D 26			=&
+	BEQ	L4993			;494D	27 44			'D
+;
+L494F:	LDA	#0EFH			;494F	A6 EF			..
+	JSR	>L5CA5			;4951	CD 5C A5		.\.
+	BCLR	2,040H			;4954	15 40			.@
+	BSET	2,042H			;4956	14 42			.B
+	LDA	#002H			;4958	A6 02			..
+	STA	02AH			;495A	B7 2A			.*
+	BSET	5,000H			;495C	1A 00			..
+	BSET	0,041H			;495E	10 41			.A
+	BSET	5,PORT_B			;4960	1A 01			..
+	LDA	#064H			;4962	A6 64			.d
+	STA	057H			;4964	B7 57			.W
+	JSR	>L5C57			;4966	CD 5C 57		.\W
+	BCLR	6,047H			;4969	1D 47			.G
+	LDA	>L440E			;496B	C6 44 0E		.D.
+	BEQ	L4982			;496E	27 12			'.
+;
+L4970:	LDA	#003H			;4970	A6 03			..
+	JSR	>L47CC			;4972	CD 47 CC		.G.
+	CMP	#007H			;4975	A1 07			..
+	BNE	L4970			;4977	26 F7			&.
+;
+L4979:	LDA	#006H			;4979	A6 06			..
+	JSR	>L47CC			;497B	CD 47 CC		.G.
+	CMP	#009H			;497E	A1 09			..
+	BNE	L4979			;4980	26 F7			&.
+;
+L4982:	BSET	7,047H			;4982	1E 47			.G
+	JSR	>L58FD			;4984	CD 58 FD		.X.
+	JSR	>L5A40			;4987	CD 5A 40		.Z@
+	BSET	4,043H			;498A	18 43			.C
+	BCLR	2,040H			;498C	15 40			.@
+	BSET	2,042H			;498E	14 42			.B
+	JMP	>L5520			;4990	CC 55 20		.U 
+;
+;
+L4993:	JSR	>L5C57			;4993	CD 5C 57		.\W
+	BCLR	6,047H			;4996	1D 47			.G
+	BSET	7,047H			;4998	1E 47			.G
+	BRA	L49A7			;499A	20 0B			 .
+;
+;
+L499C:	BCLR	4,043H			;499C	19 43			.C
+	TST	026H			;499E	3D 26			=&
+	BEQ	L49A5			;49A0	27 03			'.
+	JMP	>L4911			;49A2	CC 49 11		.I.
+;
+;
+L49A5:	BCLR	2,047H			;49A5	15 47			.G
+;
+L49A7:	LDA	#0EFH			;49A7	A6 EF			..
+	JSR	>L5CA5			;49A9	CD 5C A5		.\.
+	LDA	#020H			;49AC	A6 20			. 
+	JSR	>L5CAC			;49AE	CD 5C AC		.\.
+	BCLR	1,047H			;49B1	13 47			.G
+;
+L49B3:	LDA	>L440E			;49B3	C6 44 0E		.D.
+	BEQ	L49CA			;49B6	27 12			'.
+;
+L49B8:	LDA	#003H			;49B8	A6 03			..
+	JSR	>L47CC			;49BA	CD 47 CC		.G.
+	CMP	#007H			;49BD	A1 07			..
+	BNE	L49B8			;49BF	26 F7			&.
+;
+L49C1:	LDA	#006H			;49C1	A6 06			..
+	JSR	>L47CC			;49C3	CD 47 CC		.G.
+	CMP	#009H			;49C6	A1 09			..
+	BNE	L49C1			;49C8	26 F7			&.
+;
+L49CA:	BCLR	2,040H			;49CA	15 40			.@
+	BSET	2,042H			;49CC	14 42			.B
+	BCLR	1,043H			;49CE	13 43			.C
+	JSR	>L5A40			;49D0	CD 5A 40		.Z@
+	JSR	>L5A65			;49D3	CD 5A 65		.Ze
+	TSTA				;49D6	4D			M
+	BEQ	L49DC			;49D7	27 03			'.
+	JMP	>L4685			;49D9	CC 46 85		.F.
+;
+;
+L49DC:	JMP	>L4600			;49DC	CC 46 00		.F.
+;
+;
+L49DF:	BRCLR	1,043H,L49EC		;49DF	03 43 0A		.C.
+	BRSET	7,046H,L49EC		;49E2	0E 46 07		.F.
+	BRSET	6,043H,L49EC		;49E5	0C 43 04		.C.
+	BSET	4,043H			;49E8	18 43			.C
+	BCLR	1,043H			;49EA	13 43			.C
+;
+L49EC:	RTS				;49EC	81			.
+;
+;
+L49ED:	LDA	#008H			;49ED	A6 08			..
+	STA	048H			;49EF	B7 48			.H
+	BCLR	3,045H			;49F1	17 45			.E
+	CLR	04DH			;49F3	3F 4D			?M
+	CLR	026H			;49F5	3F 26			?&
+	BCLR	6,046H			;49F7	1D 46			.F
+	JSR	>L58FD			;49F9	CD 58 FD		.X.
+	JSR	>L5C75			;49FC	CD 5C 75		.\u
+	BRCLR	6,04AH,L4A0A		;49FF	0D 4A 08		.J.
+	BSET	3,PORT_B			;4A02	16 01			..
+	JSR	>L5C66			;4A04	CD 5C 66		.\f
+	JMP	>L4685			;4A07	CC 46 85		.F.
+;
+;
+L4A0A:	CLI				;4A0A	9A			.
+;
+L4A0B:	LDA	#020H			;4A0B	A6 20			. 
+	JSR	>L5CAC			;4A0D	CD 5C AC		.\.
+	JSR	>L5D8B			;4A10	CD 5D 8B		.].
+	JSR	>L59B4			;4A13	CD 59 B4		.Y.
+	BSET	7,03FH			;4A16	1E 3F			.?
+	LDA	#00AH			;4A18	A6 0A			..
+	JSR	>L590D			;4A1A	CD 59 0D		.Y.
+	JSR	>L5A4A			;4A1D	CD 5A 4A		.ZJ
+	BCLR	1,040H			;4A20	13 40			.@
+	CLR	063H			;4A22	3F 63			?c
+	CLR	064H			;4A24	3F 64			?d
+;
+L4A26:	WAIT				;4A26	8F			.
+;
+	BRSET	0,03FH,L4A2E		;4A27	00 3F 04		.?.
+	BSET	1,040H			;4A2A	12 40			.@
+	BRA	L4A34			;4A2C	20 06			 .
+;
+;
+L4A2E:	BCLR	1,040H			;4A2E	13 40			.@
+	CLR	063H			;4A30	3F 63			?c
+	CLR	064H			;4A32	3F 64			?d
+;
+L4A34:	BRSET	1,03FH,L4A3C		;4A34	02 3F 05		.?.
+	BRSET	1,PORT_B,L4A26		;4A37	02 01 EC		...
+	BRA	L4A5A			;4A3A	20 1E			 .
+;
+;
+L4A3C:	BCLR	1,040H			;4A3C	13 40			.@
+	LDA	063H			;4A3E	B6 63			.c
+	CMP	>L4412			;4A40	C1 44 12		.D.
+	BHI	L4A53			;4A43	22 0E			".
+	LDA	064H			;4A45	B6 64			.d
+	CMP	>L4413			;4A47	C1 44 13		.D.
+	BHI	L4A53			;4A4A	22 07			".
+	CLR	063H			;4A4C	3F 63			?c
+	CLR	064H			;4A4E	3F 64			?d
+	JMP	>L4B12			;4A50	CC 4B 12		.K.
+;
+;
+L4A53:	LDA	#09DH			;4A53	A6 9D			..
+	STA	029H			;4A55	B7 29			.)
+	JMP	>L4A8A			;4A57	CC 4A 8A		.J.
+;
+;
+L4A5A:	BCLR	1,040H			;4A5A	13 40			.@
+	CLR	063H			;4A5C	3F 63			?c
+	CLR	064H			;4A5E	3F 64			?d
+	BSET	4,043H			;4A60	18 43			.C
+	LDA	#0DFH			;4A62	A6 DF			..
+	JSR	>L5CA5			;4A64	CD 5C A5		.\.
+	BCLR	0,042H			;4A67	11 42			.B
+	BCLR	7,03FH			;4A69	1F 3F			.?
+	BSET	3,PORT_B			;4A6B	16 01			..
+	LDA	#080H			;4A6D	A6 80			..
+	STA	029H			;4A6F	B7 29			.)
+	LDA	#032H			;4A71	A6 32			.2
+	STA	04EH			;4A73	B7 4E			.N
+	INC	051H			;4A75	3C 51			<Q
+	LDA	051H			;4A77	B6 51			.Q
+	CMP	#00AH			;4A79	A1 0A			..
+	BCS	L4A87			;4A7B	25 0A			%.
+	CLR	051H			;4A7D	3F 51			?Q
+	LDA	#002H			;4A7F	A6 02			..
+	JSR	>L4C85			;4A81	CD 4C 85		.L.
+	JMP	>L4685			;4A84	CC 46 85		.F.
+;
+;
+L4A87:	JMP	>L46EC			;4A87	CC 46 EC		.F.
+;
+;
+L4A8A:	RSP				;4A8A	9C			.
+	BCLR	4,043H			;4A8B	19 43			.C
+	CLR	025H			;4A8D	3F 25			?%
+	CLR	063H			;4A8F	3F 63			?c
+	LDA	029H			;4A91	B6 29			.)
+	BNE	L4AC0			;4A93	26 2B			&+
+	LDA	019H			;4A95	B6 19			..
+	BEQ	L4AC6			;4A97	27 2D			'-
+	BSET	5,047H			;4A99	1A 47			.G
+	JSR	>L5D54			;4A9B	CD 5D 54		.]T
+	STA	068H			;4A9E	B7 68			.h
+	BCLR	7,045H			;4AA0	1F 45			.E
+	BCLR	1,043H			;4AA2	13 43			.C
+	CLR	037H			;4AA4	3F 37			?7
+	JSR	>L59B9			;4AA6	CD 59 B9		.Y.
+	LDA	#0DFH			;4AA9	A6 DF			..
+	JSR	>L5CA5			;4AAB	CD 5C A5		.\.
+	JSR	>L582D			;4AAE	CD 58 2D		.X-
+;
+L4AB1:	SEI				;4AB1	9B			.
+	BRCLR	4,000H,L4AB8		;4AB2	09 00 03		...
+	CLI				;4AB5	9A			.
+	BRA	L4AB1			;4AB6	20 F9			 .
+;
+;
+L4AB8:	LDA	#004H			;4AB8	A6 04			..
+	STA	02AH			;4ABA	B7 2A			.*
+	CLI				;4ABC	9A			.
+	JMP	>L4889			;4ABD	CC 48 89		.H.
+;
+;
+L4AC0:	BSET	4,047H			;4AC0	18 47			.G
+	BCLR	6,046H			;4AC2	1D 46			.F
+	BRA	L4AC8			;4AC4	20 02			 .
+;
+;
+L4AC6:	BSET	3,047H			;4AC6	16 47			.G
+;
+L4AC8:	BRCLR	7,000H,L4AF8		;4AC8	0F 00 2D		..-
+	TST	019H			;4ACB	3D 19			=.
+	BNE	L4AEB			;4ACD	26 1C			&.
+	LDA	#028H			;4ACF	A6 28			.(
+	STA	062H			;4AD1	B7 62			.b
+;
+L4AD3:	JSR	>L5D6B			;4AD3	CD 5D 6B		.]k
+	AND	#004H			;4AD6	A4 04			..
+	BNE	L4AE3			;4AD8	26 09			&.
+	LDA	#005H			;4ADA	A6 05			..
+	JSR	>L590D			;4ADC	CD 59 0D		.Y.
+	DEC	062H			;4ADF	3A 62			:b
+	BNE	L4AD3			;4AE1	26 F0			&.
+;
+L4AE3:	CLR	062H			;4AE3	3F 62			?b
+	LDA	#00EH			;4AE5	A6 0E			..
+	STA	052H			;4AE7	B7 52			.R
+	BRA	L4AF8			;4AE9	20 0D			 .
+;
+;
+L4AEB:	LDA	01CH			;4AEB	B6 1C			..
+	LSRA				;4AED	44			D
+	LSRA				;4AEE	44			D
+	LSRA				;4AEF	44			D
+	STA	063H			;4AF0	B7 63			.c
+	LDA	#010H			;4AF2	A6 10			..
+	SUB	063H			;4AF4	B0 63			.c
+	STA	052H			;4AF6	B7 52			.R
+;
+L4AF8:	CLR	063H			;4AF8	3F 63			?c
+	LDA	#0DFH			;4AFA	A6 DF			..
+	JSR	>L5CA5			;4AFC	CD 5C A5		.\.
+	JSR	>L582D			;4AFF	CD 58 2D		.X-
+	BCLR	0,042H			;4B02	11 42			.B
+	BSET	3,PORT_B			;4B04	16 01			..
+	JSR	>L5A65			;4B06	CD 5A 65		.Ze
+	TSTA				;4B09	4D			M
+	BEQ	L4B0F			;4B0A	27 03			'.
+	JMP	>L4685			;4B0C	CC 46 85		.F.
+;
+;
+L4B0F:	JMP	>L4600			;4B0F	CC 46 00		.F.
+;
+;
+L4B12:	LDA	#00DH			;4B12	A6 0D			..
+	STA	0F0H			;4B14	B7 F0			..
+	LDA	#001H			;4B16	A6 01			..
+	STA	05DH			;4B18	B7 5D			.]
+	LDA	#028H			;4B1A	A6 28			.(
+	STA	060H			;4B1C	B7 60			.`
+	LDA	05EH			;4B1E	B6 5E			.^
+	AND	#00FH			;4B20	A4 0F			..
+	STA	05EH			;4B22	B7 5E			.^
+	BCLR	1,044H			;4B24	13 44			.D
+	BCLR	2,044H			;4B26	15 44			.D
+	BCLR	7,03FH			;4B28	1F 3F			.?
+	CLR	051H			;4B2A	3F 51			?Q
+	CLR	03BH			;4B2C	3F 3B			?;
+	CLR	03CH			;4B2E	3F 3C			?<
+	BCLR	0,041H			;4B30	11 41			.A
+	BCLR	5,000H			;4B32	1B 00			..
+	CLC				;4B34	98			.
+	BCLR	0,043H			;4B35	11 43			.C
+	BRCLR	4,02FH,L4B46		;4B37	09 2F 0C		./.
+	BCLR	4,02FH			;4B3A	19 2F			./
+	BRCLR	3,03FH,L4B46		;4B3C	07 3F 07		.?.
+	LDA	#084H			;4B3F	A6 84			..
+	STA	029H			;4B41	B7 29			.)
+	JMP	>L4A8A			;4B43	CC 4A 8A		.J.
+;
+;
+L4B46:	CLR	04FH			;4B46	3F 4F			?O
+	JMP	>L4CC5			;4B48	CC 4C C5		.L.
+;
+;
+L4B4B:	JSR	>L5C57			;4B4B	CD 5C 57		.\W
+	BCLR	7,043H			;4B4E	1F 43			.C
+	BCLR	3,042H			;4B50	17 42			.B
+	CLR	02CH			;4B52	3F 2C			?,
+	BCLR	6,044H			;4B54	1D 44			.D
+	CLR	05BH			;4B56	3F 5B			?[
+	BSET	3,PORT_B			;4B58	16 01			..
+	LDA	048H			;4B5A	B6 48			.H
+	CMP	#058H			;4B5C	A1 58			.X
+	BEQ	L4B71			;4B5E	27 11			'.
+	CMP	#068H			;4B60	A1 68			.h
+	BEQ	L4B71			;4B62	27 0D			'.
+	TST	04DH			;4B64	3D 4D			=M
+	BNE	L4B6E			;4B66	26 06			&.
+	LDA	03FH			;4B68	B6 3F			.?
+	AND	#00FH			;4B6A	A4 0F			..
+	BEQ	L4B71			;4B6C	27 03			'.
+;
+L4B6E:	JSR	>L5A65			;4B6E	CD 5A 65		.Ze
+;
+L4B71:	JSR	>L4C3F			;4B71	CD 4C 3F		.L?
+	LDA	>L440E			;4B74	C6 44 0E		.D.
+	BEQ	L4B8D			;4B77	27 14			'.
+	WAIT				;4B79	8F			.
+;
+	LDA	#003H			;4B7A	A6 03			..
+	JSR	>L47CC			;4B7C	CD 47 CC		.G.
+	CMP	#007H			;4B7F	A1 07			..
+	BNE	L4B71			;4B81	26 EE			&.
+;
+L4B83:	WAIT				;4B83	8F			.
+;
+	LDA	#006H			;4B84	A6 06			..
+	JSR	>L47CC			;4B86	CD 47 CC		.G.
+	CMP	#009H			;4B89	A1 09			..
+	BNE	L4B83			;4B8B	26 F6			&.
+;
+L4B8D:	WAIT				;4B8D	8F			.
+;
+	LDA	#002H			;4B8E	A6 02			..
+	JSR	>L47CC			;4B90	CD 47 CC		.G.
+	CMP	#007H			;4B93	A1 07			..
+	BNE	L4B8D			;4B95	26 F6			&.
+;
+L4B97:	WAIT				;4B97	8F			.
+;
+	LDA	#005H			;4B98	A6 05			..
+	JSR	>L47CC			;4B9A	CD 47 CC		.G.
+	CMP	#00AH			;4B9D	A1 0A			..
+	BNE	L4B97			;4B9F	26 F6			&.
+	BSET	2,043H			;4BA1	14 43			.C
+	CLR	05BH			;4BA3	3F 5B			?[
+	CLR	008H			;4BA5	3F 08			?.
+	CLR	02AH			;4BA7	3F 2A			?*
+	BCLR	1,047H			;4BA9	13 47			.G
+	BRSET	6,045H,L4BFF		;4BAB	0C 45 51		.EQ
+	LDA	>L440C			;4BAE	C6 44 0C		.D.
+	STA	028H			;4BB1	B7 28			.(
+;
+L4BB3:	LDA	04CH			;4BB3	B6 4C			.L
+	AND	#0DFH			;4BB5	A4 DF			..
+	BRSET	3,040H,L4BBC		;4BB7	06 40 02		.@.
+	ORA	#002H			;4BBA	AA 02			..
+;
+L4BBC:	STA	04CH			;4BBC	B7 4C			.L
+	JSR	>L5CB3			;4BBE	CD 5C B3		.\.
+	STOP				;4BC1	8E			.
+;
+	BSET	4,000H			;4BC2	18 00			..
+	CLR	025H			;4BC4	3F 25			?%
+;
+L4BC6:	LDA	#002H			;4BC6	A6 02			..
+	STA	009H			;4BC8	B7 09			..
+	LDA	#0FAH			;4BCA	A6 FA			..
+	STA	008H			;4BCC	B7 08			..
+	WAIT				;4BCE	8F			.
+;
+	INC	025H			;4BCF	3C 25			<%
+	BRSET	3,000H,L4BC6		;4BD1	06 00 F2		...
+;
+L4BD4:	BRSET	2,PORT_B,L4BD4		;4BD4	04 01 FD		...
+	JSR	>L5908			;4BD7	CD 59 08		.Y.
+	BCLR	4,000H			;4BDA	19 00			..
+	LDA	025H			;4BDC	B6 25			.%
+	CMP	#003H			;4BDE	A1 03			..
+	BCS	L4BE6			;4BE0	25 04			%.
+	CMP	#011H			;4BE2	A1 11			..
+	BLS	L4BEE			;4BE4	23 08			#.
+;
+L4BE6:	DEC	028H			;4BE6	3A 28			:(
+	BNE	L4BB3			;4BE8	26 C9			&.
+	BCLR	3,040H			;4BEA	17 40			.@
+	BRA	L4BB3			;4BEC	20 C5			 .
+;
+;
+L4BEE:	CLR	025H			;4BEE	3F 25			?%
+	LDA	#001H			;4BF0	A6 01			..
+	STA	02AH			;4BF2	B7 2A			.*
+	LDA	#001H			;4BF4	A6 01			..
+	JSR	>L5CC0			;4BF6	CD 5C C0		.\.
+	CLR	053H			;4BF9	3F 53			?S
+	BCLR	6,044H			;4BFB	1D 44			.D
+	CLR	05BH			;4BFD	3F 5B			?[
+;
+L4BFF:	BCLR	2,043H			;4BFF	15 43			.C
+	BSET	7,040H			;4C01	1E 40			.@
+	CLR	055H			;4C03	3F 55			?U
+	CLR	056H			;4C05	3F 56			?V
+	CLR	057H			;4C07	3F 57			?W
+	CLR	04EH			;4C09	3F 4E			?N
+	JSR	>L582D			;4C0B	CD 58 2D		.X-
+	BCLR	0,042H			;4C0E	11 42			.B
+	BCLR	6,044H			;4C10	1D 44			.D
+	LDA	048H			;4C12	B6 48			.H
+	CMP	#058H			;4C14	A1 58			.X
+	BNE	L4C28			;4C16	26 10			&.
+	LDA	03FH			;4C18	B6 3F			.?
+	AND	#006H			;4C1A	A4 06			..
+	BEQ	L4C3C			;4C1C	27 1E			'.
+	LDA	#004H			;4C1E	A6 04			..
+	JSR	>L4CAA			;4C20	CD 4C AA		.L.
+	BSET	4,043H			;4C23	18 43			.C
+	JMP	>L5520			;4C25	CC 55 20		.U 
+;
+;
+L4C28:	CMP	#068H			;4C28	A1 68			.h
+	BNE	L4C3C			;4C2A	26 10			&.
+	LDA	03FH			;4C2C	B6 3F			.?
+	AND	#006H			;4C2E	A4 06			..
+	BEQ	L4C3C			;4C30	27 0A			'.
+	LDA	#004H			;4C32	A6 04			..
+	JSR	>L4CAA			;4C34	CD 4C AA		.L.
+	BSET	4,043H			;4C37	18 43			.C
+	JMP	>L529D			;4C39	CC 52 9D		.R.
+;
+;
+L4C3C:	JMP	>L45E2			;4C3C	CC 45 E2		.E.
+;
+;
+L4C3F:	SEI				;4C3F	9B			.
+	BRCLR	4,000H,L4C46		;4C40	09 00 03		...
+	CLI				;4C43	9A			.
+	BRA	L4C3F			;4C44	20 F9			 .
+;
+;
+L4C46:	BSET	0,042H			;4C46	10 42			.B
+	CLI				;4C48	9A			.
+
+;
+L4C49:	SEI				;4C49	9B			.
+	BRCLR	2,PORT_B,L4C50		;4C4A	05 01 03		...
+	CLI				;4C4D	9A			.
+	BRA	L4C49			;4C4E	20 F9			 .
+;
+;
+L4C50:	RTS				;4C50	81			.
+;
+;
+L4C51:	LDA	#005H			;4C51	A6 05			..
+	JSR	>L47CC			;4C53	CD 47 CC		.G.
+	CMP	#009H			;4C56	A1 09			..
+	BEQ	L4C63			;4C58	27 09			'.
+;
+L4C5A:	LDA	#001H			;4C5A	A6 01			..
+	JSR	>L47CC			;4C5C	CD 47 CC		.G.
+	CMP	#007H			;4C5F	A1 07			..
+	BNE	L4C5A			;4C61	26 F7			&.
+;
+L4C63:	RTS				;4C63	81			.
+;
+;
+L4C64:	LDA	#005H			;4C64	A6 05			..
+	JSR	>L47CC			;4C66	CD 47 CC		.G.
+	CMP	#00AH			;4C69	A1 0A			..
+	BEQ	L4C76			;4C6B	27 09			'.
+;
+L4C6D:	LDA	#002H			;4C6D	A6 02			..
+	JSR	>L47CC			;4C6F	CD 47 CC		.G.
+	CMP	#007H			;4C72	A1 07			..
+	BNE	L4C6D			;4C74	26 F7			&.
+;
+L4C76:	RTS				;4C76	81			.
+;
+;
+L4C77:	BCLR	5,043H			;4C77	1B 43			.C
+	JSR	>L58FD			;4C79	CD 58 FD		.X.
+	JSR	>L5C75			;4C7C	CD 5C 75		.\u
+	BSET	3,PORT_B			;4C7F	16 01			..
+	JSR	>L5C66			;4C81	CD 5C 66		.\f
+	RTS				;4C84	81			.
+;
+;
+L4C85:	ORA	04AH			;4C85	BA 4A			.J
+	STA	04AH			;4C87	B7 4A			.J
+;
+L4C89:	LDA	#052H			;4C89	A6 52			.R
+	AND	04AH			;4C8B	B4 4A			.J
+	BEQ	L4C93			;4C8D	27 04			'.
+	BSET	1,049H			;4C8F	12 49			.I
+	BRA	L4C95			;4C91	20 02			 .
+;
+;
+L4C93:	BCLR	1,049H			;4C93	13 49			.I
+;
+L4C95:	BRSET	1,049H,L4C9B		;4C95	02 49 03		.I.
+	BRCLR	2,04AH,L4C9F		;4C98	05 4A 04		.J.
+;
+L4C9B:	BSET	3,049H			;4C9B	16 49			.I
+	BRA	L4CA1			;4C9D	20 02			 .
+;
+;
+L4C9F:	BCLR	3,049H			;4C9F	17 49			.I
+;
+L4CA1:	BRCLR	2,04AH,L4CA7		;4CA1	05 4A 03		.J.
+	BSET	2,049H			;4CA4	14 49			.I
+	RTS				;4CA6	81			.
+;
+;
+L4CA7:	BCLR	2,049H			;4CA7	15 49			.I
+	RTS				;4CA9	81			.
+;
+;
+L4CAA:	TAX				;4CAA	97			.
+	COMA				;4CAB	43			C
+	AND	04AH			;4CAC	B4 4A			.J
+	STA	04AH			;4CAE	B7 4A			.J
+	BRA	L4C89			;4CB0	20 D7			 .
+;
+;
+L4CB2:	JSR	>L5A5A			;4CB2	CD 5A 5A		.ZZ
+;
+L4CB5:	BRSET	1,03FH,L4CBE		;4CB5	02 3F 06		.?.
+	BRSET	1,PORT_B,L4CB5		;4CB8	02 01 FA		...
+	LDA	#0FFH			;4CBB	A6 FF			..
+	RTS				;4CBD	81			.
+;
+;
+L4CBE:	LDA	#002H			;4CBE	A6 02			..
+	JSR	>L4CAA			;4CC0	CD 4C AA		.L.
+	CLRA				;4CC3	4F			O
+	RTS				;4CC4	81			.
+;
+;
+L4CC5:	JSR	>L58F5			;4CC5	CD 58 F5		.X.
+	BCLR	0,042H			;4CC8	11 42			.B
+	BCLR	4,046H			;4CCA	19 46			.F
+	LDA	#081H			;4CCC	A6 81			..
+	STA	029H			;4CCE	B7 29			.)
+	JSR	>L58F5			;4CD0	CD 58 F5		.X.
+	CLR	022H			;4CD3	3F 22			?"
+	CLRA				;4CD5	4F			O
+;
+L4CD6:	LDX	#042H			;4CD6	AE 42			.B
+	STX	009H			;4CD8	BF 09			..
+	LDX	#0FAH			;4CDA	AE FA			..
+	STX	008H			;4CDC	BF 08			..
+;
+L4CDE:	BRCLR	5,080H,L4CF0		;4CDE	0B 80 0F		...
+	BRCLR	7,009H,L4CDE		;4CE1	0F 09 FA		...
+	INCA				;4CE4	4C			L
+	CMP	#0FFH			;4CE5	A1 FF			..
+	BNE	L4CD6			;4CE7	26 ED			&.
+	LDA	#08EH			;4CE9	A6 8E			..
+	STA	029H			;4CEB	B7 29			.)
+	JMP	>L4A8A			;4CED	CC 4A 8A		.J.
+;
+;
+L4CF0:	LDX	#01FH			;4CF0	AE 1F			..
+	STX	027H			;4CF2	BF 27			.'
+;
+L4CF4:	BRCLR	7,080H,L4D16		;4CF4	0F 80 1F		...
+	DEC	027H			;4CF7	3A 27			:'
+	BEQ	L4CDE			;4CF9	27 E3			'.
+	BRCLR	7,009H,L4CF4		;4CFB	0F 09 F6		...
+	INCA				;4CFE	4C			L
+	CMP	#0FFH			;4CFF	A1 FF			..
+	BEQ	L4D0D			;4D01	27 0A			'.
+	LDX	#042H			;4D03	AE 42			.B
+	STX	009H			;4D05	BF 09			..
+	LDX	#0FAH			;4D07	AE FA			..
+	STX	008H			;4D09	BF 08			..
+	BRA	L4CF4			;4D0B	20 E7			 .
+;
+;
+L4D0D:	STA	022H			;4D0D	B7 22			."
+	LDA	#08EH			;4D0F	A6 8E			..
+	STA	029H			;4D11	B7 29			.)
+	JMP	>L4A8A			;4D13	CC 4A 8A		.J.
+;
+;
+L4D16:	STA	022H			;4D16	B7 22			."
+	JSR	>L5818			;4D18	CD 58 18		.X.
+	LDX	#002H			;4D1B	AE 02			..
+	JSR	>L59C3			;4D1D	CD 59 C3		.Y.
+;
+L4D20:	BRSET	5,080H,L4D20		;4D20	0A 80 FD		...
+	LDA	#082H			;4D23	A6 82			..
+	STA	029H			;4D25	B7 29			.)
+	JSR	>L5818			;4D27	CD 58 18		.X.
+;
+L4D2A:	BRCLR	5,080H,L4D2A		;4D2A	0B 80 FD		...
+;
+L4D2D:	BRSET	5,080H,L4D2D		;4D2D	0A 80 FD		...
+	LDX	008H			;4D30	BE 08			..
+	JSR	>L5818			;4D32	CD 58 18		.X.
+	COMX				;4D35	53			S
+	STX	01CH			;4D36	BF 1C			..
+	STX	024H			;4D38	BF 24			.$
+	TXA				;4D3A	9F			.
+	LSRA				;4D3B	44			D
+	LSRA				;4D3C	44			D
+	LSRA				;4D3D	44			D
+	LSRA				;4D3E	44			D
+	STA	027H			;4D3F	B7 27			.'
+	TXA				;4D41	9F			.
+	LSRA				;4D42	44			D
+	LSRA				;4D43	44			D
+	SUB	027H			;4D44	B0 27			.'
+	INCA				;4D46	4C			L
+	INCA				;4D47	4C			L
+	STA	01FH			;4D48	B7 1F			..
+	TXA				;4D4A	9F			.
+	SUB	01FH			;4D4B	B0 1F			..
+	STA	01DH			;4D4D	B7 1D			..
+	TXA				;4D4F	9F			.
+	ADD	01FH			;4D50	BB 1F			..
+	STA	01EH			;4D52	B7 1E			..
+	CLR	020H			;4D54	3F 20			? 
+	LDA	#020H			;4D56	A6 20			. 
+	STA	021H			;4D58	B7 21			.!
+	JSR	>L59C4			;4D5A	CD 59 C4		.Y.
+	LDA	#003H			;4D5D	A6 03			..
+	JSR	>L580D			;4D5F	CD 58 0D		.X.
+;
+L4D62:	BRSET	7,080H,L4D62		;4D62	0E 80 FD		...
+;
+L4D65:	BRCLR	7,080H,L4D65		;4D65	0F 80 FD		...
+	LDA	#078H			;4D68	A6 78			.x
+;
+L4D6A:	BRCLR	7,080H,L4D75		;4D6A	0F 80 08		...
+	BRCLR	6,080H,L4D75		;4D6D	0D 80 05		...
+	DECA				;4D70	4A			J
+	BNE	L4D6A			;4D71	26 F7			&.
+	BRA	L4D7C			;4D73	20 07			 .
+;
+;
+L4D75:	LDA	#0A0H			;4D75	A6 A0			..
+	STA	029H			;4D77	B7 29			.)
+	JMP	>L4A8A			;4D79	CC 4A 8A		.J.
+;
+;
+L4D7C:	BRCLR	6,080H,L4D8C		;4D7C	0D 80 0D		...
+	BRSET	7,080H,L4D7C		;4D7F	0E 80 FA		...
+;
+L4D82:	BRCLR	7,080H,L4D82		;4D82	0F 80 FD		...
+;
+L4D85:	BRSET	5,080H,L4D85		;4D85	0A 80 FD		...
+	BSET	4,046H			;4D88	18 46			.F
+	BRA	L4D96			;4D8A	20 0A			 .
+;
+;
+L4D8C:	BCLR	4,046H			;4D8C	19 46			.F
+;
+L4D8E:	BRCLR	5,080H,L4D96		;4D8E	0B 80 05		...
+	BRCLR	6,080H,L4D8E		;4D91	0D 80 FA		...
+	BRA	L4DB3			;4D94	20 1D			 .
+;
+;
+L4D96:	LDX	#004H			;4D96	AE 04			..
+	JSR	>L59C3			;4D98	CD 59 C3		.Y.
+;
+L4D9B:	BRCLR	6,080H,L4D9B		;4D9B	0D 80 FD		...
+	BRSET	4,046H,L4DBD		;4D9E	08 46 1C		.F.
+	LDA	008H			;4DA1	B6 08			..
+	DECA				;4DA3	4A			J
+	DECA				;4DA4	4A			J
+	DECA				;4DA5	4A			J
+	DECA				;4DA6	4A			J
+	DECA				;4DA7	4A			J
+	STA	031H			;4DA8	B7 31			.1
+;
+L4DAA:	BRSET	7,080H,L4DAA		;4DAA	0E 80 FD		...
+	LDA	008H			;4DAD	B6 08			..
+	CMP	031H			;4DAF	B1 31			.1
+	BPL	L4DBA			;4DB1	2A 07			*.
+;
+L4DB3:	LDA	#09FH			;4DB3	A6 9F			..
+	STA	029H			;4DB5	B7 29			.)
+	JMP	>L4A8A			;4DB7	CC 4A 8A		.J.
+;
+;
+L4DBA:	BRCLR	7,080H,L4DBA		;4DBA	0F 80 FD		...
+;
+L4DBD:	LDA	#07DH			;4DBD	A6 7D			.}
+;
+L4DBF:	BRCLR	7,080H,L4DB3		;4DBF	0F 80 F1		...
+	BRCLR	6,080H,L4DB3		;4DC2	0D 80 EE		...
+	DECA				;4DC5	4A			J
+	BNE	L4DBF			;4DC6	26 F7			&.
+	JSR	>L5D6B			;4DC8	CD 5D 6B		.]k
+	AND	#001H			;4DCB	A4 01			..
+	BEQ	L4DD6			;4DCD	27 07			'.
+	LDA	#09DH			;4DCF	A6 9D			..
+	STA	029H			;4DD1	B7 29			.)
+	JMP	>L4A8A			;4DD3	CC 4A 8A		.J.
+;
+;
+L4DD6:	LDA	#020H			;4DD6	A6 20			. 
+	STA	021H			;4DD8	B7 21			.!
+;
+L4DDA:	BRCLR	6,080H,L4DE7		;4DDA	0D 80 0A		...
+	BRSET	7,080H,L4DDA		;4DDD	0E 80 FA		...
+;
+L4DE0:	LDA	#09FH			;4DE0	A6 9F			..
+	STA	029H			;4DE2	B7 29			.)
+	JMP	>L4A8A			;4DE4	CC 4A 8A		.J.
+;
+;
+L4DE7:	BRCLR	5,080H,L4DEF		;4DE7	0B 80 05		...
+	BRCLR	6,080H,L4DE7		;4DEA	0D 80 FA		...
+	BRA	L4DE0			;4DED	20 F1			 .
+;
+;
+L4DEF:	JSR	>L5818			;4DEF	CD 58 18		.X.
+	BSET	6,041H			;4DF2	1C 41			.A
+	LDX	#003H			;4DF4	AE 03			..
+	JSR	>L59C3			;4DF6	CD 59 C3		.Y.
+	JSR	>L59C4			;4DF9	CD 59 C4		.Y.
+	BCLR	6,041H			;4DFC	1D 41			.A
+	BCLR	2,041H			;4DFE	15 41			.A
+	LDA	011H			;4E00	B6 11			..
+	STA	031H			;4E02	B7 31			.1
+	LDA	011H			;4E04	B6 11			..
+	AND	#0C3H			;4E06	A4 C3			..
+	ORA	#028H			;4E08	AA 28			.(
+	STA	011H			;4E0A	B7 11			..
+	LDX	#007H			;4E0C	AE 07			..
+	CLRA				;4E0E	4F			O
+;
+L4E0F:	EOR	011H,X			;4E0F	E8 11			..
+	DECX				;4E11	5A			Z
+	BPL	L4E0F			;4E12	2A FB			*.
+	STA	027H			;4E14	B7 27			.'
+	LSRA				;4E16	44			D
+	LSRA				;4E17	44			D
+	LSRA				;4E18	44			D
+	LSRA				;4E19	44			D
+	EOR	027H			;4E1A	B8 27			.'
+	COMA				;4E1C	43			C
+	AND	#00FH			;4E1D	A4 0F			..
+	STA	027H			;4E1F	B7 27			.'
+	LDA	031H			;4E21	B6 31			.1
+	AND	#03CH			;4E23	A4 3C			.<
+	LSRA				;4E25	44			D
+	LSRA				;4E26	44			D
+	CMP	027H			;4E27	B1 27			.'
+	BEQ	L4E32			;4E29	27 07			'.
+	LDA	#08CH			;4E2B	A6 8C			..
+	STA	029H			;4E2D	B7 29			.)
+	JMP	>L4A8A			;4E2F	CC 4A 8A		.J.
+;
+;
+L4E32:	LDA	031H			;4E32	B6 31			.1
+	STA	011H			;4E34	B7 11			..
+	CLR	031H			;4E36	3F 31			?1
+;
+L4E38:	LDA	01CH			;4E38	B6 1C			..
+	STA	008H			;4E3A	B7 08			..
+	CLR	02FH			;4E3C	3F 2F			?/
+	BSET	5,02FH			;4E3E	1A 2F			./
+	LDA	#005H			;4E40	A6 05			..
+	STA	009H			;4E42	B7 09			..
+	CLI				;4E44	9A			.
+;
+L4E45:	BRSET	6,080H,L4E45		;4E45	0C 80 FD		...
+	JSR	>L5908			;4E48	CD 59 08		.Y.
+	CLR	02FH			;4E4B	3F 2F			?/
+	BRSET	2,041H,L4E57		;4E4D	04 41 07		.A.
+	LDA	#092H			;4E50	A6 92			..
+	STA	029H			;4E52	B7 29			.)
+	JMP	>L4A8A			;4E54	CC 4A 8A		.J.
+;
+;
+L4E57:	LDA	01CH			;4E57	B6 1C			..
+	STA	008H			;4E59	B7 08			..
+	CLR	02FH			;4E5B	3F 2F			?/
+	BSET	6,02FH			;4E5D	1C 2F			./
+	LDA	#007H			;4E5F	A6 07			..
+	STA	009H			;4E61	B7 09			..
+	CLI				;4E63	9A			.
+	LDA	01CH			;4E64	B6 1C			..
+	LSR	01CH			;4E66	34 1C			4.
+	ADD	01CH			;4E68	BB 1C			..
+	STA	01CH			;4E6A	B7 1C			..
+	CLR	019H			;4E6C	3F 19			?.
+;
+L4E6E:	BRSET	6,080H,L4E6E		;4E6E	0C 80 FD		...
+	CLR	02FH			;4E71	3F 2F			?/
+	LDX	#005H			;4E73	AE 05			..
+	JSR	>L59C3			;4E75	CD 59 C3		.Y.
+	LDX	#005H			;4E78	AE 05			..
+	STX	009H			;4E7A	BF 09			..
+	LDA	01CH			;4E7C	B6 1C			..
+	STA	008H			;4E7E	B7 08			..
+	CLI				;4E80	9A			.
+	BSET	0,02FH			;4E81	10 2F			./
+	LDA	#002H			;4E83	A6 02			..
+	STA	027H			;4E85	B7 27			.'
+;
+L4E87:	BRCLR	6,080H,L4E87		;4E87	0D 80 FD		...
+;
+L4E8A:	BRCLR	7,080H,L4E92		;4E8A	0F 80 05		...
+	BRSET	6,080H,L4E8A		;4E8D	0C 80 FA		...
+	BRA	L4EC5			;4E90	20 33			 3
+;
+;
+L4E92:	BSET	7,044H			;4E92	1E 44			.D
+	LDA	01CH			;4E94	B6 1C			..
+;
+L4E96:	BRSET	5,080H,L4E96		;4E96	0A 80 FD		...
+	SUB	008H			;4E99	B0 08			..
+	BCLR	7,044H			;4E9B	1F 44			.D
+	STA	01CH			;4E9D	B7 1C			..
+	LSR	01CH			;4E9F	34 1C			4.
+	ADD	01CH			;4EA1	BB 1C			..
+	STA	01CH			;4EA3	B7 1C			..
+	STA	008H			;4EA5	B7 08			..
+	STX	009H			;4EA7	BF 09			..
+	INC	019H			;4EA9	3C 19			<.
+	DEC	027H			;4EAB	3A 27			:'
+	BNE	L4E87			;4EAD	26 D8			&.
+;
+L4EAF:	BRCLR	6,080H,L4EAF		;4EAF	0D 80 FD		...
+;
+L4EB2:	BRCLR	7,080H,L4EBA		;4EB2	0F 80 05		...
+	BRSET	6,080H,L4EB2		;4EB5	0C 80 FA		...
+	BRA	L4EC5			;4EB8	20 0B			 .
+;
+;
+L4EBA:	BSET	7,044H			;4EBA	1E 44			.D
+;
+L4EBC:	BRCLR	7,080H,L4EBC		;4EBC	0F 80 FD		...
+;
+L4EBF:	BRCLR	7,080H,L4ECC		;4EBF	0F 80 0A		...
+	BRSET	6,080H,L4EBF		;4EC2	0C 80 FA		...
+;
+L4EC5:	LDA	#095H			;4EC5	A6 95			..
+	STA	029H			;4EC7	B7 29			.)
+	JMP	>L4F18			;4EC9	CC 4F 18		.O.
+;
+;
+L4ECC:	BCLR	7,044H			;4ECC	1F 44			.D
+	LDA	01CH			;4ECE	B6 1C			..
+;
+L4ED0:	BRSET	5,080H,L4ED0		;4ED0	0A 80 FD		...
+	SUB	008H			;4ED3	B0 08			..
+	STA	01CH			;4ED5	B7 1C			..
+	LSR	01CH			;4ED7	34 1C			4.
+	ADD	01CH			;4ED9	BB 1C			..
+	STA	01CH			;4EDB	B7 1C			..
+	STA	008H			;4EDD	B7 08			..
+	STX	009H			;4EDF	BF 09			..
+	INC	019H			;4EE1	3C 19			<.
+	BRA	L4EAF			;4EE3	20 CA			 .
+;
+;
+L4EE5:	BRSET	7,044H,L4EF0		;4EE5	0E 44 08		.D.
+	BCLR	7,044H			;4EE8	1F 44			.D
+	LDA	#095H			;4EEA	A6 95			..
+	STA	029H			;4EEC	B7 29			.)
+	BRA	L4F18			;4EEE	20 28			 (
+;
+;
+L4EF0:	BCLR	7,044H			;4EF0	1F 44			.D
+	LDX	#006H			;4EF2	AE 06			..
+	JSR	>L59C3			;4EF4	CD 59 C3		.Y.
+	CLR	02FH			;4EF7	3F 2F			?/
+	CLR	030H			;4EF9	3F 30			?0
+	BSET	3,030H			;4EFB	16 30			.0
+	LDA	#004H			;4EFD	A6 04			..
+	STA	009H			;4EFF	B7 09			..
+	CLR	008H			;4F01	3F 08			?.
+	CLI				;4F03	9A			.
+;
+L4F04:	BRSET	6,080H,L4F04		;4F04	0C 80 FD		...
+	JSR	>L5908			;4F07	CD 59 08		.Y.
+	CLR	030H			;4F0A	3F 30			?0
+	CLR	02FH			;4F0C	3F 2F			?/
+	LDA	#09AH			;4F0E	A6 9A			..
+	STA	029H			;4F10	B7 29			.)
+	JMP	>L4F18			;4F12	CC 4F 18		.O.
+;
+;
+L4F15:	JMP	>L4F3B			;4F15	CC 4F 3B		.O;
+;
+;
+L4F18:	JSR	>L5908			;4F18	CD 59 08		.Y.
+	CLR	02FH			;4F1B	3F 2F			?/
+	CLR	030H			;4F1D	3F 30			?0
+	BRCLR	3,044H,L4F2D		;4F1F	07 44 0B		.D.
+	JSR	>L5D14			;4F22	CD 5D 14		.].
+	CMP	#000H			;4F25	A1 00			..
+	BNE	L4F2D			;4F27	26 04			&.
+	BSET	6,046H			;4F29	1C 46			.F
+	BRA	L4F3B			;4F2B	20 0E			 .
+;
+;
+L4F2D:	LDX	#008H			;4F2D	AE 08			..
+;
+L4F2F:	LDA	011H,X			;4F2F	E6 11			..
+	STA	032H,X			;4F31	E7 32			.2
+	DECX				;4F33	5A			Z
+	BPL	L4F2F			;4F34	2A F9			*.
+	BSET	3,044H			;4F36	16 44			.D
+	JMP	>L4A8A			;4F38	CC 4A 8A		.J.
+;
+;
+L4F3B:	LDX	#008H			;4F3B	AE 08			..
+;
+L4F3D:	CLR	032H,X			;4F3D	6F 32			o2
+	DECX				;4F3F	5A			Z
+	BPL	L4F3D			;4F40	2A FB			*.
+	BCLR	3,044H			;4F42	17 44			.D
+	LDA	>L4408			;4F44	C6 44 08		.D.
+	BEQ	L4F76			;4F47	27 2D			'-
+	LDX	#006H			;4F49	AE 06			..
+	CLR	023H			;4F4B	3F 23			?#
+;
+L4F4D:	LSL	022H			;4F4D	38 22			8"
+	ROL	023H			;4F4F	39 23			9#
+	DECX				;4F51	5A			Z
+	BNE	L4F4D			;4F52	26 F9			&.
+	CLRX				;4F54	5F			_
+	DECX				;4F55	5A			Z
+;
+L4F56:	INCX				;4F56	5C			\
+	LDA	022H			;4F57	B6 22			."
+	SUB	024H			;4F59	B0 24			.$
+	STA	022H			;4F5B	B7 22			."
+	LDA	023H			;4F5D	B6 23			.#
+	SBC	#000H			;4F5F	A2 00			..
+	STA	023H			;4F61	B7 23			.#
+	BCC	L4F56			;4F63	24 F1			$.
+	CPX	>L441A			;4F65	C3 44 1A		.D.
+	BCS	L4F6F			;4F68	25 05			%.
+	CPX	>L441B			;4F6A	C3 44 1B		.D.
+	BLS	L4F76			;4F6D	23 07			#.
+;
+L4F6F:	LDA	#08FH			;4F6F	A6 8F			..
+	STA	029H			;4F71	B7 29			.)
+	JMP	>L4A8A			;4F73	CC 4A 8A		.J.
+;
+;
+L4F76:	TST	019H			;4F76	3D 19			=.
+	BEQ	L4F89			;4F78	27 0F			'.
+	BRCLR	2,041H,L4F8C		;4F7A	05 41 0F		.A.
+	BCLR	2,041H			;4F7D	15 41			.A
+	LDA	019H			;4F7F	B6 19			..
+	CMP	#001H			;4F81	A1 01			..
+	BNE	L4F89			;4F83	26 04			&.
+	CLR	029H			;4F85	3F 29			?)
+	CLR	019H			;4F87	3F 19			?.
+;
+L4F89:	JMP	>L4A8A			;4F89	CC 4A 8A		.J.
+;
+;
+L4F8C:	JSR	>L5D5D			;4F8C	CD 5D 5D		.]]
+	AND	#001H			;4F8F	A4 01			..
+	BEQ	L4F9A			;4F91	27 07			'.
+	LDA	#083H			;4F93	A6 83			..
+	STA	029H			;4F95	B7 29			.)
+	JMP	>L4A8A			;4F97	CC 4A 8A		.J.
+;
+;
+L4F9A:	JSR	>L5908			;4F9A	CD 59 08		.Y.
+	JSR	>L59B9			;4F9D	CD 59 B9		.Y.
+	BSET	1,042H			;4FA0	12 42			.B
+;
+L4FA2:	LDA	#086H			;4FA2	A6 86			..
+	STA	029H			;4FA4	B7 29			.)
+	LDA	#00FH			;4FA6	A6 0F			..
+	JSR	>L580D			;4FA8	CD 58 0D		.X.
+	LDA	#005H			;4FAB	A6 05			..
+	STA	028H			;4FAD	B7 28			.(
+;
+L4FAF:	BRSET	6,080H,L4FAF		;4FAF	0C 80 FD		...
+	CLR	02FH			;4FB2	3F 2F			?/
+	CLR	030H			;4FB4	3F 30			?0
+	BCLR	1,042H			;4FB6	13 42			.B
+	BSET	4,030H			;4FB8	18 30			.0
+	LDA	#04CH			;4FBA	A6 4C			.L
+	STA	008H			;4FBC	B7 08			..
+	BRA	L4FC3			;4FBE	20 03			 .
+;
+;
+L4FC0:	BRSET	6,080H,L4FC0		;4FC0	0C 80 FD		...
+;
+L4FC3:	BRCLR	5,080H,L4FCB		;4FC3	0B 80 05		...
+	BRCLR	6,080H,L4FC3		;4FC6	0D 80 FA		...
+	BRA	L500A			;4FC9	20 3F			 ?
+;
+;
+L4FCB:	LDA	008H			;4FCB	B6 08			..
+	LDX	02DH			;4FCD	BE 2D			.-
+	STA	063H			;4FCF	B7 63			.c
+	STX	064H			;4FD1	BF 64			.d
+;
+L4FD3:	BRCLR	6,080H,L4FD3		;4FD3	0D 80 FD		...
+;
+L4FD6:	BRCLR	7,080H,L4FDE		;4FD6	0F 80 05		...
+	BRSET	6,080H,L4FD6		;4FD9	0C 80 FA		...
+	BRA	L500A			;4FDC	20 2C			 ,
+;
+;
+L4FDE:	BRCLR	7,080H,L4FDE		;4FDE	0F 80 FD		...
+;
+L4FE1:	BRCLR	7,080H,L4FE9		;4FE1	0F 80 05		...
+	BRSET	6,080H,L4FE1		;4FE4	0C 80 FA		...
+	BRA	L500A			;4FE7	20 21			 !
+;
+;
+L4FE9:	BRCLR	7,080H,L4FE9		;4FE9	0F 80 FD		...
+;
+L4FEC:	BRCLR	6,080H,L4FF4		;4FEC	0D 80 05		...
+	BRSET	7,080H,L4FEC		;4FEF	0E 80 FA		...
+	BRA	L500A			;4FF2	20 16			 .
+;
+;
+L4FF4:	BRCLR	5,080H,L4FFC		;4FF4	0B 80 05		...
+	BRCLR	6,080H,L4FF4		;4FF7	0D 80 FA		...
+	BRA	L500A			;4FFA	20 0E			 .
+;
+;
+L4FFC:	BCLR	1,042H			;4FFC	13 42			.B
+	LDX	02DH			;4FFE	BE 2D			.-
+	CPX	064H			;5000	B3 64			.d
+	BEQ	L5017			;5002	27 13			'.
+	DEC	064H			;5004	3A 64			:d
+	CPX	064H			;5006	B3 64			.d
+	BEQ	L5017			;5008	27 0D			'.
+;
+L500A:	DEC	028H			;500A	3A 28			:(
+	BNE	L4FC0			;500C	26 B2			&.
+;
+L500E:	LDA	#087H			;500E	A6 87			..
+	STA	029H			;5010	B7 29			.)
+	CLR	028H			;5012	3F 28			?(
+	JMP	>L4A8A			;5014	CC 4A 8A		.J.
+;
+;
+L5017:	LDA	063H			;5017	B6 63			.c
+	SUB	008H			;5019	B0 08			..
+	CMP	#003H			;501B	A1 03			..
+	BCS	L500A			;501D	25 EB			%.
+	CMP	#00FH			;501F	A1 0F			..
+	BHI	L500A			;5021	22 E7			".
+	LDA	028H			;5023	B6 28			.(
+	CMP	#003H			;5025	A1 03			..
+	BLS	L500E			;5027	23 E5			#.
+	CLR	028H			;5029	3F 28			?(
+	BRCLR	4,046H,L504A		;502B	09 46 1C		.F.
+	DEC	019H			;502E	3A 19			:.
+	LDA	#003H			;5030	A6 03			..
+	JSR	>L5D7A			;5032	CD 5D 7A		.]z
+	CLR	029H			;5035	3F 29			?)
+	BSET	5,047H			;5037	1A 47			.G
+	BSET	7,047H			;5039	1E 47			.G
+	JSR	>L59BE			;503B	CD 59 BE		.Y.
+	BSET	0,041H			;503E	10 41			.A
+	LDA	#05FH			;5040	A6 5F			._
+	STA	056H			;5042	B7 56			.V
+	JSR	>L582D			;5044	CD 58 2D		.X-
+	JMP	>L5520			;5047	CC 55 20		.U 
+;
+;
+L504A:	BCLR	1,PORT_B			;504A	13 01			..
+	LDA	#060H			;504C	A6 60			.`
+	STA	009H			;504E	B7 09			..
+	CLR	062H			;5050	3F 62			?b
+	INC	062H			;5052	3C 62			<b
+	LDX	#009H			;5054	AE 09			..
+	JSR	>L59C3			;5056	CD 59 C3		.Y.
+	LDA	#005H			;5059	A6 05			..
+	STA	064H			;505B	B7 64			.d
+	CLR	02FH			;505D	3F 2F			?/
+	CLR	030H			;505F	3F 30			?0
+	BSET	0,030H			;5061	10 30			.0
+	LDA	#007H			;5063	A6 07			..
+	STA	009H			;5065	B7 09			..
+	LDA	#085H			;5067	A6 85			..
+	STA	008H			;5069	B7 08			..
+	STA	02EH			;506B	B7 2E			..
+	CLI				;506D	9A			.
+;
+L506E:	BRCLR	6,080H,L506E		;506E	0D 80 FD		...
+;
+L5071:	BRCLR	7,080H,L507C		;5071	0F 80 08		...
+	BRSET	6,080H,L5071		;5074	0C 80 FA		...
+	LDA	#09BH			;5077	A6 9B			..
+	JMP	>L524E			;5079	CC 52 4E		.RN
+;
+;
+L507C:	BRCLR	7,080H,L507C		;507C	0F 80 FD		...
+;
+L507F:	BRCLR	6,080H,L5088		;507F	0D 80 06		...
+	BRSET	7,080H,L507F		;5082	0E 80 FA		...
+;
+L5085:	BRCLR	7,080H,L5085		;5085	0F 80 FD		...
+;
+L5088:	BRCLR	6,080H,L5093		;5088	0D 80 08		...
+	BRSET	7,080H,L5088		;508B	0E 80 FA		...
+	LDA	#09CH			;508E	A6 9C			..
+	JMP	>L524E			;5090	CC 52 4E		.RN
+;
+;
+L5093:	BRCLR	5,080H,L509E		;5093	0B 80 08		...
+	BRCLR	6,080H,L5093		;5096	0D 80 FA		...
+	LDA	#09BH			;5099	A6 9B			..
+	JMP	>L524E			;509B	CC 52 4E		.RN
+;
+;
+L509E:	INC	062H			;509E	3C 62			<b
+	LDA	062H			;50A0	B6 62			.b
+	CMP	#023H			;50A2	A1 23			.#
+	BLS	L50A9			;50A4	23 03			#.
+	JMP	>L524C			;50A6	CC 52 4C		.RL
+;
+;
+L50A9:	DEC	064H			;50A9	3A 64			:d
+	BEQ	L50C5			;50AB	27 18			'.
+	LDA	02EH			;50AD	B6 2E			..
+	SUB	008H			;50AF	B0 08			..
+	CMP	#004H			;50B1	A1 04			..
+	BCC	L50B8			;50B3	24 03			$.
+	JMP	>L500E			;50B5	CC 50 0E		.P.
+;
+;
+L50B8:	CMP	#00FH			;50B8	A1 0F			..
+	BLS	L50BF			;50BA	23 03			#.
+	JMP	>L500E			;50BC	CC 50 0E		.P.
+;
+;
+L50BF:	LDA	008H			;50BF	B6 08			..
+	STA	02EH			;50C1	B7 2E			..
+	BRA	L506E			;50C3	20 A9			 .
+;
+;
+L50C5:	BRCLR	6,080H,L50C5		;50C5	0D 80 FD		...
+;
+L50C8:	BRSET	6,080H,L50C8		;50C8	0C 80 FD		...
+	SEI				;50CB	9B			.
+	INC	062H			;50CC	3C 62			<b
+;
+L50CE:	BRCLR	6,080H,L50CE		;50CE	0D 80 FD		...
+	CLI				;50D1	9A			.
+	LDA	062H			;50D2	B6 62			.b
+	CMP	#023H			;50D4	A1 23			.#
+	BLS	L50C8			;50D6	23 F0			#.
+	JMP	>L524C			;50D8	CC 52 4C		.RL
+;
+;
+L50DB:	SEI				;50DB	9B			.
+	BCLR	4,PORT_B			;50DC	19 01			..
+	BSET	1,PORT_B			;50DE	12 01			..
+	LDA	#088H			;50E0	A6 88			..
+	STA	029H			;50E2	B7 29			.)
+	LDA	#002H			;50E4	A6 02			..
+	STA	028H			;50E6	B7 28			.(
+	BSET	5,046H			;50E8	1A 46			.F
+	CLR	063H			;50EA	3F 63			?c
+	CLR	064H			;50EC	3F 64			?d
+	LDA	#002H			;50EE	A6 02			..
+	JSR	>L580D			;50F0	CD 58 0D		.X.
+	BRSET	6,080H,L50F8		;50F3	0C 80 02		...
+	INC	062H			;50F6	3C 62			<b
+;
+L50F8:	BRCLR	6,080H,L50F8		;50F8	0D 80 FD		...
+;
+L50FB:	SEI				;50FB	9B			.
+	LDA	#099H			;50FC	A6 99			..
+	STA	029H			;50FE	B7 29			.)
+	BSET	2,02FH			;5100	14 2F			./
+	LDA	#001H			;5102	A6 01			..
+	STA	009H			;5104	B7 09			..
+	CLR	008H			;5106	3F 08			?.
+	CLI				;5108	9A			.
+	LDA	062H			;5109	B6 62			.b
+	CMP	#022H			;510B	A1 22			."
+	BNE	L5146			;510D	26 37			&7
+	BRCLR	5,046H,L5146		;510F	0B 46 34		.F4
+;
+L5112:	BRSET	7,080H,L5112		;5112	0E 80 FD		...
+	SEI				;5115	9B			.
+	BCLR	5,046H			;5116	1B 46			.F
+;
+L5118:	BRCLR	7,080H,L5118		;5118	0F 80 FD		...
+	LDA	#032H			;511B	A6 32			.2
+;
+L511D:	NOP				;511D	9D			.
+	NOP				;511E	9D			.
+	DECA				;511F	4A			J
+	BNE	L511D			;5120	26 FB			&.
+	JSR	>L59BE			;5122	CD 59 BE		.Y.
+	BSET	5,000H			;5125	1A 00			..
+	LDA	#064H			;5127	A6 64			.d
+;
+L5129:	NOP				;5129	9D			.
+	NOP				;512A	9D			.
+	DECA				;512B	4A			J
+	BNE	L5129			;512C	26 FB			&.
+	BCLR	5,000H			;512E	1B 00			..
+	LDA	#0FAH			;5130	A6 FA			..
+;
+L5132:	NOP				;5132	9D			.
+	NOP				;5133	9D			.
+	NOP				;5134	9D			.
+	NOP				;5135	9D			.
+	NOP				;5136	9D			.
+	NOP				;5137	9D			.
+	NOP				;5138	9D			.
+	DECA				;5139	4A			J
+	BNE	L5132			;513A	26 F6			&.
+	JSR	>L59B9			;513C	CD 59 B9		.Y.
+	LDA	02DH			;513F	B6 2D			.-
+	ADD	#00EH			;5141	AB 0E			..
+	STA	02DH			;5143	B7 2D			.-
+	CLI				;5145	9A			.
+;
+L5146:	BRSET	6,080H,L5146		;5146	0C 80 FD		...
+	JSR	>L5908			;5149	CD 59 08		.Y.
+	TST	028H			;514C	3D 28			=(
+	BNE	L5158			;514E	26 08			&.
+;
+L5150:	LDA	02DH			;5150	B6 2D			.-
+	STA	028H			;5152	B7 28			.(
+	CLR	02DH			;5154	3F 2D			?-
+	BRA	L50F8			;5156	20 A0			 .
+;
+;
+L5158:	LDA	02DH			;5158	B6 2D			.-
+	BNE	L515F			;515A	26 03			&.
+	JMP	>L524C			;515C	CC 52 4C		.RL
+;
+;
+L515F:	INC	062H			;515F	3C 62			<b
+	LDA	062H			;5161	B6 62			.b
+	CMP	#023H			;5163	A1 23			.#
+	BLS	L516A			;5165	23 03			#.
+	JMP	>L524C			;5167	CC 52 4C		.RL
+;
+;
+L516A:	LDA	062H			;516A	B6 62			.b
+	CMP	#019H			;516C	A1 19			..
+	BCS	L5150			;516E	25 E0			%.
+	LDA	062H			;5170	B6 62			.b
+	CMP	>L440F			;5172	C1 44 0F		.D.
+	BNE	L5189			;5175	26 12			&.
+	BCLR	1,PORT_B			;5177	13 01			..
+	BSET	4,PORT_B			;5179	18 01			..
+	LDA	>L4410			;517B	C6 44 10		.D.
+	STA	063H			;517E	B7 63			.c
+	LDA	>L4411			;5180	C6 44 11		.D.
+	STA	064H			;5183	B7 64			.d
+	LDA	#0FFH			;5185	A6 FF			..
+	STA	02EH			;5187	B7 2E			..
+;
+L5189:	LDA	028H			;5189	B6 28			.(
+	LSLA				;518B	48			H
+	LSLA				;518C	48			H
+	ADD	028H			;518D	BB 28			.(
+	CMP	02DH			;518F	B1 2D			.-
+	BCS	L5195			;5191	25 02			%.
+	BRA	L5150			;5193	20 BB			 .
+;
+;
+L5195:	LDA	#00FH			;5195	A6 0F			..
+	CMP	02DH			;5197	B1 2D			.-
+	BHI	L5150			;5199	22 B5			".
+	BRCLR	6,080H,L5195		;519B	0D 80 F7		...
+	LDA	#0C8H			;519E	A6 C8			..
+;
+L51A0:	BRCLR	7,080H,L51AB		;51A0	0F 80 08		...
+	BRCLR	7,080H,L51AB		;51A3	0F 80 05		...
+	DECA				;51A6	4A			J
+	BNE	L51A0			;51A7	26 F7			&.
+	BRA	L51B1			;51A9	20 06			 .
+;
+;
+L51AB:	BRCLR	7,080H,L51AB		;51AB	0F 80 FD		...
+	JSR	>L5274			;51AE	CD 52 74		.Rt
+;
+L51B1:	CLR	02EH			;51B1	3F 2E			?.
+	JMP	>L51F5			;51B3	CC 51 F5		.Q.
+;
+;
+L51B6:	JSR	>L5908			;51B6	CD 59 08		.Y.
+	LDX	#00AH			;51B9	AE 0A			..
+	JSR	>L59C3			;51BB	CD 59 C3		.Y.
+	CLR	02DH			;51BE	3F 2D			?-
+	TST	02EH			;51C0	3D 2E			=.
+	BEQ	L51F5			;51C2	27 31			'1
+	CLR	02FH			;51C4	3F 2F			?/
+	CLR	030H			;51C6	3F 30			?0
+	BSET	2,030H			;51C8	14 30			.0
+	LDA	#005H			;51CA	A6 05			..
+	STA	02DH			;51CC	B7 2D			.-
+	LDA	#007H			;51CE	A6 07			..
+	STA	009H			;51D0	B7 09			..
+	LDA	#0EAH			;51D2	A6 EA			..
+	STA	008H			;51D4	B7 08			..
+	CLI				;51D6	9A			.
+	BSET	1,PORT_B			;51D7	12 01			..
+	BCLR	4,PORT_B			;51D9	19 01			..
+	JSR	>L5985			;51DB	CD 59 85		.Y.
+	JSR	>L59AB			;51DE	CD 59 AB		.Y.
+	BCLR	1,PORT_B			;51E1	13 01			..
+	BSET	4,PORT_B			;51E3	18 01			..
+;
+L51E5:	BRSET	7,080H,L51E5		;51E5	0E 80 FD		...
+	JSR	>L5908			;51E8	CD 59 08		.Y.
+	CLR	02DH			;51EB	3F 2D			?-
+;
+L51ED:	BRCLR	7,080H,L51ED		;51ED	0F 80 FD		...
+	JSR	>L5274			;51F0	CD 52 74		.Rt
+	BRA	L51F5			;51F3	20 00			 .
+;
+;
+L51F5:	CLR	062H			;51F5	3F 62			?b
+	BCLR	1,PORT_B			;51F7	13 01			..
+	BSET	4,PORT_B			;51F9	18 01			..
+	CLR	02FH			;51FB	3F 2F			?/
+	CLR	030H			;51FD	3F 30			?0
+	BSET	1,030H			;51FF	12 30			.0
+	LDA	#007H			;5201	A6 07			..
+	STA	009H			;5203	B7 09			..
+	LDA	#0EAH			;5205	A6 EA			..
+	STA	008H			;5207	B7 08			..
+	LDA	#005H			;5209	A6 05			..
+	STA	02DH			;520B	B7 2D			.-
+	CLI				;520D	9A			.
+;
+L520E:	BRSET	6,080H,L520E		;520E	0C 80 FD		...
+;
+L5211:	BRCLR	6,080H,L5211		;5211	0D 80 FD		...
+	INC	062H			;5214	3C 62			<b
+	LDA	062H			;5216	B6 62			.b
+	CMP	#00AH			;5218	A1 0A			..
+	BCS	L520E			;521A	25 F2			%.
+	BRA	L5248			;521C	20 2A			 *
+;
+;
+L521E:	JSR	>L5908			;521E	CD 59 08		.Y.
+	LDA	062H			;5221	B6 62			.b
+	BEQ	L5227			;5223	27 02			'.
+	BSET	0,043H			;5225	10 43			.C
+;
+L5227:	LDA	02EH			;5227	B6 2E			..
+	BNE	L522D			;5229	26 02			&.
+	BSET	0,043H			;522B	10 43			.C
+;
+L522D:	CLR	062H			;522D	3F 62			?b
+	CLR	02EH			;522F	3F 2E			?.
+	CLR	063H			;5231	3F 63			?c
+	CLR	064H			;5233	3F 64			?d
+	BCLR	5,046H			;5235	1B 46			.F
+	JSR	>L5D5D			;5237	CD 5D 5D		.]]
+	AND	#00FH			;523A	A4 0F			..
+	CMP	#004H			;523C	A1 04			..
+	BEQ	L525B			;523E	27 1B			'.
+	LDA	#089H			;5240	A6 89			..
+	STA	029H			;5242	B7 29			.)
+	BSET	1,PORT_B			;5244	12 01			..
+	BRA	L5265			;5246	20 1D			 .
+;
+;
+L5248:	LDA	#098H			;5248	A6 98			..
+	BRA	L524E			;524A	20 02			 .
+;
+;
+L524C:	LDA	#096H			;524C	A6 96			..
+;
+L524E:	STA	029H			;524E	B7 29			.)
+	JSR	>L5908			;5250	CD 59 08		.Y.
+	BSET	1,PORT_B			;5253	12 01			..
+	CLR	063H			;5255	3F 63			?c
+	CLR	030H			;5257	3F 30			?0
+	BRA	L5265			;5259	20 0A			 .
+;
+;
+L525B:	LDA	#001H			;525B	A6 01			..
+	CMP	019H			;525D	B1 19			..
+	BCS	L5268			;525F	25 07			%.
+	LDA	#082H			;5261	A6 82			..
+	STA	029H			;5263	B7 29			.)
+;
+L5265:	JMP	>L4A8A			;5265	CC 4A 8A		.J.
+;
+;
+L5268:	DEC	019H			;5268	3A 19			:.
+	LDA	#003H			;526A	A6 03			..
+	JSR	>L5D7A			;526C	CD 5D 7A		.]z
+	CLR	029H			;526F	3F 29			?)
+	JMP	>L4A8A			;5271	CC 4A 8A		.J.
+;
+;
+L5274:	LDA	#07DH			;5274	A6 7D			.}
+;
+L5276:	BRCLR	7,080H,L529C		;5276	0F 80 23		..#
+	BRCLR	6,080H,L529C		;5279	0D 80 20		.. 
+	DECA				;527C	4A			J
+	BNE	L5276			;527D	26 F7			&.
+	JSR	>L59BE			;527F	CD 59 BE		.Y.
+	BSET	5,000H			;5282	1A 00			..
+	LDA	#064H			;5284	A6 64			.d
+;
+L5286:	NOP				;5286	9D			.
+	NOP				;5287	9D			.
+	DECA				;5288	4A			J
+	BNE	L5286			;5289	26 FB			&.
+	BCLR	5,000H			;528B	1B 00			..
+	LDA	#0FAH			;528D	A6 FA			..
+;
+L528F:	NOP				;528F	9D			.
+	NOP				;5290	9D			.
+	NOP				;5291	9D			.
+	NOP				;5292	9D			.
+	NOP				;5293	9D			.
+	NOP				;5294	9D			.
+	NOP				;5295	9D			.
+	DECA				;5296	4A			J
+	BNE	L528F			;5297	26 F6			&.
+	JSR	>L59B9			;5299	CD 59 B9		.Y.
+;
+L529C:	RTS				;529C	81			.
+;
+;
+L529D:	LDA	#068H			;529D	A6 68			.h
+	STA	048H			;529F	B7 48			.H
+	LDA	#0ABH			;52A1	A6 AB			..
+	STA	067H			;52A3	B7 67			.g
+	JSR	>L4C3F			;52A5	CD 4C 3F		.L?
+	LDA	#020H			;52A8	A6 20			. 
+	JSR	>L5CAC			;52AA	CD 5C AC		.\.
+	LDA	019H			;52AD	B6 19			..
+	STA	01FH			;52AF	B7 1F			..
+	JSR	>L5A40			;52B1	CD 5A 40		.Z@
+	LDA	01FH			;52B4	B6 1F			..
+	STA	019H			;52B6	B7 19			..
+	JSR	>L59B9			;52B8	CD 59 B9		.Y.
+	JSR	>L58FD			;52BB	CD 58 FD		.X.
+	LDA	#005H			;52BE	A6 05			..
+	JSR	>L590D			;52C0	CD 59 0D		.Y.
+	BRCLR	2,045H,L52DE		;52C3	05 45 18		.E.
+	LDA	019H			;52C6	B6 19			..
+	SUB	026H			;52C8	B0 26			.&
+	STA	027H			;52CA	B7 27			.'
+	LDA	037H			;52CC	B6 37			.7
+	SUB	027H			;52CE	B0 27			.'
+	BRCLR	4,045H,L52DA		;52D0	09 45 07		.E.
+	ADD	>L4407			;52D3	CB 44 07		.D.
+	BCLR	4,045H			;52D6	19 45			.E
+	BRA	L52DC			;52D8	20 02			 .
+;
+;
+L52DA:	ADD	#014H			;52DA	AB 14			..
+;
+L52DC:	STA	038H			;52DC	B7 38			.8
+;
+L52DE:	JSR	>L58F5			;52DE	CD 58 F5		.X.
+	BSET	1,PORT_B			;52E1	12 01			..
+	BSET	4,PORT_B			;52E3	18 01			..
+	LDX	#00BH			;52E5	AE 0B			..
+	JSR	>L59C3			;52E7	CD 59 C3		.Y.
+	LDA	#08BH			;52EA	A6 8B			..
+	STA	029H			;52EC	B7 29			.)
+	LDA	#004H			;52EE	A6 04			..
+	JSR	>L580D			;52F0	CD 58 0D		.X.
+	BSET	4,02FH			;52F3	18 2F			./
+	JSR	>L5916			;52F5	CD 59 16		.Y.
+	TSTA				;52F8	4D			M
+	BEQ	L52FE			;52F9	27 03			'.
+	JMP	>L54CD			;52FB	CC 54 CD		.T.
+;
+;
+L52FE:	LDX	#002H			;52FE	AE 02			..
+;
+L5300:	JSR	>L5828			;5300	CD 58 28		.X(
+	BSET	4,02FH			;5303	18 2F			./
+	JSR	>L59A2			;5305	CD 59 A2		.Y.
+	JSR	>L5D6B			;5308	CD 5D 6B		.]k
+	AND	#008H			;530B	A4 08			..
+	BEQ	L5312			;530D	27 03			'.
+	JMP	>L54CD			;530F	CC 54 CD		.T.
+;
+;
+L5312:	JSR	>L597C			;5312	CD 59 7C		.Y|
+	DECX				;5315	5A			Z
+	BNE	L5300			;5316	26 E8			&.
+	LDX	008H			;5318	BE 08			..
+	COMX				;531A	53			S
+	CPX	#008H			;531B	A3 08			..
+	BHI	L5323			;531D	22 04			".
+	LDX	#001H			;531F	AE 01			..
+	BRA	L5300			;5321	20 DD			 .
+;
+;
+L5323:	STX	01CH			;5323	BF 1C			..
+	LDX	#00EH			;5325	AE 0E			..
+	JSR	>L59C3			;5327	CD 59 C3		.Y.
+	LDA	026H			;532A	B6 26			.&
+	CMP	01FH			;532C	B1 1F			..
+	BNE	L5374			;532E	26 44			&D
+;
+L5330:	BRCLR	6,080H,L5330		;5330	0D 80 FD		...
+	LDA	01CH			;5333	B6 1C			..
+	TAX				;5335	97			.
+	LSRA				;5336	44			D
+	LSRA				;5337	44			D
+	TSTA				;5338	4D			M
+	BNE	L533C			;5339	26 01			&.
+	INCA				;533B	4C			L
+;
+L533C:	STA	008H			;533C	B7 08			..
+	BSET	6,009H			;533E	1C 09			..
+;
+L5340:	BRCLR	7,009H,L5340		;5340	0F 09 FD		...
+	JSR	>L59BE			;5343	CD 59 BE		.Y.
+	LDA	#007H			;5346	A6 07			..
+	STA	009H			;5348	B7 09			..
+	BSET	5,000H			;534A	1A 00			..
+	LDA	01CH			;534C	B6 1C			..
+	CMP	#055H			;534E	A1 55			.U
+	BCS	L5355			;5350	25 03			%.
+	CLRA				;5352	4F			O
+	BRA	L5358			;5353	20 03			 .
+;
+;
+L5355:	LSLA				;5355	48			H
+	ADD	01CH			;5356	BB 1C			..
+;
+L5358:	STA	008H			;5358	B7 08			..
+	BSET	6,009H			;535A	1C 09			..
+;
+L535C:	BRCLR	7,009H,L535C		;535C	0F 09 FD		...
+	BCLR	5,000H			;535F	1B 00			..
+	LDA	#002H			;5361	A6 02			..
+	JSR	>L590D			;5363	CD 59 0D		.Y.
+	BSET	7,041H			;5366	1E 41			.A
+	JSR	>L59B9			;5368	CD 59 B9		.Y.
+	JSR	>L597C			;536B	CD 59 7C		.Y|
+	JSR	>L59A2			;536E	CD 59 A2		.Y.
+	JSR	>L597C			;5371	CD 59 7C		.Y|
+;
+L5374:	LDA	01FH			;5374	B6 1F			..
+	ADD	#001H			;5376	AB 01			..
+	SUB	026H			;5378	B0 26			.&
+	STA	02EH			;537A	B7 2E			..
+	CLR	02FH			;537C	3F 2F			?/
+	BSET	3,02FH			;537E	16 2F			./
+	LDX	#01FH			;5380	AE 1F			..
+;
+L5382:	SEI				;5382	9B			.
+	LDA	01CH			;5383	B6 1C			..
+	LSRA				;5385	44			D
+	LSL	01CH			;5386	38 1C			8.
+	ADD	01CH			;5388	BB 1C			..
+	LSR	01CH			;538A	34 1C			4.
+	STA	031H			;538C	B7 31			.1
+	STA	008H			;538E	B7 08			..
+	LDA	#006H			;5390	A6 06			..
+	STA	009H			;5392	B7 09			..
+	CLI				;5394	9A			.
+	JSR	>L59A2			;5395	CD 59 A2		.Y.
+	JSR	>L5D6B			;5398	CD 5D 6B		.]k
+	AND	#008H			;539B	A4 08			..
+	BEQ	L53A2			;539D	27 03			'.
+	JMP	>L54CD			;539F	CC 54 CD		.T.
+;
+;
+L53A2:	JSR	>L597C			;53A2	CD 59 7C		.Y|
+	LDA	031H			;53A5	B6 31			.1
+	SUB	008H			;53A7	B0 08			..
+	STA	031H			;53A9	B7 31			.1
+	LDA	01CH			;53AB	B6 1C			..
+	LSRA				;53AD	44			D
+	LSRA				;53AE	44			D
+	CMP	031H			;53AF	B1 31			.1
+	BHI	L53EA			;53B1	22 37			"7
+	LDA	031H			;53B3	B6 31			.1
+	STA	01CH			;53B5	B7 1C			..
+	DECX				;53B7	5A			Z
+	BNE	L5382			;53B8	26 C8			&.
+;
+L53BA:	BRSET	7,080H,L53BA		;53BA	0E 80 FD		...
+;
+L53BD:	BRCLR	7,080H,L53BD		;53BD	0F 80 FD		...
+	JSR	>L59BE			;53C0	CD 59 BE		.Y.
+	SEI				;53C3	9B			.
+	CLR	02FH			;53C4	3F 2F			?/
+	RSP				;53C6	9C			.
+	LDA	#094H			;53C7	A6 94			..
+	STA	029H			;53C9	B7 29			.)
+	BSET	0,041H			;53CB	10 41			.A
+	BSET	5,PORT_B			;53CD	1A 01			..
+	LDA	#064H			;53CF	A6 64			.d
+	STA	057H			;53D1	B7 57			.W
+	LDA	#002H			;53D3	A6 02			..
+	STA	02AH			;53D5	B7 2A			.*
+	LDA	#0DFH			;53D7	A6 DF			..
+	JSR	>L5CA5			;53D9	CD 5C A5		.\.
+	JSR	>L582D			;53DC	CD 58 2D		.X-
+	BRSET	5,041H,L53E6		;53DF	0A 41 04		.A.
+	BSET	5,041H			;53E2	1A 41			.A
+	BSET	7,047H			;53E4	1E 47			.G
+;
+L53E6:	NOP				;53E6	9D			.
+	JMP	>L5520			;53E7	CC 55 20		.U 
+;
+;
+L53EA:	BRCLR	6,080H,L53EA		;53EA	0D 80 FD		...
+	BRA	L53A2			;53ED	20 B3			 .
+;
+;
+L53EF:	LDX	#00FH			;53EF	AE 0F			..
+	JSR	>L59C3			;53F1	CD 59 C3		.Y.
+	LDA	#003H			;53F4	A6 03			..
+	JSR	>L580D			;53F6	CD 58 0D		.X.
+	BSET	4,02FH			;53F9	18 2F			./
+	JSR	>L5949			;53FB	CD 59 49		.YI
+	TSTA				;53FE	4D			M
+	BEQ	L5404			;53FF	27 03			'.
+	JMP	>L54CD			;5401	CC 54 CD		.T.
+;
+;
+L5404:	JSR	>L5823			;5404	CD 58 23		.X#
+	BSET	4,02FH			;5407	18 2F			./
+	LSL	01CH			;5409	38 1C			8.
+	JSR	>L59AB			;540B	CD 59 AB		.Y.
+	JSR	>L5985			;540E	CD 59 85		.Y.
+	LDA	008H			;5411	B6 08			..
+	COMA				;5413	43			C
+	STA	031H			;5414	B7 31			.1
+	LDA	01CH			;5416	B6 1C			..
+	LSLA				;5418	48			H
+	CMP	031H			;5419	B1 31			.1
+	BCS	L5424			;541B	25 07			%.
+	LDX	#00CH			;541D	AE 0C			..
+	JSR	>L59C3			;541F	CD 59 C3		.Y.
+	BRA	L5448			;5422	20 24			 $
+;
+;
+L5424:	JSR	>L5823			;5424	CD 58 23		.X#
+;
+L5427:	BSET	4,02FH			;5427	18 2F			./
+	JSR	>L59AB			;5429	CD 59 AB		.Y.
+	LDA	01FH			;542C	B6 1F			..
+	SUB	026H			;542E	B0 26			.&
+	SUB	#023H			;5430	A0 23			.#
+	CMP	02EH			;5432	B1 2E			..
+	BNE	L5440			;5434	26 0A			&.
+	JSR	>L5D6B			;5436	CD 5D 6B		.]k
+	AND	#004H			;5439	A4 04			..
+	BEQ	L5440			;543B	27 03			'.
+	JMP	>L54CD			;543D	CC 54 CD		.T.
+;
+;
+L5440:	JSR	>L5985			;5440	CD 59 85		.Y.
+	LDA	008H			;5443	B6 08			..
+	COMA				;5445	43			C
+	STA	031H			;5446	B7 31			.1
+;
+L5448:	LDA	01CH			;5448	B6 1C			..
+	LSRA				;544A	44			D
+	LSRA				;544B	44			D
+	CMP	031H			;544C	B1 31			.1
+	BLS	L5455			;544E	23 05			#.
+;
+L5450:	BRCLR	6,080H,L5450		;5450	0D 80 FD		...
+	BRA	L5427			;5453	20 D2			 .
+;
+;
+L5455:	LDA	031H			;5455	B6 31			.1
+	STA	01CH			;5457	B7 1C			..
+	DEC	02EH			;5459	3A 2E			:.
+	BEQ	L5462			;545B	27 05			'.
+	JSR	>L5823			;545D	CD 58 23		.X#
+	BRA	L5427			;5460	20 C5			 .
+;
+;
+L5462:	JSR	>L59BE			;5462	CD 59 BE		.Y.
+	LDX	#00DH			;5465	AE 0D			..
+	JSR	>L59C3			;5467	CD 59 C3		.Y.
+	BSET	5,000H			;546A	1A 00			..
+	LDA	#00AH			;546C	A6 0A			..
+	STA	055H			;546E	B7 55			.U
+	LDX	01CH			;5470	BE 1C			..
+	LDA	026H			;5472	B6 26			.&
+	JSR	>L5C28			;5474	CD 5C 28		.\(
+	ADD	#032H			;5477	AB 32			.2
+	BCC	L547C			;5479	24 01			$.
+	INCX				;547B	5C			\
+;
+L547C:	STA	063H			;547C	B7 63			.c
+	STX	064H			;547E	BF 64			.d
+	CLR	029H			;5480	3F 29			?)
+	BRCLR	2,045H,L5496		;5482	05 45 11		.E.
+	BCLR	2,045H			;5485	15 45			.E
+	LDX	01CH			;5487	BE 1C			..
+	LDA	038H			;5489	B6 38			.8
+	ADD	#030H			;548B	AB 30			.0
+	JSR	>L5C28			;548D	CD 5C 28		.\(
+	STA	056H			;5490	B7 56			.V
+	LDA	#010H			;5492	A6 10			..
+	STA	02AH			;5494	B7 2A			.*
+;
+L5496:	JSR	>L582D			;5496	CD 58 2D		.X-
+	BSET	0,040H			;5499	10 40			.@
+	BRCLR	7,041H,L54B4		;549B	0F 41 16		.A.
+	BCLR	7,041H			;549E	1F 41			.A
+	BRCLR	0,03FH,L54B4		;54A0	01 3F 11		.?.
+	BCLR	3,041H			;54A3	17 41			.A
+	BCLR	6,041H			;54A5	1D 41			.A
+	CLR	067H			;54A7	3F 67			?g
+	LDA	056H			;54A9	B6 56			.V
+	BEQ	L54B1			;54AB	27 04			'.
+;
+L54AD:	LDA	056H			;54AD	B6 56			.V
+	BNE	L54AD			;54AF	26 FC			&.
+;
+L54B1:	JMP	>L4A0B			;54B1	CC 4A 0B		.J.
+;
+;
+L54B4:	BRSET	7,043H,L54BA		;54B4	0E 43 03		.C.
+	JSR	>L4C51			;54B7	CD 4C 51		.LQ
+;
+L54BA:	LDA	#064H			;54BA	A6 64			.d
+	JSR	>L590D			;54BC	CD 59 0D		.Y.
+	CLR	026H			;54BF	3F 26			?&
+	CLR	067H			;54C1	3F 67			?g
+	BRCLR	7,045H,L54CA		;54C3	0F 45 04		.E.
+	SEI				;54C6	9B			.
+	JMP	>L44D7			;54C7	CC 44 D7		.D.
+;
+;
+L54CA:	JMP	>L49B3			;54CA	CC 49 B3		.I.
+;
+;
+L54CD:	JSR	>L59BE			;54CD	CD 59 BE		.Y.
+	BSET	0,041H			;54D0	10 41			.A
+	BSET	5,PORT_B			;54D2	1A 01			..
+	LDA	#064H			;54D4	A6 64			.d
+	STA	057H			;54D6	B7 57			.W
+	LDA	#002H			;54D8	A6 02			..
+	STA	02AH			;54DA	B7 2A			.*
+	LDA	#047H			;54DC	A6 47			.G
+;
+L54DE:	NOP				;54DE	9D			.
+	DECA				;54DF	4A			J
+	BNE	L54DE			;54E0	26 FC			&.
+	LDA	#075H			;54E2	A6 75			.u
+	STA	067H			;54E4	B7 67			.g
+	LDA	#0DFH			;54E6	A6 DF			..
+	JSR	>L5CA5			;54E8	CD 5C A5		.\.
+	JSR	>L582D			;54EB	CD 58 2D		.X-
+	BCLR	1,PORT_B			;54EE	13 01			..
+	BSET	7,03FH			;54F0	1E 3F			.?
+	BSET	0,047H			;54F2	10 47			.G
+	BRSET	5,041H,L54FB		;54F4	0A 41 04		.A.
+	BSET	5,041H			;54F7	1A 41			.A
+	BSET	7,047H			;54F9	1E 47			.G
+;
+L54FB:	NOP				;54FB	9D			.
+	BCLR	4,02FH			;54FC	19 2F			./
+	BCLR	0,042H			;54FE	11 42			.B
+	LDA	#004H			;5500	A6 04			..
+	JSR	>L4C85			;5502	CD 4C 85		.L.
+	JSR	>L4C64			;5505	CD 4C 64		.Ld
+	BRSET	5,041H,L550F		;5508	0A 41 04		.A.
+	BSET	5,041H			;550B	1A 41			.A
+	BSET	7,047H			;550D	1E 47			.G
+;
+L550F:	LDA	#0EFH			;550F	A6 EF			..
+	JSR	>L5CA5			;5511	CD 5C A5		.\.
+	BCLR	1,047H			;5514	13 47			.G
+	BSET	4,043H			;5516	18 43			.C
+	BSET	5,PORT_B			;5518	1A 01			..
+	LDA	#064H			;551A	A6 64			.d
+	STA	057H			;551C	B7 57			.W
+	BRA	L5520			;551E	20 00			 .
+;
+;
+L5520:	LDA	#058H			;5520	A6 58			.X
+	STA	048H			;5522	B7 48			.H
+	BCLR	1,047H			;5524	13 47			.G
+	JSR	>L59BE			;5526	CD 59 BE		.Y.
+	BSET	0,041H			;5529	10 41			.A
+	JSR	>L5C6A			;552B	CD 5C 6A		.\j
+	LDA	#020H			;552E	A6 20			. 
+	JSR	>L5CAC			;5530	CD 5C AC		.\.
+	LDA	#013H			;5533	A6 13			..
+	STA	03CH			;5535	B7 3C			.<
+	LDA	#088H			;5537	A6 88			..
+	STA	03BH			;5539	B7 3B			.;
+	BCLR	0,045H			;553B	11 45			.E
+	LDA	#0C8H			;553D	A6 C8			..
+	JSR	>L590D			;553F	CD 59 0D		.Y.
+	LDA	#0DFH			;5542	A6 DF			..
+	JSR	>L5CA5			;5544	CD 5C A5		.\.
+	BCLR	0,042H			;5547	11 42			.B
+	CLRX				;5549	5F			_
+	BRA	L5557			;554A	20 0B			 .
+;
+;
+L554C:	BRSET	2,049H,L5557		;554C	04 49 08		.I.
+	LDA	#004H			;554F	A6 04			..
+	JSR	>L4C85			;5551	CD 4C 85		.L.
+	JSR	>L4C64			;5554	CD 4C 64		.Ld
+;
+L5557:	BRCLR	6,044H,L555D		;5557	0D 44 03		.D.
+	JMP	>L561D			;555A	CC 56 1D		.V.
+;
+;
+L555D:	TST	04DH			;555D	3D 4D			=M
+	BNE	L5564			;555F	26 03			&.
+	JMP	>L565E			;5561	CC 56 5E		.V^
+;
+;
+L5564:	BRSET	0,03FH,L55CB		;5564	00 3F 64		.?d
+	JSR	>L5A5A			;5567	CD 5A 5A		.ZZ
+;
+L556A:	WAIT				;556A	8F			.
+;
+	BRSET	0,03FH,L558B		;556B	00 3F 1D		.?.
+	BRSET	3,03FH,L55A6		;556E	06 3F 35		.?5
+	BRSET	1,PORT_B,L556A		;5571	02 01 F6		...
+;
+L5574:	BRSET	4,043H,L558B		;5574	08 43 14		.C.
+	BRSET	3,03FH,L558B		;5577	06 3F 11		.?.
+	BRCLR	6,044H,L5580		;557A	0D 44 03		.D.
+	JMP	>L561D			;557D	CC 56 1D		.V.
+;
+;
+L5580:	JSR	>L5D0E			;5580	CD 5D 0E		.].
+	JSR	>L56B0			;5583	CD 56 B0		.V.
+	TSTA				;5586	4D			M
+	BNE	L5520			;5587	26 97			&.
+	BRA	L5574			;5589	20 E9			 .
+;
+;
+L558B:	JSR	>L5C4C			;558B	CD 5C 4C		.\L
+	JSR	>L59BE			;558E	CD 59 BE		.Y.
+	BSET	5,000H			;5591	1A 00			..
+	BSET	0,041H			;5593	10 41			.A
+	BCLR	1,047H			;5595	13 47			.G
+	BCLR	0,045H			;5597	11 45			.E
+	LDA	#013H			;5599	A6 13			..
+	STA	03CH			;559B	B7 3C			.<
+	LDA	#088H			;559D	A6 88			..
+	STA	03BH			;559F	B7 3B			.;
+
+	BCLR	4,043H			;55A1	19 43			.C
+	JMP	>L554C			;55A3	CC 55 4C		.UL
+;
+;
+L55A6:	WAIT				;55A6	8F			.
+;
+	BRSET	0,03FH,L558B		;55A7	00 3F E1		.?.
+	BRSET	2,03FH,L55B0		;55AA	04 3F 03		.?.
+	BRCLR	3,03FH,L55C8		;55AD	07 3F 18		.?.
+;
+L55B0:	BRSET	1,PORT_B,L55A6		;55B0	02 01 F3		...
+;
+L55B3:	BRSET	4,043H,L558B		;55B3	08 43 D5		.C.
+	BRCLR	3,03FH,L558B		;55B6	07 3F D2		.?.
+	BRSET	6,044H,L561D		;55B9	0C 44 61		.Da
+	JSR	>L5D0E			;55BC	CD 5D 0E		.].
+	JSR	>L56B0			;55BF	CD 56 B0		.V.
+	TSTA				;55C2	4D			M
+	BEQ	L55B3			;55C3	27 EE			'.
+	JMP	>L5520			;55C5	CC 55 20		.U 
+;
+;
+L55C8:	JMP	>L5671			;55C8	CC 56 71		.Vq
+;
+;
+L55CB:	BRSET	1,03FH,L55D3		;55CB	02 3F 05		.?.
+	BRCLR	4,043H,L55F9		;55CE	09 43 28		.C(
+	BCLR	4,043H			;55D1	19 43			.C
+;
+L55D3:	JSR	>L5C4C			;55D3	CD 5C 4C		.\L
+	BCLR	1,047H			;55D6	13 47			.G
+	BCLR	0,045H			;55D8	11 45			.E
+	BSET	5,000H			;55DA	1A 00			..
+	BSET	0,041H			;55DC	10 41			.A
+	LDA	#013H			;55DE	A6 13			..
+	STA	03CH			;55E0	B7 3C			.<
+	LDA	#088H			;55E2	A6 88			..
+	STA	03BH			;55E4	B7 3B			.;
+	JSR	>L5A52			;55E6	CD 5A 52		.ZR
+;
+L55E9:	WAIT				;55E9	8F			.
+;
+	BRSET	3,043H,L55F6		;55EA	06 43 09		.C.
+	BRSET	3,03FH,L562E		;55ED	06 3F 3E		.?>
+	BRSET	1,PORT_B,L55E9		;55F0	02 01 F6		...
+	JMP	>L55CB			;55F3	CC 55 CB		.U.
+;
+;
+L55F6:	JMP	>L5685			;55F6	CC 56 85		.V.
+;
+;
+L55F9:	JSR	>L5D0E			;55F9	CD 5D 0E		.].
+	JSR	>L56B0			;55FC	CD 56 B0		.V.
+	TSTA				;55FF	4D			M
+	BEQ	L561A			;5600	27 18			'.
+	JSR	>L5C4C			;5602	CD 5C 4C		.\L
+	JSR	>L59BE			;5605	CD 59 BE		.Y.
+	BSET	5,000H			;5608	1A 00			..
+	BSET	0,041H			;560A	10 41			.A
+	BCLR	1,047H			;560C	13 47			.G
+	BCLR	0,045H			;560E	11 45			.E
+	LDA	#013H			;5610	A6 13			..
+	STA	03CH			;5612	B7 3C			.<
+	LDA	#088H			;5614	A6 88			..
+	STA	03BH			;5616	B7 3B			.;
+	BSET	4,043H			;5618	18 43			.C
+;
+L561A:	JMP	>L55CB			;561A	CC 55 CB		.U.
+;
+;
+L561D:	JSR	>L5C4C			;561D	CD 5C 4C		.\L
+	CLR	055H			;5620	3F 55			?U
+	BCLR	0,041H			;5622	11 41			.A
+	BCLR	5,000H			;5624	1B 00			..
+	BCLR	0,045H			;5626	11 45			.E
+	JSR	>L59B9			;5628	CD 59 B9		.Y.
+	JMP	>L4B4B			;562B	CC 4B 4B		.KK
+;
+;
+L562E:	BSET	5,000H			;562E	1A 00			..
+	BSET	0,041H			;5630	10 41			.A
+	BCLR	0,045H			;5632	11 45			.E
+	LDA	#013H			;5634	A6 13			..
+	STA	03CH			;5636	B7 3C			.<
+	LDA	#088H			;5638	A6 88			..
+	STA	03BH			;563A	B7 3B			.;
+;
+L563C:	WAIT				;563C	8F			.
+;
+	SEI				;563D	9B			.
+	BRSET	3,043H,L565B		;563E	06 43 1A		.C.
+	BRSET	2,03FH,L5647		;5641	04 3F 03		.?.
+	BRCLR	3,03FH,L565B		;5644	07 3F 14		.?.
+;
+L5647:	CLI				;5647	9A			.
+	BRSET	1,PORT_B,L563C		;5648	02 01 F1		...
+	LDA	03FH			;564B	B6 3F			.?
+	AND	#00FH			;564D	A4 0F			..
+	CMP	#00FH			;564F	A1 0F			..
+	BNE	L5658			;5651	26 05			&.
+	JSR	>L4C64			;5653	CD 4C 64		.Ld
+	BRA	L5685			;5656	20 2D			 -
+;
+;
+L5658:	JMP	>L554C			;5658	CC 55 4C		.UL
+;
+;
+L565B:	CLI				;565B	9A			.
+	BRA	L5671			;565C	20 13			 .
+;
+;
+L565E:	SEI				;565E	9B			.
+	LDA	03FH			;565F	B6 3F			.?
+	AND	#00EH			;5661	A4 0E			..
+	BEQ	L566D			;5663	27 08			'.
+	LDA	#001H			;5665	A6 01			..
+	STA	04DH			;5667	B7 4D			.M
+	CLI				;5669	9A			.
+	JMP	>L5564			;566A	CC 55 64		.Ud
+;
+;
+L566D:	CLI				;566D	9A			.
+	JMP	>L5685			;566E	CC 56 85		.V.
+;
+;
+
+L5671:	CLR	03BH			;5671	3F 3B			?;
+	CLR	03CH			;5673	3F 3C			?<
+	CLR	055H			;5675	3F 55			?U
+	BCLR	0,041H			;5677	11 41			.A
+	BCLR	5,000H			;5679	1B 00			..
+	LDA	#0C8H			;567B	A6 C8			..
+	JSR	>L590D			;567D	CD 59 0D		.Y.
+	JMP	>L5685			;5680	CC 56 85		.V.
+;
+	CLR	04DH			;5683	3F 4D			?M
+;
+L5685:	BRCLR	0,047H,L568C		;5685	01 47 04		.G.
+	BCLR	7,03FH			;5688	1F 3F			.?
+	BCLR	0,047H			;568A	11 47			.G
+;
+L568C:	JSR	>L5D09			;568C	CD 5D 09		.].
+	JSR	>L5C57			;568F	CD 5C 57		.\W
+	BCLR	0,045H			;5692	11 45			.E
+	LDA	#0EFH			;5694	A6 EF			..
+	JSR	>L5CA5			;5696	CD 5C A5		.\.
+	CLR	03BH			;5699	3F 3B			?;
+	CLR	03CH			;569B	3F 3C			?<
+	CLR	055H			;569D	3F 55			?U
+	BCLR	0,041H			;569F	11 41			.A
+	BCLR	5,000H			;56A1	1B 00			..
+	JSR	>L5A65			;56A3	CD 5A 65		.Ze
+	CMP	#000H			;56A6	A1 00			..
+	BEQ	L56AD			;56A8	27 03			'.
+	JMP	>L4685			;56AA	CC 46 85		.F.
+;
+;
+L56AD:	JMP	>L4600			;56AD	CC 46 00		.F.
+;
+;
+L56B0:	JSR	>L58FD			;56B0	CD 58 FD		.X.
+	BRSET	0,045H,L56DF		;56B3	00 45 29		.E)
+	TST	03CH			;56B6	3D 3C			=<
+	BNE	L56BE			;56B8	26 04			&.
+	TST	03BH			;56BA	3D 3B			=;
+	BEQ	L56C3			;56BC	27 05			'.
+;
+L56BE:	WAIT				;56BE	8F			.
+;
+	LDA	#000H			;56BF	A6 00			..
+	BRA	L56E9			;56C1	20 26			 &
+;
+;
+L56C3:	BSET	0,045H			;56C3	10 45			.E
+	JSR	>L59B9			;56C5	CD 59 B9		.Y.
+	LDA	#004H			;56C8	A6 04			..
+	JSR	>L590D			;56CA	CD 59 0D		.Y.
+	BCLR	2,047H			;56CD	15 47			.G
+	LDA	#010H			;56CF	A6 10			..
+	JSR	>L5CAC			;56D1	CD 5C AC		.\.
+	BSET	1,047H			;56D4	12 47			.G
+	BCLR	7,03FH			;56D6	1F 3F			.?
+	JSR	>L5D02			;56D8	CD 5D 02		.].
+	LDA	#000H			;56DB	A6 00			..
+	BRA	L56E9			;56DD	20 0A			 .
+;
+;
+L56DF:	WAIT				;56DF	8F			.
+;
+	LDA	#000H			;56E0	A6 00			..
+	BRCLR	2,047H,L56E9		;56E2	05 47 04		.G.
+	INCA				;56E5	4C			L
+	JSR	>L5C4C			;56E6	CD 5C 4C		.\L
+;
+L56E9:	RTS				;56E9	81			.
+;
+;
+L56EA:	RSP				;56EA	9C			.
+	CLR	02FH			;56EB	3F 2F			?/
+	LDA	#093H			;56ED	A6 93			..
+	STA	029H			;56EF	B7 29			.)
+	JMP	>L4A8A			;56F1	CC 4A 8A		.J.
+;
+;
+L56F4:	LDA	#005H			;56F4	A6 05			..
+	STA	028H			;56F6	B7 28			.(
+	BCLR	4,030H			;56F8	19 30			.0
+	BSET	1,042H			;56FA	12 42			.B
+	BSET	7,02FH			;56FC	1E 2F			./
+	LDA	#007H			;56FE	A6 07			..
+	STA	009H			;5700	B7 09			..
+	CLR	008H			;5702	3F 08			?.
+	RTI				;5704	80			.
+;
+;
+L5705:	BCLR	0,02FH			;5705	11 2F			./
+	RSP				;5707	9C			.
+	JMP	>L4EE5			;5708	CC 4E E5		.N.
+;
+;
+L570B:	BCLR	1,02FH			;570B	13 2F			./
+	RTI				;570D	80			.
+;
+;
+L570E:	RSP				;570E	9C			.
+	JMP	>L54CD			;570F	CC 54 CD		.T.
+;
+;
+L5712:	BCLR	1,042H			;5712	13 42			.B
+	RSP				;5714	9C			.
+	JMP	>L4FA2			;5715	CC 4F A2		.O.
+;
+;
+L5718:	BCLR	3,030H			;5718	17 30			.0
+	RSP				;571A	9C			.
+	JMP	>L4F15			;571B	CC 4F 15		.O.
+;
+;
+L571E:	RSP				;571E	9C			.
+	JMP	>L53EF			;571F	CC 53 EF		.S.
+;
+;
+L5722:	LDA	#060H			;5722	A6 60			.`
+	STA	009H			;5724	B7 09			..
+	BRSET	0,030H,L576E		;5726	00 30 45		.0E
+	BRSET	5,02FH,L5756		;5729	0A 2F 2A		./*
+	BRSET	6,02FH,L56EA		;572C	0C 2F BB		./.
+	BRSET	2,02FH,L57A7		;572F	04 2F 75		./u
+	BRSET	3,02FH,L571E		;5732	06 2F E9		./.
+	BRSET	0,02FH,L5705		;5735	00 2F CD		./.
+	BRSET	7,02FH,L575C		;5738	0E 2F 21		./!
+	BRSET	1,042H,L5712		;573B	02 42 D4		.B.
+	BRSET	4,02FH,L570E		;573E	08 2F CD		./.
+	BRSET	1,02FH,L570B		;5741	02 2F C7		./.
+	BRSET	1,030H,L577D		;5744	02 30 36		.06
+	BRSET	3,030H,L5718		;5747	06 30 CE		.0.
+	BRSET	6,041H,L57C1		;574A	0C 41 74		.At
+	BRSET	2,030H,L5790		;574D	04 30 40		.0@
+	BRSET	4,030H,L56F4		;5750	08 30 A1		.0.
+	JMP	>L4A8A			;5753	CC 4A 8A		.J.
+;
+;
+L5756:	CLR	02FH			;5756	3F 2F			?/
+	RSP				;5758	9C			.
+	JMP	>L4E57			;5759	CC 4E 57		.NW
+;
+;
+L575C:	DEC	02DH			;575C	3A 2D			:-
+	BNE	L5767			;575E	26 07			&.
+	BRSET	4,02FH,L570E		;5760	08 2F AB		./.
+	RSP				;5763	9C			.
+	JMP	>L4A8A			;5764	CC 4A 8A		.J.
+;
+;
+L5767:	LDA	#007H			;5767	A6 07			..
+	STA	009H			;5769	B7 09			..
+	CLR	008H			;576B	3F 08			?.
+	RTI				;576D	80			.
+;
+;
+L576E:	BCLR	0,030H			;576E	11 30			.0
+	RSP				;5770	9C			.
+	LDA	064H			;5771	B6 64			.d
+	BEQ	L577A			;5773	27 05			'.
+	LDA	#09BH			;5775	A6 9B			..
+	JMP	>L524E			;5777	CC 52 4E		.RN
+;
+;
+L577A:	JMP	>L50DB			;577A	CC 50 DB		.P.
+;
+;
+L577D:	DEC	02DH			;577D	3A 2D			:-
+	BEQ	L578A			;577F	27 09			'.
+	LDA	#007H			;5781	A6 07			..
+	STA	009H			;5783	B7 09			..
+	LDA	#0EAH			;5785	A6 EA			..
+	STA	008H			;5787	B7 08			..
+	RTI				;5789	80			.
+;
+;
+L578A:	BCLR	1,030H			;578A	13 30			.0
+	RSP				;578C	9C			.
+	JMP	>L521E			;578D	CC 52 1E		.R.
+;
+;
+L5790:	DEC	02DH			;5790	3A 2D			:-
+	BEQ	L579D			;5792	27 09			'.
+	LDA	#007H			;5794	A6 07			..
+	STA	009H			;5796	B7 09			..
+	LDA	#0EAH			;5798	A6 EA			..
+	STA	008H			;579A	B7 08			..
+	RTI				;579C	80			.
+;
+;
+L579D:	BCLR	2,030H			;579D	15 30			.0
+	RSP				;579F	9C			.
+	LDA	#088H			;57A0	A6 88			..
+	STA	029H			;57A2	B7 29			.)
+	JMP	>L4A8A			;57A4	CC 4A 8A		.J.
+;
+;
+L57A7:	RSP				;57A7	9C			.
+	JSR	>L57EB			;57A8	CD 57 EB		.W.
+	INC	02DH			;57AB	3C 2D			<-
+	TST	063H			;57AD	3D 63			=c
+	BNE	L57BB			;57AF	26 0A			&.
+	TST	064H			;57B1	3D 64			=d
+	BNE	L57BB			;57B3	26 06			&.
+	LDA	02DH			;57B5	B6 2D			.-
+	CMP	#0C8H			;57B7	A1 C8			..
+	BCC	L57BE			;57B9	24 03			$.
+;
+L57BB:	JMP	>L50FB			;57BB	CC 50 FB		.P.
+;
+;
+L57BE:	JMP	>L4A8A			;57BE	CC 4A 8A		.J.
+;
+;
+L57C1:	RSP				;57C1	9C			.
+	LDA	#003H			;57C2	A6 03			..
+	JSR	>L580D			;57C4	CD 58 0D		.X.
+	BCLR	6,041H			;57C7	1D 41			.A
+	BSET	2,041H			;57C9	14 41			.A
+;
+L57CB:	BRSET	5,080H,L57CB		;57CB	0A 80 FD		...
+	CLR	02FH			;57CE	3F 2F			?/
+	BSET	1,02FH			;57D0	12 2F			./
+;
+L57D2:	BRCLR	5,080H,L57D2		;57D2	0B 80 FD		...
+	LDA	01CH			;57D5	B6 1C			..
+	LSLA				;57D7	48			H
+	STA	008H			;57D8	B7 08			..
+	LDA	#004H			;57DA	A6 04			..
+	STA	009H			;57DC	B7 09			..
+	CLI				;57DE	9A			.
+;
+L57DF:	BRCLR	5,080H,L57D2		;57DF	0B 80 F0		...
+	BRSET	1,02FH,L57DF		;57E2	02 2F FA		./.
+	JSR	>L5908			;57E5	CD 59 08		.Y.
+	JMP	>L4E38			;57E8	CC 4E 38		.N8
+;
+;
+L57EB:	CLRA				;57EB	4F			O
+	CMP	063H			;57EC	B1 63			.c
+	BNE	L57F5			;57EE	26 05			&.
+	CMP	064H			;57F0	B1 64			.d
+	BNE	L57F5			;57F2	26 01			&.
+;
+L57F4:	RTS				;57F4	81			.
+;
+;
+L57F5:	CMP	064H			;57F5	B1 64			.d
+	BCS	L57FF			;57F7	25 06			%.
+	CMP	063H			;57F9	B1 63			.c
+	BEQ	L57F4			;57FB	27 F7			'.
+	DEC	063H			;57FD	3A 63			:c
+;
+L57FF:	DEC	064H			;57FF	3A 64			:d
+	CMP	063H			;5801	B1 63			.c
+	BNE	L57F4			;5803	26 EF			&.
+	CMP	064H			;5805	B1 64			.d
+	BNE	L57F4			;5807	26 EB			&.
+	RSP				;5809	9C			.
+	JMP	>L51B6			;580A	CC 51 B6		.Q.
+;
+;
+L580D:	SEI				;580D	9B			.
+	STA	02DH			;580E	B7 2D			.-
+	CLR	02FH			;5810	3F 2F			?/
+	BSET	7,02FH			;5812	1E 2F			./
+	LDA	#007H			;5814	A6 07			..
+	BRA	L581D			;5816	20 05			 .
+;
+;
+L5818:	SEI				;5818	9B			.
+	LDA	#004H			;5819	A6 04			..
+;
+L581B:	CLR	02FH			;581B	3F 2F			?/
+;
+L581D:	CLR	008H			;581D	3F 08			?.
+	STA	009H			;581F	B7 09			..
+	CLI				;5821	9A			.
+	RTS				;5822	81			.
+;
+;
+L5823:	SEI				;5823	9B			.
+	LDA	#005H			;5824	A6 05			..
+	BRA	L581B			;5826	20 F3			 .
+;
+;
+L5828:	SEI				;5828	9B			.
+	LDA	#006H			;5829	A6 06			..
+	BRA	L581B			;582B	20 EE			 .
+;
+;
+L582D:	BCLR	4,040H			;582D	19 40	 Wyzeruj piaty bit po adresem $40
+	JSR	>L5C57			;582F	CD 5C 57 Skocz do procedury $5C57
+	LDA	#001H			;5832	A6 01   
+	STA	03DH			;5834	B7 3D	 $3D<-#1		.=
+	LDA	#004H			;5836	A6 04	 
+	STA	03EH			;5838	B7 3E	 $3E<-#4		.>
+	LDA	#064H			;583A	A6 64	 
+	STA	05AH			;583C	B7 5A	 $5A<-#$64
+	BRSET	7,043H,L5845		;583E	0E 43 04 Jesli 8bit pod adresem $43 = 1 skocz do L5845
+	LDA	#019H			;5841	A6 19 
+	STA	02CH			;5843	B7 2C     $2C<-#$19
+;
+L5845:	JSR	>L5D0E			;5845	CD 5D 0E  Wykonaj procedure L5D0E
+	BSET	7,040H			;5848	1E 40			.@
+	LDA	#003H			;584A	A6 03			..
+	STA	009H			;584C	B7 09			..
+	LDA	#002H			;584E	A6 02			..
+	STA	008H			;5850	B7 08			..
+	CLI				;5852	9A			.
+	LDA	#002H			;5853	A6 02			..
+	JSR	>L590D			;5855	CD 59 0D		.Y.
+	RTS				;5858	81			.
+;
+;
+L5859:	JSR	>L59B4			;5859	CD 59 B4		.Y.
+	LDA	#00AH			;585C	A6 0A			..
+	JSR	>L590D			;585E	CD 59 0D		.Y.
+	LDX	#001H			;5861	AE 01			..
+	JSR	>L59C3			;5863	CD 59 C3		.Y.
+	BSET	7,PORT_B		;5866	1E 01			..
+	LDX	#01EH			;5868	AE 1E			..
+;
+L586A:	BRCLR	6,080H,L5872		;586A	0D 80 05		...
+	DECX				;586D	5A			Z
+	BNE	L586A			;586E	26 FA			&.
+	BRA	L588B			;5870	20 19			 .
+;
+;
+L5872:	LDX	#01EH			;5872	AE 1E			..
+;
+L5874:	BRSET	6,080H,L587C		;5874	0C 80 05		...
+	DECX				;5877	5A			Z
+	BNE	L5874			;5878	26 FA			&.
+	BRA	L588B			;587A	20 0F			 .
+;
+;
+L587C:	LDA	#001H			;587C	A6 01			..
+	JSR	>L590D			;587E	CD 59 0D		.Y.
+	BCLR	7,PORT_B			;5881	1F 01			..
+	LDX	#01EH			;5883	AE 1E			..
+;
+L5885:	BRCLR	7,080H,L5894		;5885	0F 80 0C		...
+	DECX				;5888	5A			Z
+	BNE	L5885			;5889	26 FA			&.
+;
+L588B:	BCLR	7,PORT_B			;588B	1F 01			..
+	LDA	#08AH			;588D	A6 8A			..
+	STA	029H			;588F	B7 29			.)
+	LDA	#003H			;5891	A6 03			..
+	RTS				;5893	81			.
+;
+;
+L5894:	CLRA				;5894	4F			O
+	RTS				;5895	81			.
+;
+;
+L5896:	JSR	>L59B9			;5896	CD 59 B9		.Y.
+	LDA	#001H			;5899	A6 01			..
+	JSR	>L590D			;589B	CD 59 0D		.Y.
+	BSET	7,PORT_B			;589E	1E 01			..
+	LDX	#01EH			;58A0	AE 1E			..
+;
+L58A2:	BRCLR	6,080H,L58AA		;58A2	0D 80 05		...
+	DECX				;58A5	5A			Z
+	BNE	L58A2			;58A6	26 FA			&.
+	BRA	L58C3			;58A8	20 19			 .
+;
+;
+L58AA:	LDX	#01EH			;58AA	AE 1E			..
+;
+L58AC:	BRSET	6,080H,L58B4		;58AC	0C 80 05		...
+	DECX				;58AF	5A			Z
+	BNE	L58AC			;58B0	26 FA			&.
+	BRA	L58C3			;58B2	20 0F			 .
+;
+;
+L58B4:	LDA	#001H			;58B4	A6 01			..
+	JSR	>L590D			;58B6	CD 59 0D		.Y.
+	BCLR	7,PORT_B			;58B9	1F 01			..
+	LDX	#01EH			;58BB	AE 1E			..
+;
+L58BD:	BRCLR	7,080H,L58CC		;58BD	0F 80 0C		...
+	DECX				;58C0	5A			Z
+	BNE	L58BD			;58C1	26 FA			&.
+;
+L58C3:	BCLR	7,PORT_B			;58C3	1F 01			..
+	LDA	#085H			;58C5	A6 85			..
+	STA	029H			;58C7	B7 29			.)
+	LDA	#004H			;58C9	A6 04			..
+	RTS				;58CB	81			.
+;
+;
+L58CC:	LDA	#001H			;58CC	A6 01			..
+	JSR	>L590D			;58CE	CD 59 0D		.Y.
+	BSET	5,000H			;58D1	1A 00			..
+	LDA	#00AH			;58D3	A6 0A			..
+;
+L58D5:	DECA				;58D5	4A			J
+	BNE	L58D5			;58D6	26 FD			&.
+	BRCLR	7,080H,L58E4		;58D8	0F 80 09		...
+;
+L58DB:	LDA	#085H			;58DB	A6 85			..
+	STA	029H			;58DD	B7 29			.)
+	LDA	#005H			;58DF	A6 05			..
+	BCLR	5,000H			;58E1	1B 00			..
+	RTS				;58E3	81			.
+;
+;
+L58E4:	BCLR	5,000H			;58E4	1B 00			..
+	LDA	#028H			;58E6	A6 28			.(
+;
+L58E8:	DECA				;58E8	4A			J
+	BNE	L58E8			;58E9	26 FD			&.
+	BRSET	5,080H,L58DB		;58EB	0A 80 ED		...
+	LDA	#002H			;58EE	A6 02			..
+	JSR	>L590D			;58F0	CD 59 0D		.Y.
+	CLRA				;58F3	4F			O
+	RTS				;58F4	81			.
+;
+;
+L58F5:	JSR	>L5908			;58F5	CD 59 08		.Y.
+	BSET	4,040H			;58F8	18 40			.@
+	BCLR	2,PORT_B		;58FA	15 01			..
+	RTS				;58FC	81			.
+;
+;
+L58FD:	BRCLR	3,PORT_B,L5907		;58FD	07 01 07		...
+	BCLR	3,PORT_B                ;5900	17 01			..
+	LDA	#00AH			;5902	A6 0A			..
+	JSR	>L590D			;5904	CD 59 0D		.Y.
+;
+L5907:	RTS				;5907	81			.
+;
+;
+L5908:	LDA	#060H			;5908	A6 60			.`
+	STA	009H			;590A	B7 09			..
+	RTS				;590C	81			.
+;
+;
+L590D:	LDX	#0AAH			;590D	AE AA Zaladuj IX<-$AA
+;
+L590F:	DECX				;590F	5A     Zmniejsz IX o jeden
+	BNE	L590F			;5910	26 FD  Gdy rozne od zera wroc do zmniejszania
+	DECA				;5912	4A     Zmniejsz Acc o jeden
+	BNE	L590D			;5913	26 F8  Gdy rozne od zera wroc do poczatku
+	RTS				;5915	81     Wroc z procedury
+;
+;
+L5916:	LDX	#037H			;5916	AE 37			.7
+;
+L5918:	LDA	#006H			;5918	A6 06		
+;
+L591A:	BRCLR	6,080H,L5920		;591A	0D 80 03		...
+	DECX				;591D	5A			Z
+	BEQ	L592A			;591E	27 0A			'.
+;
+L5920:	BRSET	6,080H,L5918		;5920	0C 80 F5		...
+	DECA				;5923	4A			J
+	BNE	L5920			;5924	26 FA			&.
+	BCLR	2,PORT_B			;5926	15 01			..
+	CLRA				;5928	4F			O
+	RTS				;5929	81			.
+;
+;
+L592A:	BRCLR	2,PORT_B,L593E		;592A	05 01 11		...
+	BRSET	3,080H,L5934		;592D	06 80 04		...
+	BCLR	2,PORT_B			;5930	15 01			..
+	BRA	L5916			;5932	20 E2			 .
+;
+;
+L5934:	DECA				;5934	4A			J
+	BEQ	L5944			;5935	27 0D			'.
+	BRSET	3,080H,L5934		;5937	06 80 FA		...
+	BCLR	2,PORT_B			;593A	15 01			..
+	BRA	L5916			;593C	20 D8			 .
+;
+;
+L593E:	BSET	2,PORT_B			;593E	14 01			..
+	LDX	#014H			;5940	AE 14			..
+	BRA	L591A			;5942	20 D6			 .
+;
+;
+L5944:	BCLR	2,PORT_B			;5944	15 01			..
+	LDA	#0FFH			;5946	A6 FF			..
+	RTS				;5948	81			.
+;
+;
+L5949:	LDX	#037H			;5949	AE 37			.7
+;
+L594B:	LDA	#004H			;594B	A6 04			..
+;
+L594D:	BRCLR	6,080H,L5953		;594D	0D 80 03		...
+	DECX				;5950	5A			Z
+	BEQ	L595D			;5951	27 0A			'.
+;
+L5953:	BRSET	6,080H,L594B		;5953	0C 80 F5		...
+	DECA				;5956	4A			J
+	BNE	L5953			;5957	26 FA			&.
+	BCLR	2,PORT_B			;5959	15 01			..
+	CLRA				;595B	4F			O
+	RTS				;595C	81			.
+;
+;
+L595D:	BRCLR	2,PORT_B,L5971		;595D	05 01 11		...
+	BRSET	3,080H,L5967		;5960	06 80 04		...
+	BCLR	2,PORT_B			;5963	15 01			..
+	BRA	L5949			;5965	20 E2			 .
+;
+;
+L5967:	DECA				;5967	4A			J
+	BEQ	L5977			;5968	27 0D			'.
+	BRSET	3,080H,L5967		;596A	06 80 FA		...
+	BCLR	2,PORT_B			;596D	15 01			..
+	BRA	L5949			;596F	20 D8			 .
+;
+;
+L5971:	BSET	2,PORT_B			;5971	14 01			..
+	LDX	#014H			;5973	AE 14			..
+	BRA	L594D			;5975	20 D6			 .
+;
+;
+L5977:	BCLR	2,PORT_B			;5977	15 01			..
+	LDA	#0FFH			;5979	A6 FF			..
+	RTS				;597B	81			.
+;
+;
+L597C:	LDA	#006H			;597C	A6 06			..
+;
+L597E:	BRSET	6,080H,L597C		;597E	0C 80 FB		...
+	DECA				;5981	4A			J
+	BNE	L597E			;5982	26 FA			&.
+	RTS				;5984	81			.
+;
+;
+L5985:	LDA	#004H			;5985	A6 04			..
+;
+L5987:	BRSET	6,080H,L5985		;5987	0C 80 FB		...
+	DECA				;598A	4A			J
+	BNE	L5987			;598B	26 FA			&.
+	RTS				;598D	81			.
+;
+;
+L598E:	BRSET	6,080H,L598E		;598E	0C 80 FD		...
+	BRSET	6,080H,L598E		;5991	0C 80 FA		...
+	BRSET	6,080H,L598E		;5994	0C 80 F7		...
+	RTS				;5997	81			.
+;
+;
+L5998:	BRSET	5,080H,L5998		;5998	0A 80 FD		...
+	BRSET	5,080H,L5998		;599B	0A 80 FA		...
+	BRSET	5,080H,L5998		;599E	0A 80 F7		...
+	RTS				;59A1	81			.
+;
+;
+L59A2:	LDA	#006H			;59A2	A6 06			..
+;
+L59A4:	BRCLR	6,080H,L59A2		;59A4	0D 80 FB		...
+	DECA				;59A7	4A			J
+	BNE	L59A4			;59A8	26 FA			&.
+	RTS				;59AA	81			.
+;
+;
+L59AB:	LDA	#004H			;59AB	A6 04			..
+;
+L59AD:	BRCLR	6,080H,L59AB		;59AD	0D 80 FB		...
+	DECA				;59B0	4A			J
+	BNE	L59AD			;59B1	26 FA			&.
+	RTS				;59B3	81			.
+;
+;
+L59B4:	BSET	7,000H			;59B4	1E 00			..
+	BCLR	0,PORT_B			;59B6	11 01			..
+	RTS				;59B8	81			.
+;
+;
+L59B9:	BCLR	7,000H			;59B9	1F 00			..
+	BSET	0,PORT_B			;59BB	10 01			..
+	RTS				;59BD	81			.
+;
+;
+L59BE:	BCLR	7,000H			;59BE	1F 00			..
+	BCLR	0,PORT_B			;59C0	11 01			..
+	RTS				;59C2	81			.
+;
+;
+L59C3:	RTS				;59C3	81			.
+;
+;
+L59C4:	LDA	#008H			;59C4	A6 08			..
+	STA	025H			;59C6	B7 25			.%
+;
+L59C8:	BRSET	7,080H,L59C8		;59C8	0E 80 FD		...
+	LDA	01CH			;59CB	B6 1C			..
+	JSR	>L5A26			;59CD	CD 5A 26		.Z&
+;
+L59D0:	BRCLR	7,080H,L59D0		;59D0	0F 80 FD		...
+;
+L59D3:	BRCLR	5,080H,L5A0F		;59D3	0B 80 39		..9
+	BRSET	7,080H,L59D3		;59D6	0E 80 FA		...
+	LDA	#005H			;59D9	A6 05			..
+;
+L59DB:	BRSET	7,080H,L59D3		;59DB	0E 80 F5		...
+	DECA				;59DE	4A			J
+	BNE	L59DB			;59DF	26 FA			&.
+;
+L59E1:	BRCLR	7,080H,L59E1		;59E1	0F 80 FD		...
+;
+L59E4:	BRCLR	7,080H,L5A09		;59E4	0F 80 22		.."
+	BRSET	5,080H,L59E4		;59E7	0A 80 FA		...
+	LDX	008H			;59EA	BE 08			..
+	JSR	>L5818			;59EC	CD 58 18		.X.
+	TXA				;59EF	9F			.
+	COMA				;59F0	43			C
+	STA	01CH			;59F1	B7 1C			..
+	CMP	01DH			;59F3	B1 1D			..
+	BCS	L5A09			;59F5	25 12			%.
+	CMP	01EH			;59F7	B1 1E			..
+	BHI	L5A09			;59F9	22 0E			".
+;
+L59FB:	LDX	020H			;59FB	BE 20			. 
+	SEC				;59FD	99			.
+	JSR	>L5A31			;59FE	CD 5A 31		.Z1
+;
+L5A01:	DEC	021H			;5A01	3A 21			:!
+	BNE	L59C8			;5A03	26 C3			&.
+;
+L5A05:	BRCLR	6,080H,L5A05		;5A05	0D 80 FD		...
+	RTS				;5A08	81			.
+;
+;
+L5A09:	JMP	>L4A8A			;5A09	CC 4A 8A		.J.
+;
+	SEC				;5A0C	99			.
+	BRA	L59FB			;5A0D	20 EC			 .
+;
+;
+L5A0F:	LDX	008H			;5A0F	BE 08			..
+	JSR	>L5818			;5A11	CD 58 18		.X.
+	TXA				;5A14	9F			.
+	COMA				;5A15	43			C
+	STA	01CH			;5A16	B7 1C			..
+	CMP	01DH			;5A18	B1 1D			..
+	BCS	L5A09			;5A1A	25 ED			%.
+	CMP	01EH			;5A1C	B1 1E			..
+	BHI	L5A09			;5A1E	22 E9			".
+	CLC				;5A20	98			.
+	JSR	>L5A31			;5A21	CD 5A 31		.Z1
+	BRA	L5A01			;5A24	20 DB			 .
+;
+;
+L5A26:	SUB	01FH			;5A26	B0 1F			..
+	STA	01DH			;5A28	B7 1D			..
+	ADD	01FH			;5A2A	BB 1F			..
+	ADD	01FH			;5A2C	BB 1F			..
+	STA	01EH			;5A2E	B7 1E			..
+	RTS				;5A30	81			.
+;
+;
+L5A31:	LDX	020H			;5A31	BE 20			. 
+	ROL	011H,X			;5A33	69 11			i.
+	DEC	025H			;5A35	3A 25			:%
+	BNE	L5A3F			;5A37	26 06			&.
+	LDA	#008H			;5A39	A6 08			..
+	STA	025H			;5A3B	B7 25			.%
+	INC	020H			;5A3D	3C 20			< 
+;
+L5A3F:	RTS				;5A3F	81			.
+;
+;
+L5A40:	BCLR	5,047H			;5A40	1B 47			.G
+	LDX	#00BH			;5A42	AE 0B			..
+;
+L5A44:	CLR	010H,X			;5A44	6F 10			o.
+	DECX				;5A46	5A			Z
+	BPL	L5A44			;5A47	2A FB			*.
+	RTS				;5A49	81			.
+;
+;
+L5A4A:	LDA	#01CH			;5A4A	A6 1C			..
+	BRA	L5A60			;5A4C	20 12			 .
+;
+;
+L5A4E:	LDA	#014H			;5A4E	A6 14			..
+	BRA	L5A60			;5A50	20 0E			 .
+;
+;
+L5A52:	LDA	#028H			;5A52	A6 28			.(
+	BRA	L5A60			;5A54	20 0A			 .
+;
+;
+L5A56:	LDA	#030H			;5A56	A6 30			.0
+	BRA	L5A60			;5A58	20 06			 .
+;
+;
+L5A5A:	LDA	#03CH			;5A5A	A6 3C			.<
+	BRA	L5A60			;5A5C	20 02			 .
+;
+;
+L5A5E:	LDA	#050H			;5A5E	A6 50			.P
+;
+L5A60:	STA	02BH			;5A60	B7 2B			.+
+	BSET	1,PORT_B			;5A62	12 01			..
+	RTS				;5A64	81			.
+;
+;
+L5A65:	BCLR	4,043H			;5A65	19 43			.C
+	BCLR	3,045H			;5A67	17 45			.E
+	BCLR	2,045H			;5A69	15 45			.E
+	CLR	026H			;5A6B	3F 26			?&
+	CLR	019H			;5A6D	3F 19			?.
+	CLR	02FH			;5A6F	3F 2F			?/
+	LDA	041H			;5A71	B6 41			.A
+	AND	#003H			;5A73	A4 03			..
+	STA	041H			;5A75	B7 41			.A
+	LDA	#0FCH			;5A77	A6 FC			..
+	AND	042H			;5A79	B4 42			.B
+	STA	042H			;5A7B	B7 42			.B
+	BCLR	6,047H			;5A7D	1D 47			.G
+	BCLR	7,03FH			;5A7F	1F 3F			.?
+	BSET	3,PORT_B			;5A81	16 01			..
+	BSET	4,PORT_B			;5A83	18 01			..
+	BCLR	5,000H			;5A85	1B 00			..
+	BCLR	0,041H			;5A87	11 41			.A
+	LDX	#010H			;5A89	AE 10			..
+	JSR	>L59C3			;5A8B	CD 59 C3		.Y.
+	CLI				;5A8E	9A			.
+	BRSET	4,04AH,L5A9A		;5A8F	08 4A 08		.J.
+	BRSET	0,04AH,L5A9A		;5A92	00 4A 05		.J.
+	BRSET	4,04AH,L5A9A		;5A95	08 4A 02		.J.
+	BRA	L5AAC			;5A98	20 12			 .
+;
+;
+L5A9A:	JSR	>L5A5A			;5A9A	CD 5A 5A		.ZZ
+;
+L5A9D:	BRSET	1,PORT_B,L5A9D		;5A9D	02 01 FD		...
+	CLR	04DH			;5AA0	3F 4D			?M
+	JSR	>L4C64			;5AA2	CD 4C 64		.Ld
+	LDA	#005H			;5AA5	A6 05			..
+	BCLR	4,043H			;5AA7	19 43			.C
+	JMP	>L5C1E			;5AA9	CC 5C 1E		.\.
+;
+;
+L5AAC:	CLRA				;5AAC	4F			O
+	BRCLR	0,03FH,L5AB2		;5AAD	01 3F 02		.?.
+	LDA	#008H			;5AB0	A6 08			..
+;
+L5AB2:	BRCLR	1,03FH,L5AB7		;5AB2	03 3F 02		.?.
+	ORA	#004H			;5AB5	AA 04			..
+;
+L5AB7:	BRCLR	2,03FH,L5ABC		;5AB7	05 3F 02		.?.
+	ORA	#002H			;5ABA	AA 02			..
+;
+L5ABC:	BRCLR	3,03FH,L5AC1		;5ABC	07 3F 02		.?.
+	ORA	#001H			;5ABF	AA 01			..
+;
+L5AC1:	STA	028H			;5AC1	B7 28			.(
+	LSLA				;5AC3	48			H
+	ADD	028H			;5AC4	BB 28			.(
+	TAX				;5AC6	97			.
+	JMP	>05ACAH,X		;5AC7	DC 5A CA		.Z.
+;
+	JMP	>L5AFA			;5ACA	CC 5A FA		.Z.
+;
+	JMP	>L5B39			;5ACD	CC 5B 39		.[9
+;
+	JMP	>L5B52			;5AD0	CC 5B 52		.[R
+;
+	JMP	>L5B6C			;5AD3	CC 5B 6C		.[l
+;
+	JMP	>L5B7F			;5AD6	CC 5B 7F		.[.
+;
+	JMP	>L5B8F			;5AD9	CC 5B 8F		.[.
+;
+	JMP	>L5BA2			;5ADC	CC 5B A2		.[.
+;
+	JMP	>L5BBC			;5ADF	CC 5B BC		.[.
+;
+	JMP	>L5BCC			;5AE2	CC 5B CC		.[.
+;
+	JMP	>L5B39			;5AE5	CC 5B 39		.[9
+;
+	JMP	>L5B52			;5AE8	CC 5B 52		.[R
+;
+	JMP	>L5B6C			;5AEB	CC 5B 6C		.[l
+;
+	JMP	>L5B7F			;5AEE	CC 5B 7F		.[.
+;
+	JMP	>L5B8F			;5AF1	CC 5B 8F		.[.
+;
+	JMP	>L5BA2			;5AF4	CC 5B A2		.[.
+;
+	JMP	>L5BBC			;5AF7	CC 5B BC		.[.
+;
+;
+L5AFA:	TST	04DH			;5AFA	3D 4D			=M
+	BEQ	L5B11			;5AFC	27 13			'.
+	JSR	>L5A4E			;5AFE	CD 5A 4E		.ZN
+;
+L5B01:	WAIT				;5B01	8F			.
+;
+	BRCLR	1,PORT_B,L5B0E		;5B02	03 01 09		...
+	LDA	#00FH			;5B05	A6 0F			..
+	AND	03FH			;5B07	B4 3F			.?
+	BEQ	L5B01			;5B09	27 F6			'.
+	JMP	>L5AAC			;5B0B	CC 5A AC		.Z.
+;
+;
+L5B0E:	JMP	>L5BF4			;5B0E	CC 5B F4		.[.
+;
+;
+L5B11:	TST	058H			;5B11	3D 58			=X
+	BEQ	L5B31			;5B13	27 1C			'.
+	DEC	058H			;5B15	3A 58			:X
+	JSR	>L5A52			;5B17	CD 5A 52		.ZR
+;
+L5B1A:	WAIT				;5B1A	8F			.
+;
+	LDA	#008H			;5B1B	A6 08			..
+	AND	03FH			;5B1D	B4 3F			.?
+	BNE	L5B34			;5B1F	26 13			&.
+	LDA	#006H			;5B21	A6 06			..
+	AND	03FH			;5B23	B4 3F			.?
+	BEQ	L5B2A			;5B25	27 03			'.
+	JMP	>L5AAC			;5B27	CC 5A AC		.Z.
+;
+;
+L5B2A:	BRSET	1,PORT_B,L5B1A		;5B2A	02 01 ED		...
+	CLRA				;5B2D	4F			O
+	JMP	>L5C1E			;5B2E	CC 5C 1E		.\.
+;
+;
+L5B31:	JMP	>L5C05			;5B31	CC 5C 05		.\.
+;
+;
+L5B34:	CLR	058H			;5B34	3F 58			?X
+	JMP	>L5AAC			;5B36	CC 5A AC		.Z.
+;
+;
+L5B39:	JSR	>L5A52			;5B39	CD 5A 52		.ZR
+;
+L5B3C:	WAIT				;5B3C	8F			.
+;
+	BRCLR	1,PORT_B,L5B4F		;5B3D	03 01 0F		...
+	BRSET	3,03FH,L5B3C		;5B40	06 3F F9		.?.
+	JSR	>L5A4E			;5B43	CD 5A 4E		.ZN
+;
+L5B46:	WAIT				;5B46	8F			.
+;
+	BRSET	1,PORT_B,L5B46		;5B47	02 01 FC		...
+	CLR	058H			;5B4A	3F 58			?X
+	JMP	>L5AAC			;5B4C	CC 5A AC		.Z.
+;
+;
+L5B4F:	JMP	>L5BF4			;5B4F	CC 5B F4		.[.
+;
+;
+L5B52:	JSR	>L5A52			;5B52	CD 5A 52		.ZR
+;
+L5B55:	WAIT				;5B55	8F			.
+;
+	BRCLR	1,PORT_B,L5B69		;5B56	03 01 10		...
+	BRSET	2,03FH,L5B55		;5B59	04 3F F9		.?.
+	JSR	>L5A4E			;5B5C	CD 5A 4E		.ZN
+;
+L5B5F:	WAIT				;5B5F	8F			.
+;
+	BRCLR	1,PORT_B,L5B69		;5B60	03 01 06		...
+	BRCLR	3,03FH,L5B5F		;5B63	07 3F F9		.?.
+	JMP	>L5AAC			;5B66	CC 5A AC		.Z.
+;
+;
+L5B69:	JMP	>L5BF4			;5B69	CC 5B F4		.[.
+;
+;
+L5B6C:	JSR	>L5A52			;5B6C	CD 5A 52		.ZR
+;
+L5B6F:	WAIT				;5B6F	8F			.
+;
+	BRCLR	1,PORT_B,L5B7C		;5B70	03 01 09		...
+	BRCLR	3,03FH,L5B79		;5B73	07 3F 03		.?.
+	BRSET	2,03FH,L5B6F		;5B76	04 3F F6		.?.
+;
+L5B79:	JMP	>L5AAC			;5B79	CC 5A AC		.Z.
+;
+;
+L5B7C:	JMP	>L5BF4			;5B7C	CC 5B F4		.[.
+;
+;
+L5B7F:	JSR	>L5A52			;5B7F	CD 5A 52		.ZR
+;
+L5B82:	WAIT				;5B82	8F			.
+;
+	BRCLR	1,PORT_B,L5B8C		;5B83	03 01 06		...
+	BRCLR	2,03FH,L5B82		;5B86	05 3F F9		.?.
+	JMP	>L5AAC			;5B89	CC 5A AC		.Z.
+;
+;
+L5B8C:	JMP	>L5BF4			;5B8C	CC 5B F4		.[.
+;
+;
+L5B8F:	JSR	>L5A52			;5B8F	CD 5A 52		.ZR
+;
+L5B92:	WAIT				;5B92	8F			.
+;
+	BRCLR	1,PORT_B,L5B9F		;5B93	03 01 09		...
+	BRCLR	3,03FH,L5B9C		;5B96	07 3F 03		.?.
+	BRSET	1,03FH,L5B92		;5B99	02 3F F6		.?.
+;
+L5B9C:	JMP	>L5AAC			;5B9C	CC 5A AC		.Z.
+;
+;
+L5B9F:	JMP	>L5BF4			;5B9F	CC 5B F4		.[.
+;
+;
+L5BA2:	JSR	>L5A52			;5BA2	CD 5A 52		.ZR
+;
+L5BA5:	WAIT				;5BA5	8F			.
+;
+	BRCLR	1,PORT_B,L5BB9		;5BA6	03 01 10		...
+	BRSET	2,03FH,L5BA5		;5BA9	04 3F F9		.?.
+	JSR	>L5A4E			;5BAC	CD 5A 4E		.ZN
+;
+L5BAF:	WAIT				;5BAF	8F			.
+;
+	BRCLR	1,PORT_B,L5BB9		;5BB0	03 01 06		...
+	BRCLR	3,03FH,L5BAF		;5BB3	07 3F F9		.?.
+	JMP	>L5AAC			;5BB6	CC 5A AC		.Z.
+;
+;
+L5BB9:	JMP	>L5BF4			;5BB9	CC 5B F4		.[.
+;
+;
+L5BBC:	JSR	>L5A52			;5BBC	CD 5A 52		.ZR
+;
+L5BBF:	WAIT				;5BBF	8F			.
+;
+	BRCLR	1,PORT_B,L5BC9		;5BC0	03 01 06		...
+	BRSET	3,03FH,L5BBF		;5BC3	06 3F F9		.?.
+	JMP	>L5AAC			;5BC6	CC 5A AC		.Z.
+;
+;
+L5BC9:	JMP	>L5BF4			;5BC9	CC 5B F4		.[.
+;
+;
+L5BCC:	JSR	>L5A56			;5BCC	CD 5A 56		.ZV
+;
+L5BCF:	WAIT				;5BCF	8F			.
+;
+	BRCLR	1,PORT_B,L5BD9		;5BD0	03 01 06		...
+	BRSET	0,03FH,L5BCF		;5BD3	00 3F F9		.?.
+	JMP	>L5AAC			;5BD6	CC 5A AC		.Z.
+;
+;
+L5BD9:	BRSET	1,04AH,L5BF0		;5BD9	02 4A 14		.J.
+	TST	050H			;5BDC	3D 50			=P
+	BNE	L5BF0			;5BDE	26 10			&.
+	LDA	#0FAH			;5BE0	A6 FA			..
+	STA	050H			;5BE2	B7 50			.P
+	INC	04FH			;5BE4	3C 4F			<O
+	LDA	04FH			;5BE6	B6 4F			.O
+	CMP	#004H			;5BE8	A1 04			..
+	BNE	L5BF0			;5BEA	26 04			&.
+	LDA	#002H			;5BEC	A6 02			..
+	BRA	L5BFC			;5BEE	20 0C			 .
+;
+;
+L5BF0:	LDA	#003H			;5BF0	A6 03			..
+	BRA	L5C01			;5BF2	20 0D			 .
+;
+;
+L5BF4:	CLR	04DH			;5BF4	3F 4D			?M
+	LDA	#010H			;5BF6	A6 10			..
+	STA	058H			;5BF8	B7 58			.X
+	LDA	#004H			;5BFA	A6 04			..
+;
+L5BFC:	JSR	>L4C85			;5BFC	CD 4C 85		.L.
+	LDA	#002H			;5BFF	A6 02			..
+;
+L5C01:	BCLR	4,043H			;5C01	19 43			.C
+	BRA	L5C1E			;5C03	20 19			 .
+;
+;
+L5C05:	LDA	#008H			;5C05	A6 08			..
+	STA	02BH			;5C07	B7 2B			.+
+;
+L5C09:	WAIT				;5C09	8F			.
+;
+	BRCLR	1,PORT_B,L5C13		;5C0A	03 01 06		...
+	BRCLR	0,03FH,L5C09		;5C0D	01 3F F9		.?.
+	JMP	>L5AAC			;5C10	CC 5A AC		.Z.
+;
+;
+L5C13:	BCLR	1,PORT_B			;5C13	13 01			..
+	CLR	04FH			;5C15	3F 4F			?O
+	LDA	#004H			;5C17	A6 04			..
+	JSR	>L4CAA			;5C19	CD 4C AA		.L.
+	LDA	#000H			;5C1C	A6 00			..
+;
+L5C1E:	STA	031H			;5C1E	B7 31			.1
+	LDA	#00FH			;5C20	A6 0F			..
+	JSR	>L590D			;5C22	CD 59 0D		.Y.
+	LDA	031H			;5C25	B6 31			.1
+	RTS				;5C27	81			.
+;
+;
+L5C28:	STA	039H			;5C28	B7 39			.9
+	CLR	03AH			;5C2A	3F 3A			?:
+	CPX	#001H			;5C2C	A3 01			..
+	BEQ	L5C44			;5C2E	27 14			'.
+	BCS	L5C47			;5C30	25 15			%.
+	DECX				;5C32	5A			Z
+;
+L5C33:	ADD	039H			;5C33	BB 39			.9
+	BCC	L5C39			;5C35	24 02			$.
+	INC	03AH			;5C37	3C 3A			<:
+;
+L5C39:	DECX				;5C39	5A			Z
+	BNE	L5C33			;5C3A	26 F7			&.
+	LDX	#005H			;5C3C	AE 05			..
+;
+L5C3E:	LSR	03AH			;5C3E	34 3A			4:
+	RORA				;5C40	46			F
+	DECX				;5C41	5A			Z
+	BNE	L5C3E			;5C42	26 FA			&.
+;
+L5C44:	LDX	03AH			;5C44	BE 3A			.:
+	RTS				;5C46	81			.
+;
+;
+L5C47:	LDX	#000H			;5C47	AE 00			..
+	LDA	#000H			;5C49	A6 00			..
+	RTS				;5C4B	81			.
+;
+;
+L5C4C:	BCLR	2,047H			;5C4C	15 47			.G
+	LDA	#0EFH			;5C4E	A6 EF			..
+	JSR	>L5CA5			;5C50	CD 5C A5		.\.
+	JSR	>L5C57			;5C53	CD 5C 57		.\W
+	RTS				;5C56	81			.
+;
+;
+L5C57:	BCLR	1,047H			;5C57	13 47 Wyzeruj drugi bit pod adresem $47
+	LDA	#003H			;5C59	A6 03 
+	STA	009H			;5C5B	B7 09 Ustaw wartosc 3 w rejestrze TIMERA
+	BSET	7,040H			;5C5D	1E 40 Ustaw 8-my bit pod adresem $40
+	LDA	#001H			;5C5F	A6 01 
+	STA	008H			;5C61	B7 08 Ustaw wartosc 1 w rejestrze statusu i kontroli TIMERA
+	NOP				;5C63	9D
+	NOP				;5C64	9D
+	RTS				;5C65	81 Powrot z procedury
+;
+;
+L5C66:	BCLR	0,042H			;5C66	11 42			.B
+	CLI				;5C68	9A			.
+	RTS				;5C69	81			.
+;
+;
+L5C6A:	SEI				;5C6A	9B			.
+	BRCLR	4,000H,L5C71		;5C6B	09 00 03		...
+	CLI				;5C6E	9A			.
+	BRA	L5C6A			;5C6F	20 F9			 .
+;
+;
+L5C71:	BSET	0,042H			;5C71	10 42			.B
+	CLI				;5C73	9A			.
+	RTS				;5C74	81			.
+;
+;
+L5C75:	JSR	>L4C3F			;5C75	CD 4C 3F		.L?
+	CLR	04BH			;5C78	3F 4B			?K
+	JSR	>L5859			;5C7A	CD 58 59		.XY
+	TSTA				;5C7D	4D			M
+	BEQ	L5C82			;5C7E	27 02			'.
+	INC	04BH			;5C80	3C 4B			<K
+;
+L5C82:	JSR	>L5896			;5C82	CD 58 96		.X.
+	TSTA				;5C85	4D			M
+	BEQ	L5C8A			;5C86	27 02			'.
+	INC	04BH			;5C88	3C 4B			<K
+;
+L5C8A:	TST	04BH			;5C8A	3D 4B			=K
+	BEQ	L5C9C			;5C8C	27 0E			'.
+	LDA	#040H			;5C8E	A6 40			.@
+	JSR	>L4C85			;5C90	CD 4C 85		.L.
+	LDA	#002H			;5C93	A6 02			..
+	CMP	04BH			;5C95	B1 4B			.K
+	BNE	L5CA2			;5C97	26 09			&.
+	BSET	3,04AH			;5C99	16 4A			.J
+	RTS				;5C9B	81			.
+;
+;
+L5C9C:	LDA	#040H			;5C9C	A6 40			.@
+	JSR	>L4CAA			;5C9E	CD 4C AA		.L.
+	RTS				;5CA1	81			.
+;
+;
+L5CA2:	BCLR	3,04AH			;5CA2	17 4A			.J
+	RTS				;5CA4	81			.
+;
+;
+L5CA5:	AND	04CH			;5CA5	B4 4C			.L
+	STA	04CH			;5CA7	B7 4C			.L
+	JMP	>L5CB3			;5CA9	CC 5C B3		.\.
+;
+;
+L5CAC:	ORA	04CH			;5CAC	BA 4C			.L
+	STA	04CH			;5CAE	B7 4C			.L
+	JMP	>L5CB3			;5CB0	CC 5C B3		.\.
+;
+;
+L5CB3:	CLC				;5CB3	98			.
+	BMC	L5CB7			;5CB4	2C 01			,.
+	SEC				;5CB6	99			.
+;
+L5CB7:	SEI				;5CB7	9B			.
+	LDA	04CH			;5CB8	B6 4C			.L
+	STA	090H			;5CBA	B7 90			..
+	BCS	L5CBF			;5CBC	25 01			%.
+	CLI				;5CBE	9A			.
+;
+L5CBF:	RTS				;5CBF	81			.
+;
+;
+L5CC0:	CLC				;5CC0	98			.
+	STX	02EH			;5CC1	BF 2E			..
+	TAX				;5CC3	97			.
+	LDA	#009H			;5CC4	A6 09			..
+	STA	025H			;5CC6	B7 25			.%
+	LDA	#007H			;5CC8	A6 07			..
+	STA	009H			;5CCA	B7 09			..
+	CLR	008H			;5CCC	3F 08			?.
+;
+L5CCE:	LDA	000H			;5CCE	B6 00			..
+	CMP	000H			;5CD0	B1 00			..
+	BNE	L5CCE			;5CD2	26 FA			&.
+	STA	027H			;5CD4	B7 27			.'
+	LSLX				;5CD6	58			X
+	BCC	L5CDD			;5CD7	24 04			$.
+	BSET	4,000H			;5CD9	18 00			..
+	BRA	L5CDF			;5CDB	20 02			 .
+;
+;
+L5CDD:	BCLR	4,000H			;5CDD	19 00			..
+;
+L5CDF:	DEC	025H			;5CDF	3A 25			:%
+	BEQ	L5CF3			;5CE1	27 10			'.
+;
+L5CE3:	LDA	000H			;5CE3	B6 00			..
+	CMP	000H			;5CE5	B1 00			..
+	BNE	L5CE3			;5CE7	26 FA			&.
+	EOR	027H			;5CE9	B8 27			.'
+	AND	#008H			;5CEB	A4 08			..
+	BNE	L5CCE			;5CED	26 DF			&.
+	BRCLR	7,009H,L5CE3		;5CEF	0F 09 F1		...
+	SEC				;5CF2	99			.
+;
+L5CF3:	BCLR	4,000H			;5CF3	19 00			..
+	CLR	025H			;5CF5	3F 25			?%
+	LDA	#003H			;5CF7	A6 03			..
+	STA	009H			;5CF9	B7 09			..
+	LDA	#03BH			;5CFB	A6 3B			.;
+	STA	008H			;5CFD	B7 08			..
+	LDX	02EH			;5CFF	BE 2E			..
+	RTS				;5D01	81			.
+;
+;
+L5D02:	BSET	2,040H			;5D02	14 40			.@
+	LDA	#002H			;5D04	A6 02			..
+	STA	066H			;5D06	B7 66			.f
+	RTS				;5D08	81			.
+;
+;
+L5D09:	BCLR	2,040H			;5D09	15 40			.@
+	BSET	2,042H			;5D0B	14 42			.B
+	RTS				;5D0D	81			.
+;
+;
+L5D0E:	LDA	>L440D			;5D0E	C6 44 0D		.D.
+	STA	061H			;5D11	B7 61			.a
+	RTS				;5D13	81			.
+;
+;
+L5D14:	LDX	#008H			;5D14	AE 08			..
+;
+L5D16:	LDA	011H,X			;5D16	E6 11			..
+	CMP	032H,X			;5D18	E1 32			.2
+	BNE	L5D22			;5D1A	26 06			&.
+	DECX				;5D1C	5A			Z
+	BPL	L5D16			;5D1D	2A F7			*.
+	CLRA				;5D1F	4F			O
+	BRA	L5D24			;5D20	20 02			 .
+;
+;
+L5D22:	LDA	#0FFH			;5D22	A6 FF			..
+;
+L5D24:	RTS				;5D24	81			.
+;
+;
+L5D25:	LDA	#05AH			;5D25	A6 5A			.Z
+;
+L5D27:	BRSET	2,047H,L5D4F		;5D27	04 47 25		.G%
+	DECA				;5D2A	4A			J
+	BNE	L5D27			;5D2B	26 FA			&.
+	SEI				;5D2D	9B			.
+	BSET	2,PORT_B			;5D2E	14 01			..
+	LDA	#01EH			;5D30	A6 1E			..
+;
+L5D32:	BRSET	2,047H,L5D4F		;5D32	04 47 1A		.G.
+	DECA				;5D35	4A			J
+	BNE	L5D32			;5D36	26 FA			&.
+	LDA	03FH			;5D38	B6 3F			.?
+	AND	#0F0H			;5D3A	A4 F0			..
+	STA	03FH			;5D3C	B7 3F			.?
+	LDA	080H			;5D3E	B6 80			..
+	BCLR	2,PORT_B			;5D40	15 01			..
+	AND	#00EH			;5D42	A4 0E			..
+	ORA	03FH			;5D44	BA 3F			.?
+	STA	03FH			;5D46	B7 3F			.?
+	CLI				;5D48	9A			.
+	CMP	#004H			;5D49	A1 04			..
+	BNE	L5D4F			;5D4B	26 02			&.
+	CLRA				;5D4D	4F			O
+	RTS				;5D4E	81			.
+;
+;
+L5D4F:	BCLR	2,PORT_B			;5D4F	15 01			..
+	LDA	#001H			;5D51	A6 01			..
+	RTS				;5D53	81			.
+;
+;
+L5D54:	LDA	019H			;5D54	B6 19  Zaladuj Acc<- $19
+	EOR	026H			;5D56	B8 26  Acc<-Acc||$26
+	EOR	067H			;5D58	B8 67  Acc<-Acc||$67
+	EOR	043H			;5D5A	B8 43  Acc<-Acc||$43
+	RTS				;5D5C	81     Powroc z procedury
+;
+;
+L5D5D:	BSET	2,PORT_B		;5D5D	14 01 Uruchom fotokomorki
+	LDA	#001H			;5D5F	A6 01 Ustaw w Acc<-1
+	JSR	>L590D			;5D61	CD 59 0D Opoznij o 1029*1 cykli 
+	LDA	080H			;5D64	B6 80  Zaladuj Acc spod adresu $80 (Port U5)
+	BCLR	2,PORT_B		;5D66	15 01  Wylacz fotokomorki
+	AND	#00FH			;5D68	A4 0F  Pozostaw dolna polowe bajtu Acc gore wyzeruj
+	RTS				;5D6A	81     Powrot z procedury
+;
+L5D6B:	BSET	2,PORT_B		;5D6B	14 01		
+	LDA	#024H			;5D6D	A6 24			.$
+;
+L5D6F:	NOP				;5D6F	9D			.
+	DECA				;5D70	4A			J
+	BNE	L5D6F			;5D71	26 FC			&.
+	LDA	080H			;5D73	B6 80			..
+	BCLR	2,PORT_B			;5D75	15 01			..
+	AND	#00FH			;5D77	A4 0F			..
+	RTS				;5D79	81			.
+;
+;
+L5D7A:	STA	010H			;5D7A	B7 10			..
+	CLR	01AH			;5D7C	3F 1A			?.
+	CLRX				;5D7E	5F			_
+;
+L5D7F:	LDA	010H,X			;5D7F	E6 10			..
+	EOR	01AH			;5D81	B8 1A			..
+	STA	01AH			;5D83	B7 1A			..
+	INCX				;5D85	5C			\
+	CPX	#00AH			;5D86	A3 0A			..
+	BNE	L5D7F			;5D88	26 F5			&.
+	RTS				;5D8A	81			.
+;
+;
+L5D8B:	LDX	#010H			;5D8B	AE 10			..
+;
+L5D8D:	CLR	0,X			;5D8D	7F			.
+	INCX				;5D8E	5C			\
+	CPX	#032H			;5D8F	A3 32			.2
+	BNE	L5D8D			;5D91	26 FA			&.
+	RTS				;5D93	81			.
+;
+;
+L5D94:	BRSET	3,045H,L5DCA		;5D94	06 45 33		.E3
+	LDX	>L4409			;5D97	CE 44 09		.D.
+	BEQ	L5DAE			;5D9A	27 12			'.
+	LDA	019H			;5D9C	B6 19			..
+	CMP	#0C8H			;5D9E	A1 C8			..
+	BNE	L5DAE			;5DA0	26 0C			&.
+	LDA	037H			;5DA2	B6 37			.7
+	BNE	L5DAE			;5DA4	26 08			&.
+	LDA	#0C8H			;5DA6	A6 C8			..
+	STA	037H			;5DA8	B7 37			.7
+	BSET	2,045H			;5DAA	14 45			.E
+	BSET	4,045H			;5DAC	18 45			.E
+;
+L5DAE:	LDX	#005H			;5DAE	AE 05			..
+;
+L5DB0:	LDA	019H			;5DB0	B6 19			..
+	CMP	>04414H,X		;5DB2	D1 44 14		.D.
+	BLS	L5DC7			;5DB5	23 10			#.
+	SUB	026H			;5DB7	B0 26			.&
+	CMP	>04414H,X		;5DB9	D1 44 14		.D.
+	BHI	L5DC7			;5DBC	22 09			".
+	LDA	>04414H,X		;5DBE	D6 44 14		.D.
+	STA	037H			;5DC1	B7 37			.7
+	BSET	2,045H			;5DC3	14 45			.E
+	BCLR	4,045H			;5DC5	19 45			.E
+;
+L5DC7:	DECX				;5DC7	5A			Z
+	BPL	L5DB0			;5DC8	2A E6			*.
+;
+L5DCA:	RTS				;5DCA	81			.
+;
+	LSRA				;5FF2	44			D
+	DEC	044H			;5FF3	3A 44			:D
+	DEC	044H			;5FF5	3A 44			:D
+	DEC	044H			;5FF7	3A 44			:D
+	LSRA				;5FF9	44			D
+	ASRA				;5FFA	47			G
+	RORX				;5FFB	56			V
+	LSRA				;5FFC	44			D
+	BSET	6,044H			;5FFD	1C 44			.D
+	BSET	6,09DH			;5FFF	1C 9D			..
+
+;
+	CMP	0,X			;6400	F1			.
+;
+L6401:	BRSET	1,090H,L641A		;6401	02 90 16		...
+	BRCLR	0,019H,L639D		;6404	01 19 96		...
+	BSET	2,PORT_B			;6407	14 01			..
+;
+L6409:	BRCLR	0,05AH,L640B		;6409	01 5A FF		.Z.
+	BHCC	L641A			;640C	28 0C			(.
+	BRSET	0,01FH,L6411		;640E	00 1F 00		...
+;
+L6411:	SUB	0,X			;6411	F0			.
+	BRSET	0,015H,L6415		;6412	00 15 00		...
+;
+L6415:	BHCC	L6467			;6415	28 50			(P
+	LSL	0,X			;6417	78			x
+	SUB	#0C8H			;6418	A0 C8			..
+;
+L641A:	BSET	2,03AH			;641A	14 3A			.:
+;
+L641C:	SEI				;641C	9B			.
+	RSP				;641D	9C			.
+	LDA	#000H			;641E	A6 00			..
+	STA	000H			;6420	B7 00			..
+	LDA	#0F0H			;6422	A6 F0			..
+	STA	004H			;6424	B7 04			..
+	LDA	#018H			;6426	A6 18			..
+	STA	PORT_B			;6428	B7 01			..
+	LDA	#0FFH			;642A	A6 FF			..
+	STA	005H			;642C	B7 05			..
+	LDA	#0A0H			;642E	A6 A0			..
+	STA	04CH			;6430	B7 4C			.L
+	STA	090H			;6432	B7 90			..
+	LDA	#008H			;6434	A6 08			..
+	STA	0F0H			;6436	B7 F0			..
+	NOP				;6438	9D			.
+	NOP				;6439	9D			.
+;
+L643A:	LDA	04CH			;643A	B6 4C			.L
+	AND	#0BFH			;643C	A4 BF			..
+	STA	04CH			;643E	B7 4C			.L
+	STA	090H			;6440	B7 90			..
+	NOP				;6442	9D			.
+	BRCLR	2,PORT_B,L645B		;6443	05 01 15		...
+	LDA	080H			;6446	B6 80			..
+	BCLR	2,PORT_B			;6448	15 01			..
+	STA	02EH			;644A	B7 2E			..
+	BSET	1,045H			;644C	12 45			.E
+	NOP				;644E	9D			.
+	NOP				;644F	9D			.
+	NOP				;6450	9D			.
+	LDA	#003H			;6451	A6 03			..
+	STA	009H			;6453	B7 09			..
+	LDA	#037H			;6455	A6 37			.7
+	STA	008H			;6457	B7 08			..
+	BRA	L6466			;6459	20 0B			 .
+;
+;
+L645B:	NOP				;645B	9D			.
+	NOP				;645C	9D			.
+	NOP				;645D	9D			.
+	LDA	#003H			;645E	A6 03			..
+	STA	009H			;6460	B7 09			..
+	LDA	#039H			;6462	A6 39			.9
+	STA	008H			;6464	B7 08			..
+;
+L6466:	BRCLR	5,040H,L646C		;6466	0B 40 03		.@.
+	JMP	>L6640			;6469	CC 66 40		.f@
+;
+;
+L646C:	BRCLR	0,041H,L6475		;646C	01 41 06		.A.
+	LDA	000H			;646F	B6 00			..
+	EOR	#020H			;6471	A8 20			. 
+	STA	000H			;6473	B7 00			..
+;
+L6475:	BSET	5,040H			;6475	1A 40			.@
+	BRCLR	1,047H,L6483		;6477	03 47 09		.G.
+	BRCLR	5,045H,L6483		;647A	0B 45 06		.E.
+	BRCLR	2,042H,L6483		;647D	05 42 03		.B.
+	JMP	>L6514			;6480	CC 65 14		.e.
+;
+;
+L6483:	BRCLR	7,03FH,L6488		;6483	0F 3F 02		.?.
+	BSET	1,045H			;6486	12 45			.E
+;
+L6488:	BRSET	0,041H,L649D		;6488	00 41 12		.A.
+	BRCLR	2,040H,L649D		;648B	05 40 0F		.@.
+	TST	063H			;648E	3D 63			=c
+	BEQ	L649D			;6490	27 0B			'.
+	DEC	063H			;6492	3A 63			:c
+	BNE	L649D			;6494	26 07			&.
+	LDA	#010H			;6496	A6 10			..
+	JSR	>L6CC4			;6498	CD 6C C4		.l.
+	BSET	2,042H			;649B	14 42			.B
+;
+L649D:	BRSET	0,041H,L64AC		;649D	00 41 0C		.A.
+	BRCLR	2,040H,L64AC		;64A0	05 40 09		.@.
+	LDA	063H			;64A3	B6 63			.c
+	CMP	#001H			;64A5	A1 01			..
+	BNE	L64AC			;64A7	26 03			&.
+	JSR	>L6CDA			;64A9	CD 6C DA		.l.
+;
+L64AC:	TST	057H			;64AC	3D 57			=W
+	BEQ	L64BB			;64AE	27 0B			'.
+	DEC	057H			;64B0	3A 57			:W
+	BNE	L64BB			;64B2	26 07			&.
+	BCLR	5,PORT_B		;64B4	1B 01			..
+	LDA	>L640B			;64B6	C6 64 0B		.d.
+	STA	053H			;64B9	B7 53			.S
+;
+L64BB:	BRCLR	1,040H,L64C8		;64BB	03 40 0A		.@.
+	LDA	064H			;64BE	B6 64			.d
+	ADD	#001H			;64C0	AB 01			..
+	STA	064H			;64C2	B7 64			.d
+	BNE	L64C8			;64C4	26 02			&.
+	INC	063H			;64C6	3C 63			<c
+;
+L64C8:	TST	056H			;64C8	3D 56			=V
+	BEQ	L64DD			;64CA	27 11			'.
+	DEC	056H			;64CC	3A 56			:V
+	BNE	L64DD			;64CE	26 0D			&.
+	BRSET	3,045H,L64DD		;64D0	06 45 0A		.E.
+	TST	053H			;64D3	3D 53			=S
+	BNE	L64DD			;64D5	26 06			&.
+	BSET	5,PORT_B			;64D7	1A 01			..
+	LDA	#032H			;64D9	A6 32			.2
+	STA	057H			;64DB	B7 57			.W
+;
+L64DD:	LDA	03CH			;64DD	B6 3C			.<
+	ORA	03BH			;64DF	BA 3B			.;
+	BEQ	L64F7			;64E1	27 14			'.
+	LDA	03BH			;64E3	B6 3B			.;
+	SUB	#001H			;64E5	A0 01			..
+	STA	03BH			;64E7	B7 3B			.;
+	BCC	L64ED			;64E9	24 02			$.
+	DEC	03CH			;64EB	3A 3C			:<
+;
+L64ED:	LDA	03CH			;64ED	B6 3C			.<
+	ORA	03BH			;64EF	BA 3B			.;
+	BNE	L64F7			;64F1	26 04			&.
+	BCLR	0,041H			;64F3	11 41			.A
+	BCLR	5,000H			;64F5	1B 00			..
+;
+L64F7:	TST	055H			;64F7	3D 55			=U
+	BEQ	L6509			;64F9	27 0E			'.
+	DEC	055H			;64FB	3A 55			:U
+	BNE	L6509			;64FD	26 0A			&.
+	BSET	0,041H			;64FF	10 41			.A
+	LDA	063H			;6501	B6 63			.c
+	STA	03BH			;6503	B7 3B			.;
+	LDA	064H			;6505	B6 64			.d
+	STA	03CH			;6507	B7 3C			.<
+;
+L6509:	DEC	03DH			;6509	3A 3D			:=
+	BEQ	L6510			;650B	27 03			'.
+	JMP	>L6626			;650D	CC 66 26		.f&
+;
+;
+L6510:	LDA	#019H			;6510	A6 19			..
+	STA	03DH			;6512	B7 3D			.=
+;
+L6514:	BRSET	2,PORT_B,L6542		;6514	04 01 2B		..+
+	LDA	080H			;6517	B6 80			..
+	AND	#00FH			;6519	A4 0F			..
+	CMP	#00FH			;651B	A1 0F			..
+	BEQ	L6535			;651D	27 16			'.
+	BRSET	4,04AH,L6542		;651F	08 4A 20		.J 
+	INC	054H			;6522	3C 54			<T
+	LDA	054H			;6524	B6 54			.T
+	CMP	#004H			;6526	A1 04			..
+	BNE	L6542			;6528	26 18			&.
+	LDA	#010H			;652A	A6 10			..
+	JSR	>L6C86			;652C	CD 6C 86		.l.
+	BSET	7,046H			;652F	1E 46			.F
+	BSET	1,043H			;6531	12 43			.C
+	BRA	L6542			;6533	20 0D			 .
+;
+;
+L6535:	TST	054H			;6535	3D 54			=T
+	BEQ	L6542			;6537	27 09			'.
+	DEC	054H			;6539	3A 54			:T
+	BNE	L6542			;653B	26 05			&.
+	LDA	#010H			;653D	A6 10			..
+	JSR	>L6CAB			;653F	CD 6C AB		.l.
+;
+L6542:	TST	02BH			;6542	3D 2B			=+
+	BEQ	L654C			;6544	27 06			'.
+	DEC	02BH			;6546	3A 2B			:+
+	BNE	L654C			;6548	26 02			&.
+	BCLR	1,PORT_B			;654A	13 01			..
+;
+L654C:	BRSET	3,03FH,L6557		;654C	06 3F 08		.?.
+	LDA	#007H			;654F	A6 07			..
+	STA	059H			;6551	B7 59			.Y
+	BCLR	6,03FH			;6553	1D 3F			.?
+	BRA	L6561			;6555	20 0A			 .
+;
+;
+L6557:	TST	059H			;6557	3D 59			=Y
+	BEQ	L655F			;6559	27 04			'.
+	DEC	059H			;655B	3A 59			:Y
+	BRA	L6561			;655D	20 02			 .
+;
+;
+L655F:	BSET	6,03FH			;655F	1C 3F			.?
+;
+L6561:	TST	052H			;6561	3D 52			=R
+	BEQ	L6567			;6563	27 02			'.
+	DEC	052H			;6565	3A 52			:R
+;
+L6567:	TST	02AH			;6567	3D 2A			=*
+	BEQ	L656D			;6569	27 02			'.
+	DEC	02AH			;656B	3A 2A			:*
+;
+L656D:	BRCLR	1,047H,L6576		;656D	03 47 06		.G.
+	BRCLR	2,042H,L6576		;6570	05 42 03		.B.
+	BRSET	5,045H,L6579		;6573	0A 45 03		.E.
+;
+L6576:	BRSET	7,03FH,L657E		;6576	0E 3F 05		.?.
+;
+L6579:	BRCLR	7,040H,L657E		;6579	0F 40 02		.@.
+	BSET	1,045H			;657C	12 45			.E
+;
+L657E:	LDA	040H			;657E	B6 40			.@
+	EOR	#080H			;6580	A8 80			..
+	STA	040H			;6582	B7 40			.@
+	BRCLR	1,045H,L6589		;6584	03 45 02		.E.
+	BSET	2,PORT_B			;6587	14 01			..
+;
+L6589:	BCLR	1,045H			;6589	13 45			.E
+	TST	066H			;658B	3D 66			=f
+	BEQ	L65AC			;658D	27 1D			'.
+	DEC	066H			;658F	3A 66			:f
+	BNE	L65AC			;6591	26 19			&.
+	BRSET	0,041H,L65AC		;6593	00 41 16		.A.
+	BRCLR	2,040H,L65AC		;6596	05 40 13		.@.
+	BRSET	1,PORT_B,L65AC		;6599	02 01 10		...
+	LDA	#0EFH			;659C	A6 EF			..
+	JSR	>L6CB3			;659E	CD 6C B3		.l.
+	JSR	>L6CDF			;65A1	CD 6C DF		.l.
+	LDA	#003H			;65A4	A6 03			..
+	STA	066H			;65A6	B7 66			.f
+	BSET	5,000H			;65A8	1A 00			..
+	BSET	1,041H			;65AA	12 41			.A
+;
+L65AC:	TST	060H			;65AC	3D 60			=`
+	BEQ	L65B2			;65AE	27 02			'.
+	DEC	060H			;65B0	3A 60			:`
+;
+L65B2:	JSR	>L6A12			;65B2	CD 6A 12		.j.
+	JSR	>L6AE4			;65B5	CD 6A E4		.j.
+	CLR	065H			;65B8	3F 65			?e
+	DEC	03EH			;65BA	3A 3E			:>
+	BEQ	L65C1			;65BC	27 03			'.
+	JMP	>L6626			;65BE	CC 66 26		.f&
+;
+;
+L65C1:	LDA	#004H			;65C1	A6 04			..
+	STA	03EH			;65C3	B7 3E			.>
+	TST	02CH			;65C5	3D 2C			=,
+	BEQ	L65E0			;65C7	27 17			'.
+	DEC	02CH			;65C9	3A 2C			:,
+	BNE	L65E0			;65CB	26 13			&.
+	BCLR	3,040H			;65CD	17 40			.@
+	BCLR	6,045H			;65CF	1D 45			.E
+	BCLR	4,044H			;65D1	19 44			.D
+	BSET	7,043H			;65D3	1E 43			.C
+	BSET	4,043H			;65D5	18 43			.C
+	BSET	1,044H			;65D7	12 44			.D
+	BCLR	3,042H			;65D9	17 42			.B
+	LDA	>L640A			;65DB	C6 64 0A		.d.
+	STA	05BH			;65DE	B7 5B			.[
+;
+L65E0:	TST	050H			;65E0	3D 50			=P
+	BEQ	L65E6			;65E2	27 02			'.
+	DEC	050H			;65E4	3A 50			:P
+;
+L65E6:	TST	04EH			;65E6	3D 4E			=N
+	BEQ	L65EC			;65E8	27 02			'.
+	DEC	04EH			;65EA	3A 4E			:N
+;
+L65EC:	TST	053H			;65EC	3D 53			=S
+	BEQ	L65F2			;65EE	27 02			'.
+	DEC	053H			;65F0	3A 53			:S
+;
+L65F2:	LDA	046H			;65F2	B6 46			.F
+	AND	#00FH			;65F4	A4 0F			..
+	BEQ	L6604			;65F6	27 0C			'.
+	DEC	046H			;65F8	3A 46			:F
+	LDA	046H			;65FA	B6 46			.F
+	AND	#00FH			;65FC	A4 0F			..
+	BNE	L6604			;65FE	26 04			&.
+	BSET	6,043H			;6600	1C 43			.C
+	BSET	1,043H			;6602	12 43			.C
+;
+L6604:	DEC	05AH			;6604	3A 5A			:Z
+	BEQ	L660B			;6606	27 03			'.
+	JMP	>L6626			;6608	CC 66 26		.f&
+;
+;
+L660B:	LDA	#064H			;660B	A6 64			.d
+	STA	05AH			;660D	B7 5A			.Z
+	TST	05BH			;660F	3D 5B			=[
+	BNE	L6615			;6611	26 02			&.
+	BRA	L661B			;6613	20 06			 .
+;
+;
+L6615:	DEC	05BH			;6615	3A 5B			:[
+	BNE	L661B			;6617	26 02			&.
+	BSET	6,044H			;6619	1C 44			.D
+;
+L661B:	TST	061H			;661B	3D 61			=a
+	BEQ	L6626			;661D	27 07			'.
+	DEC	061H			;661F	3A 61			:a
+	BNE	L6626			;6621	26 03			&.
+	JMP	>L641C			;6623	CC 64 1C		.d.
+;
+;
+L6626:	LDA	04CH			;6626	B6 4C			.L
+	AND	#010H			;6628	A4 10			..
+	BEQ	L6636			;662A	27 0A			'.
+	LDA	04CH			;662C	B6 4C			.L
+	AND	#0EFH			;662E	A4 EF			..
+	STA	090H			;6630	B7 90			..
+	ORA	#010H			;6632	AA 10			..
+	STA	090H			;6634	B7 90			..
+;
+L6636:	BRCLR	1,045H,L663B		;6636	03 45 02		.E.
+	BSET	2,PORT_B			;6639	14 01			..
+;
+L663B:	BCLR	1,045H			;663B	13 45			.E
+	JMP	>L643A			;663D	CC 64 3A		.d:
+;
+;
+L6640:	BCLR	5,040H			;6640	1B 40			.@
+	BRCLR	1,041H,L664F		;6642	03 41 0A		.A.
+	BCLR	5,000H			;6645	1B 00			..
+	BCLR	1,041H			;6647	13 41			.A
+	BCLR	2,042H			;6649	15 42			.B
+	LDA	#006H			;664B	A6 06			..
+	STA	063H			;664D	B7 63			.c
+;
+L664F:	BRSET	1,045H,L6655		;664F	02 45 03		.E.
+	JMP	>L66B3			;6652	CC 66 B3		.f.
+;
+;
+L6655:	LDA	02EH			;6655	B6 2E			..
+	BCLR	1,045H			;6657	13 45			.E
+	AND	#00FH			;6659	A4 0F			..
+	STA	02EH			;665B	B7 2E			..
+	EOR	03FH			;665D	B8 3F			.?
+	AND	02EH			;665F	B4 2E			..
+	TAX				;6661	97			.
+	AND	#01FH			;6662	A4 1F			..
+	CMP	#01FH			;6664	A1 1F			..
+	BNE	L6670			;6666	26 08			&.
+	LDA	#011H			;6668	A6 11			..
+	JSR	>L6C86			;666A	CD 6C 86		.l.
+	JMP	>L66B3			;666D	CC 66 B3		.f.
+;
+;
+L6670:	BRCLR	0,04AH,L6678		;6670	01 4A 05		.J.
+	LDA	#011H			;6673	A6 11			..
+	JSR	>L6CAB			;6675	CD 6C AB		.l.
+;
+L6678:	BRCLR	0,02EH,L6682		;6678	01 2E 07		...
+	BRSET	0,03FH,L6684		;667B	00 3F 06		.?.
+	BSET	3,041H			;667E	16 41			.A
+	BRA	L6684			;6680	20 02			 .
+;
+;
+L6682:	BCLR	3,041H			;6682	17 41			.A
+;
+L6684:	TST	052H			;6684	3D 52			=R
+	BNE	L6697			;6686	26 0F			&.
+	BRCLR	1,02EH,L6697		;6688	03 2E 0C		...
+	BRSET	1,03FH,L6697		;668B	02 3F 09		.?.
+	INC	04DH			;668E	3C 4D			<M
+	BRSET	3,042H,L6697		;6690	06 42 04		.B.
+	LDA	#010H			;6693	A6 10			..
+	STA	052H			;6695	B7 52			.R
+;
+L6697:	BRCLR	2,02EH,L669F		;6697	05 2E 05		...
+	BRSET	2,03FH,L669F		;669A	04 3F 02		.?.
+	BSET	3,043H			;669D	16 43			.C
+;
+L669F:	BRSET	3,02EH,L66AB		;669F	06 2E 09		...
+	BRCLR	3,03FH,L66AB		;66A2	07 3F 06		.?.
+	TST	04DH			;66A5	3D 4D			=M
+	BEQ	L66AB			;66A7	27 02			'.
+	DEC	04DH			;66A9	3A 4D			:M
+;
+L66AB:	LDA	03FH			;66AB	B6 3F			.?
+	AND	#0C0H			;66AD	A4 C0			..
+	ORA	02EH			;66AF	BA 2E			..
+	STA	03FH			;66B1	B7 3F			.?
+;
+L66B3:	BRCLR	1,047H,L66CC		;66B3	03 47 16		.G.
+	BRCLR	5,045H,L66CC		;66B6	0B 45 13		.E.
+	BRCLR	2,042H,L66CC		;66B9	05 42 10		.B.
+	LDA	#007H			;66BC	A6 07			..
+	STA	009H			;66BE	B7 09			..
+	LDA	#0C4H			;66C0	A6 C4			..
+	STA	008H			;66C2	B7 08			..
+	LDA	#0DFH			;66C4	A6 DF			..
+	JSR	>L6CB3			;66C6	CD 6C B3		.l.
+	JMP	>L66D3			;66C9	CC 66 D3		.f.
+;
+;
+L66CC:	BRSET	0,042H,L66D3		;66CC	00 42 04		.B.
+	TST	02AH			;66CF	3D 2A			=*
+	BEQ	L66E6			;66D1	27 13			'.
+;
+L66D3:	LDA	04CH			;66D3	B6 4C			.L
+	AND	#010H			;66D5	A4 10			..
+	BEQ	L66E3			;66D7	27 0A			'.
+	LDA	04CH			;66D9	B6 4C			.L
+	AND	#0EFH			;66DB	A4 EF			..
+	STA	090H			;66DD	B7 90			..
+	ORA	#010H			;66DF	AA 10			..
+	STA	090H			;66E1	B7 90			..
+;
+L66E3:	JMP	>L643A			;66E3	CC 64 3A		.d:
+;
+;
+L66E6:	BRSET	3,000H,L66F0		;66E6	06 00 07		...
+	TST	025H			;66E9	3D 25			=%
+	BNE	L66FB			;66EB	26 0E			&.
+	JMP	>L66D3			;66ED	CC 66 D3		.f.
+;
+;
+L66F0:	BSET	4,000H			;66F0	18 00			..
+	INC	025H			;66F2	3C 25			<%
+	BNE	L66D3			;66F4	26 DD			&.
+	BCLR	4,000H			;66F6	19 00			..
+	JMP	>L6794			;66F8	CC 67 94		.g.
+;
+;
+L66FB:	BCLR	4,000H			;66FB	19 00			..
+	LDA	#001H			;66FD	A6 01			..
+	STA	02AH			;66FF	B7 2A			.*
+	LDA	025H			;6701	B6 25			.%
+	CLR	025H			;6703	3F 25			?%
+	CMP	#003H			;6705	A1 03			..
+	BCS	L671D			;6707	25 14			%.
+	CMP	#011H			;6709	A1 11			..
+	BHI	L6710			;670B	22 03			".
+	JMP	>L67B0			;670D	CC 67 B0		.g.
+;
+;
+L6710:	CMP	#021H			;6710	A1 21			.!
+	BCS	L671D			;6712	25 09			%.
+	CMP	#02FH			;6714	A1 2F			./
+	BHI	L671B			;6716	22 03			".
+	JMP	>L6943			;6718	CC 69 43		.iC
+;
+;
+L671B:	CMP	#030H			;671B	A1 30			.0
+;
+L671D:	BCS	L6794			;671D	25 75			%u
+	CMP	#03EH			;671F	A1 3E			.>
+	BHI	L6726			;6721	22 03			".
+	JMP	>L6950			;6723	CC 69 50		.iP
+;
+;
+L6726:	CMP	#03FH			;6726	A1 3F			.?
+	BCS	L6794			;6728	25 6A			%j
+	CMP	#04DH			;672A	A1 4D			.M
+	BHI	L6731			;672C	22 03			".
+	JMP	>L696C			;672E	CC 69 6C		.il
+;
+;
+L6731:	CMP	#058H			;6731	A1 58			.X
+	BCS	L6794			;6733	25 5F			%_
+	CMP	#066H			;6735	A1 66			.f
+	BHI	L673C			;6737	22 03			".
+	JMP	>L697A			;6739	CC 69 7A		.iz
+;
+;
+L673C:	CMP	#076H			;673C	A1 76			.v
+	BCS	L6794			;673E	25 54			%T
+	CMP	#084H			;6740	A1 84			..
+	BHI	L6747			;6742	22 03			".
+	JMP	>L69B7			;6744	CC 69 B7		.i.
+;
+;
+L6747:	CMP	#085H			;6747	A1 85			..
+	BCS	L6794			;6749	25 49			%I
+	CMP	#093H			;674B	A1 93			..
+	BHI	L6752			;674D	22 03			".
+	JMP	>L69C9			;674F	CC 69 C9		.i.
+;
+;
+L6752:	CMP	#094H			;6752	A1 94			..
+	BCS	L6794			;6754	25 3E			%>
+	CMP	#0A2H			;6756	A1 A2			..
+	BHI	L675D			;6758	22 03			".
+	JMP	>L69FC			;675A	CC 69 FC		.i.
+;
+;
+L675D:	CMP	#0A3H			;675D	A1 A3			..
+	BCS	L6794			;675F	25 33			%3
+	CMP	#0B1H			;6761	A1 B1			..
+	BHI	L6768			;6763	22 03			".
+	JMP	>L69C0			;6765	CC 69 C0		.i.
+;
+;
+L6768:	CMP	#0B2H			;6768	A1 B2			..
+	BCS	L6794			;676A	25 28			%(
+	CMP	#0C0H			;676C	A1 C0			..
+	BHI	L6773			;676E	22 03			".
+	JMP	>L68B6			;6770	CC 68 B6		.h.
+;
+;
+L6773:	CMP	#0C1H			;6773	A1 C1			..
+	BCS	L6794			;6775	25 1D			%.
+	CMP	#0CFH			;6777	A1 CF			..
+	BHI	L677E			;6779	22 03			".
+	JMP	>L6A05			;677B	CC 6A 05		.j.
+;
+;
+L677E:	CMP	#0D0H			;677E	A1 D0			..
+	BCS	L6794			;6780	25 12			%.
+	CMP	#0DEH			;6782	A1 DE			..
+	BHI	L6789			;6784	22 03			".
+	JMP	>L69E0			;6786	CC 69 E0		.i.
+;
+;
+L6789:	CMP	#0DFH			;6789	A1 DF			..
+	BCS	L6794			;678B	25 07			%.
+	CMP	#0EDH			;678D	A1 ED			..
+	BHI	L6794			;678F	22 03			".
+	JMP	>L6A0A			;6791	CC 6A 0A		.j.
+;
+;
+L6794:	LDA	#001H			;6794	A6 01			..
+	STA	02AH			;6796	B7 2A			.*
+	LDA	#0DFH			;6798	A6 DF			..
+	JSR	>L6CB3			;679A	CD 6C B3		.l.
+	BSET	5,045H			;679D	1A 45			.E
+	BRCLR	1,047H,L67AD		;679F	03 47 0B		.G.
+	BRCLR	2,042H,L67AD		;67A2	05 42 08		.B.
+	LDA	#007H			;67A5	A6 07			..
+	STA	009H			;67A7	B7 09			..
+	LDA	#0C4H			;67A9	A6 C4			..
+	STA	008H			;67AB	B7 08			..
+;
+L67AD:	JMP	>L66D3			;67AD	CC 66 D3		.f.
+;
+;
+L67B0:	BCLR	4,041H			;67B0	19 41			.A
+	BSET	6,045H			;67B2	1C 45			.E
+	BRA	L67C4			;67B4	20 0E			 .
+;
+;
+L67B6:	BCLR	4,046H			;67B6	19 46			.F
+	LDA	#02DH			;67B8	A6 2D			.-
+	JMP	>L6A0C			;67BA	CC 6A 0C		.j.
+;
+;
+L67BD:	BCLR	6,046H			;67BD	1D 46			.F
+	LDA	#02EH			;67BF	A6 2E			..
+	JMP	>L6A0C			;67C1	CC 6A 0C		.j.
+;
+;
+L67C4:	BRSET	4,046H,L67B6		;67C4	08 46 EF		.F.
+	BRSET	6,046H,L67BD		;67C7	0C 46 F3		.F.
+	BRSET	7,043H,L6830		;67CA	0E 43 63		.Cc
+	BRSET	7,046H,L67E8		;67CD	0E 46 18		.F.
+	BRSET	6,043H,L6840		;67D0	0C 43 6D		.Cm
+	BRSET	5,047H,L6808		;67D3	0A 47 32		.G2
+	BRSET	7,047H,L67F4		;67D6	0E 47 1B		.G.
+	BRSET	4,047H,L6822		;67D9	08 47 46		.GF
+	BRSET	3,047H,L6829		;67DC	06 47 4A		.GJ
+	BRSET	0,040H,L6839		;67DF	00 40 57		.@W
+	BRSET	6,047H,L67EF		;67E2	0C 47 0A		.G.
+	JMP	>L6847			;67E5	CC 68 47		.hG
+;
+;
+L67E8:	BCLR	7,046H			;67E8	1F 46			.F
+	LDA	#016H			;67EA	A6 16			..
+	JMP	>L6A0C			;67EC	CC 6A 0C		.j.
+;
+;
+L67EF:	LDA	#00BH			;67EF	A6 0B			..
+	JMP	>L6A0C			;67F1	CC 6A 0C		.j.
+;
+;
+L67F4:	BCLR	7,047H			;67F4	1F 47			.G
+	LDA	029H			;67F6	B6 29			.)
+	BEQ	L67FE			;67F8	27 04			'.
+	CMP	#02AH			;67FA	A1 2A			.*
+	BEQ	L6803			;67FC	27 05			'.
+;
+L67FE:	LDA	#006H			;67FE	A6 06			..
+	JMP	>L6A0C			;6800	CC 6A 0C		.j.
+;
+;
+L6803:	CLR	029H			;6803	3F 29			?)
+	JMP	>L6A0C			;6805	CC 6A 0C		.j.
+;
+;
+L6808:	BRCLR	3,042H,L681D		;6808	07 42 12		.B.
+	CLRX				;680B	5F			_
+;
+L680C:	LDA	010H,X			;680C	E6 10			..
+	JSR	>L6BF6			;680E	CD 6B F6		.k.
+	BCS	L6818			;6811	25 05			%.
+	INCX				;6813	5C			\
+	CPX	#00BH			;6814	A3 0B			..
+	BNE	L680C			;6816	26 F4			&.
+;
+L6818:	BCLR	5,047H			;6818	1B 47			.G
+	JMP	>L6895			;681A	CC 68 95		.h.
+;
+;
+L681D:	LDA	#001H			;681D	A6 01			..
+	JMP	>L6A0C			;681F	CC 6A 0C		.j.
+;
+;
+L6822:	BCLR	4,047H			;6822	19 47			.G
+	LDA	#024H			;6824	A6 24			.$
+	JMP	>L6A0C			;6826	CC 6A 0C		.j.
+;
+;
+L6829:	BCLR	3,047H			;6829	17 47			.G
+	LDA	#005H			;682B	A6 05			..
+	JMP	>L6A0C			;682D	CC 6A 0C		.j.
+;
+;
+L6830:	BCLR	7,043H			;6830	1F 43			.C
+	BSET	4,043H			;6832	18 43			.C
+	LDA	#001H			;6834	A6 01			..
+	JMP	>L6A0C			;6836	CC 6A 0C		.j.
+;
+;
+L6839:	BCLR	0,040H			;6839	11 40			.@
+	LDA	#02CH			;683B	A6 2C			.,
+	JMP	>L6A0C			;683D	CC 6A 0C		.j.
+;
+;
+L6840:	BCLR	6,043H			;6840	1D 43			.C
+	LDA	#017H			;6842	A6 17			..
+	JMP	>L6A0C			;6844	CC 6A 0C		.j.
+;
+;
+L6847:	LDA	048H			;6847	B6 48			.H
+	CMP	#000H			;6849	A1 00			..
+	BEQ	L6875			;684B	27 28			'(
+	BRSET	4,042H,L686E		;684D	08 42 1E		.B.
+	BRSET	6,042H,L6867		;6850	0C 42 14		.B.
+	BRSET	5,042H,L6860		;6853	0A 42 0A		.B.
+	BRCLR	7,042H,L6875		;6856	0F 42 1C		.B.
+	BCLR	7,042H			;6859	1F 42			.B
+	LDA	#029H			;685B	A6 29			.)
+	JMP	>L6A0C			;685D	CC 6A 0C		.j.
+;
+;
+L6860:	BCLR	5,042H			;6860	1B 42			.B
+	LDA	#027H			;6862	A6 27			.'
+	JMP	>L6A0C			;6864	CC 6A 0C		.j.
+;
+;
+L6867:	BCLR	6,042H			;6867	1D 42			.B
+	LDA	#026H			;6869	A6 26			.&
+	JMP	>L6A0C			;686B	CC 6A 0C		.j.
+;
+;
+L686E:	BCLR	4,042H			;686E	19 42			.B
+	LDA	#025H			;6870	A6 25			.%
+	JMP	>L6A0C			;6872	CC 6A 0C		.j.
+;
+;
+L6875:	LDA	#002H			;6875	A6 02			..
+	CMP	04AH			;6877	B1 4A			.J
+	BNE	L6880			;6879	26 05			&.
+	LDA	#014H			;687B	A6 14			..
+	JMP	>L6A0C			;687D	CC 6A 0C		.j.
+;
+;
+L6880:	LDA	#007H			;6880	A6 07			..
+	AND	049H			;6882	B4 49			.I
+	BEQ	L6890			;6884	27 0A			'.
+	ADD	#014H			;6886	AB 14			..
+	CMP	#01BH			;6888	A1 1B			..
+	BNE	L6892			;688A	26 06			&.
+	LDA	#01AH			;688C	A6 1A			..
+	BRA	L6892			;688E	20 02			 .
+;
+;
+L6890:	LDA	#001H			;6890	A6 01			..
+;
+L6892:	JMP	>L6A0C			;6892	CC 6A 0C		.j.
+;
+;
+L6895:	BRSET	7,043H,L689C		;6895	0E 43 04		.C.
+	LDA	#019H			;6898	A6 19			..
+	STA	02CH			;689A	B7 2C			.,
+;
+L689C:	BSET	7,040H			;689C	1E 40			.@
+	BSET	5,045H			;689E	1A 45			.E
+	BRCLR	1,047H,L68AE		;68A0	03 47 0B		.G.
+	BRCLR	2,042H,L68AE		;68A3	05 42 08		.B.
+	LDA	#007H			;68A6	A6 07			..
+	STA	009H			;68A8	B7 09			..
+	LDA	#0C4H			;68AA	A6 C4			..
+	STA	008H			;68AC	B7 08			..
+;
+L68AE:	LDA	#0DFH			;68AE	A6 DF			..
+	JSR	>L6CB3			;68B0	CD 6C B3		.l.
+	JMP	>L66D3			;68B3	CC 66 D3		.f.
+;
+;
+L68B6:	LDA	#005H			;68B6	A6 05			..
+	JSR	>L6CE4			;68B8	CD 6C E4		.l.
+	JSR	>L6C63			;68BB	CD 6C 63		.lc
+	LDA	02EH			;68BE	B6 2E			..
+	STA	062H			;68C0	B7 62			.b
+	CMP	#0C8H			;68C2	A1 C8			..
+	BHI	L68DE			;68C4	22 18			".
+	BRCLR	3,042H,L68DE		;68C6	07 42 15		.B.
+	LDA	019H			;68C9	B6 19			..
+	CLC				;68CB	98			.
+	SBC	026H			;68CC	B2 26			.&
+	BEQ	L68DE			;68CE	27 0E			'.
+	CMP	062H			;68D0	B1 62			.b
+	BCS	L68D8			;68D2	25 04			%.
+	LDX	#01CH			;68D4	AE 1C			..
+	BRA	L68FF			;68D6	20 27			 '
+;
+;
+L68D8:	STA	062H			;68D8	B7 62			.b
+	LDX	#01BH			;68DA	AE 1B			..
+	BRA	L68FF			;68DC	20 21			 !
+;
+;
+L68DE:	LDA	062H			;68DE	B6 62			.b
+	CMP	#0FFH			;68E0	A1 FF			..
+	BEQ	L68EB			;68E2	27 07			'.
+	CMP	#0FEH			;68E4	A1 FE			..
+	BEQ	L68F4			;68E6	27 0C			'.
+	JMP	>L68FA			;68E8	CC 68 FA		.h.
+;
+;
+L68EB:	LDA	05EH			;68EB	B6 5E			.^
+	ORA	#00CH			;68ED	AA 0C			..
+	STA	05EH			;68EF	B7 5E			.^
+	JMP	>L68FA			;68F1	CC 68 FA		.h.
+;
+;
+L68F4:	LDA	05EH			;68F4	B6 5E			.^
+	ORA	#00DH			;68F6	AA 0D			..
+	STA	05EH			;68F8	B7 5E			.^
+;
+L68FA:	CLRA				;68FA	4F			O
+	STA	062H			;68FB	B7 62			.b
+	LDX	#01DH			;68FD	AE 1D			..
+;
+L68FF:	LDA	#010H			;68FF	A6 10			..
+;
+L6901:	DECA				;6901	4A			J
+	BNE	L6901			;6902	26 FD			&.
+	LDA	062H			;6904	B6 62			.b
+	JSR	>L6BF6			;6906	CD 6B F6		.k.
+
+	BCC	L690E			;6909	24 03			$.
+	JMP	>L6794			;690B	CC 67 94		.g.
+;
+;
+L690E:	LDA	#010H			;690E	A6 10			..
+;
+L6910:	DECA				;6910	4A			J
+	BNE	L6910			;6911	26 FD			&.
+	TXA				;6913	9F			.
+	JSR	>L6BF6			;6914	CD 6B F6		.k.
+	BCC	L691C			;6917	24 03			$.
+	JMP	>L6794			;6919	CC 67 94		.g.
+;
+;
+L691C:	LDA	062H			;691C	B6 62			.b
+	CLC				;691E	98			.
+	ADC	026H			;691F	B9 26			.&
+	STA	026H			;6921	B7 26			.&
+	LDA	#075H			;6923	A6 75			.u
+	STA	067H			;6925	B7 67			.g
+	JSR	>L6CED			;6927	CD 6C ED		.l.
+	STA	068H			;692A	B7 68			.h
+	JSR	>L6CF6			;692C	CD 6C F6		.l.
+	JMP	>L6895			;692F	CC 68 95		.h.
+;
+	LDA	#075H			;6932	A6 75			.u
+	STA	067H			;6934	B7 67			.g
+	JSR	>L6CED			;6936	CD 6C ED		.l.
+	STA	068H			;6939	B7 68			.h
+	JSR	>L6CF6			;693B	CD 6C F6		.l.
+	LDA	#008H			;693E	A6 08			..
+	JMP	>L6A0C			;6940	CC 6A 0C		.j.
+;
+;
+L6943:	BCLR	3,042H			;6943	17 42			.B
+	BCLR	5,043H			;6945	1B 43			.C
+	BCLR	5,047H			;6947	1B 47			.G
+	BSET	4,043H			;6949	18 43			.C
+	LDA	#009H			;694B	A6 09			..
+	JMP	>L6A0C			;694D	CC 6A 0C		.j.
+;
+;
+L6950:	BCLR	6,045H			;6950	1D 45			.E
+	BCLR	3,040H			;6952	17 40			.@
+	BCLR	4,044H			;6954	19 44			.D
+	BSET	7,043H			;6956	1E 43			.C
+	BSET	4,043H			;6958	18 43			.C
+	LDA	05BH			;695A	B6 5B			.[
+	BNE	L6963			;695C	26 05			&.
+	LDA	>L640A			;695E	C6 64 0A		.d.
+	STA	05BH			;6961	B7 5B			.[
+;
+L6963:	BCLR	3,042H			;6963	17 42			.B
+	CLR	02CH			;6965	3F 2C			?,
+	LDA	#00AH			;6967	A6 0A			..
+	JMP	>L6A0C			;6969	CC 6A 0C		.j.
+;
+;
+L696C:	BRCLR	6,04AH,L6971		;696C	0D 4A 02		.J.
+	BSET	5,043H			;696F	1A 43			.C
+;
+L6971:	BSET	3,042H			;6971	16 42			.B
+	BSET	4,044H			;6973	18 44			.D
+	LDA	#00CH			;6975	A6 0C			..
+	JMP	>L6A0C			;6977	CC 6A 0C		.j.
+;
+;
+L697A:	TST	010H			;697A	3D 10			=.
+	BNE	L69A7			;697C	26 29			&)
+	LDA	#000H			;697E	A6 00			..
+	JMP	>L6A0C			;6980	CC 6A 0C		.j.
+;
+	LDA	#003H			;6983	A6 03			..
+	STA	010H			;6985	B7 10			..
+	LDA	040H			;6987	B6 40			.@
+	STA	011H			;6989	B7 11			..
+	LDA	041H			;698B	B6 41			.A
+	STA	012H			;698D	B7 12			..
+	LDA	042H			;698F	B6 42			.B
+	STA	013H			;6991	B7 13			..
+	LDA	043H			;6993	B6 43			.C
+	STA	014H			;6995	B7 14			..
+	LDA	044H			;6997	B6 44			.D
+	STA	015H			;6999	B7 15			..
+	LDA	049H			;699B	B6 49			.I
+	STA	016H			;699D	B7 16			..
+	LDA	04AH			;699F	B6 4A			.J
+	STA	017H			;69A1	B7 17			..
+	LDA	03FH			;69A3	B6 3F			.?
+	STA	018H			;69A5	B7 18			..
+;
+L69A7:	CLRX				;69A7	5F			_
+;
+L69A8:	LDA	010H,X			;69A8	E6 10			..
+	JSR	>L6BF6			;69AA	CD 6B F6		.k.
+	BCS	L69B4			;69AD	25 05			%.
+	INCX				;69AF	5C			\
+	CPX	#00BH			;69B0	A3 0B			..
+	BNE	L69A8			;69B2	26 F4			&.
+;
+L69B4:	JMP	>L6895			;69B4	CC 68 95		.h.
+;
+;
+L69B7:	BSET	1,044H			;69B7	12 44			.D
+	BCLR	4,044H			;69B9	19 44			.D
+	LDA	#050H			;69BB	A6 50			.P
+	JMP	>L6A0C			;69BD	CC 6A 0C		.j.
+;
+;
+L69C0:	BSET	0,044H			;69C0	10 44			.D
+	BSET	3,045H			;69C2	16 45			.E
+	LDA	#028H			;69C4	A6 28			.(
+	JMP	>L6A0C			;69C6	CC 6A 0C		.j.
+;
+;
+L69C9:	LDA	>L6401			;69C9	C6 64 01		.d.
+	LSLA				;69CC	48			H
+	LSLA				;69CD	48			H
+	LSLA				;69CE	48			H
+	LSLA				;69CF	48			H
+	STA	02EH			;69D0	B7 2E			..
+	LDA	>L6402			;69D2	C6 64 02		.d.
+	LSRA				;69D5	44			D
+	LSRA				;69D6	44			D
+	LSRA				;69D7	44			D
+	LSRA				;69D8	44			D
+	ORA	02EH			;69D9	BA 2E			..
+	ORA	#080H			;69DB	AA 80			..
+	JMP	>L6A0C			;69DD	CC 6A 0C		.j.
+;
+;
+L69E0:	BCLR	4,044H			;69E0	19 44			.D
+	BCLR	6,045H			;69E2	1D 45			.E
+	BSET	7,043H			;69E4	1E 43			.C
+	BSET	4,043H			;69E6	18 43			.C
+	BSET	3,040H			;69E8	16 40			.@
+	LDA	05BH			;69EA	B6 5B			.[
+	BNE	L69F3			;69EC	26 05			&.
+	LDA	>L640A			;69EE	C6 64 0A		.d.
+	STA	05BH			;69F1	B7 5B			.[
+;
+L69F3:	BCLR	3,042H			;69F3	17 42			.B
+	CLR	02CH			;69F5	3F 2C			?,
+	LDA	#020H			;69F7	A6 20			. 
+	JMP	>L6A0C			;69F9	CC 6A 0C		.j.
+;
+;
+L69FC:	BSET	2,044H			;69FC	14 44			.D
+	BSET	4,044H			;69FE	18 44			.D
+	LDA	#051H			;6A00	A6 51			.Q
+	JMP	>L6A0C			;6A02	CC 6A 0C		.j.
+;
+;
+L6A05:	LDA	#01FH			;6A05	A6 1F			..
+	JMP	>L6A0C			;6A07	CC 6A 0C		.j.
+;
+;
+L6A0A:	LDA	#0EEH			;6A0A	A6 EE			..
+;
+L6A0C:	JSR	>L6BF6			;6A0C	CD 6B F6		.k.
+	JMP	>L6895			;6A0F	CC 68 95		.h.
+;
+;
+L6A12:	LDA	05CH			;6A12	B6 5C			.\
+	CMP	#005H			;6A14	A1 05			..
+	BLS	L6A1B			;6A16	23 03			#.
+	CLRA				;6A18	4F			O
+	CLR	05CH			;6A19	3F 5C			?\
+;
+L6A1B:	STA	02EH			;6A1B	B7 2E			..
+	LSLA				;6A1D	48			H
+	ADD	02EH			;6A1E	BB 2E			..
+	TAX				;6A20	97			.
+	JMP	>06A24H,X		;6A21	DC 6A 24		.j$
+;
+	JMP	>L6A36			;6A24	CC 6A 36		.j6
+;
+	JMP	>L6A58			;6A27	CC 6A 58		.jX
+;
+	JMP	>L6A83			;6A2A	CC 6A 83		.j.
+;
+	JMP	>L6A8D			;6A2D	CC 6A 8D		.j.
+;
+	JMP	>L6AAF			;6A30	CC 6A AF		.j.
+;
+	JMP	>L6ADA			;6A33	CC 6A DA		.j.
+;
+;
+L6A36:	LDA	05EH			;6A36	B6 5E			.^
+	AND	#00FH			;6A38	A4 0F			..
+	CMP	#00DH			;6A3A	A1 0D			..
+	BEQ	L6A45			;6A3C	27 07			'.
+	LDA	05EH			;6A3E	B6 5E			.^
+	AND	#0F0H			;6A40	A4 F0			..
+	STA	05EH			;6A42	B7 5E			.^
+	RTS				;6A44	81			.
+;
+;
+L6A45:	LDA	#001H			;6A45	A6 01			..
+	STA	05CH			;6A47	B7 5C			.\
+	LDA	#00CH			;6A49	A6 0C			..
+	STA	0F0H			;6A4B	B7 F0			..
+	LDA	05EH			;6A4D	B6 5E			.^
+	AND	#0F0H			;6A4F	A4 F0			..
+	STA	05EH			;6A51	B7 5E			.^
+	LDA	#028H			;6A53	A6 28			.(
+	STA	060H			;6A55	B7 60			.`
+	RTS				;6A57	81			.
+;
+;
+L6A58:	LDA	05EH			;6A58	B6 5E			.^
+	AND	#00FH			;6A5A	A4 0F			..
+	CMP	#00CH			;6A5C	A1 0C			..
+	BEQ	L6A76			;6A5E	27 16			'.
+	TST	060H			;6A60	3D 60			=`
+	BEQ	L6A70			;6A62	27 0C			'.
+	BRCLR	1,000H,L6A68		;6A64	03 00 01		...
+	RTS				;6A67	81			.
+;
+;
+L6A68:	LDA	048H			;6A68	B6 48			.H
+	BEQ	L6A68			;6A6A	27 FC			'.
+	BSET	7,042H			;6A6C	1E 42			.B
+	BRA	L6A76			;6A6E	20 06			 .
+;
+;
+L6A70:	LDA	048H			;6A70	B6 48			.H
+	BEQ	L6A76			;6A72	27 02			'.
+	BSET	6,042H			;6A74	1C 42			.B
+;
+L6A76:	LDA	#002H			;6A76	A6 02			..
+	STA	05CH			;6A78	B7 5C			.\
+	LDA	#008H			;6A7A	A6 08			..
+	STA	0F0H			;6A7C	B7 F0			..
+	LDA	#004H			;6A7E	A6 04			..
+	STA	060H			;6A80	B7 60			.`
+	RTS				;6A82	81			.
+;
+;
+L6A83:	TST	060H			;6A83	3D 60			=`
+	BEQ	L6A88			;6A85	27 01			'.
+	RTS				;6A87	81			.
+;
+;
+L6A88:	LDA	#003H			;6A88	A6 03			..
+	STA	05CH			;6A8A	B7 5C			.\
+	RTS				;6A8C	81			.
+;
+;
+L6A8D:	LDA	05EH			;6A8D	B6 5E			.^
+	AND	#00FH			;6A8F	A4 0F			..
+	CMP	#00CH			;6A91	A1 0C			..
+	BEQ	L6A9C			;6A93	27 07			'.
+	LDA	05EH			;6A95	B6 5E			.^
+	AND	#0F0H			;6A97	A4 F0			..
+	STA	05EH			;6A99	B7 5E			.^
+	RTS				;6A9B	81			.
+;
+;
+L6A9C:	LDA	#004H			;6A9C	A6 04			..
+	STA	05CH			;6A9E	B7 5C			.\
+	LDA	#00BH			;6AA0	A6 0B			..
+	STA	0F0H			;6AA2	B7 F0			..
+	LDA	05EH			;6AA4	B6 5E			.^
+	AND	#0F0H			;6AA6	A4 F0			..
+	STA	05EH			;6AA8	B7 5E			.^
+	LDA	#028H			;6AAA	A6 28			.(
+	STA	060H			;6AAC	B7 60			.`
+	RTS				;6AAE	81			.
+;
+;
+L6AAF:	LDA	05EH			;6AAF	B6 5E			.^
+	AND	#00FH			;6AB1	A4 0F			..
+	CMP	#00DH			;6AB3	A1 0D			..
+	BEQ	L6ACD			;6AB5	27 16			'.
+	TST	060H			;6AB7	3D 60			=`
+	BEQ	L6AC7			;6AB9	27 0C			'.
+	BRCLR	1,000H,L6ABF		;6ABB	03 00 01		...
+	RTS				;6ABE	81			.
+;
+;
+L6ABF:	LDA	048H			;6ABF	B6 48			.H
+	BEQ	L6ACD			;6AC1	27 0A			'.
+	BSET	7,042H			;6AC3	1E 42			.B
+	BRA	L6ACD			;6AC5	20 06			 .
+;
+;
+L6AC7:	LDA	048H			;6AC7	B6 48			.H
+	BEQ	L6ACD			;6AC9	27 02			'.
+	BSET	6,042H			;6ACB	1C 42			.B
+;
+L6ACD:	LDA	#005H			;6ACD	A6 05			..
+	STA	05CH			;6ACF	B7 5C			.\
+	LDA	#008H			;6AD1	A6 08			..
+	STA	0F0H			;6AD3	B7 F0			..
+	LDA	#004H			;6AD5	A6 04			..
+	STA	060H			;6AD7	B7 60			.`
+	RTS				;6AD9	81			.
+;
+;
+L6ADA:	TST	060H			;6ADA	3D 60			=`
+	BEQ	L6ADF			;6ADC	27 01			'.
+	RTS				;6ADE	81			.
+;
+;
+L6ADF:	LDA	#000H			;6ADF	A6 00			..
+	STA	05CH			;6AE1	B7 5C			.\
+	RTS				;6AE3	81			.
+;
+;
+L6AE4:	LDA	05DH			;6AE4	B6 5D			.]
+	CMP	#005H			;6AE6	A1 05			..
+	BLS	L6AED			;6AE8	23 03			#.
+	CLRA				;6AEA	4F			O
+	CLR	05DH			;6AEB	3F 5D			?]
+;
+L6AED:	STA	02EH			;6AED	B7 2E			..
+	LSLA				;6AEF	48			H
+	ADD	02EH			;6AF0	BB 2E			..
+	TAX				;6AF2	97			.
+	JMP	>06AF6H,X		;6AF3	DC 6A F6		.j.
+;
+	JMP	>L6B08			;6AF6	CC 6B 08		.k.
+;
+	JMP	>L6B3D			;6AF9	CC 6B 3D		.k=
+;
+	JMP	>L6B75			;6AFC	CC 6B 75		.ku
+;
+	JMP	>L6B7F			;6AFF	CC 6B 7F		.k.
+;
+	JMP	>L6BB4			;6B02	CC 6B B4		.k.
+;
+	JMP	>L6BEC			;6B05	CC 6B EC		.k.
+;
+;
+L6B08:	LDA	05EH			;6B08	B6 5E			.^
+	LSRA				;6B0A	44			D
+	LSRA				;6B0B	44			D
+	LSRA				;6B0C	44			D
+	LSRA				;6B0D	44			D
+	CMP	#00DH			;6B0E	A1 0D			..
+	BEQ	L6B28			;6B10	27 16			'.
+	LDA	05CH			;6B12	B6 5C			.\
+	CMP	#000H			;6B14	A1 00			..
+	BEQ	L6B1C			;6B16	27 04			'.
+	CMP	#003H			;6B18	A1 03			..
+	BNE	L6B1F			;6B1A	26 03			&.
+;
+L6B1C:	BRSET	1,044H,L6B28		;6B1C	02 44 09		.D.
+;
+L6B1F:	LDA	05EH			;6B1F	B6 5E			.^
+	AND	#00FH			;6B21	A4 0F			..
+	STA	05EH			;6B23	B7 5E			.^
+	BCLR	2,044H			;6B25	15 44			.D
+	RTS				;6B27	81			.
+;
+;
+L6B28:	LDA	#001H			;6B28	A6 01			..
+	STA	05DH			;6B2A	B7 5D			.]
+	LDA	#00DH			;6B2C	A6 0D			..
+	STA	0F0H			;6B2E	B7 F0			..
+	LDA	05EH			;6B30	B6 5E			.^
+	AND	#00FH			;6B32	A4 0F			..
+	STA	05EH			;6B34	B7 5E			.^
+	BCLR	1,044H			;6B36	13 44			.D
+	LDA	#028H			;6B38	A6 28			.(
+	STA	060H			;6B3A	B7 60			.`
+	RTS				;6B3C	81			.
+;
+;
+L6B3D:	BRSET	2,044H,L6B68		;6B3D	04 44 28		.D(
+	LDA	05EH			;6B40	B6 5E			.^
+	LSRA				;6B42	44			D
+	LSRA				;6B43	44			D
+	LSRA				;6B44	44			D
+	LSRA				;6B45	44			D
+	CMP	#00CH			;6B46	A1 0C			..
+	BEQ	L6B68			;6B48	27 1E			'.
+	TST	060H			;6B4A	3D 60			=`
+	BEQ	L6B62			;6B4C	27 14			'.
+	BRCLR	1,000H,L6B5A		;6B4E	03 00 09		...
+	LDA	05EH			;6B51	B6 5E			.^
+	AND	#00FH			;6B53	A4 0F			..
+	STA	05EH			;6B55	B7 5E			.^
+	BCLR	1,044H			;6B57	13 44			.D
+	RTS				;6B59	81			.
+;
+;
+L6B5A:	LDA	048H			;6B5A	B6 48			.H
+	BEQ	L6B68			;6B5C	27 0A			'.
+	BSET	5,042H			;6B5E	1A 42			.B
+	BRA	L6B68			;6B60	20 06			 .
+;
+;
+L6B62:	LDA	048H			;6B62	B6 48			.H
+	BEQ	L6B68			;6B64	27 02			'.
+	BSET	4,042H			;6B66	18 42			.B
+;
+L6B68:	LDA	#002H			;6B68	A6 02			..
+	STA	05DH			;6B6A	B7 5D			.]
+	LDA	#008H			;6B6C	A6 08			..
+	STA	0F0H			;6B6E	B7 F0			..
+	LDA	#004H			;6B70	A6 04			..
+	STA	060H			;6B72	B7 60			.`
+	RTS				;6B74	81			.
+;
+;
+L6B75:	TST	060H			;6B75	3D 60			=`
+	BEQ	L6B7A			;6B77	27 01			'.
+	RTS				;6B79	81			.
+;
+;
+L6B7A:	LDA	#003H			;6B7A	A6 03			..
+	STA	05DH			;6B7C	B7 5D			.]
+	RTS				;6B7E	81			.
+;
+;
+L6B7F:	LDA	05EH			;6B7F	B6 5E			.^
+	LSRA				;6B81	44			D
+	LSRA				;6B82	44			D
+	LSRA				;6B83	44			D
+	LSRA				;6B84	44			D
+	CMP	#00CH			;6B85	A1 0C			..
+	BEQ	L6B9F			;6B87	27 16			'.
+	LDA	05CH			;6B89	B6 5C			.\
+	CMP	#000H			;6B8B	A1 00			..
+	BEQ	L6B93			;6B8D	27 04			'.
+	CMP	#003H			;6B8F	A1 03			..
+	BNE	L6B96			;6B91	26 03			&.
+;
+L6B93:	BRSET	2,044H,L6B9F		;6B93	04 44 09		.D.
+;
+L6B96:	LDA	05EH			;6B96	B6 5E			.^
+	AND	#00FH			;6B98	A4 0F			..
+	STA	05EH			;6B9A	B7 5E			.^
+	BCLR	1,044H			;6B9C	13 44			.D
+	RTS				;6B9E	81			.
+;
+;
+L6B9F:	LDA	#004H			;6B9F	A6 04			..
+	STA	05DH			;6BA1	B7 5D			.]
+	LDA	#00AH			;6BA3	A6 0A			..
+	STA	0F0H			;6BA5	B7 F0			..
+	LDA	05EH			;6BA7	B6 5E			.^
+	AND	#00FH			;6BA9	A4 0F			..
+	STA	05EH			;6BAB	B7 5E			.^
+	BCLR	2,044H			;6BAD	15 44			.D
+	LDA	#028H			;6BAF	A6 28			.(
+	STA	060H			;6BB1	B7 60			.`
+	RTS				;6BB3	81			.
+;
+;
+L6BB4:	BRSET	1,044H,L6BDF		;6BB4	02 44 28		.D(
+	LDA	05EH			;6BB7	B6 5E			.^
+	LSRA				;6BB9	44			D
+	LSRA				;6BBA	44			D
+	LSRA				;6BBB	44			D
+	LSRA				;6BBC	44			D
+	CMP	#00DH			;6BBD	A1 0D			..
+	BEQ	L6BDF			;6BBF	27 1E			'.
+	TST	060H			;6BC1	3D 60			=`
+	BEQ	L6BD9			;6BC3	27 14			'.
+	BRCLR	1,000H,L6BD1		;6BC5	03 00 09		...
+	LDA	05EH			;6BC8	B6 5E			.^
+	AND	#00FH			;6BCA	A4 0F			..
+	STA	05EH			;6BCC	B7 5E			.^
+	BCLR	2,044H			;6BCE	15 44			.D
+	RTS				;6BD0	81			.
+;
+;
+L6BD1:	LDA	048H			;6BD1	B6 48			.H
+	BEQ	L6BDF			;6BD3	27 0A			'.
+	BSET	5,042H			;6BD5	1A 42			.B
+	BRA	L6BDF			;6BD7	20 06			 .
+;
+;
+L6BD9:	LDA	048H			;6BD9	B6 48			.H
+	BEQ	L6BDF			;6BDB	27 02			'.
+	BSET	4,042H			;6BDD	18 42			.B
+;
+L6BDF:	LDA	#005H			;6BDF	A6 05			..
+	STA	05DH			;6BE1	B7 5D			.]
+	LDA	#008H			;6BE3	A6 08			..
+	STA	0F0H			;6BE5	B7 F0			..
+	LDA	#004H			;6BE7	A6 04			..
+	STA	060H			;6BE9	B7 60			.`
+	RTS				;6BEB	81			.
+;
+;
+L6BEC:	TST	060H			;6BEC	3D 60			=`
+	BEQ	L6BF1			;6BEE	27 01			'.
+	RTS				;6BF0	81			.
+;
+
+;
+L6BF1:	LDA	#000H			;6BF1	A6 00			..
+	STA	05DH			;6BF3	B7 5D			.]
+	RTS				;6BF5	81			.
+;
+;
+L6BF6:	CLC				;6BF6	98			.
+	STX	02EH			;6BF7	BF 2E			..
+	TAX				;6BF9	97			.
+	LDA	#009H			;6BFA	A6 09			..
+	STA	025H			;6BFC	B7 25			.%
+	LDA	#007H			;6BFE	A6 07			..
+	STA	009H			;6C00	B7 09			..
+	CLR	008H			;6C02	3F 08			?.
+;
+L6C04:	LDA	000H			;6C04	B6 00			..
+	CMP	000H			;6C06	B1 00			..
+	BNE	L6C04			;6C08	26 FA			&.
+	STA	027H			;6C0A	B7 27			.'
+	LSLX				;6C0C	58			X
+	BCC	L6C13			;6C0D	24 04			$.
+	BSET	4,000H			;6C0F	18 00			..
+	BRA	L6C15			;6C11	20 02			 .
+;
+;
+L6C13:	BCLR	4,000H			;6C13	19 00			..
+;
+L6C15:	DEC	025H			;6C15	3A 25			:%
+;
+L6C17:	LDA	000H			;6C17	B6 00			..
+	CMP	000H			;6C19	B1 00			..
+	BNE	L6C17			;6C1B	26 FA			&.
+	EOR	027H			;6C1D	B8 27			.'
+	AND	#008H			;6C1F	A4 08			..
+	BNE	L6C2F			;6C21	26 0C			&.
+	BRCLR	4,04CH,L6C29		;6C23	09 4C 03		.L.
+	BRCLR	0,000H,L6C54		;6C26	01 00 2B		..+
+;
+L6C29:	BRCLR	7,009H,L6C17		;6C29	0F 09 EB		...
+	SEC				;6C2C	99			.
+	BRA	L6C54			;6C2D	20 25			 %
+;
+;
+L6C2F:	LDA	000H			;6C2F	B6 00			..
+	CMP	000H			;6C31	B1 00			..
+	BNE	L6C2F			;6C33	26 FA			&.
+	STA	027H			;6C35	B7 27			.'
+	LSLX				;6C37	58			X
+	BCC	L6C3E			;6C38	24 04			$.
+	BSET	4,000H			;6C3A	18 00			..
+	BRA	L6C40			;6C3C	20 02			 .
+;
+;
+L6C3E:	BCLR	4,000H			;6C3E	19 00			..
+;
+L6C40:	DEC	025H			;6C40	3A 25			:%
+	BEQ	L6C54			;6C42	27 10			'.
+;
+L6C44:	LDA	000H			;6C44	B6 00			..
+	CMP	000H			;6C46	B1 00			..
+	BNE	L6C44			;6C48	26 FA			&.
+	EOR	027H			;6C4A	B8 27			.'
+	AND	#008H			;6C4C	A4 08			..
+	BNE	L6C2F			;6C4E	26 DF			&.
+	BRCLR	7,009H,L6C44		;6C50	0F 09 F1		...
+	SEC				;6C53	99			.
+;
+L6C54:	BCLR	4,000H			;6C54	19 00			..
+	CLR	025H			;6C56	3F 25			?%
+	LDA	#003H			;6C58	A6 03			..
+	STA	009H			;6C5A	B7 09			..
+	LDA	#039H			;6C5C	A6 39			.9
+	STA	008H			;6C5E	B7 08			..
+	LDX	02EH			;6C60	BE 2E			..
+	RTS				;6C62	81			.
+;
+;
+L6C63:	LDA	#008H			;6C63	A6 08			..
+	STA	025H			;6C65	B7 25			.%
+	CLR	02EH			;6C67	3F 2E			?.
+;
+L6C69:	LDA	000H			;6C69	B6 00			..
+	BRCLR	4,000H,L6C72		;6C6B	09 00 04		...
+	BCLR	4,000H			;6C6E	19 00			..
+	BRA	L6C74			;6C70	20 02			 .
+;
+;
+L6C72:	BSET	4,000H			;6C72	18 00			..
+;
+L6C74:	LSRA				;6C74	44			D
+	LSRA				;6C75	44			D
+	LSRA				;6C76	44			D
+	LSRA				;6C77	44			D
+	ROL	02EH			;6C78	39 2E			9.
+	DEC	025H			;6C7A	3A 25			:%
+	BEQ	L6C85			;6C7C	27 07			'.
+	LDA	#021H			;6C7E	A6 21			.!
+;
+L6C80:	DECA				;6C80	4A			J
+	BNE	L6C80			;6C81	26 FD			&.
+	BRA	L6C69			;6C83	20 E4			 .
+;
+;
+L6C85:	RTS				;6C85	81			.
+;
+;
+L6C86:	ORA	04AH			;6C86	BA 4A			.J
+	STA	04AH			;6C88	B7 4A			.J
+;
+L6C8A:	LDA	#052H			;6C8A	A6 52			.R
+	AND	04AH			;6C8C	B4 4A			.J
+	BEQ	L6C94			;6C8E	27 04			'.
+	BSET	1,049H			;6C90	12 49			.I
+	BRA	L6C96			;6C92	20 02			 .
+;
+;
+L6C94:	BCLR	1,049H			;6C94	13 49			.I
+;
+L6C96:	BRSET	1,049H,L6C9C		;6C96	02 49 03		.I.
+	BRCLR	2,04AH,L6CA0		;6C99	05 4A 04		.J.
+;
+L6C9C:	BSET	3,049H			;6C9C	16 49			.I
+	BRA	L6CA2			;6C9E	20 02			 .
+;
+;
+L6CA0:	BCLR	3,049H			;6CA0	17 49			.I
+;
+L6CA2:	BRCLR	2,04AH,L6CA8		;6CA2	05 4A 03		.J.
+	BSET	2,049H			;6CA5	14 49			.I
+	RTS				;6CA7	81			.
+;
+;
+L6CA8:	BCLR	2,049H			;6CA8	15 49			.I
+	RTS				;6CAA	81			.
+;
+;
+L6CAB:	TAX				;6CAB	97			.
+	COMA				;6CAC	43			C
+	AND	04AH			;6CAD	B4 4A			.J
+	STA	04AH			;6CAF	B7 4A			.J
+	BRA	L6C8A			;6CB1	20 D7			 .
+;
+;
+L6CB3:	AND	04CH			;6CB3	B4 4C			.L
+	STA	04CH			;6CB5	B7 4C			.L
+	CLC				;6CB7	98			.
+	BMC	L6CBB			;6CB8	2C 01			,.
+	SEC				;6CBA	99			.
+;
+L6CBB:	SEI				;6CBB	9B			.
+	LDA	04CH			;6CBC	B6 4C			.L
+	STA	090H			;6CBE	B7 90			..
+	BCS	L6CC3			;6CC0	25 01			%.
+	CLI				;6CC2	9A			.
+;
+L6CC3:	RTS				;6CC3	81			.
+;
+;
+L6CC4:	ORA	04CH			;6CC4	BA 4C			.L
+	STA	04CH			;6CC6	B7 4C			.L
+	CLC				;6CC8	98			.
+	BMC	L6CCC			;6CC9	2C 01			,.
+	SEC				;6CCB	99			.
+;
+L6CCC:	SEI				;6CCC	9B			.
+	LDA	04CH			;6CCD	B6 4C			.L
+	STA	090H			;6CCF	B7 90			..
+	BCS	L6CD4			;6CD1	25 01			%.
+	CLI				;6CD3	9A			.
+;
+L6CD4:	RTS				;6CD4	81			.
+;
+	BSET	7,000H			;6CD5	1E 00			..
+	BCLR	0,PORT_B			;6CD7	11 01			..
+	RTS				;6CD9	81			.
+;
+;
+L6CDA:	BCLR	7,000H			;6CDA	1F 00			..
+	BSET	0,PORT_B			;6CDC	10 01			..
+	RTS				;6CDE	81			.
+;
+;
+L6CDF:	BCLR	7,000H			;6CDF	1F 00			..
+	BCLR	0,PORT_B			;6CE1	11 01			..
+	RTS				;6CE3	81			.
+;
+;
+L6CE4:	LDX	#0AAH			;6CE4	AE AA			..
+;
+L6CE6:	DECX				;6CE6	5A			Z
+	BNE	L6CE6			;6CE7	26 FD			&.
+	DECA				;6CE9	4A			J
+	BNE	L6CE4			;6CEA	26 F8			&.
+	RTS				;6CEC	81			.
+;
+;
+L6CED:	LDA	019H			;6CED	B6 19			..
+	EOR	026H			;6CEF	B8 26			.&
+	EOR	067H			;6CF1	B8 67			.g
+	EOR	043H			;6CF3	B8 43			.C
+	RTS				;6CF5	81			.
+;
+;
+L6CF6:	BRSET	3,045H,L6D2C		;6CF6	06 45 33		.E3
+	LDX	>L6409			;6CF9	CE 64 09		.d.
+	BEQ	L6D10			;6CFC	27 12			'.
+	LDA	019H			;6CFE	B6 19			..
+	CMP	#0C8H			;6D00	A1 C8			..
+	BNE	L6D10			;6D02	26 0C			&.
+	LDA	037H			;6D04	B6 37			.7
+	BNE	L6D10			;6D06	26 08			&.
+	LDA	#0C8H			;6D08	A6 C8			..
+	STA	037H			;6D0A	B7 37			.7
+	BSET	2,045H			;6D0C	14 45			.E
+	BSET	4,045H			;6D0E	18 45			.E
+;
+L6D10:	LDX	#005H			;6D10	AE 05			..
+;
+L6D12:	LDA	019H			;6D12	B6 19			..
+	CMP	>06414H,X		;6D14	D1 64 14		.d.
+	BLS	L6D29			;6D17	23 10			#.
+	SUB	026H			;6D19	B0 26			.&
+	CMP	>06414H,X		;6D1B	D1 64 14		.d.
+	BHI	L6D29			;6D1E	22 09			".
+	LDA	>06414H,X		;6D20	D6 64 14		.d.
+	STA	037H			;6D23	B7 37			.7
+	BSET	2,045H			;6D25	14 45			.E
+	BCLR	4,045H			;6D27	19 45			.E
+;
+L6D29:	DECX				;6D29	5A			Z
+	BPL	L6D12			;6D2A	2A E6			*.
+L6D2C:	RTS				;6D2C	81			.
+;

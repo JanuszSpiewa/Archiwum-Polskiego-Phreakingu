@@ -1,0 +1,33 @@
+Generator fal prostokatnych by DzikitoM
+
+Napiecie zasilania 5 -18 V
+Generator zbudowany jest z ukladow CMOS
+CD4060 - generator i 14 stopniowy dzielnik dwojkowy czestotliwosci
+CD4029 - licznik dwojkowy (lub BCD) liczacy w gore lub w dol
+
+Rezonatora kwarcowego 
+   testowanalem na 1.84 Mhz
+   moze byc inny, im mniej tym lepiej
+
+Opcjonalnie diody LED sygnalizujace dzialanie
+dioda podlaczona do 4060 jest poloczona przez kondesator (elektrolit ok 1uF),
+aby nie zaklocala pracy generatora
+
+zakres czestliwosci
+
+1.84 Mhz /4 =
+0.115 Mhz 
+nastepne sa 0.115 Mhz /2 itd.
+az do 112 hz na CD4060
+i dalej 7 hz na CD4029
+
+Rysunek generatora w generator.jpg
+
+Po zlozeniu (pajeczynka albo plytka uniwersalna) to gowno musi dzialac.
+
+Calosc jest mojego pomyslu. Jesli udalo ci sie go zlozyc,
+cos fajnie udoskonalic, lub masz klopoty z uruchomieniem
+wysylaj na dzikitom@netgate.com.pl
+
+
+ 

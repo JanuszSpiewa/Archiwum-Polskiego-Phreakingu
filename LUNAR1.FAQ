@@ -1,0 +1,1122 @@
+
+
+ 
+                         [ Lunar.Shake phreak FAQ ]
+
+
+                                   issue 1
+                          release date: 10/03/1998
+
+
+
+                       (c) 1998 nth, some parts by bth
+
+
+                    -- -------------/\-/\------------ --
+      DISCLAIMER: redakcja nie ponosi odpowiedzialnosci za tresc. Wszelkie
+      teksty zamieszczone tutaj maja charakter wylacznie edukacyjny.
+                    -- -------------/\-/\------------ --
+
+
+
+  W ponizszym FAQ zajmiemy sie phreakiem. W polsce 'zloty wiek' tego typu
+  dzialalnosci niestety nigdy nie zaistnial -- kiedys jeszcze za 'dawnych
+  dobrych czasow' mielismy stare, pulsowe centrale strowgera z ktorymi nic
+  sie nie dalo zrobic. Teraz za to mamy wszystko cyfrowe, tak ze mozna za-
+  pomniec o takich powerfulnych sprawach jak np blueboxing... Jednak nie
+  wszystko jeszcze stracone, siec telekomunikacyjna TPSA kryje w sobie wiele
+  mhmm tajemnic i ciekawych zjawisk... Zdaje sobie sprawe z tego ze niektore
+  materialy zamieszczone w tym FAQ moga byc juz zdeka przeterminowane badz
+  tez juz gdzies przez kogos zamieszczone. Jest jednak sporo nowych rzeczy
+  tak ze wiec zachecam do lektury.
+
+
+                     ----  -   /\/\-- - --/\/\   -  ----
+
+       -- - ---- - --/\/\   Chapter I: W TERENIE ... /\/\-- - ---- - --
+
+                     ----  -   /\/\-- - --/\/\   -  ----
+
+             Kiedy jestesmy na miescie i koniecznie chcemy zadzwonic
+             wcale nie trzeba leciec do kiosku po to zeby wydac kase
+             na karte, albo o zgrozo zetony... :) Telekompromitacja
+              Polska SA czasami jednak potrafi ulatwic nieco zycie...
+
+
+/\/\-----------------------------------------------------------------------/\/\
+           I. Automaty dwukierunkowe - do czego to sie moze przydac
+/\/\-----------------------------------------------------------------------/\/\
+
+
+                /\/\-- - 1. Jak zdobyc numer automatu - --/\/\
+
+
+ W Polsce wszystkie automaty na karte sa dwukierunkowe, czyli mozna dzwonic z
+ nich i do nich. W kazdym cywilizowanym miescie numer automatu jest na nim
+ wyryty, w Warszawie niestety nie. Ale mozna go zdobyc na kilka sposobow.
+ Dzialaja one _tylko_ na cyfrowych centralach wysylajacych CallerID.
+
+
+
+   [ A ]  Dowiadywanie sie u zrodla... 917
+
+   Jest to tak zwane biuro zlecen TPSA. mozna sobie m.in. zamowic budzenie
+   przez telefon. Jak to mozna wykorzystac? Otoz dzwonisz pod 917, mowisz
+   ze musisz zamowic budzenie na 5 rano. Babka pyta o nr telefonu, a ty w
+   tym momencie mowisz 'aaeeee ale ja tu tylko pracuje jako pomoc domowa,
+   nie znam numeru telefonu a panstwo prosili zebym zamowila im budzenie na
+   5 rano bo jutro wylatuja do kanady..' Jezeli pani w biurze ma jeszcze
+   jakies ludzkie odruchy to przeczyta ci CIDa... jezeli jest mniej mila
+   to powie ze jej sie nic nie wyswietla, a jezeli jest stara suka to powie
+   ze nie udziela takich informacji :)
+
+
+   [ B ]  Wszelkiego wazne instytucje lub infolinie
+
+   Wiekszosc powaznych instytucji ma linie na cyfrowych centralach i
+   wlaczonego CIDa (duze pieniadze robia duze wrazenie na TPSA :). Tak wiec
+   jezeli mamy znajoma/mame/ciocie/babcie pracujaca np w PAPie, w PWN czy
+   jeszcze lepiej w jakims biurze rzadowym to dzwonimy do niej i pytamy o
+   numer z ktorego dzwonimy. :)
+
+   Jezeli nie mamy akurat przy sobie tonedialera i nie chcemy tracic impulsu
+   (lub budka nie jest podpieta do alcatela :) to mozemy zadzwonic na jakas
+   0800tke - wiekszosc nich to tez jakies duze firmy z cyfrowymi centralami
+   i cid'em. :) tak wiec:
+   Dzwonimy np na infolinie ery gsm (0800-22900) i rozmawiamy chwile z pania.
+   Pytamy o ceny uslug etc, prosimy zeby wyslala nam je faxem. Babka jak jest
+   glupia to pyta o twoj nr telefonu a jak ma iq nieco powyzej sredniej
+   blondynki to czyta nam CIDa i pyta czy na ten numer. Jak babka nie bedzie
+   chciala wyslac faxu to mozna ja poprostu tak zupelnie od czapy spytac o
+   'nr telefonu z ktorego dzwonie'. Jezeli babka bedzie wporzo to nam powie.
+   Jesli bedzie stara prukwa to ja olewamy i dzwonimy np na infolinie plusa.
+
+
+   [ C ]  GSMy z cidem
+
+   Ten manewr juz nie przejdzie bo na wyswietlaczu GSMow pojawialy sie swego
+   czasu numery zastrzezone telekomuny :) TPSA oczywiscie poszla po najmnie-
+   jszej linii oporu i zamiast troche posiedziec przy centralach to kazala
+   operatorom GSMow wylaczyc CIDa na telekomune. Teraz numery sie wyswietlaja,
+   ale tylko te niezastrzezone, czyli niektore budki mozna wylapac. Poza tym
+   abonent komorkowca musi miec wykupionego CIDa (u nich to dodatkowa usluga)
+
+
+   [ D ]  Pagery MetroBip'a  [twitter]
+
+   Dzwonimy na centrale MetroBip'a (098-nrpagera) i nie mowimy nic tylko sie
+   hangupujemy. Zamiast wiadomosci na pagerze pojawi sie CID :)
+
+
+
+           /\/\-- -  2. Kiedy juz mamy numer automatu  - --/\/\
+
+
+ Kiedy juz zdobedziemy numer budki telefonicznej mozemy go wykorzystac do
+ roznych celow. Mozemy sobie na nia podzwonic z budki na przeciwko i
+ porobic sobie jaja z odbierajacych telefon ludzi, np rzucajac gosciowi text:
+ ' wiem kim jestes, wiem gdzie jestes i wiem co robiles ' i inne takie...
+ Mozemy takze wykorzystac zdobyty numer do nieco ambitniejszych celow, np
+ podzwonienia sobie za free:
+
+
+   [ A ]  Callback
+
+   Mozemy poprostu zadzwonic do kolezanki ktora nie zwraca uwagi na wysokosc
+   rachunku i powiedziec zeby nam oddzwonila na nr automatu ;) banalne ale
+   czasem sie przydaje
+
+
+   [ B ]  Entry Call
+
+   Tam gdzie telekomuna sie jeszcze nie wycwanila i nie wlaczyla teletaxy
+   na centrali, mozna zadzwonic z jednej budki na druga, po pierwszym RINGu
+   w pierwszej odlozyc sluchawke a w drugiej za ok.2 sekundy podniesc :)
+   Pierwsza budka sie rozlaczy, a jak podniesiesz sluchawke w drugiej to
+   bedzie jescze myslala ze odbierasz polaczenie przychodzace, efektem czego
+   bedzie napis 'entry call' na wyswietlaczu i dialtone w sluchawce. Bierzesz
+   tonedialera i dzwonisz gdzie chcesz. Tyle ze w Warszawie (przynajmniej na
+   budkach podpietych do Alcateli S12) zrywa po sekundzie polaczenia.
+
+
+   [ C ]  Zamawianie miedzymiastowych
+
+   Mozemy sobie zamowic rozmowe na koszt budki :) Trzeba tylko zadzwonic
+   pod 900... i wlasnie pojawia sie 'numer zablokowany'. Telekomuna to
+   przewidziala. Ale nie przewidziala ze bedziesz znal drugi numer do biura
+   zamawiania rozmow, czyli 915. Od biedy 900 tez sie da wykrecic ale trzeba
+   go wybrac sposobem. Jak? - o tym pozniej. Tak wiec dzwonimy na 900/915
+   i zamawiamy rozmowe z numerem np 0011-505515505 i podajemy 'swoj' numer.
+   Za chwile operatorka do ciebie oddzwoni i polaczy cie z rzeczonym numerem.
+
+   Da sie taki manewr przeprowadzic tylko wtedy gdy babka nie ma 'twojego'
+   numeru w wykazie automatow, czyli np dziala na zdobytych 'na dziko' numerach
+   warszawskich niebieskich... Aha, jeszcze jedno: kiedy odbierzesz sluchawke w
+   automacie to babka uslyszy piski. Jak jest doswiadczona to sie kapnie o co
+   biega, nabluzga ci i sie hangupnie, jak jest green-o-matic to jej mozesz
+   nasciemiac ze to twoj bezprzewodowiec tak piszczy bo sie mu koncza baterie
+   albo ze masz podlaczony fax/modem/cokolwiek i wlasnie ci sie wlaczyl.
+
+
+   [ D ]  Zamawianie rozmowy na koszt abonenta
+
+   Dzwonimy do kolezanki z ktora chcemy pogadac, mowimy jej zeby zadzwonila
+   na 900 i zamowila rozmowe na koszt abonenta, podajemy jej numer budki.
+   Jak dobrze pojdzie to za chwile zadzwoni do ciebie telefonistka i spyta
+   czy zgadzasz sie na rozmowe na koszt abonenta. Ty pytasz ile to bedzie
+   kosztowalo i tym podobne bzdury po czym sie zgadzasz i gadasz. :)
+   Niezbedny social engineering opisany w punkcie powyzej.
+
+
+
+/\/\-----------------------------------------------------------------------/\/\
+        II. Przekrety z niebieskimi, czyli phree calling z karcianych
+/\/\-----------------------------------------------------------------------/\/\
+
+
+  Nie zawsze bedziemy mieli czas starac sie o numer automatu z ktorego mamy
+  zamiar dzwonic, nie zawsze te metody dzialaja, zwlaszcza w naszej pieknej
+  stolicy. Na szczescie jest troche metod ktore mozna wykorzystywac z
+  powodzeniem na jednym automacie.
+
+
+                       /\/\-- - 1. Tricki z 0800 - --/\/\
+
+
+   [ A ]  Infolinie raz jeszcze
+
+   Czasem jak zadzwonimy na czyjas infolinie, skonczymy gadac i babka na niej
+   odlozy sluchawke to dostajemy przez pewien czas rozne rodzaje busy a potem
+   ...dialtona. Centrala sie resetuje ale automat caly czas mysli ze sie jeszcze
+   nie rozlaczylismy... mozemy sobie tonedialerem wybrac co chcemy. Metoda
+   nie do konca sprawdzona tak ze nie daje zadnych gwarancji ze/gdzie dziala.
+   Ostatnio dobre rezultaty dawala infolinia TVN (080030003 czy jakos tak)
+
+
+
+   /\/\-- - 2. Tricki z 0800 part II czyli URMET dazed und konfused - --/\/\
+
+
+   Automaty URMET'u to szczyt techniki. Mozemy tak skolowac takiego
+   niebieskiego, ze mysli ze dzwonimy na 0800 a my dzwonimy do kolezanki
+   a czasami nawet do anglii. Specjalisci z URMET'u twierdza ze ich automaty
+   uzywane sa w polowie Europy a poza polska nikt nie wpadl na takie
+   'genialne' pomysly... :)))
+
+
+   [ A ]  Strowger Power
+
+   O tej metodzie slyszalo juz chyba nawet kazde murzynskie dziecko wiec nie
+   bede sie rozpisywal, wspomne tylko dla porzadku: Podnosisz sluchawke,
+   krecisz 0800 czekasz na busy, szybszy busy i dialtone. Potem sobie mozesz
+   dzwonic nie wkladajac nawet karty, ale tylko na 6cio-cyfrowe numery bo po
+   6ciu cyferkach po 0800 automat blokuje klawiature, a tonedialer na strowgim
+   jest raczej bezuzyteczny. W Warszawie dziala juz chyba tylko na automatach
+   w przejsciu podziemnym (tych przy McDonaldzie) kolo dworca centralnego.
+
+
+   [ B ]  Kombinacje z 974 i 0800
+
+   Stosunkowo nowa metoda, i stosunkowo skuteczna na warszawskich Alcatelach
+   S12. Krecimy numer testowy 974 (o nim jeszcze wspomne, bo to naprawde
+   niezly numer :) czekamy na dialtone i rozlaczamy sie (#) slyszymy busy...
+   W trakcie busy wciskamy na klawiaturze 0800 i automat wlacza mikrofon.
+   Po okolo 10 sekundach dostajemy dialtone i mozemy dzwonic gdzie chcemy
+   wybierajac 6 cyfr na klawiaturze a pozostale tonedialerem (lub poprostu
+   wszystkie tonedialerem :). Niestety na automatach ktore maja wlaczona
+   teletaxe zrywa przy probie zaliczenia drugiego impulsu, czyli po 3 minutach
+   przy rozmowie lokalnej, to jeszcze mozna zniesc. Ale przy miedzynarodowej
+   czy 0700 to juz tylko kilka sekund :(. Telekomuna w Warszawie jest really
+   pissed off bo mielismy przynajmniej 30 budek w roznych miejscach na ktorych
+   to spokojnie dzialalo, z kazdym dniem jest ich coraz mniej. Gdzies ponizej
+   bedzie walal sie wykaz tychze dzialajacych budek. Nie dziala WOGOLE na
+   budkach podpietych do Alcateli S12K (np przy Sejmie czy na stacji metra
+   Metro Politechnika), bo tam wogole nie uslyszymy dialtona. Po rozlaczeniu
+   sie z 974 bedzie przez 2 minuty busy a potem centrala odlaczy linie.
+
+   Last update: Zamiast 0800 mozna sobie wcisnac 997, 998 czy dowolny numer
+   alarmowy.
+
+
+   [ C ]  Symulowanie Entry Call przy pomocy 974
+
+   Rowniez nowa metoda. Dzwonimy na 974 i odkladamy sluchawke. Po okolo 10
+   sekundach centrala oddzwoni i zacznie dzwonic budka :). Mozna to wykorzysta
+   jak zwykle do denerwowania ludzi (robimy taki manewr np na 10 automatach w
+   metrze :), ale mozna bardziej produktywnie. Otoz po podniesieniu sluchawki
+   slychac... dialtone. Tylko taki troche dziwny dialtone, bo nie da sie z niego
+   nigdzie zadzwonic. Bierzemy tonedialera i wciskamy jakikolwiek klawisz poza
+   [1] (o tym pozniej). Slychac przez chwile busy, potem znowu dialtone z ktorego
+   juz mozna dzwonic. Tak wiec dalej tonedialerem wybieramy sobie numer i gadamy
+   majac 'entry call' na wyswietlaczu. Dziala na tych budkach w ktorych metoda
+   wymieniona powyzej nie zrywa po 1 impulsie. Na innych zrywa odrazu.
+
+
+  - -- lista automatow w Warszawie na ktorych dzialaja powyzsze metody -- -
+
+
+     1. Poczta Glowna w Warszawie, 12 sztuk  ul. Swietokrzyska
+     2. Budynek Narodowego Banku Polskiego   pl. Powstancow Warszawy
+     3. Zielona budka przy Uniwersytecie     ul. Krakowskie Przedmiescie
+     4. Kawiarnia na Torwarze, przy wejsciu
+        (tam gdzie ma miejsce lameriada)
+     5. Hall w bloku mieszkalnym             ul. Przechodnia 2
+     6. Budynek I SLO                        ul. Bednarska 1
+
+   Generalnie metoda powinna dzialac na wszystkich automatach ktore maja
+   serial number ponizej 1000 (chociaz ten w banku ma 1111). Niestety tepsa
+   robi co moze zeby utrudnic nam zycie i np. swietna platforma na peronach
+   dworca Warszawa Cmentarna juz nie dziala, a szkoda bo zawsze stamtad
+   dzwonilem na long distance czekajac na pociag :)
+
+   Last Update: Metoda dziala na 90% budek w Zakopanem, na calkiem sporej
+   ilosci w krakowie i pewnie we wszystkich miastach gdzie sa centrale
+   Alcatela S12
+
+
+
+       /\/\-- -  3. Nowinka techniczna TPSA -- 'Srebrniaki'  - --/\/\
+
+
+    Ostatnio TPSA w Warszawie sie wysilila i instaluje nowe automaty telefo-
+    niczne -- tzw 'srebrniaki'. Wygladaja troche kosmicznie - sa srebrne,
+    maja spory zielonkawy wyswietlacz, bogata klawiature i gadaja ludzkim
+    glosem. Tak jak niebieskie, produkuje je URMET i sa rownie zabugowane.
+
+
+    [ A ]  Request ID
+
+    Obok normalnych cyferek na klawiaturze sa tez literki, jest tam redial,
+    telefony alarmowe, a kiedy wcisniesz bodajze [ D ] to dostaniesz na
+    wyswietlaczu numer telefonu do budki. Nie trzeba wcale robic zadnych
+    przekretow :)
+
+
+    [ B ]  Free calling z takowych
+
+    Dziala kombinacja 974-0800 tak jak i na niebieskich z tym ze 0800 trzeba
+    wybrac dokladnie w momencie kiedy slyszysz 'wybierz numer'.
+
+
+
+/\/\-----------------------------------------------------------------------/\/\
+                      III. Karty Telefoniczne and stuph
+/\/\-----------------------------------------------------------------------/\/\
+
+
+ Kiedy nie chcesz/nie umiesz/nie masz warunkow do phreakowania to tez jeszcze
+ nic straconego mozna sobie przeciez 'zalatwic' karte telefoniczna. :)
+
+
+                   /\/\-- - 1. Co daje legitka TPSA - --/\/\
+
+
+  Rysujemy sobie legitymacje TSPA (zeskanowane logo, zdjecie, pare textow)
+  np taka: z lewej twoje zdjecie, ponizej podpis, posrodku logo TPSA, napis
+  Teodor Przeslo, dzial obslugi automatow publicznych TPSA, nr leg. 2303151FF
+  Drukujemy laserowka/atramentowka i tak powstaly 'dokument' foliujemy.
+  Taka 'legitka' czasem sie bardzo przydaje, zwlaszcza kiedy mamy do czynienia
+  z nieco mniej 'zorientowanymi' ludzmi... :)
+
+
+   [ A ]  Dojscie do zatloczonego automatu telefonicznego
+
+   Chcemy sobie podzwonic, przychodzimy pod budke, zimno, deszcz a tu kolejka
+   starych ciot ktore chca zadzwonic do sasiadki i poopowiadac sobie o bolu
+   odbytnicy, korzonkach etc... tak wiec podchodzimy do automatu, pokazujemy
+   nasza legitke i mowimy 'dziendobry, telekomunikacja polska sa, musimy
+   sprawdzic linie, uprzejmie prosze o skorzystanie z innego automatu. Dziala
+   na wiekszosc obywateli, nie radze testowac na dresach ani innych tego
+   typu gosciach o wymiarach 2x2.
+
+
+   [ B ]  Lekkie chamstwo, rekwiracja karty telefonicznej
+
+   Podchodzimy do jakiejs starej babci, pokazujemy legitke TPSA, prosimy o
+   udostepnienie telefonu i karty telefonicznej. Dzwonimy z karty babci pod
+   jakis dziwny numer, udajemy ze gadamy z 'centrala automatow'. Nastepnie
+   mowimy babci ze jej karta telefoniczna jest wadliwa i moze np. uszkodzic
+   automat. Dajemy jej przygotowany uprzednio blankiet (logo tpsa, jakies
+   bzdury, co tam umiescisz pozostawiam Twojej inwencji) i wypisujemy jej
+   czek na odebranie prawidlowo dzialajacej karty telefonicznej w dowolnej
+   autoryzowanej placowce TPSA. Karte babci oczywiscie zabieramy. Troche to
+   chamskie i niewiele ma wspolnego z phreakingiem ale czasem sie przydaje.
+
+
+         /\/\-- - 2. Masowe zgarnianie kart telefonicznych - --/\/\
+
+
+   Dziala najlepiej na obleganych automatach, ale na takich kolo ktorych nie
+   kreci sie policja, tpsa, straz osiedlowa czy co kto tam jeszcze chce.
+   Podchodzimy do automatu kiedy nikogo w poblizu nie ma. Jedna osoba udaje
+   ze gdzies dzwoni, druga pakuje cos w otwor gdzie normalnie wylatuja karty.
+   Najlepiej zakleic od wewnatrz ten otwor szeroka, mocna tasma klejaca tak
+   zeby nie bylo jej widac od zewnatrz. Mozna wrazic tam tekture lub zuzyta
+   karte telefoniczna lamiac ja wpol. Potem odchodzimy od automatu, stajemy
+   gdzies z boku zeby nikt nas nie widzial i czekamy... 90% ludzi kiedy nie
+   wypadnie im karta wali w automat, chlapie widelki lub robi tym podobne
+   bezsensowne manewry. Kiedy jakas powiedzmy pani Klementyna zrezygnowana
+   odejdzie od automatu na bezpieczna odleglosc, podchodzimy i wyjmujemy lup.
+   Czasem w ten sposob uda sie zlowic nawet kilka kart, nalezy jednak dosc
+   czesto odwiedzac budke i wyjmowac lupy bo a) tasma/tektura pod naporem 20
+   kart moze nie wytrzymac, b) ktos moze wyczaic co jest grane i zgarnac lup, c) ktos moze
+   zawiadomic TPSA lub policje. Nie nalezy wykonywac tego manewru zbyt czesto
+   na jednej budce telefonicznej :)
+
+
+
+                /\/\-- - 3. Produkcja kart telefonicznych - --/\/\
+
+
+  Karta telefoniczna sklada sie z obrazka, loga tpsa i paska magnetycznego.
+  Na tym pasku po lewej stronie (tej nad numerkiem informujacym o liczbie
+  impulsow) znajduje sie swoiste ID karty (25, 50, 75, 100 impow) a po prawej
+  stronie (nad 'suwakiem' z procentami) informacja ile z tego zostalo juz
+  zuzyte:
+            ,-------------.   Czesc druga sklada sie z pionowych paskow,
+           |              |   automat w miare zzerania impulsow kolejno te
+           |-1--|----2----|   paski rozmagnesowywuje. Jednak ilosc paskow nie
+           `--------------'   odpowiada ilosci impulsow, jest to jakby proce-
+                              ntowy wskaznik jej zuzycia, przeliczany wedlug
+                              ID karty... Najlepiej strukture paska widac po
+                              posypaniu go _bardzo_ drobnymi opilkami zelaza.
+
+  Odrazu mowie ze _nie dzialaja_ wszystkie metody typu lakierowanie zuzytej
+  karty, wycinanie i odwracanie paska i inne tego typu glupoty. Nie dziala
+  rowniez sposob na produkcje karty znany z wiekszosci faqw.
+  Mozna natomiast pobawic sie w:
+
+
+   [ A ]  Kopiowanie kart telefonicznych
+
+   Potrzebne sa dwa wysokiej klasy magnetofony szpulowe. Jeden do przeczytania
+   paska z karty, drugi do nagrania jej na tasme. Nie zawsze wychodzi,
+   przewaznie jedna na 10 tak wyprodukowanych kart nadaje sie do uzycia.
+   Nagrywanie kart 'od poczatku' jest troche bardziej skomplikowane niz jest
+   to przedstawione w wiekszosci faq'ow. Napisze moze troche wiecej nastepnym
+   razem jak bede wiecej na ten temat wiedzial.
+
+
+
+    /\/\-- - 4. Wonders of Weather, czyli ciekawostki przyrodnicze - --/\/\
+
+
+  Kiedy zachecony napisem 'WLOZ KARTE' rzeczywiscie wrazisz karte do slotu,
+  ale nie pozwolisz jej zjesc automatowi tylko przytrzymasz podczas procesu
+  wsuwania, silnik automatu bedzie wariowal. W zaleznosci od wersji automatu
+  mozesz albo spalic takowy silniczek (hihi) albo automat zacznie sie pluc
+  i wywali napis BUSY/NIECZYNNY. Kiedy podniesiesz wtedy sluchawke uslyszysz
+  koszaca serie kilkudziesieciu tonow...
+
+
+
+/\/\-----------------------------------------------------------------------/\/\
+             IV. Nie gniotsia, nie lamiotsia, czyli... Zetonowce
+/\/\-----------------------------------------------------------------------/\/\
+
+
+ O ile automaty na karte to wyroby wloskiego URMET'u o tyle aparaty wrzutowe
+ czyli po polsku zetonowce to rdzennie krajowa produkcja. Niektore sa jeszcze
+ bardziej zabugowane niz wloski sprzet, gdyz powstawaly w czasach gdy slowo
+ phreak kojarzylo sie z amerykanska suszarka do wlosow. Niestety nowe
+ zetonowce (te wielkie szaroniebieskie pudla) sa oporne az do bolu... nawet
+ nie da sie na nich bez zetonu zadzwonic na 0800... Na niektore jednak sa
+ sposoby i to zadziwiajaco proste... :)
+
+
+
+  /\/\-- - 1. Komuno wroc, czyli male przedpotopowe aparaty z tarcza - --/\/\
+
+
+  To najstarsze automaty, znane jeszcze z kolejek przed nimi w filmach typu
+  Alternatywy 4th.. Jest ich jednak w warszawie jeszcze calkiem sporo.
+  Sa wyjatkowo podatne na sugestie, chociaz niektore zostaly zapatchowane
+  zolta plyta zbrojona. :)
+
+
+   [ A ]  Terapia szokowa
+
+   O tym slyszalo chyba kazde dziecko... Zamiast wrzucic zetonu gdy automat
+   subtelnie o niego prosi otwierajac klapke, nalezy porzadnie przyp*** w
+   miejsce miedzy otworem na zeton i tarcza... Dziala na automatach bez
+   zoltej plyty (calych szarych)... chociaz kto wie, a jak by przylozyc
+   baseballem... pozostawiam twojej inwencji tworczej...
+
+
+   [ B ]  Szef kuchni poleca...
+
+   Gdy automat domaga sie zetonu nalezy zaspokoic jego glod przy pomocy lyzki,
+   widelca lub tym podobnego cienkiego a dlugiego narzedzia ktore pakujemy w
+   otwor na zwrot monet i wykonujemy nim ruchy posuwisto zwrotne... Patent
+   dziala nawet na wiekszosci tych zapatchowanych :)
+
+
+   [ C ]  Ride the lightning
+
+   Trza miec zapalniczke elektryczna lub cos podobnego co generuje prunt..
+   jeden drucik przymocowujemy do obudowy automatu, drugi do tarczy i gene-
+   rujemy impuls przy pomocy zapalniczki. Podobno kiedys dzialalo, niektorzy
+   gorale mowia ze dziala i teraz. Mi sie nie chcialo sprawdzac.
+
+   Powyzsze metody sa znane od dosc dawna i wspomnialem o nich jedynie dla
+   porzadku.
+
+
+       /\/\-- - 2. Telkom-Telos Powah - duze aparaty wrzutowe - --/\/\
+
+
+  Aparaty te sa wielkosci sredniej centrali telefonicznej. :) W odroznieniu
+  od swoich pradziadkow maja juz przyciski, ale co z tego skoro nadal sa
+  pulsowe... :) Sa toporne i oporne na sugestie, ale zawsze cos mozna z nimi
+  sciemnic... BTW maja okropnie glosny i przerazliwy dzwonek... :)
+
+
+   [ A ]  Strike Force Centauri
+
+   Mimo ze sa duze i pancerne, maja jednak slaby punkt. Metoda jest jeszcze
+   mniej ambitna niz przy mniejszych automatow -- tym razem trzeba z calej
+   sily kopnac w spod takiego urzadzenia. Pomaga na 50% warszawskich :)
+
+
+   [ B ]  Tone dialer
+
+   Hihi.. te aparaty sa tak glupie, ze bez wrzucenia zetonu NIE POZWALAJA
+   wybrac numeru wiekszego niz 3 cyfry na klawiaturze, jest to tylko blokada
+   klawiatury a nie wogole mozliwosci dzwonienia. Po podniesieniu sluchawki
+   mikrofon dziala... Tak wiec mozna sobie z nich podzwonic poprostu
+   wybierajac numer tonedialerem. Dziala wszedzie tam gdzie jest wylaczona
+   teletaxa (lub wogole nie ma takiej mozliwosci na centrali -- god save
+   kintekunta :) ... Na alcatelach niestety teletaxe wlaczaja, choc w
+   Warszawie dziala jeszcze na dwoch budkach, z czego jedna znajduje sie
+   prawie ze w samym centrum.
+
+   Z automatow tych nie dzialaja zadne przekrety w stylu callback czy 0800...
+   Zadaja one wrazenia zetonu w momencie dostania zaliczenia kolejnego
+   impulsu z centrali... pod warunkiem ze sie wybierze jakis numer ofkors.
+
+
+
+/\/\-----------------------------------------------------------------------/\/\
+              V. I'm da firemonter... czyli metody hardware'owe
+/\/\-----------------------------------------------------------------------/\/\
+
+
+
+                 /\/\-- - 1. Podpinanie sie pod budke - --/\/\
+
+
+  Jezeli jestes juz totalnie zdesperowany mozesz po prostu podpiac sie na
+  pajaka pod budke telefoniczna... Ze zrozumialych wzgledow rob to raczej
+  gdzies gdzie telekomuna/policja/ochrona_osiedla rzadko zaglada... najlepiej
+  zeby wogole bylo to jakies malo uczeszczane/widoczne miejsce...
+
+
+   [ A ]  Na chama -- nowe zolte/zielone przeszklone budki.
+
+   Budki te ostatnio telekomuna stawia wszedzie gdzie sie tylko da... sa one
+   dosc 'inteligentnie' rozwiazane: sam aparat telefoniczny stoi na metalowym
+   slupie. Wystarczy zdjac z niego pokrywe, a ukaza sie dwa kable: jeden tele-
+   foniczny a drugi ac/dc 220v do oswietlenia budki. NALEZY CHOLERNIE UWAZAC
+   telekomuna czesto wogole nie oznakowywuje tych kabli albo oznakowywuje je
+   odwrotnie... W budce na Raclawickiej np bialy kabel ktory wygladal jak
+   telefoniczny, nawet mial zaciski takie jak na glowicach, spokojnie plynal
+   sobie prad... Kiedy podlaczylismy sie pod ten kabel polecialy iskry i
+   zgaslo swiatlo w budce... Kiedy juz sie podepniesz i upewnisz sie ze patent
+   dziala, mozesz zainstalowac sobie backdoora.. gdzies np przy podlodze budki
+   zainstalowac zwykle gniazdko telefoniczne gdzie sie podpinasz i jedziesz...
+   bez potrzeby rozwalania budki za kazdym razem. Jezeli nalezysz do tzw.
+   'ambitnych' ludzi, mozesz przyjsc do budki z notebookiem z modemem pcmcia.
+   Jezeli to zrobisz to koniecznie wejdz na irca na #phreakpl i pochwal sie :)
+   Stawiam piffo :)
+
+
+   [ B ]  Szybka akcja bydgoskiej policji
+
+   Dziala najlepiej kiedy masz juz zainstalowanego 'backdoora' w budce.
+   Bierzesz swoj bojowy telefon, podpinasz i dzwonisz... W tym momencie kiedy
+   w budce podniesiesz sluchawke sa dwie mozliwosci: albo na wyswietlaczu
+   pojawi sie znany napis 'WLOZ KARTE' albo troche mniej znany 'BUSY/ZAJETY'
+   W pierwszym przypadku stukasz na klawiaturze 0800 i mozesz odlaczyc swoj
+   aparat i dalej 'normalnie' gadac sobie z budki nie wzbudzajac zadnych
+   kontrowersji. W drugim przypadku najpierw zasymuluj 'entry call' a dopiero
+   potem podnos sluchawke. Czasami uda ci sie tak czy siak mikrofon odpalic --
+   trzeba pokombinowac...
+
+
+
+          /\/\-- - 2. Teletaxa a podpinanie sie (i nie tylko) - --/\/\
+
+
+  Ta sprawa smierdzi. Znaczy sie chodzi o to ze gdy korzystasz np z 974/800 to
+  centrala zrywa po pierwszym impulsie bo nie dostaje potwierdzenia zaliczenia
+  impulsu, tak ze teoretycznie bez redboxa nie dalo by sie dzwonic przez
+  pajeczarstwo dluzej niz 3 minuty. Kiedy jednak wpialem sie w linie takowej
+  budki to moglem sobie spokojnie rozmawiac i pol godziny pomimo aktywnej
+  teletaxy. Zastanawia mnie jeszcze jedna rzecz: Kiedy symulujesz 'entry call'
+  to budka zrywa juz przy polaczeniu. 974/0800 dopiero przy probie zaliczenia
+  drugiego impulsu. Ponadto z niektorych budek nie da sie nawet dzwonic przez
+  pajeczarstwo, a 974/0800 przez te 3 minuty jednak dziala. Szczerze mowiac
+  dziwna sprawa, moze zalezy to od wersji oprogramowania centrali. Jezeli
+  ktos wie na ten temat wiecej to niech sie PILNIE ze mna skontaktuje.
+
+
+
+    Na dzisiaj dosyc o budkach telefonicznych. Teraz cos przyjemniejszego:
+
+
+
+                      ----  -   /\/\-- - --/\/\   -  ----
+
+     -- - ---- - --/\/\  CHAPTER II: HOME SWEET HOME  /\/\-- - ---- - --
+
+                      ----  -   /\/\-- - --/\/\   -  ----
+
+            Dzwonienie za free z budek to fajna sprawa, jednak stanie
+      przez kilka godzin przy budce w towarzystwie niezawsze sympatycznych
+       pan w beretach z antenka czasami potrafi byc dobijajace. Zwlaszcza
+     teraz kiedy mamy srodek zimy. Nie ma to jednak jak wydzwanianie z domu,
+       zwlaszcza ze z budki ciezko jest internetowac... jednak nie jest to
+                  niemozliwe ale to juz temat na inna bajke :)
+
+
+
+/\/\-----------------------------------------------------------------------/\/\
+                     I. Dydaktyka - centrale telefoniczne
+/\/\-----------------------------------------------------------------------/\/\
+
+
+            /\/\-- -  1. Typy central uzywane w Polsce  - --/\/\
+
+
+  Jeszcze niedawno, kilka lat temu dominujacym gatunkiem u nas byl prawdziwy
+  zabytek z czasow II wojny swiatowej -- niemiecki Strowger. Na szczescie
+  ( a moze niestety :) jego czasy juz minely, chociaz w takiej np Warszawie
+  da sie znalezc jeszcze z 10 przedstawicieli tego zacnego gatunku. Obecnie
+  tepsa instaluje juz cyfrowe centrale, a stare sa sukcesywnie wymieniane.
+  Ma to pozytywne skutki -- odczuwalna poprawa jakosci uslug, ale ma tez i
+  sporo negatywnych -- znacznie utrudniony, jezeli nie niemozliwy phreaking.
+  Praktycznie nowe centrale (s12, ewsd) trzeba raczej hackowac... :)
+
+  BTW: Pisze tu o centralach spotykanych w Warszawie, jezeli macie jakies
+       informacje o tych ktorych tu nie wymienilem to dajcie znac.
+
+
+
+                    /\/\-- -  Centrale analogowe - --/\/\
+
+
+   1. Strowger 32AA/AB
+
+   Wyprodukowana po II wojnie swiatowej w Niemczech. Pozniej w Polsce
+   klonowana w kilkunastu wersjach przez rodzimego Telkom'a. Klony te
+   sa jeszcze badziewniejsze niz poniemieckie oryginaly.
+
+   Charakterystyka:   Najstarsza uzywana w Polsce centrala. Nie posiada
+                      nawet receivera DTMF'ow wiec mozemy zapomniec o
+                      wybieraniu tonowym, ze o dodatkowych uslugach nie
+                      wspomne. Jest za to o tyle mila dla uzytkownika ze
+                      nie trzeba placic na niej rachunkow... dziala na nia za to smieszny
+                      znany z automatow trick z 0800...
+
+
+   2. Pentaconta
+
+   Francuska produkcja z lat 60/70-tych. W polsce spotykanych jest kilka-
+   nascie wersji, niektore wyprodukowane w kraju na licencji (K-66).
+
+   Charakterystyka:    Centrala oparta na tzw wybierakach krzyzowych.
+                       Te najstarsze wersje niewiele roznia sie od Strowgerow.
+                       Nawet jest na nie box zapewniajacy freecalling
+                       Na niektore dziala trick z 0800 jednak troche inaczej
+                       niz na strowgerach (o tym pozniej).
+                       Te 'najnowsze' sa juz sterowane elektronicznie i maja
+                       wybieranie tonowe. Niestety jako ze jest to nadal
+                       centrala analogowa nie ma na niej zadnych dodatkowych
+                       uslug, takze dosyc wolno laczy. Nie wysyla CallerID
+                       co sie 'czasem' przydaje. Spotkykane sa np na
+                       warszawskim Ursynowie (641xxxx - 644xxxx)
+
+
+
+      /\/\-- -  Centrale 'elektroniczne' (mhmm jak to nazwac :)  - --/\/\
+
+
+   1. E-10
+
+   Produkowana przez rodzimy Telkom-Telmor na licencji francuskiego Alcatela
+   E10A. Mniej/wiecej srodek lat 80-tych. Dziala zdecydowanie lepiej niz
+   Strowgery czy K66 ale nadal nie jest to centrala w pelni cyfrowa.
+
+   Charakterystyka: Ma mozliwosc wybierania tonowego i podstawowe
+                    uslugi typu budzenie, 'abonent czasowo niedostepny' czy
+                    ograniczenie polaczen, dostepne jednak dla ograniczonej
+                    liczby abonentow. Wybieranie tonowe dziala na niej dosc
+                    egzotycznie, to znaczy pojedynczy ton musi trwac dluzej
+                    niz okolo 50 milisekund, inaczej centrali zdarza sie
+                    'gubic' numery. Doczekala sie kilku wersji (ostatnia
+                    to zdaje sie E10D, ma podobno nawet CIDa). W Warszawie
+                    spotykana jeszcze na Grochowie i peryferiach.
+
+
+
+                      /\/\-- - Centrale cyfrowe - --/\/\
+
+
+   1. Alcatel S12
+
+   Jak nietrudno sie domyslec produkowana przez Francuskiego Alcatela. Jej
+   poczatki siegaja roku 1993, ciagle pojawiaja sie nowe wersje. Centrala
+   wreszcie calkowicie cyfrowa. Wiekszosc z nich w Warszawie polaczona jest
+   swiatlowodami, co daje lepsze jakosciowo i szybciej realizowane polaczenia.
+   W Warszawie wystepuja w kilku wersjach:
+
+   S12-5:   Pierwsze cyfrowe centrale w Warszawie. Wybieranie tonowe dla
+            wszystkich abonentow, szczegolowy billing i uslugi typu budzenie,
+            samodzielne ograniczanie polaczen, przekazywanie polaczen przy-
+            chodzacych na zapowiedzi slowne, callwaiting, teletaxa, wybie-
+            ranie skrocone. W warszawie siedza na Bemowie. (1993)
+
+   S12H:    Nowsza wersja (1995). Laczona swiatlowodami, posiada dodatkowo
+            3-osobowe telekonferencje, call forwarding (przekierowywanie).
+
+   S12J:    Telekonferencje na 8 osob, poczta glosowa. Teoretycznie, bo TPSA
+            nie udostepnia tego abonentom prywatnym. Mozliwosc pociagniecia
+            ISDN'a. Praktycznie cale centrum Warszawy na tym stoi. (1996)
+
+   S12ML:   Tak jak S12J, rozni sie jakimis szczegolami.
+
+   S12MSS:  Wersja kontenerowa S12H. Uzywana normalnie w warunkach kleski
+            zywiolowej, w Warszawie spokojnie obsluguje sobie przedmiescia.
+
+
+   2. Alcatel BCN4400
+
+   Ostatni wynalazek Alcatela, w warszawie stoi jedna, i chyba nie jest
+   wlasnoscia TPSA tylko jakiejs duzej prywatnej fimy. Brak szczegolowych
+   danych.
+
+
+   3. Siemens EWSD
+
+   Solidny, niemiecki sprzet. Produkcja - srodek lat 90-tych. Wszystkie
+   uslugi mniej/wiecej tak jak na Alcatelu S12J z tym ze niektore uslugi
+   dostepne sa dla ograniczonej liczby abonentow. Za to dziala troche ..
+   hmm stabilniej. Laczone swiatlowodami. Oczywiscie wysyla/odbiera CallerID.
+
+
+   4. AT&T 5ESS
+
+   Zmora amerykanskich phreakerow. Z chwila wprowadzenia ich w USA skonczylo
+   sie latwe blueboxowanie, skonczyly sie tez jazdy na czyichs dialup'ach
+   [wysyla/odbiera CallerID]. W Polsce uzywane w Trojmiescie, stoi tez kilka
+   w Warszawie. Potrafi mniej/wiecej to samo co S12 czy EWSD.
+
+
+   5. Samsung
+
+   Uzywane w okolicach Wroclawia i Opola. Nie wiem co to potrafi bo mialem
+   z nia krotko do czynienia.
+
+
+   Jezeli ktos ma jakies szczegolowe opisy central telefonicznych, manuale,
+   opracowania etc zwlaszcza na temat S12 czy EWSD to _koniecznie_ niech da
+   znac na nth@ic.com.pl
+
+
+
+/\/\-----------------------------------------------------------------------/\/\
+                             II. The cool part
+/\/\-----------------------------------------------------------------------/\/\
+
+
+
+              /\/\-- -  1. Free calling z domu generalnie  - --/\/\
+
+
+   [ A ]  Obnizenie kosztow polaczen zamiejscowych - PBX
+
+   Do tego celu mozna wykorzystac centrale wewnetrzna jakiejs firmy, jezeli
+   jest wyposazona w karte DISA i wyjscie na miasto z drugiej linii. Dziala
+   to mniej wiecej tak ze wybieramy numer firmy, slyszymy 'dziendobry, tu
+   firma krzak, prosze wybrac tonowo numer wewnetrzny lub czekac na operatora'.
+   Wtedy jako nr wewnetrzny wciskamy np '9' lub '0' i slyszymy dialtone.
+   Jezeli to nie dziala mozna sprobowac cyfry od '81' do '86' -- jest to
+   reczne wybranie linii miejskiej (8x - x to numer linii). Dalej dzwonimy
+   gdzie chcemy za cene lokalnego polaczenia z centrala firmy. Jezeli po
+   wybraniu linii miejskiej (9 lub 8x) nie slychac nic, znaczy ze dialout
+   jest zabezpieczony kodem, najczesciej 4-cyfrowym. Calkiem sporo central
+   jest jednak postawionych na defaultach, czyli albo wcale nie ma kodu albo
+   jest to np '5555'. Kiedy juz mamy takiego PBX'a to nie nalezy go naduzywac
+   (stosownie do wielkosci firmy i placonych przez nia normalnie rachunkow)
+   a jesli juz to dobrze jesli firma ma duzo linii telefonicznych (mozna to
+   wybadac dzwoniac przez PBX'a na komorke z CIDem i obserwujac pojawiajace
+   sie numery). Dobrze tez jezeli PBX podpiety jest do jakiejs nienajnowszej
+   centrali miejskiej -- mniejsze szanse na namierzenie cie.
+
+
+   [ B ]  Extendery - ciag dalszy.
+
+   Czasami zamiast OGM'u centrali wewnetrznej slychac od razu dialtone. Cos
+   takiego to jeszcze ciekawsza sprawa -- najczesciej przed skorzystaniem z
+   extendera nalezy podac ilus-tam cyfrowy kod. Najpierw zbadaj ile cyfr da
+   sie wklepac -- po podaniu blednego kodu centrala wywali busy lub cos w tym
+   stylu i cie rozlaczy. Kiedy juz wiesz ile cyfr ma kod to nastaw toneloc'a i
+   sprawa z glowy. Czasem wogole nie trzeba podawac zadnego kodu - tak bylo w
+   przypadku 623xxxx w warszawie ktory dzialal przez ponad rok zapewniajac
+   nam polaczenia z calym swiatem w cenie lokalnych. :)
+
+
+   UWAGA: korzystanie z tego typu 'ulatwien' to ewidentne naduzywanie czyjejs
+   wlasnosci, naciaganie i podejscie pod kilkanascie innych paragrafow wiec..
+   use at own risk.
+
+
+
+            /\/\-- -  2. Toll Free - staly punkt programu  - --/\/\
+
+
+   [ A ]  Los Extenderos
+
+   Czesto centrale wewnetrzne sa dostepne przez 0800tki. Wtedy to mozna
+   naprawde zaszalec -- przeciez nie placimy wogole za polazcenie z taka
+   centrala wiec mozna spokojnie wyskanowac kod. A kiedy mamy juz dzialajacego
+   extendera pod 0800tka to... chyba sam wiesz co. Inna sprawa ze kiedy firma
+   - wlasciciel extendera dowie sie kto i co z nia robi to wpadamy w takie
+   gowno ze to poezja... Jezeli jestes podpiety do centrali typu Pentaconta
+   albo jeszcze lepiej jakis Strowger no to mozna jechac... Jezeli masz cos
+   w stylu E10 to zaczyna byc niebezpiecznie. S12 i EWSD wysylaja CallerID'a
+   tak ze jesli firma z ktorej korzystasz ma sprzet potrafiacy go odbierac
+   no to jestes ugotowany. Wedlug nowego prawa telekomunikacyjnego podchodzi
+   to pod 'kradziez impulsow' a CID i logi z centrali sa wystarczajacym
+   dowodem. ende.
+
+
+   [ B ]  Dah Numbah
+
+   Pracownicy TPSA tez chca jakos zyc i normalnie korzystac z inetu. W
+   zwiazku z tym naprzyklad stawiaja 0800tki ktore lacza z 0202122. Dzwonisz
+   np pod 0800-31337 i .... Witamy w internecie.
+
+   Ostatnio bardzo popularne byly tzw 'dlugie 0800tki' z Warszawy ktore
+   pozatym ze mialy 9 cyfr po 0800 a nie standardowe 5 i laczyly z internetem
+   mialy jeszcze ciekawsze wlasciwosci ale o tym kiedy indziej. Szkoda tylko
+   ze dzialaly tylko z nielicznych central, jako ze TPSA sie troche wycwanila
+   i np na wszystkich S12 w warszawie dostawales juz busy po 6-tej cyfrze, a
+   na reszcie central oprocz kilku pentacont i siemens'ow 'nie ma takiego
+   numeru' po 8-ej.
+
+   Taki numer to najbezpieczniejsza metoda na freecalling -- przeciez nie
+   lamiesz prawa w zaden sposob, po polaczeniu masz wyraznie napisane
+   'wpisz ppp/ppp aby uzyskac dostep do sieci, etc...'. A samo skanowanie
+   0800tek nie podchodzi jak narazie pod zaden paragraf.
+
+
+   [ C ]  Numery ze zdjeta taryfikacja
+
+   Zauwaz ze np w Warszawie biura obslugi klienta TPSA pomimo ze maja normalne
+   numery miejskie to jednak polaczenie z nimi jest darmowe, jak z 0800. Maja
+   poprostu wylaczona taryfikacje. Czasem jakis ciekawy TPSA worker mogl sobie
+   zdjac taryfikacje z jakiegos wolnego numeru na swojej centrali i ustawic mu
+   call forwarding na 0202122 lub cos rownie ciekawego.
+
+
+
+            /\/\-- -  3. Jazda polska z centralami cyfrowymi  - --/\/\
+
+
+ Centrale cyfrowe oferuja szereg uslug o ktorych juz wspominalem, poza tym ze
+ ulatwiaja zycie to mozna je wykorzystac do wlasnych celow. Biuletyn o uslu-
+ gach mozna dostac w kazdym biurze TPSA, uslugi byly tez opisane kiedys w
+ faq TNT wiec nie bede ich tu przytaczal. Testowane na centralach Alcatel S12
+ i Siemens EWSD
+
+
+   [ A ]  Call forwarding
+
+   Call forwarding to poprostu usluga przenoszenia polaczenia na inny numer
+   telefonu w przypadku np nieobecnosci/zajetosci abonenta. Osoba dzwoniaca
+   placi tylko za polaczenie lokalne z drugim abonentem po czym laczy sie z
+   numerem ustalonym przy callforwardingu. Drugi abonent placi 1 impuls tary-
+   fikacyjny za przerzucenie polaczenia, chyba ze numer na ktory polaczenie
+   jest przerzucane znajduje sie na tej samej centrali, wtedy nie placi nic,
+   lub tez numer jest zamiejscowy (wtedy placi za rozmowe zamiejscowa, hehe)
+   Mozna to wykorzystac jako swego rodzaju extender -- w call forwardingu
+   ustawic komus np 0700-31337. Laczysz sie z 0700tka a placisz tylko jak za
+   polaczenie lokalne z drugim abonentem. Przykro robi sie kiedy owemu
+   abonentowi przyjdzie rachunek. :)
+
+   Call forwarding mozna rowniez wykorzystac do laczenia sie z 'dlugimi
+   800-tkami' -- na linii podpietej do centrali na ktorej dziala dluga 800tka
+   ustawic na nia forwarding i zrobic w ten sposob bramke dla ludzi ktorzy nie
+   moga sie do niej dodzwonic ze swoich central. Przy dzwonieniu na 'bramke'
+   placisz tylko 1 impuls, potem numer zachowuje sie jak ze zdjeta taryfikacja.
+   Osoba forwardujaca polaczenia na 0800tki afaik nie placi nic.
+
+   Jesli masz znajomego ktory ma linie z 0800tka (np w firmie) to mozesz go
+   przekonac zeby ustawil na swojej 800tce forwarding np na 0202122... :)
+
+   Na niektorych centralach TPSA oferuje callforwarding tylko na lokalne
+   numery, wtedy nie ma tak dobrze...
+
+
+   [ B ]  Telekonferencje
+
+   Telekonferencje -- czyli rozmowa z kilkoma abonentami naraz. Dzwonisz do
+   jednej osoby, wciskasz krotki flash, dzwonisz do drugiej osoby, znowu
+   krotki flash, wciskasz '2' i gadasz z dwoma naraz. Taryfikuje podwojnie
+   kazda rozmowe, czyli za 3 minuty dwoch polaczen lokalnych placisz 4
+   jednostki taryfikacyjne. Ale za to taryfikacja utrzymana jest na poziomie
+   pierwszego polaczenia, czyli jesli najpierw zadzwonisz na normalny, lokalny
+   numer a potem zestawisz konferencje z miedzynarodowym to placisz jak za
+   cztery lokalne a nie jak za dwie lokalne i dwie miedzynarodowe.
+   A 4 lokalne to znacznvie mniej niz chociazby jedna miedzynarodowa.
+
+   UWAGA: Testowane na Alcatelach S12 ale NIE NA WSZYSTKICH WERSJACH dziala.
+   Najpierw sie upewnij bo mozesz nagle zaplacic 4x czwarta strefa. :)
+
+
+
+/\/\-----------------------------------------------------------------------/\/\
+                         III. Zablokowane telefony
+/\/\-----------------------------------------------------------------------/\/\
+
+
+ TPSA oferuje 'usluge' blokady polaczen wychodzacych [*crunch*]. Moze byc to
+ blokada czesciowa (polaczen miedzymiastowe badz miedzynarodowych) a moze byc
+ i calkowita (wszystkie polaczenia, mozna dzwonic tylko na 9xx'tki badz wogole
+ tylko na bezplatne telefony alarmowe). Na centrali Alcatela S12 sa jednak w
+ owej blokadzie 'dziury'. Na siemensie pewnie tez, ale nie sprawdzalem...
+ Blokad sa dwa rodzaje: jedna zupelna, raz zamawiana na stale,  i druga
+ wprowadzana i zdejmowana przez uzytkownika.
+
+
+                    /\/\-- - 1. Blokada na kod - --/\/\
+
+
+    Co inteligentniejsi ludzie wybieraja jednak blokade kodowa, zeby wrazie
+    naglej potrzeby moc jednak zadzwonic. Wprowadza sie ja *33*xxxx# gdzie
+    xxxx to czterocyfrowy kod. Zdejmuje sie #33*xxxx#. Jezeli po *33* badz
+    tez #33* nie slyszysz BUSY, znaczy ze masz blokade z kodem. Wtedy
+    zapuszczasz na noc Toneloc'a z maska #33*xxxx# i jedziesz... po wprowa-
+    dzeniu blednego kodu slyszysz BUSY, wiec toneloc wybiera nastepny numer.
+    Kiedy wpiszesz poprawny kod dostajesz dialtone, wiec toneloc powinien
+    to zauwazyc, a jesli nawet nie to w logu bedzie zaznaczony jako Timeout.
+
+
+
+                    /\/\-- - 2. Blokada zupelna - --/\/\
+
+
+    Jezeli jednak masz wredna blokade bez mozliwosci zdjecia kodem (juz po
+    *33# badz #33# slyszysz BUSY) to tez jeszcze nic straconego. Mozesz
+    sobie poradzic wykorzystujac glupote TPSA:
+
+
+    [ A ]  Dzwonienie na long distance przy blokadzie zamiejscowych
+
+    Najlepiej korzystac z PBX'a, no ale jezeli tak sie nieszczesliwie sklada
+    ze nie masz zadnego to sprawa jest rownie prosta. Dzwonisz na 900 lub
+    915 i poprostu zamawiasz sobie rozmowe przez telefonistke. :) Blokada
+    dziala przeciez tylko na polaczenia automatyczne, hehe...
+
+
+    [ B ]  Dzwonienie przy blokadzie calkowitej
+
+    Jezeli twoj szef badz tez co gorsza twoja matka zafundowala ci blokade
+    calkowita polaczen wychodzacych to jeszcze nic straconego. Na niektorych
+    centralach blokada nie obejmuje 9xx'tek, wtedy dzwonisz na 900 lub 915
+    i zamawiasz sobie rozmowe nawet jezeli jest to polaczenie lokalne (tlu-
+    maczysz kobiecie ze nie mozesz sie polaczyc lub cos w ten desen). Jezeli
+    masz taka wredna centrale ze mozesz korzystac tylko z telefonow alarmowych
+    to poprostu prosisz jakiegos kumpla zeby zadzwonil na 900'tke za ciebie i
+    podal twoj numer telefonu. Babka do ciebie oddzwoni i dalej zamawiasz sobie
+    polaczenie...
+
+
+    [ C ]  Uslugi 'Direct'
+
+    Przy blokadzie calkowitej nie dzialaja 0800'tki... ciezka sprawa bo sobie
+    nawet poskanowac nie mozna. Dzialaja za to 800'tki miedzynarodowe --
+    00800xxx-xxxx. Czyli masz dostep do uslug 'Direct', mozesz sie rowniez
+    bawic w skanowanie miedzynarodowych 00800tek, moze znajdziesz cos cieka-
+    wego.
+
+
+
+/\/\-----------------------------------------------------------------------/\/\
+                     IV. Free calling ze starych central
+/\/\-----------------------------------------------------------------------/\/\
+
+
+ Stare centrale to z jednej strony pieklo - czesto brak wybierania tonowego
+ (!), godzinne czekanie na polaczenia etc. z drugiej strony raj na ziemii -
+ zupelnie latwy i bezbolesny freecalling.
+
+
+    [ A ]  Strowger Power strikes again...
+
+    Wyobrazcie sobie ze na wiekszosci dziala metoda znana z automatow --
+    krecisz 0800 i czekasz na dialtone... Jezeli nie masz mozliwosci otrzy-
+    mania billingu to metoda dziala na 100%. Jezeli jednak jest taka mozli-
+    wosc to lepiej najpierw sprawdz bo moze ci przyjsc calkiem niemaly
+    rachunek (tak jak np. jednemu z naszych.. mhm znajomych :)
+
+
+    [ B ]  Pentaconta
+
+    Na Pentaconte, zwlaszcza starsze typy istnieje bardzo ladny 'box' (tak
+    po prawdzie trudno to nazwac boxem), nie bede jednak tu zamieszczal
+    schematu. Zainteresowanym moge przeslac schemat boxa mailem, albo lepiej
+    odsylam do faq Ce64 nr 4.
+
+
+    [ C ]  Pentaconta -- starsze wersje
+
+    Na starszych Pentacontach -- glownie tych kontenerowych podpietych do
+    innych central istnieje bardzo smieszna metoda na freecall. Krecisz
+    0800, czekasz, slychac BUSY... po pewnym czasie BUSY sie konczy, slychac
+    [crunch] i tylko ciche brzeczenie... Krecisz wtedy _pulsowo_ '1' i...
+    dostajesz dialtone'a. Mozna dzwonic wszedzie za free a billing wyglada
+    nastepujaco:
+
+    numer                czas polaczenia       oplata
+    08001070072772       56:50                 0zl,0gr
+
+    Dziala na 100% w Warszawie na centrali 6244xxx-6247xxx :)
+
+
+
+/\/\-----------------------------------------------------------------------/\/\
+                           V. Rozne ciekawe numery
+/\/\-----------------------------------------------------------------------/\/\
+
+
+ TPSA ma wiele tajemnic. Spotkalismy sie z kilkoma bardzo ciekawymi numerami,
+ glownie na centralach S12 daja dziwne efekty...
+
+
+
+ /\/\-- -  1. The.Alcatel.Curse czyli dziwne wlasciwosci central S12  - -/\/\
+
+
+
+   [ A ]  974  -- dziala tylko na Alcatelach S12
+
+   Ten numer zna juz chyba sporo osob... dziala on nastepujaco: Krecisz 974
+   i ... w tym momencie nie mozesz sie rozlaczyc. W sluchawce slyszysz cisze,
+   wszelkie proby rolaczenia sie spelzaja na niczym, nie ma dialtona, wciaz
+   cisza. Odkladasz sluchawke i ... po paru sekundach dzwoni ci telefon.
+   Podnosisz, slyszysz... dialtone'a. Potem cokolwiek bys nie wcisnal oprocz
+   '1' to dostajesz BUSY i po chwili rozlaczenie i juz 'twoj' dialtone.
+   Kiedy w po oddzwonieniu wcisniesz '123456789*0#' to dostajesz ... jeszcze
+   innego dialtone'a. Wtedy z telefonem dzieja sie dziwne rzeczy - np wciskasz
+   '2' i masz dosc dluga przerwe i znowu dialtone'a. Wciskasz '8' i ... na
+   jakies 2s. spada zupelnie napiecie na linii, jakby cie zupelnie odlaczylo,
+   jezeli nie masz telefonu z zewnetrznym zasilaniem to cie rozlacza... Kiedy
+   wykrecisz samo 974 i nie odlozysz sluchawki to tez po pewnym czasie dosta-
+   jesz dialtone'a jednak nie reaguje on na zadne bodzce... niestety nie da
+   sie z tego dzwonic za free (no chyba ze z budek, o tym juz bylo). Byl
+   wprawdzie jeden taki DaWorm co myslal ze znalazl 'buga w Alcatelu' no ale
+   zmiekl jak mu przyszedl rachunek :>. Kiedy dzwonilem do biura numerow i
+   probowalem sie dowiedziec co to za numer, babka kazala mi czekac (cos
+   okolo 10 minut czekalem :) a potem stwierdzila niepewnym glosem ze nie
+   ma takiego numeru.
+
+
+   [ B ]  972  -- dziala tylko na Alcatelach S12
+
+   Hmm.. sam to znalazlem stosunkowo niedawno. Krecisz 972, slychac cisze
+   i nigdzie dalej nie laczy... Doszedlem do tego ze dziala to mniej/wiecej
+   tak: Krecisz 972 i 7 dowolnych cyferek, potem numer telefonu pod ktory
+   chcesz zadzwonic i ... laczy cie z tym numerem nie wrzucajac tego do
+   billingu. Super, prawda? otoz niedokonca. Polaczysz sie z zadanym numerem
+   tylko wtedy kiedy numer znajduje sie na twojej centrali, w przeciwnym
+   razie dostaniesz  'kierunek zajety' ... biuro numerow denies knowledge.
+
+
+   [ C ]  xxx-0099
+
+   Na kazdej centrali Alcatela S12 ktora byla instalowana 'od poczatku'
+   (a nie wymieniona) istnieje numer z koncowka 0099. tzn np 654-0099
+   albo 663-0099, 654 i 663 to prefixy obslugiwane przez S12. Pod tym
+   numerem po okolo dwoch sygnalach  'cos' odbiera (zalicza impuls)
+   i slychac bardzo dziwne piski... ani to modem ani fax ani nic z tych
+   rzeczy... Biuro numerow twierdzi ze 'nie ma takiego numeru' badz tez
+   ze 'numer jest zarejestrowany na TPSA'. Dziwne prawda?
+
+
+
+               /\/\-- -  2. Ciekawe 'dziewiecsetki' - --/\/\
+
+
+   [ A ]  9690 - W Warszawie (nie wiem jak w innych miastach) istnieje numer
+                 9690... do niedawna pod tym numerem bylo slychac ... smiech.
+                 Teraz jakas pani mowi 'numer testowy, prosze sie rozlaczyc...'
+                 Biuro numerow oczywiscie milczy na jego temat.
+
+
+   [ B ]  9655 - Kiedys bylo slychac dziwne piski... teraz caly czas jest
+                 BUSY. Biuro numerow nic nie wie.
+
+
+   [ C ]  961  - Kiedys dawalo ciekawe efekty na budkach... 961 + kilka razy
+                 '1' i dzialalo podobnie do 974... obecnie w kolko slychac
+                 piski takie jak przy 'nie ma takiego numeru. Przynajmniej
+                 w Warszawie.
+
+
+   [ D ] 915   - Alternatywny numer na zamawianie zamiejscowych. Da sie go
+                 wybrac na automatach, nawet tam gdzie numer 900 widnieje
+                 jako 'numer zablokowany' :) Przydatna rzecz.
+
+
+
+          /\/\-- - 3. Rozne smieszne 0800tki na zakonczenie  - --/\/\
+
+
+
+   [ A ]  0800 20842 - "Polaczenie sluzbowe platne do sprawdzenia taryfy"
+                        mowi pan po wykreceniu tego numeru
+
+
+   [ B ]  0800 56009 - Elektroniczny taryfikator gazowy :)
+
+                       
+   [ D ]  0800 137899 - Ciekawa sprawa. Forwarduje na poprzedni numer.
+
+                     ----------- -- /\-/\ -- ---------
+
+   Na zakonczenie: Jak widac phreaking w polsce to zjawisko jak najbardziej
+   aktualne. Jezeli sie tym zajmujesz i masz jakies wiadomosci to serdecznie
+   zapraszam na kanal #phreakpl w sieci ircnet. Skontaktuj sie takze z nami:
+   nth@ic.com.pl, bth@kki.net.pl. Z innych polskich publikacji na ten temat
+   polecam tnt!phreak autorstwa Twitter'a i cztery czesci faq Ce64...
+
+
+/\/\---------- -- this is the end... my only friend, the end... -- --------/\/\
+
+
+  greets go to:  fredzik, twitter, g0d, arewz, elca, luke_skyw, yellaboy,
+                 imm, askme, spann, spaceman, wojtekka, pac2, overheat,
+                 eleven, elmister, smierc, altshock, shmastah, fake
+
+         ------------- - - -----------/\-/\------------ - - ----------
+
+         if you find something interesting -- contact us at once:
+
+                    mail to: nth@ic.com.pl, bth@kki.net.pl
+               visit our homepage: http://lunarshake.home.ml.org
+                  catch us on irc: #phreak, #phreakpl, #hackpl
+
+       leave us a message on our free-of-charge voice mailbox: 0800 20177
+
+         ------------- - - -----------/\-/\------------ - - ----------
+
+  Other Lunar.Shake releases: The complete Social Engineering FAQ - by bth
+
+                 COMING SOON: blueboxing from Poland FAQ
+                              0800 scanning results & faq
+
+             ...look out for Lunar.Shake zine #1  and stay phreaky! :)
+
+/\/\---------------- done by nth. released under lunar.shake 10/03/1998 --/\/\

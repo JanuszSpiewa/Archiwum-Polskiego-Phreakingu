@@ -1,0 +1,1298 @@
+login: phr34ker
+pass: ******** ( <-- fucktpsa ;-)
+
+login and password OK.
+
+
+         _/_/_/_/
+       _/    _/
+     _/_/_/_/
+   _/        
+ _/  hr34k0m4t  v1.1     by sz4ry     
+
+                            >>> 21.03.2001 <<<	
+
+
+/*****************************************************************************\
+*								              			*
+* Tu bedzie to czego nie lubie. Wszystko robisz na wlasna odpowiedzialnosc.   *
+* Nie ponosze odpowiedzialnosci za szkody wynikle z powodu wypalania otworow  *
+* w pelnej butli gazowej palnikiem acetylenowo-tlenowym... ;-)                *
+*  Nie nalezy wykorzystywac sposobow opisanych nizej gdyz prawdopodobnie ;-)  *
+*  sa one niezgodne z prawem.                                                 *
+*									    			      *
+\*****************************************************************************/
+
+
+_______________________________________________________________________
+
+Teraz wiem juz napewno, ze bedzie kolejna versja tego txt'u, czyli 1.2 bo
+bedzie nowe zdjecie phreakomatu starego i nowe bezprzewodowego oraz
+kilka schematuf o ktore mnie mecza...
+_________________________________________________________________________
+
+
+Mile widziane mejle z opinia... %)
+
+
+Spis tresci:
+
+0.)_____Dlaczego powstal ten txt...
+1.)_____Co bedzie potrzebne do zrobienia phreakomatu ?
+2.)_____Robimy phreakomat
+3.)_____Dozbrajanie phreakomatu
+4.)_____Sprzet do phreakomatu 
+5.)_____Sprzet przydatny przy phreakowaniu
+6.)_____Rozne dobre pomysly, niekoniecznie zrealizowane
+ 6.1.)___eFBiaJka
+ 6.2.)___Zdalne sterowanie Urmetem...
+ 6.3.)___Pluskfa...
+ 6.4.)___Filtr 16kHz
+ 6.5.)___Free Net in Home 
+ 6.6.)___Ulyses's AntyTeletaxa
+7.)_____Bezprzewodowy phreakomat 900MHz
+ 7.1.)___Budowa
+ 7.2.)___Dodtaki
+ 7.3.)___Problemy i niebezpieczenstwo
+8.)_____AntyPhreakomaty
+9.)_____Etyka phreakera
+ 9.1.)___Moje zdanie
+ 9.2.)___Txt mijom'y...
+10.)____Pewne akcje... ;-)
+ 10.1.)__Pewna akcja na wycieczcce
+ 10.2.)__Niebieski i jego podroz
+11.)____Pewnien sposob...
+12.)____Poszukuje...
+13.)____Wspolpraca i greetz...
+14.)____END.
+
+
+
+0.) Dlaczego powstal ten txt...
+
+Wiem, ze temat phreakomatu/phreakphone'a byl juz poruszany w wielu txt'ach 
+jednak zaden z znanych mi, nie wyczerpywal tematu do konca. Na necie, mozna
+bylo znalezc jakies tam schematy prowizorycznych telefonow...
+Hrabia jako pierwszy poruszyl temat telefonu do phreakowania... I od tego czasu
+sie zaczelo. 
+Jednak nie znalazlem zadnego textu, ktory by bardzo dobrze wykorzystywal ten 
+temat. 
+
+{ nota po napisaniu calego tego txtu --> tego tematu nie da sie do konca
+ opisac, przez ten wspanialy postep... oczywiscie phreakerow, nie TPsa ;-) }
+
+Wiec postanowilem zajac sie ta sprawa...
+
+Niektorzy phreakerzy z mojego malego miasta, ktorych nie znalem, podpinali sie 
+zwyklym telefonem i to jeszcze tak, ze odcinali linie od budki podlaczali swoj 
+telefon do linii skrecajac kable i potem zostawiali takie bebechy...
+A TelePies przyjezdzal i wszystkie kable ukrywal/maskowal/pakowal do zelaznych 
+rur/zakladal skrzynki/zakladal puszki [niektore chyba tytanowe]/prowadzil 
+przewody telefoniczne jak linke kolejki gorskiej... ( tak wysoko :-( )
+I tak kilka razy widzialem goscia przy budce ze sluchawka od domowego telefonu 
+w reku... Byl to bodajze telefon firmy Veris. 
+Z drugiej strony trzeba byc odwaznym zeby stac przy budce i rozmawiac z inna 
+sluchawka w reku. Przeciez to wzbudza ogromne zainteresowanie i zdziwienie u 
+przechodniow... 
+ 
+A majac swoj cudowny phreakomat mozna wpinac sie nawet w najruchliwszych 
+miejscach. I nikt nie zauwazy co robisz, a co najwazniejsze nie pozostawisz
+za soba zadnych sladow, no prawie zadnych poza kolosalna roznica zaliczonych 
+impulsow miedzy centrala i budka...
+
+ 
+1.) Co bedzie potrzebne do zrobienia phre4kom4tu ?
+
+Phreakomat jak kazdy wie jest to nic innego jak telefon, tylko troche 
+przerobiony. Dlaczego przerobiony ? Bo nie bedziesz stal jak palant z sluchawka
+telefoniczna w reku. Tylko bedziesz stal przy budce symulujac rozmowe a w 
+rzeczywistosci sluchawki w uszach, phreakomat ukryty w kieszeni kurtki, 
+mikrofon w rekawie...
+# Wiec idziemy do sklepu i kupujemy najtanszy telefon tonowy lub impulsowy, w 
+ zaleznosci do jakiej centrali jestesmy podlaczeni i czy chcemy aby nasz telefon
+ mogl pelnic takze funkcje Tone Dialera przy zastapieniu bateriami linii...
+Jeszcze trzeba zwrocic uwage na rozmiary telefonu, a raczej plytki wewnatrz 
+ telefonu, bo obudowe i tak sie rozpierdoli.
+# Kupujemy poza tym kilka metrow dwuzylowego kabla mozliwie cienkiego.
+# Gniazda i wtyczki mini jack lub gniazda i wtyczki chinch ( ja mam ich pelno 
+ bo zawsze sie do czegos przydadza, a to jakies stale gniazdo przy jakims 
+ domu...)
+# Krokodylki (duze i male...)
+# Sluchawki od walkmana, te do-uszne (sa male i prawie niewidoczne)
+# Obudowa plastikowa, do ktorej zmiescilaby sie plytka z telefonu oraz zeby
+zostalo troche miejsca na inne pierdoly typu gniazda, diody, przyciski...
+Jesli chcesz mozesz wpakowac phreakomat do obudowy po walkmanie w taki sposob...
+Pozostawiam to twojej inwencji tworczej... Mozna tak zbudowac super-zamaskowany
+bardzo-bezpieczny phreakomat...
+# Lutownica 
+# Male pilniki. W koncu otwory na przyciski od klawiatury nie zrobia sie same.
+# Male sruby lub klej (Obudowe trzeba jakos zlozyc w jedna calosc)
+# troche cierpliwosci... trza sie niezle napierodlic zeby to wszystko bylo
+ male, mialo fajne bajery i przy okazji dzialalo ;-)
+# EB 0,5l (oczywiscie bezalkoholowe ;-)
+
+
+2.) Robimy phreakomat
+
+Czyli pakujemy plytke do nowej obudowy. Jesli sie nie miesci to przepilowujemy
+ja ostroznie brzeszczotem (uwazajac na sciezki) tak, aby sie zmiescila. Laczymy 
+potem sciezki przewodami i sprawdzamy czy telefon nadal dziala, jesli nie to 
+znaczy ze cos zrabales i troche czasu minie zanim bedziesz wiedzial co jest nie
+tak. 
+
+Odlutowywujemy od plytki glosniczek/buzzer/... odpowiedzialny za wydawanie 
+dzwiekow przez telefon, gdy ktos do niego dzwoni, bo po co nam to w terenie, 
+no chyba ze podpinasz sie do kogos na stale i rozpowiadasz wszystkim swoj 
+"nowy" numer ;->
+
+Z sluchawki wyjmujemy mikrofon i glosnik i w zaleznosci od wielkosci obudowy
+phreakomatu lub od twojego gustu, takze pakujemy to do obudowy, zastepujac 
+spiralny sprezynujacy sie kabelek krotkimi przewodami.
+
+Potem w przedniej czesci obudowy wypilowywujemy otwory na klawisze od 
+klawiatury.
+
+Nastepnie w bokach obudowy naszego phreakomatu robimy 4 otwory na 3 gniazda i
+1 przycisk. Jedno gniazdo mini jack musi byc napewno bo standardowo wtyczki 
+mini jack montowane sa przy sluchawkach od walkmanow. Reszta gniazd to twoj 
+wybor.
+( Ja mam 2 gniazda mini jack, jedno na sluchawki, drugie na mikrofon oraz jedno 
+gniazdo chinch do podlaczania zmiennych kabli, ktorymi podpinam sie do linii. )
+
+Przycisk wlacza i odlacza linie od phreakomatu. Logiczne.
+Jesli masz problemy z przyciskiem (w starszych aparatach laczyl on kilka 
+przewodow a nie 2) to zlutuj je tak aby telefon byl ciagle wlaczony, a wtedy
+zamontujesz przycisk przy przewodzie laczacym gniazdo "glowne" (to do ktorego
+bedziesz podlaczal roznego rodzaju przewody podpinajace twoj phreakomat do 
+linii) z plytka telefonu.
+
+Gniazda przylutowywujemy rownolegle to znaczy... Co tu tlumaczyc. Looknij do
+pliku 4_lamerz.gif a bedziesz wiedzial. Mozna sobie dodatkowo walnac 
+wlaczniki przelaczajace glosnik/mikrofon wewnetrzny,(czyli juz znajdujacy
+sie w obudowie phreakomatu) na sluchawki/mikrofon zewnetrzny.
+ ^Ale to juz powinno byc w rozdziale ponizej.
+
+
+3.) Dozbrajanie phreakomatu (to co lubie najbardziej !)
+
+Co mozna dodac do swojego phreakomatu:
+
+* miniwzmacniacz audio, bo czasami stojac przy budce, ktora stoi przy drodze
+   nie slychac czasami radosnego piiiiii.... (Ja mam w swoim wzmacniacz 850mW 
+   zasilany z baterii i to mi wystarcza)
+   (nie pytajcie skad go wzialem bo se sam zrobilem... Poszukajcie w
+    czasopismach elektronicznych... Tam sa schematy, a nawet kupony 
+    zamowieniowe...)
+
+* uklad Ulysesa sluzacy do odbijania impulsow taryfikacyjnych oraz dodatkowy
+  przycisk do jego wlaczania i wylaczania... :-)
+  Mozna w ten sposob wpinac sie do linii dobrych central...
+
+* jesli byl to telefon tonowy to mozna sobie z niego zrobic Tone Dialer'a 
+   podlaczajac go do baterii (ile V nie napisze bo sprawdzalem na roznych 
+    telefonach i na niektorych wystarczy 9V, a na innych nie wystarcza 
+    kilkadziesiat. Sam musisz do tego dojsc). 
+   Robisz po prostu przelacznik telefon(linia)/Tone Dialer(bateria)...
+ ! Jesli telefon ma przelacznik Tone/Pulse to otwieraja sie przed toba szerokie
+   bramy od Strowgera do Alcatela... To znaczy, ze telefon ten moze wybierac
+   numery tonowo lub impulsowo...
+
+* w zaleznosci od rodzaju centrali do jakiej chcesz sie podpinac
+   Na przylkad gdy podpinasz sie do Strowgera lub innej starej centrali to 
+   mozesz wpakowac szeregowo do phreakomatu pomiedzy plytka a linia cos takiego
+    (na pewno widziales to juz w innych faq'ach, a jesli tego nie znasz to 
+     odsylam cie do c64faq3.txt ,tam jest dokladny opis)
+                D1 //  
+              ____|\|____
+   L1        /    |/|    \        L2
+   <--------{             }-------->
+	       \____|/|____/ 
+(phreakomat)      |\|            (linia...)
+                  // D2
+   L2                             L2
+   <------------------------------->
+
+ D1,D2 : Diody LED
+  Jest to doskonala sygnalizacja dzialajacego taryfikatora. W ten sposob mozna
+  sprawdzac czy dany numer jest darmowy...
+
+* jesli podpinasz sie czesto do sasiada/budki ktory/a wybiera numery impulsowo
+   i jesli co nieco kumasz w elektronice to proponuje ci zbudowac sobie licznik
+   przerwan. To takie male cudenko ktore pokazuje ci ile razy nastapilo 
+   przerwanie linii, czyli bedziesz wiedzial gdzie kto dzwoni. 
+   Dobre no nie ! Zwlaszcza przy budkach...
+ @ mozesz sobie takze zbudowac dekoder kodu DTMF, ktory pokazywalby ci gdzie
+   ktos dzwoni, nawet gdyby uzywal telefonu z wybieraniem tonowym.
+   Nie bede tu przedstawial schematu tego urzadzonka, bo jest ono dosyc 
+   skomplikowane. Jesli znasz sie na tym i owym to mozesz sobie zamowic z 
+   strony www.avt.com.pl kit AVT-251 o nazwie Odbiornik DTMF. Nie jest to od
+   razu takie urzadzonko jakbysmy chcieli, ale mozna je przerobic przy 
+   zastosowaniu odpowiednich kosci, aby poakzywalo nam na 7 segmentowym
+   wyswietlaczu zdekodowany numer kodu.
+  ( stara metoda : kiedy nie mialem tego urzadzenia to nagrywalem na dyktafon
+  tony z linii, i potem w domciu dobrym programem je dekodowalem, ale to bardzo
+  duzo pracy, myslalem nawet zeby porownywac tony nagrane na dyktafonie z 
+  tonami "oryginalnymi" przy uzyciu jakiegos dobrego programu muzycznego z
+  oscyloskopem, VU meter'em i mozliwoscia porownywania dzwiekow, ale to chyba
+  jescze wiecej pracy...)
+
+* Ja przy swoim phreakomacie mam malutka zasowke, pod ktora mam schowek na 
+  kartke z numerami komorkowymi do znajomych i takimi tam 0700.. PartyLine itp.
+  (czasami naprawde jest glupio jak po pewnym czasie wydzwonisz kilka numerow
+  i nie wiesz, gdzie dalej dzwonic, a to przeciez 4 3)
+ (Poza tym w tym schowku miesci mi sie takze filtr 16kHz, ktorego uzywamy do...
+ ale o tym w dalszej czesci txtu. Jesli czytales duzo phreak txtow to napewno
+ wiesz do czego on sluzy...)  
+
+* bezpiecznik, nie smiej sie !, jesli bedziesz kiedys sie wpinal do linii w 
+   zoltych kabinach z budkami to mi kiedys podziekujesz.
+   TelePies chce nam phreakerom zniszczyc nasze phreakomaty poprzez zamiane 
+   oznaczen linii telefonicznej i energetycznej. Wiec twoj phreakomat moze 
+   nie wytrzymac 220V... Ale jesli pomiedzy linia a plytka bedzie bezpiecznik
+   to on wlasnie sie pojdzie walic, a nie twoj phreakomat. Wtedy wracasz do 
+   domciu wymieniasz bezpiecznik, wraczasz na miejsce zbrodni i juz wiesz jak
+   sie prawidlowo podpiac...
+    Uwazaj tylko przy przylutowywaniu bezpiecznika do przewodow, latwo go mozna 
+    wtedy przez przypadek rozwalic. Najlepiej jakis 150 V czy cos...
+   
+   ! Ja proponuje Ci wczesniej sprawdzic multimetrem napiecie na przewodach, 
+     przy okazji mozesz rozpoznac centrale... ( zajrzyj do c64faq1.txt )
+      (multimetr to elektroniczny miernik napiecia i natezenia pradu stalego i 
+       zmiennego, rezystancji...; kazdy elektronik to ma, w sklepie to kosztuje
+       ok. 50zyli)
+
+* przetwornik piezo bez generatora, jest to glosniczek montowany min. 
+  w zegarkach na reke. Ze wzgledu na swa niska impedancje nie wplywa on na 
+  stan linii, przez co mozna go podpiac do linii i sluchac czy ktos gdzies 
+  dzwoni, co mowi... Jest to jak gdyby glosnik/podsluch ktory nie powoduje 
+  podania Dial Tone'a na liniie przez centrale...
+   ( Ja mam go tak podlaczonego, ze gdy phreakomat jest wlaczony to glosniczek
+     piezo jest wylaczony, a gdy phreakomat jest wylaczony to piezo jest 
+     przylaczony do linii. Pozwala mi to na wczesniejsze sprawdzenie stanu 
+     linii przed wlaczeniem phreakomatu... )
+
+* to juz jest naprawde malo potrzebny bajer w phreakomacie, ale zawsze cos :
+  latarka na bazie diody o podwyzszonej jasnosci. Moze byc zasilana z linii
+  telefonicznej ( pamietaj o rezystorach ) lub z baterii. Jesli masz juz w swym
+  phreakomacie baterie, to nie widze problemu zeby zmiescic gdzies mala diode
+  ktora naprawde moze ci sie kiedys w nocy przydac...
+  
+
+4.) Sprzet do phreakomatu
+
+* sluchawki do-uszne od walkmana, male, prawie niewidoczne i niepozorne
+   zakonczone wtyczka mini jack
+
+* mikrofon, moze byc elektretowy lub w ostatecznosci moze to byc normalny
+   glosnik (to jednak zalezy od telefonu w phreakomacie) z dlugim lub krotkim
+   przewodem zakonczonym oczywiscie wtyczka mini jack. 
+  ( Ja mam dwa mikrofony jeden z dlugim i jeden z krotkim przewodem, ten z 
+    dlugim wystarcza mi abym phreakomat mial przy pasie a przewod z mikrofonem
+    w rekawie bluzy. Czasami jak jest goraco a chce sobie gdzies podzwonic to
+    jest troche trudno wytrzymac w bluzie... ;-) ) 
+
+* kable sluzace do podpinania sie do linii:   (temat rzeka...)  
+
+                                          ___________krokodylek
+                                         / (co sie smiejesz, sprobuj narysowac 
+ 1]   --[###]========== = = = =========={   krokodylka znakami !) 
+     mini jack           ?m kabla        \___________krokodylek
+ (lub inna wtyczka         2 zylowego             
+  do phreakomatu)                            krokodylki wpina sie w miejsca
+                                             gdzie zdjales izolacje z kabla ;->
+
+                                          ___________@--
+                                         /
+ 2]   --[###]========== = = = =========={                
+     mini jack           ?m              \___________@--
+  ( ile metrow kabla bedziesz potrzebowal  
+    musisz sprawdzic sam, czasmi wystarczy      igielki wpinasz tam gdzie nie 
+    30cm, a czasmi potrzeba z 5m )              chcesz zdejmowac izolacji, ze 
+                                                wzgledow bezpieczenstwa...
+
+
+
+ 3]   --[###]=========== = = = ===========[###]--
+     mini jack            ?m        mini jack lub micro jack  
+
+  Jesli podpinasz sie gdzies bardzo czesto, bo jest to dobre miejsce to mozesz
+  sobie zamontowac gniazdo mini jack lub micro jack w niewidocznym miejscu i 
+  wtedy bedziesz mogl uzywac tego kabelka. Wtedy podchodzisz, 1 mini jack do 
+  twojego phreakomatu a 2 do gniazda i juz w sluchawkach radosne piiiii...
+  Trzeba tylko uwazac, zeby nikt tego gniazdka nie wyczul, bo TelePies moze sie
+  zaczaic i Ciebie pogryzc... ;-> 
+
+* backdoor'y, sa to przewody zastepujace gniazda mini jack, bo przeciez nie 
+  wszedzie mozna zainstalowac gniazdo do wpinania sie ( przy nie otwieraniu 
+  budki, bo w kazdej budce jest na gorze otwor na kabel... )
+ Backdoor'y moga wygladac roznie w zaleznosci od miejsca zastosowania:
+
+        
+ 1]    igly======== = = = ========krokodylki
+  
+ Ten backdoor wykorzystuje u siebie w skrzynkach w klatce schodowej. 
+!( Swoja droga, nie popieram phreakowania na koszt zwyklych ludzi, przeciez
+! chodzi NAM o niszczenie naszego najwiekszego wroga jakim jest TPsa, a nie
+! jacys biedni ludzie; no chyba, ze pod podpinasz sie pod jakies duze firmy,
+! ktore nie wnikaja za bardzo w rachunki lub jestes pewien, ze danej osobie
+! zostanie uznana reklamacja rachunku telefonicznego... Wiec najpierw zastanow
+! sie, zanim zdejmiesz izolacje z kabelka... ) Czesto stalem przy otwartej 
+ skrzynce z phreakomatem lub z przymknieta skrzynka, a do niej szly przewody 
+ z krokodylkami na koncu. I gdyby ktos nagle wyskoczyl zza dzrwi to nie 
+ zdazylbym odpiac krokodylkow i zamknac skrzynki, a w tym przypadku gniazdo 
+ mini jack nie wchodzilo w gre, bo bylo by je widac chyba z daleka... 
+ Wiec otwieram skrzynke zakladam krokodylki na linie sasiada, a igly 
+ zakladam tak aby ich czubki wystawaly z boku lub z dolu zamknietej 
+ skrzynki. Sa niewidoczne... Wtedy do phreakomatu podlaczam przewod z 
+ krokodylkami, ktore zaciskam na czubkach szpilek. Latwo sie podpiac i latwo 
+ szybko sie zwinac. Nalezy jednak pamietac o sprzecie w skrzynce...
+
+ Jesli chcialbys pobawic sie tak przy budce, zajrzyj do igly.jpg...
+
+ 2]    igly======== = = = ========igly
+
+ Wyzej wymieniona sytuacja, tylko gdy nie chcesz zdejmowac izolacji z kabli...
+ ( Ach to bezpieczenstwo i ten glupi TelePies )
+ Zamiast krokodylkow igly, a te drugie igly wystaja ze skrzynki tak samo ;-)
+
+
+ 3]    krokodylki======== = = = ========krokodylki
+ 
+ W skrzynkach czasami mozna wykorzystac zamek, obudowe lub sruby. Po prostu 
+ szukamy dwoch materialow wchodzacych w sklad szkrzynki, przewodzacych prad i 
+ nie zwierajacych sie. Zaciskamy wtedy pierwsze krokodylki na linii a drugie
+ na srubach, ktore wystaja na zewnatrz, ale nie stykaja sie z metalowa obudowa
+ skrzynki.  
+ I potem podchodzimy do zamknietej oczywiscie skrzynki i zaciskamy krokodylki 
+ od przewodu z phreakomatu na np. dwoch srubach wystajacych z obudowy, a 
+ polaczonych przez nas  wczesniej z linia...  
+                                                                
+
+ 4]    nic======== = = = ========nic    
+      ( ^-- przew. bez izolacji --^ ) 
+ 
+ Custom backdoor. Uzywac gdy wyzej wymienione kable nie pasuja... ;-)
+ Po prostu use your brain...
+      
+
+5.) Sprzet przydatny przy phreakowaniu
+ 
+ * multimetr - wspominalem juz o nim wczesniej, mozesz zmierzyc napiecie i inne 
+               rzeczy na przewodach zanim sie do nich podepniesz
+ 
+ * multitester (tak zwana neonka) - srubokret z lampka w srodku, z jednej 
+               strony dotykasz palcem (masa) a srubokretem badasz napiecie, 
+               na moim 125V - 250V powoduje swiecenie sie lampki, maly i moze
+               sie zmiescic do kieszeni
+
+ * miernik cegowy - miernik bezdotykowy, ma postac cegow z wyswietlaczem, droga
+                    zabawka; niektore moga mierzyc napiecie przewodow 
+                    wielozylowych, ale te sa naprawde drogie...
+                     Czasami w komorkach blokow idzie kilkadziesiat kabli 
+                     np. od domofonu... ale tylko w jednym kablu jest napiecie 
+                     takie jak na linii telefonicznej...
+                    A nie radze zdejmowac izolacji z przewodow 220V...
+
+ * latarka - ma zarowke, przycisk i baterie ;-)  o 23:50 jest przeciez ciemno
+
+ * gniazda z przewodami - podchodzisz, montujesz, phreakujesz...
+                            przez kilka nastepnych dni :
+                           podchodzisz, phreakujesz...
+                             potem jak jest goraco :
+                            podchodzisz, demontujesz, spierdalujesz...
+
+ * lom, male i duze pilniki, mocny srubokret, slaby maly srubokret, brzesczoty,
+   czasami mlotek - niektore budki i skrzynki sa oporne przy braku kluczyka AY...
+
+ * wiertarka na akumulatorki - czasami maly otworek wystarczy w skrzynce lub w
+                               kurzej stopce z budka, aby zobaczyc kabelek...
+                                Czasami trudno w wirze walki odkrecic plyte 
+                                glowna Urmeta srubokretem...
+ 
+ * petardy - zupelna, bezsensowna ostatecznosc... poza tym wandalizm...
+             glosne otfieranie-niszczenie urmeta ktorego nie pochwalam...
+ 
+ * zapalniczka - czasami trudno jest zdjac izolacje, to wtedy mozna ja troche
+                 przyjarac; a zima mozna sobie ogrzac rece ;-)
+
+ * wykrywacz metali - kit AVT 1104, czasami warto wiedziec gdzie ida sobie 
+                      kabelki pod tynkiem, a moze gdzies wystaja ?
+                      |  Albo jesli zginie Ci sprzet w trawie podczas akcji
+                      |   (Hi w3master)
+                      +---> www.avt.com.pl 
+                       (jesli bawisz sie troche elektronika to zamow sobie i 
+                        zloz, fajna zabawka)
+
+ * cienki metalowy pret zakrzywiony jak haczyk na koncu - sluzy do wydlubywania
+              kabli z roznych otworow itp. rzeczy, napisalem pret a nie drut,
+              gdyz drut przy probie wyciagniecia kabla przez otwor prostuje sie
+              na koncu...
+  
+   To jest cos takiego: ( z kolkiem - jest latwiej wyciagnac ;-)
+      ____
+     /    \
+    |      ]========================\
+     \____/                        _/
+  
+ * dyktafon - mozesz nagrac sobie czyjas rozmowe, puszczac komus " Nie ma 
+              takiego numeru " na linie lub nagrac tony jak gdzies dzwoni,
+              potem w domku tony zdekodujesz i masz numer gdzie ktos dzwonil...
+                ( jak to podlaczyc do phreakomatu chyba wiesz, z gniazda 
+                  sluchawek w phreakomacie kabelek do Mic w dyktafonie... )
+               ( Zamiast uzywac dyktafonu mozesz sobie zrobic mini cyfrowy 
+                 dyktafon na kosciach ISD, niektore uklady moga nagrywac 60s 
+                 dzwieku... )
+
+ * scyzoryk - najlepiej jakis z bajerami, z pilka, srubokretem... Zawsze sie
+              przyda.
+
+ * walkman i karta magnetyczna - walkman po to jakby sie ktos ciebie zapytal po
+                                 co Ci sluchawki w uszach przy budce,
+                                 karta jakby Ci sie zachcialo srac i niemialbys
+                                 czym sobie wytrzec ;->
+                                                                   
+ * plecak lub reklamowka - przeciez trzeba gdzies ten caly sprzet trzymac, a
+                           poza tym mozna w nim zmiescic jescze kanapki i cos
+                           do picia ;-)
+                        ( do duzego plecaka zmiesci sie 1 pozyczony 
+                          oczywiscie w celach naukowo-badawczo-edukacyjnych
+                          urmet... )     
+                             
+ * kumpel lub kumple - jeden dziala, drugi obserwuje, trzeci siedzi w 
+                       samochodzie i gotow jest ruszyc ze zrywa... ;-)
+ 
+
+6.) Rozne dobre pomysly, niekoniecznie zrealizowane
+
+6.1.) Do telefonow komorkowych mozna dokupic tak zwana FBIke (eFBiaJke). Sa to
+ sluchawki z mikrofonem. Mozna to podlaczyc do phreakomatu i symulowac rozmowe
+ z komorki lub mozna na przyklad udawac ochroniarza... ;-)
+
+6.2.) Kiedys zastanawialem sie nad zdalnym sterowaniem budka. I wymyslilem dobry
+ sposob na pozyskiwanie kart oraz na denerwowanie ludzi chcacych zadzwonic z 
+ automatu.
+ Czesci do tego potrzebne mozna wymontowac z na przyklad zabawkowych zdalnie 
+ sterowanych samochodow.
+ Chodzi o to aby mozna bylo zdalnie wlaczac i wylaczac budke, czyli wlaczac i 
+ odlaczac linie od budki. Plytke odbiornik mozna by zmiescic pomiedzy sciana
+ a niebieska buda (zajrzyj, czasami tam na serio jest duza przerwa) zakrywajaca
+ telefon. Pozostaje tylko problem z przekaznikiem, ktory nie jest zbyt maly...
+
+ Schemat ideowy :
+ 
+  <----------------------->              
+  <-------o-  -o---------->
+ linia  x1|    |x2     telefon                 urmet
+          |    |                                | |
+         _x____x______                        y1| |
+        |            x--------------------------o |
+        | przekaznik |                            |
+        |__u____u____x--------------------------o |
+           |    |                             y2| |
+           |    |                               | |
+     /--+--------+           ODBIORNIK         /   \ 
+   bat. |        |  antena                  +-v-----v-+
+     \--|        |--------                  |         |
+        +--------+                          |         |
+                                            +---------+
+                                                akumulatorek w urmecie
+
+
+       |
+       |antena 
+       |
+   +--------+
+   |        |--\       
+   |        | bat.  NADAJNIK
+   |        |--/
+   +--------+
+     |  |
+     o  o
+      \ sw-1
+        
+
+ Nacisniecie przycisku w nadajniku mialoby powodowac rozlaczenie punktow x1 i
+ x2, przez co telefon zostawalby odlaczony od linii, a zarazem zasilania.
+ Jednak Urmety posiadaja akumulatorki co komplikuje sprawe, wiec moze zamiast
+ rozlaczania linii zrobic jej zwieranie. Albo wyjac akumulatorek z budki...
+ Albo rownoczesnie z odlaczaniem linii sterowac odlaczaniem akumulatorka w 
+ budce... Hmmmm...
+ Ale zawsze mozna pokombinowac. To jest tylko narazie nie sprawdzony pomysl...
+ ---> Jak ktosik sprawdzi to niech mejlnie...
+ btw: Sam zaczynam sie powoli brac za to... czas pokaze...
+
+6.3.) Jak tu podsluchiwac rozmowy prowadzone przez automat ? Czesto stawialem 
+ sobie to pytanie. Nie bede przeciez stal przy kablu niedaleko budki i smial
+ sie z tego co ktos gada. No chyba, ze kabelek jest gdzies odkryty i to daleko
+ od budki. Wtedy mozna uzyc swojego phreakomatu. Ale jesli kabelek jest 
+ odkryty, ale blisko budki...
+  Wtedy nalezy kupic pluskwe. Taka pluskwa jest bardzo mala i nadaje ona na
+  falach FM, czyli nalezy jeszcze posiadac male przenosne radyjko lub walkmana
+  z radiem.
+
+ Wiec sa 2 sposoby uzycia takiej pluskwy:
+
+ 1.] Jesli pluskwa jest naprawde mala to pakujemy ja do sluchawki obok mikrofonu
+    W sluchawce od srebrnego chyba sie zmiesci, ale od niebieskiego chyba nie,
+    ale jesli jest naprwade bardzo mala... Tylko wtedy slyszymy co mowi osoba 
+    rozmawiajaca z budki, a nie slyszymy drugiej osoby.
+
+ 2.] podpinamy pod linie rownolegle przetwornik piezo i przyczepiamy do niego
+    najpierw kawalek cieniutkiej gabki, aby mikrofon nie stykal sie 
+    bezposrednio z piezo, a potem przyklejamy mikrofon z pluskwy. Mozna to 
+    przykleic tasma izolacyjna.
+     Calosc zajmuje naprawde malo miejsca, a nalezy w tym urzadzanku zmieniac 
+     tylko baterie.
+
+  <-----------+-------------->
+ linia        |            telefon
+  <---------+-|-------------->
+            | |
+           /---\ ; mic        antenka 
+           |   | ;  0=[###}----- 
+           \---/ ;    pluskwa
+        piezo   gabka
+
+Jak juz wczesniej pisalem przetwornik piezo nie ma wplywu na stan linii. Wiec,
+siedzimy sobie gdzies niedaleko i sluchamy w naszym radyjku o czym ktos gada !
+
+
+6.4.) Niektore budki znajduja sie na kurzych stopkach. Stopka ta to gruba metalowa
+ rura, w ktorej jest kabelek, a na ktorej osadzona jest cala niebieska buda z 
+ telefonem. W niektorych rurach z tylu na gorze jest otwor. W niektorych to 
+ znaczy w 6% wszystkich budek. A wydlubanie przez ten otwor kabelka graniczy
+ niemal z cudem.
+ A istnieje cos takiego jak wiertarka na akumulatorki. Wiec podchodzisz do
+ takiej kurzej stopki i w rurze wywiercasz najpierw mniejszy otwor, potem 
+ wiekszy... Az bedziesz mogl dobrac sie do kabelka z radosnym piiiii...
+ Wtedy zakladasz sobie gniazdo w tym otworze lub wpinasz miedzy linie a budke
+ filtr 16kHz (jakby ktos nie wiedzial, to centrala wysyla impulsy taryfikacyjne
+ o czestoliwosci wlasnie 16kHz do budki, aby ta kasowala impulsy z karty...).
+ [ Ten filtr 16kHz to pomysl tnt ]
+ Wtedy automat nie bedzie kasowal impulsow z karty. Lecz jesli sie rozniesie po
+ okolicy, ze ten automat nie kasuje impulsow to beda przy nim kolejki i wtedy
+ zadziala TelePies...
+ Wiec nalezy zamontowac wlacznik/wylacznik tego filtra. Ja stosuje dwa 
+ kontaktrony, ktore pod wplywem silnego magnesu ( takiego jak z glosnika ) 
+ zwieraja swe styki i zaczynaja przewodzic prad. Gdy nie znajduja sie w polu 
+ magnesu nie przewodza. Proste jak sprezyna ;-).
+
+  
+6.5.) To nie jest moj pomysl, bo gdzies juz o tym czytalem...
+  Kupujesz telefon stacjonarny z bezprzewodowa sluchawka i pakujesz telefon
+  baze do budki podlaczajac ja do linii i siedzisz sobie gdzies niedaleko budki
+  dzwonieac sobie z sluchawki bezprzewodowej. Nie mowie tu od razu o kupoawniu
+  telefonow Panasonic KX... , sa inne tansze bezprzewodowe badziewia, choc nie
+  dorownuja Panasonic'owi zasiegiem i bajerami. Mozna taki telefon wpakowac do 
+  skrzynki lub czegos podobnego gdzie sa kabelki telefoniczne...
+  Pozostaje wtedy tylko problem ladowania akumulatorow w sluchawce, bo przeciez
+  telefon baza jest podpiety do linii. Wtedy musisz przeczytac w instrukcji 
+  telefonu lub zmierzyc multimetrem prad ladowania akumulatorow i zrobic sobie 
+  ladowarke. Jesli bezprzewodowej sluchawki uzywasz w domu ( mozesz sobie 
+  podlaczyc ja do modemu... Net 4 3 ) proponuje ci przerobic ja na zasilacz...
+
+ Znowu schemat ideowy :
+ 
+   linia                                  |
+ <------+---->     |antena                | 
+ <----+-|---->     +---rury itp...      __|_        ____
+      | |        __|___                |    |      |    |
+      |  \______|tel.  |             gl| ## ======== ## |mic 
+       \________| baza |               |....|      |....|
+                | .  . |==bat lub      |....|      |....|
+                |______|    accu       |....|      |....|
+                                       |    |      |    |
+ telefony bazy wymagaja             mic| ## ======== ## |gl
+ jeszcze odrebnego zasilania           |zz__|      |__mm|  
+ Wtedy jest maly problemik...           ||            ||
+  ( Proponuje uzycie baterii 9V         ||            ||     
+    lub akumulatorkow NiCd... )        /  \           ||
+                                      |    |          ==  wtyczka telefoniczna  
+                                   + zasilacz -       ""      ( RJ-11 )
+                                  lub bateria...             do modemu :-)
+
+ Antene telefonu bazy proponuje polaczyc z jakimis metalowymi rzeczami typu 
+ rury... Z koniecznosci mozna zastosowac inne przewody np. z niedzialajacego
+ domofonu ( a te przewody przeciez sa w calej klatce schodowej, tak powstaje 
+ wspaniala antenka o duuuuzym zasiegu )
+
+ ! Nalezy uwazac na swoj telefon baze. Bo jesli go ktos znajdzie to moga byc
+   problemy. A szkoda stracic darmowy dostep do Netu...
+
+6.6.) Ulyses's AntyTeletaxa
+
+Jak masz cudowna centrale ktora potrzebuje odbijania impulsow taryfikacyjnych
+a denerwuja cie urywane rozmowy to proponuje ci abys zrobil sobie to urzadzonko.
+Ja zrobilem i dziala bez zarzutow... Teraz pracuje nad zmniejszeniem jego 
+rozmiarow...
+
+Mozna takze na chama wpakowac to do phreakoamtu z dodatkowym przyciskiem 
+Teletaxa ON/OFF.
+
+
+7.) Bezprzewodowy phreakomat 900MHz
+
+To w baaardzo duzej mierze dotyczy rozdzialu 6.5. ale nie w calosci...
+
+Wiec nastala era (i wcalenie mam na mysli komorek :-) bezprzewodowych 
+ phreakoamtow...
+
+Ja juz sobie taki zrobilem wiec trzeba sie z innymi podzielic...
+
+Mamy juz nowy XXI wiek wiec trzeba isc z postepem... Nikt nas juz
+nie zlapie za reke przy phreakowaniu, gdy mamy swoj Bezprzewodowy Phreakomat.
+Moze tylko znalezc czesc naszego phreakomatu... hehe...
+
+7.1.) Budowa
+Kupujemy sobie telefon bezprzewodowy telefon stacjonarny. Najlepiej 900MHz,
+a nie jakies zabawkowe badziewia, bo takie tez sa. I nie musi to byc odrazu
+Panasonic (choc moze byc, bo Psonici sa bardzo dobre), ale moze byc np.
+Uniden. Ja mam takiego i jest on o wiele lepszy od Panasonica bo ma min:
+CID, Call Timer, 40 kanalow, Voice Scramble Security... i cala mase innych...
+Przy kupowaniu mozna zwrocic uwage na wielkosc bazy, bo zalezy nam na
+tym aby byla jak najmniejsza.
+
+Wiec rozbieramy baze na czesci pierwsze. W miare mozliwosci mozna sprobowac
+jak w przypadku budowy normalnego phreakomatu przepilowac plytke glowna
+bazy i polutowac sciezki. Mi sie to udalo, ale niedoswiadczonym nie radze
+tego robic bo mozna latwo cos zchrzanic. A tych sciezek do lutowania troche
+bylo...
+Wiec ladujemy elektronike bazy do nowej obudowy. Najlepiej jak najmniejszej.
+W obudowie musi tez zmiescic sie akumulatorek 9V do zasilania bazy.
+W obudowie robimy jeszcze 2 otwoey na 2 gniazda jack. Jeden jack do podpinki
+pod linie ( czyli jack========krokodylki ), a drugi jack do anteny ( czyli
+jack-------krokodylek ), bo np. mozna przylaczyc antene do innych przewodow/
+rur/obudow/metalowych_rzeczy...
+
+Nalezy tez zrobic wewnatrz obudowy wewnetrzna antene np. zwniniety w kolo
+kabel...
+
+Z bazy nalezy tez obowiazkowo wymontowac uklad i glosniczek/buzzer 
+odpowiedzialny za "dzwonienie" telefonu... Po co to nam w akcji...
+
+Niektore telefony posiadaja tez uklad przywolywania sluchawki. Nalezy tez
+go wymontowac/zniszczyc aby nikt kto sie na "tym" zna nie przywolywal
+naszej bezprzewodowej sluchawki po znalezieniu bazy na swej linii... ;-)
+Ostatecznie mozna wymontowac buzzer z sluchawki...
+
+Wskazane tez jest pozbycie sie ukladu sluzacego do ladowania akumulatorkow
+w sluchawce... I znow zmniejszyla nam sie baza... :-)
+
+7.2.) Dodatki
+
+* uklad Ulysesa do odbijania teletaxy, jesli dany Urmet jest na centrali
+  wymagajacej odbijania impulsow...
+
+* moznaby zamaskowac taki Bezprzewodowy Phreakomat albo nalepka TPsa albo
+  wlozyc go do Fake Puszki TPsa i umiescic gdzies obok linii Urmeta... :-))
+
+* [patrz rozdzial 6.5. Free Net in Home], baza w Urmecie przed blokiem, 
+   przerobiona sluchawka z tylu kompa i Free Net... :-)
+
+7.3.) Problemy i niebezpieczenstwo
+
+* zasilanie bazy - najwiekszy problem,
+  czyli akumulatorek Ni-Cd 9V nie jest zbyt wytrwalym
+  zrodlem pradu dla takiego urzadzenia, swietnym rozwiazaniem byloby
+  opracowanie ukladu, ktory doladowywalby akumulatorek z linii...
+  ...niestety prace nad tym ukladem nadal trwaja...
+
+* zasilanie sluchawki, czyli nalezy sobie samemu zrobic ladowarke do
+  akumulatorkow z sluchawki po wczesniejszym rozpracowaniu danego ukladu
+  z bazy...
+
+* temperatura pracy Bezprzewodowego Phreakomatu to od -10*C do +50*C
+  wiec zima moga byc male problemiki...
+
+* akumulatorki w sluchawce pozwalaja (standardowo) na 7h ciaglej rozmowy...
+  powstaje problem doladowywania tych akumulatorkow w akcji...
+   baterie, dodatkowe akumulatorki, akumulatorki na zmiane lub polowy
+   sprzet do ladowania akumulatorkow moze rozwiazac problem ;-)
+
+# Jest baardzo male prawdopodobienstwo zlapania phreakera poslugujacego sie
+  Bezprzewodowym Phreakomatem, ale jest. Jak juz znajda nasza baze (do
+  czego nie nalezy w zadnym przypadku dopuscic - strata bazy=kasy i spalone
+  juz miejsce do phreakowania...) to zaczna sie interesowac ciekawymi ludzmi
+  przebywajacymi w danej okolicy. W ostatecznej ostatecznosci, jesli 
+  naprawde przegiales moga uzyc skanera czestotliwosci... ale zeby cie 
+  dorwali musisz byc online... hehe... a to rozwiazuje problemik... :-)
+
+
+8.) AntyPhreakomaty (czy jak ktos chce AntyPiraty)
+
+Wiecie jak fkurwia mnie to jak ktos pracuje w Telekomunie, wogole
+nie placi za rachunki i ma jeszcze na linii AntyPirata w domu...
+
+AntyPhreakomaty mozemy podzielic na 2 grupy :
+/1/ Sygnalizujaco-Blokujace - najlepsze, niedosyc ze sygnalizuja swietlnie
+lub dzwiekowo ze ktos sie podpial to jeszcze powoduja silne zaklocenia na
+lini - tzw. fkurwiajace buczenie... jak to kumpel okreslil...
+/2/ Sygnalizujace - o wiele mniej fkurwiajace, tylko sygnalizuja, przewaznie
+dzwiekowo ze ktos sie podpial, lecz wogole nie blokuja linii... :-)
+( jeden taki kiedys byl chyba opisywany w EdW lub EP )
+
+Aby to ominac trzeba dowiedziwec sie jaki AntyPhreakomat jest na linii
+i sprobowac skombinowac sobie identyczny...
+Nalezy wtedy sie podpinac phreakomat==AntyPhreakomat==chamska_linia,
+gdyz niektore AntyPhreakomaty moga wspolpracowac ze soba na danej linii.
+Co ciekawe maja one wtedy przelacznik sluzacy do ustawienia tego czy 
+sa jeszcze inne AntyPiraty na danej linii... ehhh...
+
+
+9.) Etyka phreakaera
+
+9.1.) Moje zdanie
+
+Jak tu w texcie o phreakomacie sluzacym do podpinania sie do linii nie 
+poruszyc spraf etyki ?
+
+Phreak nie polega na rozpierdalaniu kazdego Urmeta jaki stanie ci na drodze.
+Oczywiscie, aby sie czegos nauczyc lub zrobic nagrywarke trzeba co nieco 
+pozyczyc, ale to nie od razu musi byc jedyny telefon w okolicy...
+Moze on komus np. uratowac zycie... Wiec pomysl o tym jak bedziesz
+nastepnym razem zdobywal elektronike.. ( jak to niektorzy okreslaja ).
+
+Ja wzialem do domu Umreta z miejsca gdzie byly 2 i sie pochwale ze ten drugi
+mial zjebana sluchawke wiec ja zamienilem na ta z tego ktorego se pozyczylem,
+bo on mial dobra, wiec naprawilem tamtego Urmeta i mialem z tego wieksza
+satysfakcje niz.....
+bo po co mi sluchafka jak i tak budki nie podlacze do linii...
+Przyznam sie tez ze zdarzylo mi sie to tylko raz...
+(Jak ktos zrobil cos podobnego to niech mejlnie, bedzie o nim w next versji)
+
+Jesli nie wiesz co zrobic z elektronika od telefonu to go nie pozyczaj... i
+nie rozpierdalaj...
+Niektorzy mowia/pisza ze chca zobaczyc jak Urmet wyglada w srodku...
+Po to na phreak.zone.to sa zdjecia elektroniki...
+Badz co badz, nie ma tam zdjecia otwartego telefonu, ale ja chce sie
+postarac zeby sie tam znalazlo... :-)
+A jak juz chcesz se popatrzec to zrob se klucz, otworz ja i se popatrz...
+Nie niszcz nic bezcelowo jesli naprawde nie wykorzystasz tego...
+
+Ja tak kiedys zrobilem i czytnik dluuuugo lezal zanim wiedzialem
+baaardzo dokladnie jak z niego mozna zrobic nagrywarke...
+( a, i nie piszcie po schemat ! ! ! )
+Wiec nie popelnij tego samego bledu co ja...
+
+Phreak nie polega na wandalizmie... Rozwale wszystkie budki TeleKomuny...
+i co... znowu impuls podrozeje....
+(Z drugiej strony : czasami jak mi przyjdzie rachunek to tez mam ochote 
+pobiegac sobie z lomem i bejsbolem... i ponawalac niebieskich i srebrnych ;->
+ale mi to szybko przechodzi jak wyskocze sobie podzwonic z jakiegos srebrnego)
+
+Podobna sprawa jest przy podpinaniu sie do roznych ludzi...
+Wiem ze najprosciej jest podpiac sie do sasiada, ale wtedy nie nazywaj siebie
+phreakerem tylko pajakiem...
+
+Ja podpinalem sie do ludzia, o ktorym wiedzialem ze pracuje w TeleKomunie i ze
+nie placi za rachunki... o innych nawet nie bylo mowy...
+
+Nie chcesz chyba zeby ktos placil za to ze chcialo ci sie posluchac bot'ow
+z 0700... A jesli chcesz to sie zastanow i nie nazywaj siebie phreakerem...
+Phreak ma wymuszac postep telekomunikacji...
+
+Duzo osob tlumaczy sie ze podpinaja sie tylko do bogatych lub do firm...
+Tylko ze 80% tych bogatych to starzy ludzie... :-|
+
+
+9.2.) Txt mijom'y z ktorym zgadzam sie w 100%...
+ (txt zostal fklejony za zgoda autora)
+
+-----8<--------------------------POCZATEK------------------------>8-----
+
+mijoma.txt
+	mijoma@priv5.onet.pl
+
+	20.10.2000
+
+***********************************************************************
+    Jako autor ponosze wszelka odpowiedzialnosc za ten tekst, ale
+  zupelnie nie obchodzi mnie co zrobisz po przeczytaniu tego chlamu.
+   Z tekstem rob co chcesz - powielaj, cytuj, skracaj, wydluzaj lub 
+wyrzuc, ale niech chociaz zostanie zachowany jego sens (lub jego brak).
+***********************************************************************
+
+"I have a lot of to say
+ I have a lot of nothing to say"
+Kolejny raz napisze cos glupiego. Nie chodzi mi o to, zeby sie ze mna
+zgadzac, ale przynajmniej zrozumiec, ze phreak w dobrym wykonaniu rozni
+sie od tego, czego efekty widzimy na ulicach (rozbebeszone automaty,
+ludzie wqrwieni, ze znowu im zajebano nowiutka karte 100 a na rachunku
+za domowy telefon pojawilo sie nagle, nie wiadomo jakim cudem, 500 zl 
+za rozmowy z numerami typu 0700, mimo ze nikogo z domownikow nie bylo
+przez miesiac w mieszkaniu). Jak to jest? Istnieje etyka hackera a co
+z etyka phreakerska? Czyzby kazdy phreaker byl tylko zwyklym zlodziejem
+i wandalem? Moze pomyslelibysmy nad stworzeniem czegos takiego? Czekam
+na jakies pomysly.
+
+Dlaczego ja wlasciwie to pisze?
+Hmm, pewnie dlatego, ze nie specjalnie podoba mi sie obecna scena
+phreakerska. Mowiac szczerze, ludzi, ktorzy naprawde sie na tym znaja
+jest cholernie malo (chociaz co drugi jakiego spotkasz uwaza sie za
+niewiadamojaksuperevilphreakura, bo udalo mu sie przyjebac mlotem 
+w bude az zostala z niej miazga, tylko po to, by sprawdzic jak wyglada 
+w srodku albo zabrac czytnik - chociaz ni chuja nie wie co z nim dalej
+poczac jak napisal kolega leer). Prawda, ze trudno jest zaczynac teraz,
+kiedy bugow jest malo (ale mimo wszystko nadal sa!) a po przeczytaniu
+byle faqa sprzed 2 lat i wyprobowaniu trickow na pobliskim automacie 
+czlowiek moze byc wqrwiony, ze to wcale nie dziala, ale jednak phreak 
+w Polszcze istnieje jeszcze i ma sie dobrze. 
+Jesli ktos jest kims lepszym od innych, ma konkretna wiedze lub 
+zainteresowania zwiazane z telefonia i chce sie nadal jeszcze uczyc 
+(bo ciagla nauka jest niezbedna), moze sprobowac swoich sil w tym fachu.
+Phreak jest specyficzna forma hacku i nalezy go traktowac podobnie. 
+Podobnie jak hack nie polega jedynie na uzyciu jakichs pieprzonych 
+exploitow, ktore napisal ktos, kto sie na tym znal, tak i w phreaku nie
+chodzi o wykorzystywanie tylko znanych bugow, ale takze szukaniu samemu
+takowych. Wazne, zeby wymieniac sie wiedza i wzajemnie sie uczyc, ale 
+przeciez nie garstka osob powinna jakos w tym kierunku dzialac a reszta
+tylko z tego korzystac, lecz wszyscy powinni wnosic cos do wspolnej
+phreak-spolecznosci, nie? Zatem jesli masz cos ciekawego, to powiedz 
+o tym swiatu a moze ktos rozwinie Twoj pomysl, doda cos od siebie i sam
+tez cos ciekawego znajdzie i opublikuje. Ale zeby nie bylo zadnych
+watpliwosci, nie jestem za tym by dawac wszystko wszystkim. Zgadzam sie
+tutaj z tym, co napisal Hrabia, ze nie kazdy menel o mentalnosci dresa
+powinien miec dostep do wszystkiego (wystarczy spojrzec jak stalo sie
+to z kartami programming i kluczami do blue, ktore maja juz nawet ci,
+ktorzy nie maja pojecia co z nimi zrobic a TPSA raczy nas dzieki temu
+kompletnie roznymi zamkami w roznych regionach i softem 5.8). Osoba
+pretendujaca do miana phreakera powinna najpierw czegos nauczyc sie
+o naszym systemie telekomunikacyjnym, jego funkcjonowaniu, itd. nim
+bedzie miala faktyczny dostep do czegos, czym moze sporo namieszac.
+Popieram tym samym pomysl umieszczenia na phreak.zone jedynie screenow
+i opisu programu do zarzadzania siecia c90 a nie samego juz programu 
+centrum nadzoru - wlanie tak to sie powinno robic. Ale z drugiej strony
+nie powinno byc tez podzialu na 31337 i holote (wsrod ludzi, ktorzy
+uwazaja sie za elite - popularne okreslenie to lamy), bo to taki stan 
+takze nie wrozy nic dobrego. Umiesz cos - zaprezentuj sie - sa grupy,
+ktore przyjma Cie z otwartymi ramionami - sam na tym skorzystasz oraz
+skorzystamy z tego wszyscy.
+
+Dlaczego jeszcze to pisze? Bo wlasnie choruje w domu i sie troszke juz
+nudze. Dzis znowu udalo mi sie jakos doczolgac do komputera i ...
+
+
+Jak to jest z tym phreakiem?
+Ano tak w sumie nieciekawie. Dlaczego tyle osob sie tym zajmuje?
+Sporo z nich twierdzi, ze chca w ten sposob zniesc monopol jaki ma TPSA.
+Czy aby na pewno przyczyniaja sie do znoszenia tego monopolu? Ja sadze,
+ze pewnie nie. Bo kto tak wlasciwie placi za te wszystkie rozmowy
+wykonane na koszt TPSA? No kto? Czy TPSA dostaje tu po dupie? NIE!
+A kto? Tez pytanie... klient, bo przeciez TPSA jest firma nastawiona 
+na zysk a nie instytucja charytatywna. Wiec skutkiem (no, moze nie 
+tylko, ale napewno tez) phreaku jest kolejna podwyzka a nie zmniejsza
+sie natomiast wyplata ludzi na wysokich stolkach w TPSA. Owszem, czasem
+zdarza sie, ze skutkiem "madrego" phreaku moze byc to, ze ktos z tego
+stolka spadnie, ale tak bywa bardzo zadko. Zwykle konczy sie to tylko
+kolejna podwyzka cen i plac dyrektorow TP. Jako "madry" phreak rozumiem
+nie rozdupcenie w drobny mak 200 automatow, bo to jest czysty wandalizm
+Musze sie niestety zgodzic (chociaz raz) z TPSA i ich naklejka na 
+automatach "Nie niszcz mnie! Moge uratowac komus zycie!". Osobiscie
+nigdy nie zdarzylo mi sie bezmyslnie zniszczyc automatu, natomiast
+zdarzylo mi sie automat naprawic do stanu umozliwiajacego chociaz 
+wybranie numerow alarmowych. Stad moj apel: "Jesli potrzebujesz czegos
+z automatu, to zostaw go z laski swojej w stanie wystarczajacym chociaz
+do wezwania pomocy. Jesli juz chcesz caly automat, to wybierz miejsce, 
+gdzie obok stoi przynajmniej jeden dzialajacy!". Naprawde nieciekawie
+wyglada gdy ktos chcacy wezwac np. karetke podchodzi do automatu a on
+nie dziala, obok stoi drugi, ale oczywiscie tez "NIECZYNNY" (eprom 2.9
+- obecnie najpopularniejszy w blue) lub "USZKODZONY" (wszystkie inne 
+rodzaje softu - jak wykorzystac te informacje? sam pomysl - to nie 
+boli). Za sporo takich przypadkow odpowiedzialni sa pracownicy TPSA,
+ktorzy nie raczyli zadbac o swoj sprzet, ale przynajmniej Ty nie 
+przyczyniaj sie do jeszcze wiekszego pogorszenia i tak zlej juz
+sytuacji. Jesli naprawde chcesz, zeby telepies nie zarobi³ na swoim
+parszywym automacie, to w blue zmien eprom na jakis ciekawszy np. cos
+kolegi Nola lub jeszcze lepiej sam sobie zrob tak, zeby wszystkie
+rozmowy byly darmowe albo cos w tym stylu (ludzie sie uciesza) i mozesz
+sie jeszcze postarac zeby eprom sie chwilke dluzej utrzymal (patrz faq
+asturna). Jesli chodzi o srebrne, to tez pokombinuj troche. O "jajkach"
+czyli CTP czy TPU jak kto woli wiem jeszcze zbyt malo, bym mogl cos 
+o nich powiedziec, ale pozyjemy, zobaczymy... 
+Hmm, teraz pewnie myslisz "Co za idiota! Najpierw pisze, ze phreak jest
+'be' a kilkanascie linijek nizej sobie przeczy piszac, zeby udostepnic
+mozliwosc dzwonienia za free absolutnie wszystkim". No tak, chodzi o to
+ze to jest podobnie jak w hacku. Phreak czemus sluzy. Spojrz jak dzieki
+hackerom rozwinely sie zabezpieczenia i analogicznie jest z phreakiem.
+Postep trzeba w pewien sposob wymusic. Ale licza sie przede wszystkim
+sposoby jakie zostaly uzyte w celu tego wymuszenia. NIC sie nie zmieni
+jesli po prostu zdewastujesz jakas bude - idioci trafiali sie na 
+przestrzeni wiekow zawsze i wszedzie ale z tego powodu nie musisz sie do
+nich od razu upodabniac. Natiomiast "madry" phreak wymusza pewne zmiany
+w systemie telekomunikacyjnym (bo jednym - ale podkreslam, ze nie 
+jedynym - powodem chociazby wymiany starych central na nowe jest to, ze
+te nowe oferuja oprocz nowych uslug takze spory zakres zabezpieczen)
+i na stanowiskach za to odpowiedzialnych (chodzi mi o to, ze jesli ktos
+jest nikompetentny, to lepiej takiego "speca" zastapic kims innym). Ale
+pamietaj, ze chodzi tu o rozwoj a niszczenie czegokolwiek powoduje 
+raczej regres niz jakikolwiek postep.
+Drazac temat monopolu, to watpie, by sam phreak mial przyczynic sie do 
+jego zniesienia, ale przydaloby sie troszke uswiadomic sobie i moze tez
+spoleczenstwu, ze TPSA hamuje niemilosiernie Polska gospodarke i nie
+pomoze tu zadna sprzedaz TP francuskiemu zdziercy (ktory co prawda sam
+uswiadomil sobie, ze wysokie ceny na ichniejszym rynku nie powoduja 
+wysokich zyskow  - porownaj: podniesienie akcyzy w naszym kraju
+spowodowalo, ze przychody z tytulu tejze akcycy sa mniejsze niz w roku
+poprzednim - i tamtejszy rzad [FT jest panstwowy] na wniosek samego 
+operatora obnizyl ceny dostepu do netu - moze w Polsce tez KIEDYS do 
+tego dojdzie a u nas w dodatku TPSA nie potrzebuje zgody rzadu), bo 
+czerpie sie z czegos zyski dopoki sie jeszcze ma taka mozliwosc,
+a w 2003 roku zapowiedziano calkowita demonopolizacje polskiego rynku
+telekomunikacyjnego. I do tejze daty raczej nie przypuszczam, by mialo 
+sie cos znaczaco zmienic w telefonii. Niby mamy niezaleznych operatorow,
+ale przeciez i oni zarabiaja i dlatego nie maja wcale zamiaru wypowiadac
+cenowej wojny TPSA. Sa wprawdzie wyjatki (jak dzialajacy niedaleko mnie 
+operator, ktory WCALE nie taryfikuje polaczen lokalnych a za net placi
+sie jakas smieszna zryczaltowana oplate - czyli jesli sie chce, to mozna
+"droga" tepso - "droga" ma dwa znaczenia: "kochana" i "kosztowna" - mam
+nadzieje, ze odgadniesz, o ktore znaczenie mi chodzilo), ale tymi malymi
+wyjatkami sa bardzo mali operatorzy dzialajacy lokalnie na malych 
+obszarach i posiadajacy niewielu abonentow. Miejmy przynajmniej nadzieje
+ze ten rok 2003 zmieni COS. Oby bylo chociaz tak jak w Niemczech, gdzie
+Deutsche Telekom utracil swoj monopol i od tego czasu polaczenia w tym 
+kraju tylko tanieja a nie jak u nas - wciaz rosna. Zdarzaja sie straszne
+sytuacje, kiedy polaczenie Niemcy-Polska kosztuje tam 3 razy mniej niz
+u nas Polska-Niemcy juz nie mowiac juz zupelnie o cenie polaczenia
+Niemcy-USA w porownaniu do Polska-USA, bo wychodza na jaw przerazajace 
+fakty, ze nas polaczenie ze Stanami Zjednoczonym kosztuje ponad 20 razy
+wiecej niz Niemca. A tak naprawde, to same polaczenia nie sa zbyt 
+kosztowne, a cena wynika z amortyzowania kosztow poniesionych podczas
+instalacji, czyli chodzi o to by operatorowi zwrocil sie koszt budowy
+calej infrastruktury, czyli: linii, wyniesien, dodatkowego sprzetu, itd.
+Dlatego poczatki telefonizacji wiazaly sie z wysokimi kosztami, ale gdy
+cala machina zostala juz wprawiona w ruch powinno isc znacznie latwiej.
+I idzie... w Polsce jak krew z nosa (dlatego w naszym kraju chetnych do 
+zajecia sie phreakiem jest od groma). No coz, argumenty osob bedacych za
+utrzymaniem monopolu jakos mnie nie przekonuja, bo teoretycznie TPSA
+uzyskala miano monopolisty po to, by zainwestowac tam gdzie zaden 
+operator wolnorynkowy nie wazylby sie inswetowac z powodu zbyt wysokich
+kosztow, czyli w miejscach trudnych do stelefonizowania, na wsiach, itp.
+Chyba jednak zapomniano o tym, ze operatorzy pojda tam, gdzie zwesza
+jakies pieniadze a w miejscach slabo stelefonizowanych ludzie wciaz 
+czekaja na jakiegos operatora z otwartymi ramionami. TPSA nie spelnila
+zbyt dobrze swej roli, wiec nie widze specjalnego sensu w dalszym
+utrzymywaniu jej monopolu. Ale jakos chyba jeszcze dotrwamy do 2003.
+Wazne, by tego czasu nie zmarnowac. A niestety patrzac na phreak-scene
+widac coraz bardziej szerzaca sie stagnacje. Ludzi, ktorzy cos publikuja
+jest coraz mniej a to, co juz mamy, to w duzej mierze chlam. Smieszy
+mnie niemilosiernie tekst typu "nie odpowiadam za to co sam napisalem".
+Jak za to nie masz zamiaru wziac zadnej odpowiedzialnosci, to znaczy, ze
+sam tak naprawde w to nie wierzysz, wiec po kiego grzyba to piszesz?
+Przede wszystkim teksty sa malo konkretne (tak jak i ten nie jest wcale
+konkretny, ale wcale tez nie mial byc - mial jedynie zwrocic Twoja uwage
+na to, ze phreak to duze slowo nie kazdy ma prawo uzywac miana phreakera
+ - sam zreszta sie nim nie tytuluje, po prostu lubie zagadnienia
+zwiazane z telefonia) i ogromnej wiekszosci malo naukowe. Pochwalic moge
+kolege Kolnierzyka, ktorego tekst o epromie TPE91 jest napewno jednym
+z najlepszych jakie czytalem. Przydaloby sie wiecej takich wlasnie
+opracowan. Podziwialem tez z przyjemnoscia prace Nola, ktory rowniez
+odwalil kawal dobrej roboty i czekam na kolejne owoce pracy ludzi, 
+ktorzy potrafia cos wiecej niz tylko napisac jakis nic nie znaczacy 
+bezsens z pogranicza phreaku i science-fiction (chociaz czesciej jest to
+tylko fiction). Swiadomosc ludzi o tym jakie tak naprawde metody moga
+byc wykorzystane do dzwonienia za darmo a jakie sa totalna bzdura jest
+niestety tak zenujaco niska, ze juz chyba najwyzszy czas to zmienic. Nie
+chodzi mi o to by podawac wszystko na talerzu, ale zmusic tych myslacych
+do ruszenia mozgiem (a nie tylko morda) przez podanie konkretnych faktow
+jak chociazby to, co mozna znalezc w tekscie Kolnierzyka. Przydaloby sie
+wysilic to, co jest pod czaszka. Moze cos by sie wtedy ruszylo w polskim
+phreaku. 
+Jesli jeszcze o faqi chodzi, to sprawa pajeczarstwa mysle, ze jest godna
+uwagi. W tej sprawie zgadzam sie z artykulem Pana Witolda Wrotka, ktory
+to artykul znalazl sie w numerze 4/2000 Nowego Elektronika. Sprawa
+phreaku ogolnie zostala potraktowana dosc tendencyjnie, ale trzeba
+niestety przyznac autorowi sporo racji. Bo rzeczywiscie niemal kazdy faq
+zaczyna sie od slow, ze jego autor robi to, co robi, by walczyc 
+z monopolem TPSA a tymczasem podaje niezawodne sposoby na udupienie 
+mieszkajacej obok staruszki z niska emerytura. Zarabia oczywiscie nasza
+ukochana TPSA a staruszka ma marne szanse na reklamacje. Co to za 
+pieprzona podwojna moralnosc? Taki ma byc phreaker? Nie rozumiem
+specjalnie po co musisz podpinac sie pod innych ludzi jak jesli tak juz
+naprawde MUSISZ, to mozesz sie wpiac w linie automatu. Bo pamietaj, ze
+to hipokryzja na maxa twierdzic, ze zwalczasz monopol NARAZAJAC TPSA na
+dodatkowe ZYSKI. Ogolnie jestem za tym, by wykorzystac phreak do 
+ukazania niekompetencji pracownikow TPSA i zmusic naszego narodowego
+operatora (na ktorego na razie jestesmy raczej skazani, bo nic sie bez
+niego w Polsce nie odbywa) do zmian a nie do bezposredniego okradania 
+ludzi - oni juz i tak nienawidza telepsa, bo wszyscy mamy raczej
+podobne doswiadczenia - ja pamietam, ze jeszcze dwa lata temu u mnie
+w miescie stala centralka reczna, obslugiwana przez TAK BARDZO MILE
+panie z TPSA, ze dech w piersi zapieralo - ale przynajmniej jak sie cos
+zjebalo (a dzialo sie to czesto), to mozna bylo nabluzgac pani, ktora
+i tak sie przysluchiwala rozmowie. No, ale to juz przeszlosc. Teraz jest
+koncentrator podlaczony pod S12J i pelno blue z softem 2.9 i tez jest 
+ciekawie.
+
+I to by bylo juz pewnie wszystko, co chcialem napisac. Sa to odpowiedzi
+na pytania, ktore ja sobie najczesciej zadawalem odnosnie phreaku. Mysle
+ze raczej nie tylko ja tak sadze. Phreak w Polsce jest potrzebny, ale
+niech ten phreak bedzie troszke bardziej swiadomy a i osoba uwazajaca 
+sie za phreakera ma jakies pojecie o tym co robi, dlaczego i jakie to
+powoduje skutki. Przede wszystkim wazne jest w tym wszystkim, by robic
+to by sie rozwijac, uczyc czegos nowego (ja wlasnie dlatego zabralem sie
+za to). Juz wystarczy pseudophreakerow opowiadajacych o slawnym juz
+naklejaniu na karte paska magnetycznego z kasety magnetofonowej lub 
+podgrzewaniu tegoz paska swieczka czy czegos rownie glupiego wymyslanego
+przez bezmozgi chcace zaistniec w necie wypisujac bzdury albo tlumaczac
+zagraniczne txty na nasz ojczysty jezyk nie majac najmniejszego pojecia
+o czym pisza i ze wiekszosc z tych bzdur ma ponad 20 lat i nie ma 
+najmniejszego prawa dzialac w Polsce, gdzie mamy kompletnie inny system
+telekomunikacyjny niz np. w USA.
+Jesli chodzi o slownictwo, to czasem uzywalem slow bardziej dosadnych,
+gdyz niestety tylko takie zdaja sie trafiac do niektorych osob, ktore sa
+(sadzac po ich slownictwie i poziomie faqow) albo niedorosle, albo slabo
+wyksztalcone (lub i to, i to) i zabieraja sie do tak powaznych tematow
+jak telefonia. Przez takich wlasnie ludzi phreak w Polsce uwazany jest 
+(oczywiscie przez tych, co chociaz maja jakies metne pojecie co znaczy
+slowo phreak) za dzialanie majace na celu bardziej zaszkodzenie 
+sasiadowi niz TPSA. No coz, nie bede dluzej przynudzal. Mozesz sie ze 
+mna nie zgadzac - czekam na jakis odzew.  Jesli sadzisz, ze caly ten 
+tekst to bzdury i lanie wody, to jest to prawda, ale jesli myslisz, ze 
+nie mam racji - udowodnij mi to. 
+Pozdrawiam tych, ktorzy zrobili i robia cos dla polskigo phreaku. Nie
+bede ich wymienial, ale kazdy wie o kogo mi chodzi.
+
+***********************************************************************
+Koncowka ma tez swoje haslo: "Trzeba tepic wnadalizm wsrod phreakerow." 
+Potrzebujesz zamka do dorobienia klucza? Znajdz przyjaznego montera, 
+ktory Ci pozyczy ten klucz na chwile. Jak nie ma takich w okolicy, to 
+poszukaj innego sposobu. Jak juz w zupelnej ostatecznosci (jestes tak 
+zdesperowany jak nigdy przedtem) dobierasz sie do automatu, to zabierz
+go sobie do domu i tam w ciszy i spokoju baw sie (moze przy okazji 
+nauczysz sie czegos), ale nie zostawiaj rozjebanego na ulicy, zeby 
+straszyl przechodniow i dawal przyklad dresom i innym ciulom jak to sie
+robi (bo chyba nie starasz sie do nich upodabniac?). Phreak moze byc 
+w miare kulturalny takim wlasnie powinnismy go propagowac, bo co zwykly
+postronny czlowiek pomysli o phreakerze rozjebujacym bude? "Pieprzony 
+wandal i przestepca!" a juz na 100% nie pomysli, ze robisz to, zeby 
+przeciwstawic sie monopolowi czy z jakiegokolwiek innego powodu. Bo tak 
+naprawde nic tym nie osiagasz. Jak TPSA zobaczy rozdupcony automat bez 
+zamka, to go naprawi i zmieni zamki w calym miescie. I co wtedy? 
+Rozjebiesz nastepny i tak az do skutku (az im sie skoncza zamki czy 
+automaty?)?? A wiec jednym zdaniem - jestem przeciwny wandalizmowi. NIE
+TYLKO JA! W tej sprawie poparcia udzielil mi takze Kolnierzyk i dzieki
+mu za to, ale jest naprawde sporo ludzi myslacych podobnie i mam 
+nadzieje, ze Ty tez do nich nalezysz.
+
+-----8<---------------------------KONIEC------------------------>8-----
+
+Ja do tych ludzi naleze i podpisuje sie TU...
+
+
+10.)Pewne akcje... ;-)
+
+Kazdemu chyba w swojej dzialalnosci przytrafilo sie kilka ciekawych i 
+smiesznych rzeczy... 
+
+10.1)Pewna akcja na wycieczce
+
+Kiedys na klasowej wycieczce w gorach mieszkalismy w domku niedaleko budki.
+A ze pokoj mielismy na samym dole to mozna bylo w nocy sobie wyskoczyc.
+Zauwazylismy, ze z jednego balkonu szedl kabel na slup z skrzynka TPsa, ale
+po dokladnych ogledzinach zauwazylismy, ze kabel ten jest odciety !? 
+Olalismy to ! Poza tym nie chcialbym jebnac z balkonu z phreakomatem w reku !  
+Pierwszej nocy pilismy pifo wiec, nie zabardzo nadawalem sie na akcje...
+Nastepnej nocy wyskoczylismy okolo 24:00 z w3masterem i dopadlismy budke.
+Byla to budka na kurzej stopce z blu urmetem. Znane mi bugi w oprogramowaniu
+sprawdzilem wczesniej, wiec odrazu zaczelismy dobierac sie do kabelka...
+Z tylu w nozce na gorze byl otworek. I to przez ten otworek kilka minut 
+probowalem wydlubac kabelek. Ale kabelek nie chcial za cholere wyjsc z otworka,
+wiec sprawe olalismy. Zauwazylismy kilka metrow dalej slup na ktorym z 3m od 
+ziemi byla metalowa rurka, z ktorej wychodzil kabelek i szedl dalej po slupach.
+Na gorze podpiac sie nie szlo bo by bylo mnie widac z 1km. Wiec w3master 
+podsunal mysl, zeby odkrecic rurke (6 srub) i sprobowac ja wysunac do gory.
+Swoim super scyzorykiem 6 srubek odkrecilem w 3 minuty. Po czym z w3masterem
+zaczelismy wysuwac rurke obracajac ja wokol jej osi. Jakie bylo nasze 
+zdziwienie gdy rura ta wyszla po 5s i stwierdzilismy, ze byla ona chyba na 5cm
+w ziemi. No coz, moze monterow nie stac na szpadle...
+Dluuuugo zdejmowalem izolacje, a czy bylo w nich napiecie sprawdzalem normalnie,
+to znaczy reka. Pech chcial ze mialem ze soba moj prowizoryczny phreakomat, 
+ktory skladal sie z krokodylkow, 2 diod LED, rozwieracza i glosniczka 
+wymontowanego z sluchawki srebrniaka w moim miescie.
+W trakcie odizolowywania przewodow szedl niedaleko droga Gabry$ z klasy i gdy
+nas zobaczyl to krzyknal: Co jest monterzy ! 
+Nabluzgalismy na niego zeby sie zamknal... Niezle sie usmialismy !
+Po kilku probach dzwonienia rozwieraczem (1231231...) pobieglem do domku i 
+pozyczylem karte magnetyczna. (thnx maly)
+Blurmetem wybieralismy numer, potem zalaczalismy phreakomat i rozlaczalismy 
+blurmeta. Proste jak 2+2=5. Jakosc polaczen byla
+bardzo slaba bo glosniczek sluzyl za mikrofon i glosniczek i trzeba bylo 
+krzyczec aby ktos po drugiej stronie Cie zrozumial (Hi Ty$ka).
+A potem moja wychowawczyni przyszla z druga facetka chyba o 24:00 zadzwonic 
+i nas wystraszyla:
+ - A co wy tu robicie w nocy ! 
+ + Ja, ja chcialem zadzwonic do domu.
+ - O tej porze ?
+ + No bo, tak to automat byl ciagle zajety !
+ ( wtedy facetki zauwazyly, ze przy slupie jest w3master z Ty$ka)
+ - A wy co tam robicie pod slupem ?
+ + (Ty$ka) Zgubilismy tu w trawie klucz do domku !
+Gdy oni udawali swiecac latarkami, ze szukaj klucza ja szybko do nich 
+podbieglem i cicho sie zapytalem: A sprzet ?!
+w3master odpowiedzial: Jest tu ! Szybko go zdjalem i wpakowalem do kieszeni.
+Wtedy Ty$ka powiedziala, ze znalazla klucz i szybko spierdolilismy do domku.
+Dobrze, ze facetki nie chcialy zobaczyc tego fikcyjnego klucza...
+
+A rozbeblane kabelki zostawilismy na deszczu w trawie. Przykrylismy je troche 
+roznym zielskiem, moze na kolejnej wycieczce bedzie ktos kto bedzie wiedzial co
+zrobic z tymi kabelkami... ;-> Chcielismy nawet zostawic wiadomosc o tych
+kabelkach dla nastepnych wycieczkowiczuf... ;->
+I odjechalismy...
+
+Nalezy wiec sprawdzac wszystko poczawszy do budki po droge jaka przebywa kabel 
+od niej. Czasami naprawde mozna znalezc fajne miejsca. A nie po sprawdzeniu
+bugow softu budki oraz tego czy z tylu jest otwor przez ktory widac kabel 
+reszte olac.
+Czesto kabel idzie do budki po scianie w widocznym miejscu. A jesli ta budka
+znajduje sie w publicznym miejscu to jest ona prawdopodobnie spalona. ( Choc 
+zawsze mozna sie podpinac majac kabel z krokodylkami w rekawie, tylko wtedy
+reke ciagle trzeba trzymac na telefonie, a to czasami meczy lub wzbudza 
+zainteresowanie... Poza tym po odejsciu od budki zostawiamy w widocznym miejscu
+kabel z zdjeta izolacja [ mozna sprobowac go zaizolowac, gdzies schowac, 
+zamaskowac... ], a to nie jest zbyt dobry pomysl, jesli chcemy sie jeszcze
+kiedys w tym miejscu podpinac ). A gdybysmy sprobowali przesledzic droge jaka
+kabelek przebywa od skrzynki/slupa/czegos innego do budki, to okazaloby sie,
+ze 20m dalej od budki jest on w krzakach ;-) lub w jakims bardzo ustronnym
+miejscu. Mi sie tak juz kilka razy zdarzylo...
+ 
+10.2.) Niebieski i jego podroz... ;-)
+
+Moj phreak team jest naprawde troszeczke pojebany... ;-) wszystko na zarty...
+wszystko z ogromnym ryzykiem... za to ich lubie...
+
+Otoz jakis czas temu, a nawet baardzo dawno
+zalatwilem sobie z w3masterem zeby mi przyniosl
+Urmeta... Mial byc niebieski... Swoich nie chcialem niszczyc bo juz dosyc
+byly rozpierdolone... a i tak bylo juz ich w okolicy coraz mniej... ( i to
+nie z mojej winy.!.!.!. )
+
+Celem tego mialabyc ---> nagrywarka. Cel zostal osiagniety. ( nie piszcie po
+schemat !.!.!).
+
+w3master w przypadku zalatwienia niebieskiego mial do mnie dzien wczesniej
+zadzwonic zebym sie przygotowal lub przyjechal car'em po "paczke"...
+
+Na samym poczatku niebieski odbyl droge pociagiem do pewnego miejsca...
+W dalszych zdarzeniach ja ju bralem udzial...
+
+Pewnego dnia pojechalem do szkoly wczesniej, a jechalem na 8:55. Siedzialem
+sobie na korytarzu z kumplami, gdy nagle w3master wyskoczyl z usmiechem i
+powiedzial zebym poszedl z nim na dol... Mialem nadzieje ze nie wzial TEGO
+ze soba do szkoly... Jak wszedlem do szatni... O kurfa... Pojebalo cie...
+Smialem sie do bolu... Teraz dopiero wiem ile ryzykowalismy...
+W jakims wojskowym plaszczu przykryty byl niebieski... Jak go Pru5u podniosl
+to spod plaszcza wypadla sluchawka... Kurna... w ciagu 2 sekund wcisnelismy
+ja z powrotem na miejsce... Ostatecznie niebieski przeczekal cale lekcje
+w szatni na takiej poleczce na dole... Czasami tylko sprawdzalismy czy
+szatniarki nie znalazly czegos ciekawego... ;-)
+Po lekcjach niebieski przejechal sie z nami autobusem... ;-) 
+W drodze na przystanek znow wypadla sluchawka spod plaszca... ;-)
+Tez nie moglem wytrzymac ze smiechu... W podziemnych garazach zapakowalismy
+jeszcze raz niebieskiego, lecz tym razem juz o wiele dokladniej...
+W autobusie troche byl tlok, ale zniosl to dzielnie.... ;-)
+Niektorzy tylko patzryli sie z zaciekawieniem na
+cos pokrytego ciemno zielonym plaszczem przypominajacego niebieskiego urmeta.
+Po wyjsciu z autobusu do kumpla byl kawalek drogi... Nie wiecie jak ciezki
+wydaje sie niebieski jak sie go TROCHE poniesie... Dzwonimy do domu Foki,
+a tu jego Stara mowi nam ze go nie ma... Kurna, miny nam zrzedly...
+No i popierdalalismy w miejsce gdzie jest Foka... Z powrotem w nagrode on 
+niosl niebieskiego. :-) U niego w domu otworzylismy niebieskiego. Co ciekawe 
+jego Stara wszystko widziala... I Jej to nie przeszkadzalo... :-)))
+Nawet to jak nawiercalismy zamek..., bo kurfa, zgubilem kluczyk...
+To chyba bylo w calym bloku slychac...
+Niebieski sie bardzo opieral, ale jak sie do niego dorawly 4 osoby to juz 
+nie mial szans... (F0k4, Pru5u, 5z4ry i w3m45t3r <--- TEAM :-)))))
+ i sie otworzyl...
+Obudowa wyladowala w koszu... tylko obudowa... reszta zostala wykorzystana...
+
+Nawet teraz gdy cos robie to uzywam jeszcze tamtych czesci, a nie rozpierdalam
+nowe budki...
+
+
+11.) Pewnien sposob...
+...na srebrne automaty publiczne. Istnieje pewien sposob nie wymagajacy zadnych
+wiadomosci o telefonii i zadnego sprzetu na srebrne automaty aby dzwonic za
+darmo. W niektorych miejscahc jest on prawie wogole nie zanny, a w innych np.
+takich jak moja okolica - ludzie dostaja pierdla na punkcie dzwonienia za
+darmo tym sposobem. TPsa panicznie blokuje ten sposob, jednak ja jezdzac tu i
+tam kazdego tygodnia znajduje wiele automatow na ktorych ten sposob dziala.
+Wszystko zalezy od rodzaju centrali i od poziomu phreaku na danym terenie :-)
+
+Wiec nawiaze kontakt z ludzmi, ktorzy wiedza o jaki sposob mi chodzi, w celu
+wymiany doswiadczen i spostrzezen na ten temat.
+
+Przyjdzie czas, to sposob zostanie opublikowany... :-)
+
+
+12.) Poszukuje...
+
+ To jest pewnego rodzaju ogloszenie.
+
++-----------------------------------------------------------------------------+
+|                                                                             |
+|   Poszukuje doswiadczonych                                                  |
+|        phreakerow/hackerow/carderow/crackerow/coderow/elektronikow          |
+|      z dalekich lub bliskich okolic Lodzi                                   |
+|         w celu nawiazania wspolpracy i wymiany doswiadczen                  |
+|                                                                             |
+| Interesuje sie kopiarkami/nagrywarkami kart magnetycznych,                  |
+|                                                chipowych i kredytowych      |
+|                                                                             |
+|                                          e-mail : sz4ry@poczta.fm           |
+|                                                                             |
+| Predzej czy pozniej ( a raczej pozniej ;-) dostaniesz odpowiedz...          |
++-----------------------------------------------------------------------------+
+
+Na lamerskie lisciki, z txtem : "Napisz mi 100% sposob jak dzwonic za darmo"
+ nie bede odpowiadal... lub na te z "Przeslij mi dokladny schemat nagrywarki 
+ kart..." tez ! 
+  
+A i ja nie mam schematuf do wszystkiego... Ludzie poszukajcie sami troche...
+Macie juz nazwe tego czegos to sami szukajcie, a nie wszystko podane...
+
+
+13.) Wspolpraca i greetz...
+
+ special thanx to : Ew4 K. ( zawsze . ),
+                    w3m4ster (masz tak samo "kul" pomysly jak ja,
+                              przyniosl kiedys niebieska rzecz do szkoly
+                              i musielismy ja ukryc w szatni),
+                             (zawsze jest 1 osoba ktora czyta moj txt :-),
+                    Fok4 (potrzeba nam takich elektronikow jak ty),
+                    St4r4 F0ki (nieprzeszkadzalo Jej wogole nawiercanie
+                      zamka niebieskiego, tytanowym wiertlem...)
+                    Pru5u (troche ciezki wydaje sie ten niebieski jak sie go
+                            niesie kilkaset metruf...)
+                    Ty$ka(fajnie sie gadalo ze starym ?, musze go poznac), 
+                    Gabry$ (Nie jestem monterem !?!),
+                    0lo (wyskakiwal ze mna przez okno z domku w 
+                         niebezpiecznstwie - nauczyciele suxx),
+                    R4fik (thnx za info o tym ze TelePies sie fkurwil w mojej
+                           okolicy),
+                    4lc0h0l (c4rding rulez...)
+   and
+ 
+  thanx to : Hrabia, As7urn, Shadow, Impexus, Kiron, Pit, Mijoma,
+            Ozzy, Chemiq, Glinek, Altar, Kolnierzyk, Michalc64...
+
+ thanx to group named Urmet Developer's too
+
+    and all I've forgot...
+    
+14.) END.
+ 
+ Jakby kogos to ciekawilo :
+
+  Pisane w : NC v5.0 i WordPadzie(:-|)
+  Poprawiane : 4x 
+  Czas edycji : 8h -(minus) przerwy na jedzenie
+     
+
+Mejle ze zdaniem mile widziane... :-)
+
+Mam ochote napisac txt o mojej centrali, czyli Alcatelu E-10A...
+Jak ktos ma jakies ciekawe rzeczy to sie chyba nie obraze na niego jak
+mi je podesle... ;-)        
+
+logout, exit, quit, end, fin, konec, das ist ende... (wiecej se nie moge przypomniec... :-)
+

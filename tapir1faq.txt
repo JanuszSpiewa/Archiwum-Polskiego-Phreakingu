@@ -1,0 +1,142 @@
+**************************************************************************
+*                              TAPIR FAQ 1                               *
+**************************************************************************
+*                              25.XI.1998                                *
+**************************************************************************
+
+
+I    Wstep
+II   Phreaking
+III  Samochody
+IV   Narkotyki
+__________________________________________________________________________
+
+
+I  Hi, jest to moj pierwszy faq i nabazgram tutaj troche glupich bzdur
+   na ktore akurat wpadlem. Nie sa to zajebiste pomysly ale niektorym
+   cwaniakom moga sie nawet przydac.
+
+II Phearing
+   Na ten temat mozna pisac az do zajebania ale podpinanie sie do linii,
+   produkcja lewych kart (strata czasu) czy grzebanie srubokretem w
+   telefonicznych budach juz wsystkie cwaniaki znaja. No to po cholere
+   mam to tu opisywac.
+
+   Ale nie wszyscy znaja ten numer z telefonem bezprzewodowym i antena od
+   CB. Przynajmniej nie znalazlem go w zadnym faq-u i zinie.
+   A wiec kupujesz na pchlim targu jakis stary model telefonu bezprzewo-
+   -dowego ze sta³ym kodem (na 10000 % dziala Panasonic nie wiem dok³adnie
+   jaki model) jego kod to smieszne 256 kombinacji (2^8, bo jest to kod
+   binarny). Rozwalilo mnie to bo zazwyczaj te kody to 8 zer albo 8 
+   jedynek. Ale te japonce maja zakute paly. No to lecimy dalej, podpinasz
+   sobie do telefoniku jakas silniesza antene, np od CBradia, no a jak
+   takiej nie masz no to oczywiscie musisz komus zakosic, albo zrobic z
+   kawalka drutu. No i sprawa zalatwiona dzwinisz np na Kamczatke albo
+   no interku a rachuneczek przychodzi na twoja ofiare.
+   No pewka ze musisz miec w poblizu jakis telefon bezprzewodowy aby
+   numer zadzialal, ale metoda jest ciezko wykrywalna i mozesz spac 
+   spokojnie.
+   Metode ta podsuna mi pewien spoko gosc (G.G) i chwala mu za to!
+    
+
+   Numery 0 800 zebrane dotychczas przezemnie
+   
+   0 800  20842   gosciu mowi "numer testowy tpsa" nie wiem o co tu chodzi
+          37899   ACM Lublin 
+         137899   ACM Lublin
+ 
+   Numery od 20000-20099
+   
+   0 800  20003   nie odbiera
+          20010   nie odbiera
+          20011   nonstop zajete
+         120014   nie odbiera
+         120015   Panorama Polska (chyba firm)
+         120016   centrum kard i czekow (automat)
+          20018   biuro maklerskie
+          20020   jakas firma
+          20022   jakas firma
+          20023   modem lub fax
+          20024   jakas firma
+          20026   biuro maklerskie
+          20027   Polskie Ksiazki Telefoniczne (automat)
+          20029   Ruch prenumerata
+          20031   biuro maklerskie
+          20032   firma kosmetyczna
+          20035   chyba fax
+         120041   nie odbiera
+         120042   Aqfa dzial foto
+          20048   non stop zajete
+         120049   jakas firma
+          20050   Elcom
+          20052   Herz
+          20055   jakas firma
+          20062   fax 
+         120063   nie odbiera
+          20065   jakas firma
+         120066   Office (niekiedy automat)
+         120067   fax lub modem
+         120068   jakas firma
+          20070   nie odbiera
+         120073   jakas firma
+          20075   nie odbiera
+          20076   Longman (automat)
+         120077   nie odbiera
+          20078   centrum kart
+          20079   jakas firma
+          20082   jakas firma
+          20083   jakas firma
+         120084   Krdyt Bank (automat)
+         120088   jakas korporacja
+         120091   Pocztex
+          20092   Auto System
+         120093   jakas firma
+          20097   jakas infolinia
+
+  
+   Niez³e jaja mozna sobie porobic pod nr. 0800 56009 (taryfikator gazowy)
+   Gosciu mowi zebys podal jakis numer 7 cyfrowy, np 1236681, pozniej
+   kaze ci podac inny (tym razem musi to byc 4 cyfrowy), np. 1214
+   i mowi ze rachunek zostanie wyslany poczta. Bawilem sie kiedys tym
+   numerem i nawalilem niezla liczbe zgloszen chyba im tam narobilem
+   niezlego chaosu w rachunkach.
+   Mozna tez zadzwonic pod numer jakiegos assistance i wcisnac im kit ze
+   zepsul nam sie samochod a zeby bylo smieszniej za miejsce awarii
+   mozna podac jakas wioche na odludziu Ja im podalem taka wioche
+   Lipie w Bieszczadach 5 km od granicy z Ukraina. Najsmieszniejsze
+   jest to ze najblizszy serwis Fiata (bo tam dzwinilem) jest (chyba )w 
+   Przemyslu oddalonym od tego miejsca o jakies 100 kilosow. Wypytali mnie
+   o moje dane oraz najwazniejsze "przyjalem zgloszenie prosze sie nas 
+   spodziewc za jakies 2 godziny dziekuje" Niektorzy goscie z serwisu 
+   sa bardzo podejrzliwi, wiec trzeba udawac mocno zdenerwowanego.
+   Fiat Assistance 022 8280868
+   Peugeot Assistance 0800 22424
+   Dzwoniac nocy pod nr 0800 20081 mozna sobie pogadac z pewnym gosciem
+   jak sie go podhajcuje to ostro klnie. Jest to ochroniarz jakiejs firmy.
+ 
+
+III Samochody
+
+   Wczesniejszy typ maluchow mozna latwo otworzyc bez uzycia zadnych
+   kaleczacych narzedzi. Wystarczy mocno kilkanascie razy szarpnac za
+   klamke, od tych wstrzasow mechanizm wypcha srodkowy bolec i autko
+   otwarte. No a zeby go odpalic trzeba tylko polaczyc trzy pierwsze 
+   bezpieczniki (sa w bagazniku po stronie kierowcy w czarnej skrzynce).
+   I tak przygotowanym fiacikiem spadamy z miejsca wypadku.
+
+
+IV Narkotyki
+
+   Moj stary wymyslil ze mozna robic nalewki z czegos takiego jak aronia
+   i jest po tym niezly odlot. A tym bardziej mu wierze bo chodzil do
+   technikum lesnego i ma pojecie o tych sprawach. Nalewki te robi sie
+   tak jak zwykle nalewki np. z porzeczek:)
+  
+
+
+*************************************************************************
+my e-mail  tapirpp@friko5.onet.pl  (wiecie ze tapir jest ostatnim ssakiem 
+                                       odkrytym na ziemi)  
+pozdrowienia dla wszystkich hackerow, phreakerow i oszustow.
+**************************************************************************
+

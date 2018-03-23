@@ -1,0 +1,121 @@
+                       ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+                      ÚÁÄ Nagrywanie rozmow telefonicznych ÄÁÄÄ¿
+      ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄ¿
+      ÀÄÄ  5.2000 ÄÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ Spajk  Ä´
+                               ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+   ---> wstep <---
+
+  Napewno  kiedys napotkaliscie sie z problemem jak nagrac swojego rozmowce
+  telefonicznego   z  mozliwie  najlepsza  jakoscia  dzwieku.  Prezentowany
+  przeze  mnie  sposob  pozwala  na  osiagniecie bardzo dobrej jakosci przy
+  minimalnym  wkladzie  finansowym.
+
+  Spis tresci:
+  1. Potrzebny hardware i software.
+  2. Podlaczenie przewodow.
+  3. Dostrajanie sygnalu.
+  4. Nagrywanie rozmowy.
+  5. Wyjasnienia i znane problemy.
+
+  /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+
+
+  1. Potrzebny hardware i software.
+
+  Zakladam  ze  skoro czytacie ten zin to posiadacie komputer i z pewnoscia
+  modem. Dodatkowo zeby to wszystko mialo sens potrzebna bedzie jakas karta
+  dzwiekowa, program  do rejestrowania dzieku i terminal do obslugi modemu.
+  Jedyny  element  zewnetrzny  ktory  nalezy dokupic lub dorobic to przewod
+  mini jack-jack mono lub stereo, wszystko jedno.
+  Jeszcze jedno; pod pojeciem modemu mialem na mysli cos, co ma przynajmiej
+  dwa  wyjscia/gniazda: line IN i speaker OUT. Karta dzwiekowa powinna miec
+  chociaz wejscie line IN.
+
+
+  2. Podlaczenie przewodow.
+
+  Cala  filozofia  polega  na  prawidlowym  podlaczeniu  tego  do  kupy tym
+  dodatkowym  przewodem. Jeden jack przewodu wtykamy do wejscia speaker OUT
+  modemu.  Drugi  koniec laczymy z wejsciem line IN karty dzwiekowej. Modem
+  oczywiscie powinien byc podlaczony do lini telefonicznej.
+
+
+  3. Dostrajanie sygnalu.
+
+  Dlaczego zwracam taka uwage na dobranie glosnosci ?
+  Otoz chodzi o jak najwieksze oddalenie sygnalu od szumu i zeby nie trzeba
+  bylo  nagranego  materialu  potem  poglasniac programowo i odszumiac. Sam
+  nagrywam  wiele  rozmow  i wiem ze jak potem zrobic z tych wav-ow mp3, to
+  wylaza   wszystkie   te   niedociagniecia.   Teraz  przejdzmy  do  strony
+  programowej.  Uruchamiamy  system.  Odpalamy  mikser  karty  dzwiekowej i
+  ustawiamy  jako  zrodlo  nagrywania line IN. Glosnosc i poziom nagrywania
+  ustawiamy  gdzies  na  polowe.  Teraz  uruchamiamy terminal modemu (Hyper
+  terminal,   minicom).  Wydajemy  polecenie  "ATD".  Jesli  wszystko  jest
+  podlaczone  prawidlowo  to powinnismy uslyszec ton wybierania (dialtone).
+  Nalezy  ustawic  parametry  sygnalu wejsciowego tak zeby nie byl za cichy
+  bo bedzie duzo szumow i nie za glosny bo beda przestery.
+  Ja  do  dostrajania uzylem Sound Forge z uwagi na dobry miernik decybeli.
+  Nagrywamy  fragment  dialtona  i  sprawdzamy jaki ma poziom dB. U mnie na
+  poczatku byl -33dB. To za malo. Podglasniamy modem wydajac komende"ATL3".
+  Teraz  jest  juz  -21dB.  Mozna  wiec  smialo ustawic poziom nagrywania w
+  karcie  dzwiekowej  na  tyle,  aby dojsc do -11dB przy nagraniu dialtona.
+  Generalnie  chodzi  o to, aby nie przekroczyc w nagraniach -3dB, bo wtedy
+  wszystko zaczyna bulgotac.
+
+
+  4. Nagrywanie rozmowy.
+
+  Wbrew  pozorom  nagranie  rozmowy  nie  jest tak proste. Jesli mamy modem
+  voice-speakerphone  to  pamietajmy  ze  w  gniezdzie speakera siedzi nasz
+  kabelek,  wiec  rozmowce  uslyszymy  w  glosnikach  karty  dzwiekowej. Ja
+  calkowicie zrezygnowalem z wybierania numeru poprzez modem.
+  Robie  tak:  uruchamiam  jakis  rejestrator  dzwieku.  W terminalu modemu
+  wpisuje  "ATH1", czyli podnosze sluchawke. W telefonie podlaczonym do tej
+  samej  lini  podnosze sluchawke i wybieram numer. Po zakonczonej rozmowie
+  wpisuje  "ATH0"  i  stopuje nagrywanie. Potem wycinam z nagrania wszelkie
+  smieci.
+
+
+
+  5. Wyjasnienia i problemy.
+
+  Dlaczego wpisuje "ATH1" a nie np. "ATDT 022926" ?
+
+  Moj  modem  po  wybraniu numeru poprzez "ATDT" rozlaczal sie po 1 minucie
+  twierdzac  slusznie  "No carrier". W dobrych modemach to nie wystepuje bo
+  one  same  wiedza  kiedy  obsluguja polaczenie glosowe, a kiedy modemowe.
+  "ATH1" zmusza je do podtrzymywania polaczenia.
+
+
+  Sygnal z modemu jest za glosny !!
+
+  Niektore  modemy  maja  przy  wyjsciu  speaker  OUT  zworki do ustawiania
+  glosnosci  wyjscia.  Nalezy  je  sprobowac poprzestawiac albo wyjac jesli
+  regulowanie przy pomocy konend "ATL1", "ATL2", "ATL3" nie pomaga.
+
+
+  Mojego rozmowce slychac slabo a mnie bardzo glosno !
+
+  Tutaj  moze  pomoc  tylko  soft  do wav-ow. Upieram sie przy Sound Forge.
+  Wpierw  nagrany  material  odszumiamy  (Noise  Reduction  plug-in). Potem
+  zaznaczamy  fragment glosu naszego rozmowcy i spawdzamy jakie ma wartosci
+  dB.   Nastepnie   sprawdzamy  jakie  wartosci  dB  przyjmuje  nasz  glos.
+  Wchodzimy  menu Dynamics/Graphics. Mamy tutaj uklad wspolzednych w ktorym
+  IN  oznacza  poziom dB materialu nagranego, a OUT to poziom do jakiego ma
+  byc  IN  poglosniony/sciszony.  Za  duzo  opisywac  co  tu nalezy zrobic.
+  Proponuje eksperymenty.
+  Powodzenia.
+
+
+
+  Related links:
+  pl.misc.telefonia
+  pl.misc.elektronika
+
+  ------------
+  Spajk@alpha.net.pl.
+
+
+
+

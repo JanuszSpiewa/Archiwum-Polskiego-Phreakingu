@@ -1,0 +1,150 @@
+FAQ v2.0 by LEER
+
+-----------Bzdety------------------------------------------------------
+Text jest poœwiêcony wy³¹cznie celom edukacyjnym. Nie biore odpowiedzialnoœci za jakiekolwiek szkody/konsekwencje poniesione po przeczytaniu tego textu. Wszystko robisz na swoj¹ odpowiedzialnoœæ. Jeœli jesteœ dresem/skejtem/rozwalasz automaty dla przyjemnoœci to nie czytaj dalej bo to nie jest dla ciebie.
+-----------Koniec bzdetów----------------------------------------------
+
+
+Ok. No wiêc ka¿dy ju¿ pisa³ o wszystkich czêœciach automatów. Zdaje mi siê jednak ¿e nikt nie napisa³ o module hybrydowym z niebieskiego który siedzi pod ekranem w czytniku. Sprawa jest o tyle ciekawa ¿e mo¿na zrobiæ sobie z niego odczytywarkê do kart. No jasne, wszyscy robi¹ nagrywarki ale nikt odczytywarki :) .Kolejna zaleta tego to to ¿e po nagraniu sobie kart nie trzeba staæ pod automatem i testowaæ kart, no chyba ¿e ukrad³eœ sobie karciaka (jestem temu ca³kowicie przeciwny!!).
+
+Na pocz¹tek polecam œci¹gn¹æ sobie schematy hybrydki i czytnika z niebieskiego. Wiêcej zrozumiesz i mo¿e sam coœ wykombinujesz.
+
+Teraz opiszê krótki dobry sposób na wyci¹gniêcie tego z pod ekranu. Musisz bardzo uwa¿aæ bo wszystko jest na ceramice i baaardzo ³atwo przez przypadek po³amaæ. Najpierw rozetnij wzd³u¿ na górze ekran i rozchyl go na boki (wyd³ub g¹bkê), bujaj tym ¿elastwem a¿ odpadnie. 
+Z³ap hybrydkê z obu stron wy³amanym ¿elastwem i bujaj j¹ na boki a¿ te¿ siê wy³amie (na nó¿kach oczywiœcie a nie na pó³ :) ). Inny sposób to po prostu wylutowaæ to wszystko. Robota wredna ale mniejsze ryzyko uszkodzeñ.
+
+Wygl¹d modu³u:
+
+|---------------|
+|               |-20  HEAD SELECT BIT1
+|               |-19  HEAD SELECT BIT0
+|               |-18  NC
+|               |-17  NC
+|               |-16  HEAD2 
+|               |-15  HEAD2
+|               |-14  HEAD1
+|               |-13  HEAD1
+|               |-12  GND
+|               |-11  GND
+|               |-10  VCC +5V
+|               |-9   POWER ON
+|               |-8   ERASE
+|               |-7   GND
+|               |-6   ANALOG OUT
+|               |-5   DETECT BIT2
+|               |-4   ???
+|               |-3   ANALOG IN
+|               |-2   DETECT BIT1
+|               |-1   DETECT BIT0
+|---------------|
+
+Do wejœæ HEAD2 pod³¹cza siê g³owicê czytaj¹c¹, pin 16 czerwony kabel, pin 15 ró¿owy, czarny przez rezystor 47K do masy.
+Do wejœæ HEAD1 wchodzi g³owica czytaj¹co-kasuj¹ca, pin 14 czerwony kabel, pin 13 ró¿owy, czarny przez rezystor 47K do masy.
+Nie bez powodu poda³em kolorystykê kabli od g³owicy i gdzie je pod³¹czyæ, to te¿ ma znaczenie!!
+
+Pod³¹czanie napiêæ: piny 7,11,12 do masy, pin 10 do +5V. Teraz jeœli podasz stan niski na pin 9 za³¹czysz napiêcie modu³u. Mo¿esz od razu to wejœcie pod³¹czyæ na sta³e do masy.
+
+Wyboru g³owicy dokonuje siê podaniem odpowiednich stanów na piny 19,20.
+       HEAD2- pin 19>GND   pin 20>VCC
+       HEAD1- pin 19>VCC   pin 20>GND
+
+Na pin 6 podawany jest ju¿ wzmocniony sygna³ z wybranej g³owicy. Mo¿na to wyjœcie pod³¹czyæ do s³uchawek lub karty muzycznej.
+
+    pin 6>-------||--------<s³uchawki lub wejœcie mic karty muzycznej
+                470n
+      GND>-----------------<GND
+
+¯eby hybrydka rozpoznawa³a zapis na karcie, trzeba po³¹czyæ piny 6 i 3 poprzez kondensator 470n. Na pinach 1,2,5 mo¿na odebraæ ju¿ przecedzony zapis z karty o poziomach TTL. Stanem aktywnym jest stan niski.      Najlepiej by³o by u¿yæ do analizy tych sygna³ów jakiegoœ oscyloskopu cyfrowego lub analizatora stanów logicznych, albo... karty muzycznej. Widzisz ten prosty schemacik powy¿ej? Zamiast do pinu 6 pod³¹czaj siê kolejno do pinów 1,2,5 i zczytuj sobie jak¹œ kartê. Zobaczy³eœ sieczkê i nie wiesz co dalej? Ok. Teraz wyjaœnienia.
+Jako wzór przyjmijmy sobie taki zapis bitowy:
+        01001010111
+
+Tak bêdzie wygl¹da³ przebieg z pinu 1:
+
+     0     1     0     0     1     0     1     0     1     1     1
+ --|   |-|   |-|   |-|   |-|   |-|   |-|   |-|   |-|   |-|   |-|   |--
+   |   | |   | |   | |   | |   | |   | |   | |   | |   | |   | |   |
+   |---| |---| |---| |---| |---| |---| |---| |---| |---| |---| |---|
+
+Tak bêdzie wygl¹da³ przebieg z pinu 2:
+
+     0     1     0     0     1     0     1     0     1     1     1
+ --|   |-|   |-|   |-|   |-|   |-|   |-|   |-|   |-|   |-|   |-|   |--
+   |   | |   | |   | |   | |   | |   | |   | |   | |   | |   | |   |
+   |---| |---| |---| |---| |---| |---| |---| |---| |---| |---| |---|
+
+
+Tak bêdzie wygl¹da³ przebieg z pinu 5:
+
+     0     1     0     0     1     0     1     0     1     1     1
+ --|   |-------|   |-|   |-------|   |-------|   |--------------------
+   |   |       |   | |   |       |   |       |   |                     
+   |---|       |---| |---|       |---|       |---|
+
+I ju¿ sprawa jasna. Jak widaæ przebieg z pinu 1 i 2 jest taki sam. Tak tyle ¿e sygna³ na pinie 2 jest opóŸniony. Pin 1 wyznacza sygna³ zegarowy, pin 2 sygnalizuje ¿e odczytano jak¹œ wartoœæ, pin 5 wskazuje ¿e odczytana wartoœæ jest najwiêksza. Z tymi ostatnimi trochê zamota³em ale wyjaœniæ mo¿na to tak:
+
+Przyk³adowo odczytany na karcie muzycznej zapis karty i przebiegi na wyjœciach modu³u:
+
+
+             /\    /\          /\    /\          /\          /\
+            /  \  /  \        /  \  /  \        /  \        /  \
+   ---\    /    \/    \-\    /    \/    \-\    /    \-\    /    \---
+       \  /              \  /              \  /        \  /
+        \/                \/                \/          \/
+
+pin1 -|    |------------|    |------------|    |------|    |--------
+      |    |            |    |            |    |      |    |
+      |----|            |----|            |----|      |----|
+
+pin2 -------|          |------|          |------|    |------|    |--
+            |          |      |          |      |    |      |    |
+            |----------|      |----------|      |----|      |----|
+
+pin5 -------------------------------------------|    |------|    |--
+                                                |    |      |    |
+                                                |----|      |----|
+
+Co ciekawe hybrydka potrafi wy³apywaæ nowe jedynki. Nowe to znaczy takie bardziej opadniête w œrodkowej czêœci. To w³aœnie przez nie na srebrniakach nie chodz¹ stare karty domowej produkcji i orygina³y tak¿e. Bêdzie wygl¹daæ to tak:
+
+             /\      /\
+            /  \    /  \
+     -\    /    \  /    \---
+       \  /      \/  
+        \/              
+                       
+pin1 -|    |----------------
+      |    |           
+      |----|           
+                      
+pin2 -------|   |---|   |---
+            |   |   |   |
+            |---|   |---|
+
+pin5 -----------------------
+
+Po przeczytaniu tego ca³ego faq powinieneœ ju¿ wiedzieæ jak dzia³a hybrydka. Jeœli chcesz jednak zrobiæ sobie odczytywarkê a nie masz pomys³u na program oto ma³a podpowiedŸ:
+
+DO
+jeœli pin1 = 0 to
+ jeœli x = 0 to odczytano 1
+ jeœli x = 1 to odczytano 0
+ x = 0
+ czekaj a¿ pin1 = 1
+koniec jeœli
+
+jeœli pin5 = 0 to
+ x = 1
+ czekaj a¿ pin5 = 1
+koniec jeœli
+LOOP
+
+Dobrym pomys³em do odczytywarki by³o by zrobienie w³asnego czytnika. Ja 
+swój zrobi³em z kilku kawa³ków plexi. Przypomina on bardzo czytnik od srebniaka. Wsuwasz kartê i szybko wyci¹gasz, w tym momencie nastêpuje odczyt. Kupno firmowego czytnika mija siê z celem bo s¹ drogie i minimalna iloœæ wynosi przewa¿nie 10 szt. :((
+
+KONIEC
+
+Do napisania faq wykorzysta³em schemat hybrydki opracowany przez ludzi z UPC'99. Wszystkie oznaczenia nó¿ek modu³u s¹ zgodne z tym schematem.
+
+Podziêkowania dla:
+Hrabia,Shadows i inni fachowcy
+
+Mega fucki dla:
+Dresy,Skejty,Policja (nowoœæ!!)

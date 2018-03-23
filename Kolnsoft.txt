@@ -1,0 +1,3144 @@
+
+
+           ===================>    Kolnierzyk    <===================
+
+                              VIII 1998-VIII 2002l
+
+                               koln@poczta.onet.pl
+
+                  ===================>    <===================
+
+
+        "It's nice to be important, but it's more important to be nice"
+                                                                Scooter
+
+    Witam :)
+
+    Oto opis wynikow moich badan nad oprogramowaniem automatow. Tekst sklada
+    sie z dwoch czesci:
+
+    - czesc pierwsza zawiera opis oprogramowania plyty glownej niebieskiego
+    Urmeta oraz skutkow wynikajacych z jego dzialania (lub nie :). Wszedzie,
+    gdzie nie napisalem inaczej, opisana jest wersja 2.9. Dodalem pare infor-
+    macji "sprzetowych".
+
+    - czesc druga zawiera opis softu plyty glownej srebrnego Urmeta. Opis do-
+    tyczy wersji 2.60 programu glownego i 2.06 programu bootujacego, jesli nie
+    napisalem gdzies inaczej oczywiscie. Zaktualizowalem i poprawilem infor-
+    macje zwiazane z kartami elektronicznymi. Gdy znajde troche czasu i checi,
+    napisze tu cos na temat komunikacji automatu z centrum nadzoru i jeszcze
+    pare innych ciekawych rzeczy... :) Odwleka sie to i odwleka, ale kiedys
+    to w koncu napisze :)
+
+    Uzycie wiadomosci tu zawartych jak zwykle na wlasna odpowiedzialnosc.
+    Najnowszej wersji tego tekstu, o ile beda nowsze wersje, nalezy szukac
+    na stronie Hrabiego: http://phreak.hack.pl (nowy adres dawnego phreak.
+    zone.to). Gwiazdki na marginesie oznaczaja uaktualnienia wzgledem pop-
+    rzedniej wersji. I jeszcze jedno: przed ewentualnym napisaniem do mnie
+    maila prosilbym o zapoznanie sie z ostatnim rozdzialem tego tekstu.
+
+    SPIS TRESCI:
+    CZESC I - Urmet niebieski TSP 91
+      N1. WSTEP
+      N2. OGOLNA BUDOWA PROGRAMU
+ *    N3. PRZERWANIA
+ *    N4. REJESTRY UKLADOW PERYFERYJNYCH
+      N5. KARTY ZWYKLE
+      N6. TABLICE KART
+      N7. PRZYPOMNIENIE MENU GLOWNEGO AUTOMATU
+      N8. KARTY SERWISOWE
+      N9. KARTY SERWISOWE W WERSJI 5.8
+      N10.KARTY SERWISOWE W WERSJI 3.0
+      N11.INNA (NIZ HRABIEGO) METODA DZWONIENIA Z KART SERWISOWYCH
+      N12.DIAGNOSTIC MENU - KODY DIAGNOSTYCZNE
+      N13.POWODY ZGLOSZENIA DO CENTRUM NADZORU (C90)
+      N14.PROGRAMOWANIE WARTOSCI DOMYSLNYCH W EEPROM
+      N15.TARYFIKACJA
+      N16.KOMUNIKACJA Z MODULEM CZYTNIKA
+      N17.JAK ZROBIC NIEKASOWALNA KARTE
+ *    N18.KOMUNIKACJA Z CENTRUM NADZORU (C90)
+      N19.SPOSOB NA UNIEMOZLIWIENIE KOMUNIKACJI Z CENTRUM NADZORU
+ *    N20.SPECIAL TEST MODE
+      N21.BUFORY KLAWIATURY
+      N22.INNE (NIZ 2.9) WERSJE OPROGRAMOWANIA
+      N23.NOWY CZYTNIK I OPROGRAMOWANIE DO NIEGO (3.0?)
+      N24.NAPISY
+      N25.INSTRUKCJA WYMIANY EPROMU
+      N26.ZAKLOCANIE AUTOMATU TELEFONEM KOMORKOWYM
+      N27.DOSWIADCZENIE
+      N28.PODSUMOWANIE
+    CZESC II - Urmet srebrny TPE 97/U
+      S1. WSTEP
+      S2. OGOLNA BUDOWA PROGRAMU
+      S3. WYJATKI
+      S4. REJESTRY UKLADOW PERYFERYJNYCH
+      S5. KODY KLAWIATURY
+      S6. PAMIECI ZNAMIONOWE (BOLLINO) I METRYCZKA APARATU
+ *    S7. KARTY ZWYKLE
+ *    S8. ALGORYTM ROZPOZNAWANIA RODZAJU KARTY ELEKTRONICZNEJ
+      S9. LISTY KART
+ *    S10.ZABEZPIECZENIA KART ZWYKLYCH
+      S11.KARTY KREDYTOWE
+      S12.MENU GLOWNE AUTOMATU
+ *    S13.KODY ALARMOW
+      S14.MENU AUTOTEST
+ *    S15.KARTY SERWISOWE
+ *    S16.ZABEZPIECZENIA KART SERWISOWYCH
+ *    S17.PRZYCISK "TEST"
+ *    S18.FORMAT DANYCH KART ELEKTRONICZNYCH
+      S19.PRYWATNE STG :)
+      S20.INNE (NIZ 2.60) WERSJE OPROGRAMOWANIA
+    WSPOLNE
+      W1. GDY TPSA MA PODEJRZENIA
+ *    W2. LINKI
+ *    W3. ZAKONCZENIE
+
+
+
+
+============ CZESC I - Urmet niebieski TSP 91 ================================
+
+N1. WSTEP
+    Tak wiec zaczelo sie w sierpniu 1998, gdy Hrabia opublikowal programy
+    Urmeta i powstal Shroom FAQ, z ktorego zaczerpnalem podstawowe wiadomosci.
+    Na poczatek musialem sobie napisac deasembler, bo w sieci nie znalazlem
+    odpowiedniego (Uwaga! Najlepszy deasembler to IDA - The Interactive
+    Disassembler, jest do sciagniecia z phreak.hack.pl). Potem sciagnalem
+    jeszcze jakis symulator, nie najlepszy zreszta. Zamowilem sobie tez
+    ksiazke o 68HC11. Kod zrodlowy po zdeassemblowaniu mial przy zalozonym
+    przeze mnie formacie zapisu okolo 430 kB. Teraz, z komentarzami, ma ponad
+    890 kB... Linii samego kodu, czyli instrukcji, jest 12164. Przedstawione
+    ponizej wyniki to rezultaty analizy samego programu, a nie doswiadczen
+    w praktyce na automacie, chyba ze napisalem inaczej. Prawdopodobnie znaj-
+    da sie czasem jakies pomylki lub niescislosci, ale absolutnie bezbledne
+    przeanalizowanie od podstaw takiej ilosci kodu jest raczej niemozliwe.
+    Dlatego jesli ktos ma pelniejsze/dokladniejsze informacje na opisane
+    tu tematy, chetnie umieszcze uaktualnienie.
+
+N2. OGOLNA BUDOWA PROGRAMU
+    Program zbudowany jest dosc sprytnie, tak ze daje sie latwo konfigurowac.
+    Na poczatku kodu programu, przed napisami, znajduja sie rozne tablice
+    i dane konfiguracyjne. Tak wiec zmiana jednego bajtu moze mocno zmienic
+    dzialanie programu. Poza tym calosc oparta jest na przerwaniach. Komuni-
+    kacja z czytnikiem, klawiatura, wyswietlaczem oparte sa na przerwaniach
+    zegarowych. Rowniez na przerwaniach oparta jest taryfikacja. W zwiazku
+    z tym glowny program ustawia tylko pewne zmienne, ktore odczytywane sa
+    okresowo przez odpowiednie przerwania zegarowe, odpowiedzialne za obsluge
+    jakiegos podzespolu automatu. Na przyklad glowny program ustawia w odpo-
+    wiedniej zmiennej numer napisu do wyswietlenia, zmienna ta co jakis czas
+    jest odczytywana przez procedure obslugi przerwania, a odpowiadajacy war-
+    tosci tej zmiennej napis jest wyswietlany na LCD.
+
+N3. PRZERWANIA
+ *  Ponizej umiescilem krotki wykaz przerwan uzywanych przez oprogramowanie.
+ *  Pozostale, ktorych tutaj nie wymienilem, maja puste procedury obslugi
+ *  (co oznacza brak reakcji na wystapienie przerwania). Na poczatku wiersza
+ *  znajduje sie adres wektora przerwania, nastepnie adres procedury obslugi
+ *  wskazywany przez ten wektor (w nawiasach kwadratowych), dalej jest an-
+ *  gielska nazwa przerwania, a na koncu napisalem do czego przerwanie jest
+ *  uzywane.
+ *
+ *  Dla trybu pracy procesora "Normal Expanded Mode" (w tym trybie zwykle
+ *  procesor pracuje) tabela wektorow znajduje sie pod adresami z zakresu
+ *  0xFFD6..0xFFFF:
+ *
+ *    0xFFDA: [0xBF24] - Pulse Accumulator Input Edge  - Obsluga taryfikacji
+ *                                                       50 Hz
+ *
+ *    0xFFE2: [0xB800] - Timer Output Compare 4 (TOC4) - Obsluga komunikacji
+ *                                                       z czytnikiem
+ *
+ *    0xFFE6: [0xC908] - Timer Output Compare 2 (TOC2) - Sprawdzanie pradu
+ *                                                       linii, obsluga tary-
+ *                                                       fikacji i polaczen,
+ *                                                       zarzadzanie czytni-
+ *                                                       kiem i stanem karty
+ *
+ *    0xFFE8: [0xBCD9] - Timer Output Compare 1 (TOC1) - Obsluga taryfikacji
+ *                                                       16 kHz i klawiatury
+ *
+ *    0xFFEA: [0xBA99] - Timer Input Capture 3 (TIC3)  - Obsluga komunikacji
+ *                                                       z czytnikiem
+ *
+ *    0xFFEC: [0xBED1] - Timer Input Capture 2 (TIC2)  - Obsluga DTMF-u
+ *
+ *    0xFFEE: [0xBF16] - Timer Input Capture 1 (TIC1)  - Pomocnicza obsluga
+ *                                                       taryfikacji 16 kHz
+ *
+ *    0xFFF8: [0xD44F] - Illegal Opcode Trap           - Bledna instrukcja
+ *
+ *    0xFFFA: [0xC000] - COP Watchdog Time-Out         - Przepelnienie licz-
+ *                                                       nika bezpieczenstwa
+ *
+ *    0xFFFC: [0xC000] - COP Clock Monitor Fail        - Zatrzymanie taktowa-
+ *                                                       nia procesora
+ *
+ *    0xFFFE: [0xC000] - Reset                         - Reset - procesor wy-
+ *                                                       chodzi ze stanu us-
+ *                                                       pienia po podniesie-
+ *                                                       niu sluchawki, otrzy-
+ *                                                       maniu rozmowy przy-
+ *                                                       chodzacej, takze ok-
+ *                                                       resowo co jakis czas
+ *
+ *  Dla trybu pracy procesora "Special Test Mode" (patrz rozdzial "Special
+ *  Test Mode") tabela wektorow znajduje sie pod adresami z zakresu
+ *  0xBFD6..0xBFFF:
+ *
+ *    0xBFD6..0xBFFE: [0xAA7E] - wszystkie przerwania  - Programowanie re-
+ *                                                       jestru CONFIG
+ *
+N4. REJESTRY UKLADOW PERYFERYJNYCH
+ *  Ponizej zamiescilem odwzorowanie rejestrow ukladow peryferyjnych w przes-
+ *  trzen adresowa mikrokontrolera niebieskiego automatu (brzmi strasznie ;)).
+ *  Po dokladniejsze informacje na temat rejestrow i ukladow peryferyjnych
+ *  odsylam do danych producenta (M68HC11 Reference Manual - powinien byc na
+ *  phreak.hack.pl). Na poczatku znajduje sie adres, pod jakim widoczny jest
+ *  rejestr, nastepnie jest nazwa rejestru, a na koncu umiescilem angielskie
+ *  rozwiniecie nazwy rejestru.
+ *
+ *    0x1000:     Rejestr PORTA   - Port A Register
+ *    0x1001:     -
+ *    0x1002:     Rejestr PIOC    - Parallel I/O Control Register
+ *    0x1003:     Rejestr PORTC   - Port C Register
+ *    0x1004:     Rejestr PORTB   - Port B Register
+ *    0x1005:     Rejestr PORTCL  - Port C Latch Register
+ *    0x1006:     -
+ *    0x1007:     Rejestr DDRC    - Data Direction for Port C Register
+ *    0x1008:     Rejestr PORTD   - Port D Register
+ *    0x1009:     Rejestr DDRD    - Data Direction for Port D Register
+ *    0x100A:     Rejestr PORTE   - Port E Register
+ *    0x100B:     Rejestr CFORC   - Output Compare Force Register
+ *    0x100C:     Rejestr OC1M    - Output Compare 1 Mask Register
+ *    0x100D:     Rejestr OC1D    - Output Compare 1 Data Register
+ *    0x100E:     Rejestr TCNT    - Timer Counter Register
+ *    0x100F:     c.d.
+ *
+ *    0x1010:     Rejestr TIC1    - Timer Input Capture 1 Register
+ *    0x1011:     c.d.
+ *    0x1012:     Rejestr TIC2    - Timer Input Capture 2 Register
+ *    0x1013:     c.d.
+ *    0x1014:     Rejestr TIC3    - Timer Input Capture 3 Register
+ *    0x1015:     c.d.
+ *    0x1016:     Rejestr TOC1    - Timer Output Compare 1 Register
+ *    0x1017:     c.d.
+ *    0x1018:     Rejestr TOC2    - Timer Output Compare 2 Register
+ *    0x1019:     c.d.
+ *    0x101A:     Rejestr TOC3    - Timer Output Compare 3 Register
+ *    0x101B:     c.d.
+ *    0x101C:     Rejestr TOC4    - Timer Output Compare 4 Register
+ *    0x101D:     c.d.
+ *    0x101E:     Rejestr TOC5    - Timer Output Compare 5 Register
+ *    0x101F:     c.d.
+ *
+ *    0x1020:     Rejestr TCTL1   - Timer Control Register 1
+ *    0x1021:     Rejestr TCTL2   - Timer Control Register 2
+ *    0x1022:     Rejestr TMSK1   - Timer Interrupt Mask Register 1
+ *    0x1023:     Rejestr TFLG1   - Timer Interrupt Flag Register 1
+ *    0x1024:     Rejestr TMSK2   - Timer Interrupt Mask Register 2
+ *    0x1025:     Rejestr TFLG2   - Timer Interrupt Flag Register 2
+ *    0x1026:     Rejestr PACTL   - Pulse Accumulator Control Register
+ *    0x1027:     Rejestr PACNT   - Pulse Accumulator Counter Register
+ *    0x1028:     Rejestr SPCR    - SPI Control Register
+ *    0x1029:     Rejestr SPSR    - SPI Status Register
+ *    0x102A:     Rejestr SPDR    - SPI Data Register
+ *    0x102B:     Rejestr BAUD    - Baud-Rate Control Register
+ *    0x102C:     Rejestr SCCR1   - SCI Control Register 1
+ *    0x102D:     Rejestr SCCR2   - SCI Control Register 2
+ *    0x102E:     Rejestr SCSR    - SCI Status Register
+ *    0x102F:     Rejestr SCDR    - SCI Data Register
+ *
+ *    0x1030:     Rejestr ADCTL   - A/D Control/Status Register
+ *    0x1031:     Rejestr ADR1    - A/D Result Register 1
+ *    0x1032:     Rejestr ADR2    - A/D Result Register 2
+ *    0x1033:     Rejestr ADR3    - A/D Result Register 3
+ *    0x1034:     Rejestr ADR4    - A/D Result Register 4
+ *    0x1035:     -
+ *    0x1036:     -
+ *    0x1037:     -
+ *    0x1038:     -
+ *    0x1039:     Rejestr OPTION  - System Configuration Options Register
+ *    0x103A:     Rejestr COPRST  - COP Timer Reset Register
+ *    0x103B:     Rejestr PPROG   - EEPROM Programming Register
+ *    0x103C:     Rejestr HPRIO   - Highest Priority I-Bit and Misc Register
+ *    0x103D:     Rejestr INIT    - RAM and I/O Mapping Register
+ *    0x103E:     Rejestr TEST1   - Testing Functions Control Register
+ *    0x103F:     Rejestr CONFIG  - System Configuration Register
+ *
+N5. KARTY ZWYKLE
+    Karty uzywane przez niebieski automat ulozone sa w 1024 serie po
+    65536 kart w serii (tak naprawde 1024 serie to 256 prawdziwych serii
+    i 4 mozliwe emisje -> 256*4 = 1024). Sa DWA rodzaje kart zwyklych:
+
+    a) Karta w jednostkach taryfikacyjnych
+
+       Te karty sa powszechnie uzywane. Posiadaja zapisane na sobie unikalne
+       dane jak numer serii, numer kolejny w serii, a takze informacje o no-
+       minalnej i pozostalej liczbie jednostek, ktore to dane chronione sa
+       odpowiednimi algorytmami kontrolnymi. I tu najwieksza niespodzianka:
+       NIEMOZLIWE JEST ZROBIENIE POZWALAJACEJ DZWONIC NIEKONCZACEJ SIE KARTY.
+       Moze kiedys, w starych wersjach oprogramowania, bylo to mozliwe, teraz
+       na pewno nie. Otoz kazda nowa karta posiada w trzeciej, najwiekszej
+       czesci, 200 magnetycznych jedynek. W oprogramowaniu automatu istnieje
+       nastepujaca tablica:
+
+       Offset       Wartosc (Liczba       Maks. liczba
+       tablicy      jedynek/jednostke)    jednostek
+
+         #0           1                     200
+         #1           2                     100
+         #2           4                     50
+         #3           5                     40
+         #4           8                     25
+         #5           10                    20
+         #6           20                    10
+
+       Na karcie zapisana jest liczba od 0 do 7. Jesli wartosc ta wynosi 0,
+       karta jest wyrzucana z automatu bez zadnego komentarza na wyswietlaczu
+       (zatrzymuje sie tylko na chwile tak jak karty serwisowe). W przeciwnym
+       wypadku oprogramowanie odejmuje od niej 1 i daje to offset do powyzszej
+       tablicy. Jesli dla przykladu na karcie zapisane jest 7, offset do tab-
+       licy wyniesie 6, pod tym offsetem jest wartosc 20, czyli jednostce na
+       karcie odpowiada 20 jedynek. Tak wiec na karcie moze byc maksymalnie
+       200/20 = 10 jednostek, po prostu jest to karta 10-jednostkowa. Jak wi-
+       dac, TPSA nie wykorzystuje w pelni mozliwosci istniejacego oprogramowa-
+       nia. Kazdy oczywiscie zaraz chcialby zmienic zapis na karcie tak, zeby
+       bylo na niej 200 jednostek, co jest mozliwe, ale na chetnych czeka mala
+       niespodzianka, o ktorej bedzie w jednym z nastepnych punktow... Wniosek
+       jest nastepujacy: poniewaz na karcie nie jest bezposrednio zapisana
+       maksymalna liczba jednostek, nie mozna zrobic karty na dowolnie duza
+       ich liczbe. Na dodatek ilosc jednostek z karty jest reprezentowana
+       w oprogramowaniu jako wielkosc 1-bajtowa, a wiec daje to teoretycznie
+       maksymalnie 255 jednostek. Ktos widzial moze na wyswietlaczu cos w ro-
+       dzaju "KREDYT 00025", faktycznie, zdarzalo sie tak skonfigurowane opro-
+       gramowanie, tak wiec automat przystosowany jest do wyswietlania PIECIU
+       cyfr... Po co wiec byloby piec cyfr, gdy na karcie moze byc maksymalnie
+       (teoretycznie) 255 jednostek? Czasem sie to jednak moze przydac, o czym
+       za chwile... Ktos moze miec tez ochote zmodyfikowac zawartosc powyzszej
+       tablicy, aby wszystkie karty byly czytane jako np. 100... Jest to jak
+       najbardziej mozliwe! Nie radze jednak wpisac jako liczbe jedynek/
+       jednostke 0. Algorytm obliczania pozostalych jednostek jest nastepu-
+       jacy: liczba pozostalych jedynek (pozostalych z poczatkowych 200) jest
+       dzielona przez liczbe jedynek/jednostke i jako wynik brana jest czesc
+       calkowita. W praktyce jest to realizowane przez instrukcje IDIV, ktora
+       w przypadku dzielenia przez 0 daje jako czesc calkowita wyniku 0xFFFF,
+       z czego bajt mniej znaczacy jest brany jako liczba pozostalych jednos-
+       tek, czyli tutaj 255. Co sie dalej stanie, napisalem w rozdziale "Tab-
+       lice kart". Mozna tez wpisac 1, aby karty byly odczytywane jako 200-
+       jednostkowe, ale, jak powiedzialem, wiaze sie z tym niespodzianka...
+       Jeszcze odnosnie karty niekasowalnej - mozna by bylo sprobowac nagrac
+       karte na materiale twardszym magnetycznie niz zwykla karta, tak, zeby
+       automat nie byl w stanie skasowac czegokolwiek z karty. Niestety, na
+       karcie sa wybijane zabki wskazujace procent jej zuzycia, i karta jest
+       w tym miejscu nieczytelna. Poza tym uzywanie takiej karty mocno by
+       ograniczal mechanizm opisany w nastepnym rozdziale.
+
+    b) Karta w jednostkach Tax Value
+
+       Tych kart nie ma w obiegu. Posiadaja dane analogiczne do kart opisanych
+       powyzej, ale jest jedna zasadnicza roznica. Jak wiadomo, w automacie
+       zapisana jest wartosc Tax Value, zwykle ustawiona na 1, ktora okresla
+       liczbe kasowanych z normalnej karty jednostek przy kazdym sygnale
+       16 kHz z centrali. Natomiast z kart w jednostkach Tax Value kasowana
+       jest zawsze jedna jednostka, niezaleznie od wartosci Tax Value.
+       W zwiazku z tym sabotaz polegajacy na ustawieniu Tax Value np. na 30
+       nie spowoduje zadnych skutkow ubocznych dla takiej karty, rozmawiac
+       mozemy tak samo dlugo, jak zwykle. Zalozmy, ze na takiej karcie jest
+       5 jednostek. Wtedy dla Tax Value rownego 30 na wyswietlaczu pojawi sie
+       30*5 = 150 jednostek do wykorzystania! Za to przy kazdym 16 kHz bedzie
+       od tego odejmowane 30 jednostek. Jezeli na takiej karcie bedzie 200
+       jednostek, a Tax Value ustawimy na 255, to na wyswietlaczu zobaczymy
+       "KREDYT 51000"! Do tego wlasnie przydac sie moze piec cyfr. Podobnie
+       jak poprzednio, niemozliwe jest zrobienie niekonczacej sie karty.
+
+N6. TABLICE KART
+    W pamieci RAM znajduja sie 3 tablice kart uzywanych przez automat.
+
+    a) Karty, z ktorych nie udalo sie skasowac pelnej wartosci Tax Value
+
+       Tablica ma 21 pozycji, kazda pozycja zajmuje 2 slowa (4 bajty) i zawie-
+       ra kolejno numer serii Karty i numer kolejny Karty w serii. Zapisywane
+       sa tu karty w przypadku, kiedy na karcie zabraklo jednostek do skasowa-
+       nia pelnej wartosci Tax Value lub czytnik w wyniku bledu odmowil skaso-
+       wania odpowiedniej liczby jednostek. Wtedy cala karta jest kasowana,
+       a brakujaca liczba jednostek zostanie skasowana z nastepnej wlozonej
+       karty, chyba ze odlozymy sluchawke i poczekamy chwile az do wylaczenia
+       sie wyswietlacza. Automat posiada w oprogramowaniu zabezpieczenie, kto-
+       re powoduje, ze wyrzuca on stara karte po skasowaniu ostatniej istnie-
+       jacej na karcie pelnej wartosci Tax Value i prosi o nowa karte. Tak
+       wiec w praktyce jest to zabezpieczenie tylko przed bledami w pracy
+       czytnika.
+
+    b) Karty uzywane przez automat
+
+       Ta tablica ma 562 pozycje, kazda pozycja zajmuje 2 slowa i 1 bajt
+       (razem 5 bajtow), i zawiera, oprocz numeru serii karty i numeru
+       kolejnego karty w serii, rowniez informacje o pozostalej na karcie
+       liczbie jednostek (dokladnie piaty bajt zawiera wartosc: 200 minus
+       liczba magnetycznych jedynek pozostalych w trzeciej czesci karty).
+       Karty zapisywane sa tu w chwili kasowania z nich pierwszej jednostki,
+       a podczas kasowania kolejnych jednostek piaty bajt tablicy jest
+       uaktualniany - dodawana jest do niego wartosc odpowiadajaca liczbie
+       kasowanych jednostek.
+
+    c) Karty ponownie napelnione
+
+       Tablica ta posiada 221 pozycji, kazda zajmuje 2 slowa (4 bajty) i za-
+       wiera numer serii karty i numer kolejny karty w serii, wpisywane sa tu
+       te karty, ktore zostaly ponownie napelnione.
+
+    Na powyzsze listy nie sa wpisywane karty serwisowe. Algorytm
+    akceptowania karty jest nastepujacy:
+
+    1) Czy karta jest na liscie tych, z ktorych nie udalo sie
+       skasowac pelnej wartosci Tax Value?
+       NIE - 2)
+       TAK - Automat kasuje cala karte (po co - przeciez juz raz byla
+             kasowana...), kasuje jej numer z tablicy, wyrzuca karte
+             i pisze "KARTA ZUZYTA".
+
+    2) Czy karta jest na liscie kart ponownie napelnionych?
+       NIE - 3)
+       TAK - Automat kasuje cala karte (tez juz raz byla kasowana -
+             patrz punkt nizej), ustawia kod diagnostyczny nr 32
+             (o kodach bedzie pozniej), wyrzuca karte i pisze
+             "KARTA ZUZYTA".
+
+    3) Czy karta jest na liscie uzywanych przez automat?
+       NIE - Dopisuje karte na liste - dopiero w chwili kasowania
+             z niej pierwszej jednostki
+       TAK - Sprawdza, czy na karcie nie ma wiecej jednostek, niz poprzednio.
+             Jesli jest wiecej, karta jest kasowana, ustawiany jest kod 32,
+             automat wyrzuca karte i pisze "KARTA ZUZYTA". Jesli jednostek
+             nie jest za duzo, lista jest uaktualniana poprzez wpisanie bie-
+             zacej liczby jednostek (bo przeciez pomiedzy jednym i drugim
+             uzyciem karty moglismy z niej dzwonic uzywajac innego automatu).
+             Scisle rzecz biorac, dane o jednostkach karty sa zapisywane
+             w tablicy w postaci: 200 minus liczba magnetycznych jedynek po-
+             zostalych w trzeciej czesci karty). Przy ponownym uzyciu karty
+             do zapamietanej powyzej wartosci dodawana jest znowu biezaca
+             liczba pozostalych na karcie jedynek. Jesli wynik przekroczy
+             205(!), karta jest kwalifikowana jako ponownie napelniona.
+             Tak wiec mozemy bezkarnie dopisac liczbe jednostek odpowiadajaca
+             5 jedynkom, czyli np. 2 jednostki na karcie 100-jednostkowej
+             (daje to 4 jedynki)...
+
+    Gdy zapelni sie pierwsza tablica, wszystkie dotychczasowe elementy zostaja
+    zepchniete w dol z usunieciem ostatniego z nich, a najnowszy zostaje
+    umieszczony na samej gorze. Natomiast tablice druga i trzecia sa traktowa-
+    ne jak pierscienie. W przypadku zapelnienia sie jako kolejny wolny element
+    jest traktowany dotychczasowy najstarszy (na samym dole) i kolejne elemen-
+    ty sa zapisywane znowu coraz blizej szczytu tablicy. Oprogramowanie ma
+    mozliwosc kasowania dowolnych elementow tylko z pierwszej tablicy, w dwoch
+    pozostalych najstarsze elementy sa zastepowane najnowszymi. Przy kasowaniu
+    elementu z pierwszej tablicy wszystkie, ktore sa nad nim, spadaja o jeden
+    poziom w dol i zmienna zawierajaca liczbe waznych elementow jest zmniej-
+    szana o jeden. Natomiast komorka pamieci na szczycie nie jest fizycznie
+    zerowana, w zwiazku z tym ostatni element moze byc powtorzony kilka razy.
+
+    W celu skasowania list mozna wyciagnac i z powrotem wlozyc kosc RAM, ale
+    wtedy sumy kontrolne RAM nie beda sie zgadzac, przez co automat przetestu-
+    je pamiec RAM i ustawi kod diagnostyczny nr 11 oraz m.in. nastapi utrata
+    zawartosci "DIAGNOSTIC MENU", "COUNTER MENU" oraz "VISUAL BLACK L."
+    z "SW VERSION MENU", o czesci ktorych to menu napisalem ponizej (testowa-
+    ne praktycznie). Kazda z tablic posiada tez wlasna sume kontrolna, ktorej
+    niezgodnosc powoduje rowniez skasowanie tablicy oraz dodatkowo wypelnienie
+    jej zerami (we innych przypadkach jedynie liczba elementow w tablicy jest
+    ustawiana na zero i wskaznik na pierwszy wolny element ustawiany jest na
+    poczatek tablicy, bez fizycznego kasowania danych).
+
+    A teraz o tym, co sie stanie, gdy jako liczbe jedynek/jednostke wpiszemy
+    w EPROMie zero. Jak juz napisalem, wtedy liczba pozostalych jednostek po
+    wlozeniu dowolnej karty zostanie odczytana jako 255. Mozemy z tej karty
+    normalnie rozmawiac. Nalezy jednak pamietac o tym, ze zmodyfikowalismy
+    oprogramowanie plyty glownej, ale nie czytnika! Tak wiec w pamieci czyt-
+    nika znajduje sie rzeczywista liczba jednostek. W momencie, gdy zuzyjemy
+    liczbe jednostek rowna faktycznie istniejacej na karcie, karta zostanie
+    skasowana i wyrzucona, natomiast plyta glowna nic nie bedzie wiedziec
+    o potrzebie wymiany karty i nie otworzy wlotu czytnika, tak wiec nie
+    bedziemy nawet mogli wlozyc nowej karty (odmiana tego przypadku zostala
+    przetestowana praktycznie). Podsumowujac: ustawienie liczby jedynek/jed-
+    nostke na zero nie przynosi zadnych korzysci.
+
+    Natomiast gdy uzyjemy karty, na ktorej jest wieksza liczba jednostek od
+    liczby nominalnej wynikajacej z podzielnika (a ktora mozna zrobic poprzez
+    nagranie w trzeciej czesci karty wiecej niz 200 jedynek magnetycznych -
+    metode ta jako pierwszy wymyslil Shadow), stanie sie rzecz nastepujaca:
+    przyjmijmy, ze mamy karte z 230 jedynkami. W chwili pierwszego uzycia
+    danej karty zostaje ona wpisana na 2 tablice kart z liczba jedynek magne-
+    tycznych rowna 200-230=... no wlasnie, wychodzi liczba ujemna, wiec na
+    liste zostanie wpisane zero, czyli tak, jak gdyby na karcie bylo 200 mag-
+    netycznych jedynek, a nie 230. Teraz dla przykladu podczas rozmowy zostaje
+    skasowanych z karty a dodanych do tablicy 10 jedynek, czyli w tablicy
+    jest wartosc 10, a na karcie zostaje 220 jedynek. Przy probie ponownego
+    uzycia tej karty zostanie wykonana operacja: 10 jedynek z tablicy + 220
+    jedynek z karty = 230 > 205 -> karta zostanie uznana za ponownie napelnio-
+    na, automat wpisze ja na 3 liste kart oraz podejmie probe skasowania calej
+    karty i ustawi kod 32... Aby temu zapobiec, nalezaloby zuzyc na innym
+    automacie taka liczbe jednostek, aby podany wyzej wynik nie przekroczyl
+    205. Zagadnienie to zostalo przetestowane praktycznie.
+
+N7. PRZYPOMNIENIE MENU GLOWNEGO AUTOMATU
+    W tym miejscu dla przypomnienia umieszczam glowne menu automatu.
+    Po dokladny opis odsylam do menu.txt Hrabiego (phreak.hack.pl).
+
+    0.  DEFAULT    MENU
+    1.  DIAGNOSTIC MENU
+    2.  COUNTER    MENU
+    3.  DIAL       MENU
+    4.  C90        MENU
+    5.  TAXATION   MENU
+    6.  SW VERSION MENU
+    7.  FREE NUM.  MENU
+    8.  LOCK NUM.  MENU
+    9.  WATCH      MENU
+
+N8. KARTY SERWISOWE
+    Kart serwisowych jest PIEC rodzajow:
+
+    a) Karta Maintenance
+
+       Karta ta wyswietla:
+       1.  DIAGNOSTIC MENU
+       2.  COUNTER    MENU - bez podmenu "CLEAR PARTIAL" i "CLEAR ALL"
+
+       Dokladnie to samo wyswietlane jest po otwarciu automatu.
+       Po szczegoly odsylam do menu.txt Hrabiego.
+
+    b) Karta Programming
+
+       Karta wyswietla:
+       1.  DIAGNOSTIC MENU
+       2.  COUNTER    MENU
+       3.  DIAL       MENU
+       4.  C90        MENU
+       5.  TAXATION   MENU
+       6.  SW VERSION MENU - bez podmenu "VISUAL BLACK L.", o czym nizej
+       7.  FREE NUM.  MENU
+       8.  LOCK NUM.  MENU
+       9.  WATCH      MENU
+
+       Po szczegoly, jak poprzednio, odsylam do menu.txt.
+
+    c) Karta ProgrammingVBL
+
+       Jest to karta, ktora nazwalem sobie ProgrammingVBL,
+       gdyz wyswietla, oprocz wszystkiego co zwykly Programming,
+       dodatkowe podmenu:
+       1.  DIAGNOSTIC MENU
+       2.  COUNTER    MENU
+       3.  DIAL       MENU
+       4.  C90        MENU
+       5.  TAXATION   MENU
+       6.  SW VERSION MENU
+           6.1  TELEPHONE  SOFT.
+                6.1.1    PO  2.9
+    ==>    6.2  VISUAL BLACK L.
+                6.2.1    11111 11111       \
+                ......   ..... .....         Tablica 1 - 21 pozycji
+                6.2.21   11111 11111       /
+                6.2.22   00000 00000         A3 / L3
+                6.2.23   33333 33333       \
+                .......  ..... .....         Tablica 3 - 221 pozycji
+                6.2.243  33333 33333       /
+                6.2.244  00000 00000         CRC3 / CRC2
+                6.2.245  00000 00000         A2 / L2
+                6.2.246  22222 22222 222   \
+                .......  ..... ..... ...     Tablica 2 - 562 pozycje
+                6.2.807  22222 22222 222   /
+           6.3  EXIT
+       7.  FREE NUM.  MENU
+       8.  LOCK NUM.  MENU
+       9.  WATCH      MENU
+
+       Objasnienie skrotow:
+         A3   - Adres pierwszej wolnej pozycji w 3 tablicy
+         L3   - Liczba zapamietanych pozycji w 3 tablicy
+         CRC3 - Suma kontrolna 3 tablicy
+         CRC2 - Suma kontrolna 2 tablicy
+         A2   - Adres pierwszej wolnej pozycji w 2 tablicy
+         L2   - Liczba zapamietanych pozycji w 2 tablicy
+
+       Dodatkowe podmenu "VISUAL BLACK L." (Skrot od "Visual Black List")
+       wyswietla po kolei zawartosc 1, 3 i 2 tablicy zapamietanych kart,
+       czyli:
+         1 - Karty, z ktorych nie udalo sie skasowac pelnej wartosci
+             Tax Value
+         3 - Karty ponownie napelnione
+         2 - Karty uzywane przez automat
+
+       W przypadku tablic 1 i 3 wyswietlane sa numery: numer serii i numer
+       kolejny karty w serii (numery te to dwa slowa, ktore sa wyswietlane
+       obok siebie - kazde slowo w postaci pieciu cyfr), a dla 2 tablicy
+       dodatkowo jako trzecia (trzycyfrowa) liczba wyswietlana jest wartosc:
+       200 minus liczba magnetycznych jedynek pozostalych na karcie. Wszyst-
+       kie numery wyswietlane sa w postaci dziesietnej. Wspolczuje tylko
+       temu, kto chcialby przegladac recznie 807 pozycji...
+
+    d) Karta Test
+
+       Ta karta wyswietla:
+       0.  DEFAULT    MENU
+           0.1  PROG. DEFAULT
+                0.1.1    DEFAULT Y
+                0.1.2    DEFAULT YE
+                0.1.3    DEFAULT YES
+                0.1.4    PROG. DEFAULT OK - gdy programowanie sie udalo
+                         PROG. DEFAULT KO - gdy wystapil blad
+           0.2  EXIT
+       1.  DIAGNOSTIC MENU
+       2.  COUNTER    MENU
+       3.  DIAL       MENU
+       4.  C90        MENU
+       5.  TAXATION   MENU
+       6.  SW VERSION MENU - bez podmenu "VISUAL BLACK L."
+       7.  FREE NUM.  MENU
+       8.  LOCK NUM.  MENU
+       9.  WATCH      MENU
+
+       Karta ta jest uzywana przy produkcji nowych automatow.
+       "DEFAULT MENU" ustawia w pamieci EEPROM domyslne ustawienia
+       automatu. Szerzej na ten temat w punkcie "Programowanie
+       wartosci domyslnych w EEPROM".
+
+    e) Karta Sample
+
+       Ta karta wyswietla tylko:
+       0.  DEFAULT    MENU
+
+       Uzycie tej karty powoduje dodatkowo, ze automat, nawet, jesli
+       posiada dane do przeslania na centrale i normalnie probowalby je
+       przeslac ("ZAJETY"), nie bedzie po jej uzyciu probowal tego zrobic -
+       az do odlozenia sluchawki na kilka sekund. Byc moze uzywa sie tej
+       karty, gdy automat lezy w serwisie odlaczony od linii, a podpiety
+       do zasilania zastepczego, bo wtedy proba komunikacji z centala i tak
+       nie ma sensu. Na jakiejs stronie TPSA znalazlem jej opis jako "karta
+       technologiczna".
+
+N9. KARTY SERWISOWE W WERSJI 5.8
+    Na poczatek musze wszystkich rozczarowac: NIE ISTNIEJA KARTY DO
+    PROGRAMOWANIA W WERSJI 5.8 !!! Tak tak, TPSA doszla do slusznego wniosku,
+    ze nowe oprogramowanie i tak zostanie predzej lub pozniej zlamane, i nie
+    zrobila odpowiednikow kart ze starszych wersji. Jedyne menu pojawia sie
+    po otwarciu automatu, ale, jak wiadomo, jego mozliwosci sa bardzo ograni-
+    czone (mozna jednak wlaczyc pelne menu! - patrz slammer.faq :). Istnie-
+    nieje tylko jedna karta serwisowa:
+
+    a) Karta Check58
+
+       Ta karte nazwalem Check58. Karta ta sluzy do sprawdzania, czy w auto-
+       macie jest oprogramowanie 5.8, czy tez inne. Nie slyszalem, zeby
+       TPSA wyemitowala takie karty, ale jak wiadomo, nie tylko ona ma mozli-
+       wosc ich produkcji :) Istnienie tej karty zawdzieczamy najprawdopodob-
+       niej niedopatrzeniu programistow przerabiajacych soft 2.8. Dzialanie
+       tych kart zostalo praktycznie sprawdzone. Karta taka po wlozeniu do
+       automatu z oprogramowaniem innym niz 5.8 zatrzymuje sie na chwile jak
+       karta serwisowa i wypada, nic nie wyswietlajac. Natomiast jesli zosta-
+       nie uzyta z softem 5.8, najnormalniej na swiecie wyswietla "KREDYT"
+       i zawarta na niej liczbe jednostek. Mozna z niej normalnie rozmawiac,
+       nie wolno jej wszakze zuzyc do zera, gdyz wtedy traci swoje wlasci-
+       wosci.
+
+    Na marginesie warto dodac, w jaki sposob TPSA rozpoznaje soft, skoro
+    nie uzywa kart Check58... Otoz jest to po prostu zaznaczone na kosci
+    EPROMu. Monter najpierw otwiera automat i sprawdza wersje oprogramowania,
+    a dopiero potem ewentualnie uzywa kart serwisowych.
+
+    Pozostaje problem, jak skonfigurowac automat, skoro nie istnieje karta
+    do jego programowania. Glownym problemem jest zaprogramowanie numeru do
+    centrum nadzoru i ustawien, ktorych nie mozna zmieniac z poziomu centrali
+    (patrz rozdzial "Komunikacja z centrum nadzoru"). Otoz widze nastepujace
+    mozliwosci:
+
+      - mozna zmodyfikowac w EPROMie domyslne ustawienia tak, zeby
+        odpowiadaly zadanej konfiguracji - przy zmianie wersji EPROMu
+        wartosci domyslne zostana zaprogramowane w EEPROM - szerzej
+        o tym w rozdziale "Programowanie wartosci domyslnych w EEPROM".
+        Wymagaloby to programowania indywidualnie kazdego ukladu
+        scalonego, gdyz trzeba by bylo zmieniac przynajmniej numer
+        automatu - odpowiednik pozycji "NUM. TELEPHON" w "C90 MENU".
+        Jednak w EPROMie 5.8 nie wykorzystano tej mozliwosci, zreszta
+        jest ona malo praktyczna.
+
+      - poniewaz pamiec EEPROM, w ktorej pamietana jest konfiguracja,
+        znajduje sie w mikroprocesorze 68HC11, mozna zaprogramowac
+        ta pamiec w serwisie i do automatu wlozyc juz zaprogramowany
+        mikroprocesor. W praktyce trzeba najpierw wyjac stara pamiec
+        EPROM, pozniej mikroprocesor, nastepnie nalezy wlozyc nowy
+        mikroprocesor i na koncu nowy uklad z pamiecia. Zmiana tej
+        kolejnosci grozi zaprogramowaniem w EEPROM wartosci domyslnych.
+
+      - trzecia mozliwosc to posiadanie oprogramowania 2.9 lub starszego
+        przerobionego tak, zeby wygladalo jak 5.8 (nie wystarczy zmiana
+        naglowka pliku!). Wtedy za pomoca zwyklej karty serwisowej
+        mozna zaprogramowac automat, a nastepnie wlozyc prawdziwe 5.8.
+        Takie przerobienie wersji nie jest niebezpieczne, gdyz adresy
+        danych w pamieci EEPROM we wszystkich wersjach od 2.6 wlacznie
+        w gore sa (prawie na pewno) takie same.
+
+      - kolejny sposob zostal wymyslony przez Nola i polega na przerobie-
+        niu oprogramowania 5.8 w ten sposob, aby po otwarciu automatu
+        wyswietlalo sie pelne menu, z mozliwoscia zaprogramowania wszyst-
+        kich ustawien. Po zaprogramowaniu mozna zamienic EPROM na normalny
+        5.8.
+
+      - mozna zmienic w pliku z oprogramowaniem 5.8 bajt #0x0049 na #0x00
+        (w tym przypadku nieistotne, czy plik jest zakodowany, czy nie),
+        co wylaczy sprawdzanie wersji oprogramowania i zablokuje zapro-
+        gramowanie z powodu zmiany wersji ustawien domyslnych, tak wiec
+        stara konfiguracja pozostanie niezmieniona. TPSA nie wykorzystala
+        tej prostej mozliwosci w EPROMie 5.8.
+
+      - wreszcie mozna niczego nie zmieniac w oprogramowaniu i wlaczyc
+        sobie pelne menu serwisowe za pomoca metody opisanej przez Slammera
+        (slammer.faq) - sprawdzilem i dziala!
+
+N10.KARTY SERWISOWE W WERSJI 3.0
+    Na poczatek dobra (srednio dobra) wiadomosc: w najnowszej wersji softu
+    do niebieskiego Urmeta zostaly przywrocone karty serwisowe! A teraz
+    kilka mniej dobrych wiadomosci: po pierwsze po uzyciu karty Programming,
+    ProgrammingVBL, Test lub Sample na wyswietlaczu zadne menu sie nie wys-
+    wietla... aby sie wyswietlilo nalezy otworzyc i zamknac automat! Oczywis-
+    cie wiaze sie to z ustawieniem odpowiedniego kodu diagnostycznego infor-
+    mujacego o otwarciu automatu. A teraz jeszcze gorsza wiadomosc: z menu
+    zniknely bez sladu: cale menu "LOCK NUM. MENU", opcje "16 KHz" i "50 Hz"
+    z "TAXATION MENU", opcja "DIAL FREQ." z "DIAL MENU". Zablokowane zostalo
+    tez cale menu "FREE NUM. MENU"! To ostatnie mozna prawdopodobnie wlaczyc
+    uzywajac sposobu opisanego przez Slammera (slammer.faq), choc w praktyce
+    jest to chyba malo przydatne bez opcji "16 KHz"... Oczywiscie zostala
+    zachowana mozliwosc zdalnego programowania wszystkich usunietych/zablo-
+    kowanych opcji. Ponizej przejrzyste podsumowanie - opisalem zmiany wzgle-
+    dem wersji 2.9:
+
+    a) Karta Maintenance
+
+       Jako jedyna dziala bez zadnych zmian i wyswietla wlasciwe sobie menu
+       od razu po jej uzyciu.
+
+    b) Karta Programming
+
+       Po uzyciu wymaga otwarcia i zamkniecia automatu. Nie wyswietla:
+       - DIAL FREQ.        /      DIAL       MENU
+       - 16 KHz            /      TAXATION   MENU
+       - 50 Hz             /      TAXATION   MENU
+       - FREE NUM.  MENU
+       - LOCK NUM.  MENU
+
+    c) Karta ProgrammingVBL
+
+       Jak w punkcie b)
+
+    d) Karta Test
+
+       Jak w punkcie b)
+
+    e) Karta Sample
+
+       Po uzyciu wymaga otwarcia i zamkniecia automatu.
+
+    f) Karta Check58
+
+       Zachowuje sie identycznie jak w wersji 2.9.
+
+    Pozostale zmiany w sofcie 3.0 zostaly opisane w rozdziale "Inne (niz 2.9)
+    wersje oprogramowania".
+
+N11.INNA (NIZ HRABIEGO) METODA DZWONIENIA Z KART SERWISOWYCH
+    Przemek, tzn. moja prawa reka, wpadl na pomysl, ze mozna wylaczyc
+    opcje "16 KHz" i dzwonic z automatu metoda na "rozmowe przychodzaca".
+    Okazuje sie, ze jest to prawda, i metoda ta dziala w praktyce. Jesli
+    wiec ktos woli dzwonic w ten sposob, narobi Telekomunikacji dodatkowego
+    zamieszania, gdyz wtedy nie beda sie zgadzac nie tylko liczniki taryfi-
+    kacji i liczniki rozmow platnych i bezplatnych, ale rowniez przychodza-
+    cych... Metoda ta jest o tyle wygodna, ze nie trzeba programowac wielu
+    nieraz numerow, a pozniej ich kasowac (dla tych ktorzy nie wiedza: cal-
+    kowite wymazanie numeru z menu jest mozliwe przez trzymanie klawisza
+    Redial przez okolo 5 sekund).
+
+N12.DIAGNOSTIC MENU - KODY DIAGNOSTYCZNE
+    W menu tym obejrzec mozemy kody diagnostyczne automatu. Sa to wartosci
+    sygnalizujace zajscie pewnych zdarzen podczas jego dzialania. Wyswietlane
+    sa kody #1..#8, jeszcze jeden, #9, jest tylko w pamieci automatu. Kod
+    o numerze #1 odpowiada zdarzeniu najnowszemu, kod #9 - najstarszemu. Jes-
+    li zajdzie jakies zdarzenie, odpowiadajacy mu kod dopisywany jest na po-
+    zycji #1, a pozostale sa spychane w dol. Nowy kod nie jest jednak dopisy-
+    wany w przypadku, gdy poprzedni byl taki sam. Ponizej podaje spis wszyst-
+    kich mozliwych kodow. Czesc z nich rozpracowalem sam, czesc uzyskalem od
+    Hrabiego, a czesc przepisalem z instrukcji niebieskiego Urmeta otrzymanej
+    od Pita, za co dzieki dla niego. Kody 11-17 dotycza plyty glownej, 21-36
+    ukladow peryferyjnych, natomiast 81-95 modulu czytnika. Sa jeszcze inne
+    kody, o ktorych wczesniej nic nie napisalem, a ktore sie nazywaja "powo-
+    dami zgloszenia do centrum nadzoru". Wyobrazmy sobie, ze otworzylismy
+    automat, wtedy generowany jest kod diagnostyczny numer 13 (dziesietnie).
+    Ale przeciez mozemy wyzerowac kody diagnostyczne w nadziei, ze gdy po
+    zamknieciu automatu zadzwoni on do centrum nadzoru, to nie bedzie wiadomo,
+    dlaczego dzwonil. Wlasnie zeby temu zapobiec, automat podczas komunikacji
+    z centrum nadzoru wysyla kod powodu zgloszenia odpowiadajacy zdarzeniu,
+    ktore bezposrednio spowodowalo koniecznosc komunikacji, niezaleznie od
+    tego, co jest aktualnie w "DIAGNOSTIC MENU". Ten mechanizm jednak rowniez
+    da sie oszukac - patrz rozdzial "Sposob na uniemozliwienie komunikacji
+    z centrum nadzoru". Spis omawianych kodow umiescilem w nastepnym punkcie.
+    A oto kody diagnostyczne:
+
+    Legenda:
+    [-]  = nie dzwoni do centrum nadzoru po ustawieniu kodu
+    [!]  = dzwoni natychmiast
+    [PZ] = dzwoni po zamknieciu automatu
+    [L1] = dzwoni, jesli przekroczono limit 5 zdarzen (wspolny dla wszystkich
+           zdarzen oznaczonych L1)
+    [L2] = dzwoni, jesli przekroczono limit 11 zdarzen (wspolny dla wszystkich
+           zdarzen oznaczonych L2)
+
+    ====================
+
+    [-]   Kod 01 - Przeslano dane do centrum nadzoru ("ZAJETY")
+    [!]   Kod 11 - Sprawdzono, czy pamiec RAM sprawna w zakresie
+                   #0x6000..#0x7787
+                   Nastapila utrata danych pamieci RAM
+                   Sprawdzanie pamieci odbywa sie, gdy suma kontrolna pamieci
+                   sie nie zgadza, np. gdy wyjeto i z powrotem wlozono uklad
+                   scalony zawierajacy RAM
+    [!]   Kod 12 - Zaprogramowano w EEPROM wartosci domyslne (z EPROM)
+                   Nastepuje to w wyniku uzycia "DEFAULT MENU", po
+                   wystapieniu bledu zapisu EEPROM lub po zmianie wersji
+                   oprogramowania - szerzej o tym w nastepnym punkcie
+    [PZ]  Kod 13 - Otwarto automat
+    [L1]  Kod 14 - Proba oszukania automatu - podanie na linie sygnalu 16 kHz
+                   dluzszego niz 4 sekundy
+                   Podanie na linie ciagle trwajacego sygnalu 16 kHz powo-
+                   dowaloby zaliczenie podczas calej rozmowy tylko jednego
+                   impulsu taryfikacyjnego
+    [!]   Kod 15 - 50 kolejnych podniesien sluchawki bez zrealizowania
+                   platnego polaczenia (zablokowany wlot czytnika, uszkodzony
+                   mikrofon lub wyswietlacz)
+                   Za polaczenie platne jest uwazane takie, podczas ktorego
+                   automat otrzyma choc jeden impuls 16 kHz, jesli wiec ktos
+                   ustawi "TAXATION MENU"/"16 KHz" na "Disabled", automat
+                   jest na 16 kHz gluchy i przy okazji nie odblokowuje
+                   mikrofonu przy probach wykonywania normalnych platnych
+                   polaczen, w zwiazku z czym kod ten zostanie po 50 probach
+                   takich polaczen ustawiony
+    [L1]  Kod 16 - Automat odlaczony od linii
+    [L1]  Kod 17 - Zbyt niska wartosc pradu linii
+    [L1]  Kod 21 - Zablokowany przycisk klawiatury
+    [L1]  Kod 22 - Zablokowany przycisk Redial
+    [L1]  Kod 23 - Uszkodzony odbiornik impulsow 16 kHz
+    [L1]  Kod 25 - Obnizone napiecie akumulatora
+    [L1]  Kod 27 - Uszkodzony obwod mikrofonu
+    [-]   Kod 28 - Uszkodzony modem DTMF (do komunikacji z centrum nadzoru)
+    [!]   Kod 29 - Uszkodzony uklad zegara Philips
+    [L1]  Kod 31 - Blad zapisu pamieci EEPROM
+    [-L1] Kod 32 - Uszkodzone przetworniki A/D, kod ustawiany rowniez, gdy
+                   automat podjal probe skasowania calej karty naraz (gdy
+                   probowano uzyc karty falszywej - ponownie napelnionej
+                   lub probowano uzyc np. karty Programming w wersji 5.8)
+    [!]   Kod 33 - Bledny rozkaz z centrum nadzoru - patrz rozdzial
+                   "Komunikacja z centrum nadzoru"
+    [!]   Kod 34 - Rejestr CONFIG <> #09
+                   O tym bedzie w jednym z nastepnych punktow
+    [!]   Kod 35 - Nastapilo przepelnienie jednej ze statystyk
+                   Chodzi o statystyki ilosci polaczen lokalnych,
+                   miedzymiastowych, bezplatnych, przychodzacych itd.
+    [-]   Kod 36 - Blad konca rozmowy telefonicznej
+    [!]   Kod 37 - Uszkodzony nadajnik 12kHz dla teletaksy
+    [L1]  Kod 81 - Blad wymiany informacji miedzy plyta glowna i modulem
+                   czytnika (np. niekompatybilnosc wersji oprogramowania
+                   plyty glownej i czytnika)
+                   Ustawiany, gdy nie udalo sie z karty skasowac zadanej
+                   liczby jednostek
+    [L1]  Kod 82 - Brak odpowiedzi czytnika (odlaczony kabelek polaczeniowy)
+    [L1]  Kod 83 - Proba oszustwa wykryta optycznie; czujniki optyczne
+                   wykryly probe wyjecia karty przed zakonczeniem rozmowy
+    [L1]  Kod 84 - Proba oszustwa wykryta magnetycznie; glowica magnetyczna
+                   wykryla probe wyjecia karty przed zakonczeniem rozmowy
+    [L1]  Kod 85 - Proba oszustwa wykryta mechanicznie; czujniki ruchu bebna
+                   wykryly probe wyjecia karty przed zakonczeniem rozmowy
+    [L1]  Kod 86 - Uszkodzony jeden z podzespolow czytnika
+    [L2]  Kod 87 - Po podniesieniu sluchawki wykryto karte zablokowana
+                   w czytniku
+    [!]   Kod 88 - W chwili wciagania karty karta zablokowala sie w czytniku
+    [!]   Kod 89 - Probowano uzyc karty z niewlasciwej (zablokowanej) serii
+    [!]   Kod 91 - Nieprawidlowe dzialanie glowic (glowice zuzyte)
+                   Kod ten jest ustawiany, gdy procent kart nieodczytanych
+                   przekroczy ustalony prog
+    [!]   Kod 92 - 30 kolejnych kart nieodczytanych
+    [!]   Kod 93 - Blad otwarcia lub zamkniecia szczeliny wlotowej czytnika
+    [L1]  Kod 95 - Wystapila proba skasowania naraz 254 lub 255 jednostek
+
+N13.POWODY ZGLOSZENIA DO CENTRUM NADZORU (C90)
+    Ponizej przedstawilem wykaz kodow, o ktorych wspomnialem w poprzednim
+    punkcie. Przy wiekszosci z nich umiescilem odpowiadajace im kody diag-
+    nostyczne (dziesietnie), ktorych opis zawarty jest powyzej. Opisane sa
+    tylko te kody, ktore w kodach diagnostycznych nie posiadaja swojego
+    odpowiednika.
+
+    Powod 01 - Ustawiany w celu wymuszenia przeslania danych, gdy
+               liczba rozmow PLATNYCH przekroczy "Calls Num."
+    Powod 02 - Ustawiany w celu wymuszenia przeslania statystyk,
+               jesli ktoras zostala przepelniona (Code 35) lub grozi
+               przepelnieniem - przekroczyla 40000 dziesietnie
+    Powod 03 - Rozpoczeto rozmowe platna, a poprzednio automat
+               byl uszkodzony (informacja o powrocie do stanu
+               sprawnosci)
+    Powod 04 - Code 13
+    Powod 05 - Code 15
+    Powod 06 - Code 12
+    Powod 07 - Code 11
+    Powod 09 - Code 89
+    Powod 11 - Code 91
+    Powod 12 - Code 92
+    Powod 13 - Code 33
+    Powod 14 - Code 34
+    Powod 15 - Code 93
+    Powod 16 - Ustawiany w celu wymuszenia przeslania danych
+               po przekroczeniu limitu L1 lub L2 liczby zdarzen
+               (patrz punkt wyzej)
+    Powod 17 - Code 88
+    Powod 19 - Code 29
+    Powod 20 - Meldunek okresowy - kod ustawiany tylko, jesli
+               w buforze nie ma innych kodow, a poprzednia proba
+               komunikacji z centrum nadzoru nie powiodla sie
+    Powod 21 - Code 37
+
+N14.PROGRAMOWANIE WARTOSCI DOMYSLNYCH W EEPROM
+    Programowanie to nastepuje w trzech przypadkach:
+      - po uzyciu "DEFAULT MENU"
+      - po wymienie EPROMu na inna wersje
+      - po wystapieniu bledu programowania EEPROM
+
+    W pierwszych dwoch przypadkach programowane sa domyslne wartosci:
+
+      - tablica dopuszczonych serii kart - wszystkie serie sa dopuszczone
+      - listy numerow "FREE NUMBER", "LOCK NUMBER" i "NATIONAL NUM."
+        (pierwsze dwa rodzaje moga zawierac do czterech cyfr, ostatni tylko
+        jedna cyfre) - puste, tzn. ich zaprogramowanie wykasuje wszystkie
+        dotychczas wpisane wartosci
+      - pozostale ustawienia "DIAL MENU" (pozostale, bo o "NATIONAL NUM."
+        napisalem juz wyzej)
+      - ustawienia "C90 MENU" i "TAXATION MENU"
+      - numer wersji EPROMu
+
+    Natomiast w przypadku bledu programowania EEPROM programowane jest
+    to, co powyzej, ale z wylaczeniem:
+
+      - "C90 MENU": "NUM. TELEPHON", "NUM. C90" i "ENABLE C90"
+      - "DIAL MENU": "DIAL TYPE", "DIAL FREQ."
+
+    Rozdzial ten pisze rowniez po to, aby zwrocic uwage na fakt, ze nieopatrz-
+    ne uzycie "DEFAULT MENU" lub wymiana EPROMu na inna wersje spowoduje wyka-
+    sowanie numerow bezplatnych, a wiec przez nas ktos moze nie dodzwonic sie
+    na pogotowie. Co wiecej, nikt nie dodzwoni sie na pogotowie rowniez uzywa-
+    jac karty, gdyz numery bezplatne nie przysylaja 16 kHz, a po wykasowaniu
+    listy numerow bezplatnych wszystkie sa uwazane za platne i w zwiazku z tym
+    mikrofon sie odblokowuje dopiero po otrzymaniu 16 kHz. Tak wiec nikt nas
+    nie uslyszy. Dobrze jest wiec wpisac przynajmniej numery alarmowe, a w
+    przypadku wymiany EPROMu i nieposiadania karty serwisowej mozna zmienic
+    w pliku z oprogramowaniem bajt #0x0049 (dla oprogramowania od 2.6, przez
+    5.8 do 3.0 wlacznie) na #0x00 (w tym przypadku nieistotne, czy plik jest
+    zakodowany czy nie), co wylaczy sprawdzanie wersji i zablokuje zaprogramo-
+    wanie z powodu niezgodnosci ustawien domyslnych. Stosowane przez niekto-
+    rych modyfikowanie naglowka pliku nie zapobiega wykryciu niezgodnosci
+    wersji - tak naprawde w ogole nie ma sensu i nic pozytecznego nie daje!
+    Adresy danych w pamieci EEPROM we wszystkich wersjach od 2.6 wlacznie
+    w gore sa prawie na pewno takie same, tak wiec pozostawienie starych
+    ustawien dla nowej wersji nie powinno spowodowac bledow w dzialaniu.
+    Natomiast wersje 1.8 i 2.0 nie wygladaja na kompatybilne z poprzednimi.
+
+N15.TARYFIKACJA
+    Automat posiada statystyki taryfikacji, ktore mozna obejrzec
+    w "COUNTER MENU". Na poczatku kazdej rozmowy zwiekszany jest
+    licznik jednej z pozycji:
+
+    a) "LOCAL CALL" - w przypadku, kiedy rozmowa nie zostanie
+       zakwalifikowana jako zadna z ponizszych.
+
+    b) "NATIONAL CALL" - jesli wybrany numer zaczyna sie na cyfre
+       wpisana jako ktoras z pozycji "NATIONAL NUM."
+
+    c) "INTERNAT CALL" - jesli wybrany numer zaczyna sie od "00" -
+       nie ma mozliwosci zmiany tych cyfr poprzez zadne menu.
+
+    d) "ENTRY CALL" - oczywiscie gdy ktos dzwoni do automatu.
+
+    e) "FREE CALL" - jesli wybrany numer znajduje sie na jednej z pozycji
+       "FREE NUMBER". Statystyka ta jest bardzo podatna na zafalszowania.
+       Statystyki dotyczace liczby rozmow platnych sa zwiekszane w chwili ot-
+       rzymania przez automat pierwszego impulsu 16 kHz, tak wiec w momencie
+       faktycznego nawiazania polaczenia. Natomiast przy rozmowach bezplatnych
+       16 kHz normalnie nie przychodzi, dlatego licznik ten jest zwiekszany
+       natychmiast po wybraniu z klawiatury numeru nalezacego do ktorejs z po-
+       zycji "FREE NUMBER". Jesli polaczenie nie dojdzie do skutku, bo np. nu-
+       mer bedzie zajety albo rozlaczymy sie przed nawiazaniem polaczenia, to
+       statystyka i tak zostanie zwiekszona. Jak wiadomo, numer bezplatny ma
+       maksymalnie 4 cyfry i po jego wybraniu blokowana jest klawiatura,
+       z jednym wyjatkiem - po "0800", jesli znajduje sie w jednej z pozycji
+       "FREE NUMBER", mozna wybrac jeszcze 6 cyfr. Numeru, po ktorym mozna
+       bedzie jeszcze wybrac cyfry, ani liczby tych cyfr, nie mozna zmienic
+       poprzez zadne menu. Mozna jednak zmodyfikowac odpowiednie bajty konfi-
+       guracyjne w oprogramowaniu, zeby bylo to np. "0700" i zeby mozna bylo
+       jeszcze po nim wybrac 80 cyfr... Zeby to jednak zadzialalo, trzeba
+       jeszcze wpisac "0700" jako "FREE NUMBER". Pojawia sie jeszcze jeden
+       problem. Standardowo po numerze bezplatnym automat na pierwszy sygnal
+       16 kHz sam odsyla do centrali 12 kHz dla teletaksy, jesli jest wlaczona
+       opcja "CHECK TAX" w "TAXATION MENU", i nie zrywa polaczenia. Normalnie
+       to wystarcza, bo gdy dzwonimy pod rzeczywiscie bezplatny numer, centra-
+       la nie wysyla sygnalow 16 kHz do automatu. Jesli zadzwonimy pod "0700",
+       sygnaly 16 kHz beda przychodzic co kilka sekund, wiec dlugo i tak nie
+       porozmawiamy... chyba ze znowu zmienimy odpowiedni bajt konfiguracyjny,
+       aby po bezplatnym numerze 12 kHz odbijane bylo do centrali np. 200 ra-
+       zy, albo lepiej w nieskonczonosc :) No, jeszcze trzeba znalezc automat,
+       gdzie "0700" nie jest zablokowane na poziomie centrali, ale okazuje
+       sie, ze TPSA ma spore trudnosci z blokowaniem "0700" na centralach
+       analogowych, gdyz wiaze sie to z zablokowaniem wszystkich numerow
+       zaczynajacych sie od zera... Wiec nic nie blokuja. Ale wrocmy do
+       poprzedniej mysli. Okazuje sie, ze teletaksa w zasadzie jest zbedna,
+       gdyz automat i tak sam zrywa polaczenie w chwili, kiedy wyczerpie sie
+       limit automatycznie odbijanych 12 kHz (ale dzieje sie tak tylko w wers-
+       ji 2.9 i 3.0!). Poniewaz dla rozmowy przychodzacej limit ten jest zaw-
+       sze rowny zero, automat zrywa polaczenie w chwili otrzymania pierwszego
+       sygnalu 16 kHz. Jedyne sensowne zastosowanie teletaksy opisalem w roz-
+       dziale "Inne (niz 2.9) wersje oprogramowania". A odnosnie blokowania
+       klawiatury, zmiana innego jeszcze bajtu konfiguracyjnego powoduje, ze
+       klawiatura nie jest blokowana nigdy, czyli ani po numerze bezplatnym,
+       ani normalnie platnym, dzieki czemu mozna wybrac np. numer wewnetrzny.
+
+    W czasie trwania rozmowy po kazdym sygnale 16 kHz zwiekszany jest wlasciwy
+    licznik sposrod "LOCAL PULSE", "NATIONAL PULSE" i "INTERNAT PULSE". Licz-
+    nik ten zwiekszany jest za kazdym razem o wartosc Tax Value. Wyjatkiem
+    jest jednak uzycie karty w jednostkach Tax Value - wtedy licznik zwiek-
+    szany jest zawsze o 1. Istnieje (niewykorzystana) mozliwosc mnozenia
+    przez odpowiednia stala wartosci Tax Value osobno dla rozmow lokalnych,
+    krajowych i miedzynarodowych. Tak wiec, mimo, ze Tax Value wynosi np. 2,
+    przy rozmowach miedzynarodowych kasowane moze byc kazdorazowo np. 3 razy
+    wiecej jednostek, czyli przy kazdym 16 kHz kasowane bedzie 6 jednostek.
+    Dzieki temu centrala moze wysylac 16 kHz z taka sama czestotliwoscia nie-
+    zaleznie od rodzaju numeru, a automat, zaleznie od rodzaju rozmowy, sam
+    bedzie kasowal odpowiednia liczbe jednostek przy kazdym 16 kHz. Przy kaz-
+    dym sygnale 16 kHz zwiekszany jest o 1 rowniez licznik "TAXATION". Mowiac
+    "licznik" dokonalem pewnego uproszczenia, gdyz naprawde kazda pozycja za-
+    wiera dwa liczniki: "Total" i "Partial". Licznik "Total" zawiera calkowita
+    liczbe rozmow/jednostek taryfikacyjnych, natomiast licznik "Partial" jedy-
+    nie liczbe liczona od ostatniej komunikacji z centrala. W pamieci RAM
+    znajduje sie tez ciekawa tablica zawierajaca 1024 liczniki rozmow. Przy
+    rozpoczeciu kazdej platnej rozmowy jeden z licznikow jest zwiekszany,
+    a ktory, to zalezy od... numeru serii (ale nie numeru karty w serii)
+    uzywanej do rozmowy karty! Tablicy tej nie mozna obejrzec poprzez zadne
+    menu, za to jest wysylana po kawalku do centrali przy kazdej z nia komu-
+    nikacji. Poza tym oprogramowanie jest zabezpieczone przed wpisaniem jako
+    Tax Value wartosci 0. Wpisanie zera jest niemozliwe, ale gdyby jednak,
+    np. na skutek bledu, sie udalo, platna rozmowa zostanie przerwana natych-
+    miast po jej rozpoczeciu. A teraz o tym, co sie stanie, gdy uzyjemy karty,
+    dla ktorej liczba jedynek/jednostke wynosi 1, czyli na karcie moze byc
+    maksymalnie 200 jednostek. Otoz, gdy wlozymy taka karte do automatu, nor-
+    malnie zobaczymy "KREDYT". Jednak przy probie skasowania pierwszej jed-
+    nostki ukaze sie nagle "KARTA ZUZYTA" i karta zostanie cala skasowana...
+
+N16.KOMUNIKACJA Z MODULEM CZYTNIKA
+    Jak wiadomo, fizycznie jednostki z karty kasowane sa dopiero przy jej
+    wyrzucaniu z czytnika. Mimo to, przy kazdym sygnale 16 kHz odpowiednia
+    liczba jednostek (normalnie rowna Tax Value) jest przesylana do modulu
+    czytnika. Modul czytnika sumuje kolejno otrzymywane wartosci i wynikowa
+    liczba jednostek jest kasowana z karty przy jej wyrzucaniu. Przy kazdej
+    takiej komunikacji wyslana do czytnika wartosc jest przez czytnik zwra-
+    cana w celu weryfikacji. I tak, na przyklad, jesli Tax Value wynosi 2
+    i do czytnika wyslano 2, ale czytnik zwrocil tylko 1, to nastepnym
+    razem do czytnika zostanie wyslana, zamiast 2, wartosc 3.
+
+N17.JAK ZROBIC NIEKASOWALNA KARTE
+    Od wersji softu 2.8 istnieje mozliwosc zrobienia karty, ktorej niebieski
+    Urmet nie bedzie potrafil skasowac! Niestety, nie da sie takiej karty
+    wykorzystac do dzwonienia za darmo :( Po pierwsze, jak wiadomo, soft
+    od wersji 2.8 kasuje karty z podzielnikiem rownym #1 (odpowiadajacym
+    kartom o nominalnej liczbie jednostek 200) - normalnie wyswietlany jest
+    "KREDYT", ale po przyjsciu pierwszego impulsu taryfikacyjnego kasowana
+    jest cala karta. Po drugie mozna zrobic karte o wiekszej niz nominalna
+    liczbie jednostek, tak jak to opisalem w punkcie "Tablice kart" - metode
+    produkcji takich kart wymyslil Shadow. Po trzecie czytnik niebieskiego
+    Urmeta nie potrafi skasowac naraz wiecej niz 200 jednostek, przy czym
+    "naraz" nalezy rozumiec jako kasowanie z uzyciem pojedynczego rozkazu
+    kasowania, bo mozna skasowac np. 250 jednostek wysylajac 10 rozkazow
+    kasowania po 25 jednostek kazdy. Teraz robimy karte z podzielnikiem #1
+    (karta 200) i nagrywamy na niej wiecej niz 200 jednostek, np. 250. Wkla-
+    damy karte do automatu i widzimy na wyswietlaczu wartosc kredytu. Wybie-
+    ramy numer i po przyjsciu 16 kHz automat probuje skasowac naraz cala kar-
+    te, wypisuje "KARTA ZUZYTA" i ja wyrzuca, ale poniewaz karta ma wiecej
+    niz 200 jednostek, czytnik zwraca tylko blad i nie kasuje karty! Wkladamy
+    teraz karte z powrotem do automatu i... pojawia sie "KARTA ZUZYTA" i au-
+    tomat wyrzuca karte... Ale idziemy do innego automatu i znowu widzimy
+    250 jednostek na wyswietlaczu! Okazuje sie, ze w pierwszym automacie
+    karta zostala wpisana na liste kart, z ktorych nie udalo sie skasowac
+    pelnej jednostki Tax Value i automat ja probuje kasowac i wyrzuca przy
+    probie drugiego i kolejnego uzycia, ale na innym automacie karta wyswiet-
+    la znowy swoja rzeczywista ilosc jednostek. Efekt tej zabawy jest taki,
+    ze ustawiane sa kody diagnostyczne 32 (proba skasowania calej karty) i 81
+    (blad wymiany informacji miedzy plyta glowna i modulem czytnika, ustawia-
+    ny, gdy nie udalo sie z karty skasowac zadanej liczby jednostek). Jezeli
+    na karcie bylo 254 albo 255 jednostek, ustawiany jest kod 95 (wystapila
+    proba skasowania naraz 254 lub 255 jednostek). Podsumowujac: karta taka
+    jest tylko ciekawostka bez mozliwosci pozytecznego zastosowania. Wszystko,
+    co napisalem w tym rozdziale, testowalem praktycznie.
+
+N18.KOMUNIKACJA Z CENTRUM NADZORU (C90)
+    Automat komunikuje sie z centrum nadzoru gdy zrealizuje liczbe rozmow
+    okreslona w "CALLS NUM." w "C90 MENU" (pod uwage brane sa tylko rozmowy
+    platne) lub jesli zajdzie zdarzenie, dla ktorego zaprogramowana jest
+    natychmiastowa komunikacja z centrum. Jesli proba nawiazania polaczenia
+    sie nie powiedzie, automat po uplywie pewnego czasu probuje ponownie.
+
+    Podczas komunikacji automat przesyla do centrum nadzoru:
+
+      - sume kontrolna list numerow "FREE NUMBER" i "LOCK NUMBER", wartosci
+        Tax Value, tablicy numerow serii kart dopuszczonych do obiegu i tab-
+ *      licy cyfr poczatkowych zablokowanych numerow - inaczej dekad (bedzie
+        o tym za chwile). Tak wiec niezauwalazna zmiana tych parametrow jest
+        niemozliwa, chyba ze przywrocimy oryginalne wartosci przed najblizsza
+        komunikacja z centrum nadzoru
+      - wartosci kodow diagnostycznych "CODE"
+      - jezeli automat dzwoni do centrum z powodu uzycia karty z niewlasciwej
+        (zablokowanej) serii, to zamiast niektorych pozycji "CODE" przesylany
+        jest numer serii tej karty i numer karty w serii
+      - liczbe okreslajaca, ktory raz od czasu zainstalowania
+        (lub przepelnienia licznika) automat dzwoni do centrum nadzoru
+      - wartosci wszystkich licznikow z "COUNTER MENU"
+      - fragment (normalnie 30 pozycji) tablicy 1024 licznikow rozmow zwiek-
+        szanych w zaleznosci od numeru serii karty (ale nie numeru karty
+        w serii), ktora to tablice opisalem juz w punkcie "Taryfikacja"
+      - kod powodu zgloszenia do centrum nadzoru, ktorego ustawienie
+        spowodowalo komunikacje z centrum
+
+    Centrum nadzoru moze przekazywac do automatu:
+
+      - wartosc Tax Value
+      - listy numerow "FREE NUMBER" i "LOCK NUMBER"
+      - numery serii kart dopuszczonych do obiegu (przy probie uzycia karty
+        z zablokowanej serii zatrzymuje sie ona na chwile tak jak karta ser-
+        wisowa, po czym wypada bez zadnego napisu na wyswietlaczu, ustawiany
+        jest tez kod diagnostyczny 89)
+      - date i czas systemowy dla zegara Philips
+      - tablice, ktorej kolejne pozycje odpowiadaja kolejnym cyfrom poczat-
+        kowym numerow, a ostatnia pozycja odpowiada za numery miedzynarodowe
+        ("00"). Ustawienie pozycji w tablicy blokuje wszystkie (z wyjatkiem
+        wpisanych jako "FREE NUMBER") numery zaczynajace sie od cyfry, ktora
+        odpowiada tej pozycji. Dla przykladu, jesli w tablicy ustawimy pozyc-
+        je odpowiadajaca cyfrze "5", wszystkie numery zaczynajace sie na "5"
+        zostana zablokowane! Nie ma mozliwosci zaprogramowania tego z poziomu
+        menu. Inaczej mowiac tablica ta sluzy do konfiguracji aktywnych de-
+        kad.
+
+    W uzywanej przez TPSA wersji centrum nadzoru (C90) istnieje blad uniemoz-
+    liwiajacy wprowadzanie jako pozycje "LOCK NUMBER" numerow 4-cyfrowych!
+    Nawet wiec jesli monter wpisze za pomoca karty serwisowej numer 4-cyfrowy,
+    podczas najblizszej komunikacji z centrum nadzoru zostanie stwierdzona
+    niezgodnosc sum kontrolnych miedzy lista numerow automatu i centrum nadzo-
+    ru i automat otrzyma z powrotem liste numerow zablokowanych z centrum nad-
+ *  zoru - maksymalnie 3-cyfrowych! Ostatnio jednak blad ten zostal (przynaj-
+ *  mniej w czesci kraju) naprawiony.
+
+    Do automatu z centrum nadzoru moze byc wysylane 6 rozkazow, i co ciekawe,
+    ich lista jest taka sama dla wszystkich wersji od 2.6 wlacznie (starszych
+    nie badalem). Tak wiec ewentualny bledny rozkaz jest spowodowany raczej
+    bledem transmisji niz niezgodnoscia wersji oprogramowania automatu
+    i centrum nadzoru.
+
+    Oto rozkazy z centrum nadzoru:
+
+      Rozkaz 0x00 - Nic nie robi
+      Rozkaz 0x01 - Programuje date i czas systemowy
+      Rozkaz 0x02 - Programuje Tax Value, numery serii kart dopuszczonych do
+                    obiegu, tablice cyfr poczatkowych zablokowanych numerow
+ *                  (tablice zablokowanych dekad), listy numerow "FREE NUMBER"
+                    i "LOCK NUMBER"
+      Rozkaz 0x03 - Programuje to co powyzej oraz date i czas systemowy
+      Rozkaz 0x04 - Programuje Tax Value
+      Rozkaz 0x05 - Programuje Tax Value oraz date i czas systemowy
+
+    Jako parametr rozkazu przekazywana jest informacja, czy po udanej
+    komunikacji nalezy "uporzadkowac" rozne zmienne, czyli:
+
+ *    - przesunac wskaznik na kolejne przeznaczone do wyslania 30 elementow
+        tablicy 1024 licznikow rozmow zwiekszanych w zaleznosci od numeru
+        serii karty (ale nie numeru karty w serii)
+      - zwiekszyc licznik liczby polaczen z centrum nadzoru (!)
+      - wyzerowac wartosci Partial licznikow statystyk polaczen
+      - wykasowac przeslany juz kod powodu zgloszenia do centrum nadzoru
+      - wyczyscic licznik platnych rozmow od ostatniego polaczenia
+        z centrum nadzoru, ktory po przekroczeniu wartosci "CALLS NUM."
+        spowoduje kolejna komunikacje
+      - ustawic kod diagnostyczny 01 (Przeslano dane do centrum nadzoru)
+
+    Jak widac, mozliwe jest podszycie sie pod centrum nadzoru bez wykrycia
+    tego przez prawdziwe, gdyz mozemy nie porzadkowac podanych wyzej zmien-
+    nych. Po drugie mozna wyslac do automatu rozkaz #00, ktory nic nie robi,
+    ale uporzadkowac po nim zmienne (normalnie sluzy on do poszukiwania auto-
+    matow, ktore dawno sie nie meldowaly do centrum nadzoru). Z powyzszego
+    opisu wynika rowniez, ze jesli po dzwonieniu przy uzyciu karty serwisowej
+    nie przywrocimy poprzednich ustawien automatu, to choc mozna mu zdalnie
+    przywrocic zawartosc "FREE NUM. MENU" (i tak sie wlasnie dzieje - jesli
+    suma kontrolna numerow bezplatnych sie nie zgadza, programowane sa orygi-
+    nalne przy najblizszej komunikacji z centrum nadzoru), to odblokowanie
+    opcji "16 KHz" jest niemozliwe! Wtedy przychodzi monter i przy okazji
+    instaluje soft 3.0...
+
+N19.SPOSOB NA UNIEMOZLIWIENIE KOMUNIKACJI Z CENTRUM NADZORU
+    Metoda ta pozwala zmusic automat do zapomnienia powodow zgloszenia do
+    centrum nadzoru, ktore normalnie wymuszaja natychmiastowa komunikacje
+    z centrum w przypadku zajscia waznych zdarzen. Dzieki niej mozemy np.
+    wylaczyc komunikacje z centrum po otwarciu automatu. Ogolnie rzecz
+    biorac mozna spowodowac zapomnienie dowolnych kodow powodow zgloszenia
+    (opisanych w ktoryms z poprzednich rozdzialow). Metoda zostala teore-
+    tycznie wymyslona przez Pita (to znaczy on jako pierwszy ja wymyslil),
+    a nastepnie sprawdzona przeze mnie w oprogramowaniu oraz (wielokrotnie)
+    praktycznie. Aby spowodowac zapomnienie wspomnianych kodow, nalezy za-
+    programowac w "C90 MENU" pozycje "ENABLE C90" na "Disabled", a nastepnie
+    ponownie na "Enabled". Przy zmianie tego ustawienia zerowana jest liczba
+    kodow powodow zgloszenia i jedyny slad zdarzen pozostaje w "DIAGNOSTIC
+    MENU". Wymazanie "DIAGNOSTIC MENU" i uzycie opisywanej metody spowoduje
+    wiec, ze w centrum nadzoru nikt nigdy nie dowie sie o zaistnialych zda-
+    rzeniach i najwyzej zauwazy wyzerowanie kodow diagnostycznych (czyli po-
+    mysli, ze ktos bawil sie karta Programming). Jak wynika z softu, istnieje
+    rowniez drugi sposob, choc mniej praktyczny, na osiagniecie powyzszego
+    celu. Nalezy w "C90 MENU" zaprogramowac pozycje "NUM. C90" na pusta (trzy-
+    mamy Redial przez 5 sekund), a nastepnie ponownie wejsc do "NUM. C90"
+    i zaprogramowac wlasciwy numer do centrum nadzoru. Oczywiscie sprawa
+    komplikuje sie, gdy zamieniamy EPROM na 5.8. Do uruchomienia menu polecam
+    wtedy metode opisana przez Slammera w slammer.faq.
+
+N20.SPECIAL TEST MODE
+    Poprzez przelaczenie jednej ze zworek na plycie glownej procesor jest
+    uruchamiany w specjalnym trybie, ktory sie nazywa "Special Test Mode"
+ *  (standardowo procesor pracuje w trybie "Normal Expanded Mode"). Procesor
+    68HC11 posiada rejestr o nazwie CONFIG. W rejestrze tym wykorzystywane
+    sa cztery mniej znaczace bity:
+      - NOSEC - ustawienie go wylacza zabezpieczenie pamieci EEPROM i RAM
+        przed niepowolanym dostepem; ustawiony na 1
+      - NOCOP - ustawienie go wylacza COP Watchdog System - system ten
+        zawiera licznik, ktory zwieksza sie samoczynnie i po osiagnieciu
+        pewnej wartosci resetuje procesor; oprogramowanie zeruje co jakis
+        czas ten licznik, jednak gdy sie zawiesi, licznik przekroczy wartosc
+        graniczna i procesor zostanie poprzez zresetowanie odwieszony;
+        ustawiony na 0
+      - ROMON - ustawienie go wlacza wbudowana pamiec ROM procesora;
+        ustawiony na 0
+      - EEON - ustawienie go wlacza wbudowana pamiec EEPROM procesora;
+        ustawiony na 1
+    Jak widac, dla prawidlowej pracy automatu rejestr CONFIG musi miec
+    wartosc 9. Uruchomienie procesora w "Special Test Mode" powoduje
+    sprawdzenie wartosci tego rejestru i ewentualne ustawienie na 9,
+    uzywane jest to przy wymianie procesora w automacie na nowy.
+    Po uruchomieniu automatu pojawia sie:
+    - "CONFIG OK" - gdy rejestr CONFIG ustawiony jest prawidlowo,
+    - "CONFIG CPU" - gdy rejestr CONFIG ma nieprawidlowa wartosc.
+      W tym momencie rejestr CONFIG jest programowany, a po zakonczeniu
+      programowania pojawia sie: "PRESS RESET" i procesor zawiesza prace
+      czekajac na zresetowanie.
+
+N21.BUFORY KLAWIATURY
+    Automat posiada dwa bufory klawiatury. W pierwszym pamietane sa
+    wszystkie klawisze, wlacznie z "*", "#" i Redial, a w drugim tylko
+    cyfry. Obydwa bufory maja miejsce na 32 znaki. W zwiazku z tym
+    klawisz Redial nie dziala, gdy wprowadzony numer jest dluzszy niz
+    32 cyfry.
+
+N22.INNE (NIZ 2.9) WERSJE OPROGRAMOWANIA
+    Dostepne w sieci zawartosci EPROMow, choc w "SW VERSION MENU"
+    wyswietlaja numery wersji tylko w postaci np. 2.9, posiadaja
+    zakodowane dokladniejsze informacje na swoj temat (spis wedlug
+    kolejnosci wprowadzania wersji do uzytku):
+
+      - 1.8 -> brak   22.01.1993
+      - 2.0 -> 2.01   08.04.1993
+      - 2.6 -> 2.62   22.06.1995
+      - 2.7 -> 2.71   13.12.1995
+      - 2.8 -> 2.81   10.05.1996
+      - 2.9 -> 2.90   17.07.1997
+      - 5.8 -> 5.81   10.05.1996 !!?? - identycznie jak w 2.8
+      - 3.0 -> 3.00   17.02.2001
+
+    Jedyna roznica miedzy wersja 2.9 i 2.8 jest taka, ze do 2.9 wprowadzono
+    liczbe automatycznie odbijanych sygnalow 12 kHz po numerze bezplatnym,
+    po przekroczeniu ktorej automat zrywa polaczenie, nawet jesli teletaksa
+    jest nieobecna. Polaczenie nie jest jednak zrywane, gdy automat jest
+    nieczynny (a mozna przeciez wtedy czasami dzwnic na numery bezplatne).
+    W wersji 2.8 natomiast nie bylo zadnego limitu, tak wiec korzystanie
+    z karty serwisowej do rozmow bylo ulatwione o tyle, ze nie trzeba
+    bylo blokowac opcji "16 KHz" w "TAXATION MENU". Tu wlasnie nasuwa sie
+    jedyne sensowne zastosowanie teletaksy - jezeli zablokujemy opcje
+    "16 KHz", automat bedzie ignorowal sygnaly 16 kHz, a wiec nie bedzie
+    odsylal centrali 12 kHz i teletaksa zerwie polaczenie. W wersji 2.8
+    problem taki nie istnial, gdyz, jak juz napisalem (a wczesniej napisal
+    Hrabia), blokowanie "16 KHz" nie bylo konieczne.
+
+    Wersja 2.7 (i starsze) nie kasuje kart z podzielnikiem rownym #1 (maksy-
+    malnie 200 jednostek) i pozwala sie oszukiwac na "rozmowe przychodzaca".
+    Poza tym posiada blad, na ktory zwrocil mi uwage Nol, a ktory polega
+    na tym, ze po zaprogramowaniu w EEPROMie wartosci domyslnych z EPROMu,
+    na przyklad poprzez uzycie "DEFAULT MENU" (szerzej o tym wyzej w punkcie
+    "Programowanie wartosci domyslnych w EEPROM"), jako pierwsza z pozycji
+    "NATIONAL NUM." programuje sie cyfra "8" zamiast "0". Blad ten wystepuje
+    takze we wszystkich wersjach starszych niz 2.7.
+
+    Wersja 5.8 jest oparta na 2.8 (do tego stopnia, ze nawet daty w naglowku
+    nie zmieniono...). Jak wszyscy wiedza, kasuje ona karty serwisowe ze
+    starszych wersji. Pojawila sie nowa karta serwisowa Check58, a inne karty
+    serwisowe nie istnieja. Poza tym, poniewaz w wersji 2.8, na ktorej oparta
+    jest 5.8, nie istnieje ograniczenie liczby 12 kHz odsylanych do centrali
+    po 16 kHz dla numeru bezplatnego i automat w zwiazku z tym nie zrywa po-
+    laczenia, teoretycznie mozliwe jest wybranie numeru bezplatnego zanim po-
+    jawi sie dialtone i pozniej, po pojawieniu sie dialtone, wybranie wlas-
+    ciwego numeru za pomoca tone-dialera. Jednak obecnie, na cyfrowych cent-
+    ralach, opoznienie dialtone po podniesieniu sluchawki jest malo realne,
+    a jesli juz sie zdarzy, po chwili pojawia sie nie dialtone, a sygnal za-
+    jetosci. Centrala analogowa z kolei czesto nie przyjmuje DTMF, tak wiec
+    w praktyce metoda ta ma nikle szanse zastosowania. Charakterystyczna rze-
+    cza jest odziedziczony po wersji 2.8 napis "USZKODZONY" (w miejsce napisu
+    "NIECZYNNY" z wersji 2.9), co mozna w prosty sposob wykorzystac do roz-
+    roznienia najpopularniejszych obecnie wersji oprogramowania: 2.9 od 5.8,
+    szerzej o tym mozna przeczytac na stronie phreak.hack.pl. Poza tym nie
+    zdradzilem jak dotad pewnej istotnej i interesujacej rzeczy, ale wielu
+    ludzi juz dawno na to wpadlo (niektorzy nie calkiem swiadomie, naczytali
+    sie bardzo starych tekstow i nie wiedzieli, ze pewne rzeczy sa dawno nie-
+    aktualne :)). Mianowicie w wersji 5.8 z powrotem dziala metoda darmowego
+    dzwonienia na "rozmowe przychodzaca"! Chcialbym tu zaznaczyc, ze wersja
+    5.8 jest bezposrednia przerobka wersji 2.8, a w wersji 2.8 metoda ta nie
+    dzialala!!! Wniosek jest taki, ze osoba przerabiajaca soft celowo przyw-
+    rocila ta metode do lask zmieniajac jeden z bajtow konfiguracyjnych!
+    Wlasnie to rzucilo mi sie w oczy podczas porownania softu 5.8 i 2.8 i nie
+    musze chyba opisywac mojego zdumienia, gdy pierwszy spotkany automat
+    z softem 5.8 przypomnial mi bardzo dawne czasy :)) Cala wiec kosztowna
+    operacja wymiany oprogramowania stracila sens zanim sie jeszcze zaczela
+    i spowodowala tylko ulatwienie w dzwonieniu za darmo, bo o telefon komor-
+    kowy znacznie latwiej dzis niz o karte serwisowa... I byc moze dlatego do
+    najnowszej wersji (3.0) przylozono sie naprawde solidnie i dopilnowano,
+    aby nie miala juz zadnych takich pulapek...
+
+    Wersja 3.0 to najnowszy wynalazek, jest ona najlepiej zabezpieczona przed
+    naduzyciami. Jest to zupelnie nowa kompilacja, a nie przerobka ktorejs
+    z poprzednich wersji. Zmiany i zabezpieczenia dotyczace kart serwisowych
+    (bardzo daleko idace) opisalem w rozdziale "Karty serwisowe w wersji
+    3.0". Druga bardzo wazna zmiana miala na celu uniemozliwienie korzystania
+    z kart o nominalach 50 i 100 jednostek, w praktyce jednak uniemozliwila
+    korzystanie z kart, ktore posiadaja wiecej niz 25 jednostek, niezaleznie
+    od ich rodzaju. Innymi slowy mozliwe jest uzywanie karty 100-jednostkowej,
+    na ktorej pozostalo mniej lub dokladnie 25 jednostek, natomiast niemozliwe
+    jest uzywanie karty nagranej z podzielnikiem odpowiadajacym karcie 25-jed-
+    nostkowej, ale posiadajacej 26 jednostek (zwiekszona liczba magnetycznych
+    jedynek w trzeciej czesci karty - metoda opracowana przez Shadowa :)).
+    Gdy karta posiada wiecej niz 25 jednostek, zatrzymuje sie na chwile tak
+    jak karty serwisowe, po czym jest wyrzucana bez zadnego napisu na wyswiet-
+    laczu. Karty z podzielnikiem odpowiadajacym karcie 200-jednostkowej (ale
+    posiadajace np. 8 jednostek, czyli mniej niz 25) zostaja zaakceptowane,
+    ale sa cale kasowane przy probie skasowania pierwszej jednostki (zupelnie
+    jak w wersji 2.8, 2.9 i 5.8). Nie da sie tez dzwonic metoda na "rozmowe
+    przychodzaca". Poza tym poprawiona zostala nieco obsluga ukladu zegara
+    RTC (Philips) i czesciowo usuniety zostal kod odpowiadajacy za obsluge
+    usunietych opcji menu. Dwie z procedur (w tym jedna zwiazana z kasowaniem
+    jednostek) zupelnie zmienily miejsce w kodzie, moze dla utrudnienia ana-
+    lizy porownawczej? Powrocil tez stary i nieistotny zbytnio blad polegajacy
+    na tym, ze po zaprogramowaniu wartosci domyslnych w EEPROMie jako pierwsza
+    z pozycji "NATIONAL NUM." w "DIAL MENU" programuje sie cyfra "8" zamiast
+    "0" (o programowaniu wartosci domyslnych jest w ktoryms z powyzszych punk-
+    tow). W wersji tej wystepuje tez napis "USZKODZONY", dlatego najlatwiej
+    mozna ja odroznic od wersji 5.8 posiadajac karte z liczba jednostek wiek-
+    sza niz 25. Ostatnia interesujaca rzecz to napis "OPEN/CLOSE DOOR", ktory
+    pojawil sie przed standardowymi napisami "DEFAULT MENU", ale nie jest
+    nigdzie wykorzystywany. Byc moze mial on sluzyc do dodatkowego zabezpie-
+    czenia przed programowaniem wartosci domyslnych, a byc moze mial byc wys-
+    wietlany po uzyciu kart serwisowych wymagajacych otwarcia i zamkniecia
+    automatu... Na koniec mala uwaga praktyczna: jesli mamy karte np. 100-jed-
+    nostkowa z wieksza niz 25 liczba pozostalych jednostek, to aby moc ja
+    jeszcze wykorzystac, nalezy przeciac pasek magnetyczny w miejscu odpowia-
+    dajacym 25 jednostkom, wtedy automat nie wezmie pod uwage zapisu poza
+    przecieciem i zaakceptuje karte (za pierwszym razem karta zostanie wyrzu-
+    cona jako nieczytelna, trzeba ponowic probe).
+
+N23.NOWY CZYTNIK I OPROGRAMOWANIE DO NIEGO (3.0?)
+    Ostatnimi czasy pojawila sie nowa konstrukcja czytnika wraz z nowym opro-
+    gramowaniem, poki co rzadko spotykana. Nowy czytnik posiada mozliwosc
+    przesuwania karty zarowno do przodu jak i do tylu - dzieki temu posiadl on
+    mozliwosc fizycznego kasowania jednostek z karty na biezaco podczas roz-
+    mowy (zamiast kasowac je dopiero przy wyrzucaniu karty). Dzwiek wydawany
+    przez nowy czytnik rozni sie nieco od standardowego. Zgodnie z tym, co
+    powiedzial mi Shadow, mozliwosc przesuwania karty w obu kierunkach musia-
+    la wymusic zmiany w elektronice czytnika oraz oczywiscie w programie
+    strujacym jego praca.
+
+    Do zmian czysto software'owych nalezy zaliczyc sprawdzanie podzielnika
+    karty i nieakceptowanie kart z podzielnikami odpowiadajacymi liczbie
+    jednostek wiekszej od 25. Dzieki temu karty nagrane z podzielnikiem odpo-
+    wiadajacym maksymalnej liczbie np. 100 jednostek, na ktorych pozostalo
+    25 jednostek lub mniej, nie sa juz akceptowane (tak jak mialo to miejsce
+    przy starym czytniku i programie plyty glownej 3.0) - dzialanie to zostalo
+    wymierzone w osoby nagrywajace karty na czesciowo zniszczonych nosnikach.
+    Druga wazna zmiana to wprowadzenie dodatkowego algorytmu sprawdzania pra-
+    widlowosci zapisu kart - dzieki temu wiekszosc kart nagrywanych prywatnie
+    przestala byc akceptowana, dotyczy to nawet kart zielonych prawidlowo
+    dzialajacych na automatach srebrnych (o kartach zielonych jest napisane
+    w dziale o srebrnym Urmecie). Nalezy dodac, ze mimo wprowadzonych zmian
+    mozliwe jest korzystanie nie tylko z kart zielonych, ale i czerwonych -
+    oczywiscie tych, ktorych zapis jest zgodny w wprowadzonym nowym algoryt-
+    mem. Byc moze wspomniany nowy algorytm to nic innego jak wbudowana w czyt-
+    nik aktualna biala lista, zawierajaca dozwolone zakresy numerow kart -
+    choc to akurat jest malo realne, gdyz biala lista powinna byc jednakowa
+    zarowno dla automatow niebieskich, jak i dla srebrnych.
+
+N24.NAPISY
+    Jest jeszcze kilka napisow (oprocz znanych powszechnie), ktore nie
+    zostaly omowione ani powyzej, ani u Hrabiego w menu.txt:
+      - "W NAPRAWIE"/"MAINTENANCE" - takie dwa napisy pojawiaja sie na
+        zmiane po otwarciu automatu, a po nacisnieciu "#" wyswietla sie
+        menu takie, jak po uzyciu karty "Maintenance".
+      - "O.S.: KO RAM" - taki napis pojawia sie, gdy pamiec RAM jest
+        niesprawna lub po prostu jej ukladu nie ma w automacie.
+      - "x       " - napis ten, a dokladnie 5 pikseli ulozonych w krzyzyk
+        w lewym gornym rogu wyswietlacza, przestal byc zagadka! Kiedy po
+        przekroczeniu liczby rozmow okreslonej w "CALLS NUM." lub zajsciu
+        zdarzenia wymagajacego natychmiastowego poinformowania automat
+        probuje nawiazac polaczenie z centrum nadzoru i mu sie to nie
+        uda, np. z powodu zajetej linii centrum nadzoru, zapamietuje ten
+        fakt i po uplynieciu pewnego czasu ponownie probuje nawiazac
+        polaczenie. Wlasnie wtedy, podczas nawiazywania polaczenia,
+        wyswietlany jest ten napis.
+      - "DISABLED CARD" - ten napis tez jest dziwny; nie jest on w ogole
+        wykorzystywany i wystepuje w zupelnie w innym miejscu programu
+        niz wszystkie inne napisy. Byc moze mial byc uzywany w przypadku
+        proby uzycia karty o niewlasciwym (zablokowanym) numerze serii.
+      - "REMOVE CARD", "THANK YOU" - te napisy mozna obejrzec przy
+        uruchamianiu pelnego menu serwisowego metoda opisana przez
+        Slammera (slammer.faq) - normalnie po wyswietleniu ich polskich
+        odpowiednikow automat zmienia napis lub wylacza wyswietlacz
+        i wersje angieskie nie zdazaja sie wyswietlic.
+      - "OPEN/CLOSE DOOR" - napis ten pojawil sie w sofcie 3.0, byc moze
+        mial on sluzyc do dodatkowego zabezpieczenia przed uzyciem "DEFAULT
+        MENU", a byc moze mial byc wyswietlany po uzyciu wiekszosci z kart
+        serwisowych jako informacja o koniecznosci podjecia dodatkowych
+        dzialan :) W efekcie koncowym nie sluzy on do niczego (nie jest
+        wykorzystywany).
+
+N25.INSTRUKCJA WYMIANY EPROMU
+    Ponizsze informacje sa sprawdzone praktycznie i czesciowo oparte na dos-
+    wiadczeniach Nola. Przy prawidlowym wykonaniu gwarantuja 100% niezauwa-
+    zalnosci wymiany EPROMu z poziomu centrali. Otoz aby wymienic pamiec
+    EPROM, nalezy przede wszystkim otworzyc automat. Dobra wiadomoscia jest
+    to, ze mozemy uniknac ustawienia kodu diagnostycznego 13 oznaczajacego
+    otwarcie automatu. Czujnik otwarcia znajduje sie u dolu po lewej stronie.
+    Jezeli po przekreceniu zamka lekko uchylimy drzwiczki z prawej strony tak,
+    zeby ich lewa krawedz dalej byla docisnieta do obudowy, mozemy przez pow-
+    stala szpare wlozyc reke i odlaczyc kabelek czujnika. Jest on wpiety
+    gdzies w srodku plyty glownej i jego znalezienie nie stanowi problemu.
+    Po odlaczeniu czujnika automat caly czas mysli, ze jest zamkniety. W po-
+    dobny sposob mozemy pozniej podlaczyc czujnik przy zamykaniu automatu.
+    Nastepnie PRZY ODLOZONEJ SLUCHAWCE otwieramy drzwiczki do konca i dla
+    pewnosci resetujemy automat. Teraz juz mozemy spokojnie wymienic EPROM.
+    Sens tej metody jest nastepujacy: Nol dokonal slusznego spostrzezenia,
+    ze przy odwieszonej sluchawce i zamknietych drzwiczkach (lub odpietym
+    czujniku otwarcia :) procesor nie pracuje i automat jest uspiony. Budzi
+    sie dopiero po wlaczeniu sie czujnika otwarcia drzwiczek lub podniesieniu
+    sluchawki. Raz na jakis czas (rzedu godziny) budzi sie tez zeby sprawdzic,
+    czy nie ma czegos do przekazania do centrum nadzoru w przypadku, gdyby
+    wczesniej polaczenie z centrum nadzoru sie nie powiodlo. A wiec gdy auto-
+    mat spi, mozna bez zadnych negatywnych konsekwencji wyjac EPROM i wlozyc
+    nowy. Nastepnie dla pewnosci resetujemy automat, przymykamy drzwiczki tak,
+    aby oszukac czujnik otwarcia, podpinamy kabelek tegoz czujnika i zamykamy
+    automat. Nalezy tylko pamietac o tym, zeby sluchawka byla caly czas od-
+    wieszona. I to cala filozofia :)
+
+    Jeszcze pare rad praktycznych:
+
+      -  Do otwierania automatow w zimie dobrze jest wziac sobie
+         odmrazacz do zamka... (no i klucze :)
+
+      -  Jezeli wymieniamy EPROM tylko na probe i chcemy pozniej
+         przywrocic oryginalny, duzym ulatwieniem jest wlozenie naszego
+         probnego EPROMu w podstawke do ukladow scalonych i dopiero z ta
+         podstawka na plyte glowna. Kazdy, kto choc raz wymienial EPROM
+         wie, ze wlozenie wszystkich nozek naraz moze byc problemem -
+         podane rozwiazanie jest duzym ulatwieniem.
+
+      -  Jezeli chcemy wymienic uklad na stale, dobrze jest pomyslec nad
+         naklejka na uklad taka jak oryginalna albo przynajmniej zakleic
+         okienko kwarcowe zwykla nalepka celem zapobiezenia rozprogramo-
+         waniu sie EPROMu.
+
+      -  Dobrze jest pamietac, ze przy zmianie wersji EPROMu programowane
+         sa domyslne ustawienia konfiguracyjne. Co z tego wynika i jak
+         z tym walczyc opisalem gdzies wyzej w rozdziale "Programowanie
+         wartosci domyslnych w EEPROM".
+
+      -  Jezeli z jakichs wzgledow potrzebujemy wlaczyc pelne menu
+         serwisowe w uszkodzonym automacie (wtedy czytnik nie przyjmuje
+         kart i nie da sie wlozyc Programminga), mozna do uruchomienia
+         menu wykorzystac metode opisana w slammer.faq przez Slammera :)
+
+      -  Zamiast meczyc sie z odlaczaniem kabelka czujnika otwarcia,
+         mozna otworzyc automat nie zwazajac na czujnik, nastepnie dopiero
+         wtedy odlaczyc czujnik, wykonac reset, wymienic EPROM, powtornie
+         zresetowac automat dla pewnosci, podlaczyc kabelek czujnika
+         i zamknac automat. Pozostaje tylko jeden problem - automat zechce
+         zadzwonic do centrum nadzoru. Aby mu to wyperswadowac, nalezy uzyc
+         metody opisanej we wczesniejszym rozdziale "Sposob na uniemozliwie-
+         nie komunikacji z centrum nadzoru". Nalezy sie tylko pospieszyc, aby
+         po zamknieciu automatu nie zdazyl on rozpoczac komunikacji... Dobrze
+         jest wtedy wymazac tez kody diagnostyczne, zeby do centrum nadzoru
+         nie trafil kod 13 (otwarcie automatu) - TPSA pomysli wtedy najwyzej,
+         ze ktos bawil sie karta serwisowa. Gorzej, gdy wymieniany EPROM to
+         5.8, wtedy wymazanie kodow diagnostycznych jednoznacznie sugeruje,
+         ze nie zrobiono tego karta serwisowa...
+
+N26.ZAKLOCANIE AUTOMATU TELEFONEM KOMORKOWYM
+    Kiedys potrzebowalem numer automatu, wiec zadzwonilem z niego na swoja
+    komorke, ktora lezala na automacie po prawej stronie nad czytnikiem.
+    Kiedy komorka zaczela sie laczyc, karta nagle wypadla i automat stwier-
+    dzil, ze jest zepsuty. Po dluzszym nacisnieciu widelek wszystko wrocilo
+    do normy, popatrzylem wiec do kodow diagnostycznych, a tam ustawiony
+    kod 84 "Proba oszustwa wykryta magnetycznie; glowica magnetyczna wykryla
+    probe wyjecia karty przed zakonczeniem rozmowy". Okazalo sie, ze laczaca
+    sie z siecia komorka skutecznie oglupila automat, ktory myslal, ze chce
+    go oszukac. Moje szczescie polegalo na tym, ze wczesniej nigdzie z tej
+    karty nie dzwonilem. Gdybym dzwonil, procesor czytnika, wiedzac, ze
+    z karty nalezy przy wyrzucaniu skasowac jakies jednostki, po wystapieniu
+    "proby oszustwa" skasowalby cala karte... A tak po prostu ja wyrzucil bez
+    kasowania czegokolwiek. Wniosek jest stad taki, ze gdy dzwonimy uzywajac
+    karty, nie powinnismy klasc swojej komorki na automacie, a zwlaszcza nad
+    czytnikiem, gdyz jesli podczas naszej rozmowy ktos zadzwoni do nas na
+    komorke, automat rozlaczy nas i skasuje nam przy tym cala karte. Dotyczy
+    to oczywiscie tylko automatow niebieskich i zdarza sie gdzies w jednej
+    piatej z nich.
+
+N27.DOSWIADCZENIE
+    Kiedys podobno dzialalo cos takiego, ze gdy kredyt dobiegal do zera
+    i wlozylo sie w ramach wymiany pusta karte, to automat dawal sie oszukac.
+    Nie sprawdzalem tego w starych wersjach oprogramowania, ale postanowilem
+    sprawdzic cos innego: co sie stanie, gdy przy wymianie wlozy sie karte
+    serwisowa? Okazalo sie, ze nie stalo sie nic specjalnego: automat zerwal
+    polaczenie i wyswietlil menu...
+
+N28.PODSUMOWANIE
+    Odnosnie niebieskich automatow chyba wszystko juz zostalo wymyslone,
+    a ich zywot powoli dobiega konca, choc pojedyncze egzemplarze, zwlaszcza
+    w budynkach roznych firm i instytucji, pewnie jeszcze dlugo beda dawaly
+    spore mozliwosci dzwonienia za darmo... :)
+
+
+
+
+============ CZESC II - Urmet srebrny TPE 97/U ===============================
+
+S1. WSTEP
+    Opisane ponizej zagadnienia sa wynikiem moich prac nad softem srebrnego
+    Urmeta wspieranych pomoca kolegow po fachu. Zadziwiajace, jak wiele mozna
+    osiagnac w ciagu kilkunastu tygodni przy wspolpracy z paroma znajacymi sie
+    na rzeczy osobami i uzywajac dobrego deasemblera, a od czasu do czasu zer-
+    kajac tez do instrukcji automatu i centrum nadzoru. Jesli masz dokladniej-
+    sze informacje na tematy opisane ponizej lub znalazles jakies bledy lub
+    niescislosci, chetnie zamieszcze uaktualnienie.
+
+S2. OGOLNA BUDOWA PROGRAMU
+    Program plyty glownej napisany jest w jezyku wysokiego poziomu i podzielo-
+    ny jest na bloki, z ktorych pierwszy blok to tzw. program bootujacy, ktory
+    sprawdza integralnosc bloku glownego programu i w razie jego uszkodzenia
+    moze sciagnac go z centrum nadzoru (STG97). Drugi blok to program glowny,
+    jest on chroniony suma kontrolna, zawiera miedzy innymi tablice dekodujace
+    dla algorytmu DES, napisy w szesciu jezykach uzywane przez automat (choc
+    teoretycznie na napisy przewidziany jest osobny blok w pamieci FLASH/plik
+    w centrum nadzoru) i oczywiscie wszystkie procedury do obslugi automatu.
+    Uproszczone wersje wielu procedur z bloku glownego znajduja sie w bloku
+    bootujacym, w zakresie pozwalajacym na komunikacje z centrum nadzoru
+    i zaprogramowanie sciagnietych danych w pamieci FLASH, a takze kodowanie
+    danych algorytmem DES. Pozostale bloki to dane konfiguracyjne. Kazdy blok
+    moze byc osobno sciagniety z centrum nadzoru, gdzie znajduje sie w osobnym
+    pliku. Dane znajdujace sie w pamieci FLASH nie sa w zaden sposob kodowane
+    i nadaja sie wprost do deasemblacji. Najlepszym do tego celu narzedziem
+    jest IDA - The Interactive Disassembler, a dzien wlozony w nauke tego
+    narzedzia zwroci sie dnia nastepnego :) Prawde mowiac, nie wyobrazam sobie
+    deasemblowania takiej ilosci kodu jakims innym prostszym deasemblerem. IDA
+    mozna sciagnac ze strony Hrabiego - phreak.hack.pl. Do obslugi automatu
+    uzywany jest mikrokontroler Hitachi H8-3003, posiada on przestrzen adre-
+    sowa 16MB. Budowa programu jest dosc elastyczna, w pamieci RAM istnieje
+    tablica adresow najwazniejszych funkcji wraz z miejscem na parametry ich
+    wywolania. Tablica ta inicjalizowana jest przez program bootujacy, pozniej
+    niektore funkcje sa podmieniane na bardziej rozbudowane przez program
+    glowny, a pozniej uzywane sa tylko odwolania do tej tablicy (troche mi to
+    przypomina tabele metod wirtualnych w programowaniu obiektowym). Tak wiec
+    przejecie inicjalizacji tablicy pozwala na zamiane wywolania danej funkcji
+    na inna funkcje od razu w calosci programu :) Przy rozpoczynaniu deasem-
+    blacji powstaje problem od czego zaczac. Dobrym punktem zaczepienia w na-
+    szym przypadku moga byc napisy wyswietlane przez automat. Niestety, proby
+    wyszukania w kodzie bezwzglednych adresow napisow nie daly zadnego rezul-
+    tatu, zastosowalem wiec inne podejscie. Napisy kolejnych wersji jezykowych
+    przesuniete sa wzgledem siebie o staly offset, ktorego wartosc musi byc
+    uzywana przez procedure zmieniajaca biezacy jezyk napisow. No i nie pomy-
+    lilem sie :) W ten sposob doszedlem do procedury wyswietlajacej zadany
+    napis, a wiedzac, gdzie i pod jakim warunkiem co sie wyswietla, mozna juz
+    zrobic wszystko. I jeszcze jedna bardzo wazna uwaga: mikrokontroler Hita-
+    chi H8-3003 posiada architekture i liste instrukcji oparte na uP Motorola
+    68000, a z tego wynika bardzo wazna rzecz: kazda instrukcja ma dlugosc
+    wyrazona przez parzysta liczbe bajtow i kazda instrukcja musi sie zaczynac
+    pod parzystym adresem! Rowniez odczyt lub zapis zmiennej o dlugosci slowa
+    lub podwojnego slowa musi nastepowac pod parzyste adresy. Zmienne o roz-
+    miarze bajtu moga byc umieszczane pod adresami nieparzystymi. Jesli nie
+    spelnimy tych warunkow, spowodujemy blad adresowania i prawdopodobnie
+    rowniez crash systemu czytaj automatu.
+
+S3. WYJATKI
+    Ponizej znajduje sie krotki wykaz wyjatkow uzywanych przez oprogramowanie.
+    Pozostale w mniej lub bardziej skomplikowany sposob nie robia dokladnie
+    nic. Na poczatku wiersza znajduje sie adres wektora wyjatku, pozniej numer
+    wyjatku wraz z adresem wskazywanym przez wektor wyjatku (w nawiasach kwad-
+    ratowych), a na koncu krociutki opis.
+
+      0x000000: Exception 0x00 [0x001000] - RESET
+
+      0x000034: Exception 0x0D [0x001D22] - IRQ 1 - Przerwanie zewnetrzne 1
+
+      0x000038: Exception 0x0E [0x001D5A] - IRQ 2 - Przerwanie zewnetrzne 2
+
+      0x00003C: Exception 0x0F [0x001D92] - IRQ 3 - Przerwanie zewnetrzne 3
+
+      0x000090: Exception 0x24 [0x001E84] - IMIA 3 - Przerwanie zegarowe
+                                            wywolywane co 5 milisekund
+
+      0x0000B0: Exception 0x2C [0x002020] - DEND 0A - Kontroler DMA: koniec
+                                            przesylania danych kanalem 0A
+
+      0x0000D0: Exception 0x34 [0x001F80] - RECEIVE ERROR 0 - Interfejs SCI
+                                            kanal 0: komunikacja z czytnikiem:
+                                            blad odczytu bajtu
+
+      0x0000D4: Exception 0x35 [0x001F8C] - RECEIVE DATA FULL 0 - Interfejs
+                                            SCI kanal 0: komunikacja z czytni-
+                                            kiem: otrzymano bajt
+
+      0x0000E0: Exception 0x38 [0x001F9C] - RECEIVE ERROR 1 - Interfejs SCI
+                                            kanal 1: komunikacja z modemem:
+                                            blad odczytu bajtu
+
+      0x0000E4: Exception 0x39 [0x001FD2] - RECEIVE DATA FULL 1 - Interfejs
+                                            SCI kanal 1: komunikacja z mode-
+                                            mem: otrzymano bajt
+
+      0x0000E8: Exception 0x3A [0x002000] - TRANSMIT DATA EMPTY 1 - Interfejs
+                                            SCI kanal 1: komunikacja z mode-
+                                            mem: pusty rejestr danych wysyla-
+                                            nych do modemu
+
+      0x0000F0: Exception 0x3C [0x0020F4] - A/D CONVERSION COMPLETE - Zakon-
+                                            czono przetwarzanie A/D (np. od-
+                                            czyt temperatury zewnetrznej).
+
+S4. REJESTRY UKLADOW PERYFERYJNYCH
+    Mikrokontroler, jak sama nazwa wskazuje, zawiera w swojej obudowie oprocz
+    mikroprocesora rowniez zintegrowane uklady peryferyjne. Ponizej umiescilem
+    odwzorowanie rejestrow ukladow peryferyjnych w przestrzen adresowa mikro-
+    kontrolera Hitachi - tak jak jest to w automacie (zebranie tych informacji
+    w jedna calosc wcale nie bylo takie proste). Po dokladniejsze informacje
+    na temat rejestrow i ukladow peryferyjnych odsylam do danych producenta.
+    Na poczatku znajduje sie adres, pod jakim widoczny jest rejestr, pozniej
+    nazwa rejestru, a na koncu nazwa ukladu peryferyjnego, do ktorego nalezy
+    dany rejestr.
+
+      @0xFFFFFF27:     Rejestr ?
+      @0xFFFFFF2F:     Rejestr ?
+
+      @0xFFFFFF60:     Rejestr TSTR        - ITU (all channels)
+      @0xFFFFFF61:     Rejestr TSNC        - ITU (all channels)
+      @0xFFFFFF62:     Rejestr TMDR        - ITU (all channels)
+      @0xFFFFFF63:     Rejestr TFCR        - ITU (all channels)
+      @0xFFFFFF64:     Rejestr TCR0        - ITU channel 0
+      @0xFFFFFF65:     Rejestr TIOR0       - ITU channel 0
+      @0xFFFFFF66:     Rejestr TIER0       - ITU channel 0
+      @0xFFFFFF6E:     Rejestr TCR1        - ITU channel 1
+      @0xFFFFFF6F:     Rejestr TIOR1       - ITU channel 1
+
+      @0xFFFFFF70:     Rejestr TIER1       - ITU channel 1
+      @0xFFFFFF78:     Rejestr TCR2        - ITU channel 2
+      @0xFFFFFF79:     Rejestr TIOR2       - ITU channel 2
+      @0xFFFFFF7A:     Rejestr TIER2       - ITU channel 2
+
+      @0xFFFFFF82:     Rejestr TCR3        - ITU channel 3
+      @0xFFFFFF83:     Rejestr TIOR3       - ITU channel 3
+      @0xFFFFFF84:     Rejestr TIER3       - ITU channel 3
+      @0xFFFFFF85:     Rejestr TSR3        - ITU channel 3
+      @0xFFFFFF87:     Rejestr TCNT3L      - ITU channel 3
+
+      @0xFFFFFF90:     Rejestr TOER        - ITU (all channels)
+      @0xFFFFFF91:     Rejestr TOCR        - ITU (all channels)
+      @0xFFFFFF92:     Rejestr TCR4        - ITU channel 4
+      @0xFFFFFF93:     Rejestr TIOR4       - ITU channel 4
+      @0xFFFFFF94:     Rejestr TIER4       - ITU channel 4
+      @0xFFFFFF97:     Rejestr TCNT4L      - ITU channel 4
+
+      @0xFFFFFFAB:     Rejestr RSTCSR      - WDT
+
+      @0xFFFFFFB0:     Rejestr SMR         - SCI channel 0
+      @0xFFFFFFB1:     Rejestr BRR         - SCI channel 0
+      @0xFFFFFFB2:     Rejestr SCR         - SCI channel 0
+      @0xFFFFFFB3:     Rejestr TDR         - SCI channel 0
+      @0xFFFFFFB4:     Rejestr SSR0        - SCI channel 0
+      @0xFFFFFFB5:     Rejestr RDR0        - SCI channel
+      @0xFFFFFFB8:     Rejestr ?
+      @0xFFFFFFB9:     Rejestr ?
+      @0xFFFFFFBA:     Rejestr ?
+      @0xFFFFFFBB:     Rejestr ?
+      @0xFFFFFFBC:     Rejestr SSR1        - SCI channel 0
+      @0xFFFFFFBD:     Rejestr RDR1        - SCI channel 0
+
+      @0xFFFFFFC5:     Rejestr P4DR/P4DDR  - port 4
+      @0xFFFFFFC7:     Rejestr ?
+      @0xFFFFFFC8:     Rejestr P5DR/P5DDR  - port 5
+      @0xFFFFFFC9:     Rejestr P6DR        - port 6
+      @0xFFFFFFCA:     Rejestr ?           - port 6
+      @0xFFFFFFCB:     Rejestr P6DR        - port 6
+      @0xFFFFFFCD:     Rejestr P8DDR       - port 8
+      @0xFFFFFFCE:     Rejestr P7DR        - port 7
+      @0xFFFFFFCF:     Rejestr P8DR        - port 8
+
+      @0xFFFFFFD0:     Rejestr P9DDR       - port 9
+      @0xFFFFFFD1:     Rejestr PADDR       - port A
+      @0xFFFFFFD2:     Rejestr P9DR        - port 9
+      @0xFFFFFFD3:     Rejestr PADR        - port A
+      @0xFFFFFFD4:     Rejestr PBDDR       - port B
+      @0xFFFFFFD5:     Rejestr PCDDR       - port C
+      @0xFFFFFFD6:     Rejestr PBDR        - port B
+      @0xFFFFFFD7:     Rejestr PCDR        - port C
+
+      @0xFFFFFFE0:     Rejestr ADDRAH      - A/D converter
+      @0xFFFFFFE2:     Rejestr ADDRBH      - A/D converter
+      @0xFFFFFFE4:     Rejestr ADDRCH      - A/D converter
+      @0xFFFFFFE6:     Rejestr ADDRDH      - A/D converter
+      @0xFFFFFFE8:     Rejestr ADCSR       - A/D converter
+      @0xFFFFFFEC:     Rejestr ?           - bus controller
+      @0xFFFFFFED:     Rejestr ASTCR       - bus controller
+      @0xFFFFFFEE:     Rejestr WCR         - bus controller
+      @0xFFFFFFEF:     Rejestr WCER        - bus controller
+
+      @0xFFFFFFF2:     Rejestr SYSCR       - system control
+      @0xFFFFFFF3:     Rejestr ?           - system control
+      @0xFFFFFFF4:     Rejestr ISCR        - interrupt controller
+      @0xFFFFFFF5:     Rejestr IER         - interrupt controller
+      @0xFFFFFFF6:     Rejestr ISR         - interrupt controller
+      @0xFFFFFFF8:     Rejestr IPRA        - interrupt controller
+      @0xFFFFFFF9:     Rejestr IPRB        - interrupt controller
+
+S5. KODY KLAWIATURY
+    Ponizej przedstawilem kody klawiatury automatu:
+
+      0x0023:     #
+      0x002A:     *
+      0x0030:     0
+      ...
+      0x0039:     9
+      0x3B00:     A
+      0x3C00:     B
+      0x3D00:     C
+      0x3E00:     D
+      0x3F00:     TRL - FC (Nastepne polaczenie)
+      0x4000:     RP  - RD (Redial)
+      0x4100:     LIN - Zmiana jezyka
+      0x4200:     VOL - Zmiana glosnosci
+      0x4300:     TC  - Wymiana karty
+
+S6. PAMIECI ZNAMIONOWE (BOLLINO) I METRYCZKA APARATU
+    W automacie znajduje sie 5 pamieci znamionowych tzw. bollino w 5 najwaz-
+    niejszych modulach automatu. Sa to male (256 bajtow) pamieci szeregowe
+    EEPROM 24C02 z interfejsem I2C ("I kwadrat C"), kazda z tych pamieci
+    zawiera 11 bajtow danych, ktore jednoznacznie identyfikuja dany modul.
+    Teoretycznie program plyty glownej ma mozliwosc zmieniania zawartosci
+    tych pamieci, w praktyce ogranicza sie tylko do ich odczytu (co jest
+    zrozumiale). Obok kazdej z pamieci podany jest adres, pod jakim pamiec
+    jest widziana na szynie I2C:
+
+      I2C 0xFF:     Bollino CZYTNIK       - 11 bajtow danych
+      I2C 0x01:     Bollino KLAWIATURA    - 11 bajtow danych
+      I2C 0x02:     Bollino MIKROTELEFON  - 11 bajtow danych
+      I2C 0x03:     Bollino WYSWIETLACZ   - 11 bajtow danych
+      I2C 0x04:     Bollino PLYTA GLOWNA  - 11 bajtow danych
+
+    Oprocz wymienionych wyzej pamieci znamionowych na plycie glownej znajduje
+    sie rowniez pamiec szeregowa EEPROM I2C (prawdopodobnie 24C08 - 1024 baj-
+    ty) zawierajaca najwazniejsze ustawienia automatu, ktore umozliwiaja na-
+    wiazanie polaczenia z centrum nadzoru nawet w przypadku utraty danych
+    konfiguracyjnych zapisanych w pamieci FLASH automatu:
+
+      I2C 0x05:     Metryczka aparatu     - 43 bajty danych
+
+    Dane w metryczce wygladaja nastepujaco:
+
+      0x00..0x01 - prefiks aparatu w kodzie BCD
+      0x02..0x07 - numer aparatu w kodzie BCD
+      0x08..0x09 - nieuzywane
+      0x0A       - aktywnosc STG: 0x00 = STG aktywne, inne = STG nieaktywne
+                   (tak, 0 oznacza aktywnosc)
+      0x0B       - offset cyfry 0x0D w prefiksie STG. Normalnie cyfry
+                   zawieraja sie w przedziale 0x01..0x0A (0x0A odpowiada
+                   cyfrze "0"). Cyfra 0x0D ma specjalne znaczenie i prawdo-
+                   podobnie oznacza, ze w miejscu jej wystapienia automat
+                   powinien zrobic krotka przerwe w wybieraniu numeru
+                   (oczekiwanie na sygnal centrali miedzymiastowej)
+      0x0C..0x0D - prefiks STG1 (pierwszego STG) w kodzie BCD
+      0x0E..0x15 - numer STG1 (pierwszego STG) w kodzie BCD
+      0x16..0x17 - prefiks STG2 (drugiego STG) w kodzie BCD
+      0x18..0x1F - numer STG2 (drugiego STG) w kodzie BCD
+      0x20..0x28 - nieuzywane
+      0x29       - rodzaj wybierania: 0x00 = Pulse, 0x80 = DTMF
+      0x2A       - predkosc modemu: 0x00 = 1200 bps, inne = 2400 bps
+
+    Dane w metryczce sa aktualizowane podczas sciagania z STG pliku z kon-
+    figuracja oraz podczas zmiany odpowiednich ustawien w menu automatu.
+
+S7. KARTY ZWYKLE
+    Srebrny automat porzadkuje sobie karty w 64 emisje po 256 serii z 65536
+    kartami w serii (wyciagniete z softu przez Nola). Rodzaj karty jest roz-
+    poznawany przez modul czytnika, plyta glowna otrzymuje tylko gotowe dane
+    odczytane z karty wraz z informacja o jej rodzaju. Karty zagranicznych
+    operatorow sa odrzucane, przy czym jezeli na karcie takiej znajduja sie
+    jednostki, automat wypisuje "KARTA NIEWAZNA", a jesli jednostek nie ma -
+    "KARTA ZUZYTA". Jest siedem rodzajow kart zwyklych (z jednostkami) roz-
+    poznawanych przez srebrne automaty:
+
+    a) Karta magnetyczna czerwona
+
+       Jest to zwykla najstarsza karta magnetyczna, mozliwe sa 4 emisje po
+       256 serii z 65536 kartami w serii. Dokladniejszy ich opis znajduje sie
+       w rozdziale "Karty Zwykle" w Czesci I. Automat srebrny nie rozroznia
+       kart w jendostkach taryfikacyjnych i w jednostkach Tax Value, takie
+       rozroznienie nie jest mu zreszta do niczego potrzebne, gdyz nie posiada
+       on odpowiednika wartosci Tax Value z niebieskiego Urmeta. Karta czerwo-
+       na jest od pewnego juz czasu zablokowana na srebrnych automatach.
+
+    b) Karta magnetyczna zielona
+
+       Jest to nowszy rodzaj karty magnetycznej, mozliwe sa 64 emisje po 256
+       serii z 65536 kartami w serii. Poza tym karty te roznia sie od kart
+       zielonych innym sposobem nagrania niektorych jedynek, o czym bolesnie
+       przekonali sie ostatnio (po zablokowaniu przez TPSA kart czerwonych na
+       srebrnych automatach) wszyscy ci, ktorzy produkuja sobie karty. Odpo-
+       wiedni algorytm zostal juz jednak zlamany :) (nie przeze mnie!).
+       UWAGA! Algorytm ten miesci sie w programie czytnika, a nie plyty
+       glownej.
+
+     c) Karta elektroniczna niebieska
+
+        Jest to karta elektroniczna o niestandardowym formacie zapisanych na
+        niej danych. Kart tych nie ma w obiegu i sa zablokowane. Istnieje moz-
+        liwosc wlaczenia nastepujacego zapezpieczenia dla tych kart: niektore
+        bajty z karty zostaja zakodowane odpowiednim kluczem DES i wynik kodo-
+        wania zostaje porownany znowu z odpowiednimi bajtami na karcie. Jezeli
+        wartosci beda identyczne, karta jest akceptowana. W sofcie istnieje
+        tablica, w ktorej sa zawarte wspomniane klucze DES, osobny klucz dla
+        kazdej serii kart. Obecnie tablica ta jest cala pusta, czyli zabezpie-
+        czenie to jest wylaczone.
+
+     d) Karta magnetyczna niebieska
+
+        Jest to karta magnetyczna o zupelnie nietypowym jak na karte magne-
+        tyczna formacie danych - zawiera ona 16 bajtow danych identycznych,
+        jak w opisanej podpunkt wyzej karcie elektronicznej! Bez zadnych
+        sum kontrolnych i algorytmow zabezpieczajacych!!! Istnieje mozliwosc
+        zabezpieczenia tych kart dodatkowym algorytmem (tym z DES-em), takim
+        samym jak dla karty elektronicznej niebieskiej. Karty te sa wylaczone
+        z obiegu.
+
+     e) Karta elektroniczna OTO Lublin
+
+        Jest to karta elektroniczna o standardowym formacie zapisanych na niej
+        danych. Karty te sa uzywane coraz powszechniej w Polsce. Posiadaja one
+        wlasciwosc, o ktorej malo kto slyszal. Mianowicie na karcie moze byc
+        zapisany maksymalnie 12-cyfrowy numer telefoniczny! Jezeli numer ten
+ *      nie jest pusty i nie znajduje sie na liscie numerow zablokowanych, po
+        wlozeniu karty do automatu zostanie on automatycznie wybrany. Nie ma
+        mozliwosci wybrania innego numeru. Teoretycznie moze byc to przydatne
+        np. dla firmy, ktora daje karte pracownikowi, zeby jej nie zuzyl na
+ *      niecne cele :) Nie stosuje sie jednak tego rozwiazania, gdyz polskie
+ *      karty zawieraja drugi klucz kryptograficzny i w zwiazku z tym nie ma
+ *      juz na nich miejsca na numer telefoniczny (patrz nizej do rozdzialu
+ *      "Format danych kart elektronicznych" - opis bajtow 22..27).
+
+     f) Karta elektroniczna RUCH 1
+
+ *      Jest to karta elektroniczna o standardowym formacie zapisanych na niej
+ *      danych. Karty te sa uzywane za granica. Jako karty RUCH 1 (wzglednie
+ *      RUCH 2) kwalifikowane sa karty nie rozpoznane jako karty elektroniczne
+ *      niebieskie, serwisowe lub OTO Lublin (patrz nizej do rozdzialu "Algo-
+ *      rytm rozpoznawania rodzaju karty elektronicznej").
+
+     g) Karta elektroniczna RUCH 2
+
+ *      Analogicznie jak karta RUCH 1 - patrz wyzej.
+
+S8. ALGORYTM ROZPOZNAWANIA RODZAJU KARTY ELEKTRONICZNEJ
+ *  Rodzaj karty jest rozpoznawany przez modul czytnika, tak wiec softem czyt-
+ *  nikow (automatow srebrnego i jajka) wspomagalem sie przy pisaniu tego roz-
+ *  dzialu. Rodzaje kart sa opisane w rozdzialach "Karty zwykle" oraz "Karty
+ *  serwisowe". Algorytm rozpoznawania rodzaju karty wyglada nastepujaco:
+ *
+ *  1) Czy DaneZKarty[0,1] = 0x97,0x74 albo 0x05,0xF4 albo 0x97,0xCC
+ *     NIE - 2)
+ *     TAK - Karta elektroniczna OTO Lublin
+ *
+ *  2) Czy DaneZKarty[0,1] = 0x17,0x04 (porownania tego dokonuje wylacznie
+ *     program czytnika w automacie srebrnym, tak wiec jajko nie rozpoznaje
+ *     kart elektronicznych niebieskich)
+ *     NIE - 3)
+ *     TAK - Karta elektroniczna niebieska
+ *
+ *  3) Czy DaneZKarty[0,1] = 0x19,0xC4
+ *     NIE - Karta RUCH 2
+ *     TAK - 4)
+ *
+ *  4) Czy DaneZKarty[3] xor DaneZKarty[4] xor DaneZKarty[5] xor
+ *     DaneZKarty[6] xor DaneZKarty[7] = 0
+ *     NIE - Karta serwisowa, typ karty = (DaneZKarty[5] and #0x0F)
+ *     TAK - Karta RUCH 1
+ *
+ *  Oczywiscie jest to sprawdzenie wstepne, karty elektroniczne niebieskie,
+ *  serwisowe i OTO Lublin (czyli te, ktore sa przewidziane do uzytku w Pols-
+ *  ce) musza spelnic jeszcze dodatkowe warunki przed ich ostatecznym zaakcep-
+ *  towaniem - patrz rozdzialy "Zabezpieczenia kart zwyklych", "Zabezpieczenia
+ *  kart serwisowych" oraz "Format danych kart elektronicznych".
+
+S9. LISTY KART
+    Automat posiada dwie listy kart, ladowane zdalnie z centrum nadzoru:
+
+    a) Biala lista kart
+       Zawiera ona dopuszczone do obiegu numery emisji kart oraz dla kazdej
+       emisji dozwolone w niej numery serii.
+
+    b) Czarna lista kart
+       Zawiera ona dane wylaczonych z obiegu kart. Opis kazdej karty zawiera
+       jej numer emisji, numer serii oraz numer kolejny w serii.
+
+    Na powyzsze listy wpisywane sa tylko karty zwykle (z jednostkami). Karta
+    moze byc zaakceptowana tylko wtedy, gdy jej numer emisji i serii znajduje
+    sie na bialej liscie i jej dane nie figuruja na czarnej liscie kart.
+
+S10.ZABEZPIECZENIA KART ZWYKLYCH
+    Zapis kart magnetycznych chroniony jest odpowiednimi sumami kontrolnymi
+    i (w kartach zielonych) innym sposobem zapisu niektorych jedynek wedlug
+    dodatkowego algorytmu. Jak powszechnie wiadomo, zabezpieczenia te nie sa
+    wystarczajace :) Ostatnio nawet pojawily sie karty od poczatku do konca
+    robione poza TPSA, lacznie z plastikiem i paskiem magnetycznym...
+
+    Natomiast karty elektroniczne z jednostkami to uklady dostarczane przez
+ *  Siemensa SLE 4436 (inaczej Eurochip), posiadajace wbudowany uklad genero-
+    wania odpowiedzi na pytania zadawane przez automat. W czytniku automatu
+    znajduje sie do pieciu kart mikroprocesorowych SAM (inaczej SiCrypt), wyg-
+    ladajacych jak mala karta SIM telefonu komorkowego. Kazda karta SAM zawie-
+ *  ra pelny klucz kryptograficzny oraz algorytm kryptograficzny do obslugi
+ *  kart jednego operatora, istnieje mozliwosc zdalnego ladowania klucza kryp-
+ *  tograficznego do modulu SAM. Algorytm kryptograficzny stosowany w module
+ *  SAM i karcie telefonicznej jest tajny (nie jest to DES). Istnieje ponad
+ *  20000 wariantow tego algorytmu, operator moze wybrac sobie dowolny sposrod
+ *  tych wariantow. Po wlozeniu karty do automatu odczytuje on najpierw 16
+    bajtow z karty (m.in. numer karty, liczbe jednostek). Dane te trafiaja do
+    modulu SAM. Nastepnie modul SAM losuje 48-bitowe pytanie i na podstawie
+    danych z karty, wylosowanego pytania, posiadanego klucza kryptograficznego
+    i algorytmu wylicza 16-bitowa odpowiedz, ktora trafia do procesora czytni-
+    ka. Wylosowane przez SAM pytanie trafia rowniez do karty. Karta na podsta-
+    wie swoich danych, otrzymanego pytania, zapisanego w niej klucza krypto-
+    graficznego i odpowiedniego algorytmu wylicza swoja odpowiedz, ktora tra-
+    fia rowniez do procesora czytnika. To wlasnie procesor w czytniku porownu-
+    je obydwie odpowiedzi i decyduje o zaakceptowaniu karty lub nie. Tak wiec,
+    jak widac, oprogramowanie procesora czytnika jest najlatwiejszym punktem
+    ataku na system :). Caly powyzej opisany proces zostal potwierdzony dos-
+    wiadczalnie przez Shadowa i mnie poprzez podsluchiwanie transmisji miedzy
+    czytnikiem i karta telefoniczna oraz czytnikiem i modulem SiCrypt srebrne-
+    go automatu. Nalezy dodac, ze kazda karta telefoniczna posiada klucz kryp-
+    tograficzny wstepnie przetworzony, w ktorym uwzgledniono juz jej numery
+    seryjne (dzieki czemu wyliczanie odpowiedzi jest szybsze). Z tego wynika,
+    ze klucz w karcie jest inny dla kazdej karty, czyli wyciagniecie tego klu-
+    cza pozwoli co najwyzej zrobic druga karte o takich samych numerach, co
+    bardzo ogranicza mozliwosci wykorzystania takiej sklonowanej karty. Pelny
+    klucz kryptograficzny jest tylko w module SAM. Proby odczytania odpowiedzi
+    na wszystkie mozliwe pytania sa z gory skazane na niepowodzenie. Po pierw-
+    sze modul SAM taktowany jest czestotliwoscia zaledwie ok. 3,57 MHz, czyli
+    odczytanie wszystkich odpowiedzi zajeloby tysiace albo raczej miliony lat.
+    Po drugie odczytane odpowiedzi, przy sensownym stopniu kompresji, zajelyby
+    co najmniej kilkaset gigabajtow. Po trzecie to modul SAM, a nie my, losuje
+    pytanie, a wiec im wiecej rozniacych sie od siebie pytan juz wylosowal,
+    tym mniejsze prawdopodobienstwo, ze wylosuje pytanie, ktorego jeszcze nie
+    bylo. Proby odczytania wszystkich mozliwych kombinacji mialyby sens tylko
+    wtedy, gdyby losowane przez modul SAM pytania nalezaly do sztucznie zawe-
+    zonego zbioru (byc moze tak jest, ale tego nie wiem). Pozostaje jeszcze
+    dekompozycja struktury modulu SAM w celu odczytania klucza i algorytmu
+    kryptograficznego, ale modul SAM jest przed tym doskonale zabezpieczony,
+    pomijajac juz fakt, ze trzeba do tego celu dysponowac sprzetem wartym
+    dziesiatki tysiecy dolarow i sztabem specjalistow. Moduly SAM produkuje
+    sie w stosunkowo malych ilosciach, dlatego nie ma koniecznosci oszczedza-
+    nia na ich zabezpieczniach. Pojedyncze karty telefoniczne moga byc gorzej
+    (co nie znaczy ze slabo) zabezpieczone (czyli tansze), gdyz zawieraja tyl-
+    ko klucz przetworzony, z ktorego nie da sie odzyskac pelnego klucza. Pod-
+    sumowujac, jak juz wspomnialem, atak na oprogramowanie czytnika (lub ewen-
+    tualnie plyty glownej) jest najlatwiejszym rozwiazaniem.
+
+    Istnieje mozliwosc stosowania kart elektronicznych z jednostkami nie
+    posiadajacych zabezpieczenia typu pytanie-odpowiedz (uklady SLE 4406).
+    Wyprodukowanie takiej karty w warunkach domowych nie przedstawia najmniej-
+    szych trudnosci, dlatego karty te, choc TPSA ich nie produkuje, na wszelki
+    wypadek zostaly w konfiguracji automatu zablokowane. Posiadajac program
+    centrum nadzoru mozna jednak zmienic w konfiguracji automatu jeden bit
+    i juz mozna uzywac takich kart do woli :) Jesli kiedys zobaczycie na
+    phreak.hack.pl filmik przedstawiajacy faceta uzywajacego karty chip
+    z kredytem rzedu powiedzmy 2000 jednostek, to bedziecie juz wiedziec,
+    co sobie o tym myslec :)
+
+    Istnieje takze mozliwosc stosowania kart elektronicznych z jednostkami
+    posiadajacych rozszerzone zabezpieczenie typu pytanie-odpowiedz (uklady
+    SLE 5536 - inaczej Eurochip II). W karcie takiej odpowiedz na pytanie
+    zalezy nie tylko od biezacego pytania, ale rowniez od pytan poprzednich.
+ *  W Polsce karty takie nie sa (jeszcze) stosowane.
+
+ *  Nie od rzeczy byloby dodac, ze uklady kart elektronicznych chronione sa
+ *  rowniez zanim zostana zaprogramowane przez dostawce kart (w Polsce - OTO
+ *  Lublin). Chodzi o to, ze w czasie podrozy ukladow scalonych sluzacych do
+ *  produkcji kart od producenta (Siemens) do dostawcy (ktory wkleja uklady
+ *  scalone w karty, przykleja styki, programuje na karcie np. poczatkowa war-
+ *  tosc licznika) uklady moglyby zostac skradzione i zaprogramowane przez
+ *  zlodzieja (na duza liczbe jednostek)... Mechanizm zabezpieczenia nie jest
+ *  skomplikowany: przed rozpoczeciem programowania ulkadu trzeba podac
+ *  mu odpowiednie 32-bitowe haslo, a jesli zostanie ono podane blednie piec
+    razy, uklad staje sie bezuzyteczny.
+
+    Po sprawdzeniu i zaakceptowaniu karty w automacie na podstawie sum kont-
+    rolnych (karta magnetyczna) lub odczytanej odpowiedzi (karta elektronicz-
+    na) sprawdzana jest zawartosc bialej i czarnej listy kart (patrz rozdzial
+    "Listy kart"). Jesli karta jest zawarta na bialej liscie i nie figuruje na
+    czarnej, zostaje dopuszczona do uzytku. Wada przyjetego rozwiazania jest
+    to, ze dane o ruchu kart gromadzone przez automat (w celu pozniejszego
+    przeslania ich do centrum nadzoru i pozniejszej ich tam analizy) nie sa
+    wykorzystywane na biezaco do decydowania o zaakceptowaniu karty lub nie.
+    Innymi slowy mozna po kolei wkladac do automatu jedna za druga karty-klony
+    z identycznymi numerami seryjnymi, a automat bez problemu je zaakceptuje!
+    Dopiero gdy automat przesle te dane do centrum nadzoru, a tam wyjdzie na
+    jaw, ze dana karta byla wykorzystywana wielokrotnie, centrum nadzoru
+    wciagnie ta karte (a scislej te karty :)) na czarna liste i po rozeslaniu
+    czarnej listy do automatow nie bedzie mozna wiecej korzystac z kart o da-
+    nym numerze. Wciagniecie karty na czarna liste trwa srednio kilka dni, co
+    daje pewne (choc moze nie za wielkie) mozliwosci. Jezeli karta nie zosta-
+    nie zaakceptowana, pojawi sie napis "KARTA NIEWAZNA". Centrum nadzoru jest
+    informowane o kazdej probie uzycia karty niewaznej wraz z jej numerami.
+ *  Oczywiscie odpowiednie poprawki w oprogramowaniu automatu moglyby wyelimi-
+ *  nowac mozliwosc stosowania kart-klonow w tym samym automacie juz przed
+ *  uaktualnieniem czarnej listy.
+
+    Podczas rozmowy jednostki z karty kasowane sa na biezaco. Wyjecie karty
+    podczas rozmowy (np. w celu jej zamiany na falszywa) powoduje natychmias-
+    towe przerwanie polaczenia, oczywiscie z wyjatkiem przypadku wyczerpania
+    sie kredytu na wymienianej karcie. W przypadku, gdy automat podczas rozmo-
+    wy nie moze odczytac karty albo skasowac z niej jednostki, rozmowa rowniez
+    jest przerywana. W przypadku karty magnetycznej, jezeli jednostki sa kaso-
+    wane bardzo szybko (np. polaczenie miedzynarodowe), to wyjatkowo automat
+    nie kasuje fizycznie jednostek na biezaco, tylko co kilka jednostek
+    (np. 4).
+
+    W oprogramowaniu plyty glownej, podobnie jak w niebieskim Urmecie, zapisa-
+    na jest tablica podzielnikow dla kart magnetycznych (patrz rozdzial "Karty
+    zwykle" w Czesci I). Na karcie zapisany jest indeks do tablicy podzielni-
+    kow. W przypadku niebieskiego automatu indeks 0 byl zabroniony i karta
+    byla wyrzucana z automatu (dla indeksu 0 nie bylo odpowiadajacej mu pozyc-
+    ji w tablicy podzielnikow). Automat srebrny posiada w tabeli pozycje row-
+    niez dla indeksu 0 i podzielnik wynosi wtedy... 0! Czyli liczba magnetycz-
+    nych jedynek z trzeciej czesci karty jest dzielona przez 0 i otrzymujemy
+    65535 jednostek!!! Niestety modul czytnika odrzuca takie karty, wiec nie
+    mozna tego wykorzystac, a szkoda... :)
+
+S11.KARTY KREDYTOWE
+    Choc z instrukcji centrum nadzoru STG97 wynika, ze automat obsluguje karty
+    kredytowe, to w calym sofcie w wersji 2.60 nie znalazlem prawie zadnego
+    fragmentu kodu zwiazanego z obsluga tych kart. Choc mozna np. zaprogra-
+    mowac z STG97 numery telefoniczne do centrum walidacji kart kredytowych,
+    to nie sa one do niczego wykorzystywane. Teoretycznie istnieja dwa rodzaje
+    obslugiwanych kart kredytowych: operatora (czyli u nas TPSA) oraz bankowe.
+    Automat ma nawet w czytniku osobna glowice do odczytu kart kredytowych,
+    szkoda, ze nie jest ona do niczego wykorzystywana, moze kiedys... We Wlo-
+    szech karty kredytowe operatora sa w powszechnym uzyciu, pewnie polega to
+    na posiadaniu konta u operatora telekomunikacyjnego (BTW we Wloszech opla-
+    ta naliczana jest juz od momentu wybrania numeru, czyli mozemy sie nie
+    dodzwonic, a i tak zaplacimy. Faktycznie placimy wiec za zajecie lacza.
+    Taki sposob naliczania oplaty jest stosowany rowniez w sieciach komorko-
+    wych. Swoja droga we Wloszech uzywane sa zupelnie inne modele automatow
+    (tez firmy Urmet), nie akceptuja one polskich kart magnetycznych ani elek-
+    tronicznych, nawet kart serwisowych: ani magnetycznych, ani chipowych).
+
+S12.MENU GLOWNE AUTOMATU
+    Zasady poruszania sie po menu sa analogiczne jak w niebieskim Urmecie.
+    Na poczatek objasnienie skrotow uzywanych w menu: OTP = BOOT PROGRAM
+    (One Time Programming), KO = ERROR, SW = SOFTWARE. Mozna sobie zmienic
+    jezyk wyswietlania menu za pomoca przycisku zmiany jezyka. Od razu nad-
+    mienie, ze numer uzywanej karty serwisowej jest wysylany do centrum nad-
+    zoru - ale nie dla kazdego typu karty, o czym bedzie nizej. W zalez-
+    nosci od typu karty niektore menu sie nie pojawiaja lub nie daja sie
+    zmieniac - patrz rozdzial "Karty serwisowe". Po wlozeniu karty serwi-
+    sowej pojawia sie menu powitalne:
+
+       ------------------
+       |    PIN  KOD    |
+       |      ****      |
+       ------------------
+
+       ------------------   ------------------
+       |   PIN KOD OK   |   | BLEDNY PIN KOD |
+       |OTWORZ DRZWICZKI|   |ODWIES SLUCHAWKE|
+       ------------------   ------------------
+
+       Niezaleznie od prawidlowosci podanego PIN-u karta jest wyrzucana.
+       Po prawidlowym podaniu PIN-u wyswietla sie napis proszacy o otwarcie
+       drzwiczek (ale nie zawsze, o tym bedzie potem :)), co nalezy uczynic,
+       a wtedy naszym oczom ukaze sie:
+
+       ------------------
+       |SW BOOT Ver.0.00|
+       |SW TPE  Ver.0.00|
+       ------------------
+
+       Oczywiscie zera zastapione sa odpowiednimi numerami wersji. Po nacis-
+       nieciu "*" wchodzimy do menu glownego:
+
+       ------------------
+    1. | KOD  OPERATORA |
+       |      238       |
+       ------------------
+
+       W sofcie automatu istnieje pewna tablica sluzaca do dekodowania kart
+       magnetycznych (taka sama zreszta jak w niebieskim Urmecie), a wyswiet-
+       lana w tym menu liczba jest pierwszym elementem tej tablicy (0xEE).
+       Czyli innymi slowy kazdy operator ma swoj kod i na jego podstawie deko-
+       dowane sa karty magnetyczne, co moze tlumaczyc fakt, ze polskie karty
+       sa nieczytelne we Wloszech (choc mozliwe ze zapis na wloskich kartach
+       jest zupelnie inny). W menu tym nic nie da sie zmieniac.
+
+       ------------------
+    2. |  USTAW ZEGAR   |
+       |                |
+       ------------------
+          ------------------   ------------------
+    2.1.  |dd/mm/rrrr gg:mm|   | USZKODZ  ZEGAR |
+          |                |   |                |
+          ------------------   ------------------
+
+          Jezeli mamy uprawnienia, po nacisnieciu "*" mozna zmienic ustawie-
+          nia zegara. Automat obsluguje lata 1997..2096. Dwukropek mruga sobie
+          slicznie pojawiajac sie dla kazdej parzystej liczby sekund :).
+
+       ------------------
+    3. |PREFIKS  APARATU|
+       |0000            |
+       ------------------
+
+       Maksymalnie 4 cyfry numeru kierunkowego automatu. Jezeli mamy upraw-
+       nienia, mozemy wpisac nowy numer, ktory zatwierdzamy klawiszem "*".
+       W przypadku rezygnacji z zapisania zmiany mozemy po prostu przejsc do
+       nastepnej pozycji menu klawiszem "#" albo... zmienic jezyk wyswietlania
+       menu, wtedy wraz z ze zmiana jezyka pojawi sie pierwotnie zaprogramowa-
+       ny numer.
+
+       ------------------
+    4. | NUMER  APARATU |
+       |000000000000    |
+       ------------------
+
+       Maksymalnie 12 cyfr numeru automatu. Po tym numerze STG97 rozpoznaje
+       m.in. rodzaj automatu i prawdopodobnie wpisanie tu numeru "jajka"
+       spowoduje, ze automat bedzie probowal sciagnac oprogramowanie przezna-
+       czone nie dla niego, co spowoduje oczywiscie jego awarie. Zasady edycji
+       numeru jak wyzej.
+
+       ------------------
+    5. |  PREFIKS  STG  |
+       |0000            |
+       ------------------
+
+       Maksymalnie 4 cyfry numeru kierunkowego do centrum nadzoru STG97.
+       Automat posiada w konfiguracji dwa numery do STG97 (oraz oczywiscie
+       dwa numery kierunkowe). Po uzyciu tego menu przeprogramowane zostaja
+       obydwa prefiksy na nowy wprowadzony z klawiatury. Zasady edycji
+       numeru jak wyzej.
+
+       ------------------
+    6. |   NUMER  STG   |
+       |0000000000000000|
+       ------------------
+
+       Maksymalnie 16 cyfr numeru do STG97. Po uzyciu tego menu zostaja
+       przeprogramowane obydwa numery STG97 na podany nowy numer. Zasady
+       edycji numeru jak wyzej.
+
+       Nalezy zauwazyc, ze numer aparatu w menu 4. moze miec maksymalnie 12
+       cyfr, a numery STG 16 cyfr. Zarowno numer aparatu, jak i obydwa numery
+       STG przechowywane sa w metryczce aparatu (w malej pamieci szeregowej
+       I2C). Awaria glownej pamieci FLASH nie spowoduje zatem zniszczenia nu-
+       meru aparatu i STG, a wiec STG poprawnie zidentyfikuje aparat, zapisze
+       w bazie danych fakt jego uszkodzenia i ewentualnie przesle konfiguracje
+       stosowna dla danego aparatu. Numery STG przechowywane sa oprocz tego
+       w pamieci FLASH zawierajacej cala konfiguracje automatu.
+
+       ------------------   ------------------
+    7. |TYP WYBIERANIA  |   |TYP WYBIERANIA  |
+       |WYBIERANIE: DTMF|   |WYBIERANIE: DEK |
+       ------------------   ------------------
+
+       W menu tym mozna recznie zmienic typ wybierania numeru (ale to usta-
+       wienie jest prawdopodobnie brane pod uwage tylko podczas wybierania
+       numeru do STG!) naciskajac klawisz "*". Menu to jest o tyle ciekawe,
+       ze jego wyswietlenie mozliwe jest tylko wtedy, gdy wersja programu
+       bootujacego jest rowna co najmniej 3.00. Poniewaz obecnie stosowana
+       wersja to 2.06, wiec prawdopodobnie nikt jeszcze nigdy tego menu na
+       oczy nie widzial.
+
+       ------------------   ------------------
+    8. |PREDKOSC TRANS  |   |PREDKOSC TRANS  |
+       |PREDKOSC: 1200  |   |PREDKOSC: 2400  |
+       ------------------   ------------------
+
+       Tutaj mozna (naciskajac "*") zmienic predkosc wymiany danych z STG.
+       Podobnie jak poprzednio, menu to wyswietla sie tylko dla wersji prog-
+       ramu bootujacego co najmniej 3.00. Dla wersji nizszych predkosc trans-
+       misji jest ustalana zawsze na 1200 bps, niezaleznie od tego, czy modem
+       potrafi obslugiwac predkosc 2400 bps! Jak juz napisalem wyzej, obecna
+       wersja bootprogramu to 2.06, tak wiec modem zawsze pracuje z predkos-
+       cia 1200 bps. No coz...
+
+       ------------------
+    9. |  MENU ALARMOW  |
+       |                |
+       ------------------
+          ------------------   ------------------
+    9.1.  |KOD ALARMOW  01 |   |KOD ALARMOW  -- |
+          |                |   |                |
+          ------------------   ------------------
+          ...
+          ------------------
+    9.56. |KOD ALARMOW  56 |
+          |                |
+          ------------------
+
+       Po wejsciu do tego menu mozna ogladac kody aktywnych alarmow. Kolejne
+       kody wyswietlaja sie przy naciskaniu "#". Liczba wyswietlanych kodow
+       zalezy od liczby aktywnych alarmow, jesli nie ma zadnych aktywnych
+       alarmow wyswietlane sa dwie pauzy. Kody numerowane sa od 1 do 56
+       i opisane beda w nastepnym punkcie. Nie wszystkie kody alarmow sa
+       wyswietlane w menu, niektore sa jedynie wysylane do STG. Istnieje
+       jednak specjalny typ karty serwisowej, ktory potrafi wyswietlic
+       ukryte kody.
+
+       ------------------
+    10.|    AUTOTEST    |
+       |                |
+       ------------------
+
+       To menu jest bardzo rozbudowane. Jego pozycje zostana opisane w jednym
+       z nastepnych punktow, jesli ktos jest zainteresowany, to niech tam
+       zajrzy.
+
+       ------------------   ------------------
+    11.|WSPOLPRACA Z STG|   |WSPOLPRACA Z STG|
+       |  STG AKTYWNE   |   | STG NIEAKTYWNE |
+       ------------------   ------------------
+
+       W tym menu mozna wlaczyc lub wylaczyc komunikacje z STG! Zmiana nas-
+       tepuje po uzyciu klawisza "*". To menu jest wyswietlane tylko po
+       uzyciu specjalnego rodzaju karty serwisowej.
+
+S13.KODY ALARMOW
+    Tutaj umiescilem troche dokladniejszy niz w instrukcji opis kodow. Chcial-
+    bym zwrocic uwage na Kod 23 - interesujacy pomysl... Poza tym mimo ze Kod
+    4 (otwarcie aparatu) nigdy nie jest ustawiany, to istnieje jeszcze Kod
+    25 - nieupowaznione otwarcie aparatu. Otwarcie jest upowaznione tylko wte-
+    dy, gdy najpierw wlozymy karte serwisowa i podamy prawidlowy PIN, w prze-
+    ciwnym razie ustawiany jest Kod 25. Natomiast po uzyciu karty serwisowej
+    do STG wysylane sa dane o wszystkich metryczkach (celem zidentyfikowania
+ *  ewentualnie wymienionych czesci) oraz numer karty serwisowej (nie jest
+ *  wysylany numer dla kart serwisowych typu VIII - o tym bedzie w rozdziale
+ *  "Karty serwisowe").
+
+    Legenda:
+    [x]  = po tej liczbie powtorzen danego zdarzenia ustawiana jest flaga
+           alarmu
+    [n]  = kod nie jest ustawiany -> nie jest wysylany do STG
+    !    = kody widoczne w menu tylko po uzyciu karty serwisowej typu X
+           (o tym bedzie pozniej)
+
+    ====================
+
+    [3]   Kod 01 - Utrata danych FLASH bialej lub czarnej listy
+    [3]   Kod 02 - Utrata danych metryczki aparatu - patrz rozdzial
+                   "Pamieci znamionowe (bollino) i metryczka aparatu"
+    [1]   Kod 03 - Utrata danych RAM - wyzerowany zostal chociaz jeden numer
+                   wersji sposrod plikow (numery wersji przechowywane sa
+                   w RAM) - automat wyswietla "NIEDOSTEPNY" (az do czasu
+                   sciagniecia brakujacych plikow z STG):
+                               - biala lista,
+                               - konfiguracja,
+                               - parametry centrali
+    [n]   Kod 04 - Otwarcie aparatu
+    [100] Kod 05 - 100 kolejnych zdjec mikrotelefonu bez uiszczenia oplaty
+    [1]   Kod 06 - Odlaczona linia
+    [5]   Kod 07 - Niewystarczajacy prad zasilania
+    [255] Kod 08 - 255 kolejnych zdjec mikrotelefonu bez uiszczenia oplaty
+                   (licznik zerowany przy wybraniu numeru A,B lub C (jesli
+                   numery te sa dozwolone))
+    [1]   Kod 09 - 2 godziny ciaglego zajmowania aparatu
+    [1]   Kod 10 - Zaciecie klawiatury (ustawiane razem z kodem 38)
+    [5]   Kod 11 - Zaciecie ktoregos z klawiszy funkcyjnych
+    [1]   Kod 12 - Uszkodzenie odbiornika impulsow 16 kHz
+    [1]   Kod 13 - Rozladowany akumulator
+    [1]   Kod 14 - Uszkodzenie toru odbiorczego mikrotelefonu
+    [1]   Kod 15 - Uszkodzenie toru nadawczego mikrotelefonu
+    [1]   Kod 17 - Nieprawidlowa praca zegara
+    [1]   Kod 19 - Uszkodzenie szyny I2C Bollino
+    [1]   Kod 20 - Przepelnienie bufora zdarzen dla STG (300 lub wiecej
+                   zdarzen) - automat wyswietla "NIECZYNNY"
+    [1]   Kod 21 - Nieobecnosc/uszkodzenie DRO
+    [100] Kod 23 - Statystyka klawiatury - licznik zdarzen jest zmniejszany,
+                   gdy wybrany numer zawieral choc jedna cyfre 5,6 lub 7,
+                   zwiekszany w przeciwnym przypadku. Albo ja sie myle,
+                   albo to jakis kolejny chory pomysl firmy Urmet
+    [1]   Kod 24 - Blad zdalnego ladowania danych z STG97
+    [1]   Kod 25 - Nieupowaznione otwarcie aparatu
+    [3]   Kod 26 - Blad zdalnego ladowania z STG97 nastepujacych plikow:
+                   reklam, komunikatow glosowych, komunikatow wyswietlacza,
+                   profili oprogramowania
+    [1]  !Kod 27 - Zaciecie ktoregos z glownych klawiszy funkcyjnych i kla-
+                   wisza funkcyjnego wymiany karty (ustawiane razem z kodem
+                   11 i 38). Kod moze nie byc ustawiany w zaleznosci od
+                   konfiguracji
+    [1]  !Kod 33 - Zablokowanie czytnika kart magnetycznych
+    [1]   Kod 34 - Zablokowanie czytnika kart kredytowych
+    [1]   Kod 35 - Zablokowanie czytnika kart elektronicznych
+    [1]   Kod 36 - Zablokowanie czytnika kart magnetycznych
+    [1]   Kod 37 - Calkowite zaciecie czytnika
+    [5]   Kod 38 - Zaciecie klawisza funkcyjnego wymiany karty
+    [1]   Kod 39 - Brak czytnika
+    [1]   Kod 40 - Blad lub brak wymiany danych plyta glowna - czytnik
+    [1]   Kod 41 - Blad w zdalnym ladowaniu programu czytnika
+    [1]  !Kod 49 - Wadliwe dzialanie glowic magnetycznych - nieczytelne
+                   30% kart lub wiecej
+    [30]  Kod 50 - 30 kolejno nieodczytanych kart magnetycznych:
+                   CZERWONYCH, ZIELONYCH, NIEBIESKICH
+    [30]  Kod 51 - 30 kolejno nieodczytanych kart kredytowych:
+                   operatora, bankowych
+    [30]  Kod 52 - 30 kolejno nieodczytanych kart elektronicznych:
+                   OTO LUBLIN, NIEBIESKICH, RUCH 1, RUCH 2
+
+S14.MENU AUTOTEST
+    Ponizej umiescilem dokladny opis tego menu. Nie wszedzie rzeczywistosc
+    pokrywa sie z tym, co umieszczono w instrukcji.
+
+          ------------------
+    10.1. |TEST  KLAWIATURY|
+          |                |
+          ------------------
+             ------------------
+    10.1.1   | PRZYCISK: ???  |
+             |                |
+             ------------------
+
+             ??? = 0..9                      -> 0..9
+                   A..D                      -> A..D
+                   *                         -> wyjscie z podmenu
+                   #                         -> #
+                   FC (Nastepne polaczenie)  -> TRL
+                   RD (Redial)               -> RP
+                      (Zmiana jezyka)        -> LIN
+                      (Zmiana glosnosci)     -> VOL
+                      (Wymiana karty)        -> TC
+
+          ------------------
+    10.2. | TEST  WYSWIETL |
+          |                |
+          ------------------
+             ------------------
+    10.2.1.  |????????????    |
+             |????????????    |
+             ------------------
+
+             W miejsce pytajnikow wyswietlane sa najpierw znaki zlozone
+             z samych czarnych punktow, a pozniej co sekunde kolejne cyfry:
+             same "0", same "1" i tak az do "9", pozniej znowu czarne znaki,
+             cyfry i tak w kolo. Wyjscie klawiszem "*".
+
+          ------------------
+    10.3. |    TEST DRO    |
+          |                |
+          ------------------
+             ------------------   ------------------
+    10.3.1   |    DRO:  OK    |   |    DRO:  KO    |
+             |                |   |                |
+             ------------------   ------------------
+
+             DRO to urzadzenie na centrali sprawdzajace, czy na kazdy impuls
+             taryfikacyjny 16 kHz automat odpowiada impulsem 12 kHz. Spraw-
+             dzanie takie moze odbywac sie podczas trwania rozmowy, ale row-
+             niez podczas wybierania numeru. Zapewne kazdy slyszal (co jest
+             latwo zauwazalne, gdy wybieranie numeru jest ustawione na DTMF)
+             po pierwszej wybieranej cyfrze sygnal 16 (lub 12) kHz. Wyjscie
+             z podmenu klawiszem "*".
+
+          ------------------
+    10.4. |   TEST  DTMF   |
+          |                |
+          ------------------
+             ------------------
+    10.4.1   |    DTMF: ?     |
+             |                |
+             ------------------
+
+             Przy naciskaniu cyfr 0..9 generowane sa tony DTMF i w miejscu
+             pytajnika wyswietlana jest odpowiednia cyfra. Wyjscie - "*".
+
+          ------------------
+    10.5. |TEST MIKROTELEF.|
+          |                |
+          ------------------
+             ------------------   ------------------
+    10.5.1.  |  SLUCHAWKA OK  |   |USZKODZ  SLUCHAW|
+             |  MIKROFON  OK  |   |USZKODZ MIKROFON|
+             ------------------   ------------------
+
+             Pokazane sa tutaj dwa skrajne przypadki. Oczywiscie mozliwe
+             tez sa kombinacje posrednie. Wyjscie klawiszem "*".
+
+          ------------------
+    10.6. | TEST  CZYTNIKA |
+          |                |
+          ------------------
+             ------------------   ------------------   ------------------
+    10.6.1.  | STAN  CZYTNIKA |   | STAN  CZYTNIKA |   | STAN  CZYTNIKA |
+             |   CZYTNIK OK   |   |CZYTNIK NIESPRAW|   |CZYTNIK  USZKODZ|
+             ------------------   ------------------   ------------------
+             ------------------
+    10.6.2.  |  ODCZYT KARTY  |
+             |                |
+             ------------------
+                ------------------
+    10.6.2.1.   |   WLOZ KARTE   |
+                |                |
+                ------------------
+                ------------------   ------------------   ------------------
+    10.6.2.2.   | KARTA  NIECZYT |   | KARTA NIEWAZNA |   |  KARTA ZUZYTA  |
+                |                |   |                |   |                |
+                ------------------   ------------------   ------------------
+                ------------------   ------------------   ------------------
+                |KARTA MAGN CZERW|   |KARTA MAGN ZIEL |   |KARTA MAGN NIEB |
+                |                |   |                |   |                |
+                ------------------   ------------------   ------------------
+                ------------------   ------------------   ------------------
+                |KARTA KREDY OPER|   |KARTA CHIP RUCH1|   |KARTA CHIP RUCH2|
+                |                |   |                |   |                |
+                ------------------   ------------------   ------------------
+                ------------------   ------------------   ------------------
+                |KARTA CHIP KONSE|   |KARTA CHIP NIEB |   |KARTA OTO       |
+                |                |   |                |   |                |
+                ------------------   ------------------   ------------------
+             ------------------
+    10.6.3.  |WERSJE  CZYTNIKA|
+             |  WERSJA: 00.00 |
+             ------------------
+             ------------------
+    10.6.4.  |    WYJSCIE     |
+             |                |
+             ------------------
+
+             Powyzsze menu nie wymaga chyba zadnych komentarzy...
+
+          ------------------
+    10.7. |  TEST BOLLINO  |
+          |                |
+          ------------------
+             ------------------   ------------------   ------------------
+    10.7.1.  |CZYTNIK:        |   |CZYTNIK:        |   |CZYTNIK:        |
+             | BOLLINO OBECNE |   |USZK I2C BOLLINO|   |  BRAK BOLLINO  |
+             ------------------   ------------------   ------------------
+             ------------------   ------------------   ------------------
+    10.7.2.  |KLAWIATURA:     |   |KLAWIATURA:     |   |KLAWIATURA:     |
+             | BOLLINO OBECNE |   |USZK I2C BOLLINO|   |  BRAK BOLLINO  |
+             ------------------   ------------------   ------------------
+             ------------------   ------------------   ------------------
+    10.7.3.  |MIKROTELEFON:   |   |MIKROTELEFON:   |   |MIKROTELEFON:   |
+             | BOLLINO OBECNE |   |USZK I2C BOLLINO|   |  BRAK BOLLINO  |
+             ------------------   ------------------   ------------------
+             ------------------   ------------------   ------------------
+    10.7.4.  |WYSWIETLACZ:    |   |WYSWIETLACZ:    |   |WYSWIETLACZ:    |
+             | BOLLINO OBECNE |   |USZK I2C BOLLINO|   |  BRAK BOLLINO  |
+             ------------------   ------------------   ------------------
+             ------------------   ------------------   ------------------
+    10.7.5.  |PLYTA GLOWNA:   |   |PLYTA GLOWNA:   |   |PLYTA GLOWNA:   |
+             | BOLLINO OBECNE |   |USZK I2C BOLLINO|   |  BRAK BOLLINO  |
+             ------------------   ------------------   ------------------
+
+             Powyzsze menu pozwala sprawdzic stan pamieci znamionowych
+             aparatu. Kazda pamiec znamionowa zawiera 11 bajtow danych
+             i jednoznacznie charakteryzuje dana czesc.
+
+          ------------------
+    10.8. |  TEST  ZEGARA  |
+          |                |
+          ------------------
+             ------------------   ------------------
+    10.8.1.  |dd/mm/rrrr gg:mm|   | USZKODZ  ZEGAR |
+             |                |   |                |
+             ------------------   ------------------
+
+             Tu tez nie potrzeba komentarzy... :)
+
+          ------------------
+    10.9. |  TEST BATERII  |
+          |                |
+          ------------------
+             ------------------
+    10.9.1.  |BATERIA: 0.00 V |
+             |                |
+             ------------------
+
+             Tu pokazane jest napiecie akumulatorka, powinno wynosic
+             5.31..7.38V.
+
+          ------------------
+    10.10.|   TEST LINII   |
+          |                |
+          ------------------
+             ------------------   ------------------
+    10.10.1. |  LINIA:  00mA  |   |  LINIA: >30mA  |
+             |                |   |                |
+             ------------------   ------------------
+
+             A tu wartosc pradu linii, do programowania pamieci FLASH
+             (czyli do programowania plikow przysylanych z STG) powinna
+             wynosic > 23.33mA.
+
+          ------------------
+    10.11.|TEST SYGN CENTR |
+          |                |
+          ------------------
+             ------------------   ------------------
+    10.11.1. |TEST SYGN CENTR |   |TEST SYGN CENTR |
+             |  SYGNAL: ON    |   |  SYGNAL: OFF   |
+             ------------------   ------------------
+
+             Sprawdza obecnosc dialtone'a.
+
+          ------------------
+    10.12.|POM  TEMPERATURY|
+          |                |
+          ------------------
+             ------------------   ------------------
+    10.12.1. |  TEMP:  00*C   |   |  TEMP: -00*C   |
+             |                |   |                |
+             ------------------   ------------------
+
+             Tu wiadomo... :)
+             Temperatura otoczenia uzywana jest przez procesor DSP
+             (czyli sygnalowy) w module czytnika do korekcji odczytu
+             sygnalu z karty magnetycznej.
+
+          ------------------
+    10.13.| WERSJE  PLIKOW |
+          |                |
+          ------------------
+             ------------------
+    10.13.1. |OTP             |
+             |  WERSJA: 00.00 |
+             ------------------
+             ------------------
+    10.13.2. |OPROGRAMOWANIE  |
+             |  WERSJA: 00.00 |
+             ------------------
+             ------------------
+    10.13.3. |OPROG CZYTNIKA  |
+             |  WERSJA: 00.00 |
+             ------------------
+             ------------------
+    10.13.4. |BIALA LISTA     |
+             |  WERSJA: 00.00 |
+             ------------------
+             ------------------
+    10.13.5. |PELN CZARNA LIST|
+             |  WERSJA: 00.00 |
+             ------------------
+             ------------------
+    10.13.6. |NR BEZPLATNE    |
+             |  WERSJA: 00.00 |
+             ------------------
+             ------------------
+    10.13.7. |NR ZABLOKOWANE  |
+             |  WERSJA: 00.00 |
+             ------------------
+             ------------------
+    10.13.8. |AUTOTARYFIKACJA |
+             |  WERSJA: 00.00 |
+             ------------------
+             ------------------
+    10.13.9. |KONFIGURACJA    |
+             |  WERSJA: 00.00 |
+             ------------------
+             ------------------
+    10.13.10.|PARAM CENTRALI  |
+             |  WERSJA: 00.00 |
+             ------------------
+             ------------------
+    10.13.11.|KOMUNIK GLOSOWE |
+             |  WERSJA: 00.00 |
+             ------------------
+             ------------------
+    10.13.12.|REKLAMY         |
+             |  WERSJA: 00.00 |
+             ------------------
+             ------------------
+    10.13.13.|KOMUNIKATY WYSW |
+             |  WERSJA: 00.00 |
+             ------------------
+             ------------------
+    10.13.14.|PROFILE OPROG   |
+             |  WERSJA: 00.00 |
+             ------------------
+
+             Wyjscie z podmenu mozliwe w kazdym momencie klawiszem "*".
+             Odnosnie czarnej listy - wyswietlany jest numer wersji PELNEJ
+             czarnej listy. Wyroznienie to wynika stad, ze podczas projekto-
+             wania systemu przewidziano mozliwosc wysylania do automatu sa-
+             mego uaktualnienia juz istniejacej czarnej listy. Najwyrazniej
+             jednak rozmyslono sie, gdyz w komunikacji automat - STG nie sa
+             przesylane numery wersji pliku uaktualnienia czarnej listy,
+             a w programie automatu pozostaly tylko szczatkowe fragmenty
+             swiadczace o takim pomysle - automat nigdy nie sciaga pliku
+             uaktualnienia czarnej listy, nie posiada tez procedur progra-
+             mowania takich danych w pamieci FLASH. Poniewaz "jajka" korzys-
+             taja z tego samego STG i tego samego schematu komunikacji, wiec
+             one tez zapewne nie korzystaja z pliku uaktualnienia i za kazdym
+             razem sciagaja pelna czarna liste.
+
+          ------------------
+    10.14.|    WYJSCIE     |
+          |                |
+          ------------------
+
+          Nareszcie koniec :)
+
+S15.KARTY SERWISOWE
+    Zaczne od tego, ze srebrny Urmet uznaje za niewazne wszystkie karty ser-
+    wisowe z niebieskiego Urmeta, w tym rowniez Check58. Przyjmuje tylko karty
+    elektroniczne, ktore dzialaja rowniez na "jajkach". W chwili obecnej po-
+    siadamy juz napisany (dodam skromnie, ze przeze przeze mnie :)) generator
+    tych kart, wiec wszystkie opisywane tu rodzaje kart zostaly przetestowane
+    praktycznie - przez Shadowa na zrobionym przez niego emulatorze (dzieki,
+    dzieki). Tak wiec wszystko, co jest tu napisane, powinno zgadzac sie
+    z rzeczywistoscia. Od rodzaju karty zalezy, co mozemy zmieniac w menu.
+    TPSA posiada na pewno karty typu I i II, prawdopodobnie rowniez VIII i IX.
+    Karta typu VIII jest o tyle ciekawa, ze do wyswietlenia menu nie jest po-
+    trzebne otwarcie automatu, a przy tym daje ona mozliwsc zmiany praktycznie
+    wszystkich ustawien. Karta typu X pozwala obejrzec w Menu Alarmow dodatko-
+    we kody alarmow, oznaczone w umieszczonym gdzies wyzej w spisie wykrzykni-
+    kiem. Centrum nadzoru otrzymuje numer uzytej karty - ale nie zawsze! Dla
+    karty typu VIII w miejsce bajtow z numerem karty wstawiana jest wartosc
+    0x99. Widoczny jest wiec fakt uzycia karty, ale niemozliwe jest jej ziden-
+    tyfikowanie. Ponizej wymienilem wszystkie mozliwe typy kart serwisowych:
+
+    a) Typ 0             -bez mozliwosci zmiany numerow aparatu i STG
+                         -bez mozliwosci zmiany ustawien zegara
+
+    b) Typ I             -z mozliwoscia zmiany numerow aparatu i STG
+                         -z mozliwoscia zmiany ustawien zegara
+
+    c) Typ II            -bez mozliwosci zmiany numerow aparatu i STG
+                         -z mozliwoscia zmiany ustawien zegara
+
+    d) Typ VIII          -z mozliwoscia zmiany numerow aparatu i STG
+                         -z mozliwoscia zmiany ustawien zegara
+                         -wyswietla menu "WSPOLPRACA Z STG"
+                         -NIE WYMAGA OTWARCIA DRZWI APARATU
+                         -NUMER KARTY NIE JEST LOGOWANY DO STG
+ *                        (nie wiadomo czy rowniez w "jajku" CTP-I)
+
+    e) Typ IX            -z mozliwoscia zmiany numerow aparatu i STG
+                         -z mozliwoscia zmiany ustawien zegara
+                         -wyswietla menu "WSPOLPRACA Z STG"
+
+    f) Typ X             -z mozliwoscia zmiany numerow aparatu i STG
+                         -z mozliwoscia zmiany ustawien zegara
+                         -wyswietla menu "WSPOLPRACA Z STG"
+                         -z mozliwoscia ogladania dodatkowych kodow
+                          alarmow, normalnie nie wyswietlanych
+
+S16.ZABEZPIECZENIA KART SERWISOWYCH
+    Hm, poniewaz rozpisywalem sie juz o emulatorze takich kart, wiec wniosek
+    jest prosty: zabezpieczenia sa mozliwe do zlamania w sensownym czasie.
+    W praktyce sa to karty z ukladem Siemensa SLE 4406, czyli zwykle karty
+    pamieciowe. Problem polega na tym, ze pierwsze dwa bajty takiej karty sa
+    pamiecia ROM programowana w trakcie produkcji, a po tych wlasnie bajtach
+    rozpoznawany jest rodzaj karty i operator. Watpliwe jest, zeby Siemens ze-
+    chcial sprzedac komus karty z naglowkiem takim, jakiego uzywa TPSA. Po-
+    niewaz trudno znalezc zamiennik (dostepne w sprzedazy karty z mikrokontro-
+    lerami PIC i Atmel sa taktowane z nozki Clock karty - nie maja wewnetrz-
+    nego kwarcu, na dodatek niektore z nich, o ile nie wszystkie, maja Reset
+    sterowany przeciwnym stanem logicznym niz karty SLE 44x6/SLE 5536), pozos-
+    taje sobie zrobic emulator na plytce drukowanej z zewnetrznym mikrokon-
+    trolerem (np. Atmel AT89C1051). Jezeli posiadamy zczytana oryginalna karte
+    serwisowa, mozemy po odpowiednim zaprogramowaniu rzeczonego mikrokontrole-
+    ra ja zaemulowac. Jezeli zas chcemy zrobic sobie karte bez posiadania
+    zapisu karty oryginalnej, musimy jeszcze poznac algorytm chroniacy inte-
+    gralnosc zapisu takiej karty. Wymaga to dosc duzo zabawy z softem automa-
+    tu, ale daje nastepujace korzysci: mozemy sobie wygenerowac dowolny typ
+    karty oraz mozemy jej nadac wymyslony przez nas PIN. W celu sprawdzenia
+    poprawnosci dane z karty sa kodowane DES-em z kluczem zaleznym czesciowo
+    od danych karty, a czesciowo zawartym w kodzie automatu (odwolanie do
+    niego wystepuje w dosc niezwykly sposob, wiec trudno go znalezc). Jezeli
+    otrzymany rezultat kodowania DES-em pokrywa sie z odpowiednimi bajtami
+    na karcie, karta jest akceptowana. I to wszystko :)
+
+ *  Nalezaloby jeszcze dodac, ze karty serwisowe nie moga zostac fizycznie
+ *  skasowane w przypadku jajek, gdyz pierwsze 8 bajtow karty (bajty te za-
+ *  wieraja istotne dane karty) nie moze byc zapisywane, a kolejne 8 bajtow
+ *  (m.in. licznik) nie jest w przypadku jajka istotne. Natomiast w przypadku
+ *  srebrnych automatow co najmniej jeden z bajtow 8..15 jest istotny, tak
+ *  wiec mozliwe jest, ze karte da sie "unieszkodliwic" np. poprzez zmiane
+ *  stanu licznika. Nawet w takim jednak wypadku karta ta dalej bedzie pop-
+ *  rawna z punktu widzenia jajka (format danych na karcie elektronicznej
+ *  opisany jest nizej w rozdziale "Format danych kart elektronicznych").
+ *  Oczywiscie zmiana oprogramowania jajka moze wymusic analogiczne jak
+ *  w srebrnym automacie traktowanie bajtow 8..15.
+
+    W obecnej wersji oprogramowania nie ma tez mozliwosci wciagania kart
+    serwisowych na czarna liste, ale to moze sie kiedys zmienic.
+
+ *  Podczas komunikacji z centrum nadzoru wysylany jest do niego numer uzy-
+ *  tej karty serwisowej (z wyjatkiem karty typu VIII - patrz rozdzial "Karty
+ *  serwisowe" wyzej), ale obecnie (tj. przy obecnym oprogramowaniu automatow)
+ *  nielegalne uzywanie takich kart nie wiaze sie z ryzykiem ich skasowania
+ *  lub zablokowania.
+
+S17.PRZYCISK "TEST"
+    Na plycie glownej znajduja sie dwa przyciski: pierwszy z nich to Reset,
+    a drugi nazywa sie Test. Jezeli automat jest uszkodzony, to jego nacis-
+    niecie powoduje wyswietlenie menu identycznego jak dla karty serwisowej
+ *  typu 0. Jezeli automat jest sprawny, uzycie tego przycisku nie wlacza
+    zadnego menu.
+
+S18.FORMAT DANYCH KART ELEKTRONICZNYCH
+ *  Ponizej przedstawilem standardowy format zapisu na kartach elektronicznych
+    SLE 4406/SLE 4436/SLE 5536. Nazwy angielskie to oznaczenia zaczerpniete
+    z dokumentacji. Przy odczycie karty licznik danych karty zeruje sie dla
+    512 bitu, innymi slowy przy odczycie dane powtarzaja sie cyklicznie co 64
+ *  bajty. Przy odczycie bajtow o adresach wiekszych od 29 karta zwraca war-
+ *  tosc 0xFF. Czym jest karta OTO Lublin wyjasnilem w rozdziale "Karty zwyk-
+ *  le".
+
+    Przykladowa karta OTO Lublin:
+
+    97 74  26  FC 04 CD 35 2B  00 00 00 FC 80  7F  FF FF  FF FF FF FF FF FF
+    -----  --  --------------  --------------  --  -----  -----------------
+    0. 1.  2.  3. 4. 5. 6. 7.  8. 9. 10.11.12. 13. 14.15. 16.17.18.19.20.21.
+
+
+    FF FF FF FF FF FF  FF FF
+    -----------------  -----
+    22.23.24.25.26.27. 28.29.
+
+
+    0,1    - Manufacturer Code
+             Kod nadawany przez producenta charakteryzujacy odbiorce karty
+             i jej rodzaj. Programowany trwale przez producenta kart (Siemen-
+             sa), jest to pamiec typu ROM. Czasami (np. w niektorych kartach
+             OTO Lublin) mozna wyzerowac bit #0x08 bajtu 0, co oznacza, ze
+ *           z karty zostaly juz skasowane jakies jednostki (karta nie jest
+ *           pelna). Po ewentualnym wyzerowaniu wspomnianego bitu:
+ *
+ *           W przypadku kart serwisowych:
+ *
+ *             DaneZKarty[0,1]         - 0x19,0xC4
+ *
+ *           W przypadku kart OTO Lublin:
+ *
+ *             DaneZKarty[0,1]         - 0x97,0x74 - Sempac [Se]
+ *                                       0x05,0xF4 - Sempac [Se1]
+ *                                       0x97,0xCC - Schlumberger [S] -
+ *                                                   najnowszy rodzaj
+ *
+ *             Nazwy i skroty w opisach oznaczaja rodzaj stykow ukladu scalo-
+ *             nego karty i zaczerpniete sa z katalogow kart telefonicznych.
+ *
+ *           Producentem ukladow scalonych do kart jest Siemens, ale wklejania
+ *           ukladow w karty i ich programowania dokonuje dostawca kart, stad
+ *           nazwy typu Sempac czy Schlumberger oznaczaja nazwe linii produk-
+ *           cyjnej uzywanej przez dostawce kart lub samego dostawce. Od linii
+ *           produkcyjnej i dostawcy zalezy wyglad stykow ukladu scalonego.
+ *           Polski dostawca kart (OTO Lublin) uzywa linii produkcyjnej firmy
+ *           Sempac.
+ *
+ *           Przedstawicielem najnowszego rodzaju kart (Schlumberger) jest ta-
+ *           ka fajna polprzezroczysta karta z rybka (nie ma na niej napisu
+ *           OTO Lublin, wyglada na to, ze jest w calosci produkowana za gra-
+ *           nica), a poniewaz jest ona przepuszczalna dla podczerwieni (co
+ *           latwo mozna sprawdzic pilotem TV), a czujnik w automacie dziala
+ *           wlasnie na podczerwien, to czesc automatow glupieje i nie przyj-
+ *           muje tych kart, podczas gdy nieprzezroczyste karty chipowe sa
+ *           przez nie przyjmowane. Nie pomaga nawet (co osobiscie sprawdzi-
+ *           lem) naklejenie w odpowiednim miejscu ciemnej folii samoprzylep-
+ *           nej, bo ona tez jest przepuszczalna dla podczerwieni...
+ *
+ *           Wprowadzenie do obiegu kart z nowymi naglowkami pociaga za soba
+ *           koniecznosc wymiany oprogramowania czytnikow w automatach.
+
+
+    2      - Manufacturer Data
+             Bajt ustawiany przez dostawce kart, tego, ktory dokonuje progra-
+             mowania numeru seryjnego i poczatkowej liczby jednostek (w spec-
+             jalnym trybie pracy karty, trybu tego nie da sie wlaczyc ponow-
+             nie). U nas takim dostawca jest OTO Lublin.
+
+ *           W przypadku kart serwisowych:
+ *
+ *             DaneZKarty[2]           - 0xFF
+ *
+ *           W przypadku kart OTO Lublin:
+ *
+ *             DaneZKarty[2]           - 0x26
+
+
+    3..7   - Personalization Data
+ *           Numer karty, programowany jest u dostawcy, po zakonczeniu progra-
+ *           mowania nie da sie zmieniac.
+ *
+ *           W przypadku kart serwisowych:
+ *
+ *             DaneZKarty[3],
+ *             DaneZKarty[4],
+ *             DaneZKarty[5] and #0xF0,
+ *             DaneZKarty[6],
+ *             DaneZKarty[7]           - zakodowany numer karty i PIN
+ *
+ *             DaneZKarty[5] and #0x0F - typ karty serwisowej
+ *
+ *             Musi byc spelniony warunek: DaneZKarty[3] xor DaneZKarty[4] xor
+ *             DaneZKarty[5] xor DaneZKarty[6] xor DaneZKarty[7] <> 0.
+ *
+ *           W przypadku kart OTO Lublin:
+ *
+ *             Odwracamy kolejnosc bitow w bajcie DaneZKarty[3] i teraz:
+ *
+ *             DaneZKarty[3] and #0x3F - numer emisji (dla kart z naglowkiem
+ *                                       0x97,0xCC numer emisji kodowany jest
+ *                                       w inny sposob, dopoki nie dorwe aktu-
+ *                                       alnego softu czytnika, nie dowiem sie
+ *                                       jak - w kazdym razie emisji 50 odpo-
+ *                                       wiada bajt 0xC9 na karcie)
+
+               DaneZKarty[4]           - numer serii
+
+               DaneZKarty[5] + 256 * DaneZKarty[6]
+                                       - numer karty w serii
+
+ *             DaneZKarty[7]           - jesli bit #0x80 jest ustawiony, karta
+ *                                       posiada zapisany maksymalnie 12-cyf-
+ *                                       rowy numer telefoniczny, patrz opis
+ *                                       bajtow 22..27 (w polskich kartach
+ *                                       mozliwosc ta nie jest wykorzystywana,
+ *                                       gdyz zamiast numeru posiadaja one
+ *                                       drugi klucz kryptograficzny). Pozos-
+ *                                       tale 7 mlodszych bitow oznacza rodzaj
+ *                                       karty (jej maksymalna pojemnosc)
+ *                                       i tak:
+
+                                         0x17 - karta 25
+                                         0x2B - karta 50
+                                         0x53 - karta 100
+
+ *             Program plyty glownej sprawdza tylko bit #0x80, natomiast prog-
+ *             ram czytnika dekoduje sobie z calego 7 bajtu (wlacznie z bitem
+ *             #0x80, co dla wartosci wiekszych od 0x7F powoduje kolizje...)
+ *             maksymalna liczbe jednostek, porownuje ja ze stanem licznika
+ *             i w przypadku, gdy licznik jest za duzy, nie akceptuje karty
+ *             (automat srebrny) lub przerywa polaczenie przy kasowaniu pierw-
+ *             szej jednostki z karty i kasuje karte (jajko). Maksymalna licz-
+ *             be jednostek wyznacza sie ze wzoru:
+ *
+ *             (DaneZKarty[7] shr 2) * 5
+ *
+ *             Z tego wzoru wynika, ze maksymalna liczba jednostek na karcie
+ *             moze wynosic (0xFF shr 2) * 5 = 315. Jednak bajty o wartosciach
+ *             z zakresu 0xF4..0xFF maja specjalne znaczenie, wobec czego dla
+ *             wartosci:
+ *
+ *             0x00..0x7F - karta nie ma zapisanego numeru telefonicznego,
+ *                          maksymalna liczba jednostek to 0..155
+ *
+ *             0x80..0xF3 - karta ma zapisany numer telefoniczny,
+ *                          maksymalna liczba jednostek to 160..300
+ *
+ *             0xF4..0xF7 - wartosc specjalna, karta ma zapisany numer tel.,
+ *                          maksymalna liczba jednostek to 5000 (jajko)
+ *                          lub 1160 (srebrny)
+ *
+ *             0xF8..0xFB - wartosc specjalna, karta ma zapisany numer tel.,
+ *                          maksymalna liczba jednostek to 4000 (jajko)
+ *                          lub 160 (srebrny)
+ *
+ *             0xFC..0xFF - wartosc specjalna, karta ma zapisany numer tel.,
+ *                          maksymalna liczba jednostek to 3500 (jajko)
+ *                          lub 940 (srebrny)
+ *
+ *             Jak widac wystepuja istotne roznice w implementacji wartosci
+ *             specjalnych w sofcie czytnikow srebrnego automatu i jajka. Na
+ *             dodatek wartosci specjalne w srebrnym Urmecie wygladaja cokol-
+ *             wiek dziwnie i w dodatku nie sa ulozone malejaco, no ale to
+ *             nie ja tak wymyslilem :)
+ *
+ *             Karty polskie posiadaja drugi klucz kryptograficzny (co wynika
+ *             z softu czytnika jajka - karta bez drugiego klucza nie jest ak-
+ *             ceptowana), tak wiec nie posiadaja numeru telefonicznego, teo-
+ *             retycznie wiec dozwolone wartosci opisywanego bajtu to 0x00..
+ *             0x7F (czyli te, w ktorych bit #0x80 jest wyzerowany). Dla war-
+ *             tosci 0x80..0xFF automat bedzie probowal wybrac numer telefo-
+ *             niczny zapisany na karcie. Poniewaz jednak w miejscu numeru
+ *             znajduje sie drugi klucz kryptograficzny, to jego odczyt zwraca
+ *             same wartosci 0xFF, co daje numer pusty, czyli o zerowej dlu-
+ *             gosci. Karta z numerem pustym jest traktowana tak jak karta bez
+ *             zapisanego numeru, a wiec nie jest on automatycznie wybierany
+ *             i mozna z karty normalnie korzystac dzwoniac z niej na dowolny
+ *             numer (patrz opis bajtow 22..27 i opis kart OTO Lublin w roz-
+ *             dziale "Karty zwykle"). Wniosek z tego jest taki, ze dopoki
+ *             na karcie jest zapisany drugi klucz kryptograficzny (tak jak
+ *             w kartach polskich) albo pusty numer telefoniczny, dopoty bajt
+ *             7 karty moze przyjmowac dowolne wartosci, a wtedy maksymalna
+ *             liczba jednostek wynosi 1160 (srebrny) lub 5000 (jajko).
+
+
+    8..12  - Counter Area
+ *           Licznik jednostek, mozna zerowac dowolne bity oraz zerowac bit
+             z przeniesieniem (ustawieniem wszystkich bitow nastepnego bajtu
+             na jedynki - tylko w obrebie licznika). Innymi slowy mozliwe jest
+             tylko zmniejszanie licznika. Najmlodszy bit najstarszego bajtu
+             licznika (bajtu 8) jest znacznikiem wskazujacym czy karta jest
+             przed czy po fazie programowania (przez dotawce kart). Po zapro-
+ *           gramowaniu karty bit ten jest zerowany, tak wiec w funkcji licz-
+ *           nika pozostaje tylko siedem mlodszych bitow najstarszego bajtu
+ *           licznika, wobec czego maksymalna wartosc licznika teoretycznie
+ *           wynosi 33352 jednostki. Jednak producenci zastrzegaja sobie tro-
+ *           che jednostek dla celow testowych, tak wiec maksymalna wartosc
+ *           licznika, jaka jest mozliwa do wykorzystania, to 21064 (roznica
+ *           miedzy 33352 i 21064 odpowiada skasowaniu 3 bitow w najstarszym
+ *           bajcie licznika, wiec w sumie do praktycznego wykorzystania po-
+ *           zostaje polowa najstarszego bajtu, bo jeszcze jeden bit jest
+ *           znacznikiem fazy programowania, jak juz napisalem troche wyzej).
+ *           Gdyby udalo sie pomyslnie zaemulowac karte, to po wykorzystaniu
+ *           wszystkich bitow najstarszego bajtu licznika maksymalna pojemnosc
+ *           karty wynioslaby 37448 jednostki. Nalezy jednak zauwazyc, ze
+ *           w polskich kartach w bajcie 7 karty zakodowana jest maksymalna
+ *           liczba jednostek, tak wiec licznik polskich kart nie moze przek-
+ *           roczyc pewnych wartosci (patrz opis bajtu 7 karty).
+ *
+ *           W przypadku kart serwisowych:
+ *
+ *             DaneZKarty[8,9,10,11,12]   - 0x7E,0x7E,0xE7,0xFF,0xC3 (w jaj-
+ *                                          kach nieistotne, w srebrnych naj-
+ *                                          prawdopodobniej tak - co najmniej
+ *                                          jeden z bajtow z zakresu 8..15
+ *                                          jest istotny), odpowiada to war-
+ *                                          tosci licznika rownej 28100, jest
+ *                                          to wartosc wieksza od maksymalnej
+ *                                          wartosci deklarowanej do uzytku
+ *                                          przez producentow, czyli 21064
+ *
+ *           W przypadku kart OTO Lublin:
+ *
+ *             DaneZKarty[8,9,10,11,12]   - licznik
+
+
+    13     - Counter Backup / Authentication Key 2 Init Flag
+             Bajt pomocniczy, nie da sie zmieniac. Zawiera 4 bity tzw. backupu
+             licznika (anti-tearing flags) zabezpieczajace przed utrata jed-
+             nostek w przypadku naglego wyjecia karty podczas kasowania. Za-
+ *           wiera tez flage #0x40 umozliwiajaca rozpoznanie czy karta zawiera
+ *           drugi klucz kryptograficzny.
+ *
+ *           W przypadku kart serwisowych:
+ *
+ *             DaneZKarty[13]             - 0xFF (w jajkach nieistotne,
+ *                                          w srebrnych najprawdopodobniej
+ *                                          tak - co najmniej jeden z bajtow
+ *                                          z zakresu 8..15 jest istotny)
+ *
+ *           W przypadku kart OTO Lublin:
+ *
+ *             DaneZKarty[13]             - 0x7F
+
+
+    14,15  - Data Area 1
+             Miejsce na dane uzytkownika. W polsce sa to 2 bajty sluzace do
+             porzadkowania bitow w liczniku, jesli bity licznika w wyniku
+             bledow byly kasowane nie po kolei (normalnie w obrebie bajtu
+             licznika bity kasowane sa od LSB do MSB). Kazde porzadkowanie
+             powoduje zuzycie jednego bajtu, mozliwe jest wiec dwukrotne po-
+             rzadkowanie licznika, przy trzecim wystapieniu nieuporzadkowania
+             karta przestaje byc akceptowana (Urmet srebrny) lub zostaje cala
+             skasowana przy probie skasowania jednostki (jajko). Bajty te
+             moga byc zablokowane i wtedy nie daja sie modyfikowac, w przeciw-
+             nym razie mozna kasowac wszystkie bity obydwu bajtow (oczywiscie
+             zuzywajac tym samym odpowiedni bajt/bajty).
+
+ *           W przypadku kart serwisowych:
+ *
+ *             DaneZKarty[14,15]          - 0xFF,0xFF (w jajkach nieistotne,
+ *                                          w srebrnych najprawdopodobniej
+ *                                          tak - co najmniej jeden z bajtow
+ *                                          z zakresu 8..15 jest istotny)
+ *
+ *           W przypadku kart OTO Lublin:
+ *
+ *             DaneZKarty[14,15]          - 0xFF,0xFF (gdy licznik nie byl
+ *                                          nigdy porzadkowany, po porzadko-
+ *                                          waniu licznika wystepuja tu inne
+ *                                          wartosci)
+
+
+    16..21 - Authentication Key 1
+             Pierwszy klucz kryptograficzny uzywany przez karte do obliczania
+             odpowiedzi na zadawane pytania. Nie da sie go odczytac ani zmie-
+             niac, karta zawsze zwraca bajty 0xFF.
+
+
+    22..27 - Authentication Key 2 / Data Area 2
+             Drugi klucz kryptograficzny (jesli karta jest przeznaczona do
+             uzywania w automatach dwoch operatorow) lub dane uzytkownika.
+             Jesli jest tu zapisany klucz kryptograficzny, nie da sie go od-
+             czytac (karta zwraca 0xFF). Karta OTO Lublin moze miec tu zapi-
+             sany 12-cyfrowy numer telefoniczny (w kodzie BCD), ktory zostaje
+             wybrany automatycznie po wlozeniu karty do automatu, o czym juz
+ *           napisalem przy opisie kart OTO Lublin w rozdziale "Karty zwykle".
+ *           jednak mozliwosc ta nie jest wykorzystywana, gdyz polskie karty
+ *           posiadaja drugi klucz kryptograficzny. Standardowo wszedzie 0xFF,
+             nie da sie zmieniac.
+
+
+    28,29  - Data Area 3
+             Miejsce na dane uzytkownika. Zwykle nieuzywane, zawiera bajty
+             0xFF i nie da sie zmieniac.
+
+ *  Na stronie Hrabiego (http://phreak.hack.pl) mozna znalezc program Konwer-
+    ter.exe sluzacy do przetwarzania danych z polskich kart elektronicznych
+    (z jednostkami). Mozna tam tez znalezc Chip.exe - prosty program do odczy-
+    tu i kasowania (nie napelniania!!! nawet o to prosze nie pytac!!!) jednos-
+    tek z kart telefonicznych, nie wymaga on zadnej dodatkowej elektroniki,
+    ale trzeba sie niekiedy pomeczyc z odpowiednimi ustawieniami portu LPT
+ *  w BIOS-ie, wszystko jest napisane w pomocy (zeby uniknac pytan: wywolanie
+ *  pomocy "Chip.exe /?" - co jest zreszta napisane).
+
+S19.PRYWATNE STG :)
+    Obecnie mam napisane dwa programiki pod Windows: jeden nazywa sie "Symu-
+    lacja automatu" i zawiera przepisane na Intela procedury odpowiadajace za
+    logike komunikacji (formaty danych itp.), natomiast drugi nazywa sie
+    "Symulacja STG" :)) Oba programiki bardzo ladnie sie ze soba komunikuja,
+    cala logika STG jest juz gotowa. Obsluga modemu dzieki wielkiej pomocy
+    kolegi (dla ktorego wielkie tutaj podziekowania) rowniez jest juz gotowa.
+    Pozostaje jeszcze zrobienie ladnego interfejsu. Wiecej nic na razie nie
+    powiem :)
+
+S20.INNE (NIZ 2.60) WERSJE OPROGRAMOWANIA
+    Chwile juz temu pojawila sie nowa wersja oprogramowania plyty glownej -
+    2.70. Jedyna chyba nowosc w tej wersji to mozliwosc blokowania kart
+    magnetycznych poprzez ich dzielnik - dzieki temu w srebrnych automatach
+    wylaczono mozliwosc korzystania z kart z podzielnikiem odpowiadajacym
+    maksymalnej pojemnosci karty wiekszej niz 25 jednostek. Krok ten niewat-
+    pliwie zostal podyktowany masowym zalewem nielegalnie produkowanych kart.
+    Wciaz mozliwe jest jednak zawyzanie liczby jednostek i nagrywanie na kar-
+    tach 25 kilku jednostek wiecej poprzez wydluzenie zapisu w trzeciej czesci
+    karty, jak to wymyslil Shadow.
+
+    Posiadam tez dosc pokazny zbior plikow z oprogramowaniem w wersjach star-
+    szych niz 2.60, ale raczej nie bede juz do nich zagladal...
+
+
+
+
+============ WSPOLNE =========================================================
+
+W1. GDY TPSA MA PODEJRZENIA
+    Jesli cos dziwnego dzieje sie z automatem, tzn. statystyki przestaja sie
+    zgadzac, TPSA odlacza automat od linii (co objawia sie brakiem jakiejkol-
+    wiek reakcji po podniesieniu sluchawki). Wtedy, jesli rozmowy z linii da-
+    lej sa wykonywane, oznacza to, ze ktos wpial sie w linie automatu. Jesli
+    nie, to prawdopodobnie znaleziono jakis nowy blad w sofcie :) Takie
+    odlaczenie automatu trwa czasem dwa tygodnie, a czasem i miesiac...
+
+W2. LINKI
+    Ponizej umiescilem kilka linkow, ktore moga okazac sie przydatne:
+
+    http://phreak.hack.pl - warto zobaczyc :)))
+ *  http://www.underground.org.pl - polecam PhreakBoard, czasem mozna nawet
+ *                                       dowiedziec sie tam czegos ciekawego,
+ *                                       a poza tym kto kogo nie lubi itp. ;))
+    http://www.telefonica.com.pl
+    http://www.urmet.it
+    http://www.geocities.com/ResearchTriangle/Lab/1578/smart.htm -
+                                strona o bezpieczenstwie kart elektronicznych
+    http://gsho.thur.de - German Smartcard Hackers Organisation -
+                                                                po niemiecku!
+
+W3. ZAKONCZENIE
+    Na zakonczenie chcialbym powiedziec, ze, niestety, nie rozdaje kodow
+    zrodlowych, chyba ze ktos mialby cos naprawde ciekawego do wymiany,
+    choc w zasadzie nie wiem, co jeszcze mogloby mi byc potrzebne... ;)
+    Wszysko, co mam do rozdawania, mozna znalezc na stronie phreak.hack.pl,
+    a jesli czegos tam nie ma, to znaczy ze tego nie mam albo nie chce dac.
+
+    I uwaga: NICZEGO NIE SPRZEDAJE!!! Powtarzam: NICZEGO NIE SPRZEDAJE!!!
+
+    Chcialbym tez dodac, ze podczas swoich doswiadczen nigdy nie zrobilem
+    krzywdy zadnemu automatowi, za to udalo mi sie wiele automatow przywro-
+    cic do stanu uzywalnosci...
+
+    Prosze tez o troche cierpliwosci w oczekiwaniu odpowiedzi na listy,
+    a zwlaszcza w wakacje...
+
+    Teraz nadszedl czas na to co zwykle:
+
+    Podziekowania i pozdrowienia:
+     - Aga - tu sie nic nie zmienilo: dzieki za wszystko 
+     - Aldi, Madzia - :)
+     - Przemek - dzieki za baaaardzo mila wspolprace, genialne pomysly,
+       wspolne wyprawy i w ogole za wszystko :)))
+     - Diodak - :)
+     - Zabka - :)
+     - Shroom Inc. - podziekowania za napisanie Shroom FAQ
+     - Nol, Shadow, Robercik - dzieki za pomoc przy rozpracowywaniu softu
+     - Xzbir - czlowiek, ktoremu sie chce cos robic i nie czeka na gotowe :)
+     - Diceman - jeden z nielicznych, ktory wie, co tu sie dzieje ;)
+
+    Pozdrowienia dla wszystkich z Urmet Developers :)
+
+    I to juz tyle. Na razie... :)
+
+             ===================>    Koniec    <===================
+
+
+============ Obetnij ===========================================
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+Version: PGPfreeware 5.0i for non-commercial use
+
+mQGiBDgBAVYRBAD4gtSMwwA3ePUhkwUAZitgL3gFc5Z+sTgz+7CACF5WiGmfoVt6
+vI3a9AtCPKaWiUXFltt/DVkVvSvmdLMvOJI+06/cSUjFN3tUGBxHOsH6OMqJOzEd
+Wn2XJf5QLUyBupfqtJoPe4tqyqC9F65Xqzk6EsPWf8EREmMcWft4nHeDDQCg/33m
+yng1QTKq/66EmEpSlcblXbMEALweldeHgtsPF+MBS8JX2bFJp8zjJyPSPWPTeWSu
+f0f3E6J/yaCUqfyCfX7KgklU+blBlUYlyjyorsK1VQa1lUIdWcaMbgSLIEyyzu49
+Z/euRE0sI4E46bHDQVVCZX2OA7w1HgYnOtx6DUnPc7NJLqcvyd7EfStYigJIYNJl
+Bpj1A/9JnXqC18WJSmqDYNbJrAMdVarGm93rRfd1Yccenm9wGWZtJORMGHaTp4qy
+HTWckL3aN0ZEoVtBz+LUcsczBFMk8AhjXP/eDF9O0+7ZwOT3rMHLonlWK2YRGd9P
+0vhvVhH/QllAZnijHwYZLJenSuOC4YCcuJ/osuypJj1VCeeuELQgS29sbmllcnp5
+ayA8a29sbkBmcmlrbzYub25ldC5wbD6JAEsEEBECAAsFAjgBAVYECwMBAgAKCRBV
+jKGUK7+FsnShAKDrjLzbzAgPSeVwazBpu0h0S+F3wwCbBMb95KoGAKWFHATebDgm
+8YiYJdG0IEtvbG5pZXJ6eWsgPGtvbG5AcG9jenRhLm9uZXQucGw+iQBLBBARAgAL
+BQI4NKNzBAsDAQIACgkQVYyhlCu/hbKvXgCg8HzqGh4cqitX1teJDHQJpA+JIcMA
+njnAd+lP3VKxVJAJhTlT+zACQT6auQINBDgBAVcQCAD2Qle3CH8IF3KiutapQvMF
+6PlTETlPtvFuuUs4INoBp1ajFOmPQFXz0AfGy0OplK33TGSGSfgMg71l6RfUodNQ
++PVZX9x2Uk89PY3bzpnhV5JZzf24rnRPxfx2vIPFRzBhznzJZv8V+bv9kV7HAarT
+W56NoKVyOtQa8L9GAFgr5fSI/VhOSdvNILSd5JEHNmszbDgNRR0PfIizHHxbLY72
+88kjwEPwpVsYjY67VYy4XTjTNP18F1dDox0YbN4zISy1Kv884bEpQBgRjXyEpwpy
+1obEAxnIByl6ypUM2Zafq9AKUJsCRtMIPWakXUGfnHy9iUsiGSa6q6Jew1XpMgs7
+AAICB/9kshefIzvExw89rTprhSINGlASU99itEYQlhBKu2FhHtVBw0RaW1h2OO7D
+9hi21EOx2xe2OZMq9SHNnPW43tM3nKCd4wnZXNgPYZfyRH/+HJdJ2ms+bHXwhNcm
+lANPeSejZkU/sUc9VMnZILyB91f9WtOfCIUUn8J+aR9GG16yShCeyVavoypuSLAz
+gTTVdDADVRMxRrX7Xr+vKQn9V1I/6VRJOiBSY5xwMnxL2tDy9w2d64EBOHo7Js9f
+Q4BaUs6yo/nwU8mnUVmNvF3m7JK6OWrTMlEBsAtSTJNUXnXGbwV4QE8esBk79/7M
+jLwsiakyLrgfn2oH0CTpRx6kKGYqiQA/AwUYOAEBV1WMoZQrv4WyEQKB4ACfaGvY
+gDEFYqOiVIYPLrjIyOu09xQAoNDeNmaveOGj0Wu04Dv+i4JxjUmj
+=wWaL
+-----END PGP PUBLIC KEY BLOCK-----
+============ Obetnij ===========================================

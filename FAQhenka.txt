@@ -1,0 +1,144 @@
+                        FAQ Henka                                                              
+                          V 1.0 
+
+
+Na poczatek wypada wspomniec ze jest to napisane wylacznie w celach 
+edukacyjnych i nie ponosze zadnej odpowiedzialnosci za to co potem 
+zrobicie ;-) 
+   
+Z tego co wiem to metody renowacji kart przez naklejanie w miejscu impolsow
+nagranej tasmy nie sa zbyt efektywne ze wzgledu na duza niedokladnosc przy
+naklejaniu :-(   Ciezko bylo idealnie wymierzyc miejsce wklejenia tasmy z 
+juz nagranymi impulsami,a jesli sie tasme wczesniej nakleilo to byl 
+problem z przesuwem karty :-(
+Mozna natomiast zbudowac prosta kopiarke , ktora by kopiowala z karty pelnej 
+(ja uzywam 100 impulsowej ) na karte czysta ;-) Mam na mysli zuzyta karte z
+naklejona tasma Hi8 (ja takiej uzywam ) na calej dlugosci paska 
+magnetycznego (mozna tez probowac robic karty z tektury,ale ja sie w to nie
+bawilem).Najprosciej uzyc tego co najbardziej wkurwia - kasownika impulsow
+z budki telefonicznej ;-) Trzeba go bedzie pozyskac z jakiejs budki ;-) 
+Do tego celu musisz jednak znalezc sobie jakas budke na odludziu i ktoregos 
+dnia sie przyczaic albo postawic piwo komus kto to zrobi ;-)
+Budke otwierasz kluczykiem (jak chcesz kluczyk to mail me ;-) ) Po prawej
+stronie zobaczysz mechanizm ktory bedzie ci potrzebny. Nie musisz brac
+sroobokreta czy loma .Tele-pies sam zadbal o to aby nie bylo trudno tego 
+zdobyc ;-) Lapiesz to urzadzenie za gorna czesc i pociagasz . Powinno sie
+wychylic . Wtedy przyciskasz je do dolu i samo wyskakuje ;-) To tak jak bys
+chcial wylamac drzwiczki od barku na alkohol , Mysle ze wiesz jak taki 
+wyglada ;-) Potem sie szybko wynos z miejsca wypadku i wracaj do domu ;-)
+Potem musisz poodkrecac to co nie bedzie potrzebne, cala plytka i inne gowna
+ poprzyczepiane w kolo ;-). Zostawiasz tylko bemben z obudowa i silnikiem 
+(ten od przesuwu karty) i dwie glowice (odchadza od nich po 3 kable - rozowy,
+czerwony i czarny) czarne kable obu glowic mozesz przyczepic do obudowy 
+(odprowadzaja ladunki z glowicy). Teraz musisz zbudowac odpowiedni wzmacniacz
+Ja zrobilem cos takiego :
+Ze starego walkmana wyjalem plytke i tam gdzie byla glowica przylutowalem
+jedna z glowic z budki (ta dalej od wlotu karty).Bedzie to glowica czytajaca.
+Musi byc ta dalej wlotu bo inaczej karta czytana by potem szla pod zapis ;-)
+Poza tym podlaczylem jeszcze zasilanie (bateria plaska 4,5 V) i oczywiscie 
+w miejscu sluchawek dwa kable wyjsciowe.(uzywaj baterii a nie zasilaczy ze 
+wzgledu na bardziej wystabilizowane napiecie ) Dalej kable wyjsciowe 
+podlaczylem na wejscie juz silniejszego wzmacniacza (20W zasilany 18 V)
+Wzmacniacz ten zasilam 4 bateriami plaskimi polaczonymi szeregowo
+Do wyjscia przyczepiona  jest glowica zapisujaca.(do testow ,do wyjscia
+ mozesz przyczepic wejscie "in" magnetofonu i sluchac jak sie nagrala karta 
+oraz porownac ja z karta orginalna ;-) 
+Teraz jak masz gotowe urzadzenie , na stara karte naklejasz tasme Hi8 
+(najpierw usun stary nosnik poniewaz potem sie wszystko miesza )
+Ustawiasz obie karty (orginalna i czysta ) pod odpowiednimi glowicami (tuz
+przed nimi ) i podlaczasz zasilanie do obu wzmacniaczy. Na koniec puszczasz
+zasilanie na silnik i karty sie kopiuja ;-) Potem mozesz zamiast glowicy 
+zapisujacej podlaczyc magnetofon i porownac kopie. Kluczem do sukcesu 
+jest zastosowanie odpowiednich wzmacniaczy (dokladnych). 
+Teraz wszystko postaram sie zobrazowac.Umowmy sie ze beben przesuwajacy
+ karte przedstawie na plaskiej powierzchni ;-)
+              				+----------------+
+      +-----------+		        |przedwzmacniacz |
+      |wzmacniacz |---------------------| glowicowy      |
+      +-----------+     		+----------------+
+	 ||					 ||
+         [] glowica zapis.                       [] g.odczyt.
+ _________ 		  		_________	   ->przesow
+--------------------------------------------------------------------
+karta zapisywana                      karta czytana
+
+Karta czytana musi byc z przodu zeby nie wpasc pod glowice zapisujaca
+Karty przesuwane sa jednoczesnie wiec nie ma znaczenia czy karta zapisywana
+jest z przodu czy z tylu. ;-)
+Urzadzenie to jest  o tyle dobre ze robi idealne kopie kart (pomijajac 
+niewielkie znieksztalcenia ktore przy dobrym wzmacniaczu nie sa tragiczne)
+Nie ma tu problemu z przesuwem kart czy dobrym wklejeniem impulsow ;-)
+Jedyne co musisz zrobic to dobrze ustawic karty przy starcie ;-)
+Mam jeszcze troche problemow z wzmacniaczem :-( Stosowalem rozne jakie
+tylko mialem. Na innych lepiej , na innych gorzej. Najlepszy efekt
+to na jednym mialem 3 karty na 15 :-). Ale tez znalazlem tylko 2 automaty 
+na ktorych te karty chodzily :-( 
+Caly pomysl nie jest jeszcze w 100 procentach dopracowany ale chcialem 
+zasugerowac sama metode i naklonic was do zrobienia czegos z tym 
+urzadzeniem. Jak tylko uda mi sie cos wiecej z tym zrobic to na pewno tu 
+napisze :-)
+JEZLI KTOS BEDZIE SIE Z TYM BAWIL TO NIECH KONIECZNIE NAPISZE O TYM JAKIE
+UZYSKAL EFEKTY ,NA JAKICH WZMACNIACZACH itp.
+Piszcie tez jak wymyslicie inne ciekawe rozwiazanie przy uzyciu tego 
+automatu z budki :-( 
+
+
+To juz ma byc koniec ale chce poruszyc sprawe tone-dialera.
+Czesto ktos mnie pyta z kad go zdobyc. 
+Nie ma problemu jesli mieszkasz np. w Warszawie (sluzy on do obslugi 
+sekretarki i jest w sklepach z telefonami ) ;-) W mniejszych miastach 
+niestety jest o niego ciezko :-( (u nas to wycofali bo sie tpsa wkurwilo) 
+Jednak na wszystko jest rada. Mozna poprosic kogos
+na ircu o wyslanie poczta, mozna tez kupic zestaw do zlozenia (zasady 
+zamowienia i cena jest w gazecie "Elektronika Praktyczna" - w kazdym 
+numerze.) Uklad sie nazywa "uklad wybierczy DTMF " -kit 230 firmy AVT.
+Niestety musisz umiec skladac takie zeczy. Wiekszy problem jest w wybieraniu
+numeru za pomoca tego zestawu (nie ma klawiatury tylko 4 przelaczniki za 
+pomoca ktorych ustawiasz numer i wciskasz przycisk zeby wydac ton)  :-(  .
+Mozna tez kupic dyktafon i nagrac w domu dany numer 
+telefonem z wybieraniem tonowym lub z komputera (sa programy do tego)
+Ja osobiscie kupilem sobie telefon (sluchawka z klawiatura) za 42 zl 
+-najtanszy jaki byl ;-) Taki telefon mozesz sobie przerobic specjalnie na 
+potrzeby phreaku ;-) Musi jednak miec wybieranie tonowe ! 
+Obcinasz wtedy kabel i wstawiasz tzw. krokodylki - do podczepiania
+sie po otwarciu budki itp. Do srodka wstawiasz tez baterie (moj dziala na
+ dwoch 12 V  -1,5 cm dlugosci) kupilem ja w punkcie kodaka gdzie wywoluje 
+zdjecia ;-) Baterie umieszczasz w srodku i podlaczasz do tego samego kabla 
+ktory idzie na zewnatrz .Robisz tez przelacznik - bateria/normal czy cos w
+tym stylu. Kiedy telefon dziala z baterii sluzy jako tone dialer ;-)
+Co do podczepiania to jak otworzysz budke (malo ktora ma juz kabel na
+wierzchu)  znajdujesz kabel ktory wychodzi na zewnatrz (gruby,czarny)
+Z niego wychadza dwa kabelki z ktorych zdejmujesz koszulki i oczywiscie 
+sie podczepiasz ;-) Mozna tez wstawic w budce i w telefonie minijacki i 
+wtedy nawet w bialy dzien mo¾na sie laczyc ;) Dokladnnie ta metode opisal
+NIKO1 W swoim zinie ;)  I chwala mu za to ;-)
+Ostatnio znalazlem tez ciekawy schemat tone-dialera w MS47 zine 2.
+Jest to jeden scalaczek i kwarc ;) Ja se go zlozylem to mi wszedl do pudelka
+od zapalek ;)
+
+
+Teraz z innej beczki ;)
+Ostatnio spotkalem sie z ciekawa metoda rozwalenia komus maila ;)
+Jest komenda do rozlaczania modemu "+++ath0" ktora wystarczy wyslac w mailu
+;) Zgadnijcie co sie bedzie dzialo gdy gosc bedzie sie staral odebrac  maila
+i pewnie znowu wszystko zwali na gatesa i jego windows ;)))))
+Wiem ze u niektorych jest problem z wyslaniem tego bo tez zrywa :(
+Wtedy trzeba sprobowoac np przez www.hotmail.com (tam sie to wysyla ze 
+strony www).Dziala to na 95% modemow (na stale lacze nie dziala :(   )
+Mozna probowac wysylac to komus na IRC-u na msg. Ale rozlacza w 50% 
+przypadkow :( (Troche glupio jak piszesz komus +++ath0 a on pyta co to ;)
+Teraz jak to usunac ;) No wiec mozesz zalogowac sie na swoje konto przez ftp
+i sciagnac plik mailbox. Potem go usuwasz na serwerze i wszystko gotowe.
+Sciagniety plik mozesz se normalnie poczytac ;) Wiadomosci da sie tez usunac 
+przez telnet przez port 110.
+
+
+
+
+Jest to moje pierwsze faq wiec moze nie bylo najlepsze, ale jesli sie wam nie
+podoba to nie musicie czytac !
+
+                       Milej zabawy zyczy  :
+                                          
+                                                      Heniek 
+                                                       lodowka@polbox.com

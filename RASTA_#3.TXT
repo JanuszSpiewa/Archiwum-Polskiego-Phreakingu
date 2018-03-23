@@ -1,0 +1,222 @@
+;WERSJA TXT, PL-CHAR: WINDOWS
+
+                    R A S T A   P H R E A K   F A Q   # 3                       
+                                                                                
+                           Czas na dobre pomys³y ;)                             
+
+                                  14.03.99
+
+
+C a l l e r I D   n a   l i n i i   a n a l o g o w e j
+  Tak, jest to mo¿liwe. I nie chodzi mi tu o coœ takiego, ¿e na komórce pojawia
+  siê numer ze zwyk³ej linii, ale w³aœnie ¿e na linii analogowej pojawia siê
+  ów CallerID. Oczywiœcie tylko na niektórych nowych centralach. Polega to na
+  tym, ¿e miêdzy pierwszym a drugim dzwonkiem, w liniê (nie odebran¹, 48V=)
+  wysy³any jest odpowiedni sygna³. W USA jest to modulacja FSK (modem 1200 baud)
+  ale w Europie (poza GB) jest to zwyk³y kod DTMF!!! Teraz: JAK SPRAWDZIÆ, czy
+  do nas jest wysy³any CallerID? Potrzebny zestaw pods³uchowy: s³uchawki od
+  walkmana, kondensator 1uF/250V (ale nie elektrolityczny, taki, jaki jest przy
+  dzwonku w starych telefonach) oraz odpowiednie kabelki. Taki zestaw pozwala
+  sluchaæ, co dzieje siê na linii, bez odbierania jej. Bo jeœli odbierzemy zaraz
+  po 1. dzwonku, ID nie zostanie wys³ane. Oto jak to pod³¹czyæ:
+
+  *-------*-----------------------------------*
+  LINIA   |                             TELEFON
+  *-----------*--------------------------------*
+          |   |--------\
+          |   C, 1uF    sluchawki
+          \------||----/
+
+  Teraz robimy tak: zak³adamy s³uchawki. Dzwonimy do siebie z komóry. Przy ka¿-
+  dym dzwonku s³ychaæ strasznie g³oœne BRRRRRRRRRR (25Hz). Je¿eli miêdzy 1. a
+  2. ring jest cisza, to mo¿emy daæ sobie spokój lub ewentualnie spróbowaæ
+  poprosiæ na centrali o w³¹czenie rozpoznawania numeru dla twojej linii.
+  Powiedz, ¿e kupi³eœ sobie telefon bezprzewodowy siemens za 1500z³ który ma
+  rozpoznawaæ ID na analogowych ³¹czach (jest taki naprawde) i to nie dzia³a.
+  Jeœli natomiast s³ychaæ szybkie tony DTMF, to cool. Jeœli znasz siê trochê na
+  elektronice, to zrób sobie dekoder. Najlepiej z uk³adu MT8870 (i elementów do
+  podstawowej aplikacji: kwarc etc), z wyœwietlacza LCD z kompletnym sterownikiem
+  który normalnie kosztuje (zale¿y jaki) 150-300z³, ale mo¿na wymontowaæ z nieb.
+  URMETA, obejdzie siê nawet bez mKontrolera jak siê trochê postarasz. Jak nie
+  umiesz, a masz callerID to mail me. W ogole jak masz ID to napisz, chcê
+  pozbieraæ informacje gdzie to dzia³a a gdzie nie. Podsumowuj¹c, jest to super
+  bajer, bo kto dzwoni¹c do ciebie na zwyk³y miejski numer bêdzie wiedzia³, ¿e
+  znasz jego telefon. Dzia³a na 5ESS albo EWSD (bo nie chc¹ mi dok³adnie powie-
+  dzieæ co to za sprzêt) i niekiedy na S12. I kto tu mówi, ¿e potrzeba ISDN?
+  PS: jest to mój w³asny pomys³, zainspirowa³y mnie tylko (ju¿ doœæ dawno)
+  foldery reklamowe RTVeuroAGD gdzie pokazywali wspomniany telefon z detekcj¹ ID
+  A dalej to ju¿ tylko przebijanie siê przez stosy dokumentacji ITU-T etc., no
+  i testowanie. To by³o chyba najgorsze. No bo spróbujcie iœæ np. do swojej
+  babci i coœ tam pod³¹czaæ do telefonu, dzwoniæ niewiadomo gdzie...
+  Tak wiêc nie jest to zripowane z innego faq'a.
+ 
+C u d a   n a   c e n t r a l i   E 1 0 A.
+  W Poznaniu znajduje siê jeszcze wiele central E10A, produkowanych przez Telkom
+  Teletra w Poznaniu (dzisiejszy Alcatel Teletra) od roku 1975. BTW mój nauczy-
+  ciel od fizy pracowa³ tam kiedyœ - oblicza³ wytrzyma³oœæ elektryczn¹ czy coœ
+  takiego. By³a to niby licencja Alcatela, ale wszystko robili jakby po swojemu.
+  Wracaj¹c do central: E10a s¹ bardzo dziwne. Napewno cyfrowe: g³os, zanim doj-
+  dzie np. z numeru 867-1016 do 867-1017, to jest zamieniany na strumien cyfrowy
+  PCM 8192 bajt/sek. (z czego wydzielono 8000b/s na glos (8KHz) i 192b/s na syg-
+  nalizacjê), przechodzi przez cyfrowy crosspoint na centrali i spowrotem zamie-
+  niany jest na sygna³ analogowy. Z drugiej strony,sygnalizacja miêdzycentralowa
+  odbywa siê po trakcie cyfrowym PCM ale nie po cyfrowym kanale sygnalizacyjnym,
+  ale po g³ównym (rozmównym) jako sygna³y CCITT (tony podobne do DTMF) !!!
+  Teraz wiadomo ju¿, dlaczego centrala S12J ³¹czy nieca³e pó³ sekundy do USA, a
+  prawie 10 do s¹siedniej dzielnicy, gdzie jest E10A. Jako ¿e sygnalizacja jest
+  rozbudowana (numer wywo³ywany, potem CallerID, kategorie, taryfy) to trwa to
+  doœæ d³ugo. ¯eby by³o œmieszniej, to w czasie rozmowy sygnalizacja (roz³¹cza-
+  nie) idzie ju¿ po kanale sygnalizacyjnym.
+  Ale to jeszcze nic. Najbardziej pojebani s¹ ludzie, którzy programuj¹ E10A.
+  Ró¿ne ciekawe numery i kody zmieniaj¹ siê z dnia na dzieñ, codziennie s¹ ja-
+  kieœ inne funkcje. Np. numer 888-8888. Dzwonie pierwszy raz: reorder
+  (szybkie busy). Za ka¿dym nastêpnym razem jest informacja, ¿e nie zap³aci³em
+  rachunku, nast¹pi rozwi¹zanie umowy, aktywne jest tylko 997 etc. Mo¿na siê
+  nieŸle przestraszyæ :)) Po pewnym czasie siê to resetuje i znów jest jeden raz
+  reorder. Obecnie ³¹czy chyba 30 sekund a potem jest ci¹gle zajête.
+
+  Tak samo przycisk tonowy #. Jest on bardzo po¿yteczny, kiedy centrala ma pro-
+  blemy z dekodowaniem numerów, tzn. nie wie, czy to ju¿ koniec numeru czy nie.
+  I tak np. przy wybieraniu 0202122 trzeba jeszcze czekac 10 sekund az zacznie
+  'pikaæ' (przez nastepne 12 sekund). Je¿eli wybierzemy 0202122# to od razu
+  zacznie pikaæ. Podobnie, gdy dzwonimy za granicê. Problem w tym, ¿e ostatnio
+  zaczeli znowu œwirowaæ i codziennie dzia³a to inaczej. Raz 'nie ma takiego nu-
+  meru', a w inny dzieñ zeruje ca³y wybrany numer i zale¿nie od dnia daje ponow-
+  nie dialtone albo nie, ale trzeba wybieraæ od pocz¹tku.
+  Jeszcze inaczej jest z gwiazdk¹ *. Kiedyœ, wybrana na pocz¹tku, by³a równowa¿-
+  na z wybraniem 96, potem 961. Dlatego kiedyœ dzwoni³em po taxówke przez *22 :)
+  potem ju¿ to nie dzia³a³o. Teraz - trudno powiedzieæ, jak to dzia³a.
+  Równie ciekawe s¹ dodatkowe tony A,B,C,D - czasem s³ychaæ po nich ró¿ne dziwne
+  odg³osy.
+  Ale jedna rzecz mnie wkurwia. Jakieœ 2 lata temu pokazywa³ siê od nas CallerID
+  (z E10A oczywiœcie) nawet na centertelu. Teraz ju¿ nie. Chyba chodzi³o o to,
+  ¿e przy okazji pokazywa³y siê wszystkie numery zastrze¿one :) No ale te huje
+  zamiast to odpowiednio zafixowaæ, wola³y wy³¹czyæ wszystkim CallerID na ka¿dej
+  E10A. No có¿, monopolista.. ale nied³ugo na Grunwald (moja dzielnica) ma wejœæ
+  Netia a wtedy pier**le tepse.
+
+C e n t r a l e   w   P o z n a n i u   -  T P . S A
+  To jedynie wynik moich w³asnych obserwacji, takie dane nie s¹ nigdzie dostêpne
+  normaln¹ drog¹. Za pomy³ki przepraszam, ale 90% jest napewno OK. Na terenie
+  Poznania dominuj¹ centrale systemów Alcatela: E10A (Teletra), E10B i S12.
+
+Numery       Typ centrali  Obs³ugiwany region
+ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ
+81x          wszystkie typy - peryferia Poznania, oprócz tych obs³ugiwanych
+                           przez Rataje. Dok³adnie nie sprawdza³em.
+820-823      E10A          Winogrady (centrale), Pi¹tkowo (tylko koncentratory)
+                           oprocz 822-4xxx (S12 ?)
+824-1xxx     E10A          Winogrady
+825,826      S12J          Winogrady
+830-833      E10A          Wilda, Dêbiec
+847,848      E10B          Je¿yce
+841n         E10B          Je¿yce
+8415         ?elektromech. Policja
+8491         ?elektromech. Wojsko Polskie (kiedyœ-potem zam.na 857, teraz-???)
+851-853      E10A          Stare Miasto
+854          ?elektromech. Œródmieœcie
+855,856      E10B ?        Œródmieœcie
+857          E10B ?        Wojsko Polskie
+861,867,868  E10A          Grunwald (centrala Czeœnikowska)
+8623-8625    E10A          os. Kopernika (centr. Grunwald)
+864-865      S12/J         £azarz
+866          S12/5         £azarz
+869          ?elektromech. PKP
+874,875      S12/J         Poznañ-wschód (osiedla na Ratajach)
+87x pozost.  E10A          Poznañ-wschód (Rataje i wiochy podpoznañskie)
+...............................................................................
+
+  Sami widzicie, jakie to jest wszystko por¹bane. No bo dlaczego z jednej cen-
+  trali E10A wyodrêbniono 1000 numerów - 822-4xxx pod³¹czaj¹c je do innej, na-
+  tomiast dla owych brakuj¹cych 1000 numerow na tej centrali stworzono dodatkow¹
+  numeracjê 824-1xxx, kiedy ¿adne inne telefony nie maj¹ narazie pocz¹tku 824.
+  Numeracja jest wiêc coraz bardziej niespójna, ci¹gle stawiaj¹ nowe centrale
+  a wszystko chodzi coraz wolniej. Natomiast Netia, która bardzo sprawnie i szy-
+  bko stawia centrale w Swarzêdzu i na niektórych osiedlach, a niebawem wejdzie
+  na Grunwald i inne dzielnice, dosta³a numery 651- i 652-xxxx. Dlaczego nie
+  proœciej? ¯adne telefony nie mia³y dotychczas 6 na pocz., wiêc mogli daæ Netii
+  np. 666-xxxx :) albo np. 555-.
+
+P o l a c z e n i e   i n t e r w e n c y j n e
+  Przyznam, ¿e nie sprawdza³em tego, czyta³em po prostu w starych ksi¹¿kach o
+  telekomuniacji. Na niektórych centralach, szczególnie E10A z wybieraniem tono-
+  wym, jeœli ostatni¹ cyfrê wybieranego numeru przytrzymamy kilka sekund, to
+  uzyskujemy po³¹czenie interwencyjne. Z niezbyt pewnego Ÿród³a (Maciej S. :)))
+  wiem, ¿e kiedyœ to dzia³a³o, tzn. je¿eli dzwoniliœmy do kogoœ kto ju¿ mia³
+  rozmowê to zamiast sygna³u busy roz³¹cza³o tamtego goœcia i ³¹czy³o z nami.
+  U mnie przy próbie takiego manewru dostaje "po³¹czenie nie mo¿e byæ zrealizo-
+  wane", poniewa¿ opcja ta zosta³a zablokowana. Zachêcam jednak do prób, bo -
+  - znaj¹c naszych specjalistów :) - wszystko jest mo¿liwe...
+
+O t w i e r a n i e   U R M E T a
+  Nie jestem mo¿e wybitnym specjalist¹ w tej dziedzinie, ale conieco prze¿y³em.
+  Klucz mam w sumie od niedawna. BTW klucz: jest to tzw. typ ABLOY, produkowany
+  przez ASSA ABLOY. Jak siê dowiedzia³em z ich WWW, niegdyœ by³y to klucze do
+  okien i drzwi, potem wyspecjalizowali siê w automatach publicznych, maszynach
+  do gier i parkometrach. Nie bêdê siê rozpisywa³, powiem tylko, ¿e klucz o po-
+  pularnym schemacie 00013100 pasuje w Poznaniu do niewielu urmetów. BTW klucz
+  od Hrabiego trzeba troszkê dopi³owaæ, poniewa¿ kiedy dorabiaj¹ je, s¹ one tro-
+  che niedociête po zewnêtrznych stronach wyciêcia (tzn. te dwie jedynki na
+  schemacie). Nie chcê tu ripowaæ tekstów w stylu ¿e po otwarciu trzeba telefon
+  od³¹czyæ od linii (czego zapomnia³em zrobiæ :))), chcê tylko dok³adnie opisaæ,
+  jak zdejmowaæ czytnik,co w sumie nigdzie nie by³o dobrze opisane. Otó¿ czytnik
+  zajmuje ca³¹ praw¹ stronê, w jego prawym boku na dole jest blokada. Blachê na-
+  la¿y poci¹gn¹æ w dó³ i odchylaæ na si³ê w prawo. W tym czasie czytnik podnosi-
+  my do góry i kiedy siê wyhaczy ci¹gniemy do siebie. Trochê siê zdziwi³em, ¿e
+  to takie wielkie jest :) naprawde jest to gigantyczne i ciê¿kie. No i ten
+  stres... No ale czytnik jest. Polecam zabraæ jeszcze LCD, bardzo siê przydaje
+  w warsztacie m³odego elektronika :) a jest normalnie bardzo drogi.
+
+F r e e   D i a l
+  Ka¿dy phreaker zadaje sobie pytanie, jak dzwoniæ za darmo. To jest cholernie
+  wkurwiaj¹ce, kiedy z ka¿dym gównem musze dzwoniæ do kumpla, a jeszcze jak jest
+  w piwnicy (na si³owni) to w chacie o tym nie wiedz¹ i musze dzwoniæ na komóre.
+  Aby rozmawiaæ za free, najlepiej mieæ w³asn¹ centrale :) To nie ¿art, mamy coœ
+  takiego. Wymaga³o to trochê poœwiêcenia, ale czego siê nie robi w wakacje.. :)
+  Mieszkamy w 2 blokach, oddalonych w najkrótszym miejscu o ok. 50m, ja na 4.
+  piêtrze, a kumpel na parterze,dodatkowo w skrajnych klatkach. Bloki oddzielone
+  s¹ uliczk¹ osiedlow¹ z p³yt betonowych 5-k¹tnych. Zasadnicza czêœæ infrastru-
+  ktury :) kosztowa³a nas ca³y dzieñ pracy kilku osób. A wszystko zaczê³o siê od
+  tego, ¿e u mnie na dachu znaleŸliœmy nie pod³¹czony kabel 6-¿y³owy,
+  przeznaczony do wkopania, d³ugoœci 70m!!! Zaczeliœmy od mojej piwnicy, gdzie w
+  œcianie wywierci³em udarem otwór tak, ¿e wychodzi³ zaraz pod chodnikiem na ze-
+  wn¹trz. Wzd³u¿ bloku i dalej do ulicy wyci¹galiœmy kolejne p³ytki chodnika i
+  pod nimi k³adliœmy kabel. Przez ulicê "wydziobaliœmy" szpary w p³ytach i  w
+  nich zosta³ zamurowany kabel. Dalej znowu chodnikiem i do piwnicy. Z mojej
+  piwnicy idzie na 4. piêtro kabel do mnie i póŸniej jeszcze do innych goœci. W
+  bloku kumpla jest centralka, sk¹d id¹ kable do nas i do nich, gdzie wzd³u¿
+  ca³ego bloku piwnicami prowadzone s¹ kable dochodz¹ce do Latana i jego si³owni
+  W wakacje '99 przewidujemy kilkanaœcie abonentów, a potem nastêpne 5 przez
+  projektowane w³aœnie nadajniki radiowe 430MHz do innego bloku 500m dalej.
+  Pod³¹czyliœmy telefony-teraz tylko podnieœæ s³uchawkê - amerykañski dialtone -
+  2-cyfrowy numer (w DTMF!) - ring - ¿adnej teletaxy, mo¿na ³¹czyæ siê modemami
+  i czymkolwiek jeszcze. BTW centralka siê trochê sypie, bo nie mam czasu (nie-
+  d³ugo matury) ale w wakacje bêdzie OK. Jest to komputer 386 z odpalonym pro-
+  gramem obs³ugi i troche elektroniki pod³¹czonej przez port LPT. Wychodzi tanio
+  ale jak ktoœ chce coœ takiego kupiæ to najtañsza 4-numerowa kosztuje 400z³ w
+  sklepie. Jest jednak prosty sposób, który stosowaliœmy na pocz¹tku: prosta
+  ³¹cznica na dwie linie, kiedy podnosimy jeden telefon, drugi dzwoni. Bardzo
+  praktyczne. Potrzebne elementy to 2 przekaŸniki 24V ka¿dy po dwa styki prze³¹-
+  czaj¹ce, dwa kondensatory 0,5-1uF foliowe, transformator 24V, jedna dioda pro-
+  stownicza. Jeœli tylko interesuje ciê temat centralek (zarówno elektronicznych
+  jak i tej prostej ³¹cznicy) to mail me pls. Centralke elektroniczn¹ do kilku-
+  dziesiêciu NN mo¿na tanio wykonaæ z popularnych kluczy CMOS 4066, a naj³atwiej
+  z czêœci firmy Mitel i podobnych. Z mitela mo¿na nawet ³atwo zrobiæ ISDN ;)
+  tylko trochê dro¿ej :(
+
+Z   i n n e j   b e c z k i
+  Przedstawiê wam jeszcze jeden mój pomys³, który tym razem nie ma ju¿ zupe³nie
+  nic wspólnego z phreakiem. Ale jest dobry i przydaje siê. Sprawa polega na tym
+  ¿e czasem kupujemy sprzêt komputerowy, z którego nie jesteœmy potem zadowoleni
+  a nie mo¿na go wymieniæ. Np. p³yta g³ówna czasem siê wiesza, ale akurat jak
+  chcemy pokazaæ w serwisie, to dzia³a. A to np. dysk co któryœ raz siê nie wy-
+  krywa, nagrywarka CDR po nagraniu kilkuset p³yt ma laser prawie spalony i po-
+  prawnie nagrywa tylko co 3. p³ytê ale akurat w serwisie jest ta trzecia :).
+  No wiêc pod³¹czamy kabelki z dobrego zasilacza 12V gdzie popadnie do elektro-
+  niki, najlepiej w ten sposób, ¿e najpierw dotykamy kabelkiem a potem dopiero
+  w³¹czamy zasilacz do sieci, ¿eby nie wyspawa³y siê czarne plamy na uk³adach.
+  Po tych zabiegach sprzêt jest definitywnie uszkodzony i nadaje siê do wymiany.
+  Oczywiœcie dostajemy nowy, chyba ¿e to by³ Optimus... Wtedy no way!
+
+                                                                                
+                         _rasta_@mailexcite.com                                 

@@ -1,0 +1,76 @@
+From team SPIRYTUS				       piszcz1@friko4.onet.pl
+maj '98 				    http://friko4.onet,pl/wa/piszcz1/
+ver. 0.98
+
+
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³				    TELEKOMUNIKACJA POLSKA  S.A.	 ³
+³									 ³
+ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
+³									 ³
+³			 <========== KARTA TELEFONICZNA 		 ³
+³									 ³
+³	 a			b		      c 		 ³
+ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
+³   ººººººººººººººº    ³   ººººººººººººººº  ººººººººººººººººººººººººººººº³
+ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
+³ 25					      0  20%  40%  60%	80%  100%³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÁ
+ tak wyglada nowa karta telefoniczna
+
+0. Karta nagrana jest prostokatem o malym wspolczynniku wypelnienia (szpilki)
+
+1. Pasek magnetyczny sklada sie z 2 czesci:
+   ID1 (a) (b)
+   ID2 (c)
+2. ID1: Na nowej karcie sa jakby 3 kolejne zapisane sciezki. Pierwsza (a) i
+   ostatnia (b) maja taka sama dlugosc (chyba), a pomiedzy nimi znajduje sie
+   pojedyncza szpilka. (a) i (b) maja po okolo 30 szpilek (nr karty,ilosc imp)
+3. Nad paskiem procentowym (c) jest ilosc impulsow zapisana jako ilosc szpilek
+   proporjonalnie do ilosci impulsow. Zapisanych tam jest okolo 250 szpilek.
+
+
+     /ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+   /				    TELEKOMUNIKACJA POLSKA  S.A.	 ³
+ /									 ³
+ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
+³									 ³
+³			 <========== KARTA TELEFONICZNA 		 ³
+³									 ³
+³	  a			 b		  c			 ³
+ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
+³   ººººººººººººººº    ³   º³  ººººººººººº  º				 ³
+ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
+³ 25					      0  20%  40%  60%	80%  100%³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÁ
+tak wyglada zuzyta karta
+
+1. (a) pozostaje bez zmian (wniosek - numer karty, informacje potrzebne
+    np do reklamacji)
+2. (b): zostaje skasowane pewna ilosc impulsow, z lewej strony zostaja
+   3 impulsy, a z prawej ok 20
+3. (c) zostaje skasowana oraz zniszczona mechanicznie, zostaja tylko ostatnie
+   2 szpilki dokladnie nad koncem paska procentowego
+
+
+Next version on June '98
+
+P.S. 1
+Badalem 25
+
+P.S. 2
+Jezeli mam bledne informacje, ty masz dokladniejsze dane,
+czym sie roznia 100 od 25, metody odzyskiwania, karty serwisowe,
+masz klucz do urmetu lub sam aparat
+inne ciekawe informacje
+
+P.S. 3
+FAQ hrabiego jest zajebisty GORACO POLECAM
+jest gdzies w sieci
+
+
+
+NAPISZ E-MAIL:
+
+piszcz1@friko4.onet.pl
+http://friko4.onet,pl/wa/piszcz1/

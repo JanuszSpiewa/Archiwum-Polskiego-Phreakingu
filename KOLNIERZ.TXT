@@ -1,0 +1,666 @@
+
+
+           อออออออออออออออออออ>    Kolnierzyk    <อออออออออออออออออออ
+
+                                   IX-XII '98
+
+                               koln@friko6.onet.pl
+
+                  อออออออออออออออออออ>    <อออออออออออออออออออ
+
+
+    Witajcie.
+    Ponizej troche tworczosci na temat telefonow. Jak zwykle, nie odpowiadam
+    za skutki uzywania ponizszych informacji jak i dolaczonego programu.
+    Chyba wystarczy na wstep?
+
+    Jak wiadomo, TPSA wprowadza coraz wieksza ilosc srebrnych automatow (TPE-
+    97), ktore potrafia czytac karty elektroniczne, i temu ostatniemu zamie-
+    rzam teraz poswiecic chwile czasu. Czesc z zawartych tu informacji za-
+    czerpnalem z czasopisma "Lacznosc", ktore wydaje TPSA co tydzien i oprocz
+    zupelnie nieinteresujacych tekstow o prywatyzacji itp. mozna nieraz zna-
+    lezc calkiem ciekawe. No wiec karty chipowe wykorzystywane przez nasze
+    automaty (wlasciwie to one beda dopiero wykorzystywane, TPSA wprowadzila
+    w grudniu'98 pierwsza partie) zawieraja uklad elektroniczny w standardzie
+    Eurochip. Karty zgodne z tym standardem sa juz wykorzystywane w 31 krajach
+    swiata. Do rodziny Eurochip naleza uklady SLE 4436E oraz SLE 5536 firmy
+    Siemens. U nas jak na razie wykorzystywac sie bedzie pierwszy z tych
+    ukladow. Drugi to poszerzona wersja pierwszego, posiada wieksza ilosc
+    zabezpieczen. Obydwa uklady maja po 16 bitow ROMu, 185 bitow PROMu oraz
+    36 bitow EEPROMu. W ukladach tych znajduje sie licznik, na ktorym moga
+    sie znajdowac maksymalnie 21064 jednostki. Licznik jest tak skonstruowany,
+    ze niemozliwe jest jego ponowne napelnienie ani w ogole zwiekszenie liczby
+    jednostek. Uklady sa zabezpieczone przed utrata jednostek w przypadku
+    gwaltownego wyjecia karty z czytnika, dlatego zbednym staje sie stoso-
+    wanie drogich mechanizmow wciagajacych karte do srodka automatu telefo-
+    nicznego i uniemozliwiajacych przez to nagle jej wyjecie. Najciekawszym
+    jednak elementem ukladu jest zaimplementowane sprawdzanie autentycznosci
+    karty. Karta na rozkaz automatu, ktory podaje jej losowo wybrana liczbe,
+    musi odpowiedziec inna 16-bitowa wyliczona przez siebie liczba, do wy-
+    generowania ktorej uzywa danych jawnie zapisanych na karcie, jak numer
+    serii i stan licznika, danych ukrytych oraz losowej liczby odebranej
+    z automatu. Do wygenerowania odpowiedzi stosowany jest tajny algorytm po-
+    siadajacy certyfikaty skutecznosci. Automat moze sprawdzac autentycznosc
+    karty np. co sekunde lub po kazdym zmniejszeniu stanu licznika, aby unie-
+    mozliwic wymiane karty na falszywa podczas rozmowy. W automacie za komu-
+    nikacje z karta odpowiedzialny jest specjalny kryptograficzny modul bez-
+    pieczenstwa, ktory porownuje odpowiedz karty z wyliczona przez siebie.
+    Obydwie wartosci musza byc takie same, w przeciwnym razie karta jest kwali-
+    fikowana jako falszywa. Glowny mikroprocesor w automacie decyduje o zaak-
+    ceptowaniu karty na podstawie informacji otrzymanych z modulu kryptogra-
+    ficznego oraz informacji z systemu nadzoru takich, jak zawartosc czarnej
+    i bialej listy kart. System nadzoru obejmuje wszystkie aparaty TPE-97,
+    pracuje sie tez nad podlaczeniem do niego niebieskich TSP-91. Sklada sie
+    on z centralnej bazy danych pracujacej pod kontrola oprogramowania Sybase
+    SQL Server 11 postawionego na Windows NT Server 4.0 oraz lokalnych centrow
+    zarzadzania telefonami z oprogramowaniem Sybase SQL Anywhere 5.5 na Windows
+    NT Workstation 4.0. Lokalne centra nadzoru polaczone sa z serwerem bazy
+    danych poprzez siec POLPAK. Kazda karta telefoniczna posiada niepowtarzalny
+    numer, ktory wraz z jej nominalna liczba impulsow jest zarejestrowany w
+    centralnej bazie danych. Obecnie TPSA wprowadzila druga generacje kart
+    magnetycznych (nie nalezy mylic z kartami elektronicznymi...), ktora
+    pozwala na zakodowanie 16384 emisji po 65500 sztuk kazda (pierwsza umoz-
+    liwiala zakodowanie tylko 2048 emisji), co umozliwia ponumerowanie ponad
+    miliarda kart. Zastosowano w nich rowniez wielosladowy zapis, co ma ponoc
+    utrudniac klonowanie. Wszystkie prowadzone przy uzyciu kart rozmowy sa
+    rejestrowane w lokalnym centrum nadzoru na tzw. bialej liscie (lista kart
+    dopuszczonych do uzytku) w postaci czasu polaczenia, numeru karty, liczby
+    wykorzystanych oraz pozostalych impulsow. Dane te sa nastepnie przesylane
+    do centralnej bazy danych. Ich analiza umozliwia utworzenie czarnej listy
+    kart, gdzie umieszczane sa numery kart falszywych i uszkodzonych. Mozna na
+    niej rowniez umiescic numery kart skradzionych. Czarna lista jest z powro-
+    tem przesylana do lokalnych centrow nadzoru, skad automaty dowiaduja sie,
+    czy wlozona przez nas karta nie jest falszywa. Jesli automat na podstawie
+    informacji z modulu kryptograficznego lub lokalnego centrum nadzoru stwier-
+    dzi falszywosc naszej karty, niszczy ja elektrycznie. Uklady Eurochip umoz-
+    liwiaja rowniez utworzenie telefonicznej karty miedzynarodowej, wymaga to
+    jedynie uzgodnien odnosnie rozliczen miedzy operatorami. Juz teraz rozwia-
+    zanie to stosuja Niemcy, Holandia, Szwajcaria i Wegry. W przyszlosci moz-
+    liwe to bedzie we wszystkich krajach Unii Europejskiej. Mozliwe tez bedzie
+    stworzenie karty uniwersalnej sluzacej nie tylko do zaplaty za rozmowy
+    telefoniczne, ale rowniez za metro, muzeum, do wyciagania kasy z bankomatu
+    itp.
+
+    A teraz, dla odpoczynku, troche opowiesci na troche inne tematy i bardziej
+    na luzie:
+
+    - Niebieskie automaty maja fajny bajer, na ktory swego czasu wpadlem.
+      Wyobrazmy sobie sytuacje: chcemy sobie do kogos zadzwonic i pogadac
+      z godzinke, a tu sie za nami zbiera tlum chetnych do skorzystania
+      z automatu. No to podchodzimy do automatu i pierwsze co robimy, to
+      wciskamy jakikolwiek klawisz i trzymajac go dopiero teraz podnosimy
+      sluchawke. Po podniesieniu sluchawki dalej trzymamy tenze biedny klawisz
+      i za moment pojawia sie nam "USZKODZONY"... Teraz juz mozemy puscic
+      klawiature i zademonstrowac calemu swiatu, ze stad sobie nie podzwoni,
+      wskazujac jednoczesnie najblizszy inny automat. Po uwolnieniu sie od
+      petentow naciskamy widelki i trzymamy, az zniknie napis. Puszczamy widly
+      i za moment widzimy znajomy (zlosliwy) napis "WLOZ KARTE". No chyba ze
+      automat jest faktycznie zepsuty...
+
+    - Szedlem sobie raz ulica obok postoju taxi i cos mi wpadlo do glowy.
+      Wyciagnalem tonedialer i dorwalem sie do telefonu dla taksiarzy.
+      Taki telefon, jak wiemy, nie ma tarczy, za to ma glosny dzwonek i sluzy
+      taksiarzom do przyjmowania zamowien. No wiec podnosze sluchawke,
+      a w sluchawce dialtone. Wiec numer na zegarynke. Sekunda ciszy i jak
+      dzwonek nie wrzasnie - krotko lecz skutecznie, zaraz przyplatal sie
+      jakis taksiarz i co ja tu kombinuje itp. Po wcisnieciu mu jakiegos kitu
+      oddalilem sie od miejsca zbrodni, polaczenia z zegarynka niestety nie
+      uzyskalem...
+
+    - Jak sie okazuje, TPSA w swoich szafkach rozdzielczych montuje zamki
+      ABLOY wyposazone w alarm. Otwarcie zamka powoduje wlaczenie alarmu
+      na centrali i na miejscu moga sie zjawic przedstawiciele naszego
+      monopolisty lapiac nas ze sluchawka w reku i skrzynka na osciez.
+      Natomiast monter po otwarciu zamka musi w ciagu 30 sek. zameldowac
+      o tym u dyspozytora w centrali, podobnie po zamknieciu. Tak jest
+      przynajmniej w teorii, bo gdyby TPSA chciala biec do kadego przypadku
+      otwarcia zamka, to musialaby zatrudnic co najmniej jednego czlowieka na
+      jedna skrzyneczke...
+
+    - Wpadlismy kiedys z przyjacielem z phreak-teamu (Przemyslaw mu na imie)
+      na taki mianowicie pomysl: Gdyby tak przeprogramowac centrale korzystajac
+      z jej dodatkowych uslug tonowych? Chodzilo konkretnie o przeprogramowanie
+      automatu, aby w przypadku dzwonienia do niego przenosil rozmowe np. do
+      USA. Wtedy placilibysmy tylko za rozmowe lokalna, a za polaczenie z 
+      automatu do USA TPSA placilaby sama sobie... Metoda ta, z uzyciem zeto-
+      nowca zostala swego czasu szczegolowo opisana przez Samanthe w pliku
+      sammy's1.txt. My zas uzylismy do doswiadczen niebieskiego Urmeta. Aby
+      wykorzystac go do tego celu nalezy uzyc starego tricku i postapic,
+      jakbysmy chcieli dzwonic na "rozmowe przychodzaca" - dzwonimy do nie-
+      go z drugiego automatu obok albo komorki, rozlaczamy sie, w pierwszym 
+      podnosimy sluchawke, mamy dialtone i pik-pok wraz z wlaczonym mikrofonem.
+      Teraz wybieramy tonedialerem odpowiednie kody dla centrali i automat
+      zaczyna przenosic polaczenia przychodzace do naszego wuja zza oceanu.
+      Oczywiscie do przeprogramowanego Urmeta dzwonimy z innego automatu, bo
+      TPSA ma billingi i przyjdzie do nas w gosci, gdy zadzwonimy do Urmeta
+      z domu. Jest tylko jeden problem - nie mozemy centrali z Urmeta na karty
+      rozprogramowac - automat nie zadzwoni, gdy sie bedziemy chcieli z nim
+      polaczyc, zadzwoni telefon u wujcia. No chyba ze sie wepniemy w linie
+      automatu i rozprogramujemy centrale albo zaprogramujemy automat na prze-
+      noszenie rozmow po okreslonym czasie, gdy nikt nie odbiera. W naszym
+      przypadku zreszta rozprogramowanie nie bylo takie istotne, bo wtedy
+      numery automatow znali nieliczni wtajemniczeni, gdyz na niebieskich
+      Urmetach byly lacznie moze ze trzy teletaksy i TPSA nie pisala numerow
+      na budkach. Dopiero w wyniku dzialan naszego phreak-teamu TPSA sie so-
+      lidnie wkurzyla, polowe automatow w miescie, ktora byla podpieta do sta-
+      rej centrali, przepiela do nowej, na ktorej zalozyla teletakse na kazdy
+      automat. No i odwazyla sie wreszcie na ujawnienie numerow budek. W trak-
+      cie instalowania powyzszych zabezpieczen dwa razy sie nam zdarzylo, ze
+      Przemek dzwonil do mnie z automatu na "rozmowe przychodzaca" i TPSA roz-
+      laczyla nas w trakcie rozmowy! Po takim rozlaczeniu automat byl juz od-
+      porny na ta metode. No ale zeszlismy z tematu. Wybralismy sie wiec
+      pewnego wieczora okolo godziny 23 pod glowna siedzibe wroga w naszym
+      miescie, gdzie jest obfitosc automatow. Zaczynamy kombinowac, a tu pod-
+      chodzi facet - "Chlopcy, nie macie moze zuzytych kart telefonicznych?"
+      Malo sobie szczeki nie potluklem o ziemie. No ale coz, w koncu my tez
+      nie jestesmy calkiem normalni, zeby w srodku nocy stac pod poczta.
+      Wreszcie facet poszedl i wzielismy sie znowu za doswiadczenia, aby
+      okolo 24 stwierdzic, ze TPSA choc raz pomyslala i zablokowala wszystkie
+      uslugi dodatkowe na automatach. Probowalismy nawet zamowic budzenie...
+      No, ale nie zaluje, bylo wesolo.
+
+    - Pojawil sie (dawno juz temu) w Internecie HellFire FAQ 5.1, a pozniej na
+      jego podstawie artykul w "Gazecie Wyborczej", opisujacy sposob podsluchi-
+      wania kogos z uzyciem dwoch linii telefonicznych. Wykorzystano tu fakt,
+      ze jezeli dzwonimy do kogos, tylko my mozemy rozlaczyc rozmowe, ktos po
+      drugiej stronie linii po odlozeniu sluchawki i ponownym jej podniesieniu
+      dalej moze z nami rozmawiac, gdyz nie jest w stanie rozlaczyc polaczenia.
+      Wyjatkiem tu sa telefony komorkowe i, jak sie orientuje, bezplatne dla
+      nas linie 0800, ktore moga nas rozlaczyc, bo tak mozna by bylo odlozyc
+      sluchawke na noc i nabic im niezly rachunek. Otoz TPSA twierdzi, ze
+      opisana wlasciwosc sieci telefonicznej nie jest zupelnie prawdziwa,
+      gdyz jezeli nasz rozmowca odlozy sluchawke, to w czasie od 5 do 100
+      sekund centrala rozlacza polaczenie, co ma ograniczac mozliwosc opisa-
+      nego przez HellFire'a podsluchu. Wierzycie w to? :)
+
+    - Dowiedzialem sie niedawno, ze wlasciciel sieci telefonicznej, czyli
+      w naszym przypadku TPSA, moze nas podsluchiwac 24 godziny na dobe i to
+      zgodnie z prawem! Dopiero policja musi miec zezwolenie sadowe.
+
+    - W dawnych czasach narod zorientowal sie, ze do uzyskania polaczenia
+      z zetonowca nadaja sie guziki i rosyjskie pieciokopiejowki. Zanim
+      TPSA zabezpieczyla automaty, trzeba bylo wywiezc na zlom gory sub-
+      stytutow nalezytej oplaty. W samym tylko Gdansku wywieziono tego 15 ton!
+
+    Na razie tyle, powrocmy do kart elektronicznych. Kazdy chyba widzial taka
+    karte. Jest to kawalek plastiku z wtopionym ukladem scalonym, polaczonym
+    ze swiatem zewnetrznym za pomoca szesciu lub osmiu zlotych lub srebrnych
+    stykow. Karty telefoniczne w standardzie Eurochip maja parametry zgodnie
+    z norma ISO 7816-1/2, ktora okresla wlasciwosci elektryczne, rozklad stykow
+    i ich umiejscowienie na karcie oraz inne wlasnosci techniczne. Styki leza
+    w lewej czesci karty w srodku jej wysokosci, ich rozklad umiescilem
+    ponizej:
+
+    ,-------------+-------------,
+    |   1         |         5   |
+    +-------\     |     /-------+       1 : Vcc=5V         5 : Gnd=0V
+    |   2    +----+    +    6   |       2 : Reset          6 : not connected
+    +--------|         |--------+       3 : Clock          7 : I/O
+    |   3    +----+----+    7   |       4 : not connected  8 : not connected
+    +-------/     |     \-------+
+    |   4         |         8   |
+    '-------------+-------------'
+
+    Rysunek powyzszy pozwolilem sobie przerysowac ze znakomitej pracy Stephane
+    Bausson pod tytulem "What you need to know about electronics telecards",
+    gdzie mozna znalezc opis elektronicznych kart telefonicznych pierwszej
+    i drugiej generacji oraz mapy pamieci kart z roznych krajow. Dokument ten,
+    w najnowszej wersji, znalazlem pod adresem http://perso.wanadoo.fr/
+    telecard/. Jesli ktos ma problemy, to niech pod AltaVista wpisze "bausson"
+    i kilka starszych lub nowszych wersji powyzszego pliku wyskoczy na pewno.
+    Najnowsza to 2.02. Jak widzimy, styki 4 i 8 nie sa wykorzystywane, dlatego
+    moze ich na karcie po prostu nie byc. Po wiecej dokladnych informacji odsy-
+    lam do podanego wyzej pliku. Natomiast do tego pliku dolaczylem zakodowany
+    przez uuencode program do czytania kart zgodnych z ISO 7816-1/2, mozna tez
+    z jego pomoca kasowac jednostki z karty... Jeszcze rada praktyczna. Zasta-
+    nawialem sie, jak rozwiazac problem tymczasowego chocby podlaczenia kabel-
+    kow do stykow karty. Przylepienie ich tasma samoprzylepna jest raczej sla-
+    bym pomyslem. Wpadlem na to, ze mozna do tego wykorzystac podstawke pod
+    osmionozkowy uklad scalony. Kabelki wciskamy tam, gdzie normalnie sa nozki
+    scalaka, oczywiscie musza byc cienkie, zeby sie zmiescily, i najlepiej,
+    jesli zyla kabelka nie jest skrecona z kilkunastu cieniutkich zylek. Ja
+    uzylem do tego celu kabelkow telefonicznych, nadaja sie idealnie :) .
+    Natomiast nozki podstawki ladnie pasuja do naszej karty. Mozemy je troche
+    przygiac dla lepszego kontaktu.
+
+    Jeszcze jeden kapitalny adres - na temat zabezpieczen kart
+    elektronicznych:
+    http://www.geocities.com/ResearchTriangle/Lab/1578/smart.htm
+
+    Teraz znowu troche opowiesci.
+
+    - Jak powszechnie chyba wiadomo, automaty na zetony nie pozwalaja wybrac
+      bez wlozenia zetonu numeru wiekszego niz dwie cyfry, gdyz przy trzeciej
+      cyfrze blokuje sie klawiatura. Nie mozemy wiec zadzwonic do domu i w cza-
+      sie jakichs trzech sekund, po ktorych przyjdzie 16 kHz i nas rozlaczy
+      (no, chyba ze wrzucimy zeton), powiedziec np. "Zgubilem sie w lesie,
+      wroce jutro wieczorem" (skad automat w lesie?) Nie dotyczy to numerow
+      alarmowych, a dla zetonowca numerami alarmowymi sa wszystkie numery za-
+      czynajace sie na 91, 95, 97, 98 i 99. Przemek wymyslil wiec metode na
+      ominiecie tego "zabezpieczenia". Chcialbym zaznaczyc, ze w wielu
+      miastach to nie dziala, ale u mnie na Alcatelu 1000 S12 i Lucent
+      Technologies 5ESS owszem. W naszym miescie nie istnieje np. numer 996.
+      Podchodzimy wiec do zetonowca i wybieramy 996. Pani mowi "Nie ma takiego
+      numeru", po czym dostajemy sygnal zajety. Czekamy cierpliwie, az sygnal
+      zajety sie skonczy i zrobi sie cisza, wtedy IMPULSOWO wybieramy 0 (w za-
+      sadzie im wyzsza cyfra tym lepiej,a zero jest na koncu), a chcialbym za-
+      uwazyc, ze automaty na zetony wybieraja wlasnie impulsowo, i dostajemy
+      dialtone... Przy czym automat mysli, ze to 9960 i nie blokuje klawiatu-
+      ry... No to teraz mozemy sobie chwilke pogadac albo zadzwonic na 0800,
+      bo wtedy nie przychodzi 16 kHz i nas nie rozlacza. Normalnie trzeba
+      wrzucic zeton i dopiero 0800, zeton zostanie nam po rozmowie zwrocony,
+      ale kto by nosil zetony. Ktos moze powiedziec, ze dzwonienie na 0800 to
+      zadna radosc, ale mozemy przeciez zrobic 996-0-900 i zamowic sobie roz-
+      mowe na automat, jesli sie nie chwali, ze publiczny. Nawet nie zerwie
+      polaczenia, bo od niedawna numery 900 i 901 sa bezplatne.
+
+    - Na mojej centrali 5ESS dziala numer testowy 88, po ktorym dostajemy syg-
+      nal ciagly. Wtedy wykrecamy numer naszego telefonu i znowu mamy sygnal
+      ciagly, ktory tym razem nie reaguje na tony (jezeli wybierzemy inny nu-
+      mer, bedzie zajete). Teraz odkladamy sluchawke i: niebieski Urmet dzwoni
+      jednym dzwonkiem. Za to zetonowiec... dzwoni bez przerwy! Zeby sie zamk-
+      nal, trzeba podniesc sluchawke. No wiec idziemy do zetonowca, stukamy
+      996-0-88-xxxxxxx (ewentualnie wrzucamy zeton, ktory po odlozeniu slu-
+      chawki nam wypadnie), odkladamy sluchawke i oddalamy sie w bezpieczne
+      miejsce. Nie wszyscy wiedza, ze dzwonek zetonowca jest niezwykle prze-
+      razliwy :) . Mozna w ten sposob obudzic pol bloku o 5 rano, bo przeciez
+      wtedy raczej nikt nie odbierze... Przemek zrobil tak w glownej hali
+      dworca PKP - automat dzwonil i dzwonil, wreszcie przyszlo dwoch glinia-
+      rzy i patrza w ten telefon jak krowa w malowane wrota. Dopiero po minucie
+      kontemplacji odwazyli sie odebrac... Cholera, maja nas bronic, a boja sie
+      zwyklego telefonu!?!
+
+    - Na innej centrali w pewnej miejscowosci dziala cos jak 974 - 155.
+      Po wybraniu 155 glos pani mowi, ze usluga zostala przyjeta, a po
+      odlozeniu sluchawki numer zachowuje sie jak 88. W ogole zarowno 88,
+      jak i 155 sa bezplatne. Tak nawiasem mowiac, ta centrala to jakis antyk
+      (chyba jakas E10), nawet nie mogli zalozyc teletaksy, gdy odchodzily
+      rachunki na "rozmowe przychodzaca" :) . Robili co mogli... Wylaczyli
+      dialtone, dzieki czemu ludzie mysleli, ze automat jest zepsuty, i zamiast
+      10% rozmow "entry call" bylo teraz 80% :) . W koncu im sie udalo - zalo-
+      zyli filtr DTMF na centrali... Tak w ogole to owa centrala jako CallerID
+      zwraca zawsze 455, co moim zdaniem jest troche dziwne. A gdy na Urmecie
+      wybierzemy 0800 i poczekamy chwile, to centrala glupieje - automat pi-
+      sze "USZKODZONY" i w ogole dziwnie sie zachowuje. Jeszcze jedno przyszlo
+      mi do glowy - niedawno TPSA wylaczyla 974 na moim Alcatelu - pani mowila
+      "Nie ma takiego numeru" albo... "Kierunek zajety", po czym wlaczyli
+      974 ponownie... Bije im zupelnie.
+
+    - Ciekawa sprawa. Pentaconta 1000C i LNI doczekala sie... CallerID!
+
+    - Kiedys, kiedy duzo automatow bylo podpiete do starej centrali, mozna
+      bylo do zetonowca wrzucic zeton i wybrac tonedialerem 900 (wtedy 900
+      bylo platne). Co dalej robic, kazdy wie. Teraz, niestety, chyba zalozyli
+      na nowej centrali (5ESS) filtry DTMF na zetonowce, bo w czasie przepina-
+      nia do tejze nowej centrali kazdy nowoprzepiety automat natychmiast
+      przestawal lapac tony. Na owej starej centrali rowniez mozna bylo obejsc
+      blokade klawiatury przy trzeciej cyfrze, wybierajac bez zadnej przerwy
+      996 i od razu 111 (tym razem im mniejsza cyfra, tym bylo lepiej). Potem
+      byl dialtone, co nie wymaga dalszych wyjasnien.
+
+    - W tych beztroskich czasach na niebieskich Urmetach podpietych do starej
+      centrali chodzil bardzo prosty przekret, wymagal jedynie czasem troche
+      cierpliwosci. Przestarzala centrala charakteryzowala sie tym, ze kiedy
+      byla mocno obciazona, w co drugim (trzecim, piatym...) przypadku solidnie
+      spozniala sie z wystawianiem dialtone na linii po podniesieniu sluchawki.
+      Moj rekord oczekiwania wyniosl 55 sekund! (Tylko nie myslcie, ze mieszkam
+      gdzies w wiosce na bagnach, moje miasto ma duzo ponad sto tysiecy ludzi!)
+      Wiec nalezalo po podniesieniu sluchawki wybrac 0800 i po prostu czekac na
+      dialtone... Po jego uzyskaniu 6 cyfr z klawiatury + reszta tonedialerem
+      i... wielogodzinne rozmowy z calym swiatem. A jesli dialtone sie pojawil
+      przed albo w trakcie wybierania 0800, to nalezalo probowac jeszcze raz.
+      Mozna tez bylo uzywac innych numerow bezplatnych, np. 997, tylko potem
+      trzeba bylo wszystkie cyfry wybierac tonedialerem, za to byly wieksze
+      szanse, ze zdazymy wybrac 997 przed dialtone. Choc dwugodzinna rozmowa
+      z policja mogla komus wydac sie dziwna... Kiedy TPSA (po pol roku... :))
+      sie zorientowala, zablokowala WSZYSTKIE numery bezplatne na automatach
+      do czasu ich przepiecia do 5ESS, tak ze w celu zadzwonienia na policje
+      nalezalo wlozyc karte!
+      
+    - Pomimo szeroko zakrojonej akcji przeciwko phreakerom, TPSA cos nam jednak
+      zostawila. Mianowicie niebieskie Urmety z ustawionym wybieraniem impulso-
+      wym. I co z tego wynika? Robimy tak: wybieramy 080 i czekamy... Cisza,
+      a za jakies pol minuty robi sie zajete. Teraz naciskamy 0, a poniewaz
+      wybieranie jest impulsowe, dziala to jak nacisniecie widelek. Dostajemy
+      wiec dialtone, a na wyswietlaczu mamy 0800... Chyba juz sie domyslacie.
+      Jezeli na automacie jest teletaksa, to mozemy pogadac na miejscu trzy
+      minuty, a jezeli nie ma, to z Honolulem pol dnia. Jest tylko jeden prob-
+      lem. Po 0800 mozna wybrac tylko 6 cyfr (kiedys zadzwonilem do biura usz-
+      kodzen i probowalem ich przekonac, zeby przeprogramowali automaty, ale
+      nie dali sie przekonac :( ), wiec albo wybierzemy reszte tonedialerem,
+      albo mamy pecha, gdy centrala jest zabytkowa i nie rozpoznaje tonow (bo
+      na ogol Urmetow sie nie ustawia bez powodu na wybieranie impulsowe, cho-
+      ciaz nie zawsze... :)). Akurat my mamy numery szesciocyfrowe, wiec nawet
+      na zabytku na miejscu zawsze sie dodzwonie. To tez nie dziala w kazdym
+      miescie, wiec niech nikt nie czuje sie zdziwiony. U mnie dziala za to
+      na kazdej centrali :). Pozostaje ciekawostka, dlaczego jezeli na cent-
+      rali jest teletaksa, to przy powyzszej metodzie rozlaczy nas ona
+      dopiero przy drugim impulsie (czyli na miejscu po trzech minutach,
+      bo pierwszy impuls przychodzi w chwili uzyskania polaczenia), a przy
+      stosowaniu "entry call" juz przy pierwszym, czyli od razu po na-
+      wiazaniu rozmowy? No, jesli przy uzyciu "entry call" zadzwonimy na
+      numer bezplatny, to nas nie rozlaczy, ale po co tak kombinowac? Widze
+      tylko jedno zastosowanie - dzwonimy na "rozmowe przych." i potem NA 900
+      ALBO 901! Kazdy chyba wie, ze z automatu nie wybierzemy tego normalnie.
+      Jak juz wspominalem, obecnie obydwa te numery nie sa platne. Znalezlismy
+      automat, ktory nie robi charakterystycznego pik-pok przy dzwonieniu do
+      niego! On w ogole nie wie, ze sie do niego dzwoni, trzeba sprawdzac co
+      chwile, ale nie ma co narzekac. Na taki to nawet mozna zamowic rozmowe
+      bez tonedialera proszac kolege, by z domu zamowil nam rozmowe (dobrze,
+      zeby kolega mial wylaczony CallerID, mozemy tez zadzwonic z komorki
+      wylaczajac wysylanie swojego numeru, choc nie wiem, czy TPSA i tak go
+      nie zobaczy...). Wrocmy jednak do tematu. Gdy dzwonimy na "rozmowe
+      przychodzaca", to zaraz po nawiazaniu polaczenia centrala wysyla do
+      automatu 16 kHz. Ten nie kasuje jednostki z karty, bo mysli, ze dzwoni-
+      my do niego, nie rozlacza tez polaczenia, ale i nie zwraca do centrali
+      12 kHz jako potwierdzenia skasowania jednostki. Wtedy teletaksa na cent-
+      rali przerywa polaczenie. Natomiast gdy na wyswietlaczu jest 0800 lub
+      inny numer zaprogramowany w automacie jako bezplatny, przy pierwszym
+      16 kHz automat odsyla 12 kHz pomimo, ze nie kasuje nam karty! Tak jest
+      po prostu zaprogramowany. Dopiero przy drugim impulsie nie odsyla 12 kHz,
+      co powoduje zerwanie rozmowy.
+
+    Last update:
+    TPSA sie wycwanila i zaprogramowala srebrne Urmety w nastepujacy sposob:
+    dzwonimy do Urmeta, rozlaczamy polaczenie, podnosimy sluchawke, wybieramy
+    numer, teletaksa oczywiscie zrywa, odkladamy wiec sluchawke, a automat
+    dzwoni na centrale, ze ktos probuje go oszukac... A gdy w Krakowie
+    zadzwonilem z niebieskiego na "rozmowe przych." pod 900, centrala
+    natychmiast wyslala do automatu sygnal rozlaczenia i pojawil sie napis
+    "WLOZ KARTE"... Za to gdy niedawno rozeslali do srebrnych uszkodzone
+    oprogramowanie, do polowy automatow nie mozna bylo wlozyc karty.
+
+    I tak doszlismy do konca. Jesli ktos chce sie podzielic ze mna zawartoscia
+    pamieci FLASH ze srebrnego Urmeta, prosze o emaila. A noz z widelcem uda
+    sie wyciagnac z niej algorytm generowania odpowiedzi przez karte telefo-
+    niczna? No chyba ze jest on we wbudowanej pamieci ROM w module kryptogra-
+    ficznym, ale o tym trzeba sie przekonac. Chetnie nabede wszelkiego rodzaju
+    kluczyki do automatow, oraz karte "programming", oczywiscie jest to rowniez
+    kwestia ceny. W ogole, jesli masz cos ciekawego, to pewnie sie dogadamy.
+
+    Chcialbym podziekowac kilku osobom:
+     - Aga      - dzieki za wszystko 
+     - Przemek  - za to, ze jestes co najmniej tak samo szalony, jak ja
+     - Bodzio   - rozdalem juz trzy bombonierki!
+     - Zaba     - dzieki za znajomosci w TPSA
+     - Jesus    - nie sadzilem, ze temat cie wezmie...
+
+    I to tyle. Pozdrawiam wszystkich. Do uslyszenia :)
+
+             อออออออออออออออออออ>    Koniec    <อออออออออออออออออออ
+
+
+ออออออออออออ Obetnij ออออออออออออออออออออออออออออออออออออออออ
+section 1 of uuencode 5.10 of file chip.exe    by R.E.M.
+
+begin 644 chip.exe
+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
+A!%<$0@4`0+8O``!-6I8L``#1'Q\#&P`'``@`8@";,QP!
+`
+end
+sum -r/size 40945/16377 section (from "begin" to "end")
+sum -r/size 14755/11868 entire input file
+
+ออออออออออออ Obetnij ออออออออออออออออออออออออออออออออออออออออ

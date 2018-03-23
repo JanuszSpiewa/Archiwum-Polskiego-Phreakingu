@@ -1,0 +1,203 @@
+
+   |---------------------------------------------------------|
+   |   Wrote in moment of desperation by CoatFreaK@usa.net   |
+   |   Quote:                                                | 
+   |       "You can kill yourself now                        |
+   |        Becouse you're Dead in my mind"                  |
+   |                        Marilyn Manson                   |
+   |---------------------------------------------------------|
+
+
+Spis tresci:
+1. Wstepik (nie czytac).
+2. Srebro (bynajmniej nie Urmety :).
+3. Nity.
+4. Takie tam glupoty.
+
+  Na wstepie jak zwykle cos czego nikt nie czyta, 
+  czyli:
+
+  TEKST TEN JEST PRZEZNACZONY WYLACZNIE DO CELOW 
+  EDUKACYJNYCH UZYCIE ZAWARTYCH W NIM INFORMACJI 
+  W INNYCH CELACH WYLACZNE NA WLASNE RYZYKO :) 
+
+--------------------------------------------------------
+
+1. Wstepik (nie czytac).
+  Tak jakos sie zlozylo, ze nie wiedziec po co pisze ten 
+ tekscic, jak znam zycie bedzie to jednorazowa produkcja
+ dlatego nawet nie sile sie na nadawanie mu numeru jeden,
+ czy czegos w ten desen. Ale jezeli komus sie to przyda 
+ to dobrze, bo przeciez o to wlasnie chodzi :) 
+ Dodam tylko, ze stylowo nie jest to szczyt marzen, wogule
+ chyba niczego, ale co tam.
+
+--------------------------------------------------------
+
+2. Srebro (bynajmniej nie Urmety :).
+  ale tez na wyposazeniu tpsa. Chodzi mianowicie o takie
+ smieszne "nowoczesne" (hehe) budki, ktore mogly sie paru
+ osobom rzucic w oczeta. Zeby bylo jasne chodzi mi o 
+ najnowsze "wytwory" tpsa. Dokladnie producenta to akurat
+ teraz sobie nie przypomne ale mniejsze o to. 
+ Meritum sprawy to fakt, ze jak zobaczylem te smieszne 
+ zabawki to tak sobie pomyslalem, jak by tu sie dobrac
+ do kabelka? 
+  Oczywistym rozwiazaniem jest ta nieszczesna dziureczka,
+ ale moim osobistym zdaniem to jest to deczko widoczne, 
+ moze sie myle, ale ja sie nie znam, a poza tym jak ktos
+ wyciagnie ten kabelek tym otworem to jest niezlym 
+ fachowcem. Jeszcze bardziej oczywistym jest Abloy, ale
+ jakos tak sie glupio zlozylo, ze sie nie dorobilem :(.
+ No ale idac dalej. 
+  Odrobina obserwacji:
+ stojac "twarza" do tych fajnych wahadlowych drzwi mamy
+ prawy i lewy "slup" (troszke nieszczesliwe okreslenie).
+ Otoz w lewym idzie przewod zasilajacy, warto to wiedziec,
+ a w prawym i dzie upragniony kabel :). 
+ Droga kabla jest deczko zawila i tak:
+ - z gruntu wchodzi on do "wnetrza" tego "slupa",
+ - nastepnie wychodzi tam gdzie jest oswietlenie,
+ - tutaj czasem jest podprowadzony do kostki, a
+   czasem wraca bezposrednio spowrotm do "slupka"
+   (zastanawiacie, sie po co taki bajer z ta kostka?
+   ma on na celu podprowadzenie dwuzylowej linii do
+   budki, a od kostki szanowna tpsa prowadzi do 
+   samego aparatu przewod chyba 10 zylowy. Czyzby
+   chcieli sie przed czyms zabezpieczyc? :)),
+ - nastepnie spowrotem do "slupka" z ktorego wychodzi
+   na wysokosci pierwszej poprzeczki od gory,
+ - nastepnie biegnie pod nia (wbrew pozorom jest to
+   kawal ksztaltki o przekroju w ksztalcie litery C, 
+   a nie O. 
+ Tak by sie to przedstawialo w ogolnym zarysie. 
+ Oczywistym objawem jest chec wpiecia sie do tej 
+ smiesznej kostki, ale nie kazdy dysponuje kluczykiem:(.
+ A poza tym monter pracujacy nad przypadkowo padnieta
+ swietlowka napewno zainteresowal by sie dziwnymi 
+ przewodami.
+
+  Metoda 1 jaka ja osobiscie przeferuje to podpiecie,
+ sie za ta smieszna pozioma poprzeczka, za ktora
+ biegnie przewod juz bezposrednio do aparatu. 
+ Poprzeczka zbudowana jest w nastepujacysposob.
+ Kawal blachy (chyba 4mm) wygietej w to nieszczesne
+ C jest przykrecony dwiema srubami (heksagonalnymi
+ pod klucz 6 mm), na to przychodzi maspownica w modnym
+ aluminiowym (tj. srebrnym) kolorze. zlapana na 
+ 2 srubaski (albo jak nie masz szczescia na dwa nity).
+ Na to wszystko jest "przymocowany" aparat :) troszke
+ duzy skrut myslowy, ale prawdopodobnie kazdy zrozumial.
+  Postepowanie w celu uzyskania dostepu do przewodu:
+ - zajmujemy sie dluzszym kawalkiem tej poprzeczki
+   (tym od wejscia),
+ - odkrecamy srubke mocujaca maskownice (badz zrywamy nit),
+ - odginamy ja na tyle aby moc swobonie (albo i nie)
+   manipulowac kluczykiem,
+ - odkrecamy srube mocujaca poprzeczke do reszty konstrukcji,
+ - nastepnie (to juz ostatni krok) odginamy poprzeczke na
+   tyle aby moc wyciagnac przewod,
+ - teraz tylko zabawa z kablami, ale tu nic sie nie da 
+   zrobic:(
+
+  Metoda 2 jest, przyznaje, lekko abstrakcyjna i nie zawsze
+ skuteczna :(, zalezy od montera co to stawial.
+ Chodzi mianowicie o podpiecie sie pod podloga :)))).
+ W odruznieniu od "zoltych" budek w, ktorych cala konstrukcja
+ byla przytwierdzona do podlogi, tutaj jest to wykonane
+ nieco inaczej. Calosc stoi na czyms na ksztalt fundamentu
+ wmurowanego, badz wkopanego w podloze. Ma on postac 
+ specyficznej "kratownicy". W czterech robach przywierdzono
+ "gore" budki, a reszte przykryto ta nieszczesna podloga :)
+ "Podloga" przymocowana jest 10 srubami, czasami czesci 
+ brakuje. Po ich odkreceniu mamy dostep do "gruntu" i teraz 
+ jezeli monter byl leniwy i tak bylo mu wygodniej to kabel 
+ biegnie po wierzchu, ablo lekko zagrzebany, czasami niestety
+ jest zalrzebany na jakies 10 - 20 cm :(. Wykonujemy to co 
+ trzeba, mozna nawet zamontowac, jakies ciekawe gniazdeczko, 
+ zeby pozniej bylo szybciej i zakrywamy calosc "podloga".
+ Moge zagwarantowac, ze nawet jak cos sie pokapuja to nie
+ beda zdejmowac podlogi w budce :)), (no chyba, ze beda, 
+ kto ich tam w sumie wie).
+  Dwie uwagi:
+ - nie zapomnij zaizolowac koncowki oraz podlaczenia, bo
+   srodowisko gleby jest lekko nieprzyjazne,
+ - podloga przymocowana jest srobami krzyzakowymi, ale
+   lepiej jest wziasc jakis wkretak ze sporym przelozeniem
+   bo cholery potrafia byc solidnie dokrecone. Po zakonczeniu
+   najlepiej jest je tak samo dokrecic, zeby nie wzbudzac 
+   "podejrzen" :))
+
+--------------------------------------------------------
+
+3. Nity.
+  Przelatujac przez spora ilosc tekstow nigdzie nie 
+ zauwazylem, aby ktos mowil co zrobic, jak napotkamy zamiast
+ srob nity. Niestety w okolicy gdzi ja egzystuje jest tego
+ sporo.
+  Zrywanie nitow:
+ Mosimy zaoparzycz sie w szczybce, a wlasciwie cazki, tylko nie
+ takime jak "nozyczki", a takime jak te sympatyczne do wyrywania
+ np. gwozdzi :). Kolejnym przydatnym "uzadzeniem" jest dlutko
+ nie za duze, sluzy ono do tworzenia szczeliny miedzy nitem,
+ a powierzchnila laczonych blach, czasami szpara jest tam z
+ zalozenia. Po stworzeniu wyzej omowionej szczeliny mozemy 
+ przystapic do pracy cazkami, delikatnie wyciagamy nit, tylko 
+ nie obcinajcie lba, bo ciezko jest cos z tym pozniej zrobic.
+  Zakladanie nitow:
+ Tutaj niestety nic nowego nie wymysle, trzeba sie zaoparzyc
+ w nitownice do nitowania na zimno (hehe) i pare sztuk nitow
+ (uzywane przez tpsa srednice to 3 mm oraz 4 mm [moze byc 5mm])
+ Ja swoja zakupilem za 10 pln, tak wiec nie jest to zbyt duzy 
+ wydatek, ale zawsze :(.
+
+--------------------------------------------------------
+
+4. Takie tam glupoty.
+  Glupota nr.1 (krzaczki)
+ Jezeli chcesz zobaczyc narodowe krzaczki na ekranie 
+ srebrnego Urmeta to wybierz cos takiego 0800 i tyle
+ 0 ile sie da, potem dowolne 9 cyfr i masz na wyswietlaczu
+ narodowe krzaczki. 
+  Glupota nr.2 (0800)
+ Wielu z was powie, ze ten bug nie dziala, ale ja mam o
+ tym odmienne zdanie. Owszem nie dziala zawsze, ale dziala.
+ Musimy zaopatrzyc sie w aparacik z wybieraniem impulsowym
+ (te nieszczesne tok tok tok tok). Nastepnie krecimy sobie
+ 0 800 i czekamy, najpierw cisza, potem sygnal, a potem znowu
+ cisza. No i teraz jak to jest: mianowicie sygnaj jest 
+ modulowany w nastepujacy sposob cisza..dzwiek..cisza..dziwek.
+ Teraz tak nalezy wyczuc kiedy powinien nastapic .dzwiek.
+ (mniej wiecej co ok. 1 sek) i kiedy nastapi ten drugi okres
+ ciszy (po sygnale) nalezy wcelowac z wcisnieciem klawisza
+ (najlepiej 0) tak, zeby wypadlo w momencie w ktorym zaprzmial
+ by .dzwiek. . Moze to lekko glupkowate, ale dla mnie dziala
+ owszem nie zawsze, ale udane 4 proby pod rzad o czyms swiadcza,
+ a poza tym sprawdzalem to na kilku aparatach. Owszem w 
+ miedzyczasie mozna dostac nerwicy od ilosci przypadkow 
+ nieudanych, ale jak ktos chce srawdzic to zapraszam. 
+ Moja teoria o tym, ze musi to byc w momencie .dzwieku. moze
+ sie okazac kompletnym debilozmem i wcale sie nie zdziwie. 
+ No ale skoro doswiadzcenie udalo sie przeprowadzic wiecej niz
+ raz, o czyms to swiadczy. 
+  Glupota nr.3 (ostatnia)
+ Jezeli macie zamiar na chama wpinac sie w budke, znaczy sie
+ do srodka, badz gdzies w samej budce, to najlepiej jest to 
+ robic, paradoksalnie w bialy dzien. Hmmm, cos mi na mozg padlo
+ powiecie, ale jezeli macie odpowiedni sprzet i nie zachowujecie
+ sie podejrzanie oraz nie macie 10 lat to naprawde nikt nie
+ zwroci na wasze poczynania uwagi. Inaczej jest w nocy kiedy 
+ to jakis osobnik z mlotkiem i latarka szwedajacy sie kolo budki
+ jest latwym pretekstem do wezwania slozb pozadkowych. 
+ Rada, glupia jak kazda inna, ale co tam.
+
+Koniec, tego tekstu.
+
+Pozdrowionka dla wszystkich ludzi, ktorzy wiedza czego chca
+od zycia, 
+           CoatFreaK (catfreak@usa.net)
+
+ps. Wiem, ze troche przegadane, ale tak to juz jest :)
+pss. Jezeli ktos chce mi cos przekazac (hehe ciekawe kto):
+     coatfreak@usa.net
+  

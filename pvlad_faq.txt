@@ -1,0 +1,222 @@
+                               
+
+                       !@#$%^&*()--  Prince Vlad Faq ver 1.0  --()*&^%$#@!
+                    
+                                          14.5.1999
+                                      
+                                       vlad@free.net.pl
+                                       vlad2@polbox.com
+       
+
+"...ten kraj potezny
+jego step wielki
+nie pojmiesz go rozumem
+choc bys myslal wieki..."
+
+               Kazik
+
+
+
+
+-------------------------------------------------------------------------------------------------
+	 	NIE PONOSZE ODPOWIE........ bleee,bleee,blee,bleee
+-------------------------------------------------------------------------------------------------
+
+*** Spis tresci: ***
+
+ I     Wstep
+ II    Numery 0800 XXX XXX
+ III   W terenie
+ 1     Sprzet
+ 2     Miejsca i czas
+ 3     Metody     
+ IV    Apel (nie dla lamerow)
+
+
+*** I ***
+
+We wstepie chce zaznaczyc ze nie jestem jakims tam wielkim phreakerem. Niemniej 
+jednak juz troche sie nauczylem i chce powiedziec o tym i owym. Nie jest tego duzo
+ale mysle, ze w krotce bedzie wiecej.
+
+*** II ***
+
+A wiec numery 0800 XXX XXX, to numery o ktorych dowiesz sie wiecej tzn. jak dzialaja 
+po przeczytaniu faq Tharona i S3kfaq. A teraz do rzeczy kazdy modem na 0800 wymaga logina i 
+hasla jezeli komus uda sie znalezc powyzsze to bede wdzieczny za kontakt. Przedstawione
+ponizej numery to zeskanowane od 0800120000 do 0800120999 i od 0800160000 do 0800160600
+prace nad kolejnymi trwaja.
+Acha info dla Tharona: coz za udezajace podobienstwo np. mojego 0800120210 do twojego
+080020210 ale moge cie zapewnic, ze nie sa to zripowane od kogos a zwlaszcza od ciebie
+numerki.
+
+
+1*** 0800120067
+
+CONNECT 115200
+
+** Ascend MAX200 Terminal Server **
+
+
+Login: 
+
+2*** 0800120127
+
+CONNECT 115200
+
+Please press <Enter>...
+
+3*** 0800120210
+
+CONNECT 115200
+ 
+
+4*** 0800120211
+
+CONNECT 115200
+
+5*** 0800120212
+
+CONNECT 115200
+
+
+ease press <Enter>...
+e press <Enter>...
+se press <Enter>...
+ase press <Enter>...
+Please press <Enter>...
+ase press <Enter>...
+[itd...]
+
+6*** 0800120215
+
+CONNECT 115200
+Translating "brebis"...domain server (10.0.2.28) [OK]
+Trying sidoma2.bre.com.pl address #1 ... Open
+
+SCO OpenServer(TM) Release 5 (sidoma2.bre.com.pl) (ttyp7)
+
+login:
+
+7*** 0800120286
+
+CONNECT 115200
+
+8*** 0800120288
+
+CONNECT 115200
+
+9*** 0800120351 - zglosil mi sie tylko raz :(
+
+10*** 0800120358
+
+CONNECT 115200
+
+11*** 0800120372
+
+CONNECT 115200
+
+        Witamy na serwerze dostepowym 
+   firmy AGS New Media 
+         ganja.agsmedia.pl port S117
+
+Login: 
+
+12*** 0800120384
+
+CONNECT 115200
+
+13*** 0800120399
+
+CONNECT 115200
+
+14*** 0800120402
+
+CONNECT 115200
+
+Welcome to 3Com's SuperStack II Remote Access System 1500
+
+login: 
+
+15*** 0800120815
+
+CONNECT 115200
+
+16*** 0800120866
+
+CONNECT 115200
+
+Annex Command Line Interpreter   *   Copyright (C) 1988, 1995 Xylogics, Inc.
+
+Checking authorization, Please wait...
+Annex username:
+
+i to by bylo na tyle 08setek
+
+*** III ***
+
+1 Zeby miec chociaz 50% skutecznosc musisz zaopatrzyc sie w nasepujacy sprzet(jak go zdobyc
+ponizej)
+
+-klucze
+-tone dialer/silver box
+-phreakomat
+-rower :)
+
+klucze:
+kluczyk do niebieskiego ale niestety pasujacy o starych zamkow ktorych jest coraz mniej :(
+opisal peyo, kombinuj jakie tylko mozesz oczywiscie do sprzetu telekomunikacyjnego a nie 
+francuskie
+tone dialer/sliver box:
+to drugie nie bedzie ci raczej potrzebne a tone dialer mozna kupic w sklepie a artykulami
+telekomunikacyjnymi z 20 - 40 pln
+phreakomat:
+przeczytaj faq hrabiego tam jest doskonale wyjasnione co i jak
+rower...:))) :
+musicz miec jakis srodek transportu i cos na czym mozna uciekac przed np. policja
+a jak umiesz jezdzic... powiedzmy troche wyczynowo to nie ma mowy zeby cie zlapali :)
+ A teraz uwaga zeby zdobyc nie tylko niektore z wyzej wymienioynch ale i np. takie 
+luxusy jak powiedzmy serwisowke a moze nawet ubranie montera tzeba sie zdobyc na odwage
+i napierdolic monterowi :) jest to jednak bardzo ryzykowny pomysl i raczej nie radze go 
+stosowac bo mozna miec duze klopoty :(
+
+2 Mozna by tu dlugo wymieniac liste miejsc w bylym katowickim w ktorych mozna cos kombinowac
+ale to nie o to chodzi. Jak sie dobrze postarasz to moze sie udac prawie wszedzie, przytocze 
+tu jeden przyklad z zycia wziety:
+	Bylo to tak, dorobilem sobie wlasnie pierwszy kluczyk do niebieskiego ale niestety 
+pasowal on tylko do starych zamkow, ale to nic. Gdzie sa najstarsze budki.. oczywiscie pod 
+tPSA. Jest troche do dupy bo straznik siedzi i wszystko widzi co sie dzieje na zewnatrz.
+Po krotkich obserwacjach wybralem na akcje niedziele rano, wlasciwie bardzo wczesnie rano,
+myslalem, ze w tym czasie bedzie naj mniej policji.
+Dojezdzam do centrum mojego miasta to miasto to D.G. Jest godzina 5.34 wysiadam i zmierzam 
+w kierunku placowki telekomunikacji. I... pierwsze zdziwienie przejezdza przede mna mendziarski
+polonez a tak pieknie mialo byc (za kurtka mialem bagnet-do samoobrony oczywiscie) ale ide
+dalej a tu w jednej ulicy w odleglosci ok 100m od mojej upatrzonej budki stoi straz miejska :(
+I nastapila chwila zawahania. Do odwaznych swiat nalezy, podchodze do pierwszej budki z prawej,
+wkladam klucz i krece i nic. Co jest do kurwy nedzy, przypierdoilem przekrecilem jeszcze raz
+i niebieska pucha otworzyla sie :) . Wyciagnolem czytnik, mialem to juz przecwiczone na automacie
+zajebanym w calosci. Puche zostawilem otwarta zeby nie zadzwonila (jak wiadomo puchy ze starym
+softem dzwonia dopiero po zamknieciu :) ). Potem spokojnie wrocilem do domu.
+Jak wynika z powyzszego textu nie wazne jest miejsce tylko czas ! :)
+
+3 Metody...nie chce tu powielac ani spisywac z innych faq. Powiem jedno coraz mniej metod dziala
+na automatach no moze z wyjatkiem wpinania sie w linie. Z dnia na dzien jest ich coraz mniej,
+musisz sam sprawdzac i to na kazdym automacie na jakim mozesz.
+
+
+*** IV ***
+
+A teraz moj apel:
+
+Ludzie jak powszechnie wiadomo srebrne urmety maja modem przez ktory dostaja oprogramowanie
+i jezeli komus by sie udalo ustawic parametry swojego modemu tak zeby polaczyc sie ze srebrna
+pucha i przeslac tam wlasny soft to by bylo wrecz zajebiscie :) jezeli ktos jest w miare dobrym
+H/P to niech dolaczy sie do tego pomyslu.
+
+A teraz jeszcze jedna moja obserwacja, glownie dla mieszkancow bylego wojewodztwa katowickiego
+wszystkie srebrne lezace na wschod od Katowic (nie wiem jak w druga strone do tam nie bywam ale 
+chyba tez) sa polaczone do jednego centrum z ktorego dostaja oprogrmaowanie a owe centrum
+znajduje sie w Sosnowcu. 
+
+Jezeli ktos ma jakies informacje na temat nagrywarki do kart zrobionj z bebna od 
+niebieskiego urmeta to mail me.

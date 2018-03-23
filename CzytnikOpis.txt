@@ -1,0 +1,108 @@
+Zaczne od tego, ze niewielu ludzi doglebnie analizuje budowe automatu w polskich faq, jedyny faq w tym temacie to Shroom oaz schematy zamieszczone na stronie grupy Chemiqa, wiec postanowilem w jakims stopniu uzupelnic te luke, aczkolwiek zdaje sobie sprawe ze moj tekst nie jest idealny i moze zawierac bledy. Wszystkie informacje umieszczam oczywiscie w celach edukacyjnych i nie mam zwiazku z tym co robia inni, niech oni TP SA oraz Policja martwia sie o to sami, a reverse engineering w polskim prawie i tak nie istnieje.
+Jesli ktos nie ma zielonego pojecia o elektronice cyfrowej i mikroprocesorach to ja go tu ani nigdzie indziej nie naucze. Sa odpowiednie ksiazki np. J. Piecha "Uklady cyfrowe", J.Kalisz "Elektronika cyfrowa", wiec nie zadawajcie glupich pytan tylko wlozcie troche wysilku i zapoznajcie sie z tematem, bo inaczej nie macie po co tego czytac.
+Tekst dotyczy czytnika kart budowy, dzialania oraz zapisu na kartach i innych rzeczy z nim zwiazanych. Powstal m.in, po to zeby inni mogli dolaczyc inne, nowe informacje na ten temat i nie musieli zaczynac od zera. Za uzupelnienia, sprostowania i inne nowosci w temacie bede bardzo wdzieczny.
+Serce czytnika czyli uklad dokonujacy sterowania tego urzadzenia i odpowiedzialny za komunikacje z otoczeniem stanowi mikrokontroler MC146805E2P (P oznacza typ obudowy, E2 dotyczy ilosci zawartego wewnatrz RAMu, ROMu itp.), do ktorego dolaczona jest pamiec EPROM z programem. Z programu jak kazdy wie mozna odcztac jak pracuje czytnik wystawiajac odpowiednie zera i jedynki na okreslone koncowki. O znaczeniu tych zer i jedynek decyduje struktura uladu, ktora mozna odczytac ze schematu ideowego czytnika. Uwaga schemat zamieszczony w Sieci zawiera pewne drobne niedokladnosci zapewne na skutek pomylki autora lub zmian i modernizacji dokonywanych w trakcie produkcji danego modelu.
+Jedyny blizszy opis kontrolera MC146805E2 znalazlem w ksiazce S.A.Money "Mikroprocesory
+ - poradnik", poniewaz nie podaje on dokladnego opisu lecz jedynie pobiezny, wiec po 
+krotce go tu streszcze. Uwaga porzadkowa : jesli mowie bit 14 to licze bity od jednego w wzwyz, jesli zas uzywam symboli np. A2, PB6, D5, Acc(2) to licze bity od zera.
+MC146805E2 to 8-bitowy kontroler ze 112B RAM-u, umieszczonego w przestrzeni adresowej 
+od $16 do $7F, bez ROMu, o rozkazach identycznych z modelami serii MC68HC05 i na liscie
+rozkazow tego kontrolera opieralem sie dekodujac program. Stos lokowany jest w pamieci RAM
+i standardowo wskaznik do niego umieszczany jest po resecie na szczycie pamieci RAM.
+Kontroler ten posiada multipleksowana szyne danych 8-bitow i adresowa mlodsze 8-bitow adresu.
+Szyne adresowa ma 13-bitowa wiec moze zaadresowac bezposrednio 8kB pamieci. Gdy na 
+multiplekowanej szynie danych-adresu pojawia sie adres (w pierwszej polowce cyklu zegara) 
+to procesor wystawia sygnal AS (Adress Strobe aktywny poziomem wysokim), w drugiej polowce
+cyklu zegarowego na tej samej szynie procesor wystawia dane zawiadamiajac o tym sygnalem DS 
+(Data Strobe). W ukladzie czytnika kart dolaczona jest pamiec EPROM (w moim przypadku byl to
+EPROM kasowany ultrafioletem z charakterystycznym okraglym kwarcowym okienkiem zaklejonym 
+karteczka z numerem wersji programu) o pojemnosci 32kB (27C256), jej koncowka A14 na stale jest przylaczona do "1" logicznej, wiec dolne 16kB w ogole nie jest wykorzystane (chyba ze w specjalnym trybie np. testowym, nalezaloby wtedy przelutowac zworke na plytce), takze obszary od $4000 do adresu $43FF i od $6000 do $63FF nie sa wykorzystane gdyz dekoder pamieci (bramka OR) rezerwuje je na urzadzenia we-wy. Koncowka A13 pamieci EPROM jest ustawiana programowo i po resecie jest zerem, w trakcie wykonywania programu odpowiednia instrukcja moze zmienic wartosc A13 i program bedzie odczytywany z "ostatniej cwiartki" EPROMU. 
+W obszarach pamieci znajduja sie odpowiednio:
+Port Out ($90) sterujacy 13-ta linia adresowa, wylaczeniem czytnika, zezwoleniem na 
+przerwanie sprzetowe i ustawiajacy cos w komparatorze
+Port In ($80) z informacja o polozeniu karty z fotokomorek i z informacja o karcie z ukladu
+ hybrydowego
+Port Out ($F0) sterujacy otwieraniem wlotu dla karty
+Poniewaz program uzywa dla dostepu do urzadzen wejscia wyjcia trybu adresowania direct, wiec 
+takimi adresami oznaczylem tez poszczegolne porty, mapowane na pamiec jak to zwykle u Motoroli.
+Tryb adresowania direct to taki gdy uzywamy tylko jednego, najmlodszego bajtu dla ustalenia adresu komorki starsze przyjmujac za zera. Adresy w trybie direct znajduja sie wiec na samym dole mapy pamieci i oprocz wymienionych portow zewnetrznych mozna w tym trybie zaadresowac takze porty wewnetrzne, ich kierunkowosc oraz RAM i ustawienia TIMERa.
+Do sterowania czytnikiem stosowane sa takze porty wewnetrzene procesora oznaczone jako port A 
+i port B. Znaczenie poszczegolnych bitow portow wewnetrznych jest nastepujace:
+PortA(0) - wywolanie przerwania (zezwolenie na przerwanie) i wyjscie z komparatora X2
+PortA(1) - Stan wyjscia Q4 ukladu U6
+PortA(2) - wyjscie z komparatora X3
+PortA(3) - Odbior informacji z modulu glownego telefonu
+PortA(4) - Wysylanie informacji do modulu glownego telefonu
+PortA(5) - Wyjscie sterujace modulem hybrydowym poprzez H8
+PortA(6) - N/A
+PortA(7) - Wyjscie sterujace modulem hybrydowym poprzez H20
+
+PortB(0) - Wyjscie sterujace modulem hybrydowym poprzez H19
+PortB(1) - Po negacji wlacza zasilanie silnika glownego (zasilanie uruchomione gdy PortB(1) = 1)
+PortB(2) - Uruchamia transoptory polozenia karty poprzez wlaczenie zasilania diod swiecacych
+ transoptorow, transoptory wlaczone dla PortB(2)=1
+PortB(3) - Wyjscie sterujace modulem hybrydowym poprzez H9
+PortB(4) - Prawdopodobnie zmina szybkosci silnika glownego ?
+PortB(5) - Sterowanie elektromagnesem niszczacym karty mechanicznie, PortB(5)=1 trybik niszczacy  karte oposzczony
+PortB(6) - N/A
+PortB(5) - Wyjscie sterujace modulem hybrydowym poprzez H4
+
+Kod zawarty w EPROMie czytnika kart przedstawia sie natepujaco (ver. 2.9):
+$0000-$43FF Obszar dolny brak programu (ustawiony A14 i zastrzerzone dla IO)
+$4400-$5FF1 Obszar dolny programu (z wyzerowanym 14-tym <A13> bitem adresu)
+$5FF2-$5FFF Wektory przerwan i resetu dla dolnego obszaru
+$6000-$63FF Brak programu (zastrzerzone dla IO)
+$6400-$7FF1 Obszar gorny programu (ustawiony <A13>)
+$7FF2-$7FFF Wektory przerwan i resetu dla gornego obszaru
+
+W obszarze pamieci EPROMu istnieja oczywiscie przestrzenie niewykorzystane :
+$5DBD-$5FF1 Obszar wypelniony zerami - domyslnie niewykorzystany obszar pamieci
+$6D2D-$7FF1 Obszar wypelniony zerami - domyslnie niewykorzystany obszar pamieci
+
+Wniosek z powyzszego to ze wykorzysane sa dwa obszary pamieci EPROM, w ktorych zawarty jest 
+kod programu czytnika i sa to : $4400-$5DBC  oraz $6400-$6D2D co daje 8,73 kB kodu 
+maszynowego programu. (srednio przyjmujac 2 Byte'y na instrukcje asemblera daje to 4468
+instrukcje).
+
+Kontroler, oprocz kodu programu, w pamieci EPROM przechowuje takze wektory przerwan i resetu 
+(reset jest w zasadzie takze szczegolnym rodzajem przerwania). Osobne wektory istnieja dla
+gornego (ustawiony bit A13) i dolnego (wyzerowany bit A13) zakresu pamieci.
+Dla gornego wszystkie wektory przerwan wynosza $641C. 
+Dla dolnego zakresu odpowiednie wektory wynosza: 
+Reset - $441C
+Software Interupt (przerwanie programowe) - $441C
+IRQ (przerwanie sprzetowe - $4756
+Timer (przerwanie z czasomierza) - INTR $4444
+INTR WAIT z Timera (przerwanie WAIT z czasomierza) - $443A
+
+Kontroler startuje odczytujac wektor resetu, z komorek 1FFE/1FFF operujac swoja 13-bitowa szyna
+adresowa. Bedzie odpowiadalo to adresowi $5FFE/5FFF w pamieci EPROM (nalezy oprocz 13-bitow 
+wystawianych przez kontroler na szynie adresowej ustawic bit 15 (A14) adresu pamieci EPROM 
+poniewaz jest on przylaczony do VCC i wyzerowac bit 14 (A13), a po wykonaniu instrukcji 
+ustawiajacej bit A13 takze ten bit nalezy zmodyfikowac odczytujac adres z EPROMu). 
+Wektor resetu znajduje sie (ver. 2.9) pod adresem $441C (bit A13 = '0'). 
+
+Miejsca mozliwego lub pewnego przejscia w gorny zakres pamieci. Czyli tam gdzie 
+warunkowo lub bezwarunkowo ustawia sie bit danych D6 spod adresu $90.
+
+$4433
+?$4761
+?$4767
+?$5CBB
+
+Procedury glowne 5d5d - 3 wywolania, 590d, 582D, 47CC, 58FD, 5A65, 4CAA, 5A4A.
+L5D5D - Odczyt polozenia karty wartosc pozostawiana jest w Acc dolne 4 bity, gorne sa zerowane
+L590D - Opoznienie o (1029)*Acc + 6 cykli
+
+Rzecz, ktora jest dla mnie nadal tajemnica, to budowa ukladu hybrydowego znajdujacego pod metalowym ekranem. Z wygladu ciezko jest odczytac nawet rodzaje uzytych tam ukladow. Dla calego procesu odczytu i kasowania to dosc wazny modul, gdyz steruje on glowicami wstepnie przetwarzajac odczytywany sygnal i podajac sygnal dla kasowania. Jesli ktos dysponuje schematem lub chociaz opisem funkcjonalnym bylbym wdzieczny za opublikowanie tych materialow.
+
+Omowie tu tez jak nie niszczac zbytnio czytnika czytnika mozna przystosowac go do odczytu (zapisu ?) kart magnetycznych. Po wyjeciu czytnika z aparatu zostawiamy tasme laczaca czytnik z aparatem. W otwory wtyczki wolnego konca kabla mozna wlozyc konce odizolowanych przewodow o odpowiedniej grubosci. Zeby uruchomic czytnik potrzebny bedzie zasilacz 5V. +5V dolaczamy do koncowki (wszystkie oznaczenia patrz schemat ideowy) 3 lub 8 wtyczki, mase zasilacza do koncowki 4 lub 7. Dodatkowo wyprowadzamy przewod z koncowki 9. Miedzy koncowke 9 i mase wstawiamy przelacznik lub w inny sposob stwarzamy sobie mozliwosc wytworzenia zwarcia miedzy tymi punktami. Zanim uruchomimy czytnik nalezy odlaczyc silniczek odpowiedzialny za zamykanie wlotu kart. W tym celu wyjmujemy jego wtyczke z gniazda J2 i przykladamy odpowiednio spolaryzowane napiecie z naszego zasilacza. Uslyszymy wtedy szum otwieranych drzwiczek. Po otworzeniu dwiczek w ten nieco brutalny sposob, pozostawiamy silniczek niewlaczony, w przeciwnym przypadku po kazdej probie wlaczenia czytnik bedzie probowal zamknac wlot. Teraz mozemy podlaczyc zasilanie do czynika i na krotka chwile zewrzec koncowke 9 wtyczki z masa, to uruchomi czytnik, jesli we wlocie znajduje sie karta to czytnik przepusci ja przez siebie i wyrzuci. Gdy podlaczymy glowice (przewody rozowy i czerwony) z wejsciem mikrofonowym karty dzwiekowej w komputerze to bedziemy mogli nagrac sobie zawartosc karty np. w postaci pliku Wave. 
+Nie jest mozliwe rownie proste zapisanie karty, sygnal otrzymany w wyniku nagrania, wykorzystujacego jako zrodlo sygnalu wzmacniacz karty dzwiekowej, bedzie znieksztalcony i nie bedzie zawieral wszystkich charakterystycznych elementow, ktore mozemy zaobserwowac w zapisie orginalnym. Nie nalezy tez wierzyc we wszystkie brednie o naklejaniu tasmy Hi8, uzywaniu magnetofonu szpulowego itp (nie mowie tu juz o takich debilizmach jak malowanie karty lakierem, czy wkladanie jej do lodowki). Nawet gdyby bylo to mozliwe, (a jest mozliwe bo kiedys spotkalem sie z tego rodzaju karta z naklejona tasma) to po pierwsze nie za pomoca wzmacniacza audio bo ten obcina skladowa stala tak jak i ten na wyjsciu karty dzwiekowej komputera, magnetofon stosuje do zapisu sinusoidalny prad podkladu, ktory pasuje tu jak piesc do nosa, a uzyty material magnetyczny (tasma) to material magnetycznie miekki i w wyniku obcowania z zewnetrznymi polami magnetycznymi ulega latwo przemagnesowaniu, a to doprowadza do zniszczenia nawet dobrze nagranej karty (czytnik jest wrazliwy na wszelkie przeklamania sygnalu). Do nagrywania musi byc zapewne uzyty sygnal modulowany PWM lub o kilku (niewielu np. 4) poziomach amplitudy. 
+Dodatkowo mozna zauwazyc, ze prad w glowicy, przy nagrywaniu musi przeplywac w obu kierunkach, nalezy przyjrzec sie przejsciu przez zero sygnalu wystepuje tam charakterystyczne znieksztalcenie skrosne, polega ono na tym, ze sygnal nie narasta (opada) liniowo, lecz wystepuje krotkie "splaszczenie" w okolicy przejscia przez zero. Znieksztalcenie skrosne jest charakterystyczne m.in. dla krzywej magnesowania pierwotnego i swiadczy o przejsciu z jednego biegunu magnetycznego na przeciwny, czyli o zmianie kierunku przeplywu pradu w cewce glowicy.
+W latwy sposob mozna natomiast skasowac karte, wystarczy do glowicy przylozyc stale napiecie i przepuscic pod nia karte. Uwazac nalezy tylko zeby nie przekroczyc zbytnio pradu gdyz mozna spalic glowice prad rzedu 70 - 100 mA, jest w miare bezpieczny. Przeplywajacy prad mozna obliczyc z prawa Ohma, glowica odtwarzajaca ma opor ok. 12 Ohm, odtwarzajaco-nagrywajaca ok 27 Ohm.
+Wkrotce sprobuje napisac program ktory powolilby w latwy sposob sterowac czytnikiem, bez odlaczania silniczka otwarcia drzwiczek wlotu karty. Jesli dysponujecie podobnymi programami, np. napisaliscie, to jestem zainteresowany. Idealnym bylby program pozwalajacy na dzwonienie bez kasowania karty dla zadanego numeru karty, ale nalezaloby dokonac odpowiedniej korekty obecnego kodu a to mimo wszystko kawalek programu i to w assemblerze, no i jeszcze nalezaloby inteligentnie zmodyfikowac. Po wszystkim nalezaloby takze otworzyc i zamknac budke co wcale nie jest takie proste jak by sie czasem wydawalo.
+
+Jest to wersja "beta" tekstu i moze ja uzupelnie a moze nie. Zaleta tego tekstu jest, ze wszystko co opisalem zostalo sprawdzone i nie opieram sie na domyslach ani cudzych mniej lub bardziej sprawdzonych hipotezach. Do tekstu dodaje wstepnie zdisassmemblowany i opatrzony komentarzami tekst programu czytnika.
+
+THE EYE
+theeye@polbox.com

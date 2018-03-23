@@ -1,0 +1,559 @@
+                             URMET FAQ
+                              v1.0beta
+                  (c) Warsaw 03.07.1998  Shroom Inc.
+                            psilo & cybe   
+                   [ e-mail: shroom26@hotmail.com ]
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+1. Budka w calosci
+   - zabezpieczenia mechaniczne budki
+   - SOS do centrali
+2. Budka w kawalkach
+   - plyta glowna
+   - modul czytnika
+8. Software w EPROM'ach
+   - plyta glowna
+   - modul czytnika
+4. Karty telefoniczne
+5. Inne
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+1. Budka w calosci
+   ~~~~~~~~~~~~~~~
+
+   *** zabezpieczenia mechaniczne budki
+
+   Zdecydowalem sie pominac ten punkt bo wszyscy juz o tym wiedza ze
+   budka jest zamykana na zamek typu ABLOY a wsrodku jest czujnik otwarcia
+   budki.Gdy budke zamkniemy budka powiadamia natychmiast centrale
+   ze ktos ja otwieral.
+   Jesli chodzi o kluczyki ABLOY to ktos wymyslil notacje cyfrowa
+   dla kluczykow.BArdzo dobrym sposobem na odczyt tej notacji jest
+   posluzenie sie zamkiem z niebieskiego URMET'a.
+   Przykladowo kluczyk do otwierania niebieskiego URMET'a 
+   liczac od glowki kluczka ma notacje:
+
+     00013100
+
+   Inne ciekawe kluczyki to:
+
+     30232120 - nikt narazie nie wie do czego jest ten kluczyk,
+                no moze poza TPSA; niewykluczone ze fake,ale mialem go 
+                w lapce , komu by sie chcialo taki kawal robic
+     00021000 - puszka na zetony w starych telefonach
+
+   Srebrnego na wszelki wypadek nie podam.Nie jest nawet sprawdzony.
+ 
+   *** SOS do centrali
+
+   Budka gdy sie jak otworzy a potem zamknie zaczyna komunikowac sie
+   z centrala.Do polaczenia jak i calej komunikacji uzywa sygnalow DTMF.
+   Na zyczenie sluze zapisem takiej komunikacji w formacie wav.
+   Zupelnie podobnie wyglada standardowe rutynowe zglaszanie sie budki do 
+   centrali w ciagu dnia.
+   Poczatek wybierania numery to 2 , potem A a potem numer centrali.
+   Przykladowe numery central w Warszawie to 6642099 lub 6642098.
+   Po drugim ringu zestawiane jest polaczenie i centrala wysyla 9 szybkich
+   wysokich tonow.Normalnie po pierwszym zaczyna sie koumunikacja.
+   Gdy budce nie uda sie dodzwonic po pewnym czasie wysyla 5 raz *
+   i dzwoni ponownie.
+   Analiza komuniakacji miedzy budka a centrala w toku.
+ 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+2. Budka w kawalkach
+   ~~~~~~~~~~~~~~~~~
+
+   Cala elektronika niebieskiego URMET'a to dwie plyty plus kilka
+   peryferiow.Dwie najwazniejsze czesci to plyta glowna oraz plyta od
+   modulu czytnika (badane przez nas to wersja 2.9 i 2.8).
+   Peryferia podlaczone do plyty glownej to klawiatura matrycowa,
+   wyswietlacz cieklokrystaliczny 16 x 1 znakow (5 x 7 pixeli) z ukladem
+   HD44780A00 , buzzer , sluchawka , czujnik podniesienia sluchawki ,
+   czujnik otwarcia budki , przycisk redial.Schemat polaczen wraz z 
+   wizerunkiem plyty glownej na zalaczonym obrazku.
+   Peryferia podlaczone do plyty w module czytnika to silnik do otwierania
+   wejscia dla karty ( +3V zamykanie , -3V otwieranie) , silnik do
+   przesuwania karty w calym mechanizmie (15V) , glowica do odczytu ,
+   glowica do kasowania oraz cztery czujniki do okreslenia pozycji karty
+   w jej wedrowce.No i elktromagnes do mechanicznego niszczenia karty.
+   Modul glowny i modul czytnika polaczone sa dziesieciozylowym kablem.
+   Od strony plyty glownej:
+
+                      -------____-------
+                      |  1  2  3  4  5 |
+                      |  6  7  8  9 10 |
+                      ------------------
+          1 - PA0/IC3  (linia 0 portu A/Input Compare 3)
+          2 - PE1/AN1  (linia 1 portu E)
+          3 - Vdd      (+5V)
+          4 - Vss      (GND)
+          5 - ?
+          6 - PA4/OC4/OC1
+          7 - ?
+          8 - Vdd      (+5V)
+          9 - Vss      (GND)
+         10 - PE6/AN6
+
+   Od strony czytnika 10 pin jest nie uzywany.
+
+   *** modul glowny
+    
+   Sercem modulu glownego jest mikrokontroler Motorola MC68HC11A1FN
+   (jak wskazuje koncowka FN w 52 pinowej obudowie typu PLCC).
+   Jest to 8 bitowy mikrokontroler z 16 bitowa szyna adresowa.
+   Procesor ma dolaczony zewnetrzny kwarc 2.000 MHz, a wiec szyna
+   jest taktowana z czestotliwoacia 0.5 MHz (E clock).
+   Model A1 kontrolera HC11 nie zawiera wlasnego ROMu , EPROMu ani OTPROMu.
+   Posiada natomiast wewnatrz miedzy innymi 256 bajtow RAMu , 512 bajtow
+   EEPROMu , 8-bitowy 8-kanalowy konwerter analogowo-cyfrowy,
+   port szeregowy do synchronicznej komunikacji (SPI - Serial Peripheral
+   Interface),port szeregowy do komunikacji asynchronicznej ( SCI - Serial
+   Communications Interface) , timer z trzema rejestrami IC (input
+   compare) i piecioma rejestrami OC (output compare). 
+   Z wazniejszych ukladow na plycie znalezc mozemy ponaddto 32k EPROM
+   (27c256) oraz 8k RAM ( TOSHIBA TC5565APL-15L).  
+   Pelny spis chipow z nazwa i opisem funkcji:
+
+   MC68HC11A1FN    - mikrokontroler , serce plyty glownej
+   M27C256B        - 32k EPROM
+   TC5565APL-15L   - 8k SRAM (Toshiba)
+   PCF8583P        - clock/calendar (Philips) - zegar czasu rzeczywistego,
+                     z wlasnym RAMem (256 bajtow) i wlasnym kwarcem,
+                     komunikuje sie z procesorem po szynie i2c
+                     (podlaczone do procesora na wejscia rx i tx)
+   MT8880AE        - DTMF transceiver - wiadomo po co :)
+   MC74HC273N (x3) - CMOS Octal D-type Flip-Flop w/RESET
+                     zatrzask do multiplexowania danych
+   MC74HC244AN     - CMOS Octal-buffer Line Driver
+                     jednokierunkowy bufor trojstanowy
+                     funkcja podobna jak powyzej
+   SN74HC138N      - CMOS 3-to-8 Line Decoder/Demultiplexer
+                     do dekodowania adresow
+   MC74HC139AN     - CMOS Dual 2-To-4 Line Decoder
+                     takze do dekodowania adresow
+   SN74HC14N       - CMOS Hex Inverting Schmitt Trigger
+                     tak naprawde to 6 zwyklych bramek NOT
+   MC74HC132AN     - CMOS Quad 2-Input NAND Schmitt Trigger
+                     4 bramki NAND
+   CD4066BCN (x2)  - CMOS Quad Switch
+   HCF40106BE      - Hex inverters with schmitt-trigger inputs
+                     mozna uzywac zamaist 74HC14 lub 74HC04
+   CNY17-3 (x2)    - phototransistor optocoupler (Siemens)
+                     w srodku dioda elektroluminescencyjna i
+                     fototranzystor,jako szybki przelacznik
+   LS356B          - Telephone Speech Circuit
+   LP324N          - Micropower Quad Operational Amplifier
+
+   Na plycie glownej jest kilka zlacz.Oprocz opisane wyzej zlacza J7
+   laczacego plyte glowna z czytnikiem godne uwagi sa:
+   
+   * zlacze J1 - biegnace do klawiatury matrycowej,wyswietlacza
+     cieklokrystalicznego i przyciksu redial
+
+                 ---------------____--------------
+                 |  1  2  3  4  5  6  7  8  9 10 |
+                 | 11 12 13 14 15 16 17 18 19 20 |
+                 ---------------------------------
+
+          1 - klawiatura matrycowa, kolumna pierwsza (1,4,7,*)
+          2 - klawiatura matrycowa, rzad pierwszy (1,2,3)
+          3 - klawiatura matrycowa, rzad drugi (4,5,6)
+          4 - klawiatura matrycowa, rzad trzeci (7,8,9)
+          5 - klawiatura matrycowa, rzad czwarty (*,0,#),takze redial
+          6 - D0 dla LCD
+          7 - D2 dla LCD
+          8 - E dla LCD
+          9 - RS dla LCD
+         10 - Vdd (zasilanie +5V)
+         11 - NC (nieuzywany)
+         12 - klawiatura matrycowa, kolumna druga (2,5,8,0)
+         13 - klawiatura matrycowa, kolumna trzecia (3,6,9,#)
+         14 - redial
+         15 - NC (nieuzywany)
+         16 - D1 dla LCD
+         17 - D3 dla LCD
+         18 - R/W dla LCD
+         19 - NC (nieuzywany)
+         20 - GND
+
+   * zlacze w klawiaturze matrycowej
+
+         uzywane tylko piny 1,2,3,4,5,12 i 13 , funkcja jak wyzej 
+
+   * zlacze w wyswietlaczu cieklokrytalicznym
+
+          _____________________________________________
+          |  1  2  3  4  5  6  7  8  9 10 11 12 13 14 |
+          ---------------------------------------------
+  
+          1 - Vss (GND)
+          2 - Vdd (zasilanie +5V) 
+          3 - Vee (Liquid crystal drive,mozna tym regulowac kontrast 
+              w wyswietlaczu,przewaznie napiecie miedzy GND a +5V,
+              tu: nieuzywane)
+          4 - RS   (wybor rejestru ; gdy 1 - dane,gdy 0 - instrukcje)
+          5 - R/W  (odczyt/zapis ; gdy 1 - odczyt,gdy 0 - zapis)
+          6 - E    (enable ; aktywowanie chipa) 
+          7 - D7 (tu: nieuzywane)
+          8 - D6 (tu: nieuzywane)
+          9 - D5 (tu: nieuzywane)
+         10 - D4 (tu: nieuzywane)
+         11 - D3   |
+         12 - D2   |
+         13 - D1   | szyna danych
+         14 - D0   |
+
+   *** modul czytnika
+
+   Sercem modulu czytnika jest mikrokontroler Motorola MC146805E2CP
+   w 40 pinowej obudowie DIP oraz 32k EPROM (27c256).
+   Pelny spis chipow z nazwa i opisem funkcji:
+
+   MC146805E2CP    - mikrokontroler , serce czytnika
+   M27C256B        - 32k EPROM
+   MC74HC273N      - CMOS Octal D-type Flip-Flop w/RESET
+                     zatrzask do multiplexowania danych/adresow
+   MC74HC244N      - CMOS Octal-buffer Line Driver
+                     jednokierunkowy bufor trojstanowy
+                     funkcja podobna jak powyzej
+   MC74HC175N      - CMOS Quad D-Type Flip-Flops
+                     i jeszcze jeden zatrzask ,albo jak ktos woli
+                     kolejny przerzutnik typu D wyzwalany zboczem :)
+   SN74HC138N      - CMOS 3-to-8 Line Decoder/Demultiplexer
+                     do dekodowania adresow
+   SN74HC14N       - CMOS Hex Inverting Schmitt Trigger, 6 x NOT
+   MC74HC4075N     - CMOS Triple 3-Input OR Gate, 3 x trojwejsciowy OR
+   HCF40106BE      - CMOS Hex Schmitt Triggers
+   SN74HC02N       - CMOS Quad 2-Input NOR Gate
+   LP339N          - Quad Voltage Comparator
+
+   Na dodatkowej plytce,ukrytej pod miedzianym radiatorem tez jest kilka 
+   chipow montowanych tym razem powierzchniowo:
+  
+   [...]
+
+   Oto spis zlacz od modulu czytnika:
+
+      J1 - opisany powyzej , laczy modul czytnika  zplyta glowna
+      J2 - silniczek do otwierania wejscia dla karty
+      J3 - fotokomorka (wejscie karty)
+      J4 - fotokomorka (poczatek odczytu)
+      J5 - glowica czytajaca
+      J6 - glowica kasujaca
+      J7 - nieuzywane
+      J8 - fotokomorka (koniec odczytu)
+      J9 - fotokomorka (wyjscie karty)
+     J10 - silnik napedzajacy mechanizm przesuwu karty
+     J11 - elektromagnes od mechanizmu niszczacego karte
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+8. Software w EPROM'ach
+   ~~~~~~~~~~~~~~~~~~~~
+
+   A wiec mamy dwa oddzielne programy w dwuch epromach.Jeden z nich 
+   steruje calym automatem,drugi zas odpowiady tylko za odczyt kart
+   magnetycznych (i sprawdzenie ich poprawnosci).
+
+   *** plyta glowna
+
+   Na plycie glownej mamy procesor hc11 z 16 bitowa szyna adresowa
+   (przestrzen adresowa 64k) i osmiobitowa szyne danych.
+   Prowizoryczna mapa pamieci uzyskana porzez odworzenie schematu ideowego
+   plyty i analize owego schematu:
+
+     0000-00ff    wewnetrzny RAM (256 bajtow)
+     1000-103f    rejestry wewnetrzne procesora
+     2000-23ff    mirrorwany 1024 razy bajt,uzywany przewaznie 2000,bity:
+                    0 - ?
+                    1 - ?
+                    2 - ?
+                    3 - ?
+                    4 - kolumna pierwsza klawiatury
+                    5 - kolumna druga klawiatury
+                    6 - kolumna trzecia klawiatury
+                    7 - redial
+     2400-27ff   mirrorwany 1024 razy bajt,uzywany przewaznie 2400,bity:
+                    0 - ? do J2
+                    1 - ? do J2
+                    2 - ? do J3
+                    3 - ?
+                    4 - rzad czwarty klawiatury,redial
+                    5 - rzad trzeci klawiatury
+                    6 - rzad drugi klawiatury
+                    7 - rzad pierwszy klawiatury
+     2c00-2fff   mirrorwany 1024 razy bajt,uzywany przewaznie 2c00,bity:
+                    0 - ?
+                    1 - on/off DTMF transceivera :)
+                    2 - RS od LCD
+                    3 - E od LCD
+                    4 - D3 od LCD
+                    5 - D2 od LCD
+                    6 - D1 od LCD
+                    7 - D0 od LCD
+     3400-37ff   dwa bajty mirrorowane 512 razy,uzwane przewaznie:
+                    3400 - odczyt: rejestr danych receivera
+                           zapis:  rejestr danych transmitera
+                    3401 - odczyt: rejestr stanu (status register)
+                           zapis:  2 rejestry kontrolne (CRA & CRB)
+                 bity:
+                    0   - D0 dla DTMF transceivera
+                    1   - D1 dla DTMF transceivera
+                    2   - D2 dla DTMF transceivera
+                    3   - D3 dla DTMF transceivera
+                    4:7 - nieuzywane
+     4000-5fff   ram (8k)
+     6000-7fff   ram (8k),drugi raz ten sam RAM, mirror
+     8000-ffff   eprom (32k)
+                    b600-b7ff 512 bajtow wewnetrznego EEPROMu
+                    bfc0-bfff tablica wektorow dla trybu special test
+                    ffc0-ffff tablica wektorow dla trybu normal & extended
+
+   Procesor normalnie w URMETach startuje w trybie extended (pin MODA
+   podlaczony do +5V).Natomiast po zwarciu jumpera W1 (pin MODB podlaczony
+   do +5V) startuje w trybie special test.
+
+   EPROM jest w bardzo sprytny sposob kodowany.Zamienione sa kolejnoscia
+   piny wychodzace z ukladu 74hc273 i wchodzace na wejscie danych do
+   epromu.A wiec jest jakis rodzaj sprzetowego "kodowania".
+   Sa dwa sposoby na obejscie tego.Albo ustawiamy odpowiednia zamiane
+   wejsc w programie obslugujacym programmator epromow,albo mozemy sie
+   posluzyc malym programikiem ktory ponizej zamieszczam.
+   Przyda sie on tym ktorzy maja zgrane normalnie epromy lub posluguja sie
+   tymi ktore mozna znalezsc w sieci.Oznaka ze udalo sie nam poprawnie
+   zdekodwac eprom bedzie to iz w zdekodwanym epromie pojawia sie 
+   mniej lub bardziej znajome stringi.
+
+--->8----- cut here  --------------------------------------[urmet.c]---------
+/*
+ *  Program to decoding URMET eprom dumps
+ *  (c) Warsaw 1998   Cybe of Shroom Inc.
+ *  compile: gcc -o urmet urmet.c -lm
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+#include <unistd.h>
+#include <math.h>
+
+int main(int argc,char **argv){
+
+  /* permutation table */
+  int s[8] = { 3 , 2 , 4 , 1 , 5 , 0 , 7 , 6 };
+
+  int in,out,eof,i;
+  unsigned char ch,ch2;
+
+  if(argc!=3){
+    printf("USAGE: %s <input file> <output file>\n",argv[0]);
+    exit(-1);
+  }
+
+  if((in=open(argv[1],O_RDONLY))<0){
+    printf("Cannot open %s\n",argv[1]);
+    exit(-1);
+  }
+
+  if((out=open(argv[2],O_WRONLY | O_CREAT,0644))<0){
+    printf("Cannot open %s\n",argv[2]);
+    exit(-1);
+  }
+
+  for(;;){
+    ch2=0;
+    eof=read(in,&ch,1);
+    if(!eof) break;
+    for(i=0;i<8;i++) ch2+=((ch&(int)pow(2,s[i]))>>s[i])*(int)pow(2,i);
+    write(out,&ch2,1);
+  }
+
+  close(in);
+  close(out);
+}
+--->8----- cut here --------------------------------------[urmet.c]---------
+
+   Gdy mamy juz mape pamieci oraz zdekodowany eprom mozemy przystapic
+   do dissasemblacji.Wczesniej warto jednak wiedziec jeszcze jak
+   procesor hc11 zaczyna swoja prace.Otoz korzysta on z wektora RESET,
+   ktory jest w komorkach fffe-ffff , a wiec od adresu c000.
+   Warto pamietac, ze dla trybu special test beda to komorki bffe-bfff.
+   Pelny spis wektorow wraz z wartosciami dla trybu normal ponizej:
+
+     ffd6:      SCI serial system                    fe41
+     ffd8:      SPI serial transfer complete         bf84
+     ffda:      Pulse Accumulator Input Edge         bf24
+     ffdc:      Pulse Accumulator Overflow           bf84
+     ffde:      Timer Overflow                       bf84
+     ffe0:      TIC4/TOC5 ( TI4O5)                   bf84
+     ffe2:      Time Output Compare 4 (TOC4)         b800
+     ffe4:      Time Output Compare 3 (TOC3)         bf84
+     ffe6:      Time Output Compare 2 (TOC2)         c908
+     ffe8:      Time Output Compare 1 (TOC1)         bcd9
+     ffea:      Time Input Capture 3 (TIC3)          ba99
+     ffec:      Time Input Capture 2 (TIC2)          bed1
+     ffee:      Time Input Capture 1 (TIC1)          bf16
+     fff0:      Real Time Interrupt (RTI)            bf84
+     fff2:      IRQ                                  bf84
+     fff4:      XIRQ                                 bf84
+     fff6:      Software Interrupt (SWI)             bf84
+     fff8:      Illegal Opcode Trap                  d4f4
+     fffa:      COP failure                          c000
+     fffc:      COP clock monitor fail               c000
+     fffe:      system reset(RESET)                  c000
+
+   Nieoceniona pomoca bedzie tez zapewne spis rejetrow procesora.
+   Ale najwygodniej bedzie jesli zamowicie sobie jakas ksiazeczke
+   do procesora hc11.Polecam adres:
+
+     http://www.mot-sps.com/home/lit_ord.html
+
+   Przysylaja za darmo.Interesujaca was ksiazeczka to:
+ 
+     M68HC11 Reference Manual (M68HC11RM/AD)
+
+   Calkiem przydatny jest tez disassembler.Najlepszy jaki udalo mi sie
+   znalezsc na sieci to XDASM.Napisalem tez wlasny,ktory na zyczenie
+   przesle poczta.
+   Na zachete przytocze tu glowna procedure programu budki wraz z
+   odpowiednimi przypisami:
+
+--->8----- cut here ---------------------------------------------------------
+
+c000:   0f              sei             * Wlacza bit maski przerwan I,
+                                        * wylacza przerwania maskowalne
+c001:   86 20           lda     #$20    * ustawia bit 5 w PORTA
+c003:   b7 10 00        sta     $1000   *
+c006:   86 55           lda     #$55    * software COP reset:
+c008:   b7 10 3a        sta     $103a   * wysyla $55 a potem $aa do COPRST 
+c00b:   43              coma            *
+c00c:   b7 10 3a        sta     $103a   *
+c00f:   86 ca           lda     #$ca    * ustawia parametry w rejestrze OPTIONS
+c011:   b7 10 39        sta     $1039   *  - wylacza opoznienie przy starcie 
+                                        *    oscylatora
+                                        *  - ustawia podzielnik czestotliwosci
+					*    dla COP'a na 16
+                                        *  - linia IRQ level-sensitive
+                                        *  - wlacza A/D charge pump 
+                                        *  - wlacza wewnetrzny oscylator RC
+                                        *    dla systemu A/D (2 MHz)
+                                        *  - wlacza Clock Monitor
+c014:   0f              sei             * ciag SEI ... albo time delay,
+c015:   0f              sei             * albo co bardziej prawdopodobne
+   [...]                                * miejsce zarezerwowane na dodatkowa
+c0fe:   0f              sei             * procedure inicjalizujaca
+c0ff:   0f              sei             *
+c100:   86 22           lda     #$22    * ustawia parametry w rejestrze HPRIO
+c102:   b7 10 3c        sta     $103c   *  - wlacza bit MDA (tryb extended)
+                                        *    wczesniej juz wybrany sprzetowo
+                                        *  - wlacza najwyzszy priorytet
+                                        *    z przerw. maskowalnych dla
+                                        *    Pulse Accumulator Input Edge
+c105:   b6 ff ff        lda     $ffff   * sprawdza czy ostatni bajt 
+c108:   81 ff           cmpa    #$ff    * rowny $ff (tu: nie rowny)
+c10a:   26 22           bne     $22     * i jesli tak to skacze do $c12e
+c10c:   86 30           lda     #$30    * ustawia bity 4 & 5 w PORTD
+c10e:   b7 10 08        sta     $1008   *
+c111:   86 39           lda     #$39    * ustawia maske w DDRD
+c113:   b7 10 09        sta     $1009   *
+c116:   86 04           lda     #$04    * ustawia bit 2 w komorce $2000
+c118:   b7 20 00        sta     $2000   *
+c11b:   4f              clra            *
+c11c:   b7 2c 00        sta     $2c00   * zeruje komorke $2c00
+                                        * (wyswietlacz LCD)
+ ----------------------------------------
+c11f:   4f              clra            * zerowanie bitow/pinow w PORTA
+c120:   b7 10 00        sta     $1000   *
+c123:   86 55           lda     #$55    * software COP reset
+c125:   b7 10 3a        sta     $103a   *
+c128:   43              coma            *
+c129:   b7 10 3a        sta     $103a   *
+c12c:   20 f1           bra     $f1     * bezwarunkowy skok do $c11f
+                                        * co zamyka glowna procedure
+                                        * w tej petli
+ ----------------------------------------
+c12e:   18 ce c1 35     ldy     #$c135  *
+c132:   7e e6 67        jmp     $e667   *
+c135:   86 30           lda     #$30    *
+c137:   b7 10 30        sta     $1030   *
+c13a:   fc 10 0e        ldd     $100e   *
+c13d:   c3 09 c4        addd    #$09c4  *
+c140:   fd 10 16        stad    $1016   *
+[...]                                   * itd itd itd .... :)
+
+--->8----- cut here ---------------------------------------------------------
+
+   *** modul czytnika
+
+   Narazie mam dosc pisania ... moze potem ... 
+
+   Zachecam goraco ludzi do analizy obu programow zawartych w epromach.
+   Moje badania sa w toku .....
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+4. Karty telefoniczne
+   ~~~~~~~~~~~~~~~~~~
+
+   O kartach telefonicznych napisano juz naprawde duzo.Tu raczej nie
+   bedzie nic o kopiowaniu a raczej o tym co jest na takiej karcie tak
+   naprawde zapisane.
+   Otoz jest tam tylko jedna sciezka z danymi i nie jest bynajmniej
+   zapisana w formacie ISO tak jak karty kredytowe.Jest to zapis
+   wlasciwy tylko tym kartom.Mialem do testow kart z Wloch i zapis
+   jest identyczny.
+   Sa wiec trzy pola.Pierwsze ma 35 bitow,drugie pole ma 33 bity.
+   Ostatnio to co do ktorego jest pewnosc jesli chodzi o jego funkcje
+   ma 200 bitow.Ostatie pole sluzy do okreslenia w ilu procentach karta
+   jest zuzyta.Normalnie sa tam dwa 0 potem same jedynki i sukcesywnie od
+   konca te jedynki sa kasowane.Pozostale dwa pola (oddzielone 0) sa
+   polami identyfikacyjnymi (numer seryjny oraz typ karty).
+   Oto te pola dla kilku przykladowych kart:
+
+--->8----- cut here ---------------------------------------------------------
+
+Zwykla karta 25
+~~~~~~~~~~~~~~~
+11100011000000000101100100001101010   0  100011011111001010110111010110100
+11101010000000001001101100111011110   0  100101001100001011101110111000110
+11101111001010000000001110101100010   0  010101100100000010101110110000110
+11101111001010101101001000001000110   0  010111001101010101101111000001100
+11101001001100011001001100111110010   0  100111101010011001000111011011100
+
+Zwykla karta 100
+~~~~~~~~~~~~~~~~
+11100000100010010001000100111001000   0  111000101111110100110001011010010
+11101111101010011101100000011111100   0  011010010111110001011010111001110
+
+Maintenance
+~~~~~~~~~~~
+11001111101100100000101100111000100   0  001100110110110010000000100101010
+
+--->8----- cut here ---------------------------------------------------------
+
+    Karta MAINTENANCE jest jedna z czterech kart serwisowych uzywanych
+    aktualnie do obslugi niebieskich URMET'ow.Pozostale to SAMPLE,
+    TEST i PROGRAMMING.Karta MAINTENANCE po wlozeniu jej do apartu
+    zatrzymuje sie na chwile w czytniku i zaraz potem go opuszcza
+    (zanim odlozymy sluchawke).Na wyswietlaczu zas pojawia sie napis
+    "MAINTENANCE"/"W NAPRAWIE" oraz 2 menu.Zupelnie identycznie jak
+    w przypadku otwarcia budki.Istotna roznica polega na tym ze po uzyciu
+    tej karty budka nie dzwoni na centrale.
+    Na zycznie moge wyslac zapis kart magnetycznych w formacie wav.
+    Analiza zapisu w polach identyfikacyjnych w toku.
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+5. Inne
+   ~~~~
+
+   Zupelnie nie wiem co tu zamiescic. Po prostu kochamy zabawki 
+   produkowane przez URMET.Mamy tez nadzieje ze u nas nie szybko
+   zostanie uchwalona ustawa zakazujaca publikowania wynikow
+   reverse engeneering.
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

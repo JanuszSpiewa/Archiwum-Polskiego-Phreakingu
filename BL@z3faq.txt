@@ -1,0 +1,297 @@
+blazex@free.com.pl                BLAZE FAQ              Koszalin 04/02/99
+
+     __________                                                                            ®
+    /          \ _____       ______________________________________________  
+  ||            ||   |     //      \_________ |___________  /              |
+  ||    ###     ||   |    //   __   \       / /----------/ /|    __________| _______
+  ||           _/|   |   //   / \\   \     / /          / /||   |--------- //       \
+  ||            \|   |  //   /___\\   \   / /_____     / / ||   |______   //   ___   \
+  ||    ####     |   \_//___/_____\\___\_/________|   / /  ||    ______|__||  |-- |  |
+  ||             |                               |   \\ \  ||   |------   \|  | _ |  |
+   \\___________/|_______________________________|    \\ \ ||   |  //  __  \  |_\_\  |
+     ---------------------------------------------     \\ \||___| //  / \\  \    \ \ /
+                                                ________\\ \---- //  /___\\  \____\_/
+                                               |____________\   //  /     \\  \----\_\
+                                              --------------   //__/       \\__\    --
+                                                               ----         ----
+I.   Wstep
+II.  Spiderman attack...
+III. Nie dac sie zlapac
+IV.  Urmet'y
+V.   Ciekawostki
+VI.  Ziro osiemset
+VII. Myczki,sposoby&Kruczki...
+VIII.P3W33 BOX
+IX.  SLOWNIK
+X.   3ND&GREETZ
+
+I.Wstep
+ZWYKLY EDYTOR TEXTU WYMAGANY !!!
+
+No i co ja tu napisze? Tak fiem:
+Koszalin to takie fajne miasto ze starymi centralami,ktore nie rozpoznaja tonow.
+Wiec dialerki zostawiamy w domciu.Box'y ? Nie sprawdzalem ale moga dzialac !
+Pinda cos ostatnio nawija o nich,moze napisze cusik na temat w nastepnym
+FAQ?!
+Opisane tu sposoby nie sa konwencjonalne ale dzialaja w 100% wszedzie,na kazdej
+centrali,w kazdym miejscu.Jedni ludzie mowia ze jestem ostro "pojechany",ale mam
+jedno pytanko do was wszystkich:"a czy phreack jest normalny"?
+I haslo calego mego FAQ:NIE DAJ SIE ZLAPAC!
+I teraz znany wszystkim text:
+
+ ___________________________________________________________________________
+|Wszystko co opisalem ponizej sluzy tylko do celow edukacyjnych,nie ponosze |
+|konsekwencji jezeli cos nie wypali i ktos was zlapie na goracym uczynku!   |
+|             Blah,Blah,Bla wiecie formalnosc?!                             | 
++===========================================================================+
+
+Qwa , pamietajcie kogo mamy okradac????????
+TP S.A. a nie lusterow ,ani innych zwyczajnych ludzi !
+A za co tak bardzo kochamy TP'sow???? Za:
+
+*niesamowity "dynamiczny" routing (w obrebie tego samego miasta mozna poruszac sie co 
+jakis czas nawet przez USA,Szwecje i Rosje, dochodzac do dwudziestukilku hopow).
+
+*przestrzeganie CIR'a na laczach POLPAK-T sprzedawanego w ilosci kilkakrotnie
+przekraczajacej przepustowosc lacza. 
+
+*skonfigurowanie modemow dostepowych 0202122, tak by klient za kazde niezrealizowane 
+polaczenie zaplacil choc jeden impuls 
+
+*"promocyjne" znizki za posiadanie wlasnych modemow i lini (placac za nie dziesiec razy
+wiecej niz wynosi abonament, mozemy liczyc na zmniejszenie abonamentu o 5%) 
+
+Qwa jak ja ich nie cierpie!
+
+II.Spiderman attack...
+
+Tu dzial poswiecony dzwonieniem za free.Zapytacie "Da sie?".A ja wam na to 
+:"Wszystko sie da! Dla chcacego,milujacego i wiezacego nic trudnego".
+NIE DAJ SIE ZLAPAC! Za wpadke ostro dostaniesz od starych no i od TPwsiarzy.
+A wiec jak dzwonic? Ok! Po co mamy siedziec 24h w piwnicy,jak mozemy
+wylegiwac sie w cieplym,suchym domciu!
+Ten sposob dziala wszedzie na 100%,a jest go tak prosto zrobic ze az skreca z bolu.
+Ok co trzeba?:
+
+*cazki lub obcazki (czy to nie to samo??)-takie do ciecia kabla
+*skalpel(do zarabiania i skrobania kabla)
+*tasma izolacyjna *najlepiej biala*
+*srubowkret (krzyzny i plaski)
+*Noz (dla nie powolanych gosci prosto w brzuch!No coz takie mamy czasy?!)
+*lutownica (wiadomo po co,ale nie trzeba)
+*latarka (odrobine oswiecenia)
+
+Teraz idziemy do piwnicy (najlepiej indywidualnie),lokalizujemy skrzynie telekomuny.
+Masz inna np.Netie to masz staru pecha i z dzwiczkami beda klopoty poniewaz zamki
+sa ryglowane na 3 specjalne walki czyli bez klucza nie masz co startowac.
+Mamy TP bude?!Poswiecamy latarka i srubowkretem (plaskim) wywalamy drzwiczki (ida nalezycie)!
+Teraz maly problem:
+Lokalizujemy swoja linje! Najlepiej zostawic u siebie qmpla ktory zadba o reszte (pomoze).
+Kiedy juz ja mamy lokalizujemy linje jakiegos frajera ktory malo dzwoni i nie ma go przez 
+okreslony czas w domciu!
+Teraz tniemy obydwa kable i zarabiamy je tak zeby linja wsiaza szla do nas a nasza do jego!
+Wystko izolujemy,najlepiej biala tasma tak zeby nie bylo widac!
+Wpychamy kable,zamykamy bude,zacieramy slady i truchcikiem do domu nabijac rachunek!
+Lecz mamy problem wiec z inna linja mamy inny numer czyli qmple dzwonia do niego a nie 
+do ciebie! Ale 0202122 jest twoje.Ryzyko ostre,ale warto jeszcze jak taki frajer co jestesmy
+do niego podlaczeni wyjechal na pare miesiecy, umnie jest taki koles ktory wali wszystko!
+Nie ma go przez 340 dni w roku,przyjezdza raz na miesiac i jest ok!Placi podatki za telefon!
+Niczego sie nie domysla,poprostu pozytywny frajer!
+RYZYKO! Ale jezdze na tym raz na rok!
+
+Nastepny sposob to:
+Nie ma sasiadow w domu ?Nie kce ci sie chodzic do piwnicy zeby zadzwonic za friko ?
+Jestes za glupi zeby zastosowac sie do powyzszego sposobu!
+Ok ale co i jak?
+Sposob jest prosty:
+Dyskretny wlam na mieszkanie np.przez otwarte okno balkonu!
+Mamy w ten sposob cala chate dla siebie : zero stresu :jeden miech dobrej zabawy telefonem!
+UWAGA niczego nie wynosimy z domu ofiary!Zostawiamy tak jak bylo ,nie zostawiamy
+dowodow ze irzywalismy mieszkanka kiedy ich nie bylo w domu!
+Raz tak bym o maly wlos nie wpadl! Kts przyszedl d takiego mieszkania w odwiedziny
+(sa przekrenty np.babcie poproszone przez wlasciciela ieszkania),wyfrunolem szybko 
+przez okno,szczescie mialem ze bylo 1 pietro heh nic nie zlamalem!
+NIE DAJEMY SIE ZLAPAC!!!!!
+Takie cos to nie zwykle wykroczenie!JEST TO WLAMANIE!!!!!!
+Ostra jazda,ale oplaca sie!
+Nie polecam nowicjusza i ludzia o lekkich nerwach no i lamma ktorzy sie boja!
+Masz inne lepsze sposoby mail 2 me.
+
+III.Nie dac sie zlapac:
+
+Co zrobic zeby nie byc zlapanym?
+	Zawsze zabezpieczam sie w pewna zecz ktora skutecznie mnie chroni przed ciekawskimi,
+taka kosa ni w 5 ni w 10 ale kazdy sie przestraszy kiedy ja zobaczy!
+jeszcze do tego Gaz paralizujacy i Ok.Masz w dupie "ciekawskich".
+Zawsze wykrecam korki z piwnicy tak zeby nie bylo w niej swiatla,lubie
+sie poruszac z latara , ale tak chyba bezpieczniej.
+Potem zamykam drzwi na klucz od srodka i odkrecam klamke,tak ze od zewnatrz nikt mi nie
+podskoczy kiedy bede zajety!
+	Mosisz byc 100% Anonimowy,rob to zawsze z zaufanymi przyjaciulmi lub ze starszym
+bratem (tak jak ja).Nie chwal sie tym co robisz,bo to na serio nie jest w porzatku.
+Zacieraj zawsze za soba slady! Kiedy zostaniesz zlapany np.w piwnicy mowisz
+ze ty sobie wyszedles zapalic a tu jakis lammus poczol uciekac w kierunku okna,
+ze nie mogles go gonic bo masz chora noge (jestes weteranem wojennym czy cos
+w tym stylu,improwizacja mile widziana.
+Nigdy nie poruszaj sie Autobusami poniewaz masz
+wtedy ograniczone pole ucieczki i musisz czekac do nastepnego przystanku!
+Kiedys wsiadlem i to byl moj blad!
+
+IV.URMET'y
+
+Nie znam innego buga na "kartowce" od tych co pisza w innych FAQ'ach,przecie nie bede
+zrzynal jak lama,ale kiedys sprawdzalem odsrodkowa wytrzymalosc niebieskich!
+CO bedzie potrzebne:
+*duuza petarda (taka za 7 zl styka,ale samemu mozna zrobic)
+*klucz do niebieskiego lub otwarty blekiciak
+*Szybkie buty
+*aparat
+Ok otwieramy blekiciaka,wypierdalamy potrzebny sprzet a reszte rozpierdalamy w drobny mak
+(my nie tracimy,TPsy tak)
+Wsadzamy w srodek zapalona petarde,zamykamy,spierdalamy.
+Co sie stanie?
+Na zewnatrz nic.
+Od wewnatrz pyl,mak,piasek .itp
+Uwaga!Urmet po takim zabiegu juz nie dziala!Polecam na nowy rok?!
+Zalety i Wniosek calego Myk'u
+Postawia srebrnego!
+A kto srebrnego nie rozbieral to bedzie mial szanse na *czmychniecie* takiego egzeplarzu!
+
+AAAA.Za sama bude mozesz na zlomie uzyskac ciezka kase (20zl od jednego egzeplaza).Zawiozlem
+tam swoje budy i dostalem ze 100 zl.Uwaga taki burak co skupuje moze wydac ciebie TPsom.
+
+V.Ciekawostki
+
+Wbrew naturze monterzy robia sie coraz bardziej przyjazni,sprzedaja kluczyki,programing
+cards,back door'y=lewe linje (od 200 zl),nie lubia swojego pracodawcy prawie tak jak my,
+ale tez znam monterow ktorzy robia zasadzki na phreakerow! Niby umawiaja sie na sprzedanie klucza,
+a potem sladza ciebie i oczekujac na powiniecie nogi !
+Jest to przestroga dla naiwnych.Ja tam wierze "moich" monterow ktorych znam,rozmawiam i kupuje 
+sprzet nigdy mnie nie zawioda inie sprawdza mi mojej skrzynki w piwnicy!heheh
+
+VI.Ziro osiemset
+
+Pare numerkow by my:
+
+0-8001-20-200
+0-8001-20-067
+0-8001-20-062
+0-8001-20-055
+0-8001-20-035
+0-8001-20-023
+0-8001-20-107
+0-8001-20-121
+0-8001-20-127
+0-8001-20-153
+0-8001-20-159
+0-8001-20-178
+0-8001-20-203
+0-8001-20-206
+0-8001-20-209
+0-8001-20-210
+0-8001-20-212
+0-8001-20-215
+0-8001-20-216
+0-8001-20-217
+0-8001-20-229
+0-8001-20-241
+0-8001-20 212
+0-8001-20 127
+0-8001-20 019
+0-8001-20 023
+0-8001-20 200
+0-8001-20 015
+0-8001-20 055
+0-8001-20 210
+0-8001-20 215
+0-8001-20 815
+0-8001-20 153
+0-8001-30 055
+
+Hehe password i loginy to nie jest moja mocna strona,ale mozecie sprobowac
+zarzycic jakiego john'a na pare lat??!
+Ale uwazajta ni dzwonta z domu,bo moga do waszego domu zawitac nie
+spodziewani goscie typu:
+*Men in blek
+*TPp-sy
+*FBI:Sekret SER-zwis-
+
+
+VII.Sposoby&kruczki.
+Dobra to tak:
+Ten sposob dziala jeszcze gdzie niegdzie,czyli mozna poprobowac!
+	Co bedzie potrzebne??:
+
+*modem 
+*komputer
+*linja telefoniczna
+
+	Co trza zrobic:
+
+Preparujemy e-mail na dowolnym programie pocztowym,poczym zamiast tematu wpisujemy ciag znakow:
+"+++ath0,,,,,,atdt<numer>" (w miejscu <numer> wpisujemy numerek z ktorym modem tp-sow ma sie polaczyc).
+Wysylamy go najlepiej do siebie i w chwili odbierania poczty powinno nam zerwac polaczenie ,
+a jak nie zerwie to sami to robimy ! Co z tego?? Caly myk polega na tym,ze kiedy przeslemy
+w ciagu strumiena danych polecenie terminala AT to nie dokonfigurowany modem tps'sow pocznie
+wykonywac to co mu napiszemy...
+Co z tego ze zadzwoni na jakis numerek???
+Nic,ale mozemy wygenerowac sprytnego callback'a . Jak ??
+A tak:
+W temacie maila wpisujemy +++ath0,,,,,,atdt<numer> (jak twoja centrala reaguje na tony) lub 
++++ath0,,,,,,atdp<numer>
+(jak twoja centrala reaguje na pulsy/przerywania) . W miejsce [numer] wpisujemy swoj numerek,
+z ktorego dzwonimy.
+Co dalej???
+Wysylamy,odbieramy,jak nam nie zerwie to sami zrywamy i czekamy jak zadzwoni...to w terminalu
+piszemy tak zeby nasz modem odebral , chyba: ats0=1. Jak odbierze i bedzie "piiiii trititiiiti"
+to masz callback i ty nigdzie nie dzwonisz tylko cfaniaki(TPsy) do ciebie i jeszcze oni za 
+wszystko placa! Ale moga cie latwo nakryc , ale i tak moga ci naskoczyc,bo ty tylko odbiersz?!
+Hmm.Ale sa wady! Bo jak bedziesh kcial odebrac poczte to albo bedzie ci zrwalo,albo , albo...
+Ale mozna to ominac: www.konto.pl i usuwamy bez odbierania...Jak mamy konto unixowe to no problem
+normalnie laczymy sie telenet'em,ftp albo ssh i usuwamy nie kciana poczte!
+A jak nie dziala , to nie miej do mnie zalu.
+
+Jeszcze jest jedna metoda na utrudnienie jakiemos lammerowi zycia w mailu , a dokladnie w
+temasie polecenia pakietu AT ! jakiego? A,np. ATH0+++ co odpowiada nastepnym funkcja:
+ath0-ustawia modem tpsow na stan przyjmowania polecien (nie wiem dokladnie jakich)
++++ - rozlacza modem tpsow !!!
+I sobie lammah poczty nie odbierze!
+Jak nie dziala , to twoja centrala albo tego lammusa jest odporna na takie chwyty??!!
+Hmm ... Mozecie pokombimowac z poleceniami AT,jak juz cos wam wyjdzie to mail 2 me!!??
+
+VIII.P3W33 BOX.
+Dlaczego go tak reklamuje? Bo takie zerowanie linii 100% works !
+	Dlugo by tu opisywac ! Wysylam do samego P3w33'go , albo do fakjusa by Pinda...
+Ja tak mam i nie place rachunkow , tylko sam abonament...
+
+X.SLOWNIK
+
+A tak w ogule to ludzie chyba zapominaja co to jest faq!
+Pisza o jakis gownach co nawet nie maja zastosowania w phreaku.
+
+FAQ- Freqetly Asked Questions , czyli ludze sa to NAJCZESCIEJ ZADAWANE PYTANIA przez
+zaawansowanych userow iak i lammerow !
+
+EXTENDER- Dzwonimy na niego i mamy dial-tone , tpsa za to nie placi tylko firma prowadzaca dany
+extender... Czesto jest bezplatny.
+
+PHREAK-Jest to taki hack na telefonach,linjach telefonicznych , itp... Jest to "sposob na zycie"
+
+Reszte chyba bez problemu zrozumieliscie???
+Macie jakies pytania?? To walcie mail to me or sth. ??!!
+
+IX.3ND & GREETZ
+
+Msle ze nie zmarnowales czasu czytajac tego FAQ,nie mam pojecia czy jest dobre,czy przecietne!
+Mail 2 me: blazex@free.com.pl
+
+ThNX to:YOSSA;PINDA;NOISE;P33W3;MENEL;LCAMTUF i innych ktorych nie wmienilem lub zapomnialem wymienic?!
+
+INSPEKTAH BL@Z3
+
+    +--------------------------------------------------------+
+    / *BL@z3*     Radoslaw Michon         IRC nick:BLAz3      \
+    |         /3D composer/VB runner/C programmer/            |
+    |  UIN:ICQ SAUX      |Linux|  www.promail.pl/~blazexc/    |
+    \     ^USBnet^       |User*|  blazetox@free.net.pl        /
+    +-----#CARDING-----#PHREACK------#USB---------------------+

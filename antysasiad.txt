@@ -1,0 +1,698 @@
+ ______  _
+ \_   / / \____________  _________   /\
+  /  /_/  /    \_  __  \/     \   \ /  \
+ /       /      /  _/ _/   :   \   \   /
+/   /\   \     /   \   \   :   /      /
+\__/  \__/____/\____\   \_____/  \   /
+ |                   \__/     \_/ \_/
+ | Antysasiad ver. 2.0
+ `---------------------+
+
+Spis tresci
+     + Wstep
+       o Od autora
+       o Zmiany w stosunku do wersji 1.0
+     + Informacje ogolne
+       o Teoretyczne podstawy
+     + Przygotowania
+       o Sprzet
+       o Kabelek
+       o Rozpoznanie terenu
+     + Podpinanie sie
+       o Skrzynka w piwnicy
+         - Przygotowanie piwnicy
+         - Wpinamy sie w linie
+         - Przez okno
+         - Sprzatamy
+       o Skrzynka na zewnatrz
+         - Przygotowania
+         - Wpinamy sie w linie
+         - Sprzatamy
+       o Poza swoja klatka
+         - Notebook
+         - Kabel z innej piwnicy
+         - W samochodzie
+     + On-line
+       o Carding
+       o Hacking
+       o BBS'y
+     + Bezpieczenstwo
+       o Szpiedzy z krainy deszczowcow
+       o "Chlopaki! Zgadnijcie co wczoraj zrobilem..."
+       o Men in Black
+       o Blad pajeczarzy minionej epoki
+     + Z zycia wziete
+       o Wpadka
+       o Urmet-O-Phone
+     + Ciekawostki
+       o Bonus
+       o PBX relaks
+       o Budki bez (Kasi) Figury
+       o 0800.doc
+       o Reklamacja
+     + Slowniczek
+     + Linki
+       o Phreaking
+       o Telekomunikacja
+     + Zakonczenie
+       o W przygotowaniu
+       o Kontakt
+       o O tym tekscie
+
+ Wstep
+
+  1.1 Od autora
+
+  Zakladam, ze kazdy z was chcialby miec dostep do Internetu za darmo. Problem
+  w tym, ze malo kto wie jak to zrobic, a ci co wiedza z reguly nie  chca  sie
+  taka informacja podzielic. Wbrew pozorom nie jest to takie trudne. Wystarczy
+  odrobina odwagi, a w razie wpadki kumple w policji :) Zauwazcie ze nie  jest
+  to tekst o phreaking'u jako takim. Chcialem  po  prostu  przyblizyc  ludziom
+  nieba i wybawic ich od placenia astronomicznych rachunkow. Poza tym mam  tez
+  bardziej osobisty cel - DOKOPAC TPSA :)
+
+  1.2 Zmiany w stosunku do wersji 1.0
+
+  Poprzedni "Antysasiad" spotkal sie ze sporym  odzewem  co  podbudowalo  mnie
+  moralnie do napisania jego drugiej czesci. Wlasciwie nie przyszedl ani jeden
+  krytykujacy go w sensowny sposob list, wiec uwazam ze poprzednia  czesc  Wam
+  sie podobala :) Do rzeczy. Praktycznie caly tekst zostal przepisany. Zmianie
+  ulegly prawie wszystkie dzialy. Jezeli czytales poprzednia wersje  to  swoja
+  uwage mozesz zwrocic glownie na dzial "Z zycia wziete". Przyjemnej lektury.
+
+ Informacje ogolne
+
+  2.1 Teoretyczne podstawy
+
+  Byc moze pamietacie afere z pajeczarzami sprzed kilku lat. Zastosujemy mniej
+  wiecej ta sama metode co oni, ale o  wiele  bezpieczniejsza. Krotko  mowiac:
+  podepniemy sie pod sasiada. Jak zapewne wiecie kazdy telefon jest podlaczony
+  do lini (ale odkrycie  zrobilem, hehe). Linia  do  ktorej  podczepiony  jest
+  telefonik sklada sie z dwoch drutow. Z reguly jeden  jest  zielony, a  drugi
+  czerwony. W  niektorych  przypadkach sa dolaczone jeszcze dwa kable. Linie z
+  mieszkan splataja sie i ida do skrzynki.Skrzynka znajduje sie na zewnetrznej
+  scianie  domu (glownie  TPSA) lub w  piwnicy (z  reguly  Netia). Obecnie  ta
+  druga firma wprowadzila blokady antypajeczarskie.Teoretycznie nie zadzwonimy
+  sobie z ich linii nigdzie, ale jak to zwykle bywa teoria nijak  sie  nie  ma
+  do rzeczywistosci (przynajmniej w telekomunikacji). W moim bloku  mozna  sie
+  podpiac  bez problemu, ale w niektorych innych miejscach slychac tylko ciche
+  trzaski. Generalnie rzecz ujmujac - TPSA rulez :)
+
+  2.2 Sprzet
+
+  Skoro juz zdecydowalismy sie  na  wkroczenie  na  zla  droge  to  powinnismy
+  zaopatrzyc  sie  w  odpowiedni  sprzet.  Idziemy  do  sklepu  z   artykulami
+  telekomunikacyjnymi i kupujemy:
+  - 10 metrow kabla dwuzylowego (ja mam dwa kable: 10 i 50 metrowe),
+  - gniazdko telefoniczne ze zlaczka modemowa.
+  W/w towar nabylem w sklepie firmowym TPSA.Tam rowniez kupilem telefon, ktory
+  w chwile pozniej stal sie sluchawka do wpinania sie. Nie bedzie on nam teraz
+  potrzebny.  BTW: w  sklepie  uslyszalem dwa ciekawe teksty: Babka do drugiej
+  babki: Po co jest ten Kosz?" (w  Windows'ie). Druga babka do mnie: "Nie wiem
+  czy bedziemy mieli tyle kabla, bo dzisiaj juz ktos kupil  30  metrow" (hehe,
+  ciekawe po co). No, troche odbieglem od tematu. Wracamy do domciu. Po drodze
+  wstepujemy  do elektronicznego i kupujemy dwa krokodylki. Jezeli mieszkamy u
+  starych to chowamy sprzet w bezpieczne miejsce,zeby mama sie nie dowiedziala
+  w co tez sie jej synek bawi. Acha, wypadaloby miec komputer i modem :) Warto
+  tez kupic sobie skalpel - przyda sie nie raz.
+  
+  2.3 Kabelek
+
+  Zakupiony  sprzet  nalezy  poddac  obrobce. Najpierw  zajmijmy  sie  kablem.
+  Bierzemy skalpel (moga byc tez cazki od paznokci) i obcinamy izolacje z  obu
+  kabelkow. Wystarczy ze zetniemy 2/3 cm. Nastepnie  rozkrecamy  gniazdko. Oto
+  co  widzimy: szesc  srubek, cztery  przypiete  do  nich   kabelki (czerwony,
+  zielony, czarny i zolty), obudowa, zlaczka do modemu. Jezeli  sprzet  zostal
+  kupiony w sklepie, a nie  np.  znaleziony  w  piwnicy  to najprawdopodobniej
+  kabelkow w ogole nie ujrzymy. Dla ulatwienia dodam, ze czerwony powinien byc
+  przypiety do prawej gornej sruby, a zielony do prawej dolnej. Rozkrecamy  je
+  nieco i wtykamy pod nie druty z kupionej lini (bialy do czerwonego,niebieski
+  do  zielonego). Teoretycznie rzecz biorac  kabelki  ze  sklepu  powinny  byc
+  takich samych kolorow jak te z gniazdka, ale TPSA chyba sama nie wie jak  je
+  robic, wiec wszystkim musimy zajac sie my :> Nalezy je  uprzednio  zakrzywic
+  tak, aby  nie wypadly spod srubek. Gotowe  gniazdko  skrecamy. Zajmijmy  sie
+  teraz druga strona kabla. Analogicznie jak w poprzedniej  operacji  obcinamy
+  izolacje. Do  golych  drucikow  dolaczamy  krokodylki. Jezeli  takowych  nie
+  posiadamy to nie przejmujmy  sie tym zbytnio. Wszystko bedzie dzialalo i bez
+  tego,ale w razie wpadki stracimy cenne sekundy na odkrecaniu kabla od linii.
+  Poza tym komfort uzywania bedzie znacznie mniejszy.
+
+  2.4 Rozpoznanie terenu
+
+  Naszym celem jest okreslenie drogi linii telefonicznych idacych z  mieszkan.
+  Moga  one  biegnac  na zewnatrz budynku lub kierowac sie do piwnicy. Mozliwe
+  jest, ze  w  ogole ich nie znajdziemy :( Coz, jedni maja szczescie inni nie.
+  Jezeli  kabelki  biegna  do piwnicy i koncza sie w puszce to znaczy, ze masz
+  cholerne  szczescie. Podpiecie sie pod linie wychodzaca ze skrzynki wiszacej
+  na  zewnetrznej scianie budynku jest nieco ciezsze, ale wykonalne. Skoro juz
+  wszystko wiemy to czas przystapic do dzialania.
+
+ Podpinanie sie
+
+ "Nie wazne kim jestes. Wazne pod kogo jestes podpiety."
+                                                 Stanislaw Aniol "Alternatywy"
+
+  3.1 Skrzynka w piwnicy
+
+  Ten rozdzial  jest  przeznaczony  glownie  dla  szczesciazy  ze  skrzynka  w
+  piwnicy, ale powinni go przeczytac tez ci mniej "szczesliwi".
+
+   3.1.1 Przygotowanie piwnicy
+
+   Do piwnicy nalezy zniesc nastepujacy sprzet:
+   - komputer z modemem,
+   - gniazdkokabelek :),
+   - skalpel lub inne uzadzenie tnace,
+   - srubowykret  i  srubowkret (najlepiej zeby byl automagiczny - mniej czasu
+                                zajmie nam majstrowanie przy srubach).
+   Przed  przystapieniem  do akcji nalezy sie postarac o prad do kompa. Jezeli
+   mamy  notebook'a  albo gniazdko w piwnicy to nie ma problemu. Jezeli jednak
+   nie mamy to mamy problem. Jest jednak kilka wyjsc: mozemy pociagnac prad  z
+   mieszkania albo podlaczyc kompa do UPS'a.
+
+   3.1.2 Wpinanie sie w linie
+
+   Zakladam, ze na razie wszystko  gra. Z komputera nie unosza sie kleby dymu,
+   w piwnicy  nie  ma  zywej  duszy, a  w  mieszkaniu  naszej  ofiary  pustki.
+   Podchodzimy do puszki i rozkrecamy ja. Jezeli jej wlascicielem  jest  Netia
+   to powinnismy ujzec cos takiego:
+
+    .-------------------------.
+    |                         |<=----- puszka
+    ---.                   .--- 
+    ---.\                 /.---<=----- kabeleki z mieszkan [CIACH]
+    |   \\____.-----.____//   |
+    |    \____       ____/    |
+    |         |     |         | 
+    |         |     |<=-------|------- tutaj spotykaja sie kabelki z mieszkan
+    `---------       ---------'
+              |     |
+              |     |
+    .-------------------------.
+    |                         |<=----- skrzynka
+    | ._.                     |
+    | | |<=-------------------|------- zamek :(
+    | `-'                     |
+    |                         |
+    `-------------------------'
+   
+   BTW: zamek nie jest dla nas zadna przeszkoda. Aby sie jego pozbyc wystarczy
+   wlozyc srubokret w szczeline miedzy dzwiczkami, a obudowa i mocno podwazyc.
+   Powinien puscic bez wiekszych problemow. Nieco uciazliwsze jest  otworzenie
+   skrzynki TPSA. W/w metody nie beda nam potrzebne przy  dzwonieniu  i  sluza
+   celom edukacyjno-rozrywkowym.Wracajac do tematu, skrzynka TPSA wyglada tak:
+
+               |  |<=----------------- kabeleki z mieszkan [CIACH]
+               |  |
+    .-------------------------.
+    |                         |
+    |                         |
+    |                         |
+    |                         |
+    |                   ._.   |
+    |                   | |<=-|------- zamek :(
+    |                   `-'   |
+    |                         |
+    |                         |
+    |                         |
+    |                         |
+    `-------------------------'
+              |     |
+              |     |<=--------------- tutaj spotykaja sie kabelki z mieszkan
+
+   Na  rysunku  widac, ze linie ma dwoch delikwentow. Problem w  tym,  ze  nie
+   wiemy czyje one sa. Nalezy tez uwazac, zeby nie podpiac  sie  pod siebie :)
+   Ulatwione  zadanie  maja  wpinajacy  sie  pod  linie  TPSA. Montezy  czesto
+   naklejaja naklejki z napisanym na nich numerem  mieszkania  naszej  ofiary.
+   Gniazdkokabelek  ciagniemy  z  naszej  piwnicy do  puszki. Warto  go  jakos
+   zamaskowac, chociaz nie zawsze  jest  to  mozliwe. U  siebie  mam  metalowa
+   polke pod sufitem gdzie idzie kilka kabli. Nikt nie zwroci uwagi na jeszcze
+   jeden :) Teraz nalezy wziac skalpel i ostroznie zdjac izolacje  z  kabla  w
+   puszce (na rysunku jest on oznaczony jako [CIACH]). Jezeli  skrzynka nalezy
+   do Netii to powinnismy ujrzec cztery kabelki: zielony,czerwony i dwa biale.
+   W  przypadku  TPSA  zobaczymy  tylko  dwa  kolory. Biale kable zostawiamy w
+   spokoju. Postepujac mniej wiecej tak samo jak przy obrobce  naszego kabelka
+   scinamy troche izolacji z dwoch pozostalych. Teraz przyczepiamy nasze druty
+   do tych z puszki (bialy do czerwonego, niebieski do zielonego).  Jak?  Jest
+   kilka sposobow. Najlepszym jest przymocowanie ich krokodylkami. Jezeli  ich
+   nie posiadamy to mozna je (nasze kable) okrecic wokol linii. Mozna  je  tez
+   zlutowac, ale narazamy sie w ten sposob na spore problemy  przy  demontazu.
+   Uprzedzam ze  czesto spotykany  w  innych  tekstach  sposob  polegajacy  na
+   wbijaniu szpilek  jest  nieskuteczny i wcale  nie  stanowi  zabezpieczenia.
+   Teraz nalezy zadbac o to aby druty sie ze soba nie  stykaly.  Wystarczy  je
+   dosc silnie rozgiac. Wszelkie  dodatkowe  izolacje  np.  plaster  to  tylko
+   niepotrzebna strata czasu.Idziemy teraz do piwnicy i probujemy polaczyc sie
+   z  Internetem  lub  BBS'em. Mozliwe, ze  zamiast ciaglego sygnalu uslyszymy
+   cisze.Nie nalezy sie zrazac,tylko isc do puszki i sprawdzic kable. Wszelkie
+   inne zaklocenia na linii sa najprawdopodobniej  spowodowane  nieprecyzyjnym
+   polaczeniem  drutow. Jezeli  wszystko gra mozemy skrecic puszke. Oczywiscie
+   nie  da  sie  przykrecic  wszystkich srub ze wzgledu na blokujacy  kabelek.
+   Mozna  wkrecic  tylko  jedna, albo  zrobic  dziure w  plastiku  i przez nia
+   wyprowadzic  kabel na zewnatrz. Drugi sposob jest  troche   klopotliwy, ale
+   bezpieczniejszy. Teraz nalezy isc  do  domu  i  sprawdzic  czy  czasem  nie
+   podpielismy sie pod siebie :) Wystarczy podniesc sluchawke: ciagly sygnal -
+   - wszystko OK, piszczenie  modemu - zmieniamy  kabelki. Jezeli  przypadkiem
+   wpielismy sie w swoja linie to trzeba zdjac izolacje ze wszystkich  innych;
+   inaczej latwo sie bedzie domyslic kto sie wpial.
+
+   3.1.3 Przez okno
+
+   Zamiast  siedziec  w  ciemnej piwnicy mozna wyprowadzic sobie kabelek przez
+   okno, a pozniej do domciu. Problem w tym, ze nie wiemy  co  sie  dzieje  na
+   dole, ale generalnie to dobra metoda.
+
+   3.1.4 Sprzatamy
+
+   Po  skonczonej  zabawie  odpinamy od linii nasze przewody i zacieramy slady
+   bytnosci (przykrecamy srubki itp.) Zabezpieczy to  nas  przed  wpadka, choc
+   nie do konca. Musisz sie liczyc z tym, ze ktoregos dnia odwiedza cie Men in
+   Black, ale o tym pozniej.
+
+  3.2 Skrzynka na zewnatrz
+
+  Ten rozdzial jest przeznaczony dla tych, ktorzy zostali pokarani skrzynka na
+  zewnetrznej scianie budynku. Powinni oni przeczytac tez rozdzial "Skrzynka w
+  piwnicy".
+
+   3.2.1 Przygotowania
+     
+   Kompa transportujemy do  pokoju  znajdujacego  sie  najblizej  skrzynki. Ja
+   osobiscie  przenioslem  go  do  firmy  starego i wpialem sie do zlobka :) W
+   kazdym  badz  razie  komputer powinien stac blisko skrzynki. Dzieki takiemu
+   usytuowaniu bedziemy mieli jako taka kontrole nad  tym  co  sie  dzieje  na
+   dole. Gniazdkokabelek wywalamy przez okno. Teraz idziemy na ulice i ucinamy
+   izolacje jednego z kabli wychodzacych ze skrzynki. Nie warto  sie  bawic  w
+   rozbrajanie skrzynki - nie dosc, ze wyglada to podejrzanie  to  jest  to  w
+   gruncie rzeczy niepotrzebne.Warto wziac ze soba jakas drabine lub chociazby
+   stolek, bo skrzynka jest umieszczona dosc wysoko.
+
+   3.2.2 Wpinamy sie w linie
+
+   Dokladna metoda wpinania sie jest opisana w rozdziale "Skrzynka w piwnicy".
+   Postepujemy  analogicznie. Dodam  tylko, ze  nasze  dzialania moga wzbudzic
+   zainteresowanie  sasiadow, wiec lepiej robic to w nocy lub rano w niedziele
+   (najlepsza pora na wpinanie sie). Zamieszczam rysunek skrzynki TPSA:
+
+    _________. | ._______
+    _______. | | | ._____<=----- Kabelki
+    .______|_|_|_|_|____.
+    |                   |
+    |                   |<=------ skrzynka
+    | ._.     ___ ___   |
+    | | |      |  |--'  |
+    | `-'      |  |  <=-|-------- logo TPSA (sorki za wyglad - nie chcialo mi
+    |  ^                |                    sie meczyc)
+    |  |________________|________ zamek :(
+    |                   |
+    `-------------------'
+
+   3.2.3 Sprzatamy
+
+   Po skonczonej akcji odpinamy kabel od lini.
+
+  3.3 Poza swoja klatka
+
+  W/w metody sluza raczej zapoznaniu sie i nabraniu  wprawy  we  wpinaniu  sie
+  w  linie  kompem. Dlaczego?  Jezeli  kilku  gosci dostanie rachunki po kilka
+  baniek to moze byc niezla burza. Nic ci nie  udowodnia, ale  lepiej  znalezc
+  sobie inne miejsce do phreak'owania.
+ 
+   3.3.1 Notebook
+
+   Moja ulubiona metoda. Majac notebook'a mozna sie wpinac  wszedzie. No, moze
+   stanie na ulicy z jarzacym sie kompem  nie  jest  najlepszym  pomyslem, ale
+   w piwnicy jak najbardziej. Jezeli przeczytales uwaznie poprzednie teksty to
+   nie powinienes miec wiekszych problemow z  wpieciem  sie  w  linie. Ponizej
+   przedstawie metode bedaca najbezpieczniejszym sposobem na darmowe siedzenie
+   w Internecie. Powstala ona jako rozwiniecie innego, rowniez mojego pomyslu,
+   sposobu. Dotyczyl on dzwonienia za  friko  i  sprawdzal  sie  glownie  przy
+   sluchaniu niekonczacych sie historyjek  w  stylu: "Mam  na  imie  Karolina.
+   Zeszlego  roku, kiedy  bylam  na  wakacjach..." Po   pierwszych   sukcesach
+   postanowilem wykorzystac go do bardziej praktycznych  czynnosci. Co  bedzie
+   nam potrzebne? Nalezy zaopatrzyc sie w sprzet z punktu 2.2 i  przerobic  go
+   tak jak w punkcie 2.3. Dodatkowo potrzebny bedzie notebook z modemem.Jezeli
+   nie mamy modemu, ktory dzialalby bez zewnetrznego zasilania to  nalezy  sie
+   zaopatrzyc  w  UPS'a  lub  inne  zrodlo  pradu. Poza  tym  bierzemy ze soba
+   reklamowke  (serio). Skoro skompletowalismy juz potrzebny sprzet powinnismy
+   wybrac  miejsce  do  naszej  akcji. Z  mojego  doswiadczenia  i ze zdrowego
+   rozsadku  wynika, ze  najlepsze  ku  temu  sa  osiedla  z niskimi blokami i
+   laweczkami przed klatka. Nalezy zauwazyc, ze do akcji potrzebne jest okno w
+   piwnicy z wyjsciem na podworze, a taka konfiguracja  nie  zdarza  sie  zbyt
+   czesto :( Poza tym okno jest czesto zamkniete na amen i pozostaje nam chyba
+   tylko cegla :) Po znalezieniu otwartej piwnicy z wiszaca  w niej skrzynka i
+   rozpoznianiu  terenu  pod  wzgledem  zaludnienia  oraz   innych   czynnikow
+   decydujacych o przydatnosci do phreak'owania przystepujemy do klu programu.
+   Postepujac tak  jak  w  punkcie  3.1.2  nacinamy izolacje i przyczepiamy do
+   niej  nasz  kabel. Otwieramy  najblizsze  okno  i  wyciagamy przez nie nasz
+   przewod. Wychodzimy  na zewnatrz i siadamy jak gdyby nigdy nic na laweczce.
+   Laczymy nasz gniazdkokabelek z modem  i... Milej zabawy :) Majac  na uwadze
+   wzgledy bezpieczenstwa nalezy  nasz  drucik  zamaskowac. Mozna go  ukryc  w
+   sniegu lub trawie. Jezeli sciagamy jakis dluzszy plik notebook'a chowamy do
+   reklamowki. I tyle.
+
+   3.3.2 Kabel z innej piwnicy
+
+   Metoda analogiczna do zwylego  podpinania  sie  w  piwnicy. Tym  razem  nie
+   podpinamy sie do lini w swojej klatce. Idziemy do  innej  piwnicy,  wpinamy
+   tam kabel, wyciagamy go  przez  okienko, a  dalej  do  naszego  mieszkania.
+   Nalezy kupic sobie odpowiednio dlugi kabel.
+
+   3.3.3 W samochodzie
+
+   Nie ukrywam, ze ta metode znam z FAQ Hrabiego. Nigdy  jej  nie  probowalem,
+   bo nie mam tylu lat, aby moc jezdzic autem, a  kumpli  nie  chce  angazowac
+   (wzgledy bezpieczenstwa).
+
+ On-line
+
+ W  co  sie bawic bedac podpietym pod sasiada? Hehe, w wiele ciekawych rzeczy.
+ Pamietaj, ze  jestes w 100% anonimowy. Jezeli nie dorwa cie na pajakowaniu to
+ nikt ci nic nie moze zrobic.
+
+  4.1 Carding
+
+  Carding, czyli  kupowanie  na  skradziona  karte kredytowa. Nie musi ona byc
+  skradziona. Czesto wystarczy wygenerowac jakis numer programem  do  robienia
+  numerkow, wymyslic date  wyczerpania, imie oraz nazwisko  wlasciciela i  juz
+  mozna cos kupic. Zdziwicie sie, ale wiele calkiem powaznych sklepow daje sie
+  na to nabrac. Uprzedzam ze przychodzace do  domu  ksiazki, plytki  itp. moga
+  zdziwic starych. W kazdym badz  razie  podpinajac  sie  pod  sasiada  mozesz
+  byc spokojny o swoja skore.
+
+  4.2 Hacking
+
+  Co do przydatnosci podpinania sie  w  hack'owaniu  nie  musze  chyba  nikogo
+  przekonywac. BTW: firmy i tak nigdy nic nie robia, a skasowanie logow zwykle
+  zabezpiecza przed  wizyta  nieproszonych  gosci. Pamietajmy  jednak, ze  nie
+  kazdy admin jest tak wyrozumialy,a niektorzy nawet wiedza o istnieniu takich
+  cudow techniki jak rdist.Na szczescie my tez wiemy co nieco o tym programie,
+  a szczegolnie o jego starszych wersjach ;)
+
+  4.3 BBS'y
+
+  Normalnie  nikt  nie  bylby  na  tyle  nienormalny, zeby  dzwonic  sobie  do
+  zagranicznych BBS'ow. Malo kto moze  sobie  pozwolic  na  miedzymiastowe. My
+  jednak pozbylismy sie  uciazliwosci  zwiazanych  z  placeniem  rachunkow  za
+  telefon. BBS'ujemy ile wlezie.
+
+ Bezpieczenstwo
+
+ Bezpieczenstwo to bardzo, bardzo wazna  rzecz. Pamietaj, ze  twoje  dzialania
+ mozesz dostac nawet trzy  lata. Ma  sie  rozumiec  sady  nie  wydaja  az  tak
+ surowych wyrokow, ale i tak masz murowany szlaban do konca  zycia. Przeczytaj
+ takze dzial "Z  zycia  wziete", aby przekonac sie o tym, ze nie  kazda  akcja
+ przebiega w podrecznikowy sposob.
+
+  5.1 Szpiedzy z krainy deszczowcow
+
+  Jezeli bedziesz sie podpinal bez przerwy do jednej osoby to  jasne  jest, ze
+  po  pewnym  czasie gosc cos zwacha. Od razu moze nie zareaguje, ale z czasem
+  moze  nabrac  podejrzen. Niestety  TPSA  robi  teraz  minibilling. Jest  tam
+  napisane ile czasu ktos byl polaczony z 0w202122, ile czasu ktos wysluchiwal
+  co  robila  Kasia  Figura  w  Rosji z Iwanem (hehe, autentyczne). Netia daje
+  billing za darmoche, ale trzeba sie po niego przespacerowac lub wyklucic sie
+  o  jego  przeslanie  z panienka z BOK'u. Po prostu czesto zmieniaj ofiary, a
+  najlepiej podpinaj sie w innych blokach.Oczywiscie do takiego wyczynu trzeba
+  miec odwaznego kumpla lub notebook'a.
+  
+  5.2 "Chlopaki! Zgadnijcie co wczoraj zrobilem..."
+
+  Nie  ufaj  nikomu. Nikomu sie nie chwalisz - nie masz klopotow. Rozumiem, ze
+  wiekszosc  z  was  lubi patrzec na rozdziawione geby kumpli, ale musicie sie
+  powstrzymac. Nie  mowimy  tez o tym gosciowi, ktoremu slemy stuff kupiony na
+  lewa karte kredytowa (w razie wpadki moze  sypac). Lamanie  tej  podstawowej
+  zasady moze skonczyc sie nieprzyjemnie, ale  o  tym  przeczytasz  w  dalszej
+  czesci tekstu.
+
+  5.3 Men in Black
+
+  "Kochanie! Ci  panowie  chcieliby  z  toba  porozmawiac." O  $%#@&!!!  Teraz
+  wpadlem - myslisz  sobie. Mi  sie jeszcze to nie przydarzylo, ale gdyby ktos
+  po mnie przyszedl to udawalbym glupiego.Nie maja zadnych  dowodow (no, chyba
+  ze sasiedzi cos wypaplali). W mojej piwnicy krecili sie juz panowie z  Netii
+  pod pretekstem "uszkodzonej linii". Wieczorem, po ich  odejsciu, skierowalem
+  moje kroki do skrzynki w celu obejrzenia  ich  pracy. Ku  mojemu  zdziwieniu
+  zobaczylem, ze nie zrobiono absolutnie nic - linia jak  byla  rozwalona  tak
+  jest do dzisiaj. Dla pewnosci wpialem sie moim quasi-podsluchem zrobionym ze
+  starego, kupionego od kumpla za 5  zlotych  RWT'eka  (hi  Ziomek!). Wszystko
+  bylo w porzadku. Chyba mi sie upieklo...
+
+  5.4 Blad pajeczarzy minionej epoki
+
+  Swego czasu sporo ludzi  zdecydowalo  sie  zastac  pajeczarzami. Coz, wpadli
+  prawie  wszyscy.  Jaki  blad  popelnili? Otoz  ich  metoda  podpinania  byla
+  nastepujaca: idzie  taki pajak do piwnicy, laczy swoja linie z linia sasiada
+  i  koniec. Jak  mozna  byc tak bezdennie glupim !? Przeciez jak ktos zobaczy
+  taka instalacje to od razu bedzie  wiedzial, ze  ktos  sie  wpinal. Czytalem
+  kiedys o Gold Box'ie - urzadzeniu, ktore pozwala na dzwonienie  na  ustalony
+  numer  i  otrzymanie  dialtone'u  z  innej  linii. Krotko  mowiac - jestesmy
+  anonimowi. Mozna o nim przeczytac w 50 numerze zinu  Phrack  lub  w  tekscie
+  int19h.
+
+ Z zycia wziete
+
+ W tym dziale znajdziesz historyjki na podstawie  ktorych  mozna  by  nakrecic
+ niejeden film "Chakerzy". Jako ze czytanie o moich sukcesach  ma  dzialalnosc
+ usypiajaca bede tu opisywal glownie niepowodzenia :)
+
+  6.1 Wpadka
+
+  Pewnego razu wpadl mi na mysl "genialny"  pomysl, aby  wprowadzic  w  arkana
+  phreaking'u kilkoro moich kumpli. Po szkole, wraz z moimi  mlodymi  adeptami
+  magii, udalem sie na z gory upatrzone przeze mnie miejsce - piwnice w pewnym
+  bloku. Teren byl  sprawdzony  i  stosunkowo  bezpieczny - maly  ruch, zawsze
+  otwarte drzwi, naiwni lokatorzy otwierajacy klatke gdy "nie wzialem klucza".
+  Jedynym mankamentem byl brak drugiego wyjscia co ma decydujace  znaczenie  w
+  przypadku wtargniecia niepowolanej  osoby. Bylem  jednak  dobrej  mysli, tym
+  bardziej ze udalo mi sie przemycic telefon przez router  ekranizujacy (czyt.
+  stara).  Nasza  czworka, na  razie  w  doskonalych  nastrojach, nieuchronnie
+  zblizala sie do celu eskapady. Schody zaczely sie juz na samym poczatku.Wraz
+  z nami cos weszlo do klatki  (plci  nie  pamietam). W  takiej  sytuacji  nie
+  moglismy  tak  po  prostu  wtargnac  do  piwnicy. Zamiast tego rozpoczelismy
+  symulowanie   poszukiwania   "kolegi". Kiedy  niebezpieczenstwo  minelo  bez
+  dalszych klopotow zszedlismy na dol. Zamknelismy dzwi na zamek i  zgasilismy
+  swiatlo. Kabelki mialy juz zdjeta izolacje, wiec sam proces wpinania sie nie
+  sprawil wiekszych problemow. Chwila napiecia i... "Jest sygnal!". Pozwolilem
+  kumplom troche podzwonic  sam  lustrujac  sytuacje  i  sluchajac  krokow  na
+  schodach. Wlasnie mielismy  zamiar  wygrac  cos  w  konkursie  (lame), kiedy
+  uslyszelismy... Szczek zamka! Poziom adrenaliny  we  krwi  podniosl  sie  do 
+  granic mozliwosci. Blyskawicznie  odpielismy  sprzet  od  linii  i  pozornie
+  spokojnym krokiem udalismy sie do najdalszego kata piwnicy gdzie zaczailismy
+  sie za rogiem.W miedzyczasie schowalem aparat do plecaka; na schowanie kabli
+  idacych ze skrzynki  nie  bylo  juz  czasu. Po  krotkiej  wymianie  spojrzen
+  ruszylismy na spotkanie z przeznaczeniem. Ktos powiedzial: "Tu go  nie  ma".
+  OK! To juz jest jakas strategia. Szukalismy kolegi, w domu go nie bylo, wiec
+  wstapilismy do piwnicy. Przy wyjsciu droge zastapil nam oblesny,stary dziad.
+  "Hola, hola! Dokad to?" Tu nastepuje dlugi monolog  jednego  z  nas. Niezbyt
+  dokladnie pamietam tekst, wiec nie bede go przytaczal. Ogolnie  trzymal  sie
+  wersji "poszukiwania kolegi". Dziadek niestety nie  byl  az  taki  naiwny  i
+  zagrozil, ze nas zamknie i zadzwoni na policje. Pytal nas o nazwisko kolegi.
+  Na szczescie znalismy jednego frajera mieszkajacego w  tym  bloku, wiec  nie
+  bylo z tym problemow. Gosc chyba na serio chcial nas zamknac, a przynajmniej
+  sprawial takie wrazenie. Wszystko sie we mnie zapadlo jak u czlowieka, ktory
+  przychodzi  wyleczyc sie z chrypy, a dowiaduje sie ze ma raka krtani. Koniec
+  koncow jednak puscil nas wolno. Powiedzial wtedy pamietne slowo  "Uciekac!".
+  Nie trzeba nam bylo dwa razy powtarzac ;)
+
+  6.2 Urmet-O-Phone
+
+  Niektorzy po przeczytaniu tego tekstu powiedza, ze jestem lame ale  co tam -
+  niech strace :) W ogole to nie mam nic przeciwko konstruktywnej krytyce, ale
+  elektorat  negatywny  w  stylu  kolegi  Brun3ra, ktory  po  kilku  sekundach
+  czytania mojego tekstu  twierdzi, ze  jest "hujowy"  niech  sie  nie  dziwi,
+  ze  nie  odpisuje  na  ich  mail'e. Wracajac do sprawy - zgodnie z konwencja
+  dzialu "Z zycia wziete" ten rozdzialik tez bedzie traktowal o niepowodzeniu.
+  Otoz zastanawialem  sie  kiedys  czy  mozna zrobic telefon do podpinania sie
+  wykorzystujac do tego celu sprzet z "niebieskiego".Po krotkich rozmyslaniach
+  postanowilem sprawdzic moja teorie w praktyce. Uzbrojony  w  noz  sprezynowy
+  udalem sie na bardzo slabo zaludnione tereny obrzezy miasta by zdobyc sprzet
+  do prowadzenia dalszych badan. W zwiazku z tym, ze nie  bylem  osamotniony -
+  - tropila mnie  jakas babcia zasymulowalem rozmowe  z  budki. Kiedy  starsza
+  pani, nie zaszczyciwszy mnie  nawet  spojrzeniem, potruchtala  przed  siebie
+  przystapilem do akcji. Wyczekalem moment kiedy nie jechal zaden  samochod  i
+  szybkim ruchem podwazylem wieczko  w  sluchawce - odskoczylo  bez  problemu.
+  Zlom znajdujacy sie w niej polecial na ziemie, a ja oderwalem od dwoch kabli
+  nadajnik. Odwrocilem sluchawke i powtorzylem procedure jeszcze raz. I  teraz
+  wszystko  poszlo  bez  problemow. Oddalilem  sie  z miejsca zbrodni i raznym
+  krokiem wrocilem do domu. Po kilku minutach mialem na biurku takie cudo:
+
+  -------------+-------+-----------------
+  -------------|-+-----|-+---------------
+               | |     | |
+               |_|     |_|
+              /` `\   /` `\
+              \___/   \___/
+
+  Od samego poczatku mialem przeczucie, ze ten plan nie  wypali. Zastanawialem
+  sie glownie nad tym czy nadajnik bedzie zachowywal sie  prawidlowo, poniewaz
+  w normalnym telefonie jest on polaczony z odbiornikiem plytka elektroniczna.
+  Moje obawy potwierdzily sie. Po wpieciu sie w gniazdko  uslyszalem  dialtone
+  z obu urzadzen. Po krotkim namysle schowalem sprzet w  znane  mi  miejsce  i
+  udalem sie na miejsce zbrodni, aby podwedzic pozostala czesc  sluchawki. Nie
+  powinno to byc trudne, bo jakis wandal naderwal nieco kabel. Po zlustrowaniu
+  sytuacji zabralem sie za robote. Majstrowanie przy sluchawce wciagnelo  mnie
+  do tego stopnia, ze zapomnialem rozgladac sie w okol siebie. Kiedy zajrzalem
+  po paru minutach przez ramie, az mi  szczeka  opadla... W  odleglosciu  paru
+  metrow podazal, gotowy mnie zlinczowac, tlum wracajacy z kosciola. W zwiazku
+  z powyzszym schowalem sprzet do reklamowki i wzialem nogi za pas. Udalo sie.
+
+ Ciekawostki
+
+ W tym dziale znajdziesz, jak sama  nazwa  wskazuje, ciekawostki :) Mozna  sie
+ zrelaksowac po wyczerpujacej lekturze.
+
+  7.1 Bonus
+
+  Podczas jednej z moich eskapad  natknalem  sie  na  zawieszony  pod  sufitem
+  kabel czterozylowy. Monter zostawil sobie backdoor'a?
+
+  7.2 PBX relaks
+
+  Zadzwon pod numer 0w800166041. Wybierz niewlasciwy kod np. 11. Probuj dopoty
+  dopoki   nie  dostaniesz  RING'u.  Teraz  wcisnij  gwiazdke  i...  Uslyszysz
+  melodyjke :) Nieuswiadomionym  uswiadamiam, ze  w  przeciwienstwie  do metod
+  proponowanych przez niektorych jest to prawidlowe postepowanie z wiekszoscia
+  PBX'ow.
+
+  7.3 Budki bez (Kasi) Figury
+
+  Od  pewnego  czasu  nie mozna zadzwonic na 0w700 z budek. Nawet legalnie. To
+  jeszcze jeden dowod na  to, ze  Telekomuna  nie  robi  nic  co  ma  na  celu
+  polepszenie jakosci ich uslug.To ze funduje nam ona zabytki z 1890 roku typu
+  Strowger swiadczy tylko o fatalnej pracy rzadu co przejawia  sie  glownie  w
+  powolaniu Ministerstwa Lacznosci, ktore z kolei zatrudnia bande  nikomu  nie
+  potrzebnych urzednikow. Za pomoca koncesji bedacych socjalistycznym sposobem
+  na walke z prywaciarzami skutecznie blokuja rozwoj mniejszych firm i  w  ten
+  sposob przyczyniaja sie do utrzymania monopolistycznej pozycji molocha.
+
+  7.4 0800.doc
+
+  Ze strony http://www.tpsa.pl/ mozna sciagnac plik zawierajacy  m.in.  "zlote
+  numery", spis  numerow  dla  roznych  obszarow  i  wiele  innych przydatnych
+  rzeczy.
+
+  7.5 Reklamacja
+
+  Kiedy  przepisywalismy  sie  z  TPSA (suxx) do Netii (rulez) stara wpadla na
+  genialny pomysl i zlozyla reklamacje u tej  pierwszej. Rachunek  opiewal  na
+  sume ok. 200 zl co nie bylo niczym nadzwyczajnym. Pomyslalem sobie,ze sprawa
+  jest  przegrana. Slyszalem o niechetnym zalatwianiu reklamacji przez naszego
+  monopoliste (no, prawie-monopoliste). Tym wieksze bylo  moje  zdziwienie gdy
+  przyszlo  pismo  o  pozytywnym  rozpatrzeniu  naszego  wniosku! Co ciekawego
+  naskrobaly pismaki z Telekomuny? Nie mam teraz tego swistka,  wiec nie  moge
+  przytoczyc  tekstu  doslownie. Ogolnie  rzecz biorac wg. ichniego pomyslunku
+  dowodem przemawiajacym za darowaniem nam kasy bylo to, ze wydzwanialismy  na
+  numery miedzymiastowe,a glownie na 0202122. Swoja droga ten numer jest tylko
+  "aliasem" przekierowujacym nas na wlasciwy  danemu  obszarowi  kraju  serwer
+  (w Kalish'u jest to 7670000). W  zalaczeniu  przeslali  billing (za  darmo).
+  Bez komentarza.
+
+ Slowniczek
+
+ Staralem sie napisac caly tekst jak najbardziej  zrozumiale - tak  aby  kazdy
+ zajarzyl o co chodzi. Pomimo tego nie  ustrzeglem  sie  paru  nieco  bardziej
+ "fachowych" terminow. Ponizej zamieszczam ich spis wraz z objasnieniami.
+
+  backdoor  - "tylne drzwi" do systemu zostawiane przez  hakera  po  wlamaniu;
+              osobiscie nie polecam ;)
+  billing   - spis wybranych przez abonenta numerow wraz z czasem polaczenia
+  BOK       - Biuro Obslugi Klienta
+  BTW       - By the Way; w wolnym tlumaczeniu znaczy to "nawiasem mowiac"
+  carding   - kupowanie z wykorzystaniem skradzionej lub nieistniejacej  karty
+              kredytowej
+  dialtone  - ciagly sygnal; slyszysz go po podniesieniu sluchawki
+  dwuzylowy - instalacyjny kabel telefoniczny skladajacy sie z  dwoch  drutow;
+              teoretycznie jeden powinien byc czerwony, a drugi zielony
+  niebieski - potoczna nazwa niebieskiej budki telefonicznej; zob. Urmet
+  PBX       - nie wnikajac w szczegoly - pozwala dzwonic z niego za darmo :)
+  rdist     - klient do zdalnej dystrybucji plikow np. logow systemowych
+  router    - komp lub urzadzenie sterujace ruchem w sieci
+  RING      - stan linii przy dzwonieniu
+  RWT       - firma produkujaca telefony; tu: stary telefon tejze firmy
+  Urmet     - (1) wloska firma produkujaca m.in. budki telefoniczne;
+              (2) potoczna nazwa budki telefonicznej
+  w         - wstawienie   tego  znaku   w  numerze  przy  dzwonieniu  modemem
+              spowoduje, ze  poczeka on chwile przed wybraniem nastepnej cyfry
+
+ Linki
+
+ Ponizej  zamieszczam  odnosniki  do  wartych  odwiedzenia  stron  dotyczacych
+ phreak'u i telekomunikacji.
+
+  9.1 Phreaking
+
+  http://hack.zone.to/hrabia/
+  http://www.phrack.com/
+
+  9.2 Telekomunikacja
+
+  http://www.tpsa.pl/
+  http://www.netia.pl/
+  http://www.urmet.it/
+
+ Zakonczenie
+
+  10.1 W przygotowaniu
+
+  Juz niedlugo nakladem wydawnictwa "Kiron" ukaze sie:
+  - tekst o tajemnicach 0w800. Bedzie on napisany nieco bardziej  fachowo  niz
+    "Antysasiad", ktory wedlug zamierzenia mial byc tekstem dla ludzi chcacych
+    posiedziec na necie za darmo, a nie zajac sie phreaking'iem na serio.
+
+  Dotychczas ukazaly sie nastepujace pozycje:
+  - Antysasiad
+  - MUD FAQ
+
+  10.2 Kontakt
+
+  Moj email: kiron@kki.net.pl. Oczywiscie nie  podalem  prawdziwego  nazwiska,
+  wiec prosze nie  finger'owac. Mozna  mnie dorwac na #phreakpl. Jezeli chcesz
+  wymienic sie na PBX'y na 0w800 (wraz z haslami) to mozesz smialo mail'owac -
+  - na pewno sie dogadamy. Aby uniknac zalewu listow zamieszczam tu male FAQ:
+
+  Kiron Frequently Asked Questions
+
+  Spis tresci:
+      + Informacje ogolne
+        o Czy jestes z t19?
+        o Czy mozesz zalatwic kluczyk do Urmet'a?
+        o Czy znasz jakis sposob na...
+      + Zakonczenie
+
+  Informacje ogolne
+
+   1.1 Czy jestes z t19?
+
+   Nie i nigdy  nie  bylem. Moje  konto  na  piast.t19.ds.pwr.wroc.pl  zostalo 
+   zalozone "na lewo" i skasowane przez admina systemu :( Ale co  sobie  przez
+   rok jego uzytkowania poszalalem to moje :)
+
+   1.2 Czy mozesz zalatwic kluczyk do Urmet'a?
+
+   Nie.
+
+   1.3 Czy znasz jakis sposob na...
+
+   Znam, ale nie powiem :> Zanim wyslecie mi list przeczytajcie  uwaznie  inne
+   teksty dotyczace phreak'u.
+
+  Zakonczenie
+
+  Dziekuje za przeczytanie  tego  FAQ. Mam  nadzieje, ze  rozwiazal  on  wiele
+  watpliwosci.
+
+  10.3 O tym tekscie
+
+  Powstal on  w  niedziele  26.09.98. Czas  tworzenia: ok. 2.5  godz. Poprawki
+  zostaly  naniesione  01.02.99. Uzylem  edytora  Emacs na Linux'a. Dotychczas
+  ukazaly sie dwie wersje: 2.0, ktora wlasnie czytasz oraz 1.0. W  tej  chwili
+  trudno mi powiedziec czy wyjdzie  nastepna  czesc. Wlasciwie  napisalem  juz
+  wszystko co jest potrzebne do wpiecia sie kompem w  linie, a  nie  chcialbym
+  wykraczac  poza  czysto  praktyczny  opis. <IRONIA> Tekst  zostal napisany w
+  celach edukacyjnych, komu sie nie podoba ten nie musi jego czytac, a  tak  w
+  ogole to powstal tylko  po  to zeby ktos ze mna wywiad przeprowadzil albo  w
+  "Rzeczpospolitej" o mnie napisal. </IRONIA>
+
+--
+Kiron
+kiron@kki.net.pl

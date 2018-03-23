@@ -1,0 +1,275 @@
+-------------------------------------------------------------------------------
+-------------------------- c64 FAQ * CZESC 2 ----------------------------------
+-------------------------------------------------------------------------------
+------------------------ michalc64@hotmail.com --------------------------------
+---------------------------------------------------------------------- 97.9.11
+
+ SPIS TRESCI
+-------------
+1. WSTEP
+2. BLUE BOXING
+3. PODLACZANIE TELEFONU KOMORKOWEGO DO ZWYKLEGO MODEMU 
+4. BAJER Z BUDKAMI TELEFONICZNYMI
+
+
+1. WSTEP
+   Witam ponownie:)
+   Jezeli po przeczytaniu poprzedniej (pierwszej) czesci mojego FAQ
+   nie zbieralo Ci sie na wymioty, ten oddcinek bedzie z pewnoscia
+   dla Ciebie !
+   Zawarlem w nim kilka juz nieco bardziej profesjonalnych informacji
+   na temat telefonicznego phreakowania...
+   Mam nadzieje ze z czasem bedzie ich coraz wiecej i ze beda one
+   coraz bardziej przydatne.
+   Narazie jednak rzycze Ci przyjemnej lektury i milej zabawy:)
+   Informuje tez ze nie ponosze zadnej odpowiedzialnosci za czyny, ktore 
+   moga byc dokonane po uprzedniej lekturze tego artukulu !!!
+   Chece rowniez zauwazyc, iz nie namawiam nikogo do szeroko pojetego
+   phreakowania! Informacje tu zawarte sluza tylko uwidocznieniu
+   ludnosci jaki potencjal tworczy niesie ze soba technika i nowa 
+   cywilizacja, w ktorej mamy przyjemnosc egzystowac.
+
+4. BLUE BOXING
+   Ogladajac denny amerykanski film zapewne nieraz zastanawiales sie
+   jak to mozliwe?: do budki telefonicznej podchodzi mlody,
+   ubrany w luzna bluze i spodnie z krokiem w kolanach czlowiek,
+   wyciaga tajemnicze urzadzenie i nie wrzucajac monety dzwoni
+   sobie po calym swiecie. Tak, to jest mozliwe, a urzadzenie
+   ktorym poslugiwal sie ow pseudo SK8 to RED BOX
+   (heh, tak przy okazji ten denny film to : "Hackers") :)).
+   Nie chce jednak poruszac tu problemu RED BOX'a, ale dzialajacego
+   na nieco zblizonej zasadzie BLUE BOX'a.
+   Prawde mowiac nie czuje sie ani zobowiazany, ani szczegolnie
+   na silach zeby po raz kolejny pisac dokladnie o zasadzie
+   dzialania BB. Jezeli jestes tym bardzo zainteresowany, poszukaj
+   informacji na ten temat w ZINACH lub ewentualnie napisz do
+   mnie e-maila, a ja Ci podesle kilka plikow (wersja angielska).
+
+   Osobiscie uwazam ze BLUE BOXING jest w Polsce teoretycznie
+   mozliwy, jednak nie przygladalem sie tej sprawie blizej i
+   nie wiem czy moje stwierdzenie ma swoje uzasadnienie w praktyce.
+   Zabawe w BLUE BOXER'a - odkrywce pozostawiam Tobie.
+   Ponizej znajdziesz kilka istotnych informacji...
+
+
+   Sposob korzystania z BLUE BOX'a:
+   1. Laczysz sie na 0800-???-?? 
+   2. Czekasz na sygnal wolny, zajety, lub jakies nagranie
+   3. Wysylasz ton HANG-UP przez okolo 1 sekunde
+   4. Czekasz jakies 2-3 sekundy
+   5. KP+[nowy numer]+ST
+      (KP1 - lokalna/miedzymiastowa , KP2 - miedzynarodowa)
+   6. Dostajesz bezplatne polaczenie...
+
+   *Poniewaz prawdopodobnie centrale tlumia czysty sygnal HANG-UP
+    (tak jest teraz w USA, a wiec mysle ze u nas tez), trzeba nalozyc
+    na niego szum (rozowy o ile dobrze pamietam).
+
+   Niestety brak mi aktualnych danych :( , ale jeszcze w roku 1992
+   w Polsce wykorzystywalo sie dwa systemy: CCITT 3 i CCITT 5 - R2.
+
+ a. CCITT 3
+     HANGUP:    2280 HZ
+     PULSE:       35 MS +/- 5 MS
+     INTERVALS:   35 MS +/- 5 MS
+     DIGIT: 
+     ------    
+      -1-      700 HZ +  900 HZ
+      -2-      700 HZ + 1100 HZ
+      -3-      900 HZ + 1100 HZ
+      -4-      700 HZ + 1300 HZ 
+      -5-      900 HZ + 1300 HZ
+      -6-     1100 HZ + 1300 HZ
+      -7-      700 HZ + 1500 HZ
+      -8-      900 HZ + 1500 HZ
+      -9-     1100 HZ + 1500 HZ
+      -0-     1300 HZ + 1500 HZ
+     CODE 11   700 HZ + 1700 HZ
+     CODE 12   900 HZ + 1700 HZ
+      KP1     1100 HZ + 1700 HZ
+      KP2     1300 HZ + 1700 HZ
+      ST      1500 HZ + 1700 HZ
+     
+     TIMING:
+
+      NUMBER-- DIGITS: 0,1-9       LENGTH:  55 MS +/-  7 MS 
+                                   DELAY :  55 MS +/-  7 MS 
+      OPERATOR DIGITS: C.11/12     LENGTH: 100 MS +/- 15 MS 
+                                   DELAY :  55 MS +/-  7 MS
+      CONTROL- DIGITS: KP1/2 & ST  LENGTH: 100 MS +/- 15 MS
+                                   DELAY :  55 MS +/-  7 MS
+
+
+ b. CCITT 5 - R2
+     HANGUP:      3825 HZ 
+     TIMING:   100-640 MS
+
+     DIGIT: 
+     ------    
+      -1-      1380 HZ + 1500 HZ
+      -2-      1380 HZ + 1620 HZ
+      -3-      1500 HZ + 1620 HZ
+      -4-      1380 HZ + 1740 HZ 
+      -5-      1980 HZ + 1740 HZ
+      -6-      1620 HZ + 1740 HZ
+      -7-      1380 HZ + 1860 HZ
+      -8-      1500 HZ + 1860 HZ
+      -9-      1620 HZ + 1860 HZ
+      -0-      1740 HZ + 1860 HZ
+      KP2E     1380 HZ + 1980 HZ W/O- ECHO
+      KP2      1500 HZ + 1980 HZ WITH ECHO
+      ST       1860 HZ + 1980 HZ
+
+     TIMING:
+
+      NUMBER-- DIGITS: 0,1-9       LENGTH:  60 MS +/-  7 MS 
+                                   DELAY :  60 MS +/-  7 MS 
+      CONTROL- DIGITS: KP1/2 & ST  LENGTH: 100 MS +/- 15 MS
+                                   DELAY :  60 MS +/-  7 MS
+
+  Nie bawilem sie jeszcze w BLUE BOXING, ale wydaje mi sie, ze 
+  przystepniejszy dla potencjalnego phreakera jest raczej 
+  CCITT 3. Wydaje mi sie tak, poniewaz czestotoliwosc HANG-UP'u
+  uzywana przez CCITT 5 - R2 jest prawdopodobnie zbyt wysoka aby
+  "przeniesc" ja przez sluchawke telefoniczna. Poza tym CCITT 5
+  maja wbudowane tlumiki czestotliwosci HANG-UP, a wiec
+  i tak nie mozna ich przeslac linia :( No ale moze sie myle
+  (mam taka nadzieje)... :)
+
+
+3. PODLACZANIE TELEFONU KOMORKOWEGO DO ZWYKLEGO MODEMU
+   Jak zapewne sie orientujesz, w dosc prosty sposob mozna zdobyc
+   tanie karty SIM, ktore pozwalaja Ci na nielimitowany czas
+   palaczen telefonicznych:) Mam tu na mysli karty wydawane na
+   lewy dowod osobisty i wazne z reguly 2-3 miesiace....
+   Wnoszac jednorazowa oplate w wysokosci 150-300 zl dostajesz 
+   "w prezencie" karte, ktora moze odmienic Twoje zycie:)
+   Mozesz w koncu wziac w rece swoja ukochana komorke i udac sie
+   w strone ulubionej chamskiej, dresikowej dyskoteki.
+   (BTW: nie cierpie dresiarzy!!!). Mozesz teraz bez przerwy
+   (no moze z przerwa na ladowanie baterii) prowadzic wielogodzinne
+   konwersacje z kolega stojacym na drugim koncu parkietu :)
+   Ale czas na refleksje!!!
+   Po co lazic po ulicach i pokazywac wszystkim ze masz telefon?!!
+   Czy nie lepiej byloby wykorzystac go do jakichs wyzszych celow?!!!
+   Moze podlaczyc by go tak do komputera?
+   No tak, ale jak???:( Przeciez nie stac Cie na drogi przystawki
+   modemowe do komorki... W dodatku sa to najczesciej (jezeli nie
+   zawsze) karty PCMCIA, a Ty przeciez nie masz LAPTOP'a :((
+   I co teraz?:(((
+   TAK! Z pomoca przychodzi Ce64 !!!!!!!!!!!!!!!
+   Oto urzadzenie ktore zaoszczeci Ci sporo pieniedzy i klopotow:)
+   Dzieki niemu bedziesz mogl podlaczyc komputer do swojej
+   nowiutkiej komorki i tym samym bedziesz mogl sobie
+   pointernetowac :)   
+
+
+  --------Konstrukcja urzadzenia
+
+   1. Wyciagnac ze sluchawki telefonu mikrofon i sluchaweczke.
+   2. W miejsce gdzie znajdowal sie mikrofon i sluchawka
+      przylutowac przewody o dlugosci ok. 20cm.
+   3. Na drugim koncu przewodow przulutowac wymontowana
+      sluchaweczke i mikrofon.
+   4. W ten sposob uzyskalismy "przedluzacz" :)
+   5. Przylutowana wlasnie do przewodu sluchaweczke nalezy
+      przylozyc do mikrofonu w telefonie komorkowym, a nastepnie
+      dobrze uszczelnic polaczenie (nie moga sie dostawac zadne
+      dzwieki z zewnatrz) przy uzyciu tasmy izolacyjnej.
+   6. W ten sam sposob nalezy postapic z przylutowanym mikrofonem,
+      ktory trzeba przylozyc do sluchaweczki w telefonie komorkowym.
+ 
+  --------Wykorzystanie
+
+    Telefon ktory wlasnie zostal przerobiony musi byc caly czas 
+    podlaczony do linii i do modemu w komputerze !
+   
+   1. Podniesc sluchawke i poczekac az ucichnie ton 400Hz
+      (dzieje sie to na ogol po 30sekundach).
+   2. Teraz jest w sluchawce delikatny szum linii
+   3. Wybrac numer w komorce i kazac jej sie polaczyc...
+   4. Po uzyskaniu polaczenia, modem bedzie odbieral i wyslylal
+      dane przez komorke!
+   5. Pozostaje jeszcze kwestia odpowiedniego skonfigurowania
+      software'u aby mozna bylo wlaczyc modem recznie (a nie
+      kazac mu automatycznie wybierac numer)... ale to juz
+      pozostawiam Tobie :)
+
+ 
+  -------- Schemat podlaczenia komorki do telefonu
+                                                     __
+                                                    |  |
+                                                    |  |
+                                            ________|__|_
+       ______                              |             |
+      /      |                       /|    |    :::::    |
+     /       |---+   +--------------| | -> |   :::::::   | sluchawka
+    /        |-+ |   | +------------| | -> |    :::::    |
+   |     ____| | |   | |             \|    |  _________  |
+   |    /      | |   | |                   | | 0202122 | |
+   |   |       | |   | |                   | |_________| |
+   |   |       | |   | |                   |             |
+   |   |       | +---| | ---------+        |             |
+   |   |       +---- | |--------+ |        |  [4][5][6]  |
+   |   |             | |        | |        |  [7][8][9]  |
+   |   |             | |        | |        |  [*][0][#]  |
+   |   |             | |        | |        |   _  _  _   |
+   |    \____        | |        | |        |  [_][_][_]  |
+   |         |       | |        | |  /|    |             |
+    \        |-------+ |        | +-| | -> | :::         | mikrofon
+     \       |---------+        +---| | -> | :::         |
+      \______|                       \|    |             |
+         |                                 |_____________|
+         |
+         |                                telefon komorkowy
+         |
+
+  sluchawka telefonu
+    "stacjonarnego"
+      (zwyklego)
+
+
+      Laczenie sie przy pomocy tego urzadzenia ma swoje ujemne strony :(
+      Uzyskanie predkosci wiekszej niz 2400 bps moze byc klopotliwe,
+      a czasem nawet niemozliwe...
+      Jednak jest to zupelnie wystarczajace do HACK'owania i IRC'owania :)
+
+      Oczywiscie cale urzadzenie mozna znacznie ulepszyc i zmniejszyc (!).
+      W ktoryms z nastepnych FAQ'ow postaram sie przedstawic ulepszenie
+      tego ukladu... 
+
+4. BAJER Z BUDKAMI TELEFONICZNYMI
+   Na temat budek telefonicznych mozna by napisac osobny FAQ:)
+   Nie chce tutaj zbyt duzo mowic (prawde mowiac wolalbym nic nie mowic),
+   bo temat jest calkiem nowy (mam tu na mysli oczywiscie automaty karciane:)
+   czyli URMET'y)....
+   Moze kiedys zmienie zdanie, ale na razie powiem tylko tyle ze mozliwe jest
+   w dosc prosty sposob polaczyc sie z dowolnym telefonem na swiecie...
+   oczywiscie nic za to nie placac!!!
+   Sa w zasadzie dwie (moze nawet 3) podstawowe metody:
+   1. Podrobiona karta magnetyczna (ale do tego trzeba miec troszke mozgu)
+   2. Wykorzystanie glupoty konstruktorow "telefonu na karty"...
+   Majac juz za damrmo telefon, mozemy "podpiac" do niego urzadzenie podobne
+   do tego z punktu 3, no i co za tym idzie surfowac do woli :)
+
+    Jezeli jestes blizej zainteresowany opisanymi tu metodami, wyslij mi maila
+    a moze sie dogadamy (ale uprzedzam duzo sobie licze za dokladne info).
+  
+
+
+
+
+Pozdrowienia dla (kolejnosc prawie przypadkowa):
+   |g0d|, PhReAk, Killjoy, Frikozoid, Harry
+
+  Jakby to powiedzieli murzyni:
+    These R my friend, so B nice 4 all of them!   313373
+ 
+                                  CUL8R dudez - michalc64@hotmail.com
+                     
+   .     .     .
+   ...  ...  ...
+   .............   ANTY-POZDROWIENIA DLA WSZYSTKICH DRESIARZY
+    ...........          
+      ......                   
+

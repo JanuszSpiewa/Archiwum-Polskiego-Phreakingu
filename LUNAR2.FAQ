@@ -1,0 +1,758 @@
+
+
+
+                                Lunar.Shake
+
+                             creative research
+
+
+                                phreaq faq
+                                 issue #2
+
+
+                     release date: 28/04/1998 23:35 CET
+
+
+
+
+               written by nth&bth alias 'techowcy' (C) 1998 HiP
+
+
+   -  --   - -------- --------------------------------------------------------
+DISCLAIMER: Redakcja nie ponosi odpowiedzialnosci za tresc ani za sama siebie.
+Nie ponosimy odpowiedzialnosci za zadne szkody poniesione przez TPSA na
+skutek dzialan ludzi bedacych pod wplywem tego textu. Nie ponosimy rowniez
+odpowiedzialnosci za wszelkiego rodzaju katastrofy lotnicze, wybuchy wulkanow,
+pozary lasow i inne kleski ekologiczne nawiedzajace nasza planete. Nie mamy
+rowniez nic wspolnego z ladowaniem UFO na trawniku dyrektora NASK.
+------------------------------------------------------- -------- - --   ---  -
+
+
+
+
+              [-- -- - - ------------------------------------]
+                             J A D L O S P I S
+              [---------------------------------- - - --  ---]
+
+
+
+  W tym numerze zajelismy sie glownie rzeczami 'na czasie'. Kompletne how-to
+  dotyczace hax0rzenia srebrnych, w dziale dla domatorow zajelismy sie
+  dosc dokladnie rozpracowywaniem PBX'ow. Smacznego (mniam!). Jesli ktos nie
+  czytal Lunar.Shake faq #1, a nie jest specjalnie dobrym phreakerem to przed
+  przeczytaniem tego, polecam lekture pierwszego numeru...
+
+
+0. Pare slow tytulem wstepu
+
+ - Why the hell 'creative research?!'
+
+
+I. Trochem dydaktyki...
+
+ - Centrale -- charakterystyka, ciag dalszy
+ - Kolekcja ciekawych numerkow
+
+
+II. W plenerze...
+
+  - Srebrne Automaty -- chluba TPSA
+
+    1. Zamawianie miedzymiastowych na srebrnego
+    2. NEW! Freecalling ze srebrnych directly
+    3. NEW! modem w budkach telefonicznych
+
+
+III. W domu i zagrodzie...
+
+   - PBX'y -- ciag dalszy
+
+     1. Ultimate PBX finding guide
+     2. CallerID spoofing
+     3. PBX'y a modem
+     4. Morning Star
+     5. Voice -- nie zawsze bezuzyteczne
+     6. PBX - Special features
+     7. PBX - Tapping
+
+   - Taryfikacja w TPSA, numery bezzaliczeniowe i 972
+   - My name is BOX. Blew BOX
+
+
+IV. Bonus Pak...
+
+  - Jazda na maxa bez trzymanki, czyli PKP for free
+
+
+V. Ogloszenia...
+
+ - Ogloszenia, greetsy, namiary i takie inne..
+
+
+
+               [-- -- - - ------------------------------------]
+                          0. Pare slow tytulem wstepu
+               [---------------------------------- - - --  ---]
+
+
+
+--]  Why the hell 'Creative Research?!  [---------------- -----  ---  --  -
+
+
+Dobre pytanie. Postanowilismy tak okreslic nasza dzialalnosc, ktora przeciez
+nie konczy sie tylko i wylacznie na komputerach i telefonach, staramy sie
+dzialac ahem... bardzo wszechstronnie... a co z tego wynika, mogli swego
+czasu odczuc na wlasnej skorze niektorzy ludzie (greets to The Brave ACMM
+crew, also d00 & his friend :). To co wlasnie miedlicie w lapskach nie bedzie
+kolejnym zinem z suchymi sposobami na phrack... tylko cos innego. Jak zwykle
+nie odpowiadamy za tresc, ani sami za siebie, ale ten material i tak trafi
+tylko w rece wybrancow, wiec nie ma powodu by robic sceny. :)
+
+BTW - uwaga! bTh pisze wlasnie cos na ksztalt cyberpunkowego opowiadanka :)
+coming soon... a teraz zapraszamy do konsumcji.
+
+                                                k33p hardwired.
+                                            (-) podpis nieczytelny
+
+
+
+
+
+               [-- -- - - ------------------------------------]
+                             I. Troche Dydaktyki...
+               [---------------------------------- - - --  ---]
+
+
+
+--]  Centrale humanum est  [-------------------------- -----  ---  --  -
+
+
+ W poprzednim faq opisalem pokrotce centrale telefoniczne wystepujace w
+ Warszawie... w jednym miejscu dalem ciala: Alcatel 4400BCN to jest oczywiscie
+ centrala WEWNETRZNA, a nie miejska centrala abonencka... fakt ze dosc spora ;)
+ Inna sprawa ze jest uzywana w charakerze PBX'a np w roznych dziwnych
+ placowkach spod znaku TPsa...
+
+ Teraz kolej na druga czesc listy i uzupelnienie poprzedniej  -- tym razem
+ poszerzona na cala polske:
+
+
+
+ - --] 1. Centrale analogowe, lekcji w Muzeum Techniki ciag dalszy [-- -
+
+
+   ARF102 - szwedzka z wybierakami krzyzowymi, spotyka sie w Krakowie (np
+   numery 636xxxx -- chyba najgorsza centrala w Krakowie :) i w Lodzi.
+
+   K66 - Polska na bazie Pentaconty. Spotytkane podtypy 0, 1 i 2
+   (zaleznie od central wspolpracujacych, najczesciej spotyka sie podtyp 0)
+
+   K65 - nieliczne, beta wersja K66 :)
+
+   Pentacross - rumunska (!?) odmiana Pentaconty, rzadko spotykana,
+
+   Salme -  b. stara szwedzka, na wybierakach maszynowych (SxS) Na wymarciu.
+
+   Na koniec ciekawostka: Tzw. Centrale AG, stosowane na wsiach, najczesciej
+   na wybierakach obrotowych. Moze ktos wie cos blizej? (mail: nth@ic.com.pl)
+
+
+ - --] 2. Centrale elektroniczne [-- -
+
+
+  W Polsce uzywane sa dwie wersje E10, centrali produkcji Telkom-Telmoru na
+  licencji Alcatela E10.
+
+    E10A - stara cyfrowa elektroniczna, z ekstremalnie niskim zegarem
+    taktujacym (125 kHz!), jedem rejestr moze obsluzyc 66 abonentow.
+    Spotykana w calej Polsce.
+
+    E10B, czasem nazywana OCB283, rejestr obsluguje 255 abonentow, centrala
+    podobno zajmuje 4 razy mniej miejsca niz E10A, jest tez oszczedniejsza
+    energetycznie. Ale tez zre, jak to wszystkie elektroniczne.
+    Jest to duzo lepsza odmiana E10, moze obsluzyc ISDN. I tak robi w co
+    ubozszych czesciach Poznania.
+
+
+ - --] 3. Centrale cyfrowe - ciag dalszy [-- -
+
+     Samsung
+
+     Oparta na wczesnej wersji AT&T 5ESS z koreanskim oprogramowaniem... :)
+     wystepuje chyba tylko w Opolskim.
+
+     DGT
+
+     Polska centrala cyfrowa, calkiem udana... czesciowo na komponentach
+     alcatela. Uslug troche mniej niz w takiej chociazby S12, ale napewno
+     lepsze to niz E10 czy Pentaconta. Niektore wersje obsluguja ISDN.
+
+     Alcatel S12
+
+     Doczekal sie wersji 'K' jak 'Kila' zapewne... :) Maja zaszczycic swoja
+     obecnoscia centrum Warszawy.
+
+     Istnieje tez cos zwanego 'Alcatel 1000 S12 Mobile Wireless Switching
+     Center' -- S12 przystosowana do pracy z radioliniami. Pol Pragi (tej
+     czeskiej :) na tym chodzi... W Polsce maja instalowac w trudniej
+     dostepnych rejonach.
+
+
+
+--]  Kolekcja Ciekawych Numerkow  [------------------- -----  ---  --  -
+
+
+Na centralach Siemensa EWSD istnieje cos na ksztalt 974... wystarczy wklepac
+808, potem swoj numer telefonu, uslyszymy 'PIP' a po odlozeniu sluchawki
+dostaniemy callback'a ... potem od razu busy.
+
+Ciekawy numerek, tez na EWSD to 806. Po wykreceniu takowego uslyszymy dosc
+chaotyczna serie tonow...
+
+Na centralach AT&T 5ESS w zaleznosci od wersji, callback znajduje sie pod
+numerkami 111, 333 badz tez 555.
+
+090-219245 - Numer centertela znajdujacego sie w Wagonie Restauracyjnym
+ktory czasami przemierza trase Warszawa-Poznan-Szczecin w pociagu Expressowym 'Mewa' a
+czasami Krakow-Warszawa-Gdynia w Ex 'Lajkonik' :)
+
+
+
+
+
+    [-- -- - - ------------------------------------------------------]
+           II. W plenerze -- idzie lato wiec calkiem na czasie...
+    [---------------------------------------------------- - - --  ---]
+
+
+
+
+--]  Srebrne Automaty -- chluba TPSA  [------------------ -----  ---  --  -
+
+
+
+ W dzisiejszym wydaniu zajmiemy sie glownie nowiutkimi, blyszczacymi i
+ pachnacymi mokrymi wloszkami automatami Srebrnymi. Srebrne sa piekne i
+ duzo ciekawsze niz toporne niebieskie. Automaty te na dobre zadomowily sie
+ w Warszawie. Stanowia 30% sily TPSA :) Widzialem tez w innych miastach --
+ Lublinie, Krakowie, Gdansku... Miodnie, zwlaszcza w kooperacji z S12tkami
+ z Krakowskiego, ale to juz temat na inna bajke...
+
+
+
+- --] 1. Zamawianie miedzymiastowych na srebrnego [-- -
+
+
+ First: nie dziala juz 915 -- kobieta mowi 'prosze zadzwonic pod 900' i
+ bezczelnie odklada sluchawke... co za tupet. Nic, musimy wykrecic 900tke...
+ Na niebieskich bylo prosto -- 900tke wybieralo sie metoda 974-0800 i spoko
+ bylo. Tutaj... mozna zrobic dokladnie to samo :) Powiem wiecej -- srebrniak
+ nawet raczy wypisac 'numer zablokowany' przy 'golym' wykrecaniu 900tki. :)
+ Blokuje tylko mikrofon tak ze nie mozna nic powiedziec. Jak komus nie pasuje
+ krecenie 974-0800 to zawsze przeciez mozna zadzwonic na 900tke przez PBX'a :)
+
+ Second: Mamy ulatwione zadanie -- nie trzeba sie wysilac i kolowac numeru
+ payphona. Srebrne cacko wylozy nam go jak na tacy po nacisnieciu przycisku
+ oznaczonego literka [ D ] :)
+
+ Third: Srebrne automaty potrafia mowic. O ile 'wloz karte' moze sie wydawac
+ zabawne, o tyle tekst 'automat publiczny' w momencie gdy dzwoni do Ciebie
+ telefonistka z 900tki moze troche namieszac... Mi raz udalo sie wmowic
+ kobicie ze zona ponagrywala glupoty na sekretarke, ale nie kazda telefonistka
+ ma IQ na poziomie mniej/wiecej automatycznej sekretarki wlasnie :). Ale jest
+ na to prosty sposob: Jak tylko odbierzesz telefon, nacisnij przycisk z flaga
+ i zmien language na powiedzmy 'niemiecki' :) Sprechac srebrniatko nie potrafi,
+ tak ze pani z 900tki uslyszy tylko jakies niemrawe piski. :) A tu juz wiemy
+ co mowic (dzwoniaca komorka, fax, modem, xero, pilniczek do paznokci... ;)
+ bTh lubuje sie w sposobie 'na gumowa zabawke' -- w czasie gdy budka piszczy
+ on tez wydaje nieartykulowane dzwieki ;) Pani z 900tki jest na tyle zszoko-
+ wana ze jak najszybciej stara sie zrealizowac polaczenie :)
+
+
+
+- --] 2. NEW! Freecalling ze srebrnych directly [-- -
+
+
+ Kiedy mamy to szczescie i SilverShark jest podpiety pod S12 w wersji rownej
+ badz starszej od 'J' to znowu bawimy sie z 974... :) Sprawa wyglada tak:
+ Blyskotliwi inzynierowie z URMET'a usilowali sie zabezpieczyc przed naszymi
+ perfidnymi manewrami, i wymyslili, ze automat przed wybraniem kazdego numeru
+ zapoda profilaktycznie flash'a. Mialo to zapobiec akcjom typu 974, dlatego
+ patent znany z niebieskich nie dziala. Automat rozlacza nas zupelnie i
+ wybiera 0800 juz na 'miejskim' dialtonie. Ale i na to jest bardzo prosty
+ sposob: Krecimy 974, zapada cisza. Wtedy wciskamy przycisk [ FC ] - following
+ call. Automat grzecznie mowi 'wybierz numer' i rozlacza sie... ale sie nie
+ rozlaczy bo 974 'trzyma' polaczenie :). Po chwili slyszymy znajomego
+ dialtone'a... i wtedy wlasnie wciskamy '0800' :) Automat zapodaje flasha i
+ rozlacza 974... slychac zajety, a srebrniutki wlasnie w tym momencie zaczyna
+ pikac 0800. :) Mikrofon odblokowany, za chwile dialtone juz z centrali
+ miejskiej... i tu zdziwka! :) Srebrne nie maja blokady do 6ciu cyfr po 0800,
+ czyli mozemy dzwonic sobie wogole bez tonedialera :). Dzwonimy pod 0700 do
+ Kasi Figury i... kolejna zdziwka! :) NIE ZRYWA! :) Srebrne nie wspolpracuja
+ z tak znienawidzona teletaxa (przynajmniej na razie :) i mozna gadac ile
+ wlezie... hehehe...
+
+ LAST UPDATE: TPSA  w panice wogole probuje zablokowac mozliwosc dzwonienia
+ na 0800tki ze srebrnych -- po prostu po 0800 nie przyjmuje zadnego klawisza.
+ Ale mikrofon odblokowywuje, wiec... od czego tonedialer :)
+
+ PS. Sposob Twittera polegajacy na wcisnieciu 0800 dokladnie w momencie
+ w ktorym kobieta mowi 'wloz karte' dziala na okolo 2% srebrnych :) zawsze
+ cos.. :>
+
+
+
+- --] 3. NEW! modem w budkach telefonicznych [-- -
+
+
+ Podczas obwachiwania srebrnych urmetow odkrylismy troche arcyciekawych ich
+ wlasciwosci. Nie bede sie rozwodzil nad faktem ze umieja mowic, co raczej
+ dotad bylo niespotykane wsrod payphone'ow. Znalezlismy cos znacznie
+ ciekawszego. Testujac rozne wersje manewru na entry-call, nie
+ odbieralismy telefonu w jednej budce przez ok. 7 sygnalow. Co stalo sie
+ potem ? Payphone normalnie zarzucil nam carrier, co wprawilo nas w
+ lekkie oslupienie... modem w budce?! Carrier jest 2400 - raczej niski -
+ i raczej zawsze milczacy. Raz udalo mi sie ustawic parametry transmisji,
+ w ten sposob, ze czesc klawiszy powodowala odbicie echa z budki w postaci
+ jakichs nieciekawych smieci. Pozniej budka powiedziala do mnie cos w stylu :
+  þ“Þ {AËÇ±‘. i kulturalnie zamknela morde. Jest pare hipotez co do
+ zastosowania modemow w budkach. Chyba najsilniejsza opiera sie na
+ twierdzeniu, ze jest to po prostu zmodyfikowany system kounikacji z
+ centrala. Jak wiadomo, kazda szanujaca sie budka dwa razy dziennie
+ informuje centrale o swoim stanie - czyli dzwoni [BUSY na lcd ] i mowi,
+ hej, to ja, payphone #31337, jestem caly, zjadlem dzisiaj 1000 kredytek.
+ Fajnie. Byc moze modemy maja sluzyc zdalnemu zczytywaniu danych z budki,
+ uzyskiwaniu informacji o jej dzialaniu .. nie mam pomyslu. Badania trwaja.
+
+ PS. Remember: urmet your friend :)
+
+
+
+
+               [-- -- - - ------------------------------------]
+                            III. W domu i zagrodzie
+               [---------------------------------- - - --  ---]
+
+
+
+
+--]  PBX'y -- ciag dalszy  [----------------------------- -----  ---  --  -
+
+
+
+ W taka pogode to grzech siedziec w domu, no ale jak ktos juz musi... Anyway,
+ mamy troche nowego o PBX'ach. heh, temat rzeka. Zanim przejdziemy do
+ meritum, bth przedstawia krotki kurs znajdowania PBX'ow:
+
+
+
+- --] 1. Ultimate PBX finding guide [-- -
+
+
+ Nie bede sie bawic w wyjasnianie podstawowych pojec, zakladam ze wiecie co
+ to pbx i do czego on sluzy. jezeli nie, zapraszam do poprzedniego wydania,
+ tam znajdziecie wszystkie potrzebne informacje. Przedstawie wam teraz
+ jeden z najbardziej efektywnych, a jednosczesnie banalny sposob na
+ znajdowanie pbxow (a nie mowilem ze proste pomysly r0x ?). a wiec -
+ zakladamy ze mieszkasz w jakims wiekszym miescie, nieistotne w jakim, oby
+ bylo duzo firm. pierwszym krokiem jest znalezienie jakiejs duzej gazety z
+ ogloszeniami (moze byc wyborcza, w regionalnych sie nie wyznaje). bardzo
+ dobrym zrodlem jest takze Panorama Firm. Dobra .. mamy juz bardzo ladne
+ zrodlo numerow telefonow. Teraz nalezy dokonac pewenj selekcji, gdyz
+ dzwonienie od deski do deski nie jest zbyt ciekawym zajeciem... (chyba ze
+ ktos nie ma co robic albo ma problemy z samokontrola). Zwracamy uwage na
+ wieksze firmy, ktore maja conajmniej 2-3 linie,czesto rozniace sie tylko
+ koncowka, np: 6663331 6663332; jest duze prawdopodobienstwo, ze firma bedzie
+ miala postawiona wewnetrzna centralke... To nie wszystko - nas interesuja
+ centralki wyposazone w karte DISA, pozwalajaca na samodzielne wybieranie
+ numerow wewnetrznych przez dzwoniacego, bez posrednictwa telefonistki. Ale
+ bardzo duzo malych, "jednonumerowych" firm takze posiada wlasne centralki,
+ nalezy tez zwrocic uwage na firmy ktore podaja swoj telefon w stylu
+ '6631337, w. 433' :) Jezeli firma ma telefon z numerem wewnetrznym, to
+ oczywiste ze siedzi tam centralka... modlmy sie zeby byl to PBX a nie jakas
+ wymalowana lafirynda przelaczajaca kabelki :)
+
+ Dla niektorych problemem moga byc rachunki za takie scany. ale mysle ze
+ gra jest warta swieczki, tymbardziej ze mozna dzwonic z budki za
+ posrednictwem ktoregos z opisanych sposobow [fr33ko!]
+
+ Jesli trafisz na kogos kto odbierze telefon, na zwyklego pracownika, nie
+ odkladaj sluchawki, moze od niego mozna bedzie wyciagnac jakies wartosciowe
+ informacje ? tutaj wkracza social engineering, ktory jest jednka
+ integralna czescia zycia phreakera :] przykladowa rozmowa z dowolnym
+ pracownikiem dowolnej firmy, ktora podejrzewasz o nielegalne chowanie przed
+ toba pbxa :]
+
+  "Dzien dobry,tu Dariusz Michalczewski, Panasonic Polska. czy panska firma
+   uzytkuje centrale wewnetrzna naszej firmy ?"
+
+   "tak? a bo co ?"
+
+   "czy jest wyposazona w karte DISA ? "
+
+   "w JAKA karte ?"
+
+   "kHm - czy centrala odbiera przychodzace polaczenia i mowi cos w stylu
+   'dziendobry, przedsiebiorstwo taksowkowe IMAP Taxi, prosze wybrac tonowo
+   numer wewnetrzny... ?' "
+
+   "no .. tak"
+
+   "wykrylismy powazne bledy w przenoszeniu rozmow przychodzacych na linie
+    miejskie, pozwalajace na nieutoryzowany dostep do waszej centrali z
+    zewnatrz." [albo inny pseudo-techniczny slang]
+
+   "aaaRgh"
+
+   "czy moglbym prosic o numer pod ktorym zglasza sie ta centrala ? "
+
+   "moment ... juz podaje ...6631337"
+
+   "dziekuje panu bardzo. cya"
+
+ Oczywiscie nie zawsze pojdzie tak latwo, ale jesli goscie maja na innym
+ numerze centralke to na 80% ja zdobedziesz. Tylko pewnosc siebie,
+ przeciez jestes z serwisu Panasonica. Jezeli pracownik nie umie
+ odpowiedziec na twoje pytania, pros smialo szefa/kierownika :] jeszcze
+ jedno - jezeli daje ci juz numer - mozesz go naciagnac zeby dal ci tez
+ ACN (kod) w celu sprawdzenia wadliwosci :] wtedy odpada praca z lamaniem
+ zabezpieczenia. niestety, praktycznie wiekszosc tych mulow z biur nie zna
+ tych numerow, pomijajac to, ze polowa milkla na dzwiek slowa: centrala :]
+
+
+
+- --] 2. CallerID spoofing [-- -
+
+
+ Czesto masz potrzebe zadzwonienia gdzies -- chociazby poinformowania policji
+ o fakcie podlozenia bomby w twojej szkole (*grin*), jednak nie bardzo chcesz
+ by osoba do ktorej dzwonisz mogla wylapac twoj numer telefonu. W Polsce,
+ gdzie mamy sygnalizacje C7 i cyfrowe centrale to dosc trudne... nijak nie
+ idzie blueboxowac (chyba ze przez singapur ale o tym pozniej :). Ale od
+ czego PBX'y. Mozna zrobic malego loop'a: Najpierw dzwonimy na jakiegos
+ lokalnego PBX'a, z niego na jakiegos w innym miescie (a najlepiej wogole
+ innym kraju), potem na trzeciego, w dowolnym miejscu. Wtedy gosc ktory
+ bedzie chcial nas wysledzic, spedzi na tym trzy lata :) Jeszcze lepiej, jak
+ ktorys z PBX'ow jest podpiety do centrali ktora nie supportuje CID/CLIP np
+ chociazby Pentaconty... :) Have a fun.
+
+ PBX'a przez ktorego da sie polaczyc modemem mozna wykorzystac do polaczenia
+ z 0202122 w celu porobienia 'zakupow' przy pomocy karty kredytowej pana
+ Rashida Alwarez'a albo shax0rowania jakiegos *.gov.pl.. have a fun :)
+
+
+
+- --] 3. PBX'y a modem [-- -
+
+
+ Generalna wiekszosc PBX'ow nie lubi modemow... tzn filtruja czesc pasma, tak
+ ze modemy sie wogole nie dogaduja, albo urywaja polaczenia po kilku sekundach.
+ Mozemy sobie jednak troche pomoc. Mozemy wlaczyc guard tone'a (at&g1, at&g2)
+ jednak rzadko daje to jakiekolwiek rezultaty. Pierwszy krok to obnizenie
+ transmisji do powiedzmy 19.200bps.. (at&n10, at&u4). Jezeli to nie pomaga,
+ wylaczamy modulacje v.34 (ats32=32). Jezeli modem dalej ma opory, obnizamy
+ predkosc transmisji do 9600 (at&n6)... Jesli teraz sie nie polaczy, to kupa.
+ Jak masz stoicka cierpliwosc, zostaw gole 2400 (at&n3, at&u3, at&d0) ...
+ Zdarzaja sie jednak PBX'y do tego stopnia perfidne, ze i tak zerwa polaczenie
+ po paru sekundach... Coz, poszukaj wtedy innego :) Mi udalo sie znalezc
+ takiego co puszczal 21600 v34+ i w dodatku tollfree :)
+
+ PS. podane komendy odnosza sie do modemu US Robotics, jak masz jakis inny
+     zlom to przeczytaj w instrukcji co i jak.
+
+
+
+- --] 4. Morning Star [-- -
+
+
+  Moze jeszcze nie wiecie, ale wcisniecie 'gwiazdki' [*] podczas polaczenia
+  z PBX'em 'resetuje' go -- daje ci wewnetrznego dialtone'a. Jest to cholernie
+  uzyteczna sprawa -- zalozmy ze masz do wykonania 20 telefonow, tylko po to
+  zeby powiedziec 2 slowa. Normalnie zuzyjesz 20 impulsow... a tak, dzwonisz
+  na pierwszego lepszego pbx'a, wciskasz 9,ewentualnie kod, masz miejskiego
+  dialtone'a. Dzwonisz pod jakis numer, konczysz gadac, po czym... wciskasz
+  [*], dostajesz dialtone'a z PBX'a. Potem tylko jeszcze raz 9,ewentualnie
+  kod, masz miejskiego dialtone'a i tak mozesz ile ci sie podoba. :) Fajne.
+  Placisz jak za ciagla rozmowe...
+  ... To tylko jedno z zastosowan. Zalozmy ze masz do zlamania 4-cyfrowy kod
+  PBX'a na 0800. Zamiast wykonywac 10.000 polaczen z nim co potrwa ze 3 dni
+  (Polskie Ksiazki Telefoniczne -- does it ring a bell? :), robisz tak:
+  Konfigurujesz toneloc'a na maske *9-xxxx (xxxx to kod, ofkors), ustawiasz
+  w dial-string na atx3d i maksymalnie krotki czas pomiedzy kolejnymi polacze-
+  niami... Dzwonisz telefonem na pbx'a, wciskasz jakikolwiek wewnetrzny i...
+  odpalasz toneloc'a. Zaczyna skanowac, *9-0001 - busy. hangup -- ale nie
+  hangupnie sie faktycznie bo telefon trzyma polaczenie. Jako ze wylaczyles
+  czekanie na dialtone'a (atx3d) toneloc wybiera kolejny numer, *9-0002...
+  Skanuje duuuuuzo szybciej i firma zaplaci duuuuuzo mniejszy rachunek, ty
+  zas dostaniesz duuuuuuzo krotszy billing (jedno polaczenie 10h, zamiast
+  1000 po 10 sekund :)
+
+
+
+- --] 5. Voice -- nie zawsze bezuzyteczne [-- -
+
+
+  Wlasnie. To ze jakas mila pani odbierze telefon, to jeszcze nie znaczy
+  ze nie ma tam pbx'a. Czasem poprostu centrale wewnetrzne odrazu przekie-
+  rowywuja do operatorki... Wcisnij [*] i zobacz co sie stanie... jak
+  uslyszysz dialtone'a to... voila! :) Jak nie, to zazdwon pod ten sam
+  numer jeszcze raz i wcisnij [*] podczas sygnalu zgloszenia... czesto nie
+  pochodzi on z centrali miejskiej, tylko wlasnie z wewnetrznej. Zwlaszcza
+  na tolfree'kach :)
+
+
+
+- --] 6. PBX - Special features [-- -
+
+
+  Zdarzaja sie PBX'y maja zablokowane niektore klawisze... tzn wklepujesz
+  ladnie 9,1111, dostajesz dialtone'a. Potem wciskasz powiedzmy '0' i...
+  kupa. Busy. Przewaznie mozna to overridnac w bardzo prosty sposob...
+  przed wybraniem numeru klepiesz '#' -- pbx na to nie reaguje i lamephilter
+  przestaje miec cos do powiedzenia. Potem spokojnie wybirerasz upragnione
+  0... Czasami wystarczy poprostu poczekac z 10 sekund przed wybraniem numeru
+
+
+
+- --] 7. PBX - Tapping [-- -
+
+
+  Na niektorych PBX'ach wcisniecie 7+numer_linii+kod (np 71,1111) wlacza...
+  podsluch danej linii :)
+
+
+  No to tyle o PBX'ach... to naprawde bardzo obszerny temat, PBX'y sa ciekawe
+  i jest ich sporo.. zwlaszcza interesuja nas te na 0800 :) jak masz jakies
+  doswiadczenia w tej sprawie -- koniecznie contact us: (nth@ic.com.pl,
+  bth@kki.net.pl)
+
+
+
+
+--]  Taryfikacja w TPSA, numery bezzaliczeniowe i 972  [-- -----  ---  --  -
+
+
+ Nasza kochana firma uskutecznia dwa sposoby billingowania: jeden, spotykany
+ najczesciej, zwlaszcza na Alcatelach S12, polega na zdumowaniu loga z
+ centrali, odfiltrowania polaczen niezrealizowanych, bezplatnych, etc i
+ wystawienia billingu na jego podstawie. Generalnie -- billing jest
+ odzwierciedleniem loga z centrali, a rachunek wystawiany na podstawie
+ billingu. W takim przypadku dzialaja wszelkiego rodzaju numery
+ bezzaliczeniowe (normalne numery miejskie ale ze zdjeta taryfikacja),
+ niczego czego centrala nie staryfikuje nie bedzie w billingu ani na
+ rachunku. Nie dziala za to patent z 972(*) -- centrala nabija impulsy w
+ normalny sposob, do billingu trafia poprostu normalny numer telefonu...
+
+
+ Drugi sposob to tzw. retaryfikacja -- log centrali leci do tzw 'dzialu
+ rozliczen', gdzie poprostu odpowiedni programik 'patrzy' na prefiksy i
+ czas trwania polaczenia i na tej podstawie ustala taryfikacje... czyli
+ dla 0800 0gr/min, dla lokalnych 0.19gr/3min, dla zamiejscowych to juz
+ na podstawie kierunkowych, etc... Wtedy niestety numery bezzaliczeniowe
+ sa taryfikowane jak zwykle (np bth sie na takim jednym 'przejechal' --
+ cale szczescie wpore sie zorientowal ;) ale za to dzialaja wszelkie
+ manewry w stylu 972, bo programik taryfikacyjny 'glupieje...' W billingu
+ wtedy jest wszystko co sie dzialo z linia telefoniczna -- wszystkie 0800tki,
+ zajete, kazdy DTMF ktory polecial z twojej linii.. nawet dzwonienie przez
+ pbx'a wyglada tak: 08003133791111070072772 :)
+
+ (*) -- 'patent z 972' byl opisywany w lunar.shake faq #1
+
+
+--]  My name is BOX. Blew BOX  [------------------------- -----  ---  --  -
+
+
+ Wiekszosc ludzi twierdzi ze blueboxing umarl... faktownie, w Europie mamy
+ SS7 i centrale pokroju S12, EWSD czy 5ESS. Ale nic nie zaszkodzi zadzwonic
+ do kraju w ktorym nadal istnieje CCITT-5, najlepiej korzystajac z uslugi
+ 'direct' badz IFS'a. Listing 00800-tek jest dostepny w wiekszosci ksiazek
+ telefonicznych czy placowek tpsa, ale w sumie moge go tu rzucic:
+
+
+  Australia        0 0800 611 1161     Telestra
+  Austria          0 0800 431 1143     Post & Telekom     Austria
+  Belgia           0 0800 321 1120     Belgacom           Belgium Direct
+  Chile            0 0800 561 1156     Entel              Chile Directo
+  Czechy           0 0800 420 1122     Czech Telecom
+  Dania            0 0800 451 1110     Tele Danmark
+  Finlandia        0 0800 358 1100     Telecom Finland
+  Francja          0 0800 331 1133     France Telekom
+  Grecja           0 0800 301 1100     Hellenic Telecom
+  Hiszpania        0 0800 341 1134     Telefonica
+  Holandia         0 0800 311 1131     PTT Telecom        Nederland Direct
+  Izrael           0 0800 972 1197     Bezeg Israel Telco Israel Telecom CD.
+  Izrael *         0 0800 972 1198     Bezeg Israel Telco Israel Direct
+  Izrael **        0 0800 972 1199     Bezeg Israel Telco Israel Direct
+  Japonia          0 0800 811 2143     ITJ                Japan Direct
+  Japonia          0 0800 811 2181     KDD
+  Japonia *        0 0800 811 2182     KDD
+  Kanada           0 0800 111 4118     Teleglobe / AT&T   Canada Direct
+  Kanada           0 0800 111 5133     Teleglobe / AT&T
+  Korea            0 0800 821 1122     Korea Telecom      Korea Telecom Direct
+  Korea **         0 0800 821 1133     Korea Telecom      Credit Card
+  Korea *          0 0800 821 1144     Korea Telecom      Pre-paid Card
+  Korea            0 0800 821 2182     Dacom
+  Luksemburg       0 0800 352 1111     Postes et Telekom
+  Luksemburg *     0 0800 352 1122     Postes et Telekom  Luksemburg Pre-paid Card
+  Luksemburg **    0 0800 352 11 33    Postes et Telekom  Luksemburg Calling Card
+  Niemcy           0 0800 491 1149     Deutsche Telecom   Germany Direct
+  Norwegia         0 0800 471 1110     Telenor                                Norway Direct
+  Rep. Pld. Afryki 0 0800 271 1127     Telekom S.A.
+  Singapur         0 0800 651 1165     Singapore Telecom  Telecom CD.
+  Singapur *       0 0800 651 1166     Singapore Telecom
+  Slowacja         0 0800 422 1122     Slovak Telecom
+  Szwajcaria       0 0800 411 1141     Swiss Telecom      Switzerland Direct
+  Szwecja          0 0800 461 1107     Tele 2             Nordic Xpress
+  Turcja           0 0800 901 1188     Turkish Telecom    Turkey Direct
+  USA              0 0800 111 1111     AT&T               US Direct
+  USA ***          0 0800 111 1112     AT&T               US Direct
+  USA              0 0800 111 2122     MCI
+  USA              0 0800 111 3115     Sprint             Sprint Express
+  USA              0 0800 111 3116     Sprint
+  USA              0 0800 111 3117
+  USA ***          0 0800 111 3177     Sprint             Sprint Express
+  Wegry            0 0800 361 1100     Hungarian Telecom  Hungary Direct
+  Wk. Brytania     0 0800 441 1144     British Telecom    BT Direct
+  Wk. Brytania **  0 0800 441 1146     British Telecom    BT Credit Card
+  Wk. Brytania     0 0800 441 2120     Mercury            Call UK
+  Wlochy           0 0800 391 1139     Telecom Italia     Italy Direct
+  Wlochy **        0 0800 391 1140     Telecom Italia     Call IT Italy
+  Wlochy *         0 0800 391 1141     Telecom Italia     Pre-paid Card CD.
+  Hong Kong        0 0800 852 1199     Hongkong Telecom
+
+  *   ] rachunek za rozmowe jest regulowany poprzez calling-card
+  **  ] rachunek za rozmowe jest regulowany poprzez karte kredytowa
+  *** ] muhihi :> kobiety umieja po polsku :)
+
+
+ Teraz powinnismy wyslac hangup-tone, czyli w C5 2400+2600hz, 110ms.
+ Powinnismy dostac [crunch] i cisze... problem polega na tym ze dostajemy
+ [crunch] i ...zajete z naszej centrali. Nie pomaga dodawanie zadnych szumow,
+ innych tonow w tle, zmiany dlugosci tonu ani inne tego typu manewry. Dziwne,
+ bo np. w Niemczech dziala bezproblemowo...
+ U nas albo ktoras tranzytowka polaczona C7'ka po drodze to wykrywa i urywa,
+ albo tamte C5'tki sie jakos zapatchowaly... narazie nie wiemy.
+
+ Jesli ktos ma doswiadczenia na tym polu -- _koniecznie_ contact us:
+ mailto: nth@ic.com.pl. Nagroda =)
+
+
+
+
+                [-- -- - - ------------------------------------]
+                                 IV. Bonus Pak
+                [---------------------------------- - - --  ---]
+
+
+
+
+--]  Jazda na maxa bez trzymanki, czyli PKP for fr33  [-- -----  ---  --  -
+
+
+Zbliza sie lato, a wiec czas intensywnych podrozy... bth przedstawi tu nasze
+refleksje na temat PKP...
+
+
+Jak powszechnie wiadomo, domena prawdziwego phreaka jest podrozowanie i
+poznawanie nowych stref dzialania. Od jakichs 150 lat [+- 50]
+najpopularniejsza i najtansza [relatywnie] forma podrozowania jet kolej, a
+dokladniej pociag. Pociag sklada sie z wagonow i lokomotywy. i na tym
+starczy wyjasnien, jestem pewnien, ze Nth chetnie podzieli sie z wami
+pikantnymi szczegolami, jesli go o to grzecznie poprosicie (Pociag Expressowy
+'Lajkonik' wjezdza do kasy nr 5 -nth)
+Tak wiec - rasowy phreak wydaje na pociagi naprawde niebotyczne sumy,
+liczac w skali miesiecznej/rocznej, zalezy od klasy phreaka. (hehe, i od
+klasy pociagu, a Lunar.Shake preferuje wehikuly w stylu InterCity 'Bystrzyca'
+badz EuroCity 'Sobieski' :) Pospieszne sa dla l4meuruff... - nth)
+Jako ze nasze kieszenie sa regularnie pustoszone przez kolejarzy,
+postanowilismy rozwiazac ten problem w dosc egzotyczny sposob:
+Skorzystamy z zupelnie legalnego sposobu podrozowania pociagiem, pod
+tytulem 'biletu kredytowego'. idea tego pomysl polega na tym, ze konduktor
+spisuje nasze dane/adres/etc, wystawia nam avizo, ktore opiewa na cene
+biletu. Oczywiscie powinno sie je zaplacic, bo inaczej PKP bedzie sie pluc,
+marnujac cenny papier na upomnienia i ponaglenia :] co zrobic aby _nie_
+trzeba bylo placic avizo ? otoz wystarczy jakas lewa legitymacja/dowod [ale
+raczej to pierwsze .. bo tanie i ogolnodostepne]. dane powinny sie zgadzac
+z kimkolwiek istniejacym w rzeczywistosci, zeby kwitki PKP nie trafialy w
+kosmos. Tak wiec - lewe dane - avizo - stacja docelowa.
+
+DiSCLAiMER : sposob ni zostal jeszcze do konca sprawdzony, wiec uwazajcie.
+tzn. po praz pierwszy nie ma problemu, ale nie wiadomo, czy PKP nie
+pokapuje sie, jesli bedziecie jezdzic na tej samej legitymacji dluzej ..
+Rozwiazanie: kupic duuuzo legitymacji :] w hurcie [bazar rozyckiego] cena
+nie przekracza 10 PLN, wiec stratni raczej nie bedziecie.
+
+HiNT DLA iDiOTOW: IF cena_biletu<cena_legitymacji THEN buy(bilet);
+
+
+PS. Przypominam -- zadzwoncie pod 090-219245 i pogadajcie z pasazerami
+'Lajonika badz tez 'Mewy' :)
+
+
+
+
+              [-- -- - - ------------------------------------]
+                          V. Ogloszenia Parafialne
+              [---------------------------------- - - --  ---]
+
+
+
+
+- --] Fonefreaks.. we are the fonefreaks ... we are... are we? [-- -
+
+Stay phreaky. lunar.shake szuka jakiegos chetnego membaha do naszego
+teamu, specjalizacja, a jakze: f0nefreak. Jesli uwazasz ze cos umiesz, i
+chcesz pomoc nam w pchaniu polskiego phreaku do przodu ... napisz, zadzwon,
+naskarz rodzicom. note: szukamy ludzi, ktorzy znaja sie na rzeczy - nie
+malych biednych czlowieczkow ktorzy chca dzwonic za darmo [takich jest
+calkiem sporo, jest w czym wybierac]. zdjecia mile widziane =)
+
+
+- --] Wiesz cos o czym my nie wiemy ? chcesz zaistniec ? napish. [-- -
+
+trzeci issue zine'a bedzie mial charakter zdecydowanie rozrywkowy, na pewno
+bedzie sporo o virusach i pare roznorodnych relacji z HiP'a ... nie
+zawiedziesz sie. Jesli masz pomysl na artykul o phreaku daj znac - nasze
+emaile widnieja w dolnej czesci tekstu. reply poleci na kazdy list, nie
+bojcie sie. nie tolerujemy tylko glupich tlumaczen i rippow z czyichs faq.
+
+
+
+
+             [-- -- - - ------------------------------------]
+                              That's it... :)
+             [---------------------------------- - - --  ---]
+
+
+
+- --] this time greets go to: [-- -
+
+
+    manY, kil3r, cadence (of lam3rz ofkors :), elca, luke_skyw, yellaboy,
+   imm (alive?), spaceman, wojtekka, pac2, eleven, elmister, smierc, DTMF
+    altshock, shmastah, twt, jankus, ang3l, p0wer, enzo, lukasz-radiowiec
+
+  special thanx to: whole #hax crew, especially: crazy-b, ^candyman, DTMF ;)
+              very special thanx to ACMM EWSD for your support :)
+
+
+
+    [-- -- - - ---------------------------------------------------------]
+
+         if you find something interesting -- contact us at once:
+
+                   mail to: nth@ic.com.pl, bth@kki.net.pl
+              visit our homepage: http://lunarshake.org
+                 catch us on irc: #phreak, #phreakpl, #hackpl
+
+     leave us a message on our free-of-charge voice mailbox: 0800-130130
+
+    [------------------------------------------------------- - - --  ---]
+
+     coming soon: Kompletnie drive-me-krayzee faq, w tym relacja z HiP'98
+
+                          ... stay phreaky! =)
+
+
+
+---------] done by nth&bth allianz. released under lunar.shake 28/04/1998 [----

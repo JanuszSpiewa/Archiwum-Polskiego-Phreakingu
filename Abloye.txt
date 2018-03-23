@@ -1,0 +1,88 @@
+Plik BEZ znakow diakrytycznych.
+Wersja 1.1 - datowany na 21.01.2001
+===========================================================================+
+                                                                           |
+          !€!         !€!  !€€€€€!  !€€€€€!   !€€€€€!  !€€€€€!             |
+           !€!       !€!  !€!   !€! !€!  !€!  !€!     !€!   !€!            |
+            !€!     !€!   !€!   !€! !€€€€€!   !€€€!   !€!   !€!            | 
+             !€!   !€!    !€!   !€! !€! !€!   !€!     !€!   !€!            |
+              !€! !€!     !€!   !€! !€!  !€!  !€!     !€!   !€€!           |
+               !€€€!       !€€€€€!  !€!   !€! !€€€€€!  !€€€€€! !€!         |
+                                                                           |
+                                  -=Voreq=-                                |
+                                voreq@interia.pl                           |
+                                                                           |
+===========================================================================+
+                                                                           |
+1. WSTEP                                                                   |
+2. BLEDNY OPIS                                                             |
+3. BUDOWA ZAMKA                                                            |
+4. DZIALANIE ZAMKA                                                         |
+5. KLUCZE                                                                  |
+6. GREETZ                                                                  |
+7. INNE                                                                    |
+                                                                           |                
+===========================================================================+
+
+1. WSTEP
+
+	Caly material zostal tutaj zgromadzony w celach eukacyjnych.
+Wykorzystywanie go w innych celach wylacznie na wlasna odpowiedzialnosc. 
+
+2. BLEDNY OPIS
+
+	Elo ! Tekst ten napisalem po przeczytaniu kilku FAQ i stwierdzeniu, ze ludzie piszacy cos o zamkach Abloy tak naprawde nie wiedza, jak sie je oznacza itp. Wiekszosc ludu oznacza zamki za pomoca kombinacji naciec na kluczu, ktory do nich pasuje. Inni probuja tez odczytac cos z dyskow w zamku, nie znajac przy tym jego budowy. Poza tym malo kto wie, co oznacza wyrazenie "klucz czerwony" (legenda w mojej budzie) i tym podobne pojecia.I nie piszcie wiecej, ze w zamku moze byc tyle a tyle kombinacji - zamek zlozony w/g wzoru zawsze skladany jest tak samo, nie ma miejsca zadna zmiana kombinacji. Owszem, zamek moze byc otwierany wieloma kluczami, ale tez nie jest cale mnostwo, a jedynie 3 sa uzywane - reszta to wlasna produckja phreakerow.
+
+3. BUDOWA ZAMKA
+
+	Kazdy Abloy sklada sie z:
+
+ € tulejki mosieznej (chyba)
+ € siedmiu dyskow wlozonych w tulejke
+ € szesciu podkladek 0,5 mm rodzielajacych dyski
+ € jednego dysku "zerowego", kladzionego na spod tulejki
+ € podkladki 1 mm, kladzionej na ostatni (najwyzej polozony) dysk
+ € dysku obrotowego - bez zaczepow, zapobiegajacemu rozwierceniu zamka przez phreakerow - na podkladce 1mm
+ € beleczki, wkladanej w bok tulejki
+ € srebrnej oslonki na tulejke
+ € blaszki zapobiegajacej wypadnieciu tulejki - zakreca sie nia tulejke od gory
+ € podkladki z trzema zabkami (tzw. piesek)
+ € nakretki dociskajacej podkladke
+ € nakretki mocujacej zamek w szafce
+
+Tak zlozony zamek zakreca sie na odpowiedni uchwyt w szafie kablowej lub budce. Z powodu idealnego dopasowania zamkow i polskich skrzynek, aby nic nie gruchotalo i dalo sie otworzyc, nalezy jeszcze porzadnie mlotkiem w Abloya przywalic ;) 
+
+	Teraz cos o budowie dysku i jego kodowaniu.
+
+	Kazdy dysk to koleczko z wycieciem w srodku i na bokach. I teraz dzieki tym wycieciom rozpoznaje sie jego oznaczenie kodowe :
+                           2     3
+                      1   _________   4
+                    0    /         \    5
+                        /           \
+                        |  _______  |
+                        |  \     /  |
+                        \   \___/   /
+                         \___   ___/
+                             \_/       
+Ten usmieszek na srodku to wyciecie w dysku. Teraz zajmijmy sie cyferkami. Jesli w miejscu pod cyferka jest wyciecie, to ta cyferka jest uzywana do kodowania. Jesli nie, to nie. I tak np. dysk o kodzie 50 ma wyciecia pod cyferkami 0 i 5. Tylko pamietajcie, ze dysk mozna wlozyc dwustronnie ! Czyli dysk 13 (wyciecia pod 1 i 3) po obroceniu stanie sie 24 (pod 2 i 4). Natomiast dysk 50 po obroceniu nadal bedzie dyskiem 50.
+
+4. DZIALANIE ZAMKA
+
+	Aby to zrozumiec, trzeba miec albo Abloya przed soba, albo sporo wyobrazni. Kompletnie zlozonego Abloya nalezy rozebrac tak, aby nam zostala sama tulejka z dyskami. Z jednej strony tulejka ma szerokie wyciecie, a z drugiej takie male - tam byla beleczka. Teraz jak to dziala ? Wkladamy klucz Abloy. Wchodzi on w tulejke. Zaczynamy nim obracac. Wraz z kluczem obracaja sie dyski, ktorych klucz dotyka (wyciecie na kluczu decyduje, w jakiej kolejnosci klucz dotyka i zaczyna obracac dyski). Po obrocie o 90 stopni wyciecia w dyskach powinny ustawic sie pod belka, tworzac szczeline, w ktora belka wpaga. Gdy belka wpadni, mozemy obrocic klucz o dalsze 90 stopni. Dzieje sie tak poniewaz belka blokuje caly zamek (tulejke) od obracania sie. Gdy wpadnie ona do szczeliny blokada sie zwalnia i mozemy obracac cala tulejke. Wraz z nia obraca sie zaczep zachaczajacy o skrzynke i voila ! - drzwiczki stoja otworem.
+
+5. KLUCZE
+
+	Teraz cos o oznaczeniach kluczy. Mozna tutaj pominac klucze do budek i inne takie wynalazki, gdyz sa to z reguly klucze typu Master Key (jeden dla wszystkich zamkow). Wlasne oznaczenia posiadaja tylko klucze do szaf kablowych. Dziela sie one na 3 kategorie :
+ € niebieskie
+ € zolte
+ € czerwone
+Kazdy zamek szafy jest oznaczony np. tak 15.24.36. Oznacza to 15 region tp (tu : Katowice), 24 rejon miasta i 36 typ szafe w tym rejonie. Klucze niebieskie posiadaja wlasnie tajkie oznaczenie i otwieraja ten konkretny model szafy. Klucze zolte oznaczane sa np. 15.24 i otwieraja wszystkie szafy z taka pocztakowa kombinacja. A klucze czerwone otwieraja szafy na terenie jednego miasta. Kolor kluczy jest oznaczony przez kolor wisiorka z numerkiem ;)
+Oznaczenie klucza nie ma nic wspolnego z wycieciami na nim ani z kombinacja dyskow w zamku. Jest to po prostu numerowanie wewnetrzne tp sa. Klucze niebieskie posiada kazdy monter, zolte - tylko kierownicy dzialow (np. jednego pokoju roboczego w oddziale) a zolte tylko dyrektorzy oddzialow. Teraz of kroz pada pytanie : jak zdobyc klucz czerwony ? Normalnie ciezko, bo watpie, zeby dyr tak sobie sprzedal kluczyk. Mozna by "pozyczyc" i dorobic, ale trzeba miec dostep. Prace nad obliczeniem kombinacji klucza czerwonego na podstawie znanych kombinacji zamkow w danym regionie trwaja.....
+
+6. GREETZ
+
+Big greetz dla Lukasa, McG, Franca, Woyobloya, Hrabiego, GJ
+
+7. INNE
+
+Konkurs dla lamerow : co otwiera klucz ZIELONY ? Jesli cos wiecie na temat ABLOYi, write na priva. Co do metod na zamki, pozostaja te same, co zawsze. Tekst ten nie mial na celu podania metody na otwarcie zamka, lecz jedynie dokladne opisanie zamkow. Jesli posiadasz jakies dane na temat czerwonych kluczy lub tez same czerwone klucze i chcesz sie wymienic, to daj znac na maila (u gory)

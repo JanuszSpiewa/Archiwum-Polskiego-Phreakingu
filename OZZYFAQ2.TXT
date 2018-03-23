@@ -1,0 +1,641 @@
+        _____________________________________________________________
+        |                                                           |
+        |                      | \                                  |
+        |                      | /                                  |
+        |                      | \                                  |
+        |                      |_/ oxing in Poland                  |
+        |                                                           |
+        |                       Written by OZZY                     |
+        |                       ver : 1.1                           |
+        |                       written : 15.01.98                  |
+        |___________________________________________________________|
+
+
+       We work in the dark
+       We do what we can
+       We give what we have
+       Our doubt is our passion, and our passion is our task
+       The rest is the madness of art.
+
+
+0.   WSTEP
+I.   CO TO JEST PHREAK ?
+II.  CO TO SA BOXY ?
+III. TYPY BOXOW
+IV.  BOXY DZIALAJACE W POLSCE ( LUB TAKIE, KTORE MOGA DZIALAC )
+V.   STOSOWANEI W PRAKTYCE
+VI.  CZESTOTLIWOSCI
+VII. BEZPIECZENSTWO
+
+
+   Witam w kolejnym wydaniu mojego faqu o boxingu
+   zgodnie z obietnica znajdziecie tu rozszerzenie informacji zawartych
+   w wersji 1.01 á....
+   co jest nowego ?
+   *jak korzystac z blue boxu ?
+   *jak dzwonic urzywajac dialera z budki telefonicznej...
+   *EXTRA BONUS - prosty programik dosowy......ozzbox.exe :--)
+
+   poczatkowo chcailem napisac duzo wiecej o boxach , ale w koncu
+   sie rozmysliem. Stalo sie to z dwoch powodow. Po pierwsze lepiej
+   bedzie jezeli za duzo osob nie bedzie znac sposobow dzwoniena za friko ,
+   bo jest to super sprawa , a chyba nikt nie chce , aby w Polsce dzialo
+   sie to co w Niemczech ... Drugim powodem jest to , iz ostatnio
+   zajalem sie innymi sprawami ...
+   hej ... easy .. nie jestem skapcem , jezeli chcesz uzyskac
+   dokladniejsze info daj mi znac , to sie spotkamy na ircu
+   i wtedy jezeli spodasz mi sie ( heh ... bez obaw nie jestem pedalem )
+   - znaczy .. jeli spodoba mi sie twoj sposob myslenia
+   to sie podziele moja wiedza!
+   Oczywiscie zawarte w moim faqu informacje nie sa bezurzyteczne ,
+   jezli macie mozg sami dojdziecie jak boxowac - po oprstu zawarlem tu
+   pare wskazowek ...
+
+   okey  -  check it out ...
+
+   Postanowilem napisac co nieco o boxingu - czyli o temacie niezbyt
+   czesto podejmowanym w tego typu publikacjach , dlatego tez zebralem
+   troche informacji o "skrzyneczkach" (glownie z faqow angielskojezycznych)
+   a nastepnie stralem sie wyszukac analogie z polskimi realiami.
+_______________________
+I.  CO TO JEST PHREAK ?
+-----------------------
+Phreak jest to skrot od phone phreak , czyli w duzym skrocie myslowym
+- hackowanie systemow telefonicznych. A phreak ( albo phreaker ) to
+osoba , ktora chce sie dowiedziec jak najwiecej o telefonach i o sprawach
+z tym zwiazanymi. Phreakiem nie jest ktos komu zalezy na niszczeniu
+wlasnosci telekomuny , jezeli tylko nie jest to konieczne do zdobycia
+rozleglejszej wiedzy na temat danego systemu. Boxing albo stosowanie innych
+phreakerskich metod NIE czyni z nikogo phreakera. Bycie phreakerem to jest
+sposob na zycie!
+
+oki to by bylo tyle wstepu..czas przejsc do sedna sprawy!
+____________________
+II.  CO TO SA BOXY ?
+--------------------
+Box jest to urzadzenie wpinane w linie telefoniczna lub bezposrednio
+w telefon  , ktore pozwala nam na wykonywanie darmowych rozmow -
+boxy nazywane  sa w wiekszosci przypadkow kolorami - np. blue ,
+silver.....red box
+________________
+III.  TYPY BOXOW
+----------------
+boxow jest na prawde duzo - bardzo czesto box po drobnej przerubce innej
+"skrzyneczki" ma juz inna nazwe.
+Oto skrocony spis boxow jakie mozecie spotkac :
+
+Acrylic      Steal Three-Way-Calling, Call Waiting and programmable
+             Call Forwarding on old 4-wire phone systems
+Aqua         Drain the voltage of the FBI lock-in-trace/trap-trace
+Beige        Lineman's hand set
+Black        Allows the calling party to not be billed for the call
+             placed
+Blast        Phone microphone amplifier
+Blotto       Supposedly shorts every phone out in the immediate area
+Blue         Emulate a true operator by seizing a trunk with a 2600hz
+             tone
+Brown        Create a party line from 2 phone lines
+Bud          Tap into your neighbors phone line
+Chartreuse   Use the electricity from your phone line
+Cheese       Connect two phones to create a diverter
+Chrome       Manipulate Traffic Signals by Remote Control
+Clear        A telephone pickup coil and a small amp used to make free
+             calls on Fortress Phones
+Color        Line activated telephone recorder
+Copper       Cause crosstalk interference on an extender
+Crimson      Hold button
+Dark         Re-route outgoing or incoming calls to another phone
+Dayglo       Connect to your neighbors phone line
+Diverter     Re-route outgoing or incoming calls to another phone
+DLOC         Create a party line from 2 phone lines
+Gold         Dialout router
+Green        Emulate the Coin Collect, Coin Return, and Ringback tones
+Infinity     Remotely activated phone tap
+Jack         Touch-Tone key pad
+Light        In-use light
+Lunch        AM transmitter
+Magenta      Connect a remote phone line to another remote phone line
+Mauve        Phone tap without cutting into a line
+Neon         External microphone
+Noise        Create line noise
+Olive        External ringer
+Party        Create a party line from 2 phone lines
+Pearl        Tone generator
+Pink         Create a party line from 2 phone lines
+Purple       Telephone hold button
+Rainbow      Kill a trace by putting 120v into the phone line (joke)
+Razz         Tap into your neighbors phone
+Red          Make free phone calls from pay phones by generating
+             quarter tones
+Rock         Add music to your phone line
+Scarlet      Cause a neighbors phone line to have poor reception
+Silver       Create the DTMF tones for A, B, C and D
+Static       Keep the voltage on a phone line high
+Switch       Add hold, indicator lights, conferencing, etc..
+Tan          Line activated telephone recorder
+Tron         Reverse the phase of power to your house, causing your
+             electric meter to run slower
+TV Cable     "See" sound waves on your TV
+Urine        Create a capacitative disturbance between the ring and
+             tip wires in another's telephone headset
+Violet       Keep a payphone from hanging up
+White        Portable DTMF keypad
+Yellow       Add an extension phone
+
+sorry , ze po angielsku , ale nie chcialo mi sie tego tlumaczyc.
+Wiekszosc z nich nie dziala w Polsce gdyz powstaly one glownie
+w Angli lub USA i sa dostosowane do tamtejszych systemow ,
+ale jezeli ktos chce dokladne schematy - niech mi da znac!
+________________________________________________________________
+IV.  BOXY DZIALAJACE W POLSCE ( LUB TAKIE , KTORE MOGA DZIALAC )
+----------------------------------------------------------------
+
+SILVER BOX
+----------
+ostatnio bylo dosc sporo szumu wokol tej nazwy - a to po prostu zwykly
+tone dialer , tyle ze z dodatkowymi tonami ABCD.
+Tony te sa wykorzystywane( przynajmniej tak mi sie wydaje )
+na specjalnych wojskowych liniach ( ale nie w Polsce...hahaha )
+Tak wiec silver jest to zwykle urzadzonko generujace tony , takie same jakie
+sluza do wybierania numeru.
+
+Tone dialer sluzy zazwyczaj do sterowania automatycznymi sekretarkami ,
+ale mozna go tez wykorzystac w innych celach :-)
+
+Pewnie teraz zastanawiacie sie jak to zrobic....wiekszosc
+faqow opisuej to w bardzo pokretny sposob - nalezy rozkrecic telefon
+i nastepnie manipulowac z roznokolorowymi kabelkami i w koncu uzyska sie
+to co mozna miec o wiele latwiej :)
+Nie warto budowac silvera , bo i tak tony ABCD sa w Polsce bezurzteczne
+( ale jak ktos chce niech mi da znac na maila to mu przysle doklade opisy )
+Najlepszym sposobem jest albo kupienie albo zbudowanie zwyklego dialera.
+Wszystkie czestotliowsci zawarlem w punkcie VI   - do dziela!
+
+Czesto zdzarza sie jednak , ze mimo zlozymy wszystko zgodnie z opisem
+to box i tak nie bedzie dzialal :(  najlepszym wyjsciem jest wiec kupienie
+'urzadzenia sterujacego do automatycznych sekretarek' ...
+mozna go dostac w dobrych sklepach elektronicznych ... jezli nie
+mozecie go nigdzie znalezc to dajcie mi znac bo znam firmy gdzie
+mozna go kupic w sprzedarzy wysylkowej ...
+
+ZASTOSOWANIE
+
+mozna go stosowac tylko w budkach na zetony , gdyz w automatach an karte
+mikrofon w sluchawce , przed polaczeniem jest odciety - a wiec mozesz
+sobie "bzykac" ile wlezie a i tak nic ci to nie da , bo w koncu tony
+to przeciez dzwiek.
+Silver box mozna stosowac w "Zetonowcach" ale i tak nie wszystkich
+gdyz wiekszosc jest przed tym zabezpieczona.
+Najlepiej probowac na odlegluch od centrum miasta , zapomnianych budkach
+lub na wsi - gdzie telekomuna zapomina dotrzec :)
+tam macie dosc duze szanse powodzenia.
+Po prostu podnosimy sluchawke i jezeli automat nie jest odporny na te metode
+i znajduje sie w centrali , ktora rozpoznaje tony to dzwonimy gdzie chcemy
+i ile chcemy - a automat sie nawet nie zorientuje ( a wiec nie bedzie
+zadal zetonow )
+
+Hmmm....ale budki na zetony sa juz powili wycofywane i dominuja teraz
+te na karty magnetyczne , a powoli wchodza tez chipowe (?)
+Tak wiec wypadalo by tez omowic metode na dzwonienie za darmo z tego
+rodzaju budek ...
+okey aby zastosowac to metode bedziemy potrzebowac komorki i dialera ...
+nie sa co prawda one konieczne , ale znacznie ulatwiaja zycie :)
+tak wiec dzownimy z komorki do budki na karty telefoniczne - hmm...
+od razu powstaje pytanie jak zdobyc numer budki ?
+odpowiedz jest prosta : najczesciej jest ona wyryta , napisana
+na budce ... mozna tez zadzwonic z tej budka na nasza komorke i sprawdzic
+i na wyswietlaczu mamy numerek :)
+Okey lecimy dalej - dzwonimy komorka na ten numer i najpier przerywamy
+dzwonienie na komorce i po okolo 2 sekundach podnosimy sluchawke w budce.
+Jezli nie mamy komorki mozemy zadzwonic jedna budka do drugiej ...
+Dobra po podniesieniu sluchawki na wyswietlaczu pojawi sie napis
+'rozmowa przychodzaca' , a w sluchawce bedzie slychac jakies dziwne odglosy
+- poniewaz aparat mysli , ze to rozmowa przychodzaca klawitura
+bedzie zablokowana :( ...ale spoko - od czego mamy dialera ?? hehehe
+of coz' przykladamy dialera i wybieramy co chcemy!
+Jezli nie mamy boxa mozemy zlonczyc sluchawki w dwoch budkach i
+wybrac numer na drugiej budce ...
+easy ... ? heh
+
+
+
+RED BOX
+-------
+
+Red Box jest to urzadzenie , ktore generuje albo odgrywa tony , ktore
+automat wydaje w momencie kiedy wrzucamy zeton! Tony te sa przeslylane
+do ACTS ( Automated Coin Toll System ) - zadaniem red boxa jest oszukanie
+ACTS aby mysl , ze wrzucasz zetony.
+Istnieja trzy rodzaje tonow :
+
+Nickel Signal      1700+2200hz  0.060s on
+Dime Signal        1700+2200hz  0.060s on, 0.060s off, powtarzany 2 razy
+Quarter Signal     1700+2200hz  33ms on, 33ms off, powtarzany 5 razy
+
+no tak ktos moze powiedziec......wszystko jest pieknie , ale nie
+jestesmy w stanach i mamy zetony A,B,C - a nie monety 5,10,15 centowe.
+Ale na szczescie jest pewna analogia :
+impuls A mozemy porownac do impulsu wydawanego przy wrzucaniu 5c - czyli
+jestesmy w domu!
+Mimo wszystko urzadzenie trzeba jeszcze zbudowac!
+Wiekszosc faqow podaje nastepujaca metode :
+          aby zrobic red boxa z ton dialera otworz go i wymien
+          "Crystal" na nowy. Powodem tej wymiany jest chec uzyskania
+          tonow 1700 Hz i 2200 Hz zamiast orginalnych 941 Hz i 1209 Hz
+          przy nacisnieciu przycisku * .
+          "Zastepca" starego crystala powinien byc 6.466806 aby stworzyc
+          1700 Hz i 6.513698 aby wygenerowac dokladnie 2200 Hz.
+          Wartosci podane powyrzej moga troche odbiegac od poprawnych
+          gdzyz ACTS jest dosc tolerancyjny pod tym wzgledem.
+          Dlatego tez jezeli uda wam sie zdobyc crystal o troche
+          innej wartosci - nie przejujcie sie powienie dzialc.
+Obecnie dosc trudno jest zdobyc takie rzeczy ( musicie pytac w
+sklepach elektronicznych , a jak ktos chce mam adesy firm wysylkowych )
+Jest jeszcze jeden problem , ze mamy lata 90-te , a nie 80-te i
+wiekszosc tone dialerow oparta jest na chipach!
+
+Osobiscie uwazam , ze najlepsza metoda bedzie nagranie wszystkiego na
+magnetofon i pozniej puszczanie z kasety - ale o tym dalej!
+
+ZASTOSOWANIE
+
+no chyba kazdy sie domysla jak to dziala!
+po prostu idziemy do budki i odgrywamy te tony do sluchawki
+( dotyczy tylko budek na zetony - ale tez nie gwarantuje ze dzial )
+Dobrym sposobem bedzie zamowienie rozmowy - musicie wymyslic jakas
+bajke - np. ze jeden z klawiszy jest zepsuty i potem odgrywacie tony!
+
+Ta sa moje pomysly - mozecie je dowolnie modyfikwac aby dojsc do celu
+po prostu - use your brain! ( if ya have any ? )
+
+
+BLUE BOX
+--------
+
+To chyba najbardziej znany z boxow. Wymyslili go John Draper ( dzisiaj
+jeden z bardziej znanych hackerow ) oraz Steve Jobs i Steve Wozniak
+( aktualnie producenci komputerow Apple Macintosh ).
+Odkryli oni , ze gwizdek dodawany do jakis tam chipsow ( albo czegos
+takiego ) wydaje tony 2600 Hz , ktore pozwalaja na realizowanie bezplatnych
+polaczen. Centrala po odebraniu tego tonu myslala ,ze polaczenie zostalo
+zerwane , a tak na prawde trwalo nadal :)
+
+okey - blue boxing w zarysie :
+    1.  dzwonimy na jakis dowolny numer 0800-***-**
+    2.  po uzyskaniu polaczenia naciskamy w naszy boxie przycisk generujacy
+        2600 Hz ( mozna oczywiscie przylozyc rowniez magnetofon z nagranym
+        tonem o danej czestotliwosci ). Powoduje to , iz centrala mysli ,
+        ze przerwalimy rozmowe ...
+    3. w sluchawce uslyszymy po paru sekundach 'ostre szrpniecie' a potem
+       zwykly dial tone
+    4. teraz wciskamy    KP + 'nowy numer' + ST
+    5. i to by bylo tyle ... jezli wszystko poszlo dobrze powinienes uzyskac
+       polaczenie ... powinienies :)
+    6. lepiej nie probujcie tej metody z domu , gdyz :
+              *po pierwsze wiekszosc central ma 2600 Hz detektory
+               i moga was dupnac , poza tym centrale te i tak tlumia
+               czysty sygnal HANG UP ... hmm ...( chyba! )
+              *po drugie kogos moze zdziwic , ze jakis gostek [ tak
+               mowie o tobie :-) ]rozmawia  dziennie po 3 godziny z 0800
+               i moga nabrac podejrzen ...
+
+GREEN BOX
+---------
+
+ten box chyba w Polsce nie dziala -  ale zawsze mozna sporobowac :-)
+dlatego tez nie bede sie na ten temat rozpisywal
+Green box genereju tony Coin Collect oraz Coin Return i jeszcze dwa inne
+jak ktos ma jakies informacje odnosnie dzialania tego boxa
+w Polsce to niech da mi znac!
+_________________________
+V.  STOSOWANIE W PRAKTYCE
+-------------------------
+powyzej opisane metody budowania boxow sa rzeczywiscie tylko dla
+PRAWDZIWYCH ascetow !!!
+Dobra metoda jest wygenerowanie odpowiednich tonow za pomaca jakiegos
+programu typu Blue Beep - zgranie na magnetofon ..... no i chyba wiecie
+co dalej!
+Jeszcze lepsza metoda jest korzystanie z jakiegos programu , typu
+CPHREAK albo FEAR - generuja one tony dla poszczegolnych boxow!
+Po prostu zgrywamy je na magnetofon ( np. w przypadku red boxa
+nagrywamy 15 razy pod rzad tony 25c i dzwonimy np. do Venezueli...hehe )
+pretty cool ?
+Rzeczywiscie wymienine powyrzej programy sa dobre , ale zajmuja za duzo
+miejsca aby je zamiescic w moim faqu ... dlatego tez mam dla was cos
+mniejszego ( pod DOSa ) - ale rownie dobrego ...
+
+________________________________________________________________________
+
+begin 644 ozzbox.exe
+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
+A,V$S````````````````````````````````````````
+`
+end
+________________________________________________________________________
+
+heh....chyba kazdy sie domysla co z tym zrobic ...
+po porstu wytnijcie ten programik z faqu i uu decode ...
+i co jak sie wam ten programik podoba ?
+fajna sprawa jest mozliwosc nagrywania wlasnych sekwencji ( string )
+, co przydaje sie szczegolnie przy korzystaniu z blue box'a ...
+
+
+__________________
+VI. CZESTOTLIWOSCI
+------------------
+dobra cos dla elektronikow , ktorzy maja za duzo czasu :)
+
+NORMAL DTMF
+¯¯¯¯¯¯¯¯¯¯¯
+1  697hrz / 1209hrz
+2  697hrz / 1336hrz
+3  697hrz / 1477hrz
+4  770hrz / 1209hrz
+5  770hrz / 1336hrz
+6  770hrz / 1477hrz
+7  852hrz / 1209hrz
+8  852hrz / 1336hrz
+9  852hrz / 1477hrz
+*  941hrz / 1209hrz
+0  941hrz / 1336hrz
+#  941hrz / 1447hrz
+A  697hrz / 1633hrz
+B  770hrz / 1633hrz
+C  852hrz / 1633hrz
+D  941hrz / 1633hrz
+
+Dialtone                350hrz / 400hrz
+Busy Signal             480hrz / 620hrz         0.5 on / 0.5 off
+Toll Congestion         480hrz / 620hrz         0.2 on / 0.3 off
+Ringback (normal)       440hrz / 480hrz         2.0 on / 4.0 off
+Ringback (PBX)          440hrz / 480hrz         1.5 on / 4.5 off
+Reorder (local)         480hrz / 620hrz         3.0 on / 2.0 off
+Hang Up Warning         1400hrz / 2060hrz       0.1 on / 0.1 off
+Hang Up                 2450hrz / 2600hrz
+
+
+RED BOX
+¯¯¯¯¯¯¯
+1700hrz / 2200hrz
+.5c  66ms x 1
+.10c 66ms on / 66ms off / 66ms on
+.25c 33ms on / 33ms off x 5
+
+
+GREEN BOX
+¯¯¯¯¯¯¯¯¯
+700hrz  / 1100hrz       Coin Collect
+700hrz  / 1700hrz       Ringback
+1100hrz / 1700hrz       Coin Return
+
+
+BLUE BOX
+¯¯¯¯¯¯¯¯
+2600hrz @ 90ms on/ 60ms off / 900ms on
+3700hrz (out of band signal)
+900hrz  / 1500hrz
+KP1     697hrz  / 1633hrz
+KP2     770hrz  / 1633hrz
+ST      852hrz  / 1633hrz
+KP2E    941hrz  / 1633hrz
+___________________
+VII. BEZPIECZENSTWO
+-------------------
+OK
+nie probujcie tych metod z domu ( niektorych i tak sie da - red box )
+nie wiem jak to dokladnie jest w Polsce , ale na zachodzie
+nowoczesne centrale maja 2600 Hz detectory no i moze byc niewesolo ...
+Po prostu : nie dajcie sie zlapac!
+
+
+
+CONATACT
+--------
+e-mail :   madozzy@zine.net.pl
+irc    :   * OZZY   try to find me on :
+                                   #cafe - op!
+                                   #frugo - pan i wladca...heh
+                                   #hackpl - no czasem i jestem tam...
+                                   #warezwarez - best warez on IRCnet
+                                   #d666 - op's only for members!
+                                   #prodigy - yeah! - op
+                                   #phreakpl - hmm ...
+                                   #carding - w sumie nie lubie tego # ale...
+
+           * madOZZY ( efnet - #rev2000 albo wszelkie warezowe )
+www    :   http://www.kiedys.bede.mial.ale.nie.za.szybko
+icq    :   no more fuckin' icq
+
+NOTES
+-----
++ ten faq powstal jedynie w celach edukacyjnych (RIGHT!) ;)
++ nie ponosze odpowiedzialnosci za zadne skutki
+  uzywania zawartych tu informacji
++ jezeli masz jakies ciekwe informacje albo masz pytania : pisz
++ THANX : chcialbym podziekowac wszystkim znajomym z irc za mile
+          chwile spedzone na sieci i poza nia ( osoby , o ktorych
+          mowie wiedza co mam na mysli........ )
++SPECIAL THANX :
+          1) marek ******** - thanx for all ...
+          2) imm - BB :)
+          3) members of D666
+          4) all from #cafe
++FUCK YOU goes to dumbas stupid cunt prick posing fuckhead lamer : RDS
++ W PRZYGOTOWANIU :
+     * "carding" - prace najbardziej zaawansowane ... opis , rodzaje ,
+        zdobywanie i generowanie , zakupy przez internet i przez telefon ,
+        jak sie nie dac zlapac ...
+     * "karty telefoniczne" - czas skonczyc z mitami!
++ !!!! - jezeli znasz sie dobrze na phreaku i cardingu !*! MAIL ME !*!
+         szukam osob zainteresoawnych w tym temacie do nawiazania wspolpracy!
++ !!!! - jezli masz jakies numerki extenderow , pbxow , 0800
+         to dajcie mi znac ... moze sie dogadamy , co do wymiany ...

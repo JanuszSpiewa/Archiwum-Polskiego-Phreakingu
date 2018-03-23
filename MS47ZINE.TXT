@@ -1,0 +1,266 @@
+
+                      m                4
+                     mM               44
+              mMm   mMM   sSSSSs     444    77777777777
+              MMMm mMMM  sSSSSSSs   444       7777777777
+              MMMMMMMMM sSS     Ss 444   444         777
+              MMM M MMM  sSSSSSs   44444444444    7777777
+              MMM m MMM   sSSSSSs   444444444    7777777
+              MMm   MMM sS     SSs       444      777
+              MM    MMM  sSSSSSSs        444     777
+              MM    MMM   sSSSSs         444     777
+              M                           44      77
+                 UnDERGrOUND ZiNE v1.0     4       7
+
+ +--
+ | No to na wjazd wiadomo, za nie ponosze zadnej odpowiedzialnosci
+   za skutki wynikle z lekturki tego zine'a, ktore przeznaczone jest
+   jak zwykle do celow edukacyjnych :)) I tak dalej z tymi bzdurami ....
+   Jednym slowem rob sobie pan z tym co chcesz :)
+   Aha, i nie jest to zaden poradnik dla jakis lame-psycholi.           |
+                                                                      --+
+
+ +--
+ | Spis tresci:
+
+   1). Slowo na temat phreaking in Polska
+     a). Trik z lyzka
+     b). Zapalniczka piezoelektryczna
+     c). ToneDialer
+     d). Petelki
+   2). Zbudujmy sobie ToneDialera
+     a). Schemat elektryczny
+     b). Opis ukladu
+   3). Zbudujmy sobie sami ToneDialera
+     a). Jak to zrobic
+     b). Tabela czestotliwosci
+   4). Dekodowanie pay-TV
+   5). Ciekawe pomysly
+     a). Podsluchiwanie Centertela
+     b). Rozkodowywujemy radio Blaupunkta
+     c). Jak sie dostac do Cinquecento
+   6). Info co, jak, gdzie i kiedy        |
+                                        --+
+
+
+ +--
+ | 1. |
+    --+
+
+   Phreaking in Polska jest jak najbardziej sluszny, z racji tego, ze
+   nasz TPh..SA jest pierdzielonym zlodziejem i trzeba zapobiegac
+   takim przejawom wyzyskiwania.
+
+   Istnieje kilka metod sprawdzajacych sie w naszych warunkach:
+   a). Trik z lyzka
+       Wkladasz lyzke lub widelec do otworu, ktorym zetonowiec
+       wyrzuca zetony, krecisz nia odpowiednio (moze byc i na chama)
+       a zetonowiec zalicza impulsik. Moim zdaniem metoda do dupy.
+   b). zapalniczka piezoelektryczna
+       Byly kiedys takie automaty z tarcza. Tarcza byla przykrecona
+       do automatu srubka, a srubka zakryta plastikowym koleczkiem.
+       Nalezalo zdjac plastikowe koleczko, wczesniej wyciagnietym
+       z zapalniczki, piezoelektrykiem przycisnac do srubki i nacisnac
+       piezo. Automacik automatycznie automatyzowal polaczenie (czyt.
+       zaliczal impulsik).
+   c). Najlepszy motyw jest z tzw. ToneDialerami. Buduje sie takie cosik,
+       a to cosik ma glosniczek. Przyklada sie go do mikrofonu w sluchawce
+       zetonowca i wybiera sie cosikiem numerek. Zetonowiec slucha poslusznie
+       tonow, ktore wybralismy cosikiem i realizuje nam polaczonko.
+       W nastepnym punkcie opisze jak takiego cosika zrobic.
+       Mozna jeszcze zamiast konstruowac ToneDial'a nagrac sobie tony
+       odpowiadajace wybieranemu numerowi z telefonu domowego na dyktafon,
+       a pozniej odtworzyc je w budce telefonicznej z dyktafonu.
+       Ten sposob takze dobrze dziala.
+       A juz najlepiej jest jak ktos ma telefon komorkowy, bo ja kazdy
+       (prawie) wie komorki dla bajeru tez odpowiednio piszcza.
+       Wystarczy wtedy przylozyc glosniczek handy do mikrofonu
+       zetonowca i wybrac numer. Sprawa prosta (jak swinski ogonek)
+       UWAGA: ToneDialery nie dzialaja na automaty na karte, gdyz
+       te ustrojstwa maja zablokowany mikrofonik do czasu, az sie
+       nie pojawi nabita karta w ich zachrzanionej szczerbince :(
+   d). Jest jeszcze jedna bardzo skuteczna, aczkolwiek nie zbyt prosta
+       metoda: Tzw. Petelki. Petelki sa to specyficzne numery telefonow
+       pod ktore jak zadzwonisz to dostajesz z powrotem ciagly sygnal.
+       TelePies zaklada takie numerki m.in. w celach testowych.
+       Placi sie za jeden impuls polaczenia z petelka, a dalej to
+       juz swiat stoi otworem. Rozroznia sie takze petelki przypadkowe:
+       Na starych centralach, mocno juz obciazonych czasem zdaza sie
+       dzwonic na przyklad do starej do roboty, a tu w sluchaweczce
+       ciagly sygnalik. No to na szybko na 0-700..... or gdzie indziej.
+       UWAGA! Nie potem ktos nie bedzie mial zalu do mnie jak cos pojdzie
+       nie tak. Gwarancji na to nie udzielam :)
+
+ +--
+ | 2. |
+    --+
+       Budujemy ToneDialer'a
+
+       a). Ponizej przedstawiam prosty schemacik ToneDial'a.
+
+                                    _- To sa numery pinow scalczka
+      (Bateryjka)    +_______+     /
+         +9V --------|6      |----<14-----123
+                     |       |----<13-----456 (Druciki wraz z klawiaturka)
+                     |       |----<12-----789
+             --------|16     |----<11-----*0#
+ (Sluchawka)  S      |       |----<3------'||
+             --------|1      |----<4-------'|
+             |     | |       |----<5--------'
+             |     --|15    7|---
+             |       |       |  X (Rezonator kwarcowy 3.579545 MHz)
+             |       |      8|---
+             |       +-------+
+            GND       TCM5087  (scalaczek)
+  ("minus" z bateryjki)
+
+       b). Opis ukladu
+
+       Ukladzik nie wymaga chyba zbytnio komentarza, dlatego tylko pare slow
+       Moze byc problem ze zdobyciem scalaczka TCM 5087, ale mysle, ze jest
+       to do przeskoczenia. Klawiaturke najlepiej wziac sobie z klakulatorka
+       coby zbytnio nie powiekszac gabarytow cosika. Mozna tez wyciagnac ja
+       ze starego telefonu badz skas indziej. Rezonatorek kwarcowy tez nie
+       jest problamem, bo 3.57..MHz to standardowa wartosc.
+
+ +--
+ | 3. |
+    --+
+       Budujemy SAMI ToneDial'a
+
+       a). Jak to zrobic.
+
+       Metoda ta wymaga troche wiekszej znajomosci elektroniki, gdyz
+       nie podam tutaj konkretnego schematu urzadzonka, a tylko wskazowki
+       jak takiego cosik'a zmontowac.
+
+       Bedziemy potrzebowac multiwibratorow monostabilnych w ilosci sztuk
+       tylu ile bedziemy chcieli miec guziczkow mozliwych do nacisniecia.
+       Kilka slow wyjasnienia: Kazdy guziczek w telefonie (z wybieraniem
+       tonowym) generuje dwa dzwieki o pewnej czestotliwosci, ktore
+       po nalozeniu na siebie tworza ton zrozumialy dla centrali.
+       Jasne ??? Chyba jo. Do budowy multiwibratorow najlepiej zastosowac
+       uklady scalone tzw.555 np. NE555. Uklady nalezy tak zestroic,
+       aby monostabile generowaly odpowiednie tony. Tabelka czestotliwosci
+       dostepna ponizej. Enjoy.
+
+       b). Tabela czestotliwosci
+       +--
+       | Klawisz: | Czestotliwosci [Hz]
+         ---------+--------------------
+            *     |      941 & 1209
+            #     |      941 & 1477
+            0     |      941 & 1336
+            1     |      697 & 1209
+            2     |      697 & 1336
+            3     |      697 & 1477
+            4     |      770 & 1209
+            5     |      770 & 1306
+            6     |      770 & 1477
+            7     |      852 & 1209
+            8     |      852 & 1336
+            9     |      852 & 1477    |
+                                     --+
+
+ +--
+ | 4. |
+    --+
+       Dekodowanie platnych kanalow TV.
+       Nie bede sie tutaj rozwodzil na temat dekodowania kanalow
+       kodowanych Videocryptem, czy Eurocryptem (jak ktos chce to moge
+       w next issue napisac to i owo), poniewaz chcialbym sie skupic na
+       naszym rodzimym podworku, czyli HBO i Canal+. Wiele nowosci pewnie
+       nie wprowadze na temat Canal+, gdyz kodowany on jest system
+       Nagravision Syster (podobnie jak np.TeleClub czy Cinemania).
+       Jest to bardzo zlozony system i praktycznie gwaratuje 100% skutecznosc.
+       Aczkolwiek pojawily sie juz w Internecie programiki potrafiace
+       dekodowac sama fonie (SB 16 required). Co do obrazu to na razie
+       nic konretnego nie wymislono. Co prawda na gieldzie elektronicznej
+       w Kxxxxxxxx pojawil sie chlop, ktory za 150PLN proponowal cos
+       co niby mialo byc Canal+ descrambler, ale czy to dziala to who knows.
+       Jesli chodzi o HBO to w pierwszej fazie, gdy telewizja ta wchodzila
+       na polski rynek myslalem, ze zastosowana zostanie "metoda" stasowana
+       przy FilmNecie w siciach kablowych. Ale niestety nie zostala
+       zastosowana. Z HBO sprawa ma sie tak: Wykupujesz abonament, przychodzi
+       pan, otwiera skrzyneczke rozdzielcza i wlacza ci HBO. Nie zaplacisz
+       to ci wylaczy HBO. Po prostu w rozdzielce jest filtr, ktory jak placisz
+       to przepuszcza, jak nie to nie. Sposob na to jest stary jak swiat:
+       Przychodzi pan monterek, podchodzisz do niego wreczasz mu 50PLN lub
+       wlaszeczke dobrej gorzalki i pan moze wlaczy. Przekupstwo rulez !!!
+       Jesli ktos jest bardziej zainteresowany TV hacking to please let
+       me know na mail'a to ja w nastepnym Issue napisze more.
+       Ten tekscik to tylko info co i jak.
+
+ +--
+ | 5. |
+    --+
+       Ciekawe pomysly.
+
+       Ta sekcja ma traktowac o roznych fajnych pomyslach, ktore lawinowo
+       przychodza mi do glowy. NIektore testuje, inne nie.
+
+       a). Podsluchiwanie Centertela.
+
+       Czysto hobbystycznie zastanawialem sie kiedys nad tym problemem.
+       Chcialem przerobic zwykle radio, tak zeby dzialalo zamiast w zakresie
+       88MHz-108MHz w zakresie obejmujacym 450MHz, bo w tym pasmie pracuje
+       Centertel. Wpadlem na bardzo ciekawy pomysl - jak ktos chce to niech
+       przetestuje. Otoz problemem w radiu jest glowica HF, ktora oczywiscie
+       nie chce sie przestroic az o tyle MHz. Ale przeciez mozna ja wymienic.
+       A na co ? No na przyklad na glowice z telewizora. Sprobujcie i dajcie
+       znac co wam z tego wyszlo.
+
+       b). Rozkodowywanie samochodowych odbiornikow radiowych.
+
+       To bedzie krotki tekst o radioodtwarzaczach firmy Blaupunkt.
+       Pomysl jest bardzo prosty (bo tylko bardzo proste pomysly bywaja
+       genialne). Co bedzie potrzebne: Zakodowane radio Blaupunkt oraz
+       lodowka. Wkladamy radyjko do zamrazalnika, w ktorym jest baaardzo
+       zimno, czekamy pare minut, az sie radyjko zmrozi, wyciagamy, suszymy
+       i uruchamiamy rozkodowany juz odbiorniczek.
+       Trik tu polega na tym, ze scalaczek montowany w niektorych
+       Blaupunktach nie wytrzymywal tak niskiej temperaturki i szedl sie
+       walic. Podobno ta metoda dziala, bo koledzy jumacy probowali...
+
+        c). Jak sie dostac do Cinquecento.
+
+        Tutaj opis bezbolesnego wtargniecia do CC. Oczywiscie bez wlaczonego
+        alarmu. mechanic klameczki ma bardzo powazna wade, ktora mozna
+        wykorzystac. Jak ta klameczka wyglada kazdy wie. Knif jest taki,
+        ze trzeba plaski drucik (najlepiej takim, jaki jest w duzych
+        plakatach, zawieszanych na sznureczku, zeby je usztywnic) wlozyc
+        pod ruchomy mechanizm klamki, na zewnatrz autka, w takim miejscu,
+        zeby byl dokladnie pod bolcem blokujacym zamek w drzwiach.
+        Nastepnie coraz bardziej wsuwajac drucik wyciskamy bolec do gory
+        i CC ma otwarte. Metoda moze sie przydac jak sobie zatrzasniecie
+        kluczyki lub jak chcecie komus podpier.... radio or komorke.
+
+ +--
+ | 6. |
+    --+
+         Info co, jak, gdzie i kiedy.
+
+         Wiec sprawa wyglada tak: W nastepnym Zine'sie bedzie troche
+         o budkach telefonicznych dwukierunkowych w rejonie Katowic,
+         moze jeszcze jakies nowe phreak triki, moze bedzie tez cos
+         o Unix, Novell hacking, a na pewno troche schemacikow i wiecej
+         o elektronice i niespodzianki oraz SPOSOB NA WOJSKO.
+
+         Prosze o sugestie na @mail: ms47@kki.net.pl
+
+         Moze pokusze sie tez o zrobienie jakiegos WWW site, ale pewnie
+         niepredko bo w pracy nie za bardzo mam czas, a w domu tez jest
+         duzo innych rzeczy do zrobienia. Tak czy tak musze cos takiego
+         zrobic, bo za duzo H/C/P/V stuff'u lezy na twardzielu i sie kurzy.
+
+         Aha, jak ktos bedzie chcial jakies tanie czesci do PC lub
+         cellular phones to dajcie znac na @mail'a.
+
+         Wersja 2.0 juz wkrotce.
+
+         I na koniec lame zagadka: co to ma wspolnego z tym zinem ??
+
+                                 001010100010001
+
+   Created 24.XI.97. by:
+      ms47@kki.net.pl

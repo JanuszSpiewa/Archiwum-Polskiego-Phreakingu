@@ -1,0 +1,151 @@
+_____________________________________________________________________________
+
+text made by SPIRYTUS
+w.hacking.w.pl
+friko4.onet.pl/ld/piszcz1
+25.06.98
+
+*****************************************************************************
+*Bede po trochu uzupelnial ten FAQ w miare postepu prac konstrukcyjnych     *
+*Napisalem  go  w celach edukacyjnych i nie wiem jak sie nazywam,           *
+*a w ogole to nie miej do mnie zadnych pretensji w razie wpadki.            *
+*                                                                           *
+*Nie zmieniaj tego tekstu i umiesc na swojej stronie link do nas.           *
+*****************************************************************************
+
+Podziekowania dla Hrabiego
+
+Urmet - niebieskie cos potrzebne do przegrywania kart i zawieszenia
+sobie na scianie :-)
+Bardzo chcielismy to zdobyc no i dzisiaj mamy kawalek potrzebny
+do przegrywania kart.
+Byl sobie poniedzialek jak kupilismy kluczyk do budki (now, from us 50 zl)
+jeszcze tego samego dnia probowalem otworzyc wszystkie budki w poblizu
+miejsca zamieszkania ale jakos nie szlo. No nic, jestem cienki i troche
+sie denerwuje. OK, We wtorek o 22 wsiadamy w auto pakujemy narzedzia
+i jedziemy na wioche
+
+Dojezdzamy w 30 minut, krotki rekonesans, swatlo wloczone w 2 domkach
+obok budki neon i pada deszcz, podchodzimy do urmeta i przez godzine
+chcemy go otworzyc (w miedzyczasie inwektywy) ale dupa.
+Jestesmy o 00:30 w domu i sie zastanawiamy co jest nie tak.
+Podobno so 4 rodzaje kluczykow i mamy po prostu pecha, lub kluczyk jest lewy.
+Nastepnego dnia po poludniu spotkanie robocze w innej czesci miasta
+myslimy myslimy i myslimy, wyszlismy na spacer a tu urmecik kolo kumpla
+wkladam krece a ten gupi klucz kreci sie dalej, oslupialem , kumpel bierze
+i przekreca do konca, ludzie sie gapia (2 panie) to zamykamy i uradowani
+sukcesem idziemy na dlugi spacer, spotykamy 3 budki nie otwierajace sie ale
+chuj wracamy do pierwszej i co? Nie chce sie otworzyc.
+Wniosek: lewary, lamerzy i dupki z nas. Przenosimy sie do centrum a tam w
+promieniu 200 metrow 7 budek (z tego interesujacych 3)
+Pierwsza otwieramy i zamykamy, druga tak samo (wszystko przy duuuzej ulicy)
+no  i  trzecia - o troche otwarta ale nic wkladamy kluczyk, otwieram, luz,
+no i nie chce sie zamknac (godz. 16:30) ..... Emeryt sie lampi ludzie
+z autobusu wysiadaja a tu jacys  frajerzy nie moga klucza wyjac, lekka
+panika i po 5 minutach wreszcie zamknelismy urmeta i wyjelismy kluczyk.
+Umowilismy sie na wieczor na 11 znowu na wioche , kumpel ma zrobic 2 klucz.
+Jade po wszystkich (3+ja) dojezdzamy do wiochy szukam kluczyka i co?
+zgubilem  skurwiela no ale mamy kopie. Podchodzimy, ale do chuja musi pasowac
+inny  klucz.  Wracamy  do  miasta,  znajduje kluczyk pod domem kumpla (podobno zawsze mam farta :-) )
+Jestesmy w miescie o 0:10 i podchodzimy do tej w centrum. Urmet wisi na bloku
+przy duzej, oswietlonej ulicy. Auto stoi na podworku tego bloku.
+Podchodzimy we trzech, moment zawachania, krotka decyzja buda otwarta
+zdjecie  blokady  wyrwanie czytnika(tu podziekowania dla Hrabiego za opis
+budki w srodku), proba wyjecia kluczyka ,zablokowany i haslo SPIRDALAMY!!!!
+(jechal samochod) Z dobiegnieciem do pojazdu trwalo to 8 sekund (rekord zyciowy)
+tak  wygladalo nasze pierwsze przestepstwo. Odwiezlismy kumpla i wrocilismy do
+ujebanego urmeta tzn zaparkowalismy dalej i podeszlismy na piechote (00:20)
+Czekamy  az tepsy przyjada (chujowo kluczyk tam tkwi a chlopak sie narobil nad
+nim) Poczekalismy 20 minut podchodzimy wyjelismy klucz spadl front a my sobie
+odeszlismy. 3 minuty poznie przyjechali monterzy i co zrobili:
+Zreperowali ta i zalozyli obok drugiego urmeta hehehe
+
+Dzisiaj w poludnie zajelismy sie czytnikiem
+(jezeli ktos ma disasembler na proca MC to niech da znac)
+interesujacy jest wzmacniacz (to cos zaekranowane) jest on dopasowany
+do glowic zapisujacych i odczytujacych nalezy go wiec wykorzystac
+(FAQ Henka ze strony Hrabiego- czlek napisal ze elektronike wywalil
+i sam szukal wzmacniaczy- BLAD!!!)
+Za 12 godzin jade do kumpla i juz powinien miec schemat wzmacniacza.
+Aha jezeli ktos juz zrysowal schemat urmeta prosze o mail'a
+konto na stronie www.hacking.w.pl
+
+Rady dla przestepcow od nas:
+-Aby otworzyc budke wsac kluczyk do konca i krec, kiedys musi sie otworzyc
+sprawdz to na budkach zakladanych w roznym czasie (u mnie w nowszych klucz
+nie chodzi)
+-Na czytniku znajduje sie czerwona migajaca diodka
+(to nie nadajnik jakis kretyn na liscie dyskusyjnej twierdzil ze w urmetach
+jest nadajnika a drugi jeszcze to poparl)
+-Gdy kradniesz postaraj sie robic to szybko ale bez paniki
+-Nie zostawiaj kluczyka, przyda sie do nastepnej
+-Tepsy przyjada za pol godziny martw sie tylko policja
+
+Jade do kumpla Jutro cos dopisze
+____________________________________________________________________________
+
+26.06.98
+
+
+Taa wrocilem od kumpla
+
+Henek jak to czytasz to wyrzuc to co zrobiles (chyba nie konczyles
+elektronika) nie po to dali plytke do czytnika zeby z niej nie korzystac!
+
+Wlasnie rozpracowalismy odbior sygnalu z glowicy czytajacej
+W  tej  chwili  jestem  pewien  na  90%, ze oprocz nas, jak dziala wzmacniacz
+(to w ekranie) w Urmecie, wie tylko kilku ludzi (pracuja w tp sa) :-).
+W niedziele lub poniedzialek umieszcze (prawdopodobnie) bitowy zapis
+na karcie magnetycznej. Moze we wtorek bedziemy mieli gotowa przegrywarke.
+ale przegrywarki nie opublikujemy publicznie za to sprzedamy albo
+wymienimy na srebnego Urmeta (tego kupimy w calosci lub klucz od niego)
+wymienimy tez na swieze i dzialace sposoby na dzwonienie za darmo.
+Planujemy aby przegrywarka byla sterowana calkowicie z komputra,
+nawet zasilanie moze byc z niego
+
+Urmet to firma wloska zlecajaca telefonice robienie elektroniki.
+W polsce to chyba tylko skladaja i programuja (pamietacie o disasemblerze?)
+Tak w ogole Urmet jest wykonany bardzo porzadnie.
+Bardzo poszukujemy osoby ktora ma schemat urmeta, albo chce sobie porysowac
+(musi sie znac na elektronice) W najblizszym czasie zdjecie czytnika
+wraz z zaznaczonymi elementami
+
+Reszta w niedziele
+_____________________________________________________________________________
+Sorki
+Jest 17.09.1998
+Zrobilismy przerwe wakacyjna
+
+Mamy disasembler i na HC11 (plyta glowna i na 146805 (czytnik)
+Wlasnie probujemy rozgrysc podelca zaczynamy od czytnika bo ma
+krotszy program.
+
+Teraz o karcie
+Na poczatek mamy 2 bity synchronizujace (2 jedynki)
+nastepnie 32 bity danych dalej bit kontroli parzystosci
+a wlasciwie parzystosci. Tu nastepuje przerwa w nagraniu
+i mamy dalej 0 i znowu przerwe, next drugi blok danych (takze 32 bity)
+po wykonczeniu karty sa usuwane bity w tym bloku, next bit kontroli
+parzystosci i mamy przerwe. Potem 2 "0" i 199 jedynek (pelna karta)
+i zero oznaczajace koniec obszaru impulsow. a teraz przykladowe karty
+pelna i pusta
+11 10110000001010110100001011111111 0 * 0 * 11011100001010011011011011100111 0 * 00 1.1 0
+11 10001100000000000110010010110101 0 * 0 * 000 *    11100011000011100111110 0 * 00
+
+gwiadka oznacza przerwe na karcie, spacje rozrozniaja bloki
+jakies wnioski?
+gdzies w tych 64 bitach jest ukryta informacja o ilosci impulsow (25,50
+czy 100). Nawet kupilismy 3 karty pelne z jednego kiosku ale niestety
+na razie nic z tego.
+Czasowe wnioski:
+Nie da sie zrobic karty wiekszej niz 200 impulsow
+ktorys proc dzieli 200 przez 8,4 lub 2
+
+Pamietacie ze urmet pamieta ile impulsow skasowal karcie a jak mu sie
+nie udalo to kasowal nastepnym razem....
+Ta ilosc pamieci jaka posiada niebieski wystarczy do zapamietania
+co najmniej 1000 kart (wariant najbardziej optymistyczny)
+
+Na razie koniec
+prace w loboratorium trwaja.......
+-----------------------------------------------------------------------------

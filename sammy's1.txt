@@ -1,0 +1,42 @@
+				Samantha's Method
+				   29.08.1998
+			   E-mail: samantha@kki.net.pl
+
+
+Na ten pomysl wpadlem juz dosyc dawno , ale do podzielenia sie nim zniechecilo mnie 
+to , ze nie dziala w moim miescie. Mam takiego pecha , ze wszystkie payphons sa tu 
+podlaczone do jednej i tej samej centrali. Nie wiem czy ma to racje bytu gdziekolwiek
+indziej , ale sprobowac nie zaszkodzi. 
+Sprawa jest wrecz bardzo prosta. W tym wszystkim chodzi o zrobienie sobie pseudo 
+extendera , a mozna (prawdopodobnie) uzyskac to  dzieki dodatkowym uslugom jakie mamy
+dzieki "&%$*%*^&%$#". W moim mniemaniu mialoby to wygladac mniejwiecej tak:
+- potrzebny wrzutowiec i tonedialer
+- dialerkiem probujemy aktywowac natychmiastowe przekazywanie rozmow
+	( wyglada to mniej-wiecej tak: *21*nr telefonu# )
+	jezeli sie udalo to centrala potwierdzi to dialtonem
+	po ponownym podniesieniu sluchawki dialtone bedzie przerywany
+- potem idziemy do innego automatu i dzwonimy na wrzuta , niestety - koszt rozmowy miejscowy
+- wada jest to iz mamy tylko jeden numer mozliwy , ale jak to mowia "Lepszy rydz niz nic"
+- na koncu dobrzeby bylo , gdyby wszystko dezaktywowac - chyba nie chcemy aby ktos dzwoniac 
+  na payphona dodzwonil sie do naszego kuzyna w USA ( dezaktywacja: #21# )
+
+Jeszcze raz:
+Nie mam zielonego pojecia , czy to gdziekolwiek bedzie dzialac. To zalezy od centrali
+pod jaka podlaczony jest wrzut i czy dodatkowe uslugi na niej dzialaja i  czy telepsy
+wiedzac , ze podlaczyli automat ich po prostu nie wylaczyli.
+
+Jak ktos stwierdzi cokolwiek negatywnego na ten temat to ...  JEGO PROBLEM.
+Nie chciec - nie czytac , bardzo proste.
+
+P.S.
+
+Chcac wyprzedzic telekomune zaczynam powoli myslec na kartami chip do srebrniakow.
+Poniewaz nie ma ich jeszcze w obiegu , moje wiadomosci sa bardzo ogolne i nie
+wiem w jaki sposob maja sie do tego co bedzie w Polsce.
+Jezeli ktos ma ochote polaczyc sily i sprobowac dokonac czegos dla naszej spolecznosci
+i zgnoic monopoliste - just mail me.
+
+
+
+
+No Copyrights - Freeware version under the assumption that the authors name is kept.

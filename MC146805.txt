@@ -1,0 +1,146 @@
+******** Opis mikrokontrolera MC146805 firmy Motorola ********
+**************************************************************
+
+
+Uklady Serii Motorola MC146805 sa 8-bitowymi jednoukladowymi mikrokomputerami w technologii CMOS, z wewnetrzna pamiecia ROM, opracowanymi na bazie mikroprocesorow MC6805.
+Typowymi zastosowaniami tych mikroprocesorow sa urzadzenia o malej mocy zasilania, na przyklad przenosny sprzet o zasilaniu bateryjnym, przy umiarkowanych wymaganiach co do mocy obliczneniowej. Omawiane uklady moga konkurowac z takimi typami jak RCA1800, oferujac wieksza moc obliczeniowa i predkosc dzialania. Przy ograniczonych wymaganiach co do mocy zasilania, uklady MC146805 wykazuja duze tolerancje na wahania napiecia zasilania co jest konieczne przy zasilaniu bateryjnym. W wersji standardowej uklad wymaga zasilania 5V, lecz produkowane sa takze wersje na zasilanie 3V, jak rowniez przystosowane do znacznie wiekszych napiec.
+Zastosowanie pamieci EPROM programowanej metoda maskowaniapowoduje, ze typowy mikroprocesor 146805 moze byc oplacalnie stosowany w urzadzeniach produkowanych masowo. Niemniej do opracowania prototypow i zastosowan w produkcji maloseryjnej wytwarzana jest wersja ukladu 146805E, zewnetrzna pamiecia ROM (jak w czytniku URMETa).
+
+--- Producent ---
+
+Motorola Semiconductors Inc.
+
+--- Wersje ukladu ---
+
+MC146805E2 - bez pamieci ROM, 112 B RAM
+MC146805F  - 1,1 kB pamieci ROM, 64 kB RAM
+MC146805G  - 2 kB pamieci ROM, 112 B RAM
+
+--- Inni producenci ---
+
+Nie ma jak dotad 
+
+--- Architektura ---
+
+Mikroprocesor MC146805 oparty jest na tej samej koncepcji ukladowej jak cala rodzina 6800, a pod wzgledem architektury nie odbiega od swojego pierwowzoru, procesora MC6800, w wersji nMOS.
+Dzialania arytmetyczne i logiczne sa wykonywane przez 8-bitowy akumulator i 8-bitowa jednostke arytmetyczno-logiczna, wraz z 5-bitowym rejestrem kodu warunkowego albo rejestrem stanu. Nie ma rejestrow ogolnego przeznaczenia gdyz podobnie jak inne procesory rodziny 6800, uklad 146805 moze uzywac w tym charakterze lokalizacji pamieci.
+13-bitowy rejestr licznika rozkazow jest podzielony na dwie czesci zawierajace odpowiednio 8 mlodszych bitow i 5 starszych. Pozwala to na uzyskanie dostepu do 8 kB pamieci, ktorej obszar jest w procesorze wspolny dla programu, dnych i urzaadzen wejscia-wyjscia.
+Mikroprocesor MC146805 ma 6-btowy wskaznik stosu. Stala kombinacja bitow sluzy do umieszczania stosu w obszarze pamieci RAM o adresach $40 do $7F. Po inicjalizacji, stos jest automatycznie instalowany na szczycie pamieci RAM i rosnie w kierunku w dol pamieci. Przy adresacji w trybie indeksowym korzysta sie z rejestru indeksowego IX.
+Mikrorocesor 146805 ma wbudowany geneator zegarowy i 8-bitowy licznik czasomierz, wraz z 7-bitowym licznikiem wstepnego skalowania. Wewnetrzna pamiec RAM , o rozmiarz 117 B jest wykorzystywana jako pamiec podreczna lub rejestry ogolnego przeznaczenia. Mikrorocesor ma dwa programowalne dwukierunkowe porty wejscia-wyjscia. Dostep do pamieci zewnetrznej zapewnia 13-bitowa szyna adresowa, ktorwej 8 malodszych bitow jest multipleksowanych i pelniac funkcje szyny danych.
+
+--- Obudowa ---
+
+MC146805F - 28-nozkowa dwurzedowa
+Inne typy - 40-nozkowa dwurzedowa
+
+--- Opis wyprowadzen ---
+
+MC146805E2
+
+1  RESET    21 B7
+2  IRQ      22 B6
+3  LI       23 B5
+4  DS       24 B4
+5  R/W      25 B3
+6  AS       26 B2
+7  PA7      27 B1
+8  PA6      28 B0
+9  PA5      29 BP7
+10 PA4      30 BP6
+11 PA3      31 BP5
+12 PA2      32 BP4
+13 PA1      33 BP3
+14 PA0      34 BP2
+15 A12      35 BP1
+16 A11      36 TIMER
+17 A10      37 OSC1
+18 A9       38 BP0
+19 A8       39 OSC2
+20 USS      40 UDD
+
+
+--- Opis sygnalow ---
+PA0-PA7   - Programowane linie wejscia-wyjscia portu A
+PB0-PB7   - Programowane linie wejscia-wyjscia portu B
+BO-B7     - Multipleksowana szyna danych/adresowa
+A8-A12    - Trojstanowa szyna adresowa
+RESET     - Wejscie sygnalu RESET (stan aktywny niski)
+OSC1,OSC2 - Wyprowadzenia rezonatora kwarcowego
+TIMER     - Wejscie sygnalu zegarowego czasomierza
+DS        - Wyjscie impulsu strobujacego danych
+AS        -  Wyjscie impulsu strobujacego adresow 
+IRQ       - Wejscie przerwania stan aktywny niski
+R/W       - Wyjscie sterowania zapisu-odczytu (zapis stan niski)
+LI        - Stan poboru rozkazu
+USS,UDD   - Wyprowadzenia napiec zasilania
+
+Poziomy wszystkich sygnalow sa zgodne ze standardem TTL. Przy zasilaniu +5V wyjscia moga wysterowac jedno standardowe obciazenie TTL. Wejscia maja zabezpieczenie diodami prze przebiciu napieciami elektrostatycznymi.
+
+--- Zasilanie ---
+
+UDD - +4,5V do +6V
+USS - 0V
+Produkowane sa rowniez wersje ukladu na napiecia zasilania +3V i na napiecia wyzsze od +6V.
+
+--- Zakres temperatury ---
+
+ 0 st. C do +70 st. C
+
+--- Wejscia wyjscia ---
+
+Podobnie jak wszystkie uklady z rodziny 6800, mikroprocesor MC146805 stosuje system mapy pamieci dla urzadzen wejscia-wyjscia, ktore moga byc traktowane po prostu jak lokacje pamieci.
+Kazdy z dwu programowanych 8-bitowych portow wejscia-wyjscia jest wyposazony w rejesr danych i rejestr przplywu kierunku przeplywu danych. Poszzczegolne linie moga byc zaprogramowane jako wejscia przez ustawienie odpowiednich bitow w rejestrze kierunku przeplywu w stanie "1" . Rejestry danych A i B maja w pamieci adresy 0 i 1, a rejestry kierunku transmisji tych portow odpowiednio 4 i 5. Dane sa odczytywane za pomoca zwyklych rozkazow odczytywania lub zapisywania pamieci.
+Wewnetrzny licznik-czasomierz jest wyposazony w dwa rejestry. Jeden z nich pelni funkcje sterowania, drugi przechowuje dane licznika-czasomierza. Rejestr sterujacy pozwala ustawic uklad wstepnego skalowania na zliczanie od jednego do 128 krokow. Dla czasomierza moga byc wybrane cztery tryby dzialania. W trybie 1 czasomierz jest sterowany zegarem wewnetrznym, za posrednictwem ukladu sklalujacego. W trybie 2 realizuje funkcje AND z generatora wewnetrznego z wejscia TIMER czasomierza, co pozwala np. na pomiar szerokosci impulsu. W trybie 3 czasomierz jes komutowany, w trybie 4 sterowany sygnalem zegarowym z wejscia TIMER. Rejesr danych czasomierza jest ulokowany pod adresem 8, a rejestr terujacy ma w mapie pamieci adres 9.
+Pamiec wewnetrzna RAM zajmuje zwykle obszar mapy pamieci od $10 do $7F; jej gorne 664 bajty maga byc wykorzystane jako stos. Pozostale adresy w tym obszarze az do lokalizacji $7F moga byc wykorzystane dla pamieci zewnetrznej.
+
+--- Przerwania ---
+
+Mikroprocesor MC146805 wykorzystuje jedno zewntrzne przerwanie maskowalne, dwa przerwania z czasomierza i jedno programowe. Wszystkie przerwania sa wektoryzowane a ich wektory sa umieszczone na szczycie mapy pamieci.
+
+1FFE/F - Wektor RESET
+1FFA/B - Wektor przerwania zewnetrznego
+1FF8/9 - Wektor przerwania z czasomierza
+1FF6/7 - Wektor przerwania WAIT z czasomierza
+
+Przerwania zewnetrzne sa wywolywane przez sygnal przylozony do wejscia IRQ i moga byc wyzwalane zboczem opadajacym lub poziomem zerowym sygnalu. Przerwania te moga byc maskowane gdy istnieje taka potrzeba.
+Czasomierz powoduje przerwania dwu rodzajow, w kazdym przypadku wywolenie nastepuje gdy licznik zmienia stan w dol do wartosci 0. W przypadku gdy procesor jest w stanie WAIT przerwanie odwoluje sie do wektora spod adresu 1FF6/7; w przypadku normalnej pracy procesora przerwanie korzysta z wektora spod adresu 1FF8/9. Przerwania czasomierza moga byc maskowane w ten sam spodob co przerwania zewnetrzne.
+Przerwanie programowe nastepuje w wyniku wykonania instrukcji SWI, jego dzialanie jest w zasadzie takie samo jak przerwan sprzetowych, poza tym ze nie moze byc maskowane. Sygnal RESET jest takze rodzajem przerwania i korzysta z wektora spod adresu 1FFE/F. 
+Po przyjeciu przerwania zawartosc rejestru akumulatora, stanu, indeksowego i licznika rozkazow sa automatycznie wysylane na stos, skad zostaja pobrane po wykonaniu rozkazu RTI na zakonczenie procedury obslugi przerwania.
+
+--- Lista rozkazow ---
+
+Lista rozkazow slada sie z 65 pozycji tych samych co dla procesora 6805 w wersji nMOS. Ogolny format rozkazu jest podobny do stosowanego przez procesor 6800 z jedno, dwu lub trzybajtowym kodem operacyjnym.
+
+Arytmetyczne
+Wykonywane jest dodawanie i odejmowanie na liczbach 8-bitowych, zarowno z przeniesieniem jak i bez. Jest mozliwosc wykonywania dzialan arytmetycznych na liczbach dziesietnych.
+
+Logiczne
+Dostepne funkcje logiczne to AND, OR i XOR a takze szereg operacji przesuniec zwyklych i cyklicznych. Te ostatnie mozna wykonywac takze na danych z pamieci, podobnie jak operacje inkrementacji, dekrementacji, negacji i uzupelnienia. W akululatorze mozna przeprowadzac operacje porownania a specjalne rozkazy umozliwiaja manipulacje ustawieniem poszczegolnych bitow.
+
+Transmisji danych
+Dane moga byc w prosty sposob przesylane miedzy akumulatorem, pamiecia, rejestrami indeksowymi i stanu, a takze wysylane przez porty wejscia-wyjscia.
+Procesor nie ma mozliwosci bezposredniego tworzenia stosu danych tzn, brak jest rozkazow typu PUSH i PULL.Stos jest tworzony automatycznie jedynie w celu zachowania wartosci wewnetrznych rejestrow jednostki centralnej w czasie obslugi przerwan i wykonywania podprogramow.
+
+Skoki
+Mikroprocesor dysponuje 18 rozkazami skokow i rozgalezien warukowyh przy czym niektore warunki oparte sa na badaniu stanu poszczegolnych bitow. Istnieja takze dwa rozkazy bezwarunkowego rozgalezienia i jeden bezwarunkowy skok. Dostepne sa rozkazy skoku do podprogramu jak i odpowiednie rozkazy powrotu z procedury i przerwania.
+
+Tryby adresacji 
+Mikroprocesor korzysta z 10 trybow adresacji w tym z : bezposredniej, implikowanej,  natychmiastowej, rozszerzonej bezposrednij i wzglednej. Stosowane sa trzy tryby indeksowania i dwie formy adresowania bitow.
+
+--- Taktowanie ---
+
+Cykl rozkazowy ma typowy czas trwania 1us, co odpowiada przecietnemu czasowi wykonania instrukcji od 2 do 6us. Wbudowany generator zegarowy pracuje typowo z czestotliwoscia 4 MHz.
+
+--- Uklady wspolpracujace ---
+
+W normalnych warunkach uklady wspolpracujace nie sa potrzebne, lecz mikroprocesor MC146805 moze w razie potrzeby wspolpracowac ze wszystkimi ukladami opracowanymi dla systemu 6800.
+
+--- Narzedzia projektowania i uruchamiania ---
+
+Urzadzenie EXORCISER firmy Motorola jest wyposazone w uklady emulatorow umozliwiajacych opracowanie oprogramowania i uruchamianie sprzetu z mikroprocesorami typu MC146805.
+
+
+na podstawie ksiazki 
+S.A.Money "Mikroprocesory"
+
+THE EYE

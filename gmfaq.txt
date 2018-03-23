@@ -1,0 +1,46 @@
+                        
+                           <<Goblin & Mamon faq v16.I.2000>>
+			   <<      goblin@promail.pl      >>
+
+
+
+                       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+                       @                                       @
+                       @             !!!UWAGA!!!               @
+                       @    Ten tekst jest napisany tylko w    @
+                       @  celach edukacyjnych i nie prubujcie  @
+                       @     stosowac tego w praktyce ;).      @
+                       @                                       @
+                       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+LEGENDA :
+N - nowy
+U - uaktyalniony
+? - jeszcze nie przetestowane
+
+SPIS TRESCI :
+N 1. Wstemp
+N 2. UNIKEY
+N    2.1. Potrzebne bajery
+N    2.2. Polowanie na zamek
+N    2.3. Jak to zrobic
+N    2.4. I juz przy urmecie
+N 4. Great thanks 
+
+
+1. To jest nasze pierwsze faq wiec chyba zbyt dobrze nie wyjdzie ale zawsze trzeba prubowac. Nie    czytalem jeszcze faq o tej tematyce, a jesli juz ktos o tym pisal to wielkie sorry. Faq bedzie    sie zmieniac wiec kilka zeczy moze juz byc nie aktualne.
+
+
+2. UNIKEY - To po prostu sposob na uniwersalny kluczyk do zamka troszke przez nas przerobionego.
+   
+   2.1. Bedziemy potrzebowac stary klucz, wiecie taki na dlugim preciku. Zamek typu ABLOY (o tym         za chwile). Jakis pilnik i srubokret waski ale mocny zeby sie ni polamal, klucz 10 i 		jakis wiekrzy (chyba 22), moze byc jeszcze jakis lom lub pozyczony na jedna nocke 		kluczyk do urmeta.
+
+   2.2. Mamy wieczor, totalne zadupie no i szukamy jakiegos slupka TPSA. Jakby co to chodzi mi o 	takie stare betonowe slupki. U nas bylo troszke problemow bo jakis gosc przezucal wegiel 	o 24 ale go olalismy. Wiec podchodzimy do niego, wyciagamy nasz srubokret i pakujemy w 		szpare pomiedzy dzwiczkami a slupkiem i podwazamy az sie otworza. Najpier odkrecamy 10 i 	sciagamy taka wajche, a teraz ten wiekrzy i zamek (czyba 22) jest nasz. Zamykamy 		drzwiczki i wracamy do cieplego domku. No a jesli nie mamy czasu na odkrecanie srubek to 	mozna zawsze pozyczyc sobie cale drzwiczki co nie :). No jesli w okolicy sa tylko 		plastikowe slupki to oczywiscie zamek z nich tez jest OK ale to juz nie nasz pomysl.
+
+   2.3. Na poczatku bedziemy musieli spreparowac sobie kluczyk. Biezemy ten stary wkrecamy w 		imadlo i ulamujemy ten koniec co wchodzi do zamka. Teraz szlifujemy go na szerokosc tak 	rzeby wchodzil do ABLOY'a czyli w takie pulkole. Teraz rozbieramy zamek. Nawet jak 		wszystko posciagamy to jeszcze sie trzyma (na podkladce sprezynujacej). Wkrecamy zamek w 	imadlo i pizgamy w podkladke np. srubokrentem tak rzeby obracala sie w prawo, 	tylko jej 	nie zniszcz bo jeszcze sie przyda.(Latwiej ci bedzie to zrozumiec jak bedziesz 	widzial 	zamek). Teraz juz wyjdzie bez problemow ale uwazaj zaby nie rozlecial ci sie caly 		srodek. Chwyc za gwint obroc calosc tak zebys widzial napis ABLOY i podnies obudowe. 		Uwazaj na precik (taki z boku), odluz obudowe. Widzisz teraz taka pseldo podkladke z 		zabkiem, ja tez odluz i nastepna taka z blokadka (zeby sie nie obracalo). Teraz widzimy 	pierwsza wsowke, wyjmij ja i podpisz nr.1 (tylko ich nie odwracaj), teraz masz podkladke, 	odluz ja na bok, teraz druga wsowka itd. az do osmej, w niej tez jest taki zombek, musisz 	go jakos zlikwidowac. Teraz wkladaj je po koleji tak jak byly i jesli wyciecie we wsowce 	po przesunieciu jej w prawo nie znajduje sie pod rowkiem to nacinamy tam wsowke tak zeby 	precik mugl sie schowac i zamek sie otworzyc itd chodzi o to zeby powstal kod 			klucza:00000000, czyli po prostu w kluczu nie bedzie musialo byc zadnych wyciec. Z tej 		blokadki co ja widziales pierwsza tez usun zabek. Teraz przesyn wszystkie wsowki w lewo 	(zamkniete) no i wloz klucz, a z boku 	ten precik co pewnie ci wypadl jak sciagales 		obudowe, powinien wystawac ponad powiezchnie. Przekrec klucz w 	lewo o 90 stopni, jesli 	precik schowa sie pod powiezchnie to jes OK, a jak nie to cos popraw. Teraz trzeba zlozyc 	zamek do kupy tak jak byl. Bedziesz mial problemy z podkladka sprezynujaca ale jak jej za  	bardzo nie pogieles to wlezie na miejsce, reste montujemy przy urmeciku
+   
+   2.4. Wieczorkiem idziemy do jakiejs budeczki na zadupiu i teraz przyda sie troche poweru w 		rekach. Biezemy nasz lom lub mocny srubokret i otwieramy jakos budke (tylko jej za bardzo 	nie znaiszcz:), jesli masz pozyczony kluczyk to po prostu otwieraz budke i odlaczasz 		linie no i przemontowujesz zamek. No i teraz nasz UNIKEY otwiera ta budke juz bez lomu. 	Jesli nie poodwracales wsowek to po wlozeniu orginalnego klucza tez sie otwiera i co 		gluprzy monter tego nie zauwazy:). Co prawda musi byc bardzo glupi bo ten zamek ze slupka  	to troszke inny model niz w urmecie ale widzialem juz taki w automacie na karty.
+
+
+3. Great thanks sobie nawzajem i wszystkim, ktorych faq przeczytalismy i ktore nas zainspirowaly.    Jesli jeszcze czegos nie rozumiesz to pisz, a my postaram sie ci pomoc.

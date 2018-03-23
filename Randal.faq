@@ -1,0 +1,91 @@
+
+                        ************************
+                       *                        *
+                      * -=( RANDAL FAQ v 1.1 )=- *
+                      *                          *
+                      *     Randal@polnet.cc     *
+                       *                        *
+                        ************************
+
+
+1. WSPEP
+2. 0700 Z BUDKI
+3. ULEPRZONY FILTR
+4. TELEFON NA KILKA DNI ZA FREE
+
+
+1.                         -=( W S T E P )=-
+
+Ponizszy tekst pisany jest wylacznie w celu edukacyjnym, a za poniesione
+straty nie odpowiadam.
+
+
+2.                       -=( 0700 z budki )=-
+
+Metoda jest banalna, ale nie widzialem jej w zadnym znanym faq`u. Wiec do
+zeczy. Po pierwsze trzeba znac numer budki, wiekrzosc niebieskich budek ma
+juz tabliczki z numerem (przynajmniej u mnie), a w silverze chyba kazdy
+wie jak dowiedziec sie numer telefonu. Musimy takze podpiac sie pod urmeta
+(metody opisane sa w wiekrzosci faq, wiec nie bede ich powtarzal). Teraz
+wystarczy zadzwonic pod numer 900 z frikomatu oczywisci, bo butka ma
+zablokowany ten numer i zamuwic polaczenie z numerem 0700 xx xxx, na numer
+budki. Odkladamy sluchawke i po kilku minutach telefonistka oddzwania.
+Odbieramy, ale na frikomacie, bo budka albo sie przedstawi, albo pika.
+Mozna jeszcze powiedziec ze mamy telefon bezprzewodowy i koncza sie nam
+baterie(u mnie nie dziala). Telefonistka pyta sie czy zamawialismy polaczenie
+z numerem 0700 xx xxx. My oczywiscie odpowiadamy ze tak. Telefonistka laczy,
+ale po 16 minutach automatycznie rozlancza.
+
+
+3.                    -=( ULEPSZONY FILTR )=-
+
+Jesli ktos zna sie troche na elektronice to moze zrobic filtr. Moje uleprzenie
+polega na zastosowaniu rurki kontaktronowej (dziala na magnes jak sie zblizy
+do niej magnes to prad przeplywa, jak oddali sie to prad nie przeplywa).
+Wystarczy wstawic rurke kontraktonowa miedzy jedna linie, a kondensatorem.
+cale urzadzenie matujemy w srodku urmeta, a rurke np. pod urmetem tak by
+przy zamknietej budce mozna bylo zblizyc magnes by zwarl rurke. Teraz mozemy
+w bialy dzien dzwonic do dziewczyny na komure za 26 gr. +vat za cale polaczenie.
+
+Oto schemat ulepszonego filtru:
+
+        R/2               R/2
+
+0-----[___]-------0-------[_____]---------0
+                  |
+                  |
+                 --- C
+                 ---
+                  |
+                  _
+                 | | RK
+                 |_|
+                  |
+                  |
+0-----------------0-----------------------0
+
+Opis:
+R/2 - rezystor o rezystancji rownej polowie tej ktora podstawiles do wzoru.
+C - kondensator (zwykly)
+RK - rurka kontaktronowa
+
+wzory:  f graniczna = 4 / (2*3,14*R*C) (FILTR DOLNOPRZEPUSTOWY)
+tj. przepuszcza wszystkie sygnaly ponizej f graniczne (czestotliwosc graniczna)
+
+
+4.              -=( TELEFON NA KILKA DNI ZA FREE )=-
+
+Jesli ktos mieszka w poblizu budki, moze sprobowac podpiac sie na kilka dnia
+z telefon bezprzewodowy i dzwonic za free po swiecie. Metoda dziala na kilka
+dni bo na centrali nie siedza az tacy kretyni, by sie nie skapnac ze ktos
+sie podpiol ( Na centrali maja licznik impulsow i jesli ten licznik bedzie
+naliczal impulsy o duzo szybciej niez zwykle to przysla jakiegos TePsiaza, by
+to sprawdzil, on i zabierze baze od telefonu).
+
+
+
+                          -=( GREETZ )=-
+
+Special thanks to :
+Hrabia -za dobre faq
+Sammael -za zainteresowanie mnie tematem.

@@ -1,0 +1,854 @@
+                                      
+
+
+                                ImpexuS's
+
+
+                            phreaking faq v 0.2
+                                
+
+
+          
+
+------------------------------------------------------------------------------
+Nie ponosze zadnej pieprzonej odpowiedzialnosci za to, co przeczytaniu tego
+txt zrobi.
+Wolnosc slowa jaka jest(???), taka jest(???),
+ale moge sie na nia tera powolac !!
+BTW nie musisz tego czytac.
+Jesli chcesz ten faq umiescic na stronie, w magu czy gdziekolwiek indziej
+mail me.
+Oczywiscie mozna kopiowac, powielac, przegrywac etc ( ;) ), ale nic nie
+zmieniaj !
+------------------------------------------------------------------------------
+
+
+uffff...  :)
+
+
+
+
+
+*************************** O czym jest to faq ???
+
+Na poczatek mala historyjka: w dniu moich urodzin (2.XII) tego roku stwierdzi-
+lem, ze mozna by spisac wszystko to, co sie wie o zyciu (czyli niewiele ;)))
+i pusic to w formie faq - a nuz komus ulatwie egzystencje ??? :)
+Bylo tam tez troche o phreaku, ale dupne to to i wogole to bylo glownie
+pajeczarstwo. Inne rzeczy wyszly troche lepiej :), wiec na koncu tego faq
+dorzucam wyciety z tamtad rozdzial o jezdzeniu na gape w MPK.
+To chyba wszystko. BTW tak na codzien, to jestem coderem z grup Diffuse
+(hi FlintStone !) i Diffusion (zbieznosc nazw to przypadek :).
+ctx: impexus@kki.net.pl
+i mieszkam we Wrocku (na fabrycznej. konkretnie ulica Grabiszynska :)
+
+
+*************************** Co to jest phreaking ???
+
+huhuh :) Trudne pytanie :-\
+Ogolnie rzecz biorac najlepiej pasuje okreslenie "hacking systemow
+teleinformatycznych ", i to tez mozna stosowac, jesli chcemy zaszpanowac przed"
+dziewczyna/qumplami/psem (inna sprawa, ze niewielu to rozumie, ale w tym
+cala zabawa, nie ? ;). Hmmmm.... W jak tak sie patrze na phreak i phreakerow,
+to jedno nasuwa mi sie na mysl: cale firmy, wielcy technicy, profesorowie
+i cala ta reszta pracuja nad tym, by automaty byly niezawodne, i nie dalo
+sie ich oszukac, by centrale wykrywaly scanning etc. a my, dzwoniac
+za darmo, znajdujac nowe 0800.., przejmujac skrzynki glosowe (i'm saying
+hello to Majoris :) im udowadniamy, ze cala ich wiedza jest gowno warta.
+I to jest wlasnie wspaniale !
+Dla mnie satysfakcja z otwiarcia skrzynki kablowej, i chocby jedynie jej
+obejrzenia jest wieksza, niz.... hmm... nie jestem w stanie tego do niczego
+porownac. Nie to, ze dostajemy orgazmu ogladajac urmeta od wewnatrz ;)
+(ktos sie mnie zapytal, czy tego nie robie, bo jestem czubek :)))),
+ale milo jest czuc, ze zrobilo sie cos ponad to, co robia inni, szarzy ludzie,
+i jeszcze na dodatek nie zostalo sie zlapanym :)
+O phreak'u radze nie mowic wszystkim w okolo, a juz w szczegolnosci odradzam
+opowiadania szczegolow. Nie twierdze, ze nie mozna podzielic sie z qumplami
+ktorzy tez cos tam robia, swoimi doswiadczeniami etc., ale nie trabic o
+tym kazdemu spotkanemu czlowiekowi. Phreaker to czlowiek zupelnie bezpieczny,
+polki nie udowodni mu sie czegokolwiek, a o to bardzo trudno.
+Aha, co do nazewnictwa - jesli ktos wpial sie sie 2 razy, i urwal telekomowi
+sluchawke, a pozniej rozkrecil to nie phreaker !!! Mnie osobiscie bardziej
+interesuje dzialanie sieci telekomunikacyjnych, niz rozpieprzenie urmeta.
+A to, ze wykorzystuje znane mi jej slabosci, to juz moja sprawa, i mam do tego
+prawo.
+
+
+To chyba wszystko. Nie wiem. Jesli sadzisz, ze wszystko to, co wyskrobalem
+przed chwila na gorze to shit - mail me, i plz apisz, jak ty to widzisz.
+
+
+*************************** Prawo i phreaking
+
+Coz. W chwili, w ktorej to pisze (koniec wrzesnia 1998) mozna juz posiedziec
+za phreak: ponoc do 3 lat. Najsurowiej karani beda pajeczarze, i ci, ktorzy
+dzwonili pod 0700 i nabili operatorom troche na licznikach, a jak powszechnie
+wiadomo, musza oni odpalac procent (duuuzy procent) firmom, ktore u nich
+wynajmuja linie...
+Jesli chodzi o zabawy z budkami, to (moim zdaniem) nie ma sie czego bac.
+Mozesz dzwoniec gdzie chcesz. Nie wiem, czy wykorzystanie tonedialera do
+wybrania numeru jest nielegalne. W gruncie rzeczy, to DTMF mozna generowac
+nawet gwizdzac (poprobuj w domu :), choc wygwizdanie chcianego numeru jest
+praktycznie niemozliwe (jesli ktos jednak opanowal ta sztuke, to stawiam
+browara ! :).
+Z tego, co wiem, to nie wsadzili jeszcze nikogo za phrk, a jak to zrobia,
+to my zrobimy demonstracje !! (no, chyba, ze to mnie wsadza ;)
+
+
+*************************** Zaczynamy....
+
+oka. Jesli doczytales do tego momentu, to chyba jestes zdecydowany :)
+zaczne od teorii.
+
+Abonencka linia telefoniczna to 2 lub 4 kabelki:
+
+
+        =========------ bialy
+        =========----- zolty
+        =========---- zielony
+        =========--- czarny
+
+(ten ostatni czesto bywa brazowy).
+Dobra. Nas interesuja te dwa w srodku (zolty i zielony). Sa to kable po
+ktorych leci dzwiek, a o to nam przeciez chodzi, nie ? :)
+linia abonencka standardowo ma wszystkie 4, ale czesto tepsa idzie na latwize,
+i z puszek puszcza tylko zielony i zolty.
+Nie znam dokladnego zastosowania bialego i czarnego, ale chyba sa to
+koncowki jakis systemow telekom.  Slyszalem, ze jak sie zabuli (a w kazdym
+razie np. centrale typu E-10 maja taka opcje) to mozna dostac cos na wzor
+licznika taryfikatora (czyli ze dostajesz billing w realtime :). Mozna
+to to wlaczyc w jakies "urzadzenie wyjsciowe" (np. terminal). Nie wiem,
+i nie chce nikogo wprowadzac w blad, ale jesli kogos to interesuje, to
+radze udac sie do biblioteki...
+
+Teraz dalej. Kazdy kabel ma dwa konce, nie ? Jeden mamy w telefonie/modemie,
+wiec zostaje drugi... :)
+ten drugi leci do puszki telefonicznej, a nastepnie do skrzynki kablowej:
+
+
+ascii art ;) : telefoniczna puszka kablowa:
+
+                     linie abonenckie
+
+                     ºººººº
+                     ºººººº
+             ÚÄÄÄÄÄÄÄ××××××ÄÄÄÄÄÄÄ¿
+             ³       ºººººº       ³
+             ³ ÉÍÍÍÍÍ¼ººººÈÍÍÍÍÍ» ³
+             ³ ºÉÍÍÍÍÍ¼ººÈÍÍÍÍÍ»º ³
+             ³ ººÉÍÍÍÍÍ¼ÈÍÍÍÍÍ»ºº ³
+             ³°ººº°°°°°°°°°°°°ººº°³
+             ³°ººº°°°°°°°°°°°°ººº°³
+             ³°ººÈÍ-o-o°°oÄoÄÍ¼ºº°³
+             ³°ºÈÍÍÄo-o°°oÄoÄÍÍ¼º°³
+             ³°ÈÍÍÍÄoÄo°°oÄoÄÍÍÍ¼°³
+             ³°°°°°°°°°°°°°°°°°°°°³
+             ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+º       - linia abm.
+³       - obudowa (blaszana, zazwyczaj z logiem tepsy zamykana na zamek Abloy)
+°       - plastik
+O -O - para
+
+powiekszenie pary:
+
+
+      linia =ÄÄÄÄÄÄ¿
+       abm. =ÄÄÄO  O  
+       
+gdzie O to srubka.
+
+
+(troche koslawe to wyszlo, ale co tam !)
+
+To powyzej, to puszka 6 parowa. Nie wiem, czy takie istnieja (najmniejsza to
+chyba 10 parowa), ale nie chcialo mi sie wiecej robic ;)
+puszka od tylu jest zalana czym takim, jak masa kablowa. To cos w rodzaju
+polaczenia plastiku z guma (?!). Robi za izolacje, i rownoczesnie trzyma
+wszystko w jednej kupie.
+
+dobra. co to linia wiemy, co do obudowa tez, wiec pora wytlumaczyc, co to para
+(suxxx !! znowu ta pieprzona ciezarowka z lodami stanela pod moim oknem i
+wydaje ten paskudny dziwek: tu-rutu-tururu-RU !!! pierdolca dostane !)
+para to nic innego, jak dwie srubki przykrecone do metalowej podstawy tak,
+by stanowila rodzaj przejsciowki. Zadna filozofia. Taka pare mozna zobaczyc
+nawet w gniazdku telefonicznym.
+
+Oki. ale po co ta puszka ?? toto po prostu prowadzi wszystkie kable (np.
+z klatki schodowej lub z osiedla) do jednego, wielozylowego. Taki kabel
+moze albo "leciec" w powietrzu, na slupie, w scianie albo gdzies podziemia...
+
+kabelek na slupie wyglada tak:
+
+
+                /---\
+                \ÛÛÛ/
+                /   \
+              / ²²²²² \
+             | ²²²²²²² |
+             | ²²²²²²² |
+              \ ²²²²² /
+                \---/
+
+gdzie:
+
+Û     to linka
+²     to sam kabel
+|     to obudowa (jakies tworzywo sztuczne)
+
+
+kable w scianach to zwykle, wielozylowe kabelki..
+O kablach podziemnych za chwile.
+
+
+
+Teraz skrzynki kablowe:
+
+
+Skrzynka kablowa laczy wszystkie dochodzace do niej kable z puszek, budek
+i indywidualnych abonentow (np. jesli ktos ma prosto pod oknem - patrz
+pierwszy budynek mieszkalny po sklepach przy pl. Legionow w strone rynku
+- kabel luzem zwisa prosto do okna :-D jesli ktos chce - niech sie podpina,
+ale jest tam duzy ruch nawet w nocy :( btw to sie nazywa partactwo !!! :->> )
+
+sa 4 rodzaje skrzynek: 600, 900, 1200 i 1400 parowe. To sa te standardowe,
+stojace przy budynkach (zazwyczaj od strony ulicy). Chyba zawsze sa
+szare. Sa tez nietypowe, (slyszalem np. o 450 parowych), oraz takie male,
+na osiedlach willowych. Standardowe skrzynki wygladaja tak:
+
+               
+
+                900 par                          600 par
+           ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»           
+           º ÚÄÄÄ¿ ÚÄÄÄ¿ ÚÄÄÄ¿ º           
+           º ³ R ³ ³ M ³ ³ R ³ º           
+           º ³   ³ ³   ³ ³ M ³ º           
+           º ÀÄÄÄÙ ÀÄÄÄÙ ÀÄÄÄÙ º              ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
+           º ÚÄÄÄ¿ ÚÄÄÄ¿ ÚÄÄÄ¿ º              º ÚÄÄÄ¿ ÚÄÄÄ¿ ÚÄÄÄ¿ º
+           º ³ R ³ ³ M ³ ³ M ³ º              º ³ R ³ ³ M ³ ³ R ³ º
+           º ³   ³ ³   ³ ³   ³ º              º ³   ³ ³   ³ ³ M ³ º
+           º ÀÄÄÄÙ ÀÄÄÄÙ ÀÄÄÄÙ º              º ÀÄÄÄÙ ÀÄÄÄÙ ÀÄÄÄÙ º
+           º ÚÄÄÄ¿ ÚÄÄÄ¿ ÚÄÄÄ¿ º              º ÚÄÄÄ¿ ÚÄÄÄ¿ ÚÄÄÄ¿ º
+           º ³ R ³ ³ M ³ ³ R ³ º              º ³ R ³ ³ R ³ ³ R ³ º
+           º ³   ³ ³   ³ ³   ³ º              º ³   ³ ³   ³ ³   ³ º     
+           º ÀÄÄÄÙ ÀÄÄÄÙ ÀÄÄÄÙ º              º ÀÄÄÄÙ ÀÄÄÄÙ ÀÄÄÄÙ º
+        ÉÍÍÊÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÊÍÍ»        ÉÍÍÊÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÊÍÍ»
+        º                         º        º                         º    
+        ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼        ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+
+
+              1200 par                                1600 par
+                                             ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»           
+                                             º ÚÄÄÄ¿ ÚÄÄÄ¿ ÚÄÄÄ¿ ÚÄÄÄ¿ º           
+                                             º ³   ³ ³   ³ ³   ³ ³   ³ º           
+                                             º ³ R ³ ³ M ³ ³ M ³ ³ R ³ º                   
+                                             º ³   ³ ³   ³ ³   ³ ³   ³ º                   
+        ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»          º ÀÄÄÄÙ ÀÄÄÄÙ ÀÄÄÄÙ ÀÄÄÄÙ º
+        º ÚÄÄÄ¿ ÚÄÄÄ¿ ÚÄÄÄ¿ ÚÄÄÄ¿ º          º ÚÄÄÄ¿ ÚÄÄÄ¿ ÚÄÄÄ¿ ÚÄÄÄ¿ º           
+        º ³   ³ ³   ³ ³   ³ ³   ³ º          º ³   ³ ³   ³ ³   ³ ³   ³ º           
+        º ³ R ³ ³ M ³ ³ M ³ ³ R ³ º          º ³ R ³ ³ M ³ ³ M ³ ³ R ³ º                   
+        º ³   ³ ³   ³ ³   ³ ³   ³ º          º ³   ³ ³   ³ ³   ³ ³   ³ º                   
+        º ÀÄÄÄÙ ÀÄÄÄÙ ÀÄÄÄÙ ÀÄÄÄÙ º          º ÀÄÄÄÙ ÀÄÄÄÙ ÀÄÄÄÙ ÀÄÄÄÙ º
+        º ÚÄÄÄ¿ ÚÄÄÄ¿ ÚÄÄÄ¿ ÚÄÄÄ¿ º          º ÚÄÄÄ¿ ÚÄÄÄ¿ ÚÄÄÄ¿ ÚÄÄÄ¿ º           
+        º ³   ³ ³   ³ ³   ³ ³   ³ º          º ³   ³ ³   ³ ³   ³ ³   ³ º           
+        º ³ R ³ ³ M ³ ³ M ³ ³ R ³ º          º ³ R ³ ³ M ³ ³ M ³ ³ R ³ º                   
+        º ³   ³ ³   ³ ³   ³ ³   ³ º          º ³   ³ ³   ³ ³   ³ ³   ³ º                   
+        º ÀÄÄÄÙ ÀÄÄÄÙ ÀÄÄÄÙ ÀÄÄÄÙ º          º ÀÄÄÄÙ ÀÄÄÄÙ ÀÄÄÄÙ ÀÄÄÄÙ º
+        º ÚÄÄÄ¿ ÚÄÄÄ¿ ÚÄÄÄ¿ ÚÄÄÄ¿ º          º ÚÄÄÄ¿ ÚÄÄÄ¿ ÚÄÄÄ¿ ÚÄÄÄ¿ º  
+        º ³   ³ ³   ³ ³   ³ ³   ³ º          º ³   ³ ³   ³ ³   ³ ³   ³ º           
+        º ³ R ³ ³ M ³ ³ M ³ ³ R ³ º          º ³ R ³ ³M/R³ ³ M ³ ³ R ³ º                   
+        º ³   ³ ³   ³ ³   ³ ³   ³ º          º ³   ³ ³   ³ ³   ³ ³   ³ º                   
+        º ÀÄÄÄÙ ÀÄÄÄÙ ÀÄÄÄÙ ÀÄÄÄÙ º          º ÀÄÄÄÙ ÀÄÄÄÙ ÀÄÄÄÙ ÀÄÄÄÙ º
+     ÉÍÍÊÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÊÍÍ»    ÉÍÍÊÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÊÍÍ»
+     º                               º    º                               º
+     º                               º    º                               º
+     ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼    ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+
+
+Gdzie:
+
+R       - glowica kabla rozdzielczego
+M       - glowica kabla magistralnego
+M/R     - miejsce przystosowane do obu typow glowic
+
+
+Oki. Powinienem teraz napisac conieco o tych glowicach, nie ?
+Dobra. Ale najpierw o kablach one more time:
+
+þ kabel magistralny to wielozylowy kabel laczacy centrale ze skrzynka kablowa.
+
+þ kabel rozdzielczy to taki kabel, ktory wychodzi ze skrzynek do
+  puszek/telefonow
+
+hehe :) spodobaly mi sie te þ (bo przypominaja mi EOS'a), wiec bede ich uzywal
+do wymieniania roznych rzeczy...
+
+i jescze troche danych tech. (ni grzyba potrzebnych, ale moze sie komus
+przyda)
+
+
+ilosc par      wysokosc (mm)    glebokosc(mm)     szerokosc(mm)     ciezar(kg)
+
+  600              1514             273               701              215
+
+  900              1962             273               701              260
+
+ 1200              1962             273               895              295
+
+ 1600              2410             273               895              345
+
+
+hehe :) z tego wynika, ze skrzynka 1600 par do az 588847350 mm szesciennych
+przestrzeni raju ;)
+
+Teraz glowice.
+
+Glowica wlasciwie mozna porownac do wtyczki (np. od kompa ! ;), tyle, ze
+wiecej zyl (duuuuzo wiecej !). Cos takiego wchodzi we wtyki skrzynek
+kablowych. Glowice od kabli magistralnych roznia sie od tych, ktore siedza
+na koncu kabli rozdzielczych. Aha, glowice kabla rozdzielczego moga robic
+za cos w rodzaju puszki np. na klatce schodowej. Ale zazwyczaj jest to
+tak, ze glowice leca do takich duzych, stalowych puszek (oczywiscie z logiem
+tepsy :) wiszacych na zewnatrz budyku (niedlugo zrobie zdjecia puszek na
+moim bloku: zupelne partactwo !!! puszki wisza na wysokosci 1.90m (nie mieli
+drabiny, czy co ?) i wiekszosc jest otwarta... chyba zloze reklamacje, czy
+cos... ;) albo na klatkach. A stamtad... wiemy gdzie :)
+
+Jest 8 podstawowych typow glowic:
+
+10-,20-,30-,40-,50-,60-,80- i stuparowe
+przy czym (ponoc) stosowanie 50- i 80-cio parowych jest odradzane...
+czemu ? nie wiem.
+
+Uklady kablowe....
+
+Sa 3 sposoby, w jakich sa ulozone sieci telefoniczne: jedno-, dwu- i
+trojczlonowy. ten pierwszy jest najprostszy:
+
+
+   ÚÄÄÄÄ¿ kabel rozdzielczy 
+   ³ CM ³ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ glowica kablowa ÄÄÄÄ puszki ÄÄÄ telefony
+   ÀÄÄÄÄÙÍÍÍÍÍÍ... inne kable rozdzielcze     \ÄÄ puszki  \ÄÄ telefony
+
+(CM to centrala miejska)
+
+banalne, nie ? Cos takiego to se mozesz w domu zbudowac ;))
+nie wiem, czy gdzie jest cos takiego jeszcze stosowane. Jesli tak,
+to szczerze wspolczuje, bo dolaczenie 15 nowych abonentow to katorga...
+Jesli juz, to uzywane do np. budynkow z centralami wewnetrzymi ablo b. malymi
+sieciami.
+
+Teraz dwuczlonowy:
+
+   ÚÄÄÄÄ¿ kabel magistralny
+   ³ CM ³ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ skrzynka kablowa 
+   ÀÄÄÄÄÙÍÍ...inne kable mag.             ³     ³     ³ 
+                                          ³     ³     ³ kable rozdzielcze
+                                          ³     ³     ³
+                                       puszki puszki  puszki
+                                     / ³ ³ ³\ /³ ³ \/ ³ ³ ³ \
+                                     telefony telefony telefony 
+
+oczywiscie "telefony" to po prostu pojedyncze linie abm. (czyli jak ktos
+sie uprze, to moze podlaczyc te kable nawet do pralki ;)
+
+czesto stosowany w srednich i wiekszych sieciach. Idealny dla np. malego
+miasta lub wsi.
+
+
+Teraz najlepsze: uklad trojczlonowy =)
+
+                                k a b l e   r o z d z i e l c z e
+                                    \\         ||            //
+   ÚÄÄÄÄ¿ kabel magistralny          ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+   ³ CM ³ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ³skrzynka rozdzielcza³= 
+   ÀÄÄÄÄÙÍÍ...inne kable mag.        ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+                                     //       ||         \\ kable rozdzielcze
+                                   //    skrzynka kablowa .. 
+                                 ..       ³     ³     ³
+                                ..        ³     ³     ³ kable rozdzielcze
+                                          ³     ³     ³
+                                       puszki puszki  puszki
+                                     / ³ ³ ³\ /³ ³ \/ ³ ³ ³ \
+                                     telefony telefony telefony 
+
+Jak widzisz orgia kabli ;)
+Uzywany w miastach. Skrzynka rozdzielcza to cos w rodzaju skrzynki kablowej,
+tyle, ze ma kilka tysiecy (zalezy od wiekosci sieci i ilosci SR) par =))
+
+
+
+tyle w kwestii okablowania zewnetrzego. Dalej pewnie kilka razy do tego
+wroce, ale jak na razie tyle wystarczy.
+
+
+--- Telefony
+
+
+Mamy kabelki, i co dalej ?
+Telefon. Jedno z moich ulubionych slow :)
+
+niby proste urzadenie, a jak sie potrafi skomplikowac, gdy dorzuci sie
+mu kilka funkcji.
+
+telefon (z zasady ;) sklada sie z mikrotelefonu i mechanizmu wybierania.
+
+ksiazkowa definicja mikrotelefonu:
+
+Mikrotelefon to urzadzenie, ktore po podlaczeniu do linii telefonicznej
+o ustalonym standardzie daje mozliwosc rozmowy za jej posrednictwem.
+
+Czy jakos tak :)
+
+Czyli po prostu glosnik i mikrofon (czemu wszystko jest mikro- ??? ;) spiete
+w taki ukladzik:
+
+                   mikrotelefon :)
+                    /ÄÄÄÄÄÄÄÄÄÄÄ\
+                    |           |
+             l 
+             i ÄÄÄÄÄÄÄsluchawka
+             n            ³
+             i ÄÄÄÄÄÄÄmikrofon
+             a
+
+podobnego sprzetu (tyle, ze z bajerami) bedziemy uzywac do wpinania sie...
+
+
+dobra. teraz mechanizm wybierania.
+
+Jest kilka standardow wybierania numerow.
+
+Impulsowo, DTMF, CCITT-5, CCITT-5/R-2 Forward/Backward i kilka innych,
+raczej nie uzywanych na swiecie...
+
+
+Wybieranie impulsowe to po prostu zwykle generowanie przerwan na linii,
+podczas gdy specjalny licznik w centrali (licznik abonencki) je liczy,
+i po zakonczeniu impulsowania wybiera odpowiedni numer.
+Mozesz sprobowac szybko naciskac widelki w swoim telefonie - po kilku
+razach odezwie sie znajomy glos "nie ma takiego numeru", lub wybierzesz
+jakis numer (np. na alaske ;))
+
+Impuls (zwarcie, przerwanie) 3 standardowe dlugosci:
+
+þ typ A (dla Strowgerow) 66.2/3 ms zwarcia, 33.1/3 przerwania
+þ typ B (Siemensa) 59 ms zwiarcia, 41 ms przewania
+þ typ C 63 ms zwarcia, 37 ms przerwania
+
+"zwarcie" to nic innego jak zamkniecie obwodu linii (czyli podniesienie
+sluchawki), a przewanie do odlozenie...
+
+(btw jesli ktos pali sie do tego, by dzwonic z budek w ten sposob, to
+od razu mowie, ze sa przed tym zabezpieczone :(  )
+
+Starsze centrale obsluguje jedynie wybieranie impulsowe, a nowsze takze
+tonowe.
+
+
+Natomiast wybieranie tonowe polega na wygenerowaniu tonow o ustalonych
+czestotliwosciach, ktore reprezentuja poszczegolne cyfry lub litery...
+
+sa dwa standardy wybierania tn.:
+
+þ DTMF, Generic Touch-Tone Dialing (nie pytaj, czemu skrot sie nie pokrywa
+  z rozwinieciem... pamiec jest zawodna, a to spisuje z commenta BlueBeep'a)
+  Uzywany w Europie (w tym takze w Polsce).
+
+  czestotliwosci to:
+
+           1209     1336     1477     1633
+
+            ³        ³        ³        ³
+
+  +697  ÄÄ  1   ÄÄ   2   ÄÄ   3   ÄÄ   A
+
+            ³        ³        ³        ³
+
+  +770  ÄÄ  4   ÄÄ   5   ÄÄ   6   ÄÄ   B
+
+            ³        ³        ³        ³
+
+  +852  ÄÄ  7   ÄÄ   8   ÄÄ   9   ÄÄ   C
+
+            ³        ³        ³        ³
+
+  +941  ÄÄ  *   ÄÄ   0   ÄÄ   #   ÄÄ   D 
+
+
+ladne, nie ? ;)
+
+litery A,B,C,D nie sa w polsce uzywane, a wiec g... warte :(
+
+By sobie pobzykac (nie, nie tak ! ;)) mozna miec
+
+1) telefon z wybieranie tonowym (wiekszosc nietarczowych tak ma)
+2) tonedialera
+3) silver box
+
+jedynke chyba wszyscy kumaja
+
+dwojka: male, szescienne urzadzenie ktore po jednej stronie ma klawke,
+a po drugie glosniczek. przykladamy to to do sluchawki (tfu ! chcialem
+powiedziec mikrotelefonu ;) i wybieramy numer, a ten grzecznie nam go
+wygrywa...
+
+trojka to to samo co dwojka, tyle ze z A,B,C i D, wiec nie ma zawracac
+sobie glowy....
+
+
+þ CCITT-5
+
+To znam tylko z widzenia...
+W commencie w BlueBeep (swietny programik do generowania tonow (jak kto
+nie ma tonedialera) i nagrywania ich np. na dyktafon) jest napisane:
+
+"Used in USA, Chile, Ghana..." czemu mial bym nie wierzyc ? ;)
+
+W jakiejs ksiazce (niestety, tytulu nie pamietam...) widzialem opis
+tego formatu tonow.
+
+Z tego, co sie zorientowalem, to sa dwa (lub wiecej) rodzaje:
+Forward i Backward (do przodu i do tylu). nie wiem, o co chodzi,
+nigdy sie tym nie interesowalem, a ze w polsce cos takiego nie dziala,
+raczej nie bede szukal na ten temat info...
+
+
+
+
+
+
+--- Wybieranie numeru
+
+Tutaj opisze, jak wyglada wybieranie numeru w centralach automatycznych
+
+
+Kazde wybieranie numeru zaczyna sie od podniesienia sluchawki, czyli zwarcia
+(brzmi logicznie, no nie ?). Oki. W centralach na koncu kazdego lacza
+abonenckiego jest cos takiego jak Abonenci Zespol Liniowy (czyli AZL).
+Umozliwia to to jednosce wykonawczej (proscesor) sprawdzanie, czy jest
+jest mozliwe przepuszczenie impulsu przez twoja linie. Najprost cos takiego
+zrobic tak:
+
+
+                      linia =------------- wejscie impulsu 
+                      linia =-------- badanie, czy impuls sie pojawil
+
+aha, zapomnial bym :)
+impuls to zwykle puszczenie jakiegos tam napiecia po linii.
+
+oczywiscie tak to nie wyglada w centralach, bo bylo by za latwo, nie ?
+panowie inzynierowie powpychali w akutalne AZeLe full kabla+rdzen magnetyczny!
+Huhuhuh :-D dla mnie to mniej wiecej tak, jakbym zeby sprawdzic, czy swieczka
+sie pali przepuszczal przez nia promien lasera impulsowego, i po drugiej
+stronie badal odksztalcenie wiazki (pod wpywem ruchu goracych gazow) :))
+(hmm.. a moze by to opatentowac ?? ;)
+Dobra. Nie bede sie juz nabijal z inzynierow. Na pewno zrobili to w jakims
+konkretnym celu..
+W kazdym razie dziala to na zasadzie nasycenia rdzenia magnetycznego i
+umozliwienia przepylu pradu. Moze w jakims stopniu przewyzsza to ten najprostrzy ?
+nie wiem. Ni grzyba znam sie na elektronice (zaskoczeni ?? ;), wiec nie bede sie
+wypowiadal..
+
+dobra. Mamy AZL. Aha, nie napisalem, po co CPU (central process unit - czyli
+tak jak w grzybach, amiszach, comodoszach i atarakach po prostu procesor :)
+centrali wali ci impulsami po linii co 100-200 ms :)
+Otoz, ona (lubie wyrazac sie o centrali jako o kobiecie... podobnie zreszta
+z dyskietka ;)) sprawdza czy podniosles sluchawke, i moze chcesz ja polechtac
+jakims polaczeniem ;).
+
+Wyglada to mniej wiecej tak:
+
+Program odpowiedzialny za wykrywanie polaczen odpala przerwanie zegarowe
+(cos jak int 08h w pecetach). Ma w pamieci zapisane, ktorzy abonenci maja
+podniesiony mikrotelefon/prowadza rozmowe, a ktorzy nie. Adresy tych drugich
+laduja w przepatrywaczu (tak ten uklad nazywaja w tych grubych ksiazkach,
+ktorych tytulow nie jestem w stanie wymowic ;). Ten rzuca impulsy do kazdego
+AZeLa, i zapisuje w specjalnym obszarze pamieci wyniki (bit ustawiony,
+jesli impuls przeszedl, czyli sluchawka podniesiona). Aktualnie wiekszosc
+przepatrywaczy umie badac po kilka linii naraz (16,32,64 etc.). To zalezy od
+procesora.
+
+Tu nalezalo by wspomniec o czym takim jak dlugosc slowa procesora.
+Porownam to z Pecetami:
+
+Jak powszechnie wiadomo 286 jest 16-bitowym procesorkiem :), czyli ta Diabelna
+Machina Nieograniczonej Predkosci (smiej sie, smiej, a ja kiedys na czyms takim
+codowalem !) moze operowac liczbami wielkimi na 16 bitow, czyli 16 miejsc
+w ukladzie dwojkowym, czyli na liczbach z zakresu:
+
+(binarnie)
+
+0000000000000000b-1111111111111111b
+
+(dec)
+
+0-65535
+
+(hex)
+
+0000h-ffffh
+
+czyli 2^16 
+
+oki. Czyli wszystkie (w rzeczywistosci nie, ale to tak dla ulatwienia :) uklady
+sa dostosowane do sygnalow i/o (input/output) 16 bitowych. Wszystkie rejestry
+sa 16 bitowe (choc mozna bawic sie ich polowkami, a nawet poszczegolnymi bitami)
+to jest 286.
+
+Teraz 486.
+486 jak (rowniez) powszechnie wiadomo jest procesoram 32 bitowym...
+czyli wszystkie rejestry, adresy etc. sa zapisywane w 32 bitach (znowu jest
+troszeczke inaczej, ale nie bede gmatwal i tak juz zagmatwanego tematu.. ;)
+a wiec moze operowac na liczbach 2^32 czyli
+00000000h-ffffffffh a wiec 0-4294967295 z tego wynika, ze (trzymaj sie ! ;)
+
+0000000000000000000000000000000b-1111111111111111111111111111111b
+
+wow ! imponujace, nie ?
+
+Tak samo jest z centralami. Sa rozne centrale. Starsze i nowsze. niektore
+maja wielkosc slowa rowna 8,16,32,64 etc. nie wiem, jakie sa najwieksze.
+
+Tu wkracza CZAS !
+Jesli chcesz, przeczytaj sobie "Krotka historie czasu" Hawkings'a, jesli
+nie rozumiesz pojecia. Jesli rozumiesz, to i tak przeczytaj, bo to ciekawa
+ksiazka...
+
+Ale na temat. Przepatrywanie, jak wszystko inne trwa. Zazwyczaj nie wychodzi
+poza granice 0,4 - 4 ms (choc gdzies czytalem, ze moga byc nawet 7 ms, ale
+to byla stara ksiazka..)
+
+Dobra. Lece dalej, a ty ze mna :)
+
+Po przepatrywaniu zaczyna sie analiza tego, co wykombinowal przepatrywacz.
+nie bede tu tego omawial, bo wiazalo by to sie z kolejnym zahaczeniem o
+assemblera :( powiem tylko, ze cpu generuje maske 1000000...000 (tak dluga,
+jak dlugie slowo) i robi cos w rodzaju AND. Jesli wynik nie zero, to abonent
+ma podniesiona sluchawke (jeden bit to jedna linia). pozniej najstepuje cos
+na wzor SHR, i tak tyle razy, ile abonentow.
+
+
+BTW Kumpel mieszkajacy w centrum zadupia (jak sam to kolega futszak okresla :)
+ma taka sytuacje, ze po podniesieniu sluchawki czasem nie ma sygnalu !!!
+(o kurna !) ciekawe, czemu ? Byc moze maja tak rzadkie przerwania zegara..
+
+
+--- przyjmowanie 
+
+Gdy juz wykyto polaczenie i centrala upewnila sie, ze to nie zaklocenia
+(sa na to sposoby) jest przydzielany danemu abonentowi obszar pamieci
+operacyjnej (tzw. pamiec toku polaczen). Kazda centralka moze obsluzyc
+tylko pewna ilosc polaczen. Po przydzieleniu pamieci centrala zaczyna badac
+co za jeden z abonenta, czyli sprawdza jego kategorie i uprawnienia.
+W centralach jest 5 obszarow danych o abonentach etc.:
+
+LAB - obszar abonentow lokalnych
+LDA - obszar kategorii
+LTF - obszar przeniesien
+LSNC i LNC - obszar numerow skroconych.
+
+(skroty pochodza zdaje sie z francuskiego)
+
+niestety, struktury LAB nie posiadam (w ogole ten rozdzial pisze w oparciu
+na stronach skserowanych z jakiejs ksiazki, a nastepnie mi przyniesionych i
+tego, co pamietam z lektury opisow technicznych). Mam za to piec ostatnich
+bitow kazdego slowa:
+
+1. rodzaj aparatu: tarcza/klawka
+2. rodzaje ograniczen dla abonenta:
+
+        þ blokada polaczen miedzynarodowych
+        þ blokada polaczen miedzynarodowych i miedzymiastowych
+        þ bez prawa do polaczen o zaliczaniu wielokrotym (tego nie bardzo
+          rozumiem. chyba chodzi o polaczenia urywane po jednym impulsie)
+
+wnioskuje, ze dla tego beda dwa bity (3 rodzaje ograniczej + abonent bez
+ograniczec daje w sumie 4 co da sie zapisac wlasnie w 2 bitach :)
+3. przekazywanie polaczen przychodzacych
+4. numer niewykorzystany (czyli jak tam sie zadzwoni bedzie "nie ma takiego
+numeru")
+
+Jesli nie ma zadnych przeciwskazan to centrala rzuca na linie dialtone
+(czyli moje ulubione, radosne tuuuuuu ! BTW niedawno podczas naprawiania
+swojej phreak-machine tyle sie dialtonu nasluchalem, ze po polozeniu sie do
+wyra i zamknieciu oczu uslyszalem... DIALTONE ! Ale sie ucieszylem :)
+
+
+W porzadku. Teraz rusza cos takiego, co sie nazywa Zespol Sterujacy Podczas
+Wybierania i Przyjmowania Zgloszen Abonencich (w skrocie ZSWP).
+
+
+wpierw jednak nabazgram, jak wygladaly juz opisane stany linii abonenckiej:
+
+
+1. spoczynek (czyli stan, w ktorym zazwyczaj mnie mozna zastac ;))
+
+                   linia ====³===AZL              (off topic: wlasnie padl
+                                                  mi klawisz backslash'a :( )
+
+  ta pionowa krecha to niby sciana centrali ;))
+
+
+2. Oczekiwanie na wybranie numeru
+
+                                        />>>> odbiornik cyfr
+                                      / 
+        linia =====³==========/=====/
+                            /       \ 
+                         timer        \<<<< generator dialtonu
+
+
+:) rozwiazalem problem. teraz bede wycinal \ z wyzszych partii faq :)
+
+timer to po prostu licznik czasu, ktory uplynal po podniesieniu sluchawki
+
+Teraz troche o odbiorniku cyfr. To taki fajny uklad, ktory sprawdza,
+czy i jaki wybrales numer. Teraz uwaga: do impulsowego wyboru numeru uzywa
+sie... AZL ! hehe :) Trzeba przyznac, ze sprytne, nie ?
+
+Teraz samo wybieranie: Jak wiesz, gdy sie podniesie sluchawke mamy dialtone.
+Po 16 sekundach dialtone zamienia sie w busy (sygnal zajetosci) a po kolejnych
+30 sek. zanika i nie slychac nic, a gdy w tym momencie ktos do ciebie zadzwo-
+ni, to, ku swej rozpaczy, uslyszy "abonent ma uszkodzona linie". To samo zreszta
+uslyszy, gdy ktos ci oderznie kable (dobry, choc malo wyrafinowany i przy-
+mitywny sposob na mszczenie sie na wrogach ;) kwestia tylko sie nie pomylic :).
+
+OC (odbiornik cyfr) czynny jest tylko w czasie tych 15-stu pierwszych sekund.
+
+OC dziala na dwa fronty:
+
+        þ przyjmowanie cyfr impulsowo - co ok. 10 ms przepatruje twoja linie.
+          jesli jest przerwanie, to liczy czas przerwania. Jesli jest znowu
+          zwarcie, to porownuje czas przerwania z tym, ktore wypisalem troche
+          wyzej, i tak w kolko, az bedzie dluzsza pauza (pomiedzy cyframi).
+          Wtedy zapisuje ilosc otrzymanych impulsow do zespolu sterujacego (ZS).
+        þ tonowo - przepatrywanie wykonywane rzadziej (tak duza czestotliwosc      
+          nie jest wymagana)
+
+po kazdej cyfrze czeka max. 16 sek. (choc ten czas moze byc zmieniany.)
+i po kazdej cyfrze dokonuje analizy numeru. ZS po kazdej cyfrze zapisuje ja
+w pamieci toku polaczen. Tam tez caly numer jest analizowany po kazdej cyfrze
+(czy juz da sie polaczyc). Oczywiscie calosc sie komplikuje przy uslugach spe-
+cjalych, zamawianych tonowo, ale, na szczescie, ich wybieranie zaczyna sie od
+# lub *. Oczywiscie podczas wybierania jest sprawdzana masa rzeczy, np.
+czy abonent odlozyl sluchawke, czy nie wyszedl poza swoje uprawnienia
+(np. wykrecil numer do Ugandy) itd.
+
+Natomiast przy wybieraniu numeru do innej centrali/miasta/kraju robi sie
+juz zupelny brudel. Nie bede calosci opisywal, bo raczej nie ma po co...
+
+
+Przyjmujac, ze mamy juz numer i wszystko jest ok, mozna dobrac sie do dupy
+temu po drugiej stronie kabal, czyli zbudzic go o 3 w nocy :->
+
+Od tej pory dzwoniacego (czyli nas) bede zwal AbA (abonent A, czyli abonent
+inicjujacy polaczenie) a tego, do ktorego dzwonimy AbB (abonent B, czyli
+przyjmujacy polaczenie). Taka terminologia jest stosowana w wiekszosci
+ksiazek o telekomutacji i telekomunikacji.
+
+Ok. Mamy numer, wiec teraz centrala sprawdza, czy AbB moze przyjac polaczenie.
+powodow do nie przyjecia polaczenia jest sporo:
+
+rozmawia z kims innym (ZDRADA !!!! LINCZ ! LINCZ ! LINCZ !) ;)
+ma kopnieta linie
+ma blokade (zakaz przyjmowania rozmow przychodzacych)
+lub inne, mnie nie znane :)
+
+Jesli AbB gada z kims innym, i nie ma takiego bajeru jak uprzywilejowanie do
+prowadzenia rozmow konferencyjnych (rozmowa z kilkoma abonentami naraz) lub
+Mozliwosc przelaczania sie liniami. (jw. tyle, ze wszyscy abonenci sa polaczeni,
+ale mozna prowadzic rozmowe tylko z jednym z nich)
+
+Po wykonaniu proby stany AbB i pomyslnym wyniku centrala moze przystapic do
+zestawienia polaczenia =)
+
+Zespol zestawiajacy polaczenie moze natrafic na "natlok w polu komutacyjnym"
+wiec moze kilka razy dokonywac wyboru drogi polaczeniowej. to TRWA :)
+(Czas znow sie klania :)
+Na ten czas centralka generuje cos takiego jak sygnal marszrutowania,
+czyli po prostu marszrutowanie. To taki szybki busy przed wybraniem numeru.
+Jest on tylko po to, by AbA sie nie zniechecil cisza, i nie odlozyl sluchawki
+:). Tu ciekawostka: czasami (ale rzadko) centrala potrafi sie ZWIESIC !!!
+Zupelnie jak win ! heheh :) Wpada w nieskonczona pentle marszrutowania i
+czasem nie moze z niej wyjsc prze 20 min. :) dzieje sie tak, gdy centrala
+AbB (lub AbA, jesli AbB nalezy do tej samej centrali) jest przeciazona.
+Zauwaz, ze w nocy nie ma marszrutowania (albo jest bardzo krotkie).
+
+Dobra. Jesli nie mamy uszkodzonej linii, aparat sprawny, nikt nie zajebal kabli
+by pozniej sprzedac, skrzynka kablowa jest sprawna, glowica kablowa nie jest
+dupna, kabel magistralny nie zardzewial, nasza centrala nie jest wlasnie
+naprawiana, centrala kumpla lub kumpeli tez nie jest wlasnie naprawiana,
+nie ma przeciazenia naszej centrali, nie ma przecizenia centrali AbB,
+AbB ma sprawny telefon, AbB nie rozmawia, u AbB mabel magistralny caly,
+a w jej/jego skrzynce kablowej nie grzebie wlasnie ImpexuS z ekipa,
+klucz "11" pozostawiony przez montera podczas przegladu nie wywolal
+zwarcia w skrzynce rozdzielczej i smiertelnie nas nie porazil,
+AbB jest w domu, centrala AbB nie jest wlasnie naprawiana, skrzynka
+kablowa AbB nie jest wlasnie naprawiana, tepsa nie robi strajku
+i AbB jeszcze zyje i chce z nami gadac to najwyzsza pora na....
+                              
+
+POLACZENIE Z AbB !!!!!!!!  yeah ! udalo sie ! dla takich chwil sie zyje !
+Niech zyje Ja ! Niech zyje wszystkie Ja, moje drugie Ja, moje Ego, wszystkie
+Ego moich Ja, Jasna strona Jasnej strony mojego Ja, Bledsza strona Jasnej
+strony mojego Ja, Ciemna strona mojego Ja, Mroczna strona Ciemnej strony
+mego Ja i Bledsza strona Ciemnej strony Jasnej strony przeciwienstwa
+odwrotnosci mojego Ego !!!!!!!!
+
+
+                                  :)))
+
+
+Fajniochu :) Teraz centrala da czadu w linie AbB i wysle mu serie impulsow
+(chyba 7) poczeka chwile, i tak do skutku, u nas bedzie "tuuuut    tuuuuut..."
+ja to nazywam ringtone, a ta seria do AbB to ring.
+W kazdym telefonie (no, chyba, ze zbudowalem go ja ;) jest dzwonek lub
+glosniczek. jak dzwonek dziala kazdy wie. Ten jest tak zrobiony, by silne
+impulsy napieprzaly nim w taki duzy stalowy talerz. Glosniczek jest zrobiony
+podobnie, tyle, ze sygnal jest w krytycznym momencie ;) (przy ringu) kierowany
+w membrane. Po przejsciu przez serie opornikow, tranzystorow i calego tego
+stuff'u i zastosowaniu roznych glosnikow uzyskuje sie rozny "ksztalt" ringu.
+Ton mozna zmienic, ale nie forme. dlatego nie ma badziewnych telefonow z
+muzyczkami etc :)
+dobra. Jesli AbB tam jest, i nie ma wlasnie.... gosci ;), nie jest w depresji,
+nie spi, i nie pokapowal nie, ze to my dzwonimy podnosi sluchawke i...
+
+
+--- rozmowa (choc niekoniecznie)
+
+
+Teraz rusza Taryfikator... to takie cos, co liczy, jak dlugo gadales, a
+pozniej dopisuje ci to do rachunku :(
+
+Taryfikator to jedyne urzadzenie, ktorego nie lubie w centralach.
+
+
+Ale uwaga ! Wrog nie spi ! co ok. 200 ms leci sygnal przepatrujacy, ktory
+sprawdza, czy nie skonczylismy juz pogaduchy.
+Jesli AbA odlozyl mikrotelefon Taryfikator przerywa zaliczanie, a AbA
+ma okreslony czas na jego podniesienie (zazwyczaj 30 sek.). Jesli
+podniesie, Taryfikator znowu zacznie liczyc, a my bedziemy mogli dalej
+gadac. Jesli AbB zrobi nas w balona, i tez odlozy sluchawke, to cale polaczenie
+cholera wezmie, a ty bedziesz musial zaczynac wszystko od nowa.
+
+Jesli AbB odlozy mikrotelefon, to u AbA licznik nadal bedzie bic
+(hehehe :) wlasnie wymyslilem piosenke "Impuls Dla Rozmow Minionych:"
+"Okret moj plynie dalej/Gdzies tam/Licznik choc popekany/Chce bic !" ;)))
+Jesli spowrotem podniesie, to bedzie mozna dalej rozmawiac. W starych centralach
+elektromechanicznych fajnie bylo, bo po odlozeniu przez AbB sluchawki AbA
+mogl nie odkladac sluchawki np. przez dwie doby, nic go to nie kosztowalo,
+a AbB nie mogl nigdzie dzownic :)
+
+Jesli AbA i AbB odlozyli sluchawki, albo AbA odlozyl sluchawke na wiecej,
+niz 30 sek, albo zrobil to AbB to pora na rozlaczenie :)
+
+rozlaczenie wyglada mniej wiecej tak tarifikator zapisuje naliczona sume i
+numer AbB w billingu, a linie AbA i AbB sa znow gotowe do uzycia.
+
+
+
+-------------
+
+
+

@@ -1,0 +1,179 @@
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+     ###  #  #
+    #   # #  #    Digital Interactive Explosive Content
+    #     #  #    ======--------------------------->>>>
+    #     #####         C4 <2c64@friko7.onet.pl>
+    #   #    #        PGP Key at the end of document.
+     ###     #           VERSION: 1.000, 14-11-98
+     
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+DISCLAIMER: Cokolwiek robisz, robisz na wlasny rachunek i C4 nie mo¿e byæ 
+            poci¹gniêty do jakiejkolwiek odpowiedzialnosci za czyjekolwiek
+            czyny. Je¿eli siê z tym nie zgadzasz - _NIE_ czytaj dalej.
+            
+            Ten tekst zostal napisany tylko i wylacznie dla celow edukacyjnych.
+            Uzycie go w jakimkolwiek innym celu jest sprzeczne z prawem.
+            
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Dosyc tego pierdolenia - do roboty!
+
+SPIS TRESCI:
+
+   I. Urmet Niebieski
+    1. Budka
+    2. Normalny
+    3. Sposoby na podpinanie sie do budki.
+    4. Rozpierdalanie budki.
+    5. Odpowiednie miejsca.
+
+[I] Urmet Niebieski - taki automat na karty magnetyczne, czesto spotykany na
+                      ulicach. W odroznieniu od srebrnego ten nie odczytuje
+                      kart czipowych.
+                      
+1. Budka... hmm... chyba kazdy wie co to jest, ale mimo wszystko ja przypomne.
+   Chodzi tutaj o taki maly zolty domek do ktorego non-stop wchodza gowniarze
+   z tone dialerkiem i probuja zaszpanowac. Wiele metod na budke nie dziala.
+   Najlepsza metoda jest po prostu sie podpiac.
+   
+2. Normalny automat. Hmmm.. np. taki jak jest na poczcie, wkrecony w sciane...
+   Tutaj sie sprawa komplikuje. Nie da sie tak latwo podpiac. Przynajmniej da
+   sie podpiac iglami, ale nie jest to takie proste.
+   
+3. Sposoby, a wiec to co tygryski lubia najbardziej.
+   Na poczatku zaopatrz sie w nastepujace rzeczy.:
+   - Tone Dialer. Chyba kazdy phreaker go ma. Czasami przydaje sie w automatach
+     niebieskich.
+   - Telefon jednoczesciowy, najlepiej z wybieraniem dekadowym (prrrk prk prk.)
+     Rysunek ponizej :>
+     
+     .---------------.
+     | +-----------+ |
+     | | ========= | |
+     | | ========= | |
+     | | ========= | |
+     | +-----------+ |
+     |>-------------<| 0..9 - Wiadomo co.
+     | [1]  [2]  [3] | * - Gwiazdka. Na niektorych = REDIAL
+     |               | # - tzw. Hash. Na niektorych = MUTE
+     | [4]  [5]  [6] |
+     |               |
+     | [7]  [8]  [9] |
+     |               |
+     | [*]  [0]  [#] |
+     |               |
+     |>-------------<|
+     |               |
+     |    <=====>    |
+     |               |
+     '---------------'
+           |   |      <---- Jack telefoniczny.
+           
+     Moim zdaniem taki telefon jest najlepszy. Maly, poreczny i niewinnie wygl-
+     -adajacy :). 
+    
+   - Kabel JACK <-> KROKODYLKI (ZABKI) (Po przerobieniu ze zwyklego kabla)
+   - Kabel JACK <-> IGLY (Dwie igly podlaczone [przylutowane] do kabelkow)
+   - Latarka
+   - Srubokret(y) (wlasciwie to pare ich..) Gwiazdkowy, Normalny, ale gruby
+     i twardy jak stal (tak, tak - te automaty nie sa robione z byle czego)
+     Jeden lub dwa szesciokatne.
+   - Szczypce (obcegi) - Koniecznie izolowane.
+   - Mlotek
+   - Piwo = 0.33 l
+ 
+ DO ROBOTY. 
+ 
+ Wchodzisz do budki. Widzisz tam cos takiego jak taka dluga zolta pokrywe od
+ dolu. Jest tam bodajze 6 srub szesciokatowych. Odrec je. Srubki te mozesz sobie wymienic na srubki gwiazdkowe (latwiej odkrecac). (Budka bez srub u nasz lezala przez miesiac nietknieta. :))))   Niestety czasami ktos zadzwoni i zglasza !!!! Pod nia sa dwa bezpieczniki, kostka zaciskowa, puszka, i 220 V~.
+ Zeby ulatwic sobie robote, mozesz wziac i odlaczyc oswietlenie od budki. :)
+ Drobna rzecz, a potem ulatwia robote. Mozna to zrobic przecinajac kable od zasi lania, lub po prostu wylaczyc bezpieczniki.Teraz tylko bierzemy nasz telefon i
+ podpinamy do dwoch podlaczonych kabli na kostce zaciskowej. Taka pokrywe mozemy przykryc. Najlepiej jest gdy jest was dwoch (lub dwie :) Jeden gada przez 
+ telefon wlasciwy (udaje ze gada), a drugi gada przez naszego amatora. :))
+ Zeby wszystko bylo jak najmniej zauwazone, mozemy sobie pociagnac dodatkowe
+ (male) gniazdko tel., lub jacka. Cos takiego odpowiednio schowamy i nikt nie 
+ ma prawa sie skapnac. Potem tylko podchodzimy do budki wieczorkiem i dzwonimy
+ ile sie da (no bez przesady. Od czasu mozemy jaki LD walnac, ale nie za czesto
+ bo tp$A wszystko sprawdza.) NIE DAJ SIE ZLAPAC! UWAZAJ! GLINY MOGA JEZDZIC!
+ 
+ Druga metoda jest mniej ryzykowna, ale mimo wszystko. U gory automatu jest 
+ mala zolta klapka zakrecana na 4 sruby (gwiazdki!) Odrecamy delikwenta, 
+ najwyzej zostawiamy na jednej srubie, zeby bylo malo podejrzane. Poza tym da 
+ sie takie cos szybko ukryc. (Zasuwasz i jest OK). Jezeli chcesz dzialac 
+ super-niepostrzezenie, mozesz zabrac klapke ze wszystkimi srubami do domciu i
+ odciac 3-em srubkom gwint, zeby zostala sama glowka. Potem tylko super-glue i
+ naklejasz glowki w miejsca gdzie byly dziurki (tylko 3 dziurki, bo czwarta 
+ bedziemy zakrecac!) Wchodzisz spowrotem do budki i zakrecasz na ta ostatnia
+ srubke. Wszystko wyglada tak malo podejrzanie ze az milo. :) Do rzeczy! Pod
+ klapka znajduje sie bialy kabelek telefoniczny. Najpierw sprobuj igielkami,
+ ale mala szansa ze sie uda. Jezeli sie nie uda, to wez i oskub kabel z 
+ koszulek. Jak juz masz gole kabelki to podepnij zabki i dzwon... Jezeli chcesz
+ miec to zrobiony w sposob 100% professional, to wez nasz kochany kabelek i
+ obedrzyj go ze skory (wazne, ze nie duzo.) Mozesz nawet go pociagnac z dolu
+ troche. Pod cos takiego podpinamy kabelek z jednej strony zakonczony jackiem,
+ a z drugiej golymi drutami. Podpiete? Teraz zaizoluj. Masz teraz szybki dostep
+ do linii tel. (Odsuwasz klapke, wpinasz telefon i dzwonisz). 
+ 
+4. Rozpierdalanie.
+
+ Do teg jest ci potrzebny jedynie mlotek i MOCNY srubokret (nawet 2 albo 3).
+ Budki sa zamykane na ABLOY'a. Mozna kluczyk zdobyc, ale to nie jest konieczne.
+ Problem w tym, ze jak totalnie rozpierdolisz budke, to jest niedobrzeeee.....
+ Mniejsza o to. Problem w tym, ze jak zamkniesz budke, to ona zaczyna dzwonic na centrale... :/ Trzeba temu zaradzic. Bierzesz dwa lub 3 akumulatorki 12V i 
+ odpinasz budke od listwy zaciskowej. Teraz bierzesz kluczyk i otwierasz.
+ Teraz Rob co hcesz z budka. Odpisz sobie uklady... cokolwiek co potrzebujesz;)
+ Mozna tak nawet zapierdolic plyte glowna, ale to inna sprawa. Teraz zamykamy
+ nasz automat. Zamkniety? Dobrze... teraz podlacz go do lini rownolegle ze swoim telefonem. Jezeli automat zacznie gdzies dzwonic, to szybko go odlacz. Jezeli
+ nigdzie nie dzwoni, to wez go i podlacz normalnie do linii. Zamknij wszelkie
+ obudowy/plyty/klapki/pokrywy i sie ulotnij. 
+ Druga metoda (tej nie lubie). Wej srubokret i wpierdol w szeczeline od ktorego
+ s boku. Mocno wpierdol do srodka, najwyzej sobie pomoz mlotkiem. Potem wbij
+ tam nastepny, jeszcze jeden i powinno wystarczyc. Udalo sie? Super! Teraz 
+ pchnij srubokret do przodu, tak zeby panel odskoczyl. Teraz czynnosc powtorz 
+ z drugiej strony. Dobrze, teraz od gory. Popchnij mocno panel ktorejs strony w
+ bok. nie tak.  MOCNIEJ, az odleci ... o wlasnie tak. Teraz robisz co chcesz...
+ Czytnik kart, plyty, uklady, cokolwiek... :) Takiego automatu juz sie nie da
+ zamknac :((. 
+ 
+5. Odpowiednie miejsca.
+ A wiec, ciemne uliczki, dworce (w ostatecznosci), slabo uczeszczane drogi 
+ wiejskie i miejskie. Uwazaj na gliny. Otworz sobie klapke od dolu na miesiac
+ przed planowanym podpinaniem. Fajno. Najlepiej od razu wylacz swiatlo w budce.
+ 
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+ 
+ PGP KEY (use it all the time. to get PGP go to: www.pgp.com)
+ 
+ -----BEGIN PGP PUBLIC KEY BLOCK-----
+Version: PGPfreeware 5.5.5 for non-commercial use <http://www.nai.com>
+
+mQGiBDZc/IARBADQydldMks8A4XiUdE5IBlh5x40pXeFztoMHk2/fkMcNAKzuCYe
+DDHdrcRaLvSE5lX54DCTZZov5+EMZ7AElHfyg8M7uznVDfIyr4pPtiFCwPe21IJe
+vhKWLHBrKnqIirkilR6PQ8kRlvW+KXQpqaTSkRnSQoHPKUWbp24qsFC2nQCg/37J
+53iP1G9GMlfslS/YJXBATWcD/0EUOhF32vZMAT7GGY9647v27idcCG3C9uWM/yoh
+8Q2HveXEg2QKVBM270wHsVhA8U/ir25C783znSO7fF+O870ixGsLz6y6ikvmP22I
+s0V1HZgBK//CxS4hqRGLt7GyGSWpIIksanVyGw6J9t9g1TZ5s+Tda9xOsppXF3OM
+DtokBACpHidOiEM9d/FqPROw7XkiwMwMR4ASK+BJMW/Xvamk/Ff8OHYkbVZM21FE
+L2TLmceEu9V2jh3/oEajUW9FzeuSt9a+ZnfX89aL/S/laXmM/di8j8g1c3GI1Cl+
+kdZ+wD1dQHTVJjP6gE7ryKn9v09H9URkf9+cXp6RlC15MBgSXLQYQzQgPDJjNjRA
+ZnJpa283Lm9uZXQucGw+iQBRBBARAgARBQI2XPyABQkB4oUABAsBAwIACgkQgSHx
+QY977fWmJACfULsk7l2wTy3WuIKvbZDPdsA6arYAnRXC6tuN8ny87GoHlVHwf5Re
+7E1euQINBDZc/IEQCAD2Qle3CH8IF3KiutapQvMF6PlTETlPtvFuuUs4INoBp1aj
+FOmPQFXz0AfGy0OplK33TGSGSfgMg71l6RfUodNQ+PVZX9x2Uk89PY3bzpnhV5JZ
+zf24rnRPxfx2vIPFRzBhznzJZv8V+bv9kV7HAarTW56NoKVyOtQa8L9GAFgr5fSI
+/VhOSdvNILSd5JEHNmszbDgNRR0PfIizHHxbLY7288kjwEPwpVsYjY67VYy4XTjT
+NP18F1dDox0YbN4zISy1Kv884bEpQBgRjXyEpwpy1obEAxnIByl6ypUM2Zafq9AK
+UJsCRtMIPWakXUGfnHy9iUsiGSa6q6Jew1XpMgs7AAICB/9g04TKmsKUBsSx6zW3
+sZpoAVDA+lBr9/XKzRt02MM5svDubHAoiXZOFBFhSIGgMOQjF0kgMbnNzzRaA8Cg
+xChnesLg9cdVhqG0sXwXnUaV+52HBkusKEqq8ivYaQTzB2auG652tS8JXicyVWMM
+jXFUdPKO/xQ2s6mdkdzyoqEVPngpTcGMBgUwYWJL6eaOCI0dmdDfqm59ZK5/i5GF
+Ho3AKXxLmx8ie7DoRl6AYl3rtUmdDnsHKoBX9Dqt2kkDbLfkanPOtV1hKbRh4mHP
+6GMHDKJpbJ/6GAhIr2vSEcdsrZlwchIL5ANe5HyenXXYHmuuBkez2m63YFraCGfZ
+c+kHiQBMBBgRAgAMBQI2XPyBBQkB4oUAAAoJEIEh8UGPe+31bToAnjDw8Azx7qLh
+FVRUk4z836L/vWdIAKCOrA4QiYqV/Hv6zOOho3PKNtyEzg==
+=f30q
+-----END PGP PUBLIC KEY BLOCK-----
+
+Asta la vista, baby.

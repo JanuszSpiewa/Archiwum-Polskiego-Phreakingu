@@ -1,0 +1,742 @@
+
+      [=][=][=]   [=][=][=]  [=][=][=]     [=]   [=]  [=][=][=]  [=][=][=]
+      [=]   [=]   [=]   [=]        [=]     [=]   [=]  [=]   [=]  [=]   [=]
+      [=]   [=]   [=]              [=]     [=]   [=]  [=]   [=]  [=]   [=]
+      [=][=][=]   [=][=][=]     [=][=][=]  [=]   [=]  [=][=][=]  [=]   [=]
+      [=]   [=]         [=]        [=]     [=]   [=]  [=] [=]    [=]   [=]
+      [=]   [=]   [=]   [=]        [=]     [=]   [=]  [=]  [=]   [=]   [=]
+      [=]   [=]   [=][=][=]        [=]     [=][=][=]  [=]   [=]  [=]   [=]
+
+
+                        [=][=][=]  [=][=][=]  [=][=][=]
+                        [=]        [=]   [=]  [=]   [=]
+                        [=]        [=]   [=]  [=]   [=]
+                        [=][=]     [=][=][=]  [=]   [=]
+                        [=]        [=]   [=]  [=]   [=]
+                        [=]        [=]   [=]  [=]   [=]
+                        [=]        [=]   [=]  [=][=][=]
+                                                  [=]
+                                                  [=][=]
+
+3.VII.1999                                                POCZTA GLOSOWA
+
+ ==========================================================================
+||  Wszystko co tu znajdziecie mozecie wykorzystywac jak wam sie podoba.  ||
+||  Nie interesuje mnie zupelnie  czy powstana przez  to jakies (czyjes)  ||
+||  szkody czy  nie. Chce  zerwac z  maniera wrzucania takich tekstow na  ||
+||  poczatku faqow, bo uwazam to za smieszne. W takich przypadkach traca  ||
+||  zwykle monopolisci i/lub lameria wiec po co  sie o nich martwic? A o  ||
+||  siebie sie  nie bojcie jak maja was zlapac to i tak zlapia, zeby nie  ||
+||  wiem co - a i tak  nikogo jeszcze za teksty nie wsadzili (no w koncu  ||
+||  jest demokracja) ;) Moja dywiza to: Im wiekszy dym tym ciekawiej ;-)  ||
+ ==========================================================================
+
+
+
+1. Wstep do faqu
+
+2. Co to jest VMB?
+
+3. Hackowanie poszczegolnych rodzajow poczty glosowej
+   - podstawy
+   - specyfika
+     a. poczta glosowa w stylu amerykanskim ;)
+     b. systemy z operatorem (przewazajaca wiekszosc, w tym nasze)
+   - hackowanie skrzynek
+     a. Toneloc - najlepszy przyjaciel phreakera
+     b. reczny bruteforce i psychologia
+     c. inzynieria spoleczna (moja ulubiona metoda)
+   - jak zdobyc i utrzymac skrzynke?
+     a. Jak zdobyc "nowa" skrzynke w systemie poczty glosowej?
+     b. jak utrzymac skrzynke? (sprawa bezpieczenstwa)
+
+4. Linki zwiazane z tematem
+
+5. Na koniec (podziekowania, etc...)
+
+6. PGP
+
+
+[ 1. Wstep do faqu ]
+ ==================
+
+No  dobra.  Drugi  raz  chcialo  mi  sie  troche postukac w klawiature i
+napisac  faq.  Tym  razem  o systemie poczty glosowej. Napewno kazdy cos
+slyszal  o  tym wynalazku. Zaczyna sie to robic popularne w Polsce, wiec
+zainteresowalem  sie  tematem.  Mimo,  ze  cala  sprawa  jest dopiero "w
+powijakach"   a  wszystko  jest  na  etapie  rozwoju,  zdecydowalem  sie
+poswiecic sporo miejsca na opis systemow "egzotycznych" z naszego punktu
+widzenia  (takich  jak  chocby  uzywanie pelnego kodu DTMF przy obsludze
+kont).  Nazewnictwo  nie jest zbytnio ustandaryzowane, bo wiekszosc nazw
+nie  ma  odpowiednikow  czysto  polskich.  Troche  mnie  denerwowalo  to
+spalszczanie  na  sile  (np.  slowko  "box"  na "skrzynka", gdy chodzi o
+numer  pod  ktorym  mozna odsluchac wiadomosci), ale trudno. Zrobilem to
+dla wspolnego dobra ;)
+
+Mimo,  ze poczta glosowa podobna  jest  do  regularnych,  automatycznych
+sekretarek, ktore stoja w domach u przecietnych ludzi, to nie nalezy jej
+z  nimi  mylic.  Jest  to  troche  bardziej  zaawansowane  technicznie i
+przeznaczone   raczej   do   profesjonalnych   celow   (o   tym  nizej).
+Najlpopularniejsze  systemy poczty glosowej to Octel, ASPEN czy Virgins,
+chociaz sa tysiace innych. W Polskiej rzeczywistosci coraz wiecej duzych
+firm,  korzystajac  z  wzorcow  krajow wysoko rozwinietych, instaluje te
+systemy  u  siebie. Czesto laczyc sie z nimi mozna dzwoniac na bezplatne
+numery  0-800  (np.  w  przypadku pracownikow firm) lub na wysoko platne
+numery  0-700 (np. dla ludzi co daja ogloszenia towarzyskie). Oczywiscie
+najpopularniejsza forma sa numery lokalne.  Wszystkie  sprawy zwiazane z
+uzywaniem i hackowaniem takich systemow znajduja sie wlasnie w tym faqu.
+
+W  kazdym razie temat na pewno nie zostanie wyczerpany tym tekstem i mam
+nadzieje,   ze   przyczyni  sie  on  do  pobudzenia  zainteresowania  ta
+tematyka  u  rodzimych phreakerow (ale patetyczne!). Wiekszosc opisanych
+rzeczy  testowalem  w  roznych  warunkach (niekoniecznie krajowych) wiec
+powinno  dzialac. W celu poprawek/uzupelnien mailujcie do mnie. Adres na
+koncu faqu. Nie lubie dlugich wstepow, takze to by bylo na tyle ;)
+
+[ 2. Co to jest VMB ]
+ ===================
+
+Co  to  jest  VMB?  Voice  Mail  Box,  czyli  Skrzynka w systemie Poczty
+Glosowej  to,  po  prostu,  pojedynczy  numer uzytkownika (kimkolwiek on
+jest),  dzialajacy  jak  automatyczna  sekretarka  z  nagranymi  kilkoma
+roznymi komunikatami powitania, z dostepnymi mozliwosciami wyboru innych
+funkcji  do obslugi tego konta (jest ich najczesciej 8 roznych kategorii
+dostepnych pod kolejnymi cyframi  telefonu  tonowego).  Opisywany  numer
+znajduje  sie  zwykle  w  wiekszym  systemie  poczty glosowej, do ktorej
+mozna sie dostac dzwoniac pod specjalny (chociaz moze byc najzwyklejszy,
+lokalny)  numer  telefonu. Czasami, choc bardzo zadko, moze sie zdarzyc,
+ze  konkretny  numer  telefonu  wskazuje na tylko jedna skrzynke, ale sa
+to rzeczywiste wyjatki.
+
+Konkretnie,  oznaczenie  VMB wskazuje rowniez calosciowo na poszczegolna
+skrzynke  (czyli, nie tylko numer, ale i kod dostepu) danej osoby. U nas
+zreszta  tez  prawie  na  wszystko mowi sie poczta glosowa. Nierozroznia
+sie,  czy  to  numer dostepu do systemu (np. 0-800-xxxxxx) czy konkretna
+skrzynka  (np.  777)  a  ma  to  zasadnicze znaczenie. Dalej bede scisle
+rozroznial  te  dwie  rzeczy.  Na  oznaczenie czyjegos numeru bede mowil
+"skrzynka  poczty  glosowej", czy jakos tak. Niektorzy okreslaja to jako
+"konto",  co  takze  ma  sens  zwazajac  na  pewne podobienstwa do konta
+shellowego.  W  kazdym razie VMB to oznaczenie miedzynarodowe i jak ktos
+chce  bardzo  sie  dowiedziec  o  szczegolach  technicznych,  to niech w
+altaviscie lub innej wyszukiwarce tak wlasnie wpisuje ;)
+
+Poczty  glosowe,  wszelkich  rodzajow,  prowadzone  sa najczesciej przez
+firmy  aby  niektorzy  (czesto  wazniejsi) pracownicy, ktorzy akurat nie
+sa w danej chwili w pracy, lub zwykle sa poza jej miejscem, mogli zawsze
+sprawdzic  kto do nich dzwonil, czy sa jakies wiadomosci z kierownictwa,
+itp.  Z  drugiej  strony  wystarczy  spojrzec w gazete z ogloszeniami na
+numery 0-700-xxxxxx, gdzie mowi sie "nagraj wiadomosc i sprawdz czy ktos
+sie  nie  nagral".  To rowniez poczta glosowa. Praktyczne rozroznienie w
+numerach   poczty  glosowej:  0-700,  0-800,  lokalne  -  to,  0-700  sa
+reklamowane  i  w  kazdej chwili mozna znalezc takie systemy; o numerach
+0-800 mozna dowiedziec sie w informacji (np. poczta glosowa tp$a) i przy
+okazji  jakis  urzedowych  formalnosci;  natomiast  numery lokalne sa do
+wiadomosci jedynie osob zainteresowanych, najczesciej pracownikow firm a
+wiec  najtrudniej  jest je znajdowac. Bywaja takze zastrzezone numery na
+poczte glosowa, szczegolnie w tej ostatniej kategorii.
+
+[ 3. Hackowanie poszczegolnych rodzajow poczty glosowej ]
+ =======================================================
+
+To  jest  wlasciwie  zasadnicza  czesc  tego  faqu. Chcialem napisac dwa
+odrebne rozdzialy, opisujac kolejno rodzaje poczty glosowej i metody ich
+hackowanie,  ale  takie  rozbijanie  byloby  sztuczne.  Dlatego tez przy
+okazji  omawiania poszczegolnych metod haczenia omawiam specyfike danego
+systemu. Zaczynam jednak od podstaw. Dalej pisze o wlasciwym hackowaniu.
+Poniewaz  jednak  jest  ono  podobne,  zeby nie powiedziec identyczne (z
+wyjatkiem  drobnych  roznic),  we  wszystkich  systemach,  dlatego  tez,
+przyjalem zasade, ze omawiam poszczegolne systemy wraz z waska specyfika
+ich  hackowania  a  rzeczy  ogolne  opisuje  na koncu (po przedstawieniu
+wszystkich systemow).
+
+podstawy
+--------
+
+Z punktu widzenia osoby chcacej hackowac czyjas skrzynke poczty glosowej
+najlepsza  pora  na  dzwonienie  jest  noc.  Mamy wtedy 99%, ze nikt nie
+bedzie  ingerowal  w  polaczenie  (np.  operator  lub  wlasciciel, jesli
+skrzynka  i  caly  system  poczty glosowej znajduje sie fizycznie w jego
+pracy).  W  nowych  systemach  poczty  glosowej istnieje nawet mozliwosc
+odbrania  telefonu  i  prowadzenia  regularnej  rozmowy, jesli posiadacz
+skrzynki  jest  na miejscu lub ma zainstalowane przekierowanie. U nas co
+prawda  nie  jest  to zbyt popularne, ale dmuchajac na zimne radze bawic
+sie w to w nocy. Wtedy na pewno nikt nie odbierze telefonu (no chyba, ze
+traficie  na  maniaka-pracoholika,  ktory  na  stale  mieszka w biurze).
+Normalnie  powinna  sie  uruchomic tradycyjna procedura poczty glosowej,
+czyli  w praktyce komunikat "podaj numer skrzynki i zostaw wiadomosc" ;)
+W tym kontekscie warto rowniez wiedziec ze pewne systemy poczty glosowej
+sa  fabrycznie zaprogramowane na wlaczanie sie po 5 sygnalach i malo kto
+je pozniej przestawia. Dlatego tez mozna probowac dzwonic "po godzinach"
+(od 17oo) i tez jest mala szansa, ze ktos odbierze 'ludzkim glosem'.
+
+Jakkolwiek  sa  pewne  sposoby, zeby administrator (lub operator jak kto
+woli)  albo  wlasciciel  (czy  jak  go  tam  zwal)  skrzynki  na poczcie
+glosowej, mogl monitorowac intruza podczas swojej nieobecnosci w miejscu
+fizycznego  usytuowania systemu poczty glosowej, wiec ostroznie. Sposoby
+te polegaja glownie na zapisywaniu wcisnietych przyciskow (w tym wypadku
+tonow  DTMF) lub wrecz przesylaniu skonstruowanych w ten sposob logow do
+pliku  a  nastepnie  ich  drukowaniu,  jako podsumowanie jakiegos okresu
+korzystania  z  poczty  glosowej  (zwykle jest to opcja dla operatorow).
+Widac  tu  juz  roznice  miedzy  zwykla automatyczna sekretarka a poczta
+glosowa ;). Podsumowujac ta czesc, przestrzegam poczatkujacych charcerow
+przed   lekcewazeniem   podstawowych   zasad   swojego  bezpieczenstwa i
+wklepywaniu, np. swojego numeru telefonu domowego, jako kolejnych opcji.
+
+Nalezy  sobie  zadac  pytanie,  jak  mozna  znalezc numer systemu poczty
+glosowej  i  skrzynke  w takim systemie? Poza tym co pisalem wyzej dojsc
+moze  tu  jeszcze  jedna  metoda. Najprostsza droga jest zadzwonienie do
+10-20  najwiekszych  firm  (radzilbym  zaczac  od tych z, bardzo szeroko
+pojetej,  branzy informatyczno-telekomunikacyjnej) okolo 22oo. Tam gdzie
+uslyszycie  w  sluchawce  cos w rodzaju: "Witamy w poczie glosowej firmy
+XXX", oznacza ze trafiliscie. Warto spisac ten numer i juz jest material
+do  praktyki.  Drugim,  popularnym,  sposobem  szukania  numerow  poczty
+glosowej  jest  skanowanie  numerow  przy  pomocy  jakiegos programu. Ze
+wzgledu  na  mozliwe  koszty  polecam robienie tego, jedynie, z numerami
+0-800.  Ale  jesli  sie  juz  uparliscie  na  miejscowe (lub macie takie
+polaczenia za darmo), to najlepiej wypisac sobie z ksiazki telefonicznej
+kilkadziesiat  numerow  duzych i srednich firm a nastepnie umiescic je w
+pliku  skad  program  skanujacy  bedzie  pobieral  dane. Musze wspomniec
+jeszcze,  ze  hackowanie  poczty  glosowej moze byc o wiele latwiejsze w
+malych firmach niz w wielkich korporacjach, gdzie moga byc bardzo dobrze
+zabezpieczone systemy (IMO jak narazie najlepiej zabezpieczone sa numery
+poczty glosowej na 0-700).
+
+specyfika
+---------
+
+a. poczta glosowa w stylu amerykanskim ;)
+
+Wiem,  ze  tytul  brzmi  smiesznie,  ale  rzeczywiscie  takie systemy sa
+najpopularniejsze  w USA. Sprawa nie jest prosta, a wrecz bardzo trudna.
+Zrozumienie  tego  systemu  moze byc nielatwe zwlaszcza, ze obsluga jest
+zagmatfana,  ale  staralem  sie  opisac  to  najbardziej przystepnie jak
+umialem.  No  ale  czas  na praktyke i konkrety . Powiedzmy, ze juz mamy
+jakis tego rodzaju numer systemu poczty glosowej. Po zadzwonieniu na tam
+zalorzmy,  ze odzywa sie glos: "Nacisnij 1 aby wejsc do katalogu numerow
+pracowniczych".   [bardzo   czesto   skrzynki   w  takich  systemach  sa
+skatalogowane,  np. pracownicy, kierownictwo, kooperanci, itd.]. To jest
+najprostsza  metoda  aby znalezc skrzynke do zhackowania. Wciskamy "1" i
+mozemy   uslyszec   cos   w   rodzaju   "Wprowadz  ostatnie  trzy  cyfry
+odpowiadajace  trzem  ostatnim  literom  nazwiska osoby,  ktorej  chcesz
+zostawic  wiadomosc". Pewnie sie zastanawiacie jak cyfry moga odpowiadac
+literom. No sproboje to wyjasnic. W nowszych telefonach mamy taki uklad:
+
+                    _________________________
+                   |                         |
+                   |           abc    def    |
+                   |    ---    ---    ---    |
+                   |   | 1 |  | 2 |  | 3 |   |
+                   |    ---    ---    ---    |
+                   |    ghi    jkl    mno    |
+                   |    ---    ---    ---    |
+                   |   | 4 |  | 5 |  | 6 |   |
+                   |    ---    ---    ---    |
+                   |    prs    tuv    wxy    |
+                   |    ---    ---    ---    |
+                   |   | 7 |  | 8 |  | 9 |   |
+                   |    ---    ---    ---    |
+                   |         o p e r         |
+                   |    ---    ---    ---    |
+                   |   | * |  | 0 |  | # |   |
+                   |    ---    ---    ---    |
+                   |_________________________|
+
+
+Identycznie  jest  w  tonedialerach.  Co  z  tego  wynika?  W wiekszosci
+systemow  ilosc przycisniec danego klawisza oznacza dana litere. Np. aby
+wybrac  litere "u" trzeba wcisnac, pod rzad, dwa razy przycisk "8". Jest
+jednak  male  "ale".  Skad system ma wiedziec, ze wybijamy litere a nie,
+np.  dwie  cyfry  pod  rzad?  Ano  sa  dwa wyjscia z tej sytuacji. Czesc
+systemow  "zada"  aby  uzytkownik przed wprowadzaniem "liter" poprzedzil
+to  nacisnieciem znaku specjalnego, czyli "*" lub "#". Wtedy system wie,
+ze  wprowadzone  tony  oznaczaja  litere  a  nie  cyfre. Drugi sposob to
+samoprzelaczanie  sie  systemu  poczty glosowej na rozpoznawanie jedynie
+cyfr lub jedynie liter. W takim przypadku system, zaleznie od aktualnego
+stanu,  wie  kiedy  uzytkownik wybiera cyfry a kiedy litery. Dobra no to
+jeszcze jeden przyklad: aby napisac slowo "lamer" trzebaby wystukac taka
+sekwencje:  3x5  1x2 1x6 2x3 2x7 (w pierwszym rodzaju systemu poprzedzic
+nalezaloby przyciskiem "*" lub "#", czyli *3x5, itd. a w drugim poczekac
+po   prostu  na  przelaczenie).  Zreszta  chyba  znacie  slynne  numery:
+1-800-RU-LEGIT  czy  1-800-PIR8.  System  ten  coraz wieksza popularnosc
+zdobywa rowniez w Europie Zachodniej i u nas (hint: telefony komorkowe).
+Piszac o tym przypominam rowniez wszystkim,  ze standardowy kod DTMF to:
+cyfry 0,1,2,3,4,5,6,7,8,9; znaki * i # oraz lutery A, B, C, D. Wiem,  ze
+wiekszosc  osob  po  raz  pierwszy  "slyszy" o tych dodatkowych czterech
+literach,  ale  jest  to,  po  prostu,  caly kod szesnastkowy (tak jak w
+pecetach).  Umozliwia to wiele funkcji na centralach, ktore wykorzystuja
+wlasnie pelny system szesnastkowy z odwzorowania go w kodzie DTMF.
+
+Ale   wracam   do  tematu  hackowania  takich  systemow.  Skonczylem  na
+komunikacie:  "Wprowadz ostatnie trzy cyfry odpowiadajace trzem ostatnim
+literom nazwiska osoby ktorej chcesz zostawic wiadomosc". Najlepiej uzyc
+najpopularniejszych  koncowek  nazwisk  polskich,  jesli  system  jest w
+Polsce  (np.  "ski",  "ska", "cki", "cka", "icz", itp.). Poniewaz jednak
+nie  spotkalem  sie  z  takim  systemem  u  nas, dlatego lepiej doradzic
+szukanie koncowek typowych dla nazwisk amerykanskich (np. "son"). Trzeba
+znac tylko specyfike nazwisk w danym kraju i juz mamy pierwsza wskazowke
+jak  szukac  skrzynek.  A  co  sie  stanie jesli kilka osob ma taka sama
+koncowke  nazwiska?  Najczesciej  sie  zdarza,  ze  system poprosi was o
+wybranie  pierwszych  trzech  liter  imienia  (wtedy mozna kombinowac na
+rozne  sposobny, np. "slynny" Jan Kowalski czy raczej John Smith). Jesli
+macie  wiecej  szczescia  to  jedna osoba w danym systemie ma tylko taka
+koncowke  nazwiska  i  wtedy uslyszycie cos w rodzaju "Alina Nowakowska,
+numer  #313" - bede operowal przykladem polskim, bo choc niespotykany to
+nie chce mi sie wymyslac specyfikacji amerykanskiej (mimo, ze testowalem
+to na tamtych systemach).
+
+W  ten  sposob  dowiedzielismy sie wlasnie o dwoch niezmiernie istotnych
+rzeczach:  numerze  skrzynki,  ktora  chcemy zhackowac i (najwazniejsze)
+ilosc  cyfr  jakie  maja  numery skrzynek w danym systemie. Nie bedziemy
+musieli  sie  bawic  w zgadywanie czy jest to #31 czy #3031, bo wiemy ze
+tu  sa  trzycyfrowe numery (liczba #313 nam to podpowiada). Jesli jednak
+system nie jest dobrze skonfigurowany a wybierzemy w przyszlosci np 3130
+to  ostatnia  cyfra  zostanie  odcieta a wasz wybor potraktowany jak 313
+(trzy pierwsze cyfry).
+
+b. systemy z operatorem (przewazajaca wiekszosc, w tym nasze)
+
+Zdarzyc  sie  moze,  ze  po  wybraniu  numeru poczty glosowej uslyszymy:
+"Wcisnij 8 aby skontaktowac sie z jednym z operatorow".  Nigdy  tego nie
+robcie  chyba,  ze  jest to niezbedne. Niestety skoro uslyszeliscie taki
+komunikat  to  prawdopodobnie  jest,  albo tez operator taki wlaczyc sie
+moze w najmniej spodziewanym momencie. Tu sie przydaje umiejetnosc zwana
+inzynieria  spoleczna.   W  takiej  sytuacje  jest  mozliwosc  szybkiego
+namierzenia  delikwenta  (wiekszosc numerow 0-800 ma mozliwosc CallerID,
+nawet  jesli  nie  automatycznie  to po konsultacji z lokalnym oddzialem
+tp$a czy innego telekomu).  Z  drugiej  strony trzeba pamietac o tym, ze
+operator moze byc jedynie dodatkiem (np. dla szczegolnych lam lub innych
+ciolow).  Jesli juz zdecydujecie sie na rozmowe z nim to nie kombinujcie
+z  zadnymi  haslami (na razie) a skoncentrujcie sie na udawaniu glupiego
+uzytkownika  -  to  ma  szanse  zadzialac.  Nie  wdajac  sie w szczegoly
+zjawiska  zwanego  Social  Engineering  wystarczy powiedziec, ze jak wam
+dobrze  pojdzie  to  otrzymacie nie tylko numer skrzynki, ale i haslo od
+operatora  (jesli  jest  kompletnym palantem). W dalszej czesci faqu jak
+sie do tego zabrac.
+
+W  kazdym  razie systemy poczty glosowej nie roznia sie bardzo od siebie
+(chyba  ze sa takie jak te z USA) a wiec jak ma sie wprawe w jednym to z
+kolejnymi  idzie  latwiej.  Generalnie,  na  temat kazdego systemu mozna
+uzyskac  informacje  na  dwa  sposoby (juz o nich wspominalem, ale teraz
+systematyzuje):
+1. On-line.  Automatyczna informacja na temat dzialania kazdej z opcji i
+   jak nalezy sie porszac, uzywac systemu, etc.
+2. "Na zywo", dzwoniac do operatora. Jeszcze raz podkreslam, niech to co
+   mowicie brzmi powaznie.  Aha, czasami operator moze dac wam specjalny
+   help-numer  (na  ogol  bezplatny  lub  wenwatrz  tego serwisu), gdzie
+   uzyskac mozecie specjalistyczne informacje na  temat  obslugi.  Warto
+   takze  wtedy  wypytywac  prawie  o  wszystko  a gosc z serwisu bedzie
+   zadowolony,  ze  wreszcie  cos sie dzieje (przeciez ci co tam pracuja
+   musza sie strasznie nudzic).
+
+Pamietac trzeba, ze opisywany tu system ma duzo wspolnego z tym z USA, z
+wyjatkiem  tych  "cudow"  z literami. Jednak wystepowanie operatora jest
+powszechne dla wiekszosci systemow (nie jest jednak konieczne).
+
+hackowanie skrzynek
+-------------------
+
+Na  niektorych  pocztach  glosowych  znalezienie  kodu dostepu do numeru
+skrzynki   (i  jej  ewentualnej  modyfikacji)  jest  prawie  niemozliwe.
+Prawie  ;) Do przelaczania opcji zwykle stosuje sie przyciski "*" i "#".
+Zalorzmy,  ze  caly  czas  mamy  numer  pani Aliny Nowakowskiej i chcemy
+zlamac  jego kod. Po polaczeniu sie z poczta glosowa i wciskamy #313 lub
+*313  i  slyszymy  cos  w rodzaju: "Wprowadz swoj numer identyfikacyjny"
+(pin,  haslo,  kod  czy  jak  tam  sie  to  zwie).  Wtedy,  w normalnych
+okolicznosciach,  trudno  jest cokolwiek zrobic, bo przeciez nikt nie ma
+pojecia  jakie  jest  to haslo a nawet ile powinno miec cyfr. Ilosc cyfr
+kodu  dostepu, gra najistotniejsza role w hackowaniu skrzynki na poczcie
+glosowej.  Najczesciej  haslo  ma  3  lub  4  cyfry  (nie  spotkalem ani
+osobiscie,  ani  w  opisach  aby mialo wiecej). Trzeba jednak to na 100%
+wiedziec. Sa wiec 4 sposoby na ustalenie ilosci cyferek w hasle:
+
+1.  Najprostszy.  Moze sie zdarzyc,  ze uslyszycie komunikat:  "Wprowadz
+    swoj trzycyfrowy  (cztero-,  piecio-,  itd.) numer identyfikacyjny".
+    Wtedy juz wiadomo co i jak.  Zadko sie jednak zdarza,  zeby bylo tak
+    dobrze.
+2.  Gdy system prosi o kod dostepu, wciskacie kolejno cyfry: 1, 2, 3, 4,
+    odczekujac po kazdej okolo 5 sekund. Gdy np. po 3 cyfrach uslyszycie
+    cos w formie:  "Wprowadzony numer nie jest poprawny. Sproboj jeszcze
+    raz", to juz wiecie, ze numer dostepu musi miec 3 cyfry. Sposob jest
+    dosyc pewny i dziala na 90% systemow, ale zawsze pozostaje te 10%.
+3*. Dzwonicie do operatora/linii pomocniczej i mowicie bajeczke:  "Dzien
+    dobry nazywam sie  Krzeslawir  Lamerski i  mam  skrzynke  u  Was  na
+    poczcie glosowej. Wprowadzam moj numer identyfikacyjny a slysze,  ze
+    jest niepoprawny.  Moj  numer  to  1234". Wtedy jest duza szansa, ze
+    operator powie Wam, ze to za duzo/za malo cyfr.  Mozecie tez inaczej
+    kombinowac (ze zgubiliscie haslo i pamietacie tylko 3 pierwsze cyfry
+    itd.). Powinno sie udac - w koncu ilosc cyfr w kodzie dostepu to nie
+    taka tajna informacja (tak przynajmniej mysla operatorzy).
+4*. Jesli  macie  danego  prawdziwego  wlasciciela  skrzynki  na poczcie
+    glosowej,  mozecie probowac zadzwnonic do niego i probowac wyciagnac
+    niezbedne informacje,  przedstawiajac sie jako pracownik tej wlasnie
+    poczty glosowej.
+
+[* - te sposoby mozna wykorzystac tez do zdobycia wlasciwego kodu
+     dostepu do skrzynki, ale o tym pozniej w punkcie (c)]
+
+Zalorzmy,  ze juz mamy ta informacje. Teraz pozostaje sprawa podstawowa:
+znalezienie  hasla.  Punkty 3 i 4 zaznaczylem gwazdkami bo o nich bedzie
+tez  mowa  przy  znajdowania  hasla, ale o tym dalej. Zaczynam od typowo
+hackerskiej metody.
+
+a. Toneloc - najlepszy przyjaciel phreakera
+
+Jesli  ilosc  cyfr  w kodzie dostepu wynosi trzy to mamy 999 mozliwosci,
+przy czterech cyfrach 9999 (ale odkrywcze ;)). Z tego wynika, ze zarowno
+w  pierwszym  jak  i  drugim  przypadku nie oplaca sie stosowac techniki
+bruteforce recznie (no chyba ze ktos jest totalnie porabanym i napalonym
+maniakiem).  Istnieje  taki  cudowny program pod Dos (wersji pod Windows
+nie ma i nie bedzie,  mowie tak bo znam autora programu - Minor Threata)
+o nazwie TONELOC. Jego glowne zastosowanie to skanowanie pbxow.  A skoro
+pbxow  to  dlaczego nie hasel w poczcie glosowej. Jesli juz zaopatrzycie
+sie  w  ten  program (Internet) i przeczytacie ogolnie o jego dzialaniu,
+proponuje  ustawic  parametr  dial string na: "ATDT0,800-costam,,,,*313"
+(zadzwon  pod  wybrany  numer, odczekaj pewna ilosc czasu, wybierz * 313
+- numer skrzynki). Aby to zrobic w linii polecen wpiszcie cos w rodzaju:
+"Toneloc  [nazwa  pliku z danymi] /m:numer_systemu,,,,WXXX", gdzie nazwa
+pliku  z  danymi to, np. vmb; numer_systemu to, np. 0800-123456; ,,,, to
+odstep  czasowy  przed  wbiciem  kodu; W to ustalenie polaczenia; XXX to
+trzy  cyfry kody kolejno sprawdzanego (od 000 do 999). Teraz zostalo nam
+juz  tylko  (pilne  ;)) przysluchiwanie sie (mikrofon w modemie musi byc
+ustawiony  na  wysoka  glosnosc  np.  "atl3"). Wlasnie skanujemy kolejne
+sekwencje  hasel  (trzyznakowych).  Numer  jest 0-800 wiec wszystko jest
+free.  Jesli  uslyszycie  po  kolejnym  przebiegu  cos w rodzaju: "Witaj
+Alina  Nowak, masz 2 nowe wiadomosci. Wcisnij 1 aby odsluchac, wcisnij 2
+aby  skasowac,  etc...", to oznacza ze trafiliscie haslo (Toneloc tworzy
+plik   logujacy   wiec  jak  przerwiecie  sesje  po  uslyszeniu  takiego
+komunikatu  to  ostatnia  sekwencja  w pliku toneloc.log bedzie haslem).
+Ten sposob jest skuteczny po sprawdza sie WSZYSTKIE mozliwosci po kolei.
+Wymaga   niestety   uwagi   przy  sprawdzaniu  kolejnych  numerow.  Przy
+trzycyfrowych haslach calosc maksymalnie trwa okolo 5,5h (przy zalozeniu
+ze  jedna operacja trwa 20 sekund). Jest to jednak najgorsza z mozliwych
+sytuacji,  ze  zaczynajac od sekwencji "000", konczy sie na "999", ktora
+jest wlasciwym haslem.  Aby tego uniknac patrz metoda  (b).  Tutaj dodam
+jeszcze,  ze  zwykle  po  3h ma sie rezultaty. Nieco gorzej sytuacja sie
+przedstawia   z   czterocyfrowymi   numerami.   Tutaj   maksymalny  czas
+przeszukiwania  to  odpowiednio: 55,55h czyli ponad 2 dni. Ale co to dla
+hax0ra  ;)  Angazuje  sie  kolegow, itd. Zreszta praktyczny efekt pewnie
+mozna  by  osiagnac  po 36h czyli poltora dnia. Poza tym mozna bawic sie
+tak,  ze  kazdego dnia po dwie godziny skanujemy. Wtedy po (w najgorszym
+przypadku) 28 dniach niezbyt wytezonej pracy mamy haslo. Wszystko zalezy
+od potrzeb i zaciecia ;-)
+
+No  i jeszcze slowko o Tonelocu dla zaawansowanych. Otoz jest mozliwosc,
+zeby  nie  warowac  z  uchem  przy  mikrofonie  modemu i nasluchiwac czy
+wbijana  jest  wlasciwa  sekwencja  kodu  dostepu. Po prostu zapuszczamy
+Toneloca,  idziemy na pizze, wracamy i mamy haslo. Jak to zrobic? Trzeba
+ustalic czy po wprowadzeniu zlego numeru dostepu, system poczty glosowej
+wysyla  jakis  sygnal  czy  nie  (np.  odzywa sie glos). To samo dotyczy
+ustalenia czy po wprowadzeniu poprawnego hasla, odbywa sie podobna akcja
+czy  sa  jakies  inne oznaki (np. specyficzny sygnal i komunikat, ze sie
+udalo).  Oczywiscie  w  jednym  i w drugim przypadku moze byc to "slowny
+komunikat"  a  wtedy  nici  z tego sposobu. Ale jesli tak nie jest, a my
+znamy reakcje systemu (zalorzmy, ze po wprowadzeniu zlego numeru dostepu
+system  wysyla  jakis  dzwiek i komunikat o nieudanej probie), to mozemy
+posluzyc  sie,  ktoras z procedur Toneloca "T-", "C-", itd... Oznacza to
+rozpoznawanie  wszystkiego  poza  tonami,  tylko tonow, wszystkiego poza
+polaczeniami,  tylko  polaczen  (reszte doczytajcie sobie w dokumentacji
+Toneloca).  W  takim  ukladzie  mozna  ustawic program aby po "wpisaniu"
+kodu,  po  uslyszeniu  jakiegokolwiek  sygnalu  rozlaczal sie i probowal
+nastepny a gdy po "wpisaniu" kodu nie bedzie zadnego sygnalu to przerwal
+prace  (taki  uklad  jest  przy  systemie, gdzie sygnal jest wysylany po
+blednym  kodzie  a po kodzie prawidlowym jest od razu komunikat). Troche
+to  skomoplikowane  ale  BARDZO UZYTECZNE. Wogole opcje w Tonelocu mozna
+modyfikowac na rozne sposoby. Zreszta ostrzegalem na poczatku, ze to dla
+zaawansowanych.
+
+Aha  i  jeszcze  na  koniec uwaga. Ten sposob jest idealny do hackowania
+poczty   glosowej   na  pagerach  (Metrobip)  i  w  systemach  telefonii
+komorkowej  (tam  mamy  do  czynienia z 4 cyfrowymi haslami). Tylko jest
+jedno  "ale"  (duze,  w  tym  wypadku). Polaczenia z komorkami (060X) sa
+bardzo  drogie,  wiec  z  domu  nie  polecam nikomu skanowania nawet 999
+numerow,  bo  haslo  moze  i  znajdzie,  ale  za  miesiac dom pojdzie na
+licytacje na rzecz tp$a ;-)
+
+b. reczny bruteforce i psychologia
+
+Jak  juz  wyzej  wspomnialem  jest  metoda aby wyeliminowac te najgorsze
+przypadki  i,  jesli  dobrze pojdzie, znalezc kod dostepu bardzo szybko.
+Tu   musimy   sobie  odpowiedziec  na  pytanie  jakie  ludzie  wybieraja
+najczesciej  hasla.  Z wlasnego doswiadczenia, tekstow i opinni, wiem ze
+sa to hasla proste do zapamietania a wiec i do zlamania. Zanim wlaczycie
+do  pracy  Toneloca,  sprobojcie  takich  kombinacji jak: "111", "222" -
+"..."  -  "999", "123", "987", "246", "135", itd... Jest naprawde BARDZO
+duze  prawdopodobienstwo,  ze uzywajac takich sekwencji (powiedzmy, ze w
+sumie  okolo  20) traficie na wlasciwy kod dostepu. A nawet jesli nie to
+jesli  nie  dziala,  np.  "999",  to wiecie ze Toneloc bedzie mial mniej
+pracy  i  prawdopodobnie  nie  grozi  wam maksymalny czas skanowania (no
+chyba  ze  ktos  ustawil  haslo na "998" lub "997", dlatego te tez warto
+sprawdzic,  szczegolnie  to  drugie  ;-)  ).  Teraz  troche psychologii.
+Wszyscy  wiemy,  ze  jako  hasla  ludzie  moga  podawac  poczatek numeru
+telefonu  (wzglednie  koniec), czesc daty urodzenia (np. rok lub dzien i
+miesiac  -  przy  czterocyfrowych  kodach dostepu). Jesli poczta glosowa
+dziala  na  zasadzie  konwersji  tony-litery (pisalem o tym na poczatku,
+to  ten system, ze np. litera "K" to nacisniecie dwa razy pod rzad "5"),
+wtedy  haslem  moze  byc  poczatek  nazwiska,  imienia  kogos z rodziny,
+adresu,  itd.  Warto  wiec  znac  jakies dodatkowe informacje o ofiarze,
+ktorej   chcemy  zhaczyc  skrzynke.  Aha  jeszcze  jedno,  przy  haslach
+czterocyfrowych, ludzie czesto podaja bierzacy lub kolejny rok (np. 1999
+i 2000). Tez warto wziac to pod uwage.
+
+c. inzynieria spoleczna (moja ulubiona metoda)
+
+Jak  to  zostalo juz powiedziane, przy okazji omawiania roznych sposobow
+zdobywania  dlugosci kodu dostepu, w punktach zaznaczonych "*", istnieje
+mozliwosc uzyskania takiego kodu przez telefon. W takiej sytuacji nalezy
+odpowiedziec  sobie  na  pytanie,  kto  zna  numer dostepu do skrzynki w
+poczcie  glosowej?  Sa  tylko  dwie  takie  osoby: operator i uzytkownik
+(ewentualnie  osoby blisko zwiazane z uzytkownikiem). Do tych dwoch grup
+osob  musimy  dotrzec.  Jak?  Do  operatora  w  sposob omowiony powyzej.
+Dzwonimy  na  help-linie lub czekamy na jego zgloszenie (o ile jest taka
+opcja  w systemie) i wrzucamy nasz tekst (na tyle wiarygodny aby gosc go
+kupil  -  a  nie  jest to ekstremalnie trudne w naszych warunkach, gdzie
+operatorami  sa tluczki). Oczywiscie wszystko zalezy od inwencji i mozna
+wymyslec  tysiace  kawalkow.  Z  tego powodu ogranicze sie do jednego, w
+miare   zrozumialego,   przejrzystego   i  byc  moze  nawet  skutecznego
+przykladu.  Laczymy sie z operatorem (w sposob typowy dla danego systemu
+poczty  glosowej) i wrzucamy teskt: "Dzien dobry. Nazywam sie Gabriel ;)
+Kowalski.  Mam  skrzynke  w  tym systemie, ale zapomnialem hasla. Co mam
+zrobic?".  Prawdopodobnie  ten numer nie przejdzie, ale sprobowac mozna.
+Jesli  jeszcze  posiadamy jakies dodatkowe dane uzytkownika to mozemy je
+"z  gory"  podac  operatorowi  aby  sie  zaraz na poczatku uwiarygodnic.
+Jeszcze   lepiej  uzyc  do  tego  celu  kolezanki  (kobiete  beda  mniej
+podejrzewac  o niecne dzialania ;)) lub modulatora glosu aby brzmial jak
+kobiecy.   Mozna   sprobowac  rowniez  z  innym  sposobem.  Polaczenie z
+operatorem  i  tekst:  "Dzien dobry. Moje nazwisko Kowalski. Mialem miec
+dzisiaj u panstwa zalorzona skrzynke na poczcie glosowej a caly czas nie
+moge  sie  z  nia  polaczyc.  Co  sie  dzieje?  Numer  skrzynki to 313".
+Wczesniej  trzeba  sprawdzic  czy  taka skrzynka istnieje. Jesli tak, to
+powiedziec numer, ktorego nie ma. W ten sposob, przy odrobinie szczescia
+zalorzona  nam  zostanie,  calkiem  legalnie,  skrzynka.  Jeszcze  innym
+sposobem  jest  udawanie  totalnego  lamera (niektorzy zreszta nie musza
+udawac  ;)).  Czyli  tak,  dzwonimy do operatora, przedstawiamy sie (Jan
+Kowalski  a  wlasciwie  to chociaz samo imie wlasciciela skrzynki, ktora
+chcemy  zhaczyc)  i  mowimy,  ze  mamy  juz  jakis  czas taka skrzynke i
+chcielibysmy  z niej korzystac a nie umiemy. Naprawde trzeba zgrywac sie
+na totalnego kafla i udawac ze sie nic nie kuma z tego co gosc tlumaczy.
+W pewnym momencie mozna powiedziec takie cos: "A wiec tak, wciskam *313,
+i  musze  podac  jakis  kod.  Dostalem  cos takiego ale mi zginelo i nie
+pamietam".  Jesli  wczesniej przekonalismy operatora, ze kompletne z nas
+cioly,  to jest duza szansa ze powie nam nawet haslo abysmy sie od niego
+odp***.  Ta  metoda  jest  tez  skuteczna  na,  tzw.  zone. Dzwoni nasza
+kolezanka  (lub  my  modulujac  glos)  i  przedstawiamy  sie  jako  zona
+wlasciciela   danej   skrzynki.  Maz  na  urlopie,  kazal  nam  skasowac
+wiadomosci  i  wogole  cos  pozmieniac  a  my  nie wiemy jak i co gorsza
+zgubilismy kod dostepu. Tez ma szanse zadzialac.
+
+Druga  sprawa  to  uzytkownik.  Chyba  nikomu  nie  trzeba tlumaczyc, ze
+wyciagniecie hasla od uzytkownika jest o wiele prostsze niz od operatora
+(identycznie  jest  zreszta  w  systemach  komputerowych). Dlatego majac
+chociazby   numer  telefonu  wlasciciela  jakiejs  skrzynki  na  poczcie
+glosowej,  wykazujac  troche pomyslowosci, bez problemu zdobedziemy jego
+kod  dostepu.  Tak  jak  w  przypadku opisywanym wyzej sposobow moze byc
+wiele,  ale  jeden  rodzaj zagrywki jest uniwersalny. Dzwonimy do naszej
+ofiary  i  przedstawiamy  sie  jako  operator  systemu  poczty glosowej.
+Wczesniej  w  informacji  lokalnej  ustalamy  jego nazwisko. Teskt typu:
+"Moje nazwisko Kowalski. Dzwonie z firmy _nazwa_poczty_glosowej_ (lub po
+prostu  numer  tego  systemu).  Bardzo  przepraszam,  ze niepokoje o tak
+poznej   porze   (najlepiej   zadzwonic   wieczorem),  ale  okolicznosci
+obiektywne  zmusily nas do natychmiastowego skontaktowania sie z panem".
+Po  takim  wstepie,  jesli wyglosilismy go w miare powaznie, gosc ma nas
+za  prawdziwego i co rownie wazne kulturalnego pracownika systemu poczty
+glosowej,  ktoremu  warto  pomoc. Dalje procedura przebiega standardowo:
+"W  zwiazku  z  pewna  reorganizacja  w  naszym  systemie, na niektorych
+skrzynkach  zostal  skasowany  komunikat powitania. Byc moze pojawia sie
+jeszcze  jakies inne, drobne choc dokuczliwe wasy systemu. Pana skrzynka
+numer  313  zostala  przez pomylke zupelnie skasowana. Ale to nic prosze
+sie  nie  martwic  odtworzymy  ja  w  ciagu  20  minut". Po tak dlugim i
+powaznie   brzmiacym   tekscie   gosc  juz  zupelnie  nam  wierzy  i  ma
+porozrzucane  mysli (dlatego wazne aby mowic dlugo ale i z sensem oraz w
+miare  "fachowo"  i  kulturalnie).  W kazdym razie na 100% zapomnial, ze
+przez  telefon  NIE  WOLNO  nikomu  podawac zadnych danych, tym bardziej
+hasel.  Dlatego  teraz czesc zasadnicza: "Czy moglby pan nam przypomniec
+jaki  pan mial kod dostepu? Cala skrzynka zostanie nam odtworzona wraz z
+kodem  dostepu,  tak  ze  nie  odczuje  pan  zadnych  uciazliwosci z tym
+zwiazanych".  Dostaniemy  to  haslo  na  98% :). No a jak juz je mamy to
+mozna,  na  koniec,  jeszcze  sie  uwiarygadniamy  aby  gosc pozniej sie
+glupio  nie pytal w prawdziwym serwisie o cale zajscie. Tu wystarczy cos
+na  ksztalt:  "Bardzo  dziekujemy za panska cenna pomoc i wyrozumialosc.
+Jeszcze  raz  przepraszamy.  Pana  skrzynka jest juz w stanie jaki miala
+wczesniej,  dlatego  nie  odczuje pan zadnych zmian. Ggyby w przyszlosci
+wynikly  jakies  problemy  z  systemem  to  bardzo  prosimy  o  kontakt.
+Dobranoc".  I  wszystko.  Mamy  jak  w  banku, ze temu uzytkownikowi nie
+zechce  zadzwonic  sie nastepnego dnia (lub tym bardziej tego samego) do
+prawdziwych  operatorow  i  jeszcze  sie o cos dopytywac. Co wiecej, jak
+sprawdzi  swoja  skrzynke i zobaczy, ze wszystko jest jak bylo, czyli ok
+to  uzna  wszystko  za niebyle i szybko zapomni o sprawie. A my mamy juz
+haselko  ;).  Oczywiscie,  jak  wspominalem,  sposoby  sa  rozne  ale do
+wszystkich trzeba podchodzic profesjonalnie.
+
+jak zdobyc i utrzymac skrzynke?
+-------------------------------
+
+a. Jak zdobyc "nowa" skrzynke w systemie poczty glosowej?
+
+Metoda  jest  banalna.  Zalorzmy,  ze  jest  jakis  system 0-800-XXXXXX.
+Dzwonimy  tam  i  probojemy wejsc na czyjas skrzynke. Postepujemy wedlug
+wyzej  opisanych  schematow.  Jesli juz wiemy ilucyfrowe sa skrzynki (co
+ustala  sie identycznie jak ilosc cyfr w hasle a nawet prosciej), trzeba
+poszukac  wolnej.  Jesli  sa  to trzycyfrowe numery to mozna probowac od
+srodka  lub  jakies  mniej  typowe:  571, 329, 748, itp... Nie probojcie
+czegos   w   rodzaju:  999,  555,  100,  bo  na  pewno  sa  zajete  badz
+zarezerwowane.  Gdy trafiamy  na czyjas skrzynke to slyszycie tradycyjny
+tekst powitania (lub zmieniony przez ta osobe)  lub prosbe o haslo.  Ale
+gdy trafimy  na "wolna" to uslyszycie  cos w rodzaju "prosze ustaw swoje
+haslo"    lub   "zawartosc   twojej   skrzynki   nie   zostala   jeszcze
+zmodyfikowana", cool. Trafilismy na wolna skrzynke. Wtedy, tak dlugo jak
+legalny uzytkownik wam jej nie zajmie, mozemy  z niej korzystac. Zreszta
+chyba  wszyscy  pamietaja  system METRO-BIP (zero abonamentu i inne tego
+typu  bzdety).  Tam  w ten sposob mozna bylo zajmowac ludziom numery ich
+skrzynek zanim kupili jeszcze pager. Ale byla zabawa (chyba caly czas to
+jeszcze  dziala,  ale  mi  sie  juz  znudzilo).  A jak jest z telefonami
+komorkowymi?  Identycznie.  Jak  numer jest jeszcze nie sprzedany (np. w
+Simplusie lub Tak-Taku) to skrzynka glosowa ustawiona jest na 0000 ;) Ja
+nazywam ten sposob  metoda  przejecia  (bo przeciez to nie zadne wielkie
+hAx0rStWo ;) ).
+
+
+b. jak utrzymac skrzynke? (sprawa bezpieczenstwa)
+
+Powiedzmy,  ze zdobylismy dwie skrzynki. Jedna metoda zhackowania, druga
+przejecia.  W sumie mozna ich zdobywac bardzo duzo (szczegolnie ta druga
+metoda), ale po co ciagle je zmianiac, zwlaszcza ze nasi znajomi juz sie
+przyzwyczaili do jednego numeru ;). Oczywiscie zkladam, ze obie skrzynki
+sa w roznych systemach.
+
+Zacznijmy  od  rzeczy  pozornie  banalnych  (pozornie, bo  czasem wielka
+elejteria  o  tym  zapomina  ;)  ).  Najwieksza  szansa  na  zatrzymanie
+skrzynki  na  dluzsza  mete jest w systemach, gdzie istnieje bardzo duzo
+skrzynek  (np. ponad 1000). Ale powiedzmy, ze w naszym systemie jest ich
+tylko okolo 100. Wtedy rozsadnie jest nie zmieniac wiadomosci powitalnej
+(czyli, tego co standardowo slyszycie),  na teksty w rodzaju  "siemanko.
+Tu supah frajkah. Zostaw wiadomosc w tej zhaczonej skrzynce lub wypie* i
+mnie  nie  wqr**". Jak podczas rutynowej kontroli operator uslyszy takie
+powitanie  (lub  jak  chociaz  bedzie  chcial recznie rozeslac wszystkim
+uzytkownikow jakis komunikat systemowy), to na pewno sie zainteresuje co
+i jak. No i zabawa sie skonczy (a i na przyszlosc gosc pewnie upomni sie
+o  lepsze  zabezpieczenie  systemu). W takim wypadku nawet jakis legalny
+uzytkownik,  ktory  sie pomyli i uslyszy przypadkiem wasze powitanie, to
+jest  duze  prawdopodobienstwo,  ze  zawiadomi operatora. To w sumie tez
+psychologia  a  nawiazujac  do  niej, warto zaangazowac jakas kolezanke,
+zeby  nagrala  wam  wiadomosc  w  stylu "czesc. Polaczyles sie z numerem
+skrzynki Agnieszki. Prosze zostaw wiadomosc po sygnale. Dziekuje". Brzmi
+lamersko  jak  cholera,  prawda?  No  wlasnie! Operator bedzie w ostanim
+rzedzie podejrzewal taka skrzynke o jakies nieprawidlowosci a wasi qmple
+i tak beda wiedzieli co i jak.
+
+Kolejna  sprawa  to  proznosc. Kazdy lubi byc uwazany przez znajomych (a
+szczegolnie  znajome) za "dA c001 elit3 HaCKa". To jest duzy blad. Wtedy
+zapewne  ktos  taki  lubi  sie  pochwalic  swoim  nowym  wyczynem, czyli
+zhaczeniem  lub  przejeciem  (ktore i tak wg niego bedzie pewnie uwazane
+za  niesamowite  hackerstwo)  skrzynki  w systemie poczty glosowej. Moze
+nawet  ktos  taki  pokaze  znajomym  jak  to  sie robi. Oni pokaza swoim
+znajomym  i  po  kilku  tygodniach,  w takim systemie bedzie 60 skrzynek
+legalnych   uzytkownikow  i  140  fake'ow.  Jesli  operator  nie  bedzie
+ostatnim  kaflem to zorientuje sie i sprawa sie rypnie - to w najlepszym
+wypadku.  W  najgorszym,  to poszpera w logach, pomonitoruje polaczenia,
+nawet  popodsluchuje  i  ustali  kto  pierwszy sie wlamal i zrobi drake.
+Wszystko  pojdzie  na  osobe, ktora zaczela cala ta zabawe czyli na tego
+"dA  c001  elit3  HaCKa".  Z  tego  powodu  proponuje  byc  oszczednym w
+udzielaniu informacji o sobie i swojej dzialalnosci "w tych sprawach".
+
+[ 4. Linki zwiazane z tematem ]
+ =============================
+
+Nie ma ich duzo, bo temat nie jest zbyt popularny ani tez zbyt obszerny.
+Mimo  to  pojawilo  sie parych ciekawych tekstow na ten temat. Z tego co
+pamietam,  moge polecic jedynie dwa linki. Zadnym wiedzy polecam dowolna
+wyszukiwarke  internetowa i haslo w stylu: "VMB+hack". Powinno dac pewne
+(a nawet calkie duze), rezultaty...
+
+a) www.phrack.com
+No  comments. Kto nie zna, dla tego nie ma juz ratunku. Co do szczegolow
+to  trzeba  poszukac.  Radze  skorzystac  z  oryginalnej wyszukiwarki na
+stronie glownej.
+
+b) http://www2.dtc.net/~malice/hack.htm
+Strona  jednego  z  pionierow tej dziedziny. Mozna rzucic okiem, chociaz
+wiele  rzeczy,  o  ktorych  pisal juz sie zdezaktualizowalo. Sama strona
+(a  raczej  serwer, na ktorym sie znajduje) jest malo stabilna. Ostatnio
+nie dzialala ;(
+
+[ 5. Na koniec (podziekowania, etc...) ]
+ ======================================
+
+W  poprzednim  (pierwszym)  FAQu nie bylo tradycyjnych podziekowan, itd.
+Dlatego  w tym nadrabiam zaleglosci. Niechce mi sie rozpisywac dokladnie
+komu,  za  co, kiedy, etc., wiec wyszczegolniam wszystkich zaslugujacych
+na  uwaga  "tematycznie".  Nastepnym razem (o ile taki bedzie), moze sie
+poprawie i bedzie bardziej dokladnie. Tak wiec podziekowania dla:
+
+Aliena, Barta, Impexusa, Havoca, Hrabiego - ogolnie, za ciekawe poglady
+Latana, Rasty - czyli, reszty grupy Telesfor
+-------------
+Przemka i Alfreda ze Strzelina - i nie mowcie ze zapomnialem ;)
+Tomka W. - za caly support od poczatku dzialalnosci
+Chemiq i calej United Phreaking Corps - za ciekawa korespondencje i, mam
+                                        nadzieje, przyszla wspolprace
+Grupy Vomiting - generalnie za podtrzymywanie poziomu :)
+
+A wszystkim moge polecic strone grupy Telesfor (adres ponizej), w ktorej
+takze  sie  znajduje  :)  Moim  zdaniem jest calkiem niezla i jak dobrze
+pojdzie  bedzie  sie  caly  czas  rozwijac.  Jesli  macie  jakies uwagi,
+komentarze,  informacje, itp. to slijcie na adresy podane na stronie lub
+bezposrednio do mnie: asturn@polbox.com.
+
+Adres strony: http://www.users.intertele.pl/~scn
+
+Zapraszamy wszystkich do wspolpracy.
+
+[ 6. PGP ]
+ ========
+
+Zyjemy  w  takich  czasach,  ze  rozkodowac/przechwycic/podrobic  da sie
+praktycznie  wszystko.  Dlatego tez dla tych, ktorzy chca miec 99,99999%
+pewnosci,  ze  list/plik ktory do mnie wyslali, trafi TYLKO w moje rece,
+podaje  moj  publiczny  klucz  (dostepny takze na stronie Telesfor). Nie
+wiem czy dziala ze starszymi wersjami PGP, bo jest 4096-cio bitowy.
+
+
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+Version: PGPfreeware 6.0.2i
+
+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
+J0JzzhihOMo=
+=lgnx
+-----END PGP PUBLIC KEY BLOCK-----
+
+as7urn
+asturn@polbox.com

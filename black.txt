@@ -1,0 +1,411 @@
+
+T3umaczenie z angielskiego
+
+by Simmy
+26.01.2000 - 29.01.2000
+
+YO! Phreakerzy!!! Przek3adam to z angielskiego FAQ "How to build
+a BLACK BOX". To moje pierwsze FAQ wszystkie uwagi do
+szymcio@alpha.uwb.edu.pl. Pod koniec mojego FAQ zamieszczam cennik
+niektórych potrzebnych czeoci (no i oczywiocie sk1d niektóre wytrzasn1a
+za darmoche) oraz oczywiocie oryginaln1 wersje (angielska of coz)
+tego FAQ. Ma sie rozumiea nie ponosze ?adnej odpowiedzialnosci za
+zamieszczone tu informacje (ja TYLKO to przet3umaczy3em), wszystko jest
+robione na swoj1 odpowiedzialnooa itd., itp. ... AMEN.
+
+Spis treoci:
+1. Jak zbudowaa BLACK BOX?
+2. Cennik oraz niektóre czeoci ZA DARMO
+3. Oryginalne FAQ: "How to build BLACK BOX"
+
+-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-
+
+ * * * * * * * * * * * * * * *
+ *      *
+ *  Jak zbudowaa BLACK BOX?  *
+ *      *
+ * * * * * * * * * * * * * * *
+
+  Do wszystkich odwa?nych:
+
+Co to jest BLACK BOX? BLACK BOX (czarna skrzynka) jest to urz1dzenie
+pod31czone do telefonu, które "przestawia" telefon tak, ?e dzwoni1cy
+nie zostaje obci1?ony op3atami za po31czenie. Jest to dobra metoda
+na po31czenia o d3ugooci nie wiekszej ni? pó3 godziny, po tym czasie
+miejscowy urz1d telekomunikacji mo?e zacz1a coo podejrzewaa a wtedy
+ka?dy wie co mo?e sie staa...
+
+ Jak to dzia3a?
+
+To ma3e cudo utrzymuje napiecie w linii telefonicznej od 0 do 10
+Voltów podczas twojej rozmowy. Linia telefoniczna normalnie
+utrzymuje napiecie nie mniejsze ni? 36 Voltów, wiec telefon myoli
+(goocie z centrali te?), ?e u osoby do której dzwonisz telefon
+po prostu dzwoni (nikt go nie odebiera). Ryzyko na przekroczenie
+dopuszczalnego czasu rozmowy (oko3o pó3 godziny) jest takie,
+?e telekomunikacja coo mo?e zacz1a podejrzewaa po pó3godzinnym
+dzwonieniu telefonu u kogoo.
+ 
+ Wszystkie czeoci s1 dostepne w sklepach z artyku3ami elektronicznymi,
+w sklepach "1000 i 1 drobiazgów", itd. Kupuj1c najmniej prawdopodobne
+czeoci narazimy sie na wydatek ok. $1 (w polsce to zale?y g3ównie od
+ceny oporników, lecz myole, ?e powinniocie wyrobia sie w 3-5z3). W cene
+s1 wliczone czeoci potrzebne do zbudowania dwóch typów BLACK BOX'ów.
+W niektórych sklepach mo?esz sie potargowaa o cene czeoci. Mo?na sie
+wyposarzya w uniwersaln1 p3ytke drukowan1 (kosztuje oko3o 11z3). S1 dwa
+rodzaje BLACK BOX'ów (oba opisane na schematach w dalszej czeoci FAQ).
+Pierwszy przeznaczony jest do najnormalniejszych telefonów (stanowi1
+one wiekszooa), natomiast drugi do telefonów na których nie dzia3a
+pierwszy. Drugi zosta3 stworzony zw3aszcza dla telefonów z wybieraniem
+tonowym oraz z systemem "Bell Trimline".
+
+
+  **   Schemat nr.1 dla wiekszooci telefonów   **
+  ** dioda LED sie owieci: skrzynka WLYCZONA! **
+
+Czeoci potrzebne:
+-jeden rezystor (opornik) 1.8 kilooma, maksymalna moc 0.5 Wata
+-jedna dioda LED na napiecie 1.5 Volta
+-jeden prze31cznik dwukana3owy SPST
+-0.2-0.5 metra (ok.) kabla
+
+
+OD    >----------------------------------------------KABEL ZIELONY--> DO
+LINII >---|                                     |----KABEL CZERWONY-> TELEFONU
+          |  opornik 1.8 kilooma      dioda LED |
+          |-------/\/\/\------------------|>----|
+          |                                     |
+          |----------------->/<-----------------|
+                    prze31cznik SPST
+
+
+
+  **   Schemat nr.2 dla wszystkich telefonów   **
+  ** dioda LED sie owieci: skrzynka WYLYCZONA! **
+
+Czeoci potrzebne:
+-jeden rezystor (opornik) 1.8 kilooma, maksymalna moc 0.5 Wata
+-jedna dioda LED na napiecie 1.5 Volta
+-jeden prze31cznik trójkana3owy DPST
+-0.2-0.5 metra (ok.) kabla
+
+
+OD    >---------------------------------------KABEL ZIELONY--> DO
+LINII >------------|                     |----KABEL CZERWONY-> TELEFONU
+                   |        dioda LED    |
+          |------>///<----------|>-------|
+          |  prze31cznik DPST            |
+          |                              |
+          |-----------/\/\/\-------------|
+               opornik 1.8 kilooma
+
+
+A teraz wykonanie dwóch schematów na p3ytce drukowanej. Polecam
+takie rozwi1zanie: jest bardzo gustowne, zajmuje mniej miejsca
+i 3atwiej sie je podpina.
+
+
+Schemat 1
+
+    * * * * * * * * * * * * *
+    *       |----LED-----|  *
+    *       |            |  *
+    *       |--/\/\/\-|  |  *
+    *                 |  |  *
+    *       |---------|  |  *
+    *       |            |  *
+    *       |--|->/<--|--|  *  T
+ L  *          | SPST |     *  E
+ I->*-CZERWONY-|      |-----*->L
+ N  *                       *  E
+ I->*-ZIELONY---------------*->F
+ A  *                       *  O
+    * * * * * * * * * * * * *  N
+
+
+
+Schemat 2
+
+    * * * * * * * * * * * * *
+    *     |---------|       *
+    *     |         |       *
+    *     |   |-->///<---|o *
+    *     |   |   DPST   /p *
+    *     |   |          \o *
+    *     |   |          /r *
+    *     |   |--LED--|  \n *
+    *     |           |  /i *
+    *     |----|      |  |k *  T
+ L  *          |      |  |  *  E
+ I->*-CZERWONY-|      |--|--*->L
+ N  *                       *  E
+ I->*-ZIELONY---------------*->F
+ A  *                       *  O
+    * * * * * * * * * * * * *  N
+
+
+ Kiedy ju? uzbiera3eo wszystkie czeoci musisz ustalia które kable
+biegn1 do telefonu a które do linii. Mówie o tym poniewa? diode trzeba
+wpi1a w okreolonej pozycji. By wpi1a prawid3owo diode LED musisz
+rozró?nia które kable biegn1 do linii, a które do telefonu.
+
+Jak sie tego dowiedziea?
+
+ Podepnij skrzynke do jednego zestawu kabli jako do linii, a drugiego
+jako telefonu.
+
+*UWAGA* W modelu 1 prze31cznik MUSI bya WYLYCZONY!
+
+*UWAGA* W modelu 2 prze31cznik powinien bya ustawiony w strone
+        diody LED!
+
+ Gdy ju? podpi13eo BLACK BOX'a podnieo s3uchawke telefonu i obserwuj
+stan diody. Gdy dioda sie zaowieci - znaczy ?e kable s1 dobrze
+po31czone, jeoli nie spróbój innych kombinacji z kablami. Gdy ju?
+wiesz które kable to które OZNACZ JE! *UWAGA* - Kiedy wyprubowa3eo
+ju? wszystkie mo?liwooci a dioda nie zapala sie sprawdY dok3adnie
+po31czenia lutownicze, po3o?enie diody (zamien jej nó?ki miejscami)
+oraz przede wszystkim czy prze31cznik jest w dobrej pozycji. Gdy
+ju? wszystko jest OK. i skrzynka dzia3a oznacz pozycje prze31cznika
+jako "SKRZYNKA WLYCZONA".
+
+ Jak u?ywaa BLACK BOX'a?
+
+Niebywa31 zalet1 BLACK BOX'a jest to, ?e nie dzia3a on na telefony
+ludzi dzwoni1cych DO CIEBIE lecz dzia3a wy31cznie na TWÓJ telefon
+a wiec tylko gdy TY GDZIEO DZWONISZ! Kiedy twoja skrzynka jest
+*WLYCZONA* mo?esz tylko gdzieo dzwonia. Twój telefon bedzie dzwoni3
+normalnie, a dioda LED bedzie sie owieci3a. Kiedy w takim momencie
+odbierzesz telefon, po prostu dioda bedzie sie owiecia a dzwoni1cy
+do ciebie nie bedzie zwolniony z op3at.
+
+ Kiedy sie ju? wygadasz na 0-700-72-772 :)))) to normalnie odk3adasz
+s3uchawke. Nie bedziesz móg3 otrzymaa tonu po31czenia (dial-tone) lub
+telefonu (od kogoo innego), kiedy skrzynka jest w31czona, wiec *WYLYCZ*
+teraz skrzynke by przywrócia normalny stan teojego telefonu. Nie
+polecam zostawiaa skrzynki w31czonej ca3y czas jeoli nie chcesz
+odpowiadaa przed twoj1 starsz1 za "zepsucie" telefonu lub wejocie
+w konflikt z prawem. Najlepiej po rozmowie odpi1a BOX'a, pod31czya
+z powrotem kable i schowaa go w bezpieczne miejsce.
+
+*UWAGA* BLACK BOX NIE BEDZIE DZIALAL W BUDKACH TELEFONICZNYCH
+Z NOWSZYMI SYSTEMAMI JAK 5ESS CZY ESWD (SYSTEMY TE SY GLÓWNIE
+WBUDOWANE W TELEFONY TSP-91 ORAZ TSP97/U). BLACK BOX JEST PRZEZNACZONY
+GLÓWNIE NA DOMOWY U—YTEK.
+
+                                                             Simmy
+
+A teraz drobny cennik (i sk1d wytrzasn1a odpowiednie czeoci):
+
+- po pierwsze najlepiej przeczytaa ksi1?ke "Elektronika" John'a
+  Watson'a
+
+- z kablem chyba nie bedzie k3opotu, a jeoli ju? to w "elektroniku"
+  mo?na kupia dwu?y3owy za 20-30 groszy (1 metr)
+
+- opornik... tu mo?e bya najgorzej. w "elektroniku" mo?e albo oporników
+  nie bya albo mog1 bya cholernie drogie zestawy... Polecam rozjebaa
+  (przepraszam za s3ownictwo) jakieo stare zgracone radio i wyszukaa
+  odpowiedni opornik. Opornik powinien wyg31daa tak:
+
+                                                OPORNIK
+                                           ----------------
+                                          |  ' ' '       ' |
+                                     |---|   ' ' '       '  |---|
+                                    |     |  ' ' '       ' |     |
+                                     |d    -kolorowe-paski-     |d
+-----powiekszona p3ytka radia--------|r-------------------------|r-----
+-------------------------------------|u-------------------------|u-----
+                                     |t                         |t
+
+                                         <----------------->
+                                                5-10mm
+
+  pierwsze trzy paski (od lewej) s1 to paski wartooci rezystora
+  (opornika) ?eby opornik mia3 1.8 kilooma paski powinny miea kolory
+  (od lewej): br1zowy - szary - czerwony. Ostatni pasek to pasek
+  tolerancji i wszystko jedno jakiego koloru bedzie (mo?e bya br1zowy,
+  czerwony, zielony, niebieski, fioletowy, szary, srebrny lub z3oty).
+  W którymo FAQ omówie zasade dzia3ania oporników, kondensatorów,
+  cewek indukcyjnych oraz ich miedzynarodowe oznaczenia (wszystko
+  znajduje sie w ksi1?ce).
+
+- diode mo?na wzi1a z urz1dzenia które ma miernik zu?ycia baterii (np.
+  walkman ma czerwon1 diode). Rozkrecamy urz1dzonko i wylutowywujemy
+  diode.
+
+-no i prze31cznik. Nic prostrzego, bierzemy z radia w którym s1
+ oporniki i ju? (ja mam prze31cznik z diod1 informuj1c1 o napieciu
+ w prze31czniku). Niestety prze31cznik DPST trzeba bedzie kupia za
+ pare z3otych...
+ 
+-lutownica - 8zl, pasta (topnik) - 2.5zl a kalafonia 2 zl.
+
+A teraz zgodnie z obietnic1 angielski oryginalny FAQ:
+
+
+-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-
+
+
+***************************************
+*                                     *
+*      How to build a BLACK BOX       *
+*                                     *
+***************************************
+
+  To all who dare --
+
+     What is a BLACK BOX?   A BLACK BOX
+is  a device that is hooked up to  your
+fone  that fixes your fone so that when
+you get a call,  the caller doesn't get
+charged for the call.  This is good for
+calls  up to 1/2 hour,  after 1/2  hour
+the Fone Co.  gets suspicious, and then
+you can guess what happens.
+
+The way it works:
+
+     What  this little beauty  does  is
+keep the line voltage from dropping  to
+10v  when  you answer your  fone.   The
+line is insted kept at 36v and it  will
+make  the  fone think that it is  still
+ringing while your talking.  The reason
+for the 1/2 hour time limit is that the
+Fone CO. thinks that something is wrong
+after 1/2 an hour of ringing.
+
+     All  parts  are  available   Radio
+Shack.   Using the least possible parts
+and arangement,  the cost is $0.98 !!!!
+And  that  is  parts for two  of  them!
+Talk  about  a deal!   If you  want  to
+splurge  then  you can get a  small  PC
+board,  and  a switch.   There are  two
+schematics  for this box,  one  is  for
+most  normal fones.   The second one is
+for  fones  that don't  work  with  the
+first.  It was made for use with a Bell
+Trimline touch tone fone.
+
+  **  Schematic 1 for most fones  **
+  **         LED ON: BOX ON       **
+
+FROM >--------------------GREEN->  TO
+LINE >--!   1.8k  LED  !---RED--> FONE
+        !--/\/\/\--!>--!
+        !              !
+        ------>/<-------
+              SPST
+
+
+
+Parts:  1 1.8k 1/2 watt resistor
+        1 1.5v LED
+        1 SPST switch
+
+You  may just have two wires which  you
+connect together for the switch.
+
+
+  **  Schematic 2 for all fones  **
+  **        LED ON: BOX OFF      **
+
+FROM >---------------GREEN->  TO
+LINE >-------      ---RED--> FONE
+            !  LED !
+         -->/<--!>--
+         !         !
+         ---/\/\/---
+             1.8k
+
+Parts:  1 1.8k 1/2 watt resistor
+        1 1.5v LED
+       1 DPST switch
+
+
+     Here is the PC board layout that I
+recommend  using.   It  is neat and  is
+very easy to hook up.
+
+   Schematic #1        Schematic #2
+
+  **************     ****************
+  *            *     *  -------     *
+  * --<LED>--- *     *  !     !     *
+  * !        ! *     *  ! <SWITCH>  *
+  * RESISTOR ! *     *  ! !      !  *
+  *        ! ! *     *  ! !      /  *
+  * -------- ! *     *  ! !      \  *
+  * !        ! *     *  ! <LED>! /  *
+  * --SWITCH-- *     *  !      ! \  *
+  *  !      !  *     *  !      ! /  *
+L *  !      !  * F L *  !      ! !  * F
+I>RED-      -RED>O I>RED-      ---RED>O
+N>-----GREEN---->N N>-----GREEN------>N
+E * h          * E E *              * E
+  **************     ****************
+
+
+     Once you have hooked up all  the
+parts,  you must figure out what set of
+wires  go to the line and which  go  to
+the fone.   This is because of the fact
+that LED's must be put in, in a certain
+direction.  Depending  on which way you
+put the LED is what controls what wires
+are for the line & fone.
+
+How to find out:
+
+     Hook  up the box in one  direction
+using one set of wires for line and the
+other for fone.
+
+*NOTE*  For Model I switch should be
+OFF.
+*NOTE*  For Model ][ switch  should  be
+        set to side connecting the led.
+
+     Once  you have hooked it up,  then
+pick up the fone and see if the LED  is
+on.  If it is, the LED will be lit.  If
+is  doesn't light then switch the wires
+and try again.  Once you know which are
+which  then label  them.   *NOTE*  - If
+neither  directions  worked  then  your
+switch was in the wrong position.   Now
+lable   the   switch  in  its   current
+position as BOX ON.
+
+How to use it:
+
+     The purpose of this box is not  to
+poeple  who  call you so it would  make
+sence  that  it  can only  be  used  to
+receive! calls.   When the box is  *ON*
+then you may only recieve calls.   Your
+fone will ring like normal and the  LED
+on  the box will flash.   If you answer
+the fone now, then the LED will
+light and the caller will not be
+charged.
+Hang  up  the fone after you  are  done
+talking like normal.   You will not  be
+able  to  get a dial-tone or call  when
+the  box is on,  so turn the box  *OFF*
+for  normal calls.   I don't  recommend
+that you leave it on all the  time,  as
+you don't want it to answer when Ma
+Bell calls!
+
+PLEASE NOTE THE BLACK BOX WILL NOT
+FUNCTION UNDER MOST NEWER ESS SWITCHING
+SYSTEMS.....
+
+DOWNLOADED FROM P-80 SYSTEMS 304-744-2253
+                                                 
+
+
+

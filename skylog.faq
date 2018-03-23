@@ -1,0 +1,118 @@
+                      
+			SKYLOG FAQ
+ 			    
+			     email:skylog@kki.net.pl
+           		     www:http://www.moze.kiedys
+                             IRC:#hackpl, #phreakpl 
+
+
+
+ =============================================================================
+  Warning:
+      Text ten powstal wylocznie w celach edukacyjnych.Autor nie ponosi
+      odpowiedzialnosci za jakiekolwiek szkody wynikle po przeczytaniu
+      tego tekstu badz z jego zlej interpretacji.
+ =============================================================================
+    Jesli chcesz mozesz ten faq umieszczaj gdzie chcesz, jednak nic w nim 
+    nie zmieniaj.Jesli masz czas wyslij e-maila gdzie go umiesciles.   
+ =============================================================================
+ 
+
+ Stosunkowo niedawno (pol roku) zaczalem interesowac sie  phreakiem/hackiem.
+ Przeczytalem kilka faq'ow i postanowilem ze napisze takze swoj.Moze komus 
+ sie przyda.Jest wiec to moj pierwszy faq.Nie jestem zadnym ekspertem w tych 
+ dziedzinach, ale wydaje mi sie, ze co nieco wiem.Zauwazylem, ze nikt lub
+ prawie nikt nie poruszyl kwestii programowania pamieci EEPROM.Wczesci pierw-
+ szej opisze troche spraw czysto teoretycznych.Zastosowanie praktyczne w 
+ drugiej czesci.
+ 
+ Zaczynamy.
+
+
+ EEPROM (Electrically Erasable and Programable Read Only Memory) jest to 
+ nowoczesniejsza wersja pamieci EPROM w ktorych wymazanie wczesniej 
+ zapisanych informcji wymagalo naswietlania go falami ultrafioletowymi.
+ Pamieci EEPROM sa stosowane do przechowywania danych ktorych nie mozna 
+ utracic po odlaczeniu zasilania.Ten typ pamieci stosowany jest w min.
+ telewizorach, magnetowidach (niektorych) i...	budkach telefonicznych.					
+ Kazdy EEPROM charakteryzuja dwie podstawowe cechy: maksymalna pojemnosc
+ i sposob wymiany danych pamieci z reszta systemu z ktorym pracuje.
+ Najczesciej spotykane rodzaje EEPROM'ow to:
+ z magistrala szeregowa 3-przewodowa
+ z magistrala szeregowa standardu I2C (uzywane sa w niektorych kartach 
+   chipowych) 	
+ z magistrala rownolegla (te nas najbardziej interesuja poniewaz ten typ
+   pamieci stosuje TPSA(x) w swoich maszynkach)
+
+ EEPROMY'y z magistrala rownolegla mozna rozpoznac po tym, ze na poczatku 
+ symbolu pamieci jest 28 np 28C256 lub 28C16.Czasami spotykamy sie z  
+ EEPROM'ami o innych oznaczeniach lub nie ma ich wcale lub podany jest 
+ tylko numer oprogramowania np.2.8, 2.9.
+ U mnie najczesciej sa 27C256.
+
+ A teraz czego mozemy sie dowiedziec z oznaczen typu 28C256:
+ 28  -typ magistrali pamieci
+ C   -informacja o technologii (CMOS)
+ 256 -pojemnosc EEPROM'u 
+ Czasami na poczatku wystepuja prefiksy literowe np.X, AT, URMET
+ informuja one kto jest producentem np. X-Xicor, AT-Atmel, URMET-wiadomo.
+ Jezeli na koncu wystepuja jakies inne cyfry to mowia one o czasie dostepu.
+
+ Ponizej przedstawione sa schematy pamieci: 28C16 i 28C256.
+ 
+                28C16                         28C256
+            |----\/----|                  |----\/----|
+          A7|1       24|VCC 	       A14|1       28|VCC
+          A6|2       23|A8	       A12|2       27|WE
+          A5|3       22|A9	        A7|3	   26|A13
+          A4|4 	     21|WE	        A6|4	   25|A8
+       	  A3|5       20|OE	        A5|5       24|A9
+	  A2|6       19|A10	        A4|6 	   23|A11
+	  A1|7       18|CE	        A3|7       22|CE
+	  A0|8       17|I/O7	        A2|8       21|A10
+        I/O0|9       16|I/O6            A1|9       20|CE
+        I/O1|10      15|I/O5	        A0|10      19|I/O7
+        I/O2|11      14|I/O4	      I/O0|11      18|I/O6
+         GND|12      13|I/O3	      I/O1|12      17|I/O5
+            |----------|	      I/O2|13	   16|I/O4
+				       GND|14      15|I/O3
+				       	  |----------|
+
+ gdzie
+  A0..Ax - wyprowadzenie linii danych oraz adresow
+  CE - linia sterujaca - uaktywnia pamiec
+  WE - linia sterujaca - okresla czy pamiec ma odczytac dane czy je zapisac
+  OE - linia sterujaca - wylacza bufory wyjsciowe
+
+ Skoro istnieje mozliwosc przeprogramowania pamieci EEPROM to chyba nie 
+ musze mowic jakie to daje mozliwosci.Niektorzy z was pewnie zastanawiaja 
+ sie jak przeprogramowac taki EEPROM.Otoz jest to stosunkowo proste
+ (przynajmniej teoretycznie).Wystarczy wykombinowac programator do EEPROM'ow.
+ Mozna go zamowic w sprzedazy wysylkowej w kilku firmach min. ASTAR ABR.
+ Namiary w dalszej czesci faq'a. 
+ Programator ten nosi nazwe:
+  PROGRAMATOR PAMIECI EPROM ZENDA 3.1
+ Obsluguje on kilka typow pamieci :
+  EPROM 27(C)16-512
+  EEPROM 28C16-256
+  EEPROM 12C 24Cxx, SDA25xx, PCF8582
+  uC 87(C)51,52, 89C51,52, 89C1051, 89C2051
+ Komunikacja odbywa sie po laczy RS232. Programator zapewnia wiele innych
+ bajerow.
+
+ UPRZEDZAM, ZE INFORMACJE ZAWARTE W TEJ EDYCJI FAQ'A SA CZYSTO TEORETYCZNE,
+ CZESC PRAKTYCZNA W NASTEPNEJ CZESCI. NIE TESTOWALEM PROGRAMATORA ANI INNYCH 
+ URZADZEN TEGO TYPU. JEZELI KOGOS INTERESUJA SZCZEOLY LUB DANE DOTYCZACE 
+ INNYCH RODZAJOW EEPROM'OW TO WIECEJ INFORMACJI MOZNA ZNALEZC W "ELEKTRONICE
+ PRAKTYCZNEJ" nr. 8/98 I 9/98.
+
+ Adres:  ASTAR ABR, ul.Walachowej 27
+         43-300 BIELSKO-BIALA,
+         tel/fax (33) 184-002
+
+ ===========
+ # GREETSY #
+ ===========
+ special thx to: 3mil - za kontakty
+
+
