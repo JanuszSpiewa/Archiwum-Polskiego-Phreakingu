@@ -7,7 +7,7 @@ Motywuj nas do działania przekazując drobną kwote w postaci kryptowaluty:
 BTC: 1Je91dUNDoA1p7oNhD64hwy85S14uuUo9Z
 
 
-ETHER: 0xD5CE5b62938a41AADAB53B7597335db5C1cD4a84
 
 
-BCC: qrqcqd6dvqq2j93hlm2h7fgwvqknun9hgqgk9qhew0
+
+
