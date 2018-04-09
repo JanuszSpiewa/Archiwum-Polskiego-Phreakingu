@@ -4,7 +4,7 @@ komunizmu w Polsce dzwonili za darmo  i dlaczego nie raz w budce nie było autom
 
 Motywuj nas do działania przekazując drobną kwote w postaci kryptowaluty:
 
-BTC: 1Je91dUNDoA1p7oNhD64hwy85S14uuUo9ZY
+BTC: 1Je91dUNDoA1p7oNhD64hwy85S14uuUo9Z
 
 
 ETHER: 0xD5CE5b62938a41AADAB53B7597335db5C1cD4a84
