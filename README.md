@@ -23,9 +23,13 @@ https://www.youtube.com/watch?v=MPWvyeJImfI
 Częsć 5:
 https://www.youtube.com/watch?v=Umz5yUJA4Nk
 
+Projekt się rozwija więc przeczytaj changelog'a ( co jakiś czas dodajemy nowe materiały które zdobyliśmy albo ktoś nam podesłał)
+
+https://github.com/JanuszSpiewa/Archiwum-Polskiego-Phreakingu/blob/master/changelog
 
 
-Motywuj nas do działania przekazując drobną kwote w postaci kryptowaluty:
+Przekaż drobną kwote aby wspomóc rozwój projektu:
+
 
 BTC: 1Je91dUNDoA1p7oNhD64hwy85S14uuUo9Z
 
