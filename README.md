@@ -38,5 +38,5 @@ Materiały prosze podsyłać na adres: archiwum.polskiego.phreakingu@gmail.com
  
 
  
-
-
+Za pomoc przy repozytorium dziękuje Piątkosi: http://piatkosia.k4be.pl/wordpress
+ 
