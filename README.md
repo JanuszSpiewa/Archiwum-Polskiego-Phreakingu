@@ -32,9 +32,11 @@ Przekaż drobną kwote aby wspomóc rozwój projektu:
 
 
 BTC: 1Je91dUNDoA1p7oNhD64hwy85S14uuUo9Z
+ 
+ 
+Materiały prosze podsyłać na adres: archiwum.polskiego.phreakingu@gmail.com
+ 
 
-
-
-
+ 
 
 
