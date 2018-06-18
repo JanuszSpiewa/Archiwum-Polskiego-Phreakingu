@@ -1,0 +1,614 @@
+
+                      
+    v v                  
+     v  I E D Z M I N  &  other from  D I V I S I O N  6 6 6   
+                              
+                          p r e z e n t s 
+   
+
+                     HACK/PHREAK/CC/SI  F A Q 
+           
+                         version 0.1 beta 
+
+[------------------------------------------------------------------]
+[ DISCLAIMER:  Zawarte tu materialy sa podane jedynie w celach     ]
+[              edukacyjnych, autorzy nie ponosza odpowiedzialnosci ]
+[              za skutki ich wykorzystania.                        ]
+[                                                                  ]
+[------------------------------------------------------------------]
+
+ I.  S O C I A L    E N G E E R I N G 
+  
+                                   
+
+PART 1. IRC social  [by  M0rbiuS ]
+PART 2. faked maile [by ViEdZmIn ]  
+PART 3. faked www   [by ViEdZmIn ]
+PART 4. off line    [by Epoison  ]
+
+
+II. P H R E A K  IN  P O L A N D 
+
+
+PART 1.Manual do Centrali [by ViEdZmIn ]  
+PART 2.Pagery [by Witkacy ]
+PART 3.Kartonowce [by ViEdZmIn & obi ]
+PART 4.Blokada antypajeczarska [by obi ]
+PART 5.Skaning numerow [by ViEdZmIn]
+PART 6.ChipKarty i central's programing [by ViEdZmIn & obi ]
+PART 7.Alarmy samochodowe [by Sect0iD ]
+
+III.  L A M E     Z O N E
+
+PART 1.Jak skonfigurowac protokol PPP spod linucha ? [by ViEdZmIn ]
+PART 2.Skryptografia  [by ViEdZmIn ]
+PART 3.Overflowy czyli kurs pisania exploituf [by 1nsect & ViEdZmIn ]
+
+IV. C L A S S I C  H A C K 
+
+PART 1. Remoty [by Viedzmin ]
+PART 2. nonblinding spoofing  [by  ViEdZmIn ]
+
+
+
+---------------------------------------------------------------------------------------------
+
+
+PART  1. SOCIAL  ON IRC   [ by m0rbius ]
+
+Witam wszystkich pragnacych poznac tajemnice social engeeneringu. Na wstepie 
+chcialbym przedstawic wszystkie argumenty przemawiajace za poszerzaniem 
+wiadomosci wlasnie w tej dziedzinie. SE byc moze jest uwazany przez "WIELKICH"
+hakerow za najmniej wyszukany sposob wlamywania sie, czy uzywania czyjegos 
+konta dla wlasnych celow. Jednak jest to bardzo skomplikowana (wbrew pozorom)
+sztuka MANIPULOWANIA ludzkim umyslem. Wymaga doskonalego poznania zagadnien
+logiki, psychologii oraz umiejetnosci nawiazania kontaktu z ludzmi (nie tylko
+lamerami). Korzysci sa ogromne. Mozna w bardzo krotkim czasie uzyskac dostep do
+czyjegos konta, otrzymac wazne pliki (np. passwd) czy zdobyc nowe umiejetnosci.
+Przedstawie zatem podstawy poslugiwania sie ta WAZNA dla hackerow dziedzina, 
+podkreslajac raz jeszcze, iz jest ona warta zauwazenia.
+Czlowiek poslugujacy sie SE musi zrozumiec jedna, elementarna rzecz...
+musi wcielic sie w postac MANIPULATORA UMYSLOW (dalej bedziemy go nazywac 
+master mindem MM). Jesli uda mu sie zagrac dobrze swoja role, otrzyma nagrode.
+Polem dzialania MM jest zazwyczaj IRC (mozna tez uzywac SE podczas rozmowy tel.
+wysylania e-mail itp. ale o tym kiedy indziej). Obserwuje on dokladnie 
+wszystkich uzytkownikow i dokonuje wyboru. Na poczatek polecam za ofiary osoby
+potocznie zwane lamerami, choc korzysci nie sa zadowalajace, bo przeciez lamer 
+nie bedzie nawet wiedzial co to jest passwd (kiedys jeden koles myslal, ze phf 
+to PHone Freaking :) ), ale warto jest na takich osobach pocwiczyc...
+Gdy wybierzesz juz ofiare, musisz pamietac o podstawowych zasadach:
+1) BADZ CIERPLIWY; nie zawsze ktos juz przy pierwszej rozmowie poda ci haslo
+   do swojego konta, zatem nie pros go o to od razu...
+2) BADZ MILY; tylko w ten sposob mozna uzyskac czyjes zaufanie.
+3) STARAJ SIE TRAFIC W JEGO UPODOBANIA; dokladny przyklad znajdziesz w 
+   nastepnym paragrafie...
+4) NIE BADZ NACHALNY; jesli rozmowa nie przebiega po twojej mysli, trudno
+   nie zalamuj sie, tylko zmien temat na bardziej "ludzki" i sprobuj innym 
+   razem... nie uciekaj z kanalu, nie ignoruj go, nie wykopuj... poprostu
+   udawaj, ze nie zalezalo ci na tym o co pytales... (istnieje wyjatek p#5)
+5) MOZESZ BYC NACHALNY TYLKO KIEDY OSOBA WYGLADA NA ULEGLA!!!; np.zostala 
+   zbanowana na kanale lub zadarla z opami a ty mowisz, ze mozesz jej zalatwic 
+   powrot (co oczywiscie nie musi byc prawda)
+6) NIE UZYWAJ PRZEKUPSTWA; z tym trzeba uwazac, nie mow, ze dasz komus haslo, 
+   jesli on da ci swoje... to sprawia, ze ludzie staja sie mniej ufni. Mozesz
+   za to odpalic mu cos (haslo do konta, na ktorym i tak nic nie ma, ciezko 
+   jest zdobyc roota, poza tym i tak to konto jest "spalone" bo admin cie  
+   nakryl na probie wlamania :)))  )
+7) UDAWAJ, ZE JESTES MNIEJ WIECEJ NA POZIOMIE OSOBY, Z KTORA ROZMAWIASZ
+8) STARAJ SIE, ABY OFIARA CZULA, ZE JEST CI WDZIECZNA; np. ktos szuka jakiegos
+   pliku, ktory masz. Od razu bez namyslu dcc send mu. Nic nie pisz, tylko dcc
+   send. Ten ktos i tak sie odezwie zeby chociaz powiedziec THX, a jak nie to
+   NUKE! J O L T !!!, KICK+ BAN :)
+9) CZESTO UZYWAJ "SZTUCZEK" MM ; patrz nastepny paragraf...
+10) PAMIETAJ, GDY OTRZYMASZ JUZ TO, CO CHCIALES, TO NIE JEST OSTATNI KONTAKT Z
+    OFIARA; ladnie sie pozegnaj (musze konczyc, do zobaczenia...) i zagadaj 
+    kiedys do tej osoby, czasem jej cos wyslij, byc moze bedziesz cos jeszcze
+    od niej potrzebowal!!!!!
+
+Gdy bedziesz przestrzegal wyzej wymienionych zasad, dosyc szybko staniesz sie 
+MM. Czasem jednak same zasady nie wystarczaja, trzeba uciec sie do kilku 
+ciekawych, sprawdzonych sztuczek. W #3 napomknalem o trafieniu w upodobania
+ofiary.Odgrywa to wazna role w zdobywaniu zaufania, co pozniej procentuje
+Oto przykladowy log rozmowy z takim frajerem:
+<m0rBIuS> cze 
+<frajer> cze, kim jestes?
+<m0rBIuS> ???
+<frajer> co ???
+<m0rBIuS> rafal???
+<frajer> nie karol
+<m0rBIuS> upss, ja jestm michal, chyba masz takiego samego nicka jak moj koles
+<frajer> heh
+<m0rBIuS> nic to, nie mam co robic
+<frajer> to tak jak ja, na tym ircu, jest strasznie nudno :)
+<m0rBIuS> czym sie interesujesz???
+<frajer> gram w zespole, ale najbardziej lubie archiwum X
+<m0rBIuS> taaaak???? To tak jak ja... jestes w jakims klubie??
+<frajer> nie, a ty?
+.......
+No i widzicie, gadka toczy sie calkiem przyjemnie teraz tylko nalezy umiejetnie
+doprowadzic do wyludzenia czegos od frajera...i tu zaczyna sie korzystanie ze
+sztuczek. Najprostrza z nich to METODA SCHIZOFRENIKA... dziwnie brzmi nie???
+Jest bardzo zabawna i wymaga tylko dwoch domen i odrobiny wyobrazni...
+
+1. wchodzimy do irca z dwoch roznych domen.
+2. przyjmujemy 2 rozne nicki, zatem ta sama fizycznie osoba jest dwiema w 
+   cyberprzestrzeni.
+3. ofiara nie moze byc OP
+4. ofiara MUSI byc lamerem
+5. koniecznie, jedna domena musi byc tpnet'owska
+6. przydatne byloby posiadanie kilku kont
+
+Powrocmy do rozmowy m0rBIuSa z frajerem (m0rBIuS jest z tpnetu). Rozmawiaja 
+sobie grzecznie o tym i owym, a w tym samym czasie twoja "druga osobowosc"
+wysyla do frajera msg: "spadaj palancie", "wypieprzaj, bo cie znukuje" itp.
+mozna tez wysylac jakies bezsensowne mesegi i dcc send glupie pliki,
+poprostu trzeba byc uciazliwym, jesli osobowosc #2 zostanie zignorowana
+zmieniamy konto, wchodzimy do irc i stajemy sie jeszcze bardziej uciazliwi...
+albo na public mowimy /me frajer jest glupi itp...
+wtedy...
+...
+<m0rBIuS> ja naleze do klubu x-files fan
+<frajer> ooo, jakis palant sie mnie uczepil
+<m0rBIuS> co to za jeden??
+<frajer> jakis M4st3rM1nd...
+<m0rBIuS> nuknij goscia...
+<frajer> sprawdzalem ver. nie nadaje spod windozy
+<m0rBIuS> cholera... poczekaj, znam sposob na wywalenie kolesia, ale musze byc
+          pod unixem... zaraz wroce...
+<frajer> taak?? zalatw kolesia... jest naprawde wkurzajacy..
+<m0rBIuS> oo...
+<frajer> co???
+<m0rBIuS> qrfa, nie moge sie telnetowac na moje konto, choojowo
+(w tym momencie nasza druga osobowosc jest coraz bardziej uciazliwa)
+<frajer> fuck!!!
+<m0rBIuS> no wlasnie, czekaj, sprobuje jeszcze raz...
+<frajer> oki
+<m0rBIuS> SHIT!!!
+<frajer> kurde, ten koles jest niemozliwy, zignorowalem go, a on wrocil...
+         ale wiesz co, mozesz wejsc na moje konto, tylko pozbac sie kolesia
+<frajer> dalem.sie.zrobic.w.chuja.edu.pl
+<frajer> login: frajer
+<frajer> password: rejarf
+.....
+po chwili nasza druga osobowosc pisze /quit (ping timeout) a frajer jest 
+zadowolony. Mozesz jeszcze mu powiedziec, zeby zmienil sobie haslo, zeby 
+potem nie bylo na ciebie, jak sie cos stanie, ale moge cie zapewnic, ze 
+tego nie zrobi. A poza tym, to jak raz byles na czyims koncie, to zawsze jest
+sposob na powrot, hocby przez zciagniecie hasel innych ludzi...  :)
+PROSTE... PRAWDA????
+Ale to nie wszystko. Istnieje pewna zasada, ze lamerzy panicznie boja sie
+wirusow... heh moznaby to wykorzystac...
+1. wchodzimy do irc z POWAZNIE WYGLADAJACYM nickiem (np. Tomasz)
+2. wybieramy ofiare
+3.  /whois ofiara
+4. wiemy juz skad nadaje... (powiedzmy: place.heh.edu.pl)
+5. dowiadujemy sie, jak ma na imie admin na serwerze (mozna to zrobic
+   zagladajac na strone www i wysylajac jakis e-mail do webmastera z prosba
+   o szybka odpowiedz...) powiedzmy, ze admin to Piotr...
+6. najpozniej nastepnego dnia (kiedy znamy imie admina) mozemy przejsc do
+   dzialania
+7. piszemy na public (najlepiej pogrubionym lub podkreslonym tekstem) :
+   KTO COS SLYSZAL O WIRUSIE "MORTIMER 0.13" NA SERWERZE PLACE.HEH.EDU.PL ??
+8. czekamy az ofiara sie odezwie, a jesli sie nie odzywa wracamy do #5
+9. gdy zaniepokojony frajer odezwie sie:
+   <frajer> ja, co to za wirus????
+   <Tomasz> a co interesujesz sie wirusami???
+   <frajer> nie... ja mam bardzo wazne pliki na tym serwerze!!!
+   <Tomasz> wspolczuje ci... ale myslalem, ze admin juz odcial dostep 
+             uzytkownikom...
+   <frajer> ja jestem teraz normalnie na koncie...
+   <Tomasz> dziwne, znaczy, ze admin nie spelnia swych obowiazkow...
+   <frajer> no ja nie wiem...
+   <Tomasz> z tego co mowil mi szef, to zajebiscie grozny wirus
+   <frajer> taak?? czemu admin nie reaguje...
+   <Tomasz> nie wiem, wyslalem info o tym wirusie do Piotra...
+........
+jesli frajer mial kontakt z adminem (czyli zna jego imie i zgadza sie z 
+podanym przez was... reszta jest blachostka
+........
+   <frajer> cholera, trzeba cos z tym zrobic..
+   <Tomasz> ja sie chce tym wlasnie zajac...
+   <frajer> wiec czemu nic nie robisz??
+   <Tomasz> powiem ci co masz zrobic... znasz dobrze c++
+   <frajer> nie zabardzo :(
+   <Tomasz> to zle... w takim razie musze sam przerobic kod wirusa, aby byl
+            niegrozny...
+   <frajer> to na co czekasz???
+   <Tomasz> nie denerwuj sie tak... nie mam tam konta... poczekam az admin sie
+            odezwie...
+   <Tomasz> chyba, ze...
+   <frajer> ze co???
+   <Tomasz> mozesz mi podac na chwile twoj login i pass??? 
+   <frajer> a nie zrobisz nic zlego???
+   <Tomasz> nie boj sie, za 20 minut bedziesz mogl zmienic, ja tylko sobie 
+            przegram wirusa i troche go unieszkodliwie..
+   <frajer> dobra...
+I mamy kolejne haslo. Niezle. Wchodzimy, szybko zciagamy odpowiednie pliki i 
+informujemy frajera, ze wirusa juz nie ma... Zeby mu bylo razniej, powiedzmy mu
+ze powiemy adminowi, ze wlasnie dzieki niemu unieszkodliwilismy wirusa... :)
+To Tyle na dzis... do zobaczenia w przyszlosci....
+
+PART 2. FAKED MAILE [ by ViEdZmIn ]
+
+Czasem musimy zhaczyc jakis host a nie mamy tam konta,zaden remot nie dziala, 
+po prostu nie mozemy sie dostac, wiekszosc poddaje sie wtedy i czeka az na 
+www.rootshell pojawia sie nowe exploity ;], lecz pamietajcie ,ze to czlowiek 
+jest zawsze najslabszym ogniwem w zabezpieczeniach, a gdyby tak sie zaprzyjaznic 
+z adminem ?!. Ok pokaze wam jak to zrobilem z pewnym koscielnym serverkiem,ktory
+mialem ochote zhaczyc (konta nawet se tam wykupic legalnie ni mozna!)Badamy wiec 
+nasz server od strony lecz nie od strony technicznej a marketingowej,sprawdzamy 
+czym sie zajmuja,lukamy www itd., znajdujemy mail admina i skrobiemy do niego 
+mail (mozna zalozyc jakis free email i wyslac txt z wwww (jak mnp. kki czy 
+optimus)lub wyslac mail bezposrednio s hosta ofiary ..czyli teltnetnac sie na 25 
+itd. Oto tresc mego maila:
+
+" Niech bedzie pochwalony Jezus Chrystus,
+
+ Obserwujac ekspansje mediow sieciowych w zycie spoleczenstwa polskiego
+ stwierdzilismy ze i poklady wiary mozna przeniesc na ten grunt
+ zaszczepic w ludziach zwiaznych z siecia internet swiadomosc
+ze zawsze moga tam odnalezc swoja wiare i swojego Bog pragniemy znalezc 
+swoje powolanie rowniez w mediach elektronicznychi moc korzystac w pelni 
+z poczty e mail oraz obserwowarki stron word wild web  to bardzo   pozwoli
+ nam rozszerzyc swoja dzialalnosci dotrzec do wiernych ktorym tak wiele mamy 
+do   przekazania a nasza poczta nie zawsze dostarcza nam listy w czasie w jakim
+moglibysmy     zareagowac. Ja jeszcze nie bardzo sie na tym znam. 
+Podlaczenie naszej  parafi do internetu zapropoponawal jeden z ministrantow , 
+ktory pomogl mi skonifgurowac nasz komputer i pokazal jak korzystac z sieci,  
+bezplatnego polaczenia oferowanego przez Telekomunikacje Polska,a takze pokazal
+ jak zalozyc skrzynke pocztowa. Czy moglby ojciec podzielic informacjami jak 
+mozna jeszcze wykorzystac internet dla potrzeb naszej parafii, interesowalaby
+ nas takze witryna  www naszej parafi, jak i gdzie ja mozna umiescic ?  
+Chcialbym takze pogratulowac wspanialej witryny www, ktora bardzo na przypadla 
+do gustu, byc moze, kiedys i nam uda sie wykonac tak dobra strone, wlasciwie 
+dzieki tej stronie znalazlem adres do ojca ,czekam wiec z niecierpliwoscia 
+na odpowiedz.
+
+Szczesc boze..
+
+[tu wpisz dane jakiegos ksiedza ] "
+ 
+Gosc podjarany soon nam odpisuje ...ze fajnie jest i tralala, no i ze moze nam zalozyc 
+konto pocztowe itd.My dalej piszemy mu, ze dziekujemy,walimy jakies moralitety,
+wymianiamy poglady itp.i na koniec walimy lamerski quest jak sie robi strony 
+www itp , no chemy zrobic wlasne www itp. no i tak ciagniemy dalej info 
+od admina ;].
+
+PART 3. FAKED WWWW  [ by ViEdZmIn ]
+
+Ta metoda moze nam posluzyc glownie dla cardingu, ok  juz mufie o co biega otoz
+co by bylo jakbysmy zalozyli se jakis shop/firme on line. Musimy to wszystko 
+zrobic anonimowo, szkuamy se jakiegos zagranicznego darmowego provider (jakis 
+najmniej znany z kosmiczna domena ;])chyab ze jestes carderem to mozesz se 
+wykupic jakis wirtual czy cos. Ok..anyway jak juz mamy gdzie postawic, 
+przystepujemy do tworzenia naszego www trojana, Najlepiej zrobic jakies porno 
+site,warez lub cos w tych klimatach..stronke dobrze by zrobic aby wygladala jak 
+komercyjna (mi to zajmuje gora 2 nocki :] )walimy tam jakis extra stuff (skany 
+panienek z jakis gazetek or netu lub hot warezsoft)robimy linki ze strona jest 
+sponsorowana by ktostsam,  nalezy do jakiegostam stowarzyszenia szopuf online itp. 
+Potem robimy linki do superduper stuffu lecz juz tylko dla membersow, oplate za 
+czlonkostwo dajmey jakas symboliczna, lecz only by credit card.
+Dalej juz chyba wiadomo co robimy..;]
+
+
+PART 4.  SOCIAL OFF LINE   [ by epoison ]
+
+1. Mysl i rozgladaj sie!
+
+ Te stwierdzenia padaja ciagle ale i tak wiekszosc pojebow mysli ze mocna lapa i ruscy koledzy albo buraczane przyzwyczajenia to klucz to sukcesu. Chooj im w dupe, niech tak mysla. Tylko my przez to zyskujemy. Spostrzegawczosc i umiejetnosc kojarzenia faktow to podstawa do kariery. 
+
+2. Siusiaki i peniawy niech podaja kawe (aby szybko!)
+
+ Jezeli masz w gaciach gdy podchodzi do ciebie k.nar w busie mimo ze masz bilet , to jestes jebana ciota i mozesz tego nie czytac. Na nic ci sie to nie przyda. Najwazniejsza w zyciu jest pewnosc siebie i umiejetnosc sprzedania sie za dobre pieniadze. Nie mowie tu o chamstwie, bo lebkow ktorzy tylko bez sensu pierdola ze sa qrfa the best, uzywajac przy tym flegmy, nazelowanych grzywek i dresow, jest w chooj. Ich mozna tylko wystrzelac! Bo ich czar jest najlepszy gdy stoja kolo bezbronnej babci albo kobiety (a propos czy nie nasowa sie tu pewna analogia do polskiej hacksceny?). Nieprawda?
+Chcesz przyklad? OK: 
+Sytuacja:
+W prasie ukazuje sie ogloszenie o mozliwosci zatrudnienia w jakiejsc firmie specjalizujacej sie w dziedzinie X. Liznales to. Kumasz bajere, ale nie na tyle zeby sie zaglebiac. Jak jestes zdolny, to szybko lykniesz wiedze w praktyce. 
+Po selekcji podan i c.v. (oczywiscie twoje jest xtra skomponowane), pozostajesz na arenie you & your kontrkandydat. Wiesz ze clio jest niezly i porusza sie w temacie na biezaca. Ale jest dupkiem w gadce, czerwonym siusiakiem i w dodatku "dojezdza" (bez obrazy, to gra skojarzen!). Najwazniejsze jest wejscie. Wchodzisz, odpierdolony na cacy (zadnych qrfa zielonych garniakow, bo w takich sie juz nawet cow nie doi), czern, odpowiednio dobrany crawat, dobry zapach.  Jak masz polski, lepiej nie uzywaj. CZYSTE BUTY! Gadka, najwazniejsza jest elokwentna gadka. Jesli nie jestes pewien siebie, lopata czeka. Zalotny usmiech do sekretarki (moze w przyszlosci da! -- oczywiscie zart), no i czekasz. Obok siedzi siusiak, czerwony, speszony mietosi poly wytartej katany. Kto to qrfa, sprzataczka - myslisz. Nie, to kolo ktory chce zwyciezyc. Powodzenia. Zapraszaja cie na rozmowe. Wchodzisz, dzien dobry. Jesli sa kobiety warto sie usmiechac do nich. Zreszta i tak usmiech jest wazny. Bez niego mozesz pilnowac parkingu w nocy - nikt nie patrzy! No i goscie mowia: "Prosze nam opowiedziec o sobie". W tym momencie let's dance!
+Napierdalasz! Ile wlezie, same plusy. Najdrobniejsze zwyciestwa, mozesz wciskac delikatne kity. Nie sprawdza, gwarantuje! Konczysz jakims zartem, np: 
+"No moze jedyna moja wada jest to, ze za duzo pracuje" albo cos w tym stylu. Usmiech nie schodzi z twarzy. No i goscie przechodza do nastepnego punktu programu, ktory jest bardziej klopotliwy: "A Pana umiejetnosci?" Tu rowniez mowisz wszycho! Blefuj! Jak ladnie zagadasz gosciom nie bedzie sie chcialo zadawac dodatkowych pytan. Jesli takie nastapia, graj. Nie mozesz milczec!
+Milczenie i zaczerwieniona geba cie wyklucza! To na tyle. Dziekujesz, nie zadawaj dodatkowych pytan "A kiedy moge sie dowiedziec..." i tego typu. To powie ci sekretarka, myslisz ze usmiech na wejsciu to za darmo? I teraz patrzysz: Wchodzi kolo numer dwa, zaczerwieniony burak, siusiak mu przysechl z nerwow! Mozesz sobie wyobrazic te same pytania: "Prosze nam opowiedziec o sobie." Clio ledwo mowi: a tu wydoilem crowe, a tam se palca zlamalem, co chwila przerywa, sapie. Rano sie nie umyl, wyglada jak zul. Po pieciu minutach goscie sa niezle rozbawieni. "A moze pana umiejetnosci". Jesli gosc jest naprawde niezly, twoje szanse maleja, ale nie panikuj!. Na pewno po pierwszym pytaniu jest tak zdenerwowany ze sie zamota, albo nic nie powie tylko sie spusci sproszkowanym nasieniem z nerwow! 
+Podziekuja mu. Ty w tym czasie jestes po milej rozmowie z sekretarka. Dogadaj sie z nia tak, abys mogl do niej zatelefonowac, dowiedziec sie co i jak, jakie sa sluchy o tym, kto zostanie zatrudniony (one wiedza wszystko)! Gosc jest zdeformowany, nie wie nawet,jak dadza mu info o decyzji.Nie wie nic, tylko sie spocil i wali jeszcze bardziej!
+ Teraz mi qrfa kolego odpowiedz: who win?
+Istnieje tylko jedno zastrzezenie: ta metoda na 80% nie przejdzie na egzaminach na uczelni, chyba ze psor albo dr jest jebanym pedalem, sam nic nie wie lub ty wiesz odpowiednio duzo albo jestes naprawde niezly!
+Over.
+To sie troche rozpisalem, ale widzisz jak wazna jest dbalosc o szczegoly i umiejetnosc prezencji, gadki itp. Goscie tak miliardy wyludzaja. Jesli jestes odpowiednio przygotowany do tego wszystkiego, szanse na przegrana sa naprawde znikome.
+Jesli jestes dobry, przyjeli cie i naprawde malo wiesz, to bardzo prawdopodobne, ze szybko cie wyjebia. Ale nie martw sie. Lap kontakty, przed ludzmi z zewnatrz udawaj naprawde dobrego, a jak dostaniesz decyzje o zwolnieniu to ladnie sie pozegnaj i podziekuj za mila wspolprace a nikt ci nie zrobi kolo dupy i sytuacje mozesz powtorzyc. Az sie w koncu czegos nauczysz.
+Dobra skonczmy juz z ta praca, bo mozna swira dostac!
+
+3. Jak zaczynac?
+Jesli juz zamierzasz sie bawic w inzynierie s i poprzednie punkty cie nie oburzyly to bravo. Pierwszy test zdales na dwa plus (a pa juz chcialby piec zalapac). No dobra. Na poczatek dobra metoda do nauki jest proba wydobycia z informacji telefonicznej zastrzezonego numeru tylko tak, zeby gosciowka nie zadzwonila z twoim nazwiskiem pod ten numer i nie spytala sie czy moze udzielic ci info(normalne ze nazwisko jest lewe). To niczym nie grozi. Jak jestes superbeginner to dobrze byloby dzwonic po info o znanym numerze, upewniajac sie wczesniej, ze nikogo nie ma w domu (po co niepokoic niewinnych ludzi ;) ). Jesli jestes facetem mozesz probowac na nastepujace metody:
+a) kulturka - walisz ulozonego goscia, zapytujesz, zagadujesz (malo    skuteczna)
+b) podryw - jebiesz complementami (malo skuteczna, choc w info siedza same    babki)
+c) pewniak cywil 1 - dzwonisz i udajesz ze wszystkich spod tego numeru znasz,    ze pana Henia to znasz od dawien dawna i takie sraci-maci, i ze teraz    jedziesz wlasnie do nich i bardzo chcialbys ich uprzedzic, i ze jestes    przed granica niemiecka itd. Jak nikogo nie ma w domu na 60% masz number
+d) pewniak cywil 2 - lejesz wode ze znasz pania Mirke z informacji    telefonicznej i ona by ci powiedziala, udajesz zdenerwowanego itd. Na 30%    skutkuje
+e) pewniak komendant - grubym glosem przedstawiasz sie arogancko jako    komendant Gerard Szmajdzinski(oczywiscie to nazwisko jest lipne, zapoznaj    sie ze struktura socjalna KRP w twoim miescie) i glosem nieznoszacym    sprzeciwu zadasz numeru. Jak sie babka cos spluje, to zjeb ja na maxa.
+   80%.
+
+Mozesz kombinowac z innymi metodami. Jesli mowisz nie wiem jak, to do pierwszego punktu prosze!
+Jak juz zaczniesz byc niezly, kombinuj z numerami cc, kontami (w firmach lameria jest ponizej krytyki, a ochrona danych to pojecie wsrod pan operatorek pojecie abstrakcyjne), i czym tylko chcesz 
+
+4. Zasady
+Jesli chcesz wyciac jakis numer, podstawa jest wiedziec o danym obiekcie wszystko, czego mozna sie dowiedziec. Przygotuj sie! Jak cos nie wyjdzie albo ktos jest oporny, nie odpierdalaj maniany i nie koncz milczeniem albo odlozeniem sluchawki! Potem mozesz zapomniec o podejsciu tego obiektu. Pewny siebie powiedz:"No chyba bede musial porozmawiac z pani szefem" To daje ci jeszcze jedna szanse, a nie gubi kontaktu. Ogolnie najlepiej podchodzic babki. Sa latwe. Kilka dobrych zdan przekona ja ze rozmawia z odpowiednia osoba.
+Co jeszcze? Jesli sie podszkolisz, nie popadaj w rutyne, to gubi! A poza tym s.i. daje naprawde nieograniczone mozliwosci. I ogolnie najlepiej grac na pewniaka.
+
+5. Przyklad
+
+Na mojej uczelni aby uzyskac konto, musisz wypelnic podanie. Wzialem jedno i odbilem na xero. Na podaniu musisz wypelnic nastepujace pola:
+Nazwisko i imier, rok, nr indexu, wydzial, nr grupy, adres zamieszkania, login i password, uzasadnienie.
+Ostatnie trzy pola, wiadomo lipa. Najlepiej jest wybrac gosci z wydzialow typowo lamerskich, jakas inz. srodowiska albo chodowla trzody chlewnej...
+W uzasadnieniu jebnij jakis error w nazewnictwie zeby gosc byl pewny, np:
+"Mozliwosc korzystania z sesji telenetu do kolegi firmy". Nazwisko, imie, numer indeksu, rok, wydzial, grupa, adres. Wszystkie oprocz ostatniego sa latwo dostepne. Najlepszy okres jest po sesji. Wtedy wszystkie indeksiki leza w dziekanacie w szufladkach albo na poleczkach. Mozesz zapamietywac te dane po jednym indeksie, ale po co sie opierdalac. Wez wybierz ze 20 i jakby sie suka z dziekanatu pytala po co ci tyle, to powiedz ze cie grupa wyslala. Dzialania jak zawsze. Wyczuj ja co lyknie. Jak juz je masz, to idziesz spokojnie do knajpki naprzeciwko uczelni i spisujesz dane. Najlepiej przegladajac wybierz indeksy z wpisanym miastem, w jakim jest twoja uczelnia. Jak zdobyc adres. Na pewno z ksiazki telefonicznej. Dlatego mowilem o tym z jakiego miasta brac, po chooj chodzic na poczte i sprawdzac w ksiazkach z innych miast i wydawac na telefony( chyba ze jestes phreaker). Jak znajdziesz, a nazwisk jest 20, to zadzwon i zapytaj czy jest w domu Jozio (lipne imie normalka, mowisz goscia ktorego namierzasz), jak ci powiedza ze jest, to spytaj sie czy pani/a syn studiuje na wydziale inz. orania pola, jesli ci powie ze tak, to nie rzucaj sluchawka palancie, tylko powiedz grzecznie, ze dzwonisz z samorzadu studenckiego, zeby goscia zaprosic w przyszly piatek na zebranie w sprawie przydzialu dwoch nowych siusiakow do dyspozycji (wymysl cos, normalka), mama sie ucieszy, powie synusiowi, synus w szoku, ale pomysli ze ktos sie pomylil. No i masz adres. Jesli masz pecha, i nic nie znalazles, nie przejmuj sie. Zaluzmy ze twoj admin to Xawery Pedalek. No i wtedy dzwonisz do dziekanatu i mowisz, dzien dobry tu xawery pedalek, czy ja moglbym sprawdzic, bo tutaj studenci z waszego wydzialu zlozyli podania o konta, i chcialbym sprawdzic ich dane. Podajesz nazwisko i imie i mowisz no i numer indeksu jest... (czekasz), a ona na to tyle i tyle, ty mowisz tak,tak zgadza sie i dalej( czekasz), az w koncu, no i adres (czekasz) a gosciowka mowi ci caly adres, potem juz wpada w rutyne i ty tylko podajesz nazwisko i imie, rok i nr grupy, a ona sama klepie reszte. Pytanie ktore powinienes sobie zadac: a moze one doskonale znaja xawerego pedalka?
+Sprawdz to! Dzwonisz do dziekanatu i pytasz, czy jest XAWERY PEDALEK. A jak sie spytaja: a kto to? To juz wiesz ze go nie znaja. No i sprawa rozwiazana. Podania rzuc u admina na kupke, ale nie wszystkie na raz, bo gosc pomysli ze sie qrfa lamerom z inz. okopkowej we lbie pomieszalo. I tym sposobem masz miesiecznie po 20-30 kont na wymiane na petelki... hiehie proste nie! i bez problemow. Jeszcze pewno dodatkowe pytania, a jak gosc ma konto, odpowiedz: chyba znasz qrfa finger, nie!
+No i widzicie ile mozna o tym pisac, przykladzik z drobnym opisem zajmuje tyle miejsca, a jest juz 2:45 w nocy. Musze sie kimnac. Ale s.i. polecam.
+Sami widzicie jakie to proste. Spoleczenstwo to zrodlo wszystkich info. A jakie ci info potrzebne, jak je zdobedziesz i jak je wykorzystasz... to chyba psycho bylbym jakbym ci udzielal porad!
+Warto poczytac troche ksiazek z zakresu psychologii i potestowac na znajomych.
+
+
+II. P H R E A K  IN  P O L A N D.
+
+
+PART 1. Co mi daje cyfrowa centrala ?    [by Viedzmin ]
+ 
+   Sprawa  z kodami i programowaniem central jest podobna do tej 
+     sekretarkami niby to sa dostepne dla wiadomosci publicznej a 
+     malo kto je wykorzystuje.
+ 
+  Uslugi te mozna stosowac tylko poprzez aparat z wybieraniem 
+  wieloczestotliwosciowym lub DTMF.  
+ 
+  kody uaktywniamy :
+
+  *(kod dwucyfrowy)#  lub  *(kod dwucyfrowy)*(numer o max liczbie cyfr-15 )#
+
+   
+  sprawdzamy usluge:
+  
+   *#(kod dwucyfrowy)#   - jesli mamy sygnal ciagly to jest ok a jesli zajety to error
+  
+   kasujemy natomiast:
+
+   #(kod dwucyfrowy)# 
+
+
+  KODY:                                      INFO:
+     
+                                       
+      26 -  blokada lini,          (txt: "Abonent chwilowo niedostepny")
+
+      43 - polaczenie oczekujace    (gdy 3 osoba chce wejsc na linie nalezy nacisnac FLASH
+                                     lub uderzyc w widelki, mamy teraz wybor:                                         
+                                     0 - nie przyjac wywolania 
+                                     1 - przyjac nowe wywolanie rozlaczajac dotychczasowa                                                                                                                                                                                                                                                                                                                                           rozmowe
+                                     2 - przyjac nowe bez rozlaczania. )
+
+
+       51 -  skrocone wybieranie   ( 
+                                    *51*(dwucyfrowy numer skrocony)*(pelny numer telefoniczny)#
+                                       sprawdzanie i deletowanie tak jak inne plus numer skrotu
+                                       przed#, uzywamy **(nasz skrot)                  
+                                        przydaje sie gdy uzywamy 0800, i centrala ma
+                                                  ograniczenie  co do liczby cyfr )
+
+       53 - automatyczne polaczenie 
+                                      (  5s po podniesieniu sluchawki dzwoni
+                                        na zaprogramowany wczesniej numer
+                                        np. *53*997# )         
+
+     
+             
+       56 -autodialing czyli budzik  (  aktywacja to *56*(godzina,minuty)*(ilosc dni, max 99)#        
+                                       centrala dzwoni do nas na maxa co 5 min dopoki nie                                                                                                                                                                                                                                                                                                                                                             odbierzemy)     
+     
+       
+      18 - przenoszenie           (jezeli aparat jest zajety a nastapilo wywolanie to nastepuje      
+                                  przeniesienie na zaprogramowany numer )
+         
+      19 - przenoszenie II       (  jezeli aparat jest nieobecny a nastapilo wywolanie to                                                                                                                                                                                       nastepuje przeniesienie na zaprogramowany numer )         
+          
+     21 - przenoszenie bezwgledne (jezeli wystapi wywolanie, nastapi natychmiastowe nastepuje                                                                               przeniesienie na zaprogramowany numer )
+
+     
+PART 2.  Pagery..jak zrobic sobie anonimowa skrzynke glosowa za darmo?     [ Witkacy ]
+ 
+ 
+ well... dotyczy cala sprawa tej przereklamowanej sieci pagerow, jaka atakuje
+ od paru tygodni z plakatow w co wiekszych miastach w polsce. chodzi o
+ metrobip. chlopaki z metrobip mysleli, ze sa sprytni i sprzedadza stary
+ pomysl w ladnym, nowym pudelku za nowa forse... tyle ze nie pomysleli o
+ elementarnych mechanizmach zabezpieczenia swojej parszywej sieci(?).
+ 
+ ok, do rzeczy... w metrobip kazdy user dostaje swoj osobisty numer telefonu,
+ pod ktory dzwoni sie do niego jak na sekretarke, a w 10 sekund pozniej
+ w magiczny sposob tekst pojawia sie na ekranie pagera :). tyle, ze u
+ chlopakow z metrobip mozna korzystac tez nie majac ich magicznej
+ skrzyneczki, wprost z linii telefonicznej.
+ 
+ a teraz gwozdz programu... kazdy pager w metrobip na dzien dobry, zanim go
+ ktos kupi, ma ustalony staly kod dostepu. Brzmi on : 1-0-0 - i jestesmy 
+ juz rootem swojej skrzynki glosowej :).
+ 
+ dla tych, co sa wolniejsi w mysleniu - krok po kroku.
+ 
+ 1. dzwonimy na jakis wysoki numer metrobip - 09822xxxx. im wyzszy, tym
+    dluzej potrwa, zanim ktos kupi sobie nasz numerek... ot - na przyklad
+    dzwonimy 098226666 :).
+ 
+ 2. wlacza sie standartowa informacja w stylu "prosze zostawic wiadomosc".
+    wciskamy w czasie, jak jest mowiona, 0.
+ 
+ 3. jakis johnny powie "prosze wprowadzic haslo". stukasz 1-0-0.
+ 
+ 4. jestesmy w domu. system powie "nie ma nowych wiadomosci" czy cos w tym
+    stylu.
+ 
+ a teraz - jak z tego korzystac:
+ 
+ na poczatek zmiana hasla:
+                                      
+                           87  100  xxx #   - xxx to nowy kod. jak chcesz
+                                              zmienic, to pod 100 (to jest
+                                              pierwszy kod) podstawiaj
+                                              nowy.
+ 
+ zmiana zapowiedzi:
+ 
+                           84 #             - uslyszysz "biip" i sie nagrywasz
+                                              jak na automatyczna sekretarke.
+ 
+                                              jezeli ci sie podoba, wcisnij 9.
+   
+                                              jezeli nie - to samo od poczatku.
+ 
+                                              mozesz je odsluchac - 847#.
+ 
+                                              albo skasowac - 843#.
+ 
+ odsluchiwanie nagran:
+ 
+                                        6   - ostatnia wiadomosc
+                                        7   - poprzednia wiadomosc
+                                        2   - powtorzenie wiadomosci
+                                        3   - kasowanie
+ 
+ help'a dostaniesz po wcisnieciu 4.
+ 
+ zeby wyjsc i potwierdzic wprowadzone operacje (w stylu kasowanie) wcisnij 9.
+ 
+ i to by bylo praktycznie wszystko, gdyby nie jedna, mala rzecz. otoz chlopaki
+ z metrobip niezle kaza sobie placic za polaczenie - cos kolo 1zl za minute?
+ w kazdym razie zdecydowanie wygodniej byloby do nich dzwonic za tansze,
+ a najlepiej zadne pieniadze. oczywiscie, przydatne beda pewnie tricki z
+ pusta karta wkladana na ostatnim impulsie etc., ale co najsmieszniejsze,
+ to chyba nawet nie musi byc konieczne. o co chodzi?
+ 
+ stalem sobie ostatnio w warszawskim metrze i dzwonilem na jakis pagerek.
+ ze zdumieniem zauwazylem, ze automat nabija mi jak za zwykla lokalna (|||).
+ pozostaja 2 problemy:
+ 
+ - nie wiem, czy to byl zjebany automat, czy jest takich wiecej, ale mozna
+   by poprobowac...
+ 
+ - po zadialowaniu tam nie mozna juz z klawiatury wpowadzac kodow - czyli
+   praktycznie nie ma jak uzywac skrzynki, mozna sie tylko nagrac. najwyrazniej
+   trzeba sie tu pobawic tone-dialerem.
+ 
+ i to by bylo na tyle...
+
+           
+PART 3. opis strojenia blokady antypajeczarskiej [ by obi ]  note: include schem.jpg
+
+Po zamontowaniu wszystkich elementow, za wyjatkiem R9, ktory montowany jest
+w koncowej fazie uruchamiania mozna podlaczyc uklad miedzy linia telefoni-
+czna a aparat. Potencjometr P1 ustawia sie w pozycji srodkowej.
+Nastepnie nalezy zmierzyc napiecie zasilajace US1, powinno ono wynosic
+ok. 10-15V. Nastepnie podlacza sie woltomierz o Rwe=>10Mohm pomiedzy masa
+ukladu a nozke 3US1. Woltomierz powinien pokazac napiecie zasilania. Po
+zdciu sluchawki z widelek wartosc napiecia powinna spasc do 0V (w praktyce
+do ok. 0,2-0,3V). Teraz mozna przeprowadzi† probe wybrania numeru np.926
+Jesli nie uda sie uzyskac polaczenia nalezy zmniejszyc wartosc rezystancji
+potencjometru P1. Zbyt duze zmniejszenie wartosci moze spowodowac, ze nap-
+jecie na nozce 3US1 nie bedzie spadac do zera. Powyzsza regulacje mozna
+uznac za zakonczona, jexeli aparat bedzie pozwalac na przwidlowe wybieranie
+numeru, a napiecie na nozce 3US1 bedzie spadac o do zera przy podniesieniu
+sluchawki. Nastepna czynnoscia b©dzie poproszenie znajomego zeby do nas
+zadzwonil. W chwili kiedy uslyszymy dzwonek napiecie na nozce 3US1 powinno
+spasc do zera. Jesli tak nie jest to wartosc potencjometru P1 jest zbyt mala.
+Wszystkie powyzsze czynnosci sprawdzajace nalezy przeprowadzic powtornie
+(lecz nie regulujac potencjometru P1) mierzac napiecie na wyjsciu ukladu
+nozka 10US1. Powinno ono caly czas wynosic 0V, zarowno po podniesieniu
+sluchawki, jak i powybieraniu numeru, a takze w czasie gdy ktos dzwoni.
+Jezeli uklad dziala poprawnie mozna na chwilke zewrze† linie telefoniczna.
+Powinno to spowodowa† pojawienie si© napiecia ok. 10V na nozce 10US1, ktore
+zniknie po ok. 5sek. od chwili ostatniego zwarcia. Teraz juz mozna zamonto-
+wac R9 i urzadzenie jest gotowe do pracy. Koncowe sprawdzenie polega na
+podlaczenie do lini telefonicznej dodatkowego telefonu i gdzie zadzwonil.
+Jezeli proby zadzwonienia zakoncza sie fiaskiem oznacza ze zaden pieprzony
+pajeczarz nie jest w stanie nam zaszkodzic.
+        
+PART 4.  Karty na stol panowie..                        [ obi & Viedzmin ]   
+
+W tym texcie  poruszymy stara dosyc sprawe kart magnetycznych
+stosowanych przez telekomune w swoich budkach. Jest to temat dosyc 
+stary i wszystkim (chyba) juz znany. Opisywany byl juz w niejednym Faq
+np. Ce64.  Poza tym niektorzy opisujacy metody "regeneracji" kart 
+troche sie mylili.Jak wszyscy wiedza (lub nie) na pasku magnetycznym 
+zapisane sa informacje potrzebne do zainicjowania aparatu (budki). 
+Pasek mozna podzielic na dwie czesci. Umownie nazwijmy je LP1 i LP2. 
+W czesci LP1 zapisany jest indywidualny numer karty, jej wartosc oraz 
+maxymalna ilosc impulsow taryfikacyjnych (np. 25,50,100).
+W czesci LP2 zapisane sa impulsy w postaci szpilek tzn. sygnal prosto-
+katny o bardzo malym wypelnieniu. Podczas rozmowy impulsy sa wykasowy-
+wane w ilosci zaleznej od tego jak dlugo dzwonimy i dokad. Mozna to 
+-atwo sprawdzi posypujac nowa, w czesci zuzyta i calkiem zuzyta kartw
+pylem ferromagnetycznym. Moga to byc bardzo drobne opilki lub jeszcze
+lepiej toner z faxu (tylko nie barwiacy bo sie mozna uswinic a takze
+wszystko dookola :)). Gdy sie juz posypie to pieknie bedzie widac co
+gdzie jest zapisane.
+zeby "zregenerowac" karte nalezy oczywiscie naniesc z powrotem impulsy
+w czesci LP2. Jak to zrobic? 
+
+                   ....unfinished yet.....
+
+III.  L A M E  Z O N E 
+
+1. Jak skonfigurowac  protokol PPP spod linucha ?  [ by ViEdZmIn ]
+
+Nie wiem jak teraz ale kiedys ,czyli moim starym linuchu (3.0) bylo defualtowe ustawienie 
+portow na transfer 9600bps, trza bylo wiec w profile'sach dopisac ustawienia na more speed :
+setserial /dev/modem spd_vhi ,zreszta dokladniej se poczytaj w manualu. (warto to pomeczyc jesli  masz klopoty z przerwaniami itp.) 
+dobra potrzeben ci bede dwa skrypty. (wykorzystujace demona pppd i chat) [przyklad dla TPSy ]
+1. utworz se plik ppp :    
+#!/bin/sh
+/usr/sbin/pppd  connect  $HOME/ppp_chat  \
+/dev/modem 38400 crtscts  modem noipdefault defaultroute
+
+
+2: utworz ppp_chat :
+#!/bin/sh
+/usr/sbin/chat/ -v  ABORT BUSY "" ATZ OK ATDT0202122\
+'login:'ppp  'password:'ppp 'command:'ppp
+
+aha i pamietaj zeby dac im atrybut wykonywania (chmod +x)
+
+uruchamiasz connected wywolujac skrypt ppp, ktory bedzie uruchamial reszte .
+Jak cos sie  spierdoli to looknij do /var/syslog/messages to bedzie jakies info o bledach
+
+jesli chcesz zobaczyc czy all jest ok napisz ifconfig, jesli wywali ci status ppp0 to jest ok
+aha lo0 to jest sprzezenie zwrotne, i bedziesz mial IP 127.0.0 (takiego gowno do przesylania pakietow danych miedzy userami twojego kompa za pomoca inetu ;] )
+aaa zobacz se jeszcze w etc resof.conf (to do konfiguracji name serverow, takie hosty co 
+zawieraja bazy DNS ).
+
+
+II.  Skryptografia .
+
+Nim zaczniemy kurs pisania overflow'ow ...przydaloby sie wyjsc od 
+podstaw programowania  czyli pisania skryptow, (spox, potem przejdziemy
+do zaawansowanych rzeczy jak Perl czy C ). Powloka zajmuje sie 
+interpretacja masek i potokow a takze posiada wlasny jezyk programowania.
+Skrypt jest wiec programem napisanym dla danej powloki. (Zajmiemy sie glownie
+bash'em,gdyz jest on najszesciej uzywana powloka).Najprostszym skryptem jest
+ciag polecenien unixowych ( lecz cos konretnego  robi sie uzywajac zmiennych
+i zdan warunkowych). Aha nim zaczniemy wspomne jeszcze,ze skrypty sa 
+programami interpretowanymi, czyli kazda wczytana linia jest natychmiast
+wykonywana.
+
+ZMIENNE 
+
+Zmienne moga miec wartosci numeryczne  jak i postac lancuchow textowych
+
+  czyli np. costam=666  lub costam='Szescset szescdziesiat szesc'
+
+
+aby odczytac wartosc zmiennej nalezy wpisac  znak dolara i jej nazwe.
+( czyli np: echo $costam )
+
+                   unfinished yet...
+
+              SORKI TO JEST DOPIERO BETKA, ALL TXT  BEDA SOON 
+
+grEEtZ 2:
+
+           Power,lcamtuf,Ult0r,Damage.inc,LunarShake,
+
+Fucking 2:
+           spaceman,IBS,NASK,
