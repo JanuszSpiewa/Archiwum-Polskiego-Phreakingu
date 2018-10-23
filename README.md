@@ -35,6 +35,16 @@ BTC: 1Je91dUNDoA1p7oNhD64hwy85S14uuUo9Z
  
  
 Materiały prosze podsyłać na adres: archiwum.polskiego.phreakingu@gmail.com
+
+Uruchomiłem kanał irc poświęcony phreakingowi  a raczej rozmową o "starych czasach"
+
+```
+Kanał #phreaking 
+
+server irc.pirc.pl 
+
+lub z przeglądarki https://bramka.pirc.pl/bramka/phreaking
+```
  
 
  
