@@ -45,7 +45,7 @@ Uruchomiłem kanał irc poświęcony phreakingowi  a raczej rozmową o "starych 
 ```
 Kanał #phreaking 
 
-server irc.pirc.pl 
+server irc.pirc.pl porty 6665-6668
 
 lub z przeglądarki https://bramka.pirc.pl/bramka/phreaking
 ```
