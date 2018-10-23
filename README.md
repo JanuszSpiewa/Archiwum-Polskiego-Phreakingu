@@ -23,6 +23,10 @@ https://www.youtube.com/watch?v=MPWvyeJImfI
 Częsć 5:
 https://www.youtube.com/watch?v=Umz5yUJA4Nk
 
+Michał "vari" Jonakowski Sygnał czasu
+
+https://github.com/JanuszSpiewa/Archiwum-Polskiego-Phreakingu/blob/master/Michal_Jonakowski_Sygnal_Czasu%20(edytowany%20przez%20k4be).pdf
+
 Projekt się rozwija więc przeczytaj changelog'a ( co jakiś czas dodajemy nowe materiały które zdobyliśmy albo ktoś nam podesłał)
 
 https://github.com/JanuszSpiewa/Archiwum-Polskiego-Phreakingu/blob/master/changelog
